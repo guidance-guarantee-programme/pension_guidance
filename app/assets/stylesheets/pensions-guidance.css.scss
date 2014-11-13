@@ -1,0 +1,16 @@
+// resusable styles provided by alphagov/govuk_elements
+@import "govuk-elements";
+
+// styles borrowed from alphagov/static
+@import "govuk_static/_conditionals2.scss";
+@import "govuk_static/_text";
+
+
+// service specific styles
+@import "base";
+@import "layout";
+
+
+
+@import "components/govspeak/_all";
+
