@@ -7,20 +7,20 @@
   }
 }
 
-.grid-row {
+.l-grid-row {
   @extend %grid-row;
 }
 
 
-.column-quarter {
+.l-column-quarter {
   @include grid-column( 1/4 );
 }
-.column-half {
+.l-column-half {
   @include grid-column( 1/2 );
 }
-.column-third {
+.l-column-third {
   @include grid-column( 1/3 );
 }
-.column-two-thirds {
+.l-column-two-thirds {
   @include grid-column( 2/3 );
 }
