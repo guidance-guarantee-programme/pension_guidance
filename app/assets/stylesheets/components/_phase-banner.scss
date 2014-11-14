@@ -1,0 +1,4 @@
+.phase-banner {
+  @include phase-banner(beta);
+  border-bottom:none;
+}
