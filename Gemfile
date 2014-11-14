@@ -19,4 +19,5 @@ end
 group :test do
   gem 'cucumber-rails', require: false
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'site_prism'
 end
