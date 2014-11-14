@@ -4,6 +4,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+// main has a tabindex=-1 to make the 'skip to main content' link work
+//  - we don't want this to have a focus state
+main:focus {
+  outline:none;
+}
 
 
 // lists
