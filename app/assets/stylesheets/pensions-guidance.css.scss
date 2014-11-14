@@ -1,16 +1,17 @@
-// resusable styles provided by alphagov/govuk_elements
+// sass library provided by alphagov/govuk_frontend_toolkit
+@import "govuk-frontend-toolkit";
+
+// styles provided by alphagov/govuk_elements
 @import "govuk-elements";
 
-// styles borrowed from alphagov/static
-@import "govuk_static/_conditionals2.scss";
-@import "govuk_static/_text";
-
+// styles borrowed from alphagov/static - I''ll try and remove all these
+@import "govuk_static/*";
 
 // service specific styles
 @import "base";
 @import "layout";
+@import "components/*";
 
-
-
-@import "components/govspeak/_all";
-
+.govspeak {
+  @import "components/govspeak/*";
+}
