@@ -4,8 +4,9 @@
 // styles provided by alphagov/govuk_elements
 @import "govuk-elements";
 
-// styles borrowed from alphagov/static - I''ll try and remove all these
-@import "govuk_static/*";
+// styles temporarily borrowed from alphagov/static
+@import "govuk_static/conditionals2";
+@import "govuk_static/text";
 
 // service specific styles
 @import "base";
