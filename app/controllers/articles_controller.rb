@@ -2,8 +2,13 @@ class ArticlesController < ApplicationController
   layout 'articles'
 
   def show
-    article = params[:id]
+    article = params[:id].tr('-', '_')
 
-    render article
+    if template_exists?(article, 'articles')
+      render article
+    else
+      head 404
+    end
+
   end
 end
