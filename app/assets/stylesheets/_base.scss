@@ -9,11 +9,35 @@ main:focus {
   outline:none;
 }
 
+main img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+
+h1 {
+  @extend .heading-xlarge;
+}
+
+h2 {
+  @extend .heading-medium;
+}
+
+h3 {
+  @extend .heading-small;
+}
+
+
 
 // lists
 ul, ol {
   margin-top: 5px;
   margin-bottom: 20px;
+}
+article ul,
+article ol {
+  padding-left: 0;
 }
 
 li {
@@ -28,4 +52,13 @@ ul li {
 ol li {
   list-style-type: decimal;
   margin-left: 25px;
+}
+
+
+strong {
+  font-weight:bold;
+}
+
+small {
+  @include core-16;
 }

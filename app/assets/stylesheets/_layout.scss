@@ -10,7 +10,6 @@
 .l-grid-row {
   @extend %grid-row;
 }
-
 .l-column-quarter {
   @include grid-column( 1/4 );
 }
