@@ -6,7 +6,7 @@ body {
 // main has a tabindex=-1 to make the 'skip to main content' link work
 //  - we don't want this to have a focus state
 main:focus {
-  outline:none;
+  outline: none;
 }
 
 main img {
@@ -31,10 +31,12 @@ h3 {
 
 
 // lists
-ul, ol {
+ul,
+ol {
   margin-top: 5px;
   margin-bottom: 20px;
 }
+
 article ul,
 article ol {
   padding-left: 0;
@@ -56,7 +58,7 @@ ol li {
 
 
 strong {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 small {

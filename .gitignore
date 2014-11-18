@@ -1,3 +1,4 @@
 /log
 /tmp
 /vendor/assets/bower_components
+/node_modules
