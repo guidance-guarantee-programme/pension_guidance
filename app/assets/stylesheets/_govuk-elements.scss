@@ -2,10 +2,11 @@
 @import "elements/reset";
 @import "elements/elements-typography";
 
-//@import "elements/lists";
-//@import "elements/tables";
-//@import "elements/buttons";
-//@import "elements/forms";
-//@import "elements/details";
-//@import "elements/panels";
-//@import "elements/icons";
+//@import "elements/lists";   - using our own file instead - see base/lists
+//@import "elements/tables";  - using our own file instead - see base/tables
+
+//@import "elements/buttons"; - not yet needed
+//@import "elements/forms";   - not yet needed
+//@import "elements/details"; - not yet needed
+//@import "elements/panels";  - not yet needed
+//@import "elements/icons";   - not yet needed
