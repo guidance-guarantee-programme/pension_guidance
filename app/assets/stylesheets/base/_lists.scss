@@ -1,0 +1,36 @@
+ul,
+ol {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+
+  li {
+    list-style-type: circle;
+  }
+}
+
+ol li {
+  list-style-type: decimal;
+  margin-left: 25px;
+}
+
+dl {
+  margin-top: 1.5em;
+  margin-bottom: 1.88em;
+}
+
+dt {
+  margin-bottom: .25em;
+}
+
+dd {
+  margin-bottom: .75em;
+}

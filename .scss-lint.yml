@@ -82,7 +82,7 @@ linters:
   PlaceholderInExtend:
     enabled: true
     exclude: # extending govuk_elements typography in base typography
-          - app/assets/stylesheets/_base.scss
+          - app/assets/stylesheets/base/_headings.scss
 
   PropertySortOrder:
     enabled: false
@@ -93,17 +93,19 @@ linters:
 
   QualifyingElement:
     enabled: true
-    allow_element_with_attribute: false
+    allow_element_with_attribute: true
     allow_element_with_class: false
     allow_element_with_id: false
 
   SelectorDepth:
     enabled: true
-    max_depth: 2
+    max_depth: 3
 
   SelectorFormat:
     enabled: true
     convention: BEM
+    exclude: # multiple hyphens currently fail. I need to write a regex for our BEM syntax
+              - app/assets/stylesheets/layout/_layout.scss
 
   Shorthand:
     enabled: true

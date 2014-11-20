@@ -26,3 +26,14 @@
 .l-column-two-thirds {
   @include grid-column(2/3);
 }
+
+
+
+.l-grid-row--main {
+  margin-top: 4px; // align h1s with gov.uk
+}
+
+.l-column-third--sidebar {
+  margin-top: 2em; // align blue bar with gov.uk
+}
+

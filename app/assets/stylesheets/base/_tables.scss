@@ -1,0 +1,45 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1em 0 2em;
+  width: 100%;
+
+  caption {
+    @include bold-24;
+    margin: .4em .5em .4em 0;
+    text-align: left;
+  }
+}
+
+th,
+td {
+  @include core-14;
+  vertical-align: top;
+  padding: .7em .5em .7em 0;
+
+  a[rel="external"] {
+    @include external-link-16;
+    @include media-down(mobile) {
+      @include external-link-14;
+    }
+  }
+}
+
+td {
+  border-bottom: solid 1px $border-colour;
+}
+
+@media screen and (max-width: 320px) {
+  th,
+  td,
+  td small {
+    font-size: 10px;
+  }
+}
+
+th {
+  line-height: 1.25em;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: solid 1px $border-colour;
+}

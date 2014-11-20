@@ -1,16 +1,18 @@
-.breadcrumbs__list,
-.breadcrumbs__item {
-  padding: 0;
+.breadcrumbs__list {
+  @extend %contain-floats;
   margin: 0;
-  list-style-type: none;
-
-  .foo {
-    padding: 0;
-  }
+  padding: .75em 0;
 }
 
 .breadcrumbs__item {
   @include core-16;
-  padding: .75em 0;
+  list-style: none;
+  margin: 0 .5em .4em 0;
+  padding-right: 1em;
+  float: left;
 }
 
+.breadcrumbs__link:link,
+.breadcrumbs__link:visited {
+  color: $text-colour;
+}

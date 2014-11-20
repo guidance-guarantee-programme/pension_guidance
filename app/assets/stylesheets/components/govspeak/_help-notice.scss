@@ -1,0 +1,17 @@
+.help-notice {
+  background: image-url("icon-important.png") no-repeat scroll 0 .5em;
+
+  @include device-pixel-ratio() {
+    background-image: image-url("icon-important-2x.png");
+    background-size: 34px 34px;
+  }
+
+  p {
+    font-weight: 600;
+    padding: 0 1em 0 2em;
+  }
+}
+
+p + .help-notice {
+  margin-top: 2em;
+}

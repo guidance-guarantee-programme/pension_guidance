@@ -143,12 +143,14 @@
 </div>
 <p>When you  wish to cite the source of a quote, you should do so using a figure also:</p>
 <div class="styleguide-example">
-  <blockquote cite="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">
-    <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
-  </blockquote>
-  <figcaption>
-    Winston Churchill, in <cite><a href="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">a speech to the House of Commons</a></cite>. 11th November 1947
-  </figcaption>
+  <figure>
+    <blockquote cite="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">
+      <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.</p>
+    </blockquote>
+    <figcaption>
+      Winston Churchill, in <cite><a href="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">a speech to the House of Commons</a></cite>. 11th November 1947
+    </figcaption>
+  </figure>
 </div>
 
 <h2 id="text">Text-level Semantics</h2>
@@ -211,7 +213,7 @@
 <h3>Time</h3>
 <p>The <code>time</code> element is used to represent either a time on a 24 hour clock, or a precise date in the proleptic Gregorian calendar, optionally with a time and a time-zone offset. Example:</p>
 <div class="styleguide-example">
-  <p>Queen Elizabeth II was proclaimed sovereign of each of the Commonwealth realms on <time datetime="1952-02-6">6</time> and <time datetime="1952-02-7">7 February 1952</time>, after the death of her father, King George VI.</p>
+  <p>Queen Elizabeth II was proclaimed sovereign of each of the Commonwealth realms on <time datetime="1952-02-06">6</time> and <time datetime="1952-02-07">7 February 1952</time>, after the death of her father, King George VI.</p>
 </div>
 
 <h3>Code</h3>
@@ -272,7 +274,7 @@
 <h3 id="edits">Edits</h3>
 <p>The <code>del</code> element is used to represent deleted or retracted text which still must remain on the page for some reason. Meanwhile its counterpart, the <code>ins</code> element, is used to represent inserted text. Both <code>del</code> and <code>ins</code> have a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage:</p>
 <div class="styleguide-example">
-  <p>She bought <del datetime="2005-05-30T13:00:00">two</del> <ins datetime="2005-05-30T13:00:00">five</ins> pairs of shoes.</p>
+  <p>She bought <del datetime="2005-05-30">two</del> <ins datetime="2005-05-30">five</ins> pairs of shoes.</p>
 </div>
 
 <h2 id="tables">Tabular data</h2>
@@ -357,5 +359,4 @@
     </tr>
     </tbody>
   </table>
-</div>
 </div>

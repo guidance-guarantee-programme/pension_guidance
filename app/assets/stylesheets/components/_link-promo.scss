@@ -1,0 +1,18 @@
+.link-promo {
+  margin-bottom: 2.5em;
+}
+
+.link-promo__heading {
+  margin-top: .55em;
+}
+
+.link-promo__list {
+  @extend %unstyled-list;
+}
+
+.link-promo__item {
+  @extend %unstyled-list__item;
+  @include core-16;
+
+  margin-bottom: .75em;
+}

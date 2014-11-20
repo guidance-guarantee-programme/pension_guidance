@@ -1,0 +1,19 @@
+.info-notice {
+  border-left: 10px solid $border-colour;
+  margin-bottom: 1em;
+
+  p {
+    margin: .75em 0;
+    padding-right: 1em;
+  }
+
+  a[rel="external"] {
+    display: inline;
+  }
+}
+
+p + .info-notice {
+  margin-top: 2em;
+}
+
+
