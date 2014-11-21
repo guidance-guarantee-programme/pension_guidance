@@ -1,71 +1,156 @@
 <% content_for(:page_title, 'Style guide: Layout - The Pension Guidance Service') %>
 
+<% content_for(:body_classes, 'page-layout') %>
+
 <h1>Layout</h1>
 
+<ul>
+  <li>Pages can be divided into columns - column ratios are based on halves, thirds or quarters of the page width.</li>
+  <li>All layout classes are prepended with <code>l-</code></li>
+  <li>Columns are wrapped in a grid row</li>
+</ul>
+<pre>
+  <code>
+    .l-grid-row
+    .l-column-two-thirds
+    .l-column-third
+    .l-column-half
+    .l-column-quarter
+  </code>
+</pre>
 
-<div class="l-grid-row">
-  <div class="l-column-two-thirds">
-    <h3 class="heading-small">Two thirds</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-  </div>
-  <div class="l-column-third">
-    <h3 class="heading-small">One third</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-  </div>
-</div>
+<% content_for :layout_examples do %>
 
-<div class="l-grid-row">
-  <div class="l-column-half">
-    <h3 class="heading-small">Half</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+  <div class="highlight-background">
+    <h3 class="heading-small">Full width</h3>
   </div>
-  <div class="l-column-half">
-    <h3 class="heading-small">Half</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+  <div class="l-grid-row">
+    <div class="l-column-two-thirds">
+      <div class="highlight-background">
+        <h3 class="heading-small">Two Thirds</h3>
+      </div>
+    </div>
+    <div class="l-column-third">
+      <div class="highlight-background">
+        <h3 class="heading-small">Third</h3>
+      </div>
+    </div>
   </div>
-</div>
+  <div class="l-grid-row">
+    <div class="l-column-half">
+      <div class="highlight-background">
+        <h3 class="heading-small">Half</h3>
+      </div>
+    </div>
+    <div class="l-column-half">
+      <div class="highlight-background">
+        <h3 class="heading-small">Half</h3>
+      </div>
+    </div>
+  </div>
 
-<div class="l-grid-row">
-  <div class="l-column-third">
-    <h3 class="heading-small">Third</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+  <div class="l-grid-row">
+    <div class="l-column-third">
+      <div class="highlight-background">
+        <h3 class="heading-small">Third</h3>
+      </div>
+    </div>
+    <div class="l-column-third">
+      <div class="highlight-background">
+        <h3 class="heading-small">Third</h3>
+      </div>
+    </div>
+    <div class="l-column-third">
+      <div class="highlight-background">
+        <h3 class="heading-small">Third</h3>
+      </div>
+    </div>
   </div>
-  <div class="l-column-third">
-    <h3 class="heading-small">Third</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-  </div>
-  <div class="l-column-third">
-    <h3 class="heading-small">Third</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-  </div>
-</div>
 
-<div class="l-grid-row">
-  <div class="l-column-quarter">
-    <h3 class="heading-small">Quarter</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+  <div class="l-grid-row">
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
   </div>
-  <div class="l-column-quarter">
-    <h3 class="heading-small">Quarter</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+  <div class="l-grid-row">
+    <div class="l-column-half">
+      <div class="highlight-background">
+        <h3 class="heading-small">Half</h3>
+      </div>
+    </div>
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
   </div>
-  <div class="l-column-quarter">
-    <h3 class="heading-small">Quarter</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+  <div class="l-grid-row">
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
+    <div class="l-column-half">
+      <div class="highlight-background">
+        <h3 class="heading-small">Half</h3>
+      </div>
+    </div>
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
   </div>
-  <div class="l-column-quarter">
-    <h3 class="heading-small">Quarter</h3>
-    <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+  <div class="l-grid-row">
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
+    <div class="l-column-quarter">
+      <div class="highlight-background">
+        <h3 class="heading-small">Quarter</h3>
+      </div>
+    </div>
+    <div class="l-column-half">
+      <div class="highlight-background">
+        <h3 class="heading-small">Half</h3>
+      </div>
+    </div>
   </div>
-</div>
+  <div class="l-grid-row">
+    <div class="l-column-third">
+      <div class="highlight-background">
+        <h3 class="heading-small">Third</h3>
+      </div>
+    </div>
+    <div class="l-column-two-thirds">
+      <div class="highlight-background">
+        <h3 class="heading-small">Two Thirds</h3>
+      </div>
+    </div>
+  </div>
+
+<% end %>
