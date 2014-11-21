@@ -2,6 +2,10 @@
   border-left: 10px solid $border-colour;
   margin-bottom: 1em;
 
+  @include ie(6) {
+    zoom: 1; //fix layout issue in IE6 caused by border-left
+  }
+
   p {
     margin: .75em 0;
     padding-right: 1em;
@@ -15,5 +19,4 @@
 p + .info-notice {
   margin-top: 2em;
 }
-
 
