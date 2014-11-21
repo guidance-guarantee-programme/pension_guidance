@@ -4,5 +4,6 @@ Feature: Govspeak
   So that I don't have to hustle developers
 
   Scenario: Add article
-    When an article written in govspeak is added
+    When I add an article written in govspeak
     Then the article appears on the website
+    And the page title corresponds to the title of the article

@@ -2,26 +2,23 @@ RSpec.describe ArticlesController, type: :controller do
 
   describe 'GET show' do
     context 'existing article' do
+      let(:article) { instance_double(Article) }
+
       before do
+        expect(Article).to receive(:find).and_return(article)
+
         get :show, id: 'your-pension-pot-value'
       end
 
-      it 'returns 200' do
-        expect(response).to be_success
-      end
-
-      it 'renders the right template' do
-        expect(response).to render_template('your_pension_pot_value')
-      end
+      specify { expect(response).to be_success }
+      specify { expect(assigns(:article)).to_not be_nil }
     end
 
     context 'non-existent article' do
-      before do
+      it 'should be not found' do
         get :show, id: 'non-existent-article'
-      end
 
-      it 'returns 404' do
-        expect(response).to have_http_status(:not_found)
+        expect(response).to be_not_found
       end
     end
   end
