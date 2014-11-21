@@ -9,14 +9,8 @@
 
 <% content_for :content do %>
   <div class="l-page-container">
-    <!--<%= render 'partials/phase_banner' %>-->
-    <nav class="breadcrumbs" aria-label="breadcrumb" role="navigation">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="/styleguide">Style guide</a>
-        </li>
-      </ul>
-    </nav>
+    <%= render 'partials/phase_banner' %>
+    <%= render 'styleguide/partials/breadcrumbs' %>
 
     <main role="main" id="content" tabindex="-1">
       <div class="l-grid-row l-grid-row--main">
