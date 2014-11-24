@@ -9,7 +9,7 @@ class Article
 
   def title
     header = govspeak.headers.find { |header| header.level == 1 }
-    @title ||= header.present? ? header.text : ''
+    @title ||= if header.present? then header.text else '' end
   end
 
   def content
