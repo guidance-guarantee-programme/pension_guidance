@@ -11,7 +11,7 @@ class Article
   end
 
   def content
-    @content ||= html
+    @content ||= govspeak.to_sanitized_html.html_safe
   end
 
   def ==(other)
@@ -22,9 +22,5 @@ class Article
 
   def govspeak
     Govspeak::Document.new(@source)
-  end
-
-  def html
-    govspeak.to_sanitized_html.html_safe
   end
 end
