@@ -1,5 +1,5 @@
 class Article
-  attr_accessor :id, :source, :title, :content
+  attr_reader :id, :source, :title, :content
 
   def initialize(id, source = '')
     @id = id
