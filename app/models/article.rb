@@ -21,6 +21,6 @@ class Article
   private
 
   def govspeak
-    Govspeak::Document.new(@source)
+    @govspeak ||= Govspeak::Document.new(@source)
   end
 end
