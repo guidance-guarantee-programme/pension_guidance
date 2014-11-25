@@ -1,9 +1,0 @@
-{
-  "name": "pensions-guidance",
-  "version": "0.0.1",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "load-grunt-tasks": "^1.0.0",
-    "grunt-scss-lint": "0.3.3"
-  }
-}

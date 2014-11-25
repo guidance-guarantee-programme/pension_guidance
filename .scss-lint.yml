@@ -1,5 +1,9 @@
 # Default application configuration that all configurations inherit from.
 
+scss_files: 'app/assets/stylesheets/**/*.css.scss'
+
+exclude: 'vendor/assets/**/*'
+
 linters:
   BangFormat:
     enabled: true
@@ -105,7 +109,7 @@ linters:
     enabled: true
     convention: BEM
     exclude: # multiple hyphens currently fail. I need to write a regex for our BEM syntax
-              - app/assets/stylesheets/layout/_layout.scss
+      - app/assets/stylesheets/layout/_layout.scss
 
   Shorthand:
     enabled: true
