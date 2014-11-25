@@ -13,11 +13,10 @@ RSpec.describe ArticleRepository do
     end
 
     context 'existing article' do
-      let(:article) { instance_double('Article', id: id)}
       let(:id) { 'govspeak' }
 
       it 'returns the article' do
-        expect(find).to eq article
+        expect(find.id).to eq id
       end
     end
   end
@@ -26,13 +25,12 @@ RSpec.describe ArticleRepository do
     subject(:find) { ArticleRepository.find(id) }
 
     let(:id) { 'govspeak' }
-    let(:article) { instance_double('Article', id: id)}
 
     before do
       expect_any_instance_of(ArticleRepository).to receive(:repository).and_return(repository)
     end
 
-    specify { expect(find).to eq article }
+    specify { expect(find.id).to eq id }
   end
 
 end

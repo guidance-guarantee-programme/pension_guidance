@@ -14,10 +14,6 @@ class Article
     @content ||= govspeak.to_sanitized_html.html_safe
   end
 
-  def ==(other)
-    self.id == other.id
-  end
-
   private
 
   def govspeak

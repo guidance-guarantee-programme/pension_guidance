@@ -39,10 +39,4 @@ RSpec.describe Article, type: :model do
     it { is_expected.to eq html }
   end
 
-  describe '#==' do
-    let(:source) { 'source' }
-
-    specify { expect(article).to eq Article.new('govspeak', source) }
-    specify { expect(article).to_not eq Article.new('other', source) }
-  end
 end
