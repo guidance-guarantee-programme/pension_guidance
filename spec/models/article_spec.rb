@@ -9,7 +9,7 @@ RSpec.describe Article, type: :model do
     context 'when the article has no level one headers' do
       let(:source) { '## No level one headers' }
 
-      it { is_expected.to be_empty }
+      it { is_expected.to be_blank }
     end
 
     context 'when the article has a level one header' do
