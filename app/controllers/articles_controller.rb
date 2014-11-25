@@ -4,11 +4,11 @@ class ArticlesController < ApplicationController
   respond_to :html
 
   def show
-    @article = Article.find(params[:id])
+    @article = ArticleRepository.find(params[:id])
 
     respond_with @article
 
-  rescue Article::ArticleNotFound
+  rescue ArticleRepository::ArticleNotFound
     head 404
   end
 end

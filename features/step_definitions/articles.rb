@@ -1,5 +1,5 @@
 Before do
-  @file = Rails.root.join('app', 'views', 'articles', 'think_about_pension.md')
+  @file = Rails.root.join('content', 'think_about_pension.md')
 
   File.open(@file, 'w') do |f|
     f.write <<-GOVSPEAK.strip_heredoc
