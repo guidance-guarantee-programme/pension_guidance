@@ -160,7 +160,7 @@ PLATFORMS
 DEPENDENCIES
   cucumber-rails
   foreman
-  govspeak
+  govspeak (~> 3.2)
   govuk_frontend_toolkit
   govuk_template
   rails (= 4.1.8)
