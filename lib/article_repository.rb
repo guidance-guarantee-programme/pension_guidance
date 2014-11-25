@@ -1,25 +1,30 @@
 class ArticleRepository
-
   class ArticleNotFound < StandardError; end
 
+  REPOSITORY = Rails.root.join('content')
+
+  def initialize(repository = REPOSITORY)
+    @repository = Pathname.new(repository)
+  end
+
+  def find(id)
+    file = path(id)
+
+    raise ArticleNotFound unless file.exist?
+
+    Article.new(id, File.read(file))
+  end
+
   def self.find(id)
-    repository = self.new
-
-    source = repository.instance_eval do
-      file = path(id)
-
-      raise ArticleNotFound unless file.exist?
-
-      File.read file
-    end
-
-    Article.new(id, source)
+    self.new.find(id)
   end
 
   private
 
+  attr_reader :repository
+
   def path(id)
-    Rails.root.join('content', "#{id.tr('-', '_')}.md")
+    repository.join("#{id.tr('-', '_')}.md")
   end
 
 end
