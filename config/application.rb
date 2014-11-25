@@ -6,7 +6,7 @@ require 'sprockets/railtie'
 
 Bundler.require(*Rails.groups)
 
-module PensionsGuidance
+module PensionGuidance
   class Application < Rails::Application
 
   end
