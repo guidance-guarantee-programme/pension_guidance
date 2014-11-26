@@ -1,7 +1,7 @@
 begin
   require 'cucumber/rake/task'
 
-  default_cucumber_options = -> (t) do
+  default_cucumber_options = lambda do |t|
     t.binary = 'bin/cucumber'
     t.bundler = false
     t.fork = true
