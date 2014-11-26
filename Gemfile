@@ -12,6 +12,7 @@ gem 'sprockets', '~> 2.11.0' # 2.12.x breaks sass-rails
 gem 'unicorn'
 
 group :development do
+  gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-commands-cucumber'
   gem 'spring-commands-rspec'

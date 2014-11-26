@@ -1,0 +1,12 @@
+AllCops:
+  RunRailsCops: true
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Style/FileName:
+  Exclude:
+    - bin/scss-lint

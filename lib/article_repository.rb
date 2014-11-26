@@ -10,13 +10,13 @@ class ArticleRepository
   def find(id)
     file = path(id)
 
-    raise ArticleNotFound unless file.exist?
+    fail ArticleNotFound unless file.exist?
 
     Article.new(id, File.read(file))
   end
 
   def self.find(id)
-    self.new.find(id)
+    (new).find(id)
   end
 
   private
@@ -26,5 +26,4 @@ class ArticleRepository
   def path(id)
     repository.join("#{id.tr('-', '_')}.md")
   end
-
 end

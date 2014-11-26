@@ -1,10 +1,10 @@
 begin
   require 'cucumber/rake/task'
 
-  default_cucumber_options = -> (t) do
-    t.binary  = 'bin/cucumber'
+  default_cucumber_options = lambda do |t|
+    t.binary = 'bin/cucumber'
     t.bundler = false
-    t.fork    = true
+    t.fork = true
   end
 
   namespace :cucumber do
@@ -45,7 +45,7 @@ begin
   task 'test:prepare' do
   end
 
-  task :stats => 'cucumber:statsetup'
+  task stats: 'cucumber:statsetup'
 
 rescue LoadError
   desc 'Cucumber rake task not available (cucumber not installed)'
