@@ -7,13 +7,9 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 RSpec.configure do |config|
 
-  if config.files_to_run.one?
-    config.default_formatter = 'doc'
-  end
-
-  config.profile_examples = 10
-
+  config.default_formatter = 'doc' if config.files_to_run.one?
   config.order = :random
+  config.profile_examples = 10
 
   Kernel.srand config.seed
 
