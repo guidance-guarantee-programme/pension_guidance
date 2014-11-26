@@ -2,6 +2,7 @@
 begin
   load File.expand_path('../spring', __FILE__)
 rescue LoadError
+  warn 'Spring binstub missing'
 end
 require 'bundler/setup'
 load Gem.bin_path('cucumber', 'cucumber')
