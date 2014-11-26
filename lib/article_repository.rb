@@ -26,5 +26,4 @@ class ArticleRepository
   def path(id)
     repository.join("#{id.tr('-', '_')}.md")
   end
-
 end
