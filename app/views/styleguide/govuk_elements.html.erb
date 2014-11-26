@@ -1,0 +1,110 @@
+<% content_for(:page_title, t('styleguide.title', page_title: 'GOV.UK elements')) %>
+
+<h1>GOV.UK elements</h1>
+
+<h2 class="heading-large">typography</h2>
+
+<div class="font-xxlarge">font-xxlarge</div>
+<div class="font-xlarge">font-xlarge</div>
+<div class="font-large">font-large</div>
+<div class="font-medium">font-medium</div>
+<div class="font-small">font-small</div>
+<div class="font-xsmall">font-xsmall</div>
+<div class="bold-xxlarge ">bold-xxlarge </div>
+<div class="bold-xlarge">bold-xlarge</div>
+<div class="bold-large">bold-large</div>
+<div class="bold-medium">bold-medium</div>
+<div class="bold-small ">bold-small </div>
+<div class="bold-xsmall">bold-xsmall</div>
+<div class="heading-xlarge">heading-xlarge</div>
+<div class="heading-large">heading-large</div>
+<div class="heading-medium ">heading-medium </div>
+<div class="heading-small">heading-small</div>
+<p>This is a paragraph</p>
+<div class="lede">lede</div>
+<div class="text">text</div>
+<div class="text-secondary">text-secondary</div>
+
+
+<h2>buttons</h2>
+
+<input type="submit" class="button" value="Continue">
+
+<input type="submit" class="button" disabled="disabled" value="Continue">
+
+<input type="submit" class="button button-get-started" value="Continue">
+
+
+<h2 class="heading-large">Forms</h2>
+
+<form action="/" method="post" class="form">
+
+  <h3 class="form-title heading-xlarge">
+    Your details
+  </h3>
+
+  <!-- Full name -->
+  <div class="form-group">
+    <label class="form-label-bold" for="full-name">Full name</label>
+    <input type="text" class="form-control" id="full-name">
+  </div>
+
+  <!-- Gender -->
+  <div class="form-group">
+    <fieldset class="inline">
+      <legend class="form-label-bold">Gender</legend>
+
+      <label for="radio-inline-1" class="block-label">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Male">
+        Male
+      </label>
+      <label for="radio-inline-2" class="block-label">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="Female">
+        Female
+      </label>
+    </fieldset>
+  </div>
+
+  <!-- National Insurance number -->
+  <div class="form-group">
+    <label class="form-label-bold" for="ni-number">
+      National Insurance number
+            <span class="form-hint">
+              It's on your National Insurance card, benefit letter, payslip or P60.
+              <br>
+              For example, 'VO 12 34 56 D'.
+            </span>
+    </label>
+    <input type="text" class="form-control" id="ni-number">
+  </div>
+
+  <!-- Date of birth -->
+  <div class="form-group">
+    <fieldset>
+      <legend class="form-label-bold">Date of birth</legend>
+
+      <div class="form-date">
+        <p class="form-hint">For example, 08 04 2014</p>
+
+        <div class="form-group form-group-day">
+          <label for="dob-day">Day</label>
+          <input type="text" class="form-control" id="dob-day">
+        </div>
+        <div class="form-group form-group-month">
+          <label for="dob-month">Month</label>
+          <input type="text" class="form-control" id="dob-month">
+        </div>
+        <div class="form-group form-group-year">
+          <label for="dob-year">Year</label>
+          <input type="text" class="form-control" id="dob-year">
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <!-- Primary buttons, secondary links -->
+  <div class="form-group">
+    <input type="submit" class="button" value="Continue">
+  </div>
+
+</form>

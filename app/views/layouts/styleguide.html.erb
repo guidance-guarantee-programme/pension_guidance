@@ -3,22 +3,28 @@
   <!--[if IE 6]><%= stylesheet_link_tag 'pensions-guidance-ie6', media: 'screen' %><![endif]-->
   <!--[if IE 7]><%= stylesheet_link_tag 'pensions-guidance-ie7', media: 'screen' %><![endif]-->
   <!--[if IE 8]><%= stylesheet_link_tag 'pensions-guidance-ie8', media: 'screen' %><![endif]-->
+
+  <%= stylesheet_link_tag 'styleguide', media: 'screen' %>
 <% end %>
 
 <% content_for :content do %>
   <div class="l-page-container">
     <%= render 'partials/phase_banner' %>
-    <%= render 'partials/breadcrumbs' %>
+    <%= render 'styleguide/partials/breadcrumbs' %>
 
-    <div class="l-grid-row">
-      <div class="l-column-two-thirds">
-        <main role="main" id="content" tabindex="-1">
-          <article role="article" class="text">
-            <%= yield %>
-          </article>
-        </main>
+    <main role="main" id="content" tabindex="-1">
+      <div class="l-grid-row l-grid-row--main">
+        <div class="l-column-two-thirds">
+          <%= yield %>
+        </div>
+        <div class="l-column-third l-column-third--sidebar">
+          <div class="sidebar-hr"></div>
+          <%= render 'styleguide/partials/link_promo' %>
+          <%= render 'styleguide/partials/link_promo' %>
+        </div>
       </div>
-    </div>
+      <%= yield :layout_examples %>
+    </main>
   </div>
 <% end %>
 

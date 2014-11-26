@@ -1,0 +1,9 @@
+.address {
+  margin: 2.5em 0;
+  min-width: 35%;
+}
+
+h2 + .address,
+h3 + .address {
+  margin-top: .5em;
+}

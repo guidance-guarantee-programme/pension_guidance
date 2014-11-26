@@ -1,0 +1,71 @@
+<% content_for(:page_title, t('styleguide.title', page_title: 'Govspeak')) %>
+
+<h1>Govspeak components</h1>
+
+<p>Govspeak is the GDS ibrary that allows editorial staff to
+  add components to pages using an extension to markdown. Documentation
+  including
+  examples is available on
+  <a href="https://github.com/alphagov/govspeak">github</a></p>
+
+<article>
+  <!-- Callouts -->
+  <h2>Information callout</h2>
+  <div class="application-notice info-notice">
+    <p>This is an information callout</p>
+  </div>
+
+
+  <h2>Warning callout</h2>
+  <div class="application-notice help-notice">
+    <p>This is a warning callout</p>
+  </div>
+
+  <h2>Example callout</h2>
+  <div class="example">
+    <p><strong>Example:</strong> Open the pod bay doors</p>
+  </div>
+
+  <!-- Steps-->
+  <h2>Steps</h2>
+  <ol class="steps">
+    <li>
+      <p>Take the 25% you get tax free away from your pension pot.</p>
+    </li>
+    <li>
+      <p>Add your other income to the amount of the remaining 75% from your pension pot.</p>
+    </li>
+    <li>
+      <p>Take your <a rel="external" href="http://www.gov.uk/income-tax-rates/personal-allowances">tax-free Personal Allowance</a> away from this amount.</p>
+    </li>
+    <li>
+      <p>Check your <a rel="external" href="http://www.gov.uk/income-tax-rates/income-tax-rates">tax rate</a> to calculate how much tax you’ll pay for the year.</p>
+    </li>
+  </ol>
+
+  <!-- Points of Contact -->
+  <h2>Contact</h2>
+  <div class="contact">
+    <p><strong>Student Finance England</strong><br>
+      <strong>Telephone:</strong> 0845 300 50 90<br>
+      <strong>Minicom:</strong> 0845 604 44 34</p>
+  </div>
+
+  <h2>Address</h2>
+  <div class="address">
+    <div class="adr org fn">
+      <p>
+        Hercules House<br>
+        Hercules Road<br>
+        London SE1 7DU<br>
+      </p>
+    </div>
+  </div>
+
+  <h2>Downloads</h2>
+  <div class="form-download">
+    <p><a href="http://example.com/" title="Example form" rel="external">An
+      example form download link.</a></p>
+  </div>
+
+</article>

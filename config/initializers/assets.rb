@@ -6,4 +6,5 @@ Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bo
 Rails.application.config.assets.precompile += %w( pensions-guidance.css
                                                   pensions-guidance-ie6.css
                                                   pensions-guidance-ie7.css
-                                                  pensions-guidance-ie8.css  )
+                                                  pensions-guidance-ie8.css
+                                                  styleguide.css  )

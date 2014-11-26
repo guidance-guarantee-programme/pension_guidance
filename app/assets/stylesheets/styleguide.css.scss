@@ -1,0 +1,16 @@
+@import "colours";
+
+.styleguide-example {
+  background: $highlight-colour;
+}
+
+.sidebar-hr {
+  border-top: 10px solid $govuk-blue;
+}
+
+.page-layout {
+  .highlight-background {
+    background: $panel-colour;
+    height: 100px;
+  }
+}
