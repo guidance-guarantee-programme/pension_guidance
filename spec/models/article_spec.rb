@@ -34,7 +34,7 @@ RSpec.describe Article, type: :model do
     subject(:content) { article.content }
 
     let(:source) { File.read Pathname.new(__FILE__).dirname.parent.join('fixtures', "#{id}.md") }
-    let(:html) { File.read Pathname.new(__FILE__).dirname.parent.join('fixtures', "#{id}.html") }
+    let(:html) { Govspeak::Document.new(source).to_sanitized_html }
 
     it { is_expected.to eq html }
   end
