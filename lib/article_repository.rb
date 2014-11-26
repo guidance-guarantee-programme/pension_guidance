@@ -16,7 +16,7 @@ class ArticleRepository
   end
 
   def self.find(id)
-    self.new.find(id)
+    (new).find(id)
   end
 
   private
