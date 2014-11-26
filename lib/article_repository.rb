@@ -10,7 +10,7 @@ class ArticleRepository
   def find(id)
     file = path(id)
 
-    raise ArticleNotFound unless file.exist?
+    fail ArticleNotFound unless file.exist?
 
     Article.new(id, File.read(file))
   end
