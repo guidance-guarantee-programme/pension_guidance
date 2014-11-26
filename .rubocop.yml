@@ -6,3 +6,7 @@ Documentation:
 
 Metrics/LineLength:
   Max: 120
+
+Style/FileName:
+  Exclude:
+    - bin/scss-lint
