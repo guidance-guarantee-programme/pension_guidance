@@ -1,0 +1,9 @@
+{
+  "name": "pension_guidance",
+  "dependencies": {
+    "bower": "*"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  }
+}
