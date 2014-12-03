@@ -1,5 +1,5 @@
 {
-  "name": "pensions-guidance",
+  "name": "pension_guidance",
   "private": true,
   "dependencies": {
     "govuk_elements": "https://github.com/alphagov/govuk_elements.git#1e4f3d5e0cab2d7dc7e350190ab7b1c32a1f2aa9"
