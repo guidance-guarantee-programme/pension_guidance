@@ -49,7 +49,7 @@ To compare income drawdown products, you’ll need to:
 * make decisions about where you want to invest your money
 * check investment management and administration fees
 
-You’ll also need to know how your [pension pot will be taxed](/tax-on-your-pension/1) every time your take money out of it.
+You’ll also need to know how your pension pot will be taxed every time your take money out of it.
 
 %If your investments don't perform well and you take too much money from your pot, you could run out of retirement income.%
 
