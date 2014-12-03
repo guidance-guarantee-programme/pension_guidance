@@ -24,3 +24,7 @@ group :test do
   gem 'site_prism'
   gem 'scss-lint', '~> 0.30'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
