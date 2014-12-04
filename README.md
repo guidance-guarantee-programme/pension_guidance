@@ -11,7 +11,7 @@ Pension Guidance delivered by the Guidance Guarantee Programme.
 * [Git]
 * [Node.js][Node]
 * [NPM]
-* [Ruby 2.1.4][Ruby]
+* [Ruby 2.1.5][Ruby]
 
 
 ## Installation
