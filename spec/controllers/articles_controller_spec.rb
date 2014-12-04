@@ -15,10 +15,10 @@ RSpec.describe ArticlesController, type: :controller do
     end
 
     context 'non-existent article' do
-      it 'should be not found' do
-        get :show, id: 'non-existent-article'
-
-        expect(response).to be_not_found
+      it 'should raise exception' do
+        expect {
+          get :show, id: 'non-existent-article'
+        }.to raise_exception(ArticleRepository::ArticleNotFound)
       end
     end
   end
