@@ -4,6 +4,10 @@ AllCops:
 Documentation:
   Enabled: false
 
+Lint/HandleExceptions:
+  Exclude:
+    - Rakefile
+
 Metrics/LineLength:
   Max: 120
 
