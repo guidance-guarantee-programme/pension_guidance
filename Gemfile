@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.5'
 
 gem 'foreman'
+gem 'gaffe'
 gem 'govuk_frontend_toolkit'
 gem 'govuk_template'
 gem 'govspeak', '~> 3.2'
