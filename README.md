@@ -7,7 +7,6 @@ Pension Guidance delivered by the Guidance Guarantee Programme.
 
 ## Prerequisites
 
-* [Bower]
 * [Bundler]
 * [Git]
 * [Node.js][Node]
@@ -29,10 +28,10 @@ Make sure all Ruby dependencies are available to the application:
 $ bundle install
 ```
 
-Make sure all Bower packages are available to the application:
+Make sure all Node.js dependencies are available to the application:
 
 ```sh
-$ bower install
+$ npm install
 ```
 
 ## Usage
@@ -55,7 +54,6 @@ $ heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-mu
 
 Please see the [contributing guidelines](/CONTRIBUTING.md).
 
-[bower]: http://bower.io
 [bundler]: http://bundler.io
 [git]: http://git-scm.com
 [heroku]: https://www.heroku.com
