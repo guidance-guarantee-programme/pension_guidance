@@ -16,9 +16,7 @@ RSpec.describe ArticlesController, type: :controller do
 
     context 'non-existent article' do
       it 'should raise exception' do
-        expect {
-          get :show, id: 'non-existent-article'
-        }.to raise_exception(ArticleRepository::ArticleNotFound)
+        expect { get :show, id: 'non-existent-article' }.to raise_exception(ArticleRepository::ArticleNotFound)
       end
     end
   end
