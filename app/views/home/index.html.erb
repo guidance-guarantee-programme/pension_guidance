@@ -1,5 +1,27 @@
-<% content_for :content do %>
-  <ul class="t-article-links">
-    <li><%= link_to 'How to shop around for the best deal', article_path('how-to-shop-around-for-the-best-deal') %></li>
-  </ul>
-<% end %>
+<div class="l-home-header">
+  <%= render 'partials/header' %>
+</div>
+
+<div class="l-text">
+  <p class="lede">The Pension Guidance Service is a free government service which helps you
+    understand what you can do with your pension pot when you retire.</p>
+
+  <h2>Pensions are changing</h2>
+
+  <p>From April 2015 you'll have more freedom over how you take money from your pension pot.</p>
+
+  <p>These changes affect you <strong>if you're 55 or over</strong> and have a pension
+    based on how much has been paid into your pot (a <strong>defined contribution</strong>
+    pension).</p>
+
+  <p>This service explains what your options are, what's tax-free and what's not.</p>
+</div>
+
+<hr/>
+
+<h2>Read our guides</h2>
+<ul class="unstyled-list links">
+  <li class="unstyled-list__item t-article-links">
+    <%= link_to 'How to shop around for the best deal', article_path('how-to-shop-around-for-the-best-deal') %>
+  </li>
+</ul>
