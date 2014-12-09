@@ -9,8 +9,8 @@
 
 <% content_for :content do %>
   <div class="l-page-container">
-    <%= render 'partials/phase_banner' %>
-    <%= render 'styleguide/partials/breadcrumbs' %>
+    <%= render 'components/phase_banner' %>
+    <%= render 'styleguide/components/breadcrumbs' %>
 
     <main role="main" id="content" tabindex="-1">
       <div class="l-grid-row l-grid-row--main">
@@ -19,8 +19,8 @@
         </div>
         <div class="l-column-third l-column-third--sidebar">
           <div class="sidebar-hr"></div>
-          <%= render 'styleguide/partials/link_promo' %>
-          <%= render 'styleguide/partials/link_promo' %>
+          <%= render 'styleguide/components/link_promo' %>
+          <%= render 'styleguide/components/link_promo' %>
         </div>
       </div>
       <%= yield :layout_examples %>
