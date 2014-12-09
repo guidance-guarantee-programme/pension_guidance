@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   get 'styleguide(/:action)', to: 'styleguide'
 
-  root 'home#index'
+  root 'home#show'
 end
