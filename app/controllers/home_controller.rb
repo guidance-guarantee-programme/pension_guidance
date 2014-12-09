@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  layout 'home'
+  layout 'page'
 
   def show; end
 end

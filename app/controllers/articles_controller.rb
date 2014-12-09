@@ -7,8 +7,5 @@ class ArticlesController < ApplicationController
     @article = ArticleRepository.find(params[:id])
 
     respond_with @article
-
-  rescue ArticleRepository::ArticleNotFound
-    head 404
   end
 end
