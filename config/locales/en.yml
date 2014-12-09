@@ -1,5 +1,7 @@
 en:
   service:
     title: '%{page_title} - The Pension Guidance Service'
+    homepage:
+      title: 'Welcome to The Pension Guidance Service'
   styleguide:
     title: 'Style guide: %{page_title} - The Pension Guidance Service'
