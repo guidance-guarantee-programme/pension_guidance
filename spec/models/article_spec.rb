@@ -15,7 +15,9 @@ RSpec.describe Article, type: :model do
     context 'when the article has a level one header' do
       let(:source) { '# Level one header' }
 
-      it { is_expected.to eq 'Level one header' }
+      it 'returns the the level one header' do
+        is_expected.to eq 'Level one header'
+      end
     end
 
     context 'when the article has many level one headers' do
@@ -26,7 +28,9 @@ RSpec.describe Article, type: :model do
         GOVSPEAK
       end
 
-      it { is_expected.to eq 'First level one header' }
+      it 'returns the first level one header' do
+        is_expected.to eq 'First level one header'
+      end
     end
   end
 
@@ -36,7 +40,9 @@ RSpec.describe Article, type: :model do
     let(:source) { File.read Pathname.new(__FILE__).dirname.parent.join('fixtures', "#{id}.md") }
     let(:html) { Govspeak::Document.new(source).to_sanitized_html }
 
-    it { is_expected.to eq html }
+    it 'returns sanitized HTML' do
+      is_expected.to eq html
+    end
   end
 
 end
