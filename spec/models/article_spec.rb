@@ -37,7 +37,7 @@ RSpec.describe Article, type: :model do
   describe '#content' do
     subject(:content) { article.content }
 
-    let(:source) { File.read Pathname.new(__FILE__).dirname.parent.join('fixtures', "#{id}.md") }
+    let(:source) { File.read(File.expand_path("../../fixtures/#{id}.md", __FILE__)) }
     let(:html) { Govspeak::Document.new(source).to_sanitized_html }
 
     it 'returns sanitized HTML' do

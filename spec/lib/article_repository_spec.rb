@@ -1,7 +1,7 @@
 RSpec.describe ArticleRepository do
   subject(:article_repository) { ArticleRepository.new(repository) }
 
-  let(:repository) { Pathname.new(__FILE__).dirname.parent.join('fixtures') }
+  let(:repository) { Pathname.new(File.expand_path('../../fixtures', __FILE__)) }
 
   describe '#find' do
     subject(:find) { article_repository.find(id) }
