@@ -1,25 +1,27 @@
 class ArticleRepository
   ArticleNotFound = Class.new(StandardError)
 
-  REPOSITORY = Rails.root.join('content')
-
-  def initialize(repository = REPOSITORY)
-    @repository = Pathname.new(repository)
+  def initialize(dir = Rails.root.join('content'))
+    self.dir = dir
   end
 
   def find(id)
-    file = path(id)
+    path = path(id)
 
-    fail ArticleNotFound unless file.exist?
-
-    Article.new(id, File.read(file))
+    if File.exist?(path)
+      Article.new(id, File.read(path))
+    else
+      fail ArticleNotFound
+    end
   end
 
   private
 
-  attr_reader :repository
+  attr_accessor :dir
 
   def path(id)
-    repository.join("#{id.tr('-', '_')}.md")
+    param = "#{id.tr('-', '_')}.md"
+
+    File.expand_path(param, dir)
   end
 end
