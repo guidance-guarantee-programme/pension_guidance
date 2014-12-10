@@ -1,7 +1,8 @@
 {
   "name": "pension_guidance",
   "dependencies": {
-    "bower": "*"
+    "bower": "*",
+    "travis-notify-geckoboard": "*"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install"
