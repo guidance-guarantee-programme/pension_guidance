@@ -15,10 +15,6 @@ class ArticleRepository
     Article.new(id, File.read(file))
   end
 
-  def self.find(id)
-    (new).find(id)
-  end
-
   private
 
   attr_reader :repository

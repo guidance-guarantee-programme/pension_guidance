@@ -20,17 +20,4 @@ RSpec.describe ArticleRepository do
       end
     end
   end
-
-  describe '.find' do
-    subject(:find) { ArticleRepository.find(id) }
-
-    let(:id) { 'govspeak' }
-
-    before do
-      expect_any_instance_of(ArticleRepository).to receive(:repository).and_return(repository)
-    end
-
-    specify { expect(find.id).to eq id }
-  end
-
 end

@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   respond_to :html
 
   def show
-    @article = ArticleRepository.find(params[:id])
+    @article = ArticleRepository.new.find(params[:id])
 
     respond_with @article
   end

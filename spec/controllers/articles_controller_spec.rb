@@ -5,7 +5,7 @@ RSpec.describe ArticlesController, type: :controller do
       let(:article) { instance_double(Article) }
 
       before do
-        expect(ArticleRepository).to receive(:find).and_return(article)
+        expect_any_instance_of(ArticleRepository).to receive(:find).and_return(article)
 
         get :show, id: 'your-pension-pot-value'
       end
