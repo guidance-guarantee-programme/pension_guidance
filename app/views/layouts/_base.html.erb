@@ -5,6 +5,16 @@
   <!--[if IE 8]><%= stylesheet_link_tag 'pensions-guidance-ie8', media: 'screen' %><![endif]-->
 <% end %>
 
+<% content_for :header_class, 'with-proposition' %>
+
+<% content_for :proposition_header do %>
+  <div class="header-proposition">
+    <div class="content">
+      <a href="/" id="proposition-name">Pension Guidance Service</a>
+    </div>
+  </div>
+<% end %>
+
 <% content_for :content do %>
   <div class="l-page-container">
     <%= render 'components/phase_banner' %>
