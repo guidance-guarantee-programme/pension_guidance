@@ -1,5 +1,5 @@
 class ArticleRepository
-  class ArticleNotFound < StandardError; end
+  ArticleNotFound = Class.new(StandardError)
 
   REPOSITORY = Rails.root.join('content')
 
