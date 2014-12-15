@@ -10,7 +10,7 @@ You don’t have to buy one from your current provider. Moving your pension pot 
 
 The pack your provider sends you when you reach retirement age is likely to include information about their own products only. Research shows that 8 out of 10 people would have benefited from switching providers. 
 
-You can choose to shop around by yourself or get paid-for help from a [financial adviser](/getting-financial-advice/4).
+You can choose to shop around by yourself or get paid-for help from a financial adviser.
 
 ##Comparing annuities
 
