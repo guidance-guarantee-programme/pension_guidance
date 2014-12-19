@@ -3,6 +3,7 @@ language: ruby
 cache:
   bundler: true
   directories:
+    - node_modules
     - vendor/assets/bower_components
 env:
   global:
