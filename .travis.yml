@@ -4,6 +4,7 @@ cache:
   bundler: true
   directories:
     - node_modules
+    - tmp/cache/assets/test
     - vendor/assets/bower_components
 env:
   global:
