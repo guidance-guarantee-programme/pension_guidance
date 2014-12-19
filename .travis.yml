@@ -1,6 +1,9 @@
 sudo: false
 language: ruby
-cache: bundler
+cache:
+  bundler: true
+  directories:
+    - vendor/assets/bower_components
 env:
   global:
     - secure: "gBNL4RkCwf9ExKFVlnBBr6i/bY1xQydNoZ1xneXsmeqCwdqmuJMaZKJioLI/U2IJJjay50y1dr9X1ZuKRdC3Zrv0VTW5k77T0fX4AcqP0nAxz5Y0UyEE8VB0UZQMoZgpm+xT7QPNaJZqNTl0uBzADJzMyaWBhWNtwOGOfsOR0XY="
