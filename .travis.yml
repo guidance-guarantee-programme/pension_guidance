@@ -12,8 +12,6 @@ env:
     - secure: "FbiGhJvoeOhQb4Ms+eQ9zRzJmBDBvuJySdSvhJ/ksulHRjpPLk/MQKezHH7XrveqKztrl5hTapjSWe+BdXlvPQelCVycXD4BjDrNodJvuBCqgRbvh6sQRZagxSuCqRpfbM35xrIgDnkB7eVVz/NBqm7HzI4rHwmxrtcdNYkOTvw="
 node_js:
   - "0.10"
-rvm:
-  - 2.1.5
 before_script:
   - npm install
 after_script:
