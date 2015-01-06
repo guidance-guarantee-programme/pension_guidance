@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   resources :articles, only: [:show]
 
-  get 'styleguide/pages/article', to: 'styleguide#pages_article'
-  get 'styleguide/pages/homepage', to: 'styleguide#pages_homepage'
+  get 'styleguide/pages/article', controller: 'styleguide#pages_article'
+  get 'styleguide/pages/homepage', controller: 'styleguide#pages_homepage'
 
-  get 'styleguide(/:action)', to: 'styleguide'
+  get 'styleguide(/:action)', controller: 'styleguide'
 
   root 'home#show'
 end
