@@ -1,33 +1,24 @@
 #Know your pension type
 
-A pension is a way to save money while you’re working to give you an income later in your life. 
+You can get a pension from personal or workplace schemes you pay into and the government. 
 
-You can get a pension from personal or workplace schemes you pay into and the government. The money you receive from your pension is known as retirement income.
+Along with the State Pension, there are 2 main types of pension.
 
-You can begin to take money from your pension when you retire and [you can choose how you take it](/articles/what-you-can-do-with-your-pension-pot). This is the stage at which you can make a decision about how you want to receive your retirement income.
+##Defined contribution
 
-You don’t have to retire to take money from your pension. You can normally do this from the age of 55.
+A personal or workplace pension based on how much money has been paid into your pot.
 
-##Main pension types
+When you take money from a defined contribution pension you get back the money you (and sometimes your employer) saved into it over the years, plus any investment returns your money earned.
 
-Along with the State Pension, there are 2 main types of pension:
+##Defined benefit
 
-- a pension based on how much has been paid into your pot (this is known as defined contribution) 
-- a pension based on your salary near retirement (this is known as defined benefit) 
+A type of workplace pension based on your salary and length of time with your employer.
 
-##How much you get
+A defined benefit pension gives you an income based on your salary, length of service and a calculation by your employer.
 
-For most pensions based on how much has been paid into your pot, what you get depends on:
+With defined contribution pensions, you decide how you take your pension money - with defined benefit pensions, your employer gives you a certain amount each year when you retire. 
 
-- the amount you’ve paid in 
-- the length of time the money’s invested 
-- how well the pension fund’s investments have done 
-
-For pensions based on your salary near retirement, how much you get depends on:
-
-- the number of years you’ve worked for the employer 
-- your salary (this could be your final salary or your average salary across your career with the employer) 
-- a formula used by your employer to calculate your retirement income
+^Pension Wise only provides guidance on what you can do with your defined contribution pension.^
 
 ##The State Pension
 
@@ -36,3 +27,23 @@ The pension you get from the government is called the State Pension. You get it 
 The most you can currently get from the basic State Pension is £113.10 per week. You don’t normally get it automatically - you have to [claim the State Pension](https://www.gov.uk/state-pension/how-to-claim).
 
 If you reach State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension).
+
+##How much you get from each pension type
+
+For most defined contribution pensions, how much you get depends on:
+
+- the amount you’ve paid in
+- the length of time the money’s invested
+- how well the pension fund’s investments have done
+
+For defined benefit pensions, how much you get depends on:
+
+- the number of years you’ve worked for the employer
+- your salary (this could be your final salary or your average salary across your career with the employer)
+- a formula used by your employer to calculate your retirement income
+
+##When you can take your pension money
+
+You don’t have to retire to take money from your pension. You can normally start doing this from the age of 55.
+
+This is when you can [choose how you take your money](/articles/what-you-can-do-with-your-pension-pot) to help provide you with an income throughout your retirement.
