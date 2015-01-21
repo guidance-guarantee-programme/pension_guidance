@@ -8,8 +8,8 @@ Bundler.require(*Rails.groups)
 
 module PensionGuidance
   class Application < Rails::Application
-    config.autoload_paths << Rails.root.join('lib')
-
     config.action_dispatch.rescue_responses.merge! 'ArticleRepository::ArticleNotFound' => :not_found
+    config.autoload_paths << Rails.root.join('lib')
+    config.middleware.use Rack::Deflater
   end
 end
