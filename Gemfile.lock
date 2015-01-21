@@ -219,6 +219,7 @@ DEPENDENCIES
   govspeak (~> 3.2)
   govuk_frontend_toolkit
   govuk_template
+  kgio
   newrelic_rpm
   puma
   rack-contrib
