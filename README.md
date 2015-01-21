@@ -22,16 +22,10 @@ Clone the repository:
 $ git clone https://github.com/guidance-guarantee-programme/pension-guidance.git
 ```
 
-Make sure all Ruby dependencies are available to the application:
+Setup the application:
 
 ```sh
-$ bundle install
-```
-
-Make sure all Node.js dependencies are available to the application:
-
-```sh
-$ npm install
+$ ./bin/setup
 ```
 
 ## Usage
