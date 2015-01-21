@@ -6,7 +6,6 @@ require 'rspec/rails'
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 RSpec.configure do |config|
-
   config.default_formatter = 'doc' if config.files_to_run.one?
   config.order = :random
   config.profile_examples = 10

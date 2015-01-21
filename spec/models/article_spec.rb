@@ -44,5 +44,4 @@ RSpec.describe Article, type: :model do
       is_expected.to eq html
     end
   end
-
 end

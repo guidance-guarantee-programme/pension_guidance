@@ -1,5 +1,4 @@
 RSpec.describe ArticlesController, type: :controller do
-
   describe 'GET show' do
     context 'existing article' do
       let(:article) { instance_double(Article) }
@@ -20,5 +19,4 @@ RSpec.describe ArticlesController, type: :controller do
       end
     end
   end
-
 end
