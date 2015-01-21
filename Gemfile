@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.0'
 
+gem 'bugsnag'
 gem 'foreman'
 gem 'gaffe'
 gem 'govspeak', '~> 3.2'
