@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/guidance-guarantee-programme/pension_guidance.svg)](https://travis-ci.org/guidance-guarantee-programme/pension_guidance)
 
-Pension Guidance delivered by the Guidance Guarantee Programme.
+Pension guidance from [Pension Wise].
 
 
 ## Prerequisites
@@ -50,4 +50,5 @@ Please see the [contributing guidelines](/CONTRIBUTING.md).
 [heroku]: https://www.heroku.com
 [node]: http://nodejs.org
 [npm]: https://www.npmjs.org
+[pension wise]: https://www.gov.uk/pensionwise
 [ruby]: http://www.ruby-lang.org/en
