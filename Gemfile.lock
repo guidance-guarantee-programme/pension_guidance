@@ -100,6 +100,7 @@ GEM
     minitest (5.5.1)
     multi_json (1.10.1)
     multi_test (0.1.1)
+    newrelic_rpm (3.9.9.275)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
     parser (2.2.0.2)
@@ -219,6 +220,7 @@ DEPENDENCIES
   govspeak (~> 3.2)
   govuk_frontend_toolkit
   govuk_template
+  newrelic_rpm
   rails (= 4.2.0)
   rails_12factor
   responders (~> 2.0)
