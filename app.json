@@ -7,7 +7,6 @@
     }
   },
   "addons": [
-    "bugsnag:sagittaron",
     "fastly:fast",
     "logentries:starter",
     "newrelic:stark"
