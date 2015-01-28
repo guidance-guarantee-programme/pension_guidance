@@ -1,6 +1,6 @@
 module Pages
-  class Article < SitePrism::Page
-    set_url '/articles{/id}'
-    set_url_matcher %r{/articles/\w+}
+  class Guide < SitePrism::Page
+    set_url '/guides{/id}'
+    set_url_matcher %r{/guides/\w+}
   end
 end

@@ -14,22 +14,22 @@ After do
   File.delete(@file)
 end
 
-When(/^I visit the (.*) guide$/) do |id|
+When(/^I visit the (.*) guide$/) do
   pending
 end
 
-When(/^I add an article written in govspeak$/) do
-  @article = Pages::Article.new
-  @article.load(id: File.basename(@file, '.md').tr('_', '-'))
+When(/^I add a guide written in govspeak$/) do
+  @guide = Pages::Guide.new
+  @guide.load(id: File.basename(@file, '.md').tr('_', '-'))
 end
 
-Then(/^the article appears on the website$/) do
-  expect(@article).to be_displayed
+Then(/^the guide appears on the website$/) do
+  expect(@guide).to be_displayed
 end
 
-Then(/^the page title corresponds to the title of the article$/) do
-  expect(@article.title).to include 'Think about your pension'
-  end
+Then(/^the page title corresponds to the title of the guide/) do
+  expect(@guide.title).to include 'Think about your pension'
+end
 
 Then(/^the guide exists$/) do
   pending

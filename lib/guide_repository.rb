@@ -1,5 +1,5 @@
-class ArticleRepository
-  ArticleNotFound = Class.new(StandardError)
+class GuideRepository
+  GuideNotFound = Class.new(StandardError)
 
   def initialize(dir = Rails.root.join('content'))
     self.dir = dir
@@ -9,9 +9,9 @@ class ArticleRepository
     path = path(id)
 
     if File.exist?(path)
-      Article.new(id, File.read(path))
+      Guide.new(id, File.read(path))
     else
-      fail ArticleNotFound
+      fail GuideNotFound
     end
   end
 

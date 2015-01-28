@@ -1,11 +1,11 @@
-class ArticlesController < ApplicationController
-  layout 'articles'
+class GuidesController < ApplicationController
+  layout 'guides'
 
   respond_to :html
 
   def show
-    @article = ArticleRepository.new.find(params[:id])
+    @guide = GuideRepository.new.find(params[:id])
 
-    respond_with @article
+    respond_with @guide
   end
 end

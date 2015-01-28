@@ -1,21 +1,21 @@
-RSpec.describe ArticlesController, type: :controller do
+RSpec.describe GuidesController, type: :controller do
   describe 'GET show' do
-    context 'existing article' do
-      let(:article) { instance_double(Article) }
+    context 'existing guide' do
+      let(:guide) { instance_double(Guide) }
 
       before do
-        expect_any_instance_of(ArticleRepository).to receive(:find).and_return(article)
+        expect_any_instance_of(GuideRepository).to receive(:find).and_return(guide)
 
         get :show, id: 'your-pension-pot-value'
       end
 
       specify { expect(response).to be_success }
-      specify { expect(assigns(:article)).to_not be_nil }
+      specify { expect(assigns(:guide)).to_not be_nil }
     end
 
-    context 'non-existent article' do
+    context 'non-existent guide' do
       it 'should raise exception' do
-        expect { get :show, id: 'non-existent-article' }.to raise_exception(ArticleRepository::ArticleNotFound)
+        expect { get :show, id: 'non-existent-guide' }.to raise_exception(GuideRepository::GuideNotFound)
       end
     end
   end

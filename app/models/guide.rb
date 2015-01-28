@@ -1,4 +1,4 @@
-class Article
+class Guide
   attr_reader :id, :source, :title, :content
 
   def initialize(id, source = '')

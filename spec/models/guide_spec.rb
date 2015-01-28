@@ -1,18 +1,18 @@
-RSpec.describe Article, type: :model do
-  subject(:article) { Article.new(id, source) }
+RSpec.describe Guide, type: :model do
+  subject(:guide) { Guide.new(id, source) }
 
   let(:id) { 'govspeak' }
 
   describe '#title' do
-    subject(:title) { article.title }
+    subject(:title) { guide.title }
 
-    context 'when the article has no level one headers' do
+    context 'when the guide has no level one headers' do
       let(:source) { '## No level one headers' }
 
       it { is_expected.to be_blank }
     end
 
-    context 'when the article has a level one header' do
+    context 'when the guide has a level one header' do
       let(:source) { '# Level one header' }
 
       it 'returns the the level one header' do
@@ -20,7 +20,7 @@ RSpec.describe Article, type: :model do
       end
     end
 
-    context 'when the article has many level one headers' do
+    context 'when the guide has many level one headers' do
       let(:source) do
         <<-GOVSPEAK.strip_heredoc
           # First level one header
@@ -35,7 +35,7 @@ RSpec.describe Article, type: :model do
   end
 
   describe '#content' do
-    subject(:content) { article.content }
+    subject(:content) { guide.content }
 
     let(:source) { File.read(File.expand_path("../../fixtures/#{id}.md", __FILE__)) }
     let(:html) { Govspeak::Document.new(source).to_sanitized_html }

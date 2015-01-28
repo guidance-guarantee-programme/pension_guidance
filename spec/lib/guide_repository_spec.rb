@@ -1,21 +1,21 @@
-RSpec.describe ArticleRepository do
-  subject(:article_repository) { ArticleRepository.new(source) }
+RSpec.describe GuideRepository do
+  subject(:guide_repository) { GuideRepository.new(source) }
 
   let(:source) { File.expand_path('../../fixtures', __FILE__) }
 
   describe '#find' do
-    subject(:find) { article_repository.find(id) }
+    subject(:find) { guide_repository.find(id) }
 
-    context 'non-existent article' do
+    context 'non-existent guide' do
       let(:id) { 'does-not-exist' }
 
-      specify { expect { find }.to raise_error(ArticleRepository::ArticleNotFound) }
+      specify { expect { find }.to raise_error(GuideRepository::GuideNotFound) }
     end
 
-    context 'existing article' do
+    context 'existing guide' do
       let(:id) { 'govspeak' }
 
-      it 'returns the article' do
+      it 'returns the guide' do
         expect(find.id).to eq id
       end
     end
