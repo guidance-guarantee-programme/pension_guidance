@@ -1,5 +1,5 @@
-When(/^I visit the homepage$/) do
-  @homepage = Pages::Homepage.new
+When(/^I visit the (?:homepage|Pension Wise website)$/) do
+  @homepage = Pages::Home.new
   @homepage.load
 end
 

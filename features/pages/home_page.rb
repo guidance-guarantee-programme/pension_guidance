@@ -1,5 +1,5 @@
 module Pages
-  class Homepage < SitePrism::Page
+  class Home < SitePrism::Page
     set_url '/'
 
     elements :links, '.t-article-links'
