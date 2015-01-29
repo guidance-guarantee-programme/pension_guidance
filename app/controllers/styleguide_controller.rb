@@ -6,6 +6,6 @@ class StyleguideController < ApplicationController
   end
 
   def pages_article
-    render layout: 'styleguide/full_width', template: 'styleguide/pages/article'
+    render layout: 'styleguide/full_width', template: 'styleguide/pages/guide'
   end
 end
