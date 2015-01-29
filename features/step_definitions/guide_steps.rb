@@ -1,5 +1,5 @@
 When(/^I visit a guide$/) do
-  step 'I visit the tax-you-pay-on-your-pension guide'
+  step 'I visit the tax guide'
 end
 
 When(/^I visit the (.*) guide$/) do |id|

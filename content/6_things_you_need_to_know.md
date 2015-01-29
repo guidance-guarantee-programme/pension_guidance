@@ -60,7 +60,7 @@ Consider costs that may arrive as you get older. These could include living or c
 
 Your income in retirement is taxed, just like it is when you’re in work.
 
-[More information on tax you pay on your pension.](/tax-you-pay-on-your-pension)
+[More information on tax you pay on your pension.](/tax)
 
 
 ###7. Work out your income
