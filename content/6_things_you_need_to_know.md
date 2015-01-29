@@ -69,7 +69,7 @@ Your income in retirement is taxed, just like it is when you’re in work.
 Add up income from your pension and elsewhere. Take away your regular costs and any tax you have to pay. Think about how your income and costs will change as you get older.
 
 
-Read our guides on [working out your retirement income](/calculate-your-retirement-income) and [how long your money needs to last](/how-long-your-money-needs-to-last) for more information.
+Read our guides on [working out your retirement income](/calculate-your-retirement-income) and [how long your money needs to last](/making-money-last) for more information.
 
 
 ##If you need more help
