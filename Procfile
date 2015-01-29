@@ -1,1 +1,1 @@
-web: ./bin/unicorn --listen $PORT
+web: bin/puma -C config/puma.rb
