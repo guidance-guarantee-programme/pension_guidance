@@ -8,13 +8,13 @@ Feature: Guides
     Then the guide is displayed
 
   Examples:
-    | id                                   |
-    | 6-things-you-need-to-know            |
-    | how-long-your-money-needs-to-last    |
-    | how-to-shop-around-for-the-best-deal |
-    | know-your-pension-type               |
-    | pension-pot-value                    |
-    | tax-you-pay-on-your-pension          |
+    | id                                |
+    | 6-things-you-need-to-know         |
+    | how-long-your-money-needs-to-last |
+    | know-your-pension-type            |
+    | pension-pot-value                 |
+    | shop-around                       |
+    | tax-you-pay-on-your-pension       |
 
   Scenario: Display guide title and heading
     When I visit a guide

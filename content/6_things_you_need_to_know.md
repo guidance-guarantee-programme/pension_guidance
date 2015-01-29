@@ -76,5 +76,5 @@ Read our guides on [working out your retirement income](/calculate-your-retireme
 
 
 - You can book a [free guidance appointment with a pensions expert.](/book-a-free-appointment)
-- Find out how to [shop around for the best deal on your options.](/shopping-around-for-the-best-deal)
+- Find out how to [shop around for the best deal on your options.](/shop-around)
 - Learn about [how to avoid pension scams.](/avoid-pension-scams)
