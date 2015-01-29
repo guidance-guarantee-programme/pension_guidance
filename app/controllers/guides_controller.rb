@@ -4,6 +4,6 @@ class GuidesController < ApplicationController
   def show
     @guide = GuideRepository.new.find(params[:id])
 
-    expires_in ENV['CACHE_MAX_AGE'] || 10.seconds, public: true
+    expires_in Rails.application.config.cache_max_age, public: true
   end
 end

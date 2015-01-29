@@ -1,22 +1,29 @@
 require 'spec_helper'
 
+cacheable_content = {
+  guide: '/pension-types',
+  home: '/'
+}
+
 RSpec.describe 'Caching', type: :request do
-  context 'requesting a guide' do
-    specify 'the response may be cached for 10 seconds by default' do
-      get '/pension-types'
+  cacheable_content.each do |page, path|
+    context "requesting a #{page} page" do
+      specify 'the response may be cached for 10 seconds by default' do
+        get path
 
-      expect(response.headers['Cache-Control']).to eq('max-age=10, public')
-    end
-
-    context 'when the environment specifies a `CACHE_MAX_AGE` seconds value' do
-      before do
-        ENV['CACHE_MAX_AGE'] = 1.hour.to_s
+        expect(response.headers['Cache-Control']).to eq('max-age=10, public')
       end
 
-      specify 'the response may be cached for `CACHE_MAX_AGE`' do
-        get '/pension-types'
+      context 'when the environment specifies a `CACHE_MAX_AGE` seconds value' do
+        before do
+          allow(Rails.application.config).to receive(:cache_max_age).and_return(1.hour.to_s)
+        end
 
-        expect(response.headers['Cache-Control']).to eq('max-age=3600, public')
+        specify 'the response may be cached for `CACHE_MAX_AGE`' do
+          get path
+
+          expect(response.headers['Cache-Control']).to eq('max-age=3600, public')
+        end
       end
     end
   end
