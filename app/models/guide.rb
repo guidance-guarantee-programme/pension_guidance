@@ -1,9 +1,13 @@
-class Article
+class Guide
   attr_reader :id, :source, :title, :content
 
   def initialize(id, source = '')
     @id = id
     @source = source
+  end
+
+  def slug
+    id.tr('_', '-')
   end
 
   def title

@@ -1,6 +1,6 @@
 #Know your pension type
 
-You can get a pension from personal or workplace schemes you pay into and the government. 
+You can get a pension from personal or workplace schemes you pay into and the government.
 
 Along with the State Pension, there are 2 main types of pension.
 
@@ -16,7 +16,7 @@ A type of workplace pension based on your salary and length of time with your em
 
 A defined benefit pension gives you an income based on your salary, length of service and a calculation by your employer.
 
-With defined contribution pensions, you decide how you take your pension money - with defined benefit pensions, your employer gives you a certain amount each year when you retire. 
+With defined contribution pensions, you decide how you take your pension money - with defined benefit pensions, your employer gives you a certain amount each year when you retire.
 
 ^Pension Wise only provides guidance on what you can do with your defined contribution pension.^
 
@@ -46,4 +46,4 @@ For defined benefit pensions, how much you get depends on:
 
 You don’t have to retire to take money from your pension. You can normally start doing this from the age of 55.
 
-This is when you can [choose how you take your money](/articles/what-you-can-do-with-your-pension-pot) to help provide you with an income throughout your retirement.
+This is when you can [choose how you take your money](/what-you-can-do-with-your-pension-pot) to help provide you with an income throughout your retirement.

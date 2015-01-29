@@ -4,11 +4,11 @@
 
 Whatever you decide to do with your pension pot, you don’t have to stay with your current pension provider.
 
-For example, one way to use your pension pot is to buy a guaranteed income for the rest of your life (an annuity). 
+For example, one way to use your pension pot is to buy a guaranteed income for the rest of your life (an annuity).
 
 You don’t have to buy one from your current provider. Moving your pension pot to another provider could give you access to a wider range of annuities and a higher income.
 
-The pack your provider sends you when you reach retirement age is likely to include information about their own products only. Research shows that 8 out of 10 people would have benefited from switching providers. 
+The pack your provider sends you when you reach retirement age is likely to include information about their own products only. Research shows that 8 out of 10 people would have benefited from switching providers.
 
 You can choose to shop around by yourself or get paid-for help from a financial adviser.
 
@@ -55,13 +55,13 @@ You’ll also need to know how your pension pot will be taxed every time your ta
 
 %If your investments don't perform well and you take too much money from your pot, you could run out of retirement income.%
 
-Getting an income drawdown product may involve transferring your pot to a different provider. If you're not confident with investing it may not be right for you. 
+Getting an income drawdown product may involve transferring your pot to a different provider. If you're not confident with investing it may not be right for you.
 
 You should consider speaking to a financial adviser before getting an income drawdown product.
 
 ##Getting financial advice
 
-You may wish to speak to a financial adviser to help you compare retirement income products. 
+You may wish to speak to a financial adviser to help you compare retirement income products.
 
 The more information you have prepared when you meet with one, the more you will benefit. This includes information about the value of your pension pot and other income.
 
@@ -69,7 +69,7 @@ Make sure your adviser is registered and approved by the FCA before you pay for 
 
 ###What a financial adviser will do
 
-An adviser will ask about your current financial position, your goals and how you feel about taking risks with your money. This will help them to recommend retirement income products that are right for you now and in the future. 
+An adviser will ask about your current financial position, your goals and how you feel about taking risks with your money. This will help them to recommend retirement income products that are right for you now and in the future.
 
 This list from the Financial Conduct Authority (FCA) explains what [an adviser might ask you](http://www.fca.org.uk/consumers/financial-services-products/investments/financial-advice/what-an-adviser-might-ask-you).
 
@@ -77,8 +77,8 @@ You should always ask an adviser if they’re independent or restricted. Restric
 
 ###Paying for financial advice
 
-Getting financial advice costs money and the fees vary. You need to know what fees and charges you’ll pay for advice and when you’ll be expected to pay. 
+Getting financial advice costs money and the fees vary. You need to know what fees and charges you’ll pay for advice and when you’ll be expected to pay.
 
 You’ll pay a one-off fee if you see the adviser once, or a regular fee if the advice is ongoing. You can start by finding out if there’s a fee for an initial consultation. Many offer this for free.
 
-Go to the Money Advice Service website where you can read more about [choosing a financial adviser](https://www.moneyadviceservice.org.uk/en/articles/choosing-a-financial-adviser).
+Go to the Money Advice Service website where you can read more about [choosing a financial adviser](https://www.moneyadviceservice.org.uk/en/guides/choosing-a-financial-adviser).
