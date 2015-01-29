@@ -1,80 +1,62 @@
-#7 things to get you started
-
-##Before you start
+#6 things you need to know
 
 You need to have a defined contribution pension - a pension based on how much has been paid into your pot - for these pension choices to apply to you. Check with your pension provider if you’re not sure what type of pension you have.
 
-[More information on understanding your pension type.](/pension-types)
 
-##Getting started
+[Know your pension type](/pension-types)
 
-###1. Check how much is in your pension pot
+
+##1. Check how much is in your pension pot
 
 You can ask your pension provider to tell you how much is in your pot. You can also look at information your provider has sent to you already, eg a pension statement.
 
-[More information on checking the value of your pension pot.](/pension-pot-value)
+[Check the value of your pension pot](/pension-pot-value)
 
 
-###2. Take time to make the right decision for you
+##2. Understand what you can do with your pension pot
 
-Everyone's circumstances are different. Don't rush any decisions about your pension pot.
+Think about which option suits you best. You don't need to take the first one offered to you by your pension provider.
 
-Remember that whichever option you take, you should have enough money to last through your retirement. If you have a partner or children, think about how your decision will affect them. If you're on benefits, these may be affected by when and how you take your pension.
+You can:
 
+- leave your pension pot untouched until you need the money - your pot could still grow
 
-###3. Add up your other income
+- get a guaranteed income (annuity) - you can take 25% of your pot tax free before buying an annuity
 
-As well as your pension pot, you could get income in other ways. These could include your State Pension paid to you by the government, as well as money from work, benefits, savings or investments.
+- get a flexible income (income drawdown) - a 25% tax-free lump sum is available if you take this option
 
-[More information on working out your retirement income.](/calculate-your-retirement-income)
+- take your whole pension pot as cash - 25% will be tax free
 
-
-###4. Understand what you can do with your pension pot
-
-
-You have several options to choose from. You can:
-
-- leave your pension pot untouched until you need the money
-
-- take your whole pension pot or smaller sums as cash - 25% will be tax free
-
-- take money out when you need it (income drawdown) - you can still get a 25% tax-free lump sum if you take this option
-
-- get a guaranteed income (annuity) - you can still take 25% of your pot tax free before buying an annuity with the rest
+- take smaller sums as cash - 25% of each sum you take will be tax free
 
 You can also mix these options. Check with your pension provider about which options they can offer you.
 
-[More information on what you can do with your pension pot.](/what-you-can-do-with-your-pension-pot#mix-your-pension-options)
+[What you can do with your pension pot](/pension-pot-options#mix-your-pension-options)
+
+##3. Plan how long your money needs to last
+Your costs and financial needs are likely to change during retirement. You need to think about when you'll start taking money from your pension pot and how much you'll need at different times.
+
+[How long your money needs to last](/making-money-last)
 
 
-###5. Estimate your costs
+##4. Work out how much you'll need
+How much income you have is likely to change as you get older. Work out how much money you'll get from your pension and from other income you have and how it'll cover your costs.
+
+[Work out how much money you'll have in retirement](/work-out-income)
 
 
-Consider costs that may arrive as you get older. These could include living or care costs. Remember that costs can rise or fall over time, eg as you get older you may need to spend more on care costs.
-
-[More information on estimating your retirement costs.](/calculate-your-retirement-income)
-
-
-###6. Don't forget tax
-
-
+##5. Remember tax
 Your income in retirement is taxed, just like it is when you’re in work.
 
-[More information on tax you pay on your pension.](/tax)
+[Tax you pay on your pension](/tax)
 
 
-###7. Work out your income
+##6. Take your time to shop around
+Remember that you don't have to stay with your current pension provider. People usually benefit from shopping around and comparing products. The pack your provider sends you when you reach retirement age is likely to only include information about their own products.
 
-
-Add up income from your pension and elsewhere. Take away your regular costs and any tax you have to pay. Think about how your income and costs will change as you get older.
-
-
-Read our guides on [working out your retirement income](/calculate-your-retirement-income) and [how long your money needs to last](/making-money-last) for more information.
+[How to shop around for the best deal](/shop-around)
 
 
 ##If you need more help
 
-
-- You can book a [free guidance appointment with a pensions expert.](/book-a-free-appointment)
-- Find out how to [shop around for the best deal on your options.](/shop-around)
-- Learn about [how to avoid pension scams.](/avoid-pension-scams)
+- Learn about [how to avoid pension scams](/scams)
