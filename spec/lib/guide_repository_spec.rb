@@ -20,4 +20,10 @@ RSpec.describe GuideRepository do
       end
     end
   end
+
+  describe '#all' do
+    it 'returns an array of guides' do
+      expect(guide_repository.all.first.id).to eq('govspeak')
+    end
+  end
 end

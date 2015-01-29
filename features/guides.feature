@@ -1,4 +1,3 @@
-@wip
 Feature: Guides
   As a visitor to the website
   I want informative content on the website
@@ -6,13 +5,18 @@ Feature: Guides
 
   Scenario Outline: Load a guide
     When I visit the <id> guide
-    Then the guide exists
+    Then the guide is displayed
 
   Examples:
     | id                                   |
-    | 7_things_to_get_you_started          |
-    | check_the_value_of_your_pension_pot  |
-    | how_long_your_money_needs_to_last    |
-    | how_to_shop_around_for_the_best_deal |
-    | know_your_pension_type               |
-    | tax_you_pay_on_your_pension          |
+    | 7-things-to-get-you-started          |
+    | check-the-value-of-your-pension-pot  |
+    | how-long-your-money-needs-to-last    |
+    | how-to-shop-around-for-the-best-deal |
+    | know-your-pension-type               |
+    | tax-you-pay-on-your-pension          |
+
+  Scenario: Display guide title and heading
+    When I visit a guide
+    Then the page title corresponds to the title of the guide
+    And the page heading corresponds to the title of the guide

@@ -6,6 +6,10 @@ class Guide
     @source = source
   end
 
+  def slug
+    id.tr('_', '-')
+  end
+
   def title
     @title ||= govspeak.headers.find { |header| header.level == 1 }.try(:text)
   end

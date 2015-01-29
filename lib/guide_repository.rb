@@ -15,6 +15,12 @@ class GuideRepository
     end
   end
 
+  def all
+    Dir["#{dir}/**/*.md"].each_with_object([]) do |path, result|
+      result << Guide.new(File.basename(path, '.md'), File.read(path))
+    end
+  end
+
   private
 
   attr_accessor :dir

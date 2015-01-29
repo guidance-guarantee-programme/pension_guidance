@@ -1,5 +1,13 @@
 RSpec.describe GuidesController, type: :controller do
   describe 'GET show' do
+    before do
+      routes.draw { get '/:id', to: 'guides#show' }
+    end
+
+    after do
+      Rails.application.routes_reloader.reload!
+    end
+
     context 'existing guide' do
       let(:guide) { instance_double(Guide) }
 

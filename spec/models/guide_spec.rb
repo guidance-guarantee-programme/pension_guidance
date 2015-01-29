@@ -3,6 +3,15 @@ RSpec.describe Guide, type: :model do
 
   let(:id) { 'govspeak' }
 
+  describe '#slug' do
+    let(:id) { 'a_pension_guide' }
+    let(:source) { double }
+
+    it 'returns a slug for the guide' do
+      expect(guide.slug).to eq('a-pension-guide')
+    end
+  end
+
   describe '#title' do
     subject(:title) { guide.title }
 

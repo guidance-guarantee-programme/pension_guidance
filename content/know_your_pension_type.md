@@ -46,4 +46,4 @@ For defined benefit pensions, how much you get depends on:
 
 You don’t have to retire to take money from your pension. You can normally start doing this from the age of 55.
 
-This is when you can [choose how you take your money](/guides/what-you-can-do-with-your-pension-pot) to help provide you with an income throughout your retirement.
+This is when you can [choose how you take your money](/what-you-can-do-with-your-pension-pot) to help provide you with an income throughout your retirement.

@@ -12,7 +12,7 @@ If you’re less than 4 months away from your retirement age and haven’t got a
 
 You may have paid into more than one pension pot. You’ll need to contact each pension provider to find out the value of each one.
 
-You’ll probably need to know the total value of your pension pot(s) if you want to [talk to an expert](/guides/book-a-free-appointment) or get useful help on what to do with it.
+You’ll probably need to know the total value of your pension pot(s) if you want to [talk to an expert](/book-a-free-appointment) or get useful help on what to do with it.
 
 ##Check which pensions schemes you’ve paid into
 
