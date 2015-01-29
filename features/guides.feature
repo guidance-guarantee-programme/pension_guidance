@@ -10,9 +10,9 @@ Feature: Guides
   Examples:
     | id                        |
     | 6-things-you-need-to-know |
-    | know-your-pension-type    |
     | making-money-last         |
     | pension-pot-value         |
+    | pension-types             |
     | shop-around               |
     | tax                       |
 

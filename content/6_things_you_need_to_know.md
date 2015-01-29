@@ -4,7 +4,7 @@
 
 You need to have a defined contribution pension - a pension based on how much has been paid into your pot - for these pension choices to apply to you. Check with your pension provider if you’re not sure what type of pension you have.
 
-[More information on understanding your pension type.](/know-your-pension-type)
+[More information on understanding your pension type.](/pension-types)
 
 ##Getting started
 
