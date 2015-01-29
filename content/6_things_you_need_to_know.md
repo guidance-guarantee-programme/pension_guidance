@@ -12,7 +12,7 @@ You need to have a defined contribution pension - a pension based on how much ha
 
 You can ask your pension provider to tell you how much is in your pot. You can also look at information your provider has sent to you already, eg a pension statement.
 
-[More information on checking the value of your pension pot.](/check-the-value-of-your-pension-pot)
+[More information on checking the value of your pension pot.](/pension-pot-value)
 
 
 ###2. Take time to make the right decision for you

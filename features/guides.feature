@@ -10,10 +10,10 @@ Feature: Guides
   Examples:
     | id                                   |
     | 6-things-you-need-to-know            |
-    | check-the-value-of-your-pension-pot  |
     | how-long-your-money-needs-to-last    |
     | how-to-shop-around-for-the-best-deal |
     | know-your-pension-type               |
+    | pension-pot-value                    |
     | tax-you-pay-on-your-pension          |
 
   Scenario: Display guide title and heading
