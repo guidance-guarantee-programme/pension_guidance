@@ -4,11 +4,11 @@ Feature: Guides
   So that I can educate myself about pensions and retirement
 
   Scenario Outline: Load a guide
-    When I visit the <id> guide
+    When I visit the <Slug> guide
     Then the guide is displayed
 
   Examples:
-    | id                        |
+    | Slug                      |
     | 6-things-you-need-to-know |
     | making-money-last         |
     | pension-pot-value         |

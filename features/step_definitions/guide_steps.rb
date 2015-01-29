@@ -2,9 +2,9 @@ When(/^I visit a guide$/) do
   step 'I visit the tax guide'
 end
 
-When(/^I visit the (.*) guide$/) do |id|
+When(/^I visit the (.*) guide$/) do |slug|
   @guide = Pages::Guide.new
-  @guide.load(id: id)
+  @guide.load(slug: slug)
 end
 
 Then(/^the guide is displayed$/) do
