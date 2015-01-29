@@ -9,7 +9,7 @@ Feature: Guides
 
   Examples:
     | id                                   |
-    | 7-things-to-get-you-started          |
+    | 6-things-you-need-to-know            |
     | check-the-value-of-your-pension-pot  |
     | how-long-your-money-needs-to-last    |
     | how-to-shop-around-for-the-best-deal |
