@@ -32,6 +32,6 @@ group :test do
   gem 'scss-lint', '~> 0.30'
 end
 
-group :production do
+group :staging, :production do
   gem 'rails_12factor'
 end
