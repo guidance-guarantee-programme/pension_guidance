@@ -1,0 +1,89 @@
+.pager {
+  @extend %contain-floats;
+  @extend %unstyled-list;
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+
+  a:focus,
+  a:hover {
+    background: #f8f8f8;
+    outline: none;
+  }
+}
+
+.pager__item {
+  @extend %unstyled-list__item;
+  width: 44%;
+
+  a:before {
+    display: block;
+    width: 30px;
+    height: 38px;
+    content: " ";
+  }
+}
+
+.pager__item--previous {
+  float: left;
+
+  a {
+    padding: .75em 0 .75em 3em;
+  }
+
+  a:before {
+    background: transparent image-url("css/arrow-sprite.png") no-repeat -20px -11px;
+    margin: -4px 0 0 -32px;
+    float: left;
+  }
+}
+
+.pager__item--next {
+  float: right;
+  text-align: right;
+
+  a {
+    padding: .75em 3em .75em 0;
+  }
+
+  a:before {
+    background: transparent image-url("css/arrow-sprite.png") no-repeat -102px -11px;
+    margin: -4px -32px 0 0;
+    float: right;
+  }
+}
+
+.pager__label {
+  display: block;
+  font-size: 27px;
+}
+
+.pager__title {
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.pager__number {
+  position: relative;
+  left: -10px;
+  top: 1px;
+
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 26px;
+  box-sizing: border-box;
+  padding-top: 2px;
+
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  background: #e9ebec;
+
+  @include ie-lte(8) {
+    display: none;
+  }
+}
