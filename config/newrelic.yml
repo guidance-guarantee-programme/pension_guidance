@@ -3,10 +3,6 @@
 # .NET, PHP, Python and Node applications with deep visibility and low
 # overhead.  For more information, visit www.newrelic.com.
 #
-# Generated January 22, 2015
-#
-# This configuration file is custom generated for HM Treasury
-
 
 # Here are the settings that are common to all environments
 common: &default_settings
@@ -16,6 +12,10 @@ common: &default_settings
   # account.  This key binds your Agent's data to your account in the
   # New Relic service.
   license_key: <%= ENV['NEW_RELIC_LICENSE_KEY'] %>
+
+  # Enterprise high security
+  # See https://docs.newrelic.com/docs/accounts-partnerships/accounts/security/high-security
+  high_security: true
 
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
