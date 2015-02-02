@@ -1,0 +1,44 @@
+.journey-overview {
+  margin-top: 60px;
+}
+
+.journey-overview__item {
+  border-left: 2px solid #97c033;
+  margin-left: 20px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  position: relative;
+
+  &.last-child {
+    border-color: #fff;
+  }
+}
+
+.journey-overview__heading {
+  margin-top: 0;
+}
+
+.journey-overview__number {
+  position: absolute;
+  top: -14px;
+  left: -26px;
+  display: block;
+  width: 51px;
+  height: 51px;
+  text-indent: -900em;
+
+  @include ie(6) {
+    left: -52px;
+  }
+}
+
+@for $i from 1 through 9 {
+  .journey-overview__number--#{$i} {
+    background-image: image-url("css/steps/51x51-grey/#{$i}.png");
+
+    @include device-pixel-ratio() {
+      background-image: image-url("css/steps/102x102-grey/#{$i}.png");
+      background-size: 51px 51px;
+    }
+  }
+}

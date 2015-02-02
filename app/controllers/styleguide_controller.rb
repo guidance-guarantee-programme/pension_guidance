@@ -1,5 +1,5 @@
 class StyleguideController < ApplicationController
-  layout 'styleguide/default'
+  layout 'styleguide/full_width'
 
   def pages_homepage
     render layout: 'styleguide/full_width', template: 'styleguide/pages/homepage'
