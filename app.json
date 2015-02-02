@@ -1,6 +1,7 @@
 {
   "env": {
     "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
+    "NEW_RELIC_LOG": "STDOUT",
     "SECRET_KEY_BASE": {
       "description": "Cryptographically secure secret key (typically used to generate a secret for cookie sessions)",
       "generator": "secret"
