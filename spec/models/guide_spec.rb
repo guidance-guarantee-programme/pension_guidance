@@ -28,4 +28,10 @@ RSpec.describe Guide, type: :model do
       expect(guide.slug).to eq('the-test-guide')
     end
   end
+
+  describe '#==' do
+    it 'considers two guides with the same ID as equal' do
+      expect(described_class.new('foo')).to eq(described_class.new('foo'))
+    end
+  end
 end

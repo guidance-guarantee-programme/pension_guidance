@@ -7,6 +7,10 @@ class Guide
     @description = description
   end
 
+  def ==(other)
+    id == other.id
+  end
+
   def slug
     id.tr('_', '-')
   end
