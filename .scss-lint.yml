@@ -56,6 +56,11 @@ linters:
   HexValidation:
     enabled: true
 
+  IdSelector:
+      enabled: true
+      exclude:
+        - app/assets/stylesheets/components/_global-header-bar.scss
+
   IdWithExtraneousSelector:
     enabled: true
 

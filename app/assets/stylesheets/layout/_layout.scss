@@ -1,12 +1,4 @@
-.l-page-container {
-  @extend %site-width-container;
-  @extend %contain-floats;
-
-  @include media(desktop) {
-    padding-bottom: $gutter*3;
-  }
-}
-
+/*---------------- Grid ----------------- */
 .l-grid-row {
   @extend %grid-row;
 }
@@ -27,6 +19,7 @@
   @include grid-column(2/3);
 }
 
+/* --- modified grid --- */
 .l-grid-row--main {
   margin-top: 4px; // align h1s with gov.uk
 }
@@ -35,12 +28,37 @@
   margin-top: 2em; // align blue bar with gov.uk
 }
 
-.l-home-header {
-  margin-top: 30px;
-  margin-bottom: 20px;
+
+/*---------------- Page structure ----------------- */
+.l-masthead {
+  background: #f4f5f5;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
+.l-banner-container {
+  @extend %site-width-container;
+  @extend %contain-floats;
+}
+
+.l-page-container {
+  @extend %site-width-container;
+  @extend %contain-floats;
+
+  @include media(desktop) {
+    padding-bottom: $gutter*3;
+  }
+}
+
+/*---------------- Common ----------------- */
 .l-text {
   max-width: 30em;
 }
 
+/*---------------- Page Specific ----------------- */
+/* --- homepage --- */
+.l-home-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

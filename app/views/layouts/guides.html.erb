@@ -1,15 +1,26 @@
 <%= render layout: 'layouts/base' do %>
-
-  <%= render 'components/breadcrumbs' %>
-
-  <div class="l-grid-row">
-    <div class="l-column-two-thirds">
-      <main role="main" id="content" tabindex="-1">
-        <article role="article" class="text">
-          <%= yield %>
-        </article>
-      </main>
+  <div class="l-masthead">
+    <div class="l-banner-container">
+      <%= render 'components/phase_banner' %>
+      <a href="/">
+        <img src="<%= image_path('logo-content.png') %>"
+             alt="Pension Wise" width="155" height="49" />
+      </a>
     </div>
   </div>
 
+  <div class="l-page-container">
+    <%= render 'components/breadcrumbs' %>
+
+    <div class="l-grid-row">
+      <div class="l-column-two-thirds">
+        <main role="main" id="content" tabindex="-1">
+          <article role="article" class="text">
+            <%= yield %>
+          </article>
+        </main>
+      </div>
+    </div>
+
+  </div>
 <% end %>
