@@ -1,0 +1,72 @@
+<% content_for(:page_title, t('styleguide.title', page_title: 'Journey Page')) %>
+
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <article role="article" class="text">
+      <h1 id="what-you-can-do-with-your-pension-pot">What you can do with your
+        pension pot</h1>
+
+      <p>You can decide how to take the money from your pension pot when you
+        retire. It doesn’t matter if your pot comes from a private pension you
+        set up yourself, a workplace pension you paid into, or both.</p>
+
+      <p>Your pension must be a defined contribution pension, which means it’s
+        based on how much has been paid into your pot, not your salary near
+        retirement.</p>
+
+      <div role="note" aria-label="Information" class="application-notice info-notice">
+        <p>You don’t have to make a decision now. You can leave your pension pot
+          untouched until you need the money.</p>
+      </div>
+
+      <h2 id="once-youre-ready-to-make-a-decision">Once you’re ready to make a
+        decision</h2>
+
+      <p>You can usually take 25% of your defined contribution pension pot tax
+        free.</p>
+
+      <p>The remaining 75% you can take as:</p>
+
+      <ul>
+        <li>an annuity - you buy an insurance policy that gives you an income
+          for the rest of your life
+        </li>
+        <li>income drawdown - your pot stays invested while you take money from
+          it
+        </li>
+        <li>cash</li>
+      </ul>
+
+      <p>You can also mix these 3 options or just take part of your pension
+        pot.</p>
+    </article>
+
+    <%= render 'styleguide/components/pager' %>
+    
+  </div>
+  <div class="l-column-third l-column-third--sidebar">
+    <div class="sidebar-hr"></div>
+
+    <div class="link-promo">
+      <h2 class="link-promo__heading">6 things you need to know</h2>
+      <a href="#insert_url">Read the 6 things overview</a>
+      <%= render 'styleguide/components/journey_nav' %>
+    </div>
+
+    <div class="link-promo">
+      <h2 class="link-promo__heading">Elsewhere on Pension Wise</h2>
+      <ul class="link-promo__list">
+        <li class="link-promo__item">
+          <a href="#insert_url">
+            If you're on benefits
+          </a>
+        </li>
+        <li class="link-promo__item">
+          <a href="#insert_url">
+            How to avoid a pension scam
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
