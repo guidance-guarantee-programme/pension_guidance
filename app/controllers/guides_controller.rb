@@ -1,6 +1,8 @@
 class GuidesController < ApplicationController
   layout 'guides'
 
+  decorates_assigned :guide, with: GuideDecorator
+
   def show
     @guide = GuideRepository.new.find(params[:id])
 
