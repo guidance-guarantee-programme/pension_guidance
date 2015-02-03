@@ -112,7 +112,6 @@ GEM
       rack (>= 0.9.1)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rack-timeout (0.1.1)
     rails (4.2.0)
       actionmailer (= 4.2.0)
       actionpack (= 4.2.0)
@@ -220,7 +219,6 @@ DEPENDENCIES
   newrelic_rpm
   puma
   rack-contrib
-  rack-timeout
   rails (= 4.2.0)
   rails_12factor
   rspec-rails (~> 3.0)
