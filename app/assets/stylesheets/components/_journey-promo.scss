@@ -1,0 +1,18 @@
+.journey-promo__heading {
+  margin-top: 0;
+}
+
+.journey-promo__anchor:link,
+.journey-promo__anchor:visited {
+  @include core-16;
+  color: #000;
+  text-decoration: none;
+}
+
+.journey-promo__anchor:hover {
+  text-decoration: underline;
+}
+
+.journey-promo__cta-link {
+  @include core-24;
+}
