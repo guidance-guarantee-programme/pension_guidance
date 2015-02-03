@@ -1,7 +1,7 @@
 en:
   service:
-    title: '%{page_title} - Pension Guidance Service'
+    title: '%{page_title} - Pension Wise'
     homepage:
-      title: 'Pension Guidance Service'
+      title: 'Pension Wise'
   styleguide:
-    title: 'Style guide: %{page_title} - Pension Guidance Service'
+    title: 'Style guide: %{page_title} - Pension Wise'
