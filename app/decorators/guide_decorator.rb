@@ -1,5 +1,9 @@
 class GuideDecorator < Draper::Decorator
-  delegate :slug, :description
+  delegate :id, :slug, :description
+
+  def url
+    "/#{slug}"
+  end
 
   def title
     @title ||= govspeak.headers.find { |header| header.level == 1 }.try(:text)

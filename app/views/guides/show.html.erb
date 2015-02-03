@@ -1,4 +1,15 @@
 <% content_for(:page_title, t('service.title', page_title: guide.title)) %>
 <% content_for(:meta_description, guide.description) %>
 
+<% content_for :sidebar do %>
+  <div class="link-promo">
+    <h2 class="link-promo__heading">6 things you need to know</h2>
+
+    <p>
+      <a href="/6-things-you-need-to-know">Read the 6 things overview</a>
+    </p>
+    <%= render 'components/journey_nav', journey: @journey, current_step: guide %>
+  </div>
+<% end if @journey.include?(guide) %>
+
 <%= guide.content %>
