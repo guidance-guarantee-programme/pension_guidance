@@ -83,7 +83,7 @@ linters:
 
   NestingDepth:
     enabled: true
-    max_depth: 2
+    max_depth: 3
 
   PlaceholderInExtend:
     enabled: true
@@ -110,8 +110,9 @@ linters:
   SelectorFormat:
     enabled: true
     convention: BEM
-    exclude: # multiple hyphens currently fail. I need to write a regex for our BEM syntax
+    exclude: # multiple hyphens currently fail. Need a regex for our BEM syntax
       - app/assets/stylesheets/layout/_layout.scss
+      - app/assets/stylesheets/components/_pager.scss
 
   Shorthand:
     enabled: true

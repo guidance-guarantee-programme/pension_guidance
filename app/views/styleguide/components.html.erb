@@ -2,6 +2,121 @@
 
 <h1>Component Library</h1>
 
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <h2>Pager</h2>
+    <%= render 'styleguide/components/pager' %>
+
+
+    <h2>Journey Overview</h2>
+    <%= render 'styleguide/components/journey_overview' %>
+  </div>
+</div>
+
+
+<h2>Journey Nav</h2>
+<div class="l-grid-row">
+  <div class="l-column-third">
+    <%= render 'styleguide/components/journey_nav' %>
+  </div>
+
+  <div class="l-column-third">
+    <nav class="journey-nav" role="navigation" aria-label="6 things you need to know">
+      <ol>
+        <li>
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--1"></span>
+            Check the value of your pension pot
+          </a>
+        </li>
+        <li>
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--2"></span>
+            What you can do with your pension pot
+          </a>
+        </li>
+        <li>
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--3"></span>
+            Plan how long your money needs to last
+          </a>
+        </li>
+        <li>
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--4"></span>
+            Work out how much money you'll have in retirement
+          </a>
+        </li>
+        <li>
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--5"></span>
+            Tax you pay on your pension
+          </a>
+        </li>
+        <li class="last-child">
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--6"></span>
+            How to shop around for the best deal
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+
+  <div class="l-column-third">
+    <nav class="journey-nav" role="navigation" aria-label="6 things you need to know">
+      <ol>
+        <li class="is-current">
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--1"></span>
+            Check the value of your pension pot
+            <span class="visuallyhidden">(current)</span>
+          </a>
+        </li>
+        <li class="is-current">
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--2"></span>
+            What you can do with your pension pot
+            <span class="visuallyhidden">(current)</span>
+          </a>
+        </li>
+        <li class="is-current">
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--3"></span>
+            Plan how long your money needs to last
+            <span class="visuallyhidden">(current)</span>
+          </a>
+        </li>
+        <li class="is-current">
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--4"></span>
+            Work out how much money you'll have in retirement
+            <span class="visuallyhidden">(current)</span>
+          </a>
+        </li>
+        <li class="is-current">
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--5"></span>
+            Tax you pay on your pension
+            <span class="visuallyhidden">(current)</span>
+          </a>
+        </li>
+        <li class="is-current last-child">
+          <a href="#foo">
+            <span class="journey-nav__number journey-nav__number--6"></span>
+            How to shop around for the best deal
+            <span class="visuallyhidden">(current)</span>
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<h2>Link promo</h2>
+<%= render 'styleguide/components/link_promo' %>
+
 <h2>Beta banner</h2>
 <%= render 'components/phase_banner' %>
 
@@ -10,6 +125,3 @@
 
 <h2>Header</h2>
 <%= render 'components/header' %>
-
-<h2>Link promo</h2>
-<%= render 'styleguide/components/link_promo' %>

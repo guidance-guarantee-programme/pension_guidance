@@ -1,0 +1,66 @@
+.journey-nav {
+  li {
+    @include core-16;
+    position: relative;
+    list-style: none;
+    margin-left: 19px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    min-height: 40px;
+    border-left: 1px solid #97c033;
+
+    @include media(desktop) {
+      margin-right: 40px;
+    }
+
+    &.last-child {
+      border-color: #fff;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .is-current & {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}
+
+.journey-nav__number {
+  position: absolute;
+  top: -6px;
+  left: -18px;
+  display: block;
+  width: 34px;
+  height: 34px;
+
+  @include ie(6) {
+    left: -42px;
+  }
+}
+
+@for $i from 1 through 9 {
+  .journey-nav__number--#{$i} {
+    background-image: image-url("css/steps/34x34-grey/#{$i}.png");
+
+    @include device-pixel-ratio() {
+      background-image: image-url("css/steps/68x68-grey/#{$i}.png");
+      background-size: 34px 34px;
+    }
+  }
+
+  .is-current .journey-nav__number--#{$i} {
+    background-image: image-url("css/steps/34x34-blue/#{$i}.png");
+
+    @include device-pixel-ratio() {
+      background-image: image-url("css/steps/68x68-blue/#{$i}.png");
+      background-size: 34px 34px;
+    }
+  }
+}
