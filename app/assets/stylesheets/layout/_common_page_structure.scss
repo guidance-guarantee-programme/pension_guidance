@@ -1,0 +1,19 @@
+.l-masthead {
+  background: #f4f5f5;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.l-banner-container {
+  @extend %site-width-container;
+}
+
+.l-page-container {
+  @extend %site-width-container;
+  @extend %contain-floats;
+
+  @include media(desktop) {
+    padding-bottom: $gutter*3;
+  }
+}
