@@ -2,30 +2,57 @@
 <% content_for(:meta_description, guide.description) %>
 
 <% content_for :sidebar do %>
-  <div class="link-promo">
-    <h2 class="link-promo__heading">6 things you need to know</h2>
 
-    <p>
-      <a href="/6-things-you-need-to-know">Read the 6 things overview</a>
-    </p>
-    <%= render 'components/journey_nav', journey: @journey, current_step: guide %>
-  </div>
+  <% if @journey.include?(guide) %>
+    <div class="link-promo">
+      <h2 class="link-promo__heading">6 things you need to know</h2>
+
+      <p>
+        <a href="/6-things-you-need-to-know">Read the 6 things overview</a>
+      </p>
+      <%= render 'components/journey_nav', journey: @journey, current_step: guide %>
+    </div>
+  <% end %>
 
   <div class="link-promo">
     <h2 class="link-promo__heading">Elsewhere on Pension Wise</h2>
     <ul class="link-promo__list">
-      <li class="link-promo__item t-link-promo__item">
-        <a href="/benefits">
-          If you're on benefits
-        </a>
-      </li>
-      <li class="link-promo__item t-link-promo__item">
-        <a href="/scams">
-          How to avoid a pension scam
-        </a>
-      </li>
+
+      <% if @journey.include?(guide) %>
+        <li class="link-promo__item t-link-promo__item">
+          <a href="/benefits">
+            If you're on benefits
+          </a>
+        </li>
+        <li class="link-promo__item t-link-promo__item">
+          <a href="/scams">
+            How to avoid a pension scam
+          </a>
+        </li>
+      <% else %>
+        <li class="link-promo__item t-link-promo__item">
+          <a href="/pension-pot-options">
+            What you can do with your pension pot
+          </a>
+        </li>
+        <li class="link-promo__item t-link-promo__item">
+          <a href="/6-things-you-need-to-know">
+            6 things you need to know
+          </a>
+        </li>
+        <li class="link-promo__item t-link-promo__item">
+          <a href="/pension-types">
+            Know your pension type
+          </a>
+        </li>
+        <li class="link-promo__item t-link-promo__item">
+          <a href="/tax">
+            Tax you pay on your pension
+          </a>
+        </li>
+      <% end %>
     </ul>
   </div>
-<% end if @journey.include?(guide) %>
+<% end %>
 
 <%= guide.content %>

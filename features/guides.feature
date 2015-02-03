@@ -33,6 +33,10 @@ Feature: Guides
     When I visit a guide
     Then the page meta description corresponds to the meta description of the guide
 
+  Scenario: Display related content
+    When I visit a guide
+    Then I can navigate to related content
+
   Scenario: Display a guide that belongs to a journey
     When I visit a guide that is part of '6 things you need to know'
     Then I can navigate to other steps in that journey

@@ -1,3 +1,6 @@
+---
+description: How to spot the signs of a pension scam, how to protect yourself, and what to do if you've been targeted.
+---
 #How to avoid a pension scam
 
 Pension scams, in which criminals cheat people out of their pension pots, are increasing.

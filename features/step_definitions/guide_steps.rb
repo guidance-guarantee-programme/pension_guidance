@@ -1,5 +1,5 @@
 When(/^I visit a guide$/) do
-  step 'I visit the tax guide'
+  step 'I visit the scams guide'
 end
 
 When(/^I visit a guide that is part of '6 things you need to know'$/) do
@@ -16,15 +16,16 @@ Then(/^the guide is displayed$/) do
 end
 
 Then(/^the page title corresponds to the title of the guide/) do
-  expect(@guide.title).to include('Tax you pay on your pension')
+  expect(@guide.title).to include('How to avoid a pension scam')
 end
 
 And(/^the page heading corresponds to the title of the guide$/) do
-  expect(@guide.primary_heading).to have_content('Tax you pay on your pension')
+  expect(@guide.primary_heading).to have_content('How to avoid a pension scam')
 end
 
 Then(/^the page meta description corresponds to the meta description of the guide$/) do
-  expected_description = "You pay tax on any income, including pension, that's above your tax-free Personal Allowance."
+  expected_description = 'How to spot the signs of a pension scam, how to protect yourself, ' \
+    + 'and what to do if you\'ve been targeted.'
   expect(@guide).to have_meta(:description, expected_description)
 end
 
@@ -45,4 +46,12 @@ end
 Then(/^I can navigate to content related to the journey$/) do
   expect(@guide.link_promo_items.map(&:text))
     .to eq(["If you're on benefits", 'How to avoid a pension scam'])
+end
+
+Then(/^I can navigate to related content$/) do
+  expect(@guide.link_promo_items.map(&:text))
+    .to eq(['What you can do with your pension pot',
+            '6 things you need to know',
+            'Know your pension type',
+            'Tax you pay on your pension'])
 end
