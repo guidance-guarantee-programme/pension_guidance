@@ -1,13 +1,3 @@
-<%= render layout: 'layouts/base' do %>
-
-  <%= render 'components/breadcrumbs' %>
-
-  <div class="l-grid-row">
-    <div class="l-column-two-thirds">
-      <main role="main" id="content" tabindex="-1">
-        <%= yield %>
-      </main>
-    </div>
-  </div>
-
+<%= render layout: 'layouts/two_column' do %>
+  <%= yield %>
 <% end %>

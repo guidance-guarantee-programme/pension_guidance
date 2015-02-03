@@ -56,6 +56,11 @@ linters:
   HexValidation:
     enabled: true
 
+  IdSelector:
+      enabled: true
+      exclude:
+        - app/assets/stylesheets/components/_global-header-bar.scss
+
   IdWithExtraneousSelector:
     enabled: true
 
@@ -111,7 +116,7 @@ linters:
     enabled: true
     convention: BEM
     exclude: # multiple hyphens currently fail. Need a regex for our BEM syntax
-      - app/assets/stylesheets/layout/_layout.scss
+      - app/assets/stylesheets/layout/_grid.scss
       - app/assets/stylesheets/components/_pager.scss
 
   Shorthand:

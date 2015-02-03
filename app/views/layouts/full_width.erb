@@ -1,0 +1,10 @@
+<%= render layout: 'layouts/base' do %>
+  <div class="l-page-container">
+    <%= render 'components/phase_banner' %>
+
+    <main role="main" id="content" tabindex="-1">
+      <%= yield %>
+    </main>
+
+  </div>
+<% end %>
