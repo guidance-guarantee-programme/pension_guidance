@@ -7,5 +7,6 @@ module Pages
     element :primary_heading, 'h1'
 
     elements :journey_nav_steps, '.t-journey-nav-step'
+    elements :link_promo_items, '.t-link-promo__item'
   end
 end

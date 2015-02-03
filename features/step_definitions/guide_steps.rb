@@ -41,3 +41,8 @@ end
 Then(/^the current guide is highlighted$/) do
   expect(@guide.journey_nav_current_step.text).to eq('What you can do with your pension pot (current)')
 end
+
+Then(/^I can navigate to content related to the journey$/) do
+  expect(@guide.link_promo_items.map(&:text))
+    .to eq(["If you're on benefits", 'How to avoid a pension scam'])
+end

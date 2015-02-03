@@ -36,4 +36,5 @@ Feature: Guides
   Scenario: Display a guide that belongs to a journey
     When I visit a guide that is part of '6 things you need to know'
     Then I can navigate to other steps in that journey
+    And I can navigate to content related to the journey
     And the current guide is highlighted

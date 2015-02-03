@@ -10,6 +10,22 @@
     </p>
     <%= render 'components/journey_nav', journey: @journey, current_step: guide %>
   </div>
+
+  <div class="link-promo">
+    <h2 class="link-promo__heading">Elsewhere on Pension Wise</h2>
+    <ul class="link-promo__list">
+      <li class="link-promo__item t-link-promo__item">
+        <a href="/benefits">
+          If you're on benefits
+        </a>
+      </li>
+      <li class="link-promo__item t-link-promo__item">
+        <a href="/scams">
+          How to avoid a pension scam
+        </a>
+      </li>
+    </ul>
+  </div>
 <% end if @journey.include?(guide) %>
 
 <%= guide.content %>
