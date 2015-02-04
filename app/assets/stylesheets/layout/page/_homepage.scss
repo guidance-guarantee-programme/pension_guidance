@@ -31,7 +31,7 @@
 }
 
 .l-home-top-slot-hr {
-  margin: 0 15px 20px;
+  margin-bottom: 20px;
 
   @include media(tablet) {
     display: none;
@@ -43,8 +43,16 @@
     border-left: 1px solid #bac0c4;
     border-top: 0;
 
+    @include ie-lte(8) {
+      border: 0;
+    }
+
     .journey-promo {
       margin-left: 15px;
+
+      @include ie(6) {
+        margin-left: 0;
+      }
     }
   }
 }
