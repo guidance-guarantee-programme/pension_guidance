@@ -19,3 +19,65 @@
     right: 0;
   }
 }
+
+.l-home-top-slot {
+  margin-top: 27px;
+  margin-bottom: 32px;
+
+  @include media(tablet) {
+    margin-top: 37px;
+    margin-bottom: 42px;
+  }
+}
+
+.l-journey-promo {
+  border-left: 1px solid #bac0c4;
+}
+
+.l-home-guides {
+  margin-top: 28px;
+  margin-bottom: 26px;
+
+  @include media(tablet) {
+    margin-top: 36px;
+    margin-bottom: 29px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.l-home-appointments {
+  margin-top: 28px;
+  margin-bottom: 32px;
+
+  @include media(tablet) {
+    margin-top: 36px;
+    margin-bottom: 22px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .button {
+    margin-bottom: 0;
+  }
+}
+
+.l-home-about {
+  margin-top: 28px;
+
+  @include media(tablet) {
+    margin-top: 36px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+}
