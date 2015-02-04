@@ -1,4 +1,16 @@
 .l-home-header {
+  position: relative;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.l-quick-links {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
