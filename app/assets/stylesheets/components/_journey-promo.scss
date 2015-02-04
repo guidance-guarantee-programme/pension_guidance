@@ -2,6 +2,27 @@
   margin-top: 0;
 }
 
+.journey-promo__list {
+  margin-bottom: 0;
+
+  @include media(tablet) {
+     @include core-16;
+   }
+
+  @include media(desktop) {
+    margin-right: 56px;
+  }
+}
+
+.journey-promo__item {
+  min-height: 30px;
+
+  @include media(tablet) {
+    min-height: 50px;
+  }
+
+}
+
 .journey-promo__anchor:link,
 .journey-promo__anchor:visited {
   color: #000;
@@ -13,5 +34,6 @@
 }
 
 .journey-promo__link-cta {
+  margin-top: 12px;
   margin-bottom: 0;
 }

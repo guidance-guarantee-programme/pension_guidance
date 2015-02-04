@@ -30,8 +30,23 @@
   }
 }
 
+.l-home-top-slot-hr {
+  margin: 0 15px 20px 15px;
+
+  @include media(tablet) {
+    display: none;
+  }
+}
+
 .l-journey-promo {
-  border-left: 1px solid #bac0c4;
+  @include media(tablet) {
+    border-left: 1px solid #bac0c4;
+    border-top: none;
+
+    .journey-promo {
+      margin-left: 15px;
+    }
+  }
 }
 
 .l-home-guides {
