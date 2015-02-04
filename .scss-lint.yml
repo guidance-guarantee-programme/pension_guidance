@@ -118,6 +118,7 @@ linters:
     exclude: # multiple hyphens currently fail. Need a regex for our BEM syntax
       - app/assets/stylesheets/layout/_grid.scss
       - app/assets/stylesheets/components/_pager.scss
+      - app/assets/stylesheets/components/_journey-promo.scss
 
   Shorthand:
     enabled: true
