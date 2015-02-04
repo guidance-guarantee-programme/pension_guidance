@@ -29,7 +29,15 @@ Then(/^the page meta description corresponds to the meta description of the guid
   expect(@guide).to have_meta(:description, expected_description)
 end
 
-Then(/^I can navigate to other steps in that journey$/) do
+Then(/^I can navigate to the next step in that journey$/) do
+  expect(@guide.pager_item_next).to have_content('Plan how long your money needs to last')
+end
+
+Then(/^I can navigate to the previous step in that journey$/) do
+  expect(@guide.pager_item_previous).to have_content('Check the value of your pension pot')
+end
+
+Then(/^I can navigate directly to other steps in that journey$/) do
   expect(@guide.journey_nav_steps.map(&:text))
     .to eq(['Check the value of your pension pot',
             'What you can do with your pension pot (current)',

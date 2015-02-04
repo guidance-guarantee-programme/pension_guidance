@@ -5,7 +5,7 @@
     <% journey.each_with_index do |step, index| %>
       <%
          li_classes = ['t-journey-nav-step']
-         li_classes << 'is-current' << 't-journey-nav-current-step' if current_step && current_step == step
+         li_classes << 'is-current' << 't-journey-nav__current-step' if current_step && current_step == step
          li_classes << 'last-child' if index == journey.steps.size - 1
       %>
       <%= content_tag :li, class: li_classes do %>

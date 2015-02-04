@@ -26,3 +26,37 @@
 <% end %>
 
 <%= guide.content %>
+
+<% if @journey.include?(guide) %>
+  <%
+     journey_size = @journey.steps.size
+     journey_index = @journey.steps.find_index(@guide)
+
+     next_step = journey_index < journey_size && @journey.steps[journey_index + 1]
+     previous_step = journey_index > 0 && @journey.steps[journey_index - 1]
+  %>
+
+  <ul class="pager">
+    <% if previous_step %>
+      <li class="pager__item pager__item--previous">
+        <a href="<%= previous_step.url %>" rel="prev">
+          <span class="pager__label">Previous</span>
+        <span class="pager__title">
+          <span class="t-pager__item-previous"><%= journey_index %>. <%= previous_step.title %></span>
+        </span>
+        </a>
+      </li>
+    <% end %>
+
+    <% if next_step %>
+      <li class="pager__item pager__item--next">
+        <a href="<%= next_step.url %>" rel="next">
+          <span class="pager__label">Next</span>
+        <span class="pager__title">
+          <span class="t-pager__item-next"><%= journey_index + 2 %>. <%= next_step.title %></span>
+        </span>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
