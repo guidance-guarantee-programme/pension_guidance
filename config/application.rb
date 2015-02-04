@@ -14,7 +14,6 @@ module PensionGuidance
 
     config.cache_max_age = ENV['CACHE_MAX_AGE'] || 10.seconds
 
-    config.middleware.use Rack::Deflater
     config.middleware.use Rack::BounceFavicon
   end
 end
