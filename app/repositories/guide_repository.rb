@@ -15,6 +15,12 @@ class GuideRepository
     end
   end
 
+  def find_all(*ids)
+    ids.each_with_object([]) do |id, results|
+      results << find(id)
+    end
+  end
+
   def all
     Dir["#{dir}/**/*.md"].each_with_object([]) do |path, result|
       id = File.basename(path, '.md')

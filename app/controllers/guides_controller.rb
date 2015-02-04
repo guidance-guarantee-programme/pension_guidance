@@ -6,6 +6,7 @@ class GuidesController < ApplicationController
   def show
     @guide = guide_repository.find(params[:id])
     @journey = Journey.new(*GuideDecorator.decorate_collection(journey_steps))
+    @related_guides = @journey.include?(@guide) ? journey_related_guides : related_guides
 
     expires_in Rails.application.config.cache_max_age, public: true
   end
@@ -16,14 +17,34 @@ class GuidesController < ApplicationController
     @guide_repository ||= GuideRepository.new
   end
 
+  def related_guides
+    @related_guides ||=
+      GuideDecorator.decorate_collection(
+        guide_repository.find_all(
+          'pension-pot-options',
+          '6-things-you-need-to-know',
+          'pension-types',
+          'tax'
+        )
+      )
+  end
+
+  def journey_related_guides
+    @journey_related_guides ||=
+      GuideDecorator.decorate_collection(
+        guide_repository.find_all('benefits', 'scams')
+      )
+  end
+
   def journey_steps
-    @journey_steps ||= [
-      guide_repository.find('pension-pot-value'),
-      guide_repository.find('pension-pot-options'),
-      guide_repository.find('making-money-last'),
-      guide_repository.find('work-out-income'),
-      guide_repository.find('tax'),
-      guide_repository.find('shop-around')
-    ]
+    @journey_steps ||=
+      guide_repository.find_all(
+        'pension-pot-value',
+        'pension-pot-options',
+        'making-money-last',
+        'work-out-income',
+        'tax',
+        'shop-around'
+      )
   end
 end
