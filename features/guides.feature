@@ -21,7 +21,6 @@ Feature: Guides
     Then the page title corresponds to the title of the guide
     And the page heading corresponds to the title of the guide
 
-  @wip
   Scenario: Include guide meta description
     When I visit a guide
     Then the page meta description corresponds to the meta description of the guide
