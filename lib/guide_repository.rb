@@ -9,7 +9,7 @@ class GuideRepository
     path = path(id)
 
     if File.exist?(path)
-      Guide.new(id, File.read(path))
+      read_guide(id, path)
     else
       fail GuideNotFound
     end
@@ -17,7 +17,8 @@ class GuideRepository
 
   def all
     Dir["#{dir}/**/*.md"].each_with_object([]) do |path, result|
-      result << Guide.new(File.basename(path, '.md'), File.read(path))
+      id = File.basename(path, '.md')
+      result << read_guide(id, path)
     end
   end
 
@@ -29,5 +30,11 @@ class GuideRepository
     param = "#{id.tr('-', '_')}.md"
 
     File.expand_path(param, dir)
+  end
+
+  def read_guide(id, path)
+    source = FrontMatterParser.new(File.read(path))
+
+    Guide.new(id, source.content, source.front_matter['description'])
   end
 end

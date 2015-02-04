@@ -1,7 +1,13 @@
 RSpec.describe Guide, type: :model do
   subject(:guide) { Guide.new(id, source) }
 
-  let(:id) { 'govspeak' }
+  let(:id) { 'the_test_guide' }
+
+  it 'can have a description' do
+    guide = Guide.new(123, 'Content', 'A test guide')
+
+    expect(guide.description).to eq('A test guide')
+  end
 
   describe '#slug' do
     let(:id) { 'a_pension_guide' }

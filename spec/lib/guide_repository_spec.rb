@@ -7,23 +7,35 @@ RSpec.describe GuideRepository do
     subject(:find) { guide_repository.find(id) }
 
     context 'non-existent guide' do
-      let(:id) { 'does-not-exist' }
+      let(:id) { 'does_not_exist' }
 
       specify { expect { find }.to raise_error(GuideRepository::GuideNotFound) }
     end
 
     context 'existing guide' do
-      let(:id) { 'govspeak' }
+      let(:id) { 'the_test_guide' }
 
-      it 'returns the guide' do
-        expect(find.id).to eq id
+      describe 'returns the guide' do
+        specify 'with the correct id' do
+          expect(find.id).to eq id
+        end
+
+        specify 'with the correct content' do
+          expect(find.source).to eq("# This is the test guide\n")
+        end
+
+        specify 'with the correct description' do
+          expected_description = 'The guide used for testing'
+
+          expect(find.description).to eq(expected_description)
+        end
       end
     end
   end
 
   describe '#all' do
     it 'returns an array of guides' do
-      expect(guide_repository.all.first.id).to eq('govspeak')
+      expect(guide_repository.all.first.id).to eq('the_test_guide')
     end
   end
 end
