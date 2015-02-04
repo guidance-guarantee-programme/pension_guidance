@@ -1,3 +1,4 @@
 <% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
+<% content_for(:meta_description, @guide.description) %>
 
 <%= @guide.content %>

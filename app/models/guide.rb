@@ -1,9 +1,10 @@
 class Guide
-  attr_reader :id, :source, :title, :content
+  attr_reader :id, :source, :title, :content, :description
 
-  def initialize(id, source = '')
+  def initialize(id, source = '', description = '')
     @id = id
     @source = source
+    @description = description
   end
 
   def slug

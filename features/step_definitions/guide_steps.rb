@@ -18,3 +18,8 @@ end
 And(/^the page heading corresponds to the title of the guide$/) do
   expect(@guide.primary_heading).to have_content('Tax you pay on your pension')
 end
+
+Then(/^the page meta description corresponds to the meta description of the guide$/) do
+  expected_description = "You pay tax on any income, including pension, that's above your tax-free Personal Allowance."
+  expect(@guide).to have_meta(:description, expected_description)
+end
