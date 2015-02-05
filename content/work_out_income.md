@@ -8,7 +8,7 @@ description: What to consider when working out how much retirement income you'll
 
 When you reach retirement your income is likely to be less. This is mostly because your income from work drops if you go part-time or when you stop working altogether. Your retirement income usually isn’t as much as your salary.
 
-You should think about [what you can do with your pension pot](/articles/what-you-can-do-with-your-pension-pot) to make sure you can [make your money last through retirement](/articles/how-long-your-money-needs-to-last).
+You should think about [what you can do with your pension pot](/pension-pot-options) to make sure you can [make your money last through retirement](/making-money-last).
 
 ##Add up all your income
 
@@ -21,7 +21,7 @@ You’ll most likely have:
 - a pension - this might be one or more pension(s) from your work, pensions you set up yourself, or both
 - the State Pension paid to you by the government
 
-[Check the value of your pension pot](/articles/check-the-value-of-your-pension-pot) if you don’t know. Use the [State Pension calculator](https://www.gov.uk/calculate-state-pension) for a quick estimate (includes State Pension age), or apply for a [State Pension statement](https://www.gov.uk/state-pension-statement) from the Pension Service.
+[Check the value of your pension pot](/pension-pot-value) if you don’t know. Use the [State Pension calculator](https://www.gov.uk/calculate-state-pension) for a quick estimate (includes State Pension age), or apply for a [State Pension statement](https://www.gov.uk/state-pension-statement) from the Pension Service.
 
 ###Other income
 
@@ -43,11 +43,11 @@ Once you stop working and you don’t have any other income, your retirement inc
 
 To get a basic idea of how much you’ll have in retirement, follow these steps:
 
-s1. Understand [what you can do with your pension pot](/articles/what-you-can-do-with-your-pension-pot) and decide if you want to be paid a guaranteed income every year from an annuity or take flexible amounts from your pension pot when you want to.
-s2. [Shop around](/articles/how-to-shop-around-for-the-best-deal) and get quotes from providers. For annuities they’ll be able to tell you how much a year you can get for your size of pot. If you want to take flexible amounts from your pot they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
+s1. Understand [what you can do with your pension pot](/pension-pot-options) and decide if you want to be paid a guaranteed income every year from an annuity or take flexible amounts from your pension pot when you want to.
+s2. [Shop around](/shop-around) and get quotes from providers. For annuities they’ll be able to tell you how much a year you can get for your size of pot. If you want to take flexible amounts from your pot they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
 s3. Decide which option(s) suit you the best. You might want to talk to a financial adviser.
 s4. Add the most suitable quote to your State Pension. If you also have a defined benefit pension, add that money too.
-s5. Take away the [tax you pay on your pension(s)](/articles/tax-you-pay-on-your-pension).
+s5. Take away the [tax you pay on your pension(s)](/tax).
 
 
 $E
@@ -98,11 +98,11 @@ If you continue working for a while and have other income, your retirement incom
 To get a basic idea of how much you’ll have in retirement follow these steps:
 
 s1. Check how your other income will change in retirement. The easiest way to do this is to think about your 60s, 70s and 80s and how your income might drop. For example, you might want to stop working in your late 60s which means you’ll have less income.
-s2. Understand [what you can do with your pension pot](/articles/what-you-can-do-with-your-pension-pot) and decide when you need this money. For example, while you’re still working you might want to leave your pension pot untouched so you can take more later.
-s3. [Shop around](/articles/how-to-shop-around-for-the-best-deal) and get quotes from providers. For annuities they’ll be able to tell you how much a year you can get for your size of pot. If you want to take flexible amounts from your pot they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
+s2. Understand [what you can do with your pension pot](/pension-pot-options) and decide when you need this money. For example, while you’re still working you might want to leave your pension pot untouched so you can take more later.
+s3. [Shop around](/shop-around) and get quotes from providers. For annuities they’ll be able to tell you how much a year you can get for your size of pot. If you want to take flexible amounts from your pot they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
 s4. Decide which option(s) suits you the best. You might want to talk to a financial adviser.
 s5. Add the most suitable quote to your State Pension and other income.
-s6. Take away the [tax you pay on all your income](/articles/tax-you-pay-on-your-pension).
+s6. Take away the [tax you pay on all your income](/tax).
 
 
 $E
