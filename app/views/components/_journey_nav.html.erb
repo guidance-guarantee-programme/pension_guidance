@@ -1,0 +1,20 @@
+<% current_step = nil unless local_assigns.has_key?(:current_step) %>
+
+<nav class="journey-nav" role="navigation" aria-label="6 things you need to know">
+  <ol>
+    <% journey.each_with_index do |step, index| %>
+      <%
+         li_classes = ['t-journey-nav-step']
+         li_classes << 'is-current' << 't-journey-nav__current-step' if current_step && current_step == step
+         li_classes << 'last-child' if index == journey.count - 1
+      %>
+      <%= content_tag :li, class: li_classes do %>
+        <%= link_to(step.url) do %>
+          <span class="journey-nav__number journey-nav__number--<%= index + 1 %>"></span>
+          <%= step.title %>
+          <%= content_tag :span, '(current)', class: 'visuallyhidden' if li_classes.include?('is-current') %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </ol>
+</nav>

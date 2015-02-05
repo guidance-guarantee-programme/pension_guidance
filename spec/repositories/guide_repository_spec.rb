@@ -1,7 +1,7 @@
 RSpec.describe GuideRepository do
-  subject(:guide_repository) { GuideRepository.new(source) }
-
-  let(:source) { File.expand_path('../../fixtures', __FILE__) }
+  subject(:guide_repository) do
+    GuideRepository.new(File.expand_path('../../fixtures', __FILE__))
+  end
 
   describe '#find' do
     subject(:find) { guide_repository.find(id) }
@@ -20,14 +20,8 @@ RSpec.describe GuideRepository do
           expect(find.id).to eq id
         end
 
-        specify 'with the correct content' do
-          expect(find.source).to eq("# This is the test guide\n")
-        end
-
-        specify 'with the correct description' do
-          expected_description = 'The guide used for testing'
-
-          expect(find.description).to eq(expected_description)
+        specify 'with the correct source pathname' do
+          expect(find.source).to eq(Rails.root.join('spec/fixtures/the_test_guide.md').to_s)
         end
       end
     end

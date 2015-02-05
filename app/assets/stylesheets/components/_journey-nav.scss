@@ -7,7 +7,7 @@
     padding-left: 25px;
     padding-bottom: 10px;
     min-height: 40px;
-    border-left: 1px solid #97c033;
+    border-left: 1px solid $color-journey-border;
 
     @include media(desktop) {
       margin-right: 40px;
@@ -30,6 +30,10 @@
       color: #000;
     }
   }
+}
+
+hr + .journey-nav {
+  margin-top: 40px;
 }
 
 .journey-nav__number {
