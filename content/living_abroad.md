@@ -1,3 +1,6 @@
+---
+description: What you can do with your UK pension pot if you move or already live overseas.
+---
 #Living abroad and your pension
 
 If you’re planning on moving abroad and have a defined contribution pension - a pension based on how much money has been paid into your pot - you have two choices about what to do with it.
@@ -20,14 +23,17 @@ If you have more than one UK defined contribution pension you can mix your optio
 
 ##Transferring your pension overseas
 
-If you transfer your pension, make sure that you move it to one of the [qualifying recognised overseas pensions schemes](https://www.gov.uk/government/publications/list-of-qualifying-recognised-overseas-pension-schemes-qrops). These are schemes that meet the same standards as those in the UK.
 
-Remember that transferring your pension could:
+Transferring your pension overseas could:
 
 
+* mean you have less choice about what you can do with your pension pot than if you left it in the UK
 * affect the amount of pension you get at retirement
 * affect how much tax you pay on your pension
 * mean you have to pay more charges
+
+
+If you transfer your pension, make sure that you move it to one of the [qualifying recognised overseas pensions schemes](https://www.gov.uk/government/publications/list-of-qualifying-recognised-overseas-pension-schemes-qrops). These are schemes that meet the same standards as those in the UK.
 
 
 ##Taking your pension money when you live abroad
@@ -45,7 +51,7 @@ UK pension providers don't usually pay your pension straight into an overseas ba
 ##Don’t forget about tax
 
 
-You must tell HM Revenue and Customs if you [plan to retire abroad](https://www.gov.uk/moving-or-retiring-abroad) so that you pay the right tax on your pension. The tax you pay and which country you pay tax to depend on many things.
+You must tell HM Revenue and Customs if you [plan to retire abroad](https://www.gov.uk/moving-or-retiring-abroad) so that you pay the right tax on your pension. The amount of tax you pay and which country you pay tax to depend on many things.
 
 If you move abroad before you start taking your pension, the tax law in the country you move to may prevent you from taking anything tax free.
 

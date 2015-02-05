@@ -1,22 +1,25 @@
+---
+description: The difference between defined contribution and defined benefit pensions and information on the State Pension.
+---
 #Know your pension type
 
 Along with the State Pension from the government, there are 2 main types of pension.
+
+^Pension Wise only provides guidance on what you can do with a defined contribution pension.^
 
 ##Defined contribution
 
 A personal or workplace pension based on how much money has been paid into your pot.
 
-When you take money from a defined contribution pension you get back the money you (and sometimes your employer) saved into it over the years, plus any investment returns your money earned.
+When you take money from a defined contribution pension you get back the money you (and sometimes your employer) saved into it over the years, plus any investment returns your money may have earned. There is no guaranteed minimum - you could get back less than the amount paid in.
 
 ##Defined benefit
 
 A type of workplace pension based on your salary and length of time with your employer.
 
-A defined benefit pension gives you an income based on your salary, length of service and a calculation by your employer.
+A defined benefit pension gives you an income based on your salary, length of service and a calculation made under the rules of your pension scheme.
 
-With defined contribution pensions, you decide how you take your money - with defined benefit pensions, your employer gives you a certain amount each year when you retire.
-
-^Pension Wise only provides guidance on what you can do with a defined contribution pension.^
+^With defined contribution pensions, you decide how you take your money - with defined benefit pensions, your employer guarantees a certain amount each year when you retire.
 
 ##The State Pension
 
@@ -38,10 +41,10 @@ For defined benefit pensions, how much you get depends on:
 
 - the number of years you’ve worked for the employer
 - your salary (this could be your final salary or your average salary across your career with the employer)
-- a formula used by your employer to calculate your retirement income
+- a calculation made under the rules of your pension scheme
 
 ##When you can take your money
 
-You don’t have to retire to take money from your pension. You can normally start doing this from the age of 55 if you have a defined contribution pension.
+You can normally start taking money from the age of 55. This is subject to the rules of your pension scheme.
 
-This is when you can [choose how you take your money](/pension-pot-options) to help provide you with an income throughout your retirement.
+Check with your provider. In some circumstances you can [take your pension earlier](https://www.gov.uk/early-retirement-pension/personal-and-workplace-pensions).

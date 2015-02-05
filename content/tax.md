@@ -3,6 +3,8 @@ description: You pay tax on any income, including pension, that's above your tax
 ---
 #Tax you pay on your pension
 
+%The information on this page about tax and pension pot options will apply from 6 April 2015.%
+
 When you get a pension you pay tax on income above your tax-free [Personal Allowance](https://www.gov.uk/income-tax-rates/personal-allowances), just like you do on your salary.
 
 The only difference is that you can also take part of your pension pot tax-free. This money doesn't use up any of your Personal Allowance.
@@ -14,7 +16,7 @@ Your taxable income may include:
 - any money you get from your pension pot, eg as an [annuity](/pension-pot-options) or [cash](/pension-pot-options)
 - the State Pension
 - earnings from employment or self employment
-- any other income, money from rental income
+- any other income, eg money from rental income
 - any taxable benefits you might get, eg Carer’s Allowance
 
 If you leave your pension pot untouched and don’t take any money out, you don’t pay Income Tax on it.
@@ -27,7 +29,7 @@ There are 2 ways you can take your tax-free lump sum.
 ###Take your lump sum in one go
 You can take 25% of your whole pension pot tax free.
 
-If you do this, you can't leave the remaining 75% untouched. You must either take it as cash, or buy an [annuity](/pension-pot-options) with it, or put it into an [income drawdown](/pension-pot-options) fund.
+If you do this, you can't leave the remaining 75% untouched. You must either take it as cash, or buy an [annuity](/pension-pot-options) with it, or put it into an [flexi-access drawdown](/pension-pot-options) fund.
 
 Any payments you get from the remaining 75% are taxable.
 
@@ -91,7 +93,7 @@ $E
 ##How your tax is paid
 
 ###Tax on your pension income
-Any money you get from a pension provider will be paid to you with the tax already taken off. This goes for income drawdown, an annuity, or cash payments.
+Any money you get from a pension provider will be paid to you with the tax already taken off. This goes for flexi-access drawdown, an annuity, or cash payments.
 
 The pension provider will also deduct any tax due on your State Pension.
 
@@ -104,4 +106,4 @@ If you’re self-employed you have to fill in a [Self-Assessment tax return](htt
 You’re responsible for paying tax on other income you have, eg from property or investments. You might have to fill in a [Self-Assessment tax return](https://www.gov.uk/self-assessment-tax-returns).
 
 ###Lifetime allowance
-You'll have to pay tax if your total pension pot is above your [lifetime allowance of £1,25 million.](https://www.gov.uk/tax-on-your-private-pension)
+You'll have to pay tax on any amount in your pension pot above your [lifetime allowance of £1,25 million.](https://www.gov.uk/tax-on-your-private-pension)
