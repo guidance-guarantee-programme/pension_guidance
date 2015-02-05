@@ -1,9 +1,8 @@
 RSpec.describe Guide, type: :model do
   let(:id) { 'the_test_guide' }
-  let(:source) { '# This is a test guide' }
-  let(:description) { 'A guide used for testing' }
-
-  subject(:guide) { Guide.new(id, source) }
+  let(:source_type) { :govspeak }
+  let(:source) { '/examples/test.md' }
+  let(:guide) { Guide.new(id, source, source_type) }
 
   describe '#id' do
     it 'returns the initialised id' do
@@ -14,6 +13,12 @@ RSpec.describe Guide, type: :model do
   describe '#source' do
     it 'returns the initialised source' do
       expect(guide.source).to eq(source)
+    end
+  end
+
+  describe '#source_type' do
+    it 'returns the initialised source_type' do
+      expect(guide.source_type).to eq(source_type)
     end
   end
 

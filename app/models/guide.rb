@@ -1,9 +1,10 @@
 class Guide
-  attr_reader :id, :source
+  attr_reader :id, :source, :source_type
 
-  def initialize(id, source = '')
+  def initialize(id, source = '', source_type = nil)
     @id = id
     @source = source
+    @source_type = source_type
   end
 
   def ==(other)

@@ -1,5 +1,5 @@
 RSpec.describe GuideDecorator, type: :decorator do
-  subject(:guide) { described_class.new(instance_double(Guide, source: double)) }
+  subject(:guide) { described_class.new(instance_double(Guide).as_null_object) }
 
   it { is_expected.to respond_to(:slug) }
   it { is_expected.to respond_to(:title) }
@@ -7,12 +7,11 @@ RSpec.describe GuideDecorator, type: :decorator do
   it { is_expected.to respond_to(:content) }
 
   before do
-    allow(File).to receive(:extname) { extname }
     allow(File).to receive(:read) { source }
   end
 
   context 'when the guide source is markdown formatted' do
-    let(:extname) { '.md' }
+    subject(:guide) { described_class.new(instance_double(Guide, source: double, source_type: :govspeak)) }
 
     describe '#title' do
       subject(:title) { guide.title }
@@ -69,7 +68,7 @@ RSpec.describe GuideDecorator, type: :decorator do
   end
 
   context 'when the guide source is HTML formatted' do
-    let(:extname) { '.html' }
+    subject(:guide) { described_class.new(instance_double(Guide, source: double, source_type: :html)) }
 
     describe '#title' do
       subject(:title) { guide.title }

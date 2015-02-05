@@ -7,7 +7,7 @@ class GuideDecorator < Draper::Decorator
 
   def title
     @title ||= case source_type
-               when '.md'
+               when :govspeak
                  source_document.headers.find { |header| header.level == 1 }.try(:text)
                else
                  source_document.css('h1').first.try(:text)
@@ -20,7 +20,7 @@ class GuideDecorator < Draper::Decorator
 
   def content
     @content ||= case source_type
-                 when '.md'
+                 when :govspeak
                    source_document.to_sanitized_html.html_safe
                  else
                    source_content.html_safe
@@ -34,7 +34,7 @@ class GuideDecorator < Draper::Decorator
   end
 
   def source_type
-    @source_type ||= File.extname(object.source)
+    object.source_type
   end
 
   def source_content
@@ -43,9 +43,9 @@ class GuideDecorator < Draper::Decorator
 
   def source_document
     @source_document ||= case source_type
-                         when '.md'
+                         when :govspeak
                            Govspeak::Document.new(source_content)
-                         when '.html'
+                         else
                            Nokogiri::HTML(source_content)
                          end
   end
