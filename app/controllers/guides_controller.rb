@@ -5,7 +5,7 @@ class GuidesController < ApplicationController
 
   def show
     @guide = guide_repository.find(params[:id])
-    @journey = Journey.new(*GuideDecorator.decorate_collection(journey_steps))
+    @journey = GuideDecorator.decorate_collection(journey_steps)
     @related_guides = @journey.include?(@guide) ? journey_related_guides : related_guides
 
     expires_in Rails.application.config.cache_max_age, public: true
