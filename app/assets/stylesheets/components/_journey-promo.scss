@@ -1,0 +1,81 @@
+.journey-promo__heading {
+  margin-top: 0;
+}
+
+.journey-promo__list {
+  margin-bottom: 0;
+
+  @include media(tablet) {
+    @include core-16;
+  }
+
+  @include media(desktop) {
+    margin-right: 39px;
+  }
+}
+
+.journey-promo__item {
+  position: relative;
+  list-style: none;
+  margin-left: 18px;
+  margin-bottom: 0;
+  padding-left: 30px;
+  border-left: 1px solid #e2e2e2;
+  min-height: 50px;
+
+  @include ie(6) {
+    height: 50px;
+  }
+
+  @include media(tablet) {
+    min-height: 60px;
+
+    &.last-child {
+      border-color: #fff;
+    }
+  }
+}
+
+.journey-promo__item--last-step {
+  border-color: #fff;
+}
+
+.journey-promo__number {
+  position: absolute;
+  top: -8px;
+  left: -18px;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: #e9ebec;
+
+  @include media(tablet) {
+    top: 0;
+  }
+}
+
+@for $i from 1 through 9 {
+  .journey-promo__number--#{$i} {
+    background-image: image-url("css/steps/34x34-grey/#{$i}.png");
+
+    @include device-pixel-ratio() {
+      background-image: image-url("css/steps/68x68-grey/#{$i}.png");
+      background-size: 34px 34px;
+    }
+  }
+}
+
+.journey-promo__anchor:link,
+.journey-promo__anchor:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.journey-promo__anchor:hover {
+  text-decoration: underline;
+}
+
+.journey-promo__link-cta {
+  margin-top: 12px;
+  margin-bottom: 0;
+}

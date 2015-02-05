@@ -10,11 +10,19 @@ Feature: Guides
   Examples:
     | Slug                      |
     | 6-things-you-need-to-know |
+    | benefits                  |
+    | complaints                |
+    | divorce                   |
+    | living-abroad             |
     | making-money-last         |
+    | pension-complaints        |
+    | pension-pot-options       |
     | pension-pot-value         |
     | pension-types             |
+    | scams                     |
     | shop-around               |
     | tax                       |
+    | work-out-income           |
 
   Scenario: Display guide title and heading
     When I visit a guide

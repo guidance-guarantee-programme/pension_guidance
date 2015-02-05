@@ -1,4 +1,106 @@
 .l-home-header {
-  margin-top: 30px;
+  position: relative;
+  margin-top: 19px;
+  margin-bottom: 21px;
+
+  @include media(tablet) {
+    margin-top: 30px;
+    margin-bottom: 28px;
+  }
+}
+
+.l-quick-links {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.l-home-top-slot {
+  margin-top: 27px;
+  margin-bottom: 32px;
+
+  @include media(tablet) {
+    margin-top: 37px;
+    margin-bottom: 42px;
+  }
+}
+
+.l-home-top-slot-hr {
   margin-bottom: 20px;
+
+  @include media(tablet) {
+    display: none;
+  }
+}
+
+.l-journey-promo {
+  @include media(tablet) {
+    border-left: 1px solid #bac0c4;
+    border-top: 0;
+
+    @include ie-lte(8) {
+      border: 0;
+    }
+
+    .journey-promo {
+      margin-left: 15px;
+
+      @include ie(6) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.l-home-guides {
+  margin-top: 28px;
+  margin-bottom: 26px;
+
+  @include media(tablet) {
+    margin-top: 36px;
+    margin-bottom: 29px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.l-home-appointments {
+  margin-top: 28px;
+  margin-bottom: 32px;
+
+  @include media(tablet) {
+    margin-top: 36px;
+    margin-bottom: 22px;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .button {
+    margin-bottom: 0;
+  }
+}
+
+.l-home-about {
+  margin-top: 28px;
+
+  @include media(tablet) {
+    margin-top: 36px;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
 }

@@ -13,7 +13,5 @@
   @extend %site-width-container;
   @extend %contain-floats;
 
-  @include media(desktop) {
-    padding-bottom: $gutter*3;
-  }
+  padding-bottom: 3em;
 }
