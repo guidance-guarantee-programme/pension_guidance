@@ -1,5 +1,9 @@
 .link-promo {
   margin-bottom: 2.5em;
+
+  a {
+    @include core-16;
+  }
 }
 
 .link-promo__heading {
@@ -12,7 +16,5 @@
 
 .link-promo__item {
   @extend %unstyled-list__item;
-  @include core-16;
-
   margin-bottom: .75em;
 }
