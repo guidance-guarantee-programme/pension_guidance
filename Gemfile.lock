@@ -225,6 +225,7 @@ DEPENDENCIES
   govuk_frontend_toolkit
   govuk_template
   newrelic_rpm
+  nokogiri
   puma
   rack-contrib
   rails (= 4.2.0)

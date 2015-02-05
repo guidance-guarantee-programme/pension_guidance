@@ -3,7 +3,7 @@ RSpec.describe Guide, type: :model do
   let(:source) { '# This is a test guide' }
   let(:description) { 'A guide used for testing' }
 
-  subject(:guide) { Guide.new(id, source, description) }
+  subject(:guide) { Guide.new(id, source) }
 
   describe '#id' do
     it 'returns the initialised id' do
@@ -14,12 +14,6 @@ RSpec.describe Guide, type: :model do
   describe '#source' do
     it 'returns the initialised source' do
       expect(guide.source).to eq(source)
-    end
-  end
-
-  describe '#description' do
-    it 'returns the initialised description' do
-      expect(guide.description).to eq(description)
     end
   end
 
