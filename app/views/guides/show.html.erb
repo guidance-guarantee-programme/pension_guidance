@@ -37,24 +37,31 @@
   %>
 
   <ul class="pager">
-    <% if previous_step %>
-      <li class="pager__item pager__item--previous">
+    <li class="pager__item pager__item--previous">
+      <% if previous_step %>
         <a href="<%= previous_step.url %>" rel="prev">
           <span class="pager__label">Previous</span>
-        <span class="pager__title">
-          <span class="t-pager__item-previous"><%= journey_index %>. <%= previous_step.title %></span>
-        </span>
+          <span class="pager__title">
+            <span class="t-pager__item-previous"><%= journey_index %>. <%= previous_step.title %></span>
+          </span>
         </a>
-      </li>
-    <% end %>
+      <% else %>
+        <a href="/6-things-you-need-to-know" rel="prev">
+          <span class="pager__label">Previous</span>
+          <span class="pager__title">
+            <span class="t-pager__item-previous">Read the 6 things overview</span>
+          </span>
+        </a>
+      <% end %>
+    </li>
 
     <% if next_step %>
       <li class="pager__item pager__item--next">
         <a href="<%= next_step.url %>" rel="next">
           <span class="pager__label">Next</span>
-        <span class="pager__title">
-          <span class="t-pager__item-next"><%= journey_index + 2 %>. <%= next_step.title %></span>
-        </span>
+          <span class="pager__title">
+            <span class="t-pager__item-next"><%= journey_index + 2 %>. <%= next_step.title %></span>
+          </span>
         </a>
       </li>
     <% end %>
