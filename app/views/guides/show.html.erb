@@ -29,11 +29,11 @@
 
 <% if @journey.include?(guide) %>
   <%
-     journey_size = @journey.steps.size
-     journey_index = @journey.steps.find_index(@guide)
+     journey_size = @journey.count
+     journey_index = @journey.find_index(@guide)
 
-     next_step = journey_index < journey_size && @journey.steps[journey_index + 1]
-     previous_step = journey_index > 0 && @journey.steps[journey_index - 1]
+     next_step = journey_index < journey_size && @journey.to_a[journey_index + 1]
+     previous_step = journey_index > 0 && @journey.to_a[journey_index - 1]
   %>
 
   <ul class="pager">
