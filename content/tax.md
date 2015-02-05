@@ -1,4 +1,5 @@
 ---
+label: Watch out for tax
 description: You pay tax on any income, including pension, that's above your tax-free Personal Allowance.
 ---
 #Tax you pay on your pension

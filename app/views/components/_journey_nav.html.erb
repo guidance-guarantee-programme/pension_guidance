@@ -11,7 +11,7 @@
       <%= content_tag :li, class: li_classes do %>
         <%= link_to(step.url) do %>
           <span class="journey-nav__number journey-nav__number--<%= index + 1 %>"></span>
-          <%= step.title %>
+          <%= step.label %>
           <%= content_tag :span, '(current)', class: 'visuallyhidden' if li_classes.include?('is-current') %>
         <% end %>
       <% end %>
