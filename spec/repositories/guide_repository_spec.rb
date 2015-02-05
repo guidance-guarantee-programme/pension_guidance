@@ -12,30 +12,42 @@ RSpec.describe GuideRepository do
       specify { expect { find }.to raise_error(GuideRepository::GuideNotFound) }
     end
 
-    shared_examples 'existing guide' do |expected_source_type, expected_filename|
+    shared_examples 'existing guide' do
       specify 'with the correct id' do
         expect(find.id).to eq id
       end
 
-      specify 'with the correct source pathname' do
-        expect(find.source).to eq(Rails.root.join("spec/fixtures/#{expected_filename}").to_s)
+      specify 'with the correct content' do
+        expect(find.content).to eq(expected_content)
       end
 
-      specify "with expected_source_type #{expected_source_type}" do
-        expect(find.source_type).to eq(expected_source_type)
+      specify 'with the correct description' do
+        expect(find.description).to eq(expected_description)
+      end
+
+      specify 'with the correct content type' do
+        expect(find.content_type).to eq(expected_content_type)
       end
     end
 
     context 'a govspeak guide' do
       let(:id) { 'the_test_govspeak_guide' }
 
-      include_examples 'existing guide', :govspeak, 'the_test_govspeak_guide.md'
+      include_examples 'existing guide' do
+        let(:expected_content_type) { :govspeak }
+        let(:expected_content) { "# This is the test guide\n" }
+        let(:expected_description) { 'The guide used for testing' }
+      end
     end
 
     context 'an html guide' do
       let(:id) { 'the_test_html_guide' }
 
-      include_examples 'existing guide', :html, 'the_test_html_guide.html'
+      include_examples 'existing guide' do
+        let(:expected_content_type) { :html }
+        let(:expected_content) { "<h1>This is the test guide</h1>\n" }
+        let(:expected_description) { 'The guide used for testing' }
+      end
     end
   end
 

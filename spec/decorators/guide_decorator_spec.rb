@@ -1,29 +1,43 @@
 RSpec.describe GuideDecorator, type: :decorator do
-  subject(:guide) { described_class.new(instance_double(Guide).as_null_object) }
+  describe 'delegates' do
+    let(:id) { 'foo' }
+    let(:slug) { '/foo' }
+    let(:description) { 'The test description' }
+    let(:decorator) { described_class.new(instance_spy(Guide, id: id, slug: slug, description: description)) }
 
-  it { is_expected.to respond_to(:slug) }
-  it { is_expected.to respond_to(:title) }
-  it { is_expected.to respond_to(:description) }
-  it { is_expected.to respond_to(:content) }
+    describe '#id' do
+      subject { decorator.id }
 
-  before do
-    allow(File).to receive(:read) { source }
+      it { is_expected.to eq(id) }
+    end
+
+    describe '#slug' do
+      subject { decorator.slug }
+
+      it { is_expected.to eq(slug) }
+    end
+
+    describe '#description' do
+      subject { decorator.description }
+
+      it { is_expected.to eq(description) }
+    end
   end
 
-  context 'when the guide source is markdown formatted' do
-    subject(:guide) { described_class.new(instance_double(Guide, source: double, source_type: :govspeak)) }
+  context 'when the guide content is markdown formatted' do
+    subject(:guide) { described_class.new(instance_double(Guide, content: guide_content, content_type: :govspeak)) }
 
     describe '#title' do
       subject(:title) { guide.title }
 
       context 'when the guide has no level one headers' do
-        let(:source) { '## No level one headers' }
+        let(:guide_content) { '## No level one headers' }
 
         it { is_expected.to be_blank }
       end
 
       context 'when the guide has a level one header' do
-        let(:source) { '# Level one header' }
+        let(:guide_content) { '# Level one header' }
 
         it 'returns the the level one header' do
           is_expected.to eq('Level one header')
@@ -31,7 +45,7 @@ RSpec.describe GuideDecorator, type: :decorator do
       end
 
       context 'when the guide has many level one headers' do
-        let(:source) do
+        let(:guide_content) do
           <<-GOVSPEAK.strip_heredoc
           # First level one header
           # Second level one header
@@ -47,7 +61,7 @@ RSpec.describe GuideDecorator, type: :decorator do
     describe '#content' do
       subject(:content) { guide.content }
 
-      let(:source) do
+      let(:guide_content) do
         <<-GOVSPEAK.strip_heredoc
           # First level one header
 
@@ -67,20 +81,20 @@ RSpec.describe GuideDecorator, type: :decorator do
     end
   end
 
-  context 'when the guide source is HTML formatted' do
-    subject(:guide) { described_class.new(instance_double(Guide, source: double, source_type: :html)) }
+  context 'when the guide content is HTML formatted' do
+    subject(:guide) { described_class.new(instance_double(Guide, content: guide_content, content_type: :html)) }
 
     describe '#title' do
       subject(:title) { guide.title }
 
       context 'when the guide has no level one headers' do
-        let(:source) { '<h2>No level one headers</h2>' }
+        let(:guide_content) { '<h2>No level one headers</h2>' }
 
         it { is_expected.to be_blank }
       end
 
       context 'when the guide has a level one header' do
-        let(:source) { '<h1>Level one header</h1>' }
+        let(:guide_content) { '<h1>Level one header</h1>' }
 
         it 'returns the the level one header' do
           is_expected.to eq('Level one header')
@@ -88,7 +102,7 @@ RSpec.describe GuideDecorator, type: :decorator do
       end
 
       context 'when the guide has many level one headers' do
-        let(:source) do
+        let(:guide_content) do
           <<-HTML.strip_heredoc
           <h1>First level one header</h1>
           <h1>Second level one header</h1>
@@ -104,7 +118,7 @@ RSpec.describe GuideDecorator, type: :decorator do
     describe '#content' do
       subject(:content) { guide.content }
 
-      let(:source) do
+      let(:guide_content) do
         <<-HTML.strip_heredoc
           <h1>First level one header</h1>
 
@@ -113,7 +127,7 @@ RSpec.describe GuideDecorator, type: :decorator do
       end
 
       it 'returns the HTML' do
-        is_expected.to eq(source)
+        is_expected.to eq(guide_content)
       end
     end
   end
