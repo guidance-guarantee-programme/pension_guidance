@@ -1,3 +1,7 @@
+---
+description: When deciding what to do with your pension money in retirement, remember to get financial advice and compare pension products and providers.
+---
+
 #How to shop around for the best deal
 
 Whatever you decide to do with your pension pot you don’t have to stay with your current pension provider.
@@ -10,6 +14,8 @@ The 'wake-up' pack your provider sends you when you reach retirement age is like
 
 You can choose to shop around by yourself or with help from a [financial adviser](/shop-around#getting-financial-advice). You have to pay for financial advice.
 
+^When shopping around [watch out for pension scams](/scams).^
+
 ##Comparing annuities
 
 Before you shop around, ask your current provider if they offer a [guaranteed annuity rate](http://www.pensionsadvisoryservice.org.uk/about-pensions/retirement-choices/buying-an-annuity-how-to-shop-around/guaranteed-annuity-rates) - a fixed rate which was set when you started your pension.
@@ -20,7 +26,11 @@ You should also check whether your current provider charges any penalties for mo
 
 There are many different kinds of annuity and rates vary between providers. For example, if you have a health condition that affects your life expectancy you may get more from an ‘enhanced’ annuity.
 
-You should always compare annuities before making a final decision - once you’ve bought one you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision.
+You should always compare annuities before making a final decision.
+
+once you’ve bought one you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision.
+
+^Ask about commission charges that might be included in the quotes you get.^
 
 ###Comparing annuities - what you need
 
@@ -59,11 +69,11 @@ You should consider speaking to a financial adviser before getting an income dra
 
 ##Getting financial advice
 
-Comparing retirement income products can be complicated. You may wish to speak to a financial adviser to help you.
+Comparing retirement income products can be complicated. You may wish to speak to a financial adviser to help you. They'll look at your circumstances and recommend what you can do with the money in your pension pot.
 
 The more information you have prepared when you meet with one, the more you will benefit. This includes details of the value of your pension pot and other income.
 
-Check your adviser is registered and approved by the FCA before you pay for advice. You can check the [FCA register](http://www.fsa.gov.uk/register/home.do) to make sure.
+Check your adviser is registered and approved by the (Financial Conduct Authority (FCA) before you pay for advice. You can check the [FCA register](http://www.fsa.gov.uk/register/home.do) to make sure.
 
 ###What a financial adviser will do
 
