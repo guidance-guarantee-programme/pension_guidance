@@ -7,11 +7,11 @@ description: When deciding what to do with your pension money in retirement, rem
 
 Whatever you decide to do with your pension pot you don’t have to stay with your current pension provider.
 
-For example, one option is to buy a guaranteed income for the rest of your life (an annuity).
+For example, one option is to buy a guaranteed income for a fixed period or the rest of your life (an annuity).
 
 You don’t have to buy one from your current provider. Moving your pension pot to another provider could give you access to a wider range of annuities and a higher income.
 
-The 'wake-up' pack your provider sends you when you reach retirement age is likely to include information about their own products only. Research shows that 8 out of 10 people would have benefited from switching providers.
+The 'wake-up' pack your provider sends you when you reach retirement age is likely to include information about their own products only. Research shows that 8 out of 10 people would have benefited from switching providers (Financial Conduct Authority, Thematic Review of Annuities, Feb 2014).
 
 You can choose to shop around by yourself or with help from a [financial adviser](/shop-around#getting-financial-advice). You have to pay for financial advice.
 
@@ -47,20 +47,20 @@ You can read more about the different kinds of annuity and compare annuity rates
 
 ##Comparing income drawdown products
 
-To compare products where you take money from your pension pot as and when you need it (income drawdown) you’ll need some knowledge of investing. This means knowing which funds and markets to invest in to make sure your money lasts and keeps up with or beats the rate of inflation.
+To compare products where you take money from your pension pot as and when you need it (income drawdown) you’ll need some knowledge of investing.
 
-You’ll also need to look out for fees. A financial adviser can help you with this.
+You need to know which funds and markets to invest in to make sure your money lasts and keeps up with or beats the rate of inflation. You also need to look out for fees. A financial adviser can help you with this and your income drawdown choices.
 
 ###Comparing income drawdown - what you need
 
-To compare income drawdown products you’ll need to:
+To compare income drawdown products you need to:
 
 * understand investment terms and choices
 * look at the options available on each product
 * make decisions about where you want to invest your money
 * check investment management and administration fees
 
-You’ll also need to know how your [pension pot will be taxed](/tax) every time you take money out of it.
+You also need to know how your [pension pot will be taxed](/tax) every time you take money out of it.
 
 %If your investments don't perform well and you take too much money from your pension pot, you could run out of retirement income.%
 
@@ -74,7 +74,7 @@ Comparing retirement income products can be complicated. You may wish to speak t
 
 The more information you have prepared when you meet with one, the more you will benefit. This includes details of the value of your pension pot and other income.
 
-Check your adviser is registered and approved by the (Financial Conduct Authority (FCA) before you pay for advice. You can check the [FCA register](http://www.fsa.gov.uk/register/home.do) to make sure.
+Check your adviser is authorised by the Financial Conduct Authority (FCA) before you pay for advice. You can check the [FCA register](http://www.fsa.gov.uk/register/home.do) to make sure.
 
 ###What a financial adviser will do
 
@@ -82,7 +82,7 @@ An adviser will ask about your current financial position, your goals and how yo
 
 You should always ask an adviser if they’re independent or restricted. Restricted advisers are limited to certain products (eg only annuities), providers or both. Independent advisers cover the whole market and are not restricted to one product type or provider.
 
-This list from the Financial Conduct Authority (FCA) explains what [an adviser might ask you](http://www.fca.org.uk/consumers/financial-services-products/investments/financial-advice/what-an-adviser-might-ask-you).
+This list from the FCA explains what [an adviser might ask you](http://www.fca.org.uk/consumers/financial-services-products/investments/financial-advice/what-an-adviser-might-ask-you).
 
 ###Paying for financial advice
 
