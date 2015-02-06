@@ -32,13 +32,19 @@ As with every investment the value of your pot could go up or down.
 
 Usually the earliest you can start taking money from your pot is 55. Check with your provider. In some circumstances you can [take your pension earlier](https://www.gov.uk/early-retirement-pension/personal-and-workplace-pensions).
 
-###What you can do next
+###Your next steps
 
-Here are some next steps if you want to leave your pot untouched for a while:
+If you want to leave your pot untouched for a while, ask your pension provider:
 
-- check your provider's charges and if you can still pay in
-- ask your provider for an estimate of how much your pot could grow
-- check if your pension pot has any special arrangements, eg a guaranteed value at a certain date
+
+- what they're charging you for managing your pension money
+- if their charges will change in the future - pushing them for accurate information about charges will help you if you want to [shop around](/shop-around) for other providers
+- if you have to take your pension money by a specific date or age
+- if you can keep on paying in - if so, ask if there are any limits
+- how much your pension pot is likely to grow by, over the number of years you're planning on leaving it untouched
+- if your pension pot has any special arrangements that could affect when you take your pension money, eg a guaranteed value at a certain date
+- how your money is being invested now and in the future - if you want to make any changes to how your money's invested, [get financial advice](/shop-around#getting-financial-advice) before making a decision
+- if they have up-to-date details of the person who you want to leave your money to when you die - let your provider know if you need to make any changes
 
 
 ##Get a guaranteed income (annuity)
@@ -78,14 +84,16 @@ You [pay tax on income from an annuity](/tax), just like you do on your salary. 
 If the insurer you bought your annuity with goes bust you'll be covered for 90% by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
 
 
-###What you can do next
+###Your next steps
 
-Here are some next steps if you're interested in buying an annuity:
+If you’re interested in buying an annuity you can:
 
 - [compare annuities](https://www.moneyadviceservice.org.uk/en/tools/annuities) to check how much you might get
 - [shop around](/shop-around) for the best deal - you don’t have to stay with your current provider
 - make sure you know [how much tax you'll pay](/tax) on your annuity income
-- check if your pension pot has any special arrangements, eg a guaranteed annuity rate
+- check with your provider if the annuity they offer is right for you, eg if you're in poor health you could get a better rate
+- ask your provider if your pension pot has any special arrangements, eg a guaranteed annuity rate
+
 
 ##Get a flexible income
 
@@ -101,9 +109,9 @@ It’s up to you where your money is invested. Your provider will give you some 
 
 As with every investment there is the risk that the value of your fund can go up or down.
 
-You can take as much money as often as you want but there'll be a charge every time you withdraw money. Your provider will pay it to you after having taken off any [Income Tax](/tax) due. You should think about how much your take out every year and how long you want your money to last.
+You can take as much money as often as you want but there'll be a charge every time you withdraw money. Your provider will pay it to you after having taken off any [Income Tax](/tax) due. You should think about how much you take out every year and how long you want your money to last.
 
-% Taking out larger sums can mean you pay more tax.%
+%Taking out larger sums can mean you pay more tax.%
 
 You can leave your pot to someone when you die but they would have to pay inheritance tax on it.
 
@@ -123,13 +131,13 @@ If you take the tax-free lump sum, under current pension rules you must buy your
 
 Alternatively, you can move your pot gradually into flexi-access - you don't have to move it all at once. Each time you move an amount you can take 25% of tax free.
 
-###What you can do next
+###Your next steps
 
-Here are some next steps if you're interested in flexi-access drawdown:
+If you’re interested in flexi-access drawdown you can:
 
 - get some estimates from [registered providers](http://www.fca.org.uk/register) on how much your investments could grow and what the charges are - usually you just have to fill in a short form on a provider's website
 - [shop around](/shop-around) for the best deal - you don’t have to stay with your current provider
-- check with providers what kind of flexi-access drawdown they offer, some might have products where part of your income is guaranteed
+- check with providers what kind of flexi-access drawdown they offer, some might have products where part of your income is guaranteed but charges and conditions will apply
 - make sure you know [how much tax you'll pay](/tax)
 
 ###Option 2: Take smaller cash sums from your pot
@@ -151,13 +159,15 @@ Like with every investment there's the risk that the value of your fund can go u
 
 You could also still pay into the fund if you wanted to, up to a limit of £10,000 a year.
 
-###What you can do next
+###Your next steps
 
-Here are some next steps if you're interested in smaller cash sums from your pot:
+If you’re interested in taking smaller cash sums from your pot you can:
 
 - check with your provider if they offer this option and what they charge
 - calculate how much you'll take out over the year and how long your pot might last
 - make sure you know [how much tax you'll pay](/tax)
+- ask your provider if your pension pot has any special arrangements that could affect when you take your pension money, eg a guaranteed value at a certain date
+
 
 ##Take your whole pot as cash
 
@@ -198,3 +208,12 @@ You use £20,000 to buy an annuity. This gives you a taxable income for the rest
 
 You also put £25,000 into a drawdown fund and take out about £5,000 a year for about 5 years.
 $E
+
+
+###Your next steps
+
+If you're interested in mixing your options:
+
+- look at all options to see which ones are right for you
+- shop around - you don't have to buy a product from your current provider
+- [get financial advice](/shop-around#getting-financial-advice) before making a decision
