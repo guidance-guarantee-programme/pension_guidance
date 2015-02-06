@@ -45,7 +45,7 @@
         <a href="<%= previous_step.url %>" rel="prev">
           <span class="pager__label">Previous</span>
           <span class="pager__title">
-            <span class="t-pager__item-previous"><%= journey_index %>. <%= previous_step.title %></span>
+            <span class="t-pager__item-previous"><%= journey_index %>. <%= previous_step.label %></span>
           </span>
         </a>
       <% else %>
@@ -63,7 +63,7 @@
         <a href="<%= next_step.url %>" rel="next">
           <span class="pager__label">Next</span>
           <span class="pager__title">
-            <span class="t-pager__item-next"><%= journey_index + 2 %>. <%= next_step.title %></span>
+            <span class="t-pager__item-next"><%= journey_index + 2 %>. <%= next_step.label %></span>
           </span>
         </a>
       </li>

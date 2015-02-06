@@ -9,6 +9,10 @@ class GuideDecorator < Draper::Decorator
     fail 'GuideDecorator subclasses must implement title'
   end
 
+  def label
+    object.label.blank? ? title : object.label
+  end
+
   def content
     fail 'GuideDecorator subclasses must implement content'
   end

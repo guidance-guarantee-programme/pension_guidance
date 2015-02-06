@@ -32,18 +32,24 @@ class GuideRepository
   private
 
   def read_guide(id, path)
-    content_type = case File.extname(path)
-                   when '.md' then :govspeak
-                   when '.html' then :html
-                   end
-
+    content_type = file_content_type(path)
     source = FrontMatterParser.new(File.read(path))
 
     Guide.new(id,
               content: source.content,
               content_type: content_type,
+              label: source.front_matter['label'],
               description: source.front_matter['description']
     )
+  end
+
+  def file_content_type(path)
+    case File.extname(path)
+    when '.md' then
+      :govspeak
+    when '.html' then
+      :html
+    end
   end
 
   def glob_dir(file_pattern)

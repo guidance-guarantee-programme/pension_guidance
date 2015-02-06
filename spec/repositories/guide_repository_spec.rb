@@ -21,6 +21,10 @@ RSpec.describe GuideRepository do
         expect(find.content).to eq(expected_content)
       end
 
+      specify 'with the correct label' do
+        expect(find.label).to eq(expected_label)
+      end
+
       specify 'with the correct description' do
         expect(find.description).to eq(expected_description)
       end
@@ -36,6 +40,7 @@ RSpec.describe GuideRepository do
       include_examples 'existing guide' do
         let(:expected_content_type) { :govspeak }
         let(:expected_content) { "# This is the test guide\n" }
+        let(:expected_label) { 'Tested' }
         let(:expected_description) { 'The guide used for testing' }
       end
     end
@@ -46,6 +51,7 @@ RSpec.describe GuideRepository do
       include_examples 'existing guide' do
         let(:expected_content_type) { :html }
         let(:expected_content) { "<h1>This is the test guide</h1>\n" }
+        let(:expected_label) { 'Tested' }
         let(:expected_description) { 'The guide used for testing' }
       end
     end

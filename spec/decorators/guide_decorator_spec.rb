@@ -32,4 +32,34 @@ RSpec.describe GuideDecorator, type: :decorator do
       it { is_expected.to be_a(HTMLGuideDecorator) }
     end
   end
+
+  describe '#label' do
+    let(:guide) { Guide.new('test-guide', label: label) }
+
+    subject { described_class.new(guide).label }
+
+    context 'when the guide specifies a label' do
+      let(:label) { 'Document label' }
+
+      it 'returns the label' do
+        is_expected.to eq(label)
+      end
+    end
+
+    context 'when the guide specifies a blank label' do
+      let(:label) { '' }
+
+      it 'returns the title' do
+        expect { subject }.to raise_error('GuideDecorator subclasses must implement title')
+      end
+    end
+
+    context 'when the guide specifies no label' do
+      let(:label) { nil }
+
+      it 'returns the title' do
+        expect { subject }.to raise_error('GuideDecorator subclasses must implement title')
+      end
+    end
+  end
 end

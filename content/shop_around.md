@@ -1,4 +1,5 @@
 ---
+label: Shop around for the best deal
 description: When deciding what to do with your pension money in retirement, remember to get financial advice and compare pension products and providers.
 ---
 
