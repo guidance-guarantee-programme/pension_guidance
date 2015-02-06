@@ -10,3 +10,13 @@
 @import "helpers/*";
 @import "layout/**/*";
 @import "components/**/*";
+
+.home-intro,
+.home-scope {
+  @include core-24;
+  color: #6f777b;
+}
+
+.home-scope {
+  margin-top: 28px;
+}
