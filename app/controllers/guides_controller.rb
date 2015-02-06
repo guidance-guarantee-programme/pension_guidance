@@ -1,11 +1,32 @@
 class GuidesController < ApplicationController
   layout 'guides'
 
+  JOURNEY_GUIDE_IDS = %w(
+    pension-pot-value
+    pension-pot-options
+    making-money-last
+    work-out-income
+    tax
+    shop-around
+  )
+
+  NON_JOURNEY_RELATED_GUIDE_IDS = %w(
+    pension-pot-options
+    6-things-you-need-to-know
+    pension-types
+    tax
+  )
+
+  JOURNEY_RELATED_GUIDE_IDS = %w(
+    benefits
+    scams
+  )
+
   def show
     guide = guide_repository.find(params[:id])
 
     @related_guides = decorate(related_guides_for(guide))
-    @journey = decorate(journey_steps)
+    @journey = decorate(journey_guides)
     @guide = decorate(guide)
 
     expires_in Rails.application.config.cache_max_age, public: true
@@ -26,36 +47,22 @@ class GuidesController < ApplicationController
   end
 
   def related_guides_for(guide)
-    journey_steps.include?(guide) ? journey_related_guides : non_journey_related_guides
+    journey_guide?(guide) ? journey_related_guides : non_journey_related_guides
   end
 
   def non_journey_related_guides
-    @related_guides ||=
-      guide_repository.find_all(
-        'pension-pot-options',
-        '6-things-you-need-to-know',
-        'pension-types',
-        'tax'
-      )
+    @related_guides ||= guide_repository.find_all(*NON_JOURNEY_RELATED_GUIDE_IDS)
   end
 
   def journey_related_guides
-    @journey_related_guides ||=
-      guide_repository.find_all(
-        'benefits',
-        'scams'
-      )
+    @journey_related_guides ||= guide_repository.find_all(*JOURNEY_RELATED_GUIDE_IDS)
   end
 
-  def journey_steps
-    @journey_steps ||=
-      guide_repository.find_all(
-        'pension-pot-value',
-        'pension-pot-options',
-        'making-money-last',
-        'work-out-income',
-        'tax',
-        'shop-around'
-      )
+  def journey_guides
+    @journey_guides ||= guide_repository.find_all(*JOURNEY_GUIDE_IDS)
+  end
+
+  def journey_guide?(guide)
+    JOURNEY_GUIDE_IDS.include?(guide.id)
   end
 end
