@@ -40,7 +40,7 @@ RSpec.describe GuideRepository do
       end
     end
 
-    context 'an html guide' do
+    context 'an HTML guide' do
       let(:id) { 'the_test_html_guide' }
 
       include_examples 'existing guide' do

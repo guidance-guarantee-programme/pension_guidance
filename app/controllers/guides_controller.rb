@@ -1,12 +1,12 @@
 class GuidesController < ApplicationController
   layout 'guides'
 
-  decorates_assigned :guide, with: GuideDecorator
-
   def show
-    @guide = guide_repository.find(params[:id])
-    @journey = GuideDecorator.decorate_collection(journey_steps)
-    @related_guides = @journey.include?(@guide) ? journey_related_guides : related_guides
+    guide = guide_repository.find(params[:id])
+
+    @related_guides = decorate(related_guides_for(guide))
+    @journey = decorate(journey_steps)
+    @guide = decorate(guide)
 
     expires_in Rails.application.config.cache_max_age, public: true
   end
@@ -17,22 +17,33 @@ class GuidesController < ApplicationController
     @guide_repository ||= GuideRepository.new
   end
 
-  def related_guides
+  def decorate(guide_or_collection)
+    if guide_or_collection.is_a?(Enumerable)
+      guide_or_collection.map { |guide| GuideDecorator.for(guide) }
+    else
+      GuideDecorator.for(guide_or_collection)
+    end
+  end
+
+  def related_guides_for(guide)
+    journey_steps.include?(guide) ? journey_related_guides : non_journey_related_guides
+  end
+
+  def non_journey_related_guides
     @related_guides ||=
-      GuideDecorator.decorate_collection(
-        guide_repository.find_all(
-          'pension-pot-options',
-          '6-things-you-need-to-know',
-          'pension-types',
-          'tax'
-        )
+      guide_repository.find_all(
+        'pension-pot-options',
+        '6-things-you-need-to-know',
+        'pension-types',
+        'tax'
       )
   end
 
   def journey_related_guides
     @journey_related_guides ||=
-      GuideDecorator.decorate_collection(
-        guide_repository.find_all('benefits', 'scams')
+      guide_repository.find_all(
+        'benefits',
+        'scams'
       )
   end
 

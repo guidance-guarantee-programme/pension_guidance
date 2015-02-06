@@ -1,8 +1,8 @@
-<% content_for(:page_title, t('service.title', page_title: guide.title)) %>
-<% content_for(:meta_description, guide.description) %>
+<% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
+<% content_for(:meta_description, @guide.description) %>
 
 <% content_for :sidebar do %>
-  <% if @journey.include?(guide) %>
+  <% if @journey.include?(@guide) %>
     <div class="link-promo">
       <h2 class="link-promo__heading">6 things you need to know</h2>
 
@@ -12,7 +12,7 @@
 
       <hr class="hr-thin">
 
-      <%= render 'components/journey_nav', journey: @journey, current_step: guide %>
+      <%= render 'components/journey_nav', journey: @journey, current_step: @guide %>
     </div>
   <% end %>
 
@@ -21,16 +21,16 @@
     <ul class="link-promo__list">
       <% @related_guides.each do |related_guide| %>
         <li class="link-promo__item t-link-promo__item">
-          <%= link_to related_guide.title, related_guide.url unless related_guide == guide %>
+          <%= link_to related_guide.title, related_guide.url unless related_guide == @guide %>
         </li>
       <% end %>
     </ul>
   </div>
 <% end %>
 
-<%= guide.content %>
+<%= @guide.content %>
 
-<% if @journey.include?(guide) %>
+<% if @journey.include?(@guide) %>
   <%
      journey_size = @journey.count
      journey_index = @journey.find_index(@guide)
