@@ -4,6 +4,8 @@
   <!--[if IE 7]><%= stylesheet_link_tag 'pensions-guidance-ie7', media: 'screen' %><![endif]-->
   <!--[if IE 8]><%= stylesheet_link_tag 'pensions-guidance-ie8', media: 'screen' %><![endif]-->
 
+  <%= canonical_tag rescue nil %>
+
   <% if content_for?(:meta_description) %>
     <meta name="description" content="<%= content_for(:meta_description) %>">
   <% end %>

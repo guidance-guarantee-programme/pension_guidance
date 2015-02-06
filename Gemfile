@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 
 gem 'bugsnag'
+gem 'canonical-rails'
 gem 'draper', '~> 1.3'
 gem 'foreman'
 gem 'gaffe'
