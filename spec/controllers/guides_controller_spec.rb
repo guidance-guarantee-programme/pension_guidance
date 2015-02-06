@@ -9,7 +9,7 @@ RSpec.describe GuidesController, type: :controller do
     end
 
     context 'existing guide' do
-      let(:guide) { instance_double(Guide) }
+      let(:guide) { instance_spy(Guide, content_type: :govspeak) }
 
       before do
         allow_any_instance_of(GuideRepository).to receive(:find).and_return(guide)

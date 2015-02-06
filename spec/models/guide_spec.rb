@@ -1,9 +1,9 @@
 RSpec.describe Guide, type: :model do
   let(:id) { 'the_test_guide' }
-  let(:source) { '# This is a test guide' }
-  let(:description) { 'A guide used for testing' }
-
-  subject(:guide) { Guide.new(id, source) }
+  let(:content_type) { :govspeak }
+  let(:content) { '/examples/test.md' }
+  let(:description) { 'A test description' }
+  let(:guide) { Guide.new(id, content: content, content_type: content_type, description: description) }
 
   describe '#id' do
     it 'returns the initialised id' do
@@ -11,9 +11,21 @@ RSpec.describe Guide, type: :model do
     end
   end
 
-  describe '#source' do
-    it 'returns the initialised source' do
-      expect(guide.source).to eq(source)
+  describe '#content' do
+    it 'returns the initialised content' do
+      expect(guide.content).to eq(content)
+    end
+  end
+
+  describe '#content_type' do
+    it 'returns the initialised content_type' do
+      expect(guide.content_type).to eq(content_type)
+    end
+  end
+
+  describe '#description' do
+    it 'returns the initialised description' do
+      expect(guide.description).to eq(description)
     end
   end
 

@@ -12,24 +12,48 @@ RSpec.describe GuideRepository do
       specify { expect { find }.to raise_error(GuideRepository::GuideNotFound) }
     end
 
-    context 'existing guide' do
-      let(:id) { 'the_test_guide' }
+    shared_examples 'existing guide' do
+      specify 'with the correct id' do
+        expect(find.id).to eq id
+      end
 
-      describe 'returns the guide' do
-        specify 'with the correct id' do
-          expect(find.id).to eq id
-        end
+      specify 'with the correct content' do
+        expect(find.content).to eq(expected_content)
+      end
 
-        specify 'with the correct source pathname' do
-          expect(find.source).to eq(Rails.root.join('spec/fixtures/the_test_guide.md').to_s)
-        end
+      specify 'with the correct description' do
+        expect(find.description).to eq(expected_description)
+      end
+
+      specify 'with the correct content type' do
+        expect(find.content_type).to eq(expected_content_type)
+      end
+    end
+
+    context 'a govspeak guide' do
+      let(:id) { 'the_test_govspeak_guide' }
+
+      include_examples 'existing guide' do
+        let(:expected_content_type) { :govspeak }
+        let(:expected_content) { "# This is the test guide\n" }
+        let(:expected_description) { 'The guide used for testing' }
+      end
+    end
+
+    context 'an HTML guide' do
+      let(:id) { 'the_test_html_guide' }
+
+      include_examples 'existing guide' do
+        let(:expected_content_type) { :html }
+        let(:expected_content) { "<h1>This is the test guide</h1>\n" }
+        let(:expected_description) { 'The guide used for testing' }
       end
     end
   end
 
   describe '#all' do
     it 'returns an array of guides' do
-      expect(guide_repository.all.first.id).to eq('the_test_guide')
+      expect(guide_repository.all.map(&:id)).to contain_exactly('the_test_html_guide', 'the_test_govspeak_guide')
     end
   end
 end

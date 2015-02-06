@@ -10,7 +10,7 @@ class GuideRepository
 
   def find(id)
     if (path = glob_dir(id.tr('-', '_')).try(:first))
-      Guide.new(id, path)
+      read_guide(id, path)
     else
       fail GuideNotFound
     end
@@ -25,11 +25,26 @@ class GuideRepository
   def all
     glob_dir('*').each_with_object([]) do |path, result|
       id = File.basename(path, '.*')
-      result << Guide.new(id, path)
+      result << read_guide(id, path)
     end
   end
 
   private
+
+  def read_guide(id, path)
+    content_type = case File.extname(path)
+                   when '.md' then :govspeak
+                   when '.html' then :html
+                   end
+
+    source = FrontMatterParser.new(File.read(path))
+
+    Guide.new(id,
+              content: source.content,
+              content_type: content_type,
+              description: source.front_matter['description']
+    )
+  end
 
   def glob_dir(file_pattern)
     Dir["#{dir}/**/#{file_pattern}.{md,html}"]
