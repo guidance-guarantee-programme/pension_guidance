@@ -53,8 +53,6 @@ s5. Take away the [tax you pay on your pension(s)](/tax).
 $E
 **Example**
 
-###What you have
-
 You’re 65 and you decide to stop working. You have the basic State Pension and your pension pot.
 
 What you have | Amount
@@ -107,8 +105,6 @@ s6. Take away the [tax you pay on all your income](/tax).
 
 $E
 **Example**
-
-###What you have
 
 You’re 65 and want to work part time until you’re 70. You decide to leave your pension pot for 5 years.
 

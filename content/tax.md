@@ -14,7 +14,7 @@ How much tax you pay depends on your total income and the [tax rate](https://www
 
 Your taxable income may include:
 
-- any money you get from your pension pot, eg as an [annuity](/pension-pot-options) or [cash](/pension-pot-options)
+- any money you get from your pension pot, eg as an [annuity](/pension-pot-options#get-a-guaranteed-income-annuity) or [cash](/pension-pot-options#take-your-whole-pot-as-cash)
 - the State Pension
 - earnings from employment or self employment
 - any other income, eg money from rental income
@@ -30,7 +30,7 @@ There are 2 ways you can take your tax-free lump sum.
 ###Take your lump sum in one go
 You can take 25% of your whole pension pot tax free.
 
-If you do this, you can't leave the remaining 75% untouched. You must either take it as cash, or buy an [annuity](/pension-pot-options) with it, or put it into an [flexi-access drawdown](/pension-pot-options) fund.
+If you do this, you can't leave the remaining 75% untouched. You must either take it as cash, or buy an [annuity](/pension-pot-options#get-a-guaranteed-income-annuity) with it, or put it into an [flexi-access drawdown](/pension-pot-options#option-1-flexi-access-drawdown) fund.
 
 Any payments you get from the remaining 75% are taxable.
 
