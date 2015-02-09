@@ -8,8 +8,8 @@ cache:
   - vendor/assets/bower_components
 env:
   global:
-  - secure: gBNL4RkCwf9ExKFVlnBBr6i/bY1xQydNoZ1xneXsmeqCwdqmuJMaZKJioLI/U2IJJjay50y1dr9X1ZuKRdC3Zrv0VTW5k77T0fX4AcqP0nAxz5Y0UyEE8VB0UZQMoZgpm+xT7QPNaJZqNTl0uBzADJzMyaWBhWNtwOGOfsOR0XY=
-  - secure: FbiGhJvoeOhQb4Ms+eQ9zRzJmBDBvuJySdSvhJ/ksulHRjpPLk/MQKezHH7XrveqKztrl5hTapjSWe+BdXlvPQelCVycXD4BjDrNodJvuBCqgRbvh6sQRZagxSuCqRpfbM35xrIgDnkB7eVVz/NBqm7HzI4rHwmxrtcdNYkOTvw=
+  - secure: UJ8k9SIGUlvEPjSGx5ji863LWbViJw/bFR18Pm1aeTdTiQmFTOLM9orq4Fuxb/sQWEXTyjcYiS5LzLS9pS568b0GH7gYau/jJr1DV9j+RbpUU+e7dnhywL9GfxZ7pnWLzrvE2IF+q/7IraQOR+Z+LX9RUVwddJgUX8IFoKi4Ln8=
+  - secure: moD2EZPtH4IRmt5sSVle/tIB7fEuAYU7Z58Lu7SKKEdYnFwqQRBTM7maD+Nm1aU7H/h98+YoyxkRqs5sujgj0LtAM+wJWcMs+Drdut5VccJ2darfbFkZEDFdtMcrksv5iokd/uDQBkK8wluvk9RzvMJv8EbTCaTUS2iQUxixoHE=
 node_js:
 - '0.10'
 before_script:
