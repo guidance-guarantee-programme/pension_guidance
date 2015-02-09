@@ -45,15 +45,15 @@ To compare annuities, you generally need to have the following information ready
 
 You can read more about the different kinds of annuity and compare annuity rates on the [Money Advice Service website](https://annuities.moneyadviceservice.org.uk/xml/annuitiesMAS/an_form.cfm) or speak to a financial adviser to help you compare or discuss products you’ve found.
 
-##Comparing income drawdown products
+##Comparing flexi-access drawdown products
 
-To compare products where you take money from your pension pot as and when you need it (income drawdown) you’ll need some knowledge of investing.
+To compare products where you take money from your pension pot as and when you need it (flexi-access drawdown) you’ll need some knowledge of investing.
 
-You need to know which funds and markets to invest in to make sure your money lasts and keeps up with or beats the rate of inflation. You also need to look out for fees. A financial adviser can help you with this and your income drawdown choices.
+You need to know which funds and markets to invest in to make sure your money lasts and keeps up with or beats the rate of inflation. You also need to look out for fees. A financial adviser can help you with this and your flexi-access drawdown choices.
 
-###Comparing income drawdown - what you need
+###Comparing flexi-access drawdown - what you need
 
-To compare income drawdown products you need to:
+To compare flexi-access drawdown products you need to:
 
 * understand investment terms and choices
 * look at the options available on each product
@@ -64,9 +64,9 @@ You also need to know how your [pension pot will be taxed](/tax) every time you 
 
 %If your investments don't perform well and you take too much money from your pension pot, you could run out of retirement income.%
 
-Getting an income drawdown product may involve moving your pot to a different provider. If you're not confident with investing it may not be right for you.
+Getting an flexi-access drawdown product may involve moving your pot to a different provider. If you're not confident with investing it may not be right for you.
 
-You should consider speaking to a financial adviser before getting an income drawdown product.
+You should consider speaking to a financial adviser before getting an flexi-access drawdown product.
 
 ##Getting financial advice
 
