@@ -2,3 +2,4 @@
 /node_modules
 /tmp
 /vendor/assets/bower_components
+/.bundle
