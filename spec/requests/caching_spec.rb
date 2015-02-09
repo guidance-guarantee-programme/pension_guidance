@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 cacheable_content = {
   guide: '/pension-types',
   home: '/'
