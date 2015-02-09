@@ -28,6 +28,10 @@
     height: 50px;
   }
 
+  &.last-child {
+    min-height: 30px;
+  }
+
   @include media(tablet) {
     min-height: 45px;
 
