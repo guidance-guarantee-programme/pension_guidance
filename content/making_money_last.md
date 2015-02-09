@@ -65,7 +65,7 @@ Use the [Money Advice Service Budget planner](https://www.moneyadviceservice.org
 
 Your income in retirement will be influenced by what you choose to do with your pension pot.
 
-You’ll need to think about what’s important to you in terms of security and flexibility. An annuity can provide you with a guaranteed level of income. This is similar to defined benefit pensions and the basic State Pension but different from income drawdown products which are more flexible.
+You’ll need to think about what’s important to you in terms of security and flexibility. An annuity can provide you with a guaranteed level of income. This is similar to defined benefit pensions and the basic State Pension but different from flexi-access drawdown products which are more flexible.
 
 With cash and income drawdown, where part or all of your pot remains invested, your pot will only stay the same (or increase) if you take out as much or less than the amount it grows.
 
