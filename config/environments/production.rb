@@ -24,7 +24,7 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
-  # Configure cache control for static files: "public, s-maxage={ 1 year }, maxage={ 2592000 days }"
+  # Configure cache control for static files: "public, s-maxage={ 1 year }, maxage={ 30 days }"
   config.static_cache_control = 'public, s-maxage=31536000, maxage=2592000'
 
   # Compress JavaScripts and CSS.
