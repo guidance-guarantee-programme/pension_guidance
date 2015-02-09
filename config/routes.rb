@@ -9,11 +9,15 @@ Rails.application.routes.draw do
           id: guide.slug
     end
 
-    get 'styleguide/pages/homepage', to: 'styleguide#pages_homepage'
-    get 'styleguide/pages/guide', to: 'styleguide#pages_guide'
-    get 'styleguide/pages/journey-index', to: 'styleguide#pages_journey_index'
-    get 'styleguide/pages/journey-page', to: 'styleguide#pages_journey_page'
+    scope path: 'styleguide', controller: 'styleguide' do
+      scope path: 'pages' do
+        get 'homepage', action: 'pages_homepage'
+        get 'guide', action: 'pages_guide'
+        get 'journey-index', action: 'pages_journey_index'
+        get 'journey-page', action: 'pages_journey_page'
+      end
 
-    get 'styleguide(/:action)', controller: 'styleguide'
+      get '(/:action)'
+    end
   end
 end
