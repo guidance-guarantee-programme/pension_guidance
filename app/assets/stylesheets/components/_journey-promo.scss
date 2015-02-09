@@ -28,14 +28,19 @@
     height: 50px;
   }
 
-  &.last-child {
-    min-height: 30px;
-  }
-
   @include media(tablet) {
     min-height: 45px;
+  }
 
-    &.last-child {
+  &.last-child {
+    min-height: 30px;
+
+    @include ie-lte(8) {
+      min-height: 35px;
+      border-color: $color-journey-border;
+    }
+
+    @include media(tablet) {
       border-color: #fff;
     }
   }
