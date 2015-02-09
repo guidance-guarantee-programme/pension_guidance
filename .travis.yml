@@ -3,19 +3,19 @@ language: ruby
 cache:
   bundler: true
   directories:
-    - node_modules
-    - tmp/cache/assets/test
-    - vendor/assets/bower_components
+  - node_modules
+  - tmp/cache/assets/test
+  - vendor/assets/bower_components
 env:
   global:
-    - secure: "gBNL4RkCwf9ExKFVlnBBr6i/bY1xQydNoZ1xneXsmeqCwdqmuJMaZKJioLI/U2IJJjay50y1dr9X1ZuKRdC3Zrv0VTW5k77T0fX4AcqP0nAxz5Y0UyEE8VB0UZQMoZgpm+xT7QPNaJZqNTl0uBzADJzMyaWBhWNtwOGOfsOR0XY="
-    - secure: "FbiGhJvoeOhQb4Ms+eQ9zRzJmBDBvuJySdSvhJ/ksulHRjpPLk/MQKezHH7XrveqKztrl5hTapjSWe+BdXlvPQelCVycXD4BjDrNodJvuBCqgRbvh6sQRZagxSuCqRpfbM35xrIgDnkB7eVVz/NBqm7HzI4rHwmxrtcdNYkOTvw="
+  - secure: gBNL4RkCwf9ExKFVlnBBr6i/bY1xQydNoZ1xneXsmeqCwdqmuJMaZKJioLI/U2IJJjay50y1dr9X1ZuKRdC3Zrv0VTW5k77T0fX4AcqP0nAxz5Y0UyEE8VB0UZQMoZgpm+xT7QPNaJZqNTl0uBzADJzMyaWBhWNtwOGOfsOR0XY=
+  - secure: FbiGhJvoeOhQb4Ms+eQ9zRzJmBDBvuJySdSvhJ/ksulHRjpPLk/MQKezHH7XrveqKztrl5hTapjSWe+BdXlvPQelCVycXD4BjDrNodJvuBCqgRbvh6sQRZagxSuCqRpfbM35xrIgDnkB7eVVz/NBqm7HzI4rHwmxrtcdNYkOTvw=
 node_js:
-  - "0.10"
+- '0.10'
 before_script:
-  - npm install
+- npm install
 after_script:
-  - ./node_modules/.bin/travis-notify-geckoboard -a $GECKOBOARD_API_KEY -w $GECKOBOARD_WIDGET_KEY
+- "./node_modules/.bin/travis-notify-geckoboard -a $GECKOBOARD_API_KEY -w $GECKOBOARD_WIDGET_KEY"
 deploy:
   provider: heroku
   app: ggp-pension-guidance
