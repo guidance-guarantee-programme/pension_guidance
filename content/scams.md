@@ -1,6 +1,7 @@
 ---
 description: How to spot the signs of a pension scam, how to protect yourself, and what to do if you've been targeted.
 ---
+
 #How to avoid a pension scam
 
 %The information on this page about your pension pot options will apply from 6 April 2015.%

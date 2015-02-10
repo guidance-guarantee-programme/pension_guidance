@@ -2,6 +2,7 @@
 label: Watch out for tax
 description: You pay tax on any income, including pension, that's above your tax-free Personal Allowance.
 ---
+
 #Tax you pay on your pension
 
 %The information on this page about tax and pension pot options will apply from 6 April 2015.%
