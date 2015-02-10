@@ -2,7 +2,7 @@ When(/^I visit a guide$/) do
   step 'I visit the scams guide'
 end
 
-When(/^I visit a guide that is part of '6 things you need to know'$/) do
+When(/^I visit a guide that is part of '6 steps you need to take'$/) do
   step 'I visit the pension-pot-options guide'
 end
 
@@ -59,7 +59,7 @@ end
 Then(/^I can navigate to related content$/) do
   expect(@guide.link_promo_items.map(&:text))
     .to eq(['What you can do with your pension pot',
-            '6 things you need to know',
+            '6 steps you need to take',
             'Know your pension type',
             'Tax you pay on your pension'])
 end
