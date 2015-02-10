@@ -12,7 +12,7 @@ class GuidesController < ApplicationController
 
   NON_JOURNEY_RELATED_GUIDE_IDS = %w(
     pension-pot-options
-    6-things-you-need-to-know
+    6-steps-you-need-to-take
     pension-types
     tax
   )

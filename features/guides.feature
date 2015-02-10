@@ -9,7 +9,7 @@ Feature: Guides
 
   Examples:
     | Slug                      |
-    | 6-things-you-need-to-know |
+    | 6-steps-you-need-to-take  |
     | benefits                  |
     | complaints                |
     | divorce                   |
@@ -38,7 +38,7 @@ Feature: Guides
     Then I can navigate to related content
 
   Scenario: Display a guide that belongs to a journey
-    When I visit a guide that is part of '6 things you need to know'
+    When I visit a guide that is part of '6 steps you need to take'
     Then I can navigate to the next step in that journey
     And I can navigate to the previous step in that journey
     Then I can navigate directly to other steps in that journey
