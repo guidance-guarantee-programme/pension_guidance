@@ -1,6 +1,7 @@
 ---
 description: What you can do with your UK pension pot if you move or already live overseas.
 ---
+
 #Living abroad and your pension
 
 If you’re planning on moving abroad and have a defined contribution pension - a pension based on how much money has been paid into your pot - you have two choices about what to do with it.

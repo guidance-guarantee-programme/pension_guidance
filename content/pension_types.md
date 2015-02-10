@@ -1,6 +1,7 @@
 ---
 description: The difference between defined contribution and defined benefit pensions and information on the State Pension.
 ---
+
 #Know your pension type
 
 ^Pension Wise only provides guidance on what you can do with a defined contribution pension - you can get help with defined benefit pensions at [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk)^

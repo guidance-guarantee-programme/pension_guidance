@@ -1,6 +1,7 @@
 ---
 description: How taking your pension can affect your benefits. Usually, the greater your income, the fewer benefits you’ll get.
 ---
+
 #If you're on benefits
 
 Usually, the more you have in income and savings, the less you'll receive in benefits. Your income includes any money from your pension pot, eg taking a tax-free lump sum.
