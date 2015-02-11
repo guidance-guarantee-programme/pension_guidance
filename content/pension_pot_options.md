@@ -130,7 +130,7 @@ $E
 
 If you take the tax-free lump sum, under current pension rules you must buy your flexi-access product within 6 months or use one of the other options on this page.
 
-Alternatively, you can move your pot gradually into flexi-access - you don't have to move it all at once. Each time you move an amount you can take 25% of tax free.
+Alternatively, you can move your pot gradually into flexi-access - you don't have to move it all at once. Each time you move an amount you can take 25% tax free.
 
 ###Your next steps
 
