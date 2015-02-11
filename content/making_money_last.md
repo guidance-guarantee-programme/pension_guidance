@@ -12,7 +12,7 @@ You could decide to leave your money invested and continue paying into your pot 
 
 You’ll also need to decide when to take your State Pension once you reach State Pension age.
 
-You can’t take the State Pension early but you can push back when you start receiving it - this is called [deferring the State Pension](https://www.gov.uk//deferring-state-pension/what-you-may-get).
+You can’t take the State Pension early but you can push back when you start receiving it - this is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
 
 ##When to start taking your pension money
 

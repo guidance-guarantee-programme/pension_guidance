@@ -43,7 +43,7 @@ To compare annuities, you generally need to have the following information ready
 * the type of annuity you want (eg, one that only pays income for a fixed term, or one that continues to pay your partner after your death)
 * your health details (eg, some annuities pay more if you smoke or have a medical condition)
 
-You can read more about the different kinds of annuity and compare annuity rates on the [Money Advice Service website](https://annuities.moneyadviceservice.org.uk/xml/annuitiesMAS/an_form.cfm) or speak to a financial adviser to help you compare or discuss products you’ve found.
+You can read more about the different kinds of annuity and compare annuity rates on the [Money Advice Service website](https://www.moneyadviceservice.org.uk/en/tools/annuities) or speak to a financial adviser to help you compare or discuss products you’ve found.
 
 ##Comparing flexi-access drawdown products
 
