@@ -25,14 +25,9 @@ If you have more than one UK defined contribution pension you can mix your optio
 ##Transferring your pension overseas
 
 
-Transferring your pension overseas could:
+Depending on where you move your pension to, transferring it could change the amount you get when you retire. It could also affect how much tax you pay on your pension.
 
-
-* mean you have less choice about what you can do with your pension pot than if you left it in the UK
-* affect the amount of pension you get at retirement
-* affect how much tax you pay on your pension
-* mean you have to pay more charges
-
+You could have less choice about what you can do with your pension pot than if you left it in the UK. You may also have to pay more charges.
 
 If you transfer your pension, make sure that you move it to one of the [qualifying recognised overseas pensions schemes](https://www.gov.uk/government/publications/list-of-qualifying-recognised-overseas-pension-schemes-qrops). These are schemes that meet the same standards as those in the UK.
 
