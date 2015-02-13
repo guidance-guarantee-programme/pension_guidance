@@ -12,7 +12,7 @@ You might have less in retirement because your income may be lower than it was w
 
 ##How long your money needs to last 
 
-People are living longer. On average, people aged 55 today will live to their mid-to-late 80s. Around ​1 in 10 men and 1 in 5 women will live to 100​.​ (Source: the Office of National Statistics). Your lifestyle choices will affect how long you live.
+People are living longer. On average, people aged 55 today will live to their mid-to-late 80s. Around 1 in 10 men and 1 in 5 women will live to 100. (Source: the Office of National Statistics). Lifestyle choices and other factors could affect how long you live.
 
 It's important not to underestimate your own life expectancy. You’ll need to think about how to make the money you've got last for the rest of your lifetime.
 
