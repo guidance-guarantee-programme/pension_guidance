@@ -34,7 +34,7 @@ This is known as your 'selected retirement date' and may be different to your St
 
 You don’t have to take your money when you reach this date. You can leave your pension pot untouched until you’re ready to take from it. At this point you’ll need to decide how to take the money from your pot.
 
-The longer you leave the money invested and continue to pay into it, the higher your income could be when you choose to take it. You also don't [pay Income Tax](/tax) on the money as long for as it stays in your pot.
+The longer you leave the money invested and continue to pay into it, the higher your income could be when you choose to take it. You also don't [pay Income Tax](/tax) on the money for as long as it stays in your pot.
 
 You may wish to speak to a financial adviser to help you decide which pension pot option to choose and when.
 
