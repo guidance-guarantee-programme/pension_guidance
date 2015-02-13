@@ -6,7 +6,15 @@ description: What to consider when working out how long your pension money will 
 
 Knowing how long your money needs to last depends on when you want to start taking it and what your future plans are. For example, you may wish to continue working when you reach [State Pension age](https://www.gov.uk/calculate-state-pension/y/age) or after the retirement date on your pension.
 
-You could decide to leave your money invested and continue paying into your pot - this may give you more money to live off in the future over a shorter period of time. You may have less in retirement because your income is lower than your salary when in full-time work. You’ll need to think about how to make the money you've got last for the rest of your lifetime.
+You could decide to leave your money invested and continue paying into your pot - this may give you more money to live off in the future over a shorter period of time. 
+
+You might have less in retirement because your income may be lower than it was when in full-time work. 
+
+##How long your money needs to last 
+
+People are living longer. On average, people aged 55 today will live to their mid-to-late 80s. Around ​1 in 10 men and 1 in 5 women will live to 100​.​ (Source: the Office of National Statistics). Your lifestyle choices will affect how long you live.
+
+It's important not to underestimate your own life expectancy. You’ll need to think about how to make the money you've got last for the rest of your lifetime.
 
 %Taking too much of your pension money in early retirement could mean you don’t have enough for later.%
 
@@ -40,7 +48,7 @@ You may wish to speak to a financial adviser to help you decide which pension po
 
 ^Many people can't afford to retire before their selected retirement date. Retiring early is likely to leave you with a lower retirement income.^
 
-##Find out your retirement date
+##Finding out your retirement date
 
 Your selected retirement date could influence when you decide to take the money from your pension pot.
 
@@ -67,6 +75,6 @@ Your income in retirement will be influenced by what you choose to do with your 
 
 You’ll need to think about what’s important to you in terms of security and flexibility. An annuity can provide you with a guaranteed level of income. This is similar to defined benefit pensions and the basic State Pension but different from flexi-access drawdown products which are more flexible.
 
-With cash and income drawdown, where part or all of your pot remains invested, your pot will only stay the same (or increase) if you take out as much or less than the amount it grows.
+With cash and flexi-access drawdown, where part or all of your pot remains invested, your pot will only stay the same (or increase) if you take out as much or less than the amount it grows.
 
 Your [basic State Pension](https://www.gov.uk/state-pension/overview) amount will increase each year.
