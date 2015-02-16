@@ -36,4 +36,4 @@ More information about your eligibility for:
 - [Income-based Employment and Support Allowance](https://www.gov.uk/employment-support-allowance/eligibility)
 - [Income-based Jobseeker's Allowance](https://www.gov.uk/jobseekers-allowance/eligibility)
 
-You can also get advice from the [Citizens Advice Bureau](http://www.adviceguide.org.uk/england/benefits_e/benefits_older_people_ew/benefits_for_older_people.htm) and the [Money Advice Service](https://www.moneyadviceservice.org.uk/en/articles/where-to-get-help-and-advice-about-benefits).
+You can also get help from the [Citizens Advice service](http://www.adviceguide.org.uk/england/benefits_e/benefits_older_people_ew/benefits_for_older_people.htm) and the [Money Advice Service](https://www.moneyadviceservice.org.uk/en/articles/where-to-get-help-and-advice-about-benefits).
