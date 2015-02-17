@@ -211,3 +211,22 @@
     </div>
   </div>
 </section>
+
+<% content_for :after_script do %>
+  <script>
+    $(function() {
+      var duration = 800;
+      $('#link-talk-to-a-specialist').on('click', function () {
+        $('html, body').animate({
+          scrollTop: ($('#phone-and-face-to-face-guidance-coming-soon').offset().top)
+        }, duration);
+      });
+
+      $('#link-pensions-are-changing').on('click', function () {
+        $('html, body').animate({
+          scrollTop: ($('#pensions-are-changing').offset().top)
+        }, duration);
+      });
+    });
+  </script>
+<% end %>
