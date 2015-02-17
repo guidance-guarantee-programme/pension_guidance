@@ -27,7 +27,7 @@ This is known as [pension offsetting](http://www.pensionsadvisoryservice.org.uk/
 
 ###3. Once you take your pension money, some of it's paid to your former spouse or civil partner
 
-This is known as [pension attachment](http://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/pension-earmarking). This is like a maintenance payment directly from one person's pension pot to their former spouse or civil partner.
+This is known as pension attachment or sometimes [pension earmarking](http://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/pension-earmarking). This is like a maintenance payment directly from one person's pension pot to their former spouse or civil partner.
 
 Under this arrangement, money from your tax-free lump sum can also go to your former spouse or civil partner.
 
