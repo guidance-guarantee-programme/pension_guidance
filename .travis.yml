@@ -23,3 +23,4 @@ deploy:
     secure: bASAlGbdIIHSLR2gErxLUtDcgtJaFFbSxrmeAzyIvkYw947iWIXmQtqODFCLTrg3v202PoW5rI47fjWVr47GdjxIVJctQAbYJo3qNBXNU8Xdv+aU1EXH+22E0nAGA+ZO71KLmb+Wdc9+AXJ6KfqfABqQmIEI2OdBWbjuLZ9LOR4=
   on:
     repo: guidance-guarantee-programme/pension_guidance
+  run: "curl -X POST -d '' https://ggp-smoke-tests.herokuapp.com/staging"
