@@ -131,7 +131,7 @@ Your pension pot has grown to £127,628 in the 5 years you left it untouched. Yo
 What you do with it | Amount
 - | -
 25% tax free | £31,907 in one go
-You re-invest the remaining £95,721 into an flexi-access drawdown fund. The fund grows at 5% a year.  | You decide to take £6,500 a year.
+You re-invest the remaining £95,721 into a flexi-access drawdown fund. The fund grows at 5% a year.  | You decide to take £6,500 a year.
 
 ###What you get from 70 onwards
 

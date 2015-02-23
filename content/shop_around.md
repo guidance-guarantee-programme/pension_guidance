@@ -64,9 +64,9 @@ You also need to know how your [pension pot will be taxed](/tax) every time you 
 
 %If your investments don't perform well and you take too much money from your pension pot, you could run out of retirement income.%
 
-Getting an flexi-access drawdown product may involve moving your pot to a different provider. If you're not confident with investing it may not be right for you.
+Getting a flexi-access drawdown product may involve moving your pot to a different provider. If you're not confident with investing it may not be right for you.
 
-You should consider speaking to a financial adviser before getting an flexi-access drawdown product.
+You should consider speaking to a financial adviser before getting a flexi-access drawdown product.
 
 ##Getting financial advice
 
