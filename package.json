@@ -2,7 +2,7 @@
   "name": "pension_guidance",
   "dependencies": {
     "bower": "*",
-    "travis-notify-geckoboard": "*"
+    "travis-notify-geckoboard": "git://github.com/guidance-guarantee-programme/travis-notify-geckoboard#item-must-be-array"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install"
