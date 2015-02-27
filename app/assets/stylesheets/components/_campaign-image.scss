@@ -1,0 +1,29 @@
+.campaign-image {
+  position: relative;
+  padding-bottom: 46.25%;
+  height: 0;
+  background-size: 100% 100%;
+  background-image: image-url("css/campaign/mobile.png");
+
+  @include device-pixel-ratio(2) {
+    background-image: image-url("css/campaign/mobile-x2.png");
+  }
+
+  @include media(tablet) {
+    padding-bottom: 41.71%;
+    background-image: image-url("css/campaign/tablet.png");
+
+    @include device-pixel-ratio(2) {
+      background-image: image-url("css/campaign/tablet-x2.png");
+    }
+  }
+
+  @include media(desktop) {
+    padding-bottom: 34.9%;
+    background-image: image-url("css/campaign/desktop.png");
+
+    @include device-pixel-ratio(2) {
+      background-image: image-url("css/campaign/desktop-x2.png");
+    }
+  }
+}
