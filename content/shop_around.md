@@ -29,7 +29,7 @@ There are many different kinds of annuity and rates vary between providers. For 
 
 You should always compare annuities before making a final decision.
 
-once you’ve bought one you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision.
+Once you’ve bought one you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision.
 
 ^Ask about commission charges that might be included in the quotes you get.^
 
