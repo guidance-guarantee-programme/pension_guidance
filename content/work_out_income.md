@@ -32,7 +32,6 @@ You might also have other income:
 - rental income
 - interest from savings or pensioner bonds
 - dividends from investments
-- income from downsizing your property - if you sell and move into a smaller property
 - from property, eg by downsizing
 
 ##If you only have income from pensions
