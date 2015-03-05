@@ -4,6 +4,8 @@ description: How taking your pension can affect your benefits. Usually, the grea
 
 #If you're on benefits
 
+%The example on this page about the Pension Credit applies from April 2015.%
+
 Usually, the more you have in income and savings, the less you'll receive in benefits. Your income includes any money from your pension pot, eg taking a tax-free lump sum.
 
 Money from your pension could increase your total income to a level that means you're not eligible for a certain benefit any more.
@@ -14,7 +16,7 @@ Your eligibility for some benefits is affected by what benefits you already get 
 
 
 $E
-**Example** Your income is £125 per week. You get Guarantee Credit (a part of Pension Credit), which increases your income to £148.35. You then buy an annuity and your income increases to £220 per week. As you now earn more than £148.35 - the Guarantee Credit threshold - you don’t qualify for Guarantee Credit any more.
+**Example** Your income is £125 per week. You get Guarantee Credit (a part of Pension Credit), which increases your income to £151.20. You then buy an annuity and your income increases to £220 per week. As you now earn more than £151.20 - the Guarantee Credit threshold for the 2015 to 2016 tax year - you don’t qualify for Guarantee Credit any more.
 $E
 
 
@@ -23,7 +25,7 @@ $E
 
 Use an [independent benefits calculator](https://www.gov.uk/benefits-calculators) to see what benefits you're eligible for.
 
-You can go to your local [Service Information Point](http://pensions-service.direct.gov.uk/en/information-points/home.asp) for help and advice about many benefits. You need to book for face-to-face advice.
+You can go to your local [Service Information Point](http://pensions-service.direct.gov.uk/en/information-points/home.asp) for help about many benefits. You need to book for face-to-face advice.
 
 More information about your eligibility for:
 
