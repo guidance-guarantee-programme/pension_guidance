@@ -26,7 +26,7 @@ A defined benefit pension gives you an income based on your salary, length of se
 
 The pension you get from the government is called the State Pension. You get it when you reach [State Pension age](https://www.gov.uk/calculate-state-pension/y/age).
 
-The most you can currently get from the basic State Pension is £113.10 per week. You don’t normally get it automatically - you have to [claim the State Pension](https://www.gov.uk/state-pension/how-to-claim).
+The most you can currently get from the basic State Pension is £113.10 per week, rising to £115.95 in April 2015. You don’t normally get it automatically - you have to [claim the State Pension](https://www.gov.uk/state-pension/how-to-claim).
 
 If you reach State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension).
 
