@@ -56,7 +56,7 @@ You’re 65 and you decide to stop working. You have the basic State Pension and
 
 What you have | Amount
 - | -
-Full basic State Pension per year | £5,881.20
+Full basic State Pension per year | £6,029.40
 Your total pension pot | £30,000
 
 ###What you do with your pension pot
@@ -72,11 +72,11 @@ You buy an annuity with the remaining pot of £22,500 | This will pay £1,125 pe
 
 Income | Amount per year
 - | -
-Basic State Pension | + £5,881
+Basic State Pension | + £6,029.40
 Annuity income | + £1,125
-**Your total retirement income** | **= £7,006**
+**Your total retirement income** | **= £7,154**
 
-Your income is below the tax-free Personal Allowance of £10,500, so you won’t pay tax on it.
+Your income is below the tax-free Personal Allowance of £10,600, so you won’t pay tax on it.
 
 You also have the £7,500 tax-free money to supplement your income.
 $E
@@ -109,7 +109,7 @@ You’re 65 and want to work part time until you’re 70. You decide to leave yo
 
 What you have | Amount
 - | -
-Basic State Pension per year | £5,881.20
+Basic State Pension per year | £6,029.40
 Your total pension pot | £100,000
 Income per year from working part time | £15,000
 
@@ -117,11 +117,11 @@ Income per year from working part time | £15,000
 
 Income | Amount per year
 - | -
-Basic State Pension | + £5,881.20
+Basic State Pension | + £6,029.40
 Income from work | + £15,000
-Income before tax | = £20,881
-Tax you pay | - £2,076
-**Your total retirement income in your 60s** | **= £18,805**
+Income before tax | = £21,029
+Tax you pay | - £2,086
+**Your total retirement income in your 60s** | **= £18,943**
 
 ###What you do with your pension pot when you're 70
 
@@ -136,11 +136,11 @@ You re-invest the remaining £95,721 into a flexi-access drawdown fund. The fund
 
 Income | Amount per year
 - | -
-Basic State Pension | + £5,881.20
+Basic State Pension | + £6,029.40
 Income from your drawdown fund | + £6,500
-Income before tax | = £12,381
-Tax you pay | - £376
-**Your total retirement income from 70 onwards** | **= £12,004**
+Income before tax | = £12,529
+Tax you pay | - £386
+**Your total retirement income from 70 onwards** | **= £12,143**
 
 You also have the £31,907 tax-free money that you can use to supplement your income.
 $E
