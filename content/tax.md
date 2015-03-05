@@ -78,18 +78,18 @@ This leaves £45,000.
 £45,000 plus £7,000 = £52,000
 
 ###3. Take away your tax-free allowance.
-You were born after 5 April 1948. Your Personal Allowance is £10,000.
+You were born after 5 April 1948. Your Personal Allowance is £10,600.
 
-£52,000 minus £10,000 = £42,000
+£52,000 minus £10,600 = £41,400
 
 This is your total taxable income for the year.
 
 ###4. Check your tax rate
-You pay 20% on income up to £31,865 = £6,373
+You pay 20% on your income up to £31,785 (the limit for the basic rate of tax) = £6,357
 
-You pay 40% on the remaining £10,135 = £4,054
+You pay 40% on the remaining £9,615 of your income = £3,846
 
-Total tax you pay for the year: £10,427
+Total tax you pay for the year: £10,203
 $E
 
 ##How your tax is paid
