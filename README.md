@@ -11,7 +11,7 @@ Pension guidance from [Pension Wise].
 * [Git]
 * [Node.js][Node]
 * [NPM]
-* [Ruby 2.2.0][Ruby]
+* [Ruby 2.2.1][Ruby]
 
 
 ## Installation
