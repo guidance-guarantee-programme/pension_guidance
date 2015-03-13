@@ -9,7 +9,7 @@ If you’re unsure how much you’ve got in your whole pension pot, or how many 
 You can:
 
 - look at your pension statement - your provider should send you this once a year
-- look at your ‘wake-up' pack - you get this from your pension provider between 4 and 6 months before your agreed pension age ('selected retirement age') which is the usually between 60 and 65
+- look at your ‘wake-up' pack - you get this from your pension provider between 4 and 6 months before your agreed pension age ('selected retirement age') which is usually between 60 and 65
 - contact your pension provider(s)
 
 If you’re less than 4 months away from your pension age and haven’t yet received a wake-up pack you should contact your pension provider.
