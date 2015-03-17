@@ -99,6 +99,23 @@ Any money you get from a pension provider will be paid to you with the tax alrea
 
 The pension provider will also deduct any tax due on your State Pension.
 
+###When you start taking money from your pension pot
+
+Usually your income changes when you stop working and start taking money from your pension pot. This means HM Revenue and Customs (HMRC) have to recalculate your tax. 
+
+^The changes in your income can mean you’re paying more tax than expected when you first take money from your pension pot until HMRC sends you a new tax code.^
+
+The way HMRC recalculate your tax depends on whether you have a P45 or not. You get this document from your employer when you stop working for them or from your own company (as a company director) when you stop getting an income from it. The P45 shows how much tax you paid in the present or previous tax year. 
+
+This is what you have to do and what happens next: 
+
+s1. You send parts 2 and 3 of your P45 to your pension provider or tell them you don’t have a P45.
+s2. Your pension provider tells HMRC that you have started to receive pension payments or have taken out all your money.
+s3. Your pension provider takes tax from your pension money. They’ll base the tax on your first payment on your tax rate from the P45. If you don’t have a P45 you’ll be given a temporary [emergency tax code](https://www.gov.uk/emergency-tax-code). This means you’ll pay Income Tax on everything above £883.33 a month (monthly portion of your £10,600 tax-free Personal Allowance) until HMRC sends a new tax code to your provider.
+s4. At the end of the tax year HMRC will check you have paid the right amount of tax. If you owe tax or have overpaid, they’ll send you a tax calculation and a new tax code to your provider. They’ll use this to work out how much tax to take from your pension payments for that tax year.
+s5. HMRC will send you a ‘PAYE coding notice’ which explains the changes.
+s6. You can [claim back any tax you’ve overpaid](https://www.gov.uk/claim-tax-refund/you-get-a-pension). 
+
 ###If you continue to work
 Your employer will take any tax due off your earnings and your State Pension. This is called Pay As You Earn (PAYE).
 
