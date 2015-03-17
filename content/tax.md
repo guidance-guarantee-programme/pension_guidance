@@ -114,7 +114,8 @@ s2. Your pension provider tells HMRC that you have started to receive pension pa
 s3. Your pension provider takes tax from your pension money. They’ll base the tax on your first payment on your tax rate from the P45. If you don’t have a P45 you’ll be given a temporary [emergency tax code](https://www.gov.uk/emergency-tax-code). This means you’ll pay Income Tax on everything above £883.33 a month (monthly portion of your £10,600 tax-free Personal Allowance) until HMRC sends a new tax code to your provider.
 s4. At the end of the tax year HMRC will check you have paid the right amount of tax. If you owe tax or have overpaid, they’ll send you a tax calculation and a new tax code to your provider. They’ll use this to work out how much tax to take from your pension payments for that tax year.
 s5. HMRC will send you a ‘PAYE coding notice’ which explains the changes.
-s6. You can [claim back any tax you’ve overpaid](https://www.gov.uk/claim-tax-refund/you-get-a-pension). 
+s6. You can [claim back any tax you’ve overpaid](https://www.gov.uk/claim-tax-refund/you-get-a-pension).
+
 
 ###If you continue to work
 Your employer will take any tax due off your earnings and your State Pension. This is called Pay As You Earn (PAYE).
