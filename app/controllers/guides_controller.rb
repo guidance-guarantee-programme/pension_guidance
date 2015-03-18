@@ -18,6 +18,7 @@ class GuidesController < ApplicationController
   )
 
   JOURNEY_RELATED_GUIDE_IDS = %w(
+    when-you-die
     benefits
     scams
   )

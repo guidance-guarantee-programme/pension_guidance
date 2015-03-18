@@ -53,7 +53,7 @@ end
 
 Then(/^I can navigate to content related to the journey$/) do
   expect(@guide.link_promo_items.map(&:text))
-    .to eq(["If you're on benefits", 'How to avoid a pension scam'])
+    .to eq(['Your pension when you die', "If you're on benefits", 'How to avoid a pension scam'])
 end
 
 Then(/^I can navigate to related content$/) do
