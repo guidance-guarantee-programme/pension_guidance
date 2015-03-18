@@ -56,6 +56,8 @@ Your Income Tax for the year depends on your [tax rate](https://www.gov.uk/incom
 
 The Personal Allowance is in addition to your 25% tax-free lump sum.
 
+^Other tax rules apply if [someone inherits your pension pot](/when-you-die).^
+
 ##Calculating your Income Tax
 
 To figure out how much tax you’ll pay do the following:
