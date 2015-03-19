@@ -6,11 +6,7 @@ description: Find out about the new annuity rules set to change in April 2016.
 
 Annuity rules will change in April 2016. You may be able to sell an existing annuity and use the money to get a lump sum or a [flexible income](/pension-pot-options#get-a-flexible-income).
 
-Annuities provide a guaranteed income for a fixed number of years or the rest of your life. If you’ve already bought an annuity, you may decide the best option is to keep it. Reasons you may want to sell your annuity could be to:
-
-* provide a lump sum for relatives or dependants
-* buy a more flexible pension income product instead
-* help with a change in circumstances, eg getting divorced or remarried
+Annuities provide a guaranteed income for a fixed number of years or the rest of your life. If you’ve already bought an annuity, you may decide the best option is to keep it. Selling the income you get from your annuity is a big decision and you should think about this carefully. When the time comes there will be many factors to consider and you might want to speak to a financial adviser before you make a decision. 
 
 %Pension Wise currently doesn’t provide guidance for people looking to sell their existing annuities.%
 
