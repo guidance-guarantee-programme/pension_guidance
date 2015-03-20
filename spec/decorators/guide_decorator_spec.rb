@@ -33,6 +33,18 @@ RSpec.describe GuideDecorator, type: :decorator do
     end
   end
 
+  describe '.cached_for' do
+    let(:guide) { double }
+
+    subject(:cached_decorator) { described_class.cached_for(guide) }
+
+    before do
+      expect(described_class).to receive(:for).with(guide)
+    end
+
+    it { is_expected.to be_a(CachedGuideDecorator) }
+  end
+
   describe '#label' do
     let(:guide) { Guide.new('test-guide', label: label) }
 

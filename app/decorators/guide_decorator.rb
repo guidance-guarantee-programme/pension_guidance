@@ -23,4 +23,8 @@ class GuideDecorator < Draper::Decorator
     when :html then HTMLGuideDecorator.new(guide)
     end
   end
+
+  def self.cached_for(guide)
+    CachedGuideDecorator.new(self.for(guide), Rails.cache)
+  end
 end

@@ -41,9 +41,9 @@ class GuidesController < ApplicationController
 
   def decorate(guide_or_collection)
     if guide_or_collection.is_a?(Enumerable)
-      guide_or_collection.map { |guide| GuideDecorator.for(guide) }
+      guide_or_collection.map { |guide| GuideDecorator.cached_for(guide) }
     else
-      GuideDecorator.for(guide_or_collection)
+      GuideDecorator.cached_for(guide_or_collection)
     end
   end
 
