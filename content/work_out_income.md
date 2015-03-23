@@ -18,10 +18,10 @@ How you take the money from your pension pot depends on how much other income yo
 
 You’ll most likely have:
 
-- a pension - this might be one or more pension(s) from your work, pensions you set up yourself, or both
+- a pension - this might be one or more pensions from work, pensions you set up yourself, or both
 - the State Pension paid to you by the government
 
-[Check the value of your pension pot](/pension-pot-value) if you don’t know. Use the [State Pension calculator](https://www.gov.uk/calculate-state-pension) for a quick estimate (includes State Pension age), or call the Future Pension Centre on 0845 600 4274 for a more complete estimate of what you’ll get.
+[Check the value of your pension pot](/pension-pot-value) if you don’t know. Call the Future Pension Centre on 0845 600 4274 for a full State Pension statement.
 
 ###Other income
 
