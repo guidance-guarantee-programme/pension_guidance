@@ -27,6 +27,20 @@
   <%= yield %>
 <% end %>
 
+<% content_for :cookie_message do %>
+  <p>Pension Wise uses cookies to make the site simpler. <a href="/cookies">Find out more about
+    cookies</a></p>
+<% end %>
+
+<% content_for :footer_support_links do %>
+  <div class="footer-meta-inner">
+    <h2 class="visuallyhidden">Support links</h2>
+    <ul>
+      <li><a href="/cookies">Cookies</a></li>
+    </ul>
+  </div>
+<% end %>
+
 <% content_for :body_end do %>
   <%= javascript_include_tag 'application' %>
   <%= yield :after_script %>
