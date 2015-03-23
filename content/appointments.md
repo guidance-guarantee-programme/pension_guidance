@@ -1,3 +1,7 @@
+---
+description: Free and impartial Pension Wise guidance appointments are coming soon - find out how they work, who's eligible and what you need to do to prepare.
+---
+
 #Free Pension Wise appointments coming soon
 
 You'll soon be able to book a phone or face-to-face guidance appointment to help you understand your pension options. 
