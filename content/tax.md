@@ -18,7 +18,7 @@ Your taxable income may include:
 - any money you get from your pension pot, eg as an [annuity](/pension-pot-options#get-a-guaranteed-income-annuity) or [cash](/pension-pot-options#take-your-whole-pot-as-cash)
 - the State Pension
 - earnings from employment or self employment
-- any other income, eg money from rental income
+- any other income, eg money from rental income, savings, investments
 - any taxable benefits you might get, eg Carer’s Allowance
 
 If you leave your pension pot untouched and don’t take any money out, you don’t pay Income Tax on it.
