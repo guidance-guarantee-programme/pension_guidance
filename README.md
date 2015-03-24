@@ -50,5 +50,5 @@ Please see the [contributing guidelines](/CONTRIBUTING.md).
 [heroku]: https://www.heroku.com
 [node]: http://nodejs.org
 [npm]: https://www.npmjs.org
-[pension wise]: https://www.gov.uk/pensionwise
+[pension wise]: https://www.pensionwise.gov.uk
 [ruby]: http://www.ruby-lang.org/en
