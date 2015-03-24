@@ -120,7 +120,7 @@ s6. You can [claim back any tax you’ve overpaid](https://www.gov.uk/claim-tax-
 
 
 ###If you continue to work
-Your employer will take any tax due off your earnings and your State Pension. This is called Pay As You Earn (PAYE).
+Your employer will take any tax due off your earnings and your State Pension. This is called Pay As You Earn (PAYE). If the total of your pension payments and PAYE income is £100,000 or more for the tax year you might have to fill in a [Self-Assessment tax return](https://www.gov.uk/self-assessment-tax-returns).
 
 If you’re self-employed you have to fill in a [Self-Assessment tax return](https://www.gov.uk/self-assessment-tax-returns). You must declare your overall income, including the State Pension and any other private pensions, eg your workplace pension.
 
