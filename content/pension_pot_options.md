@@ -118,7 +118,7 @@ You can leave your pot to someone when you die but they may have to pay inherita
 
 If the pension provider your fund is with goes bust you'll be covered by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
 
-You could also still pay into the fund if you wanted to, up to a limit of £10,000 a year.
+You could also still pay into the fund if you wanted to, up to a limit of £10,000 a year. This includes your tax relief of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 
 ###Tax free lump sum with flexi-access drawdown
 You can take 25% of your whole pot tax free in one go before you put the rest into a flexi-access drawdown fund.
@@ -158,7 +158,7 @@ Like with every investment there's the risk that the value of your fund can go u
 
 %Taking out larger sums can mean you pay more tax.%
 
-You could also still pay into the fund if you wanted to, up to a limit of £10,000 a year.
+You could also still pay into the fund if you wanted to, up to a limit of £10,000 a year. This includes your tax relief of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 
 ###Your next steps
 
