@@ -19,7 +19,7 @@ You may have paid into more than one pension pot. You’ll need to contact each 
 
 ##Combine your pension pots
 
-You can combine multiple pension pots into one by [transferring your pension](https://www.gov.uk/transferring-your-pension/transferring-to-a-uk-pension-scheme). You might save on administration charges but there could be fees and you could lose certain arrangements you have with your current provider. You may wish to get financial advice before doing this.
+You can combine multiple pension pots into one by [transferring your pension](https://www.gov.uk/transferring-your-pension/transferring-to-a-uk-pension-scheme). You might save on administration charges but there could be fees and you could lose certain arrangements you have with your current provider. You may wish to get [financial advice](/shop-around#getting-financial-advice) before doing this.
 
 ##Check which pensions you’ve paid into
 
