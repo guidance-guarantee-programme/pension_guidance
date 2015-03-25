@@ -76,6 +76,8 @@ The more information you have prepared when you meet with one, the more you will
 
 Check your adviser is authorised by the Financial Conduct Authority (FCA) before you pay for advice. You can check the [FCA register](http://www.fsa.gov.uk/register/home.do) to make sure.
 
+The Money Advice Service will soon offer a [retirement adviser directory](https://www.moneyadviceservice.org.uk/en/pensions-and-retirement) which will help you find an adviser. 
+
 ###What a financial adviser will do
 
 An adviser will ask about your current financial position, your goals and how you feel about taking risks with your money. This will help them to recommend retirement income products that are right for you now and in the future.
