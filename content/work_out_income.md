@@ -166,7 +166,7 @@ Over the years some of these things will go down, some will go up. This is becau
 
 You might pay less on:
 
-- travel - public transport is free once you reach [State Pension age](https://www.gov.uk/calculate-state-pension)
+- travel - some public transport is free once you reach [State Pension age](https://www.gov.uk/calculate-state-pension)
 - your mortgage - this might be paid off
 - living costs
 
