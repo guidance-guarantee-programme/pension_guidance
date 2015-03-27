@@ -23,6 +23,9 @@ $E
 ^If you deliberately spend or give away money (including tax-free cash) from your pension pot to appear more eligible for benefits or help with care costs, your council may investigate. It may also look again at your eligibility, by assuming you still have that money.^
 
 
+[More information on how your pension affects your eligibility for benefits](https://www.gov.uk/government/publications/pension-flexibilities-and-dwp-benefits)
+
+
 ##Getting help
 
 
