@@ -65,7 +65,7 @@ Once you know how much money you’ll have you’ll need to plan how it’ll be 
 - rent or mortgage (if not paid off)
 - energy and household bills
 - food and living costs
-- care and health costs in later life
+- care costs in later life
 
 Use the [Money Advice Service Budget planner](https://www.moneyadviceservice.org.uk/en/tools/budget-planner) to work out how much your expenses will be in retirement.
 
