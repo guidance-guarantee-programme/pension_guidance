@@ -1,11 +1,11 @@
 ---
-description: Find out the different ways to contact Pension Wise.
+description: Find out the different ways to contact Pension Wise and how to make a complaint.
 ---
 # Contact us
 
-Pension Wise is an impartial government service. We can't answer specific questions about your pension and don’t recommend products or tell you what to do with your money.
-
 You can email Pension Wise at <contact@pensionwise.gov.uk>. We'll soon have an address for you to write to us by post.
+
+We can't answer specific questions about your pension and don’t recommend products or tell you what to do with your money.
 
 If you’d like to speak to a guidance specialist about your pension options, you can [book an appointment](/appointments).
 
@@ -17,7 +17,7 @@ If your complaint is about:
 
 - a phone guidance appointment - include your booking reference number (you'll find this in your confirmation email)
 
-- a face-to-face guidance appointment - include the date, time and location of your appointment
+- a face-to-face guidance appointment - include the time, date and location of your appointment
 
 ^Read our guide if you want to [complain about a pension or pension provider](/pension-complaints).^
 
@@ -29,7 +29,7 @@ If we can't do this (eg, if we need more time to investigate your complaint) we'
 
 If you're not satisfied with our response to your complaint, you can write to <complaints@pensionwise.gov.uk> to get it escalated.
 
-In your email, state the reason why you're unhappy with our first response and include copies of your original complaint and our response. HM Treasury will then investigate and get back to you within 20 working days.
+In your email, state the reason why you're unhappy with our first response and include copies of your original complaint and our response. We'll then investigate and get back to you within 20 working days.
 
 ### Getting more help
 
