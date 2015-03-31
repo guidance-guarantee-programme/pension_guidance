@@ -3,7 +3,9 @@ description: Find out the different ways to contact Pension Wise.
 ---
 # Contact us
 
-Email Pension Wise at <contact@pensionwise.gov.uk>. We'll soon have an address for you to write to us by post.
+Pension Wise is an impartial government service. We can't answer specific questions about your pension and don’t recommend products or tell you what to do with your money.
+
+You can email Pension Wise at <contact@pensionwise.gov.uk>. We'll soon have an address for you to write to us by post.
 
 If you’d like to speak to a guidance specialist about your pension options, you can [book an appointment](/appointments).
 
