@@ -12,7 +12,7 @@ Feature: Guides
       | 6-steps-you-need-to-take |
       | already-bought-annuity   |
       | benefits                 |
-      | complaints               |
+      | contact                  |
       | cookies                  |
       | divorce                  |
       | living-abroad            |
