@@ -1,5 +1,5 @@
 ---
-description: What to consider when working out how long your pension money will last, such as your retirement date, age, costs and how your income will change.
+description: What to consider when working out how long your pension money will last, including your retirement date, age, costs and how your income will change.
 ---
 
 #Plan how long your money needs to last
@@ -12,7 +12,9 @@ You might have less in retirement because your income may be lower than it was w
 
 ##How long your money needs to last 
 
-People are living longer. On average, people aged 55 today will live to their mid-to-late 80s. Around 1 in 10 men and 1 in 5 women will live to 100. (Source: the Office of National Statistics). Lifestyle choices and other factors could affect how long you live.
+People are living longer. On average, people aged 55 today will live to their mid-to-late 80s. Around 1 in 10 men and 1 in 5 women will live to 100. (Source: the Office of National Statistics). Lifestyle choices and other factors could affect how long you live. 
+
+^Use this [life expectancy calculator](http://visual.ons.gov.uk/how-long-will-my-pension-need-to-last/) to find out how long you might live.^
 
 It's important not to underestimate your own life expectancy. You’ll need to think about how to make the money you've got last for the rest of your lifetime.
 
