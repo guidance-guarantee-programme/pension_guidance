@@ -128,4 +128,4 @@ If you’re self-employed you have to fill in a [Self-Assessment tax return](htt
 You’re responsible for paying tax on other income you have, eg from property or investments. You might have to fill in a [Self-Assessment tax return](https://www.gov.uk/self-assessment-tax-returns).
 
 ###Lifetime allowance
-You'll have to pay tax on any amount in your pension pot above your [lifetime allowance of £1 million](https://www.gov.uk/tax-on-your-private-pension).
+You'll have to pay tax on any amount in your pension pot above your [lifetime allowance of £1.25 million](https://www.gov.uk/tax-on-your-private-pension).
