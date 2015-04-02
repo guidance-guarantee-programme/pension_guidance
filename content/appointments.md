@@ -44,6 +44,6 @@ Think about your financial circumstances in general and plans for retirement, eg
 
 ##How to book
 
-Call 030 0330 1001 between 8am and 10pm, Monday to Sunday. Calls cost the same as a normal call - if your calls are free, it's included.
+Call 0300 330 1001 between 8am and 10pm, Monday to Sunday. Calls cost the same as a normal call - if your calls are free, it's included.
 
 ^Pension Wise only provides guidance on what you can do with a [defined contribution pension](/pension-types) - you can get help with defined benefit pensions at [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk)^
