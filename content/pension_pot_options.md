@@ -154,7 +154,7 @@ $E
 Your pot is £60,000. You take £1,000 out as cash every month - £250 of this amount would be tax-free every time. The remaining £750 would be taxable.
 $E
 
-Like with every investment there's the risk that the value of your fund can go up or down. You should think about how much your take out every year and how long you want your money to last.
+As with every investment there's the risk that the value of your fund can go up or down. You should think about how much you take out every year and how long you want your money to last.
 
 %Taking out larger sums can mean you pay more tax.%
 
