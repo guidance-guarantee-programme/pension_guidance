@@ -4,8 +4,6 @@ description: How to spot the signs of a pension scam, how to protect yourself, a
 
 #How to avoid a pension scam
 
-%The information on this page about your pension pot options will apply from 6 April 2015.%
-
 Pension scams, in which criminals cheat people out of their pension pots, are increasing.
 
 There are different types of scam. They often begin by someone giving you a 'cold call' - contacting you unexpectedly about:
