@@ -5,8 +5,6 @@ description: When you retire you can usually take 25% of your pension pot tax fr
 
 #What you can do with your pension pot
 
-%The information on this page will apply from 6 April 2015.%
-
 You can decide how to take the money from your pension pot when you retire. It doesn’t matter if your pot comes from a private pension you set up yourself, a workplace pension you paid into, or both.
 
 You can usually take 25% of your [defined contribution pension](/pension-types) pot tax free.
