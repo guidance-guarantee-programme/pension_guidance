@@ -4,8 +4,6 @@ description: What happens to your defined contribution pension when you die, inc
 
 #Your pension when you die
 
-%The information on this page will apply from 6 April 2015.%
-
 The way you take your [defined contribution pension](/pension-types) may affect how much tax will be paid by the person you leave it to (your 'beneficiary’) when you die.
 
 Most pension options allow anyone to inherit your pension. They don’t have to be a spouse or civil partner.
