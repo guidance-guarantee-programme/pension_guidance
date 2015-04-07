@@ -5,8 +5,6 @@ description: You pay tax on any income, including pension, that's above your tax
 
 #Tax you pay on your pension
 
-%The information on this page about tax and pension pot options will apply from 6 April 2015.%
-
 When you get a pension you pay tax on income above your tax-free [Personal Allowance](https://www.gov.uk/income-tax-rates/personal-allowances), just like you do on your salary.
 
 The only difference is that you can also take part of your pension pot tax-free. This money doesn't use up any of your Personal Allowance.
