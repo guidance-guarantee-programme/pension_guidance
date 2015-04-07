@@ -4,8 +4,6 @@ description: What to consider when working out how much retirement income you'll
 
 #Work out how much money you'll have in retirement
 
-%The information on this page about tax and pension pot options will apply from 6 April 2015.%
-
 When you reach retirement your income is likely to be less. This is mostly because your income from work drops if you go part-time or when you stop working altogether. Your retirement income usually isn’t as much as your salary.
 
 You should think about [what you can do with your pension pot](/pension-pot-options) to make sure you can [make your money last through retirement](/making-money-last).
