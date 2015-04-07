@@ -4,8 +4,6 @@ description: How taking your pension can affect your benefits. Usually, the grea
 
 #If you're on benefits
 
-%The example on this page about the Pension Credit applies from April 2015.%
-
 Usually, the more you have in income and savings, the less you'll receive in benefits. Your income includes any money from your pension pot, eg taking a tax-free lump sum.
 
 Money from your pension could increase your total income to a level that means you're not eligible for a certain benefit any more.
