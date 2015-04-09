@@ -108,7 +108,7 @@ It’s up to you where your money is invested. Your provider will give you some 
 
 As with every investment there is the risk that the value of your fund can go up or down.
 
-You can take as much money as often as you want but there'll be a charge every time you withdraw money. Your provider will pay it to you after having taken off any [Income Tax](/tax) due. You should think about how much you take out every year and how long you want your money to last.
+You can take as much money as often as you want but there may be a charge every time you withdraw money. Your provider will pay it to you after having taken off any [Income Tax](/tax) due. You should think about how much you take out every year and how long you want your money to last.
 
 %Taking out larger sums can mean you pay more tax.%
 
