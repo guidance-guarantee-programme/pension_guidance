@@ -21,7 +21,7 @@ You can also mix some of these options. You don't have to put all the money from
 
 ##Leave your pension pot untouched
 
-You don't have to start taking money from your pension pot when you reach your 'selected retirement age' (the pension age you agreed with your provider). You can leave the money invested, eg while you're working. Your provider will charge you administration fees for managing the fund.
+You don't have to start taking money from your pension pot when you reach your 'selected retirement age' (the pension age you agreed with your provider). You can leave the money invested, eg while you're working. Your provider may charge you administration fees for managing the fund.
 
 As long as your money stays in your pension pot you don't pay tax on it. You can still pay into it up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
 
@@ -102,13 +102,13 @@ There are currently 2 ways you can get a flexible income from your pension pot. 
 - take smaller cash sums - you can get 25% tax free each time you take money from your pot
 
 ###Option 1: Flexi-access drawdown
-Like an annuity, you buy a ‘retirement product’ from a pension provider. This includes investing your pension pot into flexi-access drawdown funds and managing these funds. Not all providers offer this. If they do, they'll charge you for this service.
+Like an annuity, you buy a ‘retirement product’ from a pension provider. This includes investing your pension pot into flexi-access drawdown funds and managing these funds. Not all providers offer this. If they do, they may charge you for this service.
 
 It’s up to you where your money is invested. Your provider will give you some options for different funds. If you want independent advice you might want to talk to a [financial adviser](/shop-around#getting-financial-advice) to help you with this.
 
-As with every investment there is the risk that the value of your fund can go up or down.
+As with every investment there's the risk that the value of your fund can go up or down.
 
-You can take as much money as often as you want but there may be a charge every time you withdraw money. Your provider will pay it to you after having taken off any [Income Tax](/tax) due. You should think about how much you take out every year and how long you want your money to last.
+You can take as much money as you want as often as you want. You may have to pay a charge each time you withdraw money. Your provider will pay the money to you after having taken off any [Income Tax](/tax) due. You should think about how much you want to take out each year and how long you want your money to last.
 
 %Taking out larger sums can mean you pay more tax.%
 
@@ -145,7 +145,7 @@ You can leave your money in your current pension pot and take money from it when
 
 However, this means you can’t take the whole 25% tax-free lump sum from your pot in one go.
 
-This option is a bit like a savings account. Not all providers offer it. You may have to pay administration charges every time you withdraw money.
+This option is a bit like a savings account. Not all providers offer it. You may have to pay administration charges each time you withdraw money.
 
 $E
 **Example**
