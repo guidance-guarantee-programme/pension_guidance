@@ -112,7 +112,7 @@ You can take as much money as often as you want but there'll be a charge every t
 
 %Taking out larger sums can mean you pay more tax.%
 
-You can leave your pot to someone when you die but they may have to pay inheritance tax on it.
+You can leave your pot to someone when you die but they may have to [pay tax on it](/when-you-die).
 
 If the pension provider your fund is with goes bust you'll be covered by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
 
