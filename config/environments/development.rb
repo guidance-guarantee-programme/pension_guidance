@@ -32,4 +32,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Disable caching. All cache reads and writes result in a cache miss.
+  config.cache_store = :null_store
 end
