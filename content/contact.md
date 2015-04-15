@@ -1,17 +1,34 @@
 ---
-description: Find out the different ways to contact Pension Wise and how to make a complaint.
+description: Find out the different ways to contact Pension Wise, including how to send us feedback and how to make a complaint.
 ---
 # Contact us
 
-You can email Pension Wise at <contact@pensionwise.gov.uk>. We’ll soon have an address for you to write to us by post.
+^Pension Wise can’t answer specific questions about your pension.^
 
-We can’t answer specific questions about your pension and don’t recommend products or tell you what to do with your money.
+For independent help, you can contact: 
 
-If you’d like to speak to a guidance specialist about your pension options, you can [book an appointment](/appointments).
+- [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk/) 
+- [The Money Advice Service](https://www.moneyadviceservice.org.uk/en)
+
+If you’d like to speak to someone about your pension options, you can [book an appointment](/appointments) with a Pension Wise guidance specialist.
+
+## Send us feedback about Pension Wise
+
+You can email Pension Wise at <contact@pensionwise.gov.uk>.
+
+You can also write to us by post:
+
+$A
+Pension Wise 
+PO Box 10404 
+Ashby de la Zouch 
+Leicestershire 
+LE65 9EH 
+$A
 
 ## Complaints
 
-If you have a complaint about Pension Wise, you can email us at <complaints@pensionwise.gov.uk>.
+If you have a complaint about Pension Wise, you can write to us by post or email us at <complaints@pensionwise.gov.uk>.
 
 If your complaint is about:
 
