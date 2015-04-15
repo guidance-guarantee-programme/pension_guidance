@@ -4,7 +4,7 @@ description: What happens to your defined contribution pension when you die, inc
 
 #Your pension when you die
 
-The way you take your [defined contribution pension](/pension-types) may affect how much tax will be paid by the person you leave it to (your 'beneficiary’) when you die.
+The way you take your [defined contribution pension](/pension-types) may affect how much tax will be paid by the person you leave it to (your ‘beneficiary’) when you die.
 
 Most pension options allow anyone to inherit your pension. They don’t have to be a spouse or civil partner.
 
@@ -16,18 +16,18 @@ Most pension options allow anyone to inherit your pension. They don’t have to 
 
 If you take your tax-free lump sum but don’t use it before you die (eg it’s left in your bank account), it becomes part of your estate. Your estate is everything you own and all your money when you die. This means your beneficiary may need to pay [Inheritance Tax](https://www.gov.uk/inheritance-tax/overview) on it.
 
-The same is true if you take all or part of your pot as cash and don't use it all before you die.
+The same is true if you take all or part of your pot as cash and don’t use it all before you die.
 
 ##Leaving behind a pension
 
-When you die, if you have money still sitting in your pension pot, or if you're taking your pension as an [annuity](/pension-pot-options#get-a-guaranteed-income-annuity) or as a flexible income ([flexi-access drawdown](/pension-pot-options#get-a-flexible-income)), the following tax rules apply:
+When you die, if you have money still sitting in your pension pot, or if you’re taking your pension as an [annuity](/pension-pot-options#get-a-guaranteed-income-annuity) or as a flexible income ([flexi-access drawdown](/pension-pot-options#get-a-flexible-income)), the following tax rules apply:
 
 
 - your beneficiary will inherit your pension tax free if you die before 75
-- your beneficiary will pay tax if you're 75 or over when you die
+- your beneficiary will pay tax if you’re 75 or over when you die
 
 
-If you're 75 or over when you die, how much tax they pay depends on whether they take it as a single lump sum or use it to get a retirement income (as an annuity or flexi-access drawdown).
+If you’re 75 or over when you die, how much tax they pay depends on whether they take it as a single lump sum or use it to get a retirement income (as an annuity or flexi-access drawdown).
 
 From April 2016, new tax rules apply for inheriting a pension from someone who dies at 75 or later.
 
@@ -39,7 +39,7 @@ If you inherit a pension you can use the money to buy yourself an annuity or a f
 
 If you die before 75, money left in your pot is passed on tax free. Your beneficiary can take it a single lump sum or as a retirement income.
 
-^If you die before 75, and you didn't touch the money in your pot at all, your beneficiary may have to pay tax if they don't use it within 2 years of the date your provider was told of your death.^
+^If you die before 75, and you didn’t touch the money in your pot at all, your beneficiary may have to pay tax if they don’t use it within 2 years of the date your provider was told of your death.^
 
 If you die at 75 or later, [this money is taxable](/when-you-die#tax-at-a-glance). The tax your beneficiary pays depends on how and when they take the money.
 
@@ -59,7 +59,7 @@ You fix the minimum number of years where payments are made after you die. The g
 
 $E
 **Example:** You take a guaranteed 10-year annuity and die after 8 years, your spouse gets payments for another 2 years.
-(If you die after 10 years you still get payments for the rest of your life, but your spouse won't get any payments after you die.)
+(If you die after 10 years you still get payments for the rest of your life, but your spouse won’t get any payments after you die.)
 $E
 
 ###‘Capital protected’ annuity
@@ -68,7 +68,7 @@ Also known as a ‘value protected’ annuity. Your beneficiary inherits a lump 
 
 ###Tax on annuities
 
-If you're 75 or older when you die, [the payments your beneficiary gets are taxable](/when-you-die#tax-at-a-glance). The tax they pay depends on how and when they take their payments.
+If you’re 75 or older when you die, [the payments your beneficiary gets are taxable](/when-you-die#tax-at-a-glance). The tax they pay depends on how and when they take their payments.
 
 ##Flexi-access drawdown
 

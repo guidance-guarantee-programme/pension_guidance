@@ -14,7 +14,7 @@ You might have less in retirement because your income may be lower than it was w
 
 People are living longer. On average, people aged 55 today will live to their mid-to-late 80s. Around 1 in 10 men and 1 in 5 women will live to 100. (Source: the Office of National Statistics). 
 
-Lifestyle choices and other factors may affect how long you live. You’ll need to think about how to make the money you've got last for the rest of your lifetime.
+Lifestyle choices and other factors may affect how long you live. You’ll need to think about how to make the money you’ve got last for the rest of your lifetime.
 
 Use this [calculator](http://visual.ons.gov.uk/how-long-will-my-pension-need-to-last/) to help you plan how long your pension needs to last.
 
@@ -34,21 +34,21 @@ Your future plans may include stopping working altogether and travelling in your
 
 You’ll need to work out if you’re able to spread your pension money across these stages of retirement.
 
-^To help you decide when to start taking your pension you’ll first need to [work out your total retirement income](/work-out-income), eg any of other savings, or benefits you're entitled to. This will give you a basic idea of how much money you’ll have in retirement.^
+^To help you decide when to start taking your pension you’ll first need to [work out your total retirement income](/work-out-income), eg any of other savings, or benefits you’re entitled to. This will give you a basic idea of how much money you’ll have in retirement.^
 
 ##Your retirement age and date
 
-Most pensions set the age at which you're expected to take the money from your pension pot, eg when you turn 65.
+Most pensions set the age at which you’re expected to take the money from your pension pot, eg when you turn 65.
 
-This is known as your 'selected retirement date' and may be different to your State Pension age.
+This is known as your ‘selected retirement date’ and may be different to your State Pension age.
 
 You don’t have to take your money when you reach this date. You can leave your pension pot untouched until you’re ready to take from it. At this point you’ll need to decide how to take the money from your pot.
 
-The longer you leave the money invested and continue to pay into it, the higher your income could be when you choose to take it. You also don't [pay Income Tax](/tax) on the money for as long as it stays in your pot.
+The longer you leave the money invested and continue to pay into it, the higher your income could be when you choose to take it. You also don’t [pay Income Tax](/tax) on the money for as long as it stays in your pot.
 
 You may wish to speak to a [financial adviser](/shop-around#getting-financial-advice) to help you decide which pension pot option to choose and when.
 
-^Many people can't afford to retire before their selected retirement date. Retiring early is likely to leave you with a lower retirement income.^
+^Many people can’t afford to retire before their selected retirement date. Retiring early is likely to leave you with a lower retirement income.^
 
 ##Finding out your retirement date
 

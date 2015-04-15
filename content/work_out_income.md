@@ -1,8 +1,8 @@
 ---
-description: What to consider when working out how much retirement income you'll have, including your pension, other sources of income, costs, and debt.
+description: What to consider when working out how much retirement income you’ll have, including your pension, other sources of income, costs, and debt.
 ---
 
-#Work out how much money you'll have in retirement
+#Work out how much money you’ll have in retirement
 
 When you reach retirement your income is likely to be less. This is mostly because your income from work drops if you go part-time or when you stop working altogether. Your retirement income usually isn’t as much as your salary.
 
@@ -61,7 +61,7 @@ Your total pension pot | £30,000
 
 ###What you do with your pension pot
 
-You decide to take 25% of your pot tax free and take money from this amount every year. You buy a single annuity with the rest. This kind of annuity won't continue to pay to your spouse or partner after you die.
+You decide to take 25% of your pot tax free and take money from this amount every year. You buy a single annuity with the rest. This kind of annuity won’t continue to pay to your spouse or partner after you die.
 
 What you do with it | Amount
 - | -
@@ -123,7 +123,7 @@ Income before tax | = £21,029
 Tax you pay | - £2,086
 **Your total retirement income in your 60s** | **= £18,943**
 
-###What you do with your pension pot when you're 70
+###What you do with your pension pot when you’re 70
 
 Your pension pot has grown to £127,628 in the 5 years you left it untouched. You decide to take 25% tax free and re-invest the rest.
 
@@ -177,7 +177,7 @@ You might pay more for:
 
 If you’re thinking about using part or all of your pension pot to pay debts you should look at [your options](https://www.gov.uk/options-for-paying-off-your-debts/overview) and get advice first. You have to think carefully about what you’ll live on in retirement.
 
-When you take a large cash sum from you pension pot to pay for debts you also have to consider the tax you'll pay. What you have left after tax might not be enough to cover your debts.
+When you take a large cash sum from you pension pot to pay for debts you also have to consider the tax you’ll pay. What you have left after tax might not be enough to cover your debts.
 
 These organisations offer impartial debt advice:
 

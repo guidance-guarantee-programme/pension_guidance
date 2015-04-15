@@ -1,5 +1,5 @@
 ---
-description: How to find out how much money you have in your pension pot, and how many pension pots you've paid into.
+description: How to find out how much money you have in your pension pot, and how many pension pots you’ve paid into.
 ---
 
 #Check the value of your pension pot
@@ -10,7 +10,7 @@ You can:
 
 - look at your pension statement - your provider should send you this once a year
 - online - many providers let you track your pension on their website 
-- look at your ‘wake-up' pack - you get this from your pension provider between 4 and 6 months before your agreed pension age ('selected retirement age') which is usually between 60 and 65
+- look at your ‘wake-up’ pack - you get this from your pension provider between 4 and 6 months before your agreed pension age (‘selected retirement age’) which is usually between 60 and 65
 - contact your pension provider(s)
 
 If you’re less than 4 months away from your pension age and haven’t yet received a wake-up pack you should contact your pension provider.

@@ -25,7 +25,7 @@ end
 
 Then(/^the page meta description corresponds to the meta description of the guide$/) do
   expected_description = 'How to spot the signs of a pension scam, how to protect yourself, ' \
-    + 'and what to do if you\'ve been targeted.'
+    + 'and what to do if you’ve been targeted.'
   expect(@guide).to have_meta(:description, expected_description)
 end
 
@@ -42,7 +42,7 @@ Then(/^I can navigate directly to other steps in that journey$/) do
     .to eq(['Check the value of your pension pot',
             'Understand what you can do with your pension pot (current)',
             'Plan how long your money needs to last',
-            "Work out how much money you'll have in retirement",
+            'Work out how much money you’ll have in retirement',
             'Watch out for tax',
             'Shop around for the best deal'])
 end
@@ -53,7 +53,7 @@ end
 
 Then(/^I can navigate to content related to the journey$/) do
   expect(@guide.link_promo_items.map(&:text))
-    .to eq(['Your pension when you die', "If you're on benefits", 'How to avoid a pension scam'])
+    .to eq(['Your pension when you die', 'If you’re on benefits', 'How to avoid a pension scam'])
 end
 
 Then(/^I can navigate to related content$/) do

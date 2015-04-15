@@ -19,13 +19,13 @@ You can mix some of these options.
 
 You can also leave your pension pot untouched for a while. Your pension provider might offer other options in the future.
 
-^Not all pension schemes offer all options. You don't have to stay with the scheme you paid into. You can shop around to find the offer that best suits you.^
+^Not all pension schemes offer all options. You don’t have to stay with the scheme you paid into. You can shop around to find the offer that best suits you.^
 
 ##Leave your pension pot untouched
 
-You don't have to start taking money from your pension pot when you reach your 'selected retirement age' (the pension age you agreed with your provider). You can leave the money invested, eg while you're working. Your provider may charge you administration fees for managing the fund.
+You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the pension age you agreed with your provider). You can leave the money invested, eg while you’re working. Your provider may charge you administration fees for managing the fund.
 
-As long as your money stays in your pension pot you don't pay tax on it. You can still pay into it up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
+As long as your money stays in your pension pot you don’t pay tax on it. You can still pay into it up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
 
 Your pension pot could grow further and give you a larger amount of money to last for a shorter amount of time. Whatever money you leave in your pension pot you can [pass on](/when-you-die) tax free if you die before the age of 75.
 
@@ -50,9 +50,9 @@ If you want to leave your pot untouched for a while, ask your pension provider t
 
 You might want to use your pension pot to buy an insurance policy that gives you a guaranteed income for the rest of your life. This is called an annuity. You can also buy an annuity for a fixed number of years.
 
-^There are lots of different types of annuities and it's important you get the right one for you.^
+^There are lots of different types of annuities and it’s important you get the right one for you.^
 
-Once you've bought your annuity you only have a short period when you can still change your mind (in most cases 30 days). After that you can't change the decision and your rate will be fixed.
+Once you’ve bought your annuity you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision and your rate will be fixed.
 
 ###Types of annuities
 
@@ -80,7 +80,7 @@ How much income you get each year from an annuity depends on things like:
 
 You [pay tax on income from an annuity](/tax), just like you do on your salary.  You may also pay administration charges.
 
-If the insurer you bought your annuity with goes bust you'll be covered for 90% by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
+If the insurer you bought your annuity with goes bust you’ll be covered for 90% by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
 
 
 ###Your next steps
@@ -89,8 +89,8 @@ If you’re interested in buying an annuity you can:
 
 - [compare annuities](https://www.moneyadviceservice.org.uk/en/tools/annuities) to check how much you might get
 - [shop around](/shop-around) for the best deal - you don’t have to stay with your current provider
-- make sure you know [how much tax you'll pay](/tax) on your annuity income
-- check with your provider if the annuity they offer is right for you, eg if you're in poor health you could get a better rate
+- make sure you know [how much tax you’ll pay](/tax) on your annuity income
+- check with your provider if the annuity they offer is right for you, eg if you’re in poor health you could get a better rate
 - ask your provider if your pension pot has any special arrangements attached to it that could mean you get a better deal, eg a guaranteed annuity rate 
 
 ##Take your money flexibly
@@ -102,7 +102,7 @@ There are currently 2 ways you can get a flexible income from your pension pot. 
 
 %Taking larger sums from your pension pot can mean you pay more tax.%
 
-As with every investment there's the risk that the value of your fund can go up or down.
+As with every investment there’s the risk that the value of your fund can go up or down.
 
 ###Option 1: Take flexible lump sums of cash
 
@@ -119,7 +119,7 @@ You might also have to pay administration charges, including charges every time 
 
 With this option, you’re taking chunks out of your pot and it will eventually run out. Think about how much your take out every year and how long you want your money to last. 
 
-Flexible lump sums are sometimes called 'uncrystallised fund pension lump sums' or 'UFPLS'.
+Flexible lump sums are sometimes called ‘uncrystallised fund pension lump sums’ or ‘UFPLS’.
 
 
 ###Option 2: Get a flexible income
@@ -136,11 +136,11 @@ Alternatively, a financial adviser can create a plan with you for how to invest 
 
 Your provider is likely to charge you for running your funds and whenever you get a payment.
 
-If you're interested in this option you might want to [get financial advice](/shop-around) first.
+If you’re interested in this option you might want to [get financial advice](/shop-around) first.
 
 You can [leave your pot to someone](/when-you-die) when you die but they may have to pay tax on it.
 
-This option is also known as 'flexi-access drawdown'. 
+This option is also known as ‘flexi-access drawdown’. 
 
 ###Tax with flexible income
 The income you get from the fund is taxable. Your provider will pay you the income with any [tax due](/tax) already taken off. 
@@ -152,9 +152,9 @@ $E
 
 If you take the 25% tax-free lump sum, under current pension rules you must buy your flexi-access product within 6 months or use one of the other options on this page.
 
-Alternatively, you can move your pot gradually into flexi-access - you don't have to move it all at once. Each time you move an amount you can take 25% tax free.
+Alternatively, you can move your pot gradually into flexi-access - you don’t have to move it all at once. Each time you move an amount you can take 25% tax free.
 
-If the pension provider your fund is with goes bust you'll be covered by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
+If the pension provider your fund is with goes bust you’ll be covered by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
 
 
 ###Continue to pay in 
@@ -189,14 +189,14 @@ If you’re considering this option you should think about how you can use the m
 
 ###What you can do next
 
-Here are some next steps if you're interested in cashing in your whole pot:
+Here are some next steps if you’re interested in cashing in your whole pot:
 
 - check with your provider if you can take 25% tax free
-- make sure you know [how much tax you'll pay](/tax) on the remaining 75%
+- make sure you know [how much tax you’ll pay](/tax) on the remaining 75%
 - if you want to reinvest the money, talk to a [registered financial adviser](http://www.fca.org.uk/register) first
 
 ##Mix your pension options
-You can mix your options but not all providers offer all the options mentioned here. Mixing your options can be complicated. If you're interested in this you might want to talk to a financial adviser first to check what's currently available.
+You can mix your options but not all providers offer all the options mentioned here. Mixing your options can be complicated. If you’re interested in this you might want to talk to a financial adviser first to check what’s currently available.
 
 You can mix your options at different times in your retirement. For example, you can take some cash from your pot first and buy an annuity later.
 
@@ -215,8 +215,8 @@ $E
 
 ###Your next steps
 
-If you're interested in mixing your options:
+If you’re interested in mixing your options:
 
 - look at all options to see which ones are right for you
-- shop around - you don't have to buy a product from your current provider
+- shop around - you don’t have to buy a product from your current provider
 - [get financial advice](/shop-around#getting-financial-advice) before making a decision

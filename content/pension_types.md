@@ -10,7 +10,7 @@ Along with the State Pension from the government, there are 2 main types of pens
 
 ##Defined contribution
 
-A personal or workplace pension based on how much money has been paid into your pot. Also known as 'money purchase' schemes.
+A personal or workplace pension based on how much money has been paid into your pot. Also known as ‘money purchase’ schemes.
 
 When you take money from a defined contribution pension it comes from the money you (and sometimes your employer) saved into it over the years, plus any investment returns your money may have earned.
 
@@ -18,7 +18,7 @@ There is no guaranteed minimum - you could get back less than the amount paid in
 
 ##Defined benefit
 
-A type of workplace pension based on your salary and length of time with your employer. Also known as 'final salary' pensions.
+A type of workplace pension based on your salary and length of time with your employer. Also known as ‘final salary’ pensions.
 
 A defined benefit pension gives you an income based on your salary, length of service and a calculation made under the rules of your pension scheme.
 

@@ -9,7 +9,7 @@ If you’re planning on moving abroad and have a defined contribution pension - 
 You can either:
 
 
-* leave your pot in the UK - once you're 55 you'll have the same choices about [what to do with your pension pot](/pension-pot-options) as if you live in the UK
+* leave your pot in the UK - once you’re 55 you’ll have the same choices about [what to do with your pension pot](/pension-pot-options) as if you live in the UK
 * [transfer your pension abroad](https://www.gov.uk/transferring-your-pension/transferring-to-an-overseas-pension-scheme)
 
 
@@ -41,7 +41,7 @@ You can have your pension money paid into a UK bank account. Check with your ban
 * if you transfer your pension money to another account
 
 
-UK pension providers don't usually pay your pension straight into an overseas bank account. If they do, they may charge you. The exchange rate between the UK and the country you move to can also affect how much money you get.
+UK pension providers don’t usually pay your pension straight into an overseas bank account. If they do, they may charge you. The exchange rate between the UK and the country you move to can also affect how much money you get.
 
 
 ##Don’t forget about tax

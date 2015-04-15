@@ -1,18 +1,18 @@
 ---
-description: How to spot the signs of a pension scam, how to protect yourself, and what to do if you've been targeted.
+description: How to spot the signs of a pension scam, how to protect yourself, and what to do if you’ve been targeted.
 ---
 
 #How to avoid a pension scam
 
 Pension scams, in which criminals cheat people out of their pension pots, are increasing.
 
-There are different types of scam. They often begin by someone giving you a 'cold call' - contacting you unexpectedly about:
+There are different types of scam. They often begin by someone giving you a ‘cold call’ - contacting you unexpectedly about:
 
-- an investment or other business opportunity that you've not previously spoken to them about
+- an investment or other business opportunity that you’ve not previously spoken to them about
 - taking your pension money before you’re 55
 - the ways that you can invest your pension money
 
-A cold call doesn't have to be a telephone call. It can be any type of contact they've made with you unexpectedly, eg an email.
+A cold call doesn’t have to be a telephone call. It can be any type of contact they’ve made with you unexpectedly, eg an email.
 
 ^You can only [take your pension money before you’re 55](https://www.gov.uk/early-retirement-pension/personal-and-workplace-pensions) in rare cases, eg if you’re very ill.^
 
@@ -29,7 +29,7 @@ Watch out if an individual or company:
 * says you can access your pension money before 55 and that they can help you with this
 * encourages you to take out a large lump sum, or your whole pension pot as cash, and to let them invest it for you
 * asks you to transfer your money quickly, even sending documents to you by courier - never make a rush decision about your pension money
-* uses words like 'pension liberation', ‘loan’, ‘loophole’, ‘free pension review’ or ‘one-off investment’
+* uses words like ‘pension liberation’, ‘loan’, ‘loophole’, ‘free pension review’ or ‘one-off investment’
 * offers you an investment described as ‘unique’, ‘overseas’, ‘environmentally friendly’, ‘ethical’ or in a ‘new’ industry
 
 You can [read examples of real pension scams.](http://www.pensionsadvisoryservice.org.uk/publications-files/uploads/members_detailed_booklet_7_page.pdf) (PDF, 1MB, 7 pages)
@@ -40,7 +40,7 @@ You can [read examples of real pension scams.](http://www.pensionsadvisoryservic
 ##How to protect yourself
 
 
-Check if the person or company contacting you is on the [Financial Conduct Authority (FCA) Register](http://www.fca.org.uk/register) or by calling the FCA on 0800 111 6768. If you call the person or company back, use the phone number for them that's on the FCA Register.
+Check if the person or company contacting you is on the [Financial Conduct Authority (FCA) Register](http://www.fca.org.uk/register) or by calling the FCA on 0800 111 6768. If you call the person or company back, use the phone number for them that’s on the FCA Register.
 
 You may be approached by someone claiming to be a pension provider, a financial adviser or from the government. Remember that the government won’t:
 
@@ -59,7 +59,7 @@ You can read more about:
 ##If you’ve been targeted
 
 
-If you think you've been the victim of a pension scam, call Action Fraud on 0300 123 1047 or use the [Action Fraud online reporting tool.](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime)
+If you think you’ve been the victim of a pension scam, call Action Fraud on 0300 123 1047 or use the [Action Fraud online reporting tool.](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime)
 
 
 ###Further information
