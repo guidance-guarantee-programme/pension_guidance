@@ -1,13 +1,13 @@
 ---
 label: Watch out for tax
-description: You pay tax on any income, including pension, that's above your tax-free Personal Allowance.
+description: You pay tax on any income, including pension, that’s above your tax-free Personal Allowance.
 ---
 
 #Tax you pay on your pension
 
 When you get a pension you pay tax on income above your tax-free [Personal Allowance](https://www.gov.uk/income-tax-rates/personal-allowances), just like you do on your salary.
 
-The only difference is that you can also take part of your pension pot tax-free. This money doesn't use up any of your Personal Allowance.
+The only difference is that you can also take part of your pension pot tax-free. This money doesn’t use up any of your Personal Allowance.
 
 How much tax you pay depends on your total income and the [tax rate](https://www.gov.uk/income-tax-rates) that applies to you.
 
@@ -29,7 +29,7 @@ There are 2 ways you can take your tax-free lump sum.
 ###Take your lump sum in one go
 You can take 25% of your whole pension pot tax free.
 
-If you do this, you can't leave the remaining 75% untouched. You must either take it as cash, or buy an [annuity](/pension-pot-options#get-a-guaranteed-income-annuity) with it, or put it into an [flexi-access drawdown](/pension-pot-options#option-1-flexi-access-drawdown) fund.
+If you do this, you can’t leave the remaining 75% untouched. You must either take it as cash, or buy an [annuity](/pension-pot-options#get-a-guaranteed-income-annuity) with it, or put it into an [flexi-access drawdown](/pension-pot-options#option-1-flexi-access-drawdown) fund.
 
 Any payments you get from the remaining 75% are taxable.
 
@@ -126,4 +126,4 @@ If you’re self-employed you have to fill in a [Self-Assessment tax return](htt
 You’re responsible for paying tax on other income you have, eg from property or investments. You might have to fill in a [Self-Assessment tax return](https://www.gov.uk/self-assessment-tax-returns).
 
 ###Lifetime allowance
-You'll have to pay tax on any amount in your pension pot above your [lifetime allowance of £1.25 million](https://www.gov.uk/tax-on-your-private-pension).
+You’ll have to pay tax on any amount in your pension pot above your [lifetime allowance of £1.25 million](https://www.gov.uk/tax-on-your-private-pension).

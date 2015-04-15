@@ -1,5 +1,5 @@
 ---
-description: Free and impartial Pension Wise guidance appointments can help you understand your pension options. Find out how they work, who's eligible and what you need to do to prepare.
+description: Free and impartial Pension Wise guidance appointments can help you understand your pension options. Find out how they work, who’s eligible and what you need to do to prepare.
 ---
 
 #Pension Wise guidance appointments
@@ -16,7 +16,7 @@ You’ll talk about:
 
 Appointments are free and impartial. Phone appointments are with The Pensions Advisory Service and face-to-face appointments take place at branches of the Citizens Advice services.
 
-Afterwards you'll receive a letter with a summary of the pension options and what they mean for your circumstances.
+Afterwards you’ll receive a letter with a summary of the pension options and what they mean for your circumstances.
 
 ^Pension Wise guidance specialists don’t recommend any products or companies and won’t tell you how to invest your money.^
 
@@ -24,7 +24,7 @@ Afterwards you'll receive a letter with a summary of the pension options and wha
 
 You can book if:
 
- - you're close to or over 55, and
+ - you’re close to or over 55, and
  - have a personal or workplace pension based on how much has been paid into your pot - a [defined contribution pension](/pension-types).
 
 ##Preparing for your appointment
@@ -44,6 +44,6 @@ Think about your financial circumstances in general and plans for retirement, eg
 
 ##How to book
 
-Call 0300 330 1001 between 8am and 10pm, Monday to Sunday. Calls cost the same as a normal call - if your calls are free, it's included. Call +44 203 733 3495 if you're phoning from outside the UK.
+Call 0300 330 1001 between 8am and 10pm, Monday to Sunday. Calls cost the same as a normal call - if your calls are free, it’s included. Call +44 203 733 3495 if you’re phoning from outside the UK.
 
 ^Pension Wise only provides guidance on what you can do with a [defined contribution pension](/pension-types) - you can get help with defined benefit pensions at [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk)^

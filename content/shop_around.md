@@ -11,7 +11,7 @@ For example, one option is to buy a guaranteed income for a fixed period or the 
 
 You don’t have to buy one from your current provider. Moving your pension pot to another provider could give you access to a wider range of annuities and a higher income.
 
-The 'wake-up' pack your provider sends you when you reach retirement age is likely to include information about their own products only. Research shows that 8 out of 10 people would have benefited from switching providers (Financial Conduct Authority, Thematic Review of Annuities, Feb 2014).
+The ‘wake-up’ pack your provider sends you when you reach retirement age is likely to include information about their own products only. Research shows that 8 out of 10 people would have benefited from switching providers (Financial Conduct Authority, Thematic Review of Annuities, Feb 2014).
 
 You can choose to shop around by yourself or with help from a [financial adviser](/shop-around#getting-financial-advice). You have to pay for financial advice.
 
@@ -62,15 +62,15 @@ To compare flexi-access drawdown products you need to:
 
 You also need to know how your [pension pot will be taxed](/tax) every time you take money out of it.
 
-%If your investments don't perform well and you take too much money from your pension pot, you could run out of retirement income.%
+%If your investments don’t perform well and you take too much money from your pension pot, you could run out of retirement income.%
 
-Getting a flexi-access drawdown product may involve moving your pot to a different provider. If you're not confident with investing it may not be right for you.
+Getting a flexi-access drawdown product may involve moving your pot to a different provider. If you’re not confident with investing it may not be right for you.
 
 You should consider speaking to a financial adviser before getting a flexi-access drawdown product.
 
 ##Getting financial advice
 
-Comparing retirement income products can be complicated. You may wish to speak to a financial adviser to help you. They'll look at your circumstances and recommend what you can do with the money in your pension pot.
+Comparing retirement income products can be complicated. You may wish to speak to a financial adviser to help you. They’ll look at your circumstances and recommend what you can do with the money in your pension pot.
 
 The more information you have prepared when you meet with one, the more you will benefit. This includes details of the value of your pension pot and other income.
 
