@@ -13,7 +13,7 @@ env:
 node_js:
 - '0.10'
 rvm:
-- '2.2.1'
+- '2.2.2'
 before_script:
 - npm install
 after_script:
