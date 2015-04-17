@@ -18,6 +18,9 @@ linters:
   ColorKeyword:
     enabled: true
 
+  ColorVariable:
+    enabled: false
+
   Comment:
     enabled: true
 
@@ -57,9 +60,9 @@ linters:
     enabled: true
 
   IdSelector:
-      enabled: true
-      exclude:
-        - app/assets/stylesheets/components/_global-header-bar.scss
+    enabled: true
+    exclude:
+      - app/assets/stylesheets/components/_global-header-bar.scss
 
   IdWithExtraneousSelector:
     enabled: true
@@ -83,8 +86,8 @@ linters:
     force_nesting: true
 
   NameFormat:
-    enabled: true
-    convention: BEM
+    enabled: false
+    convention:
 
   NestingDepth:
     enabled: true
@@ -93,7 +96,7 @@ linters:
   PlaceholderInExtend:
     enabled: true
     exclude: # extending govuk_elements typography in base typography
-          - app/assets/stylesheets/base/_headings.scss
+      - app/assets/stylesheets/base/_headings.scss
 
   PropertySortOrder:
     enabled: false
@@ -114,7 +117,7 @@ linters:
 
   SelectorFormat:
     enabled: true
-    convention: BEM
+    convention: strict_BEM
     exclude: # multiple hyphens currently fail. Need a regex for our BEM syntax
       - app/assets/stylesheets/layout/_grid.scss
       - app/assets/stylesheets/components/_pager.scss
@@ -171,7 +174,7 @@ linters:
   UrlQuotes:
     enabled: true
 
-  VendorPrefixes:
+  VendorPrefix:
     enabled: true
     identifier_list: base
     include: []
