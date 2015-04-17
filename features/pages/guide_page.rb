@@ -1,7 +1,7 @@
 module Pages
   class Guide < SitePrism::Page
     set_url('/{slug}')
-    set_url_matcher(/\/(\w|-)+$/)
+    set_url_matcher(%r{\/(\w|-)+$})
 
     element :journey_nav_current_step, '.t-journey-nav__current-step'
     element :pager_item_next, '.t-pager__item-next'

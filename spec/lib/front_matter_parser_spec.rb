@@ -1,6 +1,6 @@
 RSpec.describe FrontMatterParser do
   subject(:parser) do
-    FrontMatterParser.new(<<-EXAMPLE
+    FrontMatterParser.new <<-EXAMPLE
 ---
 title: The Jabberwocky
 description: A "nonsense" poem
@@ -10,7 +10,6 @@ Did gyre and gimble in the wabe:
 All mimsy were the borogoves,
 And the mome raths outgrabe.
 EXAMPLE
-    )
   end
 
   describe '#front_matter' do
@@ -42,7 +41,7 @@ And the mome raths outgrabe.
 
     describe '#front_matter' do
       it 'returns an empty hash' do
-        expect(parser.front_matter).to eq(Hash.new)
+        expect(parser.front_matter).to eq({})
       end
     end
   end
