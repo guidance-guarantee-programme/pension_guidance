@@ -5,6 +5,7 @@ scss_files: 'app/assets/stylesheets/**/*.css.scss'
 exclude:
   - 'vendor/assets/**/*'
   - 'vendor/bundle/**/*'
+  - 'node_modules/**/*'
 
 linters:
   BangFormat:
