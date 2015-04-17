@@ -39,8 +39,7 @@ class GuideRepository
               content: source.content,
               content_type: content_type,
               label: source.front_matter['label'],
-              description: source.front_matter['description']
-    )
+              description: source.front_matter['description'])
   end
 
   def file_content_type(path)
