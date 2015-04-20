@@ -1,7 +1,7 @@
 ---
 description: Book a free and impartial Pension Wise guidance appointment to help you understand your pension options.
 ---
-#Book a free Pension Wise appointment
+#Book a free appointment
 
 You can book if:
 
