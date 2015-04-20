@@ -1,6 +1,7 @@
 ---
 description: Book a free and impartial Pension Wise guidance appointment to help you understand your pension options.
 ---
+#Book a free Pension Wise appointment
 
 You can book if:
 
@@ -11,7 +12,7 @@ You can book if:
 
 ##How to book
 
-Call 0300 330 1001 (from outside the UK: +44 203 733 3495).
+Call 0300 330 1001 (from outside the UK: +44 20 3733 3495).
 
 Opening hours: 8am and 10pm, every day.
 
