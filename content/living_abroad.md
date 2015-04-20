@@ -49,10 +49,7 @@ UK pension providers don’t usually pay your pension straight into an overseas 
 
 You must tell HM Revenue and Customs if you [plan to retire abroad](https://www.gov.uk/moving-or-retiring-abroad) so that you pay the right tax on your pension. The amount of tax you pay and which country you pay tax to depend on many things.
 
-If you move abroad before you start taking your pension, the tax law in the country you move to may prevent you from taking anything tax free.
-
-[Help with getting your tax right if you retire abroad](https://www.gov.uk/tax-right-retire-abroad-return-to-uk)
-
+If you move abroad before you start taking your pension, [overseas tax laws](https://www.gov.uk/tax-right-retire-abroad-return-to-uk) may prevent you from taking anything tax free.
 
 
 ##Your State Pension
