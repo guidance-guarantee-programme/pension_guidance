@@ -59,15 +59,7 @@ Find out what happens to your [State Pension if you retire abroad.](https://www.
 
 ##Getting more help
 
-Contact The Pensions Advisory Service for free and impartial advice.
-
-
-$C
-**The Pensions Advisory Service**
-Telephone: 0300 123 1047
-Monday to Friday, 9am to 5pm
-$C
-
+Contact [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk) for free and impartial advice.
 
 You can find a [financial adviser](/shop-around#getting-financial-advice) to help you choose the right pension option when moving abroad. You may be charged a fee for this advice.
 
