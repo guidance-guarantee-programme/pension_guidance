@@ -2,8 +2,7 @@
 label: Understand what you can do with your pension pot
 description: When you retire you can usually take 25% of your pension pot tax free and then choose from a range of options.
 ---
-
-#What you can do with your pension pot
+# What you can do with your pension pot
 
 You can decide how to take the money from your pension pot when you retire. It doesn’t matter if your pot comes from a private pension you set up yourself, a workplace pension you paid into, or both.
 
@@ -11,17 +10,104 @@ You can decide how to take the money from your pension pot when you retire. It d
 
 The remaining 75% you can take as:
 
-- guaranteed income (annuity) - you buy an insurance policy that gives you an income for the rest of your life
-- flexibly - your pot stays invested while you take money from it
-- one cash sum - you take your whole pot in one go
+<table class="options-table">
+  <thead>
+    <tr>
+      <th class="col-1"></th>
+      <th class="col-2 options-table__annuity">
+        <hr>
+        Annuity
+      </th>
+      <th class="col-3 options-table__flexible">
+        <hr>
+        Flexible money
+      </th>
+      <th class="col-4 options-table__cash">
+        <hr>
+        Cash
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="col-1">
+        <div class="th-inner">
+          <span class="th-text">What you get</span>
+        </div>
+      </th>
+      <td class="col-2">Guaranteed income for life</td>
+      <td class="col-3">Regular income or cash sums - you decide how much you take</td>
+      <td class="col-4">Your whole pot in cash</td>
+    </tr>
+    <tr>
+      <th class="col-1">
+        <div class="th-inner">
+          <span class="th-text">Tax</span>
+        </div>
+      </th>
+      <td>On annuity income</td>
+      <td>On income or cash</td>
+      <td>On 75% of your pot</td>
+    </tr>
+    <tr>
+      <th class="col-1">
+        <div class="th-inner">
+          <span class="th-text">You can run out of money</span>
+        </div>
+      </th>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <th class="col-1">
+        <div class="th-inner">
+          <span class="th-text">You have to manage your own money</span>
+        </div>
+      </th>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <th class="col-1">
+        <div class="th-inner">
+          <span class="th-text">Risk</span>
+        </div>
+      </th>
+      <td>Low - income is fixed</td>
+      <td>Medium - value of fund can go up or down</td>
+      <td>High - there’s no more pension pot, it’s up to you how you pay for your retirement</td>
+    </tr>
+  </tbody>
+</table>
 
-You can mix some of these options. 
+<div class="options-mix">
+  <p>You can <a href="#">mix</a> some of these choices</p>
+</div>
 
-You can also leave your pension pot untouched for a while. Your pension provider might offer other options in the future.
+<hr class="hr-thin" />
 
-^Not all pension schemes offer all options. You don’t have to stay with the scheme you paid into. You can shop around to find the offer that best suits you.^
+<div class="options-untouched">
+  <div class="options-untouched__label">Also consider</div>
+  <div class="options-untouched__content">
+    <div role="note" aria-label="Information" class="application-notice info-notice">
+      <p><b>Leave your pension pot untouched</b></p>
+      <p>Your pension pot could grow further and give you a larger amount of money for a shorter amount of time</p>
+    </div>
+  </div>
+</div>
 
-##Leave your pension pot untouched
+Not all pension schemes offer all options. You don’t have to stay with the scheme you paid into. You can shop around to find the offer that best suits you.
+
+{::options parse_block_html="true" /}
+
+<div class="option" id="untouched">
+
+{: .hr-option .hr-option--untouched}
+* * *
+
+## Leave your pension pot untouched
 
 You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the pension age you agreed with your provider). You can leave the money invested, eg while you’re working. Your provider may charge you administration fees for managing the fund.
 
@@ -33,7 +119,7 @@ As with every investment the value of your pot could go up or down.
 
 Usually the earliest you can start taking money from your pot is 55. Check with your provider. In some circumstances you can [take your pension earlier](https://www.gov.uk/early-retirement-pension/personal-and-workplace-pensions).
 
-###Your next steps
+### Your next steps
 
 If you want to leave your pot untouched for a while, ask your pension provider the following questions:
 
@@ -45,8 +131,14 @@ If you want to leave your pot untouched for a while, ask your pension provider t
 - Does my pot have any special arrangements attached to it that could mean I get a better deal, eg a guaranteed value at a certain time?
 - Do you have up-to-date details of the person I want to leave my pot to (my ‘beneficiary’)?
 
+</div>
 
-##Get a guaranteed income (annuity)
+<div class="option option--annuity" id="annuity">
+
+{: .hr-option .hr-option--annuity}
+* * *
+
+## Get a guaranteed income (annuity)
 
 You might want to use your pension pot to buy an insurance policy that gives you a guaranteed income for the rest of your life. This is called an annuity. You can also buy an annuity for a fixed number of years.
 
@@ -66,11 +158,11 @@ Types of annuities you can buy:
 - escalating - increases every year to reduce the effect of inflation
 - enhanced - if your health is bad you may get more money from your annuity
 
-###Tax-free lump sum with annuities
+### Tax-free lump sum with annuities
 
 If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. You could then, for example, buy the annuity with the remaining 75%. Under current pension rules you have to buy the annuity within 6 months or alternatively use one of the other options on this page.
 
-###How an annuity is calculated
+### How an annuity is calculated
 
 How much income you get each year from an annuity depends on things like:
 
@@ -84,8 +176,7 @@ You [pay tax on income from an annuity](/tax), just like you do on your salary. 
 
 If the insurer you bought your annuity with goes bust you’ll be covered for 90% by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
 
-
-###Your next steps
+### Your next steps
 
 If you’re interested in buying an annuity you can:
 
@@ -95,7 +186,14 @@ If you’re interested in buying an annuity you can:
 - check with your provider if the annuity they offer is right for you, eg if you’re in poor health you could get a better rate
 - ask your provider if your pension pot has any special arrangements attached to it that could mean you get a better deal, eg a guaranteed annuity rate 
 
-##Take your money flexibly
+</div>
+
+<div class="option option--flexible" id="flexible">
+
+{: .hr-option .hr-option--flexible}
+* * *
+
+## Take your money flexibly
 
 There are currently 2 ways you can get a flexible income from your pension pot. The main differences are how you can take the tax-free part and what sort of income you want.
 
@@ -106,7 +204,7 @@ There are currently 2 ways you can get a flexible income from your pension pot. 
 
 As with every investment there’s the risk that the value of your fund can go up or down.
 
-###Option 1: Take flexible lump sums of cash
+### Option 1: Take flexible lump sums of cash
 
 You can take flexible lump sums with any pension pot size. Your pot stays where it is and you can take money out when you want to. 25% of each amount you take out is tax free, the rest is taxable.
 
@@ -123,8 +221,7 @@ With this option, you’re taking chunks out of your pot and it will eventually 
 
 Flexible lump sums are sometimes called ‘uncrystallised fund pension lump sums’ or ‘UFPLS’.
 
-
-###Option 2: Get a flexible income
+### Option 2: Get a flexible income
 
 With this option you get 25% of your pot as a single, tax-free cash sum. The remainder is then invested to give you a regular income in your retirement, which is taxable.
 
@@ -144,7 +241,8 @@ You can [leave your pot to someone](/when-you-die) when you die but they may hav
 
 This option is also known as ‘flexi-access drawdown’. 
 
-###Tax with flexible income
+### Tax with flexible income
+
 The income you get from the fund is taxable. Your provider will pay you the income with any [tax due](/tax) already taken off. 
 
 $E
@@ -158,11 +256,11 @@ Alternatively, you can move your pot gradually into flexi-access - you don’t h
 
 If the pension provider your fund is with goes bust you’ll be covered by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
 
+### Continue to pay in
 
-###Continue to pay in 
 If you take your money flexibly you could also still pay into the fund if you wanted to, up to a limit of £10,000 a year. This includes your tax relief of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 
-###Your next steps
+### Your next steps
 
 If you’re interested in taking your money flexibly you can:
 
@@ -173,8 +271,14 @@ If you’re interested in taking your money flexibly you can:
 - get some estimates from other providers on how much your pot could grow and what the charges are - usually you just have to fill in a short form on their website. 
 - make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out
 
+</div>
 
-##Take your whole pot as cash
+<div class="option option--cash" id="cash">
+
+{: .hr-option .hr-option--cash}
+* * *
+
+## Take your whole pot as cash
 
 If you take your whole pension pot in one go - 25% is tax-free and the remaining [75% is taxable](/tax).
 
@@ -189,7 +293,7 @@ If you’re considering this option you should think about how you can use the m
 
 %Taking a large sum of cash from your pension pot can mean you pay more tax.%
 
-###What you can do next
+### What you can do next
 
 Here are some next steps if you’re interested in cashing in your whole pot:
 
@@ -197,28 +301,39 @@ Here are some next steps if you’re interested in cashing in your whole pot:
 - make sure you know [how much tax you’ll pay](/tax) on the remaining 75%
 - if you want to reinvest the money, talk to a [registered financial adviser](http://www.fca.org.uk/register) first
 
-##Mix your pension options
+</div>
+
+<div class="option option--mix" id="mix">
+
+{: .hr-option .hr-option--mix}
+* * *
+
+## Mix your pension options
 You can mix your options but not all providers offer all the options mentioned here. Mixing your options can be complicated. If you’re interested in this you might want to talk to a financial adviser first to check what’s currently available.
 
 You can mix your options at different times in your retirement. For example, you can take some cash from your pot first and buy an annuity later.
 
 Pension providers are developing new retirement income products all the time, some of which might mix these options.
 
+{: .example--mix }
 $E
 **Example**
 
 Your pension pot is £60,000. You decide to take 25% as tax-free cash which is £15,000.
 
+{: .example__annuity}
 You use £20,000 to buy an annuity. This gives you a taxable income for the rest of your life of about £900 a year.
 
+{: .example__flexible}
 You also put £25,000 into a drawdown fund and take out about £5,000 a year for about 5 years.
 $E
 
-
-###Your next steps
+### Your next steps
 
 If you’re interested in mixing your options:
 
 - look at all options to see which ones are right for you
 - shop around - you don’t have to buy a product from your current provider
 - [get financial advice](/shop-around#getting-financial-advice) before making a decision
+
+</div>

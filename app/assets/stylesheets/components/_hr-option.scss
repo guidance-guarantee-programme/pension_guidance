@@ -1,0 +1,24 @@
+.hr-option {
+  border-top-width: 10px;
+}
+
+.hr-option--untouched {
+  border-color: $color-option-untouched;
+}
+
+.hr-option--annuity {
+  border-color: $color-option-annuity;
+}
+
+.hr-option--flexible {
+  border-color: $color-option-flexible;
+}
+
+.hr-option--cash {
+  border-color: $color-option-cash;
+}
+
+.hr-option--mix {
+  border-color: $color-option-mix;
+  border-style: dashed;
+}

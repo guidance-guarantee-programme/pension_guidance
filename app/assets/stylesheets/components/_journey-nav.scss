@@ -1,5 +1,6 @@
 .journey-nav {
-  li {
+
+  ol > li {
     @include core-16;
     position: relative;
     list-style: none;
@@ -14,7 +15,7 @@
     }
 
     &.last-child {
-      border-color: #fff;
+      border-color: $color-invisible-border;
     }
   }
 
@@ -27,7 +28,7 @@
 
     .is-current & {
       font-weight: bold;
-      color: #000;
+      color: $color-text;
     }
   }
 }
@@ -46,6 +47,16 @@ hr + .journey-nav {
 
   @include ie(6) {
     left: -42px;
+  }
+}
+
+.journey-nav__sub-nav {
+  margin-top: 12px;
+  margin-bottom: 10px;
+
+  li {
+    list-style-type: none;
+    margin-left: 0;
   }
 }
 

@@ -1,0 +1,96 @@
+.options-table {
+
+  th {
+    @include core-16;
+    font-weight: bold;
+    width: 25%;
+  }
+
+  td {
+    @include core-16;
+    padding-bottom: .9em;
+    width: 25%;
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-top-width: 12px;
+  }
+}
+
+.options-table__annuity {
+  hr {
+    border-color: $color-option-annuity;
+  }
+}
+
+.options-table__flexible {
+  hr {
+    border-color: $color-option-flexible;
+  }
+}
+
+.options-table__cash {
+  hr {
+    border-color: $color-option-cash;
+  }
+}
+
+@media (max-width: 420px), (min-width: 640px) and (max-width: 720px)  {
+  .options-table {
+    position: relative;
+    left: -4px;
+
+    th,
+    .col-1 {
+      width: 0;
+    }
+
+    .col-1 {
+      padding: 0;
+      border-bottom: 0;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4,
+    td {
+      width: 33%;
+    }
+
+    tbody td {
+      padding-top: 32px;
+    }
+
+    .th-inner {
+      position: relative;
+    }
+
+    .th-text {
+      position: absolute;
+      width: 500px;
+      left: 4px;
+      top: 12px;
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 720px)  {
+  .options-table {
+    position: relative;
+    left: -14px;
+
+    .th-text {
+      left: 14px;
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .options-table {
+    .th-inner {
+      padding-right: 15px;
+    }
+  }
+}

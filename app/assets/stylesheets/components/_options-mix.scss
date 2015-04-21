@@ -1,0 +1,11 @@
+.options-mix {
+  @include core-16;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 420px) and (max-width: 639px), (min-width: 720px)  {
+  .options-mix {
+    margin-left: 25%;
+    text-align: center;
+  }
+}

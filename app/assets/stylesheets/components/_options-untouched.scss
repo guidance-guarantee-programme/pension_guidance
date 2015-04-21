@@ -1,0 +1,19 @@
+.options-untouched {
+  @include core-16;
+}
+
+@media (min-width: 420px) and (max-width: 639px), (min-width: 720px)  {
+  .options-untouched {
+    overflow: hidden;
+  }
+
+  .options-untouched__label {
+    width: 25%;
+    float: left;
+  }
+
+  .options-untouched__content {
+    width: 75%;
+    float: left;
+  }
+}
