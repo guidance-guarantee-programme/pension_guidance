@@ -40,7 +40,7 @@
 
 .l-journey-promo {
   @include media(tablet) {
-    border-left: 1px solid #bac0c4;
+    border-left: 1px solid $color-rule-grey;
     border-top: 0;
 
     @include ie-lte(8) {

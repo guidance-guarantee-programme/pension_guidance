@@ -9,7 +9,7 @@
 
   a:focus,
   a:hover {
-    background: #f8f8f8;
+    background: $color-pager-bg;
     outline: none;
   }
 }
@@ -63,27 +63,4 @@
 .pager__title {
   text-decoration: underline;
   font-size: 16px;
-}
-
-.pager__number {
-  position: relative;
-  left: -10px;
-  top: 1px;
-
-  display: inline-block;
-  width: 26px;
-  height: 26px;
-  line-height: 26px;
-  border-radius: 26px;
-  box-sizing: border-box;
-  padding-top: 2px;
-
-  text-align: center;
-  font-weight: bold;
-  color: #000;
-  background: #e9ebec;
-
-  @include ie-lte(8) {
-    display: none;
-  }
 }

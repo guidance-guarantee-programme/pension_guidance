@@ -41,13 +41,13 @@
     }
 
     @include media(tablet) {
-      border-color: #fff;
+      border-color: $color-invisible-border;
     }
   }
 }
 
 .journey-promo__item--last-step {
-  border-color: #fff;
+  border-color: $color-invisible-border;
 }
 
 .journey-promo__number {
@@ -57,7 +57,7 @@
   display: block;
   width: 34px;
   height: 34px;
-  background: #e9ebec;
+  background: $color-journey-promo-number-bg;
 
   @include media(tablet) {
     top: 0;
@@ -77,7 +77,7 @@
 
 .journey-promo__anchor:link,
 .journey-promo__anchor:visited {
-  color: #000;
+  color: $color-text;
   text-decoration: none;
 }
 

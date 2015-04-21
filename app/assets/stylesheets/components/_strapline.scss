@@ -2,8 +2,8 @@
   text-align: center;
   padding: 1.8em 0;
   margin: 0;
-  color: $color-dark-blue;
-  background: #e9ebec;
+  color: $color-strapline-text;
+  background: $color-strapline-bg;
   font-size: 36px;
 
   @include media(desktop) {
