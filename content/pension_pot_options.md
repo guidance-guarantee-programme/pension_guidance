@@ -54,6 +54,8 @@ You might want to use your pension pot to buy an insurance policy that gives you
 
 Once you’ve bought your annuity you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision and your rate will be fixed.
 
+From April 2016 you might be able to [sell an annuity you own](/already-bought-annuity) as the government is changing the rules for this. 
+
 ###Types of annuities
 
 Types of annuities you can buy:
