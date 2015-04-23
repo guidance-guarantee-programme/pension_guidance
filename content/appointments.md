@@ -14,7 +14,7 @@ You can book if:
 
 Call 0300 330 1001 (from outside the UK: +44 20 3733 3495).
 
-Opening hours: 8am and 10pm, every day.
+Opening hours: 8am to 10pm, every day.
 
 Calls cost the same as a normal call - if your calls are free, it’s included. 
 
