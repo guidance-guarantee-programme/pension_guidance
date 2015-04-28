@@ -13,16 +13,18 @@ The remaining 75% you can take as:
 <table class="options-table">
   <thead>
     <tr>
-      <th class="col-1"></th>
-      <th class="col-2 options-table__annuity">
+      <th scope="col" class="col-1">
+        <span class="visuallyhidden">Feature</span>
+      </th>
+      <th scope="col" class="col-2 options-table__annuity">
         <div class="options-table__hr"></div>
         Annuity
       </th>
-      <th class="col-3 options-table__flexible">
+      <th scope="col" class="col-3 options-table__flexible">
         <div class="options-table__hr"></div>
         Flexible money
       </th>
-      <th class="col-4 options-table__cash">
+      <th scope="col" class="col-4 options-table__cash">
         <div class="options-table__hr"></div>
         Cash
       </th>
@@ -30,7 +32,7 @@ The remaining 75% you can take as:
   </thead>
   <tbody>
     <tr>
-      <th class="col-1">
+      <th scope="row" class="col-1">
         <div class="th-inner">
           <span class="th-text">What you get</span>
         </div>
@@ -40,7 +42,7 @@ The remaining 75% you can take as:
       <td class="col-4">Your whole pot in cash</td>
     </tr>
     <tr>
-      <th class="col-1">
+      <th scope="row" class="col-1">
         <div class="th-inner">
           <span class="th-text">Tax</span>
         </div>
@@ -50,7 +52,7 @@ The remaining 75% you can take as:
       <td>On 75% of your pot</td>
     </tr>
     <tr>
-      <th class="col-1">
+      <th scope="row" class="col-1">
         <div class="th-inner">
           <span class="th-text">You can run out of money</span>
         </div>
@@ -60,7 +62,7 @@ The remaining 75% you can take as:
       <td>Yes</td>
     </tr>
     <tr>
-      <th class="col-1">
+      <th scope="row" class="col-1">
         <div class="th-inner">
           <span class="th-text">You have to manage your own money</span>
         </div>
@@ -70,7 +72,7 @@ The remaining 75% you can take as:
       <td>Yes</td>
     </tr>
     <tr>
-      <th class="col-1">
+      <th scope="row" class="col-1">
         <div class="th-inner">
           <span class="th-text">Risk</span>
         </div>
