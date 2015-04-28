@@ -15,15 +15,15 @@ The remaining 75% you can take as:
     <tr>
       <th class="col-1"></th>
       <th class="col-2 options-table__annuity">
-        <hr>
+        <div class="options-table__hr"></div>
         Annuity
       </th>
       <th class="col-3 options-table__flexible">
-        <hr>
+        <div class="options-table__hr"></div>
         Flexible money
       </th>
       <th class="col-4 options-table__cash">
-        <hr>
+        <div class="options-table__hr"></div>
         Cash
       </th>
     </tr>
