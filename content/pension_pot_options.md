@@ -85,7 +85,7 @@ The remaining 75% you can take as:
 </table>
 
 <div class="options-mix">
-  <p>You can <a href="#">mix</a> some of these choices</p>
+  <p>You can <a href="#mix-your-pension-options">mix</a> some of these choices</p>
 </div>
 
 <hr class="hr-thin" />
