@@ -17,3 +17,19 @@
     float: left;
   }
 }
+
+.lte-ie8 {
+  .options-untouched {
+    zoom: 1;
+  }
+
+  .options-untouched__label {
+    width: 25%;
+    float: left;
+  }
+
+  .options-untouched__content {
+    width: 74%;
+    float: left;
+  }
+}
