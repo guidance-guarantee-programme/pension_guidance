@@ -1,65 +1,53 @@
 ---
-description: What you can do with your UK pension pot if you move or already live overseas.
+description: What you can do with your UK pension pot if you move or already live abroad.
 ---
 
-#Living abroad and your pension
+# Living abroad and your pension
 
-If you’re planning on moving abroad and have a defined contribution pension - a pension based on how much money has been paid into your pot - you have two choices about what to do with it.
+If you live abroad or plan on retiring abroad and have a [defined contribution pension](/pension-types) in the UK you can either:
 
-You can either:
+- leave your pot in the UK and take your money from abroad
+- move your pension pot abroad
 
+You can also mix these options, eg leave one pension in the UK and move another abroad.
 
-* leave your pot in the UK - once you’re 55 you’ll have the same choices about [what to do with your pension pot](/pension-pot-options) as if you live in the UK
-* [transfer your pension abroad](https://www.gov.uk/transferring-your-pension/transferring-to-an-overseas-pension-scheme)
+## Taking your pension from abroad
 
+If you live or move abroad and leave your pension pot in the UK, you still have the same [pension options](/pension-pot-options).
 
+UK pension providers don’t usually pay the money from your pension straight into overseas bank accounts. If they do, they may charge fees. Check with your provider.
 
-You have the same choices if you’re already living abroad and have a UK defined contribution pension.
+Alternatively, you can ask your provider to pay your pension into a UK bank account. You could then withdraw the money with your debit card from abroad, or transfer the money yourself into a foreign account.
 
-If you have more than one UK defined contribution pension you can mix your options, eg leave one pension in the UK and transfer another overseas.
+%Always check bank charges and exchange rates.%
 
+## Moving your pension abroad
 
-^Remember to check with your pension provider about what happens to your pension if you move abroad or transfer it overseas.^
+It’s possible to [move your pension abroad](https://www.gov.uk/transferring-your-pension/transferring-to-an-overseas-pension-scheme). If you’re interested in this, make sure you transfer the money into a [qualifying recognised overseas pensions scheme](https://www.gov.uk/government/publications/list-of-qualifying-recognised-overseas-pension-schemes-qrops) or there’ll be a tax charge. These schemes meet the same standards as those in the UK.
 
-
-##Transferring your pension overseas
-
-
-Depending on where you move your pension to, transferring it could change the amount you get when you retire. It could also affect how much tax you pay on your pension.
+You should always check if transferring your pension could change the amount you get when you retire. Also check how much tax you would pay on your pension.
 
 You could have less choice about what you can do with your pension pot than if you left it in the UK. You may also have to pay more charges.
 
-If you transfer your pension, make sure that you move it to one of the [qualifying recognised overseas pensions schemes](https://www.gov.uk/government/publications/list-of-qualifying-recognised-overseas-pension-schemes-qrops). These are schemes that meet the same standards as those in the UK.
+## Tax when taking your pension abroad
 
+You might have to pay [UK tax on your pension](https://www.gov.uk/tax-uk-income-live-abroad).
 
-##Taking your pension money when you live abroad
+You might also have to pay tax in the country where you’re resident. If that country has a double taxation agreement with the UK, you might not have to be [taxed twice - in the UK and abroad](https://www.gov.uk/tax-uk-income-live-abroad/taxed-twice).
 
-You can have your pension money paid into a UK bank account. Check with your bank about what charges may apply, eg:
-
-
-* if you take out your money abroad using a debit card
-* if you transfer your pension money to another account
-
-
-UK pension providers don’t usually pay your pension straight into an overseas bank account. If they do, they may charge you. The exchange rate between the UK and the country you move to can also affect how much money you get.
-
-
-##Don’t forget about tax
-
-
-You must tell HM Revenue and Customs if you [plan to retire abroad](https://www.gov.uk/moving-or-retiring-abroad) so that you pay the right tax on your pension. The amount of tax you pay and which country you pay tax to depend on many things.
+If you [plan to retire abroad](https://www.gov.uk/moving-or-retiring-abroad) you must tell HM Revenue and Customs so that you pay the right tax on your pension.
 
 If you move abroad before you start taking your pension, [overseas tax laws](https://www.gov.uk/tax-right-retire-abroad-return-to-uk) may prevent you from taking anything tax free.
 
+## Your State Pension
 
-##Your State Pension
+You can get your [State Pension abroad](https://www.gov.uk/state-pension-if-you-retire-abroad) if you qualify.
 
-Find out what happens to your [State Pension if you retire abroad.](https://www.gov.uk/state-pension-if-you-retire-abroad)
+## Getting more help
 
+Contact [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk) for free and impartial information on how to take your pension abroad.
 
-##Getting more help
-
-Contact [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk) for free and impartial advice.
+The [International Pension Centre](https://www.gov.uk/international-pension-centre) can help with your State Pension abroad.
 
 You can find a [financial adviser](/shop-around#getting-financial-advice) to help you choose the right pension option when moving abroad. You may be charged a fee for this advice.
 
