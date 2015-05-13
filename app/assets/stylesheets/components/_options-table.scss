@@ -1,5 +1,4 @@
 .options-table {
-
   th {
     @include core-16;
     font-weight: bold;
@@ -31,18 +30,15 @@
   }
 }
 
-@media (max-width: 420px), (min-width: 640px) and (max-width: 720px)  {
+// make row headings span columns when table is less than 370px
+@media (max-width: $compact-options-max-mobile), (min-width: $compact-options-min-tablet) and (max-width: $compact-options-max-tablet)  {
   .options-table {
     position: relative;
     left: -4px;
 
-    th,
-    .col-1 {
-      width: 0;
-    }
-
     .col-1 {
       padding: 0;
+      width: 0;
       border-bottom: 0;
     }
 
@@ -70,7 +66,8 @@
   }
 }
 
-@media (min-width: 640px) and (max-width: 720px)  {
+// fix left alignment of table - so aligns with other content on page
+@media (min-width: $compact-options-min-tablet) and (max-width: $compact-options-max-tablet)  {
   .options-table {
     position: relative;
     left: -14px;
@@ -81,6 +78,7 @@
   }
 }
 
+// introduce right padding in row headings when there is enough space
 @media (min-width: 450px) {
   .options-table {
     .th-inner {

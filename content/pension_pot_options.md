@@ -13,7 +13,7 @@ The remaining 75% you can take as:
 <table class="options-table">
   <thead>
     <tr>
-      <td></td>
+      <td class="col-1"></td>
       <th scope="col" class="col-2 options-table__annuity">
         <div class="options-table__hr"></div>
         Annuity

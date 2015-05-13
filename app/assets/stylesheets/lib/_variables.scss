@@ -1,6 +1,4 @@
-//http://chir.ag/projects/name-that-color/
-
-// hex colours
+// hex colours (http://chir.ag/projects/name-that-color/)
 $color-black: #000;
 $color-grey-rolling-stone: #6f777b;
 
@@ -32,9 +30,13 @@ $color-masthead-bg: $color-grey-black-haze;
 $color-journey-border: $color-grey-mercury;
 $color-homepage-grey-text: $color-grey-rolling-stone;
 
-
 $color-option-untouched: $color-blue-biscay;
 $color-option-annuity: $color-orange-pizazz;
 $color-option-flexible: $color-blue-picton;
 $color-option-cash: $color-green-atlantis;
 $color-option-mix: $color-blue-biscay;
+
+// pixel values
+$compact-options-max-mobile: 420px;
+$compact-options-min-tablet: 640px;
+$compact-options-max-tablet: 720px;
