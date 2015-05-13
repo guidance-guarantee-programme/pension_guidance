@@ -1,0 +1,88 @@
+.options-table {
+  th {
+    @include core-16;
+    font-weight: bold;
+    width: 25%;
+  }
+
+  td {
+    @include core-16;
+    padding-bottom: .9em;
+    width: 25%;
+  }
+}
+
+.options-table__hr {
+  margin-bottom: 20px;
+  border-top-width: 12px;
+  border-top-style: solid;
+
+  .options-table__annuity & {
+    border-color: $color-option-annuity;
+  }
+
+  .options-table__flexible & {
+    border-color: $color-option-flexible;
+  }
+
+  .options-table__cash & {
+    border-color: $color-option-cash;
+  }
+}
+
+// make row headings span columns when table is less than 370px
+@media (max-width: $compact-options-max-mobile), (min-width: $compact-options-min-tablet) and (max-width: $compact-options-max-tablet)  {
+  .options-table {
+    position: relative;
+    left: -4px;
+
+    .col-1 {
+      padding: 0;
+      width: 0;
+      border-bottom: 0;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4,
+    td {
+      width: 33%;
+    }
+
+    tbody td {
+      padding-top: 32px;
+    }
+
+    .th-inner {
+      position: relative;
+    }
+
+    .th-text {
+      position: absolute;
+      width: 500px;
+      left: 4px;
+      top: 12px;
+    }
+  }
+}
+
+// fix left alignment of table - so aligns with other content on page
+@media (min-width: $compact-options-min-tablet) and (max-width: $compact-options-max-tablet)  {
+  .options-table {
+    position: relative;
+    left: -14px;
+
+    .th-text {
+      left: 14px;
+    }
+  }
+}
+
+// introduce right padding in row headings when there is enough space
+@media (min-width: 450px) {
+  .options-table {
+    .th-inner {
+      padding-right: 15px;
+    }
+  }
+}

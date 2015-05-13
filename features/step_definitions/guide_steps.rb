@@ -63,3 +63,12 @@ Then(/^I can navigate to related content$/) do
             'Know your pension type',
             'Tax you pay on your pension'])
 end
+
+Then(/^I can navigate to each option available to me$/) do
+  expect(@guide.journey_subnav_steps.map(&:text))
+    .to eq(['Leave untouched',
+            'Guaranteed income',
+            'Flexible money',
+            'Cash your pot in',
+            'Mix your options'])
+end

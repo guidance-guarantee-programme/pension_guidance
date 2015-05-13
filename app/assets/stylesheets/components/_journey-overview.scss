@@ -10,7 +10,7 @@
   position: relative;
 
   &.last-child {
-    border-color: #fff;
+    border-color: $color-invisible-border;
   }
 }
 

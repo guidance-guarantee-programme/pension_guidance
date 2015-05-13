@@ -70,3 +70,21 @@
     <% end %>
   </ul>
 <% end %>
+
+
+<% content_for :after_script do %>
+  <script>
+    $(function() {
+      var duration = 800;
+      var ids = ['untouched', 'annuity', 'flexible', 'cash', 'mix'];
+
+      $.each(ids, function( index, value ) {
+        $('#sub-nav-' + value).on('click', function () {
+          $('html, body').animate({
+            scrollTop: ($('#' + value).offset().top)
+          }, duration);
+        });
+      });
+    });
+  </script>
+<% end %>

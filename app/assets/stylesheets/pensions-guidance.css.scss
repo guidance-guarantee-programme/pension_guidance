@@ -14,7 +14,7 @@
 .home-intro,
 .home-scope {
   @include core-24;
-  color: #6f777b;
+  color: $color-homepage-grey-text;
 }
 
 .home-scope {

@@ -1,0 +1,19 @@
+.options-mix {
+  @include core-16;
+  padding-bottom: 10px;
+}
+
+// when options-table is regular 4 column table add left margin to align options-mix
+@media (min-width: $compact-options-max-mobile + 1) and (max-width: $compact-options-min-tablet - 1), (min-width: $compact-options-max-tablet + 1) {
+  .options-mix {
+    margin-left: 25%;
+    text-align: center;
+  }
+}
+
+.lte-ie8 {
+  .options-mix {
+    margin-left: 25%;
+    text-align: center;
+  }
+}
