@@ -11,6 +11,7 @@ class GuidesController < ApplicationController
   )
 
   NON_JOURNEY_RELATED_GUIDE_IDS = %w(
+    appointments
     pension-pot-options
     6-steps-you-need-to-take
     pension-types
@@ -18,6 +19,7 @@ class GuidesController < ApplicationController
   )
 
   JOURNEY_RELATED_GUIDE_IDS = %w(
+    appointments
     when-you-die
     benefits
     scams
