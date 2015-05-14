@@ -16,7 +16,7 @@ The remaining 75% you can take as:
       <td class="col-1"></td>
       <th scope="col" class="col-2 options-table__annuity">
         <div class="options-table__hr"></div>
-        Annuity
+        Guaranteed income
       </th>
       <th scope="col" class="col-3 options-table__flexible">
         <div class="options-table__hr"></div>
@@ -24,7 +24,7 @@ The remaining 75% you can take as:
       </th>
       <th scope="col" class="col-4 options-table__cash">
         <div class="options-table__hr"></div>
-        Cash
+        Cash your pot in
       </th>
     </tr>
   </thead>
@@ -278,7 +278,7 @@ If you’re interested in taking your money flexibly you can:
 {: .hr-option .hr-option--cash}
 * * *
 
-## Take your whole pot as cash
+## Cash in your whole pot
 
 If you take your whole pension pot in one go - 25% is tax-free and the remaining [75% is taxable](/tax).
 
