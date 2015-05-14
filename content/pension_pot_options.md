@@ -16,15 +16,15 @@ The remaining 75% you can take as:
       <td class="col-1"></td>
       <th scope="col" class="col-2 options-table__annuity">
         <div class="options-table__hr"></div>
-        Guaranteed income
+        <a href="#get-a-guaranteed-income-annuity" id="th-link-annuity">Guaranteed income</a>
       </th>
       <th scope="col" class="col-3 options-table__flexible">
         <div class="options-table__hr"></div>
-        Flexible money
+        <a href="#take-your-money-flexibly" id="th-link-flexible">Flexible money</a>
       </th>
       <th scope="col" class="col-4 options-table__cash">
         <div class="options-table__hr"></div>
-        Cash your pot in
+        <a href="#cash-in-your-whole-pot" id="th-link-cash">Cash your pot in</a>
       </th>
     </tr>
   </thead>
