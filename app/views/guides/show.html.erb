@@ -76,14 +76,24 @@
   <script>
     $(function() {
       var duration = 800;
-      var ids = ['untouched', 'annuity', 'flexible', 'cash', 'mix'];
+      var subNavIds = ['untouched', 'annuity', 'flexible', 'cash', 'mix'];
+      var tableIds = ['annuity', 'flexible', 'cash'];
 
-      $.each(ids, function( index, value ) {
+      $.each(subNavIds, function( index, value ) {
         $('#sub-nav-' + value).on('click', function () {
           $('html, body').animate({
             scrollTop: ($('#' + value).offset().top)
           }, duration);
         });
+      });
+
+      $.each(tableIds, function( index, value ) {
+        $('#th-link-' + value).on('click', function () {
+          $('html, body').animate({
+            scrollTop: ($('#' + value).offset().top)
+          }, duration);
+        });
+
       });
     });
   </script>
