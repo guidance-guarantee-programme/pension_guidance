@@ -53,12 +53,16 @@ end
 
 Then(/^I can navigate to content related to the journey$/) do
   expect(@guide.link_promo_items.map(&:text))
-    .to eq(['Your pension when you die', 'If you’re on benefits', 'How to avoid a pension scam'])
+    .to eq(['Book a free appointment',
+            'Your pension when you die',
+            'If you’re on benefits',
+            'How to avoid a pension scam'])
 end
 
 Then(/^I can navigate to related content$/) do
   expect(@guide.link_promo_items.map(&:text))
-    .to eq(['What you can do with your pension pot',
+    .to eq(['Book a free appointment',
+            'What you can do with your pension pot',
             '6 steps you need to take',
             'Know your pension type',
             'Tax you pay on your pension'])
