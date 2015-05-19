@@ -1,5 +1,5 @@
 ---
-description: How to complain about your pension or pension provider, and who you can go to for help if your provider doesn’t resolve your complaint.
+description: What kind of protection different pensions have, where to get compensation and how to complain about your pension or pension provider.
 ---
 
 # Protection and complaints
