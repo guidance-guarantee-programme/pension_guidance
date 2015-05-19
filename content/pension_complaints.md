@@ -2,12 +2,27 @@
 description: How to complain about your pension or pension provider, and who you can go to for help if your provider doesn’t resolve your complaint.
 ---
 
-#How to complain about a pension
+#Protection and complaints
+##How your pension is protected
+If your provider is authorised by the Financial Conduct Authority (FCA) and the Prudential Regulation Authority (PRA) you can claim compensation for non-payments from the [Financial Services Compensation Scheme](http://www.fscs.org.uk/) (FSCS).
 
-Contact your pension provider first if you need to complain. Most people get things resolved this way. As every person’s pension is different, your pension provider will usually be best placed to give you the right answer as quickly as possible.
+The limits for compensation are: 
 
+- personal pensions with an authorised insurance company - 90% of your pot's value 
+- most defined contribution workplace pensions with an authorised insurance company - 90% of your pot's value 
+- annuities with an authorised insurance company - 90% of your pot's value 
+-  Self-Invested Personal Pensions (SIPPS) - different compensation limits depending on the type of SIPP, talk to your provider to find out what compensation cover you have
 
-##Making a complaint
+Once you've taken money out of your pot you can claim for:  
+
+- money in an account with a bank, building society or credit union - up to £85,000 
+- investments - up to £50,000 
+- life assurance - 90%
+
+##Complaining about a pension provider
+Contact your pension provider first if you need to complain. Most people get things resolved this way. As every person's pension is different, your pension provider will usually be best placed to give you the right answer as quickly as possible.
+
+###Making a complaint
 
 You should first ask your pension provider for details of their complaints process. This will be different depending on your provider and pension type.
 
