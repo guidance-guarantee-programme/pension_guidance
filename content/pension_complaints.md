@@ -2,25 +2,28 @@
 description: How to complain about your pension or pension provider, and who you can go to for help if your provider doesn’t resolve your complaint.
 ---
 
-#Protection and complaints
-##How your pension is protected
+# Protection and complaints
+
+## How your pension is protected
+
 If your provider is authorised by the Financial Conduct Authority (FCA) and the Prudential Regulation Authority (PRA) you can claim compensation for non-payments from the [Financial Services Compensation Scheme](http://www.fscs.org.uk/) (FSCS).
 
 The limits for compensation are: 
 
-- personal pensions with an authorised insurance company - 90% of your pot's value 
-- most defined contribution workplace pensions with an authorised insurance company - 90% of your pot's value 
-- annuities with an authorised insurance company - 90% of your pot's value 
--  Self-Invested Personal Pensions (SIPPS) - different compensation limits depending on the type of SIPP, talk to your provider to find out what compensation cover you have
+- personal pensions with an authorised insurance company - 90% of your pot’s value 
+- most defined contribution workplace pensions with an authorised insurance company - 90% of your pot’s value 
+- annuities with an authorised insurance company - 90% of your pot’s value 
+- Self-Invested Personal Pensions (SIPPS) - different compensation limits depending on the type of SIPP, talk to your provider to find out what compensation cover you have
 
-Once you've taken money out of your pot you can claim for:  
+Once you’ve taken money out of your pot you can claim for:  
 
 - money in an account with a bank, building society or credit union - up to £85,000 
 - investments - up to £50,000 
 - life assurance - 90%
 
-##Complaining about a pension provider
-Contact your pension provider first if you need to complain. Most people get things resolved this way. As every person's pension is different, your pension provider will usually be best placed to give you the right answer as quickly as possible.
+## Complaining about a pension provider
+
+Contact your pension provider first if you need to complain. Most people get things resolved this way. As every person’s pension is different, your pension provider will usually be best placed to give you the right answer as quickly as possible.
 
 ###Making a complaint
 
@@ -30,11 +33,11 @@ Find out how to [make an effective complaint](http://www.adviceguide.org.uk/engl
 
 It’s best to make your complaint in writing and to get a written response. This helps if you need to take your complaint further.
 
-##If you need to take things further
+## If you need to take things further
 
 If you’ve already followed your pension provider’s complaints process, there are different ways to take things further.
 
-###Complaining about how your pension has been run
+### Complaining about how your pension has been run
 
 You can contact The Pensions Advisory Service (TPAS) on 0300 123 1047 or by using their [online enquiry form](http://www.pensionsadvisoryservice.org.uk/contacting-us/online-enquiry-form).
 
@@ -52,8 +55,7 @@ If TPAS can’t resolve your complaint about how your pension’s been run, you 
 
 The Pensions Ombudsman Service can help if your complaint is about how your pension has been run. It’s a free and impartial organisation and has legal powers to uphold or reject complaints.
 
-
-###Complaints about financial advice
+### Complaints about financial advice
 
 You can contact the [Financial Ombudsman Service](http://www.financial-ombudsman.org.uk/publications/technical_notes/pension-complaints-our-jurisdiction.html) on 0800 023 4567 or at <complaint.info@financial-ombudsman.org.uk>. The service is free and impartial. It has legal powers to uphold or reject complaints.
 
@@ -63,8 +65,6 @@ Usually, the Financial Ombudsman Service doesn’t provide help with complaints 
 
 Once an Ombudsman is dealing with your complaint, you won’t usually get more help with your complaint from another Ombudsman or organisation.
 
-
-##The State Pension
-
+## The State Pension
 
 Contact the Pension Service if you have a [complaint about the State Pension](https://www.gov.uk/complain-pension-service).
