@@ -12,7 +12,9 @@
 
       <hr class="hr-thin">
 
-      <%= render 'components/journey_nav', journey: @journey, current_step: @guide %>
+      <% cache(@guide.slug) do %>
+        <%= render 'components/journey_nav', journey: @journey, current_step: @guide %>
+      <% end %>
     </div>
   <% end %>
 
