@@ -59,7 +59,7 @@ You can read more about:
 ##If you’ve been targeted
 
 
-If you think you’ve been the victim of a pension scam, call Action Fraud on 0300 123 1047 or use the [Action Fraud online reporting tool.](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime)
+If you think you’ve been the victim of a pension scam, call Action Fraud on 0300 123 2040 or use the [Action Fraud online reporting tool.](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime)
 
 
 ###Further information
