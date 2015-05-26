@@ -1,48 +1,14 @@
 <nav class="journey-nav" role="navigation" aria-label="6 steps you need to take">
   <ol>
-    <% journey.each_with_index do |step, index| %>
-      <%
-         a_classes = ['t-journey-nav-step']
-
-         li_classes = []
-         li_classes << 'last-child' if index == journey.count - 1
-
-         if current_step && current_step == step
-           a_classes << 't-journey-nav__current-step'
-           li_classes << 'is-current'
-         end
-      %>
-      <%= content_tag :li, class: li_classes do %>
-        <%= link_to(step.url, class: a_classes) do %>
-          <span class="journey-nav__number journey-nav__number--<%= index + 1 %>"></span>
+    <% journey.each do |step| %>
+      <%= content_tag :li, class: step.li_classes do %>
+        <%= link_to(step.url, class: step.a_classes) do %>
+          <span class="journey-nav__number journey-nav__number--<%= step.index %>"></span>
           <%= step.label %>
-          <%= content_tag :span, '(current)', class: 'visuallyhidden' if li_classes.include?('is-current') %>
+          <%= content_tag :span, '(current)', class: 'visuallyhidden' if step.current? %>
         <% end %>
 
-        <% if step.id == 'pension-pot-options' && current_step.id == 'pension-pot-options' %>
-          <ul class="journey-nav__sub-nav">
-            <li class="t-journey-subnav-step">
-              <span class="bullet bullet--untouched"></span>
-              <a href="#untouched" id="sub-nav-untouched">Leave untouched</a>
-            </li>
-            <li class="t-journey-subnav-step">
-              <span class="bullet bullet--annuity"></span>
-              <a href="#annuity" id="sub-nav-annuity">Guaranteed income</a>
-            </li>
-            <li class="t-journey-subnav-step">
-              <span class="bullet bullet--flexible"></span>
-              <a href="#flexible" id="sub-nav-flexible">Flexible money</a>
-            </li>
-            <li class="t-journey-subnav-step">
-              <span class="bullet bullet--cash"></span>
-              <a href="#cash" id="sub-nav-cash">Cash your pot in</a>
-            </li>
-            <li class="t-journey-subnav-step">
-              <span class="bullet bullet--mix"></span>
-              <a href="#mix" id="sub-nav-mix">Mix your options</a>
-            </li>
-          </ul>
-        <% end %>
+        <%= step.sub_nav %>
       <% end %>
     <% end %>
   </ol>
