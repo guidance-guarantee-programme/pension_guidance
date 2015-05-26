@@ -68,9 +68,9 @@ You can contact The Pensions Advisory Service for free and impartial information
 concerned about a pension scam.
 
 $C
-**The Pensions Advisory Service**
-Telephone: 0300 123 1047
-Monday to Friday, 9am to 5pm
+**The Pensions Advisory Service**<br />
+Telephone: 0300 123 1047<br />
+Monday to Friday, 9am to 5pm<br />
 [Find out about call charges](https://www.gov.uk/call-charges)
 $C
 
