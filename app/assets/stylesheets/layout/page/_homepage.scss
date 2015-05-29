@@ -38,13 +38,17 @@
   }
 }
 
-.l-journey-promo {
+.l-home-top-slot-promo {
   @include media(tablet) {
     border-left: 1px solid $color-rule-grey;
     border-top: 0;
 
     @include ie-lte(8) {
       border: 0;
+    }
+
+    h2 {
+      margin-top: 0;
     }
 
     .journey-promo {
@@ -57,6 +61,7 @@
   }
 }
 
+.l-home-journey,
 .l-home-guides {
   margin-top: 28px;
   margin-bottom: 26px;
