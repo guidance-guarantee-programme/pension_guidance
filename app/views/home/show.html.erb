@@ -23,10 +23,23 @@
 
     <p>We explain how to avoid pension scams and the importance of taking your time to make sure your money lasts as long as you do.</p>
   </div>
-  <div class="l-column-two-thirds l-journey-promo">
+  <div class="l-column-two-thirds l-home-top-slot-promo">
     <hr class="hr-thin l-home-top-slot-hr" />
 
-    <%= render 'components/journey_promo' %>
+    <h2 id="appointments">Talk about your pension options</h2>
+
+    <p>
+      Book an appointment to get free and impartial guidance over the phone or face-to-face.
+      You’ll talk about your pension options and what you can do next.
+    </p>
+
+    <p>At the end of your appointment you’ll get a summary of your details and next steps you need to take.</p>
+
+    <p>
+      <a href="/appointments" class="button">
+        Book a free appointment
+      </a>
+    </p>
   </div>
 </div>
 
@@ -34,6 +47,12 @@
 
 <p class="home-scope">Pension Wise won’t recommend any products or tell you what to
   do with your money.</p>
+
+<hr class="hr-thin">
+
+<section class="l-home-journey">
+  <%= render 'components/journey_promo' %>
+</section>
 
 <hr class="hr-thin">
 
@@ -64,7 +83,6 @@
             Your pension when you die
           </a>
         </li>
-
       </ul>
     </div>
     <div class="l-column-half">
@@ -153,27 +171,6 @@
 
 <hr class="hr-thin">
 
-<section class="l-home-appointments">
-  <div class="l-grid-row">
-    <div class="l-column-two-thirds">
-      <h2 id="appointments">Talk about your pension options</h2>
-
-      <p>
-        Book an appointment to get free and impartial guidance over the phone or face-to-face.
-        You’ll talk about your pension options and what you can do next.
-      </p>
-
-      <p>
-        <a href="/appointments" class="button">
-          Book a free appointment
-        </a>
-      </p>
-    </div>
-  </div>
-</section>
-
-<hr class="hr-thin">
-
 <section class="l-home-about">
   <h2 id="new-pension-rules">New pension rules</h2>
 
@@ -220,12 +217,6 @@
   <script>
     $(function() {
       var duration = 800;
-      $('#link-talk-about-your-options').on('click', function () {
-        $('html, body').animate({
-          scrollTop: ($('#appointments').offset().top)
-        }, duration);
-      });
-
       $('#link-who-the-service-is-for').on('click', function () {
         $('html, body').animate({
           scrollTop: ($('#new-pension-rules').offset().top)
