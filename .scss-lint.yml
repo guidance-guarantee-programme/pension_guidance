@@ -6,6 +6,7 @@ exclude:
   - 'vendor/assets/**/*'
   - 'vendor/bundle/**/*'
   - 'node_modules/**/*'
+  - 'tmp/**/*'
 
 linters:
   BangFormat:
