@@ -10,90 +10,92 @@ You can decide how to take the money from your pension pot when you retire. It d
 
 The remaining 75% you can take as:
 
-<table class="options-table">
-  <thead>
-    <tr>
-      <td class="col-1"></td>
-      <th scope="col" class="col-2 options-table__annuity">
-        <div class="options-table__hr"></div>
-        <a href="#get-a-guaranteed-income-annuity" id="th-link-annuity">Guaranteed income</a>
-      </th>
-      <th scope="col" class="col-3 options-table__flexible">
-        <div class="options-table__hr"></div>
-        <a href="#take-your-money-flexibly" id="th-link-flexible">Flexible money</a>
-      </th>
-      <th scope="col" class="col-4 options-table__cash">
-        <div class="options-table__hr"></div>
-        <a href="#cash-in-your-whole-pot" id="th-link-cash">Cash your pot in</a>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row" class="col-1">
-        <div class="th-inner">
-          <span class="th-text">What you get</span>
-        </div>
-      </th>
-      <td class="col-2">Guaranteed income for life</td>
-      <td class="col-3">Regular income or cash sums - you decide how much you take</td>
-      <td class="col-4">Your whole pot in cash</td>
-    </tr>
-    <tr>
-      <th scope="row" class="col-1">
-        <div class="th-inner">
-          <span class="th-text">Tax</span>
-        </div>
-      </th>
-      <td>On annuity income</td>
-      <td>On income or cash</td>
-      <td>On 75% of your pot</td>
-    </tr>
-    <tr>
-      <th scope="row" class="col-1">
-        <div class="th-inner">
-          <span class="th-text">You can run out of money</span>
-        </div>
-      </th>
-      <td>No</td>
-      <td>Yes</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <th scope="row" class="col-1">
-        <div class="th-inner">
-          <span class="th-text">You have to manage your own money</span>
-        </div>
-      </th>
-      <td>No</td>
-      <td>Yes</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <th scope="row" class="col-1">
-        <div class="th-inner">
-          <span class="th-text">Risk</span>
-        </div>
-      </th>
-      <td>Low - income is fixed</td>
-      <td>Medium - value of fund can go up or down</td>
-      <td>High - there’s no more pension pot, it’s up to you how you pay for your retirement</td>
-    </tr>
-  </tbody>
-</table>
+<div class="ga-options-table">
+  <table class="options-table">
+    <thead>
+      <tr>
+        <td class="col-1"></td>
+        <th scope="col" class="col-2 options-table__annuity">
+          <div class="options-table__hr"></div>
+          <a href="#get-a-guaranteed-income-annuity" id="th-link-annuity">Guaranteed income</a>
+        </th>
+        <th scope="col" class="col-3 options-table__flexible">
+          <div class="options-table__hr"></div>
+          <a href="#take-your-money-flexibly" id="th-link-flexible">Flexible money</a>
+        </th>
+        <th scope="col" class="col-4 options-table__cash">
+          <div class="options-table__hr"></div>
+          <a href="#cash-in-your-whole-pot" id="th-link-cash">Cash your pot in</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="col-1">
+          <div class="th-inner">
+            <span class="th-text">What you get</span>
+          </div>
+        </th>
+        <td class="col-2">Guaranteed income for life</td>
+        <td class="col-3">Regular income or cash sums - you decide how much you take</td>
+        <td class="col-4">Your whole pot in cash</td>
+      </tr>
+      <tr>
+        <th scope="row" class="col-1">
+          <div class="th-inner">
+            <span class="th-text">Tax</span>
+          </div>
+        </th>
+        <td>On annuity income</td>
+        <td>On income or cash</td>
+        <td>On 75% of your pot</td>
+      </tr>
+      <tr>
+        <th scope="row" class="col-1">
+          <div class="th-inner">
+            <span class="th-text">You can run out of money</span>
+          </div>
+        </th>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th scope="row" class="col-1">
+          <div class="th-inner">
+            <span class="th-text">You have to manage your own money</span>
+          </div>
+        </th>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th scope="row" class="col-1">
+          <div class="th-inner">
+            <span class="th-text">Risk</span>
+          </div>
+        </th>
+        <td>Low - income is fixed</td>
+        <td>Medium - value of fund can go up or down</td>
+        <td>High - there’s no more pension pot, it’s up to you how you pay for your retirement</td>
+      </tr>
+    </tbody>
+  </table>
 
-<div class="options-mix">
-  <p>You can <a href="#mix-your-pension-options">mix</a> some of these choices</p>
-</div>
+  <div class="options-mix">
+    <p>You can <a href="#mix-your-pension-options">mix</a> some of these choices</p>
+  </div>
 
-<hr class="hr-thin" />
+  <hr class="hr-thin" />
 
-<div class="options-untouched">
-  <div class="options-untouched__label">Also consider</div>
-  <div class="options-untouched__content">
-    <div role="note" aria-label="Information" class="application-notice info-notice">
-      <p><b>Leave your pension pot untouched</b></p>
-      <p>Your pension pot could grow further and give you a larger amount of money for a shorter amount of time</p>
+  <div class="options-untouched">
+    <div class="options-untouched__label">Also consider</div>
+    <div class="options-untouched__content">
+      <div role="note" aria-label="Information" class="application-notice info-notice">
+        <p><b>Leave your pension pot untouched</b></p>
+        <p>Your pension pot could grow further and give you a larger amount of money for a shorter amount of time</p>
+      </div>
     </div>
   </div>
 </div>
