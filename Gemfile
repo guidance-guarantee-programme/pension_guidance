@@ -20,6 +20,11 @@ gem 'sprockets', '~> 2.11.0' # 2.12.x breaks sass-rails
 gem 'uglifier', '>= 1.3.0'
 gem 'utf8-cleaner'
 
+group :development, :test do
+  gem 'jasmine-rails'
+  gem 'jasmine-jquery-rails'
+end
+
 group :development do
   gem 'rubocop', require: false
   gem 'spring'

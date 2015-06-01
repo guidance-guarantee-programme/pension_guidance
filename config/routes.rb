@@ -20,4 +20,6 @@ Rails.application.routes.draw do
       get '(/:action)'
     end
   end
+
+  mount JasmineRails::Engine => '/specs'
 end

@@ -4,6 +4,9 @@
     "bower": "*",
     "travis-notify-geckoboard": "git://github.com/guidance-guarantee-programme/travis-notify-geckoboard#item-must-be-array"
   },
+  "devDependencies": {
+    "phantomjs": ">= 1.9.16"
+  },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install"
   }
