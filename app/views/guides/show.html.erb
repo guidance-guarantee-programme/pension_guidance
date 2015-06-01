@@ -3,7 +3,7 @@
 
 <% content_for :sidebar do %>
   <% if @journey.include?(@guide) %>
-    <div class="link-promo">
+    <div class="link-promo ga-journey-sidebar">
       <h2 class="link-promo__heading">6 steps you need to take</h2>
 
       <p>
@@ -18,7 +18,7 @@
     </div>
   <% end %>
 
-  <div class="link-promo">
+  <div class="link-promo ga-elsewhere-sidebar">
     <h2 class="link-promo__heading">Elsewhere on Pension Wise</h2>
     <ul class="link-promo__list">
       <% @related_guides.each do |related_guide| %>

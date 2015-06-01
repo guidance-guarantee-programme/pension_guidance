@@ -1,10 +1,10 @@
 //= require jasmine-jquery
 
+// Fixture path when running tests with rake
+jasmine.getFixtures().fixturesPath='../../spec/javascripts/fixtures'
+
 // Fixture path when running tests in browser
 //jasmine.getFixtures().fixturesPath = '/assets/fixtures/';
-
-// Fixture path when running tests with rake
-jasmine.getFixtures().fixturesPath="../../spec/javascripts/fixtures"
 
 describe("click tracker", function() {
 
@@ -35,10 +35,7 @@ describe("click tracker", function() {
   describe("tracks links in global components", function() {
 
     beforeEach(function() {
-      loadFixtures('gov-uk-template.html');
-      window.ga = window.ga || function() {};
-      PWPG.clickTracker.init();
-      spyOn(PWPG.clickTracker, "sendEvent");
+      setUpFixtureTest('gov-uk-template.html');
     });
 
     it("adds click tracking to links in the header", function() {
@@ -60,10 +57,7 @@ describe("click tracker", function() {
   describe("tracks links on the homepage", function() {
 
     beforeEach(function() {
-      loadFixtures('homepage.html');
-      window.ga = window.ga || function() {};
-      PWPG.clickTracker.init();
-      spyOn(PWPG.clickTracker, "sendEvent");
+      setUpFixtureTest('homepage.html');
     });
 
     it("adds click tracking to links the quick links", function() {
@@ -96,5 +90,49 @@ describe("click tracker", function() {
       expect(PWPG.clickTracker.sendEvent).toHaveBeenCalledWith('about the service');
     });
   });
+
+  describe("tracks links on guide pages", function() {
+
+    beforeEach(function() {
+      setUpFixtureTest('guide.html');
+    });
+
+    it("adds click tracking to links in the breadcrumb", function() {
+      $('.breadcrumbs a').trigger( "click" );
+      expect(PWPG.clickTracker.sendEvent).toHaveBeenCalledWith('breadcrumb');
+    });
+
+    it("adds click tracking to links in the content", function() {
+      $('article a').trigger( "click" );
+      expect(PWPG.clickTracker.sendEvent).toHaveBeenCalledWith('content');
+    });
+
+    it("adds click tracking to links in the options table", function() {
+      $('.ga-options-table a').trigger( "click" );
+      expect(PWPG.clickTracker.sendEvent).toHaveBeenCalledWith('options table');
+    });
+
+    it("adds click tracking to links in the pager", function() {
+      $('.pager a').trigger( "click" );
+      expect(PWPG.clickTracker.sendEvent).toHaveBeenCalledWith('pager');
+    });
+
+    it("adds click tracking to links in the journey sidebar", function() {
+      $('.ga-journey-sidebar a').trigger( "click" );
+      expect(PWPG.clickTracker.sendEvent).toHaveBeenCalledWith('journey sidebar');
+    });
+
+    it("adds click tracking to links in the elsewhere sidebar", function() {
+      $('.ga-elsewhere-sidebar a').trigger( "click" );
+      expect(PWPG.clickTracker.sendEvent).toHaveBeenCalledWith('elsewhere sidebar');
+    });
+  });
 });
+
+function setUpFixtureTest(fixtureFile) {
+  loadFixtures(fixtureFile);
+  window.ga = window.ga || function() {};
+  PWPG.clickTracker.init();
+  spyOn(PWPG.clickTracker, "sendEvent");
+}
 
