@@ -1,10 +1,6 @@
 //= require jasmine-jquery
 
-// Fixture path when running tests with rake
 jasmine.getFixtures().fixturesPath='../../spec/javascripts/fixtures'
-
-// Fixture path when running tests in browser
-//jasmine.getFixtures().fixturesPath = '/assets/fixtures/';
 
 describe("click tracker", function() {
 
