@@ -21,5 +21,8 @@ Rails.application.routes.draw do
     end
   end
 
-  mount JasmineRails::Engine => '/specs'
+  unless Rails.env.production?
+    mount JasmineRails::Engine => '/specs'
+    mount JasmineFixtures => '/spec/javascripts/fixtures'
+  end
 end
