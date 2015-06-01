@@ -1,11 +1,11 @@
-(function ($) {
+(function($) {
   'use strict';
 
   window.PWPG = window.PWPG || {};
 
   var clickTracker = {
     pathname: window.location.pathname,
-    init: function () {
+    init: function() {
       // global
       bindGlobalHeaderLinks();
       bindMastheadLinks();
