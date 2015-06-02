@@ -16,3 +16,5 @@ begin
   SCSSLint::RakeTask.new(:default)
 rescue LoadError
 end
+
+task default: :analyse_javascript
