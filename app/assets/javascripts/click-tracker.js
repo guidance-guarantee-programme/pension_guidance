@@ -1,132 +1,42 @@
+//= require click-event-logger.js
+
 (function($) {
   'use strict';
 
-  window.PWPG = window.PWPG || {};
-
   var clickTracker = {
-    pathname: window.location.pathname,
-    init: function() {
+    init: function(clickEventLogger) {
+      clickEventLogger = clickEventLogger || new PWPG.ClickEventLogger();
+
+      var track = function track(selector, label) {
+        $(selector).on('click', function() {
+          clickEventLogger.sendEvent(label, $(this).attr('href'));
+        });
+      };
+
       // global
-      bindGlobalHeaderLinks();
-      bindMastheadLinks();
-      bindFooterLinks();
+      track('#global-header a', 'global header'); // global header links
+      track('.l-masthead a', 'masthead'); // masthead links
+      track('#footer a', 'footer'); // footer links
 
       // homepage
-      bindQuickLinksLinks();
-      bindIntroductionLinks();
-      bindAppointmentLinks();
-      bindJourneyPromoLinks();
-      bindGuideDirectoryLinks();
-      bindAboutServiceLinks();
+      track('.quick-links a', 'quick links'); // quick links
+      track('.l-home-top-slot .l-column-third a', 'introduction'); // introduction links
+      track('.l-home-top-slot-promo a', 'appointments'); // appointment links
+      track('.journey-promo a', 'journey promo'); // journey promo links
+      track('.l-home-guides a', 'guides directory'); // guide directory links
+      track('.l-home-about a', 'about the service'); // about service links
 
       //guides
-      bindBreadcrumbLinks();
-      bindContentLinks();
-      bindTableLinks();
-      bindPagerLinks();
-      bindJourneySidebarLinks();
-      bindJourneyElsewhereLinks();
-    },
-    categoryName: function() {
-      var name = this.pathname.replace('/', '');
-      return name || 'homepage';
-    },
-    sendEvent: function(actionLabel, url) {
-      ga('send', 'event', this.categoryName(), actionLabel, url);
+      track('.breadcrumbs a', 'breadcrumb'); // breadcrumb links
+      track('article a', 'content'); // content links
+      track('.ga-options-table a', 'options table'); // table links
+      track('.pager a', 'pager'); // pager links
+      track('.ga-journey-sidebar a', 'journey sidebar'); // journey sidebar links
+      track('.ga-elsewhere-sidebar a', 'elsewhere sidebar'); // journey elsewhere links
     }
   };
 
-  // PRIVATE METHODS
-  function bindGlobalHeaderLinks() {
-    $('#global-header a').on('click', function() {
-      clickTracker.sendEvent('global header', $(this).attr('href'));
-    });
-  }
-
-  function bindMastheadLinks() {
-    $('.l-masthead a').on('click', function() {
-      clickTracker.sendEvent('masthead', $(this).attr('href'));
-    });
-  }
-
-  function bindFooterLinks() {
-    $('#footer a').on('click', function() {
-      clickTracker.sendEvent('footer', $(this).attr('href'));
-    });
-  }
-
-  function bindQuickLinksLinks() {
-    $('.quick-links a').on('click', function() {
-      clickTracker.sendEvent('quick links', $(this).attr('href'));
-    });
-  }
-
-  function bindIntroductionLinks() {
-    $('.l-home-top-slot .l-column-third a').on('click', function() {
-      clickTracker.sendEvent('introduction', $(this).attr('href'));
-    });
-  }
-
-  function bindAppointmentLinks() {
-    $('.l-home-top-slot-promo a').on('click', function() {
-      clickTracker.sendEvent('appointments', $(this).attr('href'));
-    });
-  }
-
-  function bindJourneyPromoLinks() {
-    $('.journey-promo a').on('click', function() {
-      clickTracker.sendEvent('journey promo', $(this).attr('href'));
-    });
-  }
-
-  function bindGuideDirectoryLinks() {
-    $('.l-home-guides a').on('click', function() {
-      clickTracker.sendEvent('guides directory', $(this).attr('href'));
-    });
-  }
-
-  function bindAboutServiceLinks() {
-    $('.l-home-about a').on('click', function() {
-      clickTracker.sendEvent('about the service', $(this).attr('href'));
-    });
-  }
-
-  function bindBreadcrumbLinks() {
-    $('.breadcrumbs a').on('click', function() {
-      clickTracker.sendEvent('breadcrumb', $(this).attr('href'));
-    });
-  }
-
-  function bindContentLinks() {
-    $('article a').on('click', function() {
-      clickTracker.sendEvent('content', $(this).attr('href'));
-    });
-  }
-
-  function bindTableLinks() {
-    $('.ga-options-table a').on('click', function() {
-      clickTracker.sendEvent('options table', $(this).attr('href'));
-    });
-  }
-
-  function bindPagerLinks() {
-    $('.pager a').on('click', function() {
-      clickTracker.sendEvent('pager', $(this).attr('href'));
-    });
-  }
-
-  function bindJourneySidebarLinks() {
-    $('.ga-journey-sidebar a').on('click', function() {
-      clickTracker.sendEvent('journey sidebar', $(this).attr('href'));
-    });
-  }
-
-  function bindJourneyElsewhereLinks() {
-    $('.ga-elsewhere-sidebar a').on('click', function() {
-      clickTracker.sendEvent('elsewhere sidebar', $(this).attr('href'));
-    });
-  }
-
-  PWPG.clickTracker = clickTracker;
+  window.PWPG = window.PWPG || {};
+  window.PWPG.clickTracker = clickTracker;
 
 })(jQuery);
