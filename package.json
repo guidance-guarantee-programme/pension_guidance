@@ -4,7 +4,15 @@
     "bower": "*",
     "travis-notify-geckoboard": "git://github.com/guidance-guarantee-programme/travis-notify-geckoboard#item-must-be-array"
   },
+  "devDependencies": {
+    "jscs": "latest",
+    "jshint": "latest",
+    "phantomjs": ">= 1.9.16"
+  },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "js": "npm run jshint && npm run jscs",
+    "jshint": "jshint app/assets/javascripts/**.js spec/javascripts/**.js",
+    "jscs": "jscs app/assets/javascripts/**.js spec/javascripts/**.js"
   }
 }

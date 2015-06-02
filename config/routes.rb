@@ -20,4 +20,9 @@ Rails.application.routes.draw do
       get '(/:action)'
     end
   end
+
+  unless Rails.env.production?
+    mount JasmineRails::Engine => '/specs'
+    mount JasmineFixtures => '/spec/javascripts/fixtures'
+  end
 end
