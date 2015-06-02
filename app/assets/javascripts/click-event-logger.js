@@ -1,22 +1,13 @@
 (function() {
   'use strict';
 
-  var defaultCategoryName = 'homepage';
-
-  var clickEventLogger = function ClickEventLogger(pathname) {
-    var categoryName;
-
-    pathname = pathname || window.location.pathname;
-    categoryName = pathname.replace('/', '') || defaultCategoryName;
-
-    this.categoryName = function CategoryName() {
-      return categoryName;
-    };
+  var clickEventLogger = function ClickEventLogger() {
+    var categoryName = 'Clicks on ' + window.location.pathname;
 
     this.sendEvent = function SendEvent(actionLabel, url) {
       window.dataLayer.push({
         'event': 'gaTriggerEvent',
-        'eventCategory': this.categoryName(),
+        'eventCategory': categoryName,
         'eventAction': actionLabel,
         'eventLabel': url
       });

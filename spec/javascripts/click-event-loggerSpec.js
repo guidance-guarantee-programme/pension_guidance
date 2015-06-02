@@ -10,30 +10,30 @@ describe('click event logger', function() {
 
     window.dataLayer = [];
 
-    tracker = new PWPG.ClickEventLogger('exampleCategoryName');
+    tracker = new PWPG.ClickEventLogger();
     tracker.sendEvent('exampleActionLabel', 'exampleUrl');
 
     expect(window.dataLayer).toContain({
       'event': 'gaTriggerEvent',
-      'eventCategory': 'exampleCategoryName',
+      'eventCategory': jasmine.any(String),
       'eventAction': 'exampleActionLabel',
       'eventLabel': 'exampleUrl'
     });
   });
 
   it ('creates a category name based on the pathname of the page', function() {
-    var pathname, tracker;
+    var tracker, expectedCategoryName;
 
-    pathname = '/';
-    tracker = new PWPG.ClickEventLogger(pathname);
-    expect(tracker.categoryName()).toEqual('homepage');
+    expectedCategoryName = 'Clicks on ' + window.location.pathname;
 
-    pathname = '/tax';
-    tracker = new PWPG.ClickEventLogger(pathname);
-    expect(tracker.categoryName()).toEqual('tax');
+    tracker = new PWPG.ClickEventLogger();
+    tracker.sendEvent('exampleActionLabel', 'exampleUrl');
 
-    pathname = '/pension-pot-options';
-    tracker = new PWPG.ClickEventLogger(pathname);
-    expect(tracker.categoryName()).toEqual('pension-pot-options');
+    expect(window.dataLayer).toContain({
+      'event': jasmine.any(String),
+      'eventCategory': expectedCategoryName,
+      'eventAction': jasmine.any(String),
+      'eventLabel': jasmine.any(String)
+    });
   });
 });
