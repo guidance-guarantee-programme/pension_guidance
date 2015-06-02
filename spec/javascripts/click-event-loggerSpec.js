@@ -2,16 +2,13 @@ describe('click event logger', function() {
   'use strict';
 
   it ('should be defined', function() {
-    expect(PWPG.ClickEventLogger).toBeDefined();
+    expect(PWPG.clickEventLogger).toBeDefined();
   });
 
   it ('sends data to Google Analytics via Google Tag Manager', function() {
-    var tracker;
-
     window.dataLayer = [];
 
-    tracker = new PWPG.ClickEventLogger();
-    tracker.sendEvent('exampleActionLabel', 'exampleUrl');
+    PWPG.clickEventLogger.sendEvent('exampleActionLabel', 'exampleUrl');
 
     expect(window.dataLayer).toContain({
       'event': 'gaTriggerEvent',
@@ -22,12 +19,9 @@ describe('click event logger', function() {
   });
 
   it ('creates a category name based on the pathname of the page', function() {
-    var tracker, expectedCategoryName;
+    var expectedCategoryName = 'Clicks on ' + window.location.pathname;
 
-    expectedCategoryName = 'Clicks on ' + window.location.pathname;
-
-    tracker = new PWPG.ClickEventLogger();
-    tracker.sendEvent('exampleActionLabel', 'exampleUrl');
+    PWPG.clickEventLogger.sendEvent('exampleActionLabel', 'exampleUrl');
 
     expect(window.dataLayer).toContain({
       'event': jasmine.any(String),
