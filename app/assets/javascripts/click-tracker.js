@@ -3,16 +3,14 @@
 (function($) {
   'use strict';
 
+  function track(selector, label) {
+    $(selector).on('click', function() {
+      PWPG.clickEventLogger.sendEvent(label, $(this).attr('href'));
+    });
+  }
+
   var clickTracker = {
-    init: function(clickEventLogger) {
-      clickEventLogger = clickEventLogger || new PWPG.ClickEventLogger();
-
-      var track = function track(selector, label) {
-        $(selector).on('click', function() {
-          clickEventLogger.sendEvent(label, $(this).attr('href'));
-        });
-      };
-
+    init: function() {
       // global
       track('#global-header a', 'global header');
       track('.l-masthead a', 'masthead');

@@ -2,38 +2,32 @@ describe('click event logger', function() {
   'use strict';
 
   it ('should be defined', function() {
-    expect(PWPG.ClickEventLogger).toBeDefined();
+    expect(PWPG.clickEventLogger).toBeDefined();
   });
 
   it ('sends data to Google Analytics via Google Tag Manager', function() {
-    var tracker;
-
     window.dataLayer = [];
 
-    tracker = new PWPG.ClickEventLogger('exampleCategoryName');
-    tracker.sendEvent('exampleActionLabel', 'exampleUrl');
+    PWPG.clickEventLogger.sendEvent('exampleActionLabel', 'exampleUrl');
 
     expect(window.dataLayer).toContain({
       'event': 'gaTriggerEvent',
-      'eventCategory': 'exampleCategoryName',
+      'eventCategory': jasmine.any(String),
       'eventAction': 'exampleActionLabel',
       'eventLabel': 'exampleUrl'
     });
   });
 
   it ('creates a category name based on the pathname of the page', function() {
-    var pathname, tracker;
+    var expectedCategoryName = 'Clicks on ' + window.location.pathname;
 
-    pathname = '/';
-    tracker = new PWPG.ClickEventLogger(pathname);
-    expect(tracker.categoryName()).toEqual('homepage');
+    PWPG.clickEventLogger.sendEvent('exampleActionLabel', 'exampleUrl');
 
-    pathname = '/tax';
-    tracker = new PWPG.ClickEventLogger(pathname);
-    expect(tracker.categoryName()).toEqual('tax');
-
-    pathname = '/pension-pot-options';
-    tracker = new PWPG.ClickEventLogger(pathname);
-    expect(tracker.categoryName()).toEqual('pension-pot-options');
+    expect(window.dataLayer).toContain({
+      'event': jasmine.any(String),
+      'eventCategory': expectedCategoryName,
+      'eventAction': jasmine.any(String),
+      'eventLabel': jasmine.any(String)
+    });
   });
 });

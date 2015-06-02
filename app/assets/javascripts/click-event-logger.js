@@ -1,29 +1,22 @@
 (function() {
   'use strict';
 
-  var defaultCategoryName = 'homepage';
+  function categoryName() {
+    return 'Clicks on ' + window.location.pathname;
+  }
 
-  var clickEventLogger = function ClickEventLogger(pathname) {
-    var categoryName;
-
-    pathname = pathname || window.location.pathname;
-    categoryName = pathname.replace('/', '') || defaultCategoryName;
-
-    this.categoryName = function CategoryName() {
-      return categoryName;
-    };
-
-    this.sendEvent = function SendEvent(actionLabel, url) {
+  var clickEventLogger = {
+    sendEvent: function(actionLabel, url) {
       window.dataLayer.push({
         'event': 'gaTriggerEvent',
-        'eventCategory': this.categoryName(),
+        'eventCategory': categoryName(),
         'eventAction': actionLabel,
         'eventLabel': url
       });
-    };
+    }
   };
 
   window.PWPG = window.PWPG || {};
-  window.PWPG.ClickEventLogger = clickEventLogger;
+  window.PWPG.clickEventLogger = clickEventLogger;
 
 })();
