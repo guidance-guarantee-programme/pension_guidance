@@ -14,7 +14,12 @@
     };
 
     this.sendEvent = function SendEvent(actionLabel, url) {
-      ga('send', 'event', this.categoryName(), actionLabel, url);
+      window.dataLayer.push({
+        'event': 'gaTriggerEvent',
+        'eventCategory': this.categoryName(),
+        'eventAction': actionLabel,
+        'eventLabel': url
+      });
     };
   };
 
