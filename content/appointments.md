@@ -1,5 +1,5 @@
 ---
-description: Book a free and impartial Pension Wise guidance appointment to help you understand your pension options.
+description: Talk about your pension options. Call 0300 330 1001 to book now.
 ---
 #Book a free appointment
 
