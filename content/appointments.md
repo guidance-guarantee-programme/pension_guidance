@@ -1,50 +1,63 @@
 ---
-description: Book a free and impartial Pension Wise guidance appointment to help you understand your pension options.
+description: Talk about your pension options. Call 0300 330 1001 to book now.
 ---
+
 #Book a free appointment
 
-You can book if:
+<div class="highlighted-info">
+  <p>Call to book a phone or face-to-face appointment</p>
+  <p>
+    <em>0300 330 1001</em>
+    <span>8am to 10pm, every day</span>
+  </p>
+</div>
 
- - you're close to or over 55, and
- - have a personal or workplace pension based on how much has been paid into your pot - a [defined contribution pension](https://www.pensionwise.gov.uk/pension-types)
+From outside the UK call: +44 20 3733 3495.
 
-^You can get help with defined benefit pensions at [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk)^
+Calls cost the same as a normal call - if your calls are free, it’s included.
 
-##How to book
+##Who can book
 
-Call 0300 330 1001 (from outside the UK: +44 20 3733 3495).
+You should be close to or over 55 and have a [defined contribution pension](pension-types).
+This is a pension based on how much you and possibly your employer paid into your pot.
+It’s not a final salary pension.
 
-Opening hours: 8am to 10pm, every day.
 
-Calls cost the same as a normal call - if your calls are free, it’s included. 
+##What you'll get from the appointment
 
-^Pension Wise guidance specialists don’t recommend any products or companies and won’t tell you how to invest your money.^
+The appointment is a conversation between you and a Pension Wise guidance specialist. You’ll get personal guidance on what you can do with your pension pot.
 
-##What you'll talk about
+The guidance specialist will:
 
-In your free phone or face-to-face guidance appointment, you’ll talk about:
+* explain your pension options
+* explain tax
+* discuss which options might be suitable for you
+* give you tips on what you can do next
 
-- the different ways you can take money from your pot
-- what each option means for your circumstances
-- next steps you can take 
+You can:
 
-Afterwards you'll receive a letter with a summary of the pension options and what they mean for your circumstances.
+* ask questions about the options
+* discuss what the options mean to you
+* discuss how tax might affect you
 
-##Before your appointment
+Afterwards you'll get a letter with a summary of what you talked about.
 
-To make your appointment as useful as possible, it would be helpful to know the following information:
+<div role="note" aria-label="Information" class="application-notice info-notice">
+  <p>Pension Wise guidance specialist are impartial. They don't recommend any products or companies and won’t tell you how to invest your money.</p>
+</div>
 
-- the value of your pension pot(s) - check your pension paperwork or ask your provider 
-- an estimate of your State Pension - call 0845 600 4274 for a statement
-- any special arrangements attached to your pension pot, eg a guaranteed annuity rate or a guaranteed pot value at a certain time - ask your provider
+##Make the most of your appointment
 
-Think about your financial circumstances and plans for retirement, eg:
+Check the value of your pension pot with your provider beforehand. Your latest pension statement will have the amount.
 
-- your income, eg salary, benefits, savings, investments 
-- any debts and repayments
-- when you want to stop working
-- if you want a fixed or flexible income in retirement 
+You should also think about when you want to stop working and how much other income you might have in retirement, eg from savings.
 
-##Who your appointment will be with
+<blockquote>
+  <p>“It was a very, very good session, a very helpful session. Covered everything we said and gave me the impetus to get on with what we were talking about.”</p>
+  <footer>— <cite>Thomas M</cite>, Coleshill</footer>
+</blockquote>
 
-Appointments are free and impartial. Phone appointments are with The Pensions Advisory Service and face-to-face appointments take place at branches of the Citizens Advice services.
+<blockquote>
+  <p>“The quality of the info was fantastic. It was an excellent experience.”</p>
+  <footer>— <cite>Kevin J</cite>, Bristol</footer>
+</blockquote>

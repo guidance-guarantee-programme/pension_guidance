@@ -35,3 +35,10 @@ hr {
   border-top-width: 3px;
   border-bottom-width: 0;
 }
+
+blockquote {
+  background: $color-blockquote-bg;
+  border-left: 10px solid $color-blockquote-border;
+  margin: 1.5em 0;
+  padding: .5em 10px;
+}

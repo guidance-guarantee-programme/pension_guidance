@@ -14,6 +14,7 @@ $color-blue-endeavour: #005ea5;
 $color-blue-picton: #5bc8f1;
 $color-orange-pizazz: #fa9600;
 $color-green-atlantis: #97c81e;
+$color-green-jungle: #00385d;
 
 // semantic colours
 $color-text: $color-black;
@@ -35,6 +36,12 @@ $color-option-annuity: $color-orange-pizazz;
 $color-option-flexible: $color-blue-picton;
 $color-option-cash: $color-green-atlantis;
 $color-option-mix: $color-blue-biscay;
+
+$color-hightlight-info-bg: $color-green-jungle;
+$color-hightlight-info-text: $color-white;
+
+$color-blockquote-bg: $color-grey-porcelain;
+$color-blockquote-border: $color-grey-rolling-stone;
 
 // pixel values
 $compact-options-max-mobile: 420px;
