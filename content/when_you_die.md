@@ -20,20 +20,20 @@ The same is true if you take all or part of your pot as cash and don’t use it 
 
 ##Leaving behind a pension
 
-When you die, if you have money still sitting in your pension pot, or if you’re taking your pension as an [annuity](/pension-pot-options#get-a-guaranteed-income-annuity) or as a flexible income ([flexi-access drawdown](/pension-pot-options#get-a-flexible-income)), the following tax rules apply:
+If you still have money in your pension pot, or if you’re taking your pension as an [annuity](/pension-pot-options#annuity) or as [a flexible income](/pension-pot-options#option-2-get-a-flexible-income), the rules are:
 
 
 - your beneficiary will inherit your pension tax free if you die before 75
 - your beneficiary will pay tax if you’re 75 or over when you die
 
 
-If you’re 75 or over when you die, how much tax they pay depends on whether they take it as a single lump sum or use it to get a retirement income (as an annuity or flexi-access drawdown).
+If you’re 75 or over when you die, how much tax they pay depends on whether they take it as a single lump sum or use it to get a retirement income (as an annuity or as a flexible income).
 
 From April 2016, new tax rules apply for inheriting a pension from someone who dies at 75 or later.
 
 ###Using an inheritance to buy a pension
 
-If you inherit a pension you can use the money to buy yourself an annuity or a flexi-access drawdown product. You still pay tax depending on the age of the person you inherited it from and on how you take the money.
+If you inherit a pension you can use the money to buy yourself an annuity or a flexible income. You still pay tax depending on the age of the person you inherited it from and on how you take the money.
 
 ##Money still in your pension pot
 

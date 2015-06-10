@@ -17,7 +17,7 @@ The remaining 75% you can take as:
         <td class="col-1"></td>
         <th scope="col" class="col-2 options-table__annuity">
           <div class="options-table__hr"></div>
-          <a href="#get-a-guaranteed-income-annuity" id="th-link-annuity">Guaranteed income</a>
+          <a href="#annuity" id="th-link-annuity">Guaranteed income</a>
         </th>
         <th scope="col" class="col-3 options-table__flexible">
           <div class="options-table__hr"></div>
