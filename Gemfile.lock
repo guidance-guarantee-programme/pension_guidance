@@ -76,6 +76,7 @@ GEM
       thor (~> 0.19.1)
     gaffe (1.0.2)
       rails (>= 3.2.0)
+    geocoder (1.2.8)
     gherkin (2.12.2)
       multi_json (~> 1.3)
     globalid (0.3.5)
@@ -230,6 +231,7 @@ DEPENDENCIES
   draper (~> 1.3)
   foreman
   gaffe
+  geocoder
   govspeak (~> 3.2)
   govuk_frontend_toolkit
   govuk_template
