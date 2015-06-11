@@ -1,5 +1,5 @@
 When(/^I search for appointment locations near to a valid postcode$/) do
-  locations = 1.upto(7).map { |x| Locations::Location.new("cab-#{x}") }
+  locations = 1.upto(7).map { |x| Locations::Location.new("cab-#{x}", [1, 0]) }
   postcode = 'SW1A 2HQ'
   lat_lng = [1, 0]
   limit = 5
