@@ -4,6 +4,7 @@ module Pages
 
     sections :locations, '.t-location' do
       element :name, '.t-name'
+      element :distance, '.t-distance'
     end
   end
 end
