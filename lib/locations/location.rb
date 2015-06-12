@@ -1,3 +1,3 @@
 module Locations
-  Location = Struct.new(:name)
+  Location = Struct.new(:name, :lat_lng)
 end
