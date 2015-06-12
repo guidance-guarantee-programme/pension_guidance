@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.126236,
+          51.500152
+        ]
+      },
+      "properties": {
+        "title": "London",
+        "address": "",
+        "phone": "",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.350987,
+          48.85666
+        ]
+      },
+      "properties": {
+        "title": "Paris",
+        "address": "",
+        "phone": "",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.005973,
+          40.714269
+        ]
+      },
+      "properties": {
+        "title": "New York",
+        "address": "",
+        "phone": "",
+        "hours": ""
+      }
+    }
+  ]
+}
