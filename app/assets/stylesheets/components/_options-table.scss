@@ -10,6 +10,31 @@
     padding-bottom: .9em;
     width: 25%;
   }
+
+  a,
+  a:visited {
+    color: $color-black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .col-2,
+  .col-3,
+  .col-2-3 {
+    background: $color-options-table-bg;
+  }
+}
+
+.options-table__tr-first {
+  th {
+    @include core-19;
+    color: $color-options-table-text;
+    font-weight: normal;
+    border-bottom: 0;
+  }
 }
 
 .options-table__hr {
@@ -60,7 +85,7 @@
     .th-text {
       position: absolute;
       width: 500px;
-      left: 4px;
+      left: 12px;
       top: 12px;
     }
   }
@@ -73,7 +98,7 @@
     left: -14px;
 
     .th-text {
-      left: 14px;
+      left: 22px;
     }
   }
 }
