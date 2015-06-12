@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9341485,
+          54.5957306
+        ]
+      },
+      "properties": {
+        "title": "Belfast Citizens Advice Bureau",
+        "address": "Merrion Business Centre, 58 Howard St, Belfast, BT1 6PJ",
+        "phone": "0300 1 233 233",
+        "hours": ""
+      }
+    }
+  ]
+}
