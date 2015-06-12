@@ -1,0 +1,341 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.188037599999999,
+          54.71857499999999
+        ]
+      },
+      "properties": {
+        "title": "Antrim Citizens Advice Bureau",
+        "address": "Farranshane House, 1 Ballygore Road, Antrim, BT41 2RN",
+        "phone": "028 9442 8176",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7019008,
+          54.5952592
+        ]
+      },
+      "properties": {
+        "title": "Ards Citizens Advice Bureau",
+        "address": "5 West Street, Newtownards, BT23 4EN",
+        "phone": "028 9180 1929",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.641012799999999,
+          54.3580091
+        ]
+      },
+      "properties": {
+        "title": "Armagh Citizens Advice Bureau",
+        "address": "9 McCrums Court, Armagh, BT61 7RS",
+        "phone": "028 3752 4041",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2742356,
+          54.8657556
+        ]
+      },
+      "properties": {
+        "title": "Ballymena Citizens Advice Bureau",
+        "address": "4 Wellington Court, Ballymena, BT43 6EQ",
+        "phone": "028 2564 4398",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2699194,
+          54.3488771
+        ]
+      },
+      "properties": {
+        "title": "Banbridge Citizens Advice Bureau",
+        "address": "77 Bridge Street, Banbridge, BT32 3JL",
+        "phone": "028 4062 2201",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.663684099999999,
+          54.6620252
+        ]
+      },
+      "properties": {
+        "title": "Bangor Citizens Advice Bureau",
+        "address": "1a Springfield Avenue, Bangor, BT20 5BY",
+        "phone": "0300 123 3233",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9341485,
+          54.5957306
+        ]
+      },
+      "properties": {
+        "title": "Belfast Citizens Advice Bureau",
+        "address": "Merrion Business Centre, 58 Howard St, Belfast, BT1 6PJ",
+        "phone": "0300 1 233 233",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8082569,
+          54.7165468
+        ]
+      },
+      "properties": {
+        "title": "Carrickfergus Citizens Advice Bureau",
+        "address": "65 North Street, Carrickfergus, BT38 7AE",
+        "phone": "028 9335 1808",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.6656869,
+          55.1315202
+        ]
+      },
+      "properties": {
+        "title": "Coleraine Citizens Advice Bureau",
+        "address": "24 Lodge Road, Coleraine, BT52 1NB",
+        "phone": "028 7034 4817",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.7569631,
+          54.6278908
+        ]
+      },
+      "properties": {
+        "title": "Cookstown Citizens Advice Bureau",
+        "address": "The Enterprise Centre, Derryloran Industrial Estate, Sandholes, Cookstown, BT80 9LU",
+        "phone": "028 8676 6126",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3313305,
+          54.4609688
+        ]
+      },
+      "properties": {
+        "title": "Craigavon Citizens Advice Bureau",
+        "address": "The Town Hall, 6 Union Street, Craigavon, BT66 8DY",
+        "phone": "028 3836 1181",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3219594,
+          54.99967789999999
+        ]
+      },
+      "properties": {
+        "title": "Derry Citizens Advice Bureau",
+        "address": "Embassy Court, 3 Strand Road, Derry, BT48 7BJ",
+        "phone": "028 7136 2444",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7153462,
+          54.3286751
+        ]
+      },
+      "properties": {
+        "title": "Downpatrick Citizens Advice Bureau",
+        "address": "Magh-Inis House, 8-10 Irish Street, Downpatrick, BT30 6BP",
+        "phone": "028 4461 4110",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.770258999999999,
+          54.5049094
+        ]
+      },
+      "properties": {
+        "title": "Dungannon Citizens Advice Bureau",
+        "address": "5-6 Feeney's Lane, Dungannon, BT70 1TX",
+        "phone": "028 8772 5299",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6416001,
+          54.3454797
+        ]
+      },
+      "properties": {
+        "title": "Fermanagh Citizens Advice Bureau",
+        "address": "Fermanagh House, Broadmeadow Place, Fermanagh, BT74 7HR",
+        "phone": "028 6632 4334",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.837807799999999,
+          54.6411866
+        ]
+      },
+      "properties": {
+        "title": "Holywood Citizens Advice Bureau",
+        "address": "Queens Hall, Sullivan Place, Holywood, BT18 9JF",
+        "phone": "0300 123 3233",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8148294,
+          54.8538116
+        ]
+      },
+      "properties": {
+        "title": "Larne Citizens Advice Bureau",
+        "address": "Park Lodge, 49 Victoria Road, Larne, BT40 1RT",
+        "phone": "028 2826 0379",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0442709,
+          54.513456
+        ]
+      },
+      "properties": {
+        "title": "Lisburn Citizens Advice Bureau",
+        "address": "Bridge Community Centre, 50 Railway Street, Lisburn, BT28 1XP",
+        "phone": "028 9266 2251",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.343651899999999,
+          54.1731229
+        ]
+      },
+      "properties": {
+        "title": "Newry Citizens Advice Bureau",
+        "address": "Ballybot House, 28 Cornmarket, Newry, BT35 8BG",
+        "phone": "028 3026 2934",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9169166,
+          54.664403
+        ]
+      },
+      "properties": {
+        "title": "Newtownabbey Citizens Advice Bureau",
+        "address": "Dunanney Centre, Rathmullan Drive, Newtownabbey, BT37 9DQ",
+        "phone": "028 9085 2271",
+        "hours": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.4647269,
+          54.8292993
+        ]
+      },
+      "properties": {
+        "title": "Strabane Citizens Advice Bureau",
+        "address": "17 Dock Street, Strabane, BT82 8EE",
+        "phone": "028 7138 2665",
+        "hours": ""
+      }
+    }
+  ]
+}
