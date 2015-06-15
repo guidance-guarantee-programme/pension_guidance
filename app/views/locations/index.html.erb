@@ -1,8 +1,9 @@
-<ul>
+<ol>
   <% @locations.each do |location| %>
     <li class="t-location">
       <h2 class="t-name"><%= location.name %></h2>
-      <span class="t-distance"><%= location.distance %> miles</span>
+      <p><%= location.address %></p>
+      <p class="t-distance">Distance: <%= location.distance %> miles</p>
     </li>
   <% end %>
-</ul>
+</ol>
