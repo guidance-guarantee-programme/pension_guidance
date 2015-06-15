@@ -1,8 +1,10 @@
 When(/^I search for appointment locations near to a valid postcode$/) do
   postcode = 'BT7 3AP'  # Belfast
-  lat_lng = [54.597269, -5.930109]
+  lat_lng = double(latitude: 54.597269, longitude: -5.930109)
+  geocoder = double
 
-  allow(Geocoder).to receive(:coordinates).with(postcode).and_return(lat_lng)
+  allow(Postcodes::IO).to receive(:new).and_return(geocoder)
+  allow(geocoder).to receive(:lookup).with(postcode).and_return(lat_lng)
 
   Pages::Locations.new.load(postcode: postcode)
 end
