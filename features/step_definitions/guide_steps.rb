@@ -30,7 +30,7 @@ Then(/^the page meta description corresponds to the meta description of the guid
 end
 
 Then(/^I can navigate to the next step in that journey$/) do
-  expect(@guide.pager_item_next).to have_content('Plan how long your money needs to last')
+  expect(@guide.pager_item_next).to have_content('Leave pot untouched')
 end
 
 Then(/^I can navigate to the previous step in that journey$/) do
@@ -70,9 +70,9 @@ end
 
 Then(/^I can navigate to each option available to me$/) do
   expect(@guide.journey_subnav_steps.map(&:text))
-    .to eq(['Leave untouched',
+    .to eq(['Leave pot untouched',
             'Guaranteed income',
-            'Flexible money',
-            'Cash your pot in',
+            'Adjustable income',
+            'Take cash',
             'Mix your options'])
 end

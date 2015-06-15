@@ -12,7 +12,7 @@ RSpec.describe GuidesController, type: :controller do
       let(:guide) { instance_spy(Guide, content_type: :govspeak) }
 
       before do
-        allow_any_instance_of(GuideRepository).to receive(:find).and_return(guide)
+        allow(controller).to receive(:find).and_return(guide)
 
         get :show, id: 'your-pension-pot-value'
       end
