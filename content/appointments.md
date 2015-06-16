@@ -43,7 +43,7 @@ You can:
 Afterwards you'll get a letter with a summary of what you talked about.
 
 <div role="note" aria-label="Information" class="application-notice info-notice">
-  <p>Pension Wise guidance specialist are impartial. They don't recommend any products or companies and won’t tell you how to invest your money.</p>
+  <p>Pension Wise guidance specialists are impartial. They don't recommend any products or companies and won’t tell you how to invest your money.</p>
 </div>
 
 ##Make the most of your appointment
