@@ -1,0 +1,39 @@
+.highlighted-info {
+  background-color: $color-hightlight-info-bg;
+  color: $color-hightlight-info-text;
+  text-align: center;
+  margin: 0 -1em 1em;
+  padding: 1.25em .75em 1.25em .25em;
+
+  p {
+    @include heading-24;
+    font-weight: 700;
+    font-family: nta, Arial, sans-serif;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+  }
+
+  span {
+    display: block;
+    padding-top: .5em;
+  }
+
+  em {
+    font-size: 42px;
+    font-weight: 700;
+    display: block;
+    line-height: 1.4;
+    padding: .2em 0 .1em;
+    font-style: normal;
+
+    @include media(tablet) {
+      font-size: 56px;
+    }
+
+    @include media(desktop) {
+      font-size: 68px;
+      line-height: 1.2;
+    }
+  }
+}
