@@ -29,7 +29,7 @@ class GuidesController < ApplicationController
     guide = guide_repository.find(params[:id])
 
     @related_guides = decorate(related_guides_for(guide))
-    @journey = decorate(journey_guides)
+    @journey = JourneyDecorator.decorate(journey_guides, guide)
     @guide = decorate(guide)
 
     expires_in Rails.application.config.cache_max_age, public: true

@@ -34,11 +34,9 @@
 
 <% if @journey.include?(@guide) %>
   <%
-     journey_size = @journey.count
-     journey_index = @journey.find_index(@guide)
-
-     next_step = journey_index < journey_size && @journey.to_a[journey_index + 1]
-     previous_step = journey_index > 0 && @journey.to_a[journey_index - 1]
+     journey_guide = @journey.find { |item| item.id == @guide.id }
+     previous_step = journey_guide.previous_step
+     next_step = journey_guide.next_step
   %>
 
   <ul class="pager">
@@ -47,7 +45,7 @@
         <a href="<%= previous_step.url %>" rel="prev">
           <span class="pager__label">Previous</span>
           <span class="pager__title">
-            <span class="t-pager__item-previous"><%= journey_index %>. <%= previous_step.label %></span>
+            <span class="t-pager__item-previous"><%= previous_step.index %>. <%= previous_step.label %></span>
           </span>
         </a>
       <% else %>
@@ -65,7 +63,7 @@
         <a href="<%= next_step.url %>" rel="next">
           <span class="pager__label">Next</span>
           <span class="pager__title">
-            <span class="t-pager__item-next"><%= journey_index + 2 %>. <%= next_step.label %></span>
+            <span class="t-pager__item-next"><%= next_step.index %>. <%= next_step.label %></span>
           </span>
         </a>
       </li>
