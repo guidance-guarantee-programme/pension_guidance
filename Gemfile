@@ -40,6 +40,8 @@ group :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'site_prism'
   gem 'scss-lint', '~> 0.30'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :staging, :production do
