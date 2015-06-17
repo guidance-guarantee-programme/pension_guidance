@@ -34,12 +34,12 @@ Then(/^I can navigate to the next step in that journey$/) do
 end
 
 Then(/^I can navigate to the previous step in that journey$/) do
-  expect(@guide.pager_item_previous).to have_content('Check the value of your pension pot')
+  expect(@guide.pager_item_previous).to have_content('Check how much is in your pension pot')
 end
 
 Then(/^I can navigate directly to other steps in that journey$/) do
   expect(@guide.journey_nav_steps.map(&:text))
-    .to eq(['Check the value of your pension pot',
+    .to eq(['Check how much is in your pension pot',
             'What you can do with your pension pot (current)',
             'Plan how long your money needs to last',
             'Work out how much money you’ll have in retirement',
