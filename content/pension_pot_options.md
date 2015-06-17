@@ -4,11 +4,28 @@ description: When you retire you can usually take 25% of your pension pot tax fr
 ---
 # What you can do with your pension pot
 
-You can decide how to take the money from your pension pot when you retire. It doesn’t matter if your pot comes from a private pension you set up yourself, a workplace pension you paid into, or both.
+You can decide how to take money from your pension pot when you retire.
 
-^You can usually take up to 25% of your [defined contribution pension](/pension-types) pot tax free.^
+You have 5 options:
 
-The remaining 75% you can take as:
+## [Leave your pot untouched](/leave-pot-untouched)
+You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’. You can leave your money invested in your pot until you need it.
+
+## [Guaranteed income (annuity)](/guaranteed-income)
+You use your pot to buy an insurance policy that guarantees you an income for the rest of your life - no matter how long you live.
+
+## [Adjustable income](/adjustable-income)
+Your pot is invested to give you a regular income. You decide how much to take out and when, and how long you want it to last.
+
+## [Take cash](/take-cash)
+You can take cash in chunks until your pot runs out, or take your whole pot in one go.
+
+## [Mix your options](/mix-options)
+You can mix different options. Usually, you would need a bigger pot to do this.
+
+## Compare your options
+
+Compare the 3 options that give you an income or let you take cash:
 
 <div class="ga-options-table">
   <table class="options-table">
