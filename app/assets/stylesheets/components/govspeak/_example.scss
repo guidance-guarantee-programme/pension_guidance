@@ -23,11 +23,11 @@
   }
 
   // nested to override p
-  .example__annuity {
-    border-left: 10px solid $color-option-annuity;
+  .example__guaranteed-income {
+    border-left: 10px solid $color-option-guaranteed-income;
   }
 
-  .example__flexible {
-    border-left: 10px solid $color-option-flexible;
+  .example__adjustable-income {
+    border-left: 10px solid $color-option-adjustable-income;
   }
 }

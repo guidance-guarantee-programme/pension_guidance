@@ -3,6 +3,8 @@ label: Guaranteed income
 description: You can use your pension pot to buy an insurance policy that guarantees you an income for the rest of your life.
 ---
 
+<div class="circle circle--m circle--guaranteed-income"></div>
+
 # Getting a guaranteed income (annuity)
 
 You might want to use your pension pot to buy an insurance policy that gives you a guaranteed income for the rest of your life. This is called an annuity. You can also buy an annuity for a fixed number of years.

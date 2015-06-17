@@ -8,20 +8,36 @@ You can decide how to take money from your pension pot when you retire.
 
 You have 5 options:
 
-## [Leave your pot untouched](/leave-pot-untouched)
-You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’. You can leave your money invested in your pot until you need it.
+<div class="options-overview">
+  <div class="options-overview__item">
+    <div class="circle circle--s circle--leave-pot-untouched"></div>
+    <h2><a href="/leave-pot-untouched">Leave your pot untouched</a></h2>
+    <p>You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’. You can leave your money invested in your pot until you need it.</p>
+  </div>
+  <div class="options-overview__item">
+    <div class="circle circle--s circle--guaranteed-income"></div>
+    <h2><a href="/guaranteed-income">Guaranteed income (annuity)</a></h2>
+    <p>You use your pot to buy an insurance policy that guarantees you an income for the rest of your life - no matter how long you live.</p>
+  </div>
+  <div class="options-overview__item">
+    <div class="circle circle--s circle--adjustable-income"></div>
+    <h2><a href="/adjustable-income">Adjustable income</a></h2>
+    <p>Your pot is invested to give you a regular income. You decide how much to take out and when, and how long you want it to last.</p>
+  </div>
+  <div class="options-overview__item">
+    <div class="circle circle--s circle--take-cash"></div>
+    <h2><a href="/take-cash">Take cash</a></h2>
+    <p>You can take cash in chunks until your pot runs out, or take your whole pot in one go.</p>
+  </div>
+  <div class="options-overview__item">
+    <div class="circle circle--s circle--mix-options"></div>
+    <h2><a href="/mix-options">Mix your options</a></h2>
+    <p>You can mix different options. Usually, you would need a bigger pot to do this.</p>
+  </div>
+</div>
 
-## [Guaranteed income (annuity)](/guaranteed-income)
-You use your pot to buy an insurance policy that guarantees you an income for the rest of your life - no matter how long you live.
-
-## [Adjustable income](/adjustable-income)
-Your pot is invested to give you a regular income. You decide how much to take out and when, and how long you want it to last.
-
-## [Take cash](/take-cash)
-You can take cash in chunks until your pot runs out, or take your whole pot in one go.
-
-## [Mix your options](/mix-options)
-You can mix different options. Usually, you would need a bigger pot to do this.
+{: .hr-thin}
+* * *
 
 ## Compare your options
 

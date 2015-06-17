@@ -3,6 +3,8 @@ label: Adjustable income
 description: Your money is invested in a flexi-access drawdown fund to give you a regular income with the option to take cash when you need to.
 ---
 
+<div class="circle circle--m circle--adjustable-income"></div>
+
 # Getting an adjustable income
 
 You can get an income from your pension pot that’s adjustable. This means you get a regular income but can change it  or take cash sums if you need to.
@@ -11,6 +13,7 @@ You get 25% of your pot as a single, tax-free cash sum. The remainder is then in
 
 You’ll probably need to be involved in choosing and managing your investments.
 
+{: .info-notice--adjustable-income}
 $E
 **Example**
 You have a pension pot of £40,000. You take 25% tax free which is £10,000. You invest the remaining £30,000 in a fund to give you an adjustable income. Your fund grows by 3% every year.  You take an income of £2,000 from it. Your fund will last you 20 years.
@@ -28,6 +31,7 @@ This option is also known as ‘flexi-access drawdown’.
 ## Tax with adjustable income
 The income you get from the fund is taxable. Your provider will pay you the income with any [tax due](/tax) already taken off.
 
+{: .info-notice--adjustable-income}
 $E
 **Example**
 You have a pot of £80,000 and take a tax-free lump sum of £20,000. This leaves you with £60,000 to invest into flexi-access. You get an income of £3,000 a year from your fund. If you pay 20% tax on this your provider pays you £2,400.

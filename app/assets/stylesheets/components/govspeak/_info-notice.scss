@@ -20,3 +20,22 @@ p + .info-notice {
   margin-top: 2em;
 }
 
+.info-notice--leave-pot-untouched {
+  border-color: $color-option-leave-pot-untouched;
+}
+
+.info-notice--guaranteed-income {
+  border-color: $color-option-guaranteed-income;
+}
+
+.info-notice--adjustable-income {
+  border-color: $color-option-adjustable-income;
+}
+
+.info-notice--take-cash {
+  border-color: $color-option-take-cash;
+}
+
+.info-notice--mix-options {
+  border-color: $color-option-mix-options;
+}

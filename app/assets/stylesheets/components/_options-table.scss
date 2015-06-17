@@ -43,15 +43,15 @@
   border-top-style: solid;
 
   .options-table__annuity & {
-    border-color: $color-option-annuity;
+    border-color: $color-option-guaranteed-income;
   }
 
   .options-table__flexible & {
-    border-color: $color-option-flexible;
+    border-color: $color-option-adjustable-income;
   }
 
   .options-table__cash & {
-    border-color: $color-option-cash;
+    border-color: $color-option-take-cash;
   }
 }
 

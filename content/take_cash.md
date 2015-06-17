@@ -3,6 +3,8 @@ label: Take cash
 description: You can take cash in chunks until your pot runs out or take your whole pot in one go.
 ---
 
+<div class="circle circle--m circle--take-cash"></div>
+
 # Taking cash
 
 There are 2 ways you can take cash from you pension pot.
@@ -20,6 +22,7 @@ With this option your pot stays where it is and you take money out when you want
 
 Your provider pays you the money with any [tax due](/tax) already taken off.
 
+{: .info-notice--take-cash}
 $E
 **Example**
 Your pot is £60,000. You take £6,000 out as cash every year - £1,500 would be tax-free every time, £4,500 would be taxable. If you pay 20% tax you would get £5,100 out of your £6,000.
@@ -39,6 +42,7 @@ You can also pay into the pot you already take cash from but you won’t get tax
 
 If you take your whole pension pot in one go - 25% is tax-free and the remaining [75% is taxable](/tax).
 
+{: .info-notice--take-cash}
 $E
 **Example**
 Your pot is £60,000.
