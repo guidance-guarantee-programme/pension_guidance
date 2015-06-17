@@ -40,7 +40,7 @@ end
 Then(/^I can navigate directly to other steps in that journey$/) do
   expect(@guide.journey_nav_steps.map(&:text))
     .to eq(['Check the value of your pension pot',
-            'Understand what you can do with your pension pot (current)',
+            'What you can do with your pension pot (current)',
             'Plan how long your money needs to last',
             'Work out how much money you’ll have in retirement',
             'Watch out for tax',
@@ -48,7 +48,7 @@ Then(/^I can navigate directly to other steps in that journey$/) do
 end
 
 Then(/^the current guide is highlighted$/) do
-  expect(@guide.journey_nav_current_step.text).to eq('Understand what you can do with your pension pot (current)')
+  expect(@guide.journey_nav_current_step.text).to eq('What you can do with your pension pot (current)')
 end
 
 Then(/^I can navigate to content related to the journey$/) do
