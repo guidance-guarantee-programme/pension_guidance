@@ -53,15 +53,15 @@ Compare the 3 options that give you an income or let you take cash:
     </tr>
     <tr>
       <th class="col-1"></th>
-      <th class="col-2 options-table__annuity">
+      <th class="col-2 options-table__guaranteed-income">
         <div class="options-table__hr"></div>
         <a href="/guaranteed-income">Guaranteed income (annuity)</a>
       </th>
-      <th class="col-3 options-table__flexible">
+      <th class="col-3 options-table__adjustable-income">
         <div class="options-table__hr"></div>
         <a href="/adjustable-income">Adjustable income</a>
       </th>
-      <th class="col-4 options-table__cash">
+      <th class="col-4 options-table__take-cash">
         <div class="options-table__hr"></div>
         <a href="/take-cash">In chunks or your whole pot</a>
       </th>
