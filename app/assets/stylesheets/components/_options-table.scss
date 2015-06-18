@@ -10,6 +10,31 @@
     padding-bottom: .9em;
     width: 25%;
   }
+
+  a,
+  a:visited {
+    color: $color-black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .col-2,
+  .col-3,
+  .col-2-3 {
+    background: $color-options-table-bg;
+  }
+}
+
+.options-table__tr-first {
+  th {
+    @include core-19;
+    color: $color-options-table-text;
+    font-weight: normal;
+    border-bottom: 0;
+  }
 }
 
 .options-table__hr {
@@ -17,16 +42,16 @@
   border-top-width: 12px;
   border-top-style: solid;
 
-  .options-table__annuity & {
-    border-color: $color-option-annuity;
+  .options-table__guaranteed-income & {
+    border-color: $color-option-guaranteed-income;
   }
 
-  .options-table__flexible & {
-    border-color: $color-option-flexible;
+  .options-table__adjustable-income & {
+    border-color: $color-option-adjustable-income;
   }
 
-  .options-table__cash & {
-    border-color: $color-option-cash;
+  .options-table__take-cash & {
+    border-color: $color-option-take-cash;
   }
 }
 
@@ -60,7 +85,7 @@
     .th-text {
       position: absolute;
       width: 500px;
-      left: 4px;
+      left: 12px;
       top: 12px;
     }
   }
@@ -73,7 +98,7 @@
     left: -14px;
 
     .th-text {
-      left: 14px;
+      left: 22px;
     }
   }
 }

@@ -2,25 +2,25 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-.bullet--untouched {
+.bullet--leave-pot-untouched {
   background: image-url("css/bullet-options.png") -4px -6px;
 }
 
-.bullet--annuity {
+.bullet--guaranteed-income {
   background: image-url("css/bullet-options.png") -4px -30px;
 }
 
-.bullet--flexible {
+.bullet--adjustable-income {
   background: image-url("css/bullet-options.png") -4px -78px;
 }
 
-.bullet--cash {
+.bullet--take-cash {
   background: image-url("css/bullet-options.png") -4px -54px;
 }
 
-.bullet--mix {
+.bullet--mix-options {
   background: image-url("css/bullet-options.png") -4px -102px;
 }

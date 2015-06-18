@@ -2,20 +2,18 @@
 <% content_for(:meta_description, @guide.description) %>
 
 <% content_for :sidebar do %>
-  <% if @journey.include?(@guide) %>
-    <div class="link-promo ga-journey-sidebar">
-      <h2 class="link-promo__heading">6 steps you need to take</h2>
-
-      <p>
-        <a href="/6-steps-you-need-to-take">Read the 6 steps overview</a>
-      </p>
-
-      <hr class="hr-thin">
-
-      <% cache(@guide.slug) do %>
-        <%= render 'components/journey_nav', journey: @journey, current_step: @guide %>
-      <% end %>
-    </div>
+  <% cache(@guide.slug) do %>
+    <% if journey_navigation.active? %>
+      <div class="link-promo ga-journey-sidebar">
+        <h2 class="link-promo__heading"><%= journey_navigation.overview.label %></h2>
+        <p>
+          <%= link_to "Read the #{journey_navigation.overview.concise_label} overview",
+                      journey_navigation.overview.url %>
+        </p>
+        <hr class="hr-thin">
+        <%= render 'components/journey_nav', journey_navigation: journey_navigation %>
+      </div>
+    <% end %>
   <% end %>
 
   <div class="link-promo ga-elsewhere-sidebar">
@@ -32,71 +30,6 @@
 
 <%= @guide.content %>
 
-<% if @journey.include?(@guide) %>
-  <%
-     journey_size = @journey.count
-     journey_index = @journey.find_index(@guide)
-
-     next_step = journey_index < journey_size && @journey.to_a[journey_index + 1]
-     previous_step = journey_index > 0 && @journey.to_a[journey_index - 1]
-  %>
-
-  <ul class="pager">
-    <li class="pager__item pager__item--previous">
-      <% if previous_step %>
-        <a href="<%= previous_step.url %>" rel="prev">
-          <span class="pager__label">Previous</span>
-          <span class="pager__title">
-            <span class="t-pager__item-previous"><%= journey_index %>. <%= previous_step.label %></span>
-          </span>
-        </a>
-      <% else %>
-        <a href="/6-steps-you-need-to-take" rel="prev">
-          <span class="pager__label">Previous</span>
-          <span class="pager__title">
-            <span class="t-pager__item-previous">Read the 6 steps overview</span>
-          </span>
-        </a>
-      <% end %>
-    </li>
-
-    <% if next_step %>
-      <li class="pager__item pager__item--next">
-        <a href="<%= next_step.url %>" rel="next">
-          <span class="pager__label">Next</span>
-          <span class="pager__title">
-            <span class="t-pager__item-next"><%= journey_index + 2 %>. <%= next_step.label %></span>
-          </span>
-        </a>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
-
-
-<% content_for :after_script do %>
-  <script>
-    $(function() {
-      var duration = 800;
-      var subNavIds = ['untouched', 'annuity', 'flexible', 'cash', 'mix'];
-      var tableIds = ['annuity', 'flexible', 'cash'];
-
-      $.each(subNavIds, function( index, value ) {
-        $('#sub-nav-' + value).on('click', function () {
-          $('html, body').animate({
-            scrollTop: ($('#' + value).offset().top)
-          }, duration);
-        });
-      });
-
-      $.each(tableIds, function( index, value ) {
-        $('#th-link-' + value).on('click', function () {
-          $('html, body').animate({
-            scrollTop: ($('#' + value).offset().top)
-          }, duration);
-        });
-
-      });
-    });
-  </script>
+<% if journey_navigation.active? %>
+  <%= render 'components/pager', pager: journey_navigation %>
 <% end %>

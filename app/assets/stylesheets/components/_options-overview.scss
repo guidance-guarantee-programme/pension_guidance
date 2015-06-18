@@ -1,0 +1,44 @@
+.options-overview {
+  margin-bottom: 24px;
+
+  h2 {
+    margin-top: 0;
+
+    @include media(tablet) {
+      margin-top: 36px;
+    }
+  }
+
+  a,
+  a:visited {
+    color: $color-black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .circle {
+    position: absolute;
+    top: 7px;
+
+    @include media(tablet) {
+      top: 29px;
+    }
+
+    @media (min-width: 1040px) {
+      left: -32px;
+      top: 6px;
+    }
+  }
+}
+
+.options-overview__item {
+  position: relative;
+  padding-top: 35px;
+
+  @media (min-width: 1040px) {
+    padding-top: 0;
+  }
+}

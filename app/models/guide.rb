@@ -1,12 +1,24 @@
 class Guide
-  attr_reader :id, :content, :content_type, :label, :description
+  extend Forwardable
 
-  def initialize(id, content: '', content_type: nil, label: '', description: '')
+  Metadata = Class.new do
+    attr_accessor :label, :concise_label, :description
+
+    def initialize(label: nil, concise_label: nil, description: nil)
+      self.label = label
+      self.concise_label = concise_label
+      self.description = description
+    end
+  end
+
+  attr_reader :id, :content, :content_type
+  def_delegators :@metadata, :label, :concise_label, :description
+
+  def initialize(id, content: '', content_type: nil, metadata: nil)
     @id = id
     @content = content
     @content_type = content_type
-    @label = label
-    @description = description
+    @metadata = metadata
   end
 
   def ==(other)

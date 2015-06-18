@@ -1,0 +1,78 @@
+.circle {
+  display: inline-block;
+}
+
+.circle--s {
+  margin-bottom: -18px;
+  width: 18px;
+  height: 18px;
+
+  @include media(tablet) {
+    &.circle--leave-pot-untouched {
+      background: image-url("css/circles-18.png") -3px -3px;
+    }
+
+    &.circle--take-cash {
+      background: image-url("css/circles-18.png") -3px -61px;
+    }
+
+    &.circle--guaranteed-income {
+      background: image-url("css/circles-18.png") -3px -32px;
+    }
+
+    &.circle--adjustable-income {
+      background: image-url("css/circles-18.png") -3px -90px;
+    }
+
+    &.circle--mix-options {
+      background: image-url("css/circles-18.png") -3px -118px;
+    }
+  }
+
+  &.circle--leave-pot-untouched {
+    background: image-url("css/circles-14.png") -3px -3px;
+  }
+
+  &.circle--take-cash {
+    background: image-url("css/circles-14.png") -3px -61px;
+  }
+
+  &.circle--guaranteed-income {
+    background: image-url("css/circles-14.png") -3px -32px;
+  }
+
+  &.circle--adjustable-income {
+    background: image-url("css/circles-14.png") -3px -90px;
+  }
+
+  &.circle--mix-options {
+    background: image-url("css/circles-14.png") -3px -118px;
+  }
+}
+
+.circle--m {
+  margin-top: 15px;
+  margin-bottom: -10px;
+  width: 26px;
+  height: 26px;
+
+  &.circle--leave-pot-untouched {
+    background: image-url("css/circles-24.png") 0 -1px;
+  }
+
+  &.circle--take-cash {
+    background: image-url("css/circles-24.png") 0 -59px;
+  }
+
+  &.circle--guaranteed-income {
+    background: image-url("css/circles-24.png") 0 -30px;
+  }
+
+  &.circle--adjustable-income {
+    background: image-url("css/circles-24.png") 0 -88px;
+  }
+
+  &.circle--mix-options {
+    background: image-url("css/circles-24.png") 0 -116px;
+  }
+}

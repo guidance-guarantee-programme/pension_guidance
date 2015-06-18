@@ -20,7 +20,7 @@ The same is true if you take all or part of your pot as cash and don’t use it 
 
 ##Leaving behind a pension
 
-If you still have money in your pension pot, or if you’re taking your pension as an [annuity](/pension-pot-options#annuity) or as [a flexible income](/pension-pot-options#option-2-get-a-flexible-income), the rules are:
+If you still have money in your pension pot, or if you’re taking your pension as an [annuity](/guaranteed-income) or as [a flexible income](/adjustable-income), the rules are:
 
 
 - your beneficiary will inherit your pension tax free if you die before 75

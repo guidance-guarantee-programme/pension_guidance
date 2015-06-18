@@ -46,7 +46,8 @@ RSpec.describe GuideDecorator, type: :decorator do
   end
 
   describe '#label' do
-    let(:guide) { Guide.new('test-guide', label: label) }
+    let(:guide) { Guide.new('test-guide', metadata: metadata) }
+    let(:metadata) { Guide::Metadata.new(label: label) }
 
     subject { described_class.new(guide).label }
 
