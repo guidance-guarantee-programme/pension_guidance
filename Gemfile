@@ -24,8 +24,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'utf8-cleaner'
 
 group :development, :test do
-  gem 'jasmine-rails'
   gem 'jasmine-jquery-rails'
+  gem 'jasmine-rails'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
@@ -37,7 +38,6 @@ end
 
 group :test do
   gem 'cucumber-rails', require: false
-  gem 'rspec-rails', '~> 3.0'
   gem 'site_prism'
   gem 'scss-lint', '~> 0.30'
   gem 'vcr'
