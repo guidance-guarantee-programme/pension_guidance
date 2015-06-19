@@ -27,6 +27,12 @@ Given(/^I have bookmarked the page$/) do
   @bookmark = page.driver.current_url
 end
 
+When(/^I search for appointment locations near to an invalid postcode$/) do
+  postcode = 'invalid'
+
+  Pages::Locations.new.load(postcode: postcode)
+end
+
 Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) do |_number_of_locations|
   page_locations = Pages::Locations.new.locations
 
@@ -37,6 +43,10 @@ Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) 
     /\b(.+?) miles/.match(distance)[1].to_f
   end
   expect(distances).to eq(distances.sort)
+end
+
+Then(/^I should be informed that Pension Wise cannot find that postcode$/) do
+  pending # express the regexp above with the code you wish you had
 end
 
 Then(/^I should see the details of that appointment location$/) do
