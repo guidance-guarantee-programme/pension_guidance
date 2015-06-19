@@ -27,6 +27,7 @@ gem 'utf8-cleaner'
 group :development, :test do
   gem 'jasmine-jquery-rails'
   gem 'jasmine-rails'
+  gem 'pry-rails'
   gem 'rspec-rails', '~> 3.0'
 end
 
