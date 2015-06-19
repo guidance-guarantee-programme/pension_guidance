@@ -46,7 +46,7 @@ Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) 
 end
 
 Then(/^I should be informed that Pension Wise cannot find that postcode$/) do
-  pending # express the regexp above with the code you wish you had
+  expect(Pages::Locations.new).to have_invalid_postcode
 end
 
 Then(/^I should see the details of that appointment location$/) do
