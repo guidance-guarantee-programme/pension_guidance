@@ -22,6 +22,7 @@ gem 'rubytree'
 gem 'sass-rails', '~> 4.0'
 gem 'sprockets', '~> 2.11.0' # 2.12.x breaks sass-rails
 gem 'uglifier', '>= 1.3.0'
+gem 'uk_postcode'
 gem 'utf8-cleaner'
 
 group :development, :test do
