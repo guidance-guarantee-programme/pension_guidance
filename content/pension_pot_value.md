@@ -15,13 +15,14 @@ You can:
 
 If you’re less than 4 months away from your agreed pension age and haven’t yet received a wake-up pack, you should contact your pension provider.
 
+##Check which pensions you’ve paid into
 You may have paid into more than one pension pot. You’ll need to contact each provider separately to find out how much is in each one.
+
+If you can’t remember which pensions you paid into you can [find a lost pension](https://www.gov.uk/find-lost-pension).
 
 ##Combine your pension pots
 
 You can combine multiple pension pots into one by [transferring your pension](https://www.gov.uk/transferring-your-pension/transferring-to-a-uk-pension-scheme). You might save on administration charges but there could be fees and you could lose certain arrangements you have with your current provider. You may wish to get [financial advice](/shop-around#getting-financial-advice) before doing this.
 
-##Check which pensions you’ve paid into
 
-If you can’t remember which pensions you paid into you can [find a lost pension](https://www.gov.uk/find-lost-pension).
 
