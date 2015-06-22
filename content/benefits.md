@@ -43,7 +43,7 @@ If you do take an income:
  - if it’s higher than your notional income, this amount will be used instead
 
 $E
-**Example** You’re 69 and applying for Council Tax Reduction. You have a pension pot of £40,000 and take a flexi-access drawdown income of £1,000 a year from it. DWP have calculated that you could get £1,800 a year from an annuity. They will take £1,800 into account when assessing your income.
+**Example** You’re 69 and applying for Council Tax Reduction. You have a pension pot of £40,000 and take an adjustable income of £1,000 a year from it. DWP have calculated that you could get £1,800 a year from an annuity. They will take £1,800 into account when assessing your income.
 $E
 
 It’s your responsibility to tell DWP or your local council if you or your partner take any money from your pension pot.
