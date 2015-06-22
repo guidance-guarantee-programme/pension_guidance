@@ -19,7 +19,7 @@ Pension guidance from [Pension Wise].
 Clone the repository:
 
 ```sh
-$ git clone https://github.com/guidance-guarantee-programme/pension-guidance.git
+$ git clone https://github.com/guidance-guarantee-programme/pension_guidance.git
 ```
 
 Setup the application:
