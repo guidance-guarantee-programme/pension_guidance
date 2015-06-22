@@ -13,7 +13,7 @@ You can also mix these options, eg leave one pension in the UK and move another 
 
 ## Taking your pension from abroad
 
-If you live or move abroad and leave your pension pot in the UK, you still have the same [pension options](/pension-pot-options).
+If you leave your pension pot in the UK, you have the same [UK pension options](/pension-pot-options).
 
 UK pension providers don’t usually pay the money from your pension straight into overseas bank accounts. If they do, they may charge fees. Check with your provider.
 
