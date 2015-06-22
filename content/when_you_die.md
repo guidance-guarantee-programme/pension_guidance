@@ -20,7 +20,7 @@ The same is true if you take all or part of your pot as cash and don’t use it 
 
 ##Leaving behind a pension
 
-If you still have money in your pension pot, or if you’re taking your pension as an [annuity](/guaranteed-income) or as [a flexible income](/adjustable-income), the rules are:
+If you still have money in your pension pot, or if you’re taking your pension as a [guaranteed income (annuity)](/guaranteed-income) or as [an adjustable income](/adjustable-income), the rules are:
 
 
 - your beneficiary will inherit your pension tax free if you die before 75
@@ -33,7 +33,7 @@ From April 2016, new tax rules apply for inheriting a pension from someone who d
 
 ###Using an inheritance to buy a pension
 
-If you inherit a pension you can use the money to buy yourself an annuity or a flexible income. You still pay tax depending on the age of the person you inherited it from and on how you take the money.
+If you inherit a pension you can use the money to buy yourself an annuity or an adjustable income. You still pay tax depending on the age of the person you inherited it from and on how you take the money.
 
 ##Money still in your pension pot
 
@@ -59,7 +59,7 @@ You fix the minimum number of years where payments are made after you die. The g
 
 $E
 **Example:** You take a guaranteed 10-year annuity and die after 8 years, your spouse gets payments for another 2 years.
-(If you die after 10 years you still get payments for the rest of your life, but your spouse won’t get any payments after you die.)
+If you die after the 10 year guaranteed period, your spouse won’t get any payments.
 $E
 
 ###‘Capital protected’ annuity
@@ -72,7 +72,7 @@ If you’re 75 or older when you die, [the payments your beneficiary gets are ta
 
 ##Flexi-access drawdown
 
-If you take a flexible income through flexi-access drawdown, your beneficiary pays tax on this inheritance if you die at 75 or later.
+If you take an adjustable income through flexi-access drawdown, your beneficiary pays tax on this inheritance if you die at 75 or later.
   
 ##Tax at a glance
 
