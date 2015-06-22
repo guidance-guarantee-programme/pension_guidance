@@ -6,7 +6,7 @@ description: How pensions are split when a couple divorces or ends their civil p
 
 The way that a couple’s pension is dealt with, when they divorce or have their civil partnership dissolved, should be set out as part of a financial settlement.
 
-Even when you and your spouse (the person you’re married to) or civil partner agree on the settlement, it should be confirmed through a court order.
+Even when you and your spouse or civil partner agree on the settlement, it should be confirmed through a court order.
 
 If a couple isn’t married or in a civil partnership, their pensions can’t be shared if they split up.
 
