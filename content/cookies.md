@@ -31,8 +31,8 @@ Google Analytics sets the following cookies:
 
 Name | Purpose | Expires
 -|-
-_ga | Used to distinguish users | 2 years
-_gat | Used to throttle request rate - limits the collection of analytics data when traffic to the website is high | 10 minutes
+_ga | This helps us count how many people visit Pension Wise by tracking if you’ve visited before | 2 years
+_gat | Used to manage the rate at which page view requests are made | 10 minutes
 
 You can [opt out of Google Analytics](https://tools.google.com/dlpage/gaoptout).
 
