@@ -48,7 +48,7 @@ Afterwards you'll get a letter with a summary of what you talked about.
 
 ##Make the most of your appointment
 
-Check the value of your pension pot with your provider beforehand. Your latest pension statement will have the amount.
+Check the value of your pension pot beforehand. Your latest pension statement from your provider will have the amount.
 
 You should also think about when you want to stop working and how much other income you might have in retirement, eg from savings.
 
