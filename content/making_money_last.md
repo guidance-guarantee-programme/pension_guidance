@@ -24,6 +24,8 @@ You’ll also need to decide when to take your State Pension once you reach Stat
 
 You can’t take the State Pension early but you can push back when you start receiving it - this is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
 
+You can also [top up your State Pension](https://www.gov.uk/statepensiontopup) if you don’t get the full amount. 
+
 ##When to start taking your pension money
 
 When you choose to take your money is up to you. Don’t rush your decision.
