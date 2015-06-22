@@ -119,17 +119,7 @@ linters:
 
   SelectorFormat:
     enabled: true
-    convention: strict_BEM
-    exclude: # multiple hyphens currently fail. Need a regex for our BEM syntax
-      - app/assets/stylesheets/components/_bullet.scss
-      - app/assets/stylesheets/components/_circle.scss
-      - app/assets/stylesheets/components/_hr-option.scss
-      - app/assets/stylesheets/components/_journey-promo.scss
-      - app/assets/stylesheets/components/_option.scss
-      - app/assets/stylesheets/components/_pager.scss
-      - app/assets/stylesheets/components/govspeak/_example.scss
-      - app/assets/stylesheets/components/govspeak/_info-notice.scss
-      - app/assets/stylesheets/layout/_grid.scss
+    convention: hyphenated_BEM
 
   Shorthand:
     enabled: true
