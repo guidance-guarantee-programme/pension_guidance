@@ -19,6 +19,18 @@ You can choose to shop around by yourself or with help from a [financial adviser
 
 ##Comparing annuities
 
+To compare annuities, you generally need to have the following information ready:
+
+* the value of your pension pot
+* the age you plan to retire
+* your postcode
+* the type of annuity you want (eg, one that only pays income for a fixed term, or one that continues to pay your partner after your death)
+* your health details (eg, some annuities pay more if you smoke or have a medical condition)
+
+You can read more about the different kinds of annuity and compare annuity rates on the [Money Advice Service website](https://www.moneyadviceservice.org.uk/en/tools/annuities) or speak to a financial adviser to help you compare or discuss products you’ve found.
+
+###Comparing annuities - what to look out for
+
 Before you shop around, ask your current provider if they offer a [guaranteed annuity rate](http://www.pensionsadvisoryservice.org.uk/about-pensions/retirement-choices/buying-an-annuity-how-to-shop-around/guaranteed-annuity-rates) - a fixed rate which was set when you started your pension.
 
 Many pensions sold before 1990 offered these rates. They may offer better value than annuities available elsewhere.
@@ -33,25 +45,13 @@ Once you’ve bought one you only have a short period when you can still change 
 
 ^Ask about commission charges that might be included in the quotes you get.^
 
-###Comparing annuities - what you need
+##Comparing flexi-access products
 
-To compare annuities, you generally need to have the following information ready:
-
-* the value of your pension pot
-* the age you plan to retire
-* your postcode
-* the type of annuity you want (eg, one that only pays income for a fixed term, or one that continues to pay your partner after your death)
-* your health details (eg, some annuities pay more if you smoke or have a medical condition)
-
-You can read more about the different kinds of annuity and compare annuity rates on the [Money Advice Service website](https://www.moneyadviceservice.org.uk/en/tools/annuities) or speak to a financial adviser to help you compare or discuss products you’ve found.
-
-##Comparing flexi-access drawdown products
-
-To compare products where you take money from your pension pot as and when you need it (flexi-access drawdown) you’ll need some knowledge of investing.
+To compare products where you get an adjustable income you’ll need some knowledge of investing.
 
 You need to know which funds and markets to invest in to make sure your money lasts and keeps up with or beats the rate of inflation. You also need to look out for fees. A financial adviser can help you with this and your flexi-access drawdown choices.
 
-###Comparing flexi-access drawdown - what you need
+###Comparing flexi-access - what you need
 
 To compare flexi-access drawdown products you need to:
 
@@ -64,7 +64,7 @@ You also need to know how your [pension pot will be taxed](/tax) every time you 
 
 %If your investments don’t perform well and you take too much money from your pension pot, you could run out of retirement income.%
 
-Getting a flexi-access drawdown product may involve moving your pot to a different provider. If you’re not confident with investing it may not be right for you.
+Moving your money into a flexi-access drawdown fund may involve moving your pot to a different provider. If you’re not confident with investing it may not be right for you.
 
 You should consider speaking to a financial adviser before getting a flexi-access drawdown product.
 
