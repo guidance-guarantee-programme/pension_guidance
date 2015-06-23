@@ -4,7 +4,7 @@ description: How pensions are split when a couple divorces or ends their civil p
 
 #Pensions and divorce
 
-The way that a couple’s pension is dealt with, when they divorce or have their civil partnership dissolved, should be set out as part of a financial settlement.
+The way that a couple’s pension is dealt with when they divorce or have their civil partnership dissolved should be set out as part of a financial settlement.
 
 Even when you and your spouse or civil partner agree on the settlement, it should be confirmed through a court order.
 
@@ -39,7 +39,7 @@ The options for how courts split pension pots are the same as in the rest of the
 There are differences in how pension options are applied in Scotland. Read more about how [courts deal with pensions in Scotland](https://www.moneyadviceservice.org.uk/en/articles/dividing-pensions-on-divorce-or-dissolution).
 
 
-##Your State Pension
+##The State Pension
 
 
 Your [basic State Pension](https://www.gov.uk/state-pension) can’t be shared if your marriage or civil partnership ends. However, if one of you has paid enough National Insurance contributions, the State Pension that your former spouse or civil partner gets could increase.
