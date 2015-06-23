@@ -10,4 +10,8 @@ module Locations
 
     search.nearest_to(locations, lat_lng, limit)
   end
+
+  def self.find(id, repository: Repository.new)
+    repository.find(id)
+  end
 end
