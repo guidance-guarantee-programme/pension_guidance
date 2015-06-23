@@ -20,6 +20,7 @@ module Locations
         Location.new(
           feature.properties['title'],
           feature.properties['address'],
+          feature.properties['phone'],
           feature.properties['hours'],
           [feature.geometry.y, feature.geometry.x]
         )
