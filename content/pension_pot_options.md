@@ -39,6 +39,7 @@ You have 5 options:
 {: .hr-thin}
 * * *
 
+{: .options-overview__compare-title}
 ## Compare your options
 
 Compare the 3 options that give you an income or let you take cash:
