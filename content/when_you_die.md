@@ -27,7 +27,7 @@ If you still have money in your pension pot, or if you’re taking your pension 
 - your beneficiary will pay tax if you’re 75 or over when you die
 
 
-If you’re 75 or over when you die, how much tax they pay depends on whether they take it as a single lump sum or use it to get a retirement income (as an annuity or as a flexible income).
+If you’re 75 or over when you die, how much tax they pay depends on whether they take it as a single lump sum or use it to get a retirement income (as an annuity or as an adjustable income).
 
 From April 2016, new tax rules apply for inheriting a pension from someone who dies at 75 or later.
 
