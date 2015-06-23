@@ -28,5 +28,12 @@ Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) 
 end
 
 Then(/^I should see the details of that appointment location$/) do
-  pending # express the regexp above with the code you wish you had
+  location = Pages::Location.new
+
+  expect(location).to be_displayed(id: 'london')
+  expect(location.name.text).to eq('London')
+
+  %i(address phone hours).each do |element|
+    expect(location.public_send(element)).to be_visible
+  end
 end
