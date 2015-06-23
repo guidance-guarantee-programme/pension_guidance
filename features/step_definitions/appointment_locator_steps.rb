@@ -1,9 +1,18 @@
+Given(/^I have searched for appointment locations near to a valid postcode$/) do
+  step('I search for appointment locations near to a valid postcode')
+end
+
 When(/^I search for appointment locations near to a valid postcode$/) do
   postcode = 'BT7 3AP'  # Belfast
 
   VCR.use_cassette('locations_search') do
     Pages::Locations.new.load(postcode: postcode)
   end
+end
+
+When(/^I drill down into a specific search result$/) do
+  location = Pages::Locations.new.locations.first
+  location.name.click
 end
 
 Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) do |_number_of_locations|
@@ -16,4 +25,8 @@ Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) 
     /\b(.+?) miles/.match(distance)[1].to_f
   end
   expect(distances).to eq(distances.sort)
+end
+
+Then(/^I should see the details of that appointment location$/) do
+  pending # express the regexp above with the code you wish you had
 end
