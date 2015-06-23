@@ -1,7 +1,7 @@
 <ol>
   <% @locations.each do |location| %>
     <li class="t-location">
-      <h2 class="t-name"><%= location.name %></h2>
+      <h2><%= link_to(location.name, location_path(location.id), class: 't-name') %></h2>
       <p><%= location.address %></p>
       <p class="t-distance">Distance: <%= location.distance %> miles</p>
     </li>
