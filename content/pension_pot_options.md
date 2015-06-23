@@ -98,7 +98,7 @@ Compare the 3 options that give you an income or let you take cash:
       <td class="col-3">Money left in your fund can be passed on</td>
       <td>Money left in your pot can be passed on</td>
     </tr>
-    <tr>
+    <tr class="options-table__tr-last">
       <th class="col-1">
         <div class="th-inner">
           <span class="th-text">Watch out for</span>
