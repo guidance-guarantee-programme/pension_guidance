@@ -42,8 +42,8 @@ Once you stop working and you don’t have any other income, your retirement inc
 
 To get a basic idea of how much you’ll have in retirement, follow these steps:
 
-s1. Understand [what you can do with your pension pot](/pension-pot-options) and decide if you want to be paid a guaranteed income every year from an annuity or take an adjustable income or cash in chunks from your pension pot when you want to.
-s2. [Shop around](/shop-around) and get quotes from providers. For annuities they’ll be able to tell you how much a year you can get for your size of pot. If you want to take an adjustable income or cash in chunks from your pot they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
+s1. Understand [what you can do with your pension pot](/pension-pot-options). Decide if you want a guaranteed income (annuity) every year or the option to take an adjustable income or cash in chunks from your pension pot when you want to.
+s2. [Shop around](/shop-around) and get quotes from providers. For annuities they’ll tell you how much you might get a year for the amount in your pot. For an adjustable income or cash in chunks they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
 s3. Decide which option(s) suit you the best. You might want to talk to a [financial adviser](/shop-around#getting-financial-advice).
 s4. Add the most suitable quote to your State Pension. If you also have a defined benefit pension, add that money too.
 s5. Take away the [tax you pay on your pension(s)](/tax).
@@ -96,7 +96,7 @@ To get a basic idea of how much you’ll have in retirement follow these steps:
 
 s1. Check how your other income will change in retirement. The easiest way to do this is to think about your 60s, 70s and 80s and how your income might drop. For example, you might want to stop working in your late 60s which means you’ll have less income.
 s2. Understand [what you can do with your pension pot](/pension-pot-options) and decide when you need this money. For example, while you’re still working you might want to leave your pension pot untouched so you can take more later.
-s3. [Shop around](/shop-around) and get quotes from providers. For annuities they’ll be able to tell you how much a year you can get for your size of pot. If you want to take an adjustable income or cash in chunks from your pot they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
+s3. [Shop around](/shop-around) and get quotes from providers. For annuities they’ll tell you how much you might get a year for the amount in your pot. For an adjustable income or cash in chunks they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
 s4. Decide which option(s) suits you the best. You might want to talk to a [financial adviser](/shop-around#getting-financial-advice).
 s5. Add the most suitable quote to your State Pension and other income.
 s6. Take away the [tax you pay on all your income](/tax).
