@@ -9,7 +9,7 @@ Rails.application.routes.draw do
           id: guide.slug
     end
 
-    resources :locations, only: :index
+    resources :locations, only: [:index, :show]
 
     scope path: 'styleguide', controller: 'styleguide' do
       scope path: 'pages' do
