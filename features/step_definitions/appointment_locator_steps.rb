@@ -10,9 +10,17 @@ When(/^I search for appointment locations near to a valid postcode$/) do
   end
 end
 
+Given(/^I have drilled down into a specific search result$/) do
+  step('I drill down into a specific search result')
+end
+
 When(/^I drill down into a specific search result$/) do
   location = Pages::Locations.new.locations.first
   location.name.click
+end
+
+Given(/^I have bookmarked the page$/) do
+  @bookmark = page.driver.current_url
 end
 
 Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) do |_number_of_locations|
@@ -36,4 +44,8 @@ Then(/^I should see the details of that appointment location$/) do
   %i(address phone hours).each do |element|
     expect(location.public_send(element)).to be_visible
   end
+end
+
+When(/^I visit the bookmarked page$/) do
+  page.driver.visit(@bookmark)
 end

@@ -9,7 +9,7 @@ Scenario: From search results
   When I drill down into a specific search result
   Then I should see the details of that appointment location
 
-@todo
+@wip
 Scenario: Bookmark a appointment location
   Given I have searched for appointment locations near to a valid postcode
   And I have drilled down into a specific search result
