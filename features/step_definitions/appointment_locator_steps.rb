@@ -47,5 +47,7 @@ Then(/^I should see the details of that appointment location$/) do
 end
 
 When(/^I visit the bookmarked page$/) do
-  page.driver.visit(@bookmark)
+  VCR.use_cassette('locations_search') do
+    page.driver.visit(@bookmark)
+  end
 end
