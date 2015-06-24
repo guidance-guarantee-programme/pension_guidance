@@ -37,6 +37,13 @@
   }
 }
 
+.options-table__tr-last {
+  th,
+  td {
+    border-bottom: 0;
+  }
+}
+
 .options-table__hr {
   margin-bottom: 20px;
   border-top-width: 12px;
