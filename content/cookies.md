@@ -36,6 +36,17 @@ _gat | Used to manage the rate at which page view requests are made | 10 minutes
 
 You can [opt out of Google Analytics](https://tools.google.com/dlpage/gaoptout).
 
+### Our performance surveys
+
+We select some users to take part in performance surveys. If you take part, or dismiss a survey, we’ll save a cookie that lets us know you’ve seen the message so that we don’t show it to you again.
+
+Name | Purpose | Expires
+-|-
+UZ_TI_dc_value | Saves a message to remember if you’ve taken a survey or dismissed it | when you close your browser
+UZ_TI_S_{id} | Identifies a survey you have been shown | when you close your browser
+
+We use [UserZoom](http://www.userzoom.co.uk/) to collect responses to a survey. If you take part, UserZoom will save extra cookies to your computer to track your progress through it.
+
 ### Our introductory message
 
 You may see a pop-up welcome message when you first visit the Pension Wise website. We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.
