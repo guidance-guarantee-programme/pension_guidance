@@ -46,6 +46,27 @@
 <% content_for :body_end do %>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag 'https://cdn3.userzoom.com/uz.js?cuid=C85E515772DAE311BEDA0022196C4538' %>
+
+  <%# UserZoom intercept %>
+  <script type="text/javascript">
+    //<![CDATA[
+    _uzactions = window._uzactions || [];
+    _uzactions.push(['_setID', 'CE72F02EBB15E511B0190022196C2B88']);
+    _uzactions.push(['_setSID', 'CD72F02EBB15E511B0190022196C2B88']);
+    _uzactions.push(['_start']);
+    (function () {
+      var uz = document.createElement('script');
+      uz.type = 'text/javascript';
+      uz.async = true;
+      uz.charset = 'utf-8';
+      uz.src = 'https://cdn4.userzoom.com/trueintent/js/uz_til.js?cuid=C85E515772DAE311BEDA0022196C4538';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(uz, s);
+    })();
+    //]]>
+  </script>
+  <%# End UserZoom intercept %>
+
   <%= yield :after_script %>
 <% end %>
 
