@@ -8,7 +8,7 @@ Scenario: Search using a valid postcode
   When I search for appointment locations near to a valid postcode
   Then I should see the 5 appointment locations nearest to that postcode
 
-@todo
+@wip
 Scenario: Search using an invalid postcode (i.e. one that we can't find)
   When I search for appointment locations near to an invalid postcode
   Then I should be informed that Pension Wise cannot find that postcode
