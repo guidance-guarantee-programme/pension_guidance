@@ -4,7 +4,7 @@ class GovspeakGuideDecorator < GuideDecorator
   end
 
   def content
-    @content ||= content_document.to_sanitized_html.html_safe
+    @content ||= content_document.to_html.html_safe
   end
 
   private
