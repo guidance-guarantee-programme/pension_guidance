@@ -20,6 +20,7 @@ Rails.application.routes.draw do
         get 'locator-entry', action: 'pages_locator_entry'
         get 'locator-results', action: 'pages_locator_results'
         get 'locator-invalid', action: 'pages_locator_invalid'
+        get 'locator-location', action: 'pages_locator_location'
       end
 
       get '(/:action)'
