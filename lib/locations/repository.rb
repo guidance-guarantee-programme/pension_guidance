@@ -11,6 +11,10 @@ module Locations
       locations
     end
 
+    def find(id)
+      locations.find { |location| location.id == id }
+    end
+
     private
 
     attr_accessor :locations
