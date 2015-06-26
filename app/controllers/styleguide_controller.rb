@@ -16,4 +16,8 @@ class StyleguideController < ApplicationController
   def pages_journey_page
     render template: 'styleguide/pages/journey_page'
   end
+
+  def pages_locator_entry
+    render template: 'styleguide/pages/locator_entry'
+  end
 end
