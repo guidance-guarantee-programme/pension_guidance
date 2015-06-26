@@ -1,14 +1,15 @@
-@todo
 Feature: View face-to-face appointment location details
   As a customer who'd prefer a face-to-face appointment
   I want full details of a specific appointment location
   So that I can book a face-to-face appointment at that location
 
+@wip
 Scenario: From search results
   Given I have searched for appointment locations near to a valid postcode
   When I drill down into a specific search result
   Then I should see the details of that appointment location
 
+@wip
 Scenario: Bookmark a appointment location
   Given I have searched for appointment locations near to a valid postcode
   And I have drilled down into a specific search result
@@ -16,6 +17,7 @@ Scenario: Bookmark a appointment location
   When I visit the bookmarked page
   Then I should see the details of that appointment location
 
+@wip
 Scenario: Appointment location that handles its own booking
   When I view the details of an appointment location that handles its own booking
   Then I should see the following appointment location details:
@@ -24,6 +26,7 @@ Scenario: Appointment location that handles its own booking
     | its opening hours                     |
     | its Pension Wise booking phone number |
 
+@todo
 Scenario: Appointment location that doesn't handle its own booking
   When I view the details of an appointment location that doesn't handle its own booking
   Then I should see the following appointment location details:

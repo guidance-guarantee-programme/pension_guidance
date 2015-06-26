@@ -9,6 +9,12 @@ class LocationsController < ApplicationController
     end
   end
 
+  def show
+    @location = Locations.find(params[:id])
+
+    fail(ActionController::RoutingError, 'Location Not Found') unless @location
+  end
+
   private
 
   def locations
