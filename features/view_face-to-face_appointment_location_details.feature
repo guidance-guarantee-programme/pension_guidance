@@ -17,7 +17,7 @@ Scenario: Bookmark a appointment location
   When I visit the bookmarked page
   Then I should see the details of that appointment location
 
-@todo
+@wip
 Scenario: Appointment location that handles its own booking
   When I view the details of an appointment location that handles its own booking
   Then I should see the following appointment location details:

@@ -12,9 +12,9 @@
       },
       "properties": {
         "title": "London",
-        "address": "",
-        "phone": "",
-        "hours": ""
+        "address": "1 Horse Guards Road, SW1A 2HQ",
+        "phone": "123 456",
+        "hours": "Mon-Fri 9-5"
       }
     },
     {
