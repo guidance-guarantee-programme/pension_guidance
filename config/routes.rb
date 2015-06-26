@@ -18,6 +18,7 @@ Rails.application.routes.draw do
         get 'journey-index', action: 'pages_journey_index'
         get 'journey-page', action: 'pages_journey_page'
         get 'locator-entry', action: 'pages_locator_entry'
+        get 'locator-results', action: 'pages_locator_results'
       end
 
       get '(/:action)'
