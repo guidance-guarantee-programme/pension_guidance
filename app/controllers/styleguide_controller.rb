@@ -24,4 +24,8 @@ class StyleguideController < ApplicationController
   def pages_locator_results
     render template: 'styleguide/pages/locator_results'
   end
+
+  def pages_locator_invalid
+    render template: 'styleguide/pages/locator_invalid'
+  end
 end

@@ -19,6 +19,7 @@ Rails.application.routes.draw do
         get 'journey-page', action: 'pages_journey_page'
         get 'locator-entry', action: 'pages_locator_entry'
         get 'locator-results', action: 'pages_locator_results'
+        get 'locator-invalid', action: 'pages_locator_invalid'
       end
 
       get '(/:action)'
