@@ -1,1 +1,1 @@
-Locations.path = Rails.root.join('lib', 'locations', 'locations.json')
+Locations.geo_json_path_or_url = ENV['LOCATIONS_URL'] || 'https://locator.pensionwise.gov.uk/locations.json'

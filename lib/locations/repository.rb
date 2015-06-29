@@ -1,7 +1,9 @@
+require 'open-uri'
+
 module Locations
   class Repository
-    def initialize(path = Locations.path)
-      json = open(path)
+    def initialize(geo_json_path_or_url = Locations.geo_json_path_or_url)
+      json = open(geo_json_path_or_url).read
       features = RGeo::GeoJSON.decode(json, json_parser: :json)
 
       self.locations = map_features(features)

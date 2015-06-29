@@ -1,6 +1,6 @@
 module Locations
   class << self
-    attr_accessor :path
+    attr_accessor :geo_json_path_or_url
   end
 
   def self.nearest_to_postcode(postcode,
