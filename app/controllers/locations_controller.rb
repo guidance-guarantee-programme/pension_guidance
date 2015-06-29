@@ -2,7 +2,7 @@ class LocationsController < ApplicationController
   layout 'full_width'
 
   def index
-    return redirect_to(appointments_path) unless params[:postcode].present?
+    return render :invalid_postcode unless params[:postcode].present?
 
     @locations = locations.map do |location|
       SearchResultDecorator.new(location)

@@ -7,19 +7,19 @@ RSpec.describe LocationsController, type: :controller do
     specify 'without a postcode param' do
       get :index
 
-      expect(response).to redirect_to(appointments_path)
+      expect(response).to render_template(:invalid_postcode)
     end
 
     specify 'with an empty postcode' do
       get :index, postcode: ' '
 
-      expect(response).to redirect_to(appointments_path)
+      expect(response).to render_template(:invalid_postcode)
     end
 
     specify 'with a postcode' do
       get :index, postcode: 'BT7 3AP'
 
-      expect(response).to be_ok
+      expect(response).to render_template(:index)
     end
   end
 
