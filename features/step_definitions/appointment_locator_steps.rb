@@ -5,9 +5,7 @@ end
 When(/^I search for appointment locations near to a valid postcode$/) do
   postcode = 'BT7 3AP'  # Belfast
 
-  VCR.use_cassette('locations_search') do
-    Pages::Locations.new.load(postcode: postcode)
-  end
+  Pages::Locations.new.load(postcode: postcode)
 end
 
 Given(/^I have drilled down into a specific search result$/) do
@@ -61,9 +59,7 @@ Then(/^I should see the details of that appointment location$/) do
 end
 
 When(/^I visit the bookmarked page$/) do
-  VCR.use_cassette('locations_search') do
-    page.driver.visit(@bookmark)
-  end
+  page.driver.visit(@bookmark)
 end
 
 Then(/^I should see the following appointment location details:$/) do |table|
