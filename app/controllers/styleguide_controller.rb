@@ -32,4 +32,8 @@ class StyleguideController < ApplicationController
   def pages_locator_location
     render template: 'styleguide/pages/locator_location'
   end
+
+  def pages_locator_location_call_centre
+    render template: 'styleguide/pages/locator_location_call_centre'
+  end
 end

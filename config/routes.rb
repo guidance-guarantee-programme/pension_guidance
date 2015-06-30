@@ -21,6 +21,7 @@ Rails.application.routes.draw do
         get 'locator-results', action: 'pages_locator_results'
         get 'locator-invalid', action: 'pages_locator_invalid'
         get 'locator-location', action: 'pages_locator_location'
+        get 'locator-location-call-centre', action: 'pages_locator_location_call_centre'
       end
 
       get '(/:action)'
