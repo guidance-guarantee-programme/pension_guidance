@@ -3,21 +3,23 @@
 <div class="l-grid-row">
   <div class="l-column-two-thirds">
     <main role="main" id="content" tabindex="-1">
-      <h1>Locations near you</h1>
-      <p><strong>SWXJ</strong> is not a valid post code. Please try again.</p>
+      <h1>Face-to-face appointments near sw</h1>
+
+      <p class="t-invalid-postcode"><strong>sw</strong> is not a valid postcode. Please try again.</p>
 
       <form action="/styleguide/pages/locator-results" method="get">
         <label class="form-label-bold visuallyhidden" for="location">Find a location near you</label>
-        <input type="text" class="form-control" id="location" value="SW17">
+        <input type="text" class="form-control" name="postcode" id="location" value="sw">
         <input type="submit" class="button" value="Search">
       </form>
 
+      <p>Or you can <a href="/appointments">book a phone appointment</a> instead.</p>
     </main>
   </div>
   <div class="l-column-third l-column-third--sidebar">
     <div class="sidebar-hr"></div>
 
-    <%= render 'styleguide/components/locator_link_promo' %>
+    <%= render 'styleguide/components/locator_link_promo_book' %>
 
   </div>
 </div>
