@@ -3,6 +3,7 @@
   "features": [
     {
       "type": "Feature",
+      "id": "london",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -19,6 +20,7 @@
     },
     {
       "type": "Feature",
+      "id": "paris",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -35,6 +37,7 @@
     },
     {
       "type": "Feature",
+      "id": "new-york",
       "geometry": {
         "type": "Point",
         "coordinates": [
