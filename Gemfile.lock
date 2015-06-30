@@ -277,6 +277,7 @@ DEPENDENCIES
   rack-contrib
   rails (= 4.2.2)
   rails_12factor
+  redis
   rgeo
   rgeo-geojson
   rspec-rails (~> 3.0)
