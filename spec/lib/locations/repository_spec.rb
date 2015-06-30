@@ -25,10 +25,10 @@ RSpec.describe Locations::Repository do
     end
 
     context 'with an valid id' do
-      let(:id) { '704cb1cf-82ad-4051-9a93-abe01a851584' }
+      let(:id) { 'belfast-citizens-advice-bureau' }
 
       specify { expect(result).to be_a(Locations::Location) }
-      specify { expect(result.id).to eq(id) }
+      specify { expect(result.name).to eq(name) }
     end
   end
 end
