@@ -9,6 +9,7 @@
   },
   "addons": [
     "fastly:fast",
+    "heroku-redis:hobby-dev",
     "logentries:starter"
   ]
 }
