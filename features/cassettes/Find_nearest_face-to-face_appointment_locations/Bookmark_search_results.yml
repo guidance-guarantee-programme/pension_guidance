@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/BT73AP
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.45.3
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 29 Jun 2015 15:36:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '671'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Etag:
+      - W/"29f-ae68c456"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"result":{"postcode":"BT7 3AP","quality":1,"eastings":334475,"northings":372070,"country":"Northern
+        Ireland","nhs_ha":"Health & Social Care Board","longitude":-5.92103307128071,"latitude":54.5790132673042,"parliamentary_constituency":"Belfast
+        South","european_electoral_region":"Northern Ireland","primary_care_trust":"Belfast","region":null,"lsoa":"Ballynafeigh
+        3","msoa":null,"nuts":"Ballynafeigh","incode":"3AP","outcode":"BT7","admin_district":"Belfast","parish":null,"admin_county":null,"admin_ward":"Ormeau","ccg":"Belfast","codes":{"admin_district":"N09000003","admin_county":"N99999999","admin_ward":"N08000342","parish":"N99999999","ccg":"ZC010"}}}'
+    http_version: 
+  recorded_at: Mon, 29 Jun 2015 15:36:25 GMT
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/BT73AP
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.45.3
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 29 Jun 2015 15:36:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '671'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Etag:
+      - W/"29f-ae68c456"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"result":{"postcode":"BT7 3AP","quality":1,"eastings":334475,"northings":372070,"country":"Northern
+        Ireland","nhs_ha":"Health & Social Care Board","longitude":-5.92103307128071,"latitude":54.5790132673042,"parliamentary_constituency":"Belfast
+        South","european_electoral_region":"Northern Ireland","primary_care_trust":"Belfast","region":null,"lsoa":"Ballynafeigh
+        3","msoa":null,"nuts":"Ballynafeigh","incode":"3AP","outcode":"BT7","admin_district":"Belfast","parish":null,"admin_county":null,"admin_ward":"Ormeau","ccg":"Belfast","codes":{"admin_district":"N09000003","admin_county":"N99999999","admin_ward":"N08000342","parish":"N99999999","ccg":"ZC010"}}}'
+    http_version: 
+  recorded_at: Mon, 29 Jun 2015 15:36:25 GMT
+recorded_with: VCR 2.9.3

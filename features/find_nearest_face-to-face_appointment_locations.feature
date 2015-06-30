@@ -1,4 +1,4 @@
-@wip
+@vcr @wip
 Feature: Find nearest face-to-face appointment locations
   As a customer who'd prefer a face-to-face appointment
   I want the details of nearest appointment locations
