@@ -24,7 +24,6 @@ module Locations
     def map_features(features)
       features.map do |feature|
         Location.new(
-          feature.feature_id,
           feature.properties['title'],
           feature.properties['address'],
           feature.properties['phone'],
