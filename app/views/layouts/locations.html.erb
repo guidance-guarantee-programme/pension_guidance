@@ -1,0 +1,21 @@
+<%= render layout: 'layouts/two_column' do %>
+  <%= yield %>
+
+  <% content_for :sidebar do %>
+    <div class="link-promo ga-elsewhere-sidebar">
+      <h2 class="link-promo__heading">Book a free appointment</h2>
+      <ul class="link-promo__list">
+        <li class="link-promo__item">
+          <a href="/appointments#who-can-book" id="book-appointment-who">Who can book</a>
+        </li>
+        <li class="link-promo__item">
+          <a href="/appointments#what-youll-get-from-the-appointment" id="book-appointment-what">What you will get from the appointment</a>
+        </li>
+        <li class="link-promo__item">
+          <a href="/appointments#make-the-most-of-your-appointment" id="book-appointment-make-the-most">Make the most of your appointment</a>
+        </li>
+      </ul>
+    </div>
+  <% end %>
+
+<% end %>

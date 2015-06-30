@@ -1,4 +1,21 @@
-<h2 class="t-name"><%= @location.name %></h2>
+<% content_for(:page_title, "#{@location.name}  - Pension Wise") %>
+<% content_for(:meta_description, "Find out the address, booking hours and how to book a Pension Wise appointment at the #{@location.name}") %>
+
+<h1 class="t-name"><%= @location.name %></h1>
+
+<h2 class="heading-small">Address</h2>
 <p class="t-address"><%= @location.address %></p>
-<p class="t-phone"><%= @location.phone %></p>
+
+<h2 class="heading-small">How to book</h2>
+<p>Call <strong class="t-phone"><%= @location.phone %></strong>.</p>
+<p>Tell the operator that you want to book a Pension Wise appointment.</p>
+<p>You can also book in person by visiting a Citizens Advice bureau near you.</p>
+
+<h3 class="heading-small">Booking hours</h3>
 <p class="t-hours"><%= @location.hours %></p>
+
+<div class="application-notice help-notice">
+  <p>We can't answer specific questions about your pension on this number.</p>
+</div>
+
+<p><a href="/appointments">What you need to know</a> for your face-to-face appointment.</p>
