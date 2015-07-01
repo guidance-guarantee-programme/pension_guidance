@@ -11,8 +11,10 @@
 <p>Tell the operator that you want to book a Pension Wise appointment.</p>
 <p>You can also book in person by visiting a Citizens Advice bureau near you.</p>
 
-<h3 class="heading-small">Booking hours</h3>
-<p class="t-hours"><%= @location.hours %></p>
+<% unless @location.hours.blank? %>
+  <h3 class="heading-small">Booking hours</h3>
+  <div class="t-hours"><%= simple_format(@location.hours) %></div>
+<% end %>
 
 <div class="application-notice help-notice">
   <p>We can’t answer specific questions about your pension on this number.</p>
