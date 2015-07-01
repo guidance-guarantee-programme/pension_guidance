@@ -7,9 +7,19 @@
 <div class="t-address"><%= simple_format(@location.address) %></div>
 
 <h2 class="heading-small">How to book</h2>
-<p>Call <strong class="t-phone"><%= @location.phone %></strong>.</p>
-<p>Tell the operator that you want to book a Pension Wise appointment at <%= @location.name %>.</p>
-<p>You can also book in person by visiting a Citizens Advice bureau near you.</p>
+
+<p class="t-booking-location">
+  <% if @location.booking_location %>
+    To book an appointment at <%= @location.name %> call <%= @location.booking_location %> on
+    <strong class="t-phone"><%= @location.phone %></strong>.
+  <% else %>
+    Call <strong class="t-phone"><%= @location.phone %></strong>.
+  <% end %>
+</p>
+
+<p>Tell the operator that you would like a Pension Wise appointment.</p>
+
+<p>You can also book in person by visiting any Citizens Advice bureau.</p>
 
 <% unless @location.hours.blank? %>
   <h3 class="heading-small">Booking hours</h3>
