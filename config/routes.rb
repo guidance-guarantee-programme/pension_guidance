@@ -17,10 +17,11 @@ Rails.application.routes.draw do
         get 'guide', action: 'pages_guide'
         get 'journey-index', action: 'pages_journey_index'
         get 'journey-page', action: 'pages_journey_page'
-        get 'locator-entry', action: 'pages_locator_entry'
-        get 'locator-results', action: 'pages_locator_results'
-        get 'locator-invalid', action: 'pages_locator_invalid'
-        get 'locator-location', action: 'pages_locator_location'
+        get 'locations-search', action: 'pages_locations_search'
+        get 'locations-index', action: 'pages_locations_index'
+        get 'locations-invalid', action: 'pages_locations_invalid'
+        get 'locations-show', action: 'pages_locations_show'
+        get 'locations-show-call-centre', action: 'pages_locations_show_call_centre'
       end
 
       get '(/:action)'

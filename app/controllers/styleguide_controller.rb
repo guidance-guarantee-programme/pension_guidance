@@ -17,19 +17,23 @@ class StyleguideController < ApplicationController
     render template: 'styleguide/pages/journey_page'
   end
 
-  def pages_locator_entry
-    render template: 'styleguide/pages/locator_entry'
+  def pages_locations_search
+    render template: 'styleguide/pages/locations_search'
   end
 
-  def pages_locator_results
-    render template: 'styleguide/pages/locator_results'
+  def pages_locations_index
+    render template: 'styleguide/pages/locations_index'
   end
 
-  def pages_locator_invalid
-    render template: 'styleguide/pages/locator_invalid'
+  def pages_locations_invalid
+    render template: 'styleguide/pages/locations_invalid'
   end
 
-  def pages_locator_location
-    render template: 'styleguide/pages/locator_location'
+  def pages_locations_show
+    render template: 'styleguide/pages/locations_show'
+  end
+
+  def pages_locations_show_call_centre
+    render template: 'styleguide/pages/locations_show_call_centre'
   end
 end

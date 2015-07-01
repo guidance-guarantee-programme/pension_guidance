@@ -1,1 +1,13 @@
-<p class="t-invalid-postcode">We cannot find that postcode</p>
+<% content_for(:page_title, "Face-to-face locations near you - Pension Wise") %>
+
+<h1>Face-to-face locations near you</h1>
+
+<p class="t-invalid-postcode"><strong><%= @postcode.squish.upcase %></strong> is not a valid postcode. Please try again.</p>
+
+<form action="/locations" method="get">
+  <label class="form-label-bold visuallyhidden" for="location">Find a location near you</label>
+  <input type="text" class="form-control" name="postcode" id="location" value="<%= @postcode.squish.upcase %>">
+  <input type="submit" class="button" value="Search">
+</form>
+
+<p>Or you can <a href="/appointments">book a phone appointment</a> instead.</p>

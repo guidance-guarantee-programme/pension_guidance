@@ -1,9 +1,27 @@
-<ol>
+<% content_for(:page_title, "Face-to-face locations near #{@postcode.squish.upcase} - Pension Wise") %>
+
+<h1>Face-to-face locations near <%= @postcode.squish.upcase %></h1>
+
+<p>Your Pension Wise face-to-face appointment will take place at a Citizens Advice bureau. Your nearest 5 are:</p>
+
+<ol class="location-list">
   <% @locations.each do |location| %>
-    <li class="t-location">
-      <h2><%= link_to(location.name, location_path(location.id), class: 't-name') %></h2>
-      <p><%= location.address %></p>
-      <p class="t-distance">Distance: <%= location.distance %> miles</p>
+    <li class="location-list__item t-location">
+      <h2 class="location-list__name"><%= link_to(location.name, location_path(location.id), class: 't-name') %></h2>
+      <p class="location-list__distance t-distance">
+        <span class="location-list__distance-label">Distance:</span>
+        <%= location.distance %> miles
+      </p>
     </li>
   <% end %>
 </ol>
+
+<p>Too far away? <a href="/appointments">Book a phone appointment</a> instead.</p>
+
+<p>Or enter another postcode.</p>
+
+<form action="/locations" method="get">
+  <label class="form-label-bold visuallyhidden" for="location">Find a face-to-face appointment near you</label>
+  <input type="text" class="form-control" name="postcode" id="location" value="">
+  <input type="submit" class="button" value="Search">
+</form>

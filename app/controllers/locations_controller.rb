@@ -1,8 +1,9 @@
 class LocationsController < ApplicationController
-  layout 'full_width'
+  layout 'locations'
 
   def index
     return render :invalid_postcode unless params[:postcode].present?
+    @postcode = params[:postcode]
 
     @locations = locations.map do |location|
       SearchResultDecorator.new(location)
