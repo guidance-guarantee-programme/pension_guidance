@@ -4,7 +4,7 @@
 <h1 class="t-name"><%= @location.name %></h1>
 
 <h2 class="heading-small">Address</h2>
-<p class="t-address"><%= @location.address %></p>
+<div class="t-address"><%= simple_format(@location.address) %></div>
 
 <h2 class="heading-small">How to book</h2>
 <p>Call <strong class="t-phone"><%= @location.phone %></strong>.</p>
