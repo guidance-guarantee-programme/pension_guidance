@@ -2,6 +2,7 @@ require 'fakeredis'
 
 RSpec.describe Locations::Reader, '#call' do
   let(:now) { Time.zone.local(2015, 6, 30, 14) }
+  let(:locations_ttl) { 1 }
   let(:key) { 'locations' }
   let(:json) { 'json' }
   let(:path) { '/path/to/locations.json' }
@@ -25,6 +26,7 @@ RSpec.describe Locations::Reader, '#call' do
   before do
     Timecop.freeze(now)
     redis.flushdb
+    ENV['LOCATIONS_TTL'] = locations_ttl.to_s
     allow(reader).to receive(:read_json).with(path).and_return(json)
   end
 
@@ -53,7 +55,7 @@ RSpec.describe Locations::Reader, '#call' do
       it { is_expected.to eq(json) }
 
       specify { expect(json_in_redis).to eq(json) }
-      specify { expect(expiry_in_seconds).to eq(60 * 60) }
+      specify { expect(expiry_in_seconds).to eq(locations_ttl) }
     end
 
     context 'and the data exists in Redis' do

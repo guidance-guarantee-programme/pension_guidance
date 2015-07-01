@@ -27,9 +27,13 @@ module Locations
       json = redis.get('locations')
       unless json
         json = read_json(path)
-        redis.setex('locations', 60 * 60, json)
+        redis.setex('locations', locations_ttl, json)
       end
       json
+    end
+
+    def locations_ttl
+      ENV['LOCATIONS_TTL'].to_i
     end
 
     def read_json(path)
