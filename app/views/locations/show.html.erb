@@ -8,7 +8,7 @@
 
 <h2 class="heading-small">How to book</h2>
 <p>Call <strong class="t-phone"><%= @location.phone %></strong>.</p>
-<p>Tell the operator that you want to book a Pension Wise appointment.</p>
+<p>Tell the operator that you want to book a Pension Wise appointment at <%= @location.name %>.</p>
 <p>You can also book in person by visiting a Citizens Advice bureau near you.</p>
 
 <% unless @location.hours.blank? %>
