@@ -1,0 +1,10 @@
+.panel-indent {
+  clear: both;
+  border-left: 4px solid $border-colour;
+  padding: 10px 0 10px 15px;
+  margin: 30px 15px 45px 0;
+
+  .form-group {
+    float: none;
+  }
+}

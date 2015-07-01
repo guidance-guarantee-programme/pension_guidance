@@ -1,0 +1,99 @@
+<% appointments_telephone_number = ENV['APPOINTMENTS_TELEPHONE_NUMBER'] || '0300 330 1001' %>
+
+<% content_for(:page_title, t('service.title', page_title: 'Book a free appointment')) %>
+<% content_for(:meta_description, "Talk about your pension options. Call #{appointments_telephone_number} to book now.") %>
+
+<% content_for(:data_layer) do %>
+  <script>
+    dataLayer = [{
+      'experiment': 'online-booking-demand'
+    }];
+  </script>
+<% end %>
+
+<main role="main" id="content" tabindex="-1">
+  <h1>Book a free appointment</h1>
+
+  <div class="l-grid-row">
+    <div class="l-column-half">
+      <div class="highlighted-info highlighted-info--phone">
+        <p>Call to book</p>
+        <p>
+          <em><%= appointments_telephone_number %></em>
+          <span>8am to 10pm, every day</span>
+        </p>
+      </div>
+
+      <p>From outside the UK call: +44 20 3733 3495</p>
+      <p>Calls cost no more than standard rates. If you have a free calls package, it’s included.</p>
+    </div>
+
+    <div class="l-column-half">
+      <div class="highlighted-info highlighted-info--online">
+        <p>Book online</p>
+        <p>
+          <em>Pick your time and date</em>
+          <span>&nbsp;</span>
+        </p>
+      </div>
+
+      <%= link_to 'Start now', new_appointment_path, class: 'button button-get-started', id: 'appointment_start', role: 'button', style: 'float: right; margin-right: -0.7em;' %>
+    </div>
+  </div>
+
+  <div class="text">
+    <h2>Who can book</h2>
+
+    <p>
+      You should be aged 50 or over and have a <a href="/pension-types">defined contribution pension</a>.
+      This is a pension based on how much you and possibly your employer paid into your pot.
+      It’s not a final salary pension.
+    </p>
+
+    <h2>What you'll get from the appointment</h2>
+
+    <p>
+      The appointment is a conversation between you and a Pension Wise guidance specialist.
+      You’ll get personal guidance on what you can do with your pension pot.
+    </p>
+
+    <p>The guidance specialist will:</p>
+
+    <ul>
+      <li>explain your pension options</li>
+      <li>explain tax</li>
+      <li>discuss which options might be suitable for you</li>
+      <li>give you tips on what you can do next</li>
+    </ul>
+
+    <p>You can:</p>
+
+    <ul>
+      <li>ask questions about the options</li>
+      <li>discuss what the options mean to you</li>
+      <li>discuss how tax might affect you</li>
+    </ul>
+
+    <p>Afterwards you'll get a letter with a summary of what you talked about.</p>
+
+    <div role="note" aria-label="Information" class="application-notice info-notice">
+      <p>Pension Wise guidance specialists are impartial. They don't recommend any products or companies and won’t tell you how to invest your money.</p>
+    </div>
+
+    <h2>Make the most of your appointment</h2>
+
+    <p>Check the value of your pension pot beforehand. Your latest pension statement from your provider will have the amount.</p>
+
+    <p>You should also think about when you want to stop working and how much other income you might have in retirement, eg from savings.</p>
+
+    <blockquote>
+      <p>“It was a very, very good session, a very helpful session. Covered everything we said and gave me the impetus to get on with what we were talking about.”</p>
+      <footer>— <cite>Thomas M</cite>, Coleshill</footer>
+    </blockquote>
+
+    <blockquote>
+      <p>“The quality of the info was fantastic. It was an excellent experience.”</p>
+      <footer>— <cite>Kevin J</cite>, Bristol</footer>
+    </blockquote>
+  </div>
+</main>

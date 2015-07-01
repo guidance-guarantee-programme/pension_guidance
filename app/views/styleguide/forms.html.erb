@@ -1,0 +1,87 @@
+<% content_for(:page_title, t('styleguide.title', page_title: 'Forms')) %>
+
+<h1>Forms</h1>
+<form>
+<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+  <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+    Message to alert the user to a problem goes here
+  </h1>
+
+  <p>
+    Optional description of the error(s) and how to correct them
+  </p>
+
+  <ul class="error-summary-list">
+    <li><a href="#example-full-name">Descriptive link to the question with an error</a></li>
+  </ul>
+</div>
+
+<h1 class="heading-large">
+  Your personal details
+</h1>
+
+<div class="form-group error">
+  <label for="example-full-name" id="error-full-name">
+
+    <span class="form-label">Full name</span>
+    <span class="form-hint">As shown on your birth certificate or passport</span>
+    <span class="error-message" id="error-message-full-name">Error message about full name goes here</span>
+
+  </label>
+
+  <input class="form-control" id="example-full-name" type="text" name="fullName" value="" aria-describedby="error-message-full-name">
+</div>
+
+<div class="form-group">
+  <label for="example-ni-number">
+
+    <span class="form-label">National Insurance number</span>
+        <span class="form-hint">
+          It's on your National Insurance card, benefit letter, payslip or P60.
+          <br>
+          For example, 'VO 12 34 56 D'.
+        </span>
+  </label>
+
+  <input class="form-control" id="example-ni-number" type="text" name="niNo" value="">
+</div>
+
+<div class="form-group">
+  <fieldset>
+    <legend>
+      <span class="form-label">Type of appointment</span>
+    </legend>
+    <span class="form-hint">Face-to-face appointments take place at Citizens Advice bureaus.</span>
+
+    <label class="block-label" data-target="memorable-word-inset" for="appointment_type_phone">
+      <input type="radio" value="phone" name="appointment[type]" id="appointment_type_phone"> Phone
+    </label>
+    <label class="block-label" data-target="postcode-inset" for="appointment_type_face_to_face">
+      <input type="radio" value="face_to_face" name="appointment[type]" id="appointment_type_face_to_face"> Face to face
+    </label>
+
+  </fieldset>
+</div>
+
+<div class="panel-indent js-hidden" id="memorable-word-inset">
+  <div class="form-group">
+    <label class="form-label-bold" for="memorable-word">Memorable word</label>
+      <span class="form-hint">We’ll repeat this word to you at the start of your
+        phone appointment. This is so you can be confident you’re speaking with
+        a Pension Wise guidance specialist.</span>
+    <input class="form-control" type="text" id="memorable-word">
+  </div>
+</div>
+
+<div class="panel-indent js-hidden" id="postcode-inset">
+  <div class="form-group">
+    <label class="form-label-bold" for="postcode">Postcode</label>
+    <span class="form-hint">This is to help us find your nearest appointment location.</span>
+    <input class="form-control" type="text" id="postcode">
+  </div>
+</div>
+
+
+<input class="button" type="submit" value="Continue">
+
+</form>

@@ -27,4 +27,10 @@
   </div>
 <% end %>
 
+<% content_for :body_end do %>
+  <%= javascript_include_tag 'application' %>
+
+  <%= yield :after_script %>
+<% end %>
+
 <%= render template: 'layouts/govuk_template' %>
