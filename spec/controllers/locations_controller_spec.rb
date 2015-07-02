@@ -7,11 +7,19 @@ RSpec.describe LocationsController, type: :controller do
     specify 'without a postcode param' do
       get :index
 
-      expect(response).to render_template(:invalid_postcode)
+      expect(response).to render_template(:search)
     end
 
     specify 'with an empty postcode' do
       get :index, postcode: ' '
+
+      expect(response).to render_template(:search)
+    end
+
+    specify 'with an invalid postcode' do
+      allow(Locations).to receive(:nearest_to_postcode).and_raise(Geocoder::InvalidPostcode)
+
+      get :index, postcode: 'LONDON'
 
       expect(response).to render_template(:invalid_postcode)
     end
