@@ -23,15 +23,20 @@ module Locations
 
     def map_features(features)
       features.map do |feature|
-        Location.new(
-          feature.feature_id,
-          feature.properties['title'],
-          feature.properties['address'],
-          feature.properties['phone'],
-          feature.properties['hours'],
-          [feature.geometry.y, feature.geometry.x]
-        )
+        Location.new(*params_for_location(feature))
       end
+    end
+
+    def params_for_location(feature)
+      [
+        feature.feature_id,
+        feature.properties['title'],
+        feature.properties['address'],
+        feature.properties['booking_location_id'],
+        feature.properties['phone'],
+        feature.properties['hours'],
+        [feature.geometry.y, feature.geometry.x]
+      ]
     end
   end
 end
