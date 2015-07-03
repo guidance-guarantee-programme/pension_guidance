@@ -13,11 +13,20 @@
 
         <p>Calls cost the same as a normal call - if your calls are free, it’s included.</p>
 
-        <h2 id="who-can-book">Face-to-face appointments</h2>
+        <div class="locations-promo">
 
-        <p>Find an appointment location near you.</p>
+          <h2 class="locations-promo__heading" id="find-a-face-to-face-appointment-location-near-you">Find a face-to-face appointment location near you</h2>
 
-        <%= render 'styleguide/components/locator_promo' %>
+          <p>Enter a postcode for a list of your 5 nearest locations.</p>
+
+          <form action="/locations" method="get">
+            <label class="visuallyhidden" for="location">Find a face-to-face appointment near you</label>
+            <input type="text" class="form-control" id="location" name="postcode" value="">
+            <input type="submit" class="button" value="Search">
+          </form>
+
+        </div>
+
 
         <h2 id="who-can-book">Who can book</h2>
 
