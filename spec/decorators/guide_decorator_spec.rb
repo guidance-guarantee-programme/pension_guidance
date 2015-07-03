@@ -7,11 +7,13 @@ RSpec.describe GuideDecorator, type: :decorator do
     subject(:decorator) { described_class.new(double) }
 
     specify 'must implement #title' do
-      expect { decorator.title }.to raise_error
+      expect { decorator.title }
+        .to raise_error('GuideDecorator subclasses must implement title')
     end
 
-    specify 'must implement #description' do
-      expect { decorator.description }.to raise_error
+    specify 'must implement #content' do
+      expect { decorator.content }
+        .to raise_error('GuideDecorator subclasses must implement content')
     end
   end
 
