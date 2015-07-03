@@ -2,7 +2,9 @@
 
 <h1>Face-to-face locations near <%= @postcode.squish.upcase %></h1>
 
-<p>Your Pension Wise face-to-face appointment will take place at a Citizens Advice bureau. Your nearest 5 are:</p>
+<p>Your appointment will take place at a Citizens Advice bureau.</p>
+
+<p>Your nearest 5 are:</p>
 
 <ol class="location-list">
   <% @locations.each do |location| %>
@@ -16,12 +18,14 @@
   <% end %>
 </ol>
 
-<p>Too far away? <a href="/appointments">Book a phone appointment</a> instead.</p>
-
-<p>Or enter another postcode.</p>
+<p>Try another postcode:</p>
 
 <form action="/locations" method="get">
   <label class="form-label-bold visuallyhidden" for="location">Find a face-to-face appointment near you</label>
   <input type="text" class="form-control" name="postcode" id="location" value="">
   <input type="submit" class="button" value="Search">
 </form>
+
+<div class="application-notice info-notice">
+  <p>You can also <a href="/appointments">book a phone appointment</a>.</p>
+</div>
