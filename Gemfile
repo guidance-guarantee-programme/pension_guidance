@@ -16,6 +16,7 @@ gem 'postcodes_io'
 gem 'puma'
 gem 'rack-contrib'
 gem 'rails', '4.2.2'
+gem 'redis'
 gem 'rgeo'
 gem 'rgeo-geojson'
 gem 'rubytree'
@@ -41,8 +42,10 @@ end
 
 group :test do
   gem 'cucumber-rails', require: false
+  gem 'fakeredis'
   gem 'site_prism'
   gem 'scss-lint', '~> 0.30'
+  gem 'timecop'
   gem 'vcr'
   gem 'webmock'
 end

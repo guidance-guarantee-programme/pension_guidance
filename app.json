@@ -1,6 +1,7 @@
 {
   "env": {
     "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
+    "LOCATIONS_TTL": "3600",
     "NEW_RELIC_LOG": "STDOUT",
     "SECRET_KEY_BASE": {
       "description": "Cryptographically secure secret key (typically used to generate a secret for cookie sessions)",
@@ -9,6 +10,7 @@
   },
   "addons": [
     "fastly:fast",
+    "heroku-redis:hobby-dev",
     "logentries:starter"
   ]
 }

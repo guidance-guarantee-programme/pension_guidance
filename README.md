@@ -11,6 +11,7 @@ Pension guidance from [Pension Wise].
 * [Git]
 * [Node.js][Node]
 * [NPM]
+* [Redis]
 * [Ruby 2.2.2][Ruby]
 
 
@@ -51,4 +52,5 @@ Please see the [contributing guidelines](/CONTRIBUTING.md).
 [node]: http://nodejs.org
 [npm]: https://www.npmjs.org
 [pension wise]: https://www.pensionwise.gov.uk
+[redis]: http://redis.io/
 [ruby]: http://www.ruby-lang.org/en
