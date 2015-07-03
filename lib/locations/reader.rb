@@ -2,11 +2,19 @@ require 'open-uri'
 
 module Locations
   class Reader
-    attr_accessor :path, :redis
+    DEFAULT_TTL = 60
 
-    def initialize(path, redis = Redis.new)
+    attr_accessor :path, :redis
+    attr_reader :ttl
+
+    def initialize(path, redis = Redis.new, ttl = ENV['LOCATIONS_TTL'])
       self.path = path
       self.redis = redis
+      self.ttl = ttl
+    end
+
+    def ttl=(ttl)
+      @ttl = ttl.nil? ? DEFAULT_TTL : ttl.to_i
     end
 
     def call
@@ -25,15 +33,13 @@ module Locations
 
     def cached_json
       json = redis.get('locations')
+
       unless json
         json = read_json(path)
-        redis.setex('locations', locations_ttl, json)
+        redis.setex('locations', ttl, json)
       end
-      json
-    end
 
-    def locations_ttl
-      ENV['LOCATIONS_TTL'].to_i
+      json
     end
 
     def read_json(path)
