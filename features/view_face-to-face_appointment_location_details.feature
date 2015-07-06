@@ -24,13 +24,11 @@ Scenario: Appointment location that handles its own booking
     | its opening hours                     |
     | its Pension Wise booking phone number |
 
-@todo
 Scenario: Appointment location that doesn't handle its own booking
   When I view the details of an appointment location that doesn't handle its own booking
   Then I should see the following appointment location details:
     | its name                                           |
     | its address                                        |
-    | its opening hours                                  |
     | booking location name                              |
     | booking location opening hours                     |
     | booking location Pension Wise booking phone number |

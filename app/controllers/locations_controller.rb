@@ -16,11 +16,18 @@ class LocationsController < ApplicationController
   end
 
   def show
-    @location = Locations.find(params[:id])
-
-    fail(ActionController::RoutingError, 'Location Not Found') unless @location
+    location = Locations.find(params[:id])
 
     expires_in Rails.application.config.cache_max_age, public: true
+
+    fail(ActionController::RoutingError, 'Location Not Found') unless location
+
+    if location.booking_location_id.present?
+      booking_location = Locations.find(location.booking_location_id)
+      @location = LocationDecorator.new(location, booking_location)
+    else
+      @location = LocationDecorator.new(location)
+    end
   end
 
   private

@@ -30,7 +30,8 @@
       },
       "properties": {
         "title": "Paris",
-        "address": "",
+        "address": "35 Rue du Faubourg Saint-Honoré, 75008 Paris",
+        "booking_location_id": "new-york",
         "phone": "",
         "hours": ""
       }
@@ -48,8 +49,8 @@
       "properties": {
         "title": "New York",
         "address": "",
-        "phone": "",
-        "hours": ""
+        "phone": "1-212-645-5550",
+        "hours": "Mon-Fri 8-6"
       }
     }
   ]

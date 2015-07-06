@@ -34,7 +34,7 @@ RSpec.describe LocationsController, type: :controller do
   describe 'GET show' do
     let(:valid_id) { 'cab-bureau' }
     let(:invalid_id) { 'invalid' }
-    let(:location) { double }
+    let(:location) { double(booking_location_id: '') }
 
     before do
       allow(Locations).to receive(:find).with(invalid_id)
