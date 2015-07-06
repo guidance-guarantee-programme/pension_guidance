@@ -2,6 +2,7 @@
   "env": {
     "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
     "LOCATIONS_TTL": "3600",
+    "LOCATIONS_URL": "https://locator.pensionwise.gov.uk/locations.json",
     "NEW_RELIC_LOG": "STDOUT",
     "SECRET_KEY_BASE": {
       "description": "Cryptographically secure secret key (typically used to generate a secret for cookie sessions)",
