@@ -1,4 +1,8 @@
 cacheable_content = {
+  'locations home' => '/locations',
+  'valid location search' => ['/locations', { postcode: 'SW1A%202HQ' }],
+  'invalid location search' => ['/locations', { postcode: 'london' }],
+  location: '/locations/london',
   guide: '/pension-types',
   home: '/'
 }
@@ -7,7 +11,7 @@ RSpec.describe 'Caching', type: :request do
   cacheable_content.each do |page, path|
     context "requesting a #{page} page" do
       specify 'the response may be cached for 10 seconds by default' do
-        get path
+        get(*path)
 
         expect(response.headers['Cache-Control']).to eq('max-age=10, public')
       end
@@ -18,7 +22,7 @@ RSpec.describe 'Caching', type: :request do
         end
 
         specify 'the response may be cached for `CACHE_MAX_AGE`' do
-          get path
+          get(*path)
 
           expect(response.headers['Cache-Control']).to eq('max-age=3600, public')
         end
