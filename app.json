@@ -10,7 +10,7 @@
     }
   },
   "addons": [
-    "heroku-redis:hobby-dev",
-    "logentries:starter"
+    "heroku-redis",
+    "logentries"
   ]
 }
