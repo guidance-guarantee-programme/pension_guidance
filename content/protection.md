@@ -13,6 +13,6 @@ The limits for compensation are:
 
 Once you’ve taken money out of your pot you can claim for:
 
-- money in an account with a bank, building society or credit union - up to £85,000
+- money in an account with a bank, building society or credit union - up to £85,000 (from 1 January 2016, this will change to £75,000)
 - investments - up to £50,000
 - annuities with an authorised insurance company - 90% of your pot’s value
