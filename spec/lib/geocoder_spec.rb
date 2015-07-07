@@ -3,11 +3,11 @@ RSpec.describe Geocoder, '.lookup' do
 
   subject(:geocode) { described_class.lookup(postcode) }
 
-  context 'with an invalid postode' do
+  context 'with an invalid syntax postcode' do
     specify { expect { geocode }.to raise_error(Geocoder::InvalidPostcode) }
   end
 
-  context 'with a valid postcode' do
+  context 'with a valid syntax postcode' do
     let(:postcode) { 'BT7 3AP' }
     let(:postcodes_io) { double }
     let(:lat) { 1 }
@@ -21,7 +21,7 @@ RSpec.describe Geocoder, '.lookup' do
     end
 
     context 'but the lookup fails' do
-      specify { expect { geocode }.to raise_error(Geocoder::InvalidLookup) }
+      specify { expect { geocode }.to raise_error(Geocoder::InvalidPostcode) }
     end
 
     context 'and the lookup is successful' do
