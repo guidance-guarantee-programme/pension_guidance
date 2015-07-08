@@ -20,7 +20,7 @@ If you can’t use the phone, you can book an appointment at your [local Citizen
 
 ##Who can book
 
-You should be close to or over 55 and have a [defined contribution pension](pension-types).
+You should 50 or over and have a [defined contribution pension](pension-types).
 This is a pension based on how much you and possibly your employer paid into your pot.
 It’s not a final salary pension.
 
