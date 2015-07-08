@@ -25,7 +25,7 @@ This is a pension based on how much you and possibly your employer paid into you
 It’s not a final salary pension.
 
 
-##What you'll get from the appointment
+##What you’ll get from the appointment
 
 The appointment is a conversation between you and a Pension Wise guidance specialist. You’ll get personal guidance on what you can do with your pension pot.
 
@@ -42,10 +42,10 @@ You can:
 * discuss what the options mean to you
 * discuss how tax might affect you
 
-Afterwards you'll get a letter with a summary of what you talked about.
+Afterwards you’ll get a letter with a summary of what you talked about.
 
 <div role="note" aria-label="Information" class="application-notice info-notice">
-  <p>Pension Wise guidance specialists are impartial. They don't recommend any products or companies and won’t tell you how to invest your money.</p>
+  <p>Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.</p>
 </div>
 
 ##Make the most of your appointment
