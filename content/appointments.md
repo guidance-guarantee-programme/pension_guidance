@@ -14,7 +14,7 @@ description: Talk about your pension options. Call 0300 330 1001 to book now.
 
 From outside the UK call: +44 20 3733 3495.
 
-Calls cost the same as a normal call - if your calls are free, it’s included.
+Calls cost no more than standard rates. If you have a free calls package, it’s included.
 
 If you can’t use the phone, you can book an appointment at your [local Citizens Advice bureau](https://www.citizensadvice.org.uk/). 
 
