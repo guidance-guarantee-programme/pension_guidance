@@ -73,6 +73,7 @@ Then(/^I can navigate to each option available to me$/) do
     .to eq(['Leave pot untouched',
             'Guaranteed income',
             'Adjustable income',
-            'Take cash',
+            'Take cash in chunks',
+            'Take your whole pot',
             'Mix your options'])
 end

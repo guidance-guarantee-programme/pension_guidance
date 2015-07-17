@@ -22,7 +22,7 @@ The following money from your or your partner’s pension pot may affect your en
 - before Pension Credit qualifying age: any income or cash sums you’ve taken from your pot
 - after Pension Credit qualifying age: any money sitting in your pot, plus any income or cash taken
 
-Cash includes taking your whole pot in one go or as smaller amounts.
+Cash includes taking your pot in chunks or in one go.
 
 $E
 **Example** You’re 67 and applying for Housing Benefit. You’ve taken £10,000 tax-free cash from your pot. Your remaining pot is £30,000. Because you’re past Pension Credit qualifying age both amounts will count when your benefit is assessed.
