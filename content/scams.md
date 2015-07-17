@@ -18,7 +18,9 @@ A cold call doesn’t have to be a telephone call. It can be any type of contact
 
 Scammers may offer you tempting ways to invest your pension pot, eg investing it in a new hotel being built in an exotic location.
 
-Most of these offers are fake but can appear very convincing. Their aim is to get you to cash in your pension pot and transfer the money. **Once you’ve transferred your money into a scam, it’s too late.** You could lose all your pension money as well as face [tax of up to 55%](https://www.gov.uk/tax-on-pension/higher-tax-on-unauthorised-payments) or huge additional fees.
+Most of these offers are fake but can appear very convincing. Their aim is to get you to cash in your pension pot and transfer the money.
+
+%Once you’ve transferred your money into a scam, it’s too late. You could lose all your pension money as well as face [tax of up to 55%](https://www.gov.uk/tax-on-pension/higher-tax-on-unauthorised-payments) or huge additional fees.%
 
 
 ##How to tell if it’s a scam
