@@ -27,7 +27,8 @@ Feature: Guides
       | pension-types            |
       | scams                    |
       | shop-around              |
-      | take-cash                |
+      | take-cash-in-chunks      |
+      | take-whole-pot           |
       | tax                      |
       | when-you-die             |
       | work-out-income          |

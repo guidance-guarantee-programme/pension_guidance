@@ -14,9 +14,9 @@ Most pension options allow anyone to inherit your pension. They don’t have to 
 
 ##Leaving behind cash
 
-If you take your tax-free lump sum but don’t use it before you die (eg it’s left in your bank account), it becomes part of your estate. Your estate is everything you own and all your money when you die. This means your beneficiary may need to pay [Inheritance Tax](https://www.gov.uk/inheritance-tax/overview) on it.
+If you take your tax-free lump sum but don’t use it before you die (eg it’s left in your bank account), it becomes part of your estate. This then forms part of everything you own and all your money when you die. Your beneficiary may need to pay [Inheritance Tax](https://www.gov.uk/inheritance-tax/overview) on it.
 
-The same is true if you take all or part of your pot as cash and don’t use it all before you die.
+The same is true if you take your whole pot in one go or in chunks but don’t use it all before you die.
 
 ##Leaving behind a pension
 

@@ -29,7 +29,7 @@ Watch out if an individual or company:
 
 * cold calls you about your pension money through a phone call, a text message, visiting you in person, or in other ways
 * says you can access your pension money before 55 and that they can help you with this
-* encourages you to take out a large lump sum, or your whole pension pot as cash, and to let them invest it for you
+* encourages you to take out a large lump sum, or your whole pension pot in one go, and to let them invest it for you
 * asks you to transfer your money quickly, even sending documents to you by courier - never make a rush decision about your pension money
 * uses words like ‘pension liberation’, ‘loan’, ‘loophole’, ‘free pension review’ or ‘one-off investment’
 * offers you an investment described as ‘unique’, ‘overseas’, ‘environmentally friendly’, ‘ethical’ or in a ‘new’ industry

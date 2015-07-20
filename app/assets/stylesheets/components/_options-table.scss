@@ -2,13 +2,13 @@
   th {
     @include core-16;
     font-weight: bold;
-    width: 25%;
+    width: 33%;
   }
 
   td {
     @include core-16;
     padding-bottom: .9em;
-    width: 25%;
+    width: 33%;
   }
 
   a,
@@ -18,103 +18,6 @@
   }
 
   a:hover {
-    text-decoration: none;
-  }
-
-  .col-2,
-  .col-3,
-  .col-2-3 {
-    background: $color-options-table-bg;
-  }
-}
-
-.options-table__tr-first {
-  th {
-    @include core-19;
-    color: $color-options-table-text;
-    font-weight: normal;
-    border-bottom: 0;
-  }
-}
-
-.options-table__tr-last {
-  th,
-  td {
-    border-bottom: 0;
-  }
-}
-
-.options-table__hr {
-  margin-bottom: 20px;
-  border-top-width: 12px;
-  border-top-style: solid;
-
-  .options-table__guaranteed-income & {
-    border-color: $color-option-guaranteed-income;
-  }
-
-  .options-table__adjustable-income & {
-    border-color: $color-option-adjustable-income;
-  }
-
-  .options-table__take-cash & {
-    border-color: $color-option-take-cash;
-  }
-}
-
-// make row headings span columns when table is less than 370px
-@media (max-width: $compact-options-max-mobile), (min-width: $compact-options-min-tablet) and (max-width: $compact-options-max-tablet)  {
-  .options-table {
-    position: relative;
-    left: -4px;
-
-    .col-1 {
-      padding: 0;
-      width: 0;
-      border-bottom: 0;
-    }
-
-    .col-2,
-    .col-3,
-    .col-4,
-    td {
-      width: 33%;
-    }
-
-    tbody td {
-      padding-top: 32px;
-    }
-
-    .th-inner {
-      position: relative;
-    }
-
-    .th-text {
-      position: absolute;
-      width: 500px;
-      left: 12px;
-      top: 12px;
-    }
-  }
-}
-
-// fix left alignment of table - so aligns with other content on page
-@media (min-width: $compact-options-min-tablet) and (max-width: $compact-options-max-tablet)  {
-  .options-table {
-    position: relative;
-    left: -14px;
-
-    .th-text {
-      left: 22px;
-    }
-  }
-}
-
-// introduce right padding in row headings when there is enough space
-@media (min-width: 450px) {
-  .options-table {
-    .th-inner {
-      padding-right: 15px;
-    }
+    text-decoration: underline;
   }
 }

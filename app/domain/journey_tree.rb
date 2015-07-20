@@ -37,7 +37,8 @@ class JourneyTree
       node << guide_node('leave-pot-untouched')
       node << guide_node('guaranteed-income')
       node << guide_node('adjustable-income')
-      node << guide_node('take-cash')
+      node << guide_node('take-cash-in-chunks')
+      node << guide_node('take-whole-pot')
       node << guide_node('mix-options')
     end
   end

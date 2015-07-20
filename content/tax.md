@@ -13,7 +13,7 @@ How much tax you pay depends on your total income and the [tax rate](https://www
 
 Your taxable income may include:
 
-- any money you get from your pension pot, eg as an [annuity](/guaranteed-income) or [cash](/take-cash)
+- any money you get from your pension pot, eg as an [annuity](/guaranteed-income), [cash in chunks](/take-cash-in-chunks) or the [whole pot in one go](/take-whole-pot)
 - the State Pension
 - earnings from employment or self employment
 - any other income, eg money from rental income, savings, investments
@@ -29,7 +29,7 @@ There are 2 ways you can take your tax-free lump sum.
 ###Take your lump sum in one go
 You can take 25% of your whole pension pot tax free.
 
-If you do this, you can’t leave the remaining 75% untouched. You must either take it as cash, or buy an [annuity](/guaranteed-income) with it, or [get an adjustable income](/adjustable-income).
+If you do this, you can’t leave the remaining 75% untouched. You must either take [cash in chunks](/take-cash-in-chunks), the [whole pot in one go](/take-whole-pot), buy an [annuity](/guaranteed-income), or [get an adjustable income](/adjustable-income).
 
 Any payments you get from the remaining 75% are taxable.
 
@@ -40,7 +40,7 @@ You buy an annuity with the remaining £45,000 which pays you £2,000 a year.
 This money would be taxable.
 $E
 
-###Take smaller sums
+###Take cash in chunks
 You can take smaller cash sums from your pension pot - 25% of each sum would be tax-free.
 
 $E
@@ -67,7 +67,7 @@ s4. Check your [tax rate](https://www.gov.uk/income-tax-rates/income-tax-rates) 
 
 $E
 **Example:**
-You’ve decided to take your whole pot of £60,000 as cash.
+You’ve decided to take your whole pot of £60,000 in one go.
 You also work part-time and make £7,000 a year.
 
 ###1. Take 25% away from your pension pot.
