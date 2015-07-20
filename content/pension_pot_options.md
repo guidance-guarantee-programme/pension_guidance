@@ -53,21 +53,19 @@ It’s important to know how much tax you might pay on the money you take from y
   <table class="options-table">
     <thead>
       <tr>
-        <th>
-          Option
-        </th>
-        <th>
+        <td></td>
+        <th scope="col">
           What’s tax free
         </th>
-        <th>
+        <th scope="col">
           What’s taxable
         </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th>
-          Leaving your pot untouched
+        <th scope="row">
+          <a href="/leave-pot-untouched">Leave your pot untouched</a>
         </th>
         <td>
           You can still pay into your pot. Tax relief on payments up to £40,000 per year or 100% of your earnings - whichever is lower.
@@ -77,8 +75,8 @@ It’s important to know how much tax you might pay on the money you take from y
         </td>
       </tr>
       <tr>
-        <th>
-          Guaranteed income (annuity)
+        <th scope="row">
+          <a href="/guaranteed-income">Guaranteed income (annuity)</a>
         </th>
         <td>
           25% of your whole pot
@@ -88,8 +86,8 @@ It’s important to know how much tax you might pay on the money you take from y
         </td>
       </tr>
       <tr>
-        <th>
-          Adjustable income
+        <th scope="row">
+          <a href="/adjustable-income">Adjustable income</a>
         </th>
         <td>
           25% of your whole pot
@@ -99,8 +97,8 @@ It’s important to know how much tax you might pay on the money you take from y
         </td>
       </tr>
       <tr>
-        <th>
-          Take cash in chunks
+        <th scope="row">
+          <a href="/take-cash-in-chunks">Take cash in chunks</a>
         </th>
         <td>
           25% of each amount you take out
@@ -110,8 +108,8 @@ It’s important to know how much tax you might pay on the money you take from y
         </td>
       </tr>
       <tr>
-        <th>
-          Take your whole pot in one go
+        <th scope="row">
+          <a href="/take-whole-pot">Take your whole pot in one go</a>
         </th>
         <td>
           25% of your whole pot
@@ -121,8 +119,8 @@ It’s important to know how much tax you might pay on the money you take from y
         </td>
       </tr>
       <tr>
-        <th>
-          Mixing your options
+        <th scope="row">
+          <a href="/mix-options">Mix your options</a>
         </th>
         <td>
           Depends on the options you mix
