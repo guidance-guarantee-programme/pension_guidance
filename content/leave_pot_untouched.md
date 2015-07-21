@@ -4,13 +4,13 @@ description: You can decide when you take money from your pension pot.
 ---
 <div class="circle circle--m circle--leave-pot-untouched"></div>
 
-# Leaving your pension pot untouched
+# Leaving your whole pension pot untouched
 
 You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the pension age you agreed with your provider).
 
 You can leave the money invested, eg while you’re working. Your pension pot could grow further and give you a larger amount of money to last for a shorter amount of time.
 
-## Tax when you leave your pot untouched
+## Tax when you leave your whole pot untouched
 
 As long as your money stays in your pension pot you don’t pay tax on it. You can still pay into it up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
 

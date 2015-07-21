@@ -1,17 +1,17 @@
 ---
 label: What you can do with your pension pot
-description: When you retire you can usually take 25% of your pension pot tax free and then choose from a range of options.
+description: You can usually take 25% of your pension pot tax free and then choose from a range of options.
 ---
 # What you can do with your pension pot
 
-You can decide how to take money from your pension pot when you retire.
+You can usually take 25% of your defined contribution pension pot tax free and then choose from a range of options. If you take 25% tax free, you must make a decision on the remaining 75% within 6 months - you can’t then leave it untouched.
 
 You have 6 options:
 
 <div class="options-overview">
   <div class="options-overview__item">
     <div class="circle circle--s circle--leave-pot-untouched"></div>
-    <h2><a href="/leave-pot-untouched">Leave your pot untouched</a></h2>
+    <h2><a href="/leave-pot-untouched">Leave your whole pot untouched</a></h2>
     <p>You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’. You can leave your money invested in your pot until you need it.</p>
   </div>
   <div class="options-overview__item">
