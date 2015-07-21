@@ -1,4 +1,8 @@
 {
+  "name": "Pension Guidance",
+  "description": "Pension guidance from Pension Wise.",
+  "website": "https://www.pensionwise.gov.uk",
+  "repository": "https://github.com/guidance-guarantee-programme/pension_guidance",
   "env": {
     "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
     "LOCATIONS_TTL": "3600",
