@@ -5,3 +5,20 @@ en:
       title: 'Pension Wise - Your money. Your choice.'
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'
+  activemodel:
+     errors:
+      messages:
+        blank: 'Enter your %{attribute}'
+      models:
+        appointment:
+          attributes:
+            type:
+              inclusion: 'Choose a type of appointment'
+            name:
+              blank: 'Enter your First name'
+            surname:
+              blank: 'Enter your Last name'
+            phone:
+              blank: 'Enter your Phone number'
+            email:
+              invalid: 'Enter a valid Email'

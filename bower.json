@@ -2,7 +2,7 @@
   "name": "pension_guidance",
   "private": true,
   "dependencies": {
-    "govuk_elements": "https://github.com/alphagov/govuk_elements.git#1e4f3d5e0cab2d7dc7e350190ab7b1c32a1f2aa9",
+    "govuk_elements": "https://github.com/alphagov/govuk_elements.git#05069752a6eb086cfe8089301d5ddd1824090091",
     "jquery": "~1.11.2"
   }
 }

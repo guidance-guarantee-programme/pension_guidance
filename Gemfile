@@ -25,6 +25,7 @@ gem 'sprockets', '~> 2.12'
 gem 'uglifier', '>= 1.3.0'
 gem 'uk_postcode'
 gem 'utf8-cleaner'
+gem 'zendesk_api'
 
 group :development, :test do
   gem 'jasmine-jquery-rails'
@@ -43,8 +44,9 @@ end
 group :test do
   gem 'cucumber-rails', require: false
   gem 'fakeredis'
-  gem 'site_prism'
   gem 'scss-lint', '~> 0.30'
+  gem 'shoulda-matchers', require: false
+  gem 'site_prism'
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'

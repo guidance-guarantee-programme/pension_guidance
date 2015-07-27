@@ -1,0 +1,38 @@
+<% content_for(:page_title, t('service.title', page_title: 'Appointment times')) %>
+
+<% content_for :head do %>
+  <style>
+    .sidebar-hr {
+      display:none
+    }
+  </style>
+<% end %>
+
+<h1>Appointment times</h1>
+
+<p>
+  Appointments last about 45 minutes.
+</p>
+
+<p>
+  Choose a time and date from the list below:
+</p>
+
+<table role="presentation">
+  <% @availability.slots.each_with_index do |(date, slots), i| %>
+    <tr role="presentation">
+      <td role="presentation" style="width:45%"><%= date %></td>
+      <td role="presentation" style="width:55%">
+        <%= form_for(@appointment, url: reserve_appointments_path) do |appointment| %>
+          <%= appointment.label :slot, class: 'visuallyhidden', for: "appointment_slot_#{i}" do %>
+            Appointment time for <%= date %>
+          <% end %>
+          <%= appointment.select 'slot', slots, {}, id: "appointment_slot_#{i}" %>
+          <%= appointment.button class: 'button', id: "book_button_#{i}" do %>
+            Book <span class="visuallyhidden"><%= date %></span>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
