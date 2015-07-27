@@ -10,7 +10,7 @@ class AppointmentTicket
     client.tickets.create(
       type: 'task',
       group_id: ZENDESK_ONLINE_BOOKING_GROUP,
-      subject: 'Pension Wise appointment request',
+      subject: 'Online Booking Request',
       requester: requester,
       comment: comment)
   end
