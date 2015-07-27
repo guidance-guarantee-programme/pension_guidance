@@ -33,11 +33,11 @@ Adding a large cash sum to your income could mean that you get bumped into a hig
 {: .info-notice--take-cash}
 $E
 **Example**
-You current income for the year is £20,000 and your pay tax at the basic rate of 20%.
+Your current income for the year is £20,000 and you pay tax at the basic rate of 20%.
 Your pension pot is £60,000.
 You get £15,000 tax free.
-The remaining £45, 000 is added to your other income of £20,000.
-You total income for the year is now £65,000.
+The remaining £45,000 is added to your other income of £20,000.
+Your total income for the year is now £65,000.
 Everything over £31,785 will be taxed at the higher rate of 40%.
 **You’ll pay £15,400 in tax.**
 $E
