@@ -31,8 +31,6 @@ class AppointmentTicket
 
   def comment
     <<-TEXT.strip_heredoc
-      New appointment request
-
       Name:
       #{@appointment.full_name}
 
