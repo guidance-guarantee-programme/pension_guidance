@@ -2,11 +2,6 @@ Rails.application.routes.draw do
   root 'home#show'
 
   constraints format: 'html' do
-    resources :appointments do
-      post 'reserve', on: :collection
-      get 'thanks', on: :collection
-    end
-
     GuideRepository.new.all.each do |guide|
       get guide.slug,
           controller: 'guides',
@@ -27,7 +22,6 @@ Rails.application.routes.draw do
         get 'locations-invalid', action: 'pages_locations_invalid'
         get 'locations-show', action: 'pages_locations_show'
         get 'locations-show-call-centre', action: 'pages_locations_show_call_centre'
-        get 'appointment-details', action: 'pages_appointment_details'
       end
 
       get '(/:action)'
