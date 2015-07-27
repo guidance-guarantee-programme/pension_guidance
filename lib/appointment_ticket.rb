@@ -52,6 +52,8 @@ class AppointmentTicket
 
       Email:
       #{@appointment.email}
+
+      Please confirm the appointment with the customer
     TEXT
   end
 
