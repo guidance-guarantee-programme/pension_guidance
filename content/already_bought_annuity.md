@@ -18,6 +18,6 @@ Under the new rules you won’t be able to sell your existing annuity back to yo
 
 The government is currently deciding on how the new rules could work and will give more details nearer the time. To find out more you can read the Chancellor’s full [annuities announcement](https://www.gov.uk/government/news/pension-freedoms-to-be-extended-to-people-with-annuities).
 
-If you’re thinking of selling your annuity next year to pay off debts, you should get advice first.
+If you’re thinking of selling your annuity to pay off debts, you should get advice first.
 
 The [Money Advice Service](https://www.moneyadviceservice.org.uk/en) and [Citizens Advice](http://www.citizensadvice.org.uk) services both offer free and impartial debt advice.
