@@ -36,17 +36,8 @@
     }
 
     @include media(desktop) {
-      font-size: 35px;
+      font-size: 68px;
       line-height: 1.2;
     }
   }
-}
-
-.highlighted-info--phone {
-  margin-right: .5em;
-}
-
-.highlighted-info--online {
-  background-color: $color-green-fun;
-  margin-left: 0;
 }

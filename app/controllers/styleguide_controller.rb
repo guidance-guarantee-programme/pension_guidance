@@ -36,8 +36,4 @@ class StyleguideController < ApplicationController
   def pages_locations_show_call_centre
     render template: 'styleguide/pages/locations_show_call_centre'
   end
-
-  def pages_appointment_details
-    render template: 'styleguide/pages/appointment_details'
-  end
 end
