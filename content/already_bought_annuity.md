@@ -4,7 +4,7 @@ description: Find out about the new annuity rules set to change in April 2016.
 
 # If you’ve already bought an annuity
 
-Annuity rules will change in April 2016. You may be able to sell an existing annuity and use the money to get a lump sum or a [flexible income](/adjustable-income).
+Annuity rules will change in 2017. You may then be able to sell an existing annuity and use the money to get a lump sum or a [flexible income](/adjustable-income).
 
 ^Under current rules, once you’ve bought an annuity you can’t change the decision.^
 
