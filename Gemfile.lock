@@ -261,6 +261,7 @@ DEPENDENCIES
   canonical-rails
   cucumber-rails
   draper (~> 1.3)
+  excon
   fakeredis
   foreman
   gaffe
