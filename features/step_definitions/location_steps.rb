@@ -76,7 +76,7 @@ end
 Then(/^I should see the following appointment location details:$/) do |table|
   location = Pages::Location.new
 
-  if table.rows.flatten.include?('booking location name')
+  if table.rows.flatten.include?('booking location Pension Wise booking phone number')
     table.rows.flatten.each do |detail|
       attribute, value = case detail
                          when 'its name'

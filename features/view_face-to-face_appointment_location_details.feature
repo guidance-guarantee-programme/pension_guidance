@@ -29,6 +29,5 @@ Scenario: Appointment location that doesn't handle its own booking
   Then I should see the following appointment location details:
     | its name                                           |
     | its address                                        |
-    | booking location name                              |
     | booking location opening hours                     |
     | booking location Pension Wise booking phone number |
