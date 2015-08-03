@@ -13,7 +13,7 @@
       },
       "properties": {
         "title": "London",
-        "address": "1 Horse Guards Road, SW1A 2HQ",
+        "address": "1 Horse Guards Road\nSW1A 2HQ",
         "phone": "123 456",
         "hours": "Mon-Fri 9-5"
       }
@@ -30,7 +30,7 @@
       },
       "properties": {
         "title": "Paris",
-        "address": "35 Rue du Faubourg Saint-Honoré, 75008 Paris",
+        "address": "35 Rue du Faubourg Saint-Honoré\n75008 Paris",
         "booking_location_id": "new-york",
         "phone": "",
         "hours": ""
@@ -48,7 +48,7 @@
       },
       "properties": {
         "title": "New York",
-        "address": "",
+        "address": "Manhattan\nNY 10036\nUnited States",
         "phone": "1-212-645-5550",
         "hours": "Mon-Fri 8-6"
       }

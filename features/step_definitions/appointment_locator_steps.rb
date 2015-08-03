@@ -39,7 +39,14 @@ Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) 
   page_locations = Pages::Locations.new.locations
 
   expected_locations = ['London', 'Paris', 'New York']
+  expected_addresses = [
+    '1 Horse Guards Road, SW1A 2HQ',
+    '35 Rue du Faubourg Saint-Honoré, 75008 Paris',
+    'Manhattan, NY 10036, United States'
+  ]
+
   expect(page_locations.map(&:name).map(&:text)).to eq(expected_locations)
+  expect(page_locations.map(&:address).map(&:text)).to eq(expected_addresses)
 
   distances = page_locations.map(&:distance).map(&:text).map do |distance|
     /\b(.+?) miles/.match(distance)[1].to_f
@@ -75,7 +82,7 @@ Then(/^I should see the following appointment location details:$/) do |table|
                          when 'its name'
                            [:name, 'Paris']
                          when 'its address'
-                           [:address, '35 Rue du Faubourg Saint-Honoré, 75008 Paris']
+                           [:address, '35 Rue du Faubourg Saint-Honoré 75008 Paris']
                          when 'booking location name'
                            [:booking_location, 'New York']
                          when 'booking location opening hours'
@@ -91,7 +98,7 @@ Then(/^I should see the following appointment location details:$/) do |table|
                          when 'its name'
                            [:name, 'London']
                          when 'its address'
-                           [:address, '1 Horse Guards Road, SW1A 2HQ']
+                           [:address, '1 Horse Guards Road SW1A 2HQ']
                          when 'its opening hours'
                            [:hours, 'Mon-Fri 9-5']
                          when 'its Pension Wise booking phone number'
