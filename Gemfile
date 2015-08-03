@@ -43,8 +43,9 @@ end
 group :test do
   gem 'cucumber-rails', require: false
   gem 'fakeredis'
-  gem 'site_prism'
+  gem 'launchy'
   gem 'scss-lint', '~> 0.30'
+  gem 'site_prism'
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'
