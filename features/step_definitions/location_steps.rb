@@ -83,8 +83,6 @@ Then(/^I should see the following appointment location details:$/) do |table|
                            [:name, 'Paris']
                          when 'its address'
                            [:address, '35 Rue du Faubourg Saint-Honoré 75008 Paris']
-                         when 'booking location name'
-                           [:booking_location, 'New York']
                          when 'booking location opening hours'
                            [:hours, 'Mon-Fri 8-6']
                          when 'booking location Pension Wise booking phone number'
