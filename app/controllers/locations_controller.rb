@@ -2,12 +2,12 @@ class LocationsController < ApplicationController
   layout 'locations'
 
   before_action :set_breadcrumbs
+  before_action :set_postcode
   before_action :send_cache_headers
 
   def index
-    return render :search unless params[:postcode].present?
+    return render :search unless @postcode.present?
 
-    @postcode = params[:postcode]
     @locations = locations.map do |location|
       LocationSearchResultDecorator.new(location)
     end
@@ -20,8 +20,6 @@ class LocationsController < ApplicationController
     location = Locations.find(params[:id])
 
     fail(ActionController::RoutingError, 'Location Not Found') unless location
-
-    @postcode = params[:postcode]
 
     booking_location = if location.booking_location_id.present?
                          Locations.find(location.booking_location_id)
@@ -36,12 +34,16 @@ class LocationsController < ApplicationController
   private
 
   def locations
-    Locations.nearest_to_postcode(params[:postcode], limit: 5)
+    Locations.nearest_to_postcode(@postcode, limit: 5)
   end
 
   def set_breadcrumbs
     breadcrumb Breadcrumb.book_an_appointment
     breadcrumb Breadcrumb.how_to_book
+  end
+
+  def set_postcode
+    @postcode = params[:postcode]
   end
 
   def send_cache_headers
