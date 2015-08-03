@@ -10,6 +10,9 @@
   <% @locations.each do |location| %>
     <li class="location-list__item t-location">
       <h2 class="location-list__name"><%= link_to(location.name, location_path(location.id), class: 't-name') %></h2>
+      <p class="location-list__address t-address">
+        <%= location.address %>
+      </p>
       <p class="location-list__distance t-distance">
         <span class="location-list__distance-label">Distance:</span>
         <%= location.distance %> miles
