@@ -45,6 +45,7 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'fakeredis'
   gem 'launchy'
+  gem 'poltergeist'
   gem 'scss-lint', '~> 0.30'
   gem 'shoulda-matchers'
   gem 'site_prism'
