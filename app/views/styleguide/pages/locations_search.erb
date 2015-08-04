@@ -7,17 +7,23 @@
 
         <h1 id="book-a-free-appointment">Book a free appointment</h1>
 
+        <p>Appointments are over the <strong>phone</strong> or <strong>face to face</strong>.</p>
+
+        <p>You can call to book or you can enter a postcode to find an appointment location near you and book directly with them.</p>
+
         <%= render 'styleguide/components/highlighted_info' %>
+
+        <p>*Opening hours vary for face-to-face bookings</p>
 
         <p>From outside the UK call: +44 20 3733 3495.</p>
 
-        <p>Calls cost the same as a normal call - if your calls are free, it’s included.</p>
+        <p><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
 
         <div class="locations-promo">
 
-          <h2 class="locations-promo__heading" id="find-a-face-to-face-appointment-location-near-you">Find a face-to-face appointment location near you</h2>
+          <h2 class="locations-promo__heading" id="find-a-face-to-face-appointment-location">Find a face-to-face location</h2>
 
-          <p>Enter a postcode for a list of your 5 nearest locations.</p>
+          <p>Enter a postcode for a list of your nearest appointment locations.</p>
 
           <form action="/locations" method="get">
             <label class="visuallyhidden" for="location">Find a face-to-face appointment near you</label>
@@ -34,7 +40,7 @@
           This is a pension based on how much you and possibly your employer paid into your pot.
           It’s not a final salary pension.</p>
 
-        <h2 id="what-youll-get-from-the-appointment">What you’ll get from the appointment</h2>
+        <h2 id="what-you-need-to-know">What you need to know</h2>
 
         <p>The appointment is a conversation between you and a Pension Wise guidance specialist. You’ll get personal guidance on what you can do with your pension pot.</p>
 
@@ -47,31 +53,12 @@
           <li>give you tips on what you can do next</li>
         </ul>
 
-        <p>You can:</p>
-
-        <ul>
-          <li>ask questions about the options</li>
-          <li>discuss what the options mean to you</li>
-          <li>discuss how tax might affect you</li>
-        </ul>
-
         <p>Afterwards you’ll get a letter with a summary of what you talked about.</p>
 
         <div role="note" aria-label="Information" class="application-notice info-notice">
           <p>Pension Wise guidance specialists are impartial. They don't recommend any products or companies and won’t tell you how to invest your money.</p>
         </div>
 
-        <h2 id="testimonials">Testimonials</h2>
-
-        <blockquote>
-          <p>“It was a very, very good session, a very helpful session. Covered everything we said and gave me the impetus to get on with what we were talking about.”</p>
-          — <cite>Thomas M</cite>, Coleshill
-        </blockquote>
-
-        <blockquote>
-          <p>“The quality of the info was fantastic. It was an excellent experience.”</p>
-          — <cite>Kevin J</cite>, Bristol
-        </blockquote>
       </article>
     </main>
   </div>
