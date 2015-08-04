@@ -1,34 +1,30 @@
 <% content_for(:page_title, t('styleguide.title', page_title: 'Locations near you')) %>
 
-<div class="l-grid-row">
-  <div class="l-column-two-thirds">
-    <main role="main" id="content" tabindex="-1">
-      <h1 class="t-name">Wrexham Pension Wise</h1>
+<h1 class="t-name">Wrexham Pension Wise</h1>
 
-      <h2 class="heading-small">Address</h2>
-      <p class="t-address">35 Grosvenor Road
-        <br>WREXHAM
-        <br>LL11 1BT</p>
+<h2 class="heading-small">Address</h2>
+<p class="t-address">35 Grosvenor Road
+  <br>WREXHAM
+  <br>LL11 1BT</p>
 
-      <h2 class="heading-small">Booking hours</h2>
-      <p class="t-hours">Mon - Fri 9:30am - 2:30pm</p>
+<h2 class="heading-small">Booking hours</h2>
+<p class="t-hours">Mon - Fri 9:30am - 2:30pm</p>
 
-      <h2 class="heading-small">How to book</h2>
-      <p>Call <strong class="t-phone">01745 818081</strong>.</p>
-      <p>Tell the operator that you want to book a Pension Wise appointment.</p>
-      <p>You can also book in person by visiting a Citizens Advice bureau near you.</p>
+<h2 class="heading-small">How to book</h2>
+<p>Call <strong class="t-phone">01745 818081</strong>.</p>
+<p>Tell the operator that you want to book a Pension Wise appointment.</p>
+<p>You can also book in person by visiting a Citizens Advice bureau near you.</p>
 
-      <div class="application-notice help-notice">
-        <p>We can't answer specific questions about your pension on this number.</p>
-      </div>
-
-      <p><a href="/appointments">What you need to know</a> for your face-to-face appointment.</p>
-    </main>
-  </div>
-  <div class="l-column-third l-column-third--sidebar">
-    <div class="sidebar-hr"></div>
-
-    <%= render 'styleguide/components/locator_link_promo_book' %>
-
-  </div>
+<div class="application-notice help-notice">
+  <p>We can't answer specific questions about your pension on this number.</p>
 </div>
+
+<p><a href="/appointments">What you need to know</a> for your face-to-face appointment.</p>
+
+<% content_for :sidebar do %>
+  <%= render 'styleguide/components/locator_link_promo_book' %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= render 'styleguide/components/locator_breadcrumbs_items', items: 3 %>
+<% end %>

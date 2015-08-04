@@ -1,25 +1,21 @@
 <% content_for(:page_title, t('styleguide.title', page_title: 'Locations near you')) %>
 
-<div class="l-grid-row">
-  <div class="l-column-two-thirds">
-    <main role="main" id="content" tabindex="-1">
-      <h1>Face-to-face appointments near sw</h1>
+<h1>Face-to-face appointments near sw</h1>
 
-      <p class="t-invalid-postcode"><strong>sw</strong> is not a valid postcode. Please try again.</p>
+<p class="t-invalid-postcode"><strong>sw</strong> is not a valid postcode. Please try again.</p>
 
-      <form action="/styleguide/pages/locations-index" method="get">
-        <label class="form-label-bold visuallyhidden" for="location">Find a location near you</label>
-        <input type="text" class="form-control" name="postcode" id="location" value="sw">
-        <input type="submit" class="button" value="Search">
-      </form>
+<form action="/styleguide/pages/locations-index" method="get">
+  <label class="form-label-bold visuallyhidden" for="location">Find a location near you</label>
+  <input type="text" class="form-control" name="postcode" id="location" value="sw">
+  <input type="submit" class="button" value="Search">
+</form>
 
-      <p>Or you can <a href="/appointments">book a phone appointment</a> instead.</p>
-    </main>
-  </div>
-  <div class="l-column-third l-column-third--sidebar">
-    <div class="sidebar-hr"></div>
+<p>Or you can <a href="/appointments">book a phone appointment</a> instead.</p>
 
-    <%= render 'styleguide/components/locator_link_promo_book' %>
+<% content_for :sidebar do %>
+  <%= render 'styleguide/components/locator_link_promo_book' %>
+<% end %>
 
-  </div>
-</div>
+<% content_for :breadcrumbs do %>
+  <%= render 'styleguide/components/locator_breadcrumbs_items', items: 2 %>
+<% end %>

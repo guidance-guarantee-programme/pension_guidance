@@ -1,71 +1,62 @@
 <% content_for(:page_title, t('styleguide.title', page_title: 'Book a free appointment')) %>
 
-<div class="l-grid-row">
-  <div class="l-column-two-thirds">
-    <main role="main" id="content" tabindex="-1">
-      <article role="article" class="text">
+<article role="article" class="text">
 
-        <h1 id="book-a-free-appointment">Book a free appointment</h1>
+  <h1 id="book-a-free-appointment">Book a free appointment</h1>
 
-        <p>Appointments are over the <strong>phone</strong> or <strong>face to face</strong>.</p>
+  <p>Appointments are over the <strong>phone</strong> or <strong>face to face</strong>.</p>
 
-        <p>You can call to book or you can enter a postcode to find an appointment location near you and book directly with them.</p>
+  <p>You can call to book or you can enter a postcode to find an appointment location near you and book directly with them.</p>
 
-        <%= render 'styleguide/components/highlighted_info' %>
+  <%= render 'styleguide/components/highlighted_info' %>
 
-        <p>*Opening hours vary for face-to-face bookings</p>
+  <p>*Opening hours vary for face-to-face bookings</p>
 
-        <p>From outside the UK call: +44 20 3733 3495.</p>
+  <p>From outside the UK call: +44 20 3733 3495.</p>
 
-        <p><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
+  <p><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
 
-        <div class="locations-promo">
+  <div class="locations-promo">
 
-          <h2 class="locations-promo__heading" id="find-a-face-to-face-appointment-location">Find a face-to-face location</h2>
+    <h2 class="locations-promo__heading" id="find-a-face-to-face-appointment-location">Find a face-to-face location</h2>
 
-          <p>Enter a postcode for a list of your nearest appointment locations.</p>
+    <p>Enter a postcode for a list of your nearest appointment locations.</p>
 
-          <form action="/locations" method="get">
-            <label class="visuallyhidden" for="location">Find a face-to-face appointment near you</label>
-            <input type="text" class="form-control" id="location" name="postcode" value="">
-            <input type="submit" class="button" value="Search">
-          </form>
-
-        </div>
-
-
-        <h2 id="who-can-book">Who can book</h2>
-
-        <p>You should be 50 or over and have a <a href="pension-types">defined contribution pension</a>.
-          This is a pension based on how much you and possibly your employer paid into your pot.
-          It’s not a final salary pension.</p>
-
-        <h2 id="what-you-need-to-know">What you need to know</h2>
-
-        <p>The appointment is a conversation between you and a Pension Wise guidance specialist. You’ll get personal guidance on what you can do with your pension pot.</p>
-
-        <p>The guidance specialist will:</p>
-
-        <ul>
-          <li>explain your pension options</li>
-          <li>explain tax</li>
-          <li>discuss which options might be suitable for you</li>
-          <li>give you tips on what you can do next</li>
-        </ul>
-
-        <p>Afterwards you’ll get a letter with a summary of what you talked about.</p>
-
-        <div role="note" aria-label="Information" class="application-notice info-notice">
-          <p>Pension Wise guidance specialists are impartial. They don't recommend any products or companies and won’t tell you how to invest your money.</p>
-        </div>
-
-      </article>
-    </main>
-  </div>
-  <div class="l-column-third l-column-third--sidebar">
-    <div class="sidebar-hr"></div>
-
-    <%= render 'styleguide/components/locator_link_promo' %>
+    <form action="/locations" method="get">
+      <label class="visuallyhidden" for="location">Find a face-to-face appointment near you</label>
+      <input type="text" class="form-control" id="location" name="postcode" value="">
+      <input type="submit" class="button" value="Search">
+    </form>
 
   </div>
-</div>
+
+  <h2 id="who-can-book">Who can book</h2>
+
+  <p>You should be 50 or over and have a <a href="pension-types">defined contribution pension</a>.
+    This is a pension based on how much you and possibly your employer paid into your pot.
+    It’s not a final salary pension.</p>
+
+  <h2 id="what-you-need-to-know">What you need to know</h2>
+
+  <p>The appointment is a conversation between you and a Pension Wise guidance specialist. You’ll get personal guidance on what you can do with your pension pot.</p>
+
+  <p>The guidance specialist will:</p>
+
+  <ul>
+    <li>explain your pension options</li>
+    <li>explain tax</li>
+    <li>discuss which options might be suitable for you</li>
+    <li>give you tips on what you can do next</li>
+  </ul>
+
+  <p>Afterwards you’ll get a letter with a summary of what you talked about.</p>
+
+  <div role="note" aria-label="Information" class="application-notice info-notice">
+    <p>Pension Wise guidance specialists are impartial. They don't recommend any products or companies and won’t tell you how to invest your money.</p>
+  </div>
+
+</article>
+
+<% content_for :sidebar do %>
+  <%= render 'styleguide/components/locator_link_promo' %>
+<% end %>

@@ -1,0 +1,52 @@
+<% content_for :head do %>
+  <!--[if gt IE 8]><!--><%= stylesheet_link_tag 'pensions-guidance', media: 'screen' %><!--<![endif]-->
+  <!--[if IE 6]><%= stylesheet_link_tag 'pensions-guidance-ie6', media: 'screen' %><![endif]-->
+  <!--[if IE 7]><%= stylesheet_link_tag 'pensions-guidance-ie7', media: 'screen' %><![endif]-->
+  <!--[if IE 8]><%= stylesheet_link_tag 'pensions-guidance-ie8', media: 'screen' %><![endif]-->
+
+  <%= stylesheet_link_tag 'styleguide', media: 'screen' %>
+<% end %>
+
+<% content_for :header_class, 'with-proposition' %>
+
+<% content_for :proposition_header do %>
+  <div class="header-proposition">
+    <div class="content">
+      <a href="/styleguide" id="proposition-name">Style guide</a>
+    </div>
+  </div>
+<% end %>
+
+<% content_for :content do %>
+  <div class="l-masthead">
+    <div class="l-banner-container">
+      <%= render 'components/phase_banner' %>
+      <%= render 'components/logo_link' %>
+    </div>
+  </div>
+  <div class="l-page-container">
+    <nav class="breadcrumbs" aria-label="breadcrumb" role="navigation">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="/">Home</a>
+        </li>
+        <%= yield :breadcrumbs %>
+      </ul>
+    </nav>
+
+    <div class="l-grid-row">
+      <div class="l-column-two-thirds">
+        <main role="main" id="content" tabindex="-1">
+          <%= yield %>
+        </main>
+      </div>
+      <div class="l-column-third l-column-third--sidebar">
+        <div class="sidebar-hr"></div>
+        <%= yield :sidebar %>
+      </div>
+    </div>
+
+  </div>
+<% end %>
+
+<%= render template: 'layouts/govuk_template' %>
