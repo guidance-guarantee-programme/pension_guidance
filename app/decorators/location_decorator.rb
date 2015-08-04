@@ -12,10 +12,6 @@ class LocationDecorator < SimpleDelegator
     _booking_location.nil? ? super : _booking_location.hours
   end
 
-  def booking_location
-    _booking_location.nil? ? nil : _booking_location.name
-  end
-
   private
 
   attr_accessor :_booking_location
