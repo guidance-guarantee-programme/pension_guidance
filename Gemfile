@@ -44,6 +44,7 @@ group :test do
   gem 'fakeredis'
   gem 'launchy'
   gem 'scss-lint', '~> 0.30'
+  gem 'shoulda-matchers'
   gem 'site_prism'
   gem 'timecop'
   gem 'vcr'
