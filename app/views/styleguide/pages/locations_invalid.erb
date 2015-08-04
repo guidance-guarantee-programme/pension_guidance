@@ -2,12 +2,17 @@
 
 <h1>Face-to-face appointments near sw</h1>
 
-<p class="t-invalid-postcode"><strong>sw</strong> is not a valid postcode. Please try again.</p>
-
 <form action="/styleguide/pages/locations-index" method="get">
-  <label class="form-label-bold visuallyhidden" for="location">Find a location near you</label>
-  <input type="text" class="form-control" name="postcode" id="location" value="sw">
-  <input type="submit" class="button" value="Search">
+  <div class="form-group error">
+    <label class="form-label-bold" for="location">
+      <span class="visuallyhidden">Find a location</span>
+      <span class="t-invalid-postcode error-message">
+        <strong>London</strong> is not a valid postcode. Please try again. <br />e.g SW17 0QE
+      </span>
+    </label>
+    <input type="text" class="form-control" name="postcode" id="location" value="London">
+    <input type="submit" class="button" value="Search">
+  </div>
 </form>
 
 <p>Or you can <a href="/appointments">book a phone appointment</a> instead.</p>
