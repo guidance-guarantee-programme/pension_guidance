@@ -1,4 +1,9 @@
 @import "elements/helpers";
+
+$path: false; // `elements/helpers` sets this to `public/images` which breaks
+              // asset pipeline paths. Resetting this allows the `file-path`
+              // helper to use asset pipeline paths.
+
 @import "elements/reset";
 @import "elements/elements-typography";
 @import "elements/buttons";
