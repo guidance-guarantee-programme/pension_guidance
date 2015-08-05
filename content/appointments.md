@@ -47,19 +47,3 @@ Afterwards you’ll get a letter with a summary of what you talked about.
 <div role="note" aria-label="Information" class="application-notice info-notice">
   <p>Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.</p>
 </div>
-
-##Make the most of your appointment
-
-Check the value of your pension pot beforehand. Your latest pension statement from your provider will have the amount.
-
-You should also think about when you want to stop working and how much other income you might have in retirement, eg from savings.
-
-<blockquote>
-  <p>“It was a very, very good session, a very helpful session. Covered everything we said and gave me the impetus to get on with what we were talking about.”</p>
-  <footer>— <cite>Thomas M</cite>, Coleshill</footer>
-</blockquote>
-
-<blockquote>
-  <p>“The quality of the info was fantastic. It was an excellent experience.”</p>
-  <footer>— <cite>Kevin J</cite>, Bristol</footer>
-</blockquote>
