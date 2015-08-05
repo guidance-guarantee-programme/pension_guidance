@@ -1,13 +1,15 @@
-<% content_for(:page_title, t('styleguide.title', page_title: 'Locations near you')) %>
+<% content_for(:page_title, t('styleguide.title', page_title: 'Find a face-to-face appointment location')) %>
 
-<h1>Face-to-face appointments near sw</h1>
+<h1>Find a face-to-face appointment location</h1>
 
 <form action="/styleguide/pages/locations-index" method="get">
   <div class="form-group error">
-    <label class="form-label-bold" for="location">
-      <span class="visuallyhidden">Find a location</span>
+    <label class="form-label-bold" for="location">Postcode
+      <span class="form-hint">
+        For example, 'SW1A 1AA'
+      </span>
       <span class="t-invalid-postcode error-message">
-        <strong>London</strong> is not a valid postcode. Please try again. <br />e.g SW17 0QE
+        <strong>London</strong> is not a valid postcode
       </span>
     </label>
     <input type="text" class="form-control" name="postcode" id="location" value="London">
@@ -15,12 +17,12 @@
   </div>
 </form>
 
-<p>Or you can <a href="/appointments">book a phone appointment</a> instead.</p>
+<p>Or you can <a href="/styleguide/pages/book">book a phone appointment</a> instead.</p>
 
 <% content_for :sidebar do %>
   <%= render 'styleguide/components/locator_link_promo_book' %>
 <% end %>
 
 <% content_for :breadcrumbs do %>
-  <%= render 'styleguide/components/locator_breadcrumbs_items', items: 2 %>
+  <%= render 'styleguide/components/locator_breadcrumbs_items', items: 3 %>
 <% end %>

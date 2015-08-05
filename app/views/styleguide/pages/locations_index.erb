@@ -6,7 +6,7 @@
 
 <ol class="location-list">
   <li class="location-list__item t-location">
-    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Mitcham Pension Wise</a></h2>
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Mitcham</a></h2>
     <p class="location-list__address">
       Kellaway House, 326 London Road, Merton &amp; Lambeth, MITCHAM, Surrey, CR4 3ND
     </p>
@@ -16,7 +16,7 @@
     </p>
   </li>
   <li class="location-list__item t-location">
-    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Streatham Hill Pension Wise</a></h2>
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Streatham Hill</a></h2>
     <p class="location-list__address">
       1 Barrhill Road, Streatham Hill, Lambeth &amp; Merton, LONDON, SW2 4RJ
     </p>
@@ -26,7 +26,7 @@
     </p>
   </li>
   <li class="location-list__item t-location">
-    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Morden Pension Wise</a></h2>
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Morden</a></h2>
     <p class="location-list__address">
       7 Crown Parade, Crown Lane, Merton, MORDEN, Surrey, SM4 5DA
     </p>
@@ -36,7 +36,7 @@
     </p>
   </li>
   <li class="location-list__item t-location">
-    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Mission House Pension Wise</a></h2>
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Mission House</a></h2>
     <p class="location-list__address">
       14 York Road, Wandsworth, LONDON, SW11 3QA
     </p>
@@ -46,7 +46,7 @@
     </p>
   </li>
   <li class="location-list__item t-location">
-    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Roehampton Pension Wise</a></h2>
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show">Roehampton</a></h2>
     <p class="location-list__address">
       166 Roehampton Lane, Wandsworth, LONDON, SW15 4HR
     </p>
@@ -57,20 +57,20 @@
   </li>
 </ol>
 
-<p>Try another postcode:</p>
+<p>Search for another location:</p>
 
 <form action="/styleguide/pages/locations-index" method="get">
-  <label class="form-label-bold visuallyhidden" for="location">Find a face-to-face appointment near you</label>
+  <label class="form-label-bold" for="location">Postcode</label>
   <input type="text" class="form-control" name="postcode" id="location" value="">
   <input type="submit" class="button" value="Search">
 </form>
 
-<p>You can also <a href="/appointments">book a phone appointment</a>.</p>
+<p>You can also <a href="/styleguide/pages/book">book a phone appointment</a>.</p>
 
 <% content_for :sidebar do %>
   <%= render 'styleguide/components/locator_link_promo_book' %>
 <% end %>
 
 <% content_for :breadcrumbs do %>
-  <%= render 'styleguide/components/locator_breadcrumbs_items', items: 2 %>
+  <%= render 'styleguide/components/locator_breadcrumbs_items', items: 3 %>
 <% end %>

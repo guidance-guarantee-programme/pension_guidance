@@ -1,0 +1,41 @@
+<% content_for(:page_title, t('styleguide.title', page_title: 'How to book')) %>
+
+<article role="article" class="text">
+
+  <h1 id="how-to-book">How to book</h1>
+
+  <h2 id="by-phone">By phone</h2>
+
+  <p>Call <strong>0300 330 1001</strong>.<br />
+  If you’re outside the UK call +44 20 3733 3495.</p>
+
+  <ul>
+    <li>Call between 8am to 10pm, every day</li>
+    <li>Choose a <strong>phone</strong> appointment or a <strong>face-to-face</strong> location near you</li>
+    <li>We’ll send you an email confirming your booking</li>
+  </ul>
+
+  <p><a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
+
+  <h2 id="find-a-face-to-face-appointment-location">Find a face-to-face location</h2>
+
+  <p>Enter a postcode for a list of your nearest appointment locations.</p>
+
+  <form action="/styleguide/pages/locations-index" method="get">
+    <label class="form-label-bold" for="location">Postcode</label>
+    <span class="form-hint">
+      For example, 'SW1A 1AA'
+    </span>
+    <input type="text" class="form-control" id="location" name="postcode" value="">
+    <input type="submit" class="button" value="Search">
+  </form>
+
+</article>
+
+<% content_for :sidebar do %>
+  <%= render 'styleguide/components/locator_link_promo' %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= render 'styleguide/components/locator_breadcrumbs_items', items: 2 %>
+<% end %>
