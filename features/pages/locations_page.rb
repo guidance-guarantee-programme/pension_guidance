@@ -1,5 +1,7 @@
+require_relative 'page'
+
 module Pages
-  class Locations < SitePrism::Page
+  class Locations < Page
     set_url '/locations{?postcode}'
 
     element :invalid_postcode, '.t-invalid-postcode'

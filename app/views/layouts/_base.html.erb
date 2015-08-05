@@ -23,6 +23,17 @@
   <%# End Google Tag Manager %>
 <% end %>
 
+<% content_for :inside_header do %>
+  <div class="l-search-global t-search">
+    <form class="search-global" action="/search" method="get" role="search">
+      <label for="search-global-text" class="visuallyhidden">Search</label>
+      <input type="search" name="query" placeholder="Search" id="search-global-text"
+             class="search-global__input t-search__input">
+      <input type="submit" value="Search" class="search-global__submit t-search__submit">
+    </form>
+  </div>
+<% end %>
+
 <% content_for :content do %>
   <%= yield %>
 <% end %>

@@ -1,5 +1,7 @@
+require_relative 'page'
+
 module Pages
-  class Home < SitePrism::Page
+  class Home < Page
     set_url '/'
 
     elements :links, '.t-article-links'

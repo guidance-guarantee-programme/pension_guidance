@@ -1,5 +1,7 @@
+require_relative 'page'
+
 module Pages
-  class Guide < SitePrism::Page
+  class Guide < Page
     set_url('/{slug}')
     set_url_matcher(%r{\/(\w|-)+$})
 
