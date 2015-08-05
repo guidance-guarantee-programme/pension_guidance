@@ -1,49 +1,26 @@
 ---
-description: Talk about your pension options. Call 0300 330 1001 to book now.
+description: Book a phone or face-to-face appointment with Pension Wise for personal guidance on your pension pot options.
 ---
 
-#Book a free appointment
+# Book a free appointment
 
-<div class="highlighted-info">
-  <p>Call to book a phone or face-to-face appointment</p>
-  <p>
-    <em>0300 330 1001</em>
-    <span>8am to 10pm, every day</span>
-  </p>
-</div>
+An appointment is a 45 minute conversation between you and a Pension Wise guidance specialist. You’ll get personal guidance on what you can do with your pension pot.
 
-From outside the UK call: +44 20 3733 3495.
+Appointments are over the **phone** or **face to face**.
 
-Calls cost no more than standard rates. If you have a free calls package, it’s included.
+[Start now](/book){: .button}
 
-If you can’t use the phone, you can book an appointment at your [local Citizens Advice bureau](https://www.citizensadvice.org.uk/). 
+## Before you book
 
-##Who can book
+You should be aged **50 or over** and have a **defined contribution** pension. This is a pension based on how much you and possibly your employer paid into your pot. It’s not a final salary pension.
 
-You should be 50 or over and have a [defined contribution pension](pension-types).
-This is a pension based on how much you and possibly your employer paid into your pot.
-It’s not a final salary pension.
+In your appointment, the guidance specialist will:
 
-
-##What you’ll get from the appointment
-
-The appointment is a conversation between you and a Pension Wise guidance specialist. You’ll get personal guidance on what you can do with your pension pot.
-
-The guidance specialist will:
-
-* explain your pension options
-* explain tax
-* discuss which options might be suitable for you
-* give you tips on what you can do next
-
-You can:
-
-* ask questions about the options
-* discuss what the options mean to you
-* discuss how tax might affect you
+- explain your pension options
+- explain tax
+- discuss which options might be suitable for  you
+- give you tips on what you can do next
 
 Afterwards you’ll get a letter with a summary of what you talked about.
 
-<div role="note" aria-label="Information" class="application-notice info-notice">
-  <p>Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.</p>
-</div>
+^ Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.
