@@ -22,6 +22,7 @@ RSpec.describe LocationDecorator do
     specify { expect(decorator.address).to eq(address) }
     specify { expect(decorator.phone).to eq(phone) }
     specify { expect(decorator.hours).to eq(hours) }
+    specify { expect(decorator.booking_location).to be_nil }
   end
 
   context 'with a separate booking location' do
@@ -32,5 +33,6 @@ RSpec.describe LocationDecorator do
 
     specify { expect(decorator.phone).to eq(booking_location_phone) }
     specify { expect(decorator.hours).to eq(booking_location_hours) }
+    specify { expect(decorator.booking_location).to eq(booking_location_name) }
   end
 end
