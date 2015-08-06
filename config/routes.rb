@@ -24,6 +24,7 @@ Rails.application.routes.draw do
         get 'locations-invalid', action: 'pages_locations_invalid'
         get 'locations-show', action: 'pages_locations_show'
         get 'locations-show-call-centre', action: 'pages_locations_show_call_centre'
+        get 'search-results', action: 'pages_search_results'
       end
 
       get '(/:action)'

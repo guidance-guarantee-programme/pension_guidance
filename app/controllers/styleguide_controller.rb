@@ -51,4 +51,8 @@ class StyleguideController < ApplicationController
     render template: 'styleguide/pages/locations_show_call_centre',
            layout: 'styleguide/pages'
   end
+
+  def pages_search_results
+    render template: 'styleguide/pages/search_results'
+  end
 end

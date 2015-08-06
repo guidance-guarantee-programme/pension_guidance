@@ -17,6 +17,16 @@
   </div>
 <% end %>
 
+<% content_for :inside_header do %>
+  <form class="search-in-header" action="/styleguide/pages/search-results" method="get" role="search">
+    <div class="content">
+      <label for="search-header-text" class="visuallyhidden">Search</label>
+      <input type="search" name="q" id="search-header-text" title="Search">
+      <input class="submit" type="submit" value="Search">
+    </div>
+  </form>
+<% end %>
+
 <% content_for :content do %>
   <div class="l-page-container">
     <%= render 'components/phase_banner' %>
