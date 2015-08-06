@@ -1,6 +1,8 @@
 class LocationsController < ApplicationController
   layout 'locations'
 
+  before_action :set_breadcrumbs, only: :show
+
   def index
     expires_in Rails.application.config.cache_max_age, public: true
 
@@ -34,5 +36,10 @@ class LocationsController < ApplicationController
 
   def locations
     Locations.nearest_to_postcode(params[:postcode], limit: 5)
+  end
+
+  def set_breadcrumbs
+    breadcrumb Breadcrumb.book_an_appointment
+    breadcrumb Breadcrumb.how_to_book
   end
 end

@@ -67,6 +67,12 @@ Then(/^I should see the details of that appointment location$/) do
   %i(address phone hours).each do |element|
     expect(location.public_send(element)).to be_visible
   end
+
+  expect(location.breadcrumbs.map(&:text)).to eq([
+    'Home',
+    'Book a free appointment',
+    'How to book'
+  ])
 end
 
 When(/^I visit the bookmarked page$/) do
