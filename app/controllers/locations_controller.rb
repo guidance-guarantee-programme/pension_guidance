@@ -1,7 +1,7 @@
 class LocationsController < ApplicationController
   layout 'locations'
 
-  before_action :set_breadcrumbs, only: :show
+  before_action :set_breadcrumbs
 
   def index
     expires_in Rails.application.config.cache_max_age, public: true

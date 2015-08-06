@@ -1,6 +1,7 @@
 class GuidesController < ApplicationController
   layout 'guides'
   helper_method :journey_navigation
+  before_action :set_breadcrumbs
 
   NON_JOURNEY_RELATED_GUIDE_IDS = %w(
     appointments
@@ -56,5 +57,9 @@ class GuidesController < ApplicationController
 
   def journey_navigation
     JourneyNavigation.new(JourneyTree.instance.tree, params[:id])
+  end
+
+  def set_breadcrumbs
+    breadcrumb Breadcrumb.book_an_appointment if params[:id] == 'book'
   end
 end
