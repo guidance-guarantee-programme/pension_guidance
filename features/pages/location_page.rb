@@ -7,5 +7,7 @@ module Pages
     element :booking_location, '.t-booking-location'
     element :phone, '.t-phone'
     element :hours, '.t-hours'
+
+    elements :breadcrumbs, '.t-breadcrumb'
   end
 end
