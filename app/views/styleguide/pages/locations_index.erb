@@ -1,67 +1,76 @@
 <% content_for(:page_title, t('styleguide.title', page_title: 'Locations near you')) %>
 
-<div class="l-grid-row">
-  <div class="l-column-two-thirds">
-    <main role="main" id="content" tabindex="-1">
+<h1>Face-to-face appointments near sw17 0qe</h1>
 
+<p>Your nearest locations are:</p>
 
-      <h1>Face-to-face appointments near sw17 0qe</h1>
+<ol class="location-list">
+  <li class="location-list__item t-location">
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show-call-centre">Mitcham</a></h2>
+    <p class="location-list__address">
+      Kellaway House, 326 London Road, Merton &amp; Lambeth, MITCHAM, Surrey, CR4 3ND
+    </p>
+    <p class="location-list__distance t-distance">
+      <span class="location-list__distance-label">Distance:</span>
+      1.86 miles
+    </p>
+  </li>
+  <li class="location-list__item t-location">
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show-call-centre">Streatham Hill</a></h2>
+    <p class="location-list__address">
+      1 Barrhill Road, Streatham Hill, Lambeth &amp; Merton, LONDON, SW2 4RJ
+    </p>
+    <p class="location-list__distance t-distance">
+      <span class="location-list__distance-label">Distance:</span>
+      2.07 miles
+    </p>
+  </li>
+  <li class="location-list__item t-location">
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show-call-centre">Morden</a></h2>
+    <p class="location-list__address">
+      7 Crown Parade, Crown Lane, Merton, MORDEN, Surrey, SM4 5DA
+    </p>
+    <p class="location-list__distance t-distance">
+      <span class="location-list__distance-label">Distance:</span>
+      2.16 miles
+    </p>
+  </li>
+  <li class="location-list__item t-location">
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show-call-centre">Mission House</a></h2>
+    <p class="location-list__address">
+      14 York Road, Wandsworth, LONDON, SW11 3QA
+    </p>
+    <p class="location-list__distance t-distance">
+      <span class="location-list__distance-label">Distance:</span>
+      2.88 miles
+    </p>
+  </li>
+  <li class="location-list__item t-location">
+    <h2 class="location-list__name"><a class="t-name" href="/styleguide/pages/locations-show-call-centre">Roehampton</a></h2>
+    <p class="location-list__address">
+      166 Roehampton Lane, Wandsworth, LONDON, SW15 4HR
+    </p>
+    <p class="location-list__distance t-distance">
+      <span class="location-list__distance-label">Distance:</span>
+      3.61 miles
+    </p>
+  </li>
+</ol>
 
-      <p>Your Pension Wise face-to-face appointment will take place at a Citizens Advice bureau. Your nearest 5 are:</p>
+<p>Search for another location:</p>
 
-      <ol class="location-list">
-        <li class="location-list__item t-location">
-          <h2 class="location-list__name"><a class="t-name" href="/locations/m-l-mitcham">M&amp;L - Mitcham</a></h2>
-          <p class="location-list__distance t-distance">
-            <span class="location-list__distance-label">Distance:</span>
-            1.86 miles
-          </p>
-        </li>
-        <li class="location-list__item t-location">
-          <h2 class="location-list__name"><a class="t-name" href="/locations/m-l-streatham-hill">M&amp;L - Streatham Hill</a></h2>
-          <p class="location-list__distance t-distance">
-            <span class="location-list__distance-label">Distance:</span>
-            2.07 miles
-          </p>
-        </li>
-        <li class="location-list__item t-location">
-          <h2 class="location-list__name"><a class="t-name" href="/locations/merton-lambeth-cab-morden">Merton &amp; Lambeth CAB - Morden</a></h2>
-          <p class="location-list__distance t-distance">
-            <span class="location-list__distance-label">Distance:</span>
-            2.16 miles
-          </p>
-        </li>
-        <li class="location-list__item t-location">
-          <h2 class="location-list__name"><a class="t-name" href="/locations/wandsworth-cab-mission-house">Wandsworth CAB - Mission House</a></h2>
-          <p class="location-list__distance t-distance">
-            <span class="location-list__distance-label">Distance:</span>
-            2.88 miles
-          </p>
-        </li>
-        <li class="location-list__item t-location">
-          <h2 class="location-list__name"><a class="t-name" href="/locations/wandsworth-cab-roehampton">Wandsworth CAB - Roehampton</a></h2>
-          <p class="location-list__distance t-distance">
-            <span class="location-list__distance-label">Distance:</span>
-            3.61 miles
-          </p>
-        </li>
-      </ol>
+<form action="/styleguide/pages/locations-index" method="get">
+  <label class="form-label-bold" for="location">Postcode</label>
+  <input type="text" class="form-control" name="postcode" id="location" value="">
+  <input type="submit" class="button" value="Search">
+</form>
 
-      <p>Too far away? <a href="/appointments">Book a phone appointment</a> instead.</p>
+<p>You can also <a href="/styleguide/pages/book">book a phone appointment</a>.</p>
 
-      <p>Or enter another postcode.</p>
+<% content_for :sidebar do %>
+  <%= render 'styleguide/components/locator_link_promo_book' %>
+<% end %>
 
-      <form action="/styleguide/pages/locations-index" method="get">
-        <label class="form-label-bold visuallyhidden" for="location">Find a face-to-face appointment near you</label>
-        <input type="text" class="form-control" name="postcode" id="location" value="">
-        <input type="submit" class="button" value="Search">
-      </form>
-    </main>
-  </div>
-  <div class="l-column-third l-column-third--sidebar">
-    <div class="sidebar-hr"></div>
-
-    <%= render 'styleguide/components/locator_link_promo_book' %>
-
-  </div>
-</div>
+<% content_for :breadcrumbs do %>
+  <%= render 'styleguide/components/locator_breadcrumbs_items', items: 3 %>
+<% end %>

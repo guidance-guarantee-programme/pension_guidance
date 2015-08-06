@@ -17,6 +17,8 @@ Rails.application.routes.draw do
         get 'guide', action: 'pages_guide'
         get 'journey-index', action: 'pages_journey_index'
         get 'journey-page', action: 'pages_journey_page'
+        get 'appointments', action: 'pages_appointments'
+        get 'book', action: 'pages_book'
         get 'locations-search', action: 'pages_locations_search'
         get 'locations-index', action: 'pages_locations_index'
         get 'locations-invalid', action: 'pages_locations_invalid'
