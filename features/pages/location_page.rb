@@ -4,7 +4,6 @@ module Pages
 
     element :name, '.t-name'
     element :address, '.t-address'
-    element :booking_location, '.t-booking-location'
     element :phone, '.t-phone'
     element :hours, '.t-hours'
   end
