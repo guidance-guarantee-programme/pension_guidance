@@ -19,13 +19,9 @@
   <% end %>
 </ol>
 
-<p>Try another postcode:</p>
+<p>Search for another location:</p>
 
-<form action="/locations" method="get">
-  <label class="form-label-bold visuallyhidden" for="location">Find a face-to-face appointment near you</label>
-  <input type="text" class="form-control" name="postcode" id="location" value="">
-  <input type="submit" class="button" value="Search">
-</form>
+<%= render 'components/locations_search' %>
 
 <div class="application-notice info-notice">
   <p>You can also <a href="/book#by-phone">book a phone appointment</a>.</p>
