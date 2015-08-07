@@ -2,10 +2,9 @@ class LocationsController < ApplicationController
   layout 'locations'
 
   before_action :set_breadcrumbs
+  before_action :send_cache_headers
 
   def index
-    expires_in Rails.application.config.cache_max_age, public: true
-
     return render :search unless params[:postcode].present?
 
     @postcode = params[:postcode]
@@ -19,8 +18,6 @@ class LocationsController < ApplicationController
 
   def show
     location = Locations.find(params[:id])
-
-    expires_in Rails.application.config.cache_max_age, public: true
 
     fail(ActionController::RoutingError, 'Location Not Found') unless location
 
@@ -41,5 +38,9 @@ class LocationsController < ApplicationController
   def set_breadcrumbs
     breadcrumb Breadcrumb.book_an_appointment
     breadcrumb Breadcrumb.how_to_book
+  end
+
+  def send_cache_headers
+    expires_in Rails.application.config.cache_max_age, public: true
   end
 end
