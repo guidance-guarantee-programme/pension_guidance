@@ -13,6 +13,7 @@ Feature: Guides
       | adjustable-income        |
       | already-bought-annuity   |
       | benefits                 |
+      | book                     |
       | contact                  |
       | cookies                  |
       | divorce                  |

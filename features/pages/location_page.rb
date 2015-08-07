@@ -6,5 +6,7 @@ module Pages
     element :address, '.t-address'
     element :phone, '.t-phone'
     element :hours, '.t-hours'
+
+    elements :breadcrumbs, '.t-breadcrumb'
   end
 end
