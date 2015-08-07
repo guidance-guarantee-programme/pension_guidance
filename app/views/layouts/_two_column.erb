@@ -16,8 +16,10 @@
         </main>
       </div>
       <div class="l-column-third l-column-third--sidebar">
-        <div class="sidebar-hr"></div>
-        <%= yield :sidebar %>
+        <% if content_for?(:sidebar) %>
+          <div class="sidebar-hr"></div>
+          <%= yield :sidebar %>
+        <% end %>
       </div>
     </div>
 

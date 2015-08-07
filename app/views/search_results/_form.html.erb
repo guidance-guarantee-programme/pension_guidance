@@ -1,0 +1,6 @@
+<form action="/search" method="get" role="search" class="search">
+  <label class="visuallyhidden" for="search"><%= t('.label') %></label>
+  <input id="search" class="search__input" required="" type="search" name="query"
+         value="<%= params[:query] %>" autocomplete="off" placeholder="<%= t('.placeholder') %>">
+  <button class="search__submit " type="submit"><%= t('.button') %></button>
+</form>

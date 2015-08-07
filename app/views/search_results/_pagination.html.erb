@@ -1,0 +1,35 @@
+<div class="t-pagination">
+  <ul class="pager">
+    <% unless search_results.first_page? %>
+      <li class="pager__item pager__item--previous">
+        <%= link_to search_results_path(query: params[:query], page: search_results.previous_page),
+                    rel: 'prev', class: 't-button--previous' do %>
+          <span class="pager__label">
+            <%= t('.previous_button_html') %>
+          </span>
+          <span class="pager__title t-title--previous">
+            <%= t('.title',
+                  page_number: search_results.previous_page,
+                  total_pages: search_results.number_of_pages) %>
+          </span>
+        <% end %>
+      </li>
+    <% end %>
+
+    <% unless search_results.last_page? %>
+      <li class="pager__item pager__item--next">
+        <%= link_to search_results_path(query: params[:query], page: search_results.next_page),
+                      rel: 'next', class: 't-button--next' do %>
+          <span class="pager__label">
+            <%= t('.next_button_html') %>
+          </span>
+          <span class="pager__title t-title--next">
+            <%= t('.title',
+                  page_number: search_results.next_page,
+                  total_pages: search_results.number_of_pages) %>
+          </span>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
