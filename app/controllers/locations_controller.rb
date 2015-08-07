@@ -9,7 +9,7 @@ class LocationsController < ApplicationController
 
     @postcode = params[:postcode]
     @locations = locations.map do |location|
-      SearchResultDecorator.new(location)
+      LocationSearchResultDecorator.new(location)
     end
 
   rescue Geocoder::InvalidPostcode

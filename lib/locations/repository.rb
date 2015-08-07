@@ -1,7 +1,7 @@
 module Locations
   class Repository
     def initialize(geo_json_path_or_url = Locations.geo_json_path_or_url)
-      json = Reader.new(geo_json_path_or_url).call
+      json = Locations::Reader.new(geo_json_path_or_url).call
       features = RGeo::GeoJSON.decode(json, json_parser: :json)
 
       self.locations = map_features(features)
@@ -21,7 +21,7 @@ module Locations
 
     def map_features(features)
       features.map do |feature|
-        Location.new(*params_for_location(feature))
+        Locations::Location.new(*params_for_location(feature))
       end
     end
 

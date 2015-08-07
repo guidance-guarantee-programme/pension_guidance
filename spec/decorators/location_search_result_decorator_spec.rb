@@ -1,4 +1,4 @@
-RSpec.describe SearchResultDecorator do
+RSpec.describe LocationSearchResultDecorator do
   let(:address) { "Street\nTown\nPostcode" }
   let(:distance) { 1.0489736864844752 }
   let(:search_result) { double(address: address, distance: distance) }

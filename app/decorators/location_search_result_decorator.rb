@@ -1,4 +1,4 @@
-class SearchResultDecorator < SimpleDelegator
+class LocationSearchResultDecorator < SimpleDelegator
   def address
     __getobj__.address.gsub("\n", ', ').squish
   end
