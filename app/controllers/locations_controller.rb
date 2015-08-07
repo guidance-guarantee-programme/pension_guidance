@@ -21,6 +21,8 @@ class LocationsController < ApplicationController
 
     fail(ActionController::RoutingError, 'Location Not Found') unless location
 
+    @postcode = params[:postcode]
+
     if location.booking_location_id.present?
       booking_location = Locations.find(location.booking_location_id)
       @location = LocationDecorator.new(location, booking_location)
