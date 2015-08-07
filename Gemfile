@@ -35,9 +35,6 @@ end
 
 group :development do
   gem 'rubocop', require: false
-  gem 'spring'
-  gem 'spring-commands-cucumber'
-  gem 'spring-commands-rspec'
 end
 
 group :test do
