@@ -2,10 +2,6 @@
 
 <h1>Find a face-to-face appointment location</h1>
 
-<form action="/locations" method="get">
-  <label class="form-label" for="location">Enter a postcode</label>
-  <input type="text" class="form-control" name="postcode" id="location">
-  <input type="submit" class="button" value="Search">
-</form>
+<%= render 'components/locations_search' %>
 
 <p>Or you can <a href="/book#by-phone">book a phone appointment</a> instead.</p>
