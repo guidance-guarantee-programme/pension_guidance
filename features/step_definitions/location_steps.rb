@@ -112,3 +112,14 @@ Then(/^I should see the following appointment location details:$/) do |table|
     end
   end
 end
+
+Then(/^I should be able to get back to the search results$/) do
+  location = Pages::Location.new
+  postcode = URI.parse(location.current_url).query
+  location.back_to_results.click
+  expect(Pages::Locations.new.current_url).to end_with(postcode)
+end
+
+Then(/^there are no search results to return to$/) do
+  expect(Pages::Location.new).to_not have_back_to_results
+end
