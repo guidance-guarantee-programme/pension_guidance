@@ -23,12 +23,14 @@ class LocationsController < ApplicationController
 
     @postcode = params[:postcode]
 
-    if location.booking_location_id.present?
-      booking_location = Locations.find(location.booking_location_id)
-      @location = LocationDecorator.new(location, booking_location)
-    else
-      @location = LocationDecorator.new(location)
-    end
+    booking_location = if location.booking_location_id.present?
+                         Locations.find(location.booking_location_id)
+                       end
+    twilio_number = Switchboard.lookup(params[:id])
+
+    @location = LocationDecorator.new(location,
+                                      booking_location: booking_location,
+                                      twilio_number: twilio_number)
   end
 
   private
