@@ -39,6 +39,7 @@ RSpec.describe LocationsController, type: :controller do
     before do
       allow(Locations).to receive(:find).with(invalid_id)
       allow(Locations).to receive(:find).with(valid_id).and_return(location)
+      allow(Switchboard).to receive(:lookup)
     end
 
     specify 'with an invalid id' do
@@ -49,6 +50,7 @@ RSpec.describe LocationsController, type: :controller do
       get :show, id: valid_id
 
       expect(response).to be_ok
+      expect(Switchboard).to have_received(:lookup).with(valid_id)
     end
   end
 end
