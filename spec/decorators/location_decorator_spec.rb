@@ -7,7 +7,8 @@ RSpec.describe LocationDecorator do
   let(:booking_location_name) { 'booking location name' }
   let(:booking_location_phone) { 'booking location phone number' }
   let(:booking_location_hours) { 'booking location opening hours' }
-  let(:twilio_number) { 'twilio number' }
+  let(:twilio_number) { '+441443643532' }
+  let(:formated_twilio_number) { '01443 643532' }
   let(:location) do
     double(name: name, address: address, booking_location_id: booking_location_id,
            phone: phone, hours: hours)
@@ -28,7 +29,7 @@ RSpec.describe LocationDecorator do
     context 'and we are proxying their phone number through twilio' do
       subject(:decorator) { described_class.new(location, twilio_number: twilio_number) }
 
-      specify { expect(decorator.phone).to eq(twilio_number) }
+      specify { expect(decorator.phone).to eq(formated_twilio_number) }
     end
   end
 
@@ -48,7 +49,7 @@ RSpec.describe LocationDecorator do
           location, booking_location: booking_location, twilio_number: twilio_number)
       end
 
-      specify { expect(decorator.phone).to eq(twilio_number) }
+      specify { expect(decorator.phone).to eq(formated_twilio_number) }
     end
   end
 end
