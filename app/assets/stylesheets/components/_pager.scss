@@ -58,7 +58,14 @@
 .pager__label {
   display: block;
   font-size: 27px;
+
+  @include media(tablet) {
+    .visuallyhidden {
+      position: static;
+    }
+  }
 }
+
 
 .pager__title {
   text-decoration: underline;
