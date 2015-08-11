@@ -55,4 +55,9 @@ class StyleguideController < ApplicationController
   def pages_search_results
     render template: 'styleguide/pages/search_results'
   end
+
+  def pages_search_header
+    render template: 'styleguide/pages/search_header',
+           layout: 'styleguide/search_header'
+  end
 end

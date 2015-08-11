@@ -25,6 +25,7 @@ Rails.application.routes.draw do
         get 'locations-show', action: 'pages_locations_show'
         get 'locations-show-call-centre', action: 'pages_locations_show_call_centre'
         get 'search-results', action: 'pages_search_results'
+        get 'search-header', action: 'pages_search_header'
       end
 
       get '(/:action)'

@@ -7,13 +7,13 @@
   <%= stylesheet_link_tag 'styleguide', media: 'screen' %>
 <% end %>
 
-<% content_for :header_class, 'with-proposition' %>
-
-<% content_for :proposition_header do %>
-  <div class="header-proposition">
-    <div class="content">
-      <a href="/styleguide" id="proposition-name">Style guide</a>
-    </div>
+<% content_for :inside_header do %>
+  <div class="l-search-global">
+    <form class="search-global" action="/styleguide/pages/search-results" method="get" role="search">
+      <label for="search-global-text" class="visuallyhidden">Search</label>
+      <input type="search" name="q" id="search-global-text" class="search-global__input" placeholder="Search">
+      <input class="search-global__submit" type="submit" value="Search">
+    </form>
   </div>
 <% end %>
 
