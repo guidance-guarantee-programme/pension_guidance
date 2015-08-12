@@ -1,3 +1,6 @@
+ENV['GOOGLE_API_KEY'] ||= 'abc123'
+ENV['GOOGLE_API_CX'] ||= 'xyz/ab'
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 

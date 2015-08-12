@@ -1,0 +1,14 @@
+<% content_for(:page_title, t('service.title', page_title: t('.document_title', query: params[:query]))) %>
+<% content_for(:search_global, true) %>
+
+<h1 class="heading-search-results">
+  <%= t('.page_title_html', query: params[:query]) %>
+</h1>
+
+<%= render 'form' %>
+
+<ol class="search-results">
+  <%= render search_results %>
+</ol>
+
+<%= render 'pagination', search_results: search_results %>

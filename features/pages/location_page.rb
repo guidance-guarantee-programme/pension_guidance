@@ -1,5 +1,7 @@
+require_relative 'page'
+
 module Pages
-  class Location < SitePrism::Page
+  class Location < Page
     set_url '/locations/{id}'
 
     element :back_to_results, '.t-back-to-results'

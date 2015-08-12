@@ -78,6 +78,12 @@ GEM
     execjs (2.5.2)
     fakeredis (0.5.0)
       redis (~> 3.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    faraday-conductivity (0.3.1)
+      faraday (~> 0.8)
+    faraday_middleware (0.10.0)
+      faraday (>= 0.7.4, < 0.10)
     foreman (0.78.0)
       thor (~> 0.19.1)
     gaffe (1.0.2)
@@ -120,6 +126,7 @@ GEM
     minitest (5.7.0)
     multi_json (1.11.1)
     multi_test (0.1.2)
+    multipart-post (2.0.0)
     newrelic_rpm (3.12.0.288)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -220,6 +227,8 @@ GEM
     scss-lint (0.38.0)
       rainbow (~> 2.0)
       sass (~> 3.4.1)
+    shoulda-matchers (2.8.0)
+      activesupport (>= 3.0.0)
     site_prism (2.7)
       addressable (>= 2.3.3, < 3.0)
       capybara (>= 2.1, < 3.0)
@@ -259,9 +268,11 @@ DEPENDENCIES
   bugsnag
   canonical-rails
   cucumber-rails
-  draper (~> 1.3)
+  draper
   excon
   fakeredis
+  faraday-conductivity
+  faraday_middleware
   foreman
   gaffe
   govspeak (~> 3.2)
@@ -287,6 +298,7 @@ DEPENDENCIES
   rubytree
   sass-rails (~> 5.0)
   scss-lint (~> 0.30)
+  shoulda-matchers
   site_prism
   sprockets (~> 2.12)
   timecop
