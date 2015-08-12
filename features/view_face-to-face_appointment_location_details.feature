@@ -16,6 +16,7 @@ Scenario: Bookmark a appointment location
   And I have bookmarked the page
   When I visit the bookmarked page
   Then I should see the details of that appointment location
+  And I am provided with next steps
 
 Scenario: Appointment location that handles its own booking
   When I view the details of an appointment location that handles its own booking

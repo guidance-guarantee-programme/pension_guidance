@@ -48,7 +48,12 @@ class GuidesController < ApplicationController
   end
 
   def non_journey_related_guides
-    @related_guides ||= guide_repository.find_all(*NON_JOURNEY_RELATED_GUIDE_IDS)
+    @related_guides ||= begin
+      ids = NON_JOURNEY_RELATED_GUIDE_IDS
+      ids.reject { |id| id == 'appointments' } if params[:id] == 'book'
+
+      guide_repository.find_all(*ids)
+    end
   end
 
   def journey_related_guides
