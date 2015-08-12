@@ -1,16 +1,18 @@
 // hex colours (http://chir.ag/projects/name-that-color/)
 $color-black: #0b0c0c;
 $color-grey-rolling-stone: #6f777b;
-
-$color-grey-silver-sand: #bac0c4;
+$color-grey-silver-sand: #bfc1c3;
 $color-grey-mercury: #e2e2e2;
 $color-grey-porcelain: #e9ebec;
 $color-grey-alabaster: #f8f8f8;
 $color-grey-black-haze: #f4f5f5;
 $color-white: #fff;
 
+
+
 $color-blue-biscay: #17375f;
 $color-blue-endeavour: #005ea5;
+$color-blue-curious: #2b8cc4;
 $color-blue-picton: #5bc8f1;
 $color-orange-pizazz: #fa9600;
 $color-green-atlantis: #97c81e;
@@ -18,9 +20,11 @@ $color-green-jungle: #00385d;
 
 // semantic colours
 $color-text: $color-black;
+$color-input-border: $color-grey-silver-sand;
 $color-strapline-text: $color-blue-biscay;
 $color-strapline-bg: $color-grey-porcelain;
 $color-pager-bg: $color-grey-alabaster;
+$color-searchbox-bg: $color-blue-curious;
 $color-journey-promo-number-bg: $color-grey-porcelain;
 
 $color-rule-grey: $color-grey-silver-sand;

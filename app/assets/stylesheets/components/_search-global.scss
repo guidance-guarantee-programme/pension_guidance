@@ -1,0 +1,38 @@
+.l-search-global {
+  width: 100%;
+
+  @include media($min-width: 380px) {
+    width: 49%;
+    float: right;
+  }
+
+  .search-global {
+    margin: 0 15px;
+  }
+}
+
+.search-global {
+  position: relative;
+  padding-right: 46px;
+}
+
+.search-global__input {
+  width: 100%;
+  height: 35px;
+  line-height: normal;
+  padding: 0 0 0 10px;
+  border: 0;
+}
+
+.search-global__submit {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: image-url("css/search-button.png") $govuk-blue no-repeat 0 -17px;
+  overflow: hidden;
+  text-indent: -5000px;
+}
