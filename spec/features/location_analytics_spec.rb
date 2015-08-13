@@ -3,7 +3,13 @@ RSpec.feature 'Location analytics', type: :feature, js: true, vcr: true do
     Array(page.evaluate_script('window.dataLayer')).reduce({}, :merge)
   end
 
-  scenario 'Data available to the Google Tag Manage dataLayer' do
+  scenario 'Location search available to the Google Tag Manage dataLayer' do
+    visit '/locations?postcode=abc+123'
+
+    expect(data_layer).to include('postcodeValid' => false)
+  end
+
+  scenario 'Location Data available to the Google Tag Manage dataLayer' do
     visit '/locations/london'
 
     expect(data_layer).to include('locationId' => 'london')
