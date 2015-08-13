@@ -8,12 +8,13 @@ class LocationsController < ApplicationController
   def index
     return render :search unless @postcode.present?
 
-    @locations = locations.map do |location|
-      LocationSearchResultDecorator.new(location)
+    @locations = begin
+      Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT).map do |location|
+        LocationSearchResultDecorator.new(location)
+      end
+    rescue Geocoder::InvalidPostcode
+      render :invalid_postcode
     end
-
-  rescue Geocoder::InvalidPostcode
-    render :invalid_postcode
   end
 
   def show
@@ -21,21 +22,17 @@ class LocationsController < ApplicationController
 
     fail(ActionController::RoutingError, 'Location Not Found') unless location
 
-    booking_location = if location.booking_location_id.present?
-                         Locations.find(location.booking_location_id)
-                       end
+    booking_location = Locations.find(location.booking_location_id) if location.booking_location_id.present?
+    nearest_locations = Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT) rescue nil
     twilio_number = Switchboard.lookup(params[:id])
 
     @location = LocationDecorator.new(location,
                                       booking_location: booking_location,
+                                      nearest_locations: nearest_locations,
                                       twilio_number: twilio_number)
   end
 
   private
-
-  def locations
-    Locations.nearest_to_postcode(@postcode, limit: 5)
-  end
 
   def set_breadcrumbs
     breadcrumb Breadcrumb.book_an_appointment

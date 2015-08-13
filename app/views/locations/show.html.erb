@@ -1,6 +1,23 @@
 <% content_for(:page_title, "#{@location.name} - Pension Wise") %>
 <% content_for(:meta_description, "Find out the address, booking hours and how to book a Pension Wise appointment at #{@location.name} Citizens Advice") %>
 
+<% content_for(:data_layer) do %>
+  <script>
+    dataLayer = [{
+      <% if @location.distance.present? %>
+        'distance': '<%= @location.distance %>',
+      <% end %>
+      <% if @location.position.present? %>
+        'position': '<%= @location.position %>',
+      <% end %>
+      <% if @postcode.present? %>
+        'postcode': '<%= @postcode.squish.upcase %>',
+      <% end %>
+      'locationId': '<%= @location.id %>'
+    }];
+  </script>
+<% end %>
+
 <% if @postcode.present? %>
   <%= link_to 'Back to results', locations_path(postcode: @postcode), class: %w(link-back t-back-to-results) %>
 <% end %>

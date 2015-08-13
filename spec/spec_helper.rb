@@ -29,6 +29,10 @@ RSpec.configure do |config|
 end
 
 VCR.configure do |config|
+  config.cassette_library_dir = 'spec/cassettes'
+  config.configure_rspec_metadata!
+  config.hook_into :webmock
+
   config.ignore_request do |request|
     # Don't mock the call that Poltergeist polls while waiting for
     # PhantomJS to load (http://localhost:<random port>/__identify__)
