@@ -1,5 +1,5 @@
 class LocationsController < ApplicationController
-  layout 'locations'
+  NEAREST_LIMIT = 5
 
   before_action :set_breadcrumbs
   before_action :set_postcode
