@@ -123,3 +123,13 @@ end
 Then(/^there are no search results to return to$/) do
   expect(Pages::Location.new).to_not have_back_to_results
 end
+
+Then(/^I am provided with next steps$/) do
+  page = Pages::Location.new
+
+  expect(page.link_promo_items.map(&:text))
+    .to eq(['What you can do with your pension pot',
+            '6 steps you need to take',
+            'Know your pension type',
+            'Tax you pay on your pension'])
+end
