@@ -58,3 +58,7 @@ Feature: Guides
   Scenario: Navigate directly to each option from the options guide
     When I visit the pension-pot-options guide
     Then I can navigate to each option available to me
+
+  Scenario: How to book guide
+    When I visit the book guide
+    Then I can navigate to content related to booking

@@ -68,6 +68,14 @@ Then(/^I can navigate to related content$/) do
             'Tax you pay on your pension'])
 end
 
+Then(/^I can navigate to content related to booking$/) do
+  expect(@guide.link_promo_items.map(&:text))
+    .to eq(['What you can do with your pension pot',
+            '6 steps you need to take',
+            'Know your pension type',
+            'Tax you pay on your pension'])
+end
+
 Then(/^I can navigate to each option available to me$/) do
   expect(@guide.journey_subnav_steps.map(&:text))
     .to eq(['Leave pot untouched',

@@ -20,11 +20,7 @@ class GuidesController < ApplicationController
 
   def show
     @guide = decorate(find(params[:id]))
-    @related_guides = decorate(if journey_navigation.active?
-                                 journey_related_guides
-                               else
-                                 non_journey_related_guides
-                               end)
+    @related_guides = decorate(related_guides)
 
     expires_in Rails.application.config.cache_max_age, public: true
   end
@@ -47,13 +43,22 @@ class GuidesController < ApplicationController
     end
   end
 
-  def non_journey_related_guides
-    @related_guides ||= begin
-      ids = NON_JOURNEY_RELATED_GUIDE_IDS
-      ids.reject { |id| id == 'appointments' } if params[:id] == 'book'
+  def related_guides
+    related_guides = if journey_navigation.active?
+                       journey_related_guides
+                     else
+                       non_journey_related_guides
+                     end
 
-      guide_repository.find_all(*ids)
+    if params[:id] == 'book'
+      related_guides.reject! { |guide| guide.id == 'appointments' }
     end
+
+    related_guides
+  end
+
+  def non_journey_related_guides
+    @related_guides ||= guide_repository.find_all(*NON_JOURNEY_RELATED_GUIDE_IDS)
   end
 
   def journey_related_guides
