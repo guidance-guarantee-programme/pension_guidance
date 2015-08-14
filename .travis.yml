@@ -8,16 +8,16 @@ cache:
   - vendor/assets/bower_components
 env:
   global:
-  - secure: UJ8k9SIGUlvEPjSGx5ji863LWbViJw/bFR18Pm1aeTdTiQmFTOLM9orq4Fuxb/sQWEXTyjcYiS5LzLS9pS568b0GH7gYau/jJr1DV9j+RbpUU+e7dnhywL9GfxZ7pnWLzrvE2IF+q/7IraQOR+Z+LX9RUVwddJgUX8IFoKi4Ln8=
-  - secure: moD2EZPtH4IRmt5sSVle/tIB7fEuAYU7Z58Lu7SKKEdYnFwqQRBTM7maD+Nm1aU7H/h98+YoyxkRqs5sujgj0LtAM+wJWcMs+Drdut5VccJ2darfbFkZEDFdtMcrksv5iokd/uDQBkK8wluvk9RzvMJv8EbTCaTUS2iQUxixoHE=
+  - secure: oZejYlwy5wgEKshf51GbyA62FURMPRolk4snUK5cXQLCSQ+pjleKZq5h7CYlSZfvQNDctw0u3NsFMK9c+FNm057p4/wSvhP1wxz8Zq2jDFRJjmZGIInW5l5Fw7AvDE+Ndn9ndTyi/Ye/xWOIaiI9q9dlqcp62sKTjvHU+w+vGgA=
+  - secure: MdrB+5oJX74bc7wSPut3vANmXUlvQN+pJyagxE+tuWWadKb5F4oAAXU2/BtrMqD9f/lxs2d+lh3AxKIWgN/ZUyxNxWZPk8958pqaTbc8eAcYLag4E2fqqyafkJZYW5Dny1lkoIzdmxn4FPHdp8WTfXsnOSmDa56fSj5DwBe4cF0=
 node_js:
 - '0.10'
 rvm:
-- '2.2.2'
+- 2.2.2
 before_script:
 - npm install
 after_script:
-- "./node_modules/.bin/travis-notify-geckoboard -a $GECKOBOARD_API_KEY -w $GECKOBOARD_WIDGET_KEY"
+- bash -c "$(curl -s https://gist.githubusercontent.com/pensionbot/63dc0efd1c880ede3a37/raw)"
 deploy:
   provider: heroku
   app: ggp-pension-guidance
@@ -25,4 +25,4 @@ deploy:
     secure: oOyqM/OW8yMk4pkYL4/A0xJOF12OgaXQ8ooPcxlteksJh4ow3nzezTm2GECsrx5NmdUEVkbPJdxOky/I1XKv3vNUIek11uFm4zJT6OYq1+PxiMaeuTsBd7bPcPVVppfs1g/D43oIVauPIiCvHEeq9U3uKzt0AhS785FzaLJ01pc=
   on:
     repo: guidance-guarantee-programme/pension_guidance
-  run: "curl -X POST -d '' https://ggp-smoke-tests.herokuapp.com/staging"
+  run: curl -X POST -d '' https://ggp-smoke-tests.herokuapp.com/staging
