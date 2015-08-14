@@ -22,16 +22,14 @@ class LocationDecorator < SimpleDelegator
     _booking_location.nil? ? nil : _booking_location.name
   end
 
-  def position
-    return unless index.present?
+  def search_context
+    return unless nearest_locations.present?
 
-    index + 1
-  end
+    index = nearest_locations.index { |location| location.id == id }
+    position = index + 1
+    distance = format('%.2f', nearest_locations[index].distance)
 
-  def distance
-    return unless index.present?
-
-    format('%.2f', nearest_locations[index].distance)
+    LocationSearchContext.new(position: position, distance: distance)
   end
 
   private
@@ -40,11 +38,5 @@ class LocationDecorator < SimpleDelegator
 
   def formated_twilio_number
     Phoner::Phone.parse(twilio_number).format('%A %n')
-  end
-
-  def index
-    return unless nearest_locations.present?
-
-    @index ||= nearest_locations.index { |location| location.id == id }
   end
 end

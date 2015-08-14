@@ -4,11 +4,9 @@
 <% content_for(:data_layer) do %>
   <script>
     dataLayer = [{
-      <% if @location.distance.present? %>
-        'distance': '<%= @location.distance %>',
-      <% end %>
-      <% if @location.position.present? %>
-        'position': '<%= @location.position %>',
+      <% if @location.search_context.present? %>
+        'distance': '<%= @location.search_context.distance %>',
+        'position': '<%= @location.search_context.position %>',
       <% end %>
       <% if @postcode.present? %>
         'postcode': '<%= @postcode.squish.upcase %>',

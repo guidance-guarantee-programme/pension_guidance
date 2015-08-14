@@ -26,8 +26,7 @@ RSpec.describe LocationDecorator do
     specify { expect(decorator.phone).to eq(phone) }
     specify { expect(decorator.hours).to eq(hours) }
     specify { expect(decorator.booking_location).to be_nil }
-    specify { expect(decorator.position).to be_nil }
-    specify { expect(decorator.distance).to be_nil }
+    specify { expect(decorator.search_context).to be_nil }
 
     context 'and we are proxying their phone number through twilio' do
       subject(:decorator) { described_class.new(location, twilio_number: twilio_number) }
@@ -45,8 +44,7 @@ RSpec.describe LocationDecorator do
     specify { expect(decorator.hours).to eq(booking_location_hours) }
     specify { expect(decorator.booking_location).to eq(booking_location_name) }
 
-    specify { expect(decorator.position).to be_nil }
-    specify { expect(decorator.distance).to be_nil }
+    specify { expect(decorator.search_context).to be_nil }
 
     context 'and we are proxying their phone number through twilio' do
       subject(:decorator) do
@@ -63,7 +61,7 @@ RSpec.describe LocationDecorator do
 
     let(:nearest_locations) { [double(id: double), double(id: id, distance: 10.1)] }
 
-    specify { expect(decorator.position).to eq(2) }
-    specify { expect(decorator.distance).to eq('10.10') }
+    specify { expect(decorator.search_context.position).to eq(2) }
+    specify { expect(decorator.search_context.distance).to eq('10.10') }
   end
 end
