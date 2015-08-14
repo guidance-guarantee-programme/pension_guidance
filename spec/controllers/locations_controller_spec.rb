@@ -1,7 +1,7 @@
 RSpec.describe LocationsController, type: :controller do
   describe 'GET index' do
     before do
-      allow(Locations).to receive(:nearest_to_postcode).and_return([])
+      allow(Locations).to receive(:nearest_to_postcode).and_return([double, double])
     end
 
     specify 'without a postcode param' do

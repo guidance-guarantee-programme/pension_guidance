@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/sw1a1aa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.45.3
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Mon, 10 Aug 2015 14:57:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '738'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Etag:
+      - W/"2e2-353a18cd"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"result":{"postcode":"SW1A 1AA","quality":1,"eastings":529090,"northings":179645,"country":"England","nhs_ha":"London","longitude":-0.141587597876975,"latitude":51.5010091564599,"parliamentary_constituency":"Cities
+        of London and Westminster","european_electoral_region":"London","primary_care_trust":"Westminster","region":"London","lsoa":"Westminster
+        018C","msoa":"Westminster 018","nuts":"St James''s","incode":"1AA","outcode":"SW1A","admin_district":"Westminster","parish":"Westminster,
+        unparished area","admin_county":null,"admin_ward":"St James''s","ccg":"NHS
+        Central London (Westminster)","codes":{"admin_district":"E09000033","admin_county":"E99999999","admin_ward":"E05000644","parish":"E43000236","ccg":"E38000031"}}}'
+    http_version:
+  recorded_at: Mon, 10 Aug 2015 14:57:50 GMT
+recorded_with: VCR 2.9.3
