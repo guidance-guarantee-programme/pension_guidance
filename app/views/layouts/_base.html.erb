@@ -9,6 +9,9 @@
   <% if content_for?(:meta_description) %>
     <meta name="description" content="<%= content_for(:meta_description) %>">
   <% end %>
+  
+  <%# Tell IE11+ there is no "browserconfig.xml" %>
+  <meta name="msapplication-config" content="none">
 <% end %>
 
 <% content_for :body_start do %>
