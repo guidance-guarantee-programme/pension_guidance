@@ -131,6 +131,5 @@ Then(/^I am provided with next steps$/) do
     .to eq(['What you can do with your pension pot',
             '6 steps you need to take',
             'Know your pension type',
-            'Tax you pay on your pension',
-            'How to avoid a pension scam'])
+            'Tax you pay on your pension'])
 end
