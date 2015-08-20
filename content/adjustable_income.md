@@ -58,7 +58,7 @@ You can [leave your pot to someone](/when-you-die) when you die but they may hav
 
 ## Your next steps
 
-If you’re interested in taking your money flexibly you can:
+If you’re interested in getting an adjustable income you can:
 
 - check with your current provider if they offer the option and what they charge - if they don’t offer it, you can transfer your pot but you might be charged
 - check if your pot has any special arrangements attached to it that could mean you get a better deal, eg a guaranteed value at a certain time
