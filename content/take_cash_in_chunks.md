@@ -27,6 +27,8 @@ Any cash your provider pays you will have the [tax owed](/tax) already taken off
 
 Taking a large sum of cash from your pension pot could also affect [your entitlement to any benefits](/benefits).
 
+Pension providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
+
 ## Watch out for higher tax
 
 It’s important to calculate how much tax you might pay if you want to take your pension pot as cash.
