@@ -1,0 +1,44 @@
+.player-container {
+  @include media-player;
+  margin: 0 0 2em;
+
+  .video {
+    clear: both;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .control-bar {
+    .player-controls {
+      .play {
+        background-image: image-url("player-icon-play.png");
+      }
+
+      .pause {
+        background-image: image-url("player-icon-pause.png");
+      }
+
+      .rewind {
+        background-image: image-url("player-icon-rewind.png");
+      }
+
+      .forward {
+        background-image: image-url("player-icon-forward.png");
+      }
+    }
+  }
+}
