@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "govuk_elements": "https://github.com/alphagov/govuk_elements.git#7e60d575939e36b2788d9b8ba8876aae7509d559",
-    "jquery": "~1.11.2"
+    "jquery": "~1.11.2",
+    "jquery-ui": "~1.11.2"
   }
 }
