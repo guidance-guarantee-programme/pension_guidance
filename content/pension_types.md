@@ -29,7 +29,7 @@ These include:
 
 ## Final salary or career average (defined benefit)
 
-This is always a type of workplace pension. These pensions are more uncommon. They give you an income based on your salary, length of service and a calculation made under the rules of your pension scheme.
+This is always a type of workplace pension. They give you an income based on your salary, length of service and a calculation made under the rules of your pension scheme.
 
 The official term for these pension types is ‘defined benefit’.
 
