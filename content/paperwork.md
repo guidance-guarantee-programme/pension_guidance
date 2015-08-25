@@ -33,7 +33,7 @@ your pension type is likely to be final salary or career average (defined benefi
 
 ^You can get help with final salary and career average pensions at [The Pensions Advisory Service](www.pensionsadvisoryservice.org.uk)^
 
-### Tranfer Value
+### Transfer Value
 Your statement will also normally show the ‘transfer value’ of your pot. 
 This is the amount you would get if you switched provider or cashed in your whole pot.
 
@@ -64,7 +64,7 @@ Look at the transfer value to see if your pension has an early retirement penalt
 it’s likely your provider will charge you for taking your money early. If the transfer value is the same as your pot value, 
 you don’t have a penalty.
 
-You can also check your your ‘wake-up’ pack - you get this from your pension provider between 4 and 6 months before your 
+You can also check your ‘wake-up’ pack - you get this from your pension provider between 4 and 6 months before your
 agreed pension age. This pack may contain information on any special arrangements attached to your pension.
 
 You can also check your original pension documents from when you started the pension.
