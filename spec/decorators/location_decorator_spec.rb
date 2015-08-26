@@ -55,13 +55,4 @@ RSpec.describe LocationDecorator do
       specify { expect(decorator.phone).to eq(formated_twilio_number) }
     end
   end
-
-  context 'with nearest locations' do
-    subject(:decorator) { described_class.new(location, nearest_locations: nearest_locations) }
-
-    let(:nearest_locations) { [double(id: double), double(id: id, distance: 10.1)] }
-
-    specify { expect(decorator.search_context.position).to eq(2) }
-    specify { expect(decorator.search_context.distance).to eq('10.10') }
-  end
 end
