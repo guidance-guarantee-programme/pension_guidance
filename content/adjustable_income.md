@@ -47,7 +47,7 @@ If the pension provider your fund is with goes bust you’ll be covered by the [
 ## Continue to pay in
 You could still pay into other pots up to a limit of £40,000 a year. This includes tax relief of 20%.
 
-Once you start taking an income from your flexi-acess fund this allowance goes down to £10,000 a year. It still includes your tax relief. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
+Once you start taking an income from your flexi-access fund this allowance goes down to £10,000 a year. It still includes your tax relief. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 
 You can also pay into your flexi-access fund but you won’t get tax relief on these payments.
 
