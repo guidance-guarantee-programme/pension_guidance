@@ -37,7 +37,7 @@ $E
 You have a pot of £80,000 and take a tax-free lump sum of £20,000. This leaves you with £60,000 to invest into flexi-access. You get an income of £3,000 a year from your fund. If you pay 20% tax on this your provider pays you £2,400.
 $E
 
-If you take the 25% tax-free lump sum, under current pension rules you must buy your flexi-access product within 6 months or use one the [other options](/pension-pot-options)
+If you take the 25% tax-free lump sum, under current pension rules you must buy your flexi-access product within 6 months or use one the [other options](/pension-pot-options).
 
 Alternatively, you can move your pot gradually into flexi-access - you don’t have to move it all at once. Each time you move an amount you can take 25% tax free.
 
