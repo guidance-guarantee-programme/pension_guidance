@@ -30,6 +30,7 @@ RSpec.describe 'locations journey breadcrumbs', type: :controller do
 
     before do
       allow(Locations).to receive(:find).with(location_id).and_return(location)
+      allow(CreateLocationDecorator).to receive(:build)
     end
 
     context 'find a face-to-face appointment location' do
