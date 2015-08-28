@@ -3,35 +3,36 @@
 //= require jquery-ui/ui/slider.js
 //= require jquery/jquery.player.min.js
 
-(function ($) {
+(function($) {
     'use strict';
 
     var mediaPlayer = {
-        init: function () {
+        init: function() {
 
             // Find all links to videos on youtube
-            var $yt_links = $("a[href*='https://www.youtube.com/watch']");
+            var $ytLinks = $('a[href*="https://www.youtube.com/watch"]');
 
             // Create players for our youtube links
-            $.each($yt_links, function (i) {
+            $.each($ytLinks, function(i) {
                 var $holder = $('<span />');
                 $(this).parent().replaceWith($holder);
 
                 // Find the captions file if it exists
-                var $mycaptions = $(this).siblings('.captions');
+                var $captionLink = $(this).siblings('.captions');
 
                 // Work out if we have captions or not
-                var captionsf = $($mycaptions).length > 0 ? $($mycaptions).attr('href') : null;
+                var captionFile = $($captionLink).length > 0 ? $($captionLink).attr('href') : null;
 
                 // Ensure that we extract the last part of the youtube link (the video id)
                 // and pass it to the player() method
-                var link = $(this).attr('href').split("=")[1];
+                var link = $(this).attr('href').split('=')[1];
 
                 // Initialise the player
                 $holder.player({
                     id: 'yt' + i,
                     media: link,
-                    captions: captionsf
+                    captions: captionFile,
+                    captionsOn: false
                 });
             });
 
