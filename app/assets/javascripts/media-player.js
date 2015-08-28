@@ -1,6 +1,7 @@
-//= require jquery-ui/ui/widget.js
-//= require jquery-ui/ui/mouse.js
-//= require jquery-ui/ui/slider.js
+//= require jquery-ui/ui/jquery.ui.core.js
+//= require jquery-ui/ui/jquery.ui.widget.js
+//= require jquery-ui/ui/jquery.ui.mouse.js
+//= require jquery-ui/ui/jquery.ui.slider.js
 //= require jquery/jquery.player.min.js
 
 (function($) {
