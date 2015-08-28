@@ -17,4 +17,18 @@ begin
 rescue LoadError
 end
 
+Rake::Task['spec:javascript'].clear
+
+namespace :spec do
+  desc 'Run the code examples in spec/javascripts with PhantomJS'
+  task javascript: [:environment] do
+    unless Rails.env.test?
+      system('RAILS_ENV=test bundle exec rake spec:javascript')
+      next
+    end
+    require 'jasmine_rails/runner'
+    JasmineRails::Runner.run ENV['SPEC'], ENV.fetch('REPORTERS', 'console')
+  end
+end
+
 task default: %i(analyse_javascript spec:javascript)
