@@ -278,8 +278,8 @@ DEPENDENCIES
   canonical-rails
   cucumber-rails
   draper
-  excon
   fakeredis
+  faraday
   faraday-conductivity
   faraday_middleware
   foreman
