@@ -8,16 +8,18 @@ description: You can cash in your whole pension pot - 75% of that money is taxab
 # Taking your whole pot in one go
 
 {::options parse_block_html="false" /}
-<div class="player-container">
-  <a href="https://www.youtube.com/watch?v=a31ebhd_UrU">
-    Watch our video about taking your whole pot in one go
-  </a>
-  <a class="captions" href="/captions/take-whole-pot.xml" style="display:none;">Captions</a>
-</div>
-
-<figcaption>
-  <p>Watch Alistair, one of Pension Wise's pension guidance specialists,  explain a bit about taking your whole pot in one go.</p>
-
+<div class="video">
+  <figure>
+    <div class="player-container">
+      <a href="https://www.youtube.com/watch?v=a31ebhd_UrU">
+        Watch our video about taking your whole pot in one go
+      </a>
+      <a class="captions" href="/captions/take-whole-pot.xml" style="display:none;">Captions</a>
+    </div>
+    <figcaption>
+      Pension Wise guidance specialist Alistair talks about the basics of taking your whole pot in one go and what you can expect from an appointment.
+    </figcaption>
+  </figure>
   <details>
     <summary><span class="summary">View transcript</span></summary>
     <div class="panel-indent">
@@ -35,7 +37,7 @@ description: You can cash in your whole pension pot - 75% of that money is taxab
       </p>
     </div>
   </details>
-</figcaption>
+</div>
 {::options parse_block_html="true" /}
 
 You can take your whole pot as cash in one go - 25% is tax-free, the remaining 75% is taxable.

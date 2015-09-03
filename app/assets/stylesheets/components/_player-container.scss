@@ -1,6 +1,6 @@
 .player-container {
   @include media-player;
-  margin: 0 0 2em;
+  margin: 0;
 
   .video {
     clear: both;
