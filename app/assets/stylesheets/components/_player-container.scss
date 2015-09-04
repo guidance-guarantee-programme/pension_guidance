@@ -45,15 +45,20 @@
       }
 
       .captions {
-        position: absolute;
-        bottom: 0;
-        left: 120px;
-        height: 40px;
-        width: 60px;
-        padding-top: 1px;
-        font-size: 14px;
-        line-height: 40px;
-        text-align: center;
+        display: none;
+
+        @include media(tablet) {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 120px;
+          height: 40px;
+          width: 60px;
+          padding-top: 1px;
+          font-size: 14px;
+          line-height: 40px;
+          text-align: center;
+        }
       }
     }
   }
