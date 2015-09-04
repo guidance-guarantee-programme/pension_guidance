@@ -24,16 +24,16 @@ description: You can cash in your whole pension pot - 75% of that money is taxab
     <summary><span class="summary">View transcript</span></summary>
     <div class="panel-indent">
       <p>
-        One of the new things you can do with your pension is to cash it all in one go
+        One of the new things you can do with your pension is to cash it all in one go.
       </p>
       <p>
-        Normally a quarter of your pot is tax-free but it’s really important to remember that the other three quarters of your pot is subject to tax
+        Normally a quarter of your pot is tax-free but it’s really important to remember that the other three quarters of your pot is subject to tax.
       </p>
       <p>
-        It’s also important to think about how will you live throughout retirement if you take this option
+        It’s also important to think about how will you live throughout retirement if you take this option.
       </p>
       <p>
-        If you’d like to hear more about how this applies to you, book your own free Pension Wise appointment
+        If you’d like to hear more about how this applies to you, book your own free Pension Wise appointment.
       </p>
     </div>
   </details>
