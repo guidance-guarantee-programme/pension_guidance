@@ -21,7 +21,7 @@ description: You can cash in your whole pension pot - 75% of that money is taxab
     </figcaption>
   </figure>
   <details>
-    <summary><span class="summary">View transcript</span></summary>
+    <summary><span class="summary" id="view-transcript-yt0">View transcript</span></summary>
     <div class="panel-indent">
       <p>
         One of the new things you can do with your pension is to cash it all in one go.
