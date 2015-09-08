@@ -3,6 +3,10 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
                                                          'govuk_elements', 'public', 'sass')
 
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
+                                                         'govuk_elements', 'govuk', 'public',
+                                                         'javascripts', 'vendor')
+
 Rails.application.config.assets.paths.unshift Rails.root.join('vendor', 'assets', 'bower_components',
                                                               'govuk_elements', 'govuk', 'public', 'images')
 
@@ -19,4 +23,5 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   pensions-guidance-ie7.css
                                                   pensions-guidance-ie8.css
                                                   pensions-guidance.css
-                                                  styleguide.css )
+                                                  styleguide.css
+                                                  video.js )

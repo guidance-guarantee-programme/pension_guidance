@@ -57,5 +57,5 @@
   // allow object keys to be referenced by model['key'] as well as model.key
   "sub": true,
 
-  "predef": ["PWPG", "ga", "jasmine", "spyOn", "loadFixtures", "before", "after", "beforeEach", "afterEach", "it", "xit", "describe", "xdescribe", "expect"]
+  "predef": ["dataLayer", "PWPG", "ga", "jasmine", "spyOn", "loadFixtures", "before", "after", "beforeEach", "afterEach", "it", "xit", "describe", "xdescribe", "expect"]
 }

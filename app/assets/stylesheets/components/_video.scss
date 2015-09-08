@@ -1,0 +1,11 @@
+.video {
+  margin-bottom: 2em;
+
+  figcaption {
+    @include core-16;
+    background: $color-video-figcaption-bg;
+    padding: 10px;
+    border-bottom: 1px solid $color-video-figcaption-border;
+    margin-bottom: .5em;
+  }
+}
