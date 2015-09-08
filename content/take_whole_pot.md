@@ -1,6 +1,7 @@
 ---
 label: Take your whole pot
 description: You can cash in your whole pension pot - 75% of that money is taxable.
+experiment: WtblVh6mT5eHmQY7QPWtOg
 ---
 
 <div class="circle circle--m circle--take-cash"></div>
@@ -8,10 +9,10 @@ description: You can cash in your whole pension pot - 75% of that money is taxab
 # Taking your whole pot in one go
 
 {::options parse_block_html="false" /}
-<div class="video">
+<div class="video js-video">
   <figure>
     <div class="player-container">
-      <a href="https://www.youtube.com/watch?v=a31ebhd_UrU">
+      <a href="https://www.youtube.com/watch?v=VSfEUsMJY1I">
         Watch our video about taking your whole pot in one go
       </a>
       <a class="captions" href="/captions/take-whole-pot.xml" style="display:none;">Captions</a>

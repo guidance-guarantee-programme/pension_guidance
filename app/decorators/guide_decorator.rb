@@ -1,5 +1,5 @@
 class GuideDecorator < Draper::Decorator
-  delegate :id, :slug, :concise_label, :description
+  delegate :id, :slug, :concise_label, :description, :experiment
 
   def url
     "/#{slug}"
