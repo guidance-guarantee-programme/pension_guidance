@@ -1,7 +1,10 @@
 (function() {
   'use strict';
 
-  function TakeWholePotCalculator() {
+  function TakeWholePotCalculator(income, pot) {
+    this.income = income;
+    this.pot = pot;
+
     this.standardPersonalAllowance = 10600;
     this.personalAllowanceReductionThreshold = 100000;
     this.personalAllowanceReductionRatio = 2;
@@ -109,6 +112,10 @@
       higher: this.round(subjectToHigherRate * this.higherRateTax),
       additional: this.round(subjectToAdditionalRate * this.additionalRateTax)
     };
+  };
+
+  TakeWholePotCalculator.prototype.taxFree = function() {
+    return this.pot * (1 - this.taxablePotPortion);
   };
 
   window.PWPG = window.PWPG || {};

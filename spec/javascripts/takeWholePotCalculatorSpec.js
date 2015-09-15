@@ -1,6 +1,30 @@
 describe('WholePotCalculator', function() {
   'use strict';
 
+  //jscs:disable disallowMultipleSpaces
+  var acceptanceScenarios = [{
+    income:            0,
+    pot:               10000,
+    taxFree:           2500,
+  },{
+    income:            10000,
+    pot:               20000,
+    taxFree:           5000,
+  },{
+    income:            30000,
+    pot:               50000,
+    taxFree:           12500,
+  },{
+    income:            0,
+    pot:               160000,
+    taxFree:           40000,
+  },{
+    income:            70000,
+    pot:               250000,
+    taxFree:           62500,
+  }];
+  //jscs:enable disallowMultipleSpaces
+
   describe('#personalAllowanceFor', function() {
     var calculator = new PWPG.takeWholePotCalculator();
 
@@ -184,6 +208,17 @@ describe('WholePotCalculator', function() {
           additional: 6750
         });
       });
+    });
+  });
+
+  describe('#taxFree', function() {
+    it('calculates the tax-free portion of the pot', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.taxFree()).toEqual(scenario.taxFree);
+      }
     });
   });
 });
