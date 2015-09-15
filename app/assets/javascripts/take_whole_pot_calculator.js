@@ -122,6 +122,10 @@
     return this.pot * this.taxablePotPortion;
   };
 
+  TakeWholePotCalculator.prototype.totalIncome = function() {
+    return this.income + this.pot;
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();

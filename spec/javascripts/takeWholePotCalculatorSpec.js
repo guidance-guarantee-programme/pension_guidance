@@ -7,26 +7,31 @@ describe('WholePotCalculator', function() {
     pot:               10000,
     taxFree:           2500,
     taxable:           7500,
+    totalIncome:       10000,
   },{
     income:            10000,
     pot:               20000,
     taxFree:           5000,
     taxable:           15000,
+    totalIncome:       30000,
   },{
     income:            30000,
     pot:               50000,
     taxFree:           12500,
     taxable:           37500,
+    totalIncome:       80000,
   },{
     income:            0,
     pot:               160000,
     taxFree:           40000,
     taxable:           120000,
+    totalIncome:       160000,
   },{
     income:            70000,
     pot:               250000,
     taxFree:           62500,
     taxable:           187500,
+    totalIncome:       320000,
   }];
   //jscs:enable disallowMultipleSpaces
 
@@ -234,6 +239,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.taxable()).toEqual(scenario.taxable);
+      }
+    });
+  });
+
+  describe('#totalIncome', function() {
+    it('calculates the total income for the year', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.totalIncome()).toEqual(scenario.totalIncome);
       }
     });
   });
