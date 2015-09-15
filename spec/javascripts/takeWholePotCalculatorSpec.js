@@ -8,30 +8,35 @@ describe('WholePotCalculator', function() {
     taxFree:           2500,
     taxable:           7500,
     totalIncome:       10000,
+    personalAllowance: 10600,
   },{
     income:            10000,
     pot:               20000,
     taxFree:           5000,
     taxable:           15000,
     totalIncome:       30000,
+    personalAllowance: 10600,
   },{
     income:            30000,
     pot:               50000,
     taxFree:           12500,
     taxable:           37500,
     totalIncome:       80000,
+    personalAllowance: 10600,
   },{
     income:            0,
     pot:               160000,
     taxFree:           40000,
     taxable:           120000,
     totalIncome:       160000,
+    personalAllowance: 600,
   },{
     income:            70000,
     pot:               250000,
     taxFree:           62500,
     taxable:           187500,
     totalIncome:       320000,
+    personalAllowance: 0,
   }];
   //jscs:enable disallowMultipleSpaces
 
@@ -250,6 +255,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.totalIncome()).toEqual(scenario.totalIncome);
+      }
+    });
+  });
+
+  describe('#personalAllowance', function() {
+    it('calculates the personal allowance', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.personalAllowance()).toEqual(scenario.personalAllowance);
       }
     });
   });
