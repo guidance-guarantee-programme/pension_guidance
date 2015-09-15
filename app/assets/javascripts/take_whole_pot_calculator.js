@@ -63,6 +63,54 @@
     };
   };
 
+  TakeWholePotCalculator.prototype.marginalTaxForPotWithIncome = function(pot, income) {
+    var potentiallyTaxablePot,
+        remainingTaxablePot,
+        incomeAboveAllowance,
+        allowance,
+        effectiveAllowance,
+        effectiveBasicRateUpperLimit,
+        effectiveHigherRateUpperLimit,
+        subjectToBasicRate = 0,
+        subjectToHigherRate = 0,
+        subjectToAdditionalRate = 0;
+
+    potentiallyTaxablePot = pot * this.taxablePotPortion;
+    allowance = this.personalAllowanceFor(potentiallyTaxablePot + income);
+
+    // adjust bands according to income
+    incomeAboveAllowance = Math.max(income - allowance, 0);
+    effectiveAllowance = Math.max(allowance - income, 0);
+    effectiveBasicRateUpperLimit = Math.max(this.basicRateUpperLimit - incomeAboveAllowance, 0);
+    effectiveHigherRateUpperLimit = Math.max(this.higherRateUpperLimit - incomeAboveAllowance, 0);
+
+    remainingTaxablePot = potentiallyTaxablePot;
+
+    // personal allowance
+    if (remainingTaxablePot <= effectiveAllowance) {
+      remainingTaxablePot = 0;
+    } else {
+      remainingTaxablePot = Math.max(remainingTaxablePot - effectiveAllowance, 0);
+    }
+
+    // basic rate
+    subjectToBasicRate = Math.min(remainingTaxablePot, effectiveBasicRateUpperLimit);
+    remainingTaxablePot -= subjectToBasicRate;
+
+    // higher rate
+    subjectToHigherRate = Math.min(remainingTaxablePot, (effectiveHigherRateUpperLimit - effectiveBasicRateUpperLimit));
+    remainingTaxablePot -= subjectToHigherRate;
+
+    // additional rate
+    subjectToAdditionalRate = remainingTaxablePot;
+
+    return {
+      basic: this.round(subjectToBasicRate * this.basicRateTax),
+      higher: this.round(subjectToHigherRate * this.higherRateTax),
+      additional: this.round(subjectToAdditionalRate * this.additionalRateTax)
+    };
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();

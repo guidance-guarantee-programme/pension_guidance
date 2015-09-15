@@ -76,4 +76,114 @@ describe('WholePotCalculator', function() {
       });
     });
   });
+
+  describe('#marginalTaxForPotWithIncome', function() {
+    var calculator = new PWPG.takeWholePotCalculator();
+
+    describe('when income is 0', function() {
+      describe('and taxable portion of pot is within the personal allowance', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(10000, 0)).toEqual({
+            basic: 0,
+            higher: 0,
+            additional: 0
+          });
+        });
+      });
+
+      describe('and taxable portion of pot is within the basic rate band', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(20000, 0)).toEqual({
+            basic: 880,
+            higher: 0,
+            additional: 0
+          });
+        });
+      });
+
+      describe('and taxable portion of pot is within the higher rate band', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(60000, 0)).toEqual({
+            basic: 6357,
+            higher: 1046,
+            additional: 0
+          });
+        });
+      });
+
+      describe('and taxable portion of pot is within the additional rate band', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(220000, 0)).toEqual({
+            basic: 6357,
+            higher: 47286,
+            additional: 6750
+          });
+        });
+      });
+    });
+
+    describe('when income is within the basic rate band', function() {
+      describe('and taxable portion of pot is within the basic rate band', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(20000, 15000)).toEqual({
+            basic: 3000,
+            higher: 0,
+            additional: 0
+          });
+        });
+      });
+
+      describe('and taxable portion of pot is within the higher rate band', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(40000, 15000)).toEqual({
+            basic: 5477,
+            higher: 1046,
+            additional: 0
+          });
+        });
+      });
+
+      describe('and taxable portion of pot is within the additional rate band', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(200000, 15000)).toEqual({
+            basic: 3357,
+            higher: 47286,
+            additional: 6750
+          });
+        });
+      });
+    });
+
+    describe('when income is within the higher rate band', function() {
+      describe('and taxable portion of pot is within the higher rate band', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(20000, 45000)).toEqual({
+            basic: 0,
+            higher: 6000,
+            additional: 0
+          });
+        });
+      });
+
+      describe('and taxable portion of pot is within the additional rate band', function() {
+        it('calculates the marginal tax', function() {
+          expect(calculator.marginalTaxForPotWithIncome(20000, 160000)).toEqual({
+            basic: 0,
+            higher: 0,
+            additional: 6750
+          });
+        });
+      });
+    });
+
+    describe('when income is within the additional rate band', function() {
+      it('calculates the marginal tax', function() {
+        expect(calculator.marginalTaxForPotWithIncome(20000, 150000)).toEqual({
+          basic: 0,
+          higher: 0,
+          additional: 6750
+        });
+      });
+    });
+  });
 });
