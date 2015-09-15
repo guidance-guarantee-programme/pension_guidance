@@ -6,22 +6,27 @@ describe('WholePotCalculator', function() {
     income:            0,
     pot:               10000,
     taxFree:           2500,
+    taxable:           7500,
   },{
     income:            10000,
     pot:               20000,
     taxFree:           5000,
+    taxable:           15000,
   },{
     income:            30000,
     pot:               50000,
     taxFree:           12500,
+    taxable:           37500,
   },{
     income:            0,
     pot:               160000,
     taxFree:           40000,
+    taxable:           120000,
   },{
     income:            70000,
     pot:               250000,
     taxFree:           62500,
+    taxable:           187500,
   }];
   //jscs:enable disallowMultipleSpaces
 
@@ -218,6 +223,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.taxFree()).toEqual(scenario.taxFree);
+      }
+    });
+  });
+
+  describe('#taxable', function() {
+    it('calculates the taxable portion of the pot', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.taxable()).toEqual(scenario.taxable);
       }
     });
   });

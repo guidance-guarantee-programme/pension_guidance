@@ -118,6 +118,10 @@
     return this.pot * (1 - this.taxablePotPortion);
   };
 
+  TakeWholePotCalculator.prototype.taxable = function() {
+    return this.pot * this.taxablePotPortion;
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();
