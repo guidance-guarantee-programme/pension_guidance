@@ -165,6 +165,17 @@
     return tax;
   };
 
+  TakeWholePotCalculator.prototype.incomeTaxTotal = function() {
+    var tax = 0,
+        incomeTax = this.marginalTaxForIncomeWithAllowance(this.income, this.personalAllowance());
+
+    for (var i in incomeTax) {
+      tax += incomeTax[i];
+    }
+
+    return tax;
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();

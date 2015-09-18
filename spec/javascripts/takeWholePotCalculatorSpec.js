@@ -21,6 +21,7 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    incomeTaxTotal:    0,
     totalTax:          0
   },{
     income:            10000,
@@ -41,6 +42,7 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    incomeTaxTotal:    0,
     totalTax:          2880
   },{
     income:            30000,
@@ -61,6 +63,7 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    incomeTaxTotal:    3880,
     totalTax:          16403
   },{
     income:            0,
@@ -81,6 +84,7 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    incomeTaxTotal:    0,
     totalTax:          41403
   },{
     income:            70000,
@@ -101,6 +105,7 @@ describe('WholePotCalculator', function() {
       higher:          15286,
       additional:      0
     },
+    incomeTaxTotal:    21643,
     totalTax:          102018
   }];
   //jscs:enable disallowMultipleSpaces
@@ -364,6 +369,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.incomeTax()).toEqual(scenario.incomeTax);
+      }
+    });
+  });
+
+  describe('#incomeTaxTotal', function() {
+    it('calculates the total tax on the income', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.incomeTaxTotal()).toEqual(scenario.incomeTaxTotal);
       }
     });
   });
