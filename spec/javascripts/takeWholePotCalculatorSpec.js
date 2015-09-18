@@ -34,6 +34,7 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    potTaxTotal:       0,
     totalTax:          0
   },{
     income:            10000,
@@ -67,6 +68,7 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    potTaxTotal:       2880,
     totalTax:          2880
   },{
     income:            30000,
@@ -100,6 +102,7 @@ describe('WholePotCalculator', function() {
       higher:          10046,
       additional:      0
     },
+    potTaxTotal:       12523,
     totalTax:          16403
   },{
     income:            0,
@@ -133,6 +136,7 @@ describe('WholePotCalculator', function() {
       higher:          35046,
       additional:      0
     },
+    potTaxTotal:       41403,
     totalTax:          41403
   },{
     income:            70000,
@@ -166,6 +170,7 @@ describe('WholePotCalculator', function() {
       higher:          32000,
       additional:      48375
     },
+    potTaxTotal:       80375,
     totalTax:          102018
   }];
   //jscs:enable disallowMultipleSpaces
@@ -462,6 +467,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.potTax()).toEqual(scenario.potTax);
+      }
+    });
+  });
+
+  describe('#potTaxTotal', function() {
+    it('calculates the total tax on the pot', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.potTaxTotal()).toEqual(scenario.potTaxTotal);
       }
     });
   });

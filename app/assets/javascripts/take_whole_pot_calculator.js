@@ -196,6 +196,17 @@
     return tax;
   };
 
+  TakeWholePotCalculator.prototype.potTaxTotal = function() {
+    var tax = 0,
+        incomeTax = this.marginalTaxForPotWithIncome(this.pot, this.income);
+
+    for (var i in incomeTax) {
+      tax += incomeTax[i];
+    }
+
+    return tax;
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();
