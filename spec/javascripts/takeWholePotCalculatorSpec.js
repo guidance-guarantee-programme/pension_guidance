@@ -9,6 +9,7 @@ describe('WholePotCalculator', function() {
     taxable:           7500,
     totalIncome:       10000,
     personalAllowance: 10600,
+    totalTax:          0
   },{
     income:            10000,
     pot:               20000,
@@ -16,6 +17,7 @@ describe('WholePotCalculator', function() {
     taxable:           15000,
     totalIncome:       30000,
     personalAllowance: 10600,
+    totalTax:          2880
   },{
     income:            30000,
     pot:               50000,
@@ -23,6 +25,7 @@ describe('WholePotCalculator', function() {
     taxable:           37500,
     totalIncome:       80000,
     personalAllowance: 10600,
+    totalTax:          16403
   },{
     income:            0,
     pot:               160000,
@@ -30,6 +33,7 @@ describe('WholePotCalculator', function() {
     taxable:           120000,
     totalIncome:       160000,
     personalAllowance: 600,
+    totalTax:          41403
   },{
     income:            70000,
     pot:               250000,
@@ -37,6 +41,7 @@ describe('WholePotCalculator', function() {
     taxable:           187500,
     totalIncome:       320000,
     personalAllowance: 0,
+    totalTax:          102018
   }];
   //jscs:enable disallowMultipleSpaces
 
@@ -266,6 +271,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.personalAllowance()).toEqual(scenario.personalAllowance);
+      }
+    });
+  });
+
+  describe('#totalTax', function() {
+    it('calculates the total tax', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.totalTax()).toEqual(scenario.totalTax);
       }
     });
   });

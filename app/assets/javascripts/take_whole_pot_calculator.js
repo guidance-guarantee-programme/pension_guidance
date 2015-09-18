@@ -130,6 +130,22 @@
     return this.personalAllowanceFor(this.income + this.taxable());
   };
 
+  TakeWholePotCalculator.prototype.totalTax = function() {
+    var tax = 0,
+        incomeTax = this.marginalTaxForIncomeWithAllowance(this.income, this.personalAllowance()),
+        potTax = this.marginalTaxForPotWithIncome(this.pot, this.income);
+
+    for (var i in incomeTax) {
+      tax += incomeTax[i];
+    }
+
+    for (i in potTax) {
+      tax += potTax[i];
+    }
+
+    return tax;
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();
