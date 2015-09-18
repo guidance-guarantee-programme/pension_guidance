@@ -158,6 +158,13 @@
     };
   };
 
+  TakeWholePotCalculator.prototype.incomeTax = function() {
+    var tax = this.marginalTaxForIncomeWithAllowance(this.income, this.personalAllowance());
+    tax['allowance'] = 0;
+
+    return tax;
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();

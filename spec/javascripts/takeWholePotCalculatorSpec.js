@@ -15,6 +15,12 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    incomeTax:         {
+      allowance:       0,
+      basic:           0,
+      higher:          0,
+      additional:      0
+    },
     totalTax:          0
   },{
     income:            10000,
@@ -25,6 +31,12 @@ describe('WholePotCalculator', function() {
     personalAllowance: 10600,
     incomeBands:       {
       allowance:       10000,
+      basic:           0,
+      higher:          0,
+      additional:      0
+    },
+    incomeTax:         {
+      allowance:       0,
       basic:           0,
       higher:          0,
       additional:      0
@@ -43,6 +55,12 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    incomeTax:         {
+      allowance:       0,
+      basic:           3880,
+      higher:          0,
+      additional:      0
+    },
     totalTax:          16403
   },{
     income:            0,
@@ -52,6 +70,12 @@ describe('WholePotCalculator', function() {
     totalIncome:       160000,
     personalAllowance: 600,
     incomeBands:       {
+      allowance:       0,
+      basic:           0,
+      higher:          0,
+      additional:      0
+    },
+    incomeTax:         {
       allowance:       0,
       basic:           0,
       higher:          0,
@@ -69,6 +93,12 @@ describe('WholePotCalculator', function() {
       allowance:       0,
       basic:           31785,
       higher:          38215,
+      additional:      0
+    },
+    incomeTax:         {
+      allowance:       0,
+      basic:           6357,
+      higher:          15286,
       additional:      0
     },
     totalTax:          102018
@@ -323,6 +353,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.incomeBands()).toEqual(scenario.incomeBands);
+      }
+    });
+  });
+
+  describe('#incomeTax', function() {
+    it('calculates the income tax in each of the bands', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.incomeTax()).toEqual(scenario.incomeTax);
       }
     });
   });
