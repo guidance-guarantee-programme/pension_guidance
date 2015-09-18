@@ -28,6 +28,12 @@ describe('WholePotCalculator', function() {
       higher:          0,
       additional:      0
     },
+    potTax:            {
+      allowance:       0,
+      basic:           0,
+      higher:          0,
+      additional:      0
+    },
     totalTax:          0
   },{
     income:            10000,
@@ -52,6 +58,12 @@ describe('WholePotCalculator', function() {
     potBands:          {
       allowance:       600,
       basic:           14400,
+      higher:          0,
+      additional:      0
+    },
+    potTax:            {
+      allowance:       0,
+      basic:           2880,
       higher:          0,
       additional:      0
     },
@@ -82,6 +94,12 @@ describe('WholePotCalculator', function() {
       higher:          25115,
       additional:      0
     },
+    potTax:            {
+      allowance:       0,
+      basic:           2477,
+      higher:          10046,
+      additional:      0
+    },
     totalTax:          16403
   },{
     income:            0,
@@ -107,6 +125,12 @@ describe('WholePotCalculator', function() {
       allowance:       600,
       basic:           31785,
       higher:          87615,
+      additional:      0
+    },
+    potTax:            {
+      allowance:       0,
+      basic:           6357,
+      higher:          35046,
       additional:      0
     },
     totalTax:          41403
@@ -135,6 +159,12 @@ describe('WholePotCalculator', function() {
       basic:           0,
       higher:          80000,
       additional:      107500
+    },
+    potTax:            {
+      allowance:       0,
+      basic:           0,
+      higher:          32000,
+      additional:      48375
     },
     totalTax:          102018
   }];
@@ -421,6 +451,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.potBands()).toEqual(scenario.potBands);
+      }
+    });
+  });
+
+  describe('#potTax', function() {
+    it('calculates the pot tax in each of the bands', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.potTax()).toEqual(scenario.potTax);
       }
     });
   });
