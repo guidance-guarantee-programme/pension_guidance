@@ -146,6 +146,18 @@
     return tax;
   };
 
+  TakeWholePotCalculator.prototype.incomeBands = function() {
+    var tax = this.marginalTaxForIncomeWithAllowance(this.income, this.personalAllowance()),
+        allowance = Math.min(this.income, this.personalAllowance());
+
+    return {
+      allowance: allowance,
+      basic: tax.basic / this.basicRateTax,
+      higher: tax.higher / this.higherRateTax,
+      additional: tax.additional / this.additionalRateTax
+    };
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();

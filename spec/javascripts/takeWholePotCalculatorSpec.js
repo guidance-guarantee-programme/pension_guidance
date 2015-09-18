@@ -9,6 +9,12 @@ describe('WholePotCalculator', function() {
     taxable:           7500,
     totalIncome:       10000,
     personalAllowance: 10600,
+    incomeBands:       {
+      allowance:       0,
+      basic:           0,
+      higher:          0,
+      additional:      0
+    },
     totalTax:          0
   },{
     income:            10000,
@@ -17,6 +23,12 @@ describe('WholePotCalculator', function() {
     taxable:           15000,
     totalIncome:       30000,
     personalAllowance: 10600,
+    incomeBands:       {
+      allowance:       10000,
+      basic:           0,
+      higher:          0,
+      additional:      0
+    },
     totalTax:          2880
   },{
     income:            30000,
@@ -25,6 +37,12 @@ describe('WholePotCalculator', function() {
     taxable:           37500,
     totalIncome:       80000,
     personalAllowance: 10600,
+    incomeBands:       {
+      allowance:       10600,
+      basic:           19400,
+      higher:          0,
+      additional:      0
+    },
     totalTax:          16403
   },{
     income:            0,
@@ -33,6 +51,12 @@ describe('WholePotCalculator', function() {
     taxable:           120000,
     totalIncome:       160000,
     personalAllowance: 600,
+    incomeBands:       {
+      allowance:       0,
+      basic:           0,
+      higher:          0,
+      additional:      0
+    },
     totalTax:          41403
   },{
     income:            70000,
@@ -41,6 +65,12 @@ describe('WholePotCalculator', function() {
     taxable:           187500,
     totalIncome:       320000,
     personalAllowance: 0,
+    incomeBands:       {
+      allowance:       0,
+      basic:           31785,
+      higher:          38215,
+      additional:      0
+    },
     totalTax:          102018
   }];
   //jscs:enable disallowMultipleSpaces
@@ -282,6 +312,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.totalTax()).toEqual(scenario.totalTax);
+      }
+    });
+  });
+
+  describe('#incomeBands', function() {
+    it('calculates the income in each of the tax bands', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.incomeBands()).toEqual(scenario.incomeBands);
       }
     });
   });
