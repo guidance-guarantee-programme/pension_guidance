@@ -126,6 +126,10 @@
     return this.income + this.pot;
   };
 
+  TakeWholePotCalculator.prototype.totalTaxable = function() {
+    return this.income + this.taxable();
+  };
+
   TakeWholePotCalculator.prototype.personalAllowance = function() {
     return this.personalAllowanceFor(this.income + this.taxable());
   };

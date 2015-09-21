@@ -8,6 +8,7 @@ describe('WholePotCalculator', function() {
     taxFree:           2500,
     taxable:           7500,
     totalIncome:       10000,
+    totalTaxable:      7500,
     personalAllowance: 10600,
     incomeBands:       {
       allowance:       0,
@@ -42,6 +43,7 @@ describe('WholePotCalculator', function() {
     taxFree:           5000,
     taxable:           15000,
     totalIncome:       30000,
+    totalTaxable:      25000,
     personalAllowance: 10600,
     incomeBands:       {
       allowance:       10000,
@@ -76,6 +78,7 @@ describe('WholePotCalculator', function() {
     taxFree:           12500,
     taxable:           37500,
     totalIncome:       80000,
+    totalTaxable:      67500,
     personalAllowance: 10600,
     incomeBands:       {
       allowance:       10600,
@@ -110,6 +113,7 @@ describe('WholePotCalculator', function() {
     taxFree:           40000,
     taxable:           120000,
     totalIncome:       160000,
+    totalTaxable:      120000,
     personalAllowance: 600,
     incomeBands:       {
       allowance:       0,
@@ -144,6 +148,7 @@ describe('WholePotCalculator', function() {
     taxFree:           62500,
     taxable:           187500,
     totalIncome:       320000,
+    totalTaxable:      257500,
     personalAllowance: 0,
     incomeBands:       {
       allowance:       0,
@@ -390,6 +395,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.totalIncome()).toEqual(scenario.totalIncome);
+      }
+    });
+  });
+
+  describe('#totalTaxable', function() {
+    it('calculates the total taxable monies for the year', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.totalTaxable()).toEqual(scenario.totalTaxable);
       }
     });
   });
