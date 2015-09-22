@@ -20,8 +20,16 @@ RSpec.describe Geocoder, '.lookup' do
       allow(postcodes_io).to receive(:lookup).with(postcode).and_return(lookup)
     end
 
-    context 'but the lookup fails' do
+    context 'but the lookup is invalid' do
       specify { expect { geocode }.to raise_error(Geocoder::InvalidPostcode) }
+    end
+
+    context 'but the lookup fails' do
+      before do
+        allow(postcodes_io).to receive(:lookup).with(postcode).and_raise('lookup timeout')
+      end
+
+      specify { expect { geocode }.to raise_error(Geocoder::FailedLookup) }
     end
 
     context 'and the lookup is successful' do
