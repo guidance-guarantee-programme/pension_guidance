@@ -211,6 +211,10 @@
     return tax;
   };
 
+  TakeWholePotCalculator.prototype.potNet = function() {
+    return this.pot - this.potTaxTotal();
+  };
+
   window.PWPG = window.PWPG || {};
   window.PWPG.takeWholePotCalculator = TakeWholePotCalculator;
 })();

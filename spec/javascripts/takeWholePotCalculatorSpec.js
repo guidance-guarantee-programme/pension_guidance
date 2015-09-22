@@ -36,6 +36,7 @@ describe('WholePotCalculator', function() {
       additional:      0
     },
     potTaxTotal:       0,
+    potNet:            10000,
     totalTax:          0
   },{
     income:            10000,
@@ -71,6 +72,7 @@ describe('WholePotCalculator', function() {
       additional:      0
     },
     potTaxTotal:       2880,
+    potNet:            17120,
     totalTax:          2880
   },{
     income:            30000,
@@ -106,6 +108,7 @@ describe('WholePotCalculator', function() {
       additional:      0
     },
     potTaxTotal:       12523,
+    potNet:            37477,
     totalTax:          16403
   },{
     income:            0,
@@ -141,6 +144,7 @@ describe('WholePotCalculator', function() {
       additional:      0
     },
     potTaxTotal:       41403,
+    potNet:            118597,
     totalTax:          41403
   },{
     income:            70000,
@@ -176,6 +180,7 @@ describe('WholePotCalculator', function() {
       additional:      48375
     },
     potTaxTotal:       80375,
+    potNet:            169625,
     totalTax:          102018
   }];
   //jscs:enable disallowMultipleSpaces
@@ -494,6 +499,17 @@ describe('WholePotCalculator', function() {
             calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
 
         expect(calculator.potTaxTotal()).toEqual(scenario.potTaxTotal);
+      }
+    });
+  });
+
+  describe('#potNet', function() {
+    it('calculates the after-tax pot amount', function() {
+      for (var i in acceptanceScenarios) {
+        var scenario = acceptanceScenarios[i],
+            calculator = new PWPG.takeWholePotCalculator(scenario.income, scenario.pot);
+
+        expect(calculator.potNet()).toEqual(scenario.potNet);
       }
     });
   });
