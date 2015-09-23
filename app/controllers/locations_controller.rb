@@ -14,6 +14,8 @@ class LocationsController < ApplicationController
       end
     rescue Geocoder::InvalidPostcode
       render :invalid_postcode
+    rescue Geocoder::FailedLookup
+      render :failed_lookup
     end
   end
 

@@ -24,6 +24,14 @@ RSpec.describe LocationsController, type: :controller do
       expect(response).to render_template(:invalid_postcode)
     end
 
+    specify 'with a failed postcode lookup' do
+      allow(Locations).to receive(:nearest_to_postcode).and_raise(Geocoder::FailedLookup)
+
+      get :index, postcode: 'BT7 3AP'
+
+      expect(response).to render_template(:failed_lookup)
+    end
+
     specify 'with a postcode' do
       get :index, postcode: 'BT7 3AP'
 
