@@ -1,0 +1,37 @@
+<a class="link-back" href="/leave-pot-untouched">Back</a>
+
+<div class="pension-tax-calculator">
+  <h2>Work out how much your pot would be worth in the future</h2>
+
+  <form action="/leave-pot-untouched/results" method="get">
+    <div class="leave-pot-untouched-calculator__input">
+      <div class="form-group">
+        <label class="form-label" for="pot">
+          Total value of your pension pot(s)
+        </label>
+        £ <input type="text" id="pot" name="pot" value="<%= @pot %>">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="saving">
+        Pension contribution per month
+        </label>
+        £ <input type="text" id="saving" name="saving" value="<%= @saving %>">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="duration">
+        Years of growth
+        </label>
+        <input type="text" id="duration" name="duration" value="<%= @duration %>">
+      </div>
+
+      <div class="form-group">
+        <input type="submit" class="button" value="Calculate" id="js-calculate">
+      </div>
+    </div>
+  </form>
+
+  <%= render partial: 'results' %>
+
+</div>
