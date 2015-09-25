@@ -8,5 +8,7 @@ class LeavePotUntouchedCalculatorController < ApplicationController
     @interest_rate = 3
 
     @final_pot = LeavePotUntouchedCalculator.new(@pot, @saving, @duration, @interest_rate).pot
+
+    return render partial: 'results' if request.xhr?
   end
 end
