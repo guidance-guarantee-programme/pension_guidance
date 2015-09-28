@@ -3,12 +3,14 @@
 
   var leavePotUntouchedCalculator = {
     init: function() {
-      $('.leave-pot-untouched-calculator form').on('submit', function(event) {
-        event.preventDefault();
+      var $calculator = $('.js-leave-pot-untouched-calculator');
 
+      $calculator.append('<div class="calculator__result" aria-live="polite"></div>');
+
+      $calculator.find('form').on('submit', function(event) {
+        event.preventDefault();
         $.get('/leave-pot-untouched/results', $(this).serialize(), function(data) {
-          $('.leave-pot-untouched-calculator__result').remove();
-          $('.leave-pot-untouched-calculator form').append(data);
+          $('.calculator__result').html(data);
         });
       });
     }
