@@ -39,6 +39,18 @@ RSpec.describe SearchResultsController, type: :controller do
           expect(response).to render_template 'search_results/index_no_results'
         end
       end
+
+      context 'but the lookup fails' do
+        before do
+          allow(searcher).to receive(:call) { fail 'failed lookup' }
+        end
+
+        it 'renders the error page' do
+          get :index, query: query
+
+          expect(response).to render_template 'search_results/index_error'
+        end
+      end
     end
 
     context 'without a search term' do
