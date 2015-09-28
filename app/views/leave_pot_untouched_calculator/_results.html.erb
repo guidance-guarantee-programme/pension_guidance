@@ -1,3 +1,7 @@
 <p class="leave-pot-untouched-calculator__result">
-  Your pot would be worth <%= number_to_currency(@final_pot, unit: '£') %>.
+  Your pot could be worth <%= number_to_currency(@final_pot, unit: '£') %>.
 </p>
+
+<div class="application-notice help-notice">
+  <p>This assumes an investment growth of 3% per year with no administration fee.</p>
+</div>

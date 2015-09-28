@@ -6,41 +6,6 @@ description: You can decide when you take money from your pension pot.
 
 # Leaving your whole pension pot untouched
 
-{::options parse_block_html="false" /}
-<div class="leave-pot-untouched-calculator">
-  <h2>Work out how much your pot would be worth in the future</h2>
-
-  <form action="/leave-pot-untouched/results" method="get">
-    <div class="leave-pot-untouched-calculator__input">
-      <div class="form-group">
-        <label class="form-label" for="pot">
-          Total value of your pension pot(s)
-        </label>
-        £ <input type="text" id="pot" name="pot">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label" for="saving">
-        Pension contribution per month
-        </label>
-        £ <input type="text" id="saving" name="saving">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label" for="duration">
-        Years of growth
-        </label>
-        <input type="text" id="duration" name="duration">
-      </div>
-
-      <div class="form-group">
-        <input type="submit" class="button" value="Calculate" id="js-calculate">
-      </div>
-    </div>
-  </form>
-</div>
-{::options parse_block_html="true" /}
-
 You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the age you agreed with your provider to retire).
 
 You can leave the money invested, eg while you’re working. Your pension pot could grow further and give you a larger amount of money to last for a shorter amount of time.
@@ -56,6 +21,41 @@ Whatever money you leave in your pension pot you can [pass on](/when-you-die) ta
 Your provider may charge you administration fees for managing the fund after your selected retirement age.
 
 As with every investment the value of your pot could go up or down.
+
+{::options parse_block_html="false" /}
+<div class="calculator calculator--in-article js-leave-pot-untouched-calculator">
+  <h2>Estimate how much your pot could be worth in the future</h2>
+
+  <form action="/leave-pot-untouched/results" method="get">
+    <div class="form-group">
+      <label class="form-label" for="pot">
+        Total value of your pension pot(s)
+      </label>
+      <span class="input-label" id="saving-label">£</span>
+      <input aria-describedby="pot-label" type="text" id="pot" name="pot">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="saving">
+      Pension contribution per month
+      </label>
+      <span class="input-label" id="saving-label">£</span>
+      <input aria-describedby="saving-label" type="text" id="saving" name="saving">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="duration">
+      Years of growth
+      </label>
+      <input type="text" id="duration" name="duration">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Calculate" id="btn-calculate-untouched">
+    </div>
+  </form>
+</div>
+{::options parse_block_html="true" /}
 
 ## Your next steps
 
