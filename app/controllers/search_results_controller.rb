@@ -6,10 +6,6 @@ class SearchResultsController < ApplicationController
 
     @search_results = Search::PerformSearch.new(params[:query], page: params[:page]).call
 
-    if @search_results.any?
-      render :index_with_results
-    else
-      render :index_no_results
-    end
+    render @search_results.any? ? :index_with_results : :index_no_results
   end
 end
