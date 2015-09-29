@@ -24,6 +24,10 @@ en:
       document_title: "%{query} - Search"
       page_title_html: Search results<span class="visually-hidden"> for “%{query}”</span>
       body: No results were found. Please try a different search.
+    index_error:
+      document_title: "%{query} - Search"
+      page_title_html: Search results<span class="visually-hidden"> for “%{query}”</span>
+      body: Something went wrong, please try again.
     index_with_results:
       document_title: "%{query} - Search"
       page_title_html: Search results<span class="visually-hidden"> for “%{query}”</span>
