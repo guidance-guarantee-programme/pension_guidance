@@ -11,6 +11,12 @@
         event.preventDefault();
         $.get('/leave-pot-untouched/results', $(this).serialize(), function(data) {
           $('.calculator__result').html(data);
+
+          $('.calculator__result .btn-link').on('click', function(event) {
+            event.preventDefault();
+            $(this).remove();
+            $('.calculator__result .visuallyhidden').removeClass('visuallyhidden');
+          });
         });
       });
     }
