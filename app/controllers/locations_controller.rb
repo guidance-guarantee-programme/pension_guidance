@@ -24,14 +24,9 @@ class LocationsController < ApplicationController
 
     fail(ActionController::RoutingError, 'Location Not Found') unless location
 
-    booking_location = Locations.find(location.booking_location_id) if location.booking_location_id.present?
-    nearest_locations = Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT) rescue nil
-    twilio_number = Switchboard.lookup(params[:id])
-
-    @location = LocationDecorator.new(location,
-                                      booking_location: booking_location,
-                                      nearest_locations: nearest_locations,
-                                      twilio_number: twilio_number)
+    @location = CreateLocationDecorator.build(location: location,
+                                              postcode: @postcode,
+                                              search_limit: NEAREST_LIMIT)
   end
 
   private
