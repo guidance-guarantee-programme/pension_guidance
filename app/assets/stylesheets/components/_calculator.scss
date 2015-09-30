@@ -1,5 +1,13 @@
 .calculator {
   overflow: hidden;
+
+  form {
+    overflow: hidden;
+  }
+}
+
+.calculator__results {
+  overflow: hidden;
 }
 
 .calculator--in-article {

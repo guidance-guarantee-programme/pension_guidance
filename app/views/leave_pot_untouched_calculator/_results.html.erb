@@ -1,7 +1,81 @@
-<p class="leave-pot-untouched-calculator__result">
-  Your pot could be worth <%= number_to_currency(@final_pot, unit: '£') %>.
-</p>
+<p>This table show how your pension pot could grow over time.</p>
 
-<div class="application-notice help-notice">
-  <p>This assumes an investment growth of 3% per year with no administration fee.</p>
-</div>
+<table class="result-table">
+  <thead>
+  <tr>
+    <th scope="col">Years of growth</th>
+    <th scope="col">Pot size</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td scope="row">1</td>
+    <td>£X,XXX.00</td>
+  </tr>
+  <tr>
+    <td scope="row">3</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr>
+    <td scope="row">3</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr>
+    <td scope="row">4</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr>
+    <td scope="row">5</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">6</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">7</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">8</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">9</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">10</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">11</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">12</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">13</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">14</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  <tr class="visuallyhidden">
+    <td scope="row">15</td>
+    <td>£XX,XXX.00</td>
+  </tr>
+  </tbody>
+</table>
+<button class="btn-link"> + Show more</button>
+
+<p>Our estimate is based on the following assumptions:</p>
+<ul>
+  <li>Your contributions attract tax relief at the basic rate of 20%</li>
+  <li>Your pension pot grows at 3% per year</li>
+  <li>Your provider charges an administration fee of 1% per year</li>
+  <li>UK inflation is 1%</li>
+</ul>
