@@ -22,4 +22,143 @@ RSpec.describe TakeWholePotCalculator do
       it { is_expected.to eq(0) }
     end
   end
+
+  describe '.marginal_tax_for_pot_with_income' do
+    let(:pot) { 0 }
+    let(:income) { 0 }
+
+    subject(:tax) { described_class.marginal_tax_for_pot_with_income(pot, income) }
+
+    context 'when income is 0' do
+      describe 'and taxable portion of pot is within the personal allowance' do
+        let(:pot) { 10_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 0,
+            higher: 0,
+            additional: 0
+          )
+        end
+      end
+
+      describe 'and taxable portion of pot is within the basic rate band' do
+        let(:pot) { 20_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 880,
+            higher: 0,
+            additional: 0
+          )
+        end
+      end
+
+      describe 'and taxable portion of pot is within the higher rate band' do
+        let(:pot) { 60_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 6357,
+            higher: 1046,
+            additional: 0
+          )
+        end
+      end
+
+      describe 'and taxable portion of pot is within the additional rate band' do
+        let(:pot) { 220_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 6357,
+            higher: 47_286,
+            additional: 6750
+          )
+        end
+      end
+    end
+
+    context 'when income is within the basic rate band' do
+      let(:income) { 15_000 }
+
+      describe 'and taxable portion of pot is within the basic rate band' do
+        let(:pot) { 20_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 3000,
+            higher: 0,
+            additional: 0
+          )
+        end
+      end
+
+      describe 'and taxable portion of pot is within the higher rate band' do
+        let(:pot) { 40_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 5477,
+            higher: 1046,
+            additional: 0
+          )
+        end
+      end
+
+      describe 'and taxable portion of pot is within the additional rate band' do
+        let(:pot) { 200_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 3357,
+            higher: 47_286,
+            additional: 6750
+          )
+        end
+      end
+    end
+
+    context 'when income is within the higher rate band' do
+      let(:income) { 45_000 }
+
+      describe 'and taxable portion of pot is within the higher rate band' do
+        let(:pot) { 20_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 0,
+            higher: 6000,
+            additional: 0
+          )
+        end
+      end
+
+      describe 'and taxable portion of pot is within the additional rate band' do
+        let(:income) { 160_000 }
+        let(:pot) { 20_000 }
+
+        it do
+          is_expected.to eq(
+            basic: 0,
+            higher: 0,
+            additional: 6750
+          )
+        end
+      end
+    end
+
+    context 'when income is within the additional rate band' do
+      let(:pot) { 20_000 }
+      let(:income) { 150_000 }
+
+      it do
+        is_expected.to eq(
+          basic: 0,
+          higher: 0,
+          additional: 6750
+        )
+      end
+    end
+  end
 end
