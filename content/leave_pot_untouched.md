@@ -38,17 +38,10 @@ Usually the earliest you can start taking money from your pot is 55. Check with 
 
     <div class="form-group">
       <label class="form-label" for="saving">
-      Pension contribution per month
+        How much you could contribute each month
       </label>
       <span class="input-label" id="saving-label">£</span>
       <input aria-describedby="saving-label" type="text" id="saving" name="saving">
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="duration">
-      Years of growth
-      </label>
-      <input type="text" id="duration" name="duration">
     </div>
 
     <div class="form-group">
