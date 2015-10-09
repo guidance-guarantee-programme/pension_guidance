@@ -1,3 +1,6 @@
+// see _govuk-elements.scss for explanation
+$path: false;
+
 .player-container {
   @include media-player;
   margin: 0;
@@ -28,22 +31,6 @@
 
   .control-bar {
     .player-controls {
-      .play {
-        background-image: image-url("player-icon-play.png");
-      }
-
-      .pause {
-        background-image: image-url("player-icon-pause.png");
-      }
-
-      .rewind {
-        background-image: image-url("player-icon-rewind.png");
-      }
-
-      .forward {
-        background-image: image-url("player-icon-forward.png");
-      }
-
       .captions {
         display: none;
 
