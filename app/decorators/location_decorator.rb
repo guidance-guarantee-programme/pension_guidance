@@ -23,13 +23,15 @@ class LocationDecorator < SimpleDelegator
   end
 
   def search_context
-    return unless nearest_locations.present?
+    @search_context ||= begin
+      return unless nearest_locations.present?
 
-    index = nearest_locations.index { |location| location.id == id }
-    position = index + 1
-    distance = format('%.2f', nearest_locations[index].distance)
+      index = nearest_locations.index { |location| location.id == id }
+      position = index + 1
+      distance = format('%.2f', nearest_locations[index].distance)
 
-    LocationSearchContext.new(position: position, distance: distance)
+      LocationSearchContext.new(position: position, distance: distance)
+    end
   end
 
   private
