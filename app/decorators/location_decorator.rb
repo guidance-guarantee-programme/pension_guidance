@@ -27,6 +27,8 @@ class LocationDecorator < SimpleDelegator
       return unless nearest_locations.present?
 
       index = nearest_locations.index { |location| location.id == id }
+      return unless index
+
       position = index + 1
       distance = format('%.2f', nearest_locations[index].distance)
 
