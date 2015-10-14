@@ -1,7 +1,7 @@
 class Switchboard
   class << self
     def lookup(id)
-      return unless base_url
+      return unless connection
 
       response = connection.get("/lookup/#{id}")
       response.body['phone']
@@ -11,12 +11,8 @@ class Switchboard
 
     private
 
-    def base_url
-      ENV['SWITCHBOARD_BASE_URL']
-    end
-
     def connection
-      HTTPConnectionFactory.build(base_url)
+      Registry[:switchboard_connection]
     end
   end
 end
