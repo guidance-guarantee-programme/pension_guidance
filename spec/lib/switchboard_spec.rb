@@ -1,26 +1,24 @@
 require 'webmock/rspec'
 
 RSpec.describe Switchboard, '.lookup' do
+  let(:connection) { nil }
   let(:id) { '123' }
+
+  before do
+    Registry[:switchboard_connection] = connection
+  end
 
   subject(:lookup) { described_class.lookup(id) }
 
-  context 'when the environment variable has not been set' do
+  context 'when the connection does not exist' do
     it { is_expected.to be_nil }
   end
 
-  context 'when the environment variable has been set' do
+  context 'when the connection exists' do
     let(:switchboard_base_url) { 'https://switchboard' }
+    let(:connection) { HTTPConnectionFactory.build(switchboard_base_url) }
     let(:request_url) { "#{switchboard_base_url}/lookup/#{id}" }
     let(:reponse) { '' }
-
-    before do
-      ENV['SWITCHBOARD_BASE_URL'] = switchboard_base_url
-    end
-
-    after do
-      ENV.delete('SWITCHBOARD_BASE_URL')
-    end
 
     context 'and the lookup is not found' do
       before do

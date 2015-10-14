@@ -1,24 +1,18 @@
 class Switchboard
   class << self
     def lookup(id)
-      return unless base_url
+      return unless connection
 
-      response = Excon.new("#{base_url}/lookup/#{id}").get
-      return unless response.status == 200
-
-      begin
-        json = JSON.parse(response.body)
-      rescue JSON::ParserError
-        return
-      end
-
-      json['phone']
+      response = connection.get("/lookup/#{id}")
+      response.body['phone']
+    rescue HTTPConnection::ResourceNotFound, HTTPConnection::ClientError
+      return
     end
 
     private
 
-    def base_url
-      ENV['SWITCHBOARD_BASE_URL']
+    def connection
+      Registry[:switchboard_connection]
     end
   end
 end
