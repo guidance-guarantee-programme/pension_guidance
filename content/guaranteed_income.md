@@ -39,7 +39,7 @@ How much income you get each year from an annuity depends on things like:
 
 You [pay tax on income from an annuity](/tax), just like you do on your salary.  You may also pay administration charges.
 
-If the insurer you bought your annuity with goes bust you’ll be covered for 90% by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/).
+If the insurer you bought your annuity with goes bust the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/) will cover you in full.
 
 ## Your next steps
 
