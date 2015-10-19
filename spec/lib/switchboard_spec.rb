@@ -8,6 +8,10 @@ RSpec.describe Switchboard, '.lookup' do
     Registry[:switchboard_connection] = connection
   end
 
+  after(:all) do
+    Registry[:switchboard_connection] = nil
+  end
+
   subject(:lookup) { described_class.lookup(id) }
 
   context 'when the connection does not exist' do
