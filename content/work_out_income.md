@@ -19,7 +19,7 @@ You’ll most likely have:
 - a pension - this might be one or more pensions from work, pensions you set up yourself, or both
 - the State Pension paid to you by the government
 
-[Check the value of your pension pot](/pension-pot-value) if you don’t know. Call the Future Pension Centre on 0845 600 4274 for a full State Pension statement.
+[Check the value of your pension pot](/pension-pot-value) if you don’t know. Call the Future Pension Centre on 0345 600 4274 for a full State Pension statement.
 
 ###Other income
 
