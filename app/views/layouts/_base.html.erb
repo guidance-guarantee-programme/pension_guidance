@@ -69,7 +69,27 @@
   <%= javascript_include_tag 'application' %>
 
   <% unless content_for?(:disable_userzoom) %>
-    <%= javascript_tag File.read(Rails.root.join('vendor', 'assets', 'userzoom.js')) %>
+    <%= javascript_include_tag 'https://cdn3.userzoom.com/uz.js?cuid=C85E515772DAE311BEDA0022196C4538' %>
+
+    <%# UserZoom intercept %>
+    <script type="text/javascript">
+      //<![CDATA[
+      _uzactions = window._uzactions || [];
+      _uzactions.push(['_setID', 'BF4074301D48E511818F0022196C2B88']);
+      _uzactions.push(['_setSID', 'BE4074301D48E511818F0022196C2B88']);
+      _uzactions.push(['_start']);
+      (function () {
+        var uz = document.createElement('script');
+        uz.type = 'text/javascript';
+        uz.async = true;
+        uz.charset = 'utf-8';
+        uz.src = 'https://cdn4.userzoom.com/trueintent/js/uz_til.js?cuid=C85E515772DAE311BEDA0022196C4538';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(uz, s);
+      })();
+      //]]>
+    </script>
+    <%# End UserZoom intercept %>
   <% end %>
 
   <%= yield :after_script %>
