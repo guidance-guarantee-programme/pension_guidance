@@ -161,4 +161,41 @@ RSpec.describe TakeWholePotCalculator do
       end
     end
   end
+
+  scenarios =
+    [{
+      income:       0,
+      pot:          10_000,
+      pot_tax:      0,
+      pot_received: 10_000
+    }, {
+      income:       10_000,
+      pot:          20_000,
+      pot_tax:      2_880,
+      pot_received: 17_120
+    }, {
+      income:       30_000,
+      pot:          50_000,
+      pot_tax:      12_523,
+      pot_received: 37_477
+    }, {
+      income:       0,
+      pot:          160_000,
+      pot_tax:      41_403,
+      pot_received: 118_597
+    }, {
+      income:       70_000,
+      pot:          250_000,
+      pot_tax:      80_375,
+      pot_received: 169_625
+    }]
+
+  scenarios.each do |scenario|
+    context "with a pot of £#{scenario[:pot]} and an income of £#{scenario[:income]}" do
+      subject(:calculator) { TakeWholePotCalculator.new(scenario[:pot], scenario[:income]) }
+
+      specify { expect(calculator.pot_received).to eq(scenario[:pot_received]) }
+      specify { expect(calculator.pot_tax).to eq(scenario[:pot_tax]) }
+    end
+  end
 end

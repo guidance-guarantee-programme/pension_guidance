@@ -13,6 +13,8 @@ class TakeWholePotCalculator
 
   TAXABLE_POT_PORTION = 0.75
 
+  attr_accessor :pot_received, :pot_tax
+
   def self.personal_allowance_for(income)
     if income <= PERSONAL_ALLOWANCE_REDUCTION_THRESHOLD
       STANDARD_PERSONAL_ALLOWANCE
@@ -65,4 +67,10 @@ class TakeWholePotCalculator
     }
   end
   # rubocop:enable AbcSize, MethodLength
+
+  def initialize(pot, income)
+    tax = self.class.marginal_tax_for_pot_with_income(pot, income)
+    self.pot_tax = tax.values.reduce(:+)
+    self.pot_received = pot - pot_tax
+  end
 end
