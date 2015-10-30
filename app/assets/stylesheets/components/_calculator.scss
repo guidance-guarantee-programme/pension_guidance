@@ -1,0 +1,23 @@
+.calculator {
+  overflow: hidden;
+}
+
+.calculator--in-article {
+  border-top: 1px solid $color-grey-silver-sand;
+  border-bottom: 1px solid $color-grey-silver-sand;
+}
+
+.calculator--take-whole-pot__pension {
+  width: 25%;
+}
+
+.calculator--take-whole-pot__pension-frequency {
+  width: 25%;
+  -webkit-appearance: menulist;
+}
+
+.calculator__result__number {
+  @include bold-24;
+  display: block;
+  margin: .4em .5em .4em 0;
+}

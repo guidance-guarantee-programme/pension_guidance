@@ -31,3 +31,8 @@ en:
     index_with_results:
       document_title: "%{query} - Search"
       page_title_html: Search results<span class="visually-hidden"> for “%{query}”</span>
+
+  number:
+    currency:
+      format:
+        unit: £
