@@ -7,6 +7,8 @@ class TakeWholePotCalculatorController < ApplicationController
     result = TakeWholePotCalculator.new(@pot, total_income)
     @pot_received = result.pot_received
     @pot_tax = result.pot_tax
+
+    return render partial: 'results' if request.xhr?
   end
 
   private

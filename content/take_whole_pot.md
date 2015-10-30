@@ -24,7 +24,7 @@ Adding a large cash sum to your income could mean that you get bumped into a hig
 Adding a large sum of cash to your income could also affect [your entitlement to any benefits](/benefits).
 
 {::options parse_block_html="false" /}
-<div class="calculator calculator--in-article">
+<div class="calculator calculator--in-article js-take-whole-pot-calculator">
   <h2>Estimate how much you would get</h2>
 
   <form action="/take-whole-pot/results#estimate-how-much" method="get">
