@@ -1,0 +1,23 @@
+<p>
+  Based on what you've told us, if you take your whole <%= number_to_currency(@pot) %>
+  pension pot in one go, you could receive:
+
+  <strong class="calculator__result__number"><%= number_to_currency(@pot_received) %></strong>
+
+  after paying:
+
+  <strong class="calculator__result__number"><%= number_to_currency(@pot_tax) %> in tax</strong>
+</p>
+
+<h2>Things to note</h2>
+
+<ol>
+  <li>What you receive includes your 25% tax-free sum</li>
+  <li>To work out how much tax you have to pay, your pension monies are added to your other taxable income for the year</li>
+  <li>How much tax you pay will depend on your individual circumstances</li>
+</ol>
+
+<div class="application-notice help-notice">
+  <p>Pension payments are likely to attract emergency tax. Your provider may reimburse you
+  automatically, otherwise you can claim back the extra tax yourself.</p>
+</div>

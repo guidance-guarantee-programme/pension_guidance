@@ -1,0 +1,43 @@
+<a class="link-back" href="/take-whole-pot">Back to description</a>
+
+<h1>Taking your whole pot in one go</h1>
+
+<div class="calculator">
+  <h2 id="estimate-how-much">Estimate how much you would get</h2>
+
+  <form action="/take-whole-pot/results#estimate-how-much" method="get">
+    <div class="form-group">
+      <label class="form-label" for="pot">
+        Total value of your pension pot(s)
+      </label>
+      £ <input class="form-control" type="text" id="pot" name="pot" value="<%= @pot %>">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="income">
+        Your total other income for the year (before tax)
+        <span class="form-hint">Earnings and income from any savings or benefits.</span>
+      </label>
+      £ <input class="form-control" type="text" id="income" name="income" value="<%= @income %>">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="pension">
+        State pension
+      </label>
+      £ <input class="form-control calculator--take-whole-pot__pension" type="text" id="pension" name="pension" value="<%= @pension %>">
+      <select class="form-control calculator--take-whole-pot__pension-frequency" name="pension_frequency">
+        <option value="weekly" <%= 'selected' if @pension_frequency == 'weekly' %>>Weekly</option>
+        <option value="annually" <%= 'selected' if @pension_frequency == 'annually' %>>Annually</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Calculate" id="js-calculate">
+    </div>
+  </form>
+
+  <%= render partial: 'results' %>
+</div>
+
+<a class="link-back" href="/take-whole-pot">Back to description</a>

@@ -9,15 +9,6 @@ description: You can cash in your whole pension pot - 75% of that money is taxab
 
 You can take your whole pot as cash in one go - 25% is tax-free, the remaining 75% is taxable.
 
-{: .info-notice--take-cash}
-$E **Example**
-Your pot is £60,000.
-You can take £15,000 tax-free.
-The remaining £45,000 is taxable.
-You don’t have any other income.
-**You pay £7,400 in tax on your cash.**
-$E
-
 Any cash your provider pays you will have the [tax owed](/tax) already taken off.
 
 ## Watch out for higher tax
@@ -30,24 +21,49 @@ The cash you take will be added to any other income you have over the tax year. 
 
 Adding a large cash sum to your income could mean that you get bumped into a higher tax rate.
 
-{: .info-notice--take-cash}
-$E
-**Example**
-Your current income for the year is £20,000 and you pay tax at the basic rate of 20%.
-Your pension pot is £60,000.
-You get £15,000 tax free.
-The remaining £45,000 is added to your other income of £20,000.
-Your total income for the year is now £65,000.
-Everything over £31,785 will be taxed at the higher rate of 40%.
-**You’ll pay £15,400 in tax.**
-$E
-
 Adding a large sum of cash to your income could also affect [your entitlement to any benefits](/benefits).
+
+{::options parse_block_html="false" /}
+<div class="calculator calculator--in-article">
+  <h2>Estimate how much you would get</h2>
+
+  <form action="/take-whole-pot/results#estimate-how-much" method="get">
+    <div class="form-group">
+      <label class="form-label" for="pot">
+        Total value of your pension pot(s)
+      </label>
+      £ <input class="form-control" type="text" id="pot" name="pot">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="income">
+        Your total other income for the year (before tax)
+        <span class="form-hint">Earnings and income from any savings or benefits.</span>
+      </label>
+      £ <input class="form-control" type="text" id="income" name="income">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="pension">
+        State pension
+      </label>
+      £ <input class="form-control calculator--take-whole-pot__pension" type="text" id="pension" name="pension">
+      <select class="form-control calculator--take-whole-pot__pension-frequency" name="pension_frequency">
+        <option value="weekly">Weekly</option>
+        <option value="annually">Annually</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Calculate" id="js-calculate">
+    </div>
+  </form>
+</div>
+{::options parse_block_html="true" /}
 
 ## Your next steps
 
 Here are some next steps if you’re interested in taking cash:
 
 - check with your provider if you can take 25% tax free
-- make sure you know [how much tax you’ll pay](/tax) on the remaining 75%
 - if you want to reinvest the money, talk to a [registered financial adviser](http://www.fca.org.uk/register) first
