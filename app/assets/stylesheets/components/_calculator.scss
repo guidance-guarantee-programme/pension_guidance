@@ -7,11 +7,15 @@
   border-bottom: 1px solid $color-grey-silver-sand;
 }
 
-.calculator--take-whole-pot__pension {
+.calculator__field {
+  width: auto;
+}
+
+.calculator__field--small {
   width: 25%;
 }
 
-.calculator--take-whole-pot__pension-frequency {
+.calculator__field--frequency-select {
   width: 25%;
   -webkit-appearance: menulist;
 }
