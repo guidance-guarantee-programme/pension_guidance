@@ -48,5 +48,5 @@ You can also pay into the pot you already take cash from but you won’t get tax
 Here are some next steps if you’re interested in taking cash in chunks:
 
 - ask your current provider if they offer the option and what they charge - if they don’t offer it, you can transfer your pot but you might be charged
-- check if your pot has any special arrangements attached to it that could mean you get a better deal, eg a guaranteed value at a certain time
+- check if your pot has any special arrangements attached to it that could mean you get a better deal, eg a guaranteed annuity rate
 - make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out
