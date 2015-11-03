@@ -32,7 +32,7 @@ Adding a large sum of cash to your income could also affect [your entitlement to
       <label class="form-label" for="pot">
         Total value of your pension pot(s)
       </label>
-      £ <input class="form-control" type="text" id="pot" name="pot">
+      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="0">
     </div>
 
     <div class="form-group">
@@ -40,17 +40,17 @@ Adding a large sum of cash to your income could also affect [your entitlement to
         Your total other income for the year (before tax)
         <span class="form-hint">Earnings and income from any savings or benefits.</span>
       </label>
-      £ <input class="form-control" type="text" id="income" name="income">
+      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="0">
     </div>
 
     <div class="form-group">
       <label class="form-label" for="pension">
         State pension
       </label>
-      £ <input class="form-control calculator--take-whole-pot__pension" type="text" id="pension" name="pension">
-      <select class="form-control calculator--take-whole-pot__pension-frequency" name="pension_frequency">
-        <option value="weekly">Weekly</option>
-        <option value="annually">Annually</option>
+      <span id="pension-a">£</span> <input aria-labelledby="pension-a" class="form-control calculator__field--small" type="text" id="pension" name="pension" value="0">
+      <select class="form-control calculator__field--frequency-select" name="pension_frequency">
+        <option value="weekly" selected>Weekly</option>
+        <option value="annually" >Annually</option>
       </select>
     </div>
 

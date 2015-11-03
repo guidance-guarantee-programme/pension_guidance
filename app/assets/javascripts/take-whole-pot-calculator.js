@@ -4,8 +4,7 @@
   var takeWholePotCalculator = {
     init: function() {
       var $calculator = $('.js-take-whole-pot-calculator form');
-
-      $calculator.append('<div class="calculator__result" aria-live="polite"></div>');
+      var $result = $('<div class="calculator__result" aria-live="polite"></div>').appendTo($calculator);
 
       $calculator.on('submit', function(event) {
         event.preventDefault();
