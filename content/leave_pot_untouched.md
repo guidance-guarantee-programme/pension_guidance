@@ -32,5 +32,5 @@ If you want to leave your pot untouched for a while, ask your pension provider t
 - How much is the pot likely to grow each year?
 - How is the money invested and can I change this if I want?
 - How much can I still pay in?
-- Does my pot have any special arrangements attached to it that could mean I get a better deal, eg a guaranteed value at a certain time?
+- Does my pot have any special arrangements attached to it that could mean I get a better deal, eg a guaranteed annuity rate?
 - Do you have up-to-date details of the person I want to leave my pot to (my ‘beneficiary’)?
