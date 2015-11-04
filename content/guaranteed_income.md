@@ -49,4 +49,4 @@ If you’re interested in buying an annuity you can:
 - [shop around](/shop-around) for the best deal - you don’t have to stay with your current provider
 - make sure you know [how much tax you’ll pay](/tax) on your annuity income
 - check with your provider if the annuity they offer is right for you, eg if you’re in poor health you could get a better rate
-- ask your provider if your pension pot has any special arrangements attached to it that could mean you get a better deal, eg a guaranteed annuity rate
+- ask your provider if your pension pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate
