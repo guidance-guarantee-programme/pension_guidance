@@ -61,7 +61,7 @@ You can [leave your pot to someone](/when-you-die) when you die but they may hav
 If you’re interested in getting an adjustable income you can:
 
 - check with your current provider if they offer the option and what they charge - if they don’t offer it, you can transfer your pot but you might be charged
-- check if your pot has any special arrangements attached to it that could mean you get a better deal, eg a guaranteed value at a certain time
+- check if your pot has any special arrangements attached to it that could mean you get a better deal, eg a guaranteed annuity rate
 - [get financial advice](/shop-around) if you’re interested in getting an adjustable income
 - [shop around](/shop-around) - check with providers what products they offer to suit your circumstances
 - get some estimates from other providers on how much your pot could grow and what the charges are - usually you just have to fill in a short form on their website.
