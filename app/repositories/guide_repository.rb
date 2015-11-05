@@ -36,8 +36,7 @@ class GuideRepository
     source = FrontMatterParser.new(File.read(path))
     metadata = Guide::Metadata.new(label: source.front_matter['label'],
                                    concise_label: source.front_matter['concise_label'],
-                                   description: source.front_matter['description'],
-                                   experiment: source.front_matter['experiment'])
+                                   description: source.front_matter['description'])
 
     Guide.new(id,
               content: source.content,

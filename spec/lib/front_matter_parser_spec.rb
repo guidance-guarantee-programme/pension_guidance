@@ -4,7 +4,6 @@ RSpec.describe FrontMatterParser do
 ---
 title: The Jabberwocky
 description: A "nonsense" poem
-experiment: Adventures-in-Wonderland
 ---
 Twas brillig, and the slithy toves
 Did gyre and gimble in the wabe:
@@ -15,9 +14,7 @@ EXAMPLE
 
   describe '#front_matter' do
     it 'returns key/value pairs extraced from the front matter in the source' do
-      expect(parser.front_matter).to eq('title' => 'The Jabberwocky',
-                                        'description' => 'A "nonsense" poem',
-                                        'experiment' => 'Adventures-in-Wonderland')
+      expect(parser.front_matter).to eq('title' => 'The Jabberwocky', 'description' => 'A "nonsense" poem')
     end
   end
 
