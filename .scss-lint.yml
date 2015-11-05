@@ -94,8 +94,6 @@ linters:
   NestingDepth:
     enabled: true
     max_depth: 3
-    exclude:
-      - app/assets/stylesheets/components/_player-container.scss
 
   PlaceholderInExtend:
     enabled: true
@@ -118,8 +116,6 @@ linters:
   SelectorDepth:
     enabled: true
     max_depth: 3
-    exclude:
-      - app/assets/stylesheets/components/_player-container.scss
 
   SelectorFormat:
     enabled: true

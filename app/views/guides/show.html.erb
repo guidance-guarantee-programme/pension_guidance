@@ -53,10 +53,3 @@
 <% if journey_navigation.active? %>
   <%= render 'components/pager', pager: journey_navigation %>
 <% end %>
-
-
-<% content_for :after_script do %>
-  <% if @guide.slug == 'take-whole-pot' %>
-    <%= javascript_include_tag 'video' %>
-  <% end %>
-<% end %>

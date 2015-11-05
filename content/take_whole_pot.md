@@ -8,39 +8,6 @@ experiment: WtblVh6mT5eHmQY7QPWtOg
 
 # Taking your whole pot in one go
 
-{::options parse_block_html="false" /}
-<div class="video js-video">
-  <figure>
-    <div class="player-container">
-      <a href="https://www.youtube.com/watch?v=VSfEUsMJY1I">
-        Watch our video about taking your whole pot in one go
-      </a>
-      <a class="captions" href="/captions/take-whole-pot.xml" style="display:none;">Captions</a>
-    </div>
-    <figcaption>
-      Pension Wise guidance specialist Alistair talks about the basics of taking your whole pot in one go and what you can expect from an appointment.
-    </figcaption>
-  </figure>
-  <details>
-    <summary><span class="summary" id="view-transcript-yt0">View transcript</span></summary>
-    <div class="panel-indent">
-      <p>
-        One of the new things you can do with your pension is to cash it all in one go.
-      </p>
-      <p>
-        Normally a quarter of your pot is tax-free but it’s really important to remember that the other three quarters of your pot is subject to tax.
-      </p>
-      <p>
-        It’s also important to think about how will you live throughout retirement if you take this option.
-      </p>
-      <p>
-        If you’d like to hear more about how this applies to you, book your own free Pension Wise appointment.
-      </p>
-    </div>
-  </details>
-</div>
-{::options parse_block_html="true" /}
-
 You can take your whole pot as cash in one go - 25% is tax-free, the remaining 75% is taxable.
 
 {: .info-notice--take-cash}
