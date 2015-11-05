@@ -1,26 +1,6 @@
 <% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
 <% content_for(:meta_description, @guide.description) %>
 
-<% if @guide.experiment %>
-  <% content_for :experiment do %>
-    <%# Google Content Experiments Client %>
-    <%= javascript_include_tag "//www.google-analytics.com/cx/api.js?experiment=#{@guide.experiment}" %>
-
-    <script>
-      var variation = cxApi.chooseVariation();
-    </script>
-    <%# End Google Content Experiments Client %>
-  <% end %>
-
-  <% content_for :after_script do %>
-    <%= javascript_include_tag "experiments/#{@guide.experiment}" %>
-
-    <script>
-      PWPG.experiment.init(variation);
-    </script>
-  <% end %>
-<% end %>
-
 <% content_for :sidebar do %>
   <% cache(@guide.slug) do %>
     <% if journey_navigation.active? %>
