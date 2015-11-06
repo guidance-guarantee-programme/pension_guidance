@@ -6,10 +6,6 @@ Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bo
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
                                                          'govuk_elements', 'public', 'images')
 
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
-                                                         'govuk_elements', 'govuk', 'public',
-                                                         'javascripts', 'vendor')
-
 Rails.application.config.assets.paths.unshift Rails.root.join('vendor', 'assets', 'bower_components',
                                                               'govuk_elements', 'govuk', 'public', 'images')
 
@@ -17,7 +13,6 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   apple-touch-icon-152x152.png
                                                   apple-touch-icon-60x60.png
                                                   apple-touch-icon-76x76.png
-                                                  experiments/*.js
                                                   favicon.ico
                                                   gov.uk_logotype_crown.png
                                                   icon-arrow-left.png
@@ -28,5 +23,4 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   pensions-guidance-ie7.css
                                                   pensions-guidance-ie8.css
                                                   pensions-guidance.css
-                                                  styleguide.css
-                                                  video.js )
+                                                  styleguide.css )

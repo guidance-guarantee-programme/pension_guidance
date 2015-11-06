@@ -7,8 +7,6 @@ $path: false; // `elements/helpers` sets this to `public/images` which breaks
 @import "elements/reset";
 @import "elements/elements-typography";
 @import "elements/buttons";
-@import "elements/details";
-@import "elements/panels";
 @import "elements/forms";
 
 //@import "elements/lists";   - using our own file instead - see base/lists
