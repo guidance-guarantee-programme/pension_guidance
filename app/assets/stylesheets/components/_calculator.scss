@@ -7,6 +7,11 @@
   border-bottom: 1px solid $color-grey-silver-sand;
 }
 
+.calculator__loading-status {
+  display: none;
+  line-height: 2.15;
+}
+
 .calculator__field {
   width: auto;
 }
