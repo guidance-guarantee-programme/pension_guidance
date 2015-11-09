@@ -3,4 +3,3 @@
 //= require take-whole-pot-calculator
 
 PWPG.clickTracker.init();
-PWPG.takeWholePotCalculator.init();
