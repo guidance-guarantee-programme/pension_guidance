@@ -14,7 +14,7 @@
 
       <ul class="error-summary-list">
         <% @calculator.errors.keys.each do |attribute| %>
-          <li><a href="#<%= attribute %>"><%= @calculator.errors.full_messages_for(attribute).first %></a></li>
+          <li><a href="#<%= attribute %>"><%= @calculator.errors[attribute].first %></a></li>
         <% end %>
       </ul>
 
@@ -27,7 +27,7 @@
         Total value of your pension pot(s)
       </label>
       <% if @calculator.errors.has_key?(:pot) %>
-        <span class="error-message"><%= @calculator.errors.full_messages_for(:pot).first %></span>
+        <span class="error-message"><%= @calculator.errors[:pot].first %></span>
       <% end %>
       <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="<%= @pot %>">
     </div>
@@ -38,7 +38,7 @@
         <span class="form-hint">Earnings and income from any savings or benefits.</span>
       </label>
       <% if @calculator.errors.has_key?(:income) %>
-        <span class="error-message"><%= @calculator.errors.full_messages_for(:income).first %></span>
+        <span class="error-message"><%= @calculator.errors[:income].first %></span>
       <% end %>
       <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="<%= @income %>">
     </div>
@@ -48,7 +48,7 @@
         State pension
       </label>
       <% if @calculator.errors.has_key?(:pension) %>
-        <span class="error-message"><%= @calculator.errors.full_messages_for(:pension).first %></span>
+        <span class="error-message"><%= @calculator.errors[:pension].first %></span>
       <% end %>
       <span id="pension-a">£</span> <input aria-labelledby="pension-a" class="form-control calculator__field--small" type="text" id="pension" name="pension" value="<%= @pension %>">
       <select class="form-control calculator__field--frequency-select" name="pension_frequency">
