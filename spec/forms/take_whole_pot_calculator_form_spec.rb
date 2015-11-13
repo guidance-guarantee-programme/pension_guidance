@@ -5,6 +5,35 @@ RSpec.describe TakeWholePotCalculatorForm do
   it { should validate_numericality_of(:pension) }
   it { should validate_inclusion_of(:pension_frequency).in_array(%w(weekly annually)) }
 
+  describe 'maximum state pension' do
+    let(:pension) { 115 }
+    let(:pension_frequency) { 'weekly' }
+
+    subject(:form) do
+      described_class.new(pension: pension, pension_frequency: pension_frequency)
+    end
+
+    before { form.validate }
+
+    context 'below the limit' do
+      specify { expect(form.errors).to_not have_key(:pension) }
+    end
+
+    context 'at the limit' do
+      let(:pension) { 10_400 }
+      let(:pension_frequency) { 'annually' }
+
+      specify { expect(form.errors).to_not have_key(:pension) }
+    end
+
+    context 'above the limit' do
+      let(:pension) { 201 }
+      let(:pension_frequency) { 'weekly' }
+
+      specify { expect(form.errors).to have_key(:pension) }
+    end
+  end
+
   describe 'type coercion' do
     subject(:calculator) do
       described_class.new(
@@ -22,7 +51,7 @@ RSpec.describe TakeWholePotCalculatorForm do
   describe '#result' do
     let(:pot) { 100_000 }
     let(:income) { 10_000 }
-    let(:pension) { 1_000 }
+    let(:pension) { 100 }
     let(:pension_frequency) { 'weekly' }
     let(:params) do
       {
@@ -48,7 +77,7 @@ RSpec.describe TakeWholePotCalculatorForm do
     end
 
     context 'when the pension is paid weekly' do
-      let(:total_income) { 62_000 }
+      let(:total_income) { 15_200 }
 
       it 'calculates the total income' do
         expect(TakeWholePotCalculator).to receive(:new).with(pot, total_income)
@@ -58,7 +87,7 @@ RSpec.describe TakeWholePotCalculatorForm do
 
     context 'when the pension is paid annually' do
       let(:pension_frequency) { 'annually' }
-      let(:total_income) { 11_000 }
+      let(:total_income) { 10_100 }
 
       it 'calculates the total income' do
         expect(TakeWholePotCalculator).to receive(:new).with(pot, total_income)

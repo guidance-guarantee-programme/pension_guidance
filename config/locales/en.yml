@@ -44,3 +44,6 @@ en:
           blank: 'Using numbers, please enter the value of your %{attribute}'
           not_a_number: 'Using numbers, please enter the value of your %{attribute}'
           greater_than_or_equal_to: 'Using numbers, please enter the value of your %{attribute}'
+          attributes:
+            pension:
+              above_limit: "You’ve entered more than the maximum allowable state pension"
