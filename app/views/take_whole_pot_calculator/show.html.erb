@@ -1,3 +1,14 @@
+<% content_for(:data_layer) do %>
+  <script>
+    dataLayer = [{
+      'pot': '<%= @pot %>',
+      'income': '<%= @income %>',
+      'pension': '<%= @pension %>',
+      'pension_frequency': '<%= @pension_frequency %>'
+    }];
+  </script>
+<% end %>
+
 <a class="link-back" href="/take-whole-pot">Back to description</a>
 
 <h1>Taking your whole pot in one go</h1>
