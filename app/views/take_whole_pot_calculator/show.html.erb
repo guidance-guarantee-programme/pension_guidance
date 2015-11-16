@@ -1,10 +1,15 @@
 <% content_for(:data_layer) do %>
   <script>
     dataLayer = [{
+      'valid': <%= @calculator.valid? %>,
       'pot': '<%= @pot %>',
       'income': '<%= @income %>',
       'pension': '<%= @pension %>',
       'pension_frequency': '<%= @pension_frequency %>'
+      <% if @result %> ,
+        'pot_tax': '<%= @result.pot_tax %>',
+        'pot_received': '<%= @result.pot_received %>'
+      <% end %>
     }];
   </script>
 <% end %>
