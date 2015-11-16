@@ -30,12 +30,6 @@ class TakeWholePotCalculatorForm
     TakeWholePotCalculator.new(pot, total_income) if valid?
   end
 
-  private
-
-  def within_state_pension_limit
-    errors.add(:pension, :above_limit) if annual_pension > MAXIMUM_STATE_PENSION
-  end
-
   def annual_pension
     return 0 unless pension_frequency && pension
 
@@ -45,6 +39,12 @@ class TakeWholePotCalculatorForm
     when 'annually'
       pension
     end
+  end
+
+  private
+
+  def within_state_pension_limit
+    errors.add(:pension, :above_limit) if annual_pension > MAXIMUM_STATE_PENSION
   end
 
   def total_income

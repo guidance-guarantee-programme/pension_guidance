@@ -4,8 +4,7 @@
       'valid': <%= @calculator.valid? %>,
       'pot': <%= @calculator.pot.to_i %>,
       'income': <%= @calculator.income.to_i %>,
-      'pension': <%= @calculator.pension.to_i %>,
-      'pension_frequency': '<%= @pension_frequency %>'
+      'annual_pension': <%= @calculator.annual_pension.to_i %>
       <% if @result %> ,
         'pot_tax': <%= @result.pot_tax.to_i %>,
         'pot_received': <%= @result.pot_received.to_i %>
