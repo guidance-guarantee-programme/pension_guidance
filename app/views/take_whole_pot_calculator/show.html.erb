@@ -2,13 +2,13 @@
   <script>
     dataLayer = [{
       'valid': <%= @calculator.valid? %>,
-      'pot': '<%= @pot %>',
-      'income': '<%= @income %>',
-      'pension': '<%= @pension %>',
+      'pot': <%= @calculator.pot.to_i %>,
+      'income': <%= @calculator.income.to_i %>,
+      'pension': <%= @calculator.pension.to_i %>,
       'pension_frequency': '<%= @pension_frequency %>'
       <% if @result %> ,
-        'pot_tax': '<%= @result.pot_tax %>',
-        'pot_received': '<%= @result.pot_received %>'
+        'pot_tax': <%= @result.pot_tax.to_i %>,
+        'pot_received': <%= @result.pot_received.to_i %>
       <% end %>
     }];
   </script>
