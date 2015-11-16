@@ -33,6 +33,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'take-whole-pot/results', controller: 'take_whole_pot_calculator', action: 'show'
+
   if Rails.application.config.mount_javascript_test_routes
     mount JasmineRails::Engine => '/specs'
     mount JasmineFixtures => '/spec/javascripts/fixtures'

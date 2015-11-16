@@ -12,6 +12,8 @@ Capybara.default_wait_time = 20
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 RSpec.configure do |config|
+  config.extend GroupHelpers
+
   config.default_formatter = 'doc' if config.files_to_run.one?
   config.order = :random
   config.profile_examples = 10
