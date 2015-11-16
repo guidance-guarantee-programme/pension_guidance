@@ -9,7 +9,8 @@ RSpec.describe 'Take whole pot calculator', type: :feature do
       select 'Annual', from: 'pension_frequency'
       click_on 'Calculate'
 
-      expect(page.find('.t-pot-tax')).to have_content('£23,923.00')
+      expect(page.find('.t-pot-received')).to have_content('£76,077')
+      expect(page.find('.t-pot-tax')).to have_content('£23,923')
     end
   end
 end
