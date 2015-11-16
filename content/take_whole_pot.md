@@ -9,19 +9,19 @@ description: You can cash in your whole pension pot - 75% of that money is taxab
 
 You can take your whole pot as cash in one go - 25% is tax-free, the remaining 75% is taxable.
 
-Any cash your provider pays you will have the [tax owed](/tax) already taken off.
+You pay tax when you take money from your pot. This is because when you’re paying into your pension you get [tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief) on your contributions.
+
+Any money you receive from your pension provider will be paid to you with the tax already taken off.
 
 ## Watch out for higher tax
 
-It’s important to calculate how much tax you would pay on the amount if you take your whole pot in one go.
+It’s important to calculate how much tax you would pay if you take your whole pot in one go.
 
-%Taking a large sum of cash from your pension pot can mean you pay a higher amount of tax.%
+%Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 
-The cash you take will be added to any other income you have over the tax year.  At the end of the tax year HM Revenue and Customs will calculate how much tax you owe.
+The cash you take will be added to any other income you have over the tax year, eg money from work, savings and benefits. At the end of the tax year HM Revenue and Customs will calculate how much tax you owe. 
 
-Adding a large cash sum to your income could mean that you get bumped into a higher tax rate.
-
-Adding a large sum of cash to your income could also affect [your entitlement to any benefits](/benefits).
+Adding a large cash sum to your income could mean that you get bumped into a higher tax rate. It could also affect your [entitlement to any benefits](/benefits).
 
 {::options parse_block_html="false" /}
 <div class="calculator calculator--in-article js-take-whole-pot-calculator">
@@ -63,7 +63,7 @@ Adding a large sum of cash to your income could also affect [your entitlement to
 
 ## Your next steps
 
-Here are some next steps if you’re interested in taking cash:
+Here are some next steps if you’re interested in taking your whole pot in one go:
 
 - check with your provider if you can take 25% tax free
 - if you want to reinvest the money, talk to a [registered financial adviser](http://www.fca.org.uk/register) first
