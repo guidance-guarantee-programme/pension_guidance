@@ -5,3 +5,4 @@ Disallow: /book$
 Disallow: /book.html$
 Disallow: /email/
 Disallow: /signposting/
+Disallow: /take-whole-pot/results
