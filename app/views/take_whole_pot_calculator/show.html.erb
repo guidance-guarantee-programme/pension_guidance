@@ -1,18 +1,3 @@
-<% content_for(:data_layer) do %>
-  <script>
-    dataLayer = [{
-      'valid': <%= @calculator.valid? %>,
-      'pot': <%= @calculator.pot.to_i %>,
-      'income': <%= @calculator.income.to_i %>,
-      'annual_pension': <%= @calculator.annual_pension.to_i %>
-      <% if @result %> ,
-        'pot_tax': <%= @result.pot_tax.to_i %>,
-        'pot_received': <%= @result.pot_received.to_i %>
-      <% end %>
-    }];
-  </script>
-<% end %>
-
 <a class="link-back" href="/take-whole-pot">Back to description</a>
 
 <h1>Taking your whole pot in one go</h1>
