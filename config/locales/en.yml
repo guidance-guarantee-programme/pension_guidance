@@ -31,3 +31,19 @@ en:
     index_with_results:
       document_title: "%{query} - Search"
       page_title_html: Search results<span class="visually-hidden"> for “%{query}”</span>
+
+  number:
+    currency:
+      format:
+        unit: £
+
+  activemodel:
+    errors:
+      models:
+        take_whole_pot_calculator_form:
+          blank: 'Using numbers, please enter the value of your %{attribute}'
+          not_a_number: 'Using numbers, please enter the value of your %{attribute}'
+          greater_than_or_equal_to: 'Using numbers, please enter the value of your %{attribute}'
+          attributes:
+            pension:
+              above_limit: "You’ve entered more than the maximum allowable state pension"

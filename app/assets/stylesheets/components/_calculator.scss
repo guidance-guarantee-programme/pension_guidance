@@ -1,0 +1,32 @@
+.calculator {
+  overflow: hidden;
+}
+
+.calculator--in-article {
+  border-top: 1px solid $color-grey-silver-sand;
+  border-bottom: 1px solid $color-grey-silver-sand;
+}
+
+.calculator__loading-status {
+  display: none;
+  line-height: 2.15;
+}
+
+.calculator__field {
+  width: auto;
+}
+
+.calculator__field--small {
+  width: 25%;
+}
+
+.calculator__field--frequency-select {
+  width: 25%;
+  -webkit-appearance: menulist;
+}
+
+.calculator__result__number {
+  @include bold-24;
+  display: block;
+  margin: .4em .5em .4em 0;
+}
