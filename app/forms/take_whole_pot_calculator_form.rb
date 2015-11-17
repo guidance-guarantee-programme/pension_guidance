@@ -31,7 +31,7 @@ class TakeWholePotCalculatorForm
   end
 
   def annual_pension
-    return 0 unless pension_frequency && pension
+    return 0 unless pension_frequency && pension.is_a?(Numeric)
 
     case pension_frequency
     when 'weekly'

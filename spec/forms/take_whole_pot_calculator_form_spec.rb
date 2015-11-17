@@ -5,6 +5,19 @@ RSpec.describe TakeWholePotCalculatorForm do
   it { should validate_numericality_of(:pension) }
   it { should validate_inclusion_of(:pension_frequency).in_array(%w(weekly annually)) }
 
+  describe '#valid?' do
+    context 'with a an invalid pension value' do
+      let(:pension) { '' }
+      let(:pension_frequency) { 'weekly' }
+
+      let(:form) do
+        described_class.new(pension: pension, pension_frequency: pension_frequency)
+      end
+
+      specify { expect { form.valid? }.to_not raise_error }
+    end
+  end
+
   describe 'maximum state pension' do
     let(:pension) { 115 }
     let(:pension_frequency) { 'weekly' }
