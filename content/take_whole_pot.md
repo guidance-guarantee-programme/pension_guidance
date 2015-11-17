@@ -30,22 +30,24 @@ Adding a large cash sum to your income could mean that you get bumped into a hig
   <form action="/take-whole-pot/results#estimate-how-much" method="get">
     <div class="form-group">
       <label class="form-label" for="pot">
-        Total value of your pension pot(s)
+        Pot value
+        <span class="form-hint">All your pension pots combined</span>
       </label>
       <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="0">
     </div>
 
     <div class="form-group">
       <label class="form-label" for="income">
-        Your total other income for the year (before tax)
-        <span class="form-hint">Earnings and income from any savings or benefits.</span>
+        Other annual income
+        <span class="form-hint">Money from work, savings and benefits</span>
       </label>
       <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="0">
     </div>
 
     <div class="form-group">
       <label class="form-label" for="pension">
-        State pension
+        State Pension
+        <span class="form-hint">The most you can currently get is £115.95 per week</span>
       </label>
       <span id="pension-a">£</span> <input aria-labelledby="pension-a" class="form-control calculator__field--small" type="text" id="pension" name="pension" value="0">
       <select class="form-control calculator__field--frequency-select" name="pension_frequency">
