@@ -54,9 +54,14 @@
     margin-right: 0;
     padding: 5px 0;
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
   }
 }
