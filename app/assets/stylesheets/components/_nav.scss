@@ -18,17 +18,38 @@ $nav-background-alt: $grey-3;
   cursor: pointer;
   max-width: 15%;
 
+  &:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    background: $border-colour;
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+    z-index: 50;
+  }
+
   &:first-child {
     border-left:1px solid $border-colour;
 
     &:hover {
       border-left: none;
     }
+
+    &:after {
+      display: none;
+    }
   }
 
   &:hover,
   &:focus {
     background: $nav-background;
+    z-index: 55;
+
+    &:after {
+      display: none;
+    }
 
     .nav__sub-nav {
       display: block;
@@ -76,6 +97,10 @@ $nav-background-alt: $grey-3;
 
     &:hover {
       background: none;
+    }
+
+    &:after {
+      display: none;
     }
 
     a {
