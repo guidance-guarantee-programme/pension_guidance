@@ -5,8 +5,20 @@
   padding-bottom: 10px;
 }
 
+.l-page-nav {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 12px;
+  }
+}
+
 .l-banner-container {
   @extend %site-width-container;
+  position: relative;
 }
 
 .l-page-container {
