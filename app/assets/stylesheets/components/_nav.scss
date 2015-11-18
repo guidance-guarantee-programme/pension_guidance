@@ -36,6 +36,14 @@ $nav-background-alt: $grey-3;
   }
 }
 
+.l-page-nav {
+  .nav__item {
+    &:first-child {
+      border-left: none;
+    }
+  }
+}
+
 .nav__sub-nav {
   display: none;
   background: $nav-background;
