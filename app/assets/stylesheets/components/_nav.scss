@@ -1,3 +1,6 @@
+$nav-background: lighten($grey-3, 3%);
+$nav-background-alt: $grey-3;
+
 .nav {
   text-align: left;
   display: inline-block;
@@ -15,10 +18,17 @@
   cursor: pointer;
   max-width: 15%;
 
+  &:first-child {
+    border-left:1px solid $border-colour;
+
+    &:hover {
+      border-left: none;
+    }
+  }
+
   &:hover,
   &:focus {
-    background: #005ea5;
-    color: #fff;
+    background: $nav-background;
 
     .nav__sub-nav {
       display: block;
@@ -28,34 +38,40 @@
 
 .nav__sub-nav {
   display: none;
-  background: #005ea5;
+  background: $nav-background;
   position: absolute;
+  overflow: hidden;
   top: 70px;
   left: 0;
-  padding: 5px 10px 0 0;
   z-index: 50;
 }
 
 .nav__sub-nav--double {
-  width:390px
+  width:402px
 }
 
 .nav__sub-nav-list {
-  padding: 0;
+  padding: 16px 8px 5px 0;
+  margin: 0;
+  margin-left: -3px;
   width: 190px;
   float: left;
-  margin-bottom: 5px;
 
   .nav__item {
     display: block;
+    cursor: default;
     font-size: 16px;
-    color: #fff;
     max-width: none;
     margin-right: 0;
-    padding: 5px 0;
+    padding: 5px 0 3px;
+    border-left: none;
+
+    &:hover {
+      background: none;
+    }
 
     a {
-      color: #fff;
+      color: $link-colour;
       text-decoration: none;
 
       &:hover,
@@ -64,4 +80,18 @@
       }
     }
   }
+
+  .nav__item--parent {
+    font-weight: bold;
+  }
+}
+
+.nav__sub-nav-list--first {
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav__sub-nav-list--second {
+  margin-left: 0;
+  background-color: $nav-background-alt;
+  padding-right: 15px;
 }
