@@ -17,6 +17,10 @@ class GuaranteedIncomeCalculator
     taxable_amount * single_annuity_rate
   end
 
+  def joint_annuity
+    taxable_amount * joint_annuity_rate
+  end
+
   private
 
   def taxable_amount
@@ -31,6 +35,16 @@ class GuaranteedIncomeCalculator
     when 65...70 then 0.05828
     when 70...75 then 0.06670
     else              0.07875
+    end
+  end
+
+  def joint_annuity_rate
+    case age
+    when 55...60 then 0.04350
+    when 60...65 then 0.04811
+    when 65...70 then 0.05384
+    when 70...75 then 0.06025
+    else              0.06988
     end
   end
 end

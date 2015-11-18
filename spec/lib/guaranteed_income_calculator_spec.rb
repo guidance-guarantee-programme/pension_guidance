@@ -24,4 +24,23 @@ RSpec.describe GuaranteedIncomeCalculator do
       end
     end
   end
+
+  describe '#joint_annuity' do
+    scenarios =
+      {
+        55 => 4_350,
+        60 => 4_811,
+        65 => 5_384,
+        70 => 6_025,
+        75 => 6_988
+      }
+
+    scenarios.each do |age, income|
+      describe "at age #{age}" do
+        subject { described_class.new(pot, age).joint_annuity.round }
+
+        it { is_expected.to eq(income) }
+      end
+    end
+  end
 end
