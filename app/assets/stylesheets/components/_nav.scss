@@ -4,17 +4,18 @@ $nav-background-alt: $grey-3;
 .nav {
   text-align: left;
   display: inline-block;
-  margin: 8px -130px 0 130px;
+  margin: 8px -138px 0 138px;
   padding: 0;
   list-style: none;
 }
 
 .nav__item {
   font-size: 17px;
+  font-weight: bold;
   display: inline-block;
   margin-right: -32px;
   position: relative;
-  padding: 15px 17px;
+  padding: 15px;
   cursor: pointer;
   max-width: 15%;
 
@@ -65,6 +66,11 @@ $nav-background-alt: $grey-3;
   }
 }
 
+.nav__item-label--single {
+  top: 10px;
+  position: relative;
+}
+
 .nav__sub-nav {
   display: none;
   background: $nav-background;
@@ -73,6 +79,10 @@ $nav-background-alt: $grey-3;
   top: 70px;
   left: 0;
   z-index: 50;
+}
+
+.nav__sub-nav--left {
+  left: -111px;
 }
 
 .nav__sub-nav--double {
@@ -90,6 +100,7 @@ $nav-background-alt: $grey-3;
     display: block;
     cursor: default;
     font-size: 16px;
+    font-weight: normal;
     max-width: none;
     margin-right: 0;
     padding: 5px 0 3px;
@@ -127,4 +138,5 @@ $nav-background-alt: $grey-3;
   margin-left: 0;
   background-color: $nav-background-alt;
   padding-right: 15px;
+  min-height: 301px;
 }
