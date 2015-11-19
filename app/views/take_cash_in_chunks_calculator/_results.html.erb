@@ -1,0 +1,27 @@
+<p>
+  Based on what you’ve told us, if you take a <%= format_currency(@calculator.chunk) %> cash chunk
+  from your <%= format_currency(@calculator.pot) %>, you could pay:
+
+  <strong class="calculator__result__number"><%= format_currency(@calculator.pot_tax) %> in tax</strong>
+
+  and receive:
+
+  <strong class="calculator__result__number"><%= format_currency(@calculator.pot_received) %></strong>
+
+  leaving
+
+  <strong class="calculator__result__number"><%= format_currency(@calculator.pot_remaining) %> in your pot</strong>
+</p>
+
+<h2>Things to note</h2>
+
+<ol>
+  <li>You can take chunks as often or as little as you like, remember your pot has to last you for the rest of your life, once it’s gone it’s gone</li>
+  <li>25% of each chunk you take is tax-free</li>
+  <li>Cash chunks are added to your other taxable income for the year - taking a large chunk of cash in one year could bump you into a higher tax rate</li>
+  <li>How much tax you pay will depend on your individual circumstances</li>
+</ol>
+
+<div class="application-notice help-notice">
+  <p>Pension payments are likely to attract emergency tax. Your provider may reimburse you automatically, otherwise you can claim back the extra tax yourself.</p>
+</div>
