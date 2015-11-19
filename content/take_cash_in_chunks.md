@@ -48,6 +48,41 @@ If you have multiple pension pots, you can take chunks of cash from one and cont
 
 Your provider may also let you continue to pay into the pot you take cash from.
 
+{::options parse_block_html="false" /}
+<div class="calculator calculator--in-article js-take-cash-in-chunks-calculator">
+  <h2 id="estimate-take-cash-in-chunks">Estimate how much you would get taking cash as chunks</h2>
+
+  <form action="/take-cash-in-chunks/results#estimate-take-cash-in-chunks" method="get">
+    <div class="form-group">
+      <label class="form-label" for="pot">
+        Pot value
+        <span class="form-hint">All your pension pots combined</span>
+      </label>
+      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="income">
+        Other annual income
+        <span class="form-hint">Money from work, savings and benefits</span>
+      </label>
+      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="chunk">
+        How much cash would you want to take from your pot initially?
+      </label>
+      <span id="chunk-a">£</span> <input aria-labelledby="chunk-a" class="form-control calculator__field" type="text" id="chunk" name="chunk">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Calculate" id="js-calculate">
+    </div>
+  </form>
+</div>
+{::options parse_block_html="true" /}
+
 ## Your next steps
 
 Here are some next steps if you’re interested in taking cash in chunks:
