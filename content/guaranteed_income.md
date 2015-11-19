@@ -41,6 +41,33 @@ You [pay tax on income from an annuity](/tax), just like you do on your salary. 
 
 If the insurer you bought your annuity with goes bust the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/) will cover you in full.
 
+{::options parse_block_html="false" /}
+<div class="calculator calculator--in-article js-guaranteed-income-calculator">
+  <h2 id="annuity-estimate">Estimate how much you would get from an annuity</h2>
+
+  <form action="/guaranteed-income/results#annuity-estimate" method="get">
+    <div class="form-group">
+      <label class="form-label" for="pot">
+        Total value of your pension pot(s)
+        <span class="form-hint">All your pension pots combined</span>
+      </label>
+      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="age">
+        Your age
+      </label>
+      <span id="age-a"></span> <input aria-labelledby="age-a" class="form-control calculator__field" type="text" id="age" name="age">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Calculate" id="js-calculate">
+    </div>
+  </form>
+</div>
+{::options parse_block_html="true" /}
+
 ## Your next steps
 
 If you’re interested in buying an annuity you can:
