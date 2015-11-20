@@ -1,0 +1,53 @@
+<p>
+  Based on what you’ve told us, if you take your <%= format_currency(@pot) %>
+  pension pot adjustable income, you could receive:
+
+  <strong class="calculator__result__number"><%= number_to_currency(@tax_free_lump_sum, precision: 0) %> tax-free</strong>
+
+  and a:
+
+  <strong class="calculator__result__number"><%= number_to_currency(@income, precision: 0) %> annual taxable income, until you’re <%= @ending_age %></strong>
+</p>
+
+<br>
+
+<p>
+  <div class="form-group">
+    <fieldset>
+      <legend class="form-label-bold">Adjust the amount you get or how long you need it for &or;</legend>
+
+      <label for="adjust-age" class="block-label">
+        <input id="adjust-age" class="calculator__field--radio" type="radio" name="adjustment" value="age" <%= 'checked="checked"' if @adjustment == 'age' %>>
+        See how much you could take annually until age
+        <select name="age_adjustment">
+          <% (75..90).to_a.each do |i| %>
+            <option value="<%= i %>" <%= 'selected' if @ending_age == i %>><%= i %></option>
+          <% end %>
+        </select>
+      </label>
+
+      <label for="adjust-income" class="block-label">
+        <input id="adjust-income" class="calculator__field--radio" type="radio" name="adjustment" value="income" <%= 'checked="checked"' if @adjustment == 'income' %>>
+        See how long your money could last if you took
+        <select name="income_adjustment">
+          <% (4..7).to_a.each do |i| %>
+            <option value="<%= i * 1000%>" <%= 'selected' if @income_adjustment == (i * 1000).to_s %>>£<%= i %>,000</option>
+          <% end %>
+        </select>
+        per year
+      </label>
+
+      <div class="form-group">
+        <input type="submit" class="button" value="Recalculate" id="js-recalculate">
+      </div>
+    </fieldset>
+  </div>
+</p>
+
+<h2>Things to note</h2>
+
+<ol>
+  <li>You can take 25% of your pot as a single tax-free cash sum and invest the remaining 75% to provide you with a taxable income</li>
+  <li>Once invested the value of your pot can go up or down</li>
+  <li>You might want to get financial advice before choosing this option - an adviser could create a plan with you for how to invest your money</li>
+</ol>
