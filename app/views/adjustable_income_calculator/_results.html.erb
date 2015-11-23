@@ -1,10 +1,10 @@
 <p>
   Based on what you’ve told us, if you take your <%= format_currency(@pot) %>
-  pension pot adjustable income, you could receive:
+  pension pot as adjustable income, you could get:
 
-  <strong class="calculator__result__number"><%= number_to_currency(@tax_free_lump_sum, precision: 0) %> tax-free</strong>
+  <strong class="calculator__result__number"><%= number_to_currency(@tax_free_lump_sum, precision: 0) %> tax free</strong>
 
-  and a:
+  and:
 
   <strong class="calculator__result__number"><%= number_to_currency(@income, precision: 0) %> annual taxable income, until you’re <%= @ending_age %></strong>
 </p>
@@ -47,10 +47,23 @@
 <h2>Things to note</h2>
 
 <ol>
-  <li>You can take 25% of your pot as a single tax-free cash sum and invest the remaining 75% to provide you with a taxable income</li>
-  <li>Once invested the value of your pot can go up or down</li>
-  <li>You might want to get financial advice before choosing this option - an adviser could create a plan with you for how to invest your money</li>
+  <li>You can take 25% of your pot as a single tax-free cash sum and invest the other 75% to provide you with a taxable income</li>
+  <li>The value of your pot can go up or down</li>
+  <li>You might want to get financial advice before choosing this option</li>
 </ol>
+
+<h2>Your next steps</h2>
+
+<p>If you’re interested in getting an adjustable income you can:</p>
+
+<ul>
+  <li>ask your current provider if they offer flexi-access drawdown and what they charge in fees - if they don’t offer it, you can transfer your pot but you might be charged a fee</li>
+  <li>check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate</li>
+  <li><a href="/shop-around">get financial advice</a> if you’re interested in getting an adjustable income</li>
+  <li><a href="/shop-around">shop around</a> - ask providers what products they offer to suit your circumstances</li>
+  <li>get some estimates from other providers on how much your pot could grow and what the fees are - usually you just have to fill in a short form on their website.</li>
+  <li>make sure you know <a href="/tax">how much tax</a> you’ll pay on any money you’re planning to take out</li>
+</ul>
 
 <% content_for(:after_script) do %>
   <script>
