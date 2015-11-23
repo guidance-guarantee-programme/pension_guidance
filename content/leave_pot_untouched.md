@@ -24,12 +24,13 @@ As with every investment the value of your pot could go up or down.
 
 {::options parse_block_html="false" /}
 <div class="calculator calculator--in-article js-leave-pot-untouched-calculator">
-  <h2>Estimate how much your pot could be worth in the future</h2>
+  <h2>Estimate how much you would get leaving your pot untouched</h2>
 
   <form action="/leave-pot-untouched/results" method="get">
     <div class="form-group">
       <label class="form-label" for="pot">
-        Total value of your pension pot(s)
+        Pot value
+        <span class="form-hint">All your pension pots combined</span>
       </label>
       <span class="input-label" id="saving-label">£</span>
       <input aria-describedby="pot-label" type="text" id="pot" name="pot">
