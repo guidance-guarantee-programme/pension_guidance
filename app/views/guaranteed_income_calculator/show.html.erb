@@ -10,7 +10,7 @@
   <form action="/guaranteed-income/results#annuity-estimate" method="get">
     <div class="form-group">
       <label class="form-label" for="pot">
-        Total value of your pension pot(s)
+        Pot value
         <span class="form-hint">All your pension pots combined</span>
       </label>
       <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="<%= @pot %>">
@@ -37,11 +37,11 @@
 
         <label for="annuity-type-single" class="block-label">
           <input id="annuity-type-single" class="calculator__field--radio" type="radio" name="annuity_type" value="single" <%= 'checked="checked"' if @annuity_type == 'single' %>>
-          Single - only you get payments
+          Single annuity - only you get payments
         </label>
         <label for="annuity-type-joint" class="block-label">
           <input id="annuity-type-joint" class="calculator__field--radio" type="radio" name="annuity_type" value="joint" <%= 'checked="checked"' if @annuity_type == 'joint' %>>
-          Joint - payments continue to your partner after you die
+          Joint annuity - your partner will get money after you die
         </label>
       </fieldset>
     </div>
