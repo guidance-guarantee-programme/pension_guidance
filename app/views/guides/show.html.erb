@@ -2,20 +2,6 @@
 <% content_for(:meta_description, @guide.description) %>
 
 <% content_for :sidebar do %>
-  <% cache(@guide.slug) do %>
-    <% if journey_navigation.active? %>
-      <div class="link-promo ga-journey-sidebar">
-        <h2 class="link-promo__heading"><%= journey_navigation.overview.label %></h2>
-        <p>
-          <%= link_to "Read the #{journey_navigation.overview.concise_label} overview",
-                      journey_navigation.overview.url %>
-        </p>
-        <hr class="hr-thin">
-        <%= render 'components/journey_nav', journey_navigation: journey_navigation %>
-      </div>
-    <% end %>
-  <% end %>
-
   <div class="link-promo ga-elsewhere-sidebar">
     <h2 class="link-promo__heading">Elsewhere on Pension Wise</h2>
     <ul class="link-promo__list">

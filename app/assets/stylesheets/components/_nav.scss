@@ -1,6 +1,21 @@
 $nav-background: lighten($grey-3, 3%);
 $nav-background-alt: $grey-3;
 
+//*-------------- mixins --------------------*/
+@mixin bullet($color, $radius, $top: 5px) {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: $top;
+    margin-left: -25px;
+    width: $radius;
+    height: $radius;
+    border-radius: $radius;
+    background: $color;
+  }
+}
+
 .nav {
   text-align: left;
   display: inline-block;
@@ -86,7 +101,7 @@ $nav-background-alt: $grey-3;
 }
 
 .nav__sub-nav--double {
-  width:402px
+  width:439px
 }
 
 .nav__sub-nav-list {
@@ -132,11 +147,37 @@ $nav-background-alt: $grey-3;
 
 .nav__sub-nav-list--first {
   border-right: 2px solid rgba(255, 255, 255, 0.3);
+  width: 204px;
 }
 
 .nav__sub-nav-list--second {
   margin-left: 0;
   background-color: $nav-background-alt;
   padding-right: 15px;
-  min-height: 301px;
+  min-height: 313px;
+  width:212px;
+}
+
+.nav__option {
+  position: relative;
+  left: 26px;
+}
+
+.nav__option--untouched {
+  @include bullet($color-option-leave-pot-untouched, 14px);
+}
+.nav__option--annuity {
+  @include bullet($color-option-guaranteed-income, 14px);
+}
+.nav__option--adjustable {
+  @include bullet($color-option-adjustable-income, 14px);
+}
+.nav__option--chunks {
+  @include bullet($color-option-take-cash, 14px);
+}
+.nav__option--whole {
+  @include bullet($color-option-whole-pot, 14px);
+}
+.nav__option--mix {
+  @include bullet($color-option-mix-options, 14px);
 }
