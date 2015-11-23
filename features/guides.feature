@@ -51,10 +51,9 @@ Feature: Guides
     When I visit a guide that is part of '6 steps you need to take'
     Then I can navigate to the next step in that journey
     And I can navigate to the previous step in that journey
-    Then I can navigate directly to other steps in that journey
     And I can navigate to content related to the journey
-    And the current guide is highlighted
 
+  @wip
   Scenario: Navigate directly to each option from the options guide
     When I visit the pension-pot-options guide
     Then I can navigate to each option available to me
