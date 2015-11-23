@@ -29,27 +29,6 @@
 
     <%= render partial: 'results' %>
 
-    <br>
-
-    <div class="form-group">
-      <fieldset>
-        <legend class="form-label-bold">Annuity type</legend>
-
-        <label for="annuity-type-single" class="block-label">
-          <input id="annuity-type-single" class="calculator__field--radio" type="radio" name="annuity_type" value="single" <%= 'checked="checked"' if @annuity_type == 'single' %>>
-          Single - only you get payments
-        </label>
-        <label for="annuity-type-joint" class="block-label">
-          <input id="annuity-type-joint" class="calculator__field--radio" type="radio" name="annuity_type" value="joint" <%= 'checked="checked"' if @annuity_type == 'joint' %>>
-          Joint - payments continue to your partner after you die
-        </label>
-      </fieldset>
-    </div>
-
-    <div class="form-group">
-      <input type="submit" class="button" value="Recalculate" id="js-recalculate">
-    </div>
-
   </form>
 </div>
 
