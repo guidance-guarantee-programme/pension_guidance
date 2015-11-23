@@ -72,7 +72,13 @@
     background: image-url("css/circles-24.png") 0 -88px;
   }
 
+  &.circle--whole-pot {
+    background: $color-option-whole-pot;
+    border-radius: 26px;
+  }
+
   &.circle--mix-options {
-    background: image-url("css/circles-24.png") 0 -116px;
+    background: $color-option-mix-options;
+    border-radius: 26px;
   }
 }
