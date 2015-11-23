@@ -7,9 +7,9 @@ description: You can use your pension pot to buy an insurance policy that guaran
 
 # Getting a guaranteed income (annuity)
 
-You might want to use your pension pot to buy an insurance policy that gives you a guaranteed income for the rest of your life. This is called an annuity. You can also buy an annuity for a fixed number of years.
+You can use your pension pot to buy an insurance policy that gives you a guaranteed income for the rest of your life. This is called an annuity. You can also buy an annuity for a fixed number of years.
 
-^There are lots of different types of annuities and it’s important you get the right one for you.^
+^There are lots of different types of annuity and it’s important you get the right one for you.^
 
 Once you’ve bought your annuity you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision and your rate will be fixed.
 
@@ -25,7 +25,7 @@ Types of annuities you can buy:
 
 ## Tax-free lump sum with annuities
 
-If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. You could then, for example, buy the annuity with the remaining 75%. Under current pension rules you have to buy the annuity within 6 months or alternatively use one of the [other options](/pension-pot-options).
+If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. You could then, for example, use the other 75% to buy the annuity. Under current pension rules you have to buy the annuity within 6 months or alternatively use one of the [other options](/pension-pot-options).
 
 ## How an annuity is calculated
 
