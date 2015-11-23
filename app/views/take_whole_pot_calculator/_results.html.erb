@@ -1,5 +1,6 @@
 <script>
-  dataLayer = [{
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
     'valid': <%= @calculator.valid? %>,
     'pot': <%= @calculator.pot.to_i %>,
     'income': <%= @calculator.income.to_i %>,
@@ -8,7 +9,7 @@
       'pot_tax': <%= @result.pot_tax.to_i %>,
       'pot_received': <%= @result.pot_received.to_i %>
     <% end %>
-  }];
+  });
 </script>
 
 <% if @result %>
