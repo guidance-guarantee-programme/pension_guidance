@@ -27,7 +27,7 @@
     <div class="form-group">
       <label class="form-label" for="pension">
         State Pension
-        <span class="form-hint">The most you can currently get is £115.95 per week</span>
+        <span class="form-hint">The most you can currently get from the basic State Pension is £115.95 weekly</span>
       </label>
       <span id="pension-a">£</span> <input aria-labelledby="pension-a" class="form-control calculator__field--small" type="text" id="pension" name="pension" value="<%= @pension %>">
       <select class="form-control calculator__field--frequency-select" name="pension_frequency">
@@ -38,7 +38,7 @@
 
     <div class="form-group">
       <label class="form-label" for="chunk">
-        How much cash would you want to take from your pot initially?
+        How much cash do you want to take upfront?
       </label>
       <span id="chunk-a">£</span> <input aria-labelledby="chunk-a" class="form-control calculator__field" type="text" id="chunk" name="chunk" value="<%= @chunk %>">
     </div>

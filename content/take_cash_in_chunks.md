@@ -7,9 +7,9 @@ description: You can take smaller chunks of cash from your pension pot until it 
 
 # Taking cash in chunks
 
-You can take smaller sums of cash from your pot until it runs out. How much and when you take the money is your decision.
+You can take smaller sums of cash from your pot until it runs out. How much you take and when you take it is up to you.
 
-With this option the 25% tax free isn’t paid as one lump sum. Instead, you get it in chunks over the time you take money from your pot. Every time you take a chunk out, 25% of the amount you take is tax free and the remaining 75% is taxable.
+With this option the 25% tax free isn’t paid as one lump sum. Instead, it's applied each time you take cash out. So with each chunk of cash you take from your pot, 25% of it is tax free and the other 75% is taxable.
 
 
 {: .info-notice--take-cash}
@@ -23,7 +23,7 @@ You don’t have any other income and this is below the Personal Allowance of £
 **You don’t pay tax on your cash.**
 $E
 
-Any cash your provider pays you will have the [tax owed](/tax) already taken off. Some providers also charge you to take cash out.
+Any cash your provider pays you will have the [tax owed](/tax) already taken off. Some providers also charge you a fee to take cash out.
 
 Taking a large sum of cash from your pension pot could also affect [your entitlement to any benefits](/benefits).
 
@@ -33,9 +33,9 @@ Pension providers may describe this option as ‘Uncrystallised Funds Pension Lu
 
 It’s important to calculate how much tax you might pay if you want to take your pension pot as cash.
 
-The cash you take will be added to any other income you have over the tax year.  At the end of the tax year HM Revenue and Customs will calculate how much tax you owe.
+Taking a large amount of cash at once could mean that you get bumped into a higher tax rate as it’s added to any other income you have for that year.
 
-If you spread the cash amounts over more than one tax year, you might pay less tax on them. Adding a large cash sum to your income could mean that you get bumped into a higher tax rate.
+If you spread the cash amounts over more than one tax year, you might pay less tax on them.
 
 ## Continuing to pay in
 
@@ -67,7 +67,7 @@ Your provider may also let you continue to pay into the pot you take cash from.
     <div class="form-group">
       <label class="form-label" for="pension">
         State Pension
-        <span class="form-hint">The most you can currently get is £115.95 per week</span>
+        <span class="form-hint">The most you can currently get from the basic State Pension is £115.95 weekly</span>
       </label>
       <span id="pension-a">£</span> <input aria-labelledby="pension-a" class="form-control calculator__field--small" type="text" id="pension" name="pension" value="0">
       <select class="form-control calculator__field--frequency-select" name="pension_frequency">
@@ -78,7 +78,7 @@ Your provider may also let you continue to pay into the pot you take cash from.
 
     <div class="form-group">
       <label class="form-label" for="chunk">
-        How much cash would you want to take from your pot initially?
+        How much cash do you want to take upfront?
       </label>
       <span id="chunk-a">£</span> <input aria-labelledby="chunk-a" class="form-control calculator__field" type="text" id="chunk" name="chunk" value="0">
     </div>
@@ -94,6 +94,6 @@ Your provider may also let you continue to pay into the pot you take cash from.
 
 Here are some next steps if you’re interested in taking cash in chunks:
 
-- ask your current provider if they offer the option and what they charge - if they don’t offer it, you can transfer your pot but you might be charged
+- ask your current provider if they offer the option and what they charge in fees - if they don’t offer it, you can transfer your pot but you might be charged a fee
 - check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate
 - make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out
