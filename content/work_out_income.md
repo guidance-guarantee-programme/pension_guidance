@@ -182,4 +182,4 @@ When you take a large cash sum from your pension pot to pay for debts you also h
 These organisations offer impartial debt advice:
 
 - [The Money Advice Service](https://www.moneyadviceservice.org.uk/en/categories/debt-and-borrowing)
-- [Citizens Advice](http://www.adviceguide.org.uk/wales/debt_w/debt_help_with_debt_e.htm)
+- [Citizens Advice](https://www.citizensadvice.org.uk/debt-and-money/help-with-debt)
