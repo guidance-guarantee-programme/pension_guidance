@@ -175,11 +175,11 @@ You might pay more for:
 
 ##If you have debt
 
-If you’re thinking about using part or all of your pension pot to pay debts you should look at [your options](https://www.gov.uk/options-for-paying-off-your-debts/overview) and get advice first. You have to think carefully about what you’ll live on in retirement.
+If you’re thinking about using part or all of your pension pot to pay off debts you should look at the options for [paying off your debts](https://www.gov.uk/options-for-paying-off-your-debts/overview) and get advice first. You have to think carefully about how much money you’ll need in retirement.
 
-When you take a large cash sum from your pension pot to pay for debts you also have to consider the tax you’ll pay. What you have left after tax might not be enough to cover your debts.
+When you take a large cash sum from your pot to pay off debts you also have to consider the tax you’ll pay. What you have left after tax might not be enough to cover your debts.
 
-These organisations offer impartial debt advice:
+For free and impartial debt advice go to:
 
 - [The Money Advice Service](https://www.moneyadviceservice.org.uk/en/categories/debt-and-borrowing)
 - [Citizens Advice](https://www.citizensadvice.org.uk/debt-and-money/help-with-debt)
