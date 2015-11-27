@@ -32,7 +32,7 @@ At the end of the tax year HM Revenue and Customs will calculate how much tax yo
       <label class="form-label" for="pot">
         Total pension pot value
       </label>
-      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="0">
+      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot">
     </div>
 
     <div class="form-group">
@@ -40,7 +40,7 @@ At the end of the tax year HM Revenue and Customs will calculate how much tax yo
         Income for the year
         <span class="form-hint">Includes your salary, savings, benefits and State Pension payments</span>
       </label>
-      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="0">
+      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income">
     </div>
 
     <div class="form-group">
