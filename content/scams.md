@@ -8,7 +8,7 @@ Pension scams, in which criminals cheat people out of their pension pots, are in
 
 There are different types of scam. They often begin by someone giving you a ‘cold call’ - contacting you unexpectedly about:
 
-- an investment or other business opportunity that you’ve not previously spoken to them about
+- an investment or other business opportunity that you’ve not spoken to them about before
 - taking your pension money before you’re 55
 - the ways that you can invest your pension money
 
