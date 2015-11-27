@@ -1,19 +1,14 @@
 RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
   let(:pot) { '100,000' }
   let(:income) { '7,000' }
-  let(:pension) { '115.95' }
-  let(:pension_invalid) { '500' }
-  let(:pension_frequency) { 'weekly' }
-  let(:pension_frequency_label) { 'Weekly' }
 
   scenario 'with invalid input' do
     enter_invalid_data
     perform_calculation
 
     expect(data_layer).to include(
-      'pot' => 100_000,
+      'pot' => 0,
       'income' => 7_000,
-      'annual_pension' => 26_000,
       'valid' => false
     )
   end
@@ -25,10 +20,9 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
     expect(data_layer).to include(
       'pot' => 100_000,
       'income' => 7_000,
-      'annual_pension' => 6029,
       'valid' => true,
-      'pot_tax' => 24_128,
-      'pot_received' => 75_871
+      'pot_tax' => 22_203,
+      'pot_received' => 77_797
     )
   end
 
@@ -43,13 +37,11 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
 
     fill_in 'pot', with: pot
     fill_in 'income', with: income
-    fill_in 'pension', with: pension
-    select pension_frequency_label, from: 'pension_frequency'
   end
 
   def enter_invalid_data
     enter_valid_data
-    fill_in 'pension', with: pension_invalid
+    fill_in 'pot', with: ''
   end
 
   def perform_calculation

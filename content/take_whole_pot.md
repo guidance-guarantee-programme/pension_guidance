@@ -45,18 +45,6 @@ At the end of the tax year HM Revenue and Customs will calculate how much tax yo
     </div>
 
     <div class="form-group">
-      <label class="form-label" for="pension">
-        State Pension
-        <span class="form-hint">The most you can currently get from the basic State Pension is £115.95 weekly</span>
-      </label>
-      <span id="pension-a">£</span> <input aria-labelledby="pension-a" class="form-control calculator__field--small" type="text" id="pension" name="pension" value="0">
-      <select class="form-control calculator__field--frequency-select" name="pension_frequency">
-        <option value="weekly" selected>Weekly</option>
-        <option value="annually" >Annually</option>
-      </select>
-    </div>
-
-    <div class="form-group">
       <input type="submit" class="button" value="Calculate" id="js-calculate">
     </div>
   </form>

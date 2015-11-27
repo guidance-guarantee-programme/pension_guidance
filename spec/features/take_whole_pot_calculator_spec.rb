@@ -5,12 +5,10 @@ RSpec.describe 'Take whole pot calculator', type: :feature do
 
       fill_in 'pot', with: 100_000
       fill_in 'income', with: 7_000
-      fill_in 'pension', with: 5_000
-      select 'Annual', from: 'pension_frequency'
       click_on 'Calculate'
 
-      expect(page.find('.t-pot-received')).to have_content('£76,077')
-      expect(page.find('.t-pot-tax')).to have_content('£23,923')
+      expect(page.find('.t-pot-received')).to have_content('£77,797')
+      expect(page.find('.t-pot-tax')).to have_content('£22,203')
     end
   end
 end
