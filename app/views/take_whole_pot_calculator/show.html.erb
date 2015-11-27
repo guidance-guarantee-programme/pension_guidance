@@ -26,8 +26,7 @@
   <form action="/take-whole-pot/results#find-out-what-you-would-get-after-tax" method="get">
     <div class="form-group <%= 'error' if @calculator.errors.has_key?(:pot) %>">
       <label class="form-label" for="pot">
-        Pot value
-        <span class="form-hint">All your pension pots combined</span>
+        Total pension pot value
       </label>
       <% if @calculator.errors.has_key?(:pot) %>
         <span class="error-message"><%= @calculator.errors[:pot].first %></span>
@@ -37,8 +36,8 @@
 
     <div class="form-group <%= 'error' if @calculator.errors.has_key?(:income) %>">
       <label class="form-label" for="income">
-        Other annual income
-        <span class="form-hint">Money from work, savings and benefits</span>
+        Income for the year
+        <span class="form-hint">Includes your salary, savings, benefits and State Pension payments</span>
       </label>
       <% if @calculator.errors.has_key?(:income) %>
         <span class="error-message"><%= @calculator.errors[:income].first %></span>

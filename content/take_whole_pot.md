@@ -30,16 +30,15 @@ At the end of the tax year HM Revenue and Customs will calculate how much tax yo
   <form action="/take-whole-pot/results#find-out-what-you-would-get-after-tax" method="get">
     <div class="form-group">
       <label class="form-label" for="pot">
-        Pot value
-        <span class="form-hint">All your pension pots combined</span>
+        Total pension pot value
       </label>
       <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="0">
     </div>
 
     <div class="form-group">
       <label class="form-label" for="income">
-        Other annual income
-        <span class="form-hint">Money from work, savings and benefits</span>
+        Income for the year
+        <span class="form-hint">Includes your salary, savings, benefits and State Pension payments</span>
       </label>
       <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="0">
     </div>
