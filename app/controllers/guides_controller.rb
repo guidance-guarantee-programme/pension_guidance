@@ -32,6 +32,10 @@ class GuidesController < ApplicationController
     @related_guides = decorate(related_guides)
 
     expires_in Rails.application.config.cache_max_age, public: true
+
+    if PENSION_OPTION_IDS.include? params[:id]
+      render 'pension_option'
+    end
   end
 
   private

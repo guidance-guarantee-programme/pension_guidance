@@ -1,36 +1,17 @@
 <% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
 <% content_for(:meta_description, @guide.description) %>
 
-<% content_for :sticky_sidebar do %>
+<% content_for :sidebar do %>
   <div class="link-promo ga-elsewhere-sidebar">
-    <div class="anchorific">
-
-    </div>
+    <h2 class="link-promo__heading">Elsewhere on Pension Wise</h2>
+    <ul class="link-promo__list">
+      <% @related_guides.each do |related_guide| %>
+        <li class="link-promo__item t-link-promo__item">
+          <%= link_to related_guide.title, related_guide.url unless related_guide == @guide %>
+        </li>
+      <% end %>
+    </ul>
   </div>
-<% end %>
-
-<% content_for :after_script do %>
-  <%= javascript_include_tag 'anchorific' %>
-  <%= javascript_include_tag 'affix' %>
-
-  <script>
-    'use strict';
-    $('article.text').anchorific({
-      anchorText: '',
-      top: '.top',
-      spy: true,
-      spyOffset: 200
-    });
-
-    $('.sticky-sidebar').affix({
-      offset: {
-        top: 230,
-        bottom: function () {
-          return (this.bottom = $('.js-footer').outerHeight(true));
-        }
-      }
-    });
-  </script>
 <% end %>
 
 <%= @guide.content %>
