@@ -26,7 +26,7 @@
         <% end %>
 
         <% if content_for?(:sticky_sidebar) %>
-          <div class="sticky-sidebar">
+          <div class="sticky-sidebar sticky-sidebar--<%= page_id %>">
             <div class="sidebar-hr"></div>
             <%= yield :sticky_sidebar %>
           </div>

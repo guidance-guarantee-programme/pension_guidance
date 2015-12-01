@@ -3,7 +3,7 @@
 
 <% content_for :sticky_sidebar do %>
   <div class="link-promo ga-elsewhere-sidebar">
-    <div class="anchorific">
+    <div class="sticky-sidebar__nav">
 
     </div>
   </div>
@@ -19,7 +19,8 @@
       anchorText: '',
       top: '.top',
       spy: true,
-      spyOffset: 200
+      spyOffset: 200,
+      navigation: '.sticky-sidebar__nav'
     });
 
     $('.sticky-sidebar').affix({
