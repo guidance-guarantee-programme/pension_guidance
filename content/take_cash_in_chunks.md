@@ -7,10 +7,13 @@ description: You can take smaller chunks of cash from your pension pot until it 
 
 # Taking cash in chunks
 
-You can take smaller sums of cash from your pot until it runs out. How much and when you take the money is your decision.
+You can take smaller sums of cash from your pot until it runs out. How much you take and when you take it is up to you.
 
-With this option the 25% tax free isn’t paid as one lump sum. Instead, you get it in chunks over the time you take money from your pot. Every time you take a chunk out, 25% of the amount you take is tax free and the remaining 75% is taxable.
+With this option the 25% tax free isn’t paid as one lump sum. Instead, you get it over time. Each time you take a chunk of money out 25% is tax free and the rest is taxable
 
+Your pension provider will take off the [tax you owe](/tax) before they pay you the cash.
+
+Some providers will charge you a fee to take cash out.
 
 {: .info-notice--take-cash}
 $E
@@ -23,17 +26,19 @@ You don’t have any other income and this is below the Personal Allowance of £
 **You don’t pay tax on your cash.**
 $E
 
-Any cash your provider pays you will have the [tax owed](/tax) already taken off. Some providers also charge you to take cash out.
-
 Taking a large sum of cash from your pension pot could also affect [your entitlement to any benefits](/benefits).
 
-Pension providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
+Pension providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS). Not all providers offer this option. If your provider doesn’t offer it, you can transfer your pot but you might have to pay a fee.
+
+## Watch out for scams
+
+Beware of [pension scams](/scams) contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
 
 ## Watch out for higher tax
 
-It’s important to calculate how much tax you might pay if you want to take your pension pot as cash.
+It’s important to calculate how much tax you might pay if you want to take your pension pot as cash in chunks.
 
-The cash you take will be added to any other income you have over the tax year.  At the end of the tax year HM Revenue and Customs will calculate how much tax you owe.
+Taking a large amount of cash at once could mean that you get bumped into a higher tax rate. This is because it’s added to any other income you have for that year. At the end of the tax year HM Revenue and Customs will calculate how much tax you owe.
 
 If you spread the cash amounts over more than one tax year, you might pay less tax on them. Adding a large cash sum to your income could mean that you get bumped into a higher tax rate.
 
