@@ -19,6 +19,8 @@ $E
 You have a pension pot of £40,000. You take 25% tax free which is £10,000. You invest the remaining £30,000 in a fund to give you an adjustable income. Your fund grows by 3% every year.  You take an income of £2,000 from it. Your fund will last you 20 years.
 $E
 
+Not all pension providers offer this option. If your provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
+
 ## How adjustable income works
 The provider you go with will offer you different investment funds with different risks. You pick the funds that are right for you and get a retirement income from your investments. You should think about how much you take out every year and how long you want your money to last.
 
@@ -60,7 +62,7 @@ You can [leave your pot to someone](/when-you-die) when you die but they may hav
 
 If you’re interested in getting an adjustable income you can:
 
-- check with your current provider if they offer the option and what they charge - if they don’t offer it, you can transfer your pot but you might be charged
+- check with your current provider if they offer this option and what they charge in fees
 - check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate
 - [get financial advice](/shop-around) if you’re interested in getting an adjustable income
 - [shop around](/shop-around) - check with providers what products they offer to suit your circumstances
