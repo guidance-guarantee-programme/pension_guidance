@@ -1,0 +1,12 @@
+.sticky-sidebar {
+  &.affix {
+    position: fixed;
+    max-width: 300px;
+    top: 20px;
+  }
+
+  &.affix-bottom {
+    position: absolute;
+    max-width: 300px;
+  }
+}

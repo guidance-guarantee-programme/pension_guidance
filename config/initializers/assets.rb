@@ -14,6 +14,8 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   apple-touch-icon-60x60.png
                                                   apple-touch-icon-76x76.png
                                                   favicon.ico
+                                                  anchorific.js
+                                                  affix.js
                                                   gov.uk_logotype_crown.png
                                                   icon-arrow-left.png
                                                   icons/icon-pointer-2x.png

@@ -24,6 +24,13 @@
           <div class="sidebar-hr"></div>
           <%= yield :sidebar %>
         <% end %>
+
+        <% if content_for?(:sticky_sidebar) %>
+          <div class="sticky-sidebar">
+            <div class="sidebar-hr"></div>
+            <%= yield :sticky_sidebar %>
+          </div>
+        <% end %>
       </div>
     </div>
 

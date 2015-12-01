@@ -1,0 +1,43 @@
+.anchorific {
+  margin-top: 20px;
+
+  // level 1
+  ul {
+    li {
+      list-style: none;
+      margin-left: 0;
+
+      a:link,
+      a:visited {
+        font-size: 24px;
+        font-weight: 700;
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    // level 2
+    ul {
+      margin-top: 20px;
+      list-style: none;
+      margin-left: 0;
+
+      li {
+        padding-left: 20px;
+        border-left: 4px solid white;
+
+        &.active {
+          border-left-color: $govuk-blue;
+        }
+
+        a:link,
+        a:visited {
+          font-size: 18px;
+          font-weight: 500;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
