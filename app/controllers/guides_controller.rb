@@ -33,9 +33,7 @@ class GuidesController < ApplicationController
 
     expires_in Rails.application.config.cache_max_age, public: true
 
-    if PENSION_OPTION_IDS.include? params[:id]
-      render 'pension_option'
-    end
+    render 'pension_option' if PENSION_OPTION_IDS.include? params[:id]
   end
 
   private
