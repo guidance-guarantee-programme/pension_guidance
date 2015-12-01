@@ -30,30 +30,17 @@ At the end of the tax year HM Revenue and Customs will calculate how much tax yo
   <form action="/take-whole-pot/results#find-out-what-you-would-get-after-tax" method="get">
     <div class="form-group">
       <label class="form-label" for="pot">
-        Pot value
-        <span class="form-hint">All your pension pots combined</span>
+        Total pension pot value
       </label>
-      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="0">
+      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot">
     </div>
 
     <div class="form-group">
       <label class="form-label" for="income">
-        Other annual income
-        <span class="form-hint">Money from work, savings and benefits</span>
+        Income for the year
+        <span class="form-hint">Includes your salary, savings, benefits and State Pension payments</span>
       </label>
-      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="0">
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="pension">
-        State Pension
-        <span class="form-hint">The most you can currently get from the basic State Pension is £115.95 weekly</span>
-      </label>
-      <span id="pension-a">£</span> <input aria-labelledby="pension-a" class="form-control calculator__field--small" type="text" id="pension" name="pension" value="0">
-      <select class="form-control calculator__field--frequency-select" name="pension_frequency">
-        <option value="weekly" selected>Weekly</option>
-        <option value="annually" >Annually</option>
-      </select>
+      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income">
     </div>
 
     <div class="form-group">

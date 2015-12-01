@@ -26,8 +26,7 @@
   <form action="/take-whole-pot/results#find-out-what-you-would-get-after-tax" method="get">
     <div class="form-group <%= 'error' if @calculator.errors.has_key?(:pot) %>">
       <label class="form-label" for="pot">
-        Pot value
-        <span class="form-hint">All your pension pots combined</span>
+        Total pension pot value
       </label>
       <% if @calculator.errors.has_key?(:pot) %>
         <span class="error-message"><%= @calculator.errors[:pot].first %></span>
@@ -37,28 +36,13 @@
 
     <div class="form-group <%= 'error' if @calculator.errors.has_key?(:income) %>">
       <label class="form-label" for="income">
-        Other annual income
-        <span class="form-hint">Money from work, savings and benefits</span>
+        Income for the year
+        <span class="form-hint">Includes your salary, savings, benefits and State Pension payments</span>
       </label>
       <% if @calculator.errors.has_key?(:income) %>
         <span class="error-message"><%= @calculator.errors[:income].first %></span>
       <% end %>
       <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="<%= @income %>">
-    </div>
-
-    <div class="form-group <%= 'error' if @calculator.errors.has_key?(:pension) %>">
-      <label class="form-label" for="pension">
-        State Pension
-        <span class="form-hint">The most you can currently get from the basic State Pension is £115.95 weekly</span>
-      </label>
-      <% if @calculator.errors.has_key?(:pension) %>
-        <span class="error-message"><%= @calculator.errors[:pension].first %></span>
-      <% end %>
-      <span id="pension-a">£</span> <input aria-labelledby="pension-a" class="form-control calculator__field--small" type="text" id="pension" name="pension" value="<%= @pension %>">
-      <select class="form-control calculator__field--frequency-select" name="pension_frequency">
-        <option value="weekly" <%= 'selected' if @pension_frequency == 'weekly' %>>Weekly</option>
-        <option value="annually" <%= 'selected' if @pension_frequency == 'annually' %>>Annually</option>
-      </select>
     </div>
 
     <div class="form-group">
