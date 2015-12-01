@@ -7,7 +7,7 @@ description: You can cash in your whole pension pot - 75% of that money is taxab
 
 # Taking your whole pot in one go
 
-You can take your whole pot as cash in one go - 25% is tax-free, the remaining 75% is taxable.
+You can take your whole pot as cash in one go - 25% is tax-free, the other 75% is taxable.
 
 You pay tax when you take money from your pot. This is because when you’re paying into your pension you get [tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief) on your contributions.
 
@@ -19,9 +19,9 @@ It’s important to calculate how much tax you would pay if you take your whole 
 
 %Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 
-The cash you take will be added to any other income you have over the tax year, eg money from work, savings and benefits. At the end of the tax year HM Revenue and Customs will calculate how much tax you owe. 
+Taking a large amount of cash from your pot at once could mean that you get bumped into a higher tax rate. This is because it’s added to any other income you have for that year, eg money from work. 
 
-Adding a large cash sum to your income could mean that you get bumped into a higher tax rate. It could also affect your [entitlement to any benefits](/benefits).
+At the end of the tax year HM Revenue and Customs will calculate how much tax you owe. It could also affect your [entitlement to any benefits](/benefits).
 
 {::options parse_block_html="false" /}
 <div class="calculator calculator--in-article js-take-whole-pot-calculator">
@@ -63,9 +63,14 @@ Adding a large cash sum to your income could mean that you get bumped into a hig
 </div>
 {::options parse_block_html="true" /}
 
+## Watch out for scams
+
+Beware of [pension scams](/scams) contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
+
 ## Your next steps
 
 Here are some next steps if you’re interested in taking your whole pot in one go:
 
-- check with your provider if you can take 25% tax free
+- check with your provider if they offer this option – they may charge you a fee if you move your pension to a provider that does
+- you can take 25% tax free
 - if you want to reinvest the money, talk to a [registered financial adviser](http://www.fca.org.uk/register) first
