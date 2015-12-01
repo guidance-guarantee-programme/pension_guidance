@@ -18,12 +18,13 @@
     $('article.text').anchorific({
       anchorText: '',
       top: '.top',
-      spy: true
+      spy: true,
+      spyOffset: 200
     });
 
     $('.sticky-sidebar').affix({
       offset: {
-        top: 200,
+        top: 230,
         bottom: function () {
           return (this.bottom = $('.js-footer').outerHeight(true));
         }
