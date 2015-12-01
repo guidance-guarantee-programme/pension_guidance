@@ -6,7 +6,7 @@ description: You can decide when you take money from your pension pot.
 
 # Leaving your whole pension pot untouched
 
-You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the pension age you agreed with your provider).
+You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the age you agreed with your provider to retire).
 
 You can leave the money invested, eg while you’re working. Your pension pot could grow further and give you a larger amount of money to last for a shorter amount of time.
 
@@ -17,11 +17,10 @@ As long as your money stays in your pension pot you don’t pay tax on it. You c
 Whatever money you leave in your pension pot you can [pass on](/when-you-die) tax free if you die before the age of 75.
 
 ## Charges and investment risk
-Your provider may charge you administration fees for managing the fund.
+
+Your provider may charge you administration fees for managing the fund after your selected retirement age.
 
 As with every investment the value of your pot could go up or down.
-
-Usually the earliest you can start taking money from your pot is 55. Check with your provider. In some circumstances you can [take your pension earlier](https://www.gov.uk/early-retirement-pension/personal-and-workplace-pensions).
 
 ## Your next steps
 
