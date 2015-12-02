@@ -33,6 +33,7 @@ Feature: Guides
       | tax                      |
       | when-you-die             |
       | work-out-income          |
+      | your-pension-before-55   |
 
   Scenario: Display guide title and heading
     When I visit a guide
