@@ -61,8 +61,6 @@
       margin-left: 0;
 
       li {
-        padding-left: 20px;
-        border-left: 4px solid $grey-3;
         margin-bottom: 8px;
 
         a:link,
@@ -70,33 +68,93 @@
           font-size: 18px;
           font-weight: 500;
           color: $grey-1;
+          border-left: 4px solid $grey-3;
+          padding-left: 20px;
+          display: inline-block;
+
+          &[href^="#estimate"] {
+            border-left-color: transparent;
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 20px;
+              height:20px;
+              left: -8px;
+              background-color: $color-black;
+              -webkit-mask-image: image-url("css/1449169995_calculator.svg");
+              -webkit-mask-size: contain;
+            }
+          }
         }
 
         &.active {
-          .sticky-sidebar--leave-pot-untouched & {
-            border-left-color: $color-option-leave-pot-untouched;
-          }
-          .sticky-sidebar--guaranteed-income & {
-            border-left-color: $color-option-guaranteed-income;
-          }
-          .sticky-sidebar--adjustable-income & {
-            border-left-color: $color-option-adjustable-income;
-          }
-          .sticky-sidebar--take-cash-in-chunks & {
-            border-left-color: $color-option-take-cash;
-          }
-          .sticky-sidebar--take-whole-pot & {
-            border-left-color: $color-option-whole-pot;
-          }
-          .sticky-sidebar--mix-options & {
-            border-left-color: $color-option-mix-options;
-          }
-
           a:link,
           a:visited {
             color: $color-black;
             font-weight: 700;
             text-decoration: underline;
+
+            .sticky-sidebar--leave-pot-untouched & {
+              border-left-color: $color-option-leave-pot-untouched;
+
+              &[href^="#estimate"] {
+                border-left-color: transparent;
+                &:before {
+                  background-color: $color-option-leave-pot-untouched;
+                }
+              }
+            }
+            .sticky-sidebar--guaranteed-income & {
+              border-left-color: $color-option-guaranteed-income;
+
+              &[href^="#estimate"] {
+                border-left-color: transparent;
+                &:before {
+                  background-color: $color-option-guaranteed-income;
+                }
+              }
+            }
+            .sticky-sidebar--adjustable-income & {
+              border-left-color: $color-option-adjustable-income;
+
+              &[href^="#estimate"] {
+                border-left-color: transparent;
+                &:before {
+                  background-color: $color-option-adjustable-income;
+                }
+              }
+            }
+            .sticky-sidebar--take-cash-in-chunks & {
+              border-left-color: $color-option-take-cash;
+
+              &[href^="#estimate"] {
+                border-left-color: transparent;
+                &:before {
+                  background-color: $color-option-take-cash;
+                }
+              }
+            }
+            .sticky-sidebar--take-whole-pot & {
+              border-left-color: $color-option-whole-pot;
+
+              &[href^="#estimate"] {
+                border-left-color: transparent;
+                &:before {
+                  background-color: $color-option-whole-pot;
+                }
+              }
+            }
+            .sticky-sidebar--mix-options & {
+              border-left-color: $color-option-mix-options;
+
+              &[href^="#estimate"] {
+                border-left-color: transparent;
+                &:before {
+                  background-color: $color-option-mix-options;
+                }
+              }
+            }
           }
         }
       }
