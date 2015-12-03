@@ -6,13 +6,16 @@
 }
 
 .l-page-nav {
-  display: none;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: -34px;
 
   @include media(desktop) {
     display: block;
     position: absolute;
     top: 0;
     right: 12px;
+    margin: 0;
   }
 }
 
@@ -30,6 +33,14 @@
       text-align: center;
       font-size: 1.1em;
     }
+  }
+}
+
+.l-sticky-sidebar {
+  display:none;
+
+  @include media(desktop) {
+    display: block;
   }
 }
 

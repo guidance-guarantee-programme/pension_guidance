@@ -19,56 +19,65 @@ $nav-background-alt: $grey-3;
 .nav {
   text-align: left;
   display: inline-block;
-  margin: 8px -138px 0 138px;
   padding: 0;
   list-style: none;
+
+  @include media(desktop) {
+    margin: 8px -138px 0 138px;
+  }
 }
 
 .nav__item {
   font-size: 17px;
   font-weight: bold;
-  display: inline-block;
-  margin-right: -32px;
-  position: relative;
-  padding: 15px;
-  cursor: pointer;
-  max-width: 15%;
+  display: block;
+  margin-left: 0;
 
-  &:after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 40px;
-    background: $border-colour;
-    top: 50%;
-    margin-top: -20px;
-    left: 0;
-    z-index: 50;
-  }
-
-  &:first-child {
-    border-left:1px solid $border-colour;
-
-    &:hover {
-      border-left: none;
-    }
+  @include media(desktop) {
+    display: inline-block;
+    margin-right: -32px;
+    margin-left: 20px;
+    position: relative;
+    padding: 15px;
+    cursor: pointer;
+    max-width: 15%;
 
     &:after {
-      display: none;
-    }
-  }
-
-  &:hover,
-  &:focus {
-    background: $nav-background;
-    z-index: 55;
-
-    &:after {
-      display: none;
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 40px;
+      background: $border-colour;
+      top: 50%;
+      margin-top: -20px;
+      left: 0;
+      z-index: 50;
     }
 
-    .nav__sub-nav {
-      display: block;
+    &:first-child {
+      border-left:1px solid $border-colour;
+
+      &:hover {
+        border-left: none;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background: $nav-background;
+      z-index: 55;
+
+      &:after {
+        display: none;
+      }
+
+      .nav__sub-nav {
+        display: block;
+      }
     }
   }
 }
@@ -82,8 +91,10 @@ $nav-background-alt: $grey-3;
 }
 
 .nav__item-label--single {
-  top: 10px;
-  position: relative;
+  @include media(desktop) {
+    top: 10px;
+    position: relative;
+  }
 }
 
 .nav__sub-nav {
