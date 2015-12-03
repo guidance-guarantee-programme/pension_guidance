@@ -1,6 +1,8 @@
 // sass library provided by alphagov/govuk_frontend_toolkit
 @import "govuk-frontend-toolkit";
 
+
+
 // styles provided by alphagov/govuk_elements
 @import "govuk-elements";
 
@@ -20,3 +22,41 @@
 .home-scope {
   margin-top: 28px;
 }
+
+.player-container {
+  @include media-player;
+
+  margin: 0 0 2em;
+
+  .video {
+    clear: both;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .control-bar .player-controls .play {
+    background-image: url("css/player-icon-play.png");
+  }
+
+  .control-bar .player-controls .pause {
+    background-image: url("css/player-icon-pause.png");
+  }
+
+  .control-bar .player-controls .rewind {
+    background-image: url("css/player-icon-rewind.png");
+  }
+
+  .control-bar .player-controls .forward {
+    background-image: url("css/player-icon-forward.png");
+  }
+}
+

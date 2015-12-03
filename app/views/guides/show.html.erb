@@ -33,3 +33,34 @@
 <% if journey_navigation.active? %>
   <%= render 'components/pager', pager: journey_navigation %>
 <% end %>
+
+<% content_for :after_script do %>
+  <script src="https://assets.digital.cabinet-office.gov.uk/static/govuk-template-078ca210270c1333a95facc07bce3a4b.js" type="text/javascript"></script>
+  <script src="https://assets.digital.cabinet-office.gov.uk/static/libs/jquery/jquery-1.7.2-ddedae5e39858ae61299f41995c67529.js" type="text/javascript"></script>
+  <script src="https://assets.digital.cabinet-office.gov.uk/static/application-180f33edb618b029b0b0644af27e299a.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // Find all links to videos on youtube
+      var $yt_links = $("a[href*='https://www.youtube.com/watch']");
+
+      // Create players for our youtube links
+      $.each($yt_links, function (i) {
+        var $holder = $('<span />');
+        $(this).parent().replaceWith($holder);
+        // Find the captions file if it exists
+        var $mycaptions = $(this).siblings('.captions');
+        // Work out if we have captions or not
+        var captionsf = $($mycaptions).length > 0 ? $($mycaptions).attr('href') : null;
+        // Ensure that we extract the last part of the youtube link (the video id)
+        // and pass it to the player() method
+        var link = $(this).attr('href').split("=")[1];
+        // Initialise the player
+        $holder.player({
+          id: 'yt' + i,
+          media: link,
+          captions: captionsf
+        });
+      });
+    });
+  </script>
+<% end %>
