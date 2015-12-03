@@ -2,72 +2,55 @@
 description: How to spot the signs of a pension scam, how to protect yourself, and what to do if you’ve been targeted.
 ---
 
-#How to avoid a pension scam
+# How to avoid a pension scam
 
-Pension scams, in which criminals cheat people out of their pension pots, are increasing.
-
-There are different types of scam. They often begin by someone giving you a ‘cold call’ - contacting you unexpectedly about:
+A pension scam – when someone tries to con you out of your pension money – will often start by someone contacting you unexpectedly about:
 
 - an investment or other business opportunity that you’ve not spoken to them about before
 - taking your pension money before you’re 55
 - the ways that you can invest your pension money
 
-A cold call doesn’t have to be a telephone call. It can be any type of contact they’ve made with you unexpectedly, eg an email.
+^If someone contacts you unexpectedly and says they can help you access your pot before the age of 55 it’s likely to be a scam.^
 
-^You can only [take your pension money before you’re 55](https://www.gov.uk/early-retirement-pension/personal-and-workplace-pensions) in rare cases, eg if you’re very ill.^
-
-Scammers may offer you tempting ways to invest your pension pot, eg investing it in a new hotel being built in an exotic location.
-
-Most of these offers are fake but can appear very convincing. Their aim is to get you to cash in your pension pot and transfer the money.
+You may be offered a tempting way to invest your pension pot, eg investing it in a new hotel being built in an exotic location. Most of these offers are fake but can appear very convincing. Their aim is to get you to cash in your pension pot and transfer the money.
 
 %Once you’ve transferred your money into a scam, it’s too late. You could lose all your pension money as well as face [tax of up to 55%](https://www.gov.uk/tax-on-pension/higher-tax-on-unauthorised-payments) or huge additional fees.%
 
 
-##How to tell if it’s a scam
+## How to tell if it’s a scam
 
 Watch out if an individual or company:
 
-* cold calls you about your pension money through a phone call, a text message, visiting you in person, or in other ways
+* contacts you unexpectedly (known as a ‘cold call’) about your pension money by phone, text message, visiting you in person, or in other ways
 * says you can access your pension money before 55 and that they can help you with this
 * encourages you to take out a large lump sum, or your whole pension pot in one go, and to let them invest it for you
 * asks you to transfer your money quickly, even sending documents to you by courier - never make a rush decision about your pension money
 * uses words like ‘pension liberation’, ‘loan’, ‘loophole’, ‘free pension review’ or ‘one-off investment’
 * offers you an investment described as ‘unique’, ‘overseas’, ‘environmentally friendly’, ‘ethical’ or in a ‘new’ industry
 
-You can [read examples of real pension scams.](http://www.pensionsadvisoryservice.org.uk/content/publications-files/uploads/members_detailed_booklet_7_page.pdf) (PDF, 1MB, 7 pages)
+Read [examples of real pension scams](http://www.pensionsadvisoryservice.org.uk/content/publications-files/uploads/members_detailed_booklet_7_page.pdf). (PDF, 1MB, 7 pages)
 
-^Some websites can look like they’re official government services like Pension Wise - [search on GOV.UK](https://www.gov.uk) to find official government services.^
-
+%Beware of copycat websites – some websites can look like they’re official government services like Pension Wise when they’re not.%
 
-##How to protect yourself
+### Bank details scam
 
+Always phone your provider if you receive an email saying that they’ve changed their bank details and want you to make payments into a new account – this is almost always a scam.
 
-Check if the person or company contacting you is on the [Financial Conduct Authority (FCA) Register](http://www.fca.org.uk/register) or by calling the FCA on 0800 111 6768. If you call the person or company back, use the phone number for them that’s on the FCA Register.
+## How to protect yourself
 
-You may be approached by someone claiming to be a pension provider, a financial adviser or from the government. Remember that the government won’t:
+Check if the person or company contacting you is on the [Financial Conduct Authority (FCA) Register](http://www.fca.org.uk/register) or call the FCA on 0800 111 6768. If you call the person or company back, use the phone number listed on the FCA Register.
 
-* encourage you to take your pension money before you’re 55
-* approach you with recommendations about how to invest or spend your pension money
-* cold call you for specific information about your pension or finances, eg how much is in your pension pot, who your pension provider is or what your bank details are
+You may be approached by someone claiming to be a pension provider, a financial adviser or from the government.
 
 %If anyone cold calls you claiming to be from the government and asks for your personal or financial details, don’t reveal them. Hang up if you need to.%
 
-You can read more about:
+Read more about [avoiding and reporting internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
-- [avoiding and reporting internet scams and phishing](https://www.gov.uk/report-suspicious-emails-websites-phishing)
-
-
-
-##If you’ve been targeted
-
+## If you’ve been targeted
 
 If you think you’ve been the victim of a pension scam, call Action Fraud on 0300 123 2040 or use the [Action Fraud online reporting tool.](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime)
 
-
-###Further information
-
-You can contact The Pensions Advisory Service for free and impartial information if you’re
-concerned about a pension scam.
+Speak to The Pensions Advisory Service if you’ve been unexpectedly contacted by someone about your pension.
 
 $C
 **The Pensions Advisory Service**<br />
@@ -75,6 +58,3 @@ Telephone: 0300 123 1047<br />
 Monday to Friday, 9am to 5pm<br />
 [Find out about call charges](https://www.gov.uk/call-charges)
 $C
-
-
-You can ask a [regulated financial adviser](http://www.fsa.gov.uk/register/home.do) about the best ways to use your pension pot and when to take money from it. Charges usually apply.
