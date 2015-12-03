@@ -2,17 +2,17 @@
 description: What to consider when working out how much retirement income you’ll have, including your pension, other sources of income, costs, and debt.
 ---
 
-#Work out how much money you’ll have in retirement
+# Work out how much money you’ll have in retirement
 
 When you reach retirement your income is likely to be less. This is mostly because your income from work drops if you go part-time or when you stop working altogether. Your retirement income usually isn’t as much as your salary.
 
 You should think about [what you can do with your pension pot](/pension-pot-options) to make sure you can [make your money last through retirement](/making-money-last).
 
-##Add up all your income
+## Add up all your income
 
 How you take the money from your pension pot depends on how much other income you have. You should start by adding up all your income.
 
-###Most common income in retirement
+### Most common income in retirement
 
 You’ll most likely have:
 
@@ -21,7 +21,7 @@ You’ll most likely have:
 
 [Check the value of your pension pot](/pension-pot-value) if you don’t know. Call the Future Pension Centre on 0345 600 4274 for a full State Pension statement.
 
-###Other income
+### Other income
 
 You might also have other income:
 
@@ -34,7 +34,7 @@ You might also have other income:
 
 ^Taking money from your pension pot can [affect your benefits](/benefits).^
 
-##If you only have income from pensions
+## If you only have income from pensions
 
 Once you stop working and you don’t have any other income, your retirement income will be made up of your own pension(s) plus the State Pension.
 
@@ -59,7 +59,7 @@ What you have | Amount
 Full basic State Pension per year | £6,029.40
 Your total pension pot | £30,000
 
-###What you do with your pension pot
+### What you do with your pension pot
 
 You decide to take 25% of your pot tax free and take money from this amount every year. You buy a single annuity with the rest. This kind of annuity won’t continue to pay to your spouse or partner after you die.
 
@@ -82,7 +82,7 @@ You also have the £7,500 tax-free money to supplement your income.
 $E
 
 
-##If you have other income
+## If you have other income
 
 If you continue working for a while and have other income, your retirement income will be made up of:
 
@@ -90,7 +90,7 @@ If you continue working for a while and have other income, your retirement incom
 - the State Pension
 - other income you have
 
-###How to calculate your retirement income
+### How to calculate your retirement income
 
 To get a basic idea of how much you’ll have in retirement follow these steps:
 
@@ -113,7 +113,7 @@ Basic State Pension per year | £6,029.40
 Your total pension pot | £100,000
 Income per year from working part time | £15,000
 
-###What you get in your 60s
+### What you get in your 60s
 
 Income | Amount per year
 - | -
@@ -123,7 +123,7 @@ Income before tax | = £21,029
 Tax you pay | - £2,086
 **Your total retirement income in your 60s** | **= £18,943**
 
-###What you do with your pension pot when you’re 70
+### What you do with your pension pot when you’re 70
 
 Your pension pot has grown to £127,628 in the 5 years you left it untouched. You decide to take 25% tax free and re-invest the rest.
 
@@ -132,7 +132,7 @@ What you do with it | Amount
 25% tax free | £31,907 in one go
 You re-invest the remaining £95,721 into a flexi-access drawdown fund. The fund grows at 5% a year.  | You decide to take £6,500 a year.
 
-###What you get from 70 onwards
+### What you get from 70 onwards
 
 Income | Amount per year
 - | -
@@ -145,27 +145,29 @@ Tax you pay | - £386
 You also have the £31,907 tax-free money that you can use to supplement your income.
 $E
 
-##Costs in retirement
+## Costs in retirement
 
-Add up all the costs you have and take them away from your retirement income after tax. This will give you an idea if you have enough money in retirement.
+Add up all the costs you have now. You can use [Money Advice Service’s budget planner](https://www.moneyadviceservice.org.uk/en/tools/budget-planner) to help you work out what they are.
+
+Take away these costs from your retirement income. This will give you an idea if you’ll have enough money in retirement.
 
 Things you have to pay for in retirement usually include:
 
-- living costs, eg food, clothes
-- mortgage payments or rent
+- living costs, eg food and clothes
+- mortgage or payments
 - energy and water bills
-- TV, phone, internet
+- TV, phone and internet
 - interest on loans
 - care costs
 - travel
 - leisure
 
-Over the years some of these things will go down, some will go up. This is because your needs will change.
+Over the years your needs will change, meaning some of these things will go down and some will go up.
 
 You might pay less on:
 
-- travel - some public transport is free once you reach [State Pension age](https://www.gov.uk/calculate-state-pension)
-- your mortgage - this might be paid off
+- travel – some public transport is free once you reach [State Pension age](https://www.gov.uk/calculate-state-pension)
+- your mortgage – this might be paid off
 - living costs
 
 You might pay more for:
@@ -173,7 +175,21 @@ You might pay more for:
 - energy and water bills - you may spend more time at home
 - care costs
 
-##If you have debt
+## Paying more into your pension pot
+
+If you don’t think you’ll have enough income in your retirement you could consider adding more to your pot before you retire. You could talk to a financial adviser about how to contribute more to your pot. 
+
+You can also find out about [ways to boost your pension](https://www.moneyadviceservice.org.uk/en/articles/ways-to-boost-your-pension-in-the-run-up-to-retirement) from the Money Advice Service.
+
+There’s a limit to how much you can pay into your pot and still get tax relief. You can pay in up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
+
+## The State Pension
+
+You can push back when you start receiving the State Pension to help increase your income in retirement. This is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
+
+You may be able to [top up your State Pension](https://www.gov.uk/statepensiontopup).
+
+## If you have debt
 
 If you’re thinking about using part or all of your pension pot to pay off debts you should look at the options for [paying off your debts](https://www.gov.uk/options-for-paying-off-your-debts/overview) and get advice first. You have to think carefully about how much money you’ll need in retirement.
 
