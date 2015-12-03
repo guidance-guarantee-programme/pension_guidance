@@ -16,6 +16,23 @@
   }
 }
 
+.l-book-appointment {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    right: -14px;
+    top: 104px;
+
+    .button {
+      width: 300px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+  }
+}
+
 .l-banner-container {
   @extend %site-width-container;
   position: relative;
