@@ -72,7 +72,8 @@
           padding-left: 20px;
           display: inline-block;
 
-          &[href*="estimate"] {
+          &[href*="estimate"],
+          &[href*="find-out-what-you-would-get-after-tax"] {
             border-left-color: transparent;
             &:before {
               content: "";
@@ -99,7 +100,8 @@
             .sticky-sidebar--leave-pot-untouched & {
               border-left-color: $color-option-leave-pot-untouched;
 
-              &[href*="estimate"] {
+              &[href*="estimate"],
+              &[href*="find-out-what-you-would-get-after-tax"] {
                 border-left-color: transparent;
                 &:before {
                   background-color: $color-option-leave-pot-untouched;
@@ -109,7 +111,8 @@
             .sticky-sidebar--guaranteed-income & {
               border-left-color: $color-option-guaranteed-income;
 
-              &[href*="estimate"] {
+              &[href*="estimate"],
+              &[href*="find-out-what-you-would-get-after-tax"] {
                 border-left-color: transparent;
                 &:before {
                   background-color: $color-option-guaranteed-income;
@@ -119,7 +122,8 @@
             .sticky-sidebar--adjustable-income & {
               border-left-color: $color-option-adjustable-income;
 
-              &[href*="estimate"] {
+              &[href*="estimate"],
+              &[href*="find-out-what-you-would-get-after-tax"] {
                 border-left-color: transparent;
                 &:before {
                   background-color: $color-option-adjustable-income;
@@ -129,7 +133,8 @@
             .sticky-sidebar--take-cash-in-chunks & {
               border-left-color: $color-option-take-cash;
 
-              &[href*="estimate"] {
+              &[href*="estimate"],
+              &[href*="find-out-what-you-would-get-after-tax"] {
                 border-left-color: transparent;
                 &:before {
                   background-color: $color-option-take-cash;
@@ -139,7 +144,8 @@
             .sticky-sidebar--take-whole-pot & {
               border-left-color: $color-option-whole-pot;
 
-              &[href*="estimate"] {
+              &[href*="estimate"],
+              &[href*="find-out-what-you-would-get-after-tax"] {
                 border-left-color: transparent;
                 &:before {
                   background-color: $color-option-whole-pot;
@@ -149,7 +155,8 @@
             .sticky-sidebar--mix-options & {
               border-left-color: $color-option-mix-options;
 
-              &[href*="estimate"] {
+              &[href*="estimate"],
+              &[href*="find-out-what-you-would-get-after-tax"] {
                 border-left-color: transparent;
                 &:before {
                   background-color: $color-option-mix-options;
