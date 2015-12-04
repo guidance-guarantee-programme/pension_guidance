@@ -5,17 +5,52 @@
   padding-bottom: 10px;
 }
 
-.l-page-nav {
+.l-mobile-nav-link {
   display: block;
-  margin-top: 5px;
-  margin-bottom: -34px;
+  position: absolute;
+  right:0;
+  top:30px;
 
   @include media(desktop) {
-    display: block;
+    display: none;
+  }
+
+  .l-mobile-nav-link__link:link,
+  .l-mobile-nav-link__link:visited {
+    position: relative;
+    padding-left: 1.25em;
+    color: $color-black;
+    text-decoration: none;
+    font-weight: 700;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.25em;
+      width: 1em;
+      height: 0.15em;
+      background: black;
+      box-shadow:
+        0 0.25em 0 0 black,
+        0 0.5em 0 0 black;
+    }
+  }
+}
+
+.l-page-nav {
+  display: none;
+  margin-top: 5px;
+  margin-bottom: -34px;
+  overflow: hidden;
+
+  @include media(desktop) {
+    display: block !important; // to override mobile nav toggler
     position: absolute;
     top: 0;
     right: 12px;
     margin: 0;
+    overflow: visible;
   }
 }
 

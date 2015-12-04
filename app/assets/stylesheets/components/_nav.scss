@@ -17,12 +17,15 @@ $nav-background-alt: $grey-3;
 }
 
 .nav {
-  text-align: left;
+  float: right;
+  text-align: right;
   display: inline-block;
   padding: 0;
   list-style: none;
 
   @include media(desktop) {
+    float: none;
+    text-align: left;
     margin: 8px -138px 0 138px;
   }
 }
