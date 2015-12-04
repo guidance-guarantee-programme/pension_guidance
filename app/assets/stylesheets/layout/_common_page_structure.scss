@@ -60,14 +60,8 @@
   @include media(desktop) {
     display: block;
     position: absolute;
-    right: -14px;
+    right: -3px;
     top: 104px;
-
-    .button {
-      width: 300px;
-      text-align: center;
-      font-size: 1.1em;
-    }
   }
 }
 

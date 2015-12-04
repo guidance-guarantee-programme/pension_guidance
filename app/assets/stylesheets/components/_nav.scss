@@ -85,11 +85,20 @@ $nav-background-alt: $grey-3;
   }
 }
 
+
 .l-page-nav {
   .nav__item {
     &:first-child {
       border-left: none;
     }
+  }
+}
+
+.nav__item-label {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-black;
   }
 }
 
