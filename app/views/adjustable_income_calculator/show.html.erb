@@ -1,0 +1,35 @@
+<% content_for(:page_title, t('service.title', page_title: 'Getting an adjustable income')) %>
+
+<a class="link-back" href="/adjustable-income">Back to description</a>
+
+<h1>Getting an adjustable income</h1>
+
+<div class="calculator">
+  <h2 id="adjustable-income-estimate">Estimate how much you would get from an annuity</h2>
+
+  <form action="/adjustable-income/results#adjustable-income-estimate" method="get">
+    <div class="form-group">
+      <label class="form-label" for="pot">
+        Pot value
+        <span class="form-hint">All your pension pots combined</span>
+      </label>
+      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="<%= @pot %>">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="age">
+        Your age
+      </label>
+      <span id="age-a"></span> <input aria-labelledby="age-a" class="form-control calculator__field" type="text" id="age" name="age" value="<%= @age %>">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Calculate" id="js-calculate">
+    </div>
+
+    <%= render partial: 'results' %>
+
+  </form>
+</div>
+
+<a class="link-back" href="/adjustable-income">Back to description</a>

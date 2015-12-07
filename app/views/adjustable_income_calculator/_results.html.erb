@@ -1,0 +1,79 @@
+<p>
+  Based on what you’ve told us, if you take your <%= format_currency(@pot) %>
+  pension pot as adjustable income, you could get:
+
+  <strong class="calculator__result__number"><%= number_to_currency(@tax_free_lump_sum, precision: 0) %> tax free</strong>
+
+  and:
+
+  <strong class="calculator__result__number"><%= number_to_currency(@income, precision: 0) %> annual taxable income, until you’re <%= @ending_age %></strong>
+</p>
+
+<br>
+
+<p>
+  <div class="form-group">
+    <fieldset>
+      <legend class="form-label-bold"><a href="javascript:;" id="adjust">Adjust the amount you get or how long you need it for &or;</a></legend>
+
+      <div id="adjust-controls">
+        <label for="adjust-age" class="block-label">
+          <input id="adjust-age" class="calculator__field--radio" type="radio" name="adjustment" value="age" <%= 'checked="checked"' if @adjustment == 'age' %>>
+          See how much you could take annually until age
+          <select name="age_adjustment">
+            <% (75..90).to_a.each do |i| %>
+              <option value="<%= i %>" <%= 'selected' if @ending_age == i %>><%= i %></option>
+            <% end %>
+          </select>
+        </label>
+
+        <label for="adjust-income" class="block-label">
+          <input id="adjust-income" class="calculator__field--radio" type="radio" name="adjustment" value="income" <%= 'checked="checked"' if @adjustment == 'income' %>>
+          See how long your money could last if you took
+          <select name="income_adjustment">
+            <% (4..7).to_a.each do |i| %>
+              <option value="<%= i * 1000%>" <%= 'selected' if @income_adjustment == (i * 1000).to_s %>>£<%= i %>,000</option>
+            <% end %>
+          </select>
+          per year
+        </label>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Recalculate" id="js-recalculate">
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</p>
+
+<h2>Things to note</h2>
+
+<ol>
+  <li>You can take 25% of your pot as a single tax-free cash sum and invest the other 75% to provide you with a taxable income</li>
+  <li>The value of your pot can go up or down</li>
+  <li>You might want to get financial advice before choosing this option</li>
+</ol>
+
+<h2>Your next steps</h2>
+
+<p>If you’re interested in getting an adjustable income you can:</p>
+
+<ul>
+  <li>ask your current provider if they offer flexi-access drawdown and what they charge in fees - if they don’t offer it, you can transfer your pot but you might be charged a fee</li>
+  <li>check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate</li>
+  <li><a href="/shop-around">get financial advice</a> if you’re interested in getting an adjustable income</li>
+  <li><a href="/shop-around">shop around</a> - ask providers what products they offer to suit your circumstances</li>
+  <li>get some estimates from other providers on how much your pot could grow and what the fees are - usually you just have to fill in a short form on their website.</li>
+  <li>make sure you know <a href="/tax">how much tax</a> you’ll pay on any money you’re planning to take out</li>
+</ul>
+
+<% content_for(:after_script) do %>
+  <script>
+    $(function() {
+      $('#adjust-controls').hide();
+      $('#adjust').on('click', function() {
+        $('#adjust-controls').toggle();
+      })
+    })
+  </script>
+<% end %>

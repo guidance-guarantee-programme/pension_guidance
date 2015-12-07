@@ -20,6 +20,10 @@
   width: 25%;
 }
 
+.calculator__field--radio {
+  -webkit-appearance: radio;
+}
+
 .calculator__field--frequency-select {
   width: 25%;
   -webkit-appearance: menulist;
