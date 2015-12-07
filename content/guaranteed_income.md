@@ -7,9 +7,9 @@ description: You can use your pension pot to buy an insurance policy that guaran
 
 # Getting a guaranteed income (annuity)
 
-You might want to use your pension pot to buy an insurance policy that gives you a guaranteed income for the rest of your life. This is called an annuity. You can also buy an annuity for a fixed number of years.
+You can use your pension pot to buy an insurance policy that gives you a guaranteed income for the rest of your life. This is called an annuity. You can also buy an annuity for a fixed number of years.
 
-^There are lots of different types of annuities and it’s important you get the right one for you.^
+^There are lots of different types of annuity and it’s important you get the right one for you.^
 
 Once you’ve bought your annuity you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision and your rate will be fixed.
 
@@ -25,7 +25,7 @@ Types of annuities you can buy:
 
 ## Tax-free lump sum with annuities
 
-If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. You could then, for example, buy the annuity with the remaining 75%. Under current pension rules you have to buy the annuity within 6 months or alternatively use one of the [other options](/pension-pot-options).
+If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. You could then, for example, use the other 75% to buy the annuity. Under current pension rules you have to buy the annuity within 6 months or alternatively use one of the [other options](/pension-pot-options).
 
 ## How an annuity is calculated
 
@@ -40,6 +40,33 @@ How much income you get each year from an annuity depends on things like:
 You [pay tax on income from an annuity](/tax), just like you do on your salary.  You may also pay administration charges.
 
 If the insurer you bought your annuity with goes bust the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover/) will cover you in full.
+
+{::options parse_block_html="false" /}
+<div class="calculator calculator--in-article js-guaranteed-income-calculator">
+  <h2 id="annuity-estimate">Estimate how much you would get from an annuity</h2>
+
+  <form action="/guaranteed-income/results#annuity-estimate" method="get">
+    <div class="form-group">
+      <label class="form-label" for="pot">
+        Pot value
+        <span class="form-hint">All your pension pots combined</span>
+      </label>
+      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="age">
+        Your age
+      </label>
+      <span id="age-a"></span> <input aria-labelledby="age-a" class="form-control calculator__field" type="text" id="age" name="age">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Calculate" id="js-calculate">
+    </div>
+  </form>
+</div>
+{::options parse_block_html="true" /}
 
 ## Your next steps
 

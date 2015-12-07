@@ -33,6 +33,7 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'guaranteed-income/results', controller: 'guaranteed_income_calculator', action: 'show'
   get 'take-whole-pot/results', controller: 'take_whole_pot_calculator', action: 'show'
 
   if Rails.application.config.mount_javascript_test_routes

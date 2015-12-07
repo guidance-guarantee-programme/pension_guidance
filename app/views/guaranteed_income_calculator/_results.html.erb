@@ -1,0 +1,52 @@
+<p>
+  Based on what you’ve told us, if you take your <%= format_currency(@pot) %>
+  pension pot as an annuity, you could get:
+
+  <strong class="calculator__result__number"><%= number_to_currency(@tax_free_lump_sum, precision: 0) %> tax free</strong>
+
+  and a:
+
+  <strong class="calculator__result__number"><%= number_to_currency(@annuity, precision: 0) %> guaranteed annual taxable income, for the rest of your life</strong>
+</p>
+
+<br>
+
+<div class="form-group">
+  <fieldset>
+    <legend class="form-label-bold">Annuity type</legend>
+
+    <label for="annuity-type-single" class="block-label">
+      <input id="annuity-type-single" class="calculator__field--radio" type="radio" name="annuity_type" value="single" <%= 'checked="checked"' if @annuity_type == 'single' %>>
+      Single annuity - only you get payments
+    </label>
+    <label for="annuity-type-joint" class="block-label">
+      <input id="annuity-type-joint" class="calculator__field--radio" type="radio" name="annuity_type" value="joint" <%= 'checked="checked"' if @annuity_type == 'joint' %>>
+      Joint annuity - your partner will get money after you die
+    </label>
+  </fieldset>
+</div>
+
+<div class="form-group">
+  <input type="submit" class="button" value="Recalculate" id="js-recalculate">
+</div>
+
+<h2>Things to note</h2>
+
+<ol>
+  <li>An annuity gives you a guaranteed income for a set number of years or the rest of your life</li>
+  <li>You can take up to 25% of your pot tax free as cash and buy an annuity with the other 75%</li>
+  <li>You pay tax on any income from an annuity - how much depends on your circumstances</li>
+</ol>
+
+
+<h2>Your next steps</h2>
+
+<p>If you’re interested in buying an annuity you can:</p>
+
+<ul>
+  <li><a rel="external" href="https://www.moneyadviceservice.org.uk/en/tools/annuities">compare annuities</a> to check how much you might get</li>
+  <li><a href="/shop-around">shop around</a> for the best deal - you don’t have to stay with your current provider</li>
+  <li>make sure you know <a href="/tax">how much tax you’ll pay</a> on your annuity income</li>
+  <li>check with your provider if the annuity they offer is right for you, eg if you’re in poor health you could get a better rate</li>
+  <li>ask your provider if your pension pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate</li>
+</ul>
