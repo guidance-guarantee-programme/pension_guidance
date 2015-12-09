@@ -6,7 +6,7 @@ description: What to consider when working out how long your pension money will 
 
 Knowing how long your money needs to last depends on when you want to start taking it and what your future plans are. For example, you may wish to continue working when you reach [State Pension age](https://www.gov.uk/calculate-state-pension/y/age) or after the retirement date on your pension.
 
-You could decide to leave your money invested and continue paying into your pot - this may give you more money to live off in the future over a shorter period of time. 
+You could decide to leave your money invested and continue paying into your pot – this may give you more money to live off in the future over a shorter period of time. 
 
 You might have less in retirement because your income may be lower than it was when in full-time work. 
 
@@ -22,7 +22,7 @@ Use this [calculator](http://visual.ons.gov.uk/how-long-will-my-pension-need-to-
 
 You’ll also need to decide when to take your State Pension once you reach State Pension age.
 
-You can’t take the State Pension early but you can push back when you start receiving it - this is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
+You can’t take the State Pension early but you can delay when you start receiving it – this is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
 
 You can also [top up your State Pension](https://www.gov.uk/statepensiontopup) if you don’t get the full amount. 
 
