@@ -1,13 +1,13 @@
 ---
 label: Take your whole pot
-description: You can cash in your whole pension pot - 75% of that money is taxable.
+description: You can cash in your whole pension pot – 75% of that money is taxable.
 ---
 
 <div class="circle circle--m circle--take-cash"></div>
 
 # Taking your whole pot in one go
 
-You can take your whole pot as cash in one go - 25% is tax-free, the other 75% is taxable.
+You can take your whole pot as cash in one go – 25% is tax-free, the other 75% is taxable.
 
 You pay tax when you take money from your pot. This is because when you’re paying into your pension you get [tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief) on your contributions.
 
