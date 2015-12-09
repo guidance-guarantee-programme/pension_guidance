@@ -36,12 +36,12 @@ The income you get from the fund is taxable. Your provider will pay you the inco
 {: .info-notice--adjustable-income}
 $E
 **Example**
-You have a pot of £80,000 and take a tax-free lump sum of £20,000. This leaves you with £60,000 to invest into flexi-access. You get an income of £3,000 a year from your fund. If you pay 20% tax on this your provider pays you £2,400.
+You have a pot of £80,000 and take a tax-free lump sum of £20,000. This leaves you with £60,000 to invest into flexi-access drawdown. You get an income of £3,000 a year from your fund. If you pay 20% tax on this your provider pays you £2,400.
 $E
 
 If you take the 25% tax-free lump sum, under current pension rules you must buy your flexi-access product within 6 months or use one of the [other options](/pension-pot-options).
 
-Alternatively, you can move your pot gradually into flexi-access - you don’t have to move it all at once. Each time you move an amount you can take 25% tax free.
+Alternatively, you can move your pot gradually into flexi-access drawdown – you don’t have to move it all at once. Each time you move an amount you can take 25% tax free.
 
 If the pension provider your fund is with goes bust you’ll be covered by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover).
 
@@ -65,6 +65,6 @@ If you’re interested in getting an adjustable income you can:
 - check with your current provider if they offer this option and what they charge in fees
 - check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate
 - [get financial advice](/shop-around) if you’re interested in getting an adjustable income
-- [shop around](/shop-around) - check with providers what products they offer to suit your circumstances
-- get some estimates from other providers on how much your pot could grow and what the charges are - usually you just have to fill in a short form on their website.
+- [shop around](/shop-around) – check with providers what products they offer to suit your circumstances
+- get some estimates from other providers on how much your pot could grow and what the charges are – usually you just have to fill in a short form on their website.
 - make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out
