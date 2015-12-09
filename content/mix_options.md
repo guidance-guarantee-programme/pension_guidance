@@ -34,5 +34,5 @@ $E
 If you’re interested in mixing your options:
 
 - look at all options to see which ones are right for you
-- shop around - you don’t have to buy a product from your current provider
+- shop around – you don’t have to buy a product from your current provider
 - [get financial advice](/shop-around#getting-financial-advice) before making a decision
