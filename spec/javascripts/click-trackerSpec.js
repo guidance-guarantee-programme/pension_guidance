@@ -75,6 +75,11 @@ describe('click tracker', function() {
       $('.l-home-about a').trigger('click');
       expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('about the service', '/url');
     });
+
+    it('adds click tracking to links in the home callouts', function() {
+      $('.l-home-callouts a').trigger('click');
+      expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('callout guides', '/url');
+    });
   });
 
   describe('tracks links on guide pages', function() {
