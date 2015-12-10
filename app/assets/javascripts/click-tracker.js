@@ -23,6 +23,7 @@
       track('.journey-promo a', 'journey promo');
       track('.l-home-guides a', 'guides directory');
       track('.l-home-about a', 'about the service');
+      track('.l-home-callouts a', 'callout guides');
 
       //guides
       track('.breadcrumbs a', 'breadcrumb');

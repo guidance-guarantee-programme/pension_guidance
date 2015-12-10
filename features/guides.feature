@@ -28,6 +28,7 @@ Feature: Guides
       | pension-types            |
       | scams                    |
       | shop-around              |
+      | state-pension            |
       | take-cash-in-chunks      |
       | take-whole-pot           |
       | tax                      |

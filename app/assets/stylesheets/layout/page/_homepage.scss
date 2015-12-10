@@ -111,3 +111,43 @@
     }
   }
 }
+
+.l-home-callouts {
+  .l-home-callouts__link {
+    padding-top: 75%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+    font-size: 110%;
+    margin-bottom: 2em;
+
+    @include media(desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  .l-home-callouts__link--pot-value {
+    background-image: image-url("css/home/money.png");
+
+    @include device-pixel-ratio(2) {
+      background-image: image-url("css/home/money-x2.png");
+    }
+  }
+
+  .l-home-callouts__link--state-pension {
+    background-image: image-url("css/home/statepension.png");
+
+    @include device-pixel-ratio(2) {
+      background-image: image-url("css/home/statepension-x2.png");
+    }
+  }
+
+  .l-home-callouts__link--tax {
+    background-image: image-url("css/home/tax.png");
+
+    @include device-pixel-ratio(2) {
+      background-image: image-url("css/home/tax-x2.png");
+    }
+  }
+}
