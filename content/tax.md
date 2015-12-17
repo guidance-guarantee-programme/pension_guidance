@@ -29,7 +29,7 @@ There are 2 ways you can take your tax-free lump sum.
 ###Take your lump sum in one go
 You can take 25% of your whole pension pot tax free.
 
-If you do this, you can’t leave the remaining 75% untouched. You must either take [cash in chunks](/take-cash-in-chunks), the [whole pot in one go](/take-whole-pot), buy an [annuity](/guaranteed-income), or [get an adjustable income](/adjustable-income).
+If you do this, you can’t leave the remaining 75% untouched. You must either take the [whole pot in one go](/take-whole-pot), buy an [annuity](/guaranteed-income) or [get an adjustable income](/adjustable-income).
 
 Any payments you get from the remaining 75% are taxable.
 
