@@ -9,9 +9,7 @@ Contact your pension provider first if you need to complain. Most people get thi
 
 ##Making a complaint
 
-You should first ask your pension provider for details of their complaints process. This will be different depending on your provider and pension type.
-
-Find out how to [make an effective complaint](http://www.adviceguide.org.uk/england/consumer_e/consumer_taking_action_e/consumer_making_a_complaint_e.htm) and follow your provider’s complaints process before taking more action.
+You should first ask your pension provider for details of their complaints process. This will be different depending on your provider and pension type. Follow your provider’s process before taking further action.
 
 It’s best to make your complaint in writing and to get a written response. This helps if you need to take your complaint further.
 
