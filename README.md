@@ -13,7 +13,7 @@ Pension guidance from [Pension Wise].
 * [NPM]
 * [PhantomJS][phantomjs]
 * [Redis]
-* [Ruby 2.2.3][Ruby]
+* [Ruby 2.2.4][Ruby]
 
 
 ## Installation
