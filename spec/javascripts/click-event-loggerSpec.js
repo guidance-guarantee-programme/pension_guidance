@@ -5,9 +5,11 @@ describe('click event logger', function() {
     expect(PWPG.clickEventLogger).toBeDefined();
   });
 
-  it ('sends data to Google Analytics via Google Tag Manager', function() {
+  beforeEach(function() {
     window.dataLayer = [];
+  });
 
+  it ('sends data to Google Analytics via Google Tag Manager', function() {
     PWPG.clickEventLogger.sendEvent('exampleActionLabel', 'exampleUrl');
 
     expect(window.dataLayer).toContain({
@@ -29,5 +31,12 @@ describe('click event logger', function() {
       'eventAction': jasmine.any(String),
       'eventLabel': jasmine.any(String)
     });
+  });
+
+  it ('sends only one event to Google Analytics when specified', function() {
+    PWPG.clickEventLogger.sendEventOnlyOnce('exampleActionLabel', 'exampleUrl');
+    PWPG.clickEventLogger.sendEventOnlyOnce('exampleActionLabel', 'exampleUrl');
+
+    expect(window.dataLayer.length).toBe(1);
   });
 });
