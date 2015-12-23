@@ -6,12 +6,14 @@
   "devDependencies": {
     "jscs": "latest",
     "jshint": "latest",
-    "phantomjs": ">= 1.9.16"
+    "phantomjs": ">= 1.9.16",
+    "svgexport": "^0.2.8"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
     "js": "npm run jshint && npm run jscs",
     "jshint": "jshint app/assets/javascripts/**.js spec/javascripts/**.js",
-    "jscs": "jscs app/assets/javascripts/**.js spec/javascripts/**.js"
+    "jscs": "jscs app/assets/javascripts/**.js spec/javascripts/**.js",
+    "svgexport": "svgexport svg/circles.svg app/assets/images/css/circles-24.png 26: 100% && svgexport svg/circles.svg app/assets/images/css/circles-18.png 18: 100% && svgexport svg/circles.svg app/assets/images/css/circles-14.png 15: 100% && svgexport svg/circles.svg app/assets/images/css/bullet-options.png 11: 100%"
   }
 }

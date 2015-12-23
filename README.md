@@ -38,6 +38,15 @@ To start the application:
 $ ./bin/foreman s
 ```
 
+## Image sprites
+
+These are generated at the various sizes using [svgexport]. Update `svg/circles.svg` and run the following to
+regenerate the PNG files.
+
+```sh
+$ npm run svgexport
+```
+
 ## Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
@@ -56,3 +65,4 @@ Please see the [contributing guidelines](/CONTRIBUTING.md).
 [phantomjs]: http://phantomjs.org
 [redis]: http://redis.io/
 [ruby]: http://www.ruby-lang.org/en
+[svgexport]: https://github.com/shakiba/svgexport
