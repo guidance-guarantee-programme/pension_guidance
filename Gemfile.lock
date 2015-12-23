@@ -105,6 +105,7 @@ GEM
       rails (>= 3.1)
     hike (1.2.3)
     htmlentities (4.3.3)
+    humanize (1.1.0)
     i18n (0.7.0)
     jasmine-core (2.3.4)
     jasmine-jquery-rails (2.0.3)
@@ -287,6 +288,7 @@ DEPENDENCIES
   govspeak (~> 3.2)
   govuk_frontend_toolkit
   govuk_template
+  humanize
   jasmine-jquery-rails
   jasmine-rails
   launchy
