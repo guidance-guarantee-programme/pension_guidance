@@ -58,6 +58,8 @@ If you’re interested in this option you might want to [get financial advice](/
 
 You can [leave your pot to someone](/when-you-die) when you die but they may have to pay tax on it.
 
+{::options parse_block_html="true" /}
+<div class="next-steps next-steps--adjustable-income">
 ## Your next steps
 
 If you’re interested in getting an adjustable income you can:
@@ -68,3 +70,4 @@ If you’re interested in getting an adjustable income you can:
 - [shop around](/shop-around) – check with providers what products they offer to suit your circumstances
 - get some estimates from other providers on how much your pot could grow and what the charges are – usually you just have to fill in a short form on their website.
 - make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out
+</div>
