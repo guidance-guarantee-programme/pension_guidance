@@ -1,0 +1,11 @@
+.book-appointment {
+  @include bold-19;
+  display: inline-block;
+  margin-bottom: 19px;
+
+  @include media(desktop) {
+    position: relative;
+    top: -75px;
+    margin-bottom: 0;
+  }
+}

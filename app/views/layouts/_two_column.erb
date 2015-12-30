@@ -16,6 +16,10 @@
         </main>
       </div>
       <div class="l-column-third l-column-third--sidebar">
+        <% if book_an_appointment_link? %>
+          <a href="/appointments" class="book-appointment">Book a free appointment</a>
+        <% end %>
+
         <% if content_for?(:sidebar) %>
           <div class="sidebar-hr"></div>
           <%= yield :sidebar %>
