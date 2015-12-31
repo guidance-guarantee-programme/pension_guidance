@@ -2,6 +2,10 @@ When(/^I visit a guide$/) do
   step 'I visit the scams guide'
 end
 
+When(/^I visit a pension option guide$/) do
+  step 'I visit the take-whole-pot guide'
+end
+
 When(/^I visit the (.*) guide$/) do |slug|
   @guide = Pages::Guide.new
   @guide.load(slug: slug)
@@ -33,4 +37,12 @@ Then(/^I can navigate to each option available to me$/) do
             'More on taking cash in chunks',
             'More on taking your whole pot in one go',
             'More on mixing your options'])
+end
+
+Then(/^I can navigate to the sections within that guide$/) do
+  expect(@guide.aside_section_urls).to eq(@guide.section_urls)
+end
+
+Then(/^I can navigate back to the start of the guide$/) do
+  expect(@guide.aside_heading_url).to eq(@guide.primary_heading_url)
 end

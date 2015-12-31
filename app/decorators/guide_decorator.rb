@@ -7,7 +7,7 @@ class GuideDecorator < Draper::Decorator
   end
 
   def title
-    fail 'GuideDecorator subclasses must implement title'
+    @title ||= headers.values.first
   end
 
   def label
@@ -16,6 +16,10 @@ class GuideDecorator < Draper::Decorator
 
   def content
     fail 'GuideDecorator subclasses must implement content'
+  end
+
+  def headers(_level = nil)
+    fail 'GuideDecorator subclasses must implement headers'
   end
 
   def self.for(guide)

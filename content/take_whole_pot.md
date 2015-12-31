@@ -22,9 +22,11 @@ You pay tax when you take money from your pot. This is because when you’re pay
 
 {::options parse_block_html="false" /}
 <div class="calculator calculator--in-article calculator--whole-pot js-take-whole-pot-calculator">
-  <h2 id="estimate-what-you-would-get-after-tax">Estimate what you’d get after tax</h2>
+  <div markdown="1">
+## Find out what you’d get after tax {#calculator}
+  </div>
 
-  <form action="/take-whole-pot/results#find-out-what-you-would-get-after-tax" method="get">
+  <form action="/take-whole-pot/results#calculator" method="get">
     <div class="form-group">
       <label class="form-label" for="pot">
         Total amount in your pension pot(s)

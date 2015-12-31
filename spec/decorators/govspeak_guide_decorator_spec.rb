@@ -57,4 +57,39 @@ RSpec.describe GovspeakGuideDecorator, type: :decorator do
       is_expected.to eq(expected_html)
     end
   end
+
+  describe '#headers' do
+    let(:guide_content) do
+      <<-GOVSPEAK.strip_heredoc
+        # First level one header
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        ## In mauris risus, elementum ut
+
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+        ## Suspendisse scelerisque molestie vehicula {#custom-identifier}
+
+        Cras ut suscipit felis, vulputate viverra orci. Cras ornare sagittis diam.
+      GOVSPEAK
+    end
+
+    context 'when no level is specified' do
+      subject(:headers) { guide.headers }
+
+      it 'returns an array of first level headers' do
+        expect(headers).to eq('first-level-one-header' => 'First level one header')
+      end
+    end
+
+    context 'when a level is specified' do
+      subject(:headers) { guide.headers(2) }
+
+      it 'returns an array of headers at that level' do
+        expect(headers).to eq('in-mauris-risus-elementum-ut' => 'In mauris risus, elementum ut',
+                              'custom-identifier' => 'Suspendisse scelerisque molestie vehicula')
+      end
+    end
+  end
 end

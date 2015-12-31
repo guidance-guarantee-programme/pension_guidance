@@ -52,3 +52,8 @@ Feature: Guides
   Scenario: Navigate directly to each option from the options guide
     When I visit the pension-pot-options guide
     Then I can navigate to each option available to me
+
+  Scenario: In-page links on pension option guides
+    When I visit a pension option guide
+    Then I can navigate to the sections within that guide
+    And I can navigate back to the start of the guide

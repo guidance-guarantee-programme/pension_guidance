@@ -20,10 +20,8 @@
           <a href="/appointments" class="book-appointment">Book a free appointment</a>
         <% end %>
 
-        <% if content_for?(:sidebar) %>
-          <div class="sidebar-hr"></div>
-          <%= yield :sidebar %>
-        <% end %>
+        <%= yield :sidebar %>
+        <%= yield :sticky_sidebar %>
       </div>
     </div>
 
