@@ -7,12 +7,12 @@ If your provider is authorised by the Financial Conduct Authority (FCA) and the 
 
 The limits for compensation are:
 
-- personal pensions with an authorised insurance company - 100% of your pot’s value
-- most defined contribution workplace pensions with an authorised insurance company - 100% of your pot’s value
-- Self-Invested Personal Pensions (SIPPS) - different compensation limits depending on the type of SIPP, talk to your provider to find out what compensation cover you have
+- personal pensions with an authorised insurance company – 100% of your pot’s value
+- most defined contribution workplace pensions with an authorised insurance company – 100% of your pot’s value
+- Self-Invested Personal Pensions (SIPPS) – different compensation limits depending on the type of SIPP – talk to your provider to find out what compensation cover you have
 
 Once you’ve taken money out of your pot you can claim for:
 
-- money in an account with a bank, building society or credit union - up to £85,000 (from 1 January 2016, this will change to £75,000)
-- investments - up to £50,000
-- annuities with an authorised insurance company - 100% of your pot’s value
+- money in an account with a bank, building society or credit union – up to £75,000
+- investments – up to £50,000
+- annuities with an authorised insurance company – 100% of your pot’s value
