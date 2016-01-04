@@ -1,12 +1,20 @@
-workers Integer(ENV['WEB_CONCURRENCY'] || 2)
-threads_count = Integer(ENV['MAX_THREADS'] || 5)
-threads threads_count, threads_count
-
-preload_app!
+#!/usr/bin/env puma
 
 rackup DefaultRackup
-port ENV['PORT'] || 3000
+
 environment ENV['RACK_ENV'] || 'development'
+daemonize false
+
+pidfile 'tmp/pids/puma.pid'
+state_path 'tmp/pids/puma.state'
+
+workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+threads Integer(ENV['MAX_THREADS'] || 5), Integer(ENV['MAX_THREADS'] || 5)
+
+bind 'unix://tmp/sockets/puma.sock'
+port ENV['PORT'] || 3000
+
+preload_app!
 
 # on_worker_boot do
 #   # Worker specific setup for Rails 4.1+
