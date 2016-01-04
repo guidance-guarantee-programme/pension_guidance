@@ -1,0 +1,27 @@
+<p>Based on what you’ve told us, if your pension pot grows at 3% per year, it could be worth this much over time:</p>
+
+<table class="result-table">
+  <thead>
+  <tr>
+    <th scope="col">Years of growth</th>
+    <th scope="col">Pot size</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @pot_growth.each_with_index do |pot, index| %>
+    <tr class="<%= 'visuallyhidden' if index > 4 %>">
+      <td scope="row"><%= index + 1%></td>
+      <td><%= number_to_currency(pot, unit: '£') %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<p><button class="btn-link"> + Show more</button></p>
+
+<h2>Things to note</h2>
+
+<ol>
+  <li>3% is an estimate - your growth may be higher or lower than this</li>
+  <li>The value of your pot will be affected by inflation and how much your provider charges you for managing your fund</li>
+  <li>Your provider may charge you if you agreed a retirement age with them and you don’t start taking your pension on that date</li>
+</ol>
