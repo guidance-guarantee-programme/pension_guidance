@@ -1,0 +1,17 @@
+<svg id="circles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 216">
+  <style>
+    .option-leave-pot-untouched { fill: #17375f; }
+    .option-guaranteed-income { fill: #fa9600; }
+    .option-adjustable-income { fill: #5bc8f1; }
+    .option-take-cash { fill: #97c81e; }
+    .option-whole-pot { fill: #b0348b; }
+    .option-mix-options { fill: #e50050; }
+  </style>
+
+  <circle class="option-leave-pot-untouched" cx="12" cy="13" r="12"/>
+  <circle class="option-guaranteed-income" cx="12" cy="49" r="12"/>
+  <circle class="option-adjustable-income" cx="12" cy="86" r="12"/>
+  <circle class="option-take-cash" cx="12" cy="123" r="12"/>
+  <circle class="option-whole-pot" cx="12" cy="160" r="12"/>
+  <circle class="option-mix-options" cx="12" cy="198" r="12"/>
+</svg>

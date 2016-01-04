@@ -6,47 +6,55 @@
   margin-bottom: -18px;
   width: 18px;
   height: 18px;
+  background-image: image-url("css/circles-14.png");
+  background-repeat: no-repeat;
 
   @include media(tablet) {
-    &.circle--leave-pot-untouched {
-      background: image-url("css/circles-18.png") -3px -3px;
-    }
-
-    &.circle--take-cash {
-      background: image-url("css/circles-18.png") -3px -61px;
-    }
-
-    &.circle--guaranteed-income {
-      background: image-url("css/circles-18.png") -3px -32px;
-    }
-
-    &.circle--adjustable-income {
-      background: image-url("css/circles-18.png") -3px -90px;
-    }
-
-    &.circle--mix-options {
-      background: image-url("css/circles-18.png") -3px -118px;
-    }
+    background-image: image-url("css/circles-18.png");
   }
 
   &.circle--leave-pot-untouched {
-    background: image-url("css/circles-14.png") -3px -3px;
-  }
-
-  &.circle--take-cash {
-    background: image-url("css/circles-14.png") -3px -61px;
+    background-position: 0 0;
   }
 
   &.circle--guaranteed-income {
-    background: image-url("css/circles-14.png") -3px -32px;
+    background-position: 0 -21px;
+
+    @include media(tablet) {
+      background-position: 0 -25px;
+    }
   }
 
   &.circle--adjustable-income {
-    background: image-url("css/circles-14.png") -3px -90px;
+    background-position: 0 -42px;
+
+    @include media(tablet) {
+      background-position: 0 -51px;
+    }
+  }
+
+  &.circle--take-cash {
+    background-position: 0 -64px;
+
+    @include media(tablet) {
+      background-position: 0 -77px;
+    }
+  }
+
+  &.circle--whole-pot {
+    background-position: 0 -85px;
+
+    @include media(tablet) {
+      background-position: 0 -102px;
+    }
   }
 
   &.circle--mix-options {
-    background: image-url("css/circles-14.png") -3px -118px;
+    background-position: 0 -107px;
+
+    @include media(tablet) {
+      background-position: 0 -129px;
+    }
   }
 }
 
@@ -55,24 +63,29 @@
   margin-bottom: -10px;
   width: 26px;
   height: 26px;
+  background-image: image-url("css/circles-24.png");
 
   &.circle--leave-pot-untouched {
-    background: image-url("css/circles-24.png") 0 -1px;
-  }
-
-  &.circle--take-cash {
-    background: image-url("css/circles-24.png") 0 -59px;
+    background-position: 0 -1px;
   }
 
   &.circle--guaranteed-income {
-    background: image-url("css/circles-24.png") 0 -30px;
+    background-position: 0 -37px;
   }
 
   &.circle--adjustable-income {
-    background: image-url("css/circles-24.png") 0 -88px;
+    background-position: 0 -74px;
+  }
+
+  &.circle--take-cash {
+    background-position: 0 -111px;
+  }
+
+  &.circle--whole-pot {
+    background-position: 0 -148px;
   }
 
   &.circle--mix-options {
-    background: image-url("css/circles-24.png") 0 -116px;
+    background-position: 0 -186px;
   }
 }

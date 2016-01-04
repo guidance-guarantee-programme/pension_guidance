@@ -3,7 +3,7 @@ label: Take your whole pot
 description: You can cash in your whole pension pot – 75% of that money is taxable.
 ---
 
-<div class="circle circle--m circle--take-cash"></div>
+<div class="circle circle--m circle--whole-pot"></div>
 
 # Taking your whole pot in one go
 
@@ -19,7 +19,7 @@ It’s important to calculate how much tax you would pay if you take your whole 
 
 %Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 
-Taking a large amount of cash from your pot at once could mean that you get bumped into a higher tax rate. This is because it’s added to any other income you have for that year, eg money from work. 
+Taking a large amount of cash from your pot at once could mean that you get bumped into a higher tax rate. This is because it’s added to any other income you have for that year, eg money from work.
 
 At the end of the tax year HM Revenue and Customs will calculate how much tax you owe. It could also affect your [entitlement to any benefits](/benefits).
 

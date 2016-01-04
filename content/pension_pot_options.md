@@ -34,7 +34,7 @@ You have 6 options:
     <p><a href="/take-cash-in-chunks">More on taking cash in chunks</a></p>
   </div>
   <div class="options-overview__item">
-    <div class="circle circle--s circle--take-cash"></div>
+    <div class="circle circle--s circle--whole-pot"></div>
     <h2>Take your whole pot in one go</h2>
     <p>You can cash in your entire pot. One quarter is tax free, the rest is taxable.</p>
     <p><a href="/take-whole-pot">More on taking your whole pot in one go</a></p>
