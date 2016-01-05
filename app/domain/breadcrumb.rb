@@ -14,5 +14,9 @@ class Breadcrumb
     def how_to_book
       new('/book', 'How to book')
     end
+
+    def pension_options
+      new('/pension-pot-options', 'The 6 pension options')
+    end
   end
 end
