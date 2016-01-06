@@ -24,7 +24,7 @@ Taking a large amount of cash from your pot at once could mean that you get bump
 At the end of the tax year HM Revenue and Customs will calculate how much tax you owe. It could also affect your [entitlement to any benefits](/benefits).
 
 {::options parse_block_html="false" /}
-<div class="calculator calculator--in-article js-take-whole-pot-calculator">
+<div class="calculator calculator--in-article calculator--whole-pot js-take-whole-pot-calculator">
   <h2 id="find-out-what-you-would-get-after-tax">Find out what you’d get after tax</h2>
 
   <form action="/take-whole-pot/results#find-out-what-you-would-get-after-tax" method="get">
