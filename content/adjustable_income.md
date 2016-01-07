@@ -63,7 +63,7 @@ You may still be able to pay into the pot you take your adjustable income from b
 
 ## Financial advice
 
-If you’re interested in this option you might want to [get financial advice](/shop-around) first. A financial adviser
+If you’re interested in this option you might want to [get financial advice](/financial-advice) first. A financial adviser
 can help you to compare adjustable income products and work out which is best for you.
 
 {::options parse_block_html="true" /}
@@ -73,7 +73,7 @@ can help you to compare adjustable income products and work out which is best fo
 
 - Ask your current provider if they offer flexi-access drawdown and what they charge in fees – if they don’t offer it, you can transfer your pot but you might be charged a fee.
 - Check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
-- Get financial advice if you’re interested in getting an adjustable income.
+- Get [financial advice](/financial-advice) if you’re interested in getting an adjustable income.
 - [Shop around](/shop-around) – ask providers what products they offer to suit your circumstances.
 - Get some estimates from other providers on how much your pot could grow and what the fees are – usually you just have to fill in a short form on their website.
 - Make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out.

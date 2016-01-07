@@ -28,7 +28,7 @@ $E
 
 ## Financial advice
 
-Mixing your options can be complicated. If you’re interested in this you might want to talk to a financial adviser first.
+Mixing your options can be complicated. If you’re interested in this you might want to talk to a [financial adviser](/financial-advice) first.
 
 {::options parse_block_html="true" /}
 <div class="next-steps next-steps--mix-options">

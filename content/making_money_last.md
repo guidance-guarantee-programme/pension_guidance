@@ -48,7 +48,7 @@ You don’t have to take your money when you reach this date. You can leave your
 
 The longer you leave the money invested and continue to pay into it, the higher your income could be when you choose to take it. You also don’t [pay Income Tax](/tax) on the money for as long as it stays in your pot.
 
-You may wish to speak to a [financial adviser](/shop-around#getting-financial-advice) to help you decide which pension pot option to choose and when.
+You may wish to speak to a [financial adviser](/financial-advice) to help you decide which pension pot option to choose and when.
 
 ^Many people can’t afford to retire before their selected retirement date. Retiring early is likely to leave you with a lower retirement income.^
 
