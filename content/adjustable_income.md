@@ -5,69 +5,79 @@ description: Your money is invested in a flexi-access drawdown fund to give you 
 
 <div class="circle circle--m circle--adjustable-income"></div>
 
-# Getting an adjustable income
+# Get an adjustable income
+
+## Overview
 
 You can get an income from your pension pot that’s adjustable. This means you get a regular income but can change it  or take cash sums if you need to.
 
-You get 25% of your pot as a single, tax-free cash sum. The remainder is then invested to give you a regular income in your retirement, which is taxable.
+- You get 25% of your pot as a single, tax-free cash sum.
+- The other 75% is invested to give you a regular, taxable income.
+- You can adjust the income you take and when you take it.
 
-You’ll probably need to be involved in choosing and managing your investments.
+This option is also known as ‘flexi-access drawdown’.
+
+You’ll probably need to be involved in choosing and managing your investments. The value of your pot can go up or down.
 
 {: .info-notice--adjustable-income}
 $E
 **Example**
-You have a pension pot of £40,000. You take 25% tax free which is £10,000. You invest the remaining £30,000 in a fund to give you an adjustable income. Your fund grows by 3% every year.  You take an income of £2,000 from it. Your fund will last you 20 years.
+You have a pension pot of £40,000. You take 25% tax free which is £10,000. You invest the other £30,000 to give you an adjustable income. Your money grows by 3% every year. You take a taxable income of £2,000 from it. Your money will last you 20 years.
 $E
 
 Not all pension providers offer this option. If your provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
 ## How adjustable income works
-The provider you go with will offer you different investment funds with different risks. You pick the funds that are right for you and get a retirement income from your investments. You should think about how much you take out every year and how long you want your money to last.
 
-Alternatively, a financial adviser can create a plan with you for how to invest your money. They can advise you on how much you can take out to make the fund last as long as possible. An adviser will charge you for this.
+Your provider will offer you different investments with different risks. You pick the investments that are right for you and get a retirement income from them. You should think about how much you take out every year and [how long your money needs to last](/making-money-last).
 
-Your provider is likely to charge you for running your funds and whenever you get a payment.
+A financial adviser can help you to create an investment plan for your money. They can advise you on how much you can take out to make the money last as long as possible. They’ll charge you a fee for this.
 
-This option is also known as ‘flexi-access drawdown’.
+Your provider is likely to charge you fees for running your investments and whenever you get a payment.
 
-## Tax with adjustable income
-The income you get from the fund is taxable. Your provider will pay you the income with any [tax due](/tax) already taken off.
+If your provider goes bust you’ll be covered by the [Financial Services Compensation Scheme](/protection).
+
+## Tax
+
+The income you get from the investment is taxable. Your provider will pay you the income with any [tax due](/tax) already taken off.
+
+You pay tax when you take money from your pot. This is because when you’re paying into your pension you get tax relief on your contributions.
 
 {: .info-notice--adjustable-income}
 $E
 **Example**
-You have a pot of £80,000 and take a tax-free lump sum of £20,000. This leaves you with £60,000 to invest into flexi-access drawdown. You get an income of £3,000 a year from your fund. If you pay 20% tax on this your provider pays you £2,400.
+You have a pot of £80,000 and take a tax-free lump sum of £20,000. This leaves you with £60,000 to invest. You get an income of £3,000 a year from your investment. If you pay 20% tax you’ll get £2,400.
 $E
 
-If you take the 25% tax-free lump sum, under current pension rules you must buy your flexi-access product within 6 months or use one of the [other options](/pension-pot-options).
+If you take the 25% tax-free lump sum, you must move the rest into flexi-access drawdown within 6 months or use one of the [other options](/pension-pot-options).
 
-Alternatively, you can move your pot gradually into flexi-access drawdown – you don’t have to move it all at once. Each time you move an amount you can take 25% tax free.
+You can move your pot gradually – you don’t have to move it all at once. Each time you move a sum, 25% is tax free.
 
-If the pension provider your fund is with goes bust you’ll be covered by the [Financial Services Compensation Scheme](http://www.fscs.org.uk/what-we-cover).
-
+If you choose this option, you can leave your money to someone when you die but they may have to pay tax on it.
 
 ## Continue to pay in
-You could still pay into other pots up to a limit of £40,000 a year. This includes tax relief of 20%.
 
-Once you start taking an income from your flexi-access fund this allowance goes down to £10,000 a year. It still includes your tax relief. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
+If you have more than one pension pot, you can take an adjustable income from one and continue to pay into others. The maximum you can pay in is £10,000 a year. This includes your tax relief of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 
-You can also pay into your flexi-access fund but you won’t get tax relief on these payments.
+You may still be able to pay into the pot you take your adjustable income from but you won’t get tax relief on these payments.
 
-## Getting financial advice for adjustable income
-If you’re interested in this option you might want to [get financial advice](/shop-around) first. You should be aware that as with every investment there’s the risk that the value of your fund can go up or down.
+## Financial advice
 
-You can [leave your pot to someone](/when-you-die) when you die but they may have to pay tax on it.
+If you’re interested in this option you might want to [get financial advice](/shop-around) first. A financial adviser
+can help you to compare adjustable income products and work out which is best for you.
 
 {::options parse_block_html="true" /}
 <div class="next-steps next-steps--adjustable-income">
-## Your next steps
 
-If you’re interested in getting an adjustable income you can:
+## Next steps
 
-- check with your current provider if they offer this option and what they charge in fees
-- check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate
-- [get financial advice](/shop-around) if you’re interested in getting an adjustable income
-- [shop around](/shop-around) – check with providers what products they offer to suit your circumstances
-- get some estimates from other providers on how much your pot could grow and what the charges are – usually you just have to fill in a short form on their website.
-- make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out
+- Ask your current provider if they offer flexi-access drawdown and what they charge in fees – if they don’t offer it, you can transfer your pot but you might be charged a fee.
+- Check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
+- Get financial advice if you’re interested in getting an adjustable income.
+- [Shop around](/shop-around) – ask providers what products they offer to suit your circumstances.
+- Get some estimates from other providers on how much your pot could grow and what the fees are – usually you just have to fill in a short form on their website.
+- Make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out.
+
+**Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.**
+
 </div>
