@@ -14,6 +14,7 @@ Feature: Guides
       | already-bought-annuity   |
       | benefits                 |
       | book                     |
+      | care-costs               |
       | contact                  |
       | cookies                  |
       | divorce                  |

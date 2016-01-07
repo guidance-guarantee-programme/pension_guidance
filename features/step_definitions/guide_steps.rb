@@ -55,7 +55,8 @@ Then(/^I can navigate to content related to the journey$/) do
   expect(@guide.link_promo_items.map(&:text))
     .to eq(['Book a free appointment',
             'Your pension when you die',
-            'Benefits and care costs',
+            'Benefits',
+            'Care costs',
             'How to avoid a pension scam'])
 end
 

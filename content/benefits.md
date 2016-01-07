@@ -2,9 +2,9 @@
 description: How taking your pension can affect your benefits. Usually, the greater your income, the fewer benefits you’ll get.
 ---
 
-#Benefits and care costs
+#Benefits
 
-The money you take from your pension pot could affect your eligibility for some benefits and how much you might have to pay towards care costs later in life.
+The money you take from your pension pot could affect your eligibility for some benefits.
 
 ##Pensions and benefits entitlement
 
@@ -43,7 +43,7 @@ If you do take an income:
  - if it’s higher than your notional income, this amount will be used instead
 
 $E
-**Example** You’re 69 and applying for Council Tax Reduction. You have a pension pot of £40,000 and take an adjustable income of £1,000 a year from it. DWP have calculated that you could get £1,800 a year from an annuity. They will take £1,800 into account when assessing your income.
+**Example** You’re 69 and applying for Council Tax Reduction. You have a pension pot of £40,000 and take an adjustable income of £1,000 a year from it. Your local council have calculated that you could get £1,800 a year from an annuity. They will take £1,800 into account when assessing your income.
 $E
 
 It’s your responsibility to tell DWP or your local council if you or your partner take any money from your pension pot.
@@ -60,7 +60,7 @@ Use a free and [independent benefits calculator](https://www.gov.uk/benefits-cal
 
 You can go to your local [Service Information Point](http://pensions-service.direct.gov.uk/en/information-points/home.asp) for help and advice about many benefits. You need to book for face-to-face advice.
 
-More information about your eligibility for:
+Find more information about your eligibility for:
 
 - [Pension Credit](https://www.gov.uk/pension-credit/eligibility)
 - [Carer’s Allowance](https://www.gov.uk/carers-allowance/eligibility)
@@ -74,15 +74,3 @@ More information about your eligibility for:
 You can also get help from the [Citizens Advice service](http://www.adviceguide.org.uk/england/benefits_e/benefits_older_people_ew/benefits_for_older_people.htm) and the [Money Advice Service](https://www.moneyadviceservice.org.uk/en/articles/where-to-get-help-and-advice-about-benefits).
 
 Pensions and earnings can also affect the amount of [contribution-based Jobseeker’s Allowance](https://www.gov.uk/jobseekers-allowance/what-youll-get) and [Employment and Support Allowance](https://www.gov.uk/employment-support-allowance/what-youll-get) you get.
-
-##Care costs
-
-Social care can help you if you need support due to ill health or a disability later in life.  It can include help with things like washing, dressing, getting out and about, or staying in touch with friends and family.
-
-Social care isn’t free. You might have to pay for some or all of your care costs. The amount you pay depends on how much income and savings you have and how much help you need. NHS Choices has information on [how care is paid for]( http://www.nhs.uk/Conditions/social-care-and-support-guide/Pages/funding-care.aspx).
-
-Your local council will look at any money in or taken from your pension pot when assessing what you can afford to contribute towards the cost of care. The rules for assessing how your pension pot is treated are the same as for benefits (see above).
-
-[Contact your local council]( https://www.gov.uk/find-your-local-council) if you need social care.
-
-For further information see advice on [planning for your future care needs](http://www.nhs.uk/Conditions/social-care-and-support-guide/Pages/planning-for-your-future-care-needs.aspx).
