@@ -5,6 +5,7 @@ description: How taking your pension or leaving your pot untouched can affect ho
 #Care costs
  
 The money you take from or leave in your pension pot could affect how much you may have to pay towards care costs later in life.
+
 Care can include help at home with things like washing, dressing, getting out and about, staying in touch with friends and family or moving into a care home. This is known as social care and local councils are responsible for it.
 
 ##How care is paid for
