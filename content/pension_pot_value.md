@@ -1,4 +1,5 @@
 ---
+label: Check how much is in your pot
 description: How to find out how much money you have in your pension pot, and how many pension pots you’ve paid into.
 ---
 

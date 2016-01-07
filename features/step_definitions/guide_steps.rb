@@ -34,28 +34,28 @@ Then(/^I can navigate to the next step in that journey$/) do
 end
 
 Then(/^I can navigate to the previous step in that journey$/) do
-  expect(@guide.pager_item_previous).to have_content('Check how much is in your pension pot')
+  expect(@guide.pager_item_previous).to have_content('Check how much is in your pot')
 end
 
 Then(/^I can navigate directly to other steps in that journey$/) do
   expect(@guide.journey_nav_steps.map(&:text))
-    .to eq(['Check how much is in your pension pot',
-            'What you can do with your pension pot (current)',
-            'Plan how long your money needs to last',
-            'Work out how much money you’ll have in retirement',
-            'Watch out for tax',
-            'Shop around for the best deal'])
+    .to eq(['Check how much is in your pot',
+            'What you can do with your pot (current)',
+            'Make your money last',
+            'Work out what you’ll have in retirement',
+            'Tax you pay on your pension',
+            'Shop around and compare providers'])
 end
 
 Then(/^the current guide is highlighted$/) do
-  expect(@guide.journey_nav_current_step.text).to eq('What you can do with your pension pot (current)')
+  expect(@guide.journey_nav_current_step.text).to eq('What you can do with your pot (current)')
 end
 
 Then(/^I can navigate to content related to the journey$/) do
   expect(@guide.link_promo_items.map(&:text))
     .to eq(['Book a free appointment',
             'Your pension when you die',
-            'Benefits',
+            'Benefits entitlement',
             'Care costs',
             'How to avoid a pension scam'])
 end

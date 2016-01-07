@@ -5,7 +5,7 @@ description: You can cash in your whole pension pot – 75% of that money is tax
 
 <div class="circle circle--m circle--whole-pot"></div>
 
-# Take your whole pot in one go
+# Take your whole pension pot in one go
 
 ## Overview
 

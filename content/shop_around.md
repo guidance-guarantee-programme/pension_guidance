@@ -1,9 +1,8 @@
 ---
-label: Shop around for the best deal
 description: When deciding what to do with your pension money in retirement, remember to compare pension products and providers.
 ---
 
-#How to shop around for the best deal
+# Shop around and compare providers
 
 Whatever you decide to do with your pension pot you don’t have to stay with your current pension provider.
 

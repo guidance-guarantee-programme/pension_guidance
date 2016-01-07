@@ -2,7 +2,7 @@
 description: What to consider when working out how much retirement income you’ll have, including your pension, other sources of income, costs, and debt.
 ---
 
-# Work out how much money you’ll have in retirement
+# Work out what you’ll have in retirement
 
 When you reach retirement your income is likely to be less. This is mostly because your income from work drops if you go part-time or when you stop working altogether. Your retirement income usually isn’t as much as your salary.
 
