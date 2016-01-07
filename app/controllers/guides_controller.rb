@@ -19,6 +19,15 @@ class GuidesController < ApplicationController
     scams
   )
 
+  PENSION_OPTION_IDS = %w(
+    adjustable-income
+    guaranteed-income
+    leave-pot-untouched
+    mix-options
+    take-cash-in-chunks
+    take-whole-pot
+  )
+
   def show
     @guide = decorate(find(params[:id]))
     @related_guides = decorate(related_guides)
@@ -71,6 +80,11 @@ class GuidesController < ApplicationController
   end
 
   def set_breadcrumbs
-    breadcrumb Breadcrumb.book_an_appointment if params[:id] == 'book'
+    case params[:id]
+    when 'book'
+      breadcrumb Breadcrumb.book_an_appointment
+    when *PENSION_OPTION_IDS
+      breadcrumb Breadcrumb.pension_options
+    end
   end
 end
