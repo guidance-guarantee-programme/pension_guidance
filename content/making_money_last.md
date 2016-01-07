@@ -32,7 +32,7 @@ When you choose to take your money is up to you. Don’t rush your decision.
 
 You might want to continue working for a while, possibly part time. Many employers offer [flexible working arrangements](https://www.gov.uk/flexible-working) for people close to or over retirement age.
 
-Your future plans may include stopping working altogether and travelling in your late 60s and 70s. You may then look to spend more time at home in your 80s when you may be less active. It’s possible you’ll need more income in your later years, eg to cover [care costs](http://www.nhs.uk/Conditions/social-care-and-support-guide/Pages/planning-for-your-future-care-needs.aspx).
+Your future plans may include stopping working altogether and travelling in your late 60s and 70s. You may then look to spend more time at home in your 80s when you may be less active. It’s possible you’ll need more income in your later years, eg to cover [care costs](/care-costs).
 
 You’ll need to work out if you’re able to spread your pension money across these stages of retirement.
 
