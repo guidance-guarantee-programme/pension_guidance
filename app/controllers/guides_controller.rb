@@ -15,6 +15,7 @@ class GuidesController < ApplicationController
     appointments
     when-you-die
     benefits
+    care-costs
     scams
   )
 
