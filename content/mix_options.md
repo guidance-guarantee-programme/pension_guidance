@@ -7,35 +7,37 @@ description: You can mix your pension options to suit your circumstances at diff
 
 # Mixing your pension options
 
-You can mix your options but not all providers offer all the options.
+## Overview
 
-You could do this at different times in your retirement. For example, you can take some cash from your pot first and buy an annuity later.
+You can mix the ways you take your pension pot.
 
-## Getting financial advice
-Mixing your options can be complicated. If you’re interested in this you might want to talk to a financial adviser first to check what’s currently available.
-
-Pension providers are developing new retirement income products all the time, some of which might mix these options.
+- You can mix the pension options, eg use some of your pot to get an adjustable income and some to buy an annuity.
+- Not all providers offer all the options.
+- If you have multiple pots, you can use different options for each pot, eg leave one pot untouched and take cash in chunks from another.
 
 {: .example--mix}
 $E
 **Example**
 
-Your pension pot is £60,000. You decide to take 25% as tax-free cash which is £15,000.
-
-{: .example__guaranteed-income}
-You use £20,000 to buy an annuity. This gives you a taxable income for the rest of your life of about £900 a year.
-
-{: .example__adjustable-income}
-You also put £25,000 into a drawdown fund to get an adjustable income and take out about £5,000 a year for about 5 years.
+Your pension pot is £60,000. You decide to take 25% as tax-free cash leaving £45,000.
+You use £20,000 to buy an annuity. This gives you a taxable income for the rest of your life of about £900 a year. You use the other £25,000 to get an adjustable income. This allows you to take out about £5,000 a year for 5 years.
 $E
 
 {::options parse_block_html="true" /}
 <div class="next-steps next-steps--mix-options">
-## Your next steps
+
+## Getting further help
+
+Mixing your options can be complicated. If you’re interested in this you might want to talk to a financial adviser first.
+
+Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.
+
+## Next steps
 
 If you’re interested in mixing your options:
 
-- look at all options to see which ones are right for you
-- shop around – you don’t have to buy a product from your current provider
-- [get financial advice](/shop-around#getting-financial-advice) before making a decision
+- Look at all the options to see which ones are right for you
+- Shop around – you don’t have to get an adjustable income or buy an annuity from your current provider
+- [Get financial advice](/shop-around#getting-financial-advice) before making a decision
+
 </div>
