@@ -54,6 +54,8 @@ At the end of the tax year HM Revenue and Customs will calculate how much tax yo
 
 Beware of [pension scams](/scams) contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
 
+{::options parse_block_html="true" /}
+<div class="next-steps next-steps--whole-pot">
 ## Your next steps
 
 Here are some next steps if you’re interested in taking your whole pot in one go:
@@ -61,3 +63,4 @@ Here are some next steps if you’re interested in taking your whole pot in one 
 - check with your provider if they offer this option – they may charge you a fee if you move your pension to a provider that does
 - you can take 25% tax free
 - if you want to reinvest the money, talk to a [registered financial adviser](http://www.fca.org.uk/register) first
+</div>
