@@ -4,15 +4,15 @@ description: You can decide when you take money from your pension pot.
 ---
 <div class="circle circle--m circle--leave-pot-untouched"></div>
 
-# Leaving your whole pension pot untouched
+# Leave your whole pension pot untouched
+
+## Overview
 
 You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the age you agreed with your provider to retire). You could leave the money invested, eg while you’re working.
 
 - The money in your pot could grow.
-- You have more money to last a shorter length of time.
+- You could have more money to last a shorter length of time.
 - You (and your employer) can also still pay into your pot but there may be restrictions.
-
-%If someone contacts you unexpectedly about getting money out of your pot before you’re 55, it’s nearly always a pension scam.%
 
 ## Tax
 
@@ -26,10 +26,15 @@ Your provider may charge you administration fees for managing your pot.
 
 As with every investment the value of your pot could go up or down.
 
-Your provider may charge you a penalty fee if you don’t start taking your pension when you reach your selected retirement age.
+%Your provider may charge you a penalty fee if you don’t start taking your pension when you reach your selected retirement age.%
+
+## Scams
+
+If someone contacts you unexpectedly about getting money out of your pot before you’re 55, it’s nearly always a pension scam.
 
 {::options parse_block_html="true" /}
 <div class="next-steps next-steps--leave-pot-untouched">
+
 ## Next steps
 
 Ask your pension provider the following questions:
@@ -41,6 +46,7 @@ Ask your pension provider the following questions:
 - How much can I still pay in?
 - Does my pot have any special features that could mean I get a better deal, eg a guaranteed annuity rate?
 - Do you have up-to-date details of the person I want to leave my pot to (my ‘beneficiary’)?
-</div>
 
-Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.
+**Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.**
+
+</div>
