@@ -18,7 +18,7 @@ You don’t have to start taking money from your pension pot when you reach your
 
 You don’t pay tax while the money stays in your pot. You can still pay into it up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
 
-Money you leave in your pot can be passed on [passed on](/when-you-die) tax free if you die before the age of 75.
+Money you leave in your pot can be [passed on](/when-you-die) tax free if you die before the age of 75.
 
 ## Fees and investment risk
 
