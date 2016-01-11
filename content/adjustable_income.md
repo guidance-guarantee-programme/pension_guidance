@@ -33,7 +33,7 @@ Your provider will offer you different investments with different risks. You pic
 
 A financial adviser can help you to create an investment plan for your money. They can advise you on how much you can take out to make the money last as long as possible. They’ll charge you a fee for this.
 
-Your provider is likely to charge you fees for running your investments and whenever you get a payment.
+Your provider is likely to charge you fees for managing your investments and whenever you get a payment.
 
 If your provider goes bust you’ll be covered by the [Financial Services Compensation Scheme](/protection).
 
