@@ -8,7 +8,7 @@ Annuity rules will change in 2017. You may then be able to sell an existing annu
 
 ^Under current rules, once you’ve bought an annuity you can’t change the decision.^
 
-Annuities provide a guaranteed income for a fixed number of years or the rest of your life. If you’ve already bought an annuity, you may decide the best option is to keep it. Selling an annuity is a big decision and you should think about this carefully. You might want to speak to a [financial adviser](/shop-around#getting-financial-advice) before you make a decision.
+Annuities provide a guaranteed income for a fixed number of years or the rest of your life. If you’ve already bought an annuity, you may decide the best option is to keep it. Selling an annuity is a big decision and you should think about this carefully. You might want to speak to a [financial adviser](/financial-advice) before you make a decision.
 
 %Pension Wise currently doesn’t provide guidance for people looking to sell their existing annuities.%
 

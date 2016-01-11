@@ -1,6 +1,6 @@
 ---
 label: Shop around for the best deal
-description: When deciding what to do with your pension money in retirement, remember to get financial advice and compare pension products and providers.
+description: When deciding what to do with your pension money in retirement, remember to compare pension products and providers.
 ---
 
 #How to shop around for the best deal
@@ -13,7 +13,7 @@ You don’t have to buy one from your current provider. Moving your pension pot 
 
 The ‘wake-up’ pack your provider sends you when you reach retirement age is likely to include information about their own products only. Research shows that 8 out of 10 people would have benefited from switching providers (Financial Conduct Authority, Thematic Review of Annuities, Feb 2014).
 
-You can choose to shop around by yourself or with help from a [financial adviser](/shop-around#getting-financial-advice). You have to pay for financial advice.
+You can choose to shop around by yourself or with help from a [financial adviser](/financial-advice).
 
 ^When shopping around [watch out for pension scams](/scams).^
 
@@ -45,7 +45,7 @@ Once you’ve bought one you only have a short period when you can still change 
 
 ^Ask about commission charges that might be included in the quotes you get.^
 
-##Comparing flexi-access products
+##Comparing flexi-access drawdown products
 
 To compare products where you get an adjustable income you’ll need some knowledge of investing.
 
@@ -64,32 +64,6 @@ You also need to know how your [pension pot will be taxed](/tax) every time you 
 
 %If your investments don’t perform well and you take too much money from your pension pot, you could run out of retirement income.%
 
-Moving your money into a flexi-access drawdown fund may involve moving your pot to a different provider. If you’re not confident with investing it may not be right for you.
+Moving your money into a flexi-access drawdown investment may involve moving your pot to a different provider. If you’re not confident with investing it may not be right for you.
 
-You should consider speaking to a financial adviser before getting a flexi-access drawdown product.
-
-##Getting financial advice
-
-Comparing retirement income products can be complicated. You may wish to speak to a financial adviser to help you. They’ll look at your circumstances and recommend what you can do with the money in your pension pot.
-
-The more information you have prepared when you meet with one, the more you will benefit. This includes details of the value of your pension pot and other income.
-
-Check your adviser is authorised by the Financial Conduct Authority (FCA) before you pay for advice. You can check the [FCA register](http://www.fsa.gov.uk/register/home.do) to make sure.
-
-The Money Advice Service has a [retirement adviser directory](https://directory.moneyadviceservice.org.uk/en) to help you find an adviser. 
-
-###What a financial adviser will do
-
-An adviser will ask about your current financial position, your goals and how you feel about taking risks with your money. This will help them to recommend retirement income products that are right for you now and in the future.
-
-You should always ask an adviser if they’re independent or restricted. Restricted advisers are limited to certain products (eg only annuities), providers or both. Independent advisers cover the whole market and are not restricted to one product type or provider.
-
-This list from the FCA explains what [an adviser might ask you](http://www.fca.org.uk/consumers/financial-services-products/investments/financial-advice/what-an-adviser-might-ask-you).
-
-###Paying for financial advice
-
-The fees for getting financial advice vary. You need to know what fees and charges up front and when you’re expected to pay.
-
-You’ll pay a one-off fee if you see the adviser once, or a regular fee if the advice is ongoing. You can start by finding out if there’s a fee for an initial consultation. Many advisers offer this for free.
-
-You can read more about [choosing a financial adviser](https://www.moneyadviceservice.org.uk/en/articles/choosing-a-financial-adviser) on the Money Advice Service website.
+You should consider speaking to a financial adviser before getting a flexi-access drawdown investment.

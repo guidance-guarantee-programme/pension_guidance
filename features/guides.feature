@@ -18,6 +18,7 @@ Feature: Guides
       | contact                  |
       | cookies                  |
       | divorce                  |
+      | financial-advice         |
       | guaranteed-income        |
       | leave-pot-untouched      |
       | living-abroad            |
