@@ -11,23 +11,3 @@
     display: block;
   }
 }
-
-.example--mix {
-  padding-left: 0;
-
-  p {
-    border-left: 10px solid transparent;
-    padding-left: 1.5em;
-    position: relative;
-    left: -10px;
-  }
-
-  // nested to override p
-  .example__guaranteed-income {
-    border-left: 10px solid $color-option-guaranteed-income;
-  }
-
-  .example__adjustable-income {
-    border-left: 10px solid $color-option-adjustable-income;
-  }
-}
