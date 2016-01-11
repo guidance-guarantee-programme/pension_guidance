@@ -16,9 +16,9 @@ You can take smaller sums of cash from your pot until it runs out. How much you 
 
 This is also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
 
-Some providers charge a fee to take cash out.
+Some pension providers charge a fee to take cash out.
 
-Not all providers offer this option. If your provider doesn’t offer it, you can transfer your pot but you might have to pay a fee.
+Not all providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
 ^Taking a large sum of cash from your pension pot could also affect [your entitlement to any benefits](/benefits).^
 

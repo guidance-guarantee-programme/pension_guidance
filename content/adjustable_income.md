@@ -25,7 +25,7 @@ $E
 You have a pension pot of £40,000. You take 25% tax free which is £10,000. You invest the other £30,000 to give you an adjustable income. Your money grows by 3% every year. You take a taxable income of £2,000 from it. Your money will last you 20 years.
 $E
 
-Not all pension providers offer this option. If your provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
+Not all pension providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
 ## How adjustable income works
 
