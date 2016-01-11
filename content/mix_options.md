@@ -38,7 +38,7 @@ Mixing your options can be complicated. If you’re interested in this you might
 If you’re interested in mixing your options:
 
 - Look at all the options to see which ones are right for you
-- Shop around – you don’t have to get an adjustable income or buy an annuity from your current provider
+- [Shop around](/shop-around) – you don’t have to get an adjustable income or buy an annuity from your current provider
 
 **Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.**
 
