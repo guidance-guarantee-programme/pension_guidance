@@ -20,6 +20,7 @@ Feature: Guides
       | divorce                  |
       | financial-advice         |
       | guaranteed-income        |
+      | ill-health               |
       | leave-pot-untouched      |
       | living-abroad            |
       | making-money-last        |
