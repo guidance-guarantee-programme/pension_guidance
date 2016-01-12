@@ -1,5 +1,8 @@
 ---
 description: Call 0300 330 1001 between 8am to 10pm, every day.
+tags:
+  - appointments
+  - booking
 ---
 
 # How to book

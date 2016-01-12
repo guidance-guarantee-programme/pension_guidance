@@ -1,5 +1,7 @@
 ---
 description: You can take smaller chunks of cash from your pension pot until it runs out.
+tags:
+  - option
 ---
 
 <div class="circle circle--m circle--take-cash"></div>

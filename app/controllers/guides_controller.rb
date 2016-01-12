@@ -1,6 +1,7 @@
 class GuidesController < ApplicationController
   layout 'guides'
   helper_method :journey_navigation
+  before_action :find_guide
   before_action :set_breadcrumbs
 
   NON_JOURNEY_RELATED_GUIDE_IDS = %w(
@@ -19,17 +20,7 @@ class GuidesController < ApplicationController
     scams
   )
 
-  PENSION_OPTION_IDS = %w(
-    adjustable-income
-    guaranteed-income
-    leave-pot-untouched
-    mix-options
-    take-cash-in-chunks
-    take-whole-pot
-  )
-
   def show
-    @guide = decorate(find(params[:id]))
     @related_guides = decorate(related_guides)
 
     expires_in Rails.application.config.cache_max_age, public: true
@@ -47,7 +38,7 @@ class GuidesController < ApplicationController
 
   def decorate(guide_or_collection)
     if guide_or_collection.is_a?(Enumerable)
-      guide_or_collection.map { |guide| GuideDecorator.cached_for(guide) }
+      guide_or_collection.collect { |guide| GuideDecorator.cached_for(guide) }
     else
       GuideDecorator.cached_for(guide_or_collection)
     end
@@ -60,8 +51,8 @@ class GuidesController < ApplicationController
                        non_journey_related_guides
                      end
 
-    if params[:id] == 'book'
-      related_guides.reject! { |guide| guide.id == 'appointments' }
+    if @guide.related_to_booking?
+      related_guides.reject!(&:related_to_appointments?)
     end
 
     related_guides
@@ -79,12 +70,12 @@ class GuidesController < ApplicationController
     JourneyNavigation.new(JourneyTree.instance.tree, params[:id])
   end
 
+  def find_guide
+    @guide = decorate(find(params[:id]))
+  end
+
   def set_breadcrumbs
-    case params[:id]
-    when 'book'
-      breadcrumb Breadcrumb.book_an_appointment
-    when *PENSION_OPTION_IDS
-      breadcrumb Breadcrumb.pension_options
-    end
+    breadcrumb(Breadcrumb.book_an_appointment) if @guide.related_to_booking?
+    breadcrumb(Breadcrumb.pension_options) if @guide.option?
   end
 end

@@ -1,5 +1,7 @@
 ---
 description: Book a phone or face-to-face appointment with Pension Wise for personal guidance on your pension pot options.
+tags:
+  - appointments
 ---
 
 # Book a free appointment
