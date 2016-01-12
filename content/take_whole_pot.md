@@ -64,7 +64,7 @@ Beware of [pension scams](/scams) contacting you unexpectedly about an investmen
 {::options parse_block_html="true" /}
 <div class="next-steps next-steps--whole-pot">
 
-## Next steps:
+## Next steps
 
 - Ask your provider if you can take 25% tax free.
 - If you want to reinvest the money, talk to a registered [financial adviser](/financial-advice) first.
