@@ -1,9 +1,8 @@
 ---
-label: Watch out for tax
 description: You pay tax on any income, including pension, that’s above your tax-free Personal Allowance.
 ---
 
-#Tax you pay on your pension
+# Tax you pay on your pension
 
 When you get a pension you pay tax on income above your tax-free [Personal Allowance](https://www.gov.uk/income-tax-rates/personal-allowances), just like you do on your salary.
 
