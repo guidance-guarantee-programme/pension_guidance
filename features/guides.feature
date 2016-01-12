@@ -15,6 +15,7 @@ Feature: Guides
       | benefits                 |
       | book                     |
       | care-costs               |
+      | combine-pots             |
       | contact                  |
       | cookies                  |
       | divorce                  |

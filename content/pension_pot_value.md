@@ -23,7 +23,4 @@ If you can’t remember which pensions you paid into you can [find a lost pensio
 
 ##Combine your pension pots
 
-You can combine multiple pension pots into one by [transferring your pension](https://www.gov.uk/transferring-your-pension/transferring-to-a-uk-pension-scheme). You might save on administration charges but there could be fees and you could lose certain arrangements you have with your current provider. You may wish to get [financial advice](/financial-advice) before doing this.
-
-
-
+If you have more than one pension pot, you could [combine your pots](/combine-pots) to help make them easier to manage. You could be charged fees so you may wish to get [financial advice](/financial-advice) before doing this.
