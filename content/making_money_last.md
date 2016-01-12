@@ -56,7 +56,7 @@ You may wish to speak to a [financial adviser](/financial-advice) to help you de
 
 Your selected retirement date could influence when you decide to take the money from your pension pot.
 
-Find out what age and date you’ve said you want to retire at. Check your pension paperwork, eg your annual pension statements. If you still can’t find this information ask your pension provider.
+Find out what age and date you’ve said you want to retire at. Check your pension paperwork, eg your annual [pension statements](/pension-statements). If you still can’t find this information ask your pension provider.
 
 Ask if there’s a charge to change this date, or if doing so changes the terms of your pension. Some providers have rules that kick in if you retire earlier or later than your selected retirement date.
 

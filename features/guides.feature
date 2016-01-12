@@ -29,6 +29,7 @@ Feature: Guides
       | pension-pot-options      |
       | pension-pot-value        |
       | pension-types            |
+      | pension-statements       |
       | scams                    |
       | shop-around              |
       | state-pension            |
