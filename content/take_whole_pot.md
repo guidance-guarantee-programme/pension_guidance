@@ -1,6 +1,8 @@
 ---
 label: Take your whole pot
 description: You can cash in your whole pension pot – 75% of that money is taxable.
+tags:
+  - option
 ---
 
 <div class="circle circle--m circle--whole-pot"></div>

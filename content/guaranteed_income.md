@@ -1,6 +1,8 @@
 ---
 label: Guaranteed income
 description: You can use your pension pot to buy an insurance policy that guarantees you an income for the rest of your life.
+tags:
+  - option
 ---
 
 <div class="circle circle--m circle--guaranteed-income"></div>
@@ -25,7 +27,7 @@ There are lots of different types of annuity and you can shop around – you don
 -|-
 Single life | Paid just to you, either for life or for a fixed number of years.
 Joint life | Payments continue to your spouse or partner after you die.
-Fixed term or Guaranteed period | Stops paying at the end of the set term, eg you get a guaranteed 10 year annuity and die after 7 years, your spouse or partner still gets payments for another 3 years. 
+Fixed term or Guaranteed period | Stops paying at the end of the set term, eg you get a guaranteed 10 year annuity and die after 7 years, your spouse or partner still gets payments for another 3 years.
 Enhanced or Impaired | May pay more than a standard annuity if you smoke or have a medical condition, eg diabetes or high blood pressure.
 Escalating | The amount increases each year to reduce the effect of inflation.
 Level | Pays a flat amount of income each year.

@@ -1,6 +1,8 @@
 ---
 label: Leave pot untouched
 description: You can decide when you take money from your pension pot.
+tags:
+  - option
 ---
 <div class="circle circle--m circle--leave-pot-untouched"></div>
 
