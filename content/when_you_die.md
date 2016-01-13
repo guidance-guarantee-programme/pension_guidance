@@ -37,7 +37,7 @@ If you inherit a pension you can use the money to buy yourself an annuity or an 
 
 ##Money still in your pension pot
 
-If you die before 75, money left in your pot is passed on tax free. Your beneficiary can take it a single lump sum or as a retirement income.
+If you die before 75, money left in your pot is passed on tax free. Your beneficiary can take it as a single lump sum or as retirement income.
 
 ^If you die before 75, and you didn’t touch the money in your pot at all, your beneficiary may have to pay tax if they don’t use it within 2 years of the date your provider was told of your death.^
 
