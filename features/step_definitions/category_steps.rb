@@ -17,3 +17,17 @@ Then(/^the page meta description corresponds to the meta description of the cate
 
   expect(@page).to have_meta(:description, expected_description)
 end
+
+Then(/^I can navigate to guides that belong to the category$/) do
+  expect(@page.guide_links.map(&:text))
+    .to eq(['Shop around and compare providers',
+            'Make your money last',
+            'Work out what you’ll have in retirement',
+            'How to avoid a scam',
+            'Leave pot untouched',
+            'Guaranteed income',
+            'Adjustable income',
+            'Take cash in chunks',
+            'Take your whole pot',
+            'Mix your options'])
+end

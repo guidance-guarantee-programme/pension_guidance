@@ -6,4 +6,8 @@ module ApplicationHelper
   def book_an_appointment_link?
     true
   end
+
+  def link_to_guide(guide)
+    link_to(guide.label, guide.url, class: 't-guide-link')
+  end
 end

@@ -11,3 +11,7 @@ Feature: Categories
   Scenario: Include category meta description
     When I visit a category
     Then the page meta description corresponds to the meta description of the category
+
+  Scenario: Display a list of guides
+    When I visit a category
+    Then I can navigate to guides that belong to the category

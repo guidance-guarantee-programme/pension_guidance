@@ -1,4 +1,24 @@
-<% content_for(:page_title, t('service.title', page_title: @category.title)) %>
-<% content_for(:meta_description, @category.description) %>
+<% content_for(:page_title, t('service.title', page_title: @category_navigation.title)) %>
+<% content_for(:meta_description, @category_navigation.description) %>
 
-<h1><%= @category.title %></h1>
+<h1><%= @category_navigation.title %></h1>
+
+<ul class="link-promo__list">
+  <% @category_navigation.guides.each do |guide| %>
+    <li class="link-promo__item">
+      <% if guide.is_a?(Array) %>
+        <h2><%= guide.shift.label %></h2>
+
+        <ul>
+          <% guide.each do |nested_guide| %>
+            <li class="link-promo__item">
+              <%= link_to_guide nested_guide %>
+            </li>
+          <% end %>
+        </ul>
+      <% else %>
+        <%= link_to_guide guide %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
