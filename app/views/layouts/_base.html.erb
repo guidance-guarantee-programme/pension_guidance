@@ -64,6 +64,10 @@
   </div>
 <% end %>
 
+<% content_for :footer_top do %>
+  <%= render 'components/footer_categories', categories: navigation.topics %>
+<% end %>
+
 <% content_for :body_end do %>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag 'https://cdn3.userzoom.com/uz.js?cuid=C85E515772DAE311BEDA0022196C4538' %>
