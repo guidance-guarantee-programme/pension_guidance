@@ -15,6 +15,7 @@ RSpec.describe CategoryRepository do
     context 'existing category' do
       let(:id) { 'the_test_category' }
       let(:expected_title) { 'The test category' }
+      let(:expected_description) { 'Lots of testing stuff to be found here.' }
 
       specify 'with the correct id' do
         expect(find.id).to eq(id)
@@ -22,6 +23,10 @@ RSpec.describe CategoryRepository do
 
       specify 'with the correct title' do
         expect(find.title).to eq(expected_title)
+      end
+
+      specify 'with the correct description' do
+        expect(find.description).to eq(expected_description)
       end
     end
   end
