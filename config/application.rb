@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module PensionGuidance
   class Application < Rails::Application
+    config.action_controller.include_all_helpers = false
     config.action_dispatch.rescue_responses.merge! 'GuideRepository::GuideNotFound' => :not_found
 
     config.autoload_paths << Rails.root.join('lib')
