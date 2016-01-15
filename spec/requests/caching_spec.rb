@@ -4,6 +4,7 @@ cacheable_content = {
   'invalid location search' => ['/locations', { postcode: 'london' }],
   location: '/locations/london',
   guide: '/pension-types',
+  category: '/browse/tax-and-getting-advice',
   home: '/'
 }
 

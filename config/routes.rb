@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root 'home#show'
 
   constraints format: 'html' do
+    resources :categories, only: 'show', path: 'browse'
+
     GuideRepository.new.all.each do |guide|
       get guide.slug,
           controller: 'guides',
