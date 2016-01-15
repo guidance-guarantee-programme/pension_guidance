@@ -21,7 +21,6 @@
       track('.l-home-top-slot .l-column-third a', 'introduction');
       track('.l-home-top-slot-promo a', 'appointments');
       track('.journey-promo a', 'journey promo');
-      track('.l-home-guides a', 'guides directory');
       track('.l-home-about a', 'about the service');
       track('.l-home-callouts a', 'callout guides');
 

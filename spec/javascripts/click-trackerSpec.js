@@ -66,11 +66,6 @@ describe('click tracker', function() {
       expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('journey promo', '/url');
     });
 
-    it('adds click tracking to links in the guides directory', function() {
-      $('.l-home-guides a').trigger('click');
-      expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('guides directory', '/url');
-    });
-
     it('adds click tracking to links in the about the service promo', function() {
       $('.l-home-about a').trigger('click');
       expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('about the service', '/url');
