@@ -2,7 +2,7 @@
 description: How pensions are split when a couple divorces or ends their civil partnership.
 ---
 
-#Pensions and divorce
+#Divorce and pensions
 
 The way that a couple’s pension is dealt with when they divorce or have their civil partnership dissolved should be set out as part of a financial settlement.
 
