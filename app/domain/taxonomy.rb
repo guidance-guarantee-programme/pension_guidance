@@ -63,7 +63,7 @@ class Taxonomy
   def illness_and_death
     category_node('illness-and-death').tap do |node|
       node << guide_node('ill-health')
-      node << guide_node('benefits')
+      node << guide_node('care-costs')
       node << guide_node('when-you-die')
     end
   end
