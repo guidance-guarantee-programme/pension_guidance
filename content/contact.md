@@ -56,4 +56,4 @@ The [Adjudicator’s Office](http://www.adjudicatorsoffice.gov.uk) is a free and
 
 You’ll need to send them a copy of your complaint as well as letters or emails that we sent in response. The Adjudicator usually won’t look at a complaint received more than six months after the date of our final response.
 
-You can also ask an MP to refer your complaint to the independent [Parliamentary and Health Service Ombudsman (PHSO)](http://www.ombudsman.org.uk). You can [get help with finding your MP](http://www.parliament.uk/mps-lords-and-offices/mps/) if you don’t know who they are. The Ombudsman usually only looks at complaints that the Adjudicator has already reviewed.
+You can also ask an MP to refer your complaint to the independent [Parliamentary and Health Service Ombudsman](http://www.ombudsman.org.uk). You can [get help with finding your MP](http://www.parliament.uk/mps-lords-and-offices/mps/) if you don’t know who they are. The Ombudsman usually only looks at complaints that the Adjudicator has already reviewed.
