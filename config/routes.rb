@@ -18,8 +18,6 @@ Rails.application.routes.draw do
       scope path: 'pages' do
         get 'homepage', action: 'pages_homepage'
         get 'guide', action: 'pages_guide'
-        get 'journey-index', action: 'pages_journey_index'
-        get 'journey-page', action: 'pages_journey_page'
         get 'appointments', action: 'pages_appointments'
         get 'book', action: 'pages_book'
         get 'locations-search', action: 'pages_locations_search'

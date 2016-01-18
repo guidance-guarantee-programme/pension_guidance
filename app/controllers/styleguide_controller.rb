@@ -9,14 +9,6 @@ class StyleguideController < ApplicationController
     render template: 'styleguide/pages/guide'
   end
 
-  def pages_journey_index
-    render template: 'styleguide/pages/journey_index'
-  end
-
-  def pages_journey_page
-    render template: 'styleguide/pages/journey_page'
-  end
-
   def pages_appointments
     render template: 'styleguide/pages/appointments',
            layout: 'styleguide/pages'
