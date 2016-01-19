@@ -1,5 +1,5 @@
 ---
-label: How to avoid a scam
+label: How to avoid a pension scam
 description: How to spot the signs of a pension scam, how to protect yourself, and what to do if you’ve been targeted.
 ---
 

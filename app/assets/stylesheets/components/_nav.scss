@@ -88,7 +88,7 @@
 }
 
 .nav__sub-nav--left {
-  left: -111px;
+  left: -103px;
 }
 
 .nav__sub-nav--double {
@@ -96,10 +96,10 @@
 }
 
 .nav__sub-nav-list {
-  padding: 16px 8px 5px 0;
+  padding: 16px 16px 5px 0;
   margin: 0;
   margin-left: -3px;
-  width: 190px;
+  width: 174px;
   float: left;
 
   .nav__item {
@@ -146,6 +146,7 @@
   background-color: $navigation-background-alt;
   border-left: 1px solid $border-colour;
   min-width: 240px;
+  min-height: 300px;
 }
 
 
