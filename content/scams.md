@@ -39,7 +39,7 @@ Always phone your provider if you receive an email saying that they’ve changed
 
 ## How to protect yourself
 
-Check if the person or company contacting you is on the [Financial Conduct Authority (FCA) Register](http://www.fca.org.uk/register) or call the FCA on 0800 111 6768. If you call the person or company back, use the phone number listed on the FCA Register.
+Check if the person or company contacting you is on the [Financial Services Register](http://www.fca.org.uk/register) or call the Financial Conduct Authority on 0800 111 6768. If you call the person or company back, use the phone number listed on the Financial Services Register.
 
 You may be approached by someone claiming to be a pension provider, a financial adviser or from the government.
 
@@ -49,7 +49,7 @@ Read more about [avoiding and reporting internet scams and phishing](https://www
 
 ## If you’ve been targeted
 
-If you think you’ve been the victim of a pension scam, call Action Fraud on 0300 123 2040 or use the [Action Fraud online reporting tool.](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime)
+If you think you’ve been the victim of a pension scam, call Action Fraud on 0300 123 2040 or use their [online reporting tool](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime).
 
 Speak to The Pensions Advisory Service if you’ve been unexpectedly contacted by someone about your pension.
 
