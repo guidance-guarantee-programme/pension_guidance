@@ -8,6 +8,10 @@ class Category
     self.description = description
   end
 
+  def slug
+    id.tr('_', '-')
+  end
+
   def ==(other)
     id == other.id
   end

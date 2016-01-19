@@ -1,7 +1,12 @@
 <%= render layout: 'layouts/base' do %>
-  <div class="l-page-container">
-    <%= render 'components/phase_banner' %>
+  <div class="l-masthead">
+    <div class="l-banner-container">
+      <%= render 'components/logo_link' %>
+      <%= render 'components/page_nav' %>
+    </div>
+  </div>
 
+  <div class="l-page-container">
     <main role="main" id="content" tabindex="-1">
       <%= yield %>
     </main>

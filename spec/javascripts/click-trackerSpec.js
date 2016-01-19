@@ -38,6 +38,11 @@ describe('click tracker', function() {
       $('#footer a').trigger('click');
       expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('footer', '/url');
     });
+
+    it('adds mouseover tracking to dropdown navigation', function() {
+      $('.js-nav > .nav__item').trigger('mouseover');
+      expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('nav dropdown', jasmine.any(String));
+    });
   });
 
   describe('tracks links on the homepage', function() {

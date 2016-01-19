@@ -62,3 +62,12 @@ $color-blockquote-border: $color-grey-rolling-stone;
 $compact-options-max-mobile: 420px;
 $compact-options-min-tablet: 640px;
 $compact-options-max-tablet: 720px;
+
+// navigation
+$navigation-background: lighten($grey-3, 3%);
+$navigation-background-alt: $grey-3;
+$navigation-mobile-nav: $color-black;
+$navigation-width: 825px;
+$navigation-full-width: 905px;
+$navigation-z-bottom: 1;
+$navigation-z-top: 2;

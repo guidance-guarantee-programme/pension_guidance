@@ -1,0 +1,47 @@
+.l-page-nav {
+  overflow: hidden;
+
+  @include media($navigation-full-width) {
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .nav__list {
+    float: right;
+    overflow: hidden;
+    margin-bottom: 0;
+    transition: max-height .8s ease-in-out;
+
+    @include media($navigation-full-width) {
+      display: inline-block;
+      width: $navigation-width;
+      float: none;
+      margin: 8px -138px 0 138px;
+      overflow: visible;
+    }
+
+    .js-enabled & {
+      max-height: 0;
+    }
+
+    &.active {
+      max-height: 500px;
+    }
+  }
+
+  .nav__mobile {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+
+  .circle--s {
+    margin-bottom: 0;
+    float: left;
+    position: relative;
+    top: 1px;
+  }
+}

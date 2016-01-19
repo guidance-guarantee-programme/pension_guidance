@@ -1,8 +1,8 @@
 RSpec.describe Navigation do
   subject(:navigation) { Navigation.new(taxonomy) }
 
-  let(:foo_category) { instance_double(Category, id: double, title: 'Foo category') }
-  let(:bar_category) { instance_double(Category, id: double, title: 'Bar category') }
+  let(:foo_category) { instance_double(Category, id: double, slug: double, title: 'Foo category') }
+  let(:bar_category) { instance_double(Category, id: double, slug: double, title: 'Bar category') }
 
   let(:foo_guide) { instance_double(Guide, content_type: :govspeak, id: 'foo', slug: 'foo', label: 'Foo') }
   let(:bar_guide) { instance_double(Guide, content_type: :govspeak, id: 'bar', slug: 'bar', label: 'Bar') }

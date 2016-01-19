@@ -1,8 +1,14 @@
 (function() {
   'use strict';
 
+  var clickEventCache = {};
+
   function categoryName() {
     return 'Clicks on ' + window.location.pathname;
+  }
+
+  function generateKeyForCache(actionLabel, url) {
+    return '' + actionLabel + url;
   }
 
   var clickEventLogger = {
@@ -13,6 +19,15 @@
         'eventAction': actionLabel,
         'eventLabel': url
       });
+    },
+
+    sendEventOnlyOnce: function(actionLabel, url) {
+      var keyForCache = generateKeyForCache(actionLabel, url);
+
+      if (!!!clickEventCache[keyForCache]) {
+        clickEventCache[keyForCache] = true;
+        return this.sendEvent(actionLabel, url);
+      }
     }
   };
 

@@ -3,9 +3,14 @@
 (function($) {
   'use strict';
 
-  function track(selector, label) {
-    $(selector).on('click', function() {
-      PWPG.clickEventLogger.sendEvent(label, $(this).attr('href'));
+  function track(selector, label, _url, _event, _onlyOnce) {
+    var trackingMethod = 'sendEvent';
+    if (_onlyOnce) {
+      trackingMethod = 'sendEventOnlyOnce';
+    }
+
+    $(selector).on(_event || 'click', function() {
+      PWPG.clickEventLogger[trackingMethod](label, _url || $(this).attr('href'));
     });
   }
 
@@ -15,6 +20,7 @@
       track('#global-header a', 'global header');
       track('.l-masthead a', 'masthead');
       track('#footer a', 'footer');
+      track('.js-nav > .nav__item', 'nav dropdown', window.location.pathname, 'mouseover', true);
 
       // homepage
       track('.quick-links a', 'quick links');
