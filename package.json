@@ -14,6 +14,8 @@
     "js": "npm run jshint && npm run jscs",
     "jshint": "jshint app/assets/javascripts/**.js spec/javascripts/**.js",
     "jscs": "jscs app/assets/javascripts/**.js spec/javascripts/**.js",
-    "svgexport": "svgexport svg/circles.svg app/assets/images/css/circles-24.png 26: 100% && svgexport svg/circles.svg app/assets/images/css/circles-18.png 18: 100% && svgexport svg/circles.svg app/assets/images/css/circles-14.png 15: 100% && svgexport svg/circles.svg app/assets/images/css/bullet-options.png 11: 100%"
+    "svgexport": "npm run svg-circles && npm run svg-calculator",
+    "svg-circles": "svgexport svg/circles.svg app/assets/images/css/circles-24.png 26: 100% && svgexport svg/circles.svg app/assets/images/css/circles-18.png 18: 100% && svgexport svg/circles.svg app/assets/images/css/circles-14.png 15: 100% && svgexport svg/circles.svg app/assets/images/css/bullet-options.png 11: 100%",
+    "svg-calculator": "svgexport svg/calculator.svg app/assets/images/css/calculator.png 20: 100% && svgexport svg/calculator.svg app/assets/images/css/calculator-2x.png 40: 100%"
   }
 }

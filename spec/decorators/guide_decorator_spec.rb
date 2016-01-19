@@ -3,17 +3,19 @@ require_relative './shared_examples_for_a_guide_decorator'
 RSpec.describe GuideDecorator, type: :decorator do
   it_behaves_like 'a guide decorator'
 
+  subject(:decorator) { described_class.new(guide) }
+
   describe 'subclasses' do
     subject(:decorator) { described_class.new(double) }
-
-    specify 'must implement #title' do
-      expect { decorator.title }
-        .to raise_error('GuideDecorator subclasses must implement title')
-    end
 
     specify 'must implement #content' do
       expect { decorator.content }
         .to raise_error('GuideDecorator subclasses must implement content')
+    end
+
+    specify 'must implement #headers' do
+      expect { decorator.headers(double) }
+        .to raise_error('GuideDecorator subclasses must implement headers')
     end
   end
 
@@ -48,10 +50,14 @@ RSpec.describe GuideDecorator, type: :decorator do
   end
 
   describe '#label' do
-    let(:guide) { Guide.new('test-guide', metadata: metadata) }
-    let(:metadata) { Guide::Metadata.new(label: label) }
+    let(:guide) { double(label: label, title: title) }
+    let(:title) { double }
 
-    subject { described_class.new(guide).label }
+    subject { decorator.label }
+
+    before do
+      allow(decorator).to receive(:headers).and_return(title: title)
+    end
 
     context 'when the guide specifies a label' do
       let(:label) { 'Document label' }
@@ -65,7 +71,7 @@ RSpec.describe GuideDecorator, type: :decorator do
       let(:label) { '' }
 
       it 'returns the title' do
-        expect { subject }.to raise_error('GuideDecorator subclasses must implement title')
+        is_expected.to eq(title)
       end
     end
 
@@ -73,7 +79,7 @@ RSpec.describe GuideDecorator, type: :decorator do
       let(:label) { nil }
 
       it 'returns the title' do
-        expect { subject }.to raise_error('GuideDecorator subclasses must implement title')
+        is_expected.to eq(title)
       end
     end
   end

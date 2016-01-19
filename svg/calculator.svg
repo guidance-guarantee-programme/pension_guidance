@@ -1,0 +1,49 @@
+<svg id="calculator" xmlns="http://www.w3.org/2000/svg" viewBox="3 80 32 350">
+  <style>
+    .st0{fill:none;}
+    .st1{fill:#D32020;}
+
+    .option-none { fill: #dee0e2; }
+    .option-leave-pot-untouched { fill: #17375f; }
+    .option-guaranteed-income { fill: #fa9600; }
+    .option-adjustable-income { fill: #5bc8f1; }
+    .option-take-cash { fill: #97c81e; }
+    .option-whole-pot { fill: #b0348b; }
+    .option-mix-options { fill: #e50050; }
+  </style>
+
+  <g transform="translate(0, 0)">
+    <path class="st0" d="M3 85h32v32H3V85z"/>
+    <path class="option-none" d="M9 85v32h20V85H9zm6 30h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-2h4v2zm0-4h-4v-2h4v2zm-4-4v-2h4v2h-4zm4-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-6h4v6zm0-8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-6H11v-4h16v4z"/>
+  </g>
+
+  <g transform="translate(0, 50)">
+    <path class="st0" d="M3 85h32v32H3V85z"/>
+    <path class="option-leave-pot-untouched" d="M9 85v32h20V85H9zm6 30h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-2h4v2zm0-4h-4v-2h4v2zm-4-4v-2h4v2h-4zm4-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-6h4v6zm0-8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-6H11v-4h16v4z"/>
+  </g>
+
+  <g transform="translate(0, 100)">
+    <path class="st0" d="M3 85h32v32H3V85z"/>
+    <path class="option-guaranteed-income" d="M9 85v32h20V85H9zm6 30h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-2h4v2zm0-4h-4v-2h4v2zm-4-4v-2h4v2h-4zm4-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-6h4v6zm0-8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-6H11v-4h16v4z"/>
+  </g>
+
+  <g transform="translate(0, 150)">
+    <path class="st0" d="M3 85h32v32H3V85z"/>
+    <path class="option-adjustable-income" d="M9 85v32h20V85H9zm6 30h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-2h4v2zm0-4h-4v-2h4v2zm-4-4v-2h4v2h-4zm4-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-6h4v6zm0-8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-6H11v-4h16v4z"/>
+  </g>
+
+  <g transform="translate(0, 200)">
+    <path class="st0" d="M3 85h32v32H3V85z"/>
+    <path class="option-take-cash" d="M9 85v32h20V85H9zm6 30h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-2h4v2zm0-4h-4v-2h4v2zm-4-4v-2h4v2h-4zm4-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-6h4v6zm0-8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-6H11v-4h16v4z"/>
+  </g>
+
+  <g transform="translate(0, 250)">
+    <path class="st0" d="M3 85h32v32H3V85z"/>
+    <path class="option-whole-pot" d="M9 85v32h20V85H9zm6 30h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-2h4v2zm0-4h-4v-2h4v2zm-4-4v-2h4v2h-4zm4-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-6h4v6zm0-8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-6H11v-4h16v4z"/>
+  </g>
+
+  <g transform="translate(0, 300)">
+    <path class="st0" d="M3 85h32v32H3V85z"/>
+    <path class="option-mix-options" d="M9 85v32h20V85H9zm6 30h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-2h4v2zm0-4h-4v-2h4v2zm-4-4v-2h4v2h-4zm4-4h-4v-2h4v2zm0-4h-4v-2h4v2zm6 16h-4v-6h4v6zm0-8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4v-2h4v2zm0-6H11v-4h16v4z"/>
+  </g>
+</svg>

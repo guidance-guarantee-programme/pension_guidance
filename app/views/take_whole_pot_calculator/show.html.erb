@@ -5,7 +5,7 @@
 <h1>Taking your whole pot in one go</h1>
 
 <div class="calculator">
-  <h2 id="find-out-what-you-would-get-after-tax">Find out what you’d get after tax</h2>
+  <h2 id="calculator">Find out what you’d get after tax</h2>
 
   <% unless @calculator.valid? %>
     <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
@@ -23,7 +23,7 @@
     </div>
   <% end %>
 
-  <form action="/take-whole-pot/results#find-out-what-you-would-get-after-tax" method="get">
+  <form action="/take-whole-pot/results#calculator" method="get">
     <div class="form-group <%= 'error' if @calculator.errors.has_key?(:pot) %>">
       <label class="form-label" for="pot">
         Total pension pot value
