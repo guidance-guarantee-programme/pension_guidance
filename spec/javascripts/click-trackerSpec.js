@@ -66,11 +66,6 @@ describe('click tracker', function() {
       expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('appointments', '/url');
     });
 
-    it('adds click tracking to links in the journey promo', function() {
-      $('.journey-promo a').trigger('click');
-      expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('journey promo', '/url');
-    });
-
     it('adds click tracking to links in the about the service promo', function() {
       $('.l-home-about a').trigger('click');
       expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('about the service', '/url');
@@ -106,16 +101,6 @@ describe('click tracker', function() {
     it('adds click tracking to links in the pager', function() {
       $('.pager a').trigger('click');
       expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('pager', '/url');
-    });
-
-    it('adds click tracking to links in the journey sidebar', function() {
-      $('.ga-journey-sidebar a').trigger('click');
-      expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('journey sidebar', '/url');
-    });
-
-    it('adds click tracking to links in the elsewhere sidebar', function() {
-      $('.ga-elsewhere-sidebar a').trigger('click');
-      expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('elsewhere sidebar', '/url');
     });
   });
 });

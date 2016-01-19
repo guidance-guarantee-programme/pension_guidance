@@ -4,7 +4,7 @@ When(/^I visit the (?:homepage|Pension Wise website)$/) do
 end
 
 Then(/^I see links to guides/) do
-  expect(@homepage).to have_links
+  step 'I can navigate to guides from the footer'
 end
 
 Then(/^I can navigate to guides from the footer$/) do

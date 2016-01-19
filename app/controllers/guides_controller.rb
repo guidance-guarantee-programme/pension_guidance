@@ -1,75 +1,17 @@
 class GuidesController < ApplicationController
   layout 'guides'
-  helper_method :journey_navigation
+
   before_action :find_guide
   before_action :set_breadcrumbs
 
-  NON_JOURNEY_RELATED_GUIDE_IDS = %w(
-    pension-pot-options
-    6-steps-you-need-to-take
-    pension-types
-    tax
-  )
-
-  JOURNEY_RELATED_GUIDE_IDS = %w(
-    when-you-die
-    benefits
-    care-costs
-    scams
-  )
-
   def show
-    @related_guides = decorate(related_guides)
-
     expires_in Rails.application.config.cache_max_age, public: true
   end
 
   private
 
-  def guide_repository
-    @guide_repository ||= GuideRepository.new
-  end
-
-  def find(id)
-    guide_repository.find(id)
-  end
-
-  def decorate(guide_or_collection)
-    if guide_or_collection.is_a?(Enumerable)
-      guide_or_collection.collect { |guide| GuideDecorator.cached_for(guide) }
-    else
-      GuideDecorator.cached_for(guide_or_collection)
-    end
-  end
-
-  def related_guides
-    related_guides = if journey_navigation.active?
-                       journey_related_guides
-                     else
-                       non_journey_related_guides
-                     end
-
-    if @guide.related_to_booking?
-      related_guides.reject!(&:related_to_appointments?)
-    end
-
-    related_guides
-  end
-
-  def non_journey_related_guides
-    @related_guides ||= guide_repository.find_all(*NON_JOURNEY_RELATED_GUIDE_IDS)
-  end
-
-  def journey_related_guides
-    @journey_related_guides ||= guide_repository.find_all(*JOURNEY_RELATED_GUIDE_IDS)
-  end
-
-  def journey_navigation
-    JourneyNavigation.new(JourneyTree.instance.tree, params[:id])
-  end
-
   def find_guide
-    @guide = decorate(find(params[:id]))
+    @guide = GuideDecorator.cached_for(GuideRepository.new.find(params[:id]))
   end
 
   def set_breadcrumbs

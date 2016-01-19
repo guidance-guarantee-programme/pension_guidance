@@ -50,32 +50,6 @@
     h2 {
       margin-top: 0;
     }
-
-    .journey-promo {
-      margin-left: 15px;
-
-      @include ie(6) {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-.l-home-journey {
-  margin-top: 28px;
-  margin-bottom: 26px;
-
-  @include media(tablet) {
-    margin-top: 36px;
-    margin-bottom: 29px;
-  }
-
-  h2 {
-    margin: 0;
-  }
-
-  li {
-    margin-bottom: 5px;
   }
 }
 
