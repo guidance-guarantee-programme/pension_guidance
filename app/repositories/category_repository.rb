@@ -23,7 +23,7 @@ class CategoryRepository
   def read_category(id, path)
     source = YAML.load(File.read(path))
 
-    Category.new(id, title: source['title'])
+    Category.new(id, title: source['title'], description: source['description'])
   end
 
   def glob_dir(file_pattern)
