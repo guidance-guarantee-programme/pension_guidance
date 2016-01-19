@@ -8,6 +8,8 @@ class Taxonomy
       node << guide_node('living-abroad')
       node << guide_node('divorce')
       node << guide_node('protection')
+      node << guide_node('already-bought-annuity')
+      node << guide_node('pension_complaints')
     end
   end
 
@@ -36,6 +38,7 @@ class Taxonomy
       node << guide_node('shop-around')
       node << guide_node('making-money-last')
       node << guide_node('work-out-income')
+      node << guide_node('your-pension-before-55')
       node << guide_node('scams')
       node << the_6_pension_options
     end
