@@ -34,7 +34,7 @@ You could have less choice about what you can do with your pension pot than if y
 
 You might have to pay [UK tax on your pension](https://www.gov.uk/tax-uk-income-live-abroad).
 
-You might also have to pay tax in the country where you’re resident. If that country has a double taxation agreement with the UK, you might not have to be [taxed twice - in the UK and abroad](https://www.gov.uk/tax-uk-income-live-abroad/taxed-twice).
+You might also have to pay tax in the country where you’re resident. If that country has a double taxation agreement with the UK, you might not have to be [taxed twice](https://www.gov.uk/tax-uk-income-live-abroad/taxed-twice) – in the UK and abroad.
 
 If you [plan to retire abroad](https://www.gov.uk/moving-or-retiring-abroad) you must tell HM Revenue and Customs so that you pay the right tax on your pension.
 
@@ -52,4 +52,4 @@ The [International Pension Centre](https://www.gov.uk/international-pension-cent
 
 You can find a [financial adviser](/financial-advice) to help you choose the right pension option when moving abroad. You may be charged a fee for this advice.
 
-If you live in a [European Economic Area](https://www.gov.uk/eu-eea) country and need advice from a UK financial adviser, you should check they have legal approval to give financial advice - sometimes known as [passporting](http://www.fca.org.uk/firms/being-regulated/passporting) - in your country.
+If you live in a [European Economic Area](https://www.gov.uk/eu-eea) country and need advice from a UK financial adviser, you should check they have legal approval to give financial advice – sometimes known as [passporting](http://www.fca.org.uk/firms/being-regulated/passporting) – in your country.
