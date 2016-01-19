@@ -1,6 +1,6 @@
 class Navigation
   Item = Struct.new(:id, :label, :url)
-  Topic = Struct.new(:id, :label, :items)
+  Topic = Struct.new(:id, :label, :url, :items)
 
   attr_accessor :taxonomy
   private :taxonomy=
@@ -10,18 +10,19 @@ class Navigation
   end
 
   def topics
-    topics = parented.collect do |node|
-      category = node.content
-      guides = find_guides(node.children).reject(&:empty?)
-
-      Topic.new(category.id, category.title, guides)
-    end
-
+    topics = parented.collect(&method(:find_topic))
     topics << more_topic unless more_topic.items.empty?
     topics
   end
 
   private
+
+  def find_topic(node)
+    category = CategoryDecorator.decorate(node.content)
+    guides = find_guides(node.children).reject(&:empty?)
+
+    Topic.new(category.id, category.label, category.url, guides)
+  end
 
   def find_guides(nodes)
     [].tap do |guides|
@@ -51,11 +52,11 @@ class Navigation
   end
 
   def more_category
-    @more_category ||= CategoryRepository.new.find('more')
+    @more_category ||= CategoryDecorator.decorate(CategoryRepository.new.find('more'))
   end
 
   def more_topic
-    @more_topic ||= Topic.new(more_category.id, more_category.title, [orphan_guides])
+    @more_topic ||= Topic.new(more_category.id, more_category.label, more_category.url, [orphan_guides])
   end
 
   def orphans
