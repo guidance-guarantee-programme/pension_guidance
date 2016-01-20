@@ -4,8 +4,10 @@ module NavigationHelper
   end
 
   def navigation_topics(topics)
-    topics.map do |topic|
-      concat navigation_topic(topic, last: (topic == topics.last))
+    capture do
+      topics.map do |topic|
+        concat navigation_topic(topic, last: (topic == topics.last))
+      end
     end
   end
 
