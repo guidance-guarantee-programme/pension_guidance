@@ -60,6 +60,7 @@ class Taxonomy
       node << guide_node('tax')
       node << guide_node('financial-advice')
       node << guide_node('benefits')
+      node << guide_node('debt')
     end
   end
 

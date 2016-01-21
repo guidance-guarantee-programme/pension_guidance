@@ -1,5 +1,5 @@
 ---
-description: What to consider when working out how much retirement income you’ll have, including your pension, other sources of income, costs, and debt.
+description: What to consider when working out how much retirement income you’ll have, including your pension, other sources of income and costs.
 ---
 
 # Work out what you’ll have in retirement
@@ -188,14 +188,3 @@ There’s a limit to how much you can pay into your pot and still get tax relief
 You can push back when you start receiving the State Pension to help increase your income in retirement. This is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
 
 You may be able to [top up your State Pension](https://www.gov.uk/statepensiontopup).
-
-## If you have debt
-
-If you’re thinking about using part or all of your pension pot to pay off debts you should look at the options for [paying off your debts](https://www.gov.uk/options-for-paying-off-your-debts/overview) and get advice first. You have to think carefully about how much money you’ll need in retirement.
-
-When you take a large cash sum from your pot to pay off debts you also have to consider the tax you’ll pay. What you have left after tax might not be enough to cover your debts.
-
-For free and impartial debt advice go to:
-
-- [The Money Advice Service](https://www.moneyadviceservice.org.uk/en/categories/debt-and-borrowing)
-- [Citizens Advice](https://www.citizensadvice.org.uk/debt-and-money/help-with-debt)

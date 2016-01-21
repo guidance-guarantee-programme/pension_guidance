@@ -8,37 +8,38 @@ Feature: Guides
     Then the guide is displayed
 
     Examples:
-      | Slug                     |
-      | adjustable-income        |
-      | already-bought-annuity   |
-      | benefits                 |
-      | book                     |
-      | care-costs               |
-      | combine-pots             |
-      | contact                  |
-      | cookies                  |
-      | divorce                  |
-      | financial-advice         |
-      | guaranteed-income        |
-      | ill-health               |
-      | leave-pot-untouched      |
-      | living-abroad            |
-      | making-money-last        |
-      | mix-options              |
-      | pension-complaints       |
-      | pension-pot-options      |
-      | pension-pot-value        |
-      | pension-types            |
-      | pension-statements       |
-      | scams                    |
-      | shop-around              |
-      | state-pension            |
-      | take-cash-in-chunks      |
-      | take-whole-pot           |
-      | tax                      |
-      | when-you-die             |
-      | work-out-income          |
-      | your-pension-before-55   |
+      | Slug                   |
+      | adjustable-income      |
+      | already-bought-annuity |
+      | benefits               |
+      | book                   |
+      | care-costs             |
+      | combine-pots           |
+      | contact                |
+      | cookies                |
+      | debt                   |
+      | divorce                |
+      | financial-advice       |
+      | guaranteed-income      |
+      | ill-health             |
+      | leave-pot-untouched    |
+      | living-abroad          |
+      | making-money-last      |
+      | mix-options            |
+      | pension-complaints     |
+      | pension-pot-options    |
+      | pension-pot-value      |
+      | pension-statements     |
+      | pension-types          |
+      | scams                  |
+      | shop-around            |
+      | state-pension          |
+      | take-cash-in-chunks    |
+      | take-whole-pot         |
+      | tax                    |
+      | when-you-die           |
+      | work-out-income        |
+      | your-pension-before-55 |
 
   Scenario: Display guide title and heading
     When I visit a guide
