@@ -4,7 +4,7 @@ tags:
   - option
 ---
 
-<div class="circle circle--m circle--take-cash"></div>
+<div class="circle circle--m circle--take-cash-in-chunks"></div>
 
 # Take cash in chunks
 

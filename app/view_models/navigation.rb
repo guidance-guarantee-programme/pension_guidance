@@ -1,5 +1,5 @@
 class Navigation
-  Item = Struct.new(:id, :label, :url)
+  Item = Struct.new(:id, :label, :url, :option)
   Topic = Struct.new(:id, :label, :url, :items)
 
   attr_accessor :taxonomy
@@ -32,23 +32,19 @@ class Navigation
   end
 
   def find_orphan_guides(nodes)
-    nodes.reject(&:has_children?).collect(&:content).collect(&GuideDecorator.method(:cached_for)).collect do |guide|
-      build_item(guide)
-    end
+    nodes.reject(&:has_children?).map(&:content).map(&GuideDecorator.method(:cached_for)).map(&method(:build_item))
   end
 
   def find_parented_guides(nodes)
     [].tap do |guides|
       nodes.select(&:has_children?).each do |parent|
-        guides << parent.children.collect(&:content).collect(&GuideDecorator.method(:cached_for)).collect do |guide|
-          build_item(guide)
-        end
+        guides << parent.children.map(&:content).map(&GuideDecorator.method(:cached_for)).map(&method(:build_item))
       end
     end
   end
 
   def build_item(guide)
-    Item.new(guide.id, guide.label, guide.url)
+    Item.new(guide.id, guide.label, guide.url, guide.option?)
   end
 
   def more_category
@@ -68,8 +64,6 @@ class Navigation
   end
 
   def orphan_guides
-    @orphan_guides ||= orphans.collect(&:content).collect(&GuideDecorator.method(:cached_for)).collect do |guide|
-      Item.new(guide.id, guide.label, guide.url)
-    end
+    @orphan_guides ||= orphans.map(&:content).map(&GuideDecorator.method(:cached_for)).map(&method(:build_item))
   end
 end
