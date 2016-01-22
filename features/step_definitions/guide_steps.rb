@@ -1,3 +1,7 @@
+Given(/^I am on the leaving your whole pension pot untouched guide$/) do
+  step 'I visit the leave-pot-untouched guide'
+end
+
 When(/^I visit a guide$/) do
   step 'I visit the scams guide'
 end
