@@ -1,6 +1,6 @@
 When(/^I visit the (?:homepage|Pension Wise website)$/) do
-  @homepage = Pages::Home.new
-  @homepage.load
+  @page = Pages::Home.new
+  @page.load
 end
 
 Then(/^I see links to guides/) do
@@ -8,9 +8,9 @@ Then(/^I see links to guides/) do
 end
 
 Then(/^I can navigate to guides from the footer$/) do
-  expect(@homepage.footer).to have_categories
+  expect(@page.footer).to have_categories
 
-  @homepage.footer.categories.each do |category|
+  @page.footer.categories.each do |category|
     expect(category).to have_header
     expect(category).to have_links
   end
