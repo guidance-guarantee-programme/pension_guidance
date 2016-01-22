@@ -7,7 +7,7 @@
   <% @category_navigation.guides.each do |guide| %>
     <li class="link-promo__item">
       <% if guide.is_a?(Array) %>
-        <h2><%= guide.shift.label %></h2>
+        <h2><%= link_to_guide guide.shift %></h2>
 
         <ul>
           <% guide.each do |nested_guide| %>
