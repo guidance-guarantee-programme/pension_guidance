@@ -16,7 +16,7 @@ class Breadcrumb
     end
 
     def pension_options
-      new('/pension-pot-options', 'The 6 pension options')
+      new('/pension-pot-options', 'What you can do with your pot')
     end
   end
 end
