@@ -8,5 +8,5 @@ Feature: Calculators
     Then the calculator is displayed
 
     Examples:
-      | Slug                |
-      | take-whole-pot      |
+      | Slug           |
+      | take-whole-pot |
