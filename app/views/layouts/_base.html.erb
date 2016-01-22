@@ -4,12 +4,14 @@
   <!--[if IE 7]><%= stylesheet_link_tag 'pensions-guidance-ie7', media: 'screen' %><![endif]-->
   <!--[if IE 8]><%= stylesheet_link_tag 'pensions-guidance-ie8', media: 'screen' %><![endif]-->
 
+  <%= stylesheet_link_tag 'pensions-guidance-print', media: 'print' %>
+
   <%= canonical_tag rescue nil %>
 
   <% if content_for?(:meta_description) %>
     <meta name="description" content="<%= content_for(:meta_description) %>">
   <% end %>
-  
+
   <%# Tell IE11+ there is no "browserconfig.xml" %>
   <meta name="msapplication-config" content="none">
 <% end %>
