@@ -22,7 +22,7 @@ $E
 
 ###Leaving your pot untouched 
 
-If you leave money in a pension pot the Department for Work and Pensions (DWP) or your local council will check how much you’d get if you had bought an annuity.
+If you leave money in a pension pot the Department for Work and Pensions (DWP), HM Revenue and Customs (HMRC) or your local council will check how much you’d get if you had bought an annuity.
 
 They’ll take this amount into account when they assess your income.
 
@@ -34,7 +34,7 @@ $E
 **Example** You’re 69 and applying for Council Tax Reduction. You have a pension pot of £40,000 and take an adjustable income of £1,000 a year from it. Your local council have calculated that you could get £1,800 a year from an annuity – they'll use this figure when you're assessed for benefits.
 $E
 
-It’s your responsibility to tell DWP or your local council if you or your partner take any money from your pension pot.
+It’s your responsibility to tell DWP, HMRC or your local council if you or your partner take any money from your pension pot.
 
 %If you deliberately spend or give away money (including tax-free cash) from your pension pot to get or increase benefits, DWP or your local council may assess your eligibility again and treat you as still having that money.%
 
