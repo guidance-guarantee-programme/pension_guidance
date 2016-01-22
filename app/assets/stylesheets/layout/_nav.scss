@@ -17,10 +17,11 @@
 
     @include media($navigation-full-width) {
       display: inline-block;
-      width: $navigation-width;
       float: none;
-      margin: 8px -138px 0 138px;
       overflow: visible;
+      position: relative;
+      top: 3px;
+      right: 35px;
     }
 
     .js-enabled & {
