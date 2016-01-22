@@ -8,30 +8,6 @@ en:
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'
 
-  search_results:
-    form:
-      label: Search Pension Wise
-      placeholder: Search
-      button: Search
-    pagination:
-      title: "%{page_number} of %{total_pages}"
-      next_button_html: Next page
-      previous_button_html: Previous page
-    index:
-      document_title: Search
-      page_title_html: Search<span class="visually-hidden"> Pension Wise</span>
-    index_no_results:
-      document_title: "%{query} - Search"
-      page_title_html: Search results<span class="visually-hidden"> for “%{query}”</span>
-      body: No results were found. Please try a different search.
-    index_error:
-      document_title: "%{query} - Search"
-      page_title_html: Search results<span class="visually-hidden"> for “%{query}”</span>
-      body: Something went wrong, please try again.
-    index_with_results:
-      document_title: "%{query} - Search"
-      page_title_html: Search results<span class="visually-hidden"> for “%{query}”</span>
-
   number:
     currency:
       format:
