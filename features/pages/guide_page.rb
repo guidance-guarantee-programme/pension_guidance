@@ -15,6 +15,8 @@ module Pages
     element :aside_heading, '.t-aside--heading'
     elements :aside_links, '.t-aside--link'
 
+    element :calculator, '.t-calculator'
+
     def aside_heading_url
       aside_heading['href']
     end
