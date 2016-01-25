@@ -53,7 +53,14 @@ module NavigationHelper
 
   def navigation_item(item)
     content_tag(:li, class: 'nav__item') do
-      link_to(item.label, item.url)
+      if item.option
+        capture do
+          concat content_tag(:span, nil, class: "circle circle--s circle--#{item.id}")
+          concat link_to(item.label, item.url, class: 'has-circle')
+        end
+      else
+        link_to(item.label, item.url)
+      end
     end
   end
 end

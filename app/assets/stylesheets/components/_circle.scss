@@ -33,7 +33,7 @@
     }
   }
 
-  &.circle--take-cash {
+  &.circle--take-cash-in-chunks {
     background-position: 0 -64px;
 
     @include media(tablet) {
@@ -41,7 +41,7 @@
     }
   }
 
-  &.circle--whole-pot {
+  &.circle--take-whole-pot {
     background-position: 0 -85px;
 
     @include media(tablet) {
@@ -77,11 +77,11 @@
     background-position: 0 -74px;
   }
 
-  &.circle--take-cash {
+  &.circle--take-cash-in-chunks {
     background-position: 0 -111px;
   }
 
-  &.circle--whole-pot {
+  &.circle--take-whole-pot {
     background-position: 0 -148px;
   }
 

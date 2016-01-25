@@ -28,13 +28,13 @@ You have 6 options:
     <p><a class="t-option" href="/adjustable-income">More on adjustable income</a></p>
   </div>
   <div class="options-overview__item">
-    <div class="circle circle--s circle--take-cash"></div>
+    <div class="circle circle--s circle--take-cash-in-chunks"></div>
     <h2>Take cash in chunks</h2>
     <p>You can take smaller sums of money from your pot until you run out.</p>
     <p><a class="t-option" href="/take-cash-in-chunks">More on taking cash in chunks</a></p>
   </div>
   <div class="options-overview__item">
-    <div class="circle circle--s circle--whole-pot"></div>
+    <div class="circle circle--s circle--take-whole-pot"></div>
     <h2>Take your whole pot in one go</h2>
     <p>You can cash in your entire pot. One quarter is tax free, the rest is taxable.</p>
     <p><a class="t-option" href="/take-whole-pot">More on taking your whole pot in one go</a></p>
