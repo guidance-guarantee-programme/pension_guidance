@@ -3,7 +3,7 @@
 
 <h1><%= @category_navigation.title %></h1>
 
-<ul class="link-promo__list">
+<ul class="link-promo__list l-category">
   <% @category_navigation.guides.each do |guide| %>
     <li class="link-promo__item">
       <% if guide.is_a?(Array) %>
