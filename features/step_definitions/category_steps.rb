@@ -25,6 +25,7 @@ Then(/^I can navigate to guides that belong to the category$/) do
             'Work out what you’ll have in retirement',
             'Taking your pension before 55',
             'How to avoid a pension scam',
+            'What you can do with your pot',
             'Leave your pot untouched',
             'Get a guaranteed income (annuity)',
             'Get an adjustable income',
