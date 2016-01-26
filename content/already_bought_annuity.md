@@ -1,5 +1,5 @@
 ---
-description: Find out about the new annuity rules set to change in April 2016.
+description: Find out about the new annuity rules set to change in April 2017.
 ---
 
 # If you’ve already bought an annuity
