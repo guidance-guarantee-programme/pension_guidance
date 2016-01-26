@@ -38,7 +38,7 @@ class LocationsController < ApplicationController
 
   def set_breadcrumbs
     breadcrumb Breadcrumb.book_an_appointment
-    breadcrumb Breadcrumb.how_to_book
+    breadcrumb Breadcrumb.how_to_book_face_to_face
   end
 
   def set_postcode

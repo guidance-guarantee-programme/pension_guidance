@@ -11,8 +11,12 @@ class Breadcrumb
       new('/appointments', 'Book a free appointment')
     end
 
-    def how_to_book
-      new('/book', 'How to book')
+    def how_to_book_phone
+      new('/book-phone', 'How to book a phone appointment')
+    end
+
+    def how_to_book_face_to_face
+      new('/book-face-to-face', 'How to book a face to face appointment')
     end
 
     def pension_options

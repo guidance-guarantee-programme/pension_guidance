@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   constraints format: 'html' do
     resources :categories, only: 'show', path: 'browse'
 
+    get '/book', to: redirect('/appointments', status: 302)
+
     GuideRepository.new.all.each do |guide|
       get guide.slug,
           controller: 'guides',
