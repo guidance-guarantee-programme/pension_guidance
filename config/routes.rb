@@ -11,7 +11,6 @@ Rails.application.routes.draw do
           id: guide.slug
     end
 
-    resources :search_results, only: 'index', path: 'search'
     resources :locations, only: [:index, :show]
 
     scope path: 'styleguide', controller: 'styleguide' do
@@ -25,8 +24,6 @@ Rails.application.routes.draw do
         get 'locations-invalid', action: 'pages_locations_invalid'
         get 'locations-show', action: 'pages_locations_show'
         get 'locations-show-call-centre', action: 'pages_locations_show_call_centre'
-        get 'search-results', action: 'pages_search_results'
-        get 'search-header', action: 'pages_search_header'
       end
 
       get '(/:action)'
