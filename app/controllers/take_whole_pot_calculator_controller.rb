@@ -4,7 +4,6 @@ class TakeWholePotCalculatorController < GuidesController
     @income = params[:income]
 
     @calculator = TakeWholePotCalculatorForm.new(pot: @pot, income: @income)
-    @result = @calculator.result
   end
 
   private
