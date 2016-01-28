@@ -12,14 +12,14 @@
              field: :pot,
              value: local_assigns[:pot],
              label: 'Total pension pot value',
-             error_message: errors.try(:get, :pot).try(:first) %>
+             error_messages: errors.try(:get, :pot) %>
 
   <%= render 'calculators/form_input_currency',
              field: :income,
              value: local_assigns[:income],
              label: 'Income for the year',
              hint: 'Includes your salary, savings, benefits and State Pension payments',
-             error_message: errors.try(:get, :income).try(:first) %>
+             error_messages: errors.try(:get, :income) %>
 
   <%= render 'calculators/form_input_submit' %>
 </form>
