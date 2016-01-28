@@ -85,13 +85,13 @@
 }
 
 .next-steps--whole-pot {
-  background: transparentize($color-option-whole-pot, .9);
+  background: transparentize($color-option-take-whole-pot, .9);
 
   ul li {
-    border-bottom-color: transparentize($color-option-whole-pot, .4);
+    border-bottom-color: transparentize($color-option-take-whole-pot, .4);
 
     &:before {
-      background: $color-option-whole-pot;
+      background: $color-option-take-whole-pot;
     }
   }
 }

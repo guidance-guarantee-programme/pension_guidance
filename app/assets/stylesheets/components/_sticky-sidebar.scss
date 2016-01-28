@@ -44,7 +44,7 @@
   }
 
   .sticky-sidebar--take-whole-pot & {
-    border-top-color: $color-option-whole-pot;
+    border-top-color: $color-option-take-whole-pot;
   }
 
   .sticky-sidebar--mix-options & {
@@ -114,7 +114,7 @@
     }
 
     .sticky-sidebar--take-whole-pot & {
-      border-left-color: $color-option-whole-pot;
+      border-left-color: $color-option-take-whole-pot;
     }
 
     .sticky-sidebar--mix-options & {

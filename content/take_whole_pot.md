@@ -19,7 +19,7 @@ You pay tax when you take money from your pot. This is because when you’re pay
 %Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 
 {::options parse_block_html="false" /}
-<div class="calculator calculator--in-article calculator--whole-pot js-take-whole-pot-calculator">
+<div class="calculator calculator--in-article calculator--take-whole-pot js-calculator--take-whole-pot">
   <h2 id="calculator">Find out what you’d get after tax</h2>
 
   <form action="/take-whole-pot/results#calculator" method="get">
