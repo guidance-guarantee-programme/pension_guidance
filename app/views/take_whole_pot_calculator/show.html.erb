@@ -8,8 +8,8 @@
 <%= content_tag :h1, @guide.title %>
 
 <div class="calculator">
-  <%= render partial: 'form' %>
-  <%= render partial: 'results' %>
+  <%= render 'form', calculator: @calculator, pot: @pot, income: @income %>
+  <%= render 'results' %>
 </div>
 
 <%= link_to 'Back to description', @guide.url, class: 'link-back' %>
