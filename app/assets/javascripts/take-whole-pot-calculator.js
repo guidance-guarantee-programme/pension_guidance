@@ -3,7 +3,7 @@
 
   var takeWholePotCalculator = {
     init: function() {
-      var $calculator = $('.js-take-whole-pot-calculator form');
+      var $calculator = $('.js-calculator--take-whole-pot form');
       var $result = $('<div class="calculator__result" aria-live="polite"></div>').appendTo($calculator);
       var $loadingStatus = $('<span class="calculator__loading-status">Please wait...</span>').
                             insertAfter($calculator.find('#js-calculate'));
