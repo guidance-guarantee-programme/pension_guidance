@@ -5,7 +5,7 @@
 
 <h2 id="calculator">Find out what you’d get after tax</h2>
 
-<%= render 'calculators/error_summary', errors: errors if calculator && calculator.invalid? %>
+<%= render 'calculators/error_summary', messages: errors.try(:messages) if calculator && calculator.invalid? %>
 
 <form action="/take-whole-pot/results#calculator" method="get">
   <%= render 'calculators/form_input_currency',
