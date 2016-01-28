@@ -31,7 +31,8 @@
       <% if @calculator.errors.has_key?(:pot) %>
         <span class="error-message"><%= @calculator.errors[:pot].first %></span>
       <% end %>
-      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="<%= @pot %>">
+      <span id="pot-a">£</span>
+      <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="<%= @pot %>">
     </div>
 
     <div class="form-group <%= 'error' if @calculator.errors.has_key?(:income) %>">
@@ -42,7 +43,8 @@
       <% if @calculator.errors.has_key?(:income) %>
         <span class="error-message"><%= @calculator.errors[:income].first %></span>
       <% end %>
-      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="<%= @income %>">
+      <span id="income-a">£</span>
+      <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="<%= @income %>">
     </div>
 
     <div class="form-group">
