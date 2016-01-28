@@ -1,20 +1,20 @@
 <h2 id="calculator">Find out what you’d get after tax</h2>
 
-<%= render 'error_summary', errors: calculator.errors unless calculator.valid? %>
+<%= render 'calculators/error_summary', errors: calculator.errors unless calculator.valid? %>
 
 <form action="/take-whole-pot/results#calculator" method="get">
-  <%= render 'form_input_currency',
+  <%= render 'calculators/form_input_currency',
              field: :pot,
              value: pot,
              label: 'Total pension pot value',
              error_message: calculator.errors[:pot].try(:first) %>
 
-  <%= render 'form_input_currency',
+  <%= render 'calculators/form_input_currency',
              field: :income,
              value: income,
              label: 'Income for the year',
              hint: 'Includes your salary, savings, benefits and State Pension payments',
              error_message: calculator.errors[:income].try(:first) %>
 
-  <%= render 'form_input_submit' %>
+  <%= render 'calculators/form_input_submit' %>
 </form>
