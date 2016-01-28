@@ -18,8 +18,10 @@ class GuideDecorator < Draper::Decorator
     fail 'GuideDecorator subclasses must implement content'
   end
 
-  def headers(_level = nil)
-    fail 'GuideDecorator subclasses must implement headers'
+  def headers(level = 1)
+    content_document.css("h#{level}").each_with_object({}) do |header, headers|
+      headers[header[:id]] = header.text
+    end
   end
 
   def self.for(guide)
@@ -31,5 +33,11 @@ class GuideDecorator < Draper::Decorator
 
   def self.cached_for(guide)
     CachedGuideDecorator.new(self.for(guide), Rails.cache)
+  end
+
+  private
+
+  def content_document
+    @content_document ||= Nokogiri::HTML(content)
   end
 end

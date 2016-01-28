@@ -12,11 +12,6 @@ RSpec.describe GuideDecorator, type: :decorator do
       expect { decorator.content }
         .to raise_error('GuideDecorator subclasses must implement content')
     end
-
-    specify 'must implement #headers' do
-      expect { decorator.headers(double) }
-        .to raise_error('GuideDecorator subclasses must implement headers')
-    end
   end
 
   describe '.for' do
