@@ -18,32 +18,7 @@ You pay tax when you take money from your pot. This is because when you’re pay
 
 %Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 
-{::options parse_block_html="false" /}
-<div class="calculator calculator--in-article calculator--take-whole-pot js-calculator--take-whole-pot">
-  <h2 id="calculator">Find out what you’d get after tax</h2>
-
-  <form action="/take-whole-pot/results#calculator" method="get">
-    <div class="form-group">
-      <label class="form-label" for="pot">
-        Total amount in your pension pot(s)
-      </label>
-      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot">
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="income">
-        Your income for the year
-        <span class="form-hint">Includes your salary, savings, benefits and State Pension payments</span>
-      </label>
-      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income">
-    </div>
-
-    <div class="form-group">
-      <input type="submit" class="button" value="Calculate" id="js-calculate">
-    </div>
-  </form>
-</div>
-{::options parse_block_html="true" /}
+{::calculator id="take-whole-pot" /}
 
 ## Paying tax
 

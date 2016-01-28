@@ -5,7 +5,7 @@
   </h1>
 
   <ul class="error-summary-list">
-    <% errors.keys.each do |attribute| %>
+    <% errors.try(:keys).try(:each) do |attribute| %>
       <li><a href="#<%= attribute %>"><%= errors[attribute].first %></a></li>
     <% end %>
   </ul>

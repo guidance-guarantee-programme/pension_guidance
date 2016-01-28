@@ -1,20 +1,25 @@
+<%
+  calculator = local_assigns[:calculator]
+  errors = calculator.try(:errors)
+%>
+
 <h2 id="calculator">Find out what you’d get after tax</h2>
 
-<%= render 'calculators/error_summary', errors: calculator.errors unless calculator.valid? %>
+<%= render 'calculators/error_summary', errors: errors if calculator && calculator.invalid? %>
 
 <form action="/take-whole-pot/results#calculator" method="get">
   <%= render 'calculators/form_input_currency',
              field: :pot,
-             value: pot,
+             value: local_assigns[:pot],
              label: 'Total pension pot value',
-             error_message: calculator.errors[:pot].try(:first) %>
+             error_message: errors.try(:fetch, :pot).try(:first) %>
 
   <%= render 'calculators/form_input_currency',
              field: :income,
-             value: income,
+             value: local_assigns[:income],
              label: 'Income for the year',
              hint: 'Includes your salary, savings, benefits and State Pension payments',
-             error_message: calculator.errors[:income].try(:first) %>
+             error_message: errors.try(:fetch, :income).try(:first) %>
 
   <%= render 'calculators/form_input_submit' %>
 </form>
