@@ -5,6 +5,10 @@ module Calculators
       @income = params[:income]
 
       @calculator = TakeWholePotCalculatorForm.new(pot: @pot, income: @income)
+
+      render partial: 'calculators/take_whole_pot/calculator',
+             locals: { calculator: @calculator, pot: @pot, income: @income },
+             status: (@calculator.invalid? ? :bad_request : :ok) if request.xhr?
     end
 
     private

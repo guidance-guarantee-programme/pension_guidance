@@ -6,6 +6,8 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
     enter_invalid_data
     perform_calculation
 
+    wait_for_ajax
+
     expect(data_layer).to include(
       'pot' => 0,
       'income' => 7_000,
@@ -16,6 +18,8 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
   scenario 'with valid input' do
     enter_valid_data
     perform_calculation
+
+    wait_for_ajax
 
     expect(data_layer).to include(
       'pot' => 100_000,
@@ -29,7 +33,17 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
   private
 
   def data_layer
-    Array(page.evaluate_script('window.dataLayer')).reduce({}, :merge)
+    script = <<-eos
+      cleanDataLayer = []
+      for (var i = 0; i < window.dataLayer.length; i++) {
+        if (typeof window.dataLayer[i].event == 'undefined') {
+          cleanDataLayer.push(window.dataLayer[i]);
+        }
+      }
+    eos
+
+    page.execute_script(script)
+    Array(page.evaluate_script('cleanDataLayer')).reduce({}, :merge)
   end
 
   def enter_valid_data

@@ -12,26 +12,28 @@
 </script>
 
 <% if calculator.result %>
-  <p>
-    Based on what you’ve told us, if you take your whole <%= format_currency(calculator.pot) %>
-    pension pot in one go, you could pay:
+  <div class="js-calculator-result">
+    <p>
+      Based on what you’ve told us, if you take your whole <%= format_currency(calculator.pot) %>
+      pension pot in one go, you could pay:
 
-    <strong class="calculator__result__number t-pot-tax"><%= format_currency(calculator.result.pot_tax) %> in tax</strong>
+      <strong class="calculator__result__number t-pot-tax"><%= format_currency(calculator.result.pot_tax) %> in tax</strong>
 
-    and get a total of:
+      and get a total of:
 
-    <strong class="calculator__result__number t-pot-received"><%= format_currency(calculator.result.pot_received) %></strong>
-  </p>
+      <strong class="calculator__result__number t-pot-received"><%= format_currency(calculator.result.pot_received) %></strong>
+    </p>
 
-  <h2>Things to note</h2>
+    <h2>Things to note</h2>
 
-  <ol>
-    <li>Your total includes your 25% tax-free lump sum</li>
-    <li>Money from your pot is added to your other income to work out your tax amount</li>
-    <li>This is an estimate — the exact amount of tax you pay depends on your circumstances</li>
-  </ol>
+    <ol>
+      <li>Your total includes your 25% tax-free lump sum</li>
+      <li>Money from your pot is added to your other income to work out your tax amount</li>
+      <li>This is an estimate — the exact amount of tax you pay depends on your circumstances</li>
+    </ol>
 
-  <div class="application-notice help-notice">
-    <p>You may pay emergency tax when you take money from your pot which you can claim back</p>
+    <div class="application-notice help-notice">
+      <p>You may pay emergency tax when you take money from your pot which you can claim back</p>
+    </div>
   </div>
 <% end %>
