@@ -1,13 +1,14 @@
-class TakeWholePotCalculatorController < ApplicationController
-  layout 'guides'
-
+class TakeWholePotCalculatorController < GuidesController
   def show
     @pot = params[:pot]
     @income = params[:income]
 
     @calculator = TakeWholePotCalculatorForm.new(pot: @pot, income: @income)
-    @result = @calculator.result
+  end
 
-    return render partial: 'results' if request.xhr?
+  private
+
+  def id
+    'take-whole-pot'
   end
 end
