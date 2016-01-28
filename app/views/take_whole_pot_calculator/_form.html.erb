@@ -1,20 +1,6 @@
 <h2 id="calculator">Find out what you’d get after tax</h2>
 
-<% unless @calculator.valid? %>
-  <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
-
-    <h1 class="heading-medium error-summary-heading" id="error-summary-heading">
-      There was a problem with your details
-    </h1>
-
-    <ul class="error-summary-list">
-      <% @calculator.errors.keys.each do |attribute| %>
-        <li><a href="#<%= attribute %>"><%= @calculator.errors[attribute].first %></a></li>
-      <% end %>
-    </ul>
-
-  </div>
-<% end %>
+<%= render 'error_summary', errors: @calculator.errors unless @calculator.valid? %>
 
 <form action="/take-whole-pot/results#calculator" method="get">
   <div class="form-group <%= 'error' if @calculator.errors.has_key?(:pot) %>">
