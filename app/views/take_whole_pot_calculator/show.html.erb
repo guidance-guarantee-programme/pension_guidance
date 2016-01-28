@@ -1,12 +1,13 @@
-<% content_for(:page_title, t('service.title', page_title: 'Taking your whole pot in one go')) %>
+<% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
+<% content_for(:meta_description, @guide.description) %>
 
-<a class="link-back" href="/take-whole-pot">Back to description</a>
+<%= link_to 'Back to description', @guide.url, class: 'link-back' %>
 
-<h1>Taking your whole pot in one go</h1>
+<%= content_tag :h1, @guide.title %>
 
 <div class="calculator">
   <%= render partial: 'form' %>
   <%= render partial: 'results' %>
 </div>
 
-<a class="link-back" href="/take-whole-pot">Back to description</a>
+<%= link_to 'Back to description', @guide.url, class: 'link-back' %>
