@@ -3,28 +3,18 @@
 <%= render 'error_summary', errors: @calculator.errors unless @calculator.valid? %>
 
 <form action="/take-whole-pot/results#calculator" method="get">
-  <div class="form-group <%= 'error' if @calculator.errors.has_key?(:pot) %>">
-    <label class="form-label" for="pot">
-      Total pension pot value
-    </label>
-    <% if @calculator.errors.has_key?(:pot) %>
-      <span class="error-message"><%= @calculator.errors[:pot].first %></span>
-    <% end %>
-    <span id="pot-a">£</span>
-    <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" value="<%= @pot %>">
-  </div>
+  <%= render 'form_input_currency',
+             field: :pot,
+             value: @pot,
+             label: 'Total pension pot value',
+             error_message: @calculator.errors[:pot].try(:first) %>
 
-  <div class="form-group <%= 'error' if @calculator.errors.has_key?(:income) %>">
-    <label class="form-label" for="income">
-      Income for the year
-      <span class="form-hint">Includes your salary, savings, benefits and State Pension payments</span>
-    </label>
-    <% if @calculator.errors.has_key?(:income) %>
-      <span class="error-message"><%= @calculator.errors[:income].first %></span>
-    <% end %>
-    <span id="income-a">£</span>
-    <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" value="<%= @income %>">
-  </div>
+  <%= render 'form_input_currency',
+             field: :income,
+             value: @income,
+             label: 'Income for the year',
+             hint: 'Includes your salary, savings, benefits and State Pension payments',
+             error_message: @calculator.errors[:income].try(:first) %>
 
   <div class="form-group">
     <input type="submit" class="button" value="Calculate" id="js-calculate">
