@@ -133,4 +133,4 @@ If you take a tax-free lump sum from your pot and you pay into the same or anoth
  
 You may have to pay 55% tax on the whole tax-free lump sum, even if you only recycle some of the money.
 
-Get financial advice if you’re thinking of increasing your pension contributions at the same time as taking a lump sum.
+Get [financial advice](/financial-advice) if you’re thinking of increasing your pension contributions at the same time as taking a lump sum.
