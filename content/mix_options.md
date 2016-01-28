@@ -5,8 +5,6 @@ tags:
   - option
 ---
 
-<div class="circle circle--m circle--mix-options"></div>
-
 # Mix your pension options
 
 ## Overview

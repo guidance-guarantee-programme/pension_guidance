@@ -5,8 +5,6 @@ tags:
   - option
 ---
 
-<div class="circle circle--m circle--take-whole-pot"></div>
-
 # Take your whole pension pot in one go
 
 ## Overview
