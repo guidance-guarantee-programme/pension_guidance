@@ -129,14 +129,8 @@ You’ll have to pay tax on any amount in your pension pot above your [lifetime 
 
 ##Pension recycling
 
-If you take a lump sum from your pension and you use that lump sum to pay money into another pension pot in the same tax year, it’s known as ‘pension recycling’.
-
-If you do this you may have to pay 55% tax on your pension contribution.
-
-You may have to pay the tax if any money you put into another pension pot:
-
-- exceeds £7,500
-- exceeds 1% of the lifetime allowance before 6 April 2015
-- increases your usual pension contributions by 30% or more
+If you take a tax-free lump sum from your pot and you pay into the same or another pot, it’s known as ‘pension recycling’.
+ 
+You may have to pay 55% tax on the whole tax-free lump sum, even if you only recycle some of the money.
 
 Get financial advice if you’re thinking of increasing your pension contributions at the same time as taking a lump sum.
