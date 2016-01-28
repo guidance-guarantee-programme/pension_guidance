@@ -5,8 +5,6 @@ tags:
   - option
 ---
 
-<div class="circle circle--m circle--adjustable-income"></div>
-
 # Get an adjustable income
 
 ## Overview

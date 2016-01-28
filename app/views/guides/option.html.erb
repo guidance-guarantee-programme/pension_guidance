@@ -52,4 +52,5 @@
   </script>
 <% end %>
 
+<%= content_tag :span, nil, class: ['circle', 'circle--m', "circle--#{@guide.slug}"] %>
 <%= @guide.content %>

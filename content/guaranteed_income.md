@@ -5,8 +5,6 @@ tags:
   - option
 ---
 
-<div class="circle circle--m circle--guaranteed-income"></div>
-
 # Get a guaranteed income (annuity)
 
 ## Overview
