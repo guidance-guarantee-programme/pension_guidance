@@ -16,7 +16,5 @@
              hint: 'Includes your salary, savings, benefits and State Pension payments',
              error_message: @calculator.errors[:income].try(:first) %>
 
-  <div class="form-group">
-    <input type="submit" class="button" value="Calculate" id="js-calculate">
-  </div>
+  <%= render 'form_input_submit' %>
 </form>
