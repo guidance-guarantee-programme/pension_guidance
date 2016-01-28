@@ -1,0 +1,2 @@
+class CalculatorsController < GuidesController
+end
