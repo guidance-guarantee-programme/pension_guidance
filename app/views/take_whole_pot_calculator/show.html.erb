@@ -3,6 +3,8 @@
 
 <%= link_to 'Back to description', @guide.url, class: 'link-back' %>
 
+<%= content_tag :span, nil, class: ['circle', 'circle--m', "circle--#{@guide.slug}"] %>
+
 <%= content_tag :h1, @guide.title %>
 
 <div class="calculator">
