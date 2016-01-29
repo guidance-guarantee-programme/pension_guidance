@@ -17,6 +17,12 @@ en:
     errors:
       models:
         take_whole_pot_calculator_form:
-          blank: 'Using numbers, please enter the value of your %{attribute}'
-          not_a_number: 'Using numbers, please enter the value of your %{attribute}'
-          greater_than_or_equal_to: 'Using numbers, please enter the value of your %{attribute}'
+          attributes:
+            pot:
+              blank: Please enter your pension pot value
+              not_a_number: Using numbers, please enter your pension pot value
+              greater_than: Your pension pot value must be at least £1
+            income:
+              blank: Please enter your income for the year
+              not_a_number: Using numbers, please enter your income for the year
+              greater_than_or_equal_to: Your income for the year must be £0 or more

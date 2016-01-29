@@ -5,8 +5,8 @@ class TakeWholePotCalculatorForm
 
   attr_accessor :pot, :income
 
-  validates :pot, presence: true, numericality: { greater_than_or_equal_to: 0 }
-  validates :income, numericality: true
+  validates :pot, presence: true, numericality: { allow_blank: true, greater_than: 0 }
+  validates :income, presence: true, numericality: { allow_blank: true, greater_than_or_equal_to: 0 }
 
   def pot
     Float(@pot.gsub(/,/, '')) rescue @pot
