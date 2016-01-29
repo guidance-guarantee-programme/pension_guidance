@@ -30,16 +30,18 @@
     },
 
     _refresh: function(html) {
-      this.$calculator.html(html);
-
-      this.$submitButton = this.$calculator.find('.js-calculate-submit');
-      this.$results = this.$calculator.find('.js-calculator-result');
+      this.$calculator.empty().html(html);
+      this._cacheElements();
     },
 
     _initDOM: function() {
       this.$calculator = $('.js-calculator').attr('aria-live', 'polite');
-      this.$results = this.$calculator.find('.js-calculator-result');
+      this._cacheElements();
+    },
+
+    _cacheElements: function() {
       this.$submitButton = this.$calculator.find('.js-calculate-submit');
+      this.$results = this.$calculator.find('.js-calculator-result');
       this.$loadingStatus = $('<span class="calculator__loading-status">Please wait...</span>').
                            insertAfter(this.$submitButton);
     },
