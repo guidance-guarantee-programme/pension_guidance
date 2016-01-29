@@ -1,4 +1,4 @@
-RSpec.describe TakeWholePotCalculatorForm do
+RSpec.describe Calculators::TakeWholePotForm do
   it { is_expected.to validate_presence_of(:pot) }
   it { is_expected.to validate_presence_of(:income) }
   it { is_expected.to validate_numericality_of(:pot).is_greater_than(0) }
