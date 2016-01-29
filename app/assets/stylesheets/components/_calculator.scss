@@ -35,9 +35,19 @@
   }
 }
 
+.calculator__submit,
+.calculator__result,
+.calculator__loading-status {
+  float: left;
+}
+
 .calculator__loading-status {
   display: none;
-  line-height: 2.15;
+  line-height: 2.25;
+}
+
+.calculator__loading-status--loading {
+  display: block;
 }
 
 .calculator__field {
