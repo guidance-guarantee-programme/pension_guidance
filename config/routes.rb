@@ -11,6 +11,8 @@ Rails.application.routes.draw do
           id: guide.slug
     end
 
+    get 'take-whole-pot/results', to: 'calculators/take_whole_pot#show'
+
     resources :locations, only: [:index, :show]
 
     scope path: 'styleguide', controller: 'styleguide' do
@@ -29,8 +31,6 @@ Rails.application.routes.draw do
       get '(/:action)'
     end
   end
-
-  get 'take-whole-pot/results', to: 'calculators/take_whole_pot#show'
 
   if Rails.application.config.mount_javascript_test_routes
     mount JasmineRails::Engine => '/specs'
