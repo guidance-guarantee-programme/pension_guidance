@@ -30,7 +30,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'take-whole-pot/results', controller: 'calculators/take_whole_pot', action: 'show'
+  get 'take-whole-pot/results', to: 'calculators/take_whole_pot#show'
 
   if Rails.application.config.mount_javascript_test_routes
     mount JasmineRails::Engine => '/specs'
