@@ -16,7 +16,7 @@ en:
   activemodel:
     errors:
       models:
-        take_whole_pot_calculator_form:
+        calculators/take_whole_pot_form:
           attributes:
             pot:
               blank: Please enter your pension pot value
