@@ -1,7 +1,8 @@
 RSpec.describe TakeWholePotCalculatorForm do
   it { is_expected.to validate_presence_of(:pot) }
-  it { should validate_numericality_of(:pot).is_greater_than_or_equal_to(0) }
-  it { should validate_numericality_of(:income) }
+  it { is_expected.to validate_presence_of(:income) }
+  it { is_expected.to validate_numericality_of(:pot).is_greater_than(0) }
+  it { is_expected.to validate_numericality_of(:income).is_greater_than_or_equal_to(0) }
 
   describe 'type coercion' do
     subject(:calculator) do
