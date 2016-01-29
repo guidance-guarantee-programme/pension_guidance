@@ -4,7 +4,7 @@ module Calculators
       @pot = form_params[:pot]
       @income = form_params[:income]
 
-      @calculator = TakeWholePotCalculatorForm.new(form_params)
+      @calculator = TakeWholePotForm.new(form_params)
 
       render partial: 'calculators/take_whole_pot/calculator',
              locals: { calculator: @calculator, pot: @pot, income: @income },
