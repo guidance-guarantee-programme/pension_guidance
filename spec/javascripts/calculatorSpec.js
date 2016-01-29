@@ -111,6 +111,7 @@ describe('calculators', function() {
       PWPG.calculators.updateResults();
       scrollPromise.resolve();
 
+      $loadingIndicator = this.$calculator.find('.calculator__loading-status');
       expect($loadingIndicator).not.toHaveClass('calculator__loading-status--loading');
     });
 
