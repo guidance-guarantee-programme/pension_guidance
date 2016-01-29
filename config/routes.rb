@@ -11,7 +11,7 @@ Rails.application.routes.draw do
           id: guide.slug
     end
 
-    get 'take-whole-pot/results', to: 'calculators/take_whole_pot#show'
+    get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
 
     resources :locations, only: [:index, :show]
 

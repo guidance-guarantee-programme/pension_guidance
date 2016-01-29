@@ -7,7 +7,7 @@
 
 <%= render 'calculators/error_summary', messages: errors.try(:messages) if calculator && calculator.invalid? %>
 
-<form action="/take-whole-pot/results#calculator" method="get">
+<form action="/take-whole-pot/estimate#calculator" method="get">
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: local_assigns[:pot],
