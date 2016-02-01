@@ -16,6 +16,7 @@
     },
 
     updateResults: function(data) {
+      this.$calculator.removeClass('hide-from-print');
       this._refresh(data);
       this._scrollTo(this.$submitButton).then($.proxy(function() {
         this._toggleLoading(false);

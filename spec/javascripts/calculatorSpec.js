@@ -118,5 +118,17 @@ describe('calculators', function() {
     it('adds a polite aria alert to the container on load', function() {
       expect($('.js-calculator').attr('aria-live')).toEqual('polite');
     });
+
+    it('shows the calculator to print media on AJAX success', function() {
+      var $form = this.$calculator.find('form');
+
+      spyOn(PWPG.calculators, 'submitForm').and.callFake(function() {
+        return $.Deferred().resolve();
+      });
+
+      $form.trigger('submit');
+
+      expect(this.$calculator).not.toHaveClass('hide-from-print');
+    });
   });
 });

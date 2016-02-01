@@ -1,4 +1,27 @@
 .l-page-nav,
-.l-search-global {
+.l-search-global,
+.calculator__loading-status,
+.l-sticky-sidebar,
+.calculator__submit,
+.hide-from-print {
   display: none;
+}
+
+.calculator__field {
+  font-family: sans-serif;
+  font-size: 11pt;
+  line-height: 1.42857;
+  font-weight: 400;
+  border: 0;
+  padding: 0;
+}
+
+.form-hint {
+  &:before {
+    content: "(";
+  }
+
+  &:after {
+    content: ")";
+  }
 }
