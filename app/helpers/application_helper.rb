@@ -1,8 +1,8 @@
 module ApplicationHelper
   include NavigationHelper
 
-  def format_currency(amount)
-    number_to_currency(amount).sub(/\.00$/, '')
+  def format_currency(amount, **options)
+    number_to_currency(amount, options).try(:sub, /\.00$/, '')
   end
 
   def book_an_appointment_link?

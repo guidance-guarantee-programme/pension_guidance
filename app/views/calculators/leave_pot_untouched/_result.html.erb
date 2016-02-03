@@ -1,0 +1,31 @@
+<p>Based on what you’ve told us, your pot could be worth this much over the
+  next <%= content_tag(:span, pluralize(result.size, 'years'), class: 't-calculator-years') %>:</p>
+
+<table>
+  <caption class="visuallyhidden">Estimated pot growth</caption>
+  <thead>
+  <tr>
+    <th>Extra years left untouched</th>
+    <th>Pot size</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% result.each_with_index do |value, year| %>
+    <tr>
+      <td><%= year + 1 %></td>
+      <td class="t-calculator-future-pot-size"><%= format_currency(value) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<ul class="t-calculator-notes">
+  <li>
+    We’ve estimated your pot could grow at about
+    <%= number_to_percentage(LeavePotUntouchedCalculator::INTEREST_RATE * 100) %>
+    per year — your growth may be higher or lower than this.
+  </li>
+  <li>
+    The value of your pot will be affected by inflation and how much your provider charges you for managing your pot.
+  </li>
+</ul>

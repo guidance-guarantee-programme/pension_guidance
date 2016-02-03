@@ -12,10 +12,22 @@ en:
     currency:
       format:
         unit: £
+    percentage:
+      format:
+        strip_insignificant_zeros: true
 
   activemodel:
     errors:
       models:
+        calculators/leave_pot_untouched_form:
+          attributes:
+            pot:
+              blank: Please enter your pension pot value
+              not_a_number: Using numbers, please enter your pension pot value
+              greater_than: Your pension pot value must be at least £1
+            contribution:
+              not_a_number: Using numbers, please enter how much can you continue to pay in each month
+              greater_than_or_equal_to: How much can you continue to pay in each month must be £0 or more
         calculators/take_whole_pot_form:
           attributes:
             pot:

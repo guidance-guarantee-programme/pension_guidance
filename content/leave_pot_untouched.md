@@ -15,6 +15,8 @@ You don’t have to start taking money from your pension pot when you reach your
 - You could have more money to last a shorter length of time.
 - You (and your employer) can also still pay into your pot but there may be restrictions.
 
+{::calculator id="leave-pot-untouched" /}
+
 ## Tax
 
 You don’t pay tax while the money stays in your pot. You can still pay into it up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
