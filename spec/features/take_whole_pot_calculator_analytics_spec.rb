@@ -9,6 +9,7 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
     wait_for_ajax
 
     expect(data_layer).to include(
+      'event' => 'CalculatorEstimate',
       'pot' => 0,
       'income' => 7_000,
       'valid' => false
@@ -22,6 +23,7 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
     wait_for_ajax
 
     expect(data_layer).to include(
+      'event' => 'CalculatorEstimate',
       'pot' => 100_000,
       'income' => 7_000,
       'valid' => true,
@@ -36,7 +38,7 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
     script = <<-eos
       cleanDataLayer = []
       for (var i = 0; i < window.dataLayer.length; i++) {
-        if (typeof window.dataLayer[i].event == 'undefined') {
+        if (window.dataLayer[i].event == 'CalculatorEstimate') {
           cleanDataLayer.push(window.dataLayer[i]);
         }
       }
