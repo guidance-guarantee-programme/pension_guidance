@@ -6,8 +6,8 @@
     'pot': <%= calculator.pot.to_i %>,
     'income': <%= calculator.income.to_i %>
     <% if calculator.estimate %> ,
-      'pot_tax': <%= calculator.estimate.pot_tax.to_i %>,
-      'pot_received': <%= calculator.estimate.pot_received.to_i %>
+      'pot_tax': <%= calculator.estimate.lump_sum_tax.to_i %>,
+      'pot_received': <%= calculator.estimate.lump_sum_received.to_i %>
     <% end %>
   });
 </script>
@@ -19,13 +19,13 @@
       pension pot in one go, you could pay:
 
       <strong class="calculator__estimate__number t-pot-tax">
-        <%= number_to_currency(calculator.estimate.pot_tax) %> in tax
+        <%= number_to_currency(calculator.estimate.lump_sum_tax) %> in tax
       </strong>
 
       and get a total of:
 
       <strong class="calculator__estimate__number t-pot-received">
-        <%= number_to_currency(calculator.estimate.pot_received) %>
+        <%= number_to_currency(calculator.estimate.lump_sum_received) %>
       </strong>
     </p>
 

@@ -1,4 +1,4 @@
-class TakeWholePotCalculator
+class IncomeTaxCalculator
   STANDARD_PERSONAL_ALLOWANCE = 10_600
   PERSONAL_ALLOWANCE_REDUCTION_THRESHOLD = 100_000
   PERSONAL_ALLOWANCE_REDUCTION_RATIO = 2
@@ -11,11 +11,11 @@ class TakeWholePotCalculator
 
   ADDITIONAL_RATE_TAX = 0.45
 
-  TAXABLE_POT_PORTION = 0.75
+  TAXABLE_LUMP_SUM_PORTION = 0.75
 
-  attr_accessor :pot_received, :pot_tax
+  attr_accessor :lump_sum_received, :lump_sum_tax
 
-  def self.personal_allowance_for(income)
+  def self.personal_allowance_for(income:)
     if income <= PERSONAL_ALLOWANCE_REDUCTION_THRESHOLD
       STANDARD_PERSONAL_ALLOWANCE
     else
@@ -29,9 +29,9 @@ class TakeWholePotCalculator
   end
 
   # rubocop:disable AbcSize, MethodLength
-  def self.marginal_tax_for_pot_with_income(pot, income)
-    potentially_taxable_pot = pot * TAXABLE_POT_PORTION
-    allowance = personal_allowance_for(potentially_taxable_pot + income)
+  def self.marginal_tax_for_lump_sum_with_income(lump_sum:, income:)
+    potentially_taxable_lump_sum = lump_sum * TAXABLE_LUMP_SUM_PORTION
+    allowance = personal_allowance_for(income: potentially_taxable_lump_sum + income)
 
     # adjust bands according to income
     income_above_allowance = [income - allowance, 0].max
@@ -40,25 +40,25 @@ class TakeWholePotCalculator
     effective_higher_rate_upper_limit = [HIGHER_RATE_UPPER_LIMIT - income_above_allowance, 0].max
 
     # personal allowance
-    remaining_taxable_pot = if potentially_taxable_pot <= effective_allowance
-                              0
-                            else
-                              [potentially_taxable_pot - effective_allowance, 0].max
-                            end
+    remaining_taxable_lump_sum = if potentially_taxable_lump_sum <= effective_allowance
+                                   0
+                                 else
+                                   [potentially_taxable_lump_sum - effective_allowance, 0].max
+                                 end
 
     # basic rate
-    subject_to_basic_rate = [remaining_taxable_pot, effective_basic_rate_upper_limit].min
-    remaining_taxable_pot -= subject_to_basic_rate
+    subject_to_basic_rate = [remaining_taxable_lump_sum, effective_basic_rate_upper_limit].min
+    remaining_taxable_lump_sum -= subject_to_basic_rate
 
     # higher rate
     subject_to_higher_rate = [
-      remaining_taxable_pot,
+      remaining_taxable_lump_sum,
       (effective_higher_rate_upper_limit - effective_basic_rate_upper_limit)
     ].min
-    remaining_taxable_pot -= subject_to_higher_rate
+    remaining_taxable_lump_sum -= subject_to_higher_rate
 
     # additional rate
-    subject_to_additional_rate = remaining_taxable_pot
+    subject_to_additional_rate = remaining_taxable_lump_sum
 
     {
       basic: subject_to_basic_rate * BASIC_RATE_TAX,
@@ -68,9 +68,10 @@ class TakeWholePotCalculator
   end
   # rubocop:enable AbcSize, MethodLength
 
-  def initialize(pot, income)
-    tax = self.class.marginal_tax_for_pot_with_income(pot, income)
-    self.pot_tax = tax.values.reduce(:+)
-    self.pot_received = pot - pot_tax
+  def initialize(lump_sum:, income:)
+    tax = self.class.marginal_tax_for_lump_sum_with_income(lump_sum: lump_sum, income: income)
+
+    self.lump_sum_tax = tax.values.reduce(:+)
+    self.lump_sum_received = lump_sum - lump_sum_tax
   end
 end

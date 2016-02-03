@@ -39,10 +39,10 @@ RSpec.describe Calculators::TakeWholePotForm do
     end
 
     context 'with valid input' do
-      it { is_expected.to be_a(TakeWholePotCalculator) }
+      it { is_expected.to be_a(IncomeTaxCalculator) }
 
       it 'instantiates the calculator' do
-        expect(TakeWholePotCalculator).to receive(:new).with(pot, income)
+        expect(IncomeTaxCalculator).to receive(:new).with(lump_sum: pot, income: income)
         calculate_estimate
       end
     end

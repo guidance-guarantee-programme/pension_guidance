@@ -18,7 +18,7 @@ module Calculators
     end
 
     def estimate
-      TakeWholePotCalculator.new(pot, income) if valid?
+      IncomeTaxCalculator.new(lump_sum: pot, income: income) if valid?
     end
   end
 end
