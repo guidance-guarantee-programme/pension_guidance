@@ -13,8 +13,9 @@ Rails.application.routes.draw do
           id: guide.slug
     end
 
-    get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
     get 'leave-pot-untouched/estimate', to: 'calculators/leave_pot_untouched#show'
+    get 'take-cash-in-chunks/estimate', to: 'calculators/take_cash_in_chunks#show'
+    get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
 
     resources :locations, only: [:index, :show]
 

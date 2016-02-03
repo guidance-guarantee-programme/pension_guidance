@@ -22,6 +22,8 @@ Not all providers offer this option. If your current provider doesn’t offer it
 
 ^Taking a large sum of cash from your pension pot could also affect [your entitlement to any benefits](/benefits).^
 
+{::calculator id="take-cash-in-chunks" /}
+
 ## Tax
 
 You pay tax when you take money from your pot because you get tax relief when you pay into your pension.
