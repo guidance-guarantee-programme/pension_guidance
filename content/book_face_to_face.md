@@ -5,20 +5,9 @@ tags:
   - booking
 ---
 
-# How to book
+# How to book a face to face appointment
 
-## By phone
-
-Call **0300 330 1001**.
-If you’re outside the UK call +44 20 3733 3495.
-
-- Call between 8am to 10pm, every day
-- Choose a **phone** appointment or a **face-to-face** location near you
-- We’ll send you an email to confirm your booking
-
-[Find out about call charges](https://www.gov.uk/call-charges)
-
-## Find a face-to-face location
+## Find your nearest location
 
 Search for your nearest appointment locations.
 
@@ -30,3 +19,7 @@ Search for your nearest appointment locations.
   <input type="text" class="form-control" id="postcode" name="postcode" value="">
   <input type="submit" class="button" id="btn-search" value="Search">
 </form>
+
+<div class="application-notice info-notice">
+  <p>You can also <a href="/book-phone">book a phone appointment</a>.</p>
+</div>

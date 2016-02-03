@@ -1,6 +1,6 @@
 RSpec.describe 'locations journey breadcrumbs', type: :controller do
   let(:book_an_appointment) { Breadcrumb.book_an_appointment.title }
-  let(:how_to_book) { Breadcrumb.how_to_book.title }
+  let(:how_to_book) { Breadcrumb.how_to_book_face_to_face.title }
 
   subject(:breadcrumbs) { assigns(:breadcrumbs).map(&:title) }
 
@@ -18,7 +18,7 @@ RSpec.describe 'locations journey breadcrumbs', type: :controller do
     end
 
     context 'how to book' do
-      let(:guide) { 'book' }
+      let(:guide) { 'book-face-to-face' }
 
       it { is_expected.to eq([book_an_appointment]) }
     end
