@@ -15,17 +15,17 @@
 <% if calculator.estimate %>
   <div class="js-calculator-estimate">
     <p>
-      Based on what you’ve told us, if you take your whole <%= format_currency(calculator.pot) %>
+      Based on what you’ve told us, if you take your whole <%= number_to_currency(calculator.pot) %>
       pension pot in one go, you could pay:
 
       <strong class="calculator__estimate__number t-pot-tax">
-        <%= format_currency(calculator.estimate.pot_tax) %> in tax
+        <%= number_to_currency(calculator.estimate.pot_tax) %> in tax
       </strong>
 
       and get a total of:
 
       <strong class="calculator__estimate__number t-pot-received">
-        <%= format_currency(calculator.estimate.pot_received) %>
+        <%= number_to_currency(calculator.estimate.pot_received) %>
       </strong>
     </p>
 

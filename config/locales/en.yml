@@ -12,6 +12,7 @@ en:
     currency:
       format:
         unit: £
+        precision: 0
     percentage:
       format:
         strip_insignificant_zeros: true
