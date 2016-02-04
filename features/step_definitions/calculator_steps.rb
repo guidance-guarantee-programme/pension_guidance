@@ -17,7 +17,7 @@ end
 
 Then(/^I should see how much my pot could be worth for each of the next (\d+) years$/) do |years|
   calculator = @page.calculator
-  future_pot_sizes = %w(£104,200 £108,526 £112,981.78 £117,571.23 £122,298.37)
+  future_pot_sizes = %w(£104,200 £108,526 £112,982 £117,571 £122,298)
 
   calculator.wait_for_future_pot_sizes
 

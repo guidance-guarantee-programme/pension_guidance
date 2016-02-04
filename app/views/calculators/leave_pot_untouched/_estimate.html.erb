@@ -13,7 +13,7 @@
   <% estimate.each_with_index do |value, year| %>
     <tr>
       <td><%= year + 1 %></td>
-      <td class="t-calculator-future-pot-size"><%= format_currency(value) %></td>
+      <td class="t-calculator-future-pot-size"><%= number_to_currency(value) %></td>
     </tr>
   <% end %>
   </tbody>

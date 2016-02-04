@@ -1,10 +1,6 @@
 module ApplicationHelper
   include NavigationHelper
 
-  def format_currency(amount, **options)
-    number_to_currency(amount, options)&.sub(/\.00$/, '')
-  end
-
   def book_an_appointment_link?
     true
   end
