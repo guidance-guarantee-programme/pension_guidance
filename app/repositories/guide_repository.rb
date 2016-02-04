@@ -10,7 +10,7 @@ class GuideRepository
 
   def find(id)
     dirname = id.tr('-', '_')
-    path = glob_dir(dirname).try(:first) || raise(GuideNotFound)
+    path = glob_dir(dirname)&.first || raise(GuideNotFound)
 
     read_guide(id, path)
   end

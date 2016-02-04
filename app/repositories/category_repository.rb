@@ -12,7 +12,7 @@ class CategoryRepository
 
   def find(id)
     dirname = id.tr('-', '_')
-    path = glob_dir(dirname).try(:first) || raise(CategoryNotFound)
+    path = glob_dir(dirname)&.first || raise(CategoryNotFound)
 
     read_category(id, path)
   end
