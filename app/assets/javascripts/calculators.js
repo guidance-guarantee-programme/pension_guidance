@@ -15,7 +15,7 @@
       return $.get($form.attr('action'), $form.serialize());
     },
 
-    updateResults: function(data) {
+    updateEstimate: function(data) {
       this.$calculator.removeClass('hide-from-print');
       this._refresh(data);
       this._scrollTo(this.$submitButton).then($.proxy(function() {
@@ -42,7 +42,7 @@
 
     _cacheElements: function() {
       this.$submitButton = this.$calculator.find('.js-calculate-submit');
-      this.$results = this.$calculator.find('.js-calculator-result');
+      this.$estimate = this.$calculator.find('.js-calculator-estimate');
       this.$loadingStatus = $('<span class="calculator__loading-status">Please wait...</span>').
                            insertAfter(this.$submitButton);
     },
@@ -51,7 +51,7 @@
       this.$calculator.on('submit', 'form', $.proxy(function(event) {
         event.preventDefault();
         this.submitForm()
-          .then($.proxy(this.updateResults, this))
+          .then($.proxy(this.updateEstimate, this))
           .fail($.proxy(this.handleError, this));
       }, this));
     },

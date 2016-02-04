@@ -1,5 +1,5 @@
 <p>Based on what you’ve told us, your pot could be worth this much over the
-  next <%= content_tag(:span, pluralize(result.size, 'years'), class: 't-calculator-years') %>:</p>
+  next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>:</p>
 
 <table>
   <caption class="visuallyhidden">Estimated pot growth</caption>
@@ -10,7 +10,7 @@
   </tr>
   </thead>
   <tbody>
-  <% result.each_with_index do |value, year| %>
+  <% estimate.each_with_index do |value, year| %>
     <tr>
       <td><%= year + 1 %></td>
       <td class="t-calculator-future-pot-size"><%= format_currency(value) %></td>

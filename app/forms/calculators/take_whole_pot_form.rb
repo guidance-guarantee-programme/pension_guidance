@@ -17,7 +17,7 @@ module Calculators
       Float(@income.delete(',')) rescue @income
     end
 
-    def result
+    def estimate
       TakeWholePotCalculator.new(pot, income) if valid?
     end
   end

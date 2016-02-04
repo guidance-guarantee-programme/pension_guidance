@@ -58,17 +58,17 @@ describe('calculators', function() {
       promise.resolve();
     });
 
-    it('calls the `updateResults` method on AJAX success', function() {
+    it('calls the `updateEstimate` method on AJAX success', function() {
       var $form = this.$calculator.find('form');
 
-      spyOn(PWPG.calculators, 'updateResults');
+      spyOn(PWPG.calculators, 'updateEstimate');
       spyOn(PWPG.calculators, 'submitForm').and.callFake(function() {
         return $.Deferred().resolve();
       });
 
       $form.trigger('submit');
 
-      expect(PWPG.calculators.updateResults).toHaveBeenCalled();
+      expect(PWPG.calculators.updateEstimate).toHaveBeenCalled();
     });
 
     it('calls the `handleError` method on AJAX failure', function() {
@@ -84,10 +84,10 @@ describe('calculators', function() {
       expect(PWPG.calculators.handleError).toHaveBeenCalled();
     });
 
-    it('updates the results when `updateResults` is called', function() {
-      var data = 'results';
+    it('updates the estimate when `updateEstimate` is called', function() {
+      var data = 'estimate';
 
-      PWPG.calculators.updateResults(data);
+      PWPG.calculators.updateEstimate(data);
       expect(this.$calculator.html()).toEqual(data);
     });
 
@@ -108,7 +108,7 @@ describe('calculators', function() {
 
       spyOn(PWPG.calculators, '_scrollTo').and.returnValue(scrollPromise);
 
-      PWPG.calculators.updateResults();
+      PWPG.calculators.updateEstimate();
       scrollPromise.resolve();
 
       $loadingIndicator = this.$calculator.find('.calculator__loading-status');

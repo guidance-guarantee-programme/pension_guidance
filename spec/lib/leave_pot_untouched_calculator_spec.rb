@@ -4,8 +4,8 @@ RSpec.describe LeavePotUntouchedCalculator do
   let(:pot) { 50_000 }
   let(:contribution) { 75 }
 
-  describe '#result' do
-    subject(:result) { calculator.result }
+  describe '#estimate' do
+    subject(:estimate) { calculator.estimate }
 
     let(:annual_contribution) { contribution * 12 }
     let(:interest) { 0.03 }

@@ -9,7 +9,7 @@ class LeavePotUntouchedCalculator
 
   attr_accessor :pot, :contribution
 
-  def result
+  def estimate
     YEARS.map { |year| Financial.future_value(pot, annual_contribution, INTEREST_RATE, year) }
   end
 
