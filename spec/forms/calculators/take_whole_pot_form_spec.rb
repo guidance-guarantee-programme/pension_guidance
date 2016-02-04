@@ -1,50 +1,62 @@
 RSpec.describe Calculators::TakeWholePotForm do
+  subject(:form) { described_class.new(params) }
+
+  let(:pot) { 100_000 }
+  let(:income) { 1_00 }
+  let(:params) { { pot: pot, income: income } }
+
   it { is_expected.to validate_presence_of(:pot) }
-  it { is_expected.to validate_presence_of(:income) }
   it { is_expected.to validate_numericality_of(:pot).is_greater_than(0) }
   it { is_expected.to validate_numericality_of(:income).is_greater_than_or_equal_to(0) }
 
-  describe 'type coercion' do
-    subject(:calculator) do
-      described_class.new(
-        pot: '100,000',
-        income: '10,000'
-      )
-    end
+  context 'when the form values contain separating characters' do
+    let(:pot) { '100,000' }
+    let(:income) { '10,000' }
 
-    specify { expect(calculator.pot).to eq(100_000.00) }
-    specify { expect(calculator.income).to eq(10_000.00) }
+    it { is_expected.to be_valid }
+
+    it 'strips them out' do
+      expect(form.pot).to eq('100000')
+      expect(form.income).to eq('10000')
+    end
   end
 
-  describe '#result' do
-    let(:pot) { 100_000 }
-    let(:income) { 10_000 }
-    let(:params) do
-      {
-        pot: pot,
-        income: income
-      }
+  context 'when the form values contain whitespace' do
+    let(:pot) { '       100,000 ' }
+    let(:income) { '   10,000 ' }
+
+    it { is_expected.to be_valid }
+
+    it 'strips them out' do
+      expect(form.pot).to eq('100000')
+      expect(form.income).to eq('10000')
     end
+  end
 
-    def calculate_estimate
-      described_class.new(params).estimate
+  context 'when the form values that can not be coerced' do
+    let(:pot) { 'one hundred thousand' }
+    let(:income) { '£10000' }
+
+    it { is_expected.to be_invalid }
+
+    it 'maintains the original values' do
+      expect(form.pot).to eq(pot)
+      expect(form.income).to eq(income)
     end
+  end
 
-    subject(:estimate) { calculate_estimate }
+  describe '#estimate' do
+    subject(:estimate) { form.estimate }
 
-    context 'with invalid input' do
-      let(:pot) { 'invalid' }
+    let(:calculator) { double(IncomeTaxCalculator, lump_sum_tax: lump_sum_tax, lump_sum_received: lump_sum_received) }
+    let(:lump_sum_tax) { 1_000 }
+    let(:lump_sum_received) { 5_000 }
 
-      it { is_expected.to be_nil }
-    end
+    it 'returns the calculated result' do
+      expect(IncomeTaxCalculator).to receive(:new).with(lump_sum: pot, income: income) { calculator }
 
-    context 'with valid input' do
-      it { is_expected.to be_a(IncomeTaxCalculator) }
-
-      it 'instantiates the calculator' do
-        expect(IncomeTaxCalculator).to receive(:new).with(lump_sum: pot, income: income)
-        calculate_estimate
-      end
+      expect(estimate.pot_tax).to eq(lump_sum_tax)
+      expect(estimate.pot_received).to eq(lump_sum_received)
     end
   end
 end
