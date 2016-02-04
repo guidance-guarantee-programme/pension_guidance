@@ -3,7 +3,7 @@ Given(/^I have searched for appointment locations near to a valid postcode$/) do
 end
 
 When(/^I search for appointment locations near to a valid postcode$/) do
-  postcode = 'BT7 3AP'  # Belfast
+  postcode = 'BT7 3AP' # Belfast
 
   Pages::Locations.new.load(postcode: postcode)
 end
@@ -69,10 +69,10 @@ Then(/^I should see the details of that appointment location$/) do
   end
 
   expect(location.breadcrumbs.map(&:text)).to eq([
-    'Home',
-    'Book a free appointment',
-    'How to book a face to face appointment'
-  ])
+                                                   'Home',
+                                                   'Book a free appointment',
+                                                   'How to book a face to face appointment'
+                                                 ])
 end
 
 When(/^I visit the bookmarked page$/) do

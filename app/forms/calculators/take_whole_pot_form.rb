@@ -10,11 +10,11 @@ module Calculators
     validates :income, presence: true, numericality: { allow_blank: true, greater_than_or_equal_to: 0 }
 
     def pot
-      Float(@pot.gsub(/,/, '')) rescue @pot
+      Float(@pot.delete(',')) rescue @pot
     end
 
     def income
-      Float(@income.gsub(/,/, '')) rescue @income
+      Float(@income.delete(',')) rescue @income
     end
 
     def result

@@ -9,11 +9,10 @@ class GuideRepository
   end
 
   def find(id)
-    if (path = glob_dir(id.tr('-', '_')).try(:first))
-      read_guide(id, path)
-    else
-      fail GuideNotFound
-    end
+    dirname = id.tr('-', '_')
+    path = glob_dir(dirname).try(:first) || raise(GuideNotFound)
+
+    read_guide(id, path)
   end
 
   def find_all(*ids)

@@ -4,9 +4,9 @@ module Locations
   end
 
   def self.nearest_to_postcode(postcode, geocoder: Geocoder,
-                                         repository: Locations::Repository.new,
-                                         search: Locations::Search,
-                                         limit:)
+                               repository: Locations::Repository.new,
+                               search: Locations::Search,
+                               limit:)
     lat_lng = geocoder.lookup(postcode)
     locations = repository.all
 
