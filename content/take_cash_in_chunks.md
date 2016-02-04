@@ -14,13 +14,13 @@ You can take smaller sums of cash from your pot until it runs out. How much you 
 - Your 25% tax-free amount isn’t paid in one lump sum – you get it over time.
 - Each time you take a chunk of money 25% is tax free and the rest is taxable.
 
-This is also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
-
 Some pension providers charge a fee to take cash out.
+
+^Taking a large sum of cash from your pension pot could also affect [your entitlement to any benefits](/benefits).^
 
 Not all providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
-^Taking a large sum of cash from your pension pot could also affect [your entitlement to any benefits](/benefits).^
+This is also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
 
 {::calculator id="take-cash-in-chunks" /}
 
