@@ -8,7 +8,7 @@ RSpec.feature 'Leave pot untouched analytics', type: :feature, js: true do
 
     wait_for_ajax
 
-    expect(data_layer).to include('valid' => false)
+    expect(data_layer).to include('event' => 'CalculatorEstimate', 'valid' => false)
   end
 
   scenario 'with valid input' do
@@ -17,7 +17,11 @@ RSpec.feature 'Leave pot untouched analytics', type: :feature, js: true do
 
     wait_for_ajax
 
-    expect(data_layer).to include('pot' => 100_000, 'contribution' => 7_000, 'valid' => true)
+    expect(data_layer).to include(
+      'event' => 'CalculatorEstimate',
+      'pot' => 100_000,
+      'contribution' => 7_000,
+      'valid' => true)
   end
 
   private
@@ -26,7 +30,7 @@ RSpec.feature 'Leave pot untouched analytics', type: :feature, js: true do
     script = <<-eos
       cleanDataLayer = []
       for (var i = 0; i < window.dataLayer.length; i++) {
-        if (typeof window.dataLayer[i].event == 'undefined') {
+        if (window.dataLayer[i].event == 'CalculatorEstimate') {
           cleanDataLayer.push(window.dataLayer[i]);
         }
       }
