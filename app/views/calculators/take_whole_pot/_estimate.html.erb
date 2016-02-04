@@ -5,24 +5,28 @@
     'valid': <%= calculator.valid? %>,
     'pot': <%= calculator.pot.to_i %>,
     'income': <%= calculator.income.to_i %>
-    <% if calculator.result %> ,
-      'pot_tax': <%= calculator.result.pot_tax.to_i %>,
-      'pot_received': <%= calculator.result.pot_received.to_i %>
+    <% if calculator.estimate %> ,
+      'pot_tax': <%= calculator.estimate.pot_tax.to_i %>,
+      'pot_received': <%= calculator.estimate.pot_received.to_i %>
     <% end %>
   });
 </script>
 
-<% if calculator.result %>
-  <div class="js-calculator-result">
+<% if calculator.estimate %>
+  <div class="js-calculator-estimate">
     <p>
       Based on what you’ve told us, if you take your whole <%= format_currency(calculator.pot) %>
       pension pot in one go, you could pay:
 
-      <strong class="calculator__result__number t-pot-tax"><%= format_currency(calculator.result.pot_tax) %> in tax</strong>
+      <strong class="calculator__estimate__number t-pot-tax">
+        <%= format_currency(calculator.estimate.pot_tax) %> in tax
+      </strong>
 
       and get a total of:
 
-      <strong class="calculator__result__number t-pot-received"><%= format_currency(calculator.result.pot_received) %></strong>
+      <strong class="calculator__estimate__number t-pot-received">
+        <%= format_currency(calculator.estimate.pot_received) %>
+      </strong>
     </p>
 
     <h2>Things to note</h2>

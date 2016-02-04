@@ -17,8 +17,8 @@ module Calculators
       @contribution = String(contribution).delete(',').squish
     end
 
-    def result
-      LeavePotUntouchedCalculator.new(pot: pot.to_f, contribution: contribution.to_f).result if valid?
+    def estimate
+      LeavePotUntouchedCalculator.new(pot: pot.to_f, contribution: contribution.to_f).estimate if valid?
     end
   end
 end

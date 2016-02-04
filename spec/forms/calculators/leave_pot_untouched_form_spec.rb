@@ -45,16 +45,16 @@ RSpec.describe Calculators::LeavePotUntouchedForm do
     end
   end
 
-  describe '#result' do
-    subject { form.result }
+  describe '#estimate' do
+    subject { form.estimate }
 
-    let(:calculator) { double(LeavePotUntouchedCalculator, result: result) }
-    let(:result) { double }
+    let(:calculator) { double(LeavePotUntouchedCalculator, estimate: estimate) }
+    let(:estimate) { double }
 
     it 'returns the calculated result' do
       expect(LeavePotUntouchedCalculator).to receive(:new).with(pot: pot, contribution: contribution) { calculator }
 
-      is_expected.to eq(result)
+      is_expected.to eq(estimate)
     end
   end
 end

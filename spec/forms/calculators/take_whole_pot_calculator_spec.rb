@@ -26,11 +26,11 @@ RSpec.describe Calculators::TakeWholePotForm do
       }
     end
 
-    def calculate_result
-      described_class.new(params).result
+    def calculate_estimate
+      described_class.new(params).estimate
     end
 
-    subject(:result) { calculate_result }
+    subject(:estimate) { calculate_estimate }
 
     context 'with invalid input' do
       let(:pot) { 'invalid' }
@@ -43,7 +43,7 @@ RSpec.describe Calculators::TakeWholePotForm do
 
       it 'instantiates the calculator' do
         expect(TakeWholePotCalculator).to receive(:new).with(pot, income)
-        calculate_result
+        calculate_estimate
       end
     end
   end
