@@ -22,7 +22,7 @@ class LocationsController < ApplicationController
   def show
     location = Locations.find(params[:id])
 
-    fail(ActionController::RoutingError, 'Location Not Found') unless location
+    raise(ActionController::RoutingError, 'Location Not Found') unless location
 
     booking_location = Locations.find(location.booking_location_id) if location.booking_location_id.present?
     nearest_locations = Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT) rescue nil

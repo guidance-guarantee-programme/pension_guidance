@@ -11,11 +11,10 @@ class CategoryRepository
   end
 
   def find(id)
-    if (path = glob_dir(id.tr('-', '_')).try(:first))
-      read_category(id, path)
-    else
-      fail CategoryNotFound
-    end
+    dirname = id.tr('-', '_')
+    path = glob_dir(dirname).try(:first) || raise(CategoryNotFound)
+
+    read_category(id, path)
   end
 
   private

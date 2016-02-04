@@ -1,8 +1,8 @@
 AllCops:
-  RunRailsCops: true
   Exclude:
     - 'bin/*'
     - 'vendor/**/*'
+  TargetRubyVersion: 2.3
 
 Documentation:
   Enabled: false
@@ -13,6 +13,9 @@ Lint/HandleExceptions:
 
 Metrics/LineLength:
   Max: 120
+
+Rails:
+  Enabled: true
 
 Style/FileName:
   Exclude:

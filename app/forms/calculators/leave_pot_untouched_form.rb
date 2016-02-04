@@ -10,11 +10,11 @@ module Calculators
     validates :contribution, numericality: { allow_blank: true, greater_than_or_equal_to: 0 }
 
     def pot=(pot)
-      @pot = String(pot).gsub(/,/, '').squish
+      @pot = String(pot).delete(',').squish
     end
 
     def contribution=(contribution)
-      @contribution = String(contribution).gsub(/,/, '').squish
+      @contribution = String(contribution).delete(',').squish
     end
 
     def result

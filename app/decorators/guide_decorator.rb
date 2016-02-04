@@ -15,7 +15,7 @@ class GuideDecorator < Draper::Decorator
   end
 
   def content
-    fail 'GuideDecorator subclasses must implement content'
+    raise 'GuideDecorator subclasses must implement content'
   end
 
   def headers(level = 1)

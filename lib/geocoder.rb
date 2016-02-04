@@ -4,10 +4,10 @@ class Geocoder
 
   def self.lookup(postcode)
     ukp = UKPostcode.parse(postcode)
-    fail InvalidPostcode unless ukp.full_valid?
+    raise InvalidPostcode unless ukp.full_valid?
 
     lookup = perform_lookup(postcode)
-    fail InvalidPostcode unless lookup
+    raise InvalidPostcode unless lookup
 
     [lookup.latitude, lookup.longitude]
   end

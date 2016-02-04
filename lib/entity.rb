@@ -20,5 +20,5 @@ class Entity
     self.class == other.class && id == other.id
   end
 
-  alias_method :eql?, :==
+  alias eql? ==
 end
