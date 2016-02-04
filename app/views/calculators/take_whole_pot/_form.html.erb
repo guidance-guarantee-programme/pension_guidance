@@ -1,25 +1,39 @@
 <%
-  calculator = local_assigns[:calculator]
-  errors = calculator&.errors
+   form = local_assigns[:form]
+   errors = form&.errors
 %>
 
 <h2 id="calculator">Find out what you’d get after tax</h2>
 
-<%= render 'calculators/error_summary', messages: errors&.messages if calculator&.invalid? %>
+<%= render 'calculators/error_summary', messages: errors&.messages if form&.invalid? %>
 
 <form action="/take-whole-pot/estimate#calculator" method="get">
   <%= render 'calculators/form_input_currency',
              field: :pot,
-             value: local_assigns[:pot],
+             value: form&.pot,
              label: 'Pension pot value',
              error_messages: errors&.get(:pot) %>
 
   <%= render 'calculators/form_input_currency',
              field: :income,
-             value: local_assigns[:income],
+             value: form&.income,
              label: 'Income for the year',
              hint: 'Includes your salary, savings, benefits and State Pension payments',
-             error_messages: errors&.get(income) %>
+             error_messages: errors&.get(:income) %>
 
   <%= render 'calculators/form_input_submit' %>
 </form>
+
+<% if form %>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'event': 'CalculatorEstimate',
+      'valid': <%= form.valid? %>
+      <% if form.valid? %>
+      , 'pot': <%= form.pot.to_i %>
+      , 'income': <%= form.income.to_i %>
+      <% end %>
+    });
+  </script>
+<% end %>

@@ -1,2 +1,2 @@
-<%= render 'form', calculator: calculator, pot: pot, income: income %>
-<%= render 'estimate', calculator: calculator %>
+<%= render 'form', form: form %>
+<%= render 'estimate', estimate: form.estimate if form.valid? %>
