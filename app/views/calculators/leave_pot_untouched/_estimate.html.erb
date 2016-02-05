@@ -26,18 +26,35 @@
 <form>
   <fieldset class="inline">
 
-    <legend class="visuallyhidden">Do you already have a personal user account?</legend>
+    <legend class="visuallyhidden">What if you contributed more each month?</legend>
 
-    <%
-    nearestTen = 10
-    %>
+    <% if experiment == 'exp-radios' %>
+      <p>Try with another:</p>
 
-    <button class="block-label" for="radio-inline-1" data-adjuster="contribution|<%= nearestTen %>">
-      + Try with another <%= number_to_currency(nearestTen) %>
-    </button>
-    <button class="block-label" for="radio-inline-2" data-adjuster="contribution|-<%= nearestTen %>">
-      – Try with <%= number_to_currency(nearestTen) %> less
-    </button>
+      <label class="block-label" for="radio-inline-0" data-adjuster="contribution|0">
+        <input id="radio-inline-0" type="radio" name="radio-inline-group" value="0" checked>
+        £0
+      </label>
+      <label class="block-label" for="radio-inline-1" data-adjuster="contribution|10">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="10">
+        £10
+      </label>
+      <label class="block-label" for="radio-inline-2" data-adjuster="contribution|50">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="50">
+        £50
+      </label>
+      <label class="block-label" for="radio-inline-3" data-adjuster="contribution|100">
+        <input id="radio-inline-3" type="radio" name="radio-inline-group" value="100">
+        £100
+      </label>
+    <% elsif experiment == 'exp-buttons' %>
+      <button class="block-label" for="radio-inline-1" data-adjuster="contribution|10">
+        + Try with another <%= number_to_currency(10) %>
+      </button>
+      <button class="block-label" for="radio-inline-2" data-adjuster="contribution|-10">
+        – Try with <%= number_to_currency(10) %> less
+      </button>
+    <% end %>
 
   </fieldset>
 </form>

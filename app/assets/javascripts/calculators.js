@@ -3,16 +3,27 @@
 
   var calculators = {
     scrollSpeed: 700,
+    experiment: window.location.hash ? window.location.hash.substr(1) : '',
 
     init: function() {
       this._initDOM();
       this._addListeners();
+
+      if (this.experiment) {
+        $(window).on('hashchange', function() {
+          window.location.reload();
+        });
+      }
     },
 
     submitForm: function() {
       var $form = this.$calculator.find('form');
+      var formData = $form.serialize();
+
+      formData += '&experiment=' + this.experiment;
+
       this._toggleLoading(true);
-      return $.get($form.attr('action'), $form.serialize());
+      return $.get($form.attr('action'), formData);
     },
 
     updateEstimate: function(data) {
@@ -71,7 +82,14 @@
 
         $targetElement.val(newValue);
 
-        this._updateEstimateOnly();
+        if (this.experiment == 'exp-buttons') {
+          this.$submitButton.click();
+          event.preventDefault();
+        }
+
+        if (this.experiment == 'exp-radios') {
+          this._updateEstimateOnly();
+        }
       }, this));
     },
 

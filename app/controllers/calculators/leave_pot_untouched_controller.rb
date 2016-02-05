@@ -15,7 +15,7 @@ module Calculators
     end
 
     def form_params
-      params.permit(:pot, :contribution)
+      params.permit(:pot, :contribution, :experiment)
     end
   end
 end
