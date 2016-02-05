@@ -1,23 +1,24 @@
-<p>Your pot could be worth this much over the next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>, with a <strong><%= number_to_currency(contribution) %></strong> monthly contribution:</p>
+<div id="js-estimate">
+  <p>Your pot could be worth this much over the next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>, with a <strong><%= number_to_currency(contribution) %></strong> monthly contribution:</p>
 
-<table>
-  <caption class="visuallyhidden">Estimated pot growth</caption>
-  <thead>
-  <tr>
-    <th>Years left untouched</th>
-    <th>Amount in your pot</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% estimate.each_with_index do |value, year| %>
+  <table>
+    <caption class="visuallyhidden">Estimated pot growth</caption>
+    <thead>
     <tr>
-      <td><%= year + 1 %></td>
-      <td class="t-calculator-future-pot-size"><%= number_to_currency(value) %></td>
+      <th>Years left untouched</th>
+      <th>Amount in your pot</th>
     </tr>
-  <% end %>
-  </tbody>
-</table>
-
+    </thead>
+    <tbody>
+    <% estimate.each_with_index do |value, year| %>
+      <tr>
+        <td><%= year + 1 %></td>
+        <td class="t-calculator-future-pot-size"><%= number_to_currency(value) %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
 
 <h3 class="heading-medium">
   What if you contributed more each month?
