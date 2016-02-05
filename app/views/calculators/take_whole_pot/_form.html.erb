@@ -3,7 +3,7 @@
    errors = form&.errors
 %>
 
-<h2 id="calculator">Find out what you’d get after tax</h2>
+<h2 id="calculator">Estimate what you’d get after tax</h2>
 
 <%= render 'calculators/error_summary', messages: errors&.messages if form&.invalid? %>
 
@@ -11,7 +11,7 @@
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
-             label: 'Pension pot value',
+             label: 'Amount in your pot',
              error_messages: errors&.get(:pot) %>
 
   <%= render 'calculators/form_input_currency',

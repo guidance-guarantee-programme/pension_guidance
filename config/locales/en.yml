@@ -23,18 +23,18 @@ en:
         calculators/leave_pot_untouched_form:
           attributes:
             pot:
-              blank: Please enter your pension pot value
-              not_a_number: Using numbers, please enter your pension pot value
-              greater_than: Your pension pot value must be at least £1
+              blank: Please enter the amount in your pot
+              not_a_number: Using numbers, please enter the amount in your pot
+              greater_than: The amount in your pot must be at least £1
             contribution:
-              not_a_number: Using numbers, please enter how much can you continue to pay in each month
-              greater_than_or_equal_to: How much can you continue to pay in each month must be £0 or more
+              not_a_number: Using numbers, please enter how much you can pay in each month
+              greater_than_or_equal_to: How much you can pay in each month must be £0 or more
         calculators/take_whole_pot_form:
           attributes:
             pot:
-              blank: Please enter your pension pot value
-              not_a_number: Using numbers, please enter your pension pot value
-              greater_than: Your pension pot value must be at least £1
+              blank: Please enter the amount in your pot
+              not_a_number: Using numbers, please enter the amount in your pot
+              greater_than: The amount in your pot must be at least £1
             income:
               blank: Please enter your income for the year
               not_a_number: Using numbers, please enter your income for the year

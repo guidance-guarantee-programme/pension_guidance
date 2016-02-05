@@ -1,12 +1,12 @@
-<p>Based on what you’ve told us, your pot could be worth this much over the
+<p>Your pot could be worth this much over the
   next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>:</p>
 
 <table>
   <caption class="visuallyhidden">Estimated pot growth</caption>
   <thead>
   <tr>
-    <th>Extra years left untouched</th>
-    <th>Pot size</th>
+    <th>Years left untouched</th>
+    <th>Amount in your pot</th>
   </tr>
   </thead>
   <tbody>
@@ -21,11 +21,11 @@
 
 <ul class="t-calculator-notes">
   <li>
-    We’ve estimated your pot could grow at about
+    This is an estimate based on your pot growing at a rate of about
     <%= number_to_percentage(LeavePotUntouchedCalculator::INTEREST_RATE * 100) %>
-    per year — your growth may be higher or lower than this.
+    per year — this may vary.
   </li>
   <li>
-    The value of your pot will be affected by inflation and how much your provider charges you for managing your pot.
+    The amount in your pot will be affected by inflation and any fees your provider charges.
   </li>
 </ul>

@@ -27,14 +27,13 @@ Then(/^I should see how much my pot could be worth for each of the next (\d+) ye
 end
 
 Then(/^it explains the values are estimates based on growth at 3% per year$/) do
-  content = 'We’ve estimated your pot could grow at about 3% per year — your growth may be higher or lower than this.'
+  content = 'This is an estimate based on your pot growing at a rate of about 3% per year — this may vary.'
 
   expect(@page.calculator.notes).to have_content(content)
 end
 
 Then(/^it explains the values will be affected by inflation and how much my provider charges for managing the pot$/) do
-  content = 'The value of your pot will be affected by inflation ' \
-            'and how much your provider charges you for managing your pot.'
+  content = 'The amount in your pot will be affected by inflation and any fees your provider charges.'
 
   expect(@page.calculator.notes).to have_content(content)
 end
