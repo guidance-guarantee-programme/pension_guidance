@@ -40,7 +40,10 @@ $E
 
 Your pension provider will take off the [tax you owe](/tax#How your tax is paid) before they pay you the cash.
 
-You may pay emergency tax when you take cash from your pot. If your provider doesn’t reimburse you automatically, you can claim it back from HM Revenue and Customs.
+%You may pay emergency tax when you take money from your pot which you can claim back.%
+
+If your provider doesn’t pay your emergency tax back automatically, you can claim it back from
+HM Revenue and Customs.
 
 ## Scams
 
