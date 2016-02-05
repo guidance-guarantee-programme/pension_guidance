@@ -75,9 +75,18 @@
 
     _scrollTo: function($el) {
       var offset = $el.offset() || {};
+      var target = offset.top || 0;
+      var $page = $('html, body');
+
+      $page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+        $page.stop();
+      });
+
       return $('html, body').stop().animate({
         scrollTop: offset.top || 0
-      }, this.scrollSpeed).promise();
+      }, this.scrollSpeed).promise().then(function() {
+        $page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+      });
     }
   };
 
