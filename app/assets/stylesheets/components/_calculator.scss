@@ -1,5 +1,9 @@
 .calculator {
   overflow: hidden;
+
+  .block-label {
+    padding-left: 30px;
+  }
 }
 
 .calculator--in-article {

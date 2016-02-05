@@ -54,6 +54,19 @@
           .then($.proxy(this.updateEstimate, this))
           .fail($.proxy(this.handleError, this));
       }, this));
+
+      this.$calculator.on('click', '[data-adjuster]', $.proxy(function(event) {
+        var $adjuster = $(event.currentTarget);
+        var targetData = $adjuster.data('adjuster').split('|');
+        var $targetElement = this.$calculator.find('#' + targetData[0]);
+        var newValue = parseFloat($targetElement.data('value')) + parseFloat(targetData[1]);
+
+        $targetElement.val(newValue);
+
+        this.$submitButton.click();
+
+        event.preventDefault();
+      }, this));
     },
 
     _toggleLoading: function(isLoading) {
@@ -62,7 +75,7 @@
 
     _scrollTo: function($el) {
       var offset = $el.offset() || {};
-      return $('html, body').animate({
+      return $('html, body').stop().animate({
         scrollTop: offset.top || 0
       }, this.scrollSpeed).promise();
     }

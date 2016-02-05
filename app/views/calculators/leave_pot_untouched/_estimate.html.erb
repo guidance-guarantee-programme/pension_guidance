@@ -1,5 +1,4 @@
-<p>Your pot could be worth this much over the
-  next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>:</p>
+<p>Your pot could be worth this much over the next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>, with a <strong><%= number_to_currency(contribution) %></strong> monthly contribution:</p>
 
 <table>
   <caption class="visuallyhidden">Estimated pot growth</caption>
@@ -18,6 +17,31 @@
   <% end %>
   </tbody>
 </table>
+
+
+<h3 class="heading-medium">
+  What if you contributed more each month?
+</h3>
+
+<form>
+  <fieldset class="inline">
+
+    <legend class="visuallyhidden">Do you already have a personal user account?</legend>
+
+    <%
+    nearestTen = 10
+    %>
+
+    <button class="block-label" for="radio-inline-1" data-adjuster="contribution|<%= nearestTen %>">
+      + Try with another <%= number_to_currency(nearestTen) %>
+    </button>
+    <button class="block-label" for="radio-inline-2" data-adjuster="contribution|-<%= nearestTen %>">
+      – Try with <%= number_to_currency(nearestTen) %> less
+    </button>
+
+  </fieldset>
+</form>
+
 
 <ul class="t-calculator-notes">
   <li>
