@@ -111,14 +111,14 @@
       var target = offset.top || 0;
       var $page = $('html, body');
 
-      $page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+      $page.on("scroll mousedown wheel DOMMouseScroll mousewheel touchmove", function(){
         $page.stop();
       });
 
-      return $('html, body').stop().animate({
-        scrollTop: offset.top || 0
+      return $('html, body').animate({
+        scrollTop: target
       }, this.scrollSpeed).promise().then(function() {
-        $page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+        $page.off("scroll mousedown wheel DOMMouseScroll mousewheel touchmove");
       });
     }
   };
