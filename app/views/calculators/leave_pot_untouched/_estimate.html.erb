@@ -1,11 +1,27 @@
-<div id="js-estimate">
-  <p>Your pot could be worth this much over the next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>, with a <strong><%= number_to_currency(contribution) %></strong> monthly contribution:</p>
+  <% if experiment == 'exp-slider' %>
+    <p>Your pot could be worth this much over the next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>, with a <strong><%= number_to_currency(contribution) %></strong> monthly contribution:</p>
+    <%
+    uBound = contribution.to_f * 3
+    if uBound < 150
+      uBound = 150.00
+    end
+    %>
+    <p>Try with an additional:</p>
+    <div class="slider">
+      <span class="slider__range slider__range--min">£0</span>
+      <span class="slider__range slider__range--max"><%= number_to_currency(uBound) %></span>
+      <input type="range" name="adjuster" data-adjuster="contribution|x" min="0" max="<%= uBound %>" step="5" value="0">
+      <output for="adjuster">£0</output>
+    </div>
+  <% end %>
 
+<div id="js-estimate">
   <table>
     <caption class="visuallyhidden">Estimated pot growth</caption>
     <thead>
     <tr>
       <th>Years left untouched</th>
+      <th>Monthly contribution</th>
       <th>Amount in your pot</th>
     </tr>
     </thead>
@@ -13,68 +29,53 @@
     <% estimate.each_with_index do |value, year| %>
       <tr>
         <td><%= year + 1 %></td>
+        <td><%= number_to_currency(contribution) %></td>
         <td class="t-calculator-future-pot-size"><%= number_to_currency(value) %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
+
+
+  <% unless experiment == 'exp-slider' %>
+    <h3 class="heading-medium">What if you contributed more each month?</h3>
+    <p>With an additional £20 monthly contribution, your pot could be worth <strong><%= number_to_currency(difference_in_bumped_estimate) %> more</strong> (<%= number_to_currency(bumped_estimate.last) %>) in 5 years.</p>
+  <% end %>
 </div>
 
-<h3 class="heading-medium">
-  What if you contributed more each month?
-</h3>
+<fieldset class="inline">
 
-<form>
-  <fieldset class="inline">
+  <legend class="visuallyhidden">What if you contributed more each month?</legend>
 
-    <legend class="visuallyhidden">What if you contributed more each month?</legend>
+  <% if experiment == 'exp-radios' %>
+    <p>Try with another:</p>
 
-    <p>With an additional £20 monthly contribution, your pot could be worth <strong><%= number_to_currency(difference_in_bumped_estimate) %> more</strong> (<%= number_to_currency(bumped_estimate.last) %>) in 5 years.</p>
+    <label class="block-label" for="radio-inline-0" data-adjuster="contribution|0">
+      <input id="radio-inline-0" type="radio" name="radio-inline-group" value="0" checked>
+      £0
+    </label>
+    <label class="block-label" for="radio-inline-1" data-adjuster="contribution|10">
+      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="10">
+      £10
+    </label>
+    <label class="block-label" for="radio-inline-2" data-adjuster="contribution|50">
+      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="50">
+      £50
+    </label>
+    <label class="block-label" for="radio-inline-3" data-adjuster="contribution|100">
+      <input id="radio-inline-3" type="radio" name="radio-inline-group" value="100">
+      £100
+    </label>
+  <% elsif experiment == 'exp-buttons' %>
+    <button class="block-label" for="radio-inline-1" data-adjuster="contribution|10">
+      + Try with another <%= number_to_currency(10) %>
+    </button>
+    <button class="block-label" for="radio-inline-2" data-adjuster="contribution|-10">
+      – Try with <%= number_to_currency(10) %> less
+    </button>
+  <% end %>
 
-    <% if experiment == 'exp-radios' %>
-      <p>Try with another:</p>
-
-      <label class="block-label" for="radio-inline-0" data-adjuster="contribution|0">
-        <input id="radio-inline-0" type="radio" name="radio-inline-group" value="0" checked>
-        £0
-      </label>
-      <label class="block-label" for="radio-inline-1" data-adjuster="contribution|10">
-        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="10">
-        £10
-      </label>
-      <label class="block-label" for="radio-inline-2" data-adjuster="contribution|50">
-        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="50">
-        £50
-      </label>
-      <label class="block-label" for="radio-inline-3" data-adjuster="contribution|100">
-        <input id="radio-inline-3" type="radio" name="radio-inline-group" value="100">
-        £100
-      </label>
-    <% elsif experiment == 'exp-buttons' %>
-      <button class="block-label" for="radio-inline-1" data-adjuster="contribution|10">
-        + Try with another <%= number_to_currency(10) %>
-      </button>
-      <button class="block-label" for="radio-inline-2" data-adjuster="contribution|-10">
-        – Try with <%= number_to_currency(10) %> less
-      </button>
-    <% elsif experiment == 'exp-slider' %>
-      <%
-      uBound = contribution.to_f * 3
-      if uBound <= 0
-        uBound = 150.00
-      end
-      %>
-      <p>Try with an additional:</p>
-      <div class="slider">
-        <span class="slider__range slider__range--min">£0</span>
-        <span class="slider__range slider__range--max"><%= number_to_currency(uBound) %></span>
-        <input type="range" name="adjuster" data-adjuster="contribution|x" min="0" max="<%= uBound %>" step="5" value="0">
-        <output for="adjuster">£0</output>
-      </div>
-    <% end %>
-
-  </fieldset>
-</form>
+</fieldset>
 
 
 <ul class="t-calculator-notes">

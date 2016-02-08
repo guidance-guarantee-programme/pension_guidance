@@ -39,10 +39,7 @@
       this._refresh(data);
 
       if (this.experiment == 'exp-slider') {
-        setTimeout(function() {
-          $("input[type='range']", this.$calculator).change();
-          console.log($("input[type='range']", this.$calculator));
-        }, 100);
+        $("input[type='range']", this.$calculator).change();
       }
 
       this._scrollTo(this.$submitButton).then($.proxy(function() {
@@ -118,7 +115,7 @@
           var $slider = $("input[type='range']", this.$calculator);
           var buffer = null;
 
-           $slider.change($.proxy(function() {
+           $slider.on('input', $.proxy(function() {
              // Cache this for efficiency
              el = $slider;
 
@@ -144,14 +141,17 @@
              });
 
 
+           }, this))
+           .on('change', $.proxy(function() {
+             // Cache this for efficiency
+             el = $slider;
              // update form fields and resubmit
-             clearTimeout(buffer);
-             buffer = setTimeout($.proxy(function() {
-               newValue = parseFloat($targetElement.data('value')) + parseFloat(el.val());
-               $targetElement.val(newValue);
-               this._updateEstimateOnly();
-             }, this), 150);
-
+            clearTimeout(buffer);
+            buffer = setTimeout($.proxy(function() {
+              newValue = parseFloat($targetElement.data('value')) + parseFloat(el.val());
+              $targetElement.val(newValue);
+              this._updateEstimateOnly();
+            }, this), 150);
            }, this))
            // Fake a change to position bubble at page load
            .trigger('change').change();
