@@ -58,11 +58,17 @@
         – Try with <%= number_to_currency(10) %> less
       </button>
     <% elsif experiment == 'exp-slider' %>
+      <%
+      uBound = contribution.to_f * 3
+      if uBound <= 0
+        uBound = 150.00
+      end
+      %>
       <p>Try with an additional:</p>
       <div class="slider">
         <span class="slider__range slider__range--min">£0</span>
-        <span class="slider__range slider__range--max"><%= number_to_currency(contribution.to_f * 3) %></span>
-        <input type="range" name="adjuster" data-adjuster="contribution|x" min="0" max="<%= contribution.to_f * 3 %>" step="5" value="0">
+        <span class="slider__range slider__range--max"><%= number_to_currency(uBound) %></span>
+        <input type="range" name="adjuster" data-adjuster="contribution|x" min="0" max="<%= uBound %>" step="5" value="0">
         <output for="adjuster">£0</output>
       </div>
     <% end %>
