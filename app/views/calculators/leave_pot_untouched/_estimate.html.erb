@@ -29,6 +29,8 @@
 
     <legend class="visuallyhidden">What if you contributed more each month?</legend>
 
+    <p>Even with another £20 per month, your pot could be worth <strong><%= number_to_currency(difference_in_bumped_estimate) %> more</strong> (<%= number_to_currency(bumped_estimate.last) %>) in 5 years.</p>
+
     <% if experiment == 'exp-radios' %>
       <p>Try with another:</p>
 

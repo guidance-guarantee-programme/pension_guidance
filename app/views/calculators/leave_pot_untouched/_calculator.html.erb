@@ -1,2 +1,2 @@
 <%= render 'form', form: form %>
-<%= render 'estimate', estimate: form.estimate, contribution: form.contribution, experiment: form.experiment if form.valid? %>
+<%= render 'estimate', estimate: form.estimate, bumped_estimate: form.bumped_estimate, difference_in_bumped_estimate: form.difference_in_bumped_estimate, contribution: form.contribution, experiment: form.experiment if form.valid? %>

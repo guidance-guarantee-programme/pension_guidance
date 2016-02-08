@@ -26,5 +26,15 @@ module Calculators
         pot: pot.to_f,
         contribution: contribution.to_f).estimate if valid?
     end
+
+    def bumped_estimate
+      LeavePotUntouchedCalculator.new(
+        pot: pot.to_f,
+        contribution: contribution.to_f + 20).estimate if valid?
+    end
+
+    def difference_in_bumped_estimate
+      bumped_estimate.last.to_f - estimate.last.to_f
+    end
   end
 end
