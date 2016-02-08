@@ -4,6 +4,7 @@
   var calculators = {
     scrollSpeed: 700,
     experiment: window.location.hash ? window.location.hash.substr(1) : '',
+    request: null,
 
     init: function() {
       this._initDOM();
@@ -23,12 +24,27 @@
       formData += '&experiment=' + this.experiment;
 
       this._toggleLoading(true);
-      return $.get($form.attr('action'), formData);
+
+      if (this.request) {
+        this.request.abort();
+      }
+
+      this.request = $.get($form.attr('action'), formData);
+
+      return this.request;
     },
 
     updateEstimate: function(data) {
       this.$calculator.removeClass('hide-from-print');
       this._refresh(data);
+
+      if (this.experiment == 'exp-slider') {
+        setTimeout(function() {
+          $("input[type='range']", this.$calculator).change();
+          console.log($("input[type='range']", this.$calculator));
+        }, 100);
+      }
+
       this._scrollTo(this.$submitButton).then($.proxy(function() {
         this._toggleLoading(false);
       }, this));
@@ -78,9 +94,14 @@
         var $adjuster = $(event.currentTarget);
         var targetData = $adjuster.data('adjuster').split('|');
         var $targetElement = this.$calculator.find('#' + targetData[0]);
-        var newValue = parseFloat($targetElement.data('value')) + parseFloat(targetData[1]);
+        var targetValue = $targetElement.data('value');
+        var newValue = 0;
 
-        $targetElement.val(newValue);
+        // 'x' means we have a dynamic value to work out somewhere
+        if (targetValue !== 'x') {
+          newValue = parseFloat($targetElement.data('value')) + parseFloat(targetData[1]);
+          $targetElement.val(newValue);
+        }
 
         if (this.experiment == 'exp-buttons') {
           this.$submitButton.click();
@@ -90,6 +111,51 @@
         if (this.experiment == 'exp-radios') {
           this._updateEstimateOnly();
         }
+
+        if (this.experiment == 'exp-slider') {
+          var el, newPoint, newPlace, newWidth, offset, width;
+          var $slider = $("input[type='range']", this.$calculator);
+          var buffer = null;
+
+           $slider.change($.proxy(function() {
+             // Cache this for efficiency
+             el = $slider;
+
+             var output = el.next("output");
+
+             // Measure width of range input
+             width = el.width();
+
+             // Figure out placement percentage between left and right of input
+             newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));
+
+             // Prevent bubble from going beyond left or right (unsupported browsers)
+             if (newPoint < 0) { newPlace = 0; }
+             else if (newPoint > 1) { newPlace = width; }
+             else { newPlace = width * newPoint; }
+
+             output.text('£' + el.val());
+
+             newWidth = output.outerWidth();
+             output.css({
+              left: newPlace,
+              marginLeft: -(newWidth / 2)
+             });
+
+
+             // update form fields and resubmit
+             clearTimeout(buffer);
+             buffer = setTimeout($.proxy(function() {
+               newValue = parseFloat($targetElement.data('value')) + parseFloat(el.val());
+               $targetElement.val(newValue);
+               this._updateEstimateOnly();
+             }, this), 150);
+
+           }, this))
+           // Fake a change to position bubble at page load
+           .trigger('change').change();
+        }
+
       }, this));
     },
 
