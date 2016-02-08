@@ -63,7 +63,8 @@
         $target = $partial;
       }
 
-      $target.empty().html(html);
+      $target.empty().html(html).find('#js-estimate').removeClass('highlight').addClass('highlight');
+
       this._cacheElements();
     },
 
