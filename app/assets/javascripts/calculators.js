@@ -109,55 +109,54 @@
         if (this.experiment == 'exp-radios') {
           this._updateEstimateOnly();
         }
-
-        if (this.experiment == 'exp-slider') {
-          var el, newPoint, newPlace, newWidth, offset, width;
-          var $slider = $("input[type='range']", this.$calculator);
-          var buffer = null;
-
-           $slider.on('input', $.proxy(function() {
-             // Cache this for efficiency
-             el = $slider;
-
-             var output = el.next("output");
-
-             // Measure width of range input
-             width = el.width();
-
-             // Figure out placement percentage between left and right of input
-             newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));
-
-             // Prevent bubble from going beyond left or right (unsupported browsers)
-             if (newPoint < 0) { newPlace = 0; }
-             else if (newPoint > 1) { newPlace = width; }
-             else { newPlace = width * newPoint; }
-
-             output.text('£' + el.val());
-
-             newWidth = output.outerWidth();
-             output.css({
-              left: newPlace,
-              marginLeft: -(newWidth / 2)
-             });
-
-
-           }, this))
-           .on('change', $.proxy(function() {
-             // Cache this for efficiency
-             el = $slider;
-             // update form fields and resubmit
-            clearTimeout(buffer);
-            buffer = setTimeout($.proxy(function() {
-              newValue = parseFloat($targetElement.data('value')) + parseFloat(el.val());
-              $targetElement.val(newValue);
-              this._updateEstimateOnly();
-            }, this), 150);
-           }, this))
-           // Fake a change to position bubble at page load
-           .trigger('change').change();
-        }
-
       }, this));
+
+      if (this.experiment == 'exp-slider') {
+        var el, newPoint, newPlace, newWidth, offset, width;
+        var $slider = $("input[type='range']", this.$calculator);
+        var buffer = null;
+
+         $slider.on('input', $.proxy(function() {
+           // Cache this for efficiency
+           el = $slider;
+
+           var output = el.next("output");
+
+           // Measure width of range input
+           width = el.width();
+
+           // Figure out placement percentage between left and right of input
+           newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));
+
+           // Prevent bubble from going beyond left or right (unsupported browsers)
+           if (newPoint < 0) { newPlace = 0; }
+           else if (newPoint > 1) { newPlace = width; }
+           else { newPlace = width * newPoint; }
+
+           output.text('£' + el.val());
+
+           newWidth = output.outerWidth();
+           output.css({
+            left: newPlace,
+            marginLeft: -(newWidth / 2)
+           });
+
+
+         }, this))
+         .on('change', $.proxy(function() {
+           // Cache this for efficiency
+           el = $slider;
+           // update form fields and resubmit
+          clearTimeout(buffer);
+          buffer = setTimeout($.proxy(function() {
+            newValue = parseFloat($targetElement.data('value')) + parseFloat(el.val());
+            $targetElement.val(newValue);
+            this._updateEstimateOnly();
+          }, this), 150);
+         }, this))
+         // Fake a change to position bubble at page load
+         .trigger('change').change();
+      }
     },
 
     _updateEstimateOnly: function() {
