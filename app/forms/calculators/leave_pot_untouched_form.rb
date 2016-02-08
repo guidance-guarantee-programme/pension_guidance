@@ -30,7 +30,7 @@ module Calculators
     def bumped_estimate
       LeavePotUntouchedCalculator.new(
         pot: pot.to_f,
-        contribution: contribution.to_f + 20).estimate if valid?
+        contribution: contribution.to_f + 50).estimate if valid?
     end
 
     def difference_in_bumped_estimate

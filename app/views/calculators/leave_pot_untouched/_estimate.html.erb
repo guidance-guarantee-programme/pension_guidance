@@ -39,7 +39,7 @@
 
   <% unless experiment == 'exp-slider' %>
     <h3 class="heading-medium">What if you contributed more each month?</h3>
-    <p>With an additional £20 monthly contribution, your pot could be worth <strong><%= number_to_currency(difference_in_bumped_estimate) %> more</strong> (<%= number_to_currency(bumped_estimate.last) %>) in 5 years.</p>
+    <p>With an additional £50 monthly contribution, your pot could be worth <strong><%= number_to_currency(bumped_estimate.last) %></strong> (that's <%= number_to_currency(difference_in_bumped_estimate) %> more) in 5 years.</p>
   <% end %>
 </div>
 
