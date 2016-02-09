@@ -150,7 +150,11 @@
         var $empty = $('<div/>');
         var $estimate = $empty.append(data).find('#js-estimate');
         this._refresh($estimate, $('#js-estimate'));
-        this._toggleLoading(false);
+
+        this._scrollTo(this.$submitButton).then($.proxy(function() {
+          this._toggleLoading(false);
+        }, this));
+
       }, this));
     },
 
