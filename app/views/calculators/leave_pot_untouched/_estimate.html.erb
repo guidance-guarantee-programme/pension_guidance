@@ -1,19 +1,36 @@
-  <% if experiment == 'exp-slider' %>
-    <p>Your pot could be worth this much over the next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>, with a <strong><%= number_to_currency(contribution) %></strong> monthly contribution:</p>
-    <%
-    uBound = contribution.to_f * 3
-    if uBound < 150
-      uBound = 150.00
-    end
-    %>
-    <p>Try with an additional:</p>
-    <div class="slider">
-      <span class="slider__range slider__range--min">£0</span>
-      <span class="slider__range slider__range--max"><%= number_to_currency(uBound) %></span>
-      <input type="range" name="adjuster" data-adjuster="contribution|x" min="0" max="<%= uBound %>" step="5" value="0">
-      <output for="adjuster">£0</output>
-    </div>
-  <% end %>
+<% if experiment == 'exp-slider' %>
+  <p>Your pot could be worth this much over the next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>, with a <strong><%= number_to_currency(contribution) %></strong> monthly contribution:</p>
+  <%
+  uBound = contribution.to_f * 3
+  if uBound < 150
+    uBound = 150.00
+  end
+  %>
+  <p>Try with an additional:</p>
+  <div class="slider">
+    <span class="slider__range slider__range--min">£0</span>
+    <span class="slider__range slider__range--max"><%= number_to_currency(uBound) %></span>
+    <input type="range" name="adjuster" data-adjuster="contribution|x" min="0" max="<%= uBound %>" step="10" value="0">
+    <output for="adjuster">£0</output>
+  </div>
+<% end %>
+
+<% if experiment == 'exp-slider-abs' %>
+  <p>Your pot could be worth this much over the next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>.</p>
+  <%
+  uBound = contribution.to_f + (contribution.to_f * 3)
+  if uBound < 150
+    uBound = 150.00
+  end
+  %>
+  <p>See how much it could be with a little more paid in each month:</p>
+  <div class="slider">
+    <span class="slider__range slider__range--min">£0</span>
+    <span class="slider__range slider__range--max"><%= number_to_currency(uBound) %></span>
+    <input type="range" name="adjuster" data-adjuster="contribution|x" min="0" max="<%= uBound %>" step="10" value="<%= contribution %>">
+    <output for="adjuster"><%= number_to_currency(contribution) %></output>
+  </div>
+<% end %>
 
 <div id="js-estimate">
   <table>
@@ -38,7 +55,7 @@
 
 </div>
 
-  <% unless experiment == 'exp-slider' %>
+  <% unless experiment == 'exp-slider' || experiment == 'exp-slider-abs' %>
     <h3 class="heading-medium">What if you contributed more each month?</h3>
     <p>With an additional £50 monthly contribution, your pot could be worth <strong><%= number_to_currency(bumped_estimate.last) %></strong> (that's <%= number_to_currency(difference_in_bumped_estimate) %> more) in 5 years.</p>
   <% end %>

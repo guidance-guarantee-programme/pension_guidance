@@ -38,7 +38,7 @@
       this.$calculator.removeClass('hide-from-print');
       this._refresh(data);
 
-      if (this.experiment == 'exp-slider') {
+      if (this.experiment == 'exp-slider' || this.experiment == 'exp-slider-abs') {
         $("input[type='range']", this.$calculator).change();
       }
 
@@ -110,7 +110,7 @@
           this._updateEstimateOnly();
         }
 
-        if (this.experiment == 'exp-slider') {
+        if (this.experiment == 'exp-slider' || this.experiment == 'exp-slider-abs') {
           var newPoint, newPlace, newWidth, offset, width;
           var buffer = null;
           var output = $adjuster.next("output");
@@ -138,10 +138,16 @@
           clearTimeout(buffer);
           buffer = setTimeout($.proxy(function() {
             newValue = parseFloat($targetElement.data('value')) + parseFloat($adjuster.val());
+
+            if (this.experiment == 'exp-slider-abs') {
+              newValue = parseFloat($adjuster.val());
+            }
+
             $targetElement.val(newValue);
             this._updateEstimateOnly();
           }, this), 150);
         }
+
       }, this));
     },
 
