@@ -12,7 +12,9 @@
 
       if (this.experiment) {
         $(window).on('hashchange', function() {
-          window.location.reload();
+          if (window.location.hash.indexOf('exp') >= 1) {
+            window.location.reload();
+          }
         });
       }
     },
