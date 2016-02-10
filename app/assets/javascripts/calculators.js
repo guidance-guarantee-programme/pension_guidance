@@ -99,7 +99,7 @@
 
         // 'x' means we have a dynamic value to work out somewhere
         if (targetValue !== 'x') {
-          newValue = parseFloat($targetElement.data('value')) + parseFloat(targetValue);
+          newValue = parseFloat($targetElement.data('value') || 0) + parseFloat(targetValue);
           $targetElement.val(newValue);
         }
 
