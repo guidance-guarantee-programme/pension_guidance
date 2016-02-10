@@ -33,7 +33,7 @@ If you spread the cash amounts over more than one tax year, you might pay less t
 {: .info-notice--take-cash}
 $E
 **Example**
-Your pot is £60,000. You take out £10,000 each year. £2,500 is tax free. £7,500 is taxable. You don’t have any other income and this is below the Personal Allowance of £10,600. You don’t pay tax on your cash.
+Your pot is £60,000. You take out £10,000 each year – £2,500 is tax free, £7,500 is taxable. You don’t have any other income and this is below the Personal Allowance of £10,600. You don’t pay tax on your cash.
 $E
 
 Your pension provider will take off the [tax you owe](/tax#How your tax is paid) before they pay you the cash.
