@@ -4,108 +4,45 @@ description: What to consider when working out how much retirement income you’
 
 # Work out what you’ll have in retirement
 
-When you reach retirement your income is likely to be less. This is mostly because your income from work drops if you go part-time or when you stop working altogether. Your retirement income usually isn’t as much as your salary.
+When you reach retirement your income is likely to be less and your living costs will change.
 
-You should think about [what you can do with your pension pot](/pension-pot-options) to make sure you can [make your money last through retirement](/making-money-last).
+To work out if you’ll have enough money to live on in retirement, you’ll need to:
 
-## Add up all your income
+- find out what you’ll get from your pension pot, the State Pension and any other income you may have
+- work out the tax you’ll pay on your retirement income
+- look at what your living costs are likely to be
 
-How you take the money from your pension pot depends on how much other income you have. You should start by adding up all your income.
+If you decide you won’t have enough to live on after you retire, you could put more in your pot now or retire later and delay taking your pension.
 
-### Most common income in retirement
+## Where your income will come from
 
-You’ll most likely have:
+You’ll most likely have pensions from your employer, personal pensions you set up yourself and the State Pension paid to you by the government.
 
-- a pension - this might be one or more pensions from work, pensions you set up yourself, or both
-- the State Pension paid to you by the government
+You might also have other income from:
 
-[Check the value of your pension pot](/pension-pot-value) if you don’t know. Call the Future Pension Centre on 0345 600 4274 for a full State Pension statement.
-
-### Other income
-
-You might also have other income:
-
-- from work - if you carry on working for some years
-- benefits, eg pension credit, housing benefit, council tax discount
+- work — if you carry on working for some years
+- benefits — eg pension credit, housing benefit, council tax reduction
 - rental income
 - interest from savings or pensioner bonds
 - dividends from investments
-- from property, eg by downsizing
+- selling property
 
 ^Taking money from your pension pot can [affect your benefits](/benefits).^
 
-## If you only have income from pensions
+## Work out your retirement income
 
-Once you stop working and you don’t have any other income, your retirement income will be made up of your own pension(s) plus the State Pension.
+To get an idea of how much you’ll have in retirement, follow these steps:
 
-### How to calculate your retirement income
-
-To get a basic idea of how much you’ll have in retirement, follow these steps:
-
-s1. Understand [what you can do with your pension pot](/pension-pot-options). Decide if you want a guaranteed income (annuity) every year or the option to take an adjustable income or cash in chunks from your pension pot when you want to.
-s2. [Shop around](/shop-around) and get quotes from providers. For annuities they’ll tell you how much you might get a year for the amount in your pot. For an adjustable income or cash in chunks they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
-s3. Decide which option(s) suit you the best. You might want to talk to a [financial adviser](/financial-advice).
-s4. Add the most suitable quote to your State Pension. If you also have a defined benefit pension, add that money too.
-s5. Take away the [tax you pay on your pension(s)](/tax).
-
+s1. [Check how much is in your pension pot](/pension-pot-value) and which pensions you’ve paid into.
+s2. Add your pension pot to your State Pension. Phone the Future Pension Centre on 0345 600 4274 to get a full State Pension statement.
+s3. Check what other income you’ll have in retirement and how it might change.
+s4. Choose [what to do with your pot](/pension-pot-options) and [shop around](/shop-around) to get quotes from providers.
+s5. Take away the [tax you pay](/tax).
 
 $E
 **Example**
 
-You’re 65 and you decide to stop working. You have the basic State Pension and your pension pot.
-
-What you have | Amount
-- | -
-Full basic State Pension per year | £6,029.40
-Your total pension pot | £30,000
-
-### What you do with your pension pot
-
-You decide to take 25% of your pot tax free and take money from this amount every year. You buy a single annuity with the rest. This kind of annuity won’t continue to pay to your spouse or partner after you die.
-
-What you do with it | Amount
-- | -
-25% tax free | £7,500 in one go
-You buy an annuity with the remaining pot of £22,500 | This will pay £1,125 per year until you die
-
-**What you get from 65 onwards**
-
-Income | Amount per year
-- | -
-Basic State Pension | + £6,029.40
-Annuity income | + £1,125
-**Your total retirement income** | **= £7,154**
-
-Your income is below the tax-free Personal Allowance of £10,600, so you won’t pay tax on it.
-
-You also have the £7,500 tax-free money to supplement your income.
-$E
-
-
-## If you have other income
-
-If you continue working for a while and have other income, your retirement income will be made up of:
-
-- your own pension
-- the State Pension
-- other income you have
-
-### How to calculate your retirement income
-
-To get a basic idea of how much you’ll have in retirement follow these steps:
-
-s1. Check how your other income will change in retirement. The easiest way to do this is to think about your 60s, 70s and 80s and how your income might drop. For example, you might want to stop working in your late 60s which means you’ll have less income.
-s2. Understand [what you can do with your pension pot](/pension-pot-options) and decide when you need this money. For example, while you’re still working you might want to leave your pension pot untouched so you can take more later.
-s3. [Shop around](/shop-around) and get quotes from providers. For annuities they’ll tell you how much you might get a year for the amount in your pot. For an adjustable income or cash in chunks they might be able to tell you how much your pot could grow and how long it would last if you take a certain amount every year. Get quotes for different options and ask about any charges that are included.
-s4. Decide which option(s) suits you the best. You might want to talk to a [financial adviser](/financial-advice).
-s5. Add the most suitable quote to your State Pension and other income.
-s6. Take away the [tax you pay on all your income](/tax).
-
-
-$E
-**Example**
-
-You’re 65 and want to work part time until you’re 70. You decide to leave your pension pot for 5 years.
+You’re 65 and want to work part time until you’re 70. You decide to take 25% of your pot tax free. You invest the rest into an adjustable income and take £4,800 a year.
 
 What you have | Amount
 - | -
@@ -119,72 +56,75 @@ Income | Amount per year
 - | -
 Basic State Pension | + £6,029.40
 Income from work | + £15,000
-Income before tax | = £21,029
-Tax you pay | - £2,086
-**Your total retirement income in your 60s** | **= £18,943**
+Money from your adjustable income | +£4,800
+Income before tax | = £25,829
+Tax you pay | - £3,046
+**Your total retirement income in your 60s** | **= £22,784**
 
-### What you do with your pension pot when you’re 70
-
-Your pension pot has grown to £127,628 in the 5 years you left it untouched. You decide to take 25% tax free and re-invest the rest.
-
-What you do with it | Amount
-- | -
-25% tax free | £31,907 in one go
-You re-invest the remaining £95,721 into a flexi-access drawdown fund. The fund grows at 5% a year.  | You decide to take £6,500 a year.
+You also have the £25,000 tax-free money to supplement your income.
 
 ### What you get from 70 onwards
+
+You stop working and decide to take more from your adjustable income investment.
 
 Income | Amount per year
 - | -
 Basic State Pension | + £6,029.40
-Income from your drawdown fund | + £6,500
+Money from your adjustable income | + £6,500
 Income before tax | = £12,529
 Tax you pay | - £386
 **Your total retirement income from 70 onwards** | **= £12,143**
 
-You also have the £31,907 tax-free money that you can use to supplement your income.
+You also have the £25,000 tax-free money you took at 65 to supplement your income.
 $E
 
-## Costs in retirement
+## Work out how much you’ll need in retirement
 
-Add up all the costs you have now. You can use [Money Advice Service’s budget planner](https://www.moneyadviceservice.org.uk/en/tools/budget-planner) to help you work out what they are.
+s1. Add up all the living costs you have now. You can use the [Money Advice Service’s budget planner](https://www.moneyadviceservice.org.uk/en/tools/budget-planner) to help you work out what they are.
+s2. Take away these costs from your retirement income. This will give you an idea of whether you’ll have enough money to live off in retirement.
 
-Take away these costs from your retirement income. This will give you an idea if you’ll have enough money in retirement.
 
-Things you have to pay for in retirement usually include:
+### Living costs in retirement
 
-- living costs, eg food and clothes
-- mortgage or payments
-- energy and water bills
-- TV, phone and internet
-- interest on loans
-- care costs
-- travel
-- leisure
+Over the years your needs will change.
 
-Over the years your needs will change, meaning some of these things will go down and some will go up.
-
-You might pay less on:
+For example, you might pay less on:
 
 - travel – some public transport is free once you reach [State Pension age](https://www.gov.uk/calculate-state-pension)
 - your mortgage – this might be paid off
-- living costs
 
 You might pay more for:
 
-- energy and water bills - you may spend more time at home
-- care costs
+- energy and water bills – you may spend more time at home
+- [care costs](/care-costs)
 
-## Paying more into your pension pot
+##Increase your retirement income
 
-If you don’t think you’ll have enough income in your retirement you could consider adding more to your pot before you retire. You could talk to a financial adviser about how to contribute more to your pot. 
+If you don’t think you’ll have enough money for your retirement, you could pay more into your pot now, take your pot later or delay taking the State Pension.
 
-You can also find out about [ways to boost your pension](https://www.moneyadviceservice.org.uk/en/articles/ways-to-boost-your-pension-in-the-run-up-to-retirement) from the Money Advice Service.
+### Pay more into your pot
 
-There’s a limit to how much you can pay into your pot and still get tax relief. You can pay in up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
+There’s a limit to how much you can pay into your pot and still get tax relief. You can pay in up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance). Your allowance changes once you start taking money from your pot.
 
-## The State Pension
+If you have more than one pot, you can continue to pay into a pot after you start to take money from another.
 
-You can push back when you start receiving the State Pension to help increase your income in retirement. This is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
+The amount you can pay in drops to a maximum of £10,000 a year once you start taking money from a pot. This includes your [tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief) of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 
-You may be able to [top up your State Pension](https://www.gov.uk/statepensiontopup).
+You may still be able to pay into the pot you take money from but you won’t get tax relief on these payments.
+
+###Take your pot later
+
+You may be able to [leave your pot untouched](/leave-pot-untouched) and take it later than the age you agreed with your pension provider (known as your ‘selected retirement age’).
+
+Leaving your money invested for longer and continuing to pay in could give you a higher income when you come to take it.
+
+##State Pension
+
+You can delay when you get the State Pension to help increase your income in retirement. This is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
+
+You may be able to [top up your State Pension](https://www.gov.uk/statepensiontopup) if you’re:
+
+- a man born before 6 April 1951
+- a woman born before 6 April 1953
+
+^Find out more about [ways to boost your pension](https://www.moneyadviceservice.org.uk/en/articles/ways-to-boost-your-pension-in-the-run-up-to-retirement) from the Money Advice Service.^
