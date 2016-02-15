@@ -1,0 +1,36 @@
+<p>
+  If you take <span class="t-calculator-chunk"><%= number_to_currency(estimate.chunk) %></span> from your
+  <span class="t-calculator-pot"><%= number_to_currency(estimate.pot) %></span> pot, you could pay:
+
+  <strong class="calculator__estimate__number t-calculator-chunk-tax">
+    <%= number_to_currency(estimate.chunk_tax) %> in tax
+  </strong>
+
+  and get:
+
+  <strong class="calculator__estimate__number t-calculator-chunk-remaining">
+    <%= number_to_currency(estimate.chunk_remaining) %>
+  </strong>
+
+  leaving:
+
+  <strong class="calculator__estimate__number t-calculator-pot-remaining">
+    <%= number_to_currency(estimate.pot_remaining) %> in your pot
+  </strong>
+</p>
+
+<ul>
+  <li>
+    This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate.
+  </li>
+</ul>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'CalculatorEstimate'
+    , 'estimatedChunkRemaining': <%= estimate.chunk_remaining.to_i %>
+    , 'estimatedChunkTax': <%= estimate.chunk_tax.to_i %>
+    , 'estimatedPotRemaining': <%= estimate.pot_remaining.to_i %>
+  });
+</script>
