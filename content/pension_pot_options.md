@@ -4,7 +4,7 @@ description: You can usually take 25% of your pension pot tax free and then choo
 ---
 # What you can do with your pension pot
 
-You can usually take 25% of your defined contribution pension pot tax free and then choose from a range of options. If you take 25% tax free, you must make a decision on the remaining 75% within 6 months - you can’t then leave it untouched.
+You can usually take 25% of your defined contribution pension pot tax free and then choose from a range of options. If you take 25% tax free, you must make a decision on the remaining 75% within 6 months – you can’t then leave it untouched.
 
 You have 6 options:
 
@@ -18,7 +18,7 @@ You have 6 options:
   <div class="options-overview__item">
     <div class="circle circle--s circle--guaranteed-income"></div>
     <h2>Guaranteed income (annuity)</h2>
-    <p>You use your pot to buy an insurance policy that guarantees you an income for the rest of your life - no matter how long you live.</p>
+    <p>You use your pot to buy an insurance policy that guarantees you an income for the rest of your life – no matter how long you live.</p>
     <p><a class="t-option" href="/guaranteed-income">More on getting a guaranteed income (annuity)</a></p>
   </div>
   <div class="options-overview__item">
@@ -36,7 +36,7 @@ You have 6 options:
   <div class="options-overview__item">
     <div class="circle circle--s circle--take-whole-pot"></div>
     <h2>Take your whole pot in one go</h2>
-    <p>You can cash in your entire pot. One quarter is tax free, the rest is taxable.</p>
+    <p>You can cash in your entire pot – 25% is tax free, the rest is taxable.</p>
     <p><a class="t-option" href="/take-whole-pot">More on taking your whole pot in one go</a></p>
   </div>
   <div class="options-overview__item">
@@ -74,10 +74,10 @@ It’s important to know how much tax you might pay on the money you take from y
           <a href="/leave-pot-untouched">Leave your pot untouched</a>
         </th>
         <td>
-          You can still pay into your pot. Tax relief on payments up to £40,000 per year or 100% of your earnings - whichever is lower.
+          You can still pay into your pot. Tax relief on payments up to £40,000 per year or 100% of your earnings – whichever is lower.
         </td>
         <td>
-          Payments over £40,000 or 100% of your earnings - whichever is lower.
+          Payments over £40,000 or 100% of your earnings – whichever is lower.
         </td>
       </tr>
       <tr>
