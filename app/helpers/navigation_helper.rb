@@ -52,15 +52,22 @@ module NavigationHelper
   end
 
   def navigation_item(item)
-    content_tag(:li, class: 'nav__item') do
-      if item.option
-        capture do
-          concat content_tag(:span, nil, class: "circle circle--s circle--#{item.id}")
-          concat link_to(item.label, item.url, class: 'has-circle')
-        end
-      else
-        link_to(item.label, item.url)
+    classes = %w(nav__item)
+    classes << 'nav__item--parent' if item.parent
+
+    content_tag(:li, class: classes) do
+      navigation_link(item)
+    end
+  end
+
+  def navigation_link(item)
+    if item.option
+      capture do
+        concat content_tag(:span, nil, class: "circle circle--s circle--#{item.id}")
+        concat link_to(item.label, item.url, class: 'has-circle')
       end
+    else
+      link_to(item.label, item.url)
     end
   end
 end

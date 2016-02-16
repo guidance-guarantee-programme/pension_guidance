@@ -1,5 +1,5 @@
 class Navigation
-  Item = Struct.new(:id, :label, :url, :option)
+  Item = Struct.new(:id, :label, :url, :option, :parent)
   Topic = Struct.new(:id, :label, :url, :items)
 
   attr_accessor :taxonomy
@@ -38,13 +38,20 @@ class Navigation
   def find_parented_guides(nodes)
     [].tap do |guides|
       nodes.select(&:has_children?).each do |parent|
-        guides << parent.children.map(&:content).map(&GuideDecorator.method(:cached_for)).map(&method(:build_item))
+        sub_category = []
+        sub_category << build_item(GuideDecorator.cached_for(parent.content), true)
+
+        parent.children.each do |child|
+          sub_category << build_item(GuideDecorator.cached_for(child.content), false)
+        end
+
+        guides << sub_category
       end
     end
   end
 
-  def build_item(guide)
-    Item.new(guide.id, guide.label, guide.url, guide.option?)
+  def build_item(guide, parent = false)
+    Item.new(guide.id, guide.label, guide.url, guide.option?, parent)
   end
 
   def more_category

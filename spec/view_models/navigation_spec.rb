@@ -66,8 +66,11 @@ RSpec.describe Navigation do
       topic = topics.second
       items = topic.items
 
-      expect(items[0][0].id).to eq(baz_guide.id)
-      expect(items[0][0].label).to eq(baz_guide.label)
+      expect(items[0][0].id).to eq(bar_guide.id)
+      expect(items[0][0].label).to eq(bar_guide.label)
+
+      expect(items[0][1].id).to eq(baz_guide.id)
+      expect(items[0][1].label).to eq(baz_guide.label)
 
       expect(items[1][0].id).to eq(qux_guide.id)
       expect(items[1][0].label).to eq(qux_guide.label)
