@@ -22,6 +22,8 @@ Not all providers offer this option. If your current provider doesn’t offer it
 
 This is also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
 
+%Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
+
 {::calculator id="take-cash-in-chunks" /}
 
 ## Tax
