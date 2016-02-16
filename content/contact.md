@@ -32,9 +32,9 @@ If you have a complaint about Pension Wise, you can write to us by post or email
 
 If your complaint is about:
 
-- a phone guidance appointment - include your booking reference number (you’ll find this in your confirmation email)
+- a phone guidance appointment – include your booking reference number (you’ll find this in your confirmation email)
 
-- a face-to-face guidance appointment - include the time, date and location of your appointment
+- a face-to-face guidance appointment – include the time, date and location of your appointment
 
 ^Read our guide if you want to [complain about a pension or pension provider](/pension-complaints).^
 
