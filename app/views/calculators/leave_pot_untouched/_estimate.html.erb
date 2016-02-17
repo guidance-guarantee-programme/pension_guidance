@@ -55,7 +55,12 @@
 
 </div>
 
-  <% unless experiment == 'exp-slider' || experiment == 'exp-slider-abs' %>
+  <% if experiment == 'exp-radios' || experiment == 'exp-buttons' %>
+    <h3 class="heading-medium">What if you contributed more each month?</h3>
+    <p>Contributing more each month could increase your pot size over even further. Try with another amount:</p>
+  <% end %>
+
+  <% if experiment == '' %>
     <h3 class="heading-medium">What if you contributed more each month?</h3>
     <p>If you contributed <%= number_to_currency(contribution.to_f + 50) %> a month, your pot could be worth <strong><%= number_to_currency(bumped_estimate.last) %></strong> (that's <%= number_to_currency(difference_in_bumped_estimate) %> more) in 5 years.</p>
   <% end %>
@@ -65,23 +70,21 @@
   <legend class="visuallyhidden">What if you contributed more each month?</legend>
 
   <% if experiment == 'exp-radios' %>
-    <p>Try with another:</p>
-
     <label class="block-label" for="radio-inline-0" data-adjuster="contribution|0">
       <input id="radio-inline-0" type="radio" name="radio-inline-group" value="0" checked>
-      £0
+      <%= number_to_currency(contribution.to_f + 0) %>
     </label>
-    <label class="block-label" for="radio-inline-1" data-adjuster="contribution|10">
-      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="10">
-      £10
+    <label class="block-label" for="radio-inline-1" data-adjuster="contribution|25">
+      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="25">
+      <%= number_to_currency(contribution.to_f + 25) %>
     </label>
     <label class="block-label" for="radio-inline-2" data-adjuster="contribution|50">
       <input id="radio-inline-2" type="radio" name="radio-inline-group" value="50">
-      £50
+      <%= number_to_currency(contribution.to_f + 50) %>
     </label>
     <label class="block-label" for="radio-inline-3" data-adjuster="contribution|100">
       <input id="radio-inline-3" type="radio" name="radio-inline-group" value="100">
-      £100
+      <%= number_to_currency(contribution.to_f + 100) %>
     </label>
   <% elsif experiment == 'exp-buttons' %>
     <button class="block-label" for="radio-inline-1" data-adjuster="contribution|10">
