@@ -30,12 +30,13 @@
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
       border: none;
-      height: 18px;
-      width: 18px;
-      border-radius: 50%;
-      background: $color-option-leave-pot-untouched;
-      margin-top: -5px;
+      height: 80px;
+      width: 110px;
+      background: rgba(0, 0, 0, 0);
+      margin-top: -47px;
       position: relative;
+      margin-left: -5px;
+      padding-left: 0;
     }
   }
 
@@ -54,6 +55,20 @@
     left: 0;
     margin-left: -1%;
     padding: 0 8px;
+    pointer-events: none;
+  }
+
+  output:before {
+    content: "";
+    position: absolute;
+    border: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: $color-option-leave-pot-untouched;
+    margin-top: 44px;
+    left: 50%;
+    margin-left: -9px;
   }
 
   output:after {
