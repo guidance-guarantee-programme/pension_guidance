@@ -8,15 +8,13 @@ tags:
 
 ## Overview
 
-You can take smaller sums of cash from your pot until it runs out. How much you take and when you take it is up to you.
+You can take smaller sums of cash from your pension pot until it runs out. How much you take and when you take it is up to you.
 
 - You decide how much to take and when to take it.
 - Your 25% tax-free amount isn’t paid in one lump sum – you get it over time.
 - Each time you take a chunk of money 25% is tax free and the rest is taxable.
 
 Some pension providers charge a fee to take cash out.
-
-^Taking a large sum of cash from your pension pot could also affect [your entitlement to any benefits](/benefits).^
 
 Not all providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
@@ -42,10 +40,14 @@ $E
 
 Your pension provider will take off the [tax you owe](/tax#How your tax is paid) before they pay you the cash.
 
-%You may pay emergency tax when you take money from your pot which you can claim back.%
+You may pay emergency tax when you take money from your pot which you can claim back.
 
 If your provider doesn’t pay your emergency tax back automatically, you can claim it back from
 HM Revenue and Customs.
+
+## Benefits
+
+Taking cash chunks from your pot could also affect [your entitlement to any benefits](/benefits).
 
 ## Scams
 
