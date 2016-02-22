@@ -26,7 +26,7 @@ Your pension provider will take off the [tax you owe](/tax#How your tax is paid)
 
 The cash you take will be added to any other income you have over the tax year, eg money from work, savings and benefits.
 
-%You may pay emergency tax when you take money from your pot which you can claim back.%
+You may pay emergency tax when you take money from your pot which you can claim back.
 
 If your provider doesn’t pay your emergency tax back automatically, you can claim it back from
 HM Revenue and Customs.
