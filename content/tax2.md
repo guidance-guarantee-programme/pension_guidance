@@ -122,6 +122,7 @@ You'll be taxed on this money.
 $E
 **Example** 
 Your pot is £60,000 and you take £15,000 tax-free in one go. You buy an annuity with the remaining £45,000 which pays you £2,000 a year. This money is taxable.
+$E
 
 ### Take the 25% in chunks
 
@@ -130,6 +131,7 @@ You can take smaller cash sums from your pot – 25% of each chunk is tax-free.
 $E
 **Example** 
 Your pot is £60,000 and you take £1,000 every month. £250 of this amount is tax-free every time. The remaining £750 is taxable.
+$E
 
 ## How your tax is paid
 
