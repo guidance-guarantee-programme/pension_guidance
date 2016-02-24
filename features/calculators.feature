@@ -9,9 +9,18 @@ Feature: Calculators
 
     Examples:
       | Slug                |
+      | adjustable-income   |
       | leave-pot-untouched |
       | take-cash-in-chunks |
       | take-whole-pot      |
+
+  @javascript
+  Scenario: Estimate how much a customer could take from an adjustable income
+    Given I am on the adjustable income guide
+    When I input the total value of my pension pot, my desired monthly income and my age
+    Then I should see what age I will be when my desired monthly income runs out
+    And it shows me a suggested monthly income that will last until an average life expectancy for someone of my age
+    And it explains the values are estimates based on growth at 3% per year
 
   @javascript
   Scenario: Estimate how much pot could be worth in the future if left untouched
