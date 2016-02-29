@@ -9,6 +9,7 @@ Feature: Calculators
 
     Examples:
       | Slug                |
+      | guaranteed-income   |
       | leave-pot-untouched |
       | take-cash-in-chunks |
       | take-whole-pot      |
@@ -28,3 +29,10 @@ Feature: Calculators
     Then I should see how much tax I might pay
     And I should see how cash I would get
     And I should see how the remaining value of my pot
+
+  @javascript
+  Scenario: Estimate how much my guaranteed income could be
+    Given I am on the guaranteed income guide
+    When I input the total value of my pension pot, and the age I will retire
+    Then I should see how much my tax free lump sum could be
+    And I should see how much my guaranteed income could be

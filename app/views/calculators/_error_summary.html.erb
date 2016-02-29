@@ -7,7 +7,7 @@
   <ul class="error-summary-list">
     <% messages.each do |attribute, attribute_messages| %>
       <% attribute_messages.each do |attribute_message| %>
-        <li><a href="#<%= attribute %>"><%= attribute_message %></a></li>
+        <li><a href="#<%= attribute %>"><%= sanitize(attribute_message, :tags => []) %></a></li>
       <% end %>
     <% end %>
   </ul>

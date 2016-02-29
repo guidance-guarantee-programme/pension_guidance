@@ -1,0 +1,7 @@
+<%= render 'form', form: form %>
+<% if form.valid? %>
+  <%= render 'estimate',
+    estimate: form.estimate,
+    pot: form.pot
+  %>
+<% end %>

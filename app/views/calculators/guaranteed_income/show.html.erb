@@ -1,0 +1,12 @@
+<% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
+<% content_for(:meta_description, @guide.description) %>
+
+<%= link_to 'Back to description', @guide.url, class: 'link-back' %>
+
+<%= content_tag :span, nil, class: ['circle', 'circle--m', "circle--#{@guide.slug}"] %>
+
+<%= content_tag :h1, @guide.title %>
+
+<%= render 'calculator', form: @form %>
+
+<%= link_to 'Back to description', @guide.url, class: 'link-back' %>
