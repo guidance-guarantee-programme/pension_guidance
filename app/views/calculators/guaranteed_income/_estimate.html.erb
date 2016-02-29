@@ -1,0 +1,19 @@
+<p>
+  Based on what you’ve told us, if you use your <%= number_to_currency(pot) %> pension pot to buy an annuity, you could get:
+
+  <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">
+    <%= number_to_currency(estimate[:tax_free_lump_sum]) %> tax free
+  </strong>
+
+  and get:
+
+  <strong class="calculator__estimate__number t-calculator-income">
+    <%= number_to_currency(estimate[:income]) %> guaranteed annual taxable income, for the rest of your life
+  </strong>
+</p>
+
+<ul class="t-calculator-notes">
+  <li>
+    The amount in your pot will be affected by inflation and any fees your provider charges.
+  </li>
+</ul>

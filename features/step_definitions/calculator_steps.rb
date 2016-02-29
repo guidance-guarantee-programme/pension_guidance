@@ -8,6 +8,11 @@ Given(/^I am on the take cash in chunks guide$/) do
   @page.load
 end
 
+Given(/^I am on the guaranteed income guide$/) do
+  @page = Pages::GuaranteedIncomeGuide.new
+  @page.load
+end
+
 When(/^I input the total value of my pension pot and how much I could contribute each year$/) do
   calculator = @page.calculator
 
@@ -22,6 +27,14 @@ When(/^I input the total value of my pension pot, my income for the year and how
   calculator.pot_field.set('40,000.00')
   calculator.income_field.set('  25000   ')
   calculator.chunk_field.set('  3000')
+  calculator.calculate_button.click
+end
+
+When(/^I input the total value of my pension pot, and the age I will retire$/) do
+  calculator = @page.calculator
+
+  calculator.pot_field.set('100,000.00')
+  calculator.age_field.set('    55  ')
   calculator.calculate_button.click
 end
 
@@ -62,4 +75,12 @@ Then(/^it explains the values will be affected by inflation and how much my prov
   content = 'The amount in your pot will be affected by inflation and any fees your provider charges.'
 
   expect(@page.calculator.notes).to have_content(content)
+end
+
+Then(/^I should see how much my tax free lump sum could be$/) do
+  expect(@page.calculator.tax_free_lump_sum).to have_content('£25,000 tax free')
+end
+
+And(/^I should see how much my guaranteed income could be$/) do
+  expect(@page.calculator.income).to have_content('£3,211 guaranteed annual taxable income, for the rest of your life')
 end

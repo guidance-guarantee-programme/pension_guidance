@@ -54,3 +54,14 @@ en:
               blank: Please enter your income for the year
               not_a_number: Using numbers, please enter your income for the year
               greater_than_or_equal_to: Your income for the year must be £0 or more
+        calculators/guaranteed_income_form:
+          attributes:
+            pot:
+              blank: Please enter the amount in your pot
+              not_a_number: Using numbers, please enter the amount in your pot
+              greater_than: The amount in your pot must be at least £1
+            age:
+              blank: Please enter the age you plan to retire at
+              not_a_number: Using numbers, please enter how much you can pay in each month
+              greater_than_or_equal_to: Age is one factor for calculating retirement income.  The older you are, the higher the annuity quotes you’ll get. Our calculator won’t provide an estimate if you’re retiring after age 75 - in this case you should get advice.
+              less_than_or_equal_to: Age is one factor for calculating retirement income.  The older you are, the higher the annuity quotes you’ll get. Our calculator won’t provide an estimate if you’re retiring before age 55 - in this case you should get advice.
