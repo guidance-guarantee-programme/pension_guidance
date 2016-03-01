@@ -33,7 +33,7 @@ en:
               less_than: Your monthly income must be less than your pension pot value
             age:
               blank: Please enter the age you plan to retire at
-              not_a_number: Using numbers, please enter how much you can pay in each month
+              not_a_number: Using numbers, please enter the age you plan to retire at
               greater_than_or_equal_to: Age is one factor for calculating retirement income.  The older you are, the higher the annuity quotes you’ll get. Our calculator won’t provide an estimate if you’re retiring after age 75 - in this case you should get advice.
               less_than_or_equal_to: Age is one factor for calculating retirement income.  The older you are, the higher the annuity quotes you’ll get. Our calculator won’t provide an estimate if you’re retiring before age 55 - in this case you should get advice.
         calculators/leave_pot_untouched_form:
