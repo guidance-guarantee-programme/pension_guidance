@@ -1,0 +1,22 @@
+<p>
+  Based on what you’ve told us, if you use your <%= number_to_currency(pot) %> pension pot to take an adjustable income, you could get:
+
+  <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">
+    <%= number_to_currency(estimate[:tax_free_lump_sum]) %> tax free
+  </strong>
+
+  and from the <span class="t-calculator-taxable-portion"><%= number_to_currency(estimate[:taxable_portion]) %></span> left over:
+
+  <strong class="calculator__estimate__number">
+    your monthly income of <%= number_to_currency(desired_monthly_income) %>
+    would last until you're <span class="t-calculator-age-for-desired-income"><%= estimate[:desired_income_with_pot_growth_lasts_until] %></span>
+  </strong>
+</p>
+
+<ul class="t-calculator-notes">
+  <li class="t-calculator-life-expectancy-income">
+    An average life expectancy for someone born in the same year as you is <%= estimate[:life_expectancy] %> years. You could take a monthly income of <%= number_to_currency(estimate[:monthly_income_until_life_expectancy]) %> which would last until then.
+  </li>
+  <li>Your monthly income is subject to income tax.</li>
+  <li>This is an estimate based on your pot growing at a rate of about <%= estimate[:growth_interest_rate].to_i %>% per year — this may vary.</li>
+</ul>

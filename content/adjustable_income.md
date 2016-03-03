@@ -27,6 +27,8 @@ $E
 
 Not all pension providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
+{::calculator id="adjustable-income" /}
+
 ## How adjustable income works
 
 Your provider will offer you different investments with different risks. You pick the investments that are right for you and get a retirement income from them. You should think about how much you take out every year and [how long your money needs to last](/making-money-last).

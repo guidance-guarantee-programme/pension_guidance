@@ -1,0 +1,15 @@
+<%
+  error_messages = local_assigns[:error_messages] || []
+  hint = local_assigns[:hint]
+  labelled_by = "#{field}-a"
+%>
+
+<div class="form-group <%= 'error' unless error_messages.empty? %>">
+  <label class="form-label" for="<%= field %>">
+    <%= label %>
+    <%= content_tag :span, hint, class: 'form-hint' unless hint.blank? %>
+  </label>
+  <%= simple_format error_messages.join("\n"), { class: 'error-message' }, wrapper_tag: 'span' %>
+  <%= text_field_tag field, number_to_currency(value, unit: ''),
+                     class: %w(form-control calculator__field) << "t-calculator-#{field}" %>
+</div>
