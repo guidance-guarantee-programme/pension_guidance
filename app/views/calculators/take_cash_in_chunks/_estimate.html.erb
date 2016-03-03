@@ -29,8 +29,6 @@
   window.dataLayer = window.dataLayer || [];
   dataLayer.push({
     'event': 'CalculatorEstimate'
-    , 'estimatedChunkRemaining': <%= estimate.chunk_remaining.to_i %>
-    , 'estimatedChunkTax': <%= estimate.chunk_tax.to_i %>
-    , 'estimatedPotRemaining': <%= estimate.pot_remaining.to_i %>
+    , 'tax_paid': <%= estimate.chunk_tax.to_i %>
   });
 </script>
