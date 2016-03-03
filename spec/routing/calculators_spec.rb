@@ -2,6 +2,7 @@ RSpec.describe 'Calculator routing', type: :routing do
   it 'routes /adjustable-income/estimate to calculators/adjustable_income#show' do
     expect(get('/adjustable-income/estimate'))
       .to route_to(controller: 'calculators/adjustable_income', action: 'show')
+  end
 
   it 'routes /guaranteed-income/estimate to calculators/guaranteed_income#show' do
     expect(get('/guaranteed-income/estimate'))

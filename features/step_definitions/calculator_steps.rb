@@ -35,7 +35,6 @@ When(/^I input the total value of my pension pot, my income for the year and how
   calculator.calculate_button.click
 end
 
-
 When(/^I input the total value of my pension pot, my desired monthly income and my age$/) do
   calculator = @page.calculator
 
