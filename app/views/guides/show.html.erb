@@ -1,4 +1,56 @@
 <% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
 <% content_for(:meta_description, @guide.description) %>
 
+<% content_for :sticky_sidebar do %>
+  <div class="l-sticky-sidebar">
+    <div class="sticky-sidebar js-sticky-sidebar sticky-sidebar--<%= @guide.slug %>">
+      <div class="sidebar-hr"></div>
+      <div class="sticky-sidebar__nav">
+        <% @guide.headers.each do |id, text| %>
+          <h2 class="sticky-sidebar__heading">
+            <%= link_to text, "##{id}", class: 't-aside--heading' %>
+          </h2>
+        <% end %>
+
+        <ul class="sticky-sidebar__list nav">
+          <% @guide.headers(2).each do |id, text| %>
+            <li>
+              <%= link_to text, "##{id}",
+                          class: [
+                              't-aside--link',
+                              'sticky-sidebar__link',
+                              (id.include?('calculator') ? 'sticky-sidebar__link--calculator' : '')
+                          ]
+              %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
+<% content_for :after_script do %>
+  <%= javascript_include_tag 'bootstrap/js/affix' %>
+  <%= javascript_include_tag 'bootstrap/js/scrollspy' %>
+
+  <script>
+    'use strict';
+    $('.js-sticky-sidebar').affix({
+      offset: {
+        top: $('.js-sticky-sidebar').offset().top,
+        bottom: function () {
+          return (this.bottom = $('.js-footer').outerHeight(true) + 150);
+        }
+      }
+    });
+
+    $('body').scrollspy({
+      target: '.js-sticky-sidebar',
+      offset: 50
+    });
+  </script>
+<% end %>
+
 <%= @guide.content %>
