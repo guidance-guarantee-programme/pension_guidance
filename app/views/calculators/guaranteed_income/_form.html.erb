@@ -1,0 +1,38 @@
+<%
+  form = local_assigns[:form]
+  errors = form&.errors
+%>
+
+<h2 id="calculator">Estimate how much your guaranteed income could be</h2>
+
+<%= render 'calculators/error_summary', messages: errors&.messages if form&.invalid? %>
+
+<form action="/guaranteed-income/estimate#form" method="get">
+  <%= render 'calculators/form_input_currency',
+             field: :pot,
+             value: form&.pot,
+             label: 'Amount you’ll have in your pot',
+             error_messages: errors&.get(:pot) %>
+
+  <%= render 'calculators/form_input_number',
+             field: :age,
+             value: form&.age,
+             label: 'Your age when you plan to retire',
+             error_messages: errors&.get(:age) %>
+
+  <%= render 'calculators/form_input_submit' %>
+</form>
+
+<% if form %>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'event': 'CalculatorEstimate',
+      'valid': <%= form.valid? %>
+      <% if form.valid? %>
+      , 'pot': <%= form.pot.to_i %>
+      , 'age': <%= form.age.to_i %>
+      <% end %>
+    });
+  </script>
+<% end %>

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     end
 
     get 'adjustable-income/estimate', to: 'calculators/adjustable_income#show'
+    get 'guaranteed-income/estimate', to: 'calculators/guaranteed_income#show'
     get 'leave-pot-untouched/estimate', to: 'calculators/leave_pot_untouched#show'
     get 'take-cash-in-chunks/estimate', to: 'calculators/take_cash_in_chunks#show'
     get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
