@@ -2,8 +2,8 @@
   window.dataLayer = window.dataLayer || [];
   dataLayer.push({
     'event': 'CalculatorEstimate'
-    , 'pot_tax': <%= estimate.pot_tax.to_i %>
-    , 'pot_received': <%= estimate.pot_received.to_i %>
+    , 'tax_paid': <%= estimate.pot_tax.to_i %>
+    , 'pot_payout': <%= estimate.pot_received.to_i %>
   });
 </script>
 
