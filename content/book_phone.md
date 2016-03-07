@@ -1,5 +1,5 @@
 ---
-description: Call 0800 100 166 between 8am to 10pm, every day.
+description: Call 0800 138 3944 between 8am to 10pm, every day.
 tags:
   - appointments
   - booking
@@ -7,7 +7,7 @@ tags:
 
 # How to book a phone appointment
 
-Phone **0800 100 166**.
+Phone **0800 138 3944**.
 
 If you’re outside the UK phone +44 20 3733 3495.
 
