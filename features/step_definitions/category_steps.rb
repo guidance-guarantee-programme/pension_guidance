@@ -20,11 +20,12 @@ end
 
 Then(/^I can navigate to guides that belong to the category$/) do
   expect(@page.guide_links.map(&:text))
-    .to eq(['Shop around and compare providers',
-            'Make your money last',
+    .to eq(['Make your money last',
+            'Combine different pension pots',
             'Work out what you’ll have in retirement',
             'Taking your pension before 55',
             'How to avoid a pension scam',
+            'Shop around and compare providers',
             'What you can do with your pot',
             'Leave your pot untouched',
             'Get a guaranteed income (annuity)',

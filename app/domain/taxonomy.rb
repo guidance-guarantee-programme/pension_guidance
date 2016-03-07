@@ -33,16 +33,19 @@ class Taxonomy
     end
   end
 
+  # rubocop:disable Metrics/AbcSize
   def taking_your_pension_money
     category_node('taking-your-pension-money').tap do |node|
-      node << guide_node('shop-around')
       node << guide_node('making-money-last')
+      node << guide_node('combine-pots')
       node << guide_node('work-out-income')
       node << guide_node('your-pension-before-55')
       node << guide_node('scams')
+      node << guide_node('shop-around')
       node << the_6_pension_options
     end
   end
+  # rubocop:enable Metrics/AbcSize
 
   def the_6_pension_options
     guide_node('pension-pot-options').tap do |node|
