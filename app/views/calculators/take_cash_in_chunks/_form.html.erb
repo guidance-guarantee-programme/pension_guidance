@@ -9,22 +9,22 @@
 
 <form action="/take-cash-in-chunks/estimate#form" method="get">
   <%= render 'calculators/form_input_currency',
-             field: :pot,
-             value: form&.pot,
-             label: 'Amount in your pot',
-             error_messages: errors&.get(:pot) %>
-
-  <%= render 'calculators/form_input_currency',
              field: :income,
              value: form&.income,
-             label: 'Income for the year',
-             hint: 'Includes your salary, savings, benefits and State Pension payments',
+             label: 'What’s your yearly income?',
+             hint: 'Include money you get from work, benefits, savings and State Pension payments',
              error_messages: errors.try(:get, :income) %>
+
+  <%= render 'calculators/form_input_currency',
+             field: :pot,
+             value: form&.pot,
+             label: 'How much is in your pot?',
+             error_messages: errors&.get(:pot) %>
 
   <%= render 'calculators/form_input_currency',
              field: :chunk,
              value: form&.chunk,
-             label: 'How much do you want to take in your first year?',
+             label: 'How much do you want to take as your first cash chunk?',
              error_messages: errors&.get(:chunk) %>
 
   <%= render 'calculators/form_input_submit' %>
