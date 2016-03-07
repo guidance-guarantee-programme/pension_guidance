@@ -16,6 +16,7 @@ This table gives an overview of how much tax you may pay on the money you take f
   <table class="options-table">
     <thead>
       <tr>
+        <th scope="col" style="width:auto;"></th>
         <th scope="col">
         The pension options
         </th>
@@ -29,6 +30,9 @@ This table gives an overview of how much tax you may pay on the money you take f
     </thead>
     <tbody>
       <tr>
+        <td style="width:auto;">
+          <span class="circle circle--s circle--leave-pot-untouched"></span>
+        </td>
         <th scope="row">
           <a href="/leave-pot-untouched">Leave your pot untouched</a>
         </th>
@@ -40,6 +44,9 @@ This table gives an overview of how much tax you may pay on the money you take f
         </td>
       </tr>
       <tr>
+        <td style="width:auto;">
+          <span class="circle circle--s circle--guaranteed-income"></span>
+        </td>
         <th scope="row">
           <a href="/guaranteed-income">Guaranteed income (annuity)</a>
         </th>
@@ -51,6 +58,9 @@ This table gives an overview of how much tax you may pay on the money you take f
         </td>
       </tr>
       <tr>
+        <td style="width:auto;">
+          <span class="circle circle--s circle--adjustable-income"></span>
+        </td>
         <th scope="row">
           <a href="/adjustable-income">Adjustable income (flexi-access drawdown)</a>
         </th>
@@ -62,6 +72,9 @@ This table gives an overview of how much tax you may pay on the money you take f
         </td>
       </tr>
       <tr>
+        <td style="width:auto;">
+          <span class="circle circle--s circle--take-cash-in-chunks"></span>
+        </td>
         <th scope="row">
           <a href="/take-cash-in-chunks">Take cash in chunks</a>
         </th>
@@ -73,6 +86,9 @@ This table gives an overview of how much tax you may pay on the money you take f
         </td>
       </tr>
       <tr>
+        <td style="width:auto;">
+          <span class="circle circle--s circle--take-whole-pot"></span>
+        </td>
         <th scope="row">
           <a href="/take-whole-pot">Take your whole pot in one go</a>
         </th>
@@ -84,6 +100,9 @@ This table gives an overview of how much tax you may pay on the money you take f
         </td>
       </tr>
       <tr>
+        <td style="width:auto;">
+          <span class="circle circle--s circle--mix-options"></span>
+        </td>
         <th scope="row">
           <a href="/mix-options">Mix your options</a>
         </th>
@@ -117,7 +136,7 @@ There are 2 ways you can take your tax-free amount.
 You can take 25% as a lump sum without paying tax. If you do this, you can’t leave the remaining 75% untouched. You must either:
 
 - buy a [guaranteed income (annuity)](/guaranteed-income)
-- get an [adjustable income (flexi-access drawdown)](/adjustable-income) 
+- get an [adjustable income (flexi-access drawdown)](/adjustable-income)
 - take the [whole pot as cash](/take-whole-pot)
 
 $E
@@ -130,13 +149,13 @@ $E
 You can take smaller cash sums from your pot without paying tax. 25% of each chunk is tax-free.
 
 $E
-**Example** 
+**Example**
 Your pot is £60,000 and you take £1,000 every month – £250 of this is tax-free. The remaining £750 is taxable.
 $E
 
 ## How your tax is paid
 
-Money you take from your pot comes from your provider with the tax already taken off. 
+Money you take from your pot comes from your provider with the tax already taken off.
 
 Your provider will also take off any tax due on your State Pension.
 
@@ -146,7 +165,7 @@ You may pay emergency tax when you take money from your pot. You can [claim this
 
 ### If you continue to work
 
-Your employer will take any tax you owe off your earnings and your State Pension. This is called Pay As You Earn (PAYE). 
+Your employer will take any tax you owe off your earnings and your State Pension. This is called Pay As You Earn (PAYE).
 
 If your total income (including money from pensions and PAYE) is £100,000 or more for the tax year, or if you’re self-employed, you’ll have to fill in a [Self-Assessment tax return](https://www.gov.uk/self-assessment-tax-returns).
 
