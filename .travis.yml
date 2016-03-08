@@ -29,3 +29,6 @@ deploy:
 notifications:
   slack:
     secure: dbkW7tikYd7n+K8JgMmfowamyeYxWAFkEEJbtVwKtKaucxezrrfggdThKnrQSu5a9JDwl3Owfy8Cd8XICG/Sy92REM9i6MIMeiO95j4lHwVt4up9UvXrxWbcHczRcBFFNAPj0oxRNFYmkwyYVqNtNk9G/TBUUnVbGC3DcQ4IRoo=
+branches:
+  except:
+    - /^prototypes\/.*$/
