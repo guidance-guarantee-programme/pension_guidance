@@ -37,4 +37,7 @@ Rails.application.configure do
   config.cache_store = :null_store
 
   config.mount_javascript_test_routes = true
+
+  # Generate SASS source maps.
+  config.sass.inline_source_maps = true
 end
