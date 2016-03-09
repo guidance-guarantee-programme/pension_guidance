@@ -66,6 +66,10 @@ You may still be able to pay into the pot you take your adjustable income from b
 If you’re interested in this option you might want to [get financial advice](/financial-advice) first. A financial adviser
 can help you to compare adjustable income products and work out which is best for you.
 
+## Scams
+
+Beware of pension scams contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
+
 {::options parse_block_html="true" /}
 <div class="next-steps next-steps--adjustable-income">
 
