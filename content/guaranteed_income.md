@@ -58,6 +58,9 @@ You may have to pay administration fees.
 
 If the insurance company you bought your annuity with goes bust the [Financial Services Compensation Scheme](/protection) will cover you in full.
 
+## Scams
+Beware of pension scams contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
+
 {::options parse_block_html="true" /}
 <div class="next-steps next-steps--guaranteed-income">
 
