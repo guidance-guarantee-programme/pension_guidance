@@ -4,7 +4,7 @@ description: Find out about the new annuity rules set to change in April 2017.
 
 # If you’ve already bought an annuity
 
-Annuity rules will change in 2017. You may then be able to sell an existing annuity and use the money to get a lump sum or a [adjustable income](/adjustable-income).
+Annuity rules will change in 2017. You may then be able to sell an existing annuity and use the money to get a lump sum or an [adjustable income](/adjustable-income).
 
 ^Under current rules, once you’ve bought an annuity you can’t change the decision.^
 
@@ -18,6 +18,6 @@ Under the new rules you won’t be able to sell your existing annuity back to yo
 
 The Government is currently deciding on how the new rules could work and will give more details nearer the time. To find out more you can read the full [annuity announcement](https://www.gov.uk/government/news/pension-freedoms-to-be-extended-to-people-with-annuities).
 
-If you’re thinking of selling your annuity to pay off debts, you should get advice first.
+If you’re thinking of selling your annuity to pay off debts you should get advice first.
 
-The [Money Advice Service](https://www.moneyadviceservice.org.uk/en) and [Citizens Advice](http://www.citizensadvice.org.uk) services both offer free and impartial debt advice.
+The [Money Advice Service](https://www.moneyadviceservice.org.uk/en) and [Citizens Advice](http://www.citizensadvice.org.uk) both offer free and impartial debt advice.
