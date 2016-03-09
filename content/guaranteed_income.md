@@ -25,7 +25,9 @@ There are lots of different types of annuity and you can shop around – you don
 -|-
 Single life | Paid just to you, either for life or for a fixed number of years.
 Joint life | Payments continue to your spouse or partner after you die.
-Fixed term or Guaranteed period | Stops paying at the end of the set term, eg you get a guaranteed 10 year annuity and die after 7 years, your spouse or partner still gets payments for another 3 years.
+Fixed term | Pays an income for a set number of years, then a guaranteed sum which you can invest or use to buy another annuity.
+Short term | Stops paying at the end of a set number of years (up to 5 years) or when you die (whichever comes first).
+Guaranteed period | Pays out for a set term even if you die within that term, eg you get a 10-year annuity and die after 7 years, your spouse or partner still gets payments for another 3 years or a lump sum.
 Enhanced or Impaired | May pay more than a standard annuity if you smoke or have a medical condition, eg diabetes or high blood pressure.
 Escalating | The amount increases each year to reduce the effect of inflation.
 Level | Pays a flat amount of income each year.
