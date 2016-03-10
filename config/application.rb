@@ -3,6 +3,7 @@ require_relative './boot'
 require 'action_controller/railtie'
 require 'action_view/railtie'
 require 'sprockets/railtie'
+require 'sprockets/es6'
 
 Bundler.require(*Rails.groups)
 
