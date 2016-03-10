@@ -53,7 +53,7 @@ And(/^I should see how the remaining value of my pot$/) do
 end
 
 Then(/^it explains the values are estimates based on growth at 3% per year$/) do
-  content = 'This is an estimate based on your pot growing at a rate of about 3% per year — this may vary.'
+  content = 'This is an estimate based on your whole pot growing at a rate of about 3% per year — this may vary.'
 
   expect(@page.calculator.notes).to have_content(content)
 end
