@@ -13,23 +13,26 @@ You don’t have to start taking money from your pension pot when you reach your
 
 - The money in your pot could grow.
 - You could have more money to last a shorter length of time.
-- You (and your employer) can also still pay into your pot but there may be restrictions.
-
-{::calculator id="leave-pot-untouched" /}
 
 ## Tax
 
-You don’t pay tax while the money stays in your pot. You can still pay into it up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance).
+You don’t pay tax while the money stays in your pot.
 
 Money you leave in your pot can be [passed on](/when-you-die) tax free if you die before the age of 75.
 
 ## Fees and investment risk
 
-Your provider may charge you administration fees for managing your pot.
+You may be charged extra fees if you don't start taking your money when you reach your selected retirement age. Check with your provider.
 
 As with every investment the value of your pot could go up or down.
 
-%Your provider may charge you a penalty fee if you don’t start taking your pension when you reach your selected retirement age.%
+## Continuing to pay in
+
+You (and your employer) can continue to pay into your pot but there may be restrictions. 
+
+You usually pay tax if savings in your pension pots go above the [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance). This is currently £40,000 a year.
+
+{::calculator id="leave-pot-untouched" /}
 
 ## Scams
 
@@ -42,8 +45,8 @@ If someone contacts you unexpectedly about getting money out of your pot before 
 
 Ask your pension provider the following questions:
 
-- What are your fees for leaving my money in longer?
-- Do I have to take the money by a certain date and are there penalty fees if I don’t?
+- Do I have to take the money by a certain date?
+- What fees will you charge if I leave my money longer?
 - How much is the pot likely to grow each year?
 - How is the money invested and can I change this if I want?
 - How much can I still pay in?
