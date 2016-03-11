@@ -10,7 +10,7 @@ class GuaranteedIncomeCalculator
   attr_accessor :pot, :age
 
   def estimate
-    { income: taxable_amount * annuity_rate, tax_free_lump_sum: tax_free_lump_sum }
+    { income: income_rounded, tax_free_lump_sum: tax_free_lump_sum }
   end
 
   private
@@ -21,6 +21,10 @@ class GuaranteedIncomeCalculator
 
   def income
     taxable_amount * annuity_rate
+  end
+
+  def income_rounded
+    income.round(-2)
   end
 
   def taxable_amount
