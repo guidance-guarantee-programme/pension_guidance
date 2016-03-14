@@ -12,5 +12,6 @@
   <%= simple_format error_messages.join("\n"), { class: 'error-message' }, wrapper_tag: 'span' %>
   <%= content_tag :span, '£', id: labelled_by %>
   <%= text_field_tag field, number_to_currency(value, unit: ''), 'aria-labelledby' => labelled_by,
-                     class: %w(form-control calculator__field) << "t-calculator-#{field}" %>
+                     class: %w(form-control calculator__field) << "t-calculator-#{field}",
+                     "data-value": value  %>
 </div>

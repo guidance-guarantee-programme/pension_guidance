@@ -1,0 +1,13 @@
+.highlight {
+  -webkit-animation: highlight 0.8s ease-in-out 1;
+   animation: highlight 0.8s ease-in-out 1;
+}
+
+@-webkit-keyframes highlight {
+   0% {background: #ffffa6;}
+   100% {background: none;}
+}
+@keyframes highlight {
+   0% {background: #ffffa6;}
+   100% {background: none;}
+}
