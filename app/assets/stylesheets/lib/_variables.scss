@@ -70,3 +70,11 @@ $navigation-z-bottom: 1;
 $navigation-z-top: 2;
 
 $sticky-sidebar-gutter: 20px;
+
+// slider
+$slider-default-colour: $grey-1;
+$slider-track-width: 16em;
+$slider-track-height: .625em;
+$slider-track-background: $white;
+$slider-track-fill: linear-gradient(90deg, $grey-3 25%, $grey-3 100%);
+$slider-thumb-diameter: 1.5em;

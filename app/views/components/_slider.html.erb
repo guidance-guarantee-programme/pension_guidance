@@ -1,0 +1,19 @@
+<%
+  id = local_assigns[:id] || "slider-#{SecureRandom.uuid}"
+  name = local_assigns[:name] || "slider"
+  min = local_assigns[:min] || 0
+  max = local_assigns[:max] || 150
+  step = local_assigns[:step] || 10
+  initial_value = local_assigns[:initial_value] || 0
+  option = local_assigns[:option] ? "slider--#{local_assigns[:option]}" : ""
+%>
+
+<div class="slider <%= option %>" data-slider id="<%= id %>">
+  <input data-slider-text-input
+         name="<%= name %>"
+         min="<%= min %>"
+         max="<%= max %>"
+         step="<%= step %>"
+         value="<%= initial_value %>"
+  >
+</div>
