@@ -105,7 +105,7 @@ $slider-variants: (
         @include thumb($colour: $colour)
       }
 
-      &::ms-thumb {
+      &::-ms-thumb {
         @include thumb($colour: $colour)
       }
     }
