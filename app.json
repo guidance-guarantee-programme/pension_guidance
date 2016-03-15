@@ -4,7 +4,7 @@
   "website": "https://www.pensionwise.gov.uk",
   "repository": "https://github.com/guidance-guarantee-programme/pension_guidance",
   "env": {
-    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-multi.git",
     "LOCATIONS_TTL": "3600",
     "LOCATIONS_URL": "https://locator.pensionwise.gov.uk/locations.json",
     "NEW_RELIC_LOG": "STDOUT",
