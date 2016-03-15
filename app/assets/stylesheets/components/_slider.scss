@@ -1,0 +1,113 @@
+// MIXINS
+@mixin track($flag: true) {
+  width: $slider-track-width;
+  height: $slider-track-height;
+  border-radius: $slider-track-height / 2;
+  box-shadow: inset 2px 2px 0 darken($grey-2, 1.7);
+  border-right: 2px solid $grey-3;
+  border-bottom: 2px solid $grey-3;
+  background: $slider-track-background;
+
+  @if $flag {
+    background: $slider-track-fill no-repeat $slider-track-background;
+    background-size: 0 100%;
+  }
+}
+
+@mixin thumb($colour: $slider-default-colour) {
+  width: $slider-thumb-diameter;
+  height: $slider-thumb-diameter;
+  border-radius: $slider-thumb-diameter;
+  border: 3px solid $colour;
+  background: $colour;
+  cursor: ew-resize;
+}
+
+.slider {
+  width: $slider-track-width;
+  position: relative;
+}
+
+.slider__range-input {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: $slider-track-width;
+  height: $slider-thumb-diameter * 2;
+  font-size: 1em;
+  cursor: pointer;
+
+  &,
+  &::-webkit-slider-runnable-track,
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  &::-moz-range-track {
+    @include track();
+  }
+
+  &::-moz-focus-outer {
+    outline: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include track();
+  }
+
+  &::-ms-track {
+    @include track(false);
+    border: 0;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    border-radius: $slider-track-height/2;
+    background: $slider-track-fill;
+  }
+
+  &::-webkit-slider-thumb {
+    @include thumb();
+    position: relative;
+    margin-top: ($slider-track-height - $slider-thumb-diameter)/2;
+  }
+
+  &::-moz-range-thumb {
+    @include thumb();
+  }
+
+  &::-ms-thumb {
+    @include thumb();
+  }
+
+  &:focus {
+    outline: 2px solid $focus-colour;
+  }
+}
+
+$slider-variants: (
+  'leave-pot-untouched': $color-option-leave-pot-untouched,
+  'guaranteed-income': $color-option-guaranteed-income,
+  'adjustable-income': $color-option-adjustable-income,
+  'take-cash': $color-option-take-cash,
+  'whole-pot': $color-option-take-whole-pot,
+  'mix-options': $color-option-mix-options
+);
+
+@each $variant, $colour in $slider-variants {
+  .slider--#{$variant} {
+    .slider__range-input {
+      &::-webkit-slider-thumb {
+        @include thumb($colour: $colour)
+      }
+
+      &::-moz-range-thumb {
+        @include thumb($colour: $colour)
+      }
+
+      &::ms-thumb {
+        @include thumb($colour: $colour)
+      }
+    }
+  }
+}
