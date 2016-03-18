@@ -49,7 +49,7 @@ $E
 You have a pot of £80,000 and take a tax-free lump sum of £20,000. This leaves you with £60,000 to invest. You get an income of £3,000 a year from your investment. If you pay 20% tax you’ll get £2,400.
 $E
 
-If you take the 25% tax-free lump sum, you must move the rest into flexi-access drawdown within 6 months or use one of the [other options](/pension-pot-options).
+If you take the 25% tax-free lump sum, you must get an adjustable income with the rest or use one of the [other options](/pension-pot-options).
 
 You can move your pot gradually – you don’t have to move it all at once. Each time you move a sum, 25% is tax free.
 
