@@ -42,7 +42,7 @@ If you decide to buy an annuity you can still take up to 25% of your pension pot
 
 You [pay tax on income from an annuity](/tax), just like you do on your salary. This is because when you’re paying into your pension you get tax relief on your contributions.
 
-^You have to buy the annuity within 6 months of taking your tax-free cash or use one of the [other pension options](/pension-pot-options).^
+^If you take the 25% tax-free lump sum you must buy an annuity with the rest or use one of the [other pension options](/pension-pot-options).^
 
 ## How an annuity is calculated
 
