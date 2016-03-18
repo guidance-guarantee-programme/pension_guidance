@@ -11,7 +11,7 @@ An appointment is a 45 minute conversation between you and a Pension Wise guidan
 Appointments are over the **phone** or **face to face**.
 
 [Book a phone appointment](/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
-[Book a face to face appointment](/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
+[Book a face-to-face appointment](/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
 
 ## Before you book
 
