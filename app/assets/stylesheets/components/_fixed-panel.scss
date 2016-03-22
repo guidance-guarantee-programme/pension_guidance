@@ -1,0 +1,30 @@
+.fixed-panel {
+  position: absolute;
+
+  &.affix {
+    @include box-sizing(border-box);
+    background: $fixed-panel-solid-background;
+    background-color: $fixed-panel-transparent-background;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+
+    @include media($min-width: ($site-width + $gutter * 2)) {
+      margin: 0 -40px;
+      padding-left: 40px;
+      width: ($site-width / 3) * 2;
+    }
+  }
+
+  &.affix-bottom {
+    padding-top: 15px;
+  }
+}
+
+.fixed-panel__button {
+  display: inline-block;
+  margin-bottom: -15px;
+}

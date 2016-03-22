@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 ruby IO.read('.ruby-version').strip
 
+# force Bundler to use HTTPS for github repos
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
+
 gem 'autoprefixer-rails'
 gem 'bugsnag'
 gem 'canonical-rails'
@@ -19,6 +22,7 @@ gem 'newrelic_rpm'
 gem 'nokogiri'
 gem 'output-templates', '~> 4.1.0', github: 'guidance-guarantee-programme/output-templates'
 gem 'phoner'
+gem 'princely'
 gem 'postcodes_io'
 gem 'puma'
 gem 'rack-contrib'
@@ -49,6 +53,7 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'fakeredis'
   gem 'launchy'
+  gem 'pdf-inspector', require: 'pdf/inspector'
   gem 'poltergeist'
   gem 'scss-lint', '~> 0.30'
   gem 'shoulda-matchers'
