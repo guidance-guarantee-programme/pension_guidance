@@ -68,7 +68,7 @@ Beware of pension scams contacting you unexpectedly about an investment or busin
 
 - Ask your provider if your pension pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
 - Ask your provider about the types of annuity they offer, eg if you’re in poor health you could get a better rate.
-- You can [shop around and compare providers](/shop-around) to get the best deal
+- You can [shop around and compare providers](/shop-around) to get the best deal.
 - Understand [how much tax you’ll pay](/tax) on your annuity income.
 
 **Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.**
