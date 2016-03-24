@@ -4,9 +4,9 @@ description: You can usually take 25% of your pension pot tax free and then choo
 ---
 # What you can do with your pension pot
 
-You can usually take 25% of your defined contribution pension pot tax free and then choose from a range of options. If you take 25% tax free, you must make a decision on the remaining 75% within 6 months – you can’t then leave it untouched.
+You can usually take 25% of your defined contribution pension pot tax free.
 
-You have 6 options:
+There are 6 ways you can take your pension pot.
 
 <div class="options-overview">
   <div class="options-overview__item">
@@ -45,96 +45,4 @@ You have 6 options:
     <p>You can mix different options. Usually, you would need a bigger pot to do this.</p>
     <p><a class="t-option" href="/mix-options">More on mixing your options</a></p>
   </div>
-</div>
-
-{: .hr-thin}
-* * *
-
-{: .options-overview__compare-title}
-## Tax and your pension pot
-
-It’s important to know how much tax you might pay on the money you take from your pension pot. This table gives a quick overview. You can read [more information on tax](/tax) and how it’s calculated.
-
-<div class="ga-options-table">
-  <table class="options-table">
-    <thead>
-      <tr>
-        <td></td>
-        <th scope="col">
-          What’s tax free
-        </th>
-        <th scope="col">
-          What’s taxable
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">
-          <a href="/leave-pot-untouched">Leave your pot untouched</a>
-        </th>
-        <td>
-          You can still pay into your pot. Tax relief on payments up to £40,000 per year or 100% of your earnings – whichever is lower.
-        </td>
-        <td>
-          Payments over £40,000 or 100% of your earnings – whichever is lower.
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <a href="/guaranteed-income">Guaranteed income (annuity)</a>
-        </th>
-        <td>
-          25% of your whole pot
-        </td>
-        <td>
-          Income you get from the annuity
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <a href="/adjustable-income">Adjustable income</a>
-        </th>
-        <td>
-          25% of your whole pot
-        </td>
-        <td>
-          Income you get from the fund your money is invested in
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <a href="/take-cash-in-chunks">Take cash in chunks</a>
-        </th>
-        <td>
-          25% of each amount you take out
-        </td>
-        <td>
-          75% of each amount you take out
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <a href="/take-whole-pot">Take your whole pot in one go</a>
-        </th>
-        <td>
-          25% of your whole pot
-        </td>
-        <td>
-          75% of your whole pot
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <a href="/mix-options">Mix your options</a>
-        </th>
-        <td>
-          Depends on the options you mix
-        </td>
-        <td>
-          Depends on the options you mix
-        </td>
-      </tr>
-    </tbody>
-  </table>
 </div>
