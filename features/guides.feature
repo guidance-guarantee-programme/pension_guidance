@@ -30,6 +30,7 @@ Feature: Guides
       | pension-pot-options    |
       | pension-pot-value      |
       | pension-statements     |
+      | pension-recycling      |
       | pension-types          |
       | scams                  |
       | shop-around            |
