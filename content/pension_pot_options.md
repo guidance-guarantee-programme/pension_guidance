@@ -4,9 +4,9 @@ description: You can usually take 25% of your pension pot tax free and then choo
 ---
 # What you can do with your pension pot
 
-You can usually take 25% of your defined contribution pension pot tax free.
-
 There are 6 ways you can take your pension pot.
+
+^You can usually take 25% of your defined contribution pension pot tax free.^
 
 <div class="options-overview">
   <div class="options-overview__item">
@@ -30,7 +30,7 @@ There are 6 ways you can take your pension pot.
   <div class="options-overview__item">
     <div class="circle circle--s circle--take-cash-in-chunks"></div>
     <h2>Take cash in chunks</h2>
-    <p>You can take smaller sums of money from your pot until you run out.</p>
+    <p>You can take smaller sums of money from your pot until you run out. Your 25% tax-free amount isn’t paid in one lump sum – you get it over time.</p>
     <p><a class="t-option" href="/take-cash-in-chunks">More on taking cash in chunks</a></p>
   </div>
   <div class="options-overview__item">
