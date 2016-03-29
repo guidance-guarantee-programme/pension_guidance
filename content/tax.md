@@ -4,9 +4,11 @@ description: You pay tax on any income, including pension, that’s above your t
 
 # Tax you pay on your pension
 
-When you take money from your pension pot, 25% is tax free. This doesn’t use up any of your tax-free Personal Allowance. The standard allowance is £10,600.
+When you take money from your pension pot, 25% is tax free. You pay Income Tax on the other 75%.
 
-You pay Income Tax on the other 75%. The amount you pay depends on your total income for the year and your tax rate.
+Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £10,600.
+
+The amount of tax you pay depends on your total income for the year and your tax rate.
 
 ## How each pension option is taxed
 
@@ -122,7 +124,7 @@ This table gives an overview of how much tax you may pay on the money you take f
 You could also pay Income Tax on:
 
 - your State Pension
-- earnings from employment or self employment
+- earnings from employment or self-employment
 - any other income, eg money from rental income, savings, investments
 - any taxable benefits you might get, eg Carer’s Allowance
 
@@ -162,7 +164,7 @@ You may pay emergency tax when you take money from your pot. You can [claim this
 ### If you continue to work
 Your employer will take any tax you owe off your earnings and your State Pension. This is called Pay As You Earn (PAYE). 
 
-If your total income (including money from pensions and PAYE) is £100,000 or more for the tax year, or if you're self employed, you'll have to fill in a Self-Assessment tax return.
+If your total income (including money from pensions and PAYE) is £100,000 or more for the tax year, or if you're self-employed, you'll have to fill in a Self-Assessment tax return.
 
 ### If you have other income
 You’re responsible for paying tax on other income you have, eg from property or investments, and you might have to fill in a Self-Assessment tax return.
