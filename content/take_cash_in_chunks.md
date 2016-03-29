@@ -18,8 +18,6 @@ Some pension providers charge a fee to take cash out.
 
 Not all providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
-This is also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
-
 %Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 
 {::calculator id="take-cash-in-chunks" /}
@@ -64,7 +62,8 @@ Your provider may also let you continue to pay into the pot you take cash from.
 
 ## Next steps
 
-- Ask your current provider if they offer the option and what they charge in fees – if they don’t offer it, you can transfer your pot but you might be charged a fee.
+- Ask your current provider if they offer the option – also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS) – and what they charge in fees.
+- If they don’t offer it, you can transfer your pot but you might be charged a fee.
 - Check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
 - Understand [how much tax](/tax) you’ll pay on any money you’re planning to take out.
 
