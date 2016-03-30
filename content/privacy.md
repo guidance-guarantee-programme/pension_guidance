@@ -7,7 +7,7 @@ description: Find out how we collect certain information or data about you when 
 
 Pension Wise is a free and impartial government service which helps you understand your defined contribution pension options.
 
-The service is provided by HM Treasury in partnership with Citizens Advice and The Pensions Advisory Service.
+The service is provided by The Department for Work and Pensions in partnership with Citizens Advice and The Pensions Advisory Service.
 
 We collect certain information or data about you when you use Pension Wise.
 
@@ -15,7 +15,7 @@ We collect certain information or data about you when you use Pension Wise.
 
 During a Pension Wise guidance appointment questions will be asked about your personal and family affairs, financial arrangements and plans and general state of health.
 
-These details will be shared with our Pension Wise partners to provide you with a summary of your appointment. They may also be shared anonymously with third parties to help the Government analyse and improve the performance of the service.
+These details will be shared with our Pension Wise partners to provide you with a summary of your appointment. They may also be shared anonymously with third parties to help the government analyse and improve the performance of the service.
 
 If shared in this way, your information would be used only for this purpose and will not be disclosed any further.
 
