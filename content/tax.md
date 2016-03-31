@@ -6,7 +6,7 @@ description: You pay tax on any income, including pension, that’s above your t
 
 When you take money from your pension pot, 25% is tax free. You pay Income Tax on the other 75%.
 
-Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £10,600.
+Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £11,000.
 
 The amount of tax you pay depends on your total income for the year and your tax rate.
 
@@ -169,4 +169,4 @@ If your total income (including money from pensions and PAYE) is £100,000 or mo
 ### If you have other income
 You’re responsible for paying tax on other income you have, eg from property or investments, and you might have to fill in a Self-Assessment tax return.
 
-^You usually pay tax if your pension pots are worth more than the [lifetime allowance.](https://www.gov.uk/tax-on-your-private-pension) This is currently £1.25 million (£1 million from 6 April 2016).^
+^You usually pay tax if your pension pots are worth more than the [lifetime allowance.](https://www.gov.uk/tax-on-your-private-pension) This is currently £1 million.^
