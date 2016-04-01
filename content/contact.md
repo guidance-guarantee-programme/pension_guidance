@@ -50,10 +50,10 @@ In your email, state the reason why you’re unhappy with our first response and
 
 ### Getting more help
 
-The [Adjudicator’s Office](http://www.adjudicatorsoffice.gov.uk) is a free and impartial service that can investigate your complaint to see whether we’ve dealt with it in the right way.
+The [Independent Case Examiner (ICE)](https://www.gov.uk/government/organisations/independent-case-examiner) is a free and impartial service that can investigate your complaint to see whether we’ve dealt with it in the right way.
 
-^The Adjudicator will only look at your complaint after you’ve been through the full Pension Wise complaints process first. It can’t consider disputes about policy or legal matters.^
+^ICE will only look at your complaint after you’ve been through the full Pension Wise complaints process first. It can’t consider disputes about policy or legal matters.^
 
-You’ll need to send them a copy of your complaint as well as letters or emails that we sent in response. The Adjudicator usually won’t look at a complaint received more than six months after the date of our final response.
+You’ll need to send them a copy of your complaint as well as letters or emails that we sent in response. ICE usually won’t look at a complaint received more than 6 months after the date of our final response.
 
-You can also ask an MP to refer your complaint to the independent [Parliamentary and Health Service Ombudsman](http://www.ombudsman.org.uk). You can [get help with finding your MP](http://www.parliament.uk/mps-lords-and-offices/mps/) if you don’t know who they are. The Ombudsman usually only looks at complaints that the Adjudicator has already reviewed.
+You can also ask an MP to refer your complaint to the independent [Parliamentary and Health Service Ombudsman](http://www.ombudsman.org.uk). You can [get help with finding your MP](http://www.parliament.uk/mps-lords-and-offices/mps/) if you don’t know who they are. The Ombudsman usually only looks at complaints that ICE has already reviewed.
