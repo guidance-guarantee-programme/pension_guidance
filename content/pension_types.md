@@ -4,17 +4,20 @@ description: The difference between defined contribution and defined benefit pen
 
 # Know your pension type
 
-^Pension Wise only provides guidance on what you can do with a defined contribution pension.^
+Along with the State Pension from the government, there are 2 main types of pension:
 
-Along with the State Pension from the government, there are 2 main types of pension.
+- defined contribution – based on how much money has been paid into your pension pot
+- defined benefit (final salary or career average) – based on your salary and how long you’ve worked for your employer
 
 ## Defined contribution
 
-This can be a personal or workplace pension and is based on how much money has been paid into your pot. They’re sometimes known as ‘money purchase’ schemes.
+These are sometimes known as ‘money purchase’ pensions. They can be personal pensions arranged by you or workplace pensions arranged by your employer. 
 
-When you take money from a defined contribution pension it comes from the money you (and sometimes your employer) saved into it over the years, plus any investment returns your money may have earned.
+The money paid in by you or your employer is put into investments by your pension provider. The amount you get when you come to take your pot depends on how much was paid in and how well the investments have done.
 
-With defined contribution pensions, you can decide how you take your money out.
+The value of your pot can go up or down depending on your investments. 
+
+With defined contribution pensions you decide how to take your money out.
 
 ### Types of defined contribution pension
 
@@ -27,26 +30,22 @@ These include:
 - SSAS (Small Self Administered Schemes)
 - Stakeholder pension
 
-## Final salary or career average (defined benefit)
+^Pension Wise only provides guidance on what you can do with a defined contribution pension. For guidance on a defined benefit pension go to [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk/).^
 
-This is always a type of workplace pension. They give you an income based on your salary, length of service and a calculation made under the rules of your pension scheme.
+## Defined benefit (final salary or career average)
 
-The official term for these pension types is ‘defined benefit’.
+These are sometimes known as ‘final salary’ or ‘career average’ pensions. Defined benefit pensions are nearly always workplace pensions arranged by your employer. 
 
-With final salary or career average pensions, your employer guarantees a certain amount each year when you retire.
+How much you get depends on your salary, how long you’ve worked for your employer and a calculation made under the rules of your pension scheme. 
 
-^You can get help with final salary and career average pensions at [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk/)^
-
-## When you can take your money
-
-You can normally start taking money from a defined contribution pension from the age of 55. This is subject to the rules of your pension scheme.
-
-Check with your provider. In some circumstances you can take your pension earlier.
+Your provider guarantees a certain amount each year when you retire. 
 
 ## The State Pension
 
 The pension you get from the government is called the State Pension. You get it when you reach [State Pension age](https://www.gov.uk/calculate-state-pension/y/age).
 
-The most you can currently get from the basic State Pension is £115.95. You don’t normally get it automatically - you have to [claim the State Pension](https://www.gov.uk/state-pension/how-to-claim).
+You don’t normally get it automatically – you have to [claim the State Pension](https://www.gov.uk/state-pension/how-to-claim).
 
-If you reach State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension).
+The most you can currently get from the basic State Pension is £119.30.
+
+If you reached State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension).
