@@ -18,11 +18,7 @@ Some pension providers charge a fee to take cash out.
 
 Not all providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
-This is also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
-
 %Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
-
-{::calculator id="take-cash-in-chunks" /}
 
 ## Tax
 
@@ -35,7 +31,7 @@ If you spread the cash amounts over more than one tax year, you might pay less t
 {: .info-notice--take-cash}
 $E
 **Example**
-Your pot is £60,000. You take out £10,000 each year – £2,500 is tax free, £7,500 is taxable. You don’t have any other income and this is below the Personal Allowance of £10,600. You don’t pay tax on your cash.
+Your pot is £60,000. You take out £4,000 each year – £1,000 is tax free and £3,000 is taxable. You work part-time and earn £12,000 a year. The total of your earnings and the taxable cash you’ve taken from your pot is £15,000. This is above the standard Personal Allowance of £11,000. You pay £800 in tax.
 $E
 
 Your pension provider will take off the [tax you owe](/tax#How your tax is paid) before they pay you the cash.
@@ -44,6 +40,8 @@ You may pay emergency tax when you take money from your pot which you can claim 
 
 If your provider doesn’t pay your emergency tax back automatically, you can claim it back from
 HM Revenue and Customs.
+
+{::calculator id="take-cash-in-chunks" /}
 
 ## Benefits
 
@@ -64,7 +62,8 @@ Your provider may also let you continue to pay into the pot you take cash from.
 
 ## Next steps
 
-- Ask your current provider if they offer the option and what they charge in fees – if they don’t offer it, you can transfer your pot but you might be charged a fee.
+- Ask your current provider if they offer the option – also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS) – and what they charge in fees.
+- If they don’t offer it, you can transfer your pot but you might be charged a fee.
 - Check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
 - Understand [how much tax](/tax) you’ll pay on any money you’re planning to take out.
 
