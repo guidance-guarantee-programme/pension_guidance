@@ -19,7 +19,7 @@ RSpec.feature 'Take Cash In Chunks analytics', type: :feature, js: true do
     wait_for_ajax
 
     expect(data_layer).to include('pot_payout' => 10_000,
-                                  'tax_paid' => 780,
+                                  'tax_paid' => 700,
                                   'event' => 'CalculatorEstimate',
                                   'income' => 7_000,
                                   'pot' => 100_000,
