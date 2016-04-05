@@ -16,3 +16,18 @@
 
   padding-bottom: 3em;
 }
+
+.l-footer-meta {
+  a[rel="external"] {
+    &:after {
+      content: "\A0\A0\A0\A0\A0";
+      background-position: right 3px;
+    }
+
+    &:hover {
+      &:after {
+        background-position: right -385px;
+      }
+    }
+  }
+}
