@@ -38,7 +38,9 @@ Capital protected | Your pot is paid to whoever you leave it to (your ‘benefic
 
 ## Tax
 
-If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. You could then buy an annuity with the other 75%.
+If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. This doesn’t use up any of your Personal Allowance – the amount of income you don’t pay tax on.
+
+You could then buy an annuity with the other 75%.
 
 You [pay tax on income from an annuity](/tax), just like you do on your salary. This is because when you’re paying into your pension you get tax relief on your contributions.
 
