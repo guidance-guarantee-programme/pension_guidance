@@ -4,9 +4,9 @@ description: You can usually take 25% of your pension pot tax free and then choo
 ---
 # What you can do with your pension pot
 
-There are 6 ways you can take your pension pot.
+There are 6 ways you can take your defined contribution pension pot.
 
-^You can usually take 25% of your defined contribution pension pot tax free.^
+^You can usually take 25% of your pot tax free.^
 
 <div class="options-overview">
   <div class="options-overview__item">
