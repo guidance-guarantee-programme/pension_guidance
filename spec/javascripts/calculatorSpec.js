@@ -16,6 +16,10 @@ describe('calculators', function() {
       this.$calculator = $('.js-calculator');
     });
 
+    afterEach(function() {
+      this.$calculator.remove();
+    });
+
     function stubAJAXSubmissions(deferred) {
       var promise = deferred || $.Deferred();
       spyOn($, 'ajax').and.returnValue(promise);
@@ -129,6 +133,46 @@ describe('calculators', function() {
       $form.trigger('submit');
 
       expect(this.$calculator).not.toHaveClass('hide-from-print');
+    });
+
+    it('scrolls to the submit button on estimate update by default', function() {
+      var $actualScrollToTarget;
+      var $defaultScrollTarget = this.$calculator.find('.js-calculate-submit');
+
+      spyOn(PWPG.calculators, '_scrollTo').and.returnValue($.Deferred());
+      spyOn(PWPG.calculators, 'updateEstimate').and.callThrough();
+
+      PWPG.calculators.updateEstimate(this.$calculator.html());
+
+      $actualScrollToTarget = $(PWPG.calculators._scrollTo.calls.mostRecent().args[0]);
+      expect($actualScrollToTarget.attr('class')).toEqual($defaultScrollTarget.attr('class'));
+    });
+
+    it('scrolls to the `js-scroll-target` on estimate update when it exists', function() {
+      var $actualScrollToTarget;
+      var $customScrollTarget = $('<div class="js-scroll-target"/>').
+                                  appendTo(this.$calculator);
+
+      spyOn(PWPG.calculators, '_scrollTo').and.returnValue($.Deferred());
+      spyOn(PWPG.calculators, 'updateEstimate').and.callThrough();
+
+      PWPG.calculators.updateEstimate(this.$calculator.html());
+
+      $actualScrollToTarget = $(PWPG.calculators._scrollTo.calls.mostRecent().args[0]);
+      expect($actualScrollToTarget.attr('class')).toEqual($customScrollTarget.attr('class'));
+    });
+
+    it('scrolls to the top of the calculator on failure', function() {
+      var $actualScrollToTarget;
+      var $defaultScrollTarget = this.$calculator;
+
+      spyOn(PWPG.calculators, '_scrollTo').and.returnValue($.Deferred());
+      spyOn(PWPG.calculators, 'handleError').and.callThrough();
+
+      PWPG.calculators.handleError({ responseText: 'test' });
+
+      $actualScrollToTarget = $(PWPG.calculators._scrollTo.calls.mostRecent().args[0]);
+      expect($actualScrollToTarget.attr('class')).toEqual($defaultScrollTarget.attr('class'));
     });
   });
 });

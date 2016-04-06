@@ -18,7 +18,7 @@
     updateEstimate: function(data) {
       this.$calculator.removeClass('hide-from-print');
       this._refresh(data);
-      this._scrollTo(this.$submitButton).then($.proxy(function() {
+      this._scrollTo(this.$scrollTarget).then($.proxy(function() {
         this._toggleLoading(false);
       }, this));
     },
@@ -41,10 +41,17 @@
     },
 
     _cacheElements: function() {
+      var $customScrollTarget = this.$calculator.find('.js-scroll-target');
+
       this.$submitButton = this.$calculator.find('.js-calculate-submit');
       this.$estimate = this.$calculator.find('.js-calculator-estimate');
       this.$loadingStatus = $('<span class="calculator__loading-status">Please wait...</span>').
                            insertAfter(this.$submitButton);
+      this.$scrollTarget = this.$submitButton;
+
+      if ($customScrollTarget.length) {
+        this.$scrollTarget = $customScrollTarget;
+      }
     },
 
     _addListeners: function() {
