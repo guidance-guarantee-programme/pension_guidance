@@ -41,14 +41,21 @@ There are differences in how pension options are applied in Scotland. Read more 
 
 ##The State Pension
 
+How divorce affects your State Pension will depend on which State Pension you get.
 
-Your [basic State Pension](https://www.gov.uk/state-pension) can’t be shared if your marriage or civil partnership ends. However, if one of you has paid enough National Insurance contributions, the State Pension that your former spouse or civil partner gets could increase.
+###Basic State Pension
 
+Your [basic State Pension](https://www.gov.uk/state-pension) can’t be shared if your marriage or civil partnership ends. 
 
-If you have an [additional State Pension](https://www.gov.uk/additional-state-pension), the court could order that this is shared between you if your marriage or civil partnership ends. However, if one of you remarries or enters into another civil partnership, that person could lose their right to their former spouse or civil partner’s State Pension.
+Divorced couples can use their former spouse or civil partner’s National Insurance contributions to increase their basic State Pension. This won’t reduce the amount of State Pension the other person receives. 
 
+If you have an [additional State Pension](https://www.gov.uk/additional-state-pension), the court could order that this is shared between you if your marriage or civil partnership ends. 
 
-The [new State Pension](https://www.gov.uk/new-state-pension) from 6 April 2016 may affect how much pension money gets paid out at the end of a marriage or civil partnership.
+You lose these rights if you remarry or enter into another civil partnership.
 
+###New State Pension
 
-You can find out more about [divorce and the State Pension](http://www.pensionsadvisoryservice.org.uk/about-pensions/the-state-pension/state-pension-and-divorce-dissolution).
+Your [new State Pension](https://www.gov.uk/new-state-pension) can’t be shared if your marriage or civil partnership ends. 
+
+If you have a ‘protected payment’, the court could order that this is shared between you. This is an additional payment you may get on top of the full State Pension.
+
