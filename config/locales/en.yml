@@ -54,3 +54,14 @@ en:
               blank: Please enter your income for the year
               not_a_number: Using numbers, please enter your income for the year
               greater_than_or_equal_to: Your income for the year must be £0 or more
+        calculators/guaranteed_income_form:
+          attributes:
+            pot:
+              blank: Please enter the amount in your pot
+              not_a_number: Using numbers, please enter the amount in your pot
+              greater_than: The amount in your pot must be at least £1
+            age:
+              blank: Please enter the age you plan to retire at
+              not_a_number: Using numbers, please enter how much you can pay in each month
+              greater_than_or_equal_to: We can only provide an estimate for people aged 55 to 75. If you’re over 75 you can compare annuities on the <a href="https://www.moneyadviceservice.org.uk/en/tools/annuities">Money Advice Service website</a>.
+              less_than_or_equal_to: We can only provide an estimate for people aged 55 to 75. If you’re over 75 you can compare annuities on the <a href="https://www.moneyadviceservice.org.uk/en/tools/annuities">Money Advice Service website</a>.

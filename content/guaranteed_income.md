@@ -17,6 +17,8 @@ You can use your pension pot to buy an insurance policy that gives you a guarant
 
 ^If you’re currently receiving a pension income it’s likely that you’ve already bought an annuity or are taking an income from a final salary or career average (defined benefit) pension.^
 
+{::calculator id="guaranteed-income" /}
+
 ## Types of annuity
 
 There are lots of different types of annuity and you can shop around – you don’t have to buy one from your current pension provider.
