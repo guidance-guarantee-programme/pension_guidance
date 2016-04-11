@@ -87,6 +87,9 @@ describe('Slider', function() {
       it('ensures the name attribute only belongs to the text input', function() {
         expect(this.$textInput.attr('name')).toBe('slider');
         expect(this.$rangeInput.attr('name')).toBeUndefined();
+
+        expect(this.$textInput.attr('class')).toContain('t-slider-input');
+        expect(this.$rangeInput.attr('class')).not.toContain('t-slider-input');
       });
     });
   });
