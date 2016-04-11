@@ -121,9 +121,18 @@
 
     _scrollTo: function($el) {
       var offset = $el.offset() || {};
-      return $('html, body').animate({
-        scrollTop: offset.top || 0
-      }, this.scrollSpeed).promise();
+      var target = offset.top || 0;
+      var $page = $('html, body');
+
+      $page.on('scroll mousedown wheel DOMMouseScroll mousewheel touchmove', function() {
+        $page.stop();
+      });
+
+      return $page.animate({
+        scrollTop: target
+      }, this.scrollSpeed).promise().then(function() {
+        $page.off('scroll mousedown wheel DOMMouseScroll mousewheel touchmove');
+      });
     }
   };
 
