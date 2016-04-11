@@ -20,6 +20,23 @@ en:
   activemodel:
     errors:
       models:
+        calculators/adjustable_income_form:
+          attributes:
+            pot:
+              blank: Please enter the amount in your pot
+              not_a_number: Using numbers, please enter the amount in your pot
+              greater_than: The amount in your pot must be at least £1
+              less_than: The amount in your pot must be less than £5,000,000
+            desired_monthly_income:
+              blank: Please enter the amount you would like to take per month
+              not_a_number: Using numbers, please enter the amount you would like to take per month
+              greater_than_or_equal_to: Your desired income for the month must be £0 or more
+              less_than: Your monthly income must be less than your pension pot value
+              greater_than: Your desired monthly income must be more than zero
+            age:
+              blank: Please enter the age you plan to retire at
+              not_a_number: Using numbers, please enter the age you want to retire
+              greater_than_or_equal_to: We can only provide an estimate for those over 55
         calculators/leave_pot_untouched_form:
           attributes:
             pot:

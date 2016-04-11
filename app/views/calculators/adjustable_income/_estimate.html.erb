@@ -1,0 +1,46 @@
+<div id="js-estimate">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'event': 'CalculatorEstimate',
+      'pot_payout': <%= monthly_drawdown_amount.to_i %>
+    });
+  </script>
+
+  <p>
+    Based on what you’ve told us, if you use your <%= number_to_currency(pot) %> pension pot to take an adjustable income, you could get:
+
+    <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">
+      <%= number_to_currency(estimate[:tax_free_lump_sum]) %> tax free
+    </strong>
+
+    and
+
+    <strong class="calculator__estimate__number">
+      a monthly income of <span class="calculator__highlight"><%= number_to_currency(monthly_drawdown_amount) %></span>
+      until you’re <span class="t-calculator-age-for-desired-income calculator__highlight"><%= estimate[:desired_income_with_pot_growth_lasts_until] %></span>
+    </strong>
+  </p>
+</div>
+
+<p>
+  <label for="slider">or try a different monthly income:</label>
+  <%= render 'components/slider', {
+      id: 'slider',
+      target: '#desired_monthly_income',
+      option: 'adjustable-income',
+      text_before: '£',
+      initial_value: monthly_drawdown_amount,
+      min: 50,
+      max: monthly_drawdown_amount.to_f * Calculators::ARBITRARY_MULTIPLIER,
+      step: 5
+  } %>
+</p>
+
+<ul class="t-calculator-notes">
+  <li class="t-calculator-life-expectancy-income">
+    Average life expectancy is mid-to-late 80s. A monthly income of <%= number_to_currency(estimate[:monthly_income_until_life_expectancy]) %> could last until you’re <%= estimate[:life_expectancy] %>, though you could live longer.
+  </li>
+  <li>You could pay Income Tax on your monthly income.</li>
+  <li>This is an estimate based on the amount in your pot growing at a rate of about <%= estimate[:growth_interest_rate].to_i %>% per year — this may vary.</li>
+</ul>
