@@ -11,14 +11,14 @@
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
-             label: 'Amount you’ll have in your pot',
+             label: 'How much is in your pot?',
              error_messages: errors&.get(:pot) %>
 
   <%= render 'calculators/form_input_number',
              field: :age,
              css_classes: 'js-scroll-target',
              value: form&.age,
-             label: 'Your age when you plan to retire',
+             label: 'What age do you want to retire?',
              error_messages: errors&.get(:age) %>
 
   <%= render 'calculators/form_input_submit' %>
