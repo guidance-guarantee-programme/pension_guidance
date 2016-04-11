@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby IO.read('.ruby-version').strip
 
+gem 'autoprefixer-rails'
 gem 'bugsnag'
 gem 'canonical-rails'
 gem 'draper'
