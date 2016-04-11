@@ -3,6 +3,7 @@
 
   var calculators = {
     scrollSpeed: 700,
+    request: null,
 
     init: function() {
       this._initDOM();
@@ -12,12 +13,20 @@
     submitForm: function() {
       var $form = this.$calculator.find('form');
       this._toggleLoading(true);
-      return $.get($form.attr('action'), $form.serialize());
+
+      if (this.request && typeof this.request.abort === 'function') {
+        this.request.abort();
+      }
+
+      this.request = $.get($form.attr('action'), $form.serialize());
+
+      return this.request;
     },
 
     updateEstimate: function(data) {
       this.$calculator.removeClass('hide-from-print');
       this._refresh(data);
+      this._sliders();
       this._scrollTo(this.$scrollTarget).then($.proxy(function() {
         this._toggleLoading(false);
       }, this));
@@ -30,8 +39,15 @@
       }, this));
     },
 
-    _refresh: function(html) {
-      this.$calculator.empty().html(html);
+    _refresh: function(html, $partial) {
+      var $target = this.$calculator;
+
+      if ($partial) {
+        $target = $partial;
+      }
+
+      $target.empty().html(html).find('.calculator__highlight').removeClass('highlight').addClass('highlight');
+
       this._cacheElements();
     },
 
@@ -45,6 +61,11 @@
 
       this.$submitButton = this.$calculator.find('.js-calculate-submit');
       this.$estimate = this.$calculator.find('.js-calculator-estimate');
+
+      if (this.$loadingStatus) {
+        this.$loadingStatus.remove();
+      }
+
       this.$loadingStatus = $('<span class="calculator__loading-status">Please wait...</span>').
                            insertAfter(this.$submitButton);
       this.$scrollTarget = this.$submitButton;
@@ -63,8 +84,39 @@
       }, this));
     },
 
+    _updateEstimateOnly: function() {
+      this.submitForm().then($.proxy(function(data) {
+        var $empty = $('<div/>');
+        var $estimate = $empty.append(data).find('#js-estimate');
+        this._refresh($estimate, $('#js-estimate'));
+
+        this._scrollTo(this.$scrollTarget).then($.proxy(function() {
+          this._toggleLoading(false);
+        }, this));
+
+      }, this));
+    },
+
     _toggleLoading: function(isLoading) {
       this.$loadingStatus[isLoading ? 'addClass' : 'removeClass']('calculator__loading-status--loading');
+    },
+
+    _sliders: function() {
+      if ($('#slider').length) {
+        var slider = new PWPG.Slider($('#slider'));
+        var $target = $($('#slider').attr('data-target'));
+        var buffer;
+
+        slider.$textInput.on('change', $.proxy(function() {
+          clearTimeout(buffer);
+
+          buffer = setTimeout($.proxy(function() {
+            $target.val(slider.$textInput.val());
+            this._updateEstimateOnly();
+          }, this), 200);
+
+        }, this));
+      }
     },
 
     _scrollTo: function($el) {
