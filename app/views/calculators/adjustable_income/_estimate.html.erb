@@ -39,7 +39,7 @@
 
 <ul class="t-calculator-notes">
   <li class="t-calculator-life-expectancy-income">
-    Average life expectancy is mid-to-late 80s. A monthly income of <%= number_to_currency(estimate[:monthly_income_until_life_expectancy]) %> could last until you’re <%= estimate[:life_expectancy] %>, though you could live longer.
+    Average life expectancy for those aged 55 is mid-to-late 80s. A monthly income of <%= number_to_currency(estimate[:monthly_income_until_life_expectancy]) %> could last until you’re <%= estimate[:life_expectancy] %>, though you could live longer.
   </li>
   <li>You could pay Income Tax on your monthly income.</li>
   <li>This is an estimate based on the amount in your pot growing at a rate of about <%= estimate[:growth_interest_rate].to_i %>% per year — this may vary.</li>
