@@ -1,0 +1,15 @@
+.highlight {
+  animation: highlight .8s ease-in-out 1;
+}
+
+@keyframes highlight {
+  0% {
+    background: $highlight-color;
+    border-bottom: 2px solid $color-black;
+  }
+
+  100% {
+    background: none;
+    border-bottom: 2px solid transparent;
+  }
+}

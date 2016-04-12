@@ -18,6 +18,7 @@
       this.$rangeInput = this.$textInput
             .clone()
             .addClass('slider__range-input')
+            .removeClass('t-slider-input')
             .removeAttr('data-slider-text-input name')
             .attr({
               'type': 'range',

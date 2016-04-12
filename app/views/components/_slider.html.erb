@@ -6,10 +6,14 @@
   step = local_assigns[:step] || 10
   initial_value = local_assigns[:initial_value] || 0
   option = local_assigns[:option] ? "slider--#{local_assigns[:option]}" : ""
+  target = local_assigns[:target] ? "data-target=#{local_assigns[:target]}" : ""
+  text_before = local_assigns[:text_before] || ""
 %>
 
-<div class="slider <%= option %>" data-slider id="<%= id %>">
+<div class="slider <%= option %>" data-slider id="<%= id %>" <%= target %>>
+  <%= text_before %>
   <input data-slider-text-input
+         class="t-slider-input"
          name="<%= name %>"
          min="<%= min %>"
          max="<%= max %>"

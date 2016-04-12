@@ -1,0 +1,7 @@
+<%
+  hint = local_assigns[:hint]
+  labelled_by = "#{field}-a"
+%>
+
+  <%= hidden_field_tag field, number_to_currency(value, unit: ''),
+                     class: %w(form-control) << "t-calculator-#{field}" %>
