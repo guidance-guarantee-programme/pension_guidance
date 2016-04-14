@@ -1,18 +1,18 @@
 <p>
   If you take <span class="t-calculator-chunk"><%= number_to_currency(estimate.chunk) %></span> from your
-  <span class="t-calculator-pot"><%= number_to_currency(estimate.pot) %></span> pot, you could pay:
-
-  <strong class="calculator__estimate__number t-calculator-chunk-tax">
-    <%= number_to_currency(estimate.chunk_tax) %> in tax
-  </strong>
-
-  and get:
+  <span class="t-calculator-pot"><%= number_to_currency(estimate.pot) %></span> pot, you could get:
 
   <strong class="calculator__estimate__number t-calculator-chunk-remaining">
     <%= number_to_currency(estimate.chunk_remaining) %>
   </strong>
 
-  leaving:
+  We estimate you’ll pay:
+
+  <strong class="calculator__estimate__number t-calculator-chunk-tax">
+    <%= number_to_currency(estimate.chunk_tax) %> in tax
+  </strong>
+
+  Leaving:
 
   <strong class="calculator__estimate__number t-calculator-pot-remaining">
     <%= number_to_currency(estimate.pot_remaining) %> in your pot
