@@ -23,3 +23,6 @@ Style/FileName:
 
 Style/RescueModifier:
   Enabled: false
+
+Style/TrivialAccessors:
+  Enabled: false
