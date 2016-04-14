@@ -8,16 +8,16 @@
 </script>
 
 <p>
-  If you take your whole <%= number_to_currency(estimate.pot) %> pot in one go, you could pay:
-
-  <strong class="calculator__estimate__number t-pot-tax">
-    <%= number_to_currency(estimate.pot_tax) %> in tax
-  </strong>
-
-  and get a total of:
+  If you take your whole <%= number_to_currency(estimate.pot) %> pot in one go, you could get:
 
   <strong class="calculator__estimate__number t-pot-received">
     <%= number_to_currency(estimate.pot_received) %>
+  </strong>
+
+  We estimate you’ll pay:
+
+  <strong class="calculator__estimate__number t-pot-tax">
+    <%= number_to_currency(estimate.pot_tax) %> in tax
   </strong>
 </p>
 
