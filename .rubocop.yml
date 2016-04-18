@@ -26,3 +26,6 @@ Style/RescueModifier:
 
 Style/TrivialAccessors:
   Enabled: false
+
+AmbiguousOperator:
+  Enabled: false
