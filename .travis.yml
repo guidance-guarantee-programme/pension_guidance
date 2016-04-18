@@ -16,8 +16,6 @@ rvm:
 - 2.3.0
 before_script:
 - npm install
-after_script:
-- bash -c "$(curl -s https://gist.githubusercontent.com/pensionbot/63dc0efd1c880ede3a37/raw)"
 deploy:
   provider: heroku
   app: ggp-pension-guidance
