@@ -12,8 +12,6 @@ env:
   - secure: MdrB+5oJX74bc7wSPut3vANmXUlvQN+pJyagxE+tuWWadKb5F4oAAXU2/BtrMqD9f/lxs2d+lh3AxKIWgN/ZUyxNxWZPk8958pqaTbc8eAcYLag4E2fqqyafkJZYW5Dny1lkoIzdmxn4FPHdp8WTfXsnOSmDa56fSj5DwBe4cF0=
 node_js:
 - '0.10'
-rvm:
-- 2.3.0
 before_script:
 - npm install
 deploy:
