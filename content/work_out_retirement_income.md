@@ -1,3 +1,8 @@
+---
+tags:
+  - option
+---
+
 # Work out if you’ll have enough money through retirement
 
 To work out if you’ll have enough money to live on through your retirement, you’ll need to:
