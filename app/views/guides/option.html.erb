@@ -52,5 +52,5 @@
   </script>
 <% end %>
 
-<%= content_tag :span, nil, class: ['circle', 'circle--m', "circle--#{@guide.slug}"] %>
+<%= content_tag(:span, nil, class: ['circle', 'circle--m', "circle--#{@guide.slug}"]) unless @guide.skip_circle? %>
 <%= @guide.content %>

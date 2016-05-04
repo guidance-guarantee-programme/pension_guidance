@@ -1,6 +1,7 @@
 ---
 tags:
   - option
+  - skip-circle
 ---
 
 # Work out if you’ll have enough money through retirement

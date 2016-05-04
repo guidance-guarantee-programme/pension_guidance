@@ -1,6 +1,7 @@
 ---
 tags:
   - option
+  - skip-circle
 ---
 
 # Our customer promise
