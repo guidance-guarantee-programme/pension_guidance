@@ -194,3 +194,10 @@
     }
   }
 }
+
+.sticky-sidebar--appointment-summary {
+  .sticky-sidebar__link:link,
+  .sticky-sidebar__link:visited {
+    font-size: 17px;
+  }
+}

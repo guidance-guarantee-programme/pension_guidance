@@ -1,6 +1,15 @@
+GIT
+  remote: https://github.com/guidance-guarantee-programme/output-templates.git
+  revision: 41e43df5115a2bfcbcd8d1a8fe10601567e1f98e
+  specs:
+    output-templates (4.1.0)
+      actionview
+      sass
+
 GEM
   remote: https://rubygems.org/
   specs:
+    Ascii85 (1.0.2)
     actionmailer (4.2.5.1)
       actionpack (= 4.2.5.1)
       actionview (= 4.2.5.1)
@@ -37,6 +46,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    afm (0.2.2)
     arel (6.0.3)
     ast (2.2.0)
     autoprefixer-rails (6.3.6)
@@ -110,6 +120,7 @@ GEM
       sass (>= 3.2.0)
     govuk_template (0.13.0)
       rails (>= 3.1)
+    hashery (2.1.1)
     htmlentities (4.3.3)
     humanize (1.1.0)
     i18n (0.7.0)
@@ -140,6 +151,14 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     parser (2.3.0.2)
       ast (~> 2.2)
+    pdf-inspector (1.2.1)
+      pdf-reader (~> 1.0)
+    pdf-reader (1.4.0)
+      Ascii85 (~> 1.0.0)
+      afm (~> 0.2.1)
+      hashery (~> 2.0)
+      ruby-rc4
+      ttfunk
     phantomjs (1.9.8.0)
     phoner (1.0.1)
       activesupport
@@ -151,6 +170,7 @@ GEM
     postcodes_io (0.1.1)
       excon (~> 0.39)
     powerpack (0.1.1)
+    princely (1.4.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -223,13 +243,14 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 0.3)
     ruby-progressbar (1.7.5)
+    ruby-rc4 (0.1.5)
     rubytree (0.9.6)
       json (~> 1.8)
       structured_warnings (~> 0.2)
     safe_yaml (1.0.4)
     sanitize (2.1.0)
       nokogiri (>= 1.4.4)
-    sass (3.4.15)
+    sass (3.4.22)
     sassc (1.8.4)
       bundler
       ffi (~> 1.9.6)
@@ -266,6 +287,7 @@ GEM
     thread_safe (0.3.5)
     tilt (1.4.1)
     timecop (0.7.4)
+    ttfunk (1.4.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -308,9 +330,12 @@ DEPENDENCIES
   launchy
   newrelic_rpm
   nokogiri
+  output-templates (~> 4.1.0)!
+  pdf-inspector
   phoner
   poltergeist
   postcodes_io
+  princely
   pry-rails
   puma
   rack-contrib

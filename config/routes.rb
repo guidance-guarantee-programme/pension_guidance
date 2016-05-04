@@ -21,6 +21,11 @@ Rails.application.routes.draw do
 
     resources :locations, only: [:index, :show]
 
+    resource :appointment_summaries, only: %i(new create show), path: 'summary-document' do
+      post :download, on: :member
+      post :print, on: :member
+    end
+
     scope path: 'styleguide', controller: 'styleguide' do
       scope path: 'pages' do
         get 'homepage', action: 'pages_homepage'

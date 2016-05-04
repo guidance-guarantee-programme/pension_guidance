@@ -3,9 +3,12 @@
 scss_files: 'app/assets/stylesheets/**/*.css.scss'
 
 exclude:
+  - '.downloads/**/*'
+  - 'lib/prince/**/*'
+  - 'node_modules/**/*'
   - 'vendor/assets/**/*'
   - 'vendor/bundle/**/*'
-  - 'node_modules/**/*'
+  - 'public/assets/**/*'
   - 'tmp/**/*'
 
 linters:

@@ -5,5 +5,6 @@ module Pages
     set_url '/'
 
     elements :links, '.t-article-links'
+    element :appointment_summary_link, '.t-appointment-summary-link'
   end
 end

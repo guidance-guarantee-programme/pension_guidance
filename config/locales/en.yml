@@ -20,6 +20,10 @@ en:
   activemodel:
     errors:
       models:
+        appointment_summary:
+          attributes:
+            appointment_type:
+              inclusion: Please select the age range you are in
         calculators/adjustable_income_form:
           attributes:
             pot:

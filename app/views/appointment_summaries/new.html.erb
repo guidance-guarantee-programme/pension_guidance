@@ -1,0 +1,81 @@
+<%= form_for @appointment_summary, url: appointment_summaries_path, html: { class: 't-appointment-summary-generator' } do |f| %>
+  <div class="page-header">
+    <h1>How to view your appointment summary</h1>
+  </div>
+
+  <% if @appointment_summary.errors.any? %>
+    <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+      <h1 class="heading-medium error-summary-heading" id="error-summary-heading">
+        There was a problem with your details
+      </h1>
+
+      <ul class="error-summary-list">
+        <% @appointment_summary.errors.each do |attribute, attribute_message| %>
+          <li><a href="#<%= attribute %>"><%= sanitize(attribute_message, :tags => []) %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <h2 id="age">Your age</h2>
+
+  <div class="form-group">
+    <fieldset class="inline">
+      <legend class="visuallyhidden">Your age</legend>
+
+      <%= f.label :appointment_type, value: '50_54', class: 'block-label' do %>
+          <%= f.radio_button :appointment_type, '50_54', checked: false,
+                             class: 't-appointment-type-50-54' %>
+          50 to 54
+      <% end %>
+
+      <%= f.label :appointment_type, value: 'standard', class: 'block-label' do %>
+        <%= f.radio_button :appointment_type, 'standard', checked: false,
+                             class: 't-appointment-type-standard' %>
+        55 or over
+      <% end %>
+    </fieldset>
+  </div>
+
+  <h2>Extra information</h2>
+  <p>You can choose to include extra information in your summary. Select all options that are relevant to you.</p>
+
+  <fieldset class="form-group">
+    <legend class="visuallyhidden">Would you like any extra information on the following?</legend>
+
+    <%= f.label :supplementary_benefits, class: 'block-label' do %>
+      <%= f.check_box :supplementary_benefits,
+                      class: 't-supplementary-benefits' %>
+      How my pension affects my benefits
+    <% end %>
+
+
+    <%= f.label :supplementary_debt, class: 'block-label' do %>
+      <%= f.check_box :supplementary_debt,
+                      class: 't-supplementary-debt' %>
+      Getting help with debt
+    <% end %>
+
+
+    <%= f.label :supplementary_ill_health, class: 'block-label' do %>
+      <%= f.check_box :supplementary_ill_health,
+                      class: 't-supplementary-ill-health' %>
+      Taking my pension if I have ill health
+    <% end %>
+
+
+    <%= f.label :supplementary_defined_benefit_pensions, class: 'block-label' do %>
+      <%= f.check_box :supplementary_defined_benefit_pensions,
+                      class: 't-supplementary-defined-benefit-pensions' %>
+      Final salary or career average pensions
+    <% end %>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <%= f.submit 'View summary', class: 'button t-appointment-summary-submit' %>
+  </fieldset>
+<% end %>
+
+<% content_for :body_end do %>
+  <%= javascript_include_tag 'application' %>
+<% end %>
