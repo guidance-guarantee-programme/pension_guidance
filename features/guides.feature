@@ -35,7 +35,7 @@ Feature: Guides
       | scams                  |
       | shop-around            |
       | state-pension          |
-      | summary-document       |
+      | after-your-appointment |
       | take-cash-in-chunks    |
       | take-whole-pot         |
       | tax                    |
