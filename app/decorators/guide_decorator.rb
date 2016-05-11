@@ -1,6 +1,6 @@
 class GuideDecorator < Draper::Decorator
   delegate :id, :slug, :concise_label, :description,
-           :option?, :related_to_appointments?, :related_to_booking?
+           :option?, :related_to_appointments?, :related_to_booking?, :skip_circle?
 
   def url
     "/#{slug}"
