@@ -19,6 +19,30 @@ You can use your pension pot to buy an insurance policy that gives you a guarant
 
 {::calculator id="guaranteed-income" /}
 
+## How an annuity is calculated
+
+How much income you get each year from an annuity depends on things like:
+
+- how much you had in your pension pot when you bought the annuity
+- your age
+- whether you want the income to increase each year
+- whether you want the annuity to pay out to someone after you die
+- your health and lifestyle
+
+You may have to pay administration fees.
+
+If the insurance company you bought your annuity with goes bust the [Financial Services Compensation Scheme](/protection) will cover you in full.
+
+## Tax
+
+If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. This doesn’t use up any of your Personal Allowance – the amount of income you don’t pay tax on.
+
+You could then buy an annuity with the other 75%.
+
+You [pay tax on income from an annuity](/tax), just like you do on your salary. This is because when you’re paying into your pension you get tax relief on your contributions.
+
+^If you take the 25% tax-free lump sum you must buy an annuity with the rest or use one of the [other pension options](/pension-pot-options).^
+
 ## Types of annuity
 
 There are lots of different types of annuity and you can shop around – you don’t have to buy one from your current pension provider.
@@ -37,30 +61,6 @@ Investment linked | Tied to the stock market, the amount it pays can vary and de
 Capital protected | Your pot is paid to whoever you leave it to (your ‘beneficiary’) if you die within a set period, subject to tax.
 
 ^Once you’ve bought your annuity you only have a short period when you can still change your mind (in most cases 30 days). After that you can’t change the decision.^
-
-## Tax
-
-If you decide to buy an annuity you can still take up to 25% of your pension pot tax free as cash. This doesn’t use up any of your Personal Allowance – the amount of income you don’t pay tax on.
-
-You could then buy an annuity with the other 75%.
-
-You [pay tax on income from an annuity](/tax), just like you do on your salary. This is because when you’re paying into your pension you get tax relief on your contributions.
-
-^If you take the 25% tax-free lump sum you must buy an annuity with the rest or use one of the [other pension options](/pension-pot-options).^
-
-## How an annuity is calculated
-
-How much income you get each year from an annuity depends on things like:
-
-- how much you had in your pension pot when you bought the annuity
-- your age
-- whether you want the income to increase each year
-- whether you want the annuity to pay out to someone after you die
-- your health and lifestyle
-
-You may have to pay administration fees.
-
-If the insurance company you bought your annuity with goes bust the [Financial Services Compensation Scheme](/protection) will cover you in full.
 
 ## Scams
 Beware of pension scams contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
