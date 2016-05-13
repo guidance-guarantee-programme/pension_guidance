@@ -49,9 +49,6 @@ If you have more than one pension pot, you can take chunks of cash from one and 
 
 Your provider may also let you continue to pay into the pot you take cash from.
 
-{::options parse_block_html="true" /}
-<div class="next-steps next-steps--take-cash-in-chunks">
-
 ## Benefits
 
 Taking cash chunks from your pot could also affect [your entitlement to any benefits](/benefits).
@@ -59,6 +56,9 @@ Taking cash chunks from your pot could also affect [your entitlement to any bene
 ## Scams
 
 Beware of [pension scams](/scams) contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
+
+{::options parse_block_html="true" /}
+<div class="next-steps next-steps--take-cash-in-chunks">
 
 ## Next steps
 
