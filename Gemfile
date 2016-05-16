@@ -24,8 +24,8 @@ gem 'phoner'
 gem 'princely'
 gem 'postcodes_io'
 gem 'puma'
-gem 'rack-contrib'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.0.rc1'
+gem 'rails-controller-testing'
 gem 'redis'
 gem 'rgeo'
 gem 'rgeo-geojson'
@@ -41,7 +41,7 @@ group :development, :test do
   gem 'jasmine-jquery-rails'
   gem 'jasmine-rails'
   gem 'pry-rails'
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '3.5.0.beta3'
 end
 
 group :development do
