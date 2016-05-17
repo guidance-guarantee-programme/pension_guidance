@@ -14,8 +14,6 @@ An annuity provides a guaranteed income for a fixed number of years or the rest 
 
 ## The new annuity rules
 
-Under the new rules you won’t be able to sell your existing annuity back to your provider.
-
 The Government is currently deciding on how the new rules could work and will give more details nearer the time. To find out more you can read the full [annuity announcement](https://www.gov.uk/government/news/pension-freedoms-to-be-extended-to-people-with-annuities).
 
 If you’re thinking of selling your annuity to pay off debts you should get advice first.
