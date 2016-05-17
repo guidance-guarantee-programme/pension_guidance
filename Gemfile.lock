@@ -84,11 +84,6 @@ GEM
       nokogiri (~> 1.5)
       rails (>= 3, < 5)
     diff-lcs (1.2.5)
-    draper (1.4.0)
-      actionpack (>= 3.0)
-      activemodel (>= 3.0)
-      activesupport (>= 3.0)
-      request_store (~> 1.0)
     erubis (2.7.0)
     excon (0.45.3)
     execjs (2.5.2)
@@ -215,7 +210,6 @@ GEM
     rainbow (2.1.0)
     rake (11.1.2)
     redis (3.2.1)
-    request_store (1.1.0)
     rgeo (0.3.20)
     rgeo-geojson (0.3.1)
       rgeo (~> 0.3)
@@ -314,7 +308,6 @@ DEPENDENCIES
   bugsnag
   canonical-rails
   cucumber-rails
-  draper
   fakeredis
   faraday
   faraday-conductivity
@@ -360,5 +353,8 @@ DEPENDENCIES
   vcr
   webmock
 
+RUBY VERSION
+   ruby 2.3.1p112
+
 BUNDLED WITH
-   1.11.2
+   1.12.3
