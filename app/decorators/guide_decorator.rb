@@ -1,6 +1,19 @@
-class GuideDecorator < Draper::Decorator
-  delegate :id, :slug, :concise_label, :description,
-           :option?, :related_to_appointments?, :related_to_booking?
+class GuideDecorator
+  delegate(
+    :id,
+    :slug,
+    :concise_label,
+    :description,
+    :option?,
+    :related_to_appointments?,
+    :related_to_booking?,
+    :==,
+    to: :guide
+  )
+
+  def initialize(guide)
+    @guide = guide
+  end
 
   def url
     "/#{slug}"
@@ -11,7 +24,7 @@ class GuideDecorator < Draper::Decorator
   end
 
   def label
-    object.label.blank? ? title : object.label
+    guide.label.presence || title
   end
 
   def content
@@ -36,6 +49,8 @@ class GuideDecorator < Draper::Decorator
   end
 
   private
+
+  attr_reader :guide
 
   def content_document
     @content_document ||= Nokogiri::HTML(content)
