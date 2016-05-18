@@ -19,25 +19,9 @@ This option is also known as ‘flexi-access drawdown’.
 
 You’ll probably need to be involved in choosing and managing your investments. The value of your pot can go up or down.
 
-{: .info-notice--adjustable-income}
-$E
-**Example**
-You have a pension pot of £40,000. You take 25% tax free which is £10,000. You invest the other £30,000 to give you an adjustable income. Your money grows by 3% every year. You take a taxable income of £2,000 from it. Your money will last you 20 years.
-$E
-
 Not all pension providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
 {::calculator id="adjustable-income" /}
-
-## How adjustable income works
-
-Your provider will offer you different investments with different risks. You pick the investments that are right for you and get a retirement income from them. You should think about how much you take out every year and [how long your money needs to last](/making-money-last).
-
-A financial adviser can help you to create an investment plan for your money. They can advise you on how much you can take out to make the money last as long as possible. They’ll charge you a fee for this.
-
-Your provider is likely to charge you fees for managing your investments and whenever you get a payment.
-
-If your provider goes bust you’ll be covered by the [Financial Services Compensation Scheme](/protection).
 
 ## Tax
 
@@ -56,6 +40,16 @@ If you take the 25% tax-free lump sum, you must get an adjustable income with th
 You can move your pot gradually – you don’t have to move it all at once. Each time you move a sum, 25% is tax free.
 
 If you choose this option, you can leave your money to someone when you die but they may have to pay tax on it.
+
+## How adjustable income works
+
+Your provider will offer you different investments with different risks. You pick the investments that are right for you and get a retirement income from them. You should think about how much you take out every year and [how long your money needs to last](/making-money-last).
+
+A financial adviser can help you to create an investment plan for your money. They can advise you on how much you can take out to make the money last as long as possible. They’ll charge you a fee for this.
+
+Your provider is likely to charge you fees for managing your investments and whenever you get a payment.
+
+If your provider goes bust you’ll be covered by the [Financial Services Compensation Scheme](/protection).
 
 ## Continue to pay in
 
