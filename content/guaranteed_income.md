@@ -19,6 +19,20 @@ You can use your pension pot to buy an insurance policy that gives you a guarant
 
 {::calculator id="guaranteed-income" /}
 
+## How an annuity is calculated
+
+How much income you get each year from an annuity depends on things like:
+
+- how much you had in your pension pot when you bought the annuity
+- your age
+- whether you want the income to increase each year
+- whether you want the annuity to pay out to someone after you die
+- your health and lifestyle
+
+You may have to pay administration fees.
+
+If the insurance company you bought your annuity with goes bust the [Financial Services Compensation Scheme](/protection) will cover you in full.
+
 ## Types of annuity
 
 There are lots of different types of annuity and you can shop around – you don’t have to buy one from your current pension provider.
@@ -47,20 +61,6 @@ You could then buy an annuity with the other 75%.
 You [pay tax on income from an annuity](/tax), just like you do on your salary. This is because when you’re paying into your pension you get tax relief on your contributions.
 
 ^If you take the 25% tax-free lump sum you must buy an annuity with the rest or use one of the [other pension options](/pension-pot-options).^
-
-## How an annuity is calculated
-
-How much income you get each year from an annuity depends on things like:
-
-- how much you had in your pension pot when you bought the annuity
-- your age
-- whether you want the income to increase each year
-- whether you want the annuity to pay out to someone after you die
-- your health and lifestyle
-
-You may have to pay administration fees.
-
-If the insurance company you bought your annuity with goes bust the [Financial Services Compensation Scheme](/protection) will cover you in full.
 
 ## Scams
 Beware of pension scams contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
