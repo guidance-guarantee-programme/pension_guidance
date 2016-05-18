@@ -18,7 +18,7 @@ class Navigation
   private
 
   def find_topic(node)
-    category = CategoryDecorator.decorate(node.content)
+    category = CategoryDecorator.new(node.content)
     guides = find_guides(node.children).reject(&:empty?)
 
     Topic.new(category.id, category.label, category.url, guides)
@@ -55,7 +55,7 @@ class Navigation
   end
 
   def more_category
-    @more_category ||= CategoryDecorator.decorate(CategoryRepository.new.find('more'))
+    @more_category ||= CategoryDecorator.new(CategoryRepository.new.find('more'))
   end
 
   def more_topic

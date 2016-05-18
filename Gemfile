@@ -8,7 +8,6 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 gem 'autoprefixer-rails'
 gem 'bugsnag'
 gem 'canonical-rails'
-gem 'draper'
 gem 'faraday'
 gem 'faraday-conductivity'
 gem 'faraday_middleware'
