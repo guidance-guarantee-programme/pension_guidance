@@ -297,7 +297,8 @@ GEM
       json (>= 1.8.0)
     uk_postcode (2.1.0)
     unicode-display_width (0.3.1)
-    utf8-cleaner (0.0.9)
+    utf8-cleaner (0.2.4)
+      activesupport
     vcr (2.9.3)
     webmock (1.21.0)
       addressable (>= 2.3.6)
