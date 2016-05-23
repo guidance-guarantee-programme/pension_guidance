@@ -158,7 +158,7 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
-    phantomjs (2.1.1.0)
+    phantomjs (1.9.8.0)
     phoner (1.0.1)
       activesupport
     poltergeist (1.6.0)
@@ -334,6 +334,7 @@ DEPENDENCIES
   nokogiri
   output-templates (~> 4.1.0)!
   pdf-inspector
+  phantomjs (= 1.9.8.0)
   phoner
   poltergeist
   postcodes_io
