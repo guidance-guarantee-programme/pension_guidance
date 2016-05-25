@@ -227,6 +227,7 @@
 
 <% content_for :after_script do %>
   <script>var moj = moj || { Modules: {}, Helpers: {} };</script>
+  <%= javascript_include_tag 'modernizr.custom.85598.js' %>
   <%= javascript_include_tag 'handlebars' %>
   <%= javascript_include_tag 'moj.date-slider' %>
   <%= javascript_include_tag 'moj.slot-picker' %>
