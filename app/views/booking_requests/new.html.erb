@@ -3,7 +3,7 @@
   <%= stylesheet_link_tag 'moj.slot-picker', media: 'screen' %>
 <% end %>
 
-<h1>Make a booking</h1>
+<h1>Book an appointment</h1>
 
 <p>To book an appointment at this location, choose three dates in case your first choice isn’t available.</p>
 
@@ -140,19 +140,19 @@
       <ul class="SlotPicker-days">
         <li class="SlotPicker-day SlotPicker-day--past">
           <h2 class="SlotPicker-dayTitle"></h2>
-          <p>It is not possible to book a visit in the past.</p>
+          <p>It is not possible to book an appointment in the past.</p>
         </li>
         <li class="SlotPicker-day SlotPicker-day--unavailable">
           <h2 class="SlotPicker-dayTitle"></h2>
-          <p>It is not possible to book a visit on this day.</p>
+          <p>It is not possible to book an appointment on this day.</p>
         </li>
         <li class="SlotPicker-day SlotPicker-day--beyond">
           <h2 class="SlotPicker-dayTitle"></h2>
-          <p>You can only book a visit in the next {{ daysInRange }} days.</p>
+          <p>You can only book an appointment in the next {{ daysInRange }} days.</p>
         </li>
         <li class="SlotPicker-day SlotPicker-day--leadtime">
           <h2 class="SlotPicker-dayTitle"></h2>
-          <p>You can only book a visit 3 days in advance.</p>
+          <p>You can only book an appointment 3 days in advance.</p>
         </li>
       </ul>
     </div>
@@ -166,8 +166,8 @@
       slots = []
       (Date.today..2.months.from_now).each do |date|
         unless date.saturday? || date.sunday?
-          slots << ["#{date.strftime('%A, %b %d')} – Morning", "#{date}-0800-1200"]
-          slots << ["#{date.strftime('%A, %b %d')} – Afternoon", "#{date}-1300-1700"]
+          slots << ["#{date.strftime('%A, %b %e')} – Morning", "#{date}-0800-1200"]
+          slots << ["#{date.strftime('%A, %b %e')} – Afternoon", "#{date}-1300-1700"]
         end
       end
 
