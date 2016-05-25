@@ -20,8 +20,14 @@
 <script type="text/html" id="SlotPicker-tmplTimeSlot">
   <label class="SlotPicker-label" for="slot-{{ slot }}">
     <input class="SlotPicker-slot" type="checkbox" value="{{ slot }}" id="slot-{{ slot }}">
-    <strong class="SlotPicker-time">{{ time }}</strong>
-    <span class="SlotPicker-duration">{{ duration }}</span>
+    <strong class="SlotPicker-time">
+    {{#ifCond time '8am'}}
+    Morning
+    {{else}}
+    Afternoon
+    {{/ifCond}}
+    </strong>
+    <span class="SlotPicker-duration">45 mins</span>
   </label>
 </script>
 
@@ -82,7 +88,7 @@
 </script>
 
 
-<div class="SlotPicker" data-today="2014-03-13">
+<div class="SlotPicker" data-today="<%= Date.today %>">
 
   <div class="l-column-half">
 
@@ -154,74 +160,33 @@
     <div class="SlotPicker-choices">
       <p class="SlotPicker-promoteHelp">Use the arrows to put your visit choices in the order that suits you best.</p>
     </div>
+
+    <%= form_for @booking_request do |f| %>
+      <%
+      slots = []
+      (Date.today..2.months.from_now).each do |date|
+        unless date.saturday? || date.sunday?
+          slots << ["#{date.strftime('%A, %b %d')} – Morning", "#{date}-0800-1200"]
+          slots << ["#{date.strftime('%A, %b %d')} – Afternoon", "#{date}-1300-1700"]
+        end
+      end
+
+      slots.compact!
+      %>
+
+      <%= f.select(:primary_slot, slots, { include_blank: "" }, { class: 'SlotPicker-input' }) %>
+      <%= f.select(:secondary_slot, slots, { include_blank: "" }, { class: 'SlotPicker-input' }) %>
+      <%= f.select(:tertiary_slot, slots, { include_blank: "" }, { class: 'SlotPicker-input' }) %>
+
+      <p><br>
+        <%= f.button(type: 'submit', class: 'button') do %>
+          Continue
+        <% end %>
+      </p>
+    <% end %>
   </div>
 
-  <select class="SlotPicker-input">
-    <option value="">none</option>
-    <option value="2014-03-16-1330-1600">Sunday, 16 March -  1:30pm</option>
-    <option value="2014-03-17-0130-0300">Monday, 17 March -  1:00am</option>
-    <option value="2014-03-18-1400-1600">Tuesday, 18 March -  2:00pm</option>
-    <option value="2014-03-19-1433-1645">Wednesday, 19 March -  2:00pm</option>
-    <option value="2014-03-20-1400-1440">Thursday, 20 March -  2:00pm</option>
-    <option value="2014-03-22-0915-1115">Saturday, 22 March -  9:15am</option>
-    <option value="2014-03-22-1400-1600">Saturday, 22 March -  2:00pm</option>
-    <option value="2014-03-23-1400-1500">Sunday, 23 March -  2:00pm</option>
-    <option value="2014-03-24-1501-1602">Monday, 24 March -  2:00pm</option>
-    <option value="2014-03-25-1400-1600">Tuesday, 25 March -  2:00pm</option>
-    <option value="2014-03-26-1400-1600">Wednesday, 26 March -  2:00pm</option>
-    <option value="2014-03-27-1400-1600">Thursday, 27 March -  2:00pm</option>
-    <option value="2014-03-29-0915-1115">Saturday, 29 March -  9:15am</option>
-    <option value="2014-03-29-1400-1600">Saturday, 29 March -  2:00pm</option>
-    <option value="2014-03-30-1400-1600">Sunday, 30 March -  2:00pm</option>
-    <option value="2014-03-31-1400-1600">Monday, 31 March -  2:00pm</option>
-    <option value="2014-04-01-1400-1600">Tuesday,  1 April -  2:00pm</option>
-    <option value="2014-04-02-0000-0200">Wednesday,  2 April -  12am</option>
-    <option value="2014-05-01-1400-1600">Thursday,  1 May -  2:00pm</option>
-  </select>
-  <select class="SlotPicker-input">
-    <option value="">none</option>
-    <option value="2014-03-16-1330-1600">Sunday, 16 March -  1:30pm</option>
-    <option value="2014-03-17-0130-0300">Monday, 17 March -  1:00am</option>
-    <option value="2014-03-18-1400-1600">Tuesday, 18 March -  2:00pm</option>
-    <option value="2014-03-19-1433-1645">Wednesday, 19 March -  2:00pm</option>
-    <option value="2014-03-20-1400-1440">Thursday, 20 March -  2:00pm</option>
-    <option value="2014-03-22-0915-1115">Saturday, 22 March -  9:15am</option>
-    <option value="2014-03-22-1400-1600">Saturday, 22 March -  2:00pm</option>
-    <option value="2014-03-23-1400-1500">Sunday, 23 March -  2:00pm</option>
-    <option value="2014-03-24-1501-1602">Monday, 24 March -  2:00pm</option>
-    <option value="2014-03-25-1400-1600">Tuesday, 25 March -  2:00pm</option>
-    <option value="2014-03-26-1400-1600">Wednesday, 26 March -  2:00pm</option>
-    <option value="2014-03-27-1400-1600">Thursday, 27 March -  2:00pm</option>
-    <option value="2014-03-29-0915-1115">Saturday, 29 March -  9:15am</option>
-    <option value="2014-03-29-1400-1600">Saturday, 29 March -  2:00pm</option>
-    <option value="2014-03-30-1400-1600">Sunday, 30 March -  2:00pm</option>
-    <option value="2014-03-31-1400-1600">Monday, 31 March -  2:00pm</option>
-    <option value="2014-04-01-1400-1600">Tuesday,  1 April -  2:00pm</option>
-    <option value="2014-04-02-0000-0200">Wednesday,  2 April -  12am</option>
-    <option value="2014-05-01-1400-1600">Thursday,  1 May -  2:00pm</option>
-  </select>
-  <select class="SlotPicker-input">
-    <option value="">none</option>
-    <option value="2014-03-16-1330-1600">Sunday, 16 March -  1:30pm</option>
-    <option value="2014-03-17-0130-0300">Monday, 17 March -  1:00am</option>
-    <option value="2014-03-18-1400-1600">Tuesday, 18 March -  2:00pm</option>
-    <option value="2014-03-19-1433-1645">Wednesday, 19 March -  2:00pm</option>
-    <option value="2014-03-20-1400-1440">Thursday, 20 March -  2:00pm</option>
-    <option value="2014-03-22-0915-1115">Saturday, 22 March -  9:15am</option>
-    <option value="2014-03-22-1400-1600">Saturday, 22 March -  2:00pm</option>
-    <option value="2014-03-23-1400-1500">Sunday, 23 March -  2:00pm</option>
-    <option value="2014-03-24-1501-1602">Monday, 24 March -  2:00pm</option>
-    <option value="2014-03-25-1400-1600">Tuesday, 25 March -  2:00pm</option>
-    <option value="2014-03-26-1400-1600">Wednesday, 26 March -  2:00pm</option>
-    <option value="2014-03-27-1400-1600">Thursday, 27 March -  2:00pm</option>
-    <option value="2014-03-29-0915-1115">Saturday, 29 March -  9:15am</option>
-    <option value="2014-03-29-1400-1600">Saturday, 29 March -  2:00pm</option>
-    <option value="2014-03-30-1400-1600">Sunday, 30 March -  2:00pm</option>
-    <option value="2014-03-31-1400-1600">Monday, 31 March -  2:00pm</option>
-    <option value="2014-04-01-1400-1600">Tuesday,  1 April -  2:00pm</option>
-    <option value="2014-04-02-0000-0200">Wednesday,  2 April -  12am</option>
-    <option value="2014-05-01-1400-1600">Thursday,  1 May -  2:00pm</option>
-  </select>
+
 
 </div>
 
@@ -231,6 +196,15 @@
   <%= javascript_include_tag 'handlebars' %>
   <%= javascript_include_tag 'moj.date-slider' %>
   <%= javascript_include_tag 'moj.slot-picker' %>
+
+  <script>
+    Handlebars.registerHelper('ifCond', function(v1, v2, options) {
+      if(v1 === v2) {
+        return options.fn(this);
+      }
+      return options.inverse(this);
+    });
+  </script>
   <script>moj.Modules.SlotPicker.init();</script>
   <script>moj.Modules.DateSlider.init();</script>
 <% end %>
