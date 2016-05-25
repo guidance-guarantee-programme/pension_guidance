@@ -11,7 +11,7 @@ class BookingRequest < ActiveRecord::Base
   validates :memorable_word, presence: true
   validates :appointment_type, presence: true
 
-  validates :has_defined_contribution_pension,
+  validates :dc_pot,
             presence: true,
             inclusion: {
               in: %w(yes no unknown),
