@@ -14,6 +14,10 @@ class BookingRequestsController < ApplicationController
     redirect_to new_booking_request_personal_detail_path(@booking_request)
   end
 
+  def show
+    @booking_request = BookingRequest.find(params[:id])
+  end
+
   private
 
   def booking_request_params

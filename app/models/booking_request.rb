@@ -13,13 +13,7 @@ class BookingRequest < ActiveRecord::Base
   validates :memorable_word, presence: true
   validates :appointment_type, presence: true
 
-  validates :dc_pot,
-            presence: true,
-            inclusion: {
-              in: %w(yes no unknown),
-              allow_blank: true,
-              message: '%{value} is not a valid value'
-            }
+  validates :dc_pot, presence: true
 
   def slots_from(params)
     %i(primary_slot secondary_slot tertiary_slot).each do |slot_param|

@@ -2,7 +2,7 @@
   <div class="l-column-two-thirds">
     <h1>Your details</h1>
 
-    <%= form_for @booking_request do |f| %>
+    <%= form_for @booking_request, url: booking_request_personal_details_path(@booking_request) do |f| %>
       <div class="form-group">
         <%= f.label :first_name, class: 'form-label' %>
         <%= f.text_field :first_name, class: 'form-control' %>

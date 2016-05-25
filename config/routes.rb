@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'home#show'
 
   resources :booking_requests do
-    resources :personal_details
+    resource :personal_details
   end
 
   constraints format: 'html' do
