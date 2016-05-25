@@ -6,7 +6,6 @@ class PersonalDetailsController < ApplicationController
   end
 
   def update
-    binding.pry
     @booking_request = BookingRequest.find(params[:booking_request_id])
 
     if @booking_request.update(personal_details_params)
