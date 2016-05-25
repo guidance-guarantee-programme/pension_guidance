@@ -1,0 +1,80 @@
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <h1>Your details</h1>
+
+    <%= form_for @booking_request do |f| %>
+      <div class="form-group">
+        <%= f.label :first_name, class: 'form-label' %>
+        <%= f.text_field :first_name, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :last_name, class: 'form-label' %>
+        <%= f.text_field :last_name, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :email, class: 'form-label' do %>
+        Email
+        <span class="form-hint">We’ll send you a reminder of your appointment details.</span>
+        <% end %>
+
+        <%= f.text_field :email, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :telephone_number, class: 'form-label' %>
+        <%= f.text_field :telephone_number, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :memorable_word, class: 'form-label' do %>
+        Your memorable word
+        <span class="form-hint">Our pensions expert will repeat this word when they call so you know it’s us.</span>
+        <% end %>
+        <%= f.text_field :memorable_word, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <fieldset class="inline">
+          <legend>Your age</legend>
+
+          <%= f.label :appointment_type, value: 'under_50', class: 'block-label' do %>
+              <%= f.radio_button :appointment_type, 'under_50', checked: false,
+                                 class: 't-appointment-type-under-50' %>
+              Under 50
+          <% end %>
+
+          <%= f.label :appointment_type, value: '50_54', class: 'block-label' do %>
+              <%= f.radio_button :appointment_type, '50_54', checked: false,
+                                 class: 't-appointment-type-50-54' %>
+              50 to 54
+          <% end %>
+
+          <%= f.label :appointment_type, value: '55_or_over', class: 'block-label' do %>
+            <%= f.radio_button :appointment_type, '55_or_over', checked: false,
+                                 class: 't-appointment-type-55' %>
+            55 or over
+          <% end %>
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :opt_in do %>
+          <%= f.check_box :opt_in %> Yes, I would like to receive marketing information
+        <% end %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :dc_pot do %>
+          <%= f.check_box :dc_pot %> I have a defined contribution pension pot
+        <% end %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit 'Submit booking request', class: 'button' %>
+      </div>
+
+    <% end %>
+  </div>
+</div>
