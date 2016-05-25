@@ -23,6 +23,7 @@ gem 'output-templates', '~> 4.1.0', github: 'guidance-guarantee-programme/output
 gem 'phoner'
 gem 'princely'
 gem 'postcodes_io'
+gem 'pg'
 gem 'puma'
 gem 'rack-contrib'
 gem 'rails', '4.2.6'
