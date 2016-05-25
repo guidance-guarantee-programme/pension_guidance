@@ -17,6 +17,8 @@ module PensionGuidance
 
     config.autoload_paths << Rails.root.join('lib')
 
+    config.assets.paths << "#{Rails.root}/vendor/assets/moj.slot-picker/dist/stylesheets"
+
     config.cache_max_age = ENV['CACHE_MAX_AGE'] || 10.seconds
 
     config.middleware.use Rack::BounceFavicon

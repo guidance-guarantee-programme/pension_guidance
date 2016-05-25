@@ -1,0 +1,22 @@
+.SlotPicker-day {
+  font-size: 85%;
+  margin-left: 0;
+}
+
+.SlotPicker-label {
+  font-size: 18px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.SlotPicker-choice .SlotPicker-choiceInner {
+  min-height: 40px;
+}
+
+.SlotPicker-choice.is-chosen .SlotPicker-choiceInner p {
+  font-size: 20px;
+}
+
+.SlotPicker-input {
+  display: none;
+}
