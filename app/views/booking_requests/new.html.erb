@@ -164,7 +164,7 @@
     <%= form_for @booking_request do |f| %>
       <%
       slots = []
-      (Date.today..2.months.from_now).each do |date|
+      (Date.today + 2.days..6.weeks.from_now).each do |date|
         unless date.saturday? || date.sunday?
           slots << ["#{date.strftime('%A, %b %e')} – Morning", "#{date}-0800-1200"]
           slots << ["#{date.strftime('%A, %b %e')} – Afternoon", "#{date}-1300-1700"]
