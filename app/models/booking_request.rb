@@ -1,5 +1,9 @@
+require 'securerandom'
+
 class BookingRequest < ActiveRecord::Base
   SLOT_REGEX = /^(\d{4}-\d{2}-\d{2})-(\d{4}-\d{4})$/
+
+  before_create :generate_reference_number
 
   has_one :primary_slot,   -> { where(position: 1) }, class_name: 'Slot'
   has_one :secondary_slot, -> { where(position: 2) }, class_name: 'Slot'
@@ -23,5 +27,11 @@ class BookingRequest < ActiveRecord::Base
         slot.name = $2
       end
     end
+  end
+
+  private
+
+  def generate_reference_number
+    self.reference_number ||= SecureRandom.hex(4)
   end
 end
