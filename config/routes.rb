@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'home#show'
 
+  resources :booking_requests
+
   constraints format: 'html' do
     resources :categories, only: 'show', path: 'browse'
 
