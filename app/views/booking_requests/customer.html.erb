@@ -39,15 +39,21 @@
         <fieldset class="inline">
           <legend>Your age</legend>
 
+          <%= f.label :appointment_type, value: 'under_50', class: 'block-label' do %>
+              <%= f.radio_button :appointment_type, 'under_50', checked: false,
+                                 class: 't-appointment-type-under-50' %>
+              Under 50
+          <% end %>
+
           <%= f.label :appointment_type, value: '50_54', class: 'block-label' do %>
               <%= f.radio_button :appointment_type, '50_54', checked: false,
                                  class: 't-appointment-type-50-54' %>
               50 to 54
           <% end %>
 
-          <%= f.label :appointment_type, value: 'standard', class: 'block-label' do %>
-            <%= f.radio_button :appointment_type, 'standard', checked: false,
-                                 class: 't-appointment-type-standard' %>
+          <%= f.label :appointment_type, value: '55_or_over', class: 'block-label' do %>
+            <%= f.radio_button :appointment_type, '55_or_over', checked: false,
+                                 class: 't-appointment-type-55' %>
             55 or over
           <% end %>
         </fieldset>
