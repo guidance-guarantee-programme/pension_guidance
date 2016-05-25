@@ -24,6 +24,10 @@ en:
           attributes:
             appointment_type:
               inclusion: Please select the age range you are in
+        booking_request:
+          attributes:
+            dc_pot:
+              blank: We can only offer pension guidance appointments to those with a defined contribution pension
         calculators/adjustable_income_form:
           attributes:
             pot:
