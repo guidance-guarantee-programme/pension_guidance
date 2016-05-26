@@ -10,6 +10,7 @@ class PersonalDetailsController < ApplicationController
 
     if @booking_request.update(personal_details_params)
       BookingRequestMailer.customer_confirmation(@booking_request).deliver
+      BookingRequestMailer.manager_confirmation.deliver
       redirect_to @booking_request
     else
       render :new

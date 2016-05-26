@@ -21,4 +21,8 @@ class BookingRequestMailerPreview < ActionMailer::Preview
 
     BookingRequestMailer.customer_confirmation(booking)
   end
+
+  def manager_confirmation
+    BookingRequestMailer.manager_confirmation
+  end
 end

@@ -10,12 +10,7 @@ class BookingRequestsController < ApplicationController
     @booking_request = BookingRequest.find(params[:id])
     @booking_request.slots_from(booking_request_params)
     @booking_request.save(validate: false)
-
     redirect_to new_booking_request_personal_details_path(@booking_request)
-  end
-
-  def show
-    @booking_request = BookingRequest.find(params[:id])
   end
 
   def show
