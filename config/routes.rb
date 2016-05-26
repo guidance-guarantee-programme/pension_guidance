@@ -5,6 +5,10 @@ Rails.application.routes.draw do
     resource :personal_details
   end
 
+  namespace :admin do
+    resources :booking_requests, only: :index
+  end
+
   constraints format: 'html' do
     resources :categories, only: 'show', path: 'browse'
 
