@@ -66,12 +66,37 @@
         <%= f.text_field :memorable_word, class: 'form-control' %>
       </div>
 
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:existing_annuity) %>">
+        <fieldset class="inline">
+          <legend>Do you already hold an annuity?</legend>
+
+          <% if @booking_request.errors.include?(:existing_annuity) %>
+            <span class="error-message"><%= @booking_request.errors[:existing_annuity].to_sentence %></span>
+          <% end %>
+
+          <%= f.label :existing_annuity, value: 'yes', class: 'block-label' do %>
+              <%= f.radio_button :existing_annuity, 'yes', checked: false %>
+              Yes
+          <% end %>
+
+          <%= f.label :existing_annuity, value: 'no', class: 'block-label' do %>
+              <%= f.radio_button :existing_annuity, 'no', checked: false %>
+              No
+          <% end %>
+
+          <%= f.label :existing_annuity, value: 'not_sure', class: 'block-label' do %>
+              <%= f.radio_button :existing_annuity, 'not_sure', checked: false %>
+              Not sure
+          <% end %>
+        </fieldset>
+      </div>
+
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:appointment_type) %>">
         <fieldset class="inline">
           <legend>Your age</legend>
 
           <% if @booking_request.errors.include?(:appointment_type) %>
-            <span class="error-message"><%= @booking_request.errors[:appointment_type].to_sentence %></span>
+            <span class="error-message"><%= @booking_request.errors[:appointment_type].first %></span>
           <% end %>
 
           <%= f.label :appointment_type, value: 'under_50', class: 'block-label' do %>

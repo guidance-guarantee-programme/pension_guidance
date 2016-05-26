@@ -10,6 +10,7 @@ class BookingRequest < ActiveRecord::Base
   has_one :tertiary_slot,  -> { where(position: 3) }, class_name: 'Slot'
 
   validates :appointment_type, inclusion: { in: %w(55_or_over 50_54) }
+  validates :existing_annuity, inclusion: { in: %w(yes no not_sure) }
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :email, presence: true

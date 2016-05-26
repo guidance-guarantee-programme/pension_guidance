@@ -24,6 +24,7 @@ class PersonalDetailsController < ApplicationController
         :first_name,
         :last_name,
         :appointment_type,
+        :existing_annuity,
         :email,
         :telephone_number,
         :memorable_word,
