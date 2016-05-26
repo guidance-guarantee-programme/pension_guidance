@@ -7,6 +7,12 @@
   margin-top: 1em;
 }
 
+.SlotPicker--selected {
+  .SlotPicker-choiceInner {
+    padding-right: 0 !important;
+  }
+}
+
 .SlotPicker-day {
   font-size: 85%;
   margin-left: 0;

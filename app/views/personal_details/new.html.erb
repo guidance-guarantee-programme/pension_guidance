@@ -1,3 +1,7 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'moj.slot-picker', media: 'screen' %>
+<% end %>
+
 <div class="l-grid-row">
   <div class="l-column-two-thirds">
     <h1>Your details</h1>
@@ -142,5 +146,47 @@
       </div>
 
     <% end %>
+  </div>
+
+  <div class="l-column-third">
+    <h2>Your time preferences</h2>
+    <p>Your chosen appointment times are below.</p>
+    <p>Don't look right? <a href="javascript: window.history.back()">You can go back and change</a>.</p>
+
+    <div class="SlotPicker-choices is-chosen SlotPicker--selected">
+      <div class="SlotPicker-choice is-chosen">
+        <div class="SlotPicker-choiceInner">
+          <div class="SlotPicker-position"><span>1</span></div>
+          <div class="SlotPicker-choiceContent">
+            <p class="SlotPicker-date"><%= @booking_request.primary_slot.chosen_date.strftime('%A, %b %e') %></p>
+            <p class="SlotPicker-time">
+            <%= @booking_request.primary_slot.name == '1300-1700' ? 'Afternoon' : 'Morning' %>, 45 mins</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="SlotPicker-choice is-chosen">
+        <div class="SlotPicker-choiceInner">
+          <div class="SlotPicker-position"><span>2</span></div>
+          <div class="SlotPicker-choiceContent">
+            <p class="SlotPicker-date"><%= @booking_request.secondary_slot.chosen_date.strftime('%A, %b %e') %></p>
+            <p class="SlotPicker-time">
+            <%= @booking_request.secondary_slot.name == '1300-1700' ? 'Afternoon' : 'Morning' %>, 45 mins</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="SlotPicker-choice is-chosen">
+        <div class="SlotPicker-choiceInner">
+          <div class="SlotPicker-position"><span>3</span></div>
+          <div class="SlotPicker-choiceContent">
+            <p class="SlotPicker-date"><%= @booking_request.tertiary_slot.chosen_date.strftime('%A, %b %e') %></p>
+            <p class="SlotPicker-time">
+            <%= @booking_request.tertiary_slot.name == '1300-1700' ? 'Afternoon' : 'Morning' %>, 45 mins</p>
+          </div>
+        </div>
+      </div>
+
+        </div>
   </div>
 </div>
