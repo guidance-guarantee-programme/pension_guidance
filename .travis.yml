@@ -12,6 +12,7 @@ env:
   - PATH=$PWD/bin:$PATH
   - secure: oZejYlwy5wgEKshf51GbyA62FURMPRolk4snUK5cXQLCSQ+pjleKZq5h7CYlSZfvQNDctw0u3NsFMK9c+FNm057p4/wSvhP1wxz8Zq2jDFRJjmZGIInW5l5Fw7AvDE+Ndn9ndTyi/Ye/xWOIaiI9q9dlqcp62sKTjvHU+w+vGgA=
   - secure: MdrB+5oJX74bc7wSPut3vANmXUlvQN+pJyagxE+tuWWadKb5F4oAAXU2/BtrMqD9f/lxs2d+lh3AxKIWgN/ZUyxNxWZPk8958pqaTbc8eAcYLag4E2fqqyafkJZYW5Dny1lkoIzdmxn4FPHdp8WTfXsnOSmDa56fSj5DwBe4cF0=
+  - DATABASE_URL=postgres://postgres@localhost:5432/travis_ci_test
 node_js:
 - '0.10'
 before_install:
@@ -21,6 +22,7 @@ before_script:
 - "(cd .downloads; [ -d prince-9.0r5-linux-amd64-static ] || curl -s http://www.princexml.com/download/prince-9.0r5-linux-amd64-static.tar.gz | tar xzf -)"
 - echo $PWD | ./.downloads/prince-9.0r5-linux-amd64-static/install.sh
 - npm install
+- "./bin/rake db:setup RAILS_ENV=test"
 deploy:
   provider: heroku
   app: ggp-pension-guidance

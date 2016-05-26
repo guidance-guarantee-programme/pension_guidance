@@ -3,6 +3,8 @@ require_relative './boot'
 require 'active_model/railtie'
 require 'action_controller/railtie'
 require 'action_view/railtie'
+require 'active_record/railtie'
+require 'action_mailer/railtie'
 require 'sprockets/railtie'
 require 'sprockets/es6'
 
@@ -15,6 +17,8 @@ module PensionGuidance
                                                    'GuideRepository::GuideNotFound' => :not_found
 
     config.autoload_paths << Rails.root.join('lib')
+
+    config.assets.paths << "#{Rails.root}/vendor/assets/moj.slot-picker/dist/stylesheets"
 
     config.cache_max_age = ENV['CACHE_MAX_AGE'] || 10.seconds
 

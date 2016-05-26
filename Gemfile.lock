@@ -83,6 +83,7 @@ GEM
       mime-types (>= 1.16, < 3)
       nokogiri (~> 1.5)
       rails (>= 3, < 5)
+    database_cleaner (1.5.1)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     excon (0.45.3)
@@ -130,6 +131,8 @@ GEM
     kramdown (1.5.0)
     launchy (2.4.3)
       addressable (~> 2.3)
+    letter_opener (1.4.1)
+      launchy (~> 2.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -154,6 +157,7 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
+    pg (0.18.4)
     phantomjs (1.9.8.0)
     phoner (1.0.1)
       activesupport
@@ -308,6 +312,7 @@ DEPENDENCIES
   bugsnag
   canonical-rails
   cucumber-rails
+  database_cleaner
   fakeredis
   faraday
   faraday-conductivity
@@ -321,10 +326,12 @@ DEPENDENCIES
   jasmine-jquery-rails
   jasmine-rails
   launchy
+  letter_opener
   newrelic_rpm
   nokogiri
   output-templates (~> 4.1.0)!
   pdf-inspector
+  pg
   phoner
   poltergeist
   postcodes_io

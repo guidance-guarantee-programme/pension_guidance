@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - 'bin/*'
+    - 'db/**/*'
     - 'vendor/**/*'
   TargetRubyVersion: 2.3
 

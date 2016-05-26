@@ -40,6 +40,13 @@
 <h2 class="heading-small">How to book</h2>
 
 <p>
+  <form action="/booking_requests/new" method="get">
+    <input type="hidden" name="booking_location_id" value="<%= @location.booking_location_id %>">
+    <input type="submit" value="Book online" class="button">
+  </form>
+</p>
+
+<p>
   Call <strong class="t-phone"><%= @location.phone %></strong>.
 </p>
 

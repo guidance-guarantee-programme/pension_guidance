@@ -1,0 +1,192 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'moj.slot-picker', media: 'screen' %>
+<% end %>
+
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <h1>Your details</h1>
+
+    <%= form_for @booking_request, url: booking_request_personal_details_path(@booking_request) do |f| %>
+
+      <% if @booking_request.errors.any? %>
+        <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+          <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+            There was a problem with your details
+          </h1>
+
+          <ul class="error-summary-list">
+            <% @booking_request.errors.each do |field, message| %>
+              <li style="list-style: none; margin-left: 0;"><a href="#booking_request_<%= field %>"><%= message %></a></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:first_name) %>">
+        <%= f.label :first_name, class: 'form-label' %>
+        <% if @booking_request.errors.include?(:first_name) %>
+          <span class="error-message"><%= @booking_request.errors[:first_name].to_sentence %></span>
+        <% end %>
+        <%= f.text_field :first_name, class: 'form-control' %>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:last_name) %>">
+        <%= f.label :last_name, class: 'form-label' %>
+        <% if @booking_request.errors.include?(:last_name) %>
+          <span class="error-message"><%= @booking_request.errors[:last_name].to_sentence %></span>
+        <% end %>
+        <%= f.text_field :last_name, class: 'form-control' %>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:email) %>">
+        <%= f.label :email, class: 'form-label' do %>
+        Email
+        <span class="form-hint">We’ll send you a reminder of your appointment details.</span>
+        <% end %>
+
+        <% if @booking_request.errors.include?(:email) %>
+          <span class="error-message"><%= @booking_request.errors[:email].to_sentence %></span>
+        <% end %>
+
+        <%= f.text_field :email, class: 'form-control' %>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:telephone_number) %>">
+        <%= f.label :telephone_number, class: 'form-label' %>
+        <% if @booking_request.errors.include?(:telephone_number) %>
+          <span class="error-message"><%= @booking_request.errors[:telephone_number].to_sentence %></span>
+        <% end %>
+        <%= f.text_field :telephone_number, class: 'form-control' %>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:memorable_word) %>">
+        <%= f.label :memorable_word, class: 'form-label' do %>
+        Your memorable word
+        <span class="form-hint">Our pensions expert will repeat this word when they call so you know it’s us.</span>
+        <% end %>
+        <% if @booking_request.errors.include?(:memorable_word) %>
+          <span class="error-message"><%= @booking_request.errors[:memorable_word].to_sentence %></span>
+        <% end %>
+        <%= f.text_field :memorable_word, class: 'form-control' %>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:existing_annuity) %>">
+        <fieldset class="inline">
+          <legend>Do you already hold an annuity?</legend>
+
+          <% if @booking_request.errors.include?(:existing_annuity) %>
+            <span class="error-message"><%= @booking_request.errors[:existing_annuity].to_sentence %></span>
+          <% end %>
+
+          <%= f.label :existing_annuity, value: 'yes', class: 'block-label' do %>
+              <%= f.radio_button :existing_annuity, 'yes', checked: false %>
+              Yes
+          <% end %>
+
+          <%= f.label :existing_annuity, value: 'no', class: 'block-label' do %>
+              <%= f.radio_button :existing_annuity, 'no', checked: false %>
+              No
+          <% end %>
+
+          <%= f.label :existing_annuity, value: 'not_sure', class: 'block-label' do %>
+              <%= f.radio_button :existing_annuity, 'not_sure', checked: false %>
+              Not sure
+          <% end %>
+        </fieldset>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:appointment_type) %>">
+        <fieldset class="inline">
+          <legend>Your age</legend>
+
+          <% if @booking_request.errors.include?(:appointment_type) %>
+            <span class="error-message"><%= @booking_request.errors[:appointment_type].first %></span>
+          <% end %>
+
+          <%= f.label :appointment_type, value: 'under_50', class: 'block-label' do %>
+              <%= f.radio_button :appointment_type, 'under_50', checked: false,
+                                 class: 't-appointment-type-under-50' %>
+              Under 50
+          <% end %>
+
+          <%= f.label :appointment_type, value: '50_54', class: 'block-label' do %>
+              <%= f.radio_button :appointment_type, '50_54', checked: false,
+                                 class: 't-appointment-type-50-54' %>
+              50 to 54
+          <% end %>
+
+          <%= f.label :appointment_type, value: '55_or_over', class: 'block-label' do %>
+            <%= f.radio_button :appointment_type, '55_or_over', checked: false,
+                                 class: 't-appointment-type-55' %>
+            55 or over
+          <% end %>
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :opt_in do %>
+          <% if @booking_request.errors.include?(:opt_in) %>
+            <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence %></span>
+          <% end %>
+          <%= f.check_box :opt_in %> Yes, I would like to receive marketing information
+        <% end %>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:dc_pot) %>">
+        <%= f.label :dc_pot do %>
+          <%= f.check_box :dc_pot %> I have a defined contribution pension pot
+          <% if @booking_request.errors.include?(:dc_pot) %>
+            <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence %></span>
+          <% end %>
+        <% end %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit 'Submit booking request', class: 'button' %>
+      </div>
+
+    <% end %>
+  </div>
+
+  <div class="l-column-third">
+    <h2>Your time preferences</h2>
+    <p>Your chosen appointment times are below.</p>
+    <p>Don't look right? <a href="javascript: window.history.back()">You can go back and change</a>.</p>
+
+    <div class="SlotPicker-choices is-chosen SlotPicker--selected">
+      <div class="SlotPicker-choice is-chosen">
+        <div class="SlotPicker-choiceInner">
+          <div class="SlotPicker-position"><span>1</span></div>
+          <div class="SlotPicker-choiceContent">
+            <p class="SlotPicker-date"><%= @booking_request.primary_slot.chosen_date.strftime('%A, %b %e') %></p>
+            <p class="SlotPicker-time">
+            <%= @booking_request.primary_slot.name == '1300-1700' ? 'Afternoon' : 'Morning' %>, 45 mins</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="SlotPicker-choice is-chosen">
+        <div class="SlotPicker-choiceInner">
+          <div class="SlotPicker-position"><span>2</span></div>
+          <div class="SlotPicker-choiceContent">
+            <p class="SlotPicker-date"><%= @booking_request.secondary_slot.chosen_date.strftime('%A, %b %e') %></p>
+            <p class="SlotPicker-time">
+            <%= @booking_request.secondary_slot.name == '1300-1700' ? 'Afternoon' : 'Morning' %>, 45 mins</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="SlotPicker-choice is-chosen">
+        <div class="SlotPicker-choiceInner">
+          <div class="SlotPicker-position"><span>3</span></div>
+          <div class="SlotPicker-choiceContent">
+            <p class="SlotPicker-date"><%= @booking_request.tertiary_slot.chosen_date.strftime('%A, %b %e') %></p>
+            <p class="SlotPicker-time">
+            <%= @booking_request.tertiary_slot.name == '1300-1700' ? 'Afternoon' : 'Morning' %>, 45 mins</p>
+          </div>
+        </div>
+      </div>
+
+        </div>
+  </div>
+</div>

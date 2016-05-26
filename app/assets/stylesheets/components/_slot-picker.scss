@@ -1,0 +1,38 @@
+// scss-lint:disable SelectorFormat
+.BookingCalendar-dates {
+  margin: 0;
+}
+
+.BookingCalendar-legendDesc {
+  margin-top: 1em;
+}
+
+.SlotPicker--selected {
+  .SlotPicker-choiceInner {
+    padding-right: 0 !important;
+  }
+}
+
+.SlotPicker-day {
+  font-size: 85%;
+  margin-left: 0;
+}
+
+.SlotPicker-label {
+  font-size: 18px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.SlotPicker-choice .SlotPicker-choiceInner {
+  min-height: 50px;
+}
+
+.SlotPicker-choice.is-chosen .SlotPicker-choiceInner p {
+  font-size: 20px;
+}
+
+.SlotPicker-input {
+  display: none;
+}
+// scss-lint:enable SelectorFormat

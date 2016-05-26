@@ -17,6 +17,32 @@ en:
       format:
         strip_insignificant_zeros: true
 
+  activerecord:
+    errors:
+      models:
+        booking_request:
+          attributes:
+            first_name:
+              blank: Please provide your first name
+            last_name:
+              blank: Please provide your last name
+            email:
+              blank: Please provide your email address
+            telephone_number:
+              blank: Please provide a contact telephone number
+            memorable_word:
+              blank: Please provide a memorable word
+            appointment_type:
+              blank: Please select the age range you are in
+              inclusion: Please select the age range you are in
+            existing_annuity:
+              inclusion: We can offer guidance to those to hold an annuity already. Please select 'not sure' if you don't know if you hold one at this stage.
+            dc_pot:
+              blank: We can only offer pension guidance appointments to those with a defined contribution pension
+    attributes:
+      booking_request:
+        appointment_type: Your age
+
   activemodel:
     errors:
       models:

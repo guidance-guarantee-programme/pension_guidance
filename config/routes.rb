@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
   root 'home#show'
 
+  resources :booking_requests do
+    resource :personal_details
+  end
+
+  namespace :admin do
+    resources :booking_requests, only: :index
+  end
+
   constraints format: 'html' do
     resources :categories, only: 'show', path: 'browse'
 
