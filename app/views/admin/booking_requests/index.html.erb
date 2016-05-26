@@ -1,1 +1,28 @@
-<h1>Hi!</h1>
+<h1>New booking requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Requested</th>
+      <th scope="col">Location</th>
+      <th class="numeric" scope="col">Slots</th>
+      <th class="numeric" scope="col">Reference</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @booking_requests.each do |request| %>
+    <tr>
+      <td><%= time_ago_in_words(request.created_at) %> ago</td>
+      <td><a href="https://www.pensionwise.gov.uk/locations/15fd41b2-439a-448a-b775-b2b61e16d4bb?postcode=SW1A+1AA">Westminster</a></td>
+      <td>
+        <%= request.primary_slot %><br>
+        <%= request.secondary_slot %><br>
+        <%= request.tertiary_slot %><br>
+      </td>
+      <td><%= request.reference_number %></td>
+      <td><a href="#" class="button">Fulfil</a></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
