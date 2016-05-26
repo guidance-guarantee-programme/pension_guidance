@@ -11,8 +11,8 @@
           </h1>
 
           <ul class="error-summary-list">
-            <% @booking_request.errors.full_messages.each do |msg| %>
-              <li><%= msg %></li>
+            <% @booking_request.errors.each do |field, message| %>
+              <li style="list-style: none; margin-left: 0;"><a href="#booking_request_<%= field %>"><%= message %></a></li>
             <% end %>
           </ul>
         </div>
