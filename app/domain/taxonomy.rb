@@ -69,7 +69,7 @@ class Taxonomy
   end
 
   def selling_an_annuity
-    category_node('selling_an_annuity').tap do |node|
+    category_node('selling-an-annuity').tap do |node|
       node << guide_node('how-to-sell-an-annuity')
       node << guide_node('dependents-and-beneficiaries')
     end
