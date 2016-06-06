@@ -21,6 +21,7 @@ class Taxonomy
       node << your_pension_details
       node << taking_your_pension_money
       node << tax_and_getting_advice
+      node << illness_and_death
       node << selling_an_annuity
     end
   end
@@ -68,8 +69,17 @@ class Taxonomy
     end
   end
 
+  def illness_and_death
+    category_node('illness-and-death').tap do |node|
+      node << guide_node('ill-health')
+      node << guide_node('care-costs')
+      node << guide_node('when-you-die')
+    end
+  end
+
   def selling_an_annuity
     category_node('selling-an-annuity').tap do |node|
+      node << guide_node('already-bought-annuity')
       node << guide_node('how-to-sell-an-annuity')
       node << guide_node('dependents-and-beneficiaries')
     end
