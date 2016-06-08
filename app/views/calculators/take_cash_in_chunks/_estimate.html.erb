@@ -1,22 +1,38 @@
+<div id="js-estimate">
+  <p>
+    If you take <span class="t-calculator-chunk"><%= number_to_currency(estimate.chunk) %></span> from your
+    <span class="t-calculator-pot"><%= number_to_currency(estimate.pot) %></span> pot, you could get:
+
+    <strong class="calculator__estimate__number t-calculator-chunk-remaining">
+      <%= number_to_currency(estimate.chunk_remaining) %>
+    </strong>
+
+    We estimate you’ll pay:
+
+    <strong class="calculator__estimate__number t-calculator-chunk-tax">
+      <%= number_to_currency(estimate.chunk_tax) %> in tax
+    </strong>
+
+    Leaving:
+
+    <strong class="calculator__estimate__number t-calculator-pot-remaining">
+      <%= number_to_currency(estimate.pot_remaining) %> in your pot
+    </strong>
+  </p>
+</div>
+
 <p>
-  If you take <span class="t-calculator-chunk"><%= number_to_currency(estimate.chunk) %></span> from your
-  <span class="t-calculator-pot"><%= number_to_currency(estimate.pot) %></span> pot, you could get:
-
-  <strong class="calculator__estimate__number t-calculator-chunk-remaining">
-    <%= number_to_currency(estimate.chunk_remaining) %>
-  </strong>
-
-  We estimate you’ll pay:
-
-  <strong class="calculator__estimate__number t-calculator-chunk-tax">
-    <%= number_to_currency(estimate.chunk_tax) %> in tax
-  </strong>
-
-  Leaving:
-
-  <strong class="calculator__estimate__number t-calculator-pot-remaining">
-    <%= number_to_currency(estimate.pot_remaining) %> in your pot
-  </strong>
+  <label for="slider">or try a different cash chunk:</label>
+  <%= render 'components/slider', {
+      id: 'slider',
+      target: '#chunk',
+      option: 'take-cash',
+      text_before: '£',
+      initial_value: estimate.chunk.to_f.ceil,
+      min: 50,
+      max: estimate.pot.to_i - 1,
+      step: 5
+  } %>
 </p>
 
 <ul>
