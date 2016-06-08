@@ -325,6 +325,7 @@ DEPENDENCIES
   nokogiri
   output-templates (~> 4.1.0)!
   pdf-inspector
+  phantomjs (= 1.9.8.0)
   phoner
   poltergeist
   postcodes_io
@@ -357,4 +358,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.3
+   1.12.4

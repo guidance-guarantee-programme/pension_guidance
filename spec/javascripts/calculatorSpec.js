@@ -26,6 +26,17 @@ describe('calculators', function() {
       return promise;
     }
 
+    function addSlider(html) {
+      var $worker = $('<div/>');
+      $worker.append(html)
+             .find('.js-calculator-estimate')
+             .append('<div id="slider" data-slider>' +
+                        '<input data-slider-text-input class="t-slider-input" />' +
+                      '</div>');
+
+      return $worker.html();
+    }
+
     it('creates a `loading-status` on load', function() {
       expect(this.$calculator.find('.calculator__loading-status').length).toBe(1);
     });
@@ -173,6 +184,31 @@ describe('calculators', function() {
 
       $actualScrollToTarget = $(PWPG.calculators._scrollTo.calls.mostRecent().args[0]);
       expect($actualScrollToTarget.attr('class')).toEqual($defaultScrollTarget.attr('class'));
+    });
+
+    it('initalises a slider when slider is present in estimate response', function() {
+      var estimateWithSliderHTML = addSlider(this.$calculator.html());
+      var spy = spyOn(PWPG.Slider.prototype, 'init').and.callThrough();
+
+      PWPG.calculators.updateEstimate(estimateWithSliderHTML);
+
+      expect(spy).toHaveBeenCalled();
+    });
+
+    it('submits the form when the slider is changed', function(done) {
+      var estimateWithSliderHTML = addSlider(this.$calculator.html());
+      var $slider;
+
+      spyOn(PWPG.calculators, 'submitForm').and.returnValue($.Deferred());
+      PWPG.calculators.updateEstimate(estimateWithSliderHTML);
+
+      $slider = this.$calculator.find('.t-slider-input');
+      $slider.keyup();
+
+      setTimeout(function() {
+        expect(PWPG.calculators.submitForm).toHaveBeenCalled();
+        done();
+      }, 200);
     });
   });
 });
