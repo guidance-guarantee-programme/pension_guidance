@@ -107,7 +107,7 @@
         var $target = $($('#slider').attr('data-target'));
         var buffer;
 
-        slider.$textInput.on('change', $.proxy(function() {
+        slider.$textInput.on('change keyup', $.proxy(function() {
           clearTimeout(buffer);
 
           buffer = setTimeout($.proxy(function() {

@@ -30,9 +30,9 @@ describe('calculators', function() {
       var $worker = $('<div/>');
       $worker.append(html)
              .find('.js-calculator-estimate')
-             .append('<div id="slider" data-slider>\
-                        <input data-slider-text-input />\
-                      </div>');
+             .append('<div id="slider" data-slider>' +
+                        '<input data-slider-text-input class="t-slider-input" />' +
+                      '</div>');
 
       return $worker.html();
     }
@@ -193,6 +193,22 @@ describe('calculators', function() {
       PWPG.calculators.updateEstimate(estimateWithSliderHTML);
 
       expect(spy).toHaveBeenCalled();
+    });
+
+    it('submits the form when the slider is changed', function(done) {
+      var estimateWithSliderHTML = addSlider(this.$calculator.html());
+      var $slider;
+
+      spyOn(PWPG.calculators, 'submitForm').and.returnValue($.Deferred());
+      PWPG.calculators.updateEstimate(estimateWithSliderHTML);
+
+      $slider = this.$calculator.find('.t-slider-input');
+      $slider.keyup();
+
+      setTimeout(function() {
+        expect(PWPG.calculators.submitForm).toHaveBeenCalled();
+        done();
+      }, 200);
     });
   });
 });
