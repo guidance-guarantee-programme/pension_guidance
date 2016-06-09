@@ -1,23 +1,39 @@
-<p>Your pot could be worth this much over the
-  next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>:</p>
+<div id="js-estimate">
+  <p>Your pot could be worth this much over the
+    next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>:</p>
 
-<table>
-  <caption class="visuallyhidden">Estimated pot growth</caption>
-  <thead>
-  <tr>
-    <th>Years left untouched</th>
-    <th>Amount in your pot</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% estimate.each_with_index do |value, year| %>
+  <table>
+    <caption class="visuallyhidden">Estimated pot growth</caption>
+    <thead>
     <tr>
-      <td><%= year + 1 %></td>
-      <td class="t-calculator-future-pot-size"><%= number_to_currency(value) %></td>
+      <th>Years left untouched</th>
+      <th>Amount in your pot</th>
     </tr>
-  <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+    <% estimate.each_with_index do |value, year| %>
+      <tr>
+        <td><%= year + 1 %></td>
+        <td class="t-calculator-future-pot-size"><%= number_to_currency(value) %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+
+<p>
+  <label for="slider">or try paying in a different amount each month:</label>
+  <%= render 'components/slider', {
+      id: 'slider',
+      target: '#contribution',
+      option: 'leave-pot-untouched',
+      text_before: '£',
+      initial_value: contribution.to_f.ceil,
+      min: 0,
+      max: contribution.to_i * 5,
+      step: 5
+  } %>
+</p>
 
 <ul class="t-calculator-notes">
   <li>
