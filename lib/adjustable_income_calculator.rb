@@ -3,6 +3,7 @@ class AdjustableIncomeCalculator
   TAX_FREE_POT_PORTION = 0.25
   GROWTH_INTEREST_RATE = 0.03
   AMOUNT_TO_REDUCE_LIFETIME_PAYMENT_BY = 100
+  INCOME_LASTS_UNTIL_AGE_CAP = 120
 
   def initialize(pot:, age:, desired_income:)
     self.pot = pot
@@ -52,7 +53,7 @@ class AdjustableIncomeCalculator
 
       years_lasted += 1 if pot_remaining.positive?
 
-      break if years_lasted > 100
+      break if age + years_lasted >= INCOME_LASTS_UNTIL_AGE_CAP
     end
 
     age + years_lasted
