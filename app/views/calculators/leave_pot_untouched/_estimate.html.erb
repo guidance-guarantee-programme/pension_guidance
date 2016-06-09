@@ -14,7 +14,7 @@
     <% estimate.each_with_index do |value, year| %>
       <tr>
         <td><%= year + 1 %></td>
-        <td class="t-calculator-future-pot-size"><%= number_to_currency(value) %></td>
+        <td class="t-calculator-future-pot-size"><span class="calculator__highlight"><%= number_to_currency(value) %></span></td>
       </tr>
     <% end %>
     </tbody>
@@ -30,7 +30,7 @@
       text_before: '£',
       initial_value: contribution.to_f.ceil,
       min: 0,
-      max: contribution.to_i * 5,
+      max: leave_pot_untouched_slider_max(contribution.to_i),
       step: 5
   } %>
 </p>
