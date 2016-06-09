@@ -30,7 +30,7 @@
       text_before: '£',
       initial_value: contribution.to_f.ceil,
       min: 0,
-      max: contribution.to_i * 5,
+      max: leave_pot_untouched_slider_max(contribution.to_i),
       step: 5
   } %>
 </p>
