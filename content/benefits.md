@@ -4,7 +4,7 @@ description: How taking your pension can affect your benefits. Usually, the grea
 
 # Benefits
 
-Any pension money you have may affect your entitlement to benefits. This applies if you take money out of your pension pot or leave it in.
+Any pension money you have may affect your entitlement to benefits. This applies if you take money out of your pension pot, leave it in or sell an annuity.
 
 ##Before Pension Credit qualifying age
 
@@ -41,6 +41,13 @@ It’s your responsibility to tell DWP, HMRC or your local council if you or you
 As well as any income or cash taken from your pension pot, your other assets (eg savings and investments) may also count when you’re assessed for benefits.
 
 Read more about [pensions and benefit entitlement](https://www.gov.uk/government/publications/pension-flexibilities-and-dwp-benefits) and [Pension Credit](https://www.gov.uk/pension-credit).
+
+##Selling an annuity
+If you already have an annuity and sell it to get a cash lump sum, it will be treated as any other income and taken into account when your benefits are calculated.
+
+You must tell DWP, HMRC or your local council if you sell your annuity.
+
+%If you deliberately spend or give away money from selling your annuity to get or increase benefits, DWP or your local council may re-assess your eligibility.%
 
 ##Getting help with benefits
 
