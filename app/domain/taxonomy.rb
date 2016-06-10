@@ -80,7 +80,6 @@ class Taxonomy
     category_node('selling-an-annuity').tap do |node|
       node << guide_node('already-bought-annuity')
       node << guide_node('how-to-sell-an-annuity')
-      node << guide_node('dependents-and-beneficiaries')
     end
   end
 
