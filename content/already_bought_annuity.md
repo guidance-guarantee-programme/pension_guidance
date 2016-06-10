@@ -10,7 +10,7 @@ Under current rules, once you’ve bought an annuity you can’t change the deci
 
 An annuity provides a guaranteed income for a fixed number of years or the rest of your life. Before deciding to sell, you’ll need to find how much you could get for your annuity and if it would be worth selling. You’ll also need to consider the loss of that regular income.
 
-The rules on selling an annuity may mean that you’ll have to speak to a [financial adviser](/financial advice) before you’re able to sell.
+The rules on selling an annuity may mean that you’ll have to speak to a [financial adviser](/financial-advice) before you’re able to sell.
 
 %Pension Wise will offer guidance on selling an annuity when the new rules come in.%
 
