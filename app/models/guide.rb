@@ -34,6 +34,10 @@ class Guide
     tagged_with?('option')
   end
 
+  def related_to_journey?
+    tagged_with?('option')
+  end
+
   def related_to_appointments?
     tagged_with?('appointments')
   end

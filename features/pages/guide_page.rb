@@ -17,6 +17,9 @@ module Pages
 
     element :calculator, '.t-calculator'
 
+    element :next_link, '.t-next-page'
+    element :previous_link, '.t-previous-page'
+
     def aside_heading_url
       aside_heading['href']
     end

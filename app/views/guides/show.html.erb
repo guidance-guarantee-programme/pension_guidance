@@ -4,3 +4,5 @@
 <%= render 'option' if @guide.option? %>
 
 <%= @guide.content %>
+
+<%= render 'journey_links' if @guide.related_to_journey? %>
