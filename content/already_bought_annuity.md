@@ -18,11 +18,10 @@ The rules on selling an annuity may mean that you’ll have to speak to a [finan
 
 How much money you’ll get from selling an annuity is likely to be based, for example, on:
 
-  * how much you had in your pension pot when you bought the annuity
-  * how long you’ve had the annuity
   * your age now and when you bought the annuity
   * the type of annuity, eg single life, joint life
   * your health and lifestyle
+  * how much you currently receive from your annuity
 
 Money you get from selling an annuity will be treated as income and is taxable. You'll need to take this into account when deciding whether to sell your annuity.
 
