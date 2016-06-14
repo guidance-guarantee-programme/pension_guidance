@@ -1,6 +1,11 @@
 module Locations
   class << self
     attr_accessor :geo_json_path_or_url
+    attr_accessor :online_booking_location_uids
+  end
+
+  def self.online_booking?(uid)
+    online_booking_location_uids.include?(uid)
   end
 
   def self.nearest_to_postcode(postcode, geocoder: Geocoder,
