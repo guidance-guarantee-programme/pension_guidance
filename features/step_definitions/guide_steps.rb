@@ -46,3 +46,19 @@ end
 Then(/^I can navigate back to the start of the guide$/) do
   expect(@page.aside_heading_url).to eq(@page.primary_heading_url)
 end
+
+Then(/^next button navigates to (.*)$/) do |path|
+  if path.present?
+    expect(@page.next_link['href']).to eq(path)
+  else
+    expect(@page).not_to have_next_link
+  end
+end
+
+Then(/^previous button navigates to (.*)$/) do |path|
+  if path.present?
+    expect(@page.previous_link['href']).to eq(path)
+  else
+    expect(@page).not_to have_previous_link
+  end
+end

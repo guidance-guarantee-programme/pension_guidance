@@ -5,6 +5,7 @@ class GuideDecorator
     :concise_label,
     :description,
     :option?,
+    :related_to_journey?,
     :related_to_appointments?,
     :related_to_booking?,
     :==,

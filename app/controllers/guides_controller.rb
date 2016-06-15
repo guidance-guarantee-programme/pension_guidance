@@ -6,8 +6,6 @@ class GuidesController < ApplicationController
 
   def show
     expires_in Rails.application.config.cache_max_age, public: true
-
-    render :option if @guide.option?
   end
 
   private

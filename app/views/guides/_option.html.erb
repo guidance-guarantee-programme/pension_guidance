@@ -1,6 +1,3 @@
-<% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
-<% content_for(:meta_description, @guide.description) %>
-
 <% content_for :sticky_sidebar do %>
   <div class="l-sticky-sidebar">
     <div class="sticky-sidebar js-sticky-sidebar sticky-sidebar--<%= @guide.slug %>">
@@ -53,4 +50,3 @@
 <% end %>
 
 <%= content_tag :span, nil, class: ['circle', 'circle--m', "circle--#{@guide.slug}"] %>
-<%= @guide.content %>

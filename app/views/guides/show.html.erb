@@ -1,4 +1,8 @@
 <% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
 <% content_for(:meta_description, @guide.description) %>
 
+<%= render 'option' if @guide.option? %>
+
 <%= @guide.content %>
+
+<%= render 'journey_links' if @guide.related_to_journey? %>
