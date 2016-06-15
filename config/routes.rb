@@ -19,7 +19,9 @@ Rails.application.routes.draw do
     get 'take-cash-in-chunks/estimate', to: 'calculators/take_cash_in_chunks#show'
     get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
 
-    resources :locations, only: [:index, :show]
+    resources :locations, only: [:index, :show] do
+      resources :booking_requests, only: :new
+    end
 
     resource :appointment_summaries, only: %i(new create show), path: 'summary-document' do
       post :download, on: :member
