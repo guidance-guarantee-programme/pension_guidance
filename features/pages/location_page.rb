@@ -9,6 +9,7 @@ module Pages
     element :address, '.t-address'
     element :phone, '.t-phone'
     element :hours, '.t-hours'
+    element :book_online, '.t-book-online'
 
     elements :breadcrumbs, '.t-breadcrumb'
   end

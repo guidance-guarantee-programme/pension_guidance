@@ -43,6 +43,12 @@
   Call <strong class="t-phone"><%= @location.phone %></strong>.
 </p>
 
+<% if Locations.online_booking?(@location.id) %>
+  <p>
+    <a href="#" class="button t-book-online">Book online</a>
+  </p>
+<% end %>
+
 <% if @location.booking_location %>
   <p>
     Tell the operator that you want to book a Pension Wise appointment at
