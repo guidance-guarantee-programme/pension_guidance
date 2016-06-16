@@ -66,7 +66,7 @@
 <% end %>
 
 <% content_for :footer_top do %>
-  <%= render 'components/footer_categories', categories: navigation.topics %>
+  <%= render 'components/footer_categories', categories: navigation.topics if footer? %>
 <% end %>
 
 <% content_for :body_end do %>

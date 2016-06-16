@@ -1,0 +1,10 @@
+.quick-links {
+  @include bold-19;
+  margin-bottom: 0;
+}
+
+.quick-links__link {
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-left: 0;
+}

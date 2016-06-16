@@ -128,6 +128,10 @@ GEM
     i18n (0.7.0)
     image_size (1.4.2)
     inflection (1.0.0)
+    inline_svg (0.10.0)
+      activesupport (>= 4.0)
+      loofah (>= 2.0)
+      nokogiri (~> 1.6)
     jasmine-core (2.3.4)
     jasmine-jquery-rails (2.0.3)
     jasmine-rails (0.11.0)
@@ -350,6 +354,7 @@ DEPENDENCIES
   govuk_frontend_toolkit
   govuk_template
   humanize
+  inline_svg
   jasmine-jquery-rails
   jasmine-rails
   launchy
