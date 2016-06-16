@@ -7,5 +7,3 @@ module BookingLocations
     end
   end
 end
-
-BookingLocations.api = BookingLocations::Api.new
