@@ -13,6 +13,7 @@ Scenario: Customer browses a regular location
   When I browse for the location
   Then I cannot book online
 
+@vcr
 Scenario: Customer makes an online Booking Request
   Given a location enabled for online booking
   When I browse for the location
