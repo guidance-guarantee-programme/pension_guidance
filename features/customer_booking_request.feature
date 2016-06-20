@@ -4,7 +4,7 @@ Feature: Customer creates a Booking Request
   So I can understand my pension options
 
 Scenario: Customer browses an online booking enabled location
-  Given a location enabled for online booking
+  Given a location is enabled for online booking
   When I browse for the location
   Then I can book online
 
@@ -15,7 +15,7 @@ Scenario: Customer browses a regular location
 
 @vcr
 Scenario: Customer makes an online Booking Request
-  Given a location enabled for online booking
+  Given a location is enabled for online booking
   When I browse for the location
   And I opt to book online
   And I choose three available appointment slots

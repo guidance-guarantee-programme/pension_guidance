@@ -1,4 +1,4 @@
-Given(/^a location enabled for online booking$/) do
+Given(/^a location is enabled for online booking$/) do
   Locations.online_booking_location_uids = %w(ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef)
 end
 
