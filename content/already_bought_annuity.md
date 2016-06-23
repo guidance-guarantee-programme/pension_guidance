@@ -2,7 +2,7 @@
 description: Find out about the new annuity rules set to change in April 2017.
 ---
 
-# If you’ve already bought an annuity
+# Selling an annuity
 
 Annuity rules will change in 2017. You may then be able to sell an existing annuity and use the money to get a lump sum or an [adjustable income](/adjustable-income).
 
@@ -20,17 +20,25 @@ How much money you’ll get from selling an annuity is likely to be based, for e
 
   * your age now and when you bought the annuity
   * the type of annuity, eg single life, joint life
-  * your health and lifestyle
+  * your health and lifestyle, eg you smoke or have a medical condition
   * how much you currently receive from your annuity
 
 Money you get from selling an annuity will be treated as income and is taxable. You'll need to take this into account when deciding whether to sell your annuity.
 
-## The new annuity rules
+## Scams
 
-The government is currently deciding how the new rules could work and will give more details nearer the time. To find out more you can read the full [annuity announcement](https://www.gov.uk/government/news/pension-freedoms-to-be-extended-to-people-with-annuities).
+Beware of [pension scams](/scams) contacting you unexpectedly about selling your annuity, or an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face taxes and extra fees.
 
 ## Paying off debt
 
 If you’re thinking of selling your annuity to pay off debts you should get advice first.
 
 The [Money Advice Service](https://www.moneyadviceservice.org.uk/en) and [Citizens Advice](http://www.citizensadvice.org.uk/) both offer free and impartial debt advice.
+
+## Benefits
+
+Getting a large sum of cash from selling your annuity could affect your [entitlement to any benefits](/benefits).
+
+## The new annuity rules
+
+The government is currently deciding how the new rules could work and will give more details nearer the time. To find out more you can read the full [annuity announcement](https://www.gov.uk/government/news/pension-freedoms-to-be-extended-to-people-with-annuities).
