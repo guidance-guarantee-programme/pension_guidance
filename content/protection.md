@@ -3,16 +3,31 @@ description: Compensation you can claim if your provider can’t pay you.
 ---
 # How your pension is protected
 
-If your provider is authorised by the Financial Conduct Authority (FCA) and the Prudential Regulation Authority (PRA) you can claim compensation for non-payments from the [Financial Services Compensation Scheme](http://www.fscs.org.uk/) (FSCS).
+How your pension is protected depends on your pension type.
 
-The limits for compensation are:
+## Defined contribution
 
-- personal pensions with an authorised insurance company – 100% of your pot’s value
-- most defined contribution workplace pensions with an authorised insurance company – 100% of your pot’s value
-- Self-Invested Personal Pensions (SIPPS) – different compensation limits depending on the type of SIPP – talk to your provider to find out what compensation cover you have
+If your employer goes out of business you won't lose your pension pot. This is because defined contribution pensions are usually run by pension providers, not employers.
 
-Once you’ve taken money out of your pot you can claim for:
+^Some defined contribution pensions are run by a trust chosen by the employer. Contact your employer for exact compensation details.^
 
-- money in an account with a bank, building society or credit union – up to £75,000
-- investments – up to £50,000
-- annuities with an authorised insurance company – 100% of your pot’s value
+## If your provider can't pay
+
+You can be compensated for up to 100% of the value of your pot if your pension provider is authorised by the FCA and can't pay you.
+
+You can claim compensation from the [Financial Services Compensation Scheme](http://www.fscs.org.uk/) (FSCS).
+
+## Defined benefit
+
+These pensions are usually protect by the [Pension Protection Fund](http://www.pensionprotectionfund.org.uk/).
+
+You'll usually receive:
+
+- 100% compensation if you've reached your 'selected retirement age' (the age you agreed with your pension provider to retire)
+- 90% compensation if you're below your selected retirement age
+
+## Annuities
+
+You can claim for 100% of your pot’s value if your annuity provider can no longer pay your annuity. Your provider must be authorised by the FCA.
+
+^Contact your provider if you need to [complain about a pension](/pension-complaints).^
