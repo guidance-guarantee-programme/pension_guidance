@@ -17,5 +17,5 @@ If you’re outside the UK phone +44 20 3733 3495.
 [Find out about call charges](https://www.gov.uk/call-charges)
 
 <div class="application-notice info-notice">
-  <p>You can also <a href="/book-face-to-face">book a face to face appointment</a>.</p>
+  <p>You can also <a href="/book-face-to-face">book a face-to-face appointment</a>.</p>
 </div>
