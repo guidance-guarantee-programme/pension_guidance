@@ -25,7 +25,7 @@ module BookingLocations
     end
 
     def slots
-      @slots ||= @data['slots'].map { |slot| OpenStruct.new(slot) }
+      @slots ||= @data['slots'].map { |slot| Slot.new(slot) }
     end
   end
 end

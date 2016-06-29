@@ -45,7 +45,7 @@
 
 <% if Locations.online_booking?(@location.id) %>
   <p>
-    <%= link_to 'Book online', new_location_booking_request_path(@location.id), class: 'button t-book-online' %>
+    <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
   </p>
 <% end %>
 

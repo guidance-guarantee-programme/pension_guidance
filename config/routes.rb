@@ -20,7 +20,10 @@ Rails.application.routes.draw do
     get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
 
     resources :locations, only: [:index, :show] do
-      resources :booking_requests, only: :new
+      member do
+        get '/booking-request/step-one',  to: 'booking_requests#step_one'
+        post '/booking-request/step-two', to: 'booking_requests#step_two'
+      end
     end
 
     resource :appointment_summaries, only: %i(new create show), path: 'summary-document' do

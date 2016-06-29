@@ -6,6 +6,11 @@ Given(/^no locations are enabled for online booking$/) do
   Locations.online_booking_location_uids = []
 end
 
+Given(/^the date is (.*)$/) do |date|
+  @date = Date.parse(date)
+  Timecop.travel @date
+end
+
 When(/^I browse for the location$/) do
   with_booking_locations do
     @page = Pages::Location.new
@@ -26,7 +31,22 @@ When(/^I opt to book online$/) do
 end
 
 When(/^I choose three available appointment slots$/) do
-  pending # express the regexp above with the code you wish you had
+  @step_one = Pages::BookingStepOne.new
+  expect(@step_one).to be_displayed
+
+  @step_one.wait_for_available_days
+  expect(@step_one).to have_available_days
+
+  # select the morning and afternoon slots on the first day
+  @step_one.available_days.first.click
+  @step_one.morning_slot.click
+  @step_one.afternoon_slot.click
+
+  # select the morning slot on the last day
+  @step_one.available_days.last.click
+  @step_one.morning_slot.click
+
+  @step_one.continue.click
 end
 
 When(/^I provide my personal details$/) do

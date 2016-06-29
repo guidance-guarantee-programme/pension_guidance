@@ -13,9 +13,10 @@ Scenario: Customer browses a regular location
   When I browse for the location
   Then I cannot book online
 
-@vcr
+@javascript @booking_locations @time_travel
 Scenario: Customer makes an online Booking Request
   Given a location is enabled for online booking
+  And the date is "2016-06-17"
   When I browse for the location
   And I opt to book online
   And I choose three available appointment slots

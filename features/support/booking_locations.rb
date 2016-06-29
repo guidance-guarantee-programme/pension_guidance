@@ -1,0 +1,9 @@
+Around('@booking_locations') do |_, block|
+  begin
+    previous_api = BookingLocations.api
+    BookingLocations.api = BookingLocations::StubApi.new
+    block.call
+  ensure
+    BookingLocations.api = previous_api
+  end
+end
