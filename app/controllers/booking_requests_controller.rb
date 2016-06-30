@@ -12,7 +12,10 @@ class BookingRequestsController < ApplicationController
   def complete
     @booking_request = BookingRequestForm.new(location_id, booking_request_params)
 
-    head :ok
+    redirect_to booking_request_completed_location_path(id: location_id)
+  end
+
+  def completed
   end
 
   private

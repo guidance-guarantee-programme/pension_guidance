@@ -72,7 +72,8 @@ When(/^I submit my completed Booking Request$/) do
 end
 
 Then(/^my Booking Request is confirmed$/) do
-  pending # express the regexp above with the code you wish you had
+  @confirmation = Pages::BookingConfirmation.new
+  expect(@confirmation).to be_displayed
 end
 
 def with_booking_locations
