@@ -50,11 +50,25 @@ When(/^I choose three available appointment slots$/) do
 end
 
 When(/^I provide my personal details$/) do
-  pending # express the regexp above with the code you wish you had
+  @step_two = Pages::BookingStepTwo.new
+  expect(@step_two).to be_displayed
+
+  @step_two.first_name.set 'Rick'
+  @step_two.last_name.set 'Sanchez'
+  @step_two.email.set 'rick@example.com'
+  @step_two.telephone_number.set '07715 930 459'
+  @step_two.memorable_word.set 'birdperson'
+  @step_two.accessibility_requirements.set false
+  @step_two.opt_in.set false
 end
 
 When(/^I pass the basic eligibility requirements$/) do
-  pending # express the regexp above with the code you wish you had
+  @step_two.fifty_to_fifty_four.set true
+  @step_two.dc_pot.set false
+end
+
+When(/^I submit my completed Booking Request$/) do
+  @step_two.submit.click
 end
 
 Then(/^my Booking Request is confirmed$/) do

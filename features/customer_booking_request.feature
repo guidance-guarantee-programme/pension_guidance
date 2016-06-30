@@ -22,4 +22,5 @@ Scenario: Customer makes an online Booking Request
   And I choose three available appointment slots
   And I provide my personal details
   And I pass the basic eligibility requirements
+  And I submit my completed Booking Request
   Then my Booking Request is confirmed
