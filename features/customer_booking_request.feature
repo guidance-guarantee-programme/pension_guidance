@@ -13,7 +13,7 @@ Scenario: Customer browses a regular location
   When I browse for the location
   Then I cannot book online
 
-@javascript @booking_locations @time_travel
+@javascript @booking_locations @booking_requests @time_travel
 Scenario: Customer makes an online Booking Request
   Given a location is enabled for online booking
   And the date is "2016-06-17"

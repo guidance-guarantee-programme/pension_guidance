@@ -46,6 +46,8 @@ When(/^I choose three available appointment slots$/) do
   @step_one.available_days.last.click
   @step_one.morning_slot.click
 
+  # wait for the last slot to be confirmed
+  @step_one.wait_for_last_chosen_slot
   @step_one.continue.click
 end
 

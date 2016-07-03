@@ -2,6 +2,7 @@ module Pages
   class BookingStepOne < SitePrism::Page
     set_url '/locations/{id}/booking-request/step-one'
 
+    element :last_chosen_slot, 'div:nth-child(3).SlotPicker-choice.is-chosen'
     element :continue, '.t-continue'
 
     elements :available_days, '.BookingCalendar-date--bookable'
