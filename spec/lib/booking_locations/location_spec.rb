@@ -8,7 +8,7 @@ RSpec.describe BookingLocations::Location do
       'address' => '10 Some Place',
       'locations' => [
         {
-          'uid' => '9d7c72fc-0c74-4418-8099-e1a4e704cb01',
+          'uid' => '1d7c72fc-0c74-4418-8099-e1a4e704cb01',
           'name' => 'Child CAB',
           'address' => '10 Child Address'
         }
@@ -45,7 +45,7 @@ RSpec.describe BookingLocations::Location do
   end
 
   it 'has nested locations' do
-    expect(subject.locations.first.id).to eq('9d7c72fc-0c74-4418-8099-e1a4e704cb01')
+    expect(subject.locations.first.id).to eq('1d7c72fc-0c74-4418-8099-e1a4e704cb01')
     expect(subject.locations.first.name).to eq('Child CAB')
     expect(subject.locations.first.address).to eq('10 Child Address')
   end
@@ -60,5 +60,19 @@ RSpec.describe BookingLocations::Location do
     expect(subject.slots.first.date).to eq('2016-06-20')
     expect(subject.slots.first.start).to eq('0900')
     expect(subject.slots.first.end).to eq('1300')
+  end
+
+  describe '#name_for' do
+    context 'with a location ID representing the booking location' do
+      it 'returns the booking location name' do
+        expect(subject.name_for('9d7c72fc-0c74-4418-8099-e1a4e704cb01')).to eq('Somewhere CAB')
+      end
+    end
+
+    context 'with a location ID representing a child location' do
+      it 'returns the child location name' do
+        expect(subject.name_for('1d7c72fc-0c74-4418-8099-e1a4e704cb01')).to eq('Child CAB')
+      end
+    end
   end
 end

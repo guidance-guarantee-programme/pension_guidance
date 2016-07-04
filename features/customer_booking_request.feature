@@ -19,7 +19,8 @@ Scenario: Customer makes an online Booking Request
   And the date is "2016-06-17"
   When I browse for the location
   And I opt to book online
-  And I choose three available appointment slots
+  Then I see the location name "Hackney"
+  When I choose three available appointment slots
   And I provide my personal details
   And I pass the basic eligibility requirements
   And I submit my completed Booking Request

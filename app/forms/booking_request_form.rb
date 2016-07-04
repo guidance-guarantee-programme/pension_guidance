@@ -18,4 +18,8 @@ class BookingRequestForm
   def booking_location
     @booking_location ||= BookingLocations.find(location_id)
   end
+
+  def location_name
+    booking_location.name_for(location_id)
+  end
 end

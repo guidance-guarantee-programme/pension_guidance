@@ -30,10 +30,14 @@ When(/^I opt to book online$/) do
   @page.book_online.click
 end
 
-When(/^I choose three available appointment slots$/) do
+Then(/^I see the location name "(.*?)"$/) do |name|
   @step_one = Pages::BookingStepOne.new
   expect(@step_one).to be_displayed
 
+  expect(@step_one.location_name.text).to include(name)
+end
+
+When(/^I choose three available appointment slots$/) do
   @step_one.wait_for_available_days
   expect(@step_one).to have_available_days
 
