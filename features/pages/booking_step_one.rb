@@ -3,6 +3,7 @@ module Pages
     set_url '/locations/{id}/booking-request/step-one'
 
     element :location_name, '.t-location-name'
+    element :first_chosen_slot, 'div:nth-child(1).SlotPicker-choice.is-chosen'
     element :last_chosen_slot, 'div:nth-child(3).SlotPicker-choice.is-chosen'
     element :continue, '.t-continue'
 

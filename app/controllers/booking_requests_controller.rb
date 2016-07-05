@@ -7,13 +7,19 @@ class BookingRequestsController < ApplicationController
 
   def step_two
     @booking_request = BookingRequestForm.new(location_id, booking_request_params)
+
+    render :step_one unless @booking_request.step_one_valid?
   end
 
   def complete
     @booking_request = BookingRequestForm.new(location_id, booking_request_params)
-    BookingRequests.create(@booking_request)
 
-    redirect_to booking_request_completed_location_path(id: location_id)
+    if @booking_request.step_two_valid?
+      BookingRequests.create(@booking_request)
+      redirect_to booking_request_completed_location_path(id: location_id)
+    else
+      render :step_two
+    end
   end
 
   def completed
