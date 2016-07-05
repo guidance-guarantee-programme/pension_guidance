@@ -70,7 +70,7 @@ end
 
 When(/^I pass the basic eligibility requirements$/) do
   @step_two.fifty_to_fifty_four.set true
-  @step_two.dc_pot.set false
+  @step_two.dc_pot.set true
 end
 
 When(/^I submit my completed Booking Request$/) do
@@ -80,6 +80,62 @@ end
 Then(/^my Booking Request is confirmed$/) do
   @confirmation = Pages::BookingConfirmation.new
   expect(@confirmation).to be_displayed
+end
+
+When(/^I choose one available appointment slot$/) do
+  @step_one = Pages::BookingStepOne.new
+  expect(@step_one).to be_displayed
+
+  # wait for the calendar to bind
+  @step_one.wait_for_available_days
+  expect(@step_one).to have_available_days
+
+  # choose only the first slot
+  @step_one.available_days.first.click
+  @step_one.morning_slot.click
+
+  # wait for the slot to be confirmed and proceed
+  @step_one.wait_for_first_chosen_slot
+  @step_one.continue.click
+end
+
+Then(/^I am told to choose further slots$/) do
+  @step_two = Pages::BookingStepTwo.new
+  expect(@step_two).to be_displayed
+  expect(@step_two).to have_error
+end
+
+When(/^I choose a further two appointment slots$/) do
+  @step_one = Pages::BookingStepOne.new
+
+  # wait for the calendar to bind
+  @step_one.wait_for_available_days
+  expect(@step_one).to have_available_days
+
+  # choose the remaining two required slots
+  @step_one.available_days.last.click
+  @step_one.morning_slot.click
+  @step_one.afternoon_slot.click
+
+  # wait for slots to be confirmed and proceed
+  @step_one.wait_for_last_chosen_slot
+  @step_one.continue.click
+end
+
+Then(/^I progress to the personal details step$/) do
+  @step_two = Pages::BookingStepTwo.new
+  expect(@step_two).to be_displayed
+  expect(@step_two).to_not have_error
+end
+
+When(/^I submit my incomplete Booking Request$/) do
+  @step_two.submit.click
+end
+
+Then(/^I am told to complete my personal details$/) do
+  @complete = Pages::BookingComplete.new
+  expect(@complete).to be_displayed
+  expect(@complete).to have_error
 end
 
 def with_booking_locations

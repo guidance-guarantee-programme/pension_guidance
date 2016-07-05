@@ -2,46 +2,80 @@
   <div class="l-column-two-thirds">
     <h1>Your details</h1>
 
+    <% if @booking_request.errors.any? %>
+      <div class="l-column-two-thirds error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+        <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          There was a problem with your details
+        </h1>
+
+        <ul class="error-summary-list">
+          <% @booking_request.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
     <%= form_for @booking_request, url: booking_request_complete_location_path(id: location_id), as: :booking_request do |f| %>
       <%= f.hidden_field :primary_slot %>
       <%= f.hidden_field :secondary_slot %>
       <%= f.hidden_field :tertiary_slot %>
 
-      <div class="form-group">
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:first_name) %>">
         <%= f.label :first_name, class: 'form-label' %>
-        <%= f.text_field :first_name, class: 'form-control t-first-name' %>
+        <% if @booking_request.errors.include?(:first_name) %>
+          <span class="error-message"><%= @booking_request.errors[:first_name].to_sentence %></span>
+        <% end %>
+        <%= f.text_field :first_name, class: 't-first-name form-control' %>
       </div>
 
-      <div class="form-group">
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:last_name) %>">
         <%= f.label :last_name, class: 'form-label' %>
-        <%= f.text_field :last_name, class: 'form-control t-last-name' %>
+        <% if @booking_request.errors.include?(:last_name) %>
+          <span class="error-message"><%= @booking_request.errors[:last_name].to_sentence %></span>
+        <% end %>
+        <%= f.text_field :last_name, class: 't-last-name form-control' %>
       </div>
 
-      <div class="form-group">
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:email) %>">
         <%= f.label :email, class: 'form-label' do %>
-        Email
-        <span class="form-hint">We’ll send you a reminder of your appointment details.</span>
+          Email
+          <span class="form-hint">We’ll send you a reminder of your appointment details.</span>
         <% end %>
 
-        <%= f.text_field :email, class: 'form-control t-email' %>
+        <% if @booking_request.errors.include?(:email) %>
+          <span class="error-message"><%= @booking_request.errors[:email].to_sentence %></span>
+        <% end %>
+
+        <%= f.text_field :email, class: 't-email form-control' %>
       </div>
 
-      <div class="form-group">
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:telephone_number) %>">
         <%= f.label :telephone_number, class: 'form-label' %>
-        <%= f.text_field :telephone_number, class: 'form-control t-telephone-number' %>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :memorable_word, class: 'form-label' do %>
-        Your memorable word
-        <span class="form-hint">Our pensions expert will repeat this word when they call so you know it’s us.</span>
+        <% if @booking_request.errors.include?(:telephone_number) %>
+          <span class="error-message"><%= @booking_request.errors[:telephone_number].to_sentence %></span>
         <% end %>
-        <%= f.text_field :memorable_word, class: 'form-control t-memorable-word' %>
+        <%= f.text_field :telephone_number, class: 't-telephone-number form-control' %>
       </div>
 
-      <div class="form-group">
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:memorable_word) %>">
+        <%= f.label :memorable_word, class: 'form-label' do %>
+          Your memorable word
+          <span class="form-hint">Our pensions expert will repeat this word when they call so you know it’s us.</span>
+        <% end %>
+        <% if @booking_request.errors.include?(:memorable_word) %>
+          <span class="error-message"><%= @booking_request.errors[:memorable_word].to_sentence %></span>
+        <% end %>
+        <%= f.text_field :memorable_word, class: 't-memorable-word form-control' %>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:appointment_type) %>">
         <fieldset class="inline">
           <legend>Your age</legend>
+
+          <% if @booking_request.errors.include?(:appointment_type) %>
+            <span class="error-message"><%= @booking_request.errors[:appointment_type].to_sentence %></span>
+          <% end %>
 
           <%= f.label :appointment_type, value: 'under-50', class: 'block-label' do %>
               <%= f.radio_button :appointment_type, 'under-50', checked: false,
@@ -63,20 +97,29 @@
         </fieldset>
       </div>
 
-      <div class="form-group">
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:accessibility_requirements) %>">
         <%= f.label :accessibility_requirements do %>
+          <% if @booking_request.errors.include?(:accessibility_requirements) %>
+            <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence %></span>
+          <% end %>
           <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %> Yes, I have accessibility requirements
         <% end %>
       </div>
 
-      <div class="form-group">
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:opt_in) %>">
         <%= f.label :opt_in do %>
+          <% if @booking_request.errors.include?(:opt_in) %>
+            <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence %></span>
+          <% end %>
           <%= f.check_box :opt_in, class: 't-opt-in' %> Yes, I would like to receive marketing information
         <% end %>
       </div>
 
-      <div class="form-group">
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:dc_pot) %>">
         <%= f.label :dc_pot do %>
+          <% if @booking_request.errors.include?(:dc_pot) %>
+            <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence %></span>
+          <% end %>
           <%= f.check_box :dc_pot, class: 't-dc-pot' %> I have a defined contribution pension pot
         <% end %>
       </div>

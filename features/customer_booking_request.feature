@@ -25,3 +25,16 @@ Scenario: Customer makes an online Booking Request
   And I pass the basic eligibility requirements
   And I submit my completed Booking Request
   Then my Booking Request is confirmed
+
+@javascript @booking_locations @booking_requests @time_travel
+Scenario: Customer attempts an invalid Booking Request
+  Given a location is enabled for online booking
+  And the date is "2016-06-17"
+  When I browse for the location
+  And I opt to book online
+  And I choose one available appointment slot
+  Then I am told to choose further slots
+  When I choose a further two appointment slots
+  Then I progress to the personal details step
+  When I submit my incomplete Booking Request
+  Then I am told to complete my personal details

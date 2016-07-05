@@ -2,6 +2,7 @@ module Pages
   class BookingStepTwo < SitePrism::Page
     set_url '/locations/{id}/booking-request/step-two'
 
+    element :error, '.t-errors'
     element :first_name, '.t-first-name'
     element :last_name, '.t-last-name'
     element :email, '.t-email'
