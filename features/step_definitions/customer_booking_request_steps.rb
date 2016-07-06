@@ -138,6 +138,25 @@ Then(/^I am told to complete my personal details$/) do
   expect(@complete).to have_error
 end
 
+When(/^I go back$/) do
+  @step_two = Pages::BookingStepTwo.new
+  expect(@step_two).to be_displayed
+
+  @step_two.back.click
+end
+
+Then(/^my chosen slots persist$/) do
+  expect(@step_one).to be_displayed
+  @step_one.wait_for_last_chosen_slot
+
+  expect(@step_one).to have_first_chosen_slot
+  expect(@step_one).to have_last_chosen_slot
+end
+
+When(/^I go forward$/) do
+  @step_one.continue.click
+end
+
 def with_booking_locations
   previous_path = Locations.geo_json_path_or_url
   Locations.geo_json_path_or_url = Rails.root.join(*%w(features fixtures booking_locations.json))
