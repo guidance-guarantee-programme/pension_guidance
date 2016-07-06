@@ -27,6 +27,22 @@ Scenario: Customer makes an online Booking Request
   Then my Booking Request is confirmed
 
 @javascript @booking_locations @booking_requests @time_travel
+Scenario: Customer navigates between Booking Request steps
+  Given a location is enabled for online booking
+  And the date is "2016-06-17"
+  When I browse for the location
+  And I opt to book online
+  Then I see the location name "Hackney"
+  When I choose three available appointment slots
+  And I go back
+  Then my chosen slots persist
+  When I go forward
+  And I provide my personal details
+  And I pass the basic eligibility requirements
+  And I submit my completed Booking Request
+  Then my Booking Request is confirmed
+
+@javascript @booking_locations @booking_requests @time_travel
 Scenario: Customer attempts an invalid Booking Request
   Given a location is enabled for online booking
   And the date is "2016-06-17"

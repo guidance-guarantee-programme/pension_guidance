@@ -17,5 +17,6 @@ module Pages
     element :over_fifty, '.t-appointment-type-3'
 
     element :submit, '.t-submit'
+    element :back, '.t-back'
   end
 end
