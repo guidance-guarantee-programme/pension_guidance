@@ -25,6 +25,7 @@ Rails.application.routes.draw do
         post '/booking-request/step-two', to: 'booking_requests#step_two'
         post '/booking-request/complete', to: 'booking_requests#complete'
         get '/booking-request/completed', to: 'booking_requests#completed'
+        get '/booking-request/ineligible', to: 'booking_requests#ineligible'
       end
     end
 

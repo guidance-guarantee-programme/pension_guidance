@@ -38,6 +38,10 @@ Then(/^I see the location name "(.*?)"$/) do |name|
 end
 
 When(/^I choose three available appointment slots$/) do
+  @step_one = Pages::BookingStepOne.new
+  expect(@step_one).to be_displayed
+
+  # wait for the slots to bind
   @step_one.wait_for_available_days
   expect(@step_one).to have_available_days
 
@@ -155,6 +159,11 @@ end
 
 When(/^I go forward$/) do
   @step_one.continue.click
+end
+
+Then(/^I am told I am ineligible for guidance$/) do
+  @ineligible = Pages::BookingIneligible.new
+  expect(@ineligible).to be_displayed
 end
 
 def with_booking_locations
