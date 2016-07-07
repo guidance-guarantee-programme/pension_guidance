@@ -52,5 +52,6 @@ Scenario: Customer attempts an invalid Booking Request
   Then I am told to choose further slots
   When I choose a further two appointment slots
   Then I progress to the personal details step
-  When I submit my incomplete Booking Request
+  When I pass the basic eligibility requirements
+  And I submit my incomplete Booking Request
   Then I am told to complete my personal details
