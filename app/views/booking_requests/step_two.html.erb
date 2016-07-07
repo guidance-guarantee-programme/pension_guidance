@@ -126,7 +126,15 @@
 
       <div class="form-group">
         <%= f.submit 'Submit booking request', class: 'button t-submit' %>
-        <%= link_to 'Go back to change your chosen dates',
+      </div>
+
+    <% end %>
+  </div>
+
+  <div class="l-column-third">
+    <h2>Your time preferences</h2>
+    <p>Your chosen appointment times are below.</p>
+    <p>Need to change? <%= link_to 'Go back to calendar',
           booking_request_step_one_location_path(
             id: location_id,
             booking_request: {
@@ -135,10 +143,41 @@
               tertiary_slot: @booking_request.tertiary_slot
             }
           ),
-          class: 'button t-back'
-        %>
-      </div>
+          class: 't-back'
+        %>.</p>
 
-    <% end %>
+    <div class="SlotPicker-choices is-chosen SlotPicker--selected SlotPicker--read-only">
+     <div class="SlotPicker-choice is-chosen">
+       <div class="SlotPicker-choiceInner">
+         <div class="SlotPicker-position"><span>1</span></div>
+         <div class="SlotPicker-choiceContent">
+           <p class="SlotPicker-date"><%= slot_as_formatted_date(@booking_request.primary_slot) %></p>
+           <p class="SlotPicker-time">
+           <%= slot_period(@booking_request.primary_slot) %>, <%= slot_duration %></p>
+         </div>
+       </div>
+     </div>
+
+     <div class="SlotPicker-choice is-chosen">
+       <div class="SlotPicker-choiceInner">
+         <div class="SlotPicker-position"><span>2</span></div>
+         <div class="SlotPicker-choiceContent">
+           <p class="SlotPicker-date"><%= slot_as_formatted_date(@booking_request.secondary_slot) %></p>
+           <p class="SlotPicker-time">
+           <%= slot_period(@booking_request.secondary_slot) %>, <%= slot_duration %></p>
+         </div>
+       </div>
+     </div>
+
+     <div class="SlotPicker-choice is-chosen">
+       <div class="SlotPicker-choiceInner">
+         <div class="SlotPicker-position"><span>3</span></div>
+         <div class="SlotPicker-choiceContent">
+           <p class="SlotPicker-date"><%= slot_as_formatted_date(@booking_request.tertiary_slot) %></p>
+           <p class="SlotPicker-time">
+           <%= slot_period(@booking_request.tertiary_slot) %>, <%= slot_duration %></p>
+         </div>
+       </div>
+     </div>
   </div>
 </div>
