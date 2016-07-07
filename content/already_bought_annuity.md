@@ -37,7 +37,7 @@ The [Money Advice Service](https://www.moneyadviceservice.org.uk/en) and [Citize
 
 ## Benefits
 
-Getting a large sum of cash from selling your annuity could affect your [entitlement to any benefits](/benefits).
+Getting a large sum of cash from selling your annuity could affect your [entitlement to any benefits](/benefits#selling-an-annuity).
 
 ## The new annuity rules
 
