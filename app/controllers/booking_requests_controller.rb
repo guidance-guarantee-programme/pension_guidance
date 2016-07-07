@@ -18,11 +18,16 @@ class BookingRequestsController < ApplicationController
       BookingRequests.create(@booking_request)
       redirect_to booking_request_completed_location_path(id: location_id)
     else
+      return redirect_to booking_request_ineligible_location_path(id: location_id) unless @booking_request.eligible?
+
       render :step_two
     end
   end
 
   def completed
+  end
+
+  def ineligible
   end
 
   private

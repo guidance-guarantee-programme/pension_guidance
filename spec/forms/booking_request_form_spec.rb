@@ -23,6 +23,7 @@ RSpec.describe BookingRequestForm do
     it 'is valid with valid attributes' do
       expect(subject).to be_step_one_valid
       expect(subject).to be_step_two_valid
+      expect(subject).to be_eligible
     end
 
     context 'step one' do
@@ -51,6 +52,7 @@ RSpec.describe BookingRequestForm do
       it 'requires appointment_type to be within permitted values' do
         subject.appointment_type = 'under-50'
         expect(subject).not_to be_step_two_valid
+        expect(subject).not_to be_eligible
       end
 
       it 'requires accessibility_requirements to be true or false' do
@@ -66,6 +68,7 @@ RSpec.describe BookingRequestForm do
       it 'requires dc_pot is accepted' do
         subject.dc_pot = false
         expect(subject).not_to be_step_two_valid
+        expect(subject).not_to be_eligible
       end
     end
   end

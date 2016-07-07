@@ -55,3 +55,14 @@ Scenario: Customer attempts an invalid Booking Request
   When I pass the basic eligibility requirements
   And I submit my incomplete Booking Request
   Then I am told to complete my personal details
+
+@javascript @booking_locations @booking_requests @time_travel
+Scenario: Customer is ineligible for guidance
+  Given a location is enabled for online booking
+  And the date is "2016-06-17"
+  When I browse for the location
+  And I opt to book online
+  And I choose three available appointment slots
+  And I provide my personal details
+  When I submit my completed Booking Request
+  Then I am told I am ineligible for guidance

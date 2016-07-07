@@ -51,6 +51,12 @@ class BookingRequestForm
     valid?
   end
 
+  def eligible?
+    return true if step_two_valid?
+
+    (errors.keys & %i(appointment_type dc_pot)).empty?
+  end
+
   def step_one?
     @step == 1
   end
