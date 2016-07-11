@@ -55,6 +55,8 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
+    booking_locations (0.1.0)
+      activesupport (>= 4, < 5.1)
     bugsnag (2.8.8)
       multi_json (~> 1.0)
     builder (3.2.2)
@@ -305,6 +307,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  booking_locations
   bugsnag
   canonical-rails
   cucumber-rails
@@ -358,4 +361,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.4
+   1.12.5
