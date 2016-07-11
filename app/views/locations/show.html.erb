@@ -45,7 +45,7 @@
 
 <% if Locations.online_booking?(@location.id) %>
   <p>
-    <a href="#" class="button t-book-online">Book online</a>
+    <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
   </p>
 <% end %>
 

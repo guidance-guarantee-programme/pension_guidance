@@ -19,7 +19,15 @@ Rails.application.routes.draw do
     get 'take-cash-in-chunks/estimate', to: 'calculators/take_cash_in_chunks#show'
     get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
 
-    resources :locations, only: [:index, :show]
+    resources :locations, only: [:index, :show] do
+      member do
+        get '/booking-request/step-one',  to: 'booking_requests#step_one'
+        post '/booking-request/step-two', to: 'booking_requests#step_two'
+        post '/booking-request/complete', to: 'booking_requests#complete'
+        get '/booking-request/completed', to: 'booking_requests#completed'
+        get '/booking-request/ineligible', to: 'booking_requests#ineligible'
+      end
+    end
 
     resource :appointment_summaries, only: %i(new create show), path: 'summary-document' do
       post :download, on: :member
