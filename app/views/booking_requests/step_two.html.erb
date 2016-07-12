@@ -3,7 +3,7 @@
     <h1>Your details</h1>
 
     <% if @booking_request.errors.any? %>
-      <div class="l-column-two-thirds error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+      <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
         <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
           There was a problem with your details
         </h1>
@@ -78,21 +78,49 @@
           <% end %>
 
           <%= f.label :appointment_type, value: 'under-50', class: 'block-label' do %>
-              <%= f.radio_button :appointment_type, 'under-50', checked: false,
+              <%= f.radio_button :appointment_type, 'under-50',
                                  class: 't-appointment-type-1' %>
               Under 50
           <% end %>
 
           <%= f.label :appointment_type, value: '50-54', class: 'block-label' do %>
-              <%= f.radio_button :appointment_type, '50-54', checked: false,
+              <%= f.radio_button :appointment_type, '50-54',
                                  class: 't-appointment-type-2' %>
               50 to 54
           <% end %>
 
           <%= f.label :appointment_type, value: '55-plus', class: 'block-label' do %>
-            <%= f.radio_button :appointment_type, '55-plus', checked: false,
+            <%= f.radio_button :appointment_type, '55-plus',
                                  class: 't-appointment-type-3' %>
             55 or over
+          <% end %>
+        </fieldset>
+      </div>
+
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:dc_pot) %>">
+        <fieldset class="inline">
+          <legend>Do you have a defined contribution pension pot?</legend>
+
+          <% if @booking_request.errors.include?(:dc_pot) %>
+            <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence %></span>
+          <% end %>
+
+          <%= f.label :dc_pot, value: 'yes', class: 'block-label' do %>
+              <%= f.radio_button :dc_pot, 'yes',
+                                 class: 't-dc-pot-1' %>
+              Yes
+          <% end %>
+
+          <%= f.label :dc_pot, value: 'no', class: 'block-label' do %>
+              <%= f.radio_button :dc_pot, 'no',
+                                 class: 't-dc-pot-2' %>
+              No
+          <% end %>
+
+          <%= f.label :dc_pot, value: 'not-sure', class: 'block-label' do %>
+            <%= f.radio_button :dc_pot, 'not-sure',
+                                 class: 't-dc-pot-3' %>
+            Not sure
           <% end %>
         </fieldset>
       </div>
@@ -112,15 +140,6 @@
             <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence %></span>
           <% end %>
           <%= f.check_box :opt_in, class: 't-opt-in' %> Yes, I would like to receive marketing information
-        <% end %>
-      </div>
-
-      <div class="form-group <%= 'error' if @booking_request.errors.include?(:dc_pot) %>">
-        <%= f.label :dc_pot do %>
-          <% if @booking_request.errors.include?(:dc_pot) %>
-            <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence %></span>
-          <% end %>
-          <%= f.check_box :dc_pot, class: 't-dc-pot' %> I have a defined contribution pension pot
         <% end %>
       </div>
 

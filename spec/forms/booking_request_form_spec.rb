@@ -16,7 +16,7 @@ RSpec.describe BookingRequestForm do
         appointment_type: '55-plus',
         accessibility_requirements: '0',
         opt_in: '0',
-        dc_pot: '1'
+        dc_pot: 'yes'
       )
     end
 

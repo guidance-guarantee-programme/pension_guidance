@@ -74,7 +74,7 @@ end
 
 When(/^I pass the basic eligibility requirements$/) do
   @step_two.fifty_to_fifty_four.set true
-  @step_two.dc_pot.set true
+  @step_two.dc_pot_yes.set true
 end
 
 When(/^I submit my completed Booking Request$/) do

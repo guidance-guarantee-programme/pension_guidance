@@ -21,7 +21,7 @@ class BookingRequestForm
     step_two.validates :appointment_type, inclusion: { in: %w(50-54 55-plus) }
     step_two.validates :accessibility_requirements, inclusion: { in: %w(0 1) }
     step_two.validates :opt_in, inclusion: { in: %w(0 1) }
-    step_two.validates :dc_pot, acceptance: { accept: '1' }
+    step_two.validates :dc_pot, inclusion: { in: %w(yes not-sure) }
   end
 
   def initialize(location_id, opts)
