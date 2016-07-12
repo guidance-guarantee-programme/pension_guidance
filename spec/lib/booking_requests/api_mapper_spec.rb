@@ -14,30 +14,46 @@ RSpec.describe BookingRequests::ApiMapper do
       appointment_type: '55-plus',
       accessibility_requirements: false,
       opt_in: false,
-      dc_pot: true
+      dc_pot: 'yes'
     )
   end
 
-  subject { described_class.map(booking_request) }
+  context 'mapping the booking_request form' do
+    subject { described_class.map(booking_request) }
 
-  it 'maps from the `BookingRequestForm` to requisite payload' do
-    expect(subject).to eq(
-      booking_request: {
-        location_id: location_id,
-        name: 'Lucius Needful',
-        email: 'lucius@example.com',
-        phone: '0208 244 3987',
-        memorable_word: 'meseeks',
-        age_range: '55-plus',
-        accessibility_requirements: false,
-        marketing_opt_in: false,
-        defined_contribution_pot: true,
-        slots: [
-          { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },
-          { priority: 2, date: '2016-01-01', from: '1300', to: '1700' },
-          { priority: 3, date: '2016-01-02', from: '0900', to: '1300' }
-        ]
-      }
-    )
+    it 'maps from the `BookingRequestForm` to requisite payload' do
+      expect(subject).to eq(
+        booking_request: {
+          location_id: location_id,
+          name: 'Lucius Needful',
+          email: 'lucius@example.com',
+          phone: '0208 244 3987',
+          memorable_word: 'meseeks',
+          age_range: '55-plus',
+          accessibility_requirements: false,
+          marketing_opt_in: false,
+          defined_contribution_pot: true,
+          slots: [
+            { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },
+            { priority: 2, date: '2016-01-01', from: '1300', to: '1700' },
+            { priority: 3, date: '2016-01-02', from: '0900', to: '1300' }
+          ]
+        }
+      )
+    end
+  end
+
+  context 'coerces the `dc_pot` strings to booleans' do
+    it 'coerces `yes` to true' do
+      expect(described_class.dc_pot_as_boolean('yes')).to be true
+    end
+
+    it 'coerces `not-sure` to true' do
+      expect(described_class.dc_pot_as_boolean('not-sure')).to be true
+    end
+
+    it 'coerces `no` to false' do
+      expect(described_class.dc_pot_as_boolean('no')).to be false
+    end
   end
 end
