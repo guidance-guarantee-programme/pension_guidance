@@ -17,7 +17,7 @@ RSpec.describe 'POST /locations/:id/booking-request/complete', type: :request do
           appointment_type: '55-plus',
           accessibility_requirements: '0',
           opt_in: '0',
-          dc_pot: '1'
+          dc_pot: 'yes'
         }
       }
 
