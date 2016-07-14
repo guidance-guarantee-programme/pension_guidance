@@ -1,6 +1,9 @@
 RSpec.describe BookingRequests::ApiMapper do
+  let(:booking_location_id) { SecureRandom.uuid }
   let(:location_id) { SecureRandom.uuid }
   let(:booking_request) do
+    allow(BookingLocations).to receive(:find).and_return(double(id: booking_location_id))
+
     BookingRequestForm.new(
       location_id,
       primary_slot: '2016-01-01-0900-1300',
@@ -24,6 +27,7 @@ RSpec.describe BookingRequests::ApiMapper do
     it 'maps from the `BookingRequestForm` to requisite payload' do
       expect(subject).to eq(
         booking_request: {
+          booking_location_id: booking_location_id,
           location_id: location_id,
           name: 'Lucius Needful',
           email: 'lucius@example.com',

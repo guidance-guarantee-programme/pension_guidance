@@ -37,6 +37,8 @@ class BookingRequestForm
     @booking_location ||= BookingLocations.find(location_id)
   end
 
+  delegate :id, to: :booking_location, prefix: :booking_location
+
   def location_name
     booking_location.name_for(location_id)
   end

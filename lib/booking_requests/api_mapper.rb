@@ -3,6 +3,7 @@ module BookingRequests
     def self.map(booking_request) # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
       {
         booking_request: {
+          booking_location_id: booking_request.booking_location_id,
           location_id: booking_request.location_id,
           name: "#{booking_request.first_name} #{booking_request.last_name}",
           email: booking_request.email,
