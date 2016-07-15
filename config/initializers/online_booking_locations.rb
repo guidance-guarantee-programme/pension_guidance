@@ -1,6 +1,5 @@
-Locations.online_booking_location_uids = [
-  # Corresponding location ID(s)
-]
+# Corresponding location ID(s)
+Locations.online_booking_location_uids = ENV.fetch('BOOKING_LOCATION_UIDS', '').split(',')
 
 # Booking Locations API adapter
 BookingLocations.api = if Rails.env.development?
