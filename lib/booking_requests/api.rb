@@ -10,6 +10,7 @@ module BookingRequests
 
     def connection
       HTTPConnectionFactory.build(api_uri).tap do |c|
+        c.headers[:accept] = 'application/json'
         c.authorization :Bearer, bearer_token if bearer_token
       end
     end
