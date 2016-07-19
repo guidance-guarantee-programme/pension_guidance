@@ -16,7 +16,7 @@ RSpec.describe 'POST /locations/:id/booking-request/complete', type: :request do
           memorable_word: 'meseeks',
           appointment_type: '55-plus',
           accessibility_requirements: '0',
-          opt_in: '0',
+          opt_in: '1',
           dc_pot: 'yes'
         }
       }

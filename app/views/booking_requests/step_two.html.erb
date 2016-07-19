@@ -139,7 +139,7 @@
           <% if @booking_request.errors.include?(:opt_in) %>
             <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence %></span>
           <% end %>
-          <%= f.check_box :opt_in, class: 't-opt-in' %> Yes, I would like to receive marketing information
+          <%= f.check_box :opt_in, class: 't-opt-in' %> I accept the <a href="/privacy" target="_blank">terms and conditions</a>
         <% end %>
       </div>
 
@@ -151,9 +151,9 @@
   </div>
 
   <div class="l-column-third">
-    <h2>Your time preferences</h2>
-    <p>Your chosen appointment times are below.</p>
-    <p>Need to change? <%= link_to 'Go back to calendar',
+    <h2>Your preferences</h2>
+    <p>Your chosen appointment slots are below.</p>
+    <p>Need to change? <%= link_to 'Go back to the calendar',
           booking_request_step_one_location_path(
             id: location_id,
             booking_request: {

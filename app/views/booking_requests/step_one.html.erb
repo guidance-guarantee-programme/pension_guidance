@@ -4,16 +4,14 @@
 </div>
 
 <% if @booking_request.errors.any? %>
-  <div class="l-column-two-thirds error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-    <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-      There was a problem with your chosen slots
-    </h1>
+  <div class="l-column-two-thirds">
+    <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+      <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        There was a problem with your chosen slots
+      </h1>
 
-    <ul class="error-summary-list">
-      <% @booking_request.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
+      <p>Please select 3 slots for your appointment.</p>
+    </div>
   </div>
 <% end %>
 
