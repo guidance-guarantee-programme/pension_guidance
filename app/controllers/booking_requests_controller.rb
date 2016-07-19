@@ -14,12 +14,12 @@ class BookingRequestsController < ApplicationController
   def complete
     @booking_request = BookingRequestForm.new(location_id, booking_request_params)
 
-    if @booking_request.step_two_valid?
+    if @booking_request.step_two_valid_excluding_eligibility?
+      return redirect_to booking_request_ineligible_location_path(id: location_id) unless @booking_request.eligible?
+
       BookingRequests.create(@booking_request)
       redirect_to booking_request_completed_location_path(id: location_id)
     else
-      return redirect_to booking_request_ineligible_location_path(id: location_id) unless @booking_request.eligible?
-
       render :step_two
     end
   end
