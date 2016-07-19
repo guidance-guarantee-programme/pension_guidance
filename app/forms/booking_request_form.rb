@@ -20,7 +20,7 @@ class BookingRequestForm
     step_two.validates :memorable_word, presence: true
     step_two.validates :appointment_type, inclusion: { in: %w(50-54 55-plus) }
     step_two.validates :accessibility_requirements, inclusion: { in: %w(0 1) }
-    step_two.validates :opt_in, inclusion: { in: %w(0 1) }
+    step_two.validates :opt_in, inclusion: { in: %w(1) }
     step_two.validates :dc_pot, inclusion: { in: %w(yes not-sure) }
   end
 
@@ -51,6 +51,13 @@ class BookingRequestForm
   def step_two_valid?
     @step = 2
     valid?
+  end
+
+  def step_two_valid_excluding_eligibility?
+    @step = 2
+    valid?
+
+    (errors.keys - %i(appointment_type dc_pot)).empty?
   end
 
   def eligible?
