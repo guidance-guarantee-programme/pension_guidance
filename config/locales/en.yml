@@ -25,6 +25,7 @@ en:
         tertiary_slot: Slot 3
         appointment_type: Age range
         dc_pot: Defined contribution pot
+        opt_in: Terms and conditions
     errors:
       models:
         appointment_summary:
