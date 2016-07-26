@@ -39,4 +39,8 @@ $E
 
 If you take cash in chunks or your whole pot in one go and put it into savings or invest it, your local council will treat it as an asset and include it when they work out what you can afford to pay.
 
-%If you deliberately spend or give away money (including tax-free cash) from your pension pot to get or increase help with care costs, your local council may assess your finances again and treat you as still having that money.%
+## Selling an annuity
+
+Your local council will treat the cash you get from selling an annnuity as an asset and will include it when they work out what you can afford to pay.
+
+%If you deliberately spend or give away money (including tax-free cash) from your pension pot or from selling an annuity to get or increase help with care costs, your local council may assess your finances again and treat you as still having that money.%
