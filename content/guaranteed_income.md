@@ -15,7 +15,9 @@ You can use your pension pot to buy an insurance policy that gives you a guarant
 - You can take 25% of your pot as tax-free cash and buy an annuity with the other 75%.
 - You pay tax on your annuity income.
 
-^If you’re currently receiving a pension income it’s likely that you’ve already bought an annuity or are taking an income from a final salary or career average (defined benefit) pension.^
+If you’re currently receiving a pension income it’s likely that you’ve already bought an annuity or are taking an income from a final salary or career average (defined benefit) pension.
+
+^Annuity rules will change in 2017. You may then be able to [sell an existing annuity](/how_to_sell_an_annuity) and use the money to get a lump sum or an adjustable income.^
 
 {::calculator id="guaranteed-income" /}
 
