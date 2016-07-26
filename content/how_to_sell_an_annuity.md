@@ -25,6 +25,27 @@ How much money you’ll get from selling an annuity is likely to be based, for e
 - how much you currently receive from your annuity
 
 Before a provider can tell you how much you’ll get for your annuity, they may ask for a medical report from your GP or an independent doctor. 
+
+## How you can use the money
+
+When you sell your annuity you can take the money as a cash lump sum, or use it money from the sale you can arrange to: 
+
+buy a different [type of annuity](/guaranteed-income#types-of-annuity)
+get an [adjustable income](adjustable-income)
+
+### Tax if you take cash
+
+Your annuity provider will take off the tax you owe before they pay you the cash. 
+
+The cash you take will be added to any other income you have over the tax year, eg money from work, savings and benefits.
+
+You may pay emergency tax which you can claim back.
+
+If your provider doesn’t pay your emergency tax back automatically, you can claim it back from HM Revenue and Customs.
+
+### Benefits
+
+Getting a large sum of cash from selling your annuity could affect your [entitlement to any benefits](/benefits).
  
 ## Getting financial advice
  
