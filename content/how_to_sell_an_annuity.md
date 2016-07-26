@@ -1,5 +1,48 @@
 ---
-description: How to sell an annuity
+description: How selling an annuity works
 ---
 
-# How to sell an annuity
+# How selling an annuity works
+ 
+If you want to sell your annuity you need to shop around with other providers to see which offers the best value. 
+
+You can use a broker or independent financial adviser to help you if you aren’t confident shopping around, but they may charge you.
+
+^You may not be able to sell directly back to your current provider – this could be through a broker or someone else.^ 
+
+## Before you sell
+
+You should consider getting financial advice before selling. 
+
+Legally you must get advice if your annuity pays over a certain amount a year. This amount will be set when the new rules come in.
+
+## How much you’ll get
+
+How much money you’ll get from selling an annuity is likely to be based, for example, on:
+- your age
+- the [type of annuity](/guaranteed-income#types-of-annuity), eg single life, joint life
+- your health and lifestyle
+- how much you currently receive from your annuity
+
+Before a provider can tell you how much you’ll get for your annuity, they may ask for a medical report from your GP or an independent doctor. 
+ 
+## Getting financial advice
+ 
+An [independent financial adviser](/financial-advice) can help you decide if your best option is to keep or sell your annuity.
+ 
+They can also:
+ 
+- find out how much you could get for your annuity
+- help you find a buyer
+- help you get the best deal
+
+^Pension Wise will offer guidance on selling an annuity when the new rules come in.^
+
+## Scams
+
+Beware of [pension scams](https://www.pensionwise.gov.uk/scams) contacting you unexpectedly about selling your annuity. You could lose all your money and pay high amounts of tax and extra fees.
+
+^Get advice or guidance if someone is putting you under pressure to sell your annuity – even if it’s a family member.^
+
+%If you deliberately spend or give away money from selling your annuity to get or increase help with care costs, your local council may assess your eligibility again and treat you as still having that money.%
+
