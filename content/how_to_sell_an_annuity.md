@@ -38,6 +38,18 @@ They can also:
 
 ^Pension Wise will offer guidance on selling an annuity when the new rules come in.^
 
+## Dependants and beneficiaries
+
+If you have an annuity which continues to pay an income to someone (a beneficiary) after you die you may not be able to sell it without their consent.
+
+Ask your provider if you don’t know if your annuity has a beneficiary.
+
+^Get advice or guidance if you’re the beneficiary of an annuity and you’re being put under pressure to give your consent.^ 
+
+## Joint annuities
+
+If you have a [joint annuity](/guaranteed-income#types-of-annuity), you may not be able to sell it without the agreement of the other person.
+
 ## Scams
 
 Beware of [pension scams](https://www.pensionwise.gov.uk/scams) contacting you unexpectedly about selling your annuity. You could lose all your money and pay high amounts of tax and extra fees.
