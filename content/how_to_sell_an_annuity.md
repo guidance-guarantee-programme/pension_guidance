@@ -79,3 +79,8 @@ Beware of [pension scams](https://www.pensionwise.gov.uk/scams) contacting you u
 
 %If you deliberately spend or give away money from selling your annuity to get or increase help with care costs, your local council may assess your eligibility again and treat you as still having that money.%
 
+## Paying off debt
+
+You should get advice if you’re thinking of selling your annuity to pay off debts.
+
+The [Money Advice Service](https://www.moneyadviceservice.org.uk/en) and [Citizens Advice](http://www.citizensadvice.org.uk/) both offer free and impartial debt advice.
