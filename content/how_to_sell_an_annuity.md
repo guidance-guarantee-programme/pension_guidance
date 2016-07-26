@@ -46,6 +46,8 @@ If your provider doesn’t pay your emergency tax back automatically, you can cl
 ### Benefits
 
 Getting a large sum of cash from selling your annuity could affect your [entitlement to any benefits](/benefits).
+
+%If you deliberately spend or give away money from selling your annuity to get or increase help with care costs, your local council may assess your eligibility again and treat you as still having that money.%
  
 ## Getting financial advice
  
@@ -76,8 +78,6 @@ If you have a [joint annuity](/guaranteed-income#types-of-annuity), you may not 
 Beware of [pension scams](https://www.pensionwise.gov.uk/scams) contacting you unexpectedly about selling your annuity. You could lose all your money and pay high amounts of tax and extra fees.
 
 ^Get advice or guidance if someone is putting you under pressure to sell your annuity – even if it’s a family member.^
-
-%If you deliberately spend or give away money from selling your annuity to get or increase help with care costs, your local council may assess your eligibility again and treat you as still having that money.%
 
 ## Paying off debt
 
