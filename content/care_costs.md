@@ -22,7 +22,7 @@ Your local council will work out how much you can afford to contribute towards y
 
 ###Leaving your pot untouched
 
-If you leave money in a pension pot your local council won’t count this when they work out how much you can afford to pay for care. Once you reach [Pension Credit qualifying age](https://www.gov.uk/calculate-state-pension) your local council will assume you’re receiving an income from your pension.
+Your local council won't count money you leave in your pot when they work out how much you can afford to pay for care. Once you reach [Pension Credit qualifying age](https://www.gov.uk/calculate-state-pension) your local council will assume you’re receiving an income from your pension.
 
 If you don’t take an income, they’ll check how much you’d receive if you bought an annuity and use this amount when they work out your income.
 
