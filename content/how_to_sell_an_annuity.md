@@ -1,8 +1,8 @@
 ---
-description: How selling an annuity works
+description: What to consider and do to sell an annuity, how much you’ll get and how selling may affect your tax, benefits and care costs. 
 ---
 
-# How selling an annuity works
+# How to sell an annuity
  
 If you want to sell your annuity you need to shop around with other providers to see which offers the best value. 
 
