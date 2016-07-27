@@ -1,0 +1,15 @@
+.show-only-with-js {
+  display: none;
+
+  .js-enabled & {
+    display: inherit;
+  }
+}
+
+.hide-only-with-js {
+  display: inherit;
+
+  .js-enabled & {
+    display: none;
+  }
+}
