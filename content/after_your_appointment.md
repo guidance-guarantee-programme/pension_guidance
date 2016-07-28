@@ -11,6 +11,4 @@ After your appointment, use this to:
 
 You should have had a phone or face-to-face appointment with a Pension Wise guidance specialist.
 
-After your appointment, you also get a printed summary in person or by post.
-
 ^If you haven’t yet had a Pension Wise appointment, you can [book an appointment](/appointments).^
