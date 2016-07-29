@@ -24,11 +24,11 @@ module BookingRequests
     end
 
     def open_timeout
-      ENV.fetch('BOOKING_REQUESTS_API_OPEN_TIMEOUT', 10)
+      ENV.fetch('BOOKING_REQUESTS_API_OPEN_TIMEOUT', 2)
     end
 
     def read_timeout
-      ENV.fetch('BOOKING_REQUESTS_API_READ_TIMEOUT', 10)
+      ENV.fetch('BOOKING_REQUESTS_API_READ_TIMEOUT', 2)
     end
 
     def retries
