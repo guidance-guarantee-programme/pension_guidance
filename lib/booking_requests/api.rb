@@ -9,10 +9,30 @@ module BookingRequests
     private
 
     def connection
-      HTTPConnectionFactory.build(api_uri).tap do |c|
+      HTTPConnectionFactory.build(api_uri, connection_options).tap do |c|
         c.headers[:accept] = 'application/json'
         c.authorization :Bearer, bearer_token if bearer_token
       end
+    end
+
+    def connection_options
+      {
+        timeout: read_timeout,
+        open_timeout: open_timeout,
+        retries: retries
+      }
+    end
+
+    def open_timeout
+      ENV.fetch('BOOKING_REQUESTS_API_OPEN_TIMEOUT', 10)
+    end
+
+    def read_timeout
+      ENV.fetch('BOOKING_REQUESTS_API_READ_TIMEOUT', 10)
+    end
+
+    def retries
+      ENV.fetch('BOOKING_REQUESTS_API_RETRIES', 0)
     end
 
     def bearer_token
