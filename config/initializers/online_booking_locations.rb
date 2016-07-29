@@ -16,5 +16,6 @@ BookingLocations.api = if Rails.env.development?
                          require 'booking_locations/stub_api'
                          BookingLocations::StubApi.new
                        else
-                         BookingLocations::Api.new
+                         require 'cached_booking_locations_api'
+                         CachedBookingLocationsApi.new
                        end
