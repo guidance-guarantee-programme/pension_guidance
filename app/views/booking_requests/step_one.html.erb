@@ -182,3 +182,12 @@
     var slotPicker = new PWPG.SlotPicker();
   </script>
 <% end %>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'OnlineBooking',
+    'valid': '<%= @booking_request.errors.empty? %>',
+    'step': '1'
+  });
+</script>
