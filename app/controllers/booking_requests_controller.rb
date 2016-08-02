@@ -3,16 +3,19 @@ class BookingRequestsController < ApplicationController
 
   def step_one
     @booking_request = BookingRequestForm.new(location_id, booking_request_params)
+    @booking_feedback = BookingFeedbackForm.new
   end
 
   def step_two
     @booking_request = BookingRequestForm.new(location_id, booking_request_params)
+    @booking_feedback = BookingFeedbackForm.new
 
     render :step_one unless @booking_request.step_one_valid?
   end
 
   def complete
     @booking_request = BookingRequestForm.new(location_id, booking_request_params)
+    @booking_feedback = BookingFeedbackForm.new
 
     if @booking_request.step_two_valid?
       BookingRequests.create(@booking_request)
@@ -28,6 +31,7 @@ class BookingRequestsController < ApplicationController
   end
 
   def ineligible
+    @booking_feedback = BookingFeedbackForm.new
   end
 
   private

@@ -29,6 +29,8 @@ Rails.application.routes.draw do
       end
     end
 
+    post 'feedback/feedback', to: 'feedback#feedback'
+
     resource :appointment_summaries, only: %i(new create show), path: 'summary-document' do
       post :download, on: :member
       post :print, on: :member
