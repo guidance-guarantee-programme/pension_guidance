@@ -1,0 +1,10 @@
+<% if @booking_feedback.valid? %>
+  <h3>Thank you for your help</h3>
+  <p>If you have more extensive feedback, please visit our <a href="/contact">contact page.</a></p>
+<% else %>
+  <h3>We were unable to send your feedback</h3>
+
+  <p>Don’t include personal or financial information, eg your National Insurance number or credit card details.</p>
+
+  <%= render 'feedback/form' %>
+<% end %>

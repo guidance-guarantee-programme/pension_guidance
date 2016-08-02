@@ -37,6 +37,7 @@ gem 'sprockets-rails', '~> 3.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'uk_postcode'
 gem 'utf8-cleaner'
+gem 'zendesk_api'
 
 group :development, :test do
   gem 'jasmine-jquery-rails'

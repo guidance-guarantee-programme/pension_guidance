@@ -1,0 +1,30 @@
+<%= form_for @booking_feedback, url: feedback_feedback_path, as: :booking_feedback, html: { class: 'js-feedback-form' } do |f| %>
+
+  <div class="form-group <%= 'error' if @booking_feedback.errors.include?(:name) %>">
+    <%= f.label :name, class: 'form-label' %>
+    <% if @booking_feedback.errors.include?(:name) %>
+      <span class="error-message"><%= @booking_feedback.errors[:name].to_sentence %></span>
+    <% end %>
+    <%= f.text_field :name, class: 't-feedback-name form-control' %>
+  </div>
+
+  <div class="form-group <%= 'error' if @booking_feedback.errors.include?(:email) %>">
+    <%= f.label :email, class: 'form-label' %>
+    <% if @booking_feedback.errors.include?(:email) %>
+      <span class="error-message"><%= @booking_feedback.errors[:email].to_sentence %></span>
+    <% end %>
+    <%= f.text_field :email, class: 't-feedback-email form-control' %>
+  </div>
+
+  <div class="form-group <%= 'error' if @booking_feedback.errors.include?(:message) %>">
+    <%= f.label :message, class: 'form-label' %>
+    <% if @booking_feedback.errors.include?(:message) %>
+      <span class="error-message"><%= @booking_feedback.errors[:message].to_sentence %></span>
+    <% end %>
+    <%= f.text_area :message, class: 't-feedback-message form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit 'Send feedback', class: 'button t-feedback-submit' %>
+  </div>
+<% end %>
