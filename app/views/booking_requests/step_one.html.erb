@@ -1,16 +1,16 @@
 <div class="l-column-two-thirds">
   <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
-  <p>To book an appointment at this location, choose 3 dates in case your first choice isn’t available.</p>
+  <p>Choose 3 dates in case your first choice isn’t available.</p>
 </div>
 
 <% if @booking_request.errors.any? %>
   <div class="l-column-two-thirds">
     <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
       <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-        There was a problem with your chosen slots
+        There was a problem with your chosen dates
       </h1>
 
-      <p>Please select 3 slots for your appointment.</p>
+      <p>Please select 3 dates for your appointment.</p>
     </div>
   </div>
 <% end %>

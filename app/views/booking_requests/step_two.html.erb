@@ -40,7 +40,7 @@
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:email) %>">
         <%= f.label :email, class: 'form-label' do %>
           Email
-          <span class="form-hint">We’ll send you a reminder of your appointment details.</span>
+          <span class="form-hint">We will send you a reminder of your appointment details.</span>
         <% end %>
 
         <% if @booking_request.errors.include?(:email) %>
@@ -99,7 +99,7 @@
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:dc_pot) %>">
         <fieldset class="inline">
-          <legend>Do you have a defined contribution pension pot?</legend>
+          <legend>I have a defined contribution pension pot (not a final salary or career average pension)</legend>
 
           <% if @booking_request.errors.include?(:dc_pot) %>
             <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence %></span>
@@ -130,7 +130,7 @@
           <% if @booking_request.errors.include?(:accessibility_requirements) %>
             <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence %></span>
           <% end %>
-          <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %> Yes, I have accessibility requirements
+          <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %> I have accessibility requirements
         <% end %>
       </div>
 
@@ -154,18 +154,7 @@
 
   <div class="l-column-third">
     <h2>Your preferences</h2>
-    <p>Your chosen appointment slots are below.</p>
-    <p>Need to change? <%= link_to 'Go back to the calendar',
-          booking_request_step_one_location_path(
-            id: location_id,
-            booking_request: {
-              primary_slot: @booking_request.primary_slot,
-              secondary_slot: @booking_request.secondary_slot,
-              tertiary_slot: @booking_request.tertiary_slot
-            }
-          ),
-          class: 't-back'
-        %>.</p>
+    <p>Your chosen appointment dates are below.</p>
 
     <div class="SlotPicker-choices is-chosen SlotPicker--selected SlotPicker--read-only">
      <div class="SlotPicker-choice is-chosen">
@@ -201,6 +190,18 @@
        </div>
      </div>
   </div>
+
+  <p><%= link_to 'Change dates',
+        booking_request_step_one_location_path(
+          id: location_id,
+          booking_request: {
+            primary_slot: @booking_request.primary_slot,
+            secondary_slot: @booking_request.secondary_slot,
+            tertiary_slot: @booking_request.tertiary_slot
+          }
+        ),
+        class: 't-back'
+      %></p>
 </div>
 
 <script>
