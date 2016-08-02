@@ -13,9 +13,9 @@ If your employer goes out of business you won’t lose your pension pot. This is
 
 ## If your provider can’t pay
 
-You can be compensated for up to 100% of the value of your pot if your pension provider can’t pay you and is authorised by the FCA.
+You can be compensated for up to 100% of the value of your pot if your pension provider can’t pay you and is authorised by the Financial Conduct Authority (FCA).
 
-You can claim compensation from the [Financial Services Compensation Scheme](http://www.fscs.org.uk/) (FSCS).
+You can claim compensation from the [Financial Services Compensation Scheme](http://www.fscs.org.uk/).
 
 ## Defined benefit pensions
 
