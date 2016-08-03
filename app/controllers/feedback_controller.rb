@@ -35,7 +35,8 @@ class FeedbackController < ApplicationController
       comment: {
         value: feedback_comment
       },
-      submitter_id: client.current_user.id
+      submitter_id: client.current_user.id,
+      tags: %w(online_booking)
     )
   end
 
