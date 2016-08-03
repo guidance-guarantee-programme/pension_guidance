@@ -1,0 +1,48 @@
+<div id="js-estimate">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'event': 'CalculatorEstimate',
+      'valuation': <%= valuation %>
+    });
+  </script>
+
+  <p>
+    Your would need to sell your annuity for:
+
+    <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">
+      <%= number_to_currency(valuation) %>
+    </strong>
+
+    to get the same yearly income until you are <%= life_expectancy %>.
+
+  </p>
+  <p>
+    You would pay:
+    <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">
+      <%= number_to_currency(estimate[:tax]) %> in tax
+    </strong>
+
+  </p>
+</div>
+
+<p>
+  <label for="slider">Change life expectancy:</label>
+  <%= render 'components/slider', {
+      id: 'slider',
+      target: '#life_expectancy',
+      option: 'life-expectancy',
+      text_before: '',
+      initial_value: [life_expectancy, age + 1].max,
+      min: age,
+      max: 110,
+      step: 1 }
+  %>
+</p>
+
+<ul class="t-calculator-notes">
+  <li class="t-calculator-life-expectancy-income">
+    Average life expectancy for those aged 55 is mid-to-late 80s.
+  </li>
+  <li>You could pay Income Tax on the money you get from selling your annuity.</li>
+</ul>

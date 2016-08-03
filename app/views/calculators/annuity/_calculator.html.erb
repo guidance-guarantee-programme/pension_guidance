@@ -1,0 +1,10 @@
+<%= render 'form', form: form %>
+<% if form.valid? %>
+  <%= render 'estimate',
+    estimate: form.estimate,
+    age: form.age.to_i,
+    pension_income: form.pension_income,
+    life_expectancy: form.life_expectancy.to_i,
+    valuation: form.estimate[:valuation]
+  %>
+<% end %>

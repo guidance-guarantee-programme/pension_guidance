@@ -1,0 +1,51 @@
+<%
+  form = local_assigns[:form]
+  errors = form&.errors
+%>
+
+<h2 id="calculator">Estimate how much your annuity could be worth</h2>
+
+<%= render 'calculators/error_summary', messages: errors&.messages if form&.invalid? %>
+
+<form action="/annuity/estimate#form" method="get">
+  <%= render 'calculators/form_input_hidden',
+             field: :life_expectancy,
+             value: form&.life_expectancy %>
+
+  <%= render 'calculators/form_input_number',
+             field: :age,
+             value: form&.age,
+             label: 'What is your age?',
+             error_messages: errors&.get(:age) %>
+
+  <%= render 'calculators/form_input_currency',
+             field: :pension_income,
+             value: form&.pension_income,
+             label: 'What is your yearly annuity income?',
+             error_messages: errors&.get(:pension_income) %>
+
+  <%= render 'calculators/form_input_currency',
+             field: :income,
+             css_classes: 'js-scroll-target',
+             value: form&.income,
+             label: 'What is your other yearly income?',
+             error_messages: errors&.get(:income) %>
+
+  <%= render 'calculators/form_input_submit' %>
+</form>
+
+<% if form %>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'event': 'CalculatorEstimate',
+      'valid': <%= form.valid? %>
+      <% if form.valid? %>
+      , 'income': <%= form.income.to_i %>
+      , 'age': <%= form.age.to_i %>
+      , 'pension_income': <%= form.pension_income.to_i %>
+      , 'life_expectancy': <%= form.life_expectancy.to_i %>
+      <% end %>
+    });
+  </script>
+<% end %>

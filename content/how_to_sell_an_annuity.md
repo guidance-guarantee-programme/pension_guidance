@@ -26,6 +26,8 @@ How much money you’ll get from selling an annuity is likely to be based, for e
 
 Before a provider can tell you how much you’ll get for your annuity, they may ask for a medical report from your GP or an independent doctor. 
 
+{::calculator id="annuity" /}
+
 ## How you can use the money
 
 When you sell your annuity you can take the money as a cash lump sum, or use it money from the sale you can arrange to: 

@@ -1,11 +1,12 @@
 <%
   error_messages = local_assigns[:error_messages] || []
+  css_classes = local_assigns[:css_classes] || ""
   hint = local_assigns[:hint]
   labelled_by_symbol = "#{field}-symbol"
   labelled_by_label = "#{field}-label"
 %>
 
-<div class="form-group <%= 'error' unless error_messages.empty? %>">
+<div class="form-group <%= 'error' unless error_messages.empty? %> <%= css_classes %>">
   <label class="form-label" for="<%= field %>" id="<%= labelled_by_label %>">
     <%= label %>
     <%= content_tag :span, hint, class: 'form-hint' unless hint.blank? %>

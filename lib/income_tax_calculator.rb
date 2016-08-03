@@ -30,7 +30,7 @@ class IncomeTaxCalculator
 
   # rubocop:disable AbcSize, MethodLength
   def self.marginal_tax_for_lump_sum_with_income(lump_sum:, income:)
-    potentially_taxable_lump_sum = lump_sum * TAXABLE_LUMP_SUM_PORTION
+    potentially_taxable_lump_sum = lump_sum * self::TAXABLE_LUMP_SUM_PORTION
     allowance = personal_allowance_for(income: potentially_taxable_lump_sum + income)
 
     # adjust bands according to income

@@ -55,6 +55,19 @@ en:
               blank: Please enter the age you plan to retire at
               not_a_number: Using numbers, please enter the age you want to retire
               greater_than_or_equal_to: We can only provide an estimate for those over 55
+        calculators/annuity_form:
+          attributes:
+            income:
+              not_a_number: Using numbers, please enter your income for the year
+              greater_than_or_equal_to: Your income for the year must be £0 or more
+            pension_income:
+              blank: Please enter your pension income
+              not_a_number: Using numbers, please enter your pension income
+              greater_than_or_equal_to: Your pension income must be £0 or more
+            age:
+              blank: Please enter your current age
+              not_a_number: Using numbers, please enter your current age
+              greater_than_or_equal_to: We can only provide an estimate for those over 55
         calculators/leave_pot_untouched_form:
           attributes:
             pot:
