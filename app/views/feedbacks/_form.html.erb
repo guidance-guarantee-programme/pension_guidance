@@ -1,4 +1,4 @@
-<%= form_for @booking_feedback, url: feedback_feedback_path, as: :booking_feedback, html: { class: 'js-feedback-form' } do |f| %>
+<%= form_for @booking_feedback, url: feedback_path, as: :booking_feedback, html: { class: 'js-feedback-form' } do |f| %>
 
   <div class="form-group <%= 'error' if @booking_feedback.errors.include?(:name) %>">
     <%= f.label :name, class: 'form-label' %>
