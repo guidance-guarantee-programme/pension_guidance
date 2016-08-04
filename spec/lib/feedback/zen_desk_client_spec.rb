@@ -8,11 +8,12 @@ RSpec.describe Feedback::ZenDeskClient do
     expect(ticket_class).to receive(:create!).with(
       client,
       hash_including(
+        requester: { name: 'Ben', email: 'ben@example.com' },
         comment: { value: 'Awesome!' },
         tags: %w(online_booking)
       )
     )
 
-    subject.create_ticket('Awesome!')
+    subject.create_ticket(name: 'Ben', email: 'ben@example.com', message: 'Awesome!')
   end
 end
