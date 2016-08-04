@@ -1,3 +1,5 @@
+require_relative '../sections/feedback'
+
 module Pages
   class BookingStepOne < SitePrism::Page
     set_url '/locations/{id}/booking-request/step-one'
@@ -9,6 +11,8 @@ module Pages
 
     elements :available_days, '.BookingCalendar-date--bookable'
     elements :time_slots, '.SlotPicker-day.is-active > label'
+
+    section :feedback, Sections::Feedback, '.t-feedback'
 
     def morning_slot
       wait_for_time_slots

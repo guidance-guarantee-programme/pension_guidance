@@ -7,7 +7,13 @@ class BookingFeedbackForm
   validates :email, presence: true, format: { with: /.+@.+\..+/ }
   validates :message, presence: true
 
-  def initialize(opts = {})
-    super
+  def message_content
+    %(
+      Name: #{name}
+      Email: #{email}
+
+      Message:
+      #{message}
+    )
   end
 end

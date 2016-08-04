@@ -166,6 +166,25 @@ Then(/^I am told I am ineligible for guidance$/) do
   expect(@ineligible).to be_displayed
 end
 
+When(/^I complete the inline feedback$/) do
+  @step_one = Pages::BookingStepOne.new
+  expect(@step_one).to be_displayed
+
+  @step_one.feedback.tap do |f|
+    f.toggle.click
+    f.wait_for_name
+
+    f.name.set 'Ben'
+    f.email.set 'ben@example.com'
+    f.message.set 'This is awesome!'
+    f.submit.click
+  end
+end
+
+Then(/^I see my feedback was sent$/) do
+  expect(page).to have_content('Thank you for your help')
+end
+
 def with_booking_locations
   previous_path = Locations.geo_json_path_or_url
   Locations.geo_json_path_or_url = Rails.root.join(*%w(features fixtures booking_locations.json))
