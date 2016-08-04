@@ -55,8 +55,9 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
-    booking_locations (0.3.0)
+    booking_locations (0.6.0)
       activesupport (>= 4, < 5.1)
+      globalid
     bugsnag (2.8.8)
       multi_json (~> 1.0)
     builder (3.2.2)
