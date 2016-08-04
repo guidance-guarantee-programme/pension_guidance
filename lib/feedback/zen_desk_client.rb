@@ -7,12 +7,12 @@ module Feedback
       @client = client
     end
 
-    def create_ticket(message)
+    def create_ticket(name:, email:, message:)
       ticket_class.create!(
         client,
         subject: 'Online Booking feedback',
+        requester: { name: name, email: email },
         comment: { value: message },
-        submitter_id: ENV['ZENDESK_API_SUBMITTER_ID'],
         tags: %w(online_booking)
       )
     end

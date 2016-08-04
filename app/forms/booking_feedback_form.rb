@@ -8,12 +8,10 @@ class BookingFeedbackForm
   validates :message, presence: true
 
   def message_content
-    %(
-      Name: #{name}
-      Email: #{email}
-
-      Message:
-      #{message}
-    )
+    {
+      name: name,
+      email: email,
+      message: message
+    }
   end
 end
