@@ -28,11 +28,12 @@ module Locations
     def params_for_location(feature)
       [
         feature.feature_id,
-        feature.properties['title'],
-        feature.properties['address'],
-        feature.properties['booking_location_id'],
-        feature.properties['phone'],
-        feature.properties['hours'],
+        feature.property('title'),
+        feature.property('address'),
+        feature.property('booking_location_id'),
+        feature.property('phone'),
+        feature.property('hours'),
+        feature.property('twilio_number'),
         [feature.geometry.y, feature.geometry.x]
       ]
     end

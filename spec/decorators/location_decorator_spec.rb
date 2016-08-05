@@ -11,8 +11,16 @@ RSpec.describe LocationDecorator do
   let(:twilio_number) { '+441443643532' }
   let(:formated_twilio_number) { '01443 643532' }
   let(:location) do
-    double(id: id, name: name, address: address,
-           booking_location_id: booking_location_id, phone: phone, hours: hours)
+    double(
+      :location,
+      id: id,
+      name: name,
+      address: address,
+      booking_location_id: booking_location_id,
+      phone: phone,
+      hours: hours,
+      twilio_number: twilio_number
+    )
   end
   let(:booking_location) do
     double(name: booking_location_name, phone: booking_location_phone, hours: booking_location_hours)
@@ -23,15 +31,17 @@ RSpec.describe LocationDecorator do
 
     specify { expect(decorator.name).to eq(name) }
     specify { expect(decorator.address).to eq(address) }
-    specify { expect(decorator.phone).to eq(phone) }
     specify { expect(decorator.hours).to eq(hours) }
     specify { expect(decorator.booking_location).to be_nil }
     specify { expect(decorator.search_context).to be_nil }
 
-    context 'and we are proxying their phone number through twilio' do
-      subject(:decorator) { described_class.new(location, twilio_number: twilio_number) }
-
+    context 'and a twilio number is present' do
       specify { expect(decorator.phone).to eq(formated_twilio_number) }
+    end
+
+    context 'and a twilio number is not present' do
+      let(:twilio_number) { nil }
+      specify { expect(decorator.phone).to eq(phone) }
     end
   end
 
@@ -40,20 +50,18 @@ RSpec.describe LocationDecorator do
 
     specify { expect(decorator.name).to eq(name) }
     specify { expect(decorator.address).to eq(address) }
-    specify { expect(decorator.phone).to eq(booking_location_phone) }
     specify { expect(decorator.hours).to eq(booking_location_hours) }
     specify { expect(decorator.booking_location).to eq(booking_location_name) }
 
     specify { expect(decorator.search_context).to be_nil }
 
-    context 'and we are proxying their phone number through twilio' do
-      subject(:decorator) do
-        described_class.new(
-          location, booking_location: booking_location, twilio_number: twilio_number
-        )
-      end
-
+    context 'and a twilio number is present' do
       specify { expect(decorator.phone).to eq(formated_twilio_number) }
+    end
+
+    context 'and a twilio number is not present' do
+      let(:twilio_number) { nil }
+      specify { expect(decorator.phone).to eq(booking_location_phone) }
     end
   end
 

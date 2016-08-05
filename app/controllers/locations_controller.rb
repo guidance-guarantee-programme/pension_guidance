@@ -26,12 +26,10 @@ class LocationsController < ApplicationController
 
     booking_location = Locations.find(location.booking_location_id) if location.booking_location_id.present?
     nearest_locations = Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT) rescue nil
-    twilio_number = Switchboard.lookup(params[:id])
 
     @location = LocationDecorator.new(location,
                                       booking_location: booking_location,
-                                      nearest_locations: nearest_locations,
-                                      twilio_number: twilio_number)
+                                      nearest_locations: nearest_locations)
   end
 
   private
