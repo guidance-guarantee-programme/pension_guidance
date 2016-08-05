@@ -13,11 +13,9 @@ Locations.online_booking_location_uids = %w(
   1a1ad00f-d967-448a-a4a6-772369fa5087
 )
 
-# Booking Locations API adapter
-BookingLocations.api = if Rails.env.development?
-                         require 'booking_locations/stub_api'
-                         BookingLocations::StubApi.new
-                       else
-                         require 'cached_booking_locations_api'
-                         CachedBookingLocationsApi.new
-                       end
+if Rails.env.development?
+  require 'booking_locations/stub_api'
+  BookingLocations.api = BookingLocations::StubApi.new
+else
+  BookingLocations.cache = Rails.cache
+end
