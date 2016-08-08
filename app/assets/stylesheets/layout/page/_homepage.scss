@@ -1,25 +1,3 @@
-.l-home-header {
-  position: relative;
-  margin-top: 19px;
-  margin-bottom: 21px;
-
-  @include media(tablet) {
-    margin-top: 25px;
-    margin-bottom: 28px;
-  }
-}
-
-.l-quick-links {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
 .l-home-top-slot {
   margin-top: 27px;
   margin-bottom: 32px;
