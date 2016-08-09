@@ -1,91 +1,45 @@
 .circle {
+  border-radius: 100%;
   display: block;
-}
-
-.circle--s {
-  margin-bottom: -18px;
-  width: 18px;
-  height: 18px;
-  background-image: image-url("css/circles-14.png");
-  background-repeat: no-repeat;
-
-  @include media(tablet) {
-    background-image: image-url("css/circles-18.png");
-  }
 
   &.circle--leave-pot-untouched {
-    background-position: 0 0;
+    background-color: $color-option-leave-pot-untouched;
   }
 
   &.circle--guaranteed-income {
-    background-position: 0 -21px;
-
-    @include media(tablet) {
-      background-position: 0 -25px;
-    }
+    background-color: $color-option-guaranteed-income;
   }
 
   &.circle--adjustable-income {
-    background-position: 0 -42px;
-
-    @include media(tablet) {
-      background-position: 0 -51px;
-    }
+    background-color: $color-option-adjustable-income;
   }
 
   &.circle--take-cash-in-chunks {
-    background-position: 0 -64px;
-
-    @include media(tablet) {
-      background-position: 0 -77px;
-    }
+    background-color: $color-option-take-cash;
   }
 
   &.circle--take-whole-pot {
-    background-position: 0 -85px;
-
-    @include media(tablet) {
-      background-position: 0 -102px;
-    }
+    background-color: $color-option-take-whole-pot;
   }
 
   &.circle--mix-options {
-    background-position: 0 -107px;
+    background-color: $color-option-mix-options;
+  }
+}
 
-    @include media(tablet) {
-      background-position: 0 -129px;
-    }
+.circle--s {
+  height: 14px;
+  width: 14px;
+
+  @include media(tablet) {
+    height: 18px;
+    width: 18px;
   }
 }
 
 .circle--m {
   margin-top: 15px;
   margin-bottom: -10px;
-  width: 26px;
-  height: 26px;
-  background-image: image-url("css/circles-24.png");
-
-  &.circle--leave-pot-untouched {
-    background-position: 0 -1px;
-  }
-
-  &.circle--guaranteed-income {
-    background-position: 0 -37px;
-  }
-
-  &.circle--adjustable-income {
-    background-position: 0 -74px;
-  }
-
-  &.circle--take-cash-in-chunks {
-    background-position: 0 -111px;
-  }
-
-  &.circle--take-whole-pot {
-    background-position: 0 -148px;
-  }
-
-  &.circle--mix-options {
-    background-position: 0 -186px;
-  }
+  width: 24px;
+  height: 24px;
 }
