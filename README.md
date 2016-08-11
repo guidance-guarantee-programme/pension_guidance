@@ -24,6 +24,18 @@ Clone the repository:
 $ git clone https://github.com/guidance-guarantee-programme/pension_guidance.git
 ```
 
+Install PrinceXML:
+
+```sh
+$ http://www.princexml.com/download/
+```
+
+Install and start Redis:
+
+```sh
+$ brew install redis && brew services start redis
+```
+
 Setup the application:
 
 ```sh
