@@ -29,3 +29,6 @@ Style/TrivialAccessors:
 
 AmbiguousOperator:
   Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
