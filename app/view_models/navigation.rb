@@ -26,7 +26,7 @@ class Navigation
 
   def find_guides(nodes)
     [].tap do |guides|
-      guides.push(*find_parented_guides(nodes))
+      guides.concat(find_parented_guides(nodes))
       guides.push(find_orphan_guides(nodes))
     end
   end

@@ -49,7 +49,8 @@ RSpec.describe LocationDecorator do
     context 'and we are proxying their phone number through twilio' do
       subject(:decorator) do
         described_class.new(
-          location, booking_location: booking_location, twilio_number: twilio_number)
+          location, booking_location: booking_location, twilio_number: twilio_number
+        )
       end
 
       specify { expect(decorator.phone).to eq(formated_twilio_number) }

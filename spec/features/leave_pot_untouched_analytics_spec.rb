@@ -21,7 +21,8 @@ RSpec.feature 'Leave pot untouched analytics', type: :feature, js: true do
       'event' => 'CalculatorEstimate',
       'pot' => 100_000,
       'contribution' => 7_000,
-      'valid' => true)
+      'valid' => true
+    )
   end
 
   private

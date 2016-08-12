@@ -1,3 +1,4 @@
+# rubocop:disable Rails/OutputSafety
 class AppointmentSummariesController < ApplicationController
   layout 'guides', only: [:new, :create]
 

@@ -18,7 +18,7 @@ RSpec.describe Guide, type: :model do
     described_class.new(id, content: content, content_type: content_type, metadata: metadata)
   end
 
-  %i( id content content_type label concise_label description tags ).each do |attr|
+  %i(id content content_type label concise_label description tags).each do |attr|
     describe "##{attr}" do
       it "returns the initialised #{attr}" do
         expect(guide.public_send(attr)).to eq(public_send(attr))
