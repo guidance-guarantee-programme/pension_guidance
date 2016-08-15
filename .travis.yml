@@ -21,14 +21,6 @@ before_script:
 - "(cd .downloads; [ -d prince-9.0r5-linux-amd64-static ] || curl -s http://www.princexml.com/download/prince-9.0r5-linux-amd64-static.tar.gz | tar xzf -)"
 - echo $PWD | ./.downloads/prince-9.0r5-linux-amd64-static/install.sh
 - npm install
-deploy:
-  provider: heroku
-  app: ggp-pension-guidance
-  api_key:
-    secure: oOyqM/OW8yMk4pkYL4/A0xJOF12OgaXQ8ooPcxlteksJh4ow3nzezTm2GECsrx5NmdUEVkbPJdxOky/I1XKv3vNUIek11uFm4zJT6OYq1+PxiMaeuTsBd7bPcPVVppfs1g/D43oIVauPIiCvHEeq9U3uKzt0AhS785FzaLJ01pc=
-  on:
-    repo: guidance-guarantee-programme/pension_guidance
-  run: curl -X POST -d '' https://ggp-smoke-tests.herokuapp.com/staging
 notifications:
   slack:
     secure: dbkW7tikYd7n+K8JgMmfowamyeYxWAFkEEJbtVwKtKaucxezrrfggdThKnrQSu5a9JDwl3Owfy8Cd8XICG/Sy92REM9i6MIMeiO95j4lHwVt4up9UvXrxWbcHczRcBFFNAPj0oxRNFYmkwyYVqNtNk9G/TBUUnVbGC3DcQ4IRoo=
