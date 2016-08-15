@@ -1,14 +1,13 @@
 class LocationDecorator < SimpleDelegator
-  def initialize(location, booking_location: nil, nearest_locations: nil, twilio_number: nil)
+  def initialize(location, booking_location: nil, nearest_locations: nil)
     __setobj__(location)
 
     self._booking_location = booking_location
     self.nearest_locations = nearest_locations
-    self.twilio_number = twilio_number
   end
 
   def phone
-    return formated_twilio_number unless twilio_number.nil?
+    return formated_twilio_number unless twilio_number.blank?
     return _booking_location.phone unless _booking_location.nil?
 
     super
@@ -38,7 +37,7 @@ class LocationDecorator < SimpleDelegator
 
   private
 
-  attr_accessor :_booking_location, :nearest_locations, :twilio_number
+  attr_accessor :_booking_location, :nearest_locations
 
   def formated_twilio_number
     Phoner::Phone.parse(twilio_number).format('%A %n')

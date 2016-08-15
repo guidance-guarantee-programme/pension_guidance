@@ -1,7 +1,7 @@
 RSpec.describe Locations::Search, '.nearest_to' do
-  let(:london) { Locations::Location.new('london', 'London', '', '', '', '', [51.500152, -0.126236]) }
-  let(:paris) { Locations::Location.new('paris', 'Paris', '', '', '', '', [48.85666, 2.350987]) }
-  let(:new_york) { Locations::Location.new('new-york', 'New York', '', '', '', '', [40.714269, 74.005973]) }
+  let(:london) { Locations::Location.new('london', 'London', '', '', '', '', '', [51.500152, -0.126236]) }
+  let(:paris) { Locations::Location.new('paris', 'Paris', '', '', '', '', '', [48.85666, 2.350987]) }
+  let(:new_york) { Locations::Location.new('new-york', 'New York', '', '', '', '', '', [40.714269, 74.005973]) }
   let(:belfast) { [54.597269, -5.930109] }
   let(:locations) { [new_york, paris, london] }
   let(:limit) { 5 }

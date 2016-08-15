@@ -4,10 +4,22 @@ RSpec.describe Locations::SearchResult do
   let(:address) { 'location address' }
   let(:booking_location_id) { 'booking-location-id' }
   let(:phone) { 'phone number' }
+  let(:twilio_number) { 'twilio number' }
   let(:hours) { 'opening hours' }
   let(:lat_lng) { [1, 0] }
   let(:distance) { 150 }
-  let(:location) { Locations::Location.new(id, name, address, booking_location_id, phone, hours, lat_lng) }
+  let(:location) do
+    Locations::Location.new(
+      id,
+      name,
+      address,
+      booking_location_id,
+      phone,
+      hours,
+      twilio_number,
+      lat_lng
+    )
+  end
 
   subject(:search_result) { described_class.new(location, distance) }
 
@@ -19,6 +31,7 @@ RSpec.describe Locations::SearchResult do
   specify { expect(search_result.booking_location_id).to eq(booking_location_id) }
   specify { expect(search_result.phone).to eq(phone) }
   specify { expect(search_result.hours).to eq(hours) }
+  specify { expect(search_result.twilio_number).to eq(twilio_number) }
   specify { expect(search_result.lat_lng).to eq(lat_lng) }
   specify { expect(search_result.distance).to eq(distance) }
 end
