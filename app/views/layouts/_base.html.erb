@@ -93,6 +93,18 @@
   </script>
   <%# End UserZoom intercept %>
 
+  <% if Rails.env.test? %>
+    <%#
+    Disable jQuery animations in the test environment to
+    increase speed of the test suite and give us a more
+    consistent DOM to make assertions against. Without this,
+    we were seeing frequent intermittent test failures.
+    %>
+    <script>
+      $.fx.off = true;
+    </script>
+  <% end %>
+
   <%= yield :after_script %>
 <% end %>
 
