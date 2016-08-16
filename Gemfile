@@ -63,6 +63,7 @@ group :test do
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'
+  gem 'wraith'
 end
 
 group :staging, :production do

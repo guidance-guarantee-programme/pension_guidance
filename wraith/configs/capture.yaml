@@ -1,0 +1,80 @@
+##############################################################
+##############################################################
+# This is an example configuration provided by Wraith.
+# Feel free to amend for your own requirements.
+# ---
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# `wraith capture capture.yaml`
+#
+##############################################################
+##############################################################
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "phantomjs"
+
+# (required) The domains to take screenshots of.
+domains:
+  local: "http://localhost:5000"
+  live: "https://www.pensionwise.gov.uk"
+
+# # (required) The paths to capture. All paths should exist for both of the domains specified above.
+paths:
+  home: /
+  styleguide: /styleguide
+  styleguide_base: /styleguide/base
+  styleguide_govspeak: /styleguide/govspeak
+  styleguide_components: /styleguide/components
+  styleguide_govuk_elements: /styleguide/govuk_elements
+  pension_pot_options: /pension-pot-options
+  tax: /tax
+  appointments: /appointments
+  mix_options: /mix-options
+  browse_tax_and_getting_advice: /browse/tax-and-getting-advice
+  contact: /contact
+  summary_document_new: /summary-document/new
+  locations: /locations?postcode=
+  cookies: /cookies
+  feedback_new: /feedback/new
+  location_postcode: /locations?postcode=sw16+2hq
+  location_id: /locations/0337ef4d-0076-48c6-a588-98e5ca5b91dd?postcode=Bl31ep+
+  location_booking: /locations/ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef/booking-request/step-one
+  work-out-income: /work-out-income
+  take-whole-pot: /take-whole-pot
+  leave-pot-untouched: /leave-pot-untouched
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  - 320x4000
+  - 600x4000
+  - 768x4000
+  - 905x4000
+  - 1280x4000
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'wraith/shots'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first
