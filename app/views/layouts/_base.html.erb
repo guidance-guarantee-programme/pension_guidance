@@ -66,21 +66,35 @@
 <% end %>
 
 <% content_for :footer_top do %>
-  <%= render 'components/footer_categories', categories: navigation.topics %>
+  <%= render 'components/footer_categories', categories: navigation.topics if footer? %>
 <% end %>
 
 <% content_for :body_end do %>
   <%= javascript_include_tag 'application' %>
-  <%= javascript_include_tag 'https://cdn3.userzoom.com/uz.js?cuid=C85E515772DAE311BEDA0022196C4538' %>
 
-  <%# UserZoom intercept %>
-  <script type="text/javascript">
-    //<![CDATA[
+  <% if homepage_experiment_id %>
+    <%= javascript_include_tag 'https://cdn3.userzoom.com/uz.js?cuid=C85E515772DAE311BEDA0022196C4538' %>
+    <script>//<![CDATA[
+    var experimentMatches = document.cookie.match(/<%= ENV["HOMEPAGE_EXPERIMENT_ID"] %>:([0-1])/),
+      experimentId = 0;
+
+    if (experimentMatches !== null && experimentMatches[1]) {
+      experimentId = parseInt(experimentMatches[1]);
+    }
+
     _uzactions = window._uzactions || [];
-    _uzactions.push(['_setID', '2E076BDC8B3BE611A8C60022196C2B88']);
-    _uzactions.push(['_setSID', '85358FD18B3BE611A8C60022196C2B88']);
+
+    if (experimentId === 0) {
+      _uzactions.push(['_setID', '3F71AF71102FE6118CAD0022196C2B88']);
+      _uzactions.push(['_setSID', '3E71AF71102FE6118CAD0022196C2B88']);
+    } else {
+      _uzactions.push(['_setID', '6AF15392153AE611A8C60022196C2B88']);
+      _uzactions.push(['_setSID', '69F15392153AE611A8C60022196C2B88']);
+    }
+
     _uzactions.push(['_start']);
-    (function () {
+
+    (function() {
       var uz = document.createElement('script');
       uz.type = 'text/javascript';
       uz.async = true;
@@ -90,8 +104,8 @@
       s.parentNode.insertBefore(uz, s);
     })();
     //]]>
-  </script>
-  <%# End UserZoom intercept %>
+    </script>
+  <% end %>
 
   <% if Rails.env.test? %>
     <%#

@@ -1,0 +1,29 @@
+// Use these stylesheets to extend the styles from the main styles
+//
+// This technique allows us to run experiments, such as a A/B tests
+// and then easily apply the results into the main stylesheet
+// should they be successful.
+//
+// We should treat these styles as production code.
+
+//
+// #1: Import the various mixins and variables so we have them in scope.
+//
+// sass library provided by alphagov/govuk_frontend_toolkit
+@import "govuk-frontend-toolkit";
+
+// styles provided by alphagov/govuk_elements
+@import "govuk-elements";
+
+// main pension wise styles
+@import "../lib/*";
+@import "../base/*";
+
+//
+// #2: Experiment styles
+//
+@import "lib/*";
+@import "base/*";
+@import "helpers/*";
+@import "layout/**/*";
+@import "components/**/*";

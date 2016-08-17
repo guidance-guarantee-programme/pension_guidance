@@ -1,0 +1,19 @@
+.statistic {
+  padding-bottom: 20px;
+
+  @include media(tablet) {
+    max-width: 66%;
+  }
+}
+
+.statistic__label {
+  @include bold-19();
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.statistic__number {
+  @include bold-48();
+  margin-top: 0;
+  margin-bottom: 0;
+}
