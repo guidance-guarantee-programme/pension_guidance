@@ -23,6 +23,7 @@ domains:
 # # (required) The paths to capture. All paths should exist for both of the domains specified above.
 paths:
   home: /
+  home_alternative: /home-alternative
   styleguide: /styleguide
   styleguide_base: /styleguide/base
   styleguide_govspeak: /styleguide/govspeak
