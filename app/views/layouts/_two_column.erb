@@ -6,14 +6,12 @@
     </div>
   </div>
 
-  <div class="l-page-container">
+  <main role="main" id="content" tabindex="-1">
     <%= render 'components/breadcrumbs' %>
 
     <div class="l-grid-row">
       <div class="l-column-two-thirds">
-        <main role="main" id="content" tabindex="-1">
-          <%= yield %>
-        </main>
+        <%= yield %>
       </div>
       <div class="l-column-third l-column-third--sidebar">
         <% if book_an_appointment_link? %>
@@ -24,6 +22,5 @@
         <%= yield :sticky_sidebar %>
       </div>
     </div>
-
-  </div>
+  </main>
 <% end %>

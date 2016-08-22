@@ -19,8 +19,9 @@ Find out more about [how to manage cookies](http://www.aboutcookies.org).
 We use Google Analytics software to collect information about how you use our website. We do this to help make sure the website is meeting the needs of its users and to help us make improvements.
 Google Analytics stores information about:
 
-- the pages you visit on the Pension Wise website  - how long you spend on each page 
-- how you got to the website  
+- the pages you visit on the Pension Wise website 
+- how long you spend on each page 
+- how you got to the website 
 - what you click on while you’re visiting the website
 
 We don’t collect or store your personal information (eg your name or address) so this information can’t be used to identify who you are.
@@ -29,6 +30,7 @@ We don’t collect or store your personal information (eg your name or address) 
 
 Google Analytics sets the following cookies:
 
+{:.table-font-xsmall}
 Name | Purpose | Expires
 -|-
 _ga | This helps us count how many people visit Pension Wise by tracking if you’ve visited before | 2 years
@@ -40,6 +42,7 @@ You can [opt out of Google Analytics](https://tools.google.com/dlpage/gaoptout).
 
 We select some users to take part in performance surveys. If you take part, or dismiss a survey, we’ll save a cookie that lets us know you’ve seen the message so that we don’t show it to you again.
 
+{:.table-font-xsmall}
 Name | Purpose | Expires
 -|-
 UZ_TI_dc_value | Saves a message to remember if you’ve taken a survey or dismissed it | when you close your browser
@@ -51,6 +54,7 @@ We use [UserZoom](http://www.userzoom.co.uk/) to collect responses to a survey. 
 
 You may see a pop-up welcome message when you first visit the Pension Wise website. We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.
 
+{:.table-font-xsmall}
 Name | Purpose | Expires
 -|-
 seen_cookie_message | Saves a message to let us know that you have seen our cookie message | 1 month
@@ -59,6 +63,7 @@ seen_cookie_message | Saves a message to let us know that you have seen our cook
 
 Pension Wise uses a content delivery network (CDN). Our CDN applies a cookie to users’ devices so that we can identify non-human visitors to our website, such as bots and crawlers. Non-human visitors will have security restrictions applied.
 
+{:.table-font-xsmall}
 Name | Purpose | Expires
 -|-
 _cfduid | Overrides security settings if your machine is trusted | 28 days

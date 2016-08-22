@@ -1,8 +1,5 @@
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
   margin: 1em 0 2em;
-  width: 100%;
 }
 
 caption {
@@ -13,14 +10,5 @@ caption {
 
 th,
 td {
-  @include core-14;
   vertical-align: top;
-  padding: .7em .5em;
-  border-bottom: solid 1px $border-colour;
-}
-
-th {
-  line-height: 1.25em;
-  text-align: left;
-  font-weight: 700;
 }

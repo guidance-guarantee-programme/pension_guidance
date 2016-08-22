@@ -1,15 +1,6 @@
 Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
-                                                         'govuk_elements', 'public', 'sass')
-
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
-                                                         'govuk_elements', 'public', 'images')
-
-Rails.application.config.assets.paths.unshift Rails.root.join('vendor', 'assets', 'bower_components',
-                                                              'govuk_elements', 'govuk', 'public', 'images')
-
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
                                                          'moj.slot-picker', 'dist', 'javascripts')
 
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
