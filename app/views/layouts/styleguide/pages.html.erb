@@ -24,7 +24,7 @@
       <%= render 'components/page_nav' %>
     </div>
   </div>
-  <div class="l-page-container">
+  <main role="main" id="content" tabindex="-1">
     <nav class="breadcrumbs" aria-label="breadcrumb" role="navigation">
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -36,9 +36,7 @@
 
     <div class="l-grid-row">
       <div class="l-column-two-thirds">
-        <main role="main" id="content" tabindex="-1">
-          <%= yield %>
-        </main>
+        <%= yield %>
       </div>
       <div class="l-column-third l-column-third--sidebar">
         <div class="sidebar-hr"></div>
@@ -46,7 +44,7 @@
       </div>
     </div>
 
-  </div>
+  </main>
 <% end %>
 
 <%= render template: 'layouts/govuk_template' %>

@@ -1,31 +1,4 @@
-.breadcrumbs__list {
-  @extend %contain-floats;
-  margin: 0;
-  padding: .75em 0;
-}
-
-.breadcrumbs__item {
-  @include core-16;
-  list-style: none;
-  margin: 0 .5em .4em 0;
-  padding-right: 1em;
-  float: left;
-  background-image: image-url("css/separator.png");
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
-
-  @include device-pixel-ratio() {
-    background-image: image-url("css/separator-2x.png");
-    background-size: 6px 11px;
-  }
-}
-
-.breadcrumbs__item:last-child {
-  background-image: none;
-  margin-right: 0;
-}
-
-.breadcrumbs__link:link,
-.breadcrumbs__link:visited {
-  color: $text-colour;
+.breadcrumbs {
+  @include breadcrumbs;
+  overflow: hidden;
 }

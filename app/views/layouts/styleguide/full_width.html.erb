@@ -24,11 +24,9 @@
       <%= render 'components/page_nav' %>
     </div>
   </div>
-  <div class="l-page-container">
-    <main role="main" id="content" tabindex="-1">
-      <%= yield %>
-    </main>
-  </div>
+  <main role="main" id="content" tabindex="-1">
+    <%= yield %>
+  </main>
 <% end %>
 
 <% content_for :body_end do %>
