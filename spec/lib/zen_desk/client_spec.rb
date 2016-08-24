@@ -1,4 +1,4 @@
-RSpec.describe Feedback::ZenDeskClient do
+RSpec.describe ZenDesk::Client do
   let(:ticket_class) { double }
   let(:client) { double.as_null_object }
 

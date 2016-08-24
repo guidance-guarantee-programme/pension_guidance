@@ -1,4 +1,4 @@
-module Feedback
+module ZenDesk
   class StubClient
     def create_ticket(*)
       # noop
