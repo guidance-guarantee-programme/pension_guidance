@@ -7,13 +7,13 @@ module ZenDesk
       @client = client
     end
 
-    def create_ticket(name:, email:, message:)
+    def create_ticket(name:, email:, message:, subject:, tags:)
       ticket_class.create!(
         client,
-        subject: 'Online Booking zen_desk',
+        subject: subject,
         requester: { name: name, email: email },
         comment: { value: message },
-        tags: %w(online_booking)
+        tags: tags
       )
     end
 
