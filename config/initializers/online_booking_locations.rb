@@ -14,7 +14,10 @@ CARDIFF_AND_VALE = %w(
   edde9cde-41ac-4485-9919-b6d34d79f844
   657a523b-f14f-46b9-9024-5b51ddcf1e8e
   26c38b1b-59e3-4c52-9390-ef3b644dd60a
-  fa064037-1467-403a-a3ca-a963853e9f89
+  d1695069-0eb2-409c-bcb1-1d8d176c92bc
+  5623d4d2-45be-4e65-8b31-382959c8999f
+  a76f84ed-f704-412b-9fb1-e90d95d528cf
+  6a496a82-9f2a-448d-a785-2522327687f0
 ).freeze
 
 Locations.online_booking_location_uids = HACKNEY + CARDIFF_AND_VALE
