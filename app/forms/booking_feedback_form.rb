@@ -11,7 +11,9 @@ class BookingFeedbackForm
     {
       name: name,
       email: email,
-      message: message
+      message: message,
+      subject: 'Online Booking zen_desk',
+      tags: %w(online_booking)
     }
   end
 end

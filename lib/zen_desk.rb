@@ -1,4 +1,4 @@
-module Feedback
+module ZenDesk
   mattr_accessor :api
 
   def self.create_ticket(message_options)

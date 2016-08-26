@@ -8,7 +8,7 @@ class FeedbacksController < ApplicationController
   def create
     @booking_feedback = BookingFeedbackForm.new(booking_feedback_params)
 
-    Feedback.create_ticket(@booking_feedback.message_content) if @booking_feedback.valid?
+    ZenDesk.create_ticket(@booking_feedback.message_content) if @booking_feedback.valid?
 
     if request.xhr?
       render_xhr_response

@@ -1,4 +1,4 @@
-RSpec.describe Feedback::ZenDeskClient do
+RSpec.describe ZenDesk::Client do
   let(:ticket_class) { double }
   let(:client) { double.as_null_object }
 
@@ -10,10 +10,17 @@ RSpec.describe Feedback::ZenDeskClient do
       hash_including(
         requester: { name: 'Ben', email: 'ben@example.com' },
         comment: { value: 'Awesome!' },
-        tags: %w(online_booking)
+        tags: %w(online_booking),
+        subject: 'Online booking test'
       )
     )
 
-    subject.create_ticket(name: 'Ben', email: 'ben@example.com', message: 'Awesome!')
+    subject.create_ticket(
+      name: 'Ben',
+      email: 'ben@example.com',
+      message: 'Awesome!',
+      subject: 'Online booking test',
+      tags: %w(online_booking)
+    )
   end
 end

@@ -1,19 +1,19 @@
 require 'zendesk_api'
 
-module Feedback
-  class ZenDeskClient
+module ZenDesk
+  class Client
     def initialize(ticket_class: ZendeskAPI::Ticket, client: nil)
       @ticket_class = ticket_class
       @client = client
     end
 
-    def create_ticket(name:, email:, message:)
+    def create_ticket(name:, email:, message:, subject:, tags:)
       ticket_class.create!(
         client,
-        subject: 'Online Booking feedback',
+        subject: subject,
         requester: { name: name, email: email },
         comment: { value: message },
-        tags: %w(online_booking)
+        tags: tags
       )
     end
 
