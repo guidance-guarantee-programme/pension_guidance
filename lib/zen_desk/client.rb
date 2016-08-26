@@ -7,15 +7,19 @@ module ZenDesk
       @client = client
     end
 
-    def create_ticket(name:, email:, message:, subject:, tags:)
-      ticket_class.create!(
-        client,
+    # rubocop:disable Metrics/ParameterLists
+    def create_ticket(name:, email:, message:, subject:, tags:, custom_fields: nil)
+      ticket = {
         subject: subject,
         requester: { name: name, email: email },
         comment: { value: message },
         tags: tags
-      )
+      }
+      ticket[:custom_fields] = custom_fields if custom_fields
+
+      ticket_class.create!(client, ticket)
     end
+    # rubocop:enable Metrics/ParameterLists
 
     private
 

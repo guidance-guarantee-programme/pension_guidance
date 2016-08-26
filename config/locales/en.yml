@@ -28,6 +28,12 @@ en:
         opt_in: Terms and conditions
     errors:
       models:
+        annuity_registration_form:
+          attributes:
+            annuity_type:
+              inclusion: is not selected
+            appointment_type:
+              inclusion: is not selected
         appointment_summary:
           attributes:
             appointment_type:
