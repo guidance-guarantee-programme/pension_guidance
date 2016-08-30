@@ -1,8 +1,8 @@
 class AnnuityRegistrationForm
   FIELDS = [
-    :first_name, :last_name, :phone_number, :email,
-    :postcode, :age, :annuity_value, :appointment_type,
-    :annuity_type, :desired_outcome_from_appointment
+    :first_name, :last_name, :phone_number, :email, :postcode,
+    :age, :annuity_value, :appointment_type, :annuity_type,
+    :desired_outcome_from_appointment
   ].freeze
 
   include ActiveModel::Model
@@ -13,9 +13,9 @@ class AnnuityRegistrationForm
             presence: true
   validates :email, format: /.+@.+\..+/
   validates :annuity_type,
-            inclusion: { in: %w(in_own_name in_group_name) }
+            inclusion: { in: %w(in_own_name in_group_name dont_know) }
   validates :age, :annuity_value,
-            numericality: { greater_than: 0, allow_blank: false }
+            numericality: { greater_than: 0, allow_blank: true }
   validates :appointment_type, inclusion: { in: %w(face_to_face phone) }
 
   def message_content # rubocop:disable Metrics/MethodLength

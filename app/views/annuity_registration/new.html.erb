@@ -91,11 +91,16 @@
         <%= f.radio_button :annuity_type, :in_group_name, class: 'form-control' %>
         Another annuity, eg a group annuity not in your name
       </label>
+
+      <label class="block-label">
+        <%= f.radio_button :annuity_type, :dont_know, class: 'form-control' %>
+        Don't know
+      </label>
     </fieldset>
   </div>
 
   <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:annuity_value) %>">
-    <%= f.label :annuity_value, 'How much do you get from your annuity?', class: 'form-label' %>
+    <%= f.label :annuity_value, 'How much each month do you get from your annuity?', class: 'form-label' %>
     <% if @annuity_registration.errors.include?(:annuity_value) %>
       <span class="error-message"><%= @annuity_registration.errors[:annuity_value].to_sentence %></span>
     <% end %>

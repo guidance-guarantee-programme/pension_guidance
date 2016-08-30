@@ -35,9 +35,9 @@ RSpec.feature 'Register for an annuities appointment' do
     fill_in 'Email', with: 'rick@sanhez.com'
     fill_in 'Postcode', with: 'RS1 1SR'
     choose 'A personal annuity in your own name'
-    fill_in 'How much do you get from your annuity?', with: '254'
+    fill_in 'How much each month do you get from your annuity?', with: '254'
     choose 'Face to face'
-    fill_in 'What would you like to get from the appointment?', with: "help\nlots of help"
+    fill_in 'What would you like to get from the appointment?', with: "lots of\nhelp"
 
     click_on 'Submit'
   end
@@ -50,7 +50,7 @@ RSpec.feature 'Register for an annuities appointment' do
       tags: ['annuities_registration'],
       custom_fields: {
         id: nil,
-        value: 'Rick,Sanchez,07111111111,rick@sanhez.com,RS1 1SR,101,254,face_to_face,in_own_name,help lots of help'
+        value: 'Rick,Sanchez,07111111111,rick@sanhez.com,RS1 1SR,101,254,face_to_face,in_own_name,lots of help'
       }
     )
   end
