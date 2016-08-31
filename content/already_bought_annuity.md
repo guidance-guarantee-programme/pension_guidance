@@ -15,6 +15,7 @@ An annuity provides a guaranteed income for a fixed number of years or the rest 
 ## Register for an appointment
 
 Pension Wise will be providing guidance if you want to sell an existing annuity – you can register your interest now for a future appointment.
+
 [Register now](/annuity-registration){: .button}
 
 ## The new annuity rules
