@@ -6,11 +6,15 @@ description: Find out about the new annuity rules set to change in April 2017.
 
 Annuity rules will change in 2017. You may then be able to sell an existing annuity and use the money to get a lump sum or an [adjustable income](/adjustable-income).
 
-^Under current rules, once you’ve bought an annuity you can’t change the decision.^
+Under current rules, once you’ve bought an annuity you can’t change the decision.
 
-An annuity provides a guaranteed income for a fixed number of years or the rest of your life. If you already have one, you may decide the best option is to keep it. Selling an annuity is a big decision and you should think carefully about it. You might want to speak to a [financial adviser](/financial-advice) before you make a decision.
+An annuity provides a guaranteed income for a fixed number of years or the rest of your life. If you already have one, you may decide the best option is to keep it.
 
-^Pension Wise will provide guidance if you want to sell an existing annuity – you can register your interest in early access to the appointments.
+^Selling an annuity is a big decision and you should think carefully about it. You might want to speak to a [financial adviser](/financial-advice) before you make a decision.^
+
+## Register for an appointment
+
+Pension Wise will be providing guidance if you want to sell an existing annuity – you can register your interest now for a future appointment.
 [Register now](/annuity-registration){: .button}
 
 ## The new annuity rules
