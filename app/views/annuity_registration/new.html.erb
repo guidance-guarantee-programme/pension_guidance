@@ -2,14 +2,14 @@
 
 <p>You’ll soon be able to book a free appointment about selling an annuity.</p>
 
-<p>Appointments are by phone or face to face with trained Pension Wise guidance specialists.
+<p>Appointments are over the phone or face to face with a trained Pension Wise guidance specialist.
   You’ll discuss how selling an annuity works and questions to ask your provider.</p>
 
 <div role="note" aria-label="Information" class="application-notice info-notice">
   <p>Pension Wise is a free and impartial government service – we won’t recommend any products or tell you what to do with your money.</p>
 </div>
 
-<p>Complete this form to register your interest in early access to the appointments.</p>
+<p>Complete this form to register your interest in an annuity appointment.</p>
 
 <% if @annuity_registration.errors.any? %>
   <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
@@ -100,7 +100,7 @@
   </div>
 
   <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:annuity_value) %>">
-    <%= f.label :annuity_value, 'How much each month do you get from your annuity?', class: 'form-label' %>
+    <%= f.label :annuity_value, 'How much do you get from your annuity each month?', class: 'form-label' %>
     <% if @annuity_registration.errors.include?(:annuity_value) %>
       <span class="error-message"><%= @annuity_registration.errors[:annuity_value].to_sentence %></span>
     <% end %>
