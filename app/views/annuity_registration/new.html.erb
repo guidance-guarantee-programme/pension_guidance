@@ -1,0 +1,144 @@
+<h1>Register your interest in annuity appointments</h1>
+
+<p>You’ll soon be able to book a free appointment about selling an annuity.</p>
+
+<p>Appointments are by phone or face to face with trained Pension Wise guidance specialists.
+  You’ll discuss how selling an annuity works and questions to ask your provider.</p>
+
+<div role="note" aria-label="Information" class="application-notice info-notice">
+  <p>Pension Wise is a free and impartial government service – we won’t recommend any products or tell you what to do with your money.</p>
+</div>
+
+<p>Complete this form to register your interest in early access to the appointments.</p>
+
+<% if @annuity_registration.errors.any? %>
+  <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+    <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+      There was a problem with your details
+    </h1>
+
+    <ul class="error-summary-list">
+      <% @annuity_registration.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @annuity_registration, url: annuity_registration_path, as: :annuity_registration do |f| %>
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:first_name) %>">
+    <%= f.label :first_name, class: 'form-label' %>
+    <% if @annuity_registration.errors.include?(:first_name) %>
+      <span class="error-message"><%= @annuity_registration.errors[:first_name].to_sentence %></span>
+    <% end %>
+    <%= f.text_field :first_name, class: 't-first-name form-control' %>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:last_name) %>">
+    <%= f.label :last_name, class: 'form-label' %>
+    <% if @annuity_registration.errors.include?(:last_name) %>
+      <span class="error-message"><%= @annuity_registration.errors[:last_name].to_sentence %></span>
+    <% end %>
+    <%= f.text_field :last_name, class: 't-last-name form-control' %>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:age) %>">
+    <%= f.label :age, class: 'form-label' %>
+    <% if @annuity_registration.errors.include?(:age) %>
+      <span class="error-message"><%= @annuity_registration.errors[:age].to_sentence %></span>
+    <% end %>
+    <%= f.text_field :age, class: 't-postcode form-control' %>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:email) %>">
+    <%= f.label :email, class: 'form-label' %>
+    <% if @annuity_registration.errors.include?(:email) %>
+      <span class="error-message"><%= @annuity_registration.errors[:email].to_sentence %></span>
+    <% end %>
+    <%= f.text_field :email, class: 't-email form-control' %>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:phone_number) %>">
+    <%= f.label :phone_number, class: 'form-label' %>
+    <% if @annuity_registration.errors.include?(:phone_number) %>
+      <span class="error-message"><%= @annuity_registration.errors[:phone_number].to_sentence %></span>
+    <% end %>
+    <%= f.text_field :phone_number, class: 't-telephone-number form-control' %>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:postcode) %>">
+    <%= f.label :postcode, class: 'form-label' %>
+    <% if @annuity_registration.errors.include?(:postcode) %>
+      <span class="error-message"><%= @annuity_registration.errors[:postcode].to_sentence %></span>
+    <% end %>
+    <%= f.text_field :postcode, class: 't-postcode form-control' %>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:annuity_type) %>">
+    <fieldset>
+      <legend class="form-label">What type of annuity do you have?</legend>
+
+      <% if @annuity_registration.errors.include?(:annuity_type) %>
+        <span class="error-message"><%= @annuity_registration.errors[:annuity_type].to_sentence %></span>
+      <% end %>
+
+      <label class="block-label">
+        <%= f.radio_button :annuity_type, :in_own_name, class: 'form-control' %>
+        A personal annuity in your own name
+      </label>
+
+      <label class="block-label">
+        <%= f.radio_button :annuity_type, :in_group_name, class: 'form-control' %>
+        Another annuity, eg a group annuity not in your name
+      </label>
+
+      <label class="block-label">
+        <%= f.radio_button :annuity_type, :dont_know, class: 'form-control' %>
+        Don't know
+      </label>
+    </fieldset>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:annuity_value) %>">
+    <%= f.label :annuity_value, 'How much each month do you get from your annuity?', class: 'form-label' %>
+    <% if @annuity_registration.errors.include?(:annuity_value) %>
+      <span class="error-message"><%= @annuity_registration.errors[:annuity_value].to_sentence %></span>
+    <% end %>
+    <span id="annuity_registration_annuity_value_currency">£</span>
+    <%= text_field_tag 'annuity_registration[annuity_value]', number_to_currency(@annuity_registration.annuity_value, unit: ''),
+        'aria-labelledby' => 'annuity_registration_annuity_value annuity_registration_annuity_value_currency',
+        class: %w(form-control) %>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:appointment_type) %>">
+    <fieldset>
+      <legend class="form-label">What kind of guidance appointment would you prefer?</legend>
+
+      <% if @annuity_registration.errors.include?(:appointment_type) %>
+        <span class="error-message"><%= @annuity_registration.errors[:appointment_type].to_sentence %></span>
+      <% end %>
+
+      <label class="block-label">
+        <%= f.radio_button :appointment_type, :phone, class: 'form-control' %>
+        Phone
+      </label>
+
+      <label class="block-label">
+        <%= f.radio_button :appointment_type, :face_to_face, class: 'form-control' %>
+        Face to face
+      </label>
+    </fieldset>
+  </div>
+
+  <div class="form-group <%= 'error' if @annuity_registration.errors.include?(:desired_outcome_from_appointment) %>">
+    <%= f.label :desired_outcome_from_appointment, 'What would you like to get from the appointment?', class: 'form-label' %>
+    <% if @annuity_registration.errors.include?(:desired_outcome_from_appointment) %>
+      <span class="error-message"><%= @annuity_registration.errors[:desired_outcome_from_appointment].to_sentence %></span>
+    <% end %>
+    <%= f.text_area :desired_outcome_from_appointment, rows: 4, class: 't-postcode form-control' %>
+  </div>
+
+  <div class="form-group">
+    <input type="submit" name="commit" value="Submit" class="t-submit btn button" />
+  </div>
+<% end %>
