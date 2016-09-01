@@ -18,6 +18,7 @@ Consider speaking to a financial adviser if you want to:
 - [mix your pension options](/mix-options)
 - pay more money into your pension
 - leave some of your pension in your will – they can advise on the most tax-efficient way to do this
+- [sell your annuity](already-bought-annuity)
 
 You must get independent financial advice, by law, if you have a:
 
