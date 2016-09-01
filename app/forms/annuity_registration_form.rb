@@ -11,17 +11,19 @@ class AnnuityRegistrationForm
 
   validates :first_name, :last_name, :phone_number, :postcode,
             presence: true
-  validates :email, format: /.+@.+\..+/
+  validates :email, format: /.+@[^\s]+\.[^\s]+/
   validates :annuity_type,
             inclusion: { in: %w(in_own_name in_group_name dont_know) }
-  validates :age, :annuity_value,
+  validates :age,
+            numericality: { greater_than: 0 }
+  validates :annuity_value,
             numericality: { greater_than: 0, allow_blank: true }
   validates :appointment_type, inclusion: { in: %w(face_to_face phone) }
 
   def message_content # rubocop:disable Metrics/MethodLength
     {
       name: name,
-      email: email,
+      email: email.strip,
       message: message,
       subject: 'Annuities Registration',
       tags: %w(annuities_registration),
@@ -35,7 +37,7 @@ class AnnuityRegistrationForm
   private
 
   def name
-    "#{first_name} #{last_name}".chomp
+    "#{first_name} #{last_name}".strip
   end
 
   def csv_field_id
@@ -51,6 +53,6 @@ class AnnuityRegistrationForm
   end
 
   def clean_for_csv_output(value)
-    value.to_s.tr(',', ';').gsub(/[\r\n]+/, ' ')
+    value.to_s.tr(',', ';').gsub(/[\r\n]+/, ' ').strip
   end
 end
