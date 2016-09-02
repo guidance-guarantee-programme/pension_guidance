@@ -3,16 +3,20 @@ require 'tree'
 class Taxonomy
   include Singleton
 
+  # rubocop:disable Metrics/AbcSize
   def tree
     @tree ||= home.tap do |node|
       node << guide_node('living-abroad')
       node << guide_node('divorce')
       node << guide_node('protection')
       node << guide_node('already-bought-annuity')
+      node << guide_node('how-to-sell-annuity')
+      node << guide_node('can-sell-annuity')
       node << guide_node('pension-recycling')
       node << guide_node('pension_complaints')
     end
   end
+  # rubocop:enable Metrics/AbcSize
 
   private
 
