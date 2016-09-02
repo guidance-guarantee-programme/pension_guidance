@@ -7,8 +7,14 @@ module ZenDesk
       @client = client
     end
 
+    def create_ticket(options)
+      create_ticket!(options)
+    rescue ZendeskAPI::Error::RecordInvalid => e
+      Bugsnag.notify(e)
+    end
+
     # rubocop:disable Metrics/ParameterLists
-    def create_ticket(name:, email:, message:, subject:, tags:, custom_fields: nil)
+    def create_ticket!(name:, email:, message:, subject:, tags:, custom_fields: nil)
       ticket = {
         subject: subject,
         requester: { name: name, email: email },
