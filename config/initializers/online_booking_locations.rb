@@ -20,7 +20,19 @@ CARDIFF_AND_VALE = %w(
   6a496a82-9f2a-448d-a785-2522327687f0
 ).freeze
 
-Locations.online_booking_location_uids = HACKNEY + CARDIFF_AND_VALE
+# Taunton and associated locations
+TAUNTON = %w(
+  7f916cf6-d2bd-4bcc-90dc-594207c8b1f4
+  43fcab23-b01f-4805-a34d-e7edb77b65ce
+  fdf2fa41-b0b7-44ae-a992-4409490dc9fb
+  05dbf9e9-662b-4b10-ad85-70c38bd08d6d
+  13e12f95-f709-4536-b6ee-8d7a735ddf9f
+  ca857ea1-e51a-442d-937d-b7c720d91ecf
+  90bebb70-c4bb-4572-afb2-e4ede5ca38c9
+  b5920e4c-ac91-49c3-8923-3efd10292db2
+).freeze
+
+Locations.online_booking_location_uids = HACKNEY + CARDIFF_AND_VALE + TAUNTON
 
 if Rails.env.development?
   require 'booking_locations/stub_api'
