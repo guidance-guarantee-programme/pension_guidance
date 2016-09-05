@@ -6,7 +6,11 @@
 
   <%= stylesheet_link_tag 'pensions-guidance-print', media: 'print' %>
 
-  <%= canonical_tag rescue nil %>
+  <% unless content_for?(:canonical_path) %>
+    <%= canonical_tag rescue nil %>
+  <% else %>
+    <link href="<%= canonical_protocol + canonical_host + content_for(:canonical_path) %>" rel="canonical" />
+  <% end %>
 
   <% if content_for?(:meta_description) %>
     <meta name="description" content="<%= content_for(:meta_description) %>">
