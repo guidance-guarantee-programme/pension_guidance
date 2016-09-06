@@ -14,7 +14,6 @@ Feature: Guides
       | benefits               |
       | book                   |
       | care-costs             |
-      | combine-pots           |
       | contact                |
       | cookies                |
       | debt                   |
@@ -39,6 +38,7 @@ Feature: Guides
       | take-cash-in-chunks    |
       | take-whole-pot         |
       | tax                    |
+      | transfer-pension       |
       | when-you-die           |
       | work-out-income        |
       | your-pension-before-55 |
