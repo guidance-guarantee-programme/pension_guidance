@@ -15,7 +15,7 @@ It should also include your ‘selected retirement age’ (the age you agreed wi
 
 ## The State Pension
 
-You get a [State Pension statement](https://www.gov.uk/state-pension-statement) from the government.
+You get a [State Pension](https://www.gov.uk/state-pension-statement) statement from the government.
 
 Read more about what’s in your [State Pension statement](https://www.gov.uk/government/publications/your-state-pension-statement-explained-dwp040) on GOV.UK.
 
@@ -29,7 +29,7 @@ Your statement may use the words ‘scheme’, ‘plan’ or ‘policy’ – th
 
 ### Transfer value
 
-Your statement will also normally show the ‘transfer value’ of your pot. This is the amount you would get if you switched provider or cashed in your whole pot.
+Your statement will also normally show the ‘transfer value’ of your pot. This is the amount you would get if you moved provider or cashed in your whole pot.
 
 ## Special features
 
@@ -51,4 +51,6 @@ If your statement shows your pension is invested in a ‘with-profits’ fund, i
 
 ### Early exit fees
 
-Look at the transfer value to find out if your pension has an early exit fee. If the transfer value is lower than your total pot value, it's likely you'll be charged an early exit fee. If the transfer value is the same as your pot value, you shouldn’t be charged a fee.
+Looking at the transfer value of your pot may help you work out if your pension has an ‘early exit fee’. 
+
+If the transfer value is the same as your pot value, it’s unlikely you’ll be charged a fee when you transfer. If the transfer value is lower than your total pot value, you may be charged an early exit fee.
