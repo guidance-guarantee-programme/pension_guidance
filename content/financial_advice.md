@@ -6,7 +6,7 @@ description: When and how to get financial advice about what to do with your pen
 
 An adviser will ask about your finances, personal circumstances, your goals and how you feel about taking risks with your money. This will help them to recommend retirement income products (eg flexi-access drawdown, different types of annuity) that are right for you.
 
-Find out more about what [an adviser might ask you](http://www.fca.org.uk/consumers/financial-services-products/investments/financial-advice/what-an-adviser-might-ask-you) from the Financial Conduct Authority (FCA) website.
+Find out more about what [an adviser might ask you](https://www.fca.org.uk/consumers/what-adviser-might-ask-you) from the Financial Conduct Authority (FCA) website.
 
 The more information you have prepared when you meet an adviser, the more you will benefit. This includes details of how much is in your pot and other income.
 
