@@ -24,6 +24,6 @@ In your appointment, the guidance specialist will:
 - discuss which options might be suitable for  you
 - give you tips on what you can do next
 
-Afterwards you’ll get a letter with a summary of what you talked about.
+Afterwards you’ll get a summary of what was discussed.
 
 ^ Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.
