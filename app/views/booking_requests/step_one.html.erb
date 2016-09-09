@@ -130,21 +130,25 @@
 <script type="text/html" id="BookingCalendar-tmplDate">
   <td class="{{ klass }}">
     <div class="BookingCalendar-content">
-      <a class="BookingCalendar-dateLink" data-date="{{ date }}" href="#date-{{ date }}">
-        <span class="BookingCalendar-day">{{ day }}</span>
-        {{#if today}}
-          <span class="BookingCalendar-tag BookingCalendar-tag--today">Today</span>
-        {{/if}}
-        {{#if newMonth}}
-          <span class="BookingCalendar-tag" id="month-{{ monthIso }}">{{ monthShort }}</span>
-        {{/if}}
-      </a>
+      {{#if bookable}}
+        <a role="button" class="BookingCalendar-dateLink" data-date="{{ date }}" href="#date-{{ date }}">
+      {{/if}}
+      <span class="BookingCalendar-day">{{ day }}{{#unless bookable}} <span class="visuallyhidden">Unavailable</span>{{/unless}}</span>
+      {{#if today}}
+        <span class="BookingCalendar-tag BookingCalendar-tag--today">Today</span>
+      {{/if}}
+      {{#if newMonth}}
+        <span class="BookingCalendar-tag" id="month-{{ monthIso }}">{{ monthShort }}</span>
+      {{/if}}
+      {{#if bookable}}
+        </a>
+      {{/if}}
     </div>
   </td>
 </script>
 
 <script type="text/html" id="BookingCalendar-tmplNav">
-  {{ monthAbr }}<span class="BookingCalendar-navFull">{{ monthRemaining }}</span>
+  <span class="BookingCalendar-navShort" aria-hidden="true">{{ monthAbr }}</span><span class="BookingCalendar-navFull">{{ month }}</span>
 </script>
 
 <script type="text/html" id="SlotPicker-tmplChoice">
