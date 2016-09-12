@@ -1,5 +1,5 @@
 ---
-description: What happens to your defined contribution pension when you die, including the tax your beneficiary pays. 
+description: What happens to your defined contribution pension when you die, including the tax your beneficiary pays.
 ---
 
 # Your pension when you die
@@ -45,6 +45,7 @@ You can choose who you want to receive any money left in your pot after you die.
 
 ## Tax your beneficiary pays
 
+{:.table-font-xsmall}
 Inheritance | Your age when you die | Tax they pay
 -|-|-|-
 Unused cash you took from your pot | Any age | Inheritance Tax based on the size of your estate
