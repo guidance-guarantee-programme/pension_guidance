@@ -25,7 +25,7 @@ Legally you must get advice if your annuity pays over a certain amount a year. T
 How much money you’ll get from selling an annuity is likely to be based, for example, on:
 
 - your age
-- the [type of annuity](/pension-types), eg single life, joint life
+- the [type of annuity](/guaranteed-income#types-of-annuity), eg single life, joint life
 - your health and lifestyle
 - how much you currently receive from your annuity
 
