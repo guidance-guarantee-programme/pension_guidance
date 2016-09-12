@@ -11,5 +11,6 @@ RSpec.describe AnnuityRegistrationForm do
     it { is_expected.to allow_value('text@test.com').for(:email) }
     it { is_expected.to allow_value('  text@test.com  ').for(:email) }
     it { is_expected.not_to allow_value('text@ test .com').for(:email) }
+    it { is_expected.not_to allow_value('text@n/a.com').for(:email) }
   end
 end

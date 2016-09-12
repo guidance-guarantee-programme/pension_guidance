@@ -11,7 +11,7 @@ class AnnuityRegistrationForm
 
   validates :first_name, :last_name, :phone_number, :postcode,
             presence: true
-  validates :email, format: /.+@[^\s]+\.[^\s]+/
+  validates :email, format: %r{[^\s/\\]+@[^\s/\\]+\.[^\s/\\]+}
   validates :annuity_type,
             inclusion: { in: %w(in_own_name in_group_name dont_know) }
   validates :age,
