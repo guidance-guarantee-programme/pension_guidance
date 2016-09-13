@@ -39,6 +39,7 @@ If the insurance company you bought your annuity with goes bust the [Financial S
 
 There are lots of different types of annuity and you can shop around – you don’t have to buy one from your current pension provider.
 
+{:.table-font-xsmall}
 | Type | How it works
 -|-
 Single life | Paid just to you, either for life or for a fixed number of years.
