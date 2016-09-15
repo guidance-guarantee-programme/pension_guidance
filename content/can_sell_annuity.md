@@ -10,6 +10,8 @@ You may be able to [sell your annuity](/selling-your-annuity) if it’s one you 
 
 For example, if you had a [defined contribution](/pension-types) pension which was arranged by you and used to buy the annuity, you should be able to sell it.
 
+%An annuity provides a guaranteed income for a fixed number of years or the rest of your life. If you already have one, you may decide the best option is to keep it.%
+
 ## When you can’t sell
 
 You won’t be able to sell your annuity if it's in the name of the company you worked for or bought it from.
