@@ -17,6 +17,43 @@
 
 <div class="SlotPicker" data-today="<%= Date.today %>">
   <div class="l-column-half">
+    <div class="SlotPicker-timeSlots show-only-with-js">
+      <ul class="SlotPicker-days">
+        <li class="SlotPicker-day SlotPicker-day--past">
+          <h2 class="SlotPicker-dayTitle"></h2>
+          <p>It is not possible to book an appointment in the past.</p>
+        </li>
+        <li class="SlotPicker-day SlotPicker-day--unavailable">
+          <h2 class="SlotPicker-dayTitle"></h2>
+          <p>It is not possible to book an appointment on this day.</p>
+        </li>
+        <li class="SlotPicker-day SlotPicker-day--beyond">
+          <h2 class="SlotPicker-dayTitle"></h2>
+          <p>You can only book an appointment in the next {{ daysInRange }} days.</p>
+        </li>
+        <li class="SlotPicker-day SlotPicker-day--leadtime">
+          <h2 class="SlotPicker-dayTitle"></h2>
+          <p>You can only book an appointment 3 days in advance.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="SlotPicker-choices show-only-with-js">
+      <p class="SlotPicker-promoteHelp">Use the arrows to put your visit choices in the order that suits you best.</p>
+    </div>
+
+    <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
+      <%= f.select(:primary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+      <%= f.select(:secondary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+      <%= f.select(:tertiary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+
+      <p>
+        <%= f.button('Continue', type: 'submit', class: 'button t-continue') %>
+      </p>
+    <% end %>
+  </div>
+
+  <div class="l-column-half">
     <div class="BookingCalendar show-only-with-js">
       <div class="BookingCalendar-header">
         <a href="#" class="BookingCalendar-nav BookingCalendar-nav--prev"></a>
@@ -56,43 +93,6 @@
         </li>
       </ul>
     </div>
-  </div>
-
-  <div class="l-column-half">
-    <div class="SlotPicker-timeSlots show-only-with-js">
-      <ul class="SlotPicker-days">
-        <li class="SlotPicker-day SlotPicker-day--past">
-          <h2 class="SlotPicker-dayTitle"></h2>
-          <p>It is not possible to book an appointment in the past.</p>
-        </li>
-        <li class="SlotPicker-day SlotPicker-day--unavailable">
-          <h2 class="SlotPicker-dayTitle"></h2>
-          <p>It is not possible to book an appointment on this day.</p>
-        </li>
-        <li class="SlotPicker-day SlotPicker-day--beyond">
-          <h2 class="SlotPicker-dayTitle"></h2>
-          <p>You can only book an appointment in the next {{ daysInRange }} days.</p>
-        </li>
-        <li class="SlotPicker-day SlotPicker-day--leadtime">
-          <h2 class="SlotPicker-dayTitle"></h2>
-          <p>You can only book an appointment 3 days in advance.</p>
-        </li>
-      </ul>
-    </div>
-
-    <div class="SlotPicker-choices show-only-with-js">
-      <p class="SlotPicker-promoteHelp">Use the arrows to put your visit choices in the order that suits you best.</p>
-    </div>
-
-    <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
-      <%= f.select(:primary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-      <%= f.select(:secondary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-      <%= f.select(:tertiary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-
-      <p>
-        <%= f.button('Continue', type: 'submit', class: 'button t-continue') %>
-      </p>
-    <% end %>
   </div>
 
   <div class="l-column-two-thirds">
