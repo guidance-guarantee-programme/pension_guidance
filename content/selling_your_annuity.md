@@ -2,7 +2,7 @@
 description: Find out how to sell an annuity when the rules change in 2017.
 ---
 
-# How to sell an annuity
+# Selling your annuity
 
 ^Annuity rules will change in 2017. You may then be able to sell an annuity. Under current rules, once you’ve bought an annuity you can’t change the decision.^ 
 
@@ -18,7 +18,7 @@ You should also consider getting [financial advice](/financial-advice) before se
 
 Legally you must get advice if your annuity pays over a certain amount a year. This amount will be set when the new rules come in.
 
-^An annuity provides a guaranteed income for a fixed number of years or the rest of your life. If you already have one, you may decide the best option is to keep it.^
+%An annuity provides a guaranteed income for a fixed number of years or the rest of your life. If you already have one, you may decide the best option is to keep it.%
 
 ## How much you’ll get
 
@@ -66,7 +66,9 @@ They can also:
 
 ### Register for an appointment
 
-Pension Wise will be providing guidance if you want to sell an existing annuity – you can [register your interest](/annuity-registration) now for a future appointment.
+Pension Wise will be providing guidance if you want to sell an existing annuity – you can register your interest now for a future appointment.
+
+[Register now](/annuity-registration){: .button}
 
 ## Dependants and beneficiaries
 
