@@ -17,7 +17,7 @@ You can use your pension pot to buy an insurance policy that gives you a guarant
 
 ^If you’re currently receiving a pension income it’s likely that you’ve already bought an annuity or are taking an income from a final salary or career average (defined benefit) pension.^
 
-^Annuity rules will change in 2017. You may then be able to [sell an annuity](already-bought-annuity) and use the money to get a lump sum or an adjustable income.^
+^Annuity rules will change in 2017. You may then be able to [sell an annuity](/selling-your-annuity) and use the money to get a lump sum or an adjustable income.^
 
 {::calculator id="guaranteed-income" /}
 
