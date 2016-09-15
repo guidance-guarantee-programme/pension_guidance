@@ -6,7 +6,7 @@ description: Understand when you may or may not be able to sell your annuity.
 
 ^Annuity rules will change in 2017. You may then be able to sell an annuity. Under current rules, once you’ve bought an annuity you can’t change the decision.^
 
-You may be able to [sell your annuity](/how-to-sell-annuity) if it’s one you set up yourself and it's in your name. 
+You may be able to [sell your annuity](/selling-your-annuity) if it’s one you set up yourself and it's in your name.
 
 For example, if you had a [defined contribution](/pension-types) pension which was arranged by you and used to buy the annuity, you should be able to sell it.
 

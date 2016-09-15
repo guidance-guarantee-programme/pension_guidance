@@ -2,7 +2,7 @@
 description: Find out how to sell an annuity when the rules change in 2017.
 ---
 
-# How to sell an annuity
+# Selling your annuity
 
 ^Annuity rules will change in 2017. You may then be able to sell an annuity. Under current rules, once you’ve bought an annuity you can’t change the decision.^ 
 
