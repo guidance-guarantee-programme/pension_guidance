@@ -1,6 +1,5 @@
 <div class="l-column-two-thirds">
   <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
-  <p>Choose 3 dates in case your first choice isn’t available.</p>
 </div>
 
 <% if @booking_request.errors.any? %>
@@ -165,6 +164,10 @@
       <a class="SlotPicker-icon SlotPicker-icon--remove" href="#">Remove</a>
     </div>
   </div>
+
+  {{#if first}}
+  <p class="SlotPicker-slot-explainer">Choose two alternative dates in case your first choice isn’t available.</p>
+  {{/if}}
 </script>
 
 <script type="text/html" id="DateSlider-tmplDay">
