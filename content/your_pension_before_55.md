@@ -29,7 +29,7 @@ Read more about your [pension when you die](/when-you-die).
 
 ## If you have debt
 
-If you’re thinking about using the money from your pot to pay off debts you should get advice first. You have to think carefully about the money you’ll need in retirement.
+If you’re thinking about using money from your pot to pay off debts you should get advice first. You have to think carefully about the money you’ll need in retirement.
 
 You’ll have to pay tax on any cash sum you take from your pot. You may not have enough left after tax to cover your debts.
 
