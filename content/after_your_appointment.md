@@ -1,3 +1,7 @@
+---
+description: View a summary of your appointment if you’ve already had Pension Wise guidance
+---
+
 # View your appointment summary
 
 After your appointment, use this to:
