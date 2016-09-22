@@ -11,7 +11,6 @@
     "jscs": "latest",
     "jshint": "latest",
     "imageoptim": "^0.4.1",
-    "phantomjs-prebuilt": ">= 2.1.12",
     "svgexport": "^0.2.8"
   },
   "scripts": {
