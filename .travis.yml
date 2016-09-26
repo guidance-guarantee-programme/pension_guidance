@@ -22,7 +22,7 @@ before_script:
 - npm install
 notifications:
   slack:
-    secure: dbkW7tikYd7n+K8JgMmfowamyeYxWAFkEEJbtVwKtKaucxezrrfggdThKnrQSu5a9JDwl3Owfy8Cd8XICG/Sy92REM9i6MIMeiO95j4lHwVt4up9UvXrxWbcHczRcBFFNAPj0oxRNFYmkwyYVqNtNk9G/TBUUnVbGC3DcQ4IRoo=
+    secure: AAOOmT8WC2VhlOAyxthZdbJlnpShzgo6HAOH+jyivKdgS5Na+GuNtEY45g5GCjBv7rlf8q+ZyG4tOwgnQ3ylB9f85B1HcGol+qnhs/0T787XjRVTOgPj6k2iFLUlwOBHhPE4oxpjXz6vp+gaqL5BlU4nYqG185tOp/SK/V3SWW8=
 branches:
   except:
     - /^prototypes\/.*$/
