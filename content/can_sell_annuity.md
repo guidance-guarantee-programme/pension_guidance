@@ -20,6 +20,6 @@ You may be able to re-assign the annuity to your name and then sell it. Speak to
 
 ## If you don’t know your annuity details
 
-If you don’t know who your annuity provider is you can speak to the bank or savings account provider that your annuity is paid into. They should be able to tell you who the annuity payments come from. 
+If you don’t know who your annuity provider is you can speak to the bank or savings account provider your annuity is paid into. They should be able to tell you who the annuity payments come from. 
 
 You can then contact your provider to find out if it’s in your name.
