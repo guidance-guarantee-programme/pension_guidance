@@ -50,7 +50,7 @@ You may pay emergency tax which you can [claim back](https://www.gov.uk/claim-ta
 
 ### Benefits
 
-Getting a large sum of cash from selling your annuity could affect your [entitlement to any benefits](/benefits).
+Getting a large sum of cash from selling your annuity could affect your [entitlement to any benefits](/benefits#selling-an-annuity).
 
 %If you deliberately spend or give away money from selling your annuity to get or increase help with care costs, your local council may assess your eligibility again and treat you as still having that money.%
 
