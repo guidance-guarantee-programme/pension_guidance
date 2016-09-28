@@ -8,7 +8,7 @@ You may wish to transfer some or all of your pots to a different provider if:
 - you want a higher income from your pension
 - you’re [moving overseas](https://www.gov.uk/transferring-your-pension/transferring-to-an-overseas-pension-scheme) and want to move your pension to a scheme in that country
 
-You may have to get [financial advice](transfer-your-pension#getting-financial-advice) if you want to transfer a pension.
+You may have to get [financial advice](transfer-pension#getting-financial-advice) if you want to transfer a pension.
 
 %Transferring your pot to a non-registered UK pension scheme or an [‘unrecognised’ overseas scheme](https://www.gov.uk/transferring-your-pension/transferring-to-an-overseas-pension-scheme) will mean you’ll have to pay tax on the transfer as it will be an ‘[unauthorised payment](https://www.gov.uk/tax-on-pension/higher-tax-on-unauthorised-payments)’.%
 
