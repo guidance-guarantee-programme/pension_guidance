@@ -11,3 +11,13 @@
     <%= render 'feedbacks/feedback_form' %>
   </div>
 </div>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'OnlineBooking',
+    'step': 'ineligible',
+    'booking_location_name': '<%= @booking_request.booking_location.name %>',
+    'delivery_location_name': '<%= @booking_request.location_name %>'
+  });
+</script>

@@ -195,6 +195,8 @@
   dataLayer.push({
     'event': 'OnlineBooking',
     'valid': '<%= @booking_request.errors.empty? %>',
-    'step': '1'
+    'step': '1',
+    'booking_location_name': '<%= @booking_request.booking_location.name %>',
+    'delivery_location_name': '<%= @booking_request.location_name %>'
   });
 </script>
