@@ -5,9 +5,7 @@ tags:
   - booking
 ---
 
-# How to book a face-to-face appointment
-
-## Find your nearest location
+# Find an appointment location near you
 
 Search for your nearest appointment locations.
 
