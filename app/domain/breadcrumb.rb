@@ -16,7 +16,7 @@ class Breadcrumb
     end
 
     def how_to_book_face_to_face
-      new('/book-face-to-face', 'How to book a face to face appointment')
+      new('/book-face-to-face', 'Find an appointment location near you')
     end
 
     def pension_options

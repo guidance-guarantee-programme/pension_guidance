@@ -71,7 +71,7 @@ Then(/^I should see the details of that appointment location$/) do
   expect(location.breadcrumbs.map(&:text)).to eq([
                                                    'Home',
                                                    'Book a free appointment',
-                                                   'How to book a face to face appointment'
+                                                   'Find an appointment location near you'
                                                  ])
 end
 

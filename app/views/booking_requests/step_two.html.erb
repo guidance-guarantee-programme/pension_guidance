@@ -40,7 +40,7 @@
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:email) %>">
         <%= f.label :email, class: 'form-label' do %>
           Email
-          <span class="form-hint">We will send you a reminder of your appointment details.</span>
+          <span class="form-hint">We will email you a confirmation of your appointment details.</span>
         <% end %>
 
         <% if @booking_request.errors.include?(:email) %>
