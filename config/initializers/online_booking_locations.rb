@@ -32,7 +32,23 @@ TAUNTON = %w(
   b5920e4c-ac91-49c3-8923-3efd10292db2
 ).freeze
 
-Locations.online_booking_location_uids = HACKNEY + CARDIFF_AND_VALE + TAUNTON
+# Wycombe and associated locations
+WYCOMBE = %w(
+  f2ca5441-6a04-4984-9b7a-8106e48dacdf
+  e9de3f11-4b21-45d7-8873-80aa09f9d7e4
+  0540b4ed-b7dd-48f0-8a2e-011fa19fcedf
+  18dd46fc-dbd5-4e61-950d-60238ef74069
+  815302b5-a2ae-43c6-9c8f-2a2b879f30d8
+  0521b08a-b961-4b56-a08e-9f102e8dadc9
+  37c7c022-8215-4afc-b99e-77f541f5c5b8
+).freeze
+
+Locations.online_booking_location_uids = [
+  HACKNEY,
+  CARDIFF_AND_VALE,
+  TAUNTON,
+  WYCOMBE
+].flatten
 
 if Rails.env.development?
   require 'booking_locations/stub_api'
