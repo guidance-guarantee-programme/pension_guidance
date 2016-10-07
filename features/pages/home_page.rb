@@ -6,5 +6,7 @@ module Pages
 
     elements :links, '.t-article-links'
     element :appointment_summary_link, '.t-appointment-summary-link'
+
+    elements :options, '.t-option'
   end
 end

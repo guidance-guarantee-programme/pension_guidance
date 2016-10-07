@@ -3,15 +3,16 @@ When(/^I visit the (?:homepage|Pension Wise website)$/) do
   @page.load
 end
 
-Then(/^I see links to guides/) do
-  step 'I can navigate to guides from the footer'
-end
-
-Then(/^I can navigate to guides from the footer$/) do
-  expect(@page.footer).to have_categories
-
-  @page.footer.categories.each do |category|
-    expect(category).to have_header
-    expect(category).to have_links
-  end
+Then(/^I see links to the different pension options/) do
+  option_links_text = @page.options.map(&:text)
+  expect(option_links_text).to eq(
+    [
+      'Leave your pot untouched',
+      'Guaranteed income (annuity)',
+      'Adjustable income',
+      'Take cash in chunks',
+      'Take whole pot',
+      'Mix your options'
+    ]
+  )
 end
