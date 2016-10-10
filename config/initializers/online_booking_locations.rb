@@ -1,4 +1,3 @@
-# Hackney and associated locations
 HACKNEY = %w(
   ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef
   183080c6-642b-4b8f-96fd-891f5cd9f9c7
@@ -8,7 +7,6 @@ HACKNEY = %w(
   1a1ad00f-d967-448a-a4a6-772369fa5087
 ).freeze
 
-# Cardiff and Vale (Barry) and associated locations
 CARDIFF_AND_VALE = %w(
   525da418-ff2c-4522-90a9-bc70ba4ca78b
   edde9cde-41ac-4485-9919-b6d34d79f844
@@ -20,7 +18,6 @@ CARDIFF_AND_VALE = %w(
   6a496a82-9f2a-448d-a785-2522327687f0
 ).freeze
 
-# Taunton and associated locations
 TAUNTON = %w(
   7f916cf6-d2bd-4bcc-90dc-594207c8b1f4
   43fcab23-b01f-4805-a34d-e7edb77b65ce
@@ -32,7 +29,6 @@ TAUNTON = %w(
   b5920e4c-ac91-49c3-8923-3efd10292db2
 ).freeze
 
-# Wycombe and associated locations
 WYCOMBE = %w(
   f2ca5441-6a04-4984-9b7a-8106e48dacdf
   e9de3f11-4b21-45d7-8873-80aa09f9d7e4
