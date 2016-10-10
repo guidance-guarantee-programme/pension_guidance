@@ -43,11 +43,26 @@ WYCOMBE = %w(
   37c7c022-8215-4afc-b99e-77f541f5c5b8
 ).freeze
 
+BOURNEMOUTH = %w(
+  25d21505-bfeb-4539-b3df-250eb7628b1d
+  db8ae1d6-2d21-4fc2-86a6-478f055fe7a1
+  b3eab1f3-f7c1-4f9f-88a3-841500497c08
+  63c2cdbc-a3b5-414d-b88e-805d5d108ff8
+  df0bc039-00d4-4173-9a26-e60a3e84e7c4
+  813c77a9-84a5-46e9-8d09-88b5138cc5f7
+  1a1ce06e-6c37-42b1-a99e-b3fafd5705af
+  fdbab241-a9c5-48d0-be2c-146e39367d3f
+  1025f5d1-f403-4c37-90fc-39aeb2e3f04e
+  43baaf7b-7c38-42cf-84ce-7f2081a760f5
+  0b6b49ac-2a1d-4ff9-8755-55a640419fb6
+).freeze
+
 Locations.online_booking_location_uids = [
   HACKNEY,
   CARDIFF_AND_VALE,
   TAUNTON,
-  WYCOMBE
+  WYCOMBE,
+  BOURNEMOUTH
 ].flatten
 
 if Rails.env.development?
