@@ -5,4 +5,4 @@ Feature: Homepage
 
   Scenario: Visit homepage
     When I visit the homepage
-    Then I see links to guides
+    Then I see links to the different pension options

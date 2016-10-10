@@ -1,126 +1,144 @@
-<% content_for(:head) do %>
-  <% if homepage_experiment_id %>
-    <!-- Google Analytics Content Experiment code -->
-    <script>function utmx_section(){}function utmx(){}(function(){var
-    k='<%= ENV["HOMEPAGE_EXPERIMENT_ID"] %>',d=document,l=d.location,c=d.cookie;
-    if(l.search.indexOf('utm_expid='+k)>0)return;
-    function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-    indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-    length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-    '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-    '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-    '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-    valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-    '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-    </script><script>utmx('url','A/B');</script>
-    <!-- End of Google Analytics Content Experiment code -->
-  <% end %>
-<% end %>
-
 <% content_for(:page_title, t('service.homepage.title')) %>
 <% content_for(:meta_description, 'A free and impartial government service that helps you understand ' +
                                     'the options for your pension pot.') %>
 
-<p class="home-intro">Phone <b>0800 138 3944</b> to book a free appointment</p>
+<% content_for(:canonical_path, '/') %>
 
-<%= render 'components/campaign_image' %>
+<div class="home-intro l-page-container">
+  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <a href="/appointments" class="home-intro__link">book a free appointment</a></p>
+</div>
 
-<div class="l-grid-row l-home-top-slot">
-  <div class="l-column-third">
-    <p>Pension Wise only provides guidance on <strong><a href="/pension-types">defined contribution</a></strong> pensions.</p>
-
-    <p>You can find out <strong><a href="/pension-pot-options">
-      what you can do with your pension pot</a></strong>, how to shop around and what to look out for with taxes and fees.</p>
-
-    <p>We explain how to avoid pension scams and the importance of taking your time to make sure your money lasts as long as you do.</p>
-  </div>
-  <div class="l-column-two-thirds l-home-top-slot-promo">
-    <hr class="hr-thin l-home-top-slot-hr" />
-
-    <h2 id="appointments">Talk about your pension options</h2>
-
-    <p>
-      Pension Wise is a free and impartial government service.
-    </p>
-
-    <p>
-      Book an appointment to get guidance over the phone or face to face.
-      You’ll talk about your pension options and what you can do next.
-    </p>
-
-    <p>At the end of your appointment you’ll get a summary of the options and next steps you need to take.</p>
-
-    <p>
-      <a href="/appointments" class="button">
-        Book a free appointment
-      </a>
-    </p>
+<div class="l-grid-row l-home-row l-home-row--accent">
+  <div class="l-page-container">
+    <div class="l-column-two-thirds">
+      <h1 class="l-home-single-column-heading">Welcome to Pension Wise</h1>
+      <p>Free and impartial government guidance to help you understand what you can do with your pension pot.</p>
+    </div>
+    <div class="l-column-third l-home-intro-container">
+      <%= inline_svg 'home/folks.svg', class: 'l-home-folks' %>
+    </div>
   </div>
 </div>
 
-<hr/>
-
-<p class="home-scope">Pension Wise won’t recommend any products or tell you what to
-  do with your money.</p>
-
-<hr class="hr-thin">
-
-<section class="l-home-about">
-  <h2 id="new-pension-rules">Who the service is for</h2>
-
-  <div class="l-grid-row">
+<div class="l-grid-row l-home-row l-home-row-options">
+  <div class="l-page-container">
     <div class="l-column-half">
-      <p>Pension Wise can help if:</p>
-      <ul>
-        <li>you’re aged <strong>50 or over</strong>, and</li>
-        <li>have a <a href="/pension-types">defined contribution</a> pension. These are not final salary or career average pensions.
-        </li>
-      </ul>
+      <h2 class="l-home-single-column-subheading">Choose an option that’s right for you</h2>
+
+      <p>There are different ways you can take the money from your pension pot.</p>
+
+      <p><a href="/pension-pot-options"><b>Not sure where to start?</b></a></p>
     </div>
-    <div class="l-column-half">
-      <p>If you have a final salary or career average pension, you can still get information from
-        these organisations:</p>
 
-      <ul class="unstyled-list">
-        <li class="unstyled-list__item">
-          <a rel="external" href="http://www.pensionsadvisoryservice.org.uk/">The
-          Pensions Advisory Service</a>
-        </li>
-        <li class="unstyled-list__item">
-          <a rel="external" href="https://www.moneyadviceservice.org.uk/">
-          The Money Advice Service</a></li>
+    <div class="l-column-half">
+      <%= inline_svg 'home/signposts.svg', class: 'l-home-signposts' %>
+    </div>
+  </div>
+</div>
+
+<div class="l-grid-row l-home-row l-home-options">
+  <div class="l-page-container">
+    <div class="l-home-options__option-container">
+      <a class="l-home-options__link t-option" href="/leave-pot-untouched">
+        <div class="l-home-options__option l-home-options__option--leave-pot-untouched">
+          <span class="circle circle--s circle--leave-pot-untouched l-home-options__circle"></span>
+          <span class="l-home-options__text">Leave your pot untouched</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="l-home-options__option-container">
+      <a class="l-home-options__link t-option" href="/guaranteed-income">
+        <div class="l-home-options__option l-home-options__option--guaranteed-income">
+          <span class="circle circle--s circle--guaranteed-income l-home-options__circle"></span>
+          <span class="l-home-options__text">Guaranteed income (annuity)</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="l-home-options__option-container">
+      <a class="l-home-options__link t-option" href="/adjustable-income">
+        <div class="l-home-options__option l-home-options__option--adjustable-income">
+          <span class="circle circle--s circle--adjustable-income l-home-options__circle"></span>
+          <span class="l-home-options__text">Adjustable income</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="l-home-options__option-container">
+      <a class="l-home-options__link t-option" href="/take-cash-in-chunks">
+        <div class="l-home-options__option l-home-options__option--take-cash-in-chunks">
+          <span class="circle circle--s circle--take-cash-in-chunks l-home-options__circle"></span>
+          <span class="l-home-options__text">Take cash in chunks</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="l-home-options__option-container">
+      <a class="l-home-options__link t-option" href="/take-whole-pot">
+        <div class="l-home-options__option l-home-options__option--take-whole-pot">
+          <span class="circle circle--s circle--take-whole-pot l-home-options__circle"></span>
+          <span class="l-home-options__text">Take whole pot</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="l-home-options__option-container l-home-options__option-container--full-width">
+      <a class="l-home-options__link l-home-options__link--mix-options t-option" href="/mix-options">
+        <%#-- This is rendered on a single line to fixed a display bug that produces an underline on the next line %>
+        <div class="l-home-options__option l-home-options__option--mix-options"><span class="circle circle--s circle--mix-options l-home-options__circle"></span><span class="l-home-options__text">Mix your options</span></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="l-grid-row l-home-row l-home-row--callout">
+  <div class="l-page-container">
+    <div class="l-column-half">
+      <h2 class="l-home-single-column-subheading">Talk about your options</h2>
+
+      <p>Speak to one of our trained specialists over the phone or face to face to help you make an informed decision.</p>
+
+      <p>You should be <b>aged 50 or over</b> and have a <b><a href="/pension-types">defined contribution</a></b> pension.</p>
+      <p><a href="/appointments" class="button">Book a free appointment</a></p>
+    </div>
+
+    <div class="l-column-half">
+      <%= inline_svg 'home/appointment.svg', class: 'l-home-appointment' %>
+    </div>
+
+    <div class="l-home-statistics">
+      <div class="l-column-half">
+        <div class="statistic">
+          <p class="statistic__number">82,224</p>
+          <p class="statistic__label">Pension Wise appointments to date</p>
+        </div>
+      </div>
+
+      <div class="l-column-half">
+        <div class="statistic">
+          <p class="statistic__number"><span>89.5</span>%</p>
+          <p class="statistic__label">Of customers are very satisfied with Pension Wise guidance</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="l-grid-row l-home-row">
+  <div class="l-page-container">
+    <div class="l-column-third">
+      <h2 class="l-home-single-column-subheading">Popular pages</h2>
+    </div>
+
+    <div class="l-column-two-thirds">
+      <ul class="quick-links">
+        <li class="quick-links__link"><a href="/pension-pot-value">How much is my pension worth?</a></li>
+        <li class="quick-links__link"><a href="/tax">Tax and pensions</a></li>
+        <li class="quick-links__link"><a href="/state-pension">The State Pension</a></li>
+        <li class="quick-links__link"><a href="/scams">Scams</a></li>
+        <li class="quick-links__link"><a href="/pension-statements">Help talking to your provider</a></li>
       </ul>
     </div>
   </div>
-</section>
-
-<hr class="hr-thin">
-
-<section class="l-home-callouts">
-  <div class="l-grid-row">
-    <div class="l-column-third">
-      <a class="l-home-callouts__link l-home-callouts__link--pot-value" href="/pension-pot-value">Check your pot value</a>
-    </div>
-
-    <div class="l-column-third">
-      <a class="l-home-callouts__link l-home-callouts__link--state-pension" href="/state-pension">The State Pension</a>
-    </div>
-
-    <div class="l-column-third">
-      <a class="l-home-callouts__link l-home-callouts__link--tax" href="/tax">Tax and pensions</a>
-    </div>
-  </div>
-</section>
-
-<% content_for :after_script do %>
-<script>
-  $(function() {
-    var duration = 800;
-    $('#link-who-the-service-is-for').on('click', function () {
-      $('html, body').animate({
-        scrollTop: ($('#new-pension-rules').offset().top)
-      }, duration);
-    });
-  });
-</script>
-<% end %>
+</div>
