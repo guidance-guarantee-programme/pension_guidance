@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'home#show'
+  get 'home-alternative', to: 'home#experiment'
 
   constraints format: 'html' do
     resources :categories, only: 'show', path: 'browse'

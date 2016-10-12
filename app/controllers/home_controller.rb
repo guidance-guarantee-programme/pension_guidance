@@ -5,6 +5,10 @@ class HomeController < ApplicationController
     expires_in Rails.application.config.cache_max_age, public: true
   end
 
+  def experiment
+    render 'experiment'
+  end
+
   def footer?
     false
   end
