@@ -53,12 +53,21 @@ BOURNEMOUTH = %w(
   0b6b49ac-2a1d-4ff9-8755-55a640419fb6
 ).freeze
 
+WOLVERHAMPTON = %w(
+  12481dc1-e871-4f64-9a3f-5ca3ac58c1a1
+  a22a7077-30a6-4a4a-a48c-11cd54faf6b2
+  a15a8536-74ac-4122-93a3-a4ccf9892bfc
+  63036131-1109-41b0-93af-3a0b600b176b
+  2044b7e6-c819-43a8-8c3f-f239c9a28aa6
+).freeze
+
 Locations.online_booking_location_uids = [
   HACKNEY,
   CARDIFF_AND_VALE,
   TAUNTON,
   WYCOMBE,
-  BOURNEMOUTH
+  BOURNEMOUTH,
+  WOLVERHAMPTON
 ].flatten
 
 if Rails.env.development?
