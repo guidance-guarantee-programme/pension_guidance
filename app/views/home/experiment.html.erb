@@ -1,5 +1,3 @@
-<%= render 'research/google_experiments', experiment_id: ENV['HOME_PAGE_BOOK_APPOINTMENT_LINK_EXPERIMENT_ID'] %>
-
 <% content_for(:page_title, t('service.homepage.title')) %>
 <% content_for(:meta_description, 'A free and impartial government service that helps you understand ' +
                                     'the options for your pension pot.') %>
@@ -7,7 +5,7 @@
 <% content_for(:canonical_path, '/') %>
 
 <div class="home-intro l-page-container">
-  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <a href="/appointments" class="home-intro__link">book a free appointment</a></p>
+  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <a href="/appointments">book a free appointment</a></p>
 </div>
 
 <div class="l-grid-row l-home-row l-home-row--accent">
