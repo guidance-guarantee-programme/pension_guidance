@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
 
-  helper_method :homepage_experiment_id
   helper_method :footer?
 
   if ENV['AUTH_USERNAME'] && ENV['AUTH_PASSWORD']
@@ -12,11 +11,5 @@ class ApplicationController < ActionController::Base
 
   def footer?
     true
-  end
-
-  private
-
-  def homepage_experiment_id
-    ENV['HOMEPAGE_EXPERIMENT_ID']
   end
 end
