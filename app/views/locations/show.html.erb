@@ -39,7 +39,7 @@
       <div class="t-hours"><%= simple_format(@location.hours) %></div>
     <% end %>
 
-    <h2>Ways to book</h2>
+    <h2 class="heading-small">Ways to book</h2>
 
     <% if Locations.online_booking?(@location.id) %>
       <p>
@@ -47,14 +47,13 @@
       </p>
 
       <p>
-        or
+        or book by phone <strong class="t-phone"><%= @location.phone %></strong>.
+      </p>
+    <% else %>
+      <p>
+        Book by phone <strong class="t-phone"><%= @location.phone %></strong>.
       </p>
     <% end %>
-
-    <p>
-      Book by phone <strong class="t-phone"><%= @location.phone %></strong>.
-    </p>
-
 
     <% if @location.booking_location %>
       <p>
