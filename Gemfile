@@ -44,7 +44,6 @@ gem 'zendesk_api'
 group :development, :test do
   gem 'jasmine-jquery-rails'
   gem 'jasmine-rails'
-  gem 'phantomjs', '1.9.8.0'
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.0'
 end
@@ -59,6 +58,7 @@ group :test do
   gem 'launchy'
   gem 'pdf-inspector', require: 'pdf/inspector'
   gem 'poltergeist'
+  gem 'phantomjs-binaries'
   gem 'scss-lint', '~> 0.30'
   gem 'shoulda-matchers'
   gem 'site_prism'
