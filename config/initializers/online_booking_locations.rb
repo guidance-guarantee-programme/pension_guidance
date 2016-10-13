@@ -61,13 +61,33 @@ WOLVERHAMPTON = %w(
   2044b7e6-c819-43a8-8c3f-f239c9a28aa6
 ).freeze
 
+DARLINGTON = %w(
+  ee399dec-f9c2-4201-b27f-e3da114d3e17
+  27a9ea16-a86e-4d59-a15a-7a2999d383fd
+  c02201b3-cc4e-4ef2-9183-7eb704287303
+  3e5f4f69-56cc-4ff1-bda5-d61ef1592693
+  1adae53b-5ce3-47ab-a7c3-24393c7f7f1a
+  41214e8d-9dfc-4f2f-9e58-8bf08c51001c
+  886a161a-41ca-4366-9b51-75ce94aa23fb
+  bab77727-6757-4396-84e3-0d49dc0aba01
+  bd464be9-8b9f-4a55-b3ef-a4a8f16ed41d
+  c8a52d5a-4136-4c0f-b7f2-4277cfb8c249
+  184fcd75-7196-4be3-8541-bf2adad929d2
+  a371284c-681f-4da5-9d4f-c3f6b24620b3
+  f91ee9b9-2253-42d7-a505-586b66aed41a
+  ddfe1168-abbf-461d-b5ea-1ce6c63ee4cf
+  709ffeec-9059-4e25-89b7-5db04d3cf79c
+  8ffb927e-ceea-4db7-a373-a9f335428b8b
+).freeze
+
 Locations.online_booking_location_uids = [
   HACKNEY,
   CARDIFF_AND_VALE,
   TAUNTON,
   WYCOMBE,
   BOURNEMOUTH,
-  WOLVERHAMPTON
+  WOLVERHAMPTON,
+  DARLINGTON
 ].flatten
 
 if Rails.env.development?
