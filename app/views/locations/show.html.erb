@@ -39,17 +39,22 @@
       <div class="t-hours"><%= simple_format(@location.hours) %></div>
     <% end %>
 
-    <h2 class="heading-small">How to book</h2>
-
-    <p>
-      Call <strong class="t-phone"><%= @location.phone %></strong>.
-    </p>
+    <h2>Ways to book</h2>
 
     <% if Locations.online_booking?(@location.id) %>
       <p>
         <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
       </p>
+
+      <p>
+        or
+      </p>
     <% end %>
+
+    <p>
+      Book by phone <strong class="t-phone"><%= @location.phone %></strong>.
+    </p>
+
 
     <% if @location.booking_location %>
       <p>
@@ -71,12 +76,13 @@
   </div>
 
   <div class="l-column-half">
-    <iframe
-      height="450"
-      frameborder="0"
-      style="border:0; position: relative; width:100%;"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBetM4_-CKBB1TMBOxNu15ZDvoiz1gK728
-      &q=<%= @location.address %>" allowfullscreen>
-    </iframe>
+    <h2 class="heading-small" style="margin-top: 0;">Find us here:</h2>
+
+    <a href="https://maps.google.com/maps?q=<%= @location.address %>" target="_blank">
+      <img
+        height="450"
+        style="border:0; position: relative; width:100%;"
+        src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= @location.address %>&size=600x450&zoom=16&key=AIzaSyB_H8kX3vHhOJMYIoBu3_SMnxXf-NYY3Y0" />
+    </a>
   </div>
 </div>
