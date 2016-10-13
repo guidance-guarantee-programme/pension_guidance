@@ -1,4 +1,4 @@
-<% content_for(:page_title, "Face-to-face locations near #{@postcode.squish.upcase} - Pension Wise") %>
+<% content_for(:page_title, "Appointment locations near #{@postcode.squish.upcase} - Pension Wise") %>
 
 <h1>Appointment locations near <%= @postcode.squish.upcase %></h1>
 
@@ -15,9 +15,23 @@
         <span class="location-list__distance-label">Distance:</span>
         <%= location.distance %> miles
       </p>
+      <% if Locations.online_booking?(location.id) %>
+      <p>
+        <%= link_to 'Book online', booking_request_step_one_location_path(location.id), class: 'button t-book-online' %>
+      </p>
+      <p>
+        Or book by phone <strong class="t-phone"><%= location.phone %></strong>.
+      </p>
+    <% else %>
+      <p>
+        Book by phone <strong class="t-phone"><%= location.phone %></strong>.
+      </p>
+    <% end %>
+    <hr class="clear">
     </li>
   <% end %>
 </ol>
+
 
 <p>Search for another location:</p>
 
@@ -26,3 +40,6 @@
 <div class="application-notice info-notice">
   <p>You can also <a href="/book#by-phone">book a phone appointment</a>.</p>
 </div>
+
+</body>
+</html>
