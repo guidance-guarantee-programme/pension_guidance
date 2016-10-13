@@ -22,47 +22,61 @@
 
 <h1 class="t-name"><%= @location.name %></h1>
 
-<p>
-  Your appointment will be at <%= @location.name %> Citizens Advice with a trained Pension Wise
-    guidance specialist.
-</p>
+<div class="l-grid-row">
+  <div class="l-column-half">
+    <p>
+      Your appointment will be at <%= @location.name %> Citizens Advice with a trained Pension Wise
+        guidance specialist.
+    </p>
 
-<h2 class="heading-small">Address</h2>
-<div class="t-address">
-  <%= simple_format(@location.address) %>
+    <h2 class="heading-small">Address</h2>
+    <div class="t-address">
+      <%= simple_format(@location.address) %>
+    </div>
+
+    <% unless @location.hours.blank? %>
+      <h3 class="heading-small">Booking hours</h3>
+      <div class="t-hours"><%= simple_format(@location.hours) %></div>
+    <% end %>
+
+    <h2 class="heading-small">How to book</h2>
+
+    <p>
+      Call <strong class="t-phone"><%= @location.phone %></strong>.
+    </p>
+
+    <% if Locations.online_booking?(@location.id) %>
+      <p>
+        <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
+      </p>
+    <% end %>
+
+    <% if @location.booking_location %>
+      <p>
+        Tell the operator that you want to book a Pension Wise appointment at
+          <%= @location.name %> Citizens Advice.
+      </p>
+    <% end %>
+
+    <p>There may be a more convenient location, such as a local library or community centre.
+        Ask when you call.</p>
+
+    <div class="application-notice help-notice">
+      <p>We can’t answer specific questions about your pension on this number.</p>
+    </div>
+
+    <p>
+      You can also book in person by visiting any Citizens Advice bureau.
+    </p>
+  </div>
+
+  <div class="l-column-half">
+    <iframe
+      height="450"
+      frameborder="0"
+      style="border:0; position: relative; width:100%;"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBetM4_-CKBB1TMBOxNu15ZDvoiz1gK728
+      &q=<%= @location.address %>" allowfullscreen>
+    </iframe>
+  </div>
 </div>
-
-<% unless @location.hours.blank? %>
-  <h3 class="heading-small">Booking hours</h3>
-  <div class="t-hours"><%= simple_format(@location.hours) %></div>
-<% end %>
-
-<h2 class="heading-small">How to book</h2>
-
-<p>
-  Call <strong class="t-phone"><%= @location.phone %></strong>.
-</p>
-
-<% if Locations.online_booking?(@location.id) %>
-  <p>
-    <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
-  </p>
-<% end %>
-
-<% if @location.booking_location %>
-  <p>
-    Tell the operator that you want to book a Pension Wise appointment at
-      <%= @location.name %> Citizens Advice.
-  </p>
-<% end %>
-
-<p>There may be a more convenient location, such as a local library or community centre.
-    Ask when you call.</p>
-
-<div class="application-notice help-notice">
-  <p>We can’t answer specific questions about your pension on this number.</p>
-</div>
-
-<p>
-  You can also book in person by visiting any Citizens Advice bureau.
-</p>
