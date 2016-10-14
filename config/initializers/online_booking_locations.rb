@@ -80,6 +80,17 @@ DARLINGTON = %w(
   8ffb927e-ceea-4db7-a373-a9f335428b8b
 ).freeze
 
+PLYMOUTH = %w(
+  c312229b-c96d-49d0-8362-4a3f746b3ac4
+  cd7a2304-2e96-45af-ac5f-56a15ef6f573
+  7cf8e2b2-f04d-42df-a1db-7e3e701a354c
+  079ab7f9-2105-4aef-839a-0dea6691aaaf
+  3b7e33a5-c2d1-41ca-8000-26fa6ec23f2a
+  10e931e1-6d16-4059-a605-375091837ae2
+  07a0876e-8b64-4cae-a13b-e2099497d29f
+  fcc361d4-e5b2-4d24-998a-6aeaa2f51628
+).freeze
+
 Locations.online_booking_location_uids = [
   HACKNEY,
   CARDIFF_AND_VALE,
@@ -87,7 +98,8 @@ Locations.online_booking_location_uids = [
   WYCOMBE,
   BOURNEMOUTH,
   WOLVERHAMPTON,
-  DARLINGTON
+  DARLINGTON,
+  PLYMOUTH
 ].flatten
 
 if Rails.env.development?
