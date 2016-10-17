@@ -29,16 +29,21 @@
 
 .l-home-single-column-heading {
   @include bold-48();
+
+  @include media(desktop) {
+    font-size: 50px;
+    margin-bottom: .5em;
+  }
 }
 
 .l-home-single-column-subheading {
   @include bold-36();
+  margin-bottom: .75em;
 }
 
 .l-home-single-column-heading,
 .l-home-single-column-subheading {
   margin-top: 0;
-  margin-bottom: .75em;
 }
 
 .l-home-header {
@@ -59,9 +64,31 @@
 
 .l-home-row--accent {
   @extend %outdent-to-full-width;
-  background: $home-row-accent-background;
+  background-color: $home-row-accent-background;
+  background-image: linear-gradient(to bottom, $color-coffee-background-dark 0%, $color-coffee-background-light 100%);
   color: $color-white;
   position: relative;
+  padding: 0;
+}
+
+.l-home-row-accent__column {
+  @include grid-column(1/1);
+
+  @include media(desktop) {
+    @include grid-column(1/2);
+  }
+}
+
+.l-home-row-accent__content {
+  padding-top: 28px;
+  padding-bottom: 14px;
+
+  @include media(desktop) {
+    background-image: image-url("home/coffee_banner.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
 }
 
 .l-home-statistics {

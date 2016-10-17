@@ -21,6 +21,11 @@ $color-green-jungle: #00385d;
 $color-medium-red-violet: #b0348b;
 $color-razmatazz: #e50050;
 
+// colours from "I don't know my..." campaign
+$color-coffee-background-xlight: #a4b7c2;
+$color-coffee-background-light: #8fa1b0;
+$color-coffee-background-dark: #738898;
+
 // semantic colours
 $color-text: $color-black;
 $color-input-border: $color-grey-silver-sand;
@@ -87,5 +92,5 @@ $fixed-panel-solid-background: $color-white;
 $fixed-panel-transparent-background: rgba(255, 255, 255, .9);
 
 // home
-$home-row-accent-background: $mainstream-brand;
-$home-row-callout-background: $grey-3;
+$home-row-accent-background: $color-coffee-background-light;
+$home-row-callout-background: $color-coffee-background-xlight;
