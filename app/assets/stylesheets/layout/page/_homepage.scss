@@ -95,6 +95,7 @@
   clear: both;
   margin-top: 0;
   padding-top: 0;
+  color: $color-white;
 }
 
 .l-home-intro-container {
@@ -116,6 +117,36 @@
 .l-home-row--callout {
   @extend %outdent-to-full-width;
   background: $home-row-callout-background;
+  background-image: linear-gradient(to bottom, $color-coffee-background-dark 0%, $color-coffee-background-light 100%);
+  padding: 0;
+}
+
+.l-home-row-callout__column {
+  @include grid-column(1/1);
+
+  @include media(desktop) {
+    @include grid-column(1/2, $float: left);
+  }
+}
+
+.l-home-row-callout__content {
+  color: $color-white;
+  padding-top: 28px;
+  padding-bottom: 14px;
+
+  @include media(desktop) {
+    background-image: image-url("home/coffee_poster.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+  }
+
+  a:link,
+  a:visited {
+    color: $color-white;
+  }
 }
 
 .l-home-signposts {
