@@ -1,20 +1,20 @@
 class BookingRequestsController < ApplicationController
   layout 'full_width'
 
+  before_action :set_booking_request
+  before_action :set_breadcrumbs
+
   def step_one
-    @booking_request = BookingRequestForm.new(location_id, booking_request_params)
     @booking_feedback = BookingFeedbackForm.new
   end
 
   def step_two
-    @booking_request = BookingRequestForm.new(location_id, booking_request_params)
     @booking_feedback = BookingFeedbackForm.new
 
     render :step_one unless @booking_request.step_one_valid?
   end
 
   def complete
-    @booking_request = BookingRequestForm.new(location_id, booking_request_params)
     @booking_feedback = BookingFeedbackForm.new
 
     if @booking_request.step_two_valid?
@@ -28,11 +28,9 @@ class BookingRequestsController < ApplicationController
   end
 
   def completed
-    @booking_request = BookingRequestForm.new(location_id, booking_request_params)
   end
 
   def ineligible
-    @booking_request = BookingRequestForm.new(location_id, booking_request_params)
     @booking_feedback = BookingFeedbackForm.new
   end
 
@@ -60,5 +58,15 @@ class BookingRequestsController < ApplicationController
         :opt_in,
         :dc_pot
       )
+  end
+
+  def set_booking_request
+    @booking_request ||= BookingRequestForm.new(location_id, booking_request_params)
+  end
+
+  def set_breadcrumbs
+    breadcrumb Breadcrumb.book_an_appointment
+    breadcrumb Breadcrumb.how_to_book_face_to_face
+    breadcrumb Breadcrumb.book_online(location_id, @booking_request.location_name)
   end
 end
