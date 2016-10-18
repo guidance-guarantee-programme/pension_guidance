@@ -5,7 +5,7 @@ class LocationsController < ApplicationController
   before_action :set_postcode
   before_action :send_cache_headers
 
-  layout 'full_width', only: [:show]
+  layout 'full_width', only: [:show, :index]
 
   def index
     return render :search unless @postcode.present?
