@@ -1,0 +1,13 @@
+<%= render layout: 'layouts/base' do %>
+  <div class="l-masthead">
+    <div class="l-banner-container">
+      <%= render 'components/logo_link' %>
+      <%= render 'components/page_nav' %>
+    </div>
+  </div>
+
+  <main role="main" id="content" tabindex="-1">
+    <%= render 'components/breadcrumbs' %>
+    <%= yield %>
+  </main>
+<% end %>
