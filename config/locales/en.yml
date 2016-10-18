@@ -26,6 +26,7 @@ en:
         appointment_type: Age range
         dc_pot: Defined contribution pot
         opt_in: Terms and conditions
+        telephone_number: Phone number
     errors:
       models:
         annuity_registration_form:

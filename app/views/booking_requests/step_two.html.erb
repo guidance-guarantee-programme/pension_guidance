@@ -40,7 +40,7 @@
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:email) %>">
         <%= f.label :email, class: 'form-label' do %>
           Email
-          <span class="form-hint">We will email you a confirmation of your appointment details.</span>
+          <span class="form-hint">We’ll send an email confirming your appointment date</span>
         <% end %>
 
         <% if @booking_request.errors.include?(:email) %>
@@ -61,7 +61,7 @@
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:memorable_word) %>">
         <%= f.label :memorable_word, class: 'form-label' do %>
           Your memorable word
-          <span class="form-hint">Our guidance specialist will repeat this word when they call so you know it’s us.</span>
+          <span class="form-hint">Our guidance specialist will repeat this word when they call so you know it’s us</span>
         <% end %>
         <% if @booking_request.errors.include?(:memorable_word) %>
           <span class="error-message"><%= @booking_request.errors[:memorable_word].to_sentence %></span>
@@ -130,7 +130,7 @@
           <% if @booking_request.errors.include?(:accessibility_requirements) %>
             <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence %></span>
           <% end %>
-          <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %> I have accessibility requirements
+          <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %> I have accessibility needs
         <% end %>
       </div>
 
@@ -153,8 +153,8 @@
   </div>
 
   <div class="l-column-third">
-    <h2>Your preferences</h2>
-    <p>Your chosen appointment dates are below.</p>
+    <h2>Your dates</h2>
+    <p>You requested these dates for an appointment.</p>
 
     <div class="SlotPicker-choices is-chosen SlotPicker--selected SlotPicker--read-only">
       <div class="SlotPicker-choice is-chosen">
