@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "~1.11.2",
     "bootstrap": "~3.3.6",
-    "moj.slot-picker": "~0.22.2",
+    "moj.slot-picker": "git://github.com/guidance-guarantee-programme/moj_slotpicker.git#prototypes/20161101",
     "handlebars": "~4.0.5"
   }
 }
