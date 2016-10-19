@@ -20,8 +20,16 @@
   }
 }
 
-.SlotPicker-timeSlots {
-  margin-top: 10px;
+.SlotPicker-choice {
+  margin-bottom: 10px;
+}
+
+.SlotPicker-prompt {
+  color: #000;
+}
+
+.SlotPicker-choice + .SlotPicker-choice {
+  padding-top: 10px;
 }
 
 .SlotPicker--read-only {
@@ -64,5 +72,9 @@
 
 .SlotPicker-input {
   margin-bottom: 1em;
+}
+
+.SlotPicker-timeSlots {
+  margin-bottom: -5px;
 }
 // scss-lint:enable SelectorFormat
