@@ -54,6 +54,10 @@
   min-height: 50px;
 }
 
+.SlotPicker-choice.is-active {
+  background: #2b8cc4;
+}
+
 .SlotPicker-choice.is-chosen .SlotPicker-choiceInner p {
   font-size: 20px;
 }
