@@ -11,6 +11,10 @@ class Breadcrumb
       new('/appointments', 'Book a free appointment')
     end
 
+    def book_online(location_id, location_name)
+      new('/locations/' + location_id, location_name)
+    end
+
     def how_to_book_phone
       new('/book-phone', 'How to book a phone appointment')
     end
