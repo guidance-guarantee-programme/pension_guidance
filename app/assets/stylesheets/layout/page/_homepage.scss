@@ -105,13 +105,21 @@
 .l-home-row-callout__content {
   color: $color-white;
 
+  label {
+    color: $color-white;
+  }
+
+  .form-hint {
+    color: #f2f2f2;
+  }
+
   @include media(desktop) {
     background-image: image-url("home/coffee_poster.png");
     background-position: center right;
     background-repeat: no-repeat;
     background-size: 50%;
-    padding-top: 6%;
-    padding-bottom: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 
     .lte-ie8 & {
       background-image: none;

@@ -95,7 +95,19 @@
       <p>Speak to one of our trained specialists over the phone or face to face to help you make an informed decision.</p>
 
       <p>You should be <b>aged 50 or over</b> and have a <b><a href="/pension-types">defined contribution</a></b> pension.</p>
-      <p><a href="/appointments" class="button">Book a free appointment</a></p>
+
+      <p>Search for your nearest appointment locations.</p>
+
+      <form action="/locations" method="get">
+        <label class="form-label-bold" for="postcode">Postcode</label>
+        <span class="form-hint">
+          For example, 'SW1A 1AA'
+        </span>
+        <input type="text" class="form-control" id="postcode" name="postcode" value="">
+        <input type="submit" class="button" id="btn-search" value="Search">
+      </form>
+
+      <p>You can also <a href="/book-phone">book a phone appointment</a>.</p>
     </div>
   </div>
 </div>
