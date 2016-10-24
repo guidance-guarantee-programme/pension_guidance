@@ -3,7 +3,7 @@ en:
   service:
     title: '%{page_title} - Pension Wise'
     homepage:
-      title: 'Pension Wise - Your money. Your choice.'
+      title: 'Pension Wise - Get to know your options'
 
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'
