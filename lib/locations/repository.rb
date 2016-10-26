@@ -25,16 +25,17 @@ module Locations
       end
     end
 
-    def params_for_location(feature)
+    def params_for_location(feature) # rubocop:disable Metrics/MethodLength
       [
-        feature.feature_id,
-        feature.property('title'),
-        feature.property('address'),
-        feature.property('booking_location_id'),
-        feature.property('phone'),
-        feature.property('hours'),
-        feature.property('twilio_number'),
-        [feature.geometry.y, feature.geometry.x]
+        id: feature.feature_id,
+        name: feature.property('title'),
+        address: feature.property('address'),
+        booking_location_id: feature.property('booking_location_id'),
+        phone: feature.property('phone'),
+        hours: feature.property('hours'),
+        twilio_number: feature.property('twilio_number'),
+        online_booking_enabled: feature.property('online_booking_enabled'),
+        lat_lng: [feature.geometry.y, feature.geometry.x]
       ]
     end
   end

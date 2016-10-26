@@ -10,14 +10,15 @@ RSpec.describe Locations::SearchResult do
   let(:distance) { 150 }
   let(:location) do
     Locations::Location.new(
-      id,
-      name,
-      address,
-      booking_location_id,
-      phone,
-      hours,
-      twilio_number,
-      lat_lng
+      id: id,
+      name: name,
+      address: address,
+      booking_location_id: booking_location_id,
+      phone: phone,
+      hours: hours,
+      twilio_number: twilio_number,
+      online_booking_enabled: false,
+      lat_lng: lat_lng
     )
   end
 
