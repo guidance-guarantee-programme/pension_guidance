@@ -34,11 +34,6 @@
       <%= simple_format(@location.address) %>
     </div>
 
-    <% unless @location.hours.blank? %>
-      <h3 class="heading-small">Booking hours</h3>
-      <div class="t-hours"><%= simple_format(@location.hours) %></div>
-    <% end %>
-
     <h2 class="heading-small">Ways to book</h2>
 
     <% if Locations.online_booking?(@location.id) %>
@@ -46,14 +41,19 @@
         <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
       </p>
 
-      <p>
+
         Or book by phone <strong class="t-phone"><%= @location.phone %></strong>.
-      </p>
-    <% else %>
-      <p>
-        Book by phone <strong class="t-phone"><%= @location.phone %></strong>.
-      </p>
+      <% unless @location.hours.blank? %>
+      <div class="t-hours"><%= simple_format(@location.hours) %></div>
     <% end %>
+    <% else %>
+        Book by phone <strong class="t-phone"><%= @location.phone %></strong>.
+      <% unless @location.hours.blank? %>
+      <div class="t-hours"><%= simple_format(@location.hours) %></div>
+    <% end %>
+    <% end %>
+
+    <p>The appointment times available can change depending on your location.</p>
 
     <% if @location.booking_location %>
       <p>
