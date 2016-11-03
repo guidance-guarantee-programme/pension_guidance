@@ -27,11 +27,17 @@ You should also ask the provider you’re moving to if you’ll have to make reg
 
 ^If your employer makes contributions to your pension ask if they can change contributions to your new one.^
 
-## Calculate if it’s worth moving
+### Taking your pension money
 
-Ask your provider how much your pot is likely be worth when you retire.
+Think about how you’d like to take your pension money, eg as an [annuity](/guaranteed-income) or [adjustable income](/adjustable-income), before you transfer. 
 
-You can then shop around and get comparisons from other providers – by yourself or with help from a financial adviser.
+Find out if your new provider offers the option you want.
+
+### Investments and fees
+
+You can check what investment funds your new provider offers and consider what level of risk you’re happy with. You can do this yourself or with help from a [financial adviser](/financial-advice). 
+
+You’ll also need to know what fees the new provider will charge you.
 
 ## Transfer value
 
