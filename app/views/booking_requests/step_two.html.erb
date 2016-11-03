@@ -130,7 +130,7 @@
           <% if @booking_request.errors.include?(:accessibility_requirements) %>
             <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence %></span>
           <% end %>
-          <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %> I have accessibility needs
+          <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %> I have accessibility needs <span class="form-hint form-hint--inline">eg wheelchair access</span>
         <% end %>
       </div>
 
