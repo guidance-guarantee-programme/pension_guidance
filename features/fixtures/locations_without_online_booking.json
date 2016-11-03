@@ -16,7 +16,8 @@
         "address": "300 Mare St\nHACKNEY\nLondon\nE8 1HE",
         "booking_location_id": "",
         "phone": "+442085256360",
-        "hours": "Monday to Friday, 9:30am to 5pm"
+        "hours": "Monday to Friday, 9:30am to 5pm",
+        "online_booking_enabled": false
       }
     }
   ]

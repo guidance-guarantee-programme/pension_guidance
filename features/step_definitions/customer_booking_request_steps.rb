@@ -1,9 +1,9 @@
 Given(/^a location is enabled for online booking$/) do
-  Locations.online_booking_location_uids = %w(ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef)
+  @locations_path = %w(features fixtures locations_with_online_booking.json)
 end
 
 Given(/^no locations are enabled for online booking$/) do
-  Locations.online_booking_location_uids = []
+  @locations_path = %w(features fixtures locations_without_online_booking.json)
 end
 
 Given(/^the date is (.*)$/) do |date|
@@ -187,7 +187,7 @@ end
 
 def with_booking_locations
   previous_path = Locations.geo_json_path_or_url
-  Locations.geo_json_path_or_url = Rails.root.join(*%w(features fixtures booking_locations.json))
+  Locations.geo_json_path_or_url = Rails.root.join(*@locations_path)
 
   yield
 ensure
