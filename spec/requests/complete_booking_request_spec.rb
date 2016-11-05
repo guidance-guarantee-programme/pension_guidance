@@ -14,7 +14,7 @@ RSpec.describe 'POST /locations/:id/booking-request/complete', type: :request do
           email: 'lucius@example.com',
           telephone_number: '0208 244 3987',
           memorable_word: 'meseeks',
-          appointment_type: '55-plus',
+          date_of_birth: '1940-01-01',
           accessibility_requirements: '0',
           opt_in: '1',
           dc_pot: 'yes'

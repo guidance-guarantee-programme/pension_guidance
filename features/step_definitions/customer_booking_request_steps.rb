@@ -73,7 +73,10 @@ When(/^I provide my personal details$/) do
 end
 
 When(/^I pass the basic eligibility requirements$/) do
-  @step_two.fifty_to_fifty_four.set true
+  @step_two.date_of_birth_day.set '01'
+  @step_two.date_of_birth_month.set '01'
+  @step_two.date_of_birth_year.set '1950'
+
   @step_two.dc_pot_yes.set true
 end
 

@@ -10,6 +10,7 @@ module BookingRequests
           phone: booking_request.telephone_number,
           memorable_word: booking_request.memorable_word,
           age_range: booking_request.appointment_type,
+          date_of_birth: booking_request.date_of_birth.iso8601,
           accessibility_requirements: booking_request.accessibility_requirements,
           marketing_opt_in: booking_request.opt_in,
           defined_contribution_pot: dc_pot_as_boolean(booking_request.dc_pot),

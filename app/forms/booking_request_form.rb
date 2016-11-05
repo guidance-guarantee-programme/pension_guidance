@@ -4,7 +4,7 @@ class BookingRequestForm
   attr_accessor :location_id, :primary_slot, :secondary_slot, :tertiary_slot,
                 :first_name, :last_name, :email, :telephone_number,
                 :memorable_word, :appointment_type, :accessibility_requirements,
-                :opt_in, :dc_pot
+                :date_of_birth, :opt_in, :dc_pot
 
   with_options if: :step_one? do |step_one|
     step_one.validates :primary_slot, presence: true
@@ -18,15 +18,32 @@ class BookingRequestForm
     step_two.validates :email, presence: true, format: { with: /.+@.+\..+/ }
     step_two.validates :telephone_number, presence: true
     step_two.validates :memorable_word, presence: true
-    step_two.validates :appointment_type, inclusion: { in: %w(50-54 55-plus) }
+    step_two.validates :appointment_type, inclusion: { in: %w(50-54 55-plus) }, if: :date_of_birth
     step_two.validates :accessibility_requirements, inclusion: { in: %w(0 1) }
     step_two.validates :opt_in, acceptance: { accept: '1' }
     step_two.validates :dc_pot, inclusion: { in: %w(yes not-sure) }
+    step_two.validates :date_of_birth, presence: true
   end
 
   def initialize(location_id, opts)
     @location_id = location_id
     super(opts)
+  end
+
+  def date_of_birth
+    return nil unless /\d{4}-\d{1,2}-\d{1,2}/ === @date_of_birth # rubocop:disable Style/CaseEquality
+
+    Date.parse(@date_of_birth)
+  end
+
+  def appointment_type
+    if age < 50
+      'under-50'
+    elsif (50..54).cover?(age)
+      '50-54'
+    else
+      '55-plus'
+    end
   end
 
   def slots_for_calendar
@@ -65,5 +82,15 @@ class BookingRequestForm
 
   def step_two?
     @step == 2
+  end
+
+  private
+
+  def age
+    return 0 unless date_of_birth
+
+    age = Time.zone.today.year - date_of_birth.year
+    age -= 1 if Time.zone.today.to_date < date_of_birth + age.years
+    age
   end
 end
