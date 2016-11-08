@@ -4,11 +4,17 @@ tags:
   - appointments
 ---
 
-# Book a free appointment
+# Book a free Pension Wise appointment
 
-An appointment is a 45 minute conversation between you and a Pension Wise guidance specialist. You’ll get personal guidance on what you can do with your pension pot.
+An appointment is a conversation with a Pension Wise guidance specialist. They last around 45 to 60 minutes. Afterwards you’ll get a written summary of what was discussed.
 
-Appointments are over the **phone** or **face to face**.
+In your appointment, we will:
+
+- talk about the ways you can take your pension money
+- explain how each pension option is taxed
+- give you next steps to take
+
+You can speak to us over the phone or face to face somewhere local to you.
 
 [Book a phone appointment](/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
 [Book a face-to-face appointment](/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
@@ -16,14 +22,5 @@ Appointments are over the **phone** or **face to face**.
 ## Before you book
 
 You should be aged **50 or over** and have a **defined contribution** pension. This is a pension based on how much you and possibly your employer paid into your pot. It’s not a final salary pension.
-
-In your appointment, the guidance specialist will:
-
-- explain your pension options
-- explain tax
-- discuss which options might be suitable for  you
-- give you tips on what you can do next
-
-Afterwards you’ll get a summary of what was discussed.
 
 ^ Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.
