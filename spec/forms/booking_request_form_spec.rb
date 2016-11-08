@@ -13,7 +13,7 @@ RSpec.describe BookingRequestForm do
         email: 'lucius@example.com',
         telephone_number: '0208 244 3987',
         memorable_word: 'meseeks',
-        appointment_type: '55-plus',
+        date_of_birth: '1950-01-01',
         accessibility_requirements: '0',
         opt_in: '1',
         dc_pot: 'yes'
@@ -49,8 +49,15 @@ RSpec.describe BookingRequestForm do
         expect(subject).not_to be_step_two_valid
       end
 
+      it 'requires a valid DOB' do
+        subject.date_of_birth = '--01'
+        expect(subject).not_to be_step_two_valid
+      end
+
       it 'requires appointment_type to be within permitted values' do
-        subject.appointment_type = 'under-50'
+        subject.date_of_birth = '2010-01-01'
+
+        expect(subject.appointment_type).to eq('under-50')
         expect(subject).not_to be_step_two_valid
         expect(subject).not_to be_eligible
       end

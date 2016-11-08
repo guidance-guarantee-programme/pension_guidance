@@ -44,6 +44,8 @@ class BookingRequestsController < ApplicationController
   helper_method :location_id
 
   def booking_request_params # rubocop:disable Metrics/MethodLength
+    munge_date_params!
+
     params
       .fetch(:booking_request, {})
       .permit(
@@ -55,10 +57,22 @@ class BookingRequestsController < ApplicationController
         :email,
         :telephone_number,
         :memorable_word,
-        :appointment_type,
+        :date_of_birth,
         :accessibility_requirements,
         :opt_in,
         :dc_pot
       )
+  end
+
+  def munge_date_params!
+    booking_params = params[:booking_request]
+
+    if booking_params
+      year  = booking_params.delete('date_of_birth(1i)')
+      month = booking_params.delete('date_of_birth(2i)')
+      day   = booking_params.delete('date_of_birth(3i)')
+    end
+
+    booking_params[:date_of_birth] = "#{year}-#{month}-#{day}" if year && month && day
   end
 end

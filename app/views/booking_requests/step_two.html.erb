@@ -69,30 +69,67 @@
         <%= f.text_field :memorable_word, class: 't-memorable-word form-control' %>
       </div>
 
-      <div class="form-group <%= 'error' if @booking_request.errors.include?(:appointment_type) %>">
-        <fieldset class="inline">
-          <legend>Your age</legend>
-
-          <% if @booking_request.errors.include?(:appointment_type) %>
-            <span class="error-message"><%= @booking_request.errors[:appointment_type].to_sentence %></span>
-          <% end %>
-
-          <%= f.label :appointment_type, value: 'under-50', class: 'block-label' do %>
-              <%= f.radio_button :appointment_type, 'under-50',
-                                 class: 't-appointment-type-1' %>
-              Under 50
-          <% end %>
-
-          <%= f.label :appointment_type, value: '50-54', class: 'block-label' do %>
-              <%= f.radio_button :appointment_type, '50-54',
-                                 class: 't-appointment-type-2' %>
-              50 to 54
-          <% end %>
-
-          <%= f.label :appointment_type, value: '55-plus', class: 'block-label' do %>
-            <%= f.radio_button :appointment_type, '55-plus',
-                                 class: 't-appointment-type-3' %>
-            55 or over
+      <div class="form-group <%= 'error' if @booking_request.errors.include?(:date_of_birth) %>">
+        <fieldset>
+          <legend>
+            <span class="form-label-bold">
+              Date of birth
+            </span>
+            <span class="form-hint" id="dob-hint">You must be aged 50 or over to book an appointment. For example, 31 3 1950</span>
+          </legend>
+          <div class="form-date">
+            <div class="form-group form-group-day">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_3i">Day</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(3i)',
+                  id: "#{f.object_name}_date_of_birth_3i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:day),
+                  placeholder: 'DD',
+                  class: 'f-dob__input form-control js-dob-day t-date-of-birth-day',
+                  pattern: '[0-9]*',
+                  min: 1,
+                  max: 31,
+                  'aria-describedby': 'dob-hint'
+                )
+              %>
+            </div>
+            <div class="form-group form-group-month">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_2i">Month</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(2i)',
+                  id: "#{f.object_name}_date_of_birth_2i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:month),
+                  placeholder: 'MM',
+                  class: 'form-dob__input form-control js-dob-month t-date-of-birth-month',
+                  pattern: '[0-9]*',
+                  min: 1,
+                  max: 12
+                )
+              %>
+            </div>
+            <div class="form-group form-group-year">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_1i">Year</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(1i)',
+                  id: "#{f.object_name}_date_of_birth_1i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:year),
+                  placeholder: 'YYYY',
+                  class: 'form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year',
+                  pattern: '[0-9]*',
+                  min: 120.years.ago.year,
+                  max: Date.today.year
+                )
+              %>
+            </div>
+          </div>
+          <% if @booking_request.errors.include?(:date_of_birth) %>
+            <span class="error-message"><%= @booking_request.errors[:date_of_birth].to_sentence %></span>
           <% end %>
         </fieldset>
       </div>
