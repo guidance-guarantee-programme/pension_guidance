@@ -181,7 +181,7 @@
       </div>
 
       <div class="form-group">
-        <%= f.submit 'Submit booking request', class: 'button t-submit' %>
+        <%= f.submit 'Submit booking request', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
       </div>
 
     <% end %>
