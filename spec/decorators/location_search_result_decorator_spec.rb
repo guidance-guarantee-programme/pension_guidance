@@ -5,6 +5,6 @@ RSpec.describe LocationSearchResultDecorator do
 
   subject(:decorator) { described_class.new(search_result) }
 
-  specify { expect(decorator.address).to eq('Street, Town, Postcode') }
+  specify { expect(decorator.address_flattened).to eq('Street, Town, Postcode') }
   specify { expect(decorator.distance).to eq('1.05') }
 end

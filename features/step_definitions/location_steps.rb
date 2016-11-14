@@ -14,7 +14,7 @@ end
 
 When(/^I drill down into a specific search result$/) do
   location = Pages::Locations.new.locations.first
-  location.name.click
+  location.link_to.click
 end
 
 When(/^I view the details of an appointment location that handles its own booking$/) do
@@ -40,9 +40,9 @@ Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) 
 
   expected_locations = ['London', 'Paris', 'New York']
   expected_addresses = [
-    '1 Horse Guards Road, SW1A 2HQ',
-    '35 Rue du Faubourg Saint-Honoré, 75008 Paris',
-    'Manhattan, NY 10036, United States'
+    '1 Horse Guards Road SW1A 2HQ',
+    '35 Rue du Faubourg Saint-Honoré 75008 Paris',
+    'Manhattan NY 10036 United States'
   ]
 
   expect(page_locations.map(&:name).map(&:text)).to eq(expected_locations)
@@ -92,7 +92,7 @@ Then(/^I should see the following appointment location details:$/) do |table|
                          when 'booking location opening hours'
                            [:hours, 'Mon-Fri 8-6']
                          when 'booking location Pension Wise booking phone number'
-                           [:phone, '1-212-645-5550']
+                           [:phone, '0113 3333333']
                          end
       expect(location.public_send(attribute)).to have_content(value)
     end
@@ -106,7 +106,7 @@ Then(/^I should see the following appointment location details:$/) do |table|
                          when 'its opening hours'
                            [:hours, 'Mon-Fri 9-5']
                          when 'its Pension Wise booking phone number'
-                           [:phone, '123 456']
+                           [:phone, '01234 56789']
                          end
       expect(location.public_send(attribute)).to have_content(value)
     end

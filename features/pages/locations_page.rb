@@ -10,6 +10,8 @@ module Pages
       element :name, '.t-name'
       element :address, '.t-address'
       element :distance, '.t-distance'
+
+      element :link_to, '.t-location-link'
     end
   end
 end
