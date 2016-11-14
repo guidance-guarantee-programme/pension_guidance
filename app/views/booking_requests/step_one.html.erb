@@ -1,102 +1,105 @@
-<div class="l-column-two-thirds">
-  <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
-</div>
-
-<% if @booking_request.errors.any? %>
+<div class="l-grid-row">
   <div class="l-column-two-thirds">
-    <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-      <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-        There was a problem with your chosen dates
-      </h1>
-
-      <p>Please select 3 dates for your appointment.</p>
-    </div>
-  </div>
-<% end %>
-
-<div class="SlotPicker" data-today="<%= Date.today %>">
-  <div class="l-column-half">
-    <div class="SlotPicker-timeSlots show-only-with-js">
-      <ul class="SlotPicker-days">
-        <li class="SlotPicker-day SlotPicker-day--past">
-          <h2 class="SlotPicker-dayTitle"></h2>
-          <p>It is not possible to book an appointment in the past.</p>
-        </li>
-        <li class="SlotPicker-day SlotPicker-day--unavailable">
-          <h2 class="SlotPicker-dayTitle"></h2>
-          <p>It is not possible to book an appointment on this day.</p>
-        </li>
-        <li class="SlotPicker-day SlotPicker-day--beyond">
-          <h2 class="SlotPicker-dayTitle"></h2>
-          <p>You can only book an appointment in the next {{ daysInRange }} days.</p>
-        </li>
-        <li class="SlotPicker-day SlotPicker-day--leadtime">
-          <h2 class="SlotPicker-dayTitle"></h2>
-          <p>You can only book an appointment 3 days in advance.</p>
-        </li>
-      </ul>
-    </div>
-
-    <div class="SlotPicker-choices show-only-with-js">
-      <p class="SlotPicker-promoteHelp">Use the arrows to put your visit choices in the order that suits you best.</p>
-    </div>
-
-    <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
-      <%= f.select(:primary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-      <%= f.select(:secondary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-      <%= f.select(:tertiary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-
-      <p>
-        <%= f.button('Continue', type: 'submit', class: 'button t-continue') %>
-      </p>
-    <% end %>
-    <p>This is a new service. Appointment availability is limited depending on location. We'll call or email to confirm an appointment date with you.</p>
+    <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
   </div>
 
-  <div class="l-column-half">
-    <div class="BookingCalendar show-only-with-js">
-      <div class="BookingCalendar-header">
-        <a href="#" class="BookingCalendar-nav BookingCalendar-nav--prev"></a>
-        <strong class="BookingCalendar-currentMonth"></strong>
-        <a href="#" class="BookingCalendar-nav BookingCalendar-nav--next"></a>
+  <% if @booking_request.errors.any? %>
+    <div class="l-column-two-thirds">
+      <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+        <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          There was a problem with your chosen dates
+        </h1>
+
+        <p>Please select 3 dates for your appointment.</p>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="SlotPicker"
+       data-today="<%= Date.today %>"
+       data-limit-exceeded-error="You can only select 3 choices. Go back to change your dates or continue.">
+    <div class="l-column-half">
+      <div class="SlotPicker-timeSlots show-only-with-js">
+        <ul class="SlotPicker-days">
+          <li class="SlotPicker-day SlotPicker-day--past">
+            <h2 class="SlotPicker-dayTitle"></h2>
+            <p>It is not possible to book an appointment in the past.</p>
+          </li>
+          <li class="SlotPicker-day SlotPicker-day--unavailable">
+            <h2 class="SlotPicker-dayTitle"></h2>
+            <p>It is not possible to book an appointment on this day.</p>
+          </li>
+          <li class="SlotPicker-day SlotPicker-day--beyond">
+            <h2 class="SlotPicker-dayTitle"></h2>
+            <p>You can only book an appointment in the next {{ daysInRange }} days.</p>
+          </li>
+          <li class="SlotPicker-day SlotPicker-day--leadtime">
+            <h2 class="SlotPicker-dayTitle"></h2>
+            <p>You can only book an appointment 3 days in advance.</p>
+          </li>
+        </ul>
       </div>
 
-      <table class="BookingCalendar-dates table-font-xsmall">
-        <thead>
-          <tr>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-          </tr>
-        </thead>
-      </table>
+      <div class="SlotPicker-choices show-only-with-js">
+        <p class="SlotPicker-promoteHelp">Use the arrows to put your visit choices in the order that suits you best.</p>
+      </div>
 
-      <div class="BookingCalendar-mask">
+      <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
+        <%= f.select(:primary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+        <%= f.select(:secondary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+        <%= f.select(:tertiary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+        <p>
+          <%= f.button('Continue', type: 'submit', class: 'button t-continue') %>
+        </p>
+      <% end %>
+      <p>This is a new service. Appointment availability is limited depending on location. We'll call or email to confirm an appointment date with you.</p>
+    </div>
+
+    <div class="l-column-half">
+      <div class="BookingCalendar show-only-with-js">
+        <div class="BookingCalendar-header">
+          <a href="#" class="BookingCalendar-nav BookingCalendar-nav--prev"></a>
+          <strong class="BookingCalendar-currentMonth"></strong>
+          <a href="#" class="BookingCalendar-nav BookingCalendar-nav--next"></a>
+        </div>
+
         <table class="BookingCalendar-dates table-font-xsmall">
-          <tbody class="BookingCalendar-datesBody">
-          </tbody>
+          <thead>
+            <tr>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+          </thead>
         </table>
+
+        <div class="BookingCalendar-mask">
+          <table class="BookingCalendar-dates table-font-xsmall">
+            <tbody class="BookingCalendar-datesBody">
+            </tbody>
+          </table>
+        </div>
+
+        <ul class="BookingCalendar-legend">
+          <li>
+            <span class="BookingCalendar-legendBox"></span>
+            <p class="BookingCalendar-legendDesc">Available</p>
+          </li>
+          <li>
+            <span class="BookingCalendar-legendBox BookingCalendar-legendBox--unavailable"></span>
+            <p class="BookingCalendar-legendDesc">Unavailable</p>
+          </li>
+        </ul>
       </div>
-
-      <ul class="BookingCalendar-legend">
-        <li>
-          <span class="BookingCalendar-legendBox"></span>
-          <p class="BookingCalendar-legendDesc">Available</p>
-        </li>
-        <li>
-          <span class="BookingCalendar-legendBox BookingCalendar-legendBox--unavailable"></span>
-          <p class="BookingCalendar-legendDesc">Unavailable</p>
-        </li>
-      </ul>
     </div>
-  </div>
 
-  <div class="l-column-two-thirds">
-    <%= render 'feedbacks/feedback_form' %>
+    <div class="l-column-two-thirds">
+      <%= render 'feedbacks/feedback_form' %>
+    </div>
   </div>
 </div>
 
@@ -119,7 +122,7 @@
       {{else}}
       Afternoon
       {{/ifCond}}
-  </strong>
+    </strong>
     <span class="SlotPicker-duration"><%= slot_duration %></span>
   </label>
 </script>

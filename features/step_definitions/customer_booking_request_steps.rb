@@ -45,9 +45,12 @@ When(/^I choose three available appointment slots$/) do
   @step_one.wait_for_available_days
   expect(@step_one).to have_available_days
 
-  # select the morning and afternoon slots on the first day
+  # select the morning slot on the first day
   @step_one.available_days.first.click
   @step_one.morning_slot.click
+
+  # select the afternoon slot on the first day
+  @step_one.available_days.first.click
   @step_one.afternoon_slot.click
 
   # select the morning slot on the last day
@@ -122,6 +125,8 @@ When(/^I choose a further two appointment slots$/) do
   # choose the remaining two required slots
   @step_one.available_days.last.click
   @step_one.morning_slot.click
+
+  @step_one.available_days.last.click
   @step_one.afternoon_slot.click
 
   # wait for slots to be confirmed and proceed

@@ -20,6 +20,28 @@
   }
 }
 
+.SlotPicker-choice {
+  margin-bottom: 10px;
+
+  .SlotPicker-choiceInner {
+    min-height: 50px;
+  }
+
+  &.is-active {
+    background: $slot-picker-active-background;
+  }
+
+  &.is-chosen .SlotPicker-choiceInner p {
+    font-size: 20px;
+  }
+
+  .SlotPicker-prompt {
+    color: $slot-picker-prompt;
+  }
+
+}
+
+
 .SlotPicker--read-only {
   margin-bottom: 1.5em;
 
@@ -46,15 +68,11 @@
   margin: 0;
 }
 
-.SlotPicker-choice .SlotPicker-choiceInner {
-  min-height: 50px;
-}
-
-.SlotPicker-choice.is-chosen .SlotPicker-choiceInner p {
-  font-size: 20px;
-}
-
 .SlotPicker-input {
   margin-bottom: 1em;
+}
+
+.SlotPicker-timeSlots {
+  margin-bottom: -5px;
 }
 // scss-lint:enable SelectorFormat
