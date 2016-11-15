@@ -7,10 +7,7 @@ class LocationDecorator < SimpleDelegator
   end
 
   def phone
-    return formated_twilio_number unless twilio_number.blank?
-    return _booking_location.phone unless _booking_location.nil?
-
-    super
+    Phoner::Phone.parse(twilio_number)&.format('%A %n')
   end
 
   def hours
@@ -38,8 +35,4 @@ class LocationDecorator < SimpleDelegator
   private
 
   attr_accessor :_booking_location, :nearest_locations
-
-  def formated_twilio_number
-    Phoner::Phone.parse(twilio_number).format('%A %n')
-  end
 end

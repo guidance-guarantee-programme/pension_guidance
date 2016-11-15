@@ -9,7 +9,7 @@ RSpec.describe LocationDecorator do
   let(:booking_location_phone) { 'booking location phone number' }
   let(:booking_location_hours) { 'booking location opening hours' }
   let(:twilio_number) { '+441443643532' }
-  let(:formated_twilio_number) { '01443 643532' }
+  let(:formatted_twilio_number) { '01443 643532' }
   let(:location) do
     double(
       :location,
@@ -34,15 +34,7 @@ RSpec.describe LocationDecorator do
     specify { expect(decorator.hours).to eq(hours) }
     specify { expect(decorator.booking_location).to be_nil }
     specify { expect(decorator.search_context).to be_nil }
-
-    context 'and a twilio number is present' do
-      specify { expect(decorator.phone).to eq(formated_twilio_number) }
-    end
-
-    context 'and a twilio number is not present' do
-      let(:twilio_number) { nil }
-      specify { expect(decorator.phone).to eq(phone) }
-    end
+    specify { expect(decorator.phone).to eq(formatted_twilio_number) }
   end
 
   context 'with a separate booking location' do
@@ -52,17 +44,8 @@ RSpec.describe LocationDecorator do
     specify { expect(decorator.address).to eq(address) }
     specify { expect(decorator.hours).to eq(booking_location_hours) }
     specify { expect(decorator.booking_location).to eq(booking_location_name) }
-
     specify { expect(decorator.search_context).to be_nil }
-
-    context 'and a twilio number is present' do
-      specify { expect(decorator.phone).to eq(formated_twilio_number) }
-    end
-
-    context 'and a twilio number is not present' do
-      let(:twilio_number) { nil }
-      specify { expect(decorator.phone).to eq(booking_location_phone) }
-    end
+    specify { expect(decorator.phone).to eq(formatted_twilio_number) }
   end
 
   context 'with nearest locations' do

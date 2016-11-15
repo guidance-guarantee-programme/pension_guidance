@@ -15,7 +15,8 @@
         "title": "London",
         "address": "1 Horse Guards Road\nSW1A 2HQ",
         "phone": "123 456",
-        "hours": "Mon-Fri 9-5"
+        "hours": "Mon-Fri 9-5",
+        "twilio_number": "+44123456789"
       }
     },
     {
@@ -33,7 +34,8 @@
         "address": "35 Rue du Faubourg Saint-Honoré\n75008 Paris",
         "booking_location_id": "new-york",
         "phone": "",
-        "hours": ""
+        "hours": "",
+        "twilio_number": "+441133333333"
       }
     },
     {
@@ -50,7 +52,8 @@
         "title": "New York",
         "address": "Manhattan\nNY 10036\nUnited States",
         "phone": "1-212-645-5550",
-        "hours": "Mon-Fri 8-6"
+        "hours": "Mon-Fri 8-6",
+        "twilio_number": "+441144444444"
       }
     }
   ]

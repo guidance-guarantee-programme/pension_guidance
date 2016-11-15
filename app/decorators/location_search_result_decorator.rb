@@ -8,6 +8,6 @@ class LocationSearchResultDecorator < SimpleDelegator
   end
 
   def phone
-    Phoner::Phone.parse(twilio_number).format('%A %n')
+    Phoner::Phone.parse(twilio_number)&.format('%A %n')
   end
 end
