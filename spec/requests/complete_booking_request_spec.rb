@@ -2,6 +2,11 @@ require 'securerandom'
 
 RSpec.describe 'POST /locations/:id/booking-request/complete', type: :request do
   context 'with valid params' do
+    before do
+      # Provide a location name for the breadcrumbs
+      allow(BookingLocations).to receive(:find).and_return(double(:booking_location, name_for: 'Breadcrumb'))
+    end
+
     it 'creates the booking via the API' do
       location_id = SecureRandom.uuid
       payload = {
