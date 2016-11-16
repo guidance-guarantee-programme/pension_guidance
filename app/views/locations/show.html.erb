@@ -66,6 +66,7 @@
     <a href="https://maps.google.com/maps?q=<%= @location.address %>" target="_blank">
       <img
         height="450"
+        alt="map showing the location of <%= @location.name %> (link opens external website in new window)"
         style="border:0; position: relative; width:100%;"
         src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= @location.address %>&size=600x450&zoom=16&scale=2&key=AIzaSyB_H8kX3vHhOJMYIoBu3_SMnxXf-NYY3Y0" />
     </a>
