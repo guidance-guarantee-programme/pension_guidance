@@ -6,6 +6,10 @@ class LocationDecorator < SimpleDelegator
     self.nearest_locations = nearest_locations
   end
 
+  def address_flattened
+    address.gsub("\n", ', ').squish
+  end
+
   def phone
     Phoner::Phone.parse(twilio_number)&.format('%A %n')
   end
