@@ -3,6 +3,7 @@
 //= require mobile-nav-toggler.js
 //= require calculators.js
 //= require feedback.js
+//= require disable-button.js
 
 //= require components/BaseComponent
 //= require components/Slider
