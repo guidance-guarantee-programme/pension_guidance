@@ -17,16 +17,6 @@
   margin-bottom: 30px;
 }
 
-.home-intro__link {
-  &:link {
-    color: $color-grey-rolling-stone;
-  }
-
-  &:hover {
-    color: $link-hover-colour;
-  }
-}
-
 .l-home-single-column-heading {
   @include bold-48();
 
