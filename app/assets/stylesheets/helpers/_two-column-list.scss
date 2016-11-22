@@ -1,0 +1,5 @@
+.two-column-list {
+  @include media(tablet) {
+    column-count: 2;
+  }
+}

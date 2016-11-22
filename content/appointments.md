@@ -23,4 +23,6 @@ You can speak to us over the phone or face to face somewhere local to you.
 
 You should be aged **50 or over** and have a **defined contribution** pension. This is a pension based on how much you and possibly your employer paid into your pot. It’s not a final salary pension.
 
+[Not sure what pension type you have?](/pension-type-tool)
+
 ^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^
