@@ -15,6 +15,46 @@
 <% end %>
 
 <div class="SlotPicker" data-today="<%= Date.today %>">
+  <div class="l-column-half l-column-half--right">
+    <div class="BookingCalendar show-only-with-js">
+      <div class="BookingCalendar-header">
+        <a href="#" class="BookingCalendar-nav BookingCalendar-nav--prev"></a>
+        <span class="visuallyhidden">Currently selected month </span><strong class="BookingCalendar-currentMonth"></strong>
+        <a href="#" class="BookingCalendar-nav BookingCalendar-nav--next"></a>
+      </div>
+
+      <div class="BookingCalendar-mask">
+        <table class="BookingCalendar-dates table-font-xsmall">
+          <caption class="BookingCalendar-caption"><span class="visuallyhidden">Date picker for booking an appointment</span></caption>
+          <thead>
+            <tr>
+              <th><span class="visuallyhidden">Monday</span><span aria-hidden="true">Mon</span></th>
+              <th><span class="visuallyhidden">Tuesday</span><span aria-hidden="true">Tue</span></th>
+              <th><span class="visuallyhidden">Wednesday</span><span aria-hidden="true">Wed</span></th>
+              <th><span class="visuallyhidden">Thursday</span><span aria-hidden="true">Thu</span></th>
+              <th><span class="visuallyhidden">Friday</span><span aria-hidden="true">Fri</span></th>
+              <th><span class="visuallyhidden">Saturday</span><span aria-hidden="true">Sat</span></th>
+              <th><span class="visuallyhidden">Sunday</span><span aria-hidden="true">Sun</span></th>
+            </tr>
+          </thead>
+          <tbody class="BookingCalendar-datesBody">
+          </tbody>
+        </table>
+      </div>
+
+      <ul class="BookingCalendar-legend" aria-hidden="true">
+        <li>
+          <span class="BookingCalendar-legendBox"></span>
+          <p class="BookingCalendar-legendDesc">Available</p>
+        </li>
+        <li>
+          <span class="BookingCalendar-legendBox BookingCalendar-legendBox--unavailable"></span>
+          <p class="BookingCalendar-legendDesc">Unavailable</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class="l-column-half">
     <div class="SlotPicker-timeSlots show-only-with-js">
       <ul class="SlotPicker-days">
@@ -36,7 +76,7 @@
         </li>
       </ul>
     </div>
-
+    <h2 class="visuallyhidden">Selected time slots</h2>
     <div class="SlotPicker-choices show-only-with-js">
       <p class="SlotPicker-promoteHelp">Use the arrows to put your visit choices in the order that suits you best.</p>
     </div>
@@ -51,48 +91,6 @@
       </p>
     <% end %>
     <p>This is a new service. Appointment availability is limited depending on location. We'll call or email to confirm an appointment date with you.</p>
-  </div>
-
-  <div class="l-column-half">
-    <div class="BookingCalendar show-only-with-js">
-      <div class="BookingCalendar-header">
-        <a href="#" class="BookingCalendar-nav BookingCalendar-nav--prev"></a>
-        <strong class="BookingCalendar-currentMonth"></strong>
-        <a href="#" class="BookingCalendar-nav BookingCalendar-nav--next"></a>
-      </div>
-
-      <table class="BookingCalendar-dates table-font-xsmall">
-        <thead>
-          <tr>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-          </tr>
-        </thead>
-      </table>
-
-      <div class="BookingCalendar-mask">
-        <table class="BookingCalendar-dates table-font-xsmall">
-          <tbody class="BookingCalendar-datesBody">
-          </tbody>
-        </table>
-      </div>
-
-      <ul class="BookingCalendar-legend">
-        <li>
-          <span class="BookingCalendar-legendBox"></span>
-          <p class="BookingCalendar-legendDesc">Available</p>
-        </li>
-        <li>
-          <span class="BookingCalendar-legendBox BookingCalendar-legendBox--unavailable"></span>
-          <p class="BookingCalendar-legendDesc">Unavailable</p>
-        </li>
-      </ul>
-    </div>
   </div>
 
   <div class="l-column-two-thirds">
@@ -133,21 +131,25 @@
 <script type="text/html" id="BookingCalendar-tmplDate">
   <td class="{{ klass }}">
     <div class="BookingCalendar-content">
-      <a class="BookingCalendar-dateLink" data-date="{{ date }}" href="#date-{{ date }}">
-        <span class="BookingCalendar-day">{{ day }}</span>
-        {{#if today}}
-          <span class="BookingCalendar-tag BookingCalendar-tag--today">Today</span>
-        {{/if}}
-        {{#if newMonth}}
-          <span class="BookingCalendar-tag" id="month-{{ monthIso }}">{{ monthShort }}</span>
-        {{/if}}
-      </a>
+      {{#if bookable}}
+        <a role="button" class="BookingCalendar-dateLink" data-date="{{ date }}" href="#date-{{ date }}">
+      {{/if}}
+      <span class="BookingCalendar-day">{{ day }}{{#unless bookable}} <span class="visuallyhidden">Unavailable</span>{{/unless}}</span>
+      {{#if today}}
+        <span class="BookingCalendar-tag BookingCalendar-tag--today">Today</span>
+      {{/if}}
+      {{#if newMonth}}
+        <span class="BookingCalendar-tag" id="month-{{ monthIso }}">{{ monthShort }}</span>
+      {{/if}}
+      {{#if bookable}}
+        </a>
+      {{/if}}
     </div>
   </td>
 </script>
 
 <script type="text/html" id="BookingCalendar-tmplNav">
-  {{ monthAbr }}<span class="BookingCalendar-navFull">{{ monthRemaining }}</span>
+  <span class="BookingCalendar-navShort" aria-hidden="true">{{ monthAbr }}</span><span class="BookingCalendar-navFull">{{ month }}</span>
 </script>
 
 <script type="text/html" id="SlotPicker-tmplChoice">
