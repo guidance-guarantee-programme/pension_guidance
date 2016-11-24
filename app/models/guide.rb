@@ -1,25 +1,11 @@
 class Guide
-  extend Forwardable
-
-  Metadata = Class.new do
-    attr_accessor :label, :concise_label, :description, :tags
-
-    def initialize(label: nil, concise_label: nil, description: nil, tags: nil)
-      self.label = label
-      self.concise_label = concise_label
-      self.description = description
-      self.tags = tags
-    end
-  end
-
-  attr_reader :id, :content, :content_type
-  def_delegators :@metadata, :label, :concise_label, :description, :tags
+  attr_reader :id, :content, :content_type, :metadata
 
   def initialize(id, content: '', content_type: nil, metadata: nil)
     @id = id
     @content = content
     @content_type = content_type
-    @metadata = metadata
+    @metadata = OpenStruct.new(metadata)
   end
 
   def ==(other)
@@ -49,6 +35,6 @@ class Guide
   private
 
   def tagged_with?(tag)
-    Array(tags).include?(tag)
+    Array(metadata.tags).include?(tag)
   end
 end

@@ -22,11 +22,11 @@ RSpec.describe GuideRepository do
       end
 
       specify 'with the correct label' do
-        expect(find.label).to eq(expected_label)
+        expect(find.metadata.label).to eq(expected_label)
       end
 
       specify 'with the correct description' do
-        expect(find.description).to eq(expected_description)
+        expect(find.metadata.description).to eq(expected_description)
       end
 
       specify 'with the correct content type' do

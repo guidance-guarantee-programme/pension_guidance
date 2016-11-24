@@ -4,11 +4,11 @@ RSpec.describe CreateCategoryNavigation do
   let(:foo_category) { instance_double(Category, id: double, title: 'Foo category') }
   let(:bar_category) { instance_double(Category, id: double, title: 'Bar category') }
 
-  let(:foo_guide) { instance_double(Guide, content_type: :govspeak, id: 'foo', slug: 'foo', label: 'Foo') }
-  let(:bar_guide) { instance_double(Guide, content_type: :govspeak, id: 'bar', slug: 'bar', label: 'Bar') }
-  let(:baz_guide) { instance_double(Guide, content_type: :govspeak, id: 'baz', slug: 'baz', label: 'Baz') }
-  let(:qux_guide) { instance_double(Guide, content_type: :govspeak, id: 'qux', slug: 'qux', label: 'Qux') }
-  let(:norf_guide) { instance_double(Guide, content_type: :govspeak, id: 'norf', slug: 'norf', label: 'Norf') }
+  let(:foo_guide) { instance_double(Guide, content_type: :govspeak, id: 'foo', slug: 'foo') }
+  let(:bar_guide) { instance_double(Guide, content_type: :govspeak, id: 'bar', slug: 'bar') }
+  let(:baz_guide) { instance_double(Guide, content_type: :govspeak, id: 'baz', slug: 'baz') }
+  let(:qux_guide) { instance_double(Guide, content_type: :govspeak, id: 'qux', slug: 'qux') }
+  let(:norf_guide) { instance_double(Guide, content_type: :govspeak, id: 'norf', slug: 'norf') }
 
   let(:category_id) { 'foo' }
 

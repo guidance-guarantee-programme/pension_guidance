@@ -33,15 +33,11 @@ class GuideRepository
   def read_guide(id, path)
     content_type = file_content_type(path)
     source = FrontMatterParser.new(File.read(path))
-    metadata = Guide::Metadata.new(label: source.front_matter['label'],
-                                   concise_label: source.front_matter['concise_label'],
-                                   description: source.front_matter['description'],
-                                   tags: source.front_matter['tags'])
 
     Guide.new(id,
               content: source.content,
               content_type: content_type,
-              metadata: metadata)
+              metadata: source.front_matter)
   end
 
   def file_content_type(path)

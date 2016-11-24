@@ -4,7 +4,8 @@ RSpec.shared_examples 'a guide decorator' do
     let(:slug) { '/foo' }
     let(:description) { 'The test description' }
 
-    let(:decorator) { described_class.new(instance_spy(Guide, id: id, slug: slug, description: description)) }
+    let(:metadata) { double(description: description) }
+    let(:decorator) { described_class.new(instance_spy(Guide, id: id, slug: slug, metadata: metadata)) }
 
     describe '#id' do
       subject { decorator.id }

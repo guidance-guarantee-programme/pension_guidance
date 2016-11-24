@@ -45,7 +45,7 @@ RSpec.describe GuideDecorator, type: :decorator do
   end
 
   describe '#label' do
-    let(:guide) { double(label: label, title: title) }
+    let(:guide) { double(metadata: metadata, title: title) }
     let(:title) { double }
 
     subject { decorator.label }
@@ -56,6 +56,7 @@ RSpec.describe GuideDecorator, type: :decorator do
 
     context 'when the guide specifies a label' do
       let(:label) { 'Document label' }
+      let(:metadata) { double(label: label) }
 
       it 'returns the label' do
         is_expected.to eq(label)
@@ -63,7 +64,7 @@ RSpec.describe GuideDecorator, type: :decorator do
     end
 
     context 'when the guide specifies a blank label' do
-      let(:label) { '' }
+      let(:metadata) { double(label: '') }
 
       it 'returns the title' do
         is_expected.to eq(title)
@@ -71,7 +72,7 @@ RSpec.describe GuideDecorator, type: :decorator do
     end
 
     context 'when the guide specifies no label' do
-      let(:label) { nil }
+      let(:metadata) { double(label: nil) }
 
       it 'returns the title' do
         is_expected.to eq(title)
