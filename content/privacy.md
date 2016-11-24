@@ -15,11 +15,11 @@ We collect certain information or data about you when you use Pension Wise.
 
 During a Pension Wise guidance appointment questions will be asked about your personal and family affairs, financial arrangements and plans and general state of health.
 
-These details will be shared with our Pension Wise partners to provide you with a summary of your appointment. They may also be shared anonymously with third parties to help the government analyse and improve the performance of the service.
+These details will be used to provide you with a summary of your appointment. They may be used to help the government and third parties analyse and improve the performance of the service.
 
-If shared in this way, your information would be used only for this purpose and will not be disclosed any further.
+For digital versions of the appointment summary, your name and email address are shared with the Government Digital Service. If shared in this way, your information is used only for this purpose and will not be disclosed any further.
 
-If you have a telephone appointment, the call will be recorded and stored.
+For telephone appointments, calls are recorded and stored.
 
 ##How we use your information - website
 
@@ -43,8 +43,6 @@ This helps us to:
 
 We store your data on our secure servers in the EU.
 
-It may also be stored outside of Europe, where it could be viewed by our staff or suppliers.
-
 By submitting your personal data, you agree to this.
 
 We have procedures and security features in place to try and keep your data secure once we receive it.
@@ -58,10 +56,6 @@ Pension Wise contains links to and from other websites.
 This privacy policy only applies to Pension Wise, and doesn’t cover other government services and transactions that we link to.
 
 If you go to another website from this one, read the privacy policy on that website to find out what it does with your information.
-
-####Following a link to Pension Wise from another website
-
-If you come to Pension Wise from another website, we may receive personal information about you from the other website. You should read the privacy policy of the website you came from to find out more about this.
 
 ##Your rights
 
