@@ -1,19 +1,10 @@
 class Guide
   extend Forwardable
 
-  Metadata = Class.new do
-    attr_accessor :label, :concise_label, :description, :tags
-
-    def initialize(label: nil, concise_label: nil, description: nil, tags: nil)
-      self.label = label
-      self.concise_label = concise_label
-      self.description = description
-      self.tags = tags
-    end
-  end
+  class Metadata < OpenStruct; end
 
   attr_reader :id, :content, :content_type
-  def_delegators :@metadata, :label, :concise_label, :description, :tags
+  def_delegators :@metadata, :label, :concise_label, :description, :tags, :answers
 
   def initialize(id, content: '', content_type: nil, metadata: nil)
     @id = id
