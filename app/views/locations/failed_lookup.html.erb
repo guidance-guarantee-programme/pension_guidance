@@ -2,14 +2,4 @@
 
 <h1>Something went wrong, please try again</h1>
 
-<form action="/locations" method="get">
-  <div class="form-group">
-    <label class="form-label-bold" for="location">Postcode
-      <span class="form-hint">
-        For example, 'SW1A 1AA'
-      </span>
-    </label>
-    <input type="text" class="form-control" name="postcode" id="location" value="<%= @postcode.squish %>">
-    <input type="submit" class="button" value="Search">
-  </div>
-</form>
+<%= render 'components/locations_search' %>
