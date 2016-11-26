@@ -47,7 +47,7 @@
           <span class="error-message"><%= @booking_request.errors[:email].to_sentence %></span>
         <% end %>
 
-        <%= f.text_field :email, class: 't-email form-control' %>
+        <%= f.email_field :email, class: 't-email form-control' %>
       </div>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:telephone_number) %>">
