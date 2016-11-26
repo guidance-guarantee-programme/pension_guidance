@@ -1,7 +1,18 @@
-<% content_for(:page_title, 'Find a face-to-face appointment location - Pension Wise') %>
+<% content_for(:page_title, 'Find an appointment location near you - Pension Wise') %>
 
-<h1>Find a face-to-face appointment location</h1>
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <article role="article" class="text">
+      <h1>Find an appointment location near you</h1>
 
-<%= render 'components/locations_search' %>
+      <p>Search for your nearest appointment locations.</p>
 
-<p>Or you can <a href="/book#by-phone">book a phone appointment</a> instead.</p>
+      <%= render 'components/locations_search' %>
+
+      <div class="application-notice info-notice">
+        <p>You can also <a href="/book-phone">book a phone appointment</a>.</p>
+      </div>
+    </article>
+  </div>
+</div>
+

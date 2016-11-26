@@ -1,8 +1,16 @@
+<% has_error = local_assigns[:has_error] %>
 <form action="/locations" method="get">
-  <label class="form-label-bold" for="postcode">Postcode</label>
-  <span class="form-hint">
-    For example, 'SW1A 1AA'
-  </span>
-  <input type="text" class="form-control" id="postcode" name="postcode" value="">
-  <input type="submit" class="button" id="btn-search" value="Search">
+  <div class="form-group <%= 'error' if has_error %>">
+    <label class="form-label-bold" for="location">
+      Postcode
+      <span class="form-hint">For example, 'SW1A 1AA'</span>
+      <% if has_error %>
+        <span class="t-invalid-postcode error-message">
+          <strong><%= @postcode.squish %></strong> is not a valid postcode
+        </span>
+      <% end %>
+    </label>
+    <input type="text" class="form-control" name="postcode" id="location" value="<%= @postcode&.squish %>">
+    <input type="submit" class="button" value="Search">
+  </div>
 </form>

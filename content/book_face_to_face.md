@@ -10,12 +10,14 @@ tags:
 Search for your nearest appointment locations.
 
 <form action="/locations" method="get">
-  <label class="form-label-bold" for="postcode">Postcode</label>
-  <span class="form-hint">
-    For example, 'SW1A 1AA'
-  </span>
-  <input type="text" class="form-control" id="postcode" name="postcode" value="">
-  <input type="submit" class="button" id="btn-search" value="Search">
+  <div class="form-group">
+    <label class="form-label-bold" for="postcode">
+      Postcode
+      <span class="form-hint">For example, 'SW1A 1AA'</span>
+    </label>
+    <input type="text" class="form-control" id="postcode" name="postcode" value="">
+    <input type="submit" class="button" id="btn-search" value="Search">
+  </div>
 </form>
 
 <div class="application-notice info-notice">

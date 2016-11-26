@@ -6,12 +6,12 @@ tags:
 
 # Book a free Pension Wise appointment
 
-An appointment is a conversation with a Pension Wise guidance specialist. They last around 45 to 60 minutes. Afterwards you’ll get a written summary of what was discussed.
+An appointment is a conversation with a pension specialist. You’ll talk about the options you have for taking your pension money.
 
-In your appointment, we will:
+Your appointment will last around 45 to 60 minutes and we will:
 
-- talk about the ways you can take your pension money
-- explain how each pension option is taxed
+- explain your pension options
+- explain how each option is taxed
 - give you next steps to take
 
 You can speak to us over the phone or face to face somewhere local to you.
@@ -23,4 +23,4 @@ You can speak to us over the phone or face to face somewhere local to you.
 
 You should be aged **50 or over** and have a **defined contribution** pension. This is a pension based on how much you and possibly your employer paid into your pot. It’s not a final salary pension.
 
-^ Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.
+^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^
