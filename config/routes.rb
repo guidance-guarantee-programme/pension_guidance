@@ -23,6 +23,8 @@ Rails.application.routes.draw do
     get 'take-cash-in-chunks/estimate', to: 'calculators/take_cash_in_chunks#show'
     get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
 
+    get 'book-an-appointment', to: 'home#book_an_appointment'
+
     resources :locations, only: [:index, :show] do
       member do
         get '/booking-request/step-one',  to: 'booking_requests#step_one'

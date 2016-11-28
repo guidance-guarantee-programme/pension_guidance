@@ -2,7 +2,11 @@
   <div class="l-masthead">
     <div class="l-banner-container">
       <%= render 'components/logo_link' %>
-      <%= render 'components/page_nav' %>
+      <% if content_for?(:page_nav) %>
+        <%= content_for(:page_nav) %>
+      <% else %>
+        <%= render 'components/page_nav' %>
+      <% end %>
     </div>
   </div>
 

@@ -1,0 +1,86 @@
+<% content_for(:page_title, t('service.homepage.title')) %>
+<% content_for(:meta_description, 'A free and impartial government service that helps you understand ' +
+  'the options for your pension pot.') %>
+
+<% content_for(:page_nav) do %>
+  <div class="l-page-nav">
+    <div class="nav">
+      <div class="nav__mobile">
+        <a href="#" class="nav__mobile-link js-nav-toggler">Menu</a>
+      </div>
+
+      <ul class="nav__list js-nav">
+        <li class="nav__item">
+          <a class="nav__item-label" href="#welcome-to-pensionwise">Welcome to Pension Wise</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__item-label" href="#book-an-appointment">Book an Appointment</a>
+        </li>
+        <li class="nav__item nav__item--single">
+          <a class="nav__item-label" href="#what-to-expect">What to expect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<div id="welcome-to-pensionwise" class="l-grid-row l-home-row l-home-row--accent">
+  <div class="l-page-container l-home-row-accent__content">
+    <div class="l-home-row-accent__column">
+      <h1 class="l-home-single-column-heading">Welcome to Pension Wise</h1>
+      <p>Free and impartial government guidance to help you understand what you can do with your pension pot.</p>
+    </div>
+  </div>
+</div>
+
+<div id="book-an-appointment" class="l-grid-row l-home-row">
+  <div class="l-page-container">
+    <div class="l-column-half">
+      <h2>Book an Appointment</h2>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+      a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum
+      <p><a href="/appointments" class="button">Book a free appointment</a></p>
+    </div>
+    <div class="l-column-half">
+      <h2>What is an appointment?</h2>
+      <div class="youtube-video" >
+        <% video_id = 'hKbm4CDvO-A' %>
+        <div class="youtube-video--video" data-id="<%= video_id %>">
+          <a href="https://www.youtube.com/watch?v=<%= video_id %>">Watch our video about GOV.UK</a>
+        </div>
+        <div class="youtube-video--transcript">
+          <p>
+            <a href="#main-transcript" class="visuallyhidden video-transcript-toggle">View video transcript</a>
+          </p>
+          <div class="video-transcript" id="main-transcript" style="display: none">
+            <p>Sarah: GOV.UK is a new website, it's the best place to find government services and information.</p>
+            <p>Mike: GOV.UK makes it simpler, clearer and faster for people to get what they need from government.</p>
+            <p>S: It's got some step-by-step guides for things like employing new staff, which can make some complicated processes much easier to understand.</p>
+            <p>M: You can work out things like maternity pay with the help of some very simple tools.</p>
+            <p>S: And for things like Bank Holidays, we put the information most people are looking for right in the middle of the page.</p>
+            <p>M: GOV.UK. It's simpler, clearer and faster. Have a look at www.gov.uk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="what-to-expect" class="l-grid-row l-home-row l-home-row--callout">
+  <div class="l-page-container l-home-row-callout__content">
+    <div class="l-home-row-callout__column">
+      <h2 class="l-home-single-column-subheading">Book a free appointment</h2>
+
+      <p>Speak to us about the different ways you can take your pension money.</p>
+
+      <p>Our pension specialists are impartial – they don’t recommend products or companies and won’t tell you how to invest your money.</p>
+
+      <p>Have your appointment over the phone or in person somewhere local to you.</p>
+      <p><a href="/appointments" class="button">Book a free appointment</a></p>
+    </div>
+  </div>
+</div>
