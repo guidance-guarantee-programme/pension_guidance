@@ -9,6 +9,12 @@ Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bo
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
                                                          'moj.slot-picker', 'vendor')
 
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
+                                                         'accessible.media.player', 'core', 'javascripts')
+
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
+                                                         'accessible.media.player', 'core', 'stylesheets')
+
 Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   apple-touch-icon-152x152.png
                                                   apple-touch-icon-60x60.png
@@ -33,4 +39,7 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   moj.slot-picker/dist/stylesheets/**/*.png
                                                   moj.slot-picker/dist/javascripts/moj.slot-picker.js
                                                   moj.slot-picker/dist/javascripts/moj.date-slider.js
-                                                  slot-picker.js )
+                                                  slot-picker.js
+                                                  accessible.media.player/core/css/player-core.css
+                                                  accessible.media.player/custom/css/player-theme.css
+                                                  video-player.js )

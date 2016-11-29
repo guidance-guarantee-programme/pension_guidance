@@ -1,0 +1,69 @@
+(function() {
+  'use strict';
+
+  class VideoPlayer {
+    constructor() {
+      this.init();
+    }
+
+    init() {
+      this.getScripts().then(() => {
+//        google.load("jquery", "1.6.0");
+//        google.load("jqueryui", "1.8.13");
+        this.enableYouTube();
+      });
+    }
+
+    enableYouTube() {
+      var $yt_links = $("a[href*='http://www.youtube.com/watch'],a[href*='https://www.youtube.com/watch']");
+      // Create players for our youtube links
+      $.each($yt_links, function(i) {
+        var $holder = $('<span />');
+        $(this).replaceWith($holder);
+        // Find the captions file if it exists
+        var $mycaptions = $(this).siblings('.captions');
+        // Work out if we have captions or not
+        var captionsf = $($mycaptions).length > 0 ? $($mycaptions).attr('href') : null;
+        // Ensure that we extract the last part of the youtube link (the video id)
+        // and pass it to the player() method
+        var link = $(this).attr('href').split("=")[1];
+        // Initialise the player
+//        $holder.player({
+//          id:'yt'+i,
+//          media:link,
+//          captions:captionsf
+//        });
+
+        var youTubeURL = (document.location.protocol + '//www.youtube.com/apiplayer?enablejsapi=1&version=3&playerapiid=');
+
+        $holder.player({
+          id:'yt'+i,
+          media:link,
+          captions:captionsf,
+          url: youTubeURL,
+          flashHeight: '252px'
+        });
+      });
+    }
+
+    getScripts() {
+      return $.when(
+          $.getScript('<%= asset_path('accessible.media.player/core/javascript/jquery-ui.js') %>'),
+          $.getScript('<%= asset_path('accessible.media.player/core/javascript/swfobject/swfobject.js') %>'),
+          $.getScript('<%= asset_path('accessible.media.player/core/javascript/browser.js') %>'),
+          $.getScript('<%= asset_path('accessible.media.player/core/javascript/jquery.player.js') %>'),
+          $.getScript('<%= asset_path('accessible.media.player/core/javascript/youtube_player.js') %>'),
+          $.getScript('<%= asset_path('accessible.media.player/core/javascript/mediaplayer_decorator.js') %>'),
+          $.Deferred((deferred) => {
+            $(deferred.resolve);
+          })
+      );
+    }
+  }
+
+  window.moj = window.moj || { Modules: {}, Helpers: {} };
+
+  window.PWPG = window.PWPG || {};
+  window.PWPG.VideoPlayer = VideoPlayer;
+  new VideoPlayer()
+})();
