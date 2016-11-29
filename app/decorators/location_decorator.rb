@@ -6,8 +6,8 @@ class LocationDecorator < SimpleDelegator
     self.nearest_locations = nearest_locations
   end
 
-  def address_flattened
-    address.gsub("\n", ', ').squish
+  def address_encoded
+    @address_encoded ||= ERB::Util.url_encode(address.gsub("\n", ', ').squish)
   end
 
   def phone

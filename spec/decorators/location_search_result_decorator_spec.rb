@@ -5,6 +5,11 @@ RSpec.describe LocationSearchResultDecorator do
 
   subject(:decorator) { described_class.new(search_result) }
 
-  specify { expect(decorator.address_flattened).to eq('Street, Town, Postcode') }
+  specify { expect(decorator.address_encoded).to eq('Street%2C%20Town%2C%20Postcode') }
   specify { expect(decorator.distance).to eq('1.05') }
+
+  context 'when address contains special characters' do
+    let(:address) { "Road & Street\nTown\nPostcode" }
+    specify { expect(decorator.address_encoded).to eq('Road%20%26%20Street%2C%20Town%2C%20Postcode') }
+  end
 end
