@@ -48,7 +48,10 @@
 
     getScripts() {
       return $.when(
-          $.getScript('<%= asset_path('accessible.media.player/core/javascript/jquery-ui.js') %>'),
+          $.getScript('<%= asset_path('jquery-ui/ui/core.js') %>'),
+          $.getScript('<%= asset_path('jquery-ui/ui/widget.js') %>'),
+          $.getScript('<%= asset_path('jquery-ui/ui/mouse.js') %>'),
+          $.getScript('<%= asset_path('jquery-ui/ui/slider.js') %>'),
           $.getScript('<%= asset_path('accessible.media.player/core/javascript/swfobject/swfobject.js') %>'),
           $.getScript('<%= asset_path('accessible.media.player/core/javascript/browser.js') %>'),
           $.getScript('<%= asset_path('accessible.media.player/core/javascript/jquery.player.js') %>'),
