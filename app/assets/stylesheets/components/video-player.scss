@@ -127,7 +127,7 @@
 }
 
 .player-container .control-bar .volume-controls .vol-down,.player-container .control-bar .volume-controls .vol-up {
-  position: absolute;
+  position: static;
   bottom: 0;
   height: 40px;
   width: 60px;
@@ -135,14 +135,15 @@
   font-size: 24px;
   line-height: 40px;
   text-align: center;
-  z-index: 10
+  z-index: 10;
 
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     height: 40px;
     width: 60px;
     z-index: 200;
+    bottom: 0;
   }
 
 }
@@ -154,13 +155,19 @@
 .player-container .control-bar .volume-controls .vol-down {
   text-align: left;
   padding-left: 10px;
-  left: 0
+
+  &:before {
+    left: 0;
+  }
 }
 
 .player-container .control-bar .volume-controls .vol-up {
   text-align: right;
   padding-right: 10px;
-  left: 60px
+
+  &:before {
+    left: 60px;
+  }
 }
 
 .player-container .control-bar .volume-controls .vol-display {

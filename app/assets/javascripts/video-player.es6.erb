@@ -8,8 +8,6 @@
 
     init() {
       this.getScripts().then(() => {
-//        google.load("jquery", "1.6.0");
-//        google.load("jqueryui", "1.8.13");
         this.enableYouTube();
       });
     }
@@ -27,12 +25,6 @@
         // Ensure that we extract the last part of the youtube link (the video id)
         // and pass it to the player() method
         var link = $(this).attr('href').split("=")[1];
-        // Initialise the player
-//        $holder.player({
-//          id:'yt'+i,
-//          media:link,
-//          captions:captionsf
-//        });
 
         var youTubeURL = (document.location.protocol + '//www.youtube.com/apiplayer?enablejsapi=1&version=3&playerapiid=');
 
