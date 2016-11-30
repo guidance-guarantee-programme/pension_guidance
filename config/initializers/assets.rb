@@ -42,4 +42,5 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   slot-picker.js
                                                   accessible.media.player/core/css/player-core.css
                                                   accessible.media.player/custom/css/player-theme.css
-                                                  video-player.js )
+                                                  video-player.js
+                                                  guider-image.jpg )
