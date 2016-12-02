@@ -1,3 +1,13 @@
+//= require jquery-ui/ui/core.js
+//= require jquery-ui/ui/widget.js
+//= require jquery-ui/ui/mouse.js
+//= require jquery-ui/ui/slider.js
+//= require accessible.media.player/core/javascript/swfobject/swfobject.js
+//= require accessible.media.player/core/javascript/browser.js
+//= require accessible.media.player/core/javascript/jquery.player.js
+//= require accessible.media.player/core/javascript/youtube_player.js
+//= require accessible.media.player/core/javascript/mediaplayer_decorator.js
+
 (function() {
   'use strict';
 
@@ -7,9 +17,7 @@
     }
 
     init() {
-      this.getScripts().then(() => {
-        this.enableYouTube();
-      });
+      this.enableYouTube();
     }
 
     enableYouTube() {
@@ -36,23 +44,6 @@
           flashHeight: '252px'
         });
       });
-    }
-
-    getScripts() {
-      return $.when(
-          $.getScript('<%= asset_path('jquery-ui/ui/core.js') %>'),
-          $.getScript('<%= asset_path('jquery-ui/ui/widget.js') %>'),
-          $.getScript('<%= asset_path('jquery-ui/ui/mouse.js') %>'),
-          $.getScript('<%= asset_path('jquery-ui/ui/slider.js') %>'),
-          $.getScript('<%= asset_path('accessible.media.player/core/javascript/swfobject/swfobject.js') %>'),
-          $.getScript('<%= asset_path('accessible.media.player/core/javascript/browser.js') %>'),
-          $.getScript('<%= asset_path('accessible.media.player/core/javascript/jquery.player.js') %>'),
-          $.getScript('<%= asset_path('accessible.media.player/core/javascript/youtube_player.js') %>'),
-          $.getScript('<%= asset_path('accessible.media.player/core/javascript/mediaplayer_decorator.js') %>'),
-          $.Deferred((deferred) => {
-            $(deferred.resolve);
-          })
-      );
     }
   }
 
