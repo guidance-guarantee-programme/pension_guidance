@@ -1,5 +1,5 @@
 module Pages
-  class BookingConfirmation < SitePrism::Page
+  class BookingConfirmation < Page
     set_url '/locations/{id}/booking-request/completed'
   end
 end

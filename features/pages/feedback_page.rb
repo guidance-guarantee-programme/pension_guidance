@@ -1,7 +1,7 @@
 require_relative '../sections/feedback'
 
 module Pages
-  class Feedback < SitePrism::Page
+  class Feedback < Page
     set_url '/feedback/new'
 
     section :feedback, Sections::Feedback, '.t-feedback'

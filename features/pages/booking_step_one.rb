@@ -1,7 +1,7 @@
 require_relative '../sections/feedback'
 
 module Pages
-  class BookingStepOne < SitePrism::Page
+  class BookingStepOne < Page
     set_url '/locations/{id}/booking-request/step-one'
 
     element :location_name, '.t-location-name'

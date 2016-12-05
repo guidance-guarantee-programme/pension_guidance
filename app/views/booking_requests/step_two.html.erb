@@ -142,42 +142,44 @@
             <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence %></span>
           <% end %>
 
-          <%= f.label :dc_pot, value: 'yes', class: 'block-label' do %>
-              <%= f.radio_button :dc_pot, 'yes',
-                                 class: 't-dc-pot-1' %>
+          <%= f.label :dc_pot, value: 'yes', class: 'block-label t-dc-pot-1' do %>
+              <%= f.radio_button :dc_pot, 'yes' %>
               Yes
           <% end %>
 
-          <%= f.label :dc_pot, value: 'no', class: 'block-label' do %>
-              <%= f.radio_button :dc_pot, 'no',
-                                 class: 't-dc-pot-2' %>
+          <%= f.label :dc_pot, value: 'no', class: 'block-label t-dc-pot-2' do %>
+              <%= f.radio_button :dc_pot, 'no' %>
               No
           <% end %>
 
-          <%= f.label :dc_pot, value: 'not-sure', class: 'block-label' do %>
-            <%= f.radio_button :dc_pot, 'not-sure',
-                                 class: 't-dc-pot-3' %>
+          <%= f.label :dc_pot, value: 'not-sure', class: 'block-label t-dc-pot-3' do %>
+            <%= f.radio_button :dc_pot, 'not-sure' %>
             Not sure
           <% end %>
         </fieldset>
       </div>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:accessibility_requirements) %>">
-        <%= f.label :accessibility_requirements do %>
+        <%= f.label :accessibility_requirements, class: 'block-label t-accessibility-requirements' do %>
           <% if @booking_request.errors.include?(:accessibility_requirements) %>
             <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence %></span>
           <% end %>
-          <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %> I have accessibility needs, eg wheelchair access
+          <%= f.check_box :accessibility_requirements %> I have accessibility needs, eg wheelchair access
         <% end %>
       </div>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:opt_in) %>">
-        <%= f.label :opt_in do %>
-          <% if @booking_request.errors.include?(:opt_in) %>
-            <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence %></span>
+        <fieldset>
+          <legend>
+            Terms and conditions
+            <% if @booking_request.errors.include?(:opt_in) %>
+              <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence %></span>
+            <% end %>
+          </legend>
+          <%= f.label :opt_in, class: 'block-label selection-button-checkbox t-opt-in' do %>
+            <%= f.check_box :opt_in %> I accept the <a href="/privacy" target="_blank">terms and conditions</a>
           <% end %>
-          <%= f.check_box :opt_in, class: 't-opt-in' %> I accept the <a href="/privacy" target="_blank">terms and conditions</a>
-        <% end %>
+        </fieldset>
       </div>
 
       <div class="form-group">

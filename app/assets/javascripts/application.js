@@ -1,4 +1,6 @@
 //= require jquery/dist/jquery.min.js
+//= require govuk_toolkit
+//= require checkbox-radio-init.js
 //= require click-tracker.js
 //= require mobile-nav-toggler.js
 //= require calculators.js
