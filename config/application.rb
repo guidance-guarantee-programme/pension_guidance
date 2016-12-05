@@ -23,5 +23,9 @@ module PensionGuidance
     config.middleware.use BounceBrowserconfig
 
     config.mount_javascript_test_routes = false
+
+    config.action_view.field_error_proc = proc { |html_tag, _|
+      html_tag
+    }
   end
 end
