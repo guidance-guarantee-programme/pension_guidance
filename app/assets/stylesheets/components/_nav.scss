@@ -163,25 +163,28 @@
   }
 
 
-  .nav__mobile-link:link,
-  .nav__mobile-link:visited {
+  .nav__mobile-toggler {
+    background: none;
+    border: 0;
+    color: $navigation-mobile-nav;
+    cursor: pointer;
     font-size: 24px;
     font-weight: 700;
+    line-height: 1.25em;
+    padding: 0 0 0 1.25em;
     position: relative;
-    padding-left: 1.25em;
-    color: $navigation-mobile-nav;
     text-decoration: none;
 
     &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: .25em;
-      width: 1em;
-      height: .15em;
       background: $navigation-mobile-nav;
       box-shadow: 0 .25em 0 0 $navigation-mobile-nav,
                   0 .5em 0 0 $navigation-mobile-nav;
+      content: "";
+      height: .15em;
+      left: 0;
+      position: absolute;
+      top: .22em;
+      width: 1em;
     }
   }
 }
