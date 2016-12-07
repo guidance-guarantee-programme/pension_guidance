@@ -1,3 +1,4 @@
+<% content_for(:page_title, t('service.title', page_title: 'How to view your appointment summary')) %>
 <% content_for(:meta_description, 'Choose the information you want in the summary of your Pension Wise appointment') %>
 
 <%= form_for @appointment_summary, url: appointment_summaries_path, html: { class: 't-appointment-summary-generator' } do |f| %>
