@@ -1,9 +1,9 @@
 <div class="nav">
   <div class="nav__mobile">
-    <a href="#" class="nav__mobile-link js-nav-toggler">Menu</a>
+    <button class="nav__mobile-toggler js-nav-toggler" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
   </div>
 
-  <ul class="nav__list js-nav">
+  <ul class="nav__list js-nav" id="mobile-menu" aria-hidden="true">
     <%= navigation_topics(navigation.topics) %>
   </ul>
 </div>
