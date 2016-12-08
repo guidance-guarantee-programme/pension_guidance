@@ -1,25 +1,26 @@
 <%
   form = local_assigns[:form]
-  errors = form&.errors
+  messages = form&.errors&.messages
+  errors = form&.errors || {}
 %>
 
 <h2 id="calculator">Estimate how much your guaranteed income could be</h2>
 
-<%= render 'calculators/error_summary', messages: errors&.messages if form&.invalid? %>
+<%= render 'calculators/error_summary', messages: messages if form&.invalid? %>
 
 <form action="/guaranteed-income/estimate#form" method="get">
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
              label: 'How much is in your pot?',
-             error_messages: errors&.get(:pot) %>
+             error_messages: errors[:pot] %>
 
   <%= render 'calculators/form_input_number',
              field: :age,
              css_classes: 'js-scroll-target',
              value: form&.age,
              label: 'What age do you want to take your money?',
-             error_messages: errors&.get(:age) %>
+             error_messages: errors[:age] %>
 
   <%= render 'calculators/form_input_submit' %>
 </form>
