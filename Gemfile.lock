@@ -206,8 +206,6 @@ GEM
       pry (~> 0.10)
     puma (3.6.2)
     rack (2.0.1)
-    rack-contrib (1.2.0)
-      rack (>= 0.9.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.1)
@@ -390,7 +388,6 @@ DEPENDENCIES
   princely
   pry-byebug
   puma
-  rack-contrib
   rails (~> 5.0.1)
   rails-controller-testing
   rails_12factor
