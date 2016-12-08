@@ -24,7 +24,9 @@ gem 'newrelic_rpm'
 gem 'nokogiri'
 gem 'output-templates', '~> 4.4.3', github: 'guidance-guarantee-programme/output-templates'
 gem 'phoner'
-gem 'princely'
+# Switch back to the original after this is merged:
+# https://github.com/mbleigh/princely/pull/53
+gem 'princely', github: 'guidance-guarantee-programme/princely', branch: 'remove-alias-method-chain'
 gem 'postcodes_io'
 gem 'puma'
 gem 'rails', '~> 5.0.1'
