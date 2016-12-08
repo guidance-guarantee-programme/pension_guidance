@@ -18,6 +18,7 @@ RSpec.describe 'Styleguide', type: :request do
       File.basename(f, '.html.erb')
     end
 
+    components.reject! { |f| f =~ /index$/ }
     components.each do |component|
       route = "/styleguide/#{component}"
 

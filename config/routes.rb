@@ -59,7 +59,11 @@ Rails.application.routes.draw do
         get 'locations-show-call-centre', action: 'pages_locations_show_call_centre'
       end
 
-      get '(/:action)'
+      get '/', action: :index
+
+      %w(base govspeak components govuk_elements layout).each do |action|
+        get action, action: action
+      end
     end
   end
 
