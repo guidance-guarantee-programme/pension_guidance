@@ -1,7 +1,7 @@
 cacheable_content = {
   'locations home' => '/locations',
-  'valid location search' => ['/locations', { postcode: 'SW1A%202HQ' }],
-  'invalid location search' => ['/locations', { postcode: 'london' }],
+  'valid location search' => ['/locations', params: { postcode: 'SW1A%202HQ' }],
+  'invalid location search' => ['/locations', params: { postcode: 'london' }],
   location: '/locations/london',
   guide: '/pension-types',
   category: '/browse/tax-and-getting-advice',

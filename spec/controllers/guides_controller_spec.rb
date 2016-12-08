@@ -14,7 +14,7 @@ RSpec.describe GuidesController, type: :controller do
       before do
         allow_any_instance_of(GuideRepository).to receive(:find).and_return(guide)
 
-        get :show, id: 'your-pension-pot-value'
+        get :show, params: { id: 'your-pension-pot-value' }
       end
 
       specify { expect(response).to be_success }
@@ -23,7 +23,7 @@ RSpec.describe GuidesController, type: :controller do
 
     context 'non-existent guide' do
       it 'should raise exception' do
-        expect { get :show, id: 'non-existent-guide' }.to raise_exception(GuideRepository::GuideNotFound)
+        expect { get :show, params: { id: 'non-existent-guide' } }.to raise_exception(GuideRepository::GuideNotFound)
       end
     end
   end

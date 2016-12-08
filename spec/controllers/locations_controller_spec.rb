@@ -11,7 +11,7 @@ RSpec.describe LocationsController, type: :controller do
     end
 
     specify 'with an empty postcode' do
-      get :index, postcode: ' '
+      get :index, params: { postcode: ' ' }
 
       expect(response).to render_template(:search)
     end
@@ -19,7 +19,7 @@ RSpec.describe LocationsController, type: :controller do
     specify 'with an invalid postcode' do
       allow(Locations).to receive(:nearest_to_postcode).and_raise(Geocoder::InvalidPostcode)
 
-      get :index, postcode: 'LONDON'
+      get :index, params: { postcode: 'LONDON' }
 
       expect(response).to render_template(:invalid_postcode)
     end
@@ -27,13 +27,13 @@ RSpec.describe LocationsController, type: :controller do
     specify 'with a failed postcode lookup' do
       allow(Locations).to receive(:nearest_to_postcode).and_raise(Geocoder::FailedLookup)
 
-      get :index, postcode: 'BT7 3AP'
+      get :index, params: { postcode: 'BT7 3AP' }
 
       expect(response).to render_template(:failed_lookup)
     end
 
     specify 'with a postcode' do
-      get :index, postcode: 'BT7 3AP'
+      get :index, params: { postcode: 'BT7 3AP' }
 
       expect(response).to render_template(:index)
     end
@@ -50,11 +50,11 @@ RSpec.describe LocationsController, type: :controller do
     end
 
     specify 'with an invalid id' do
-      expect { get :show, id: invalid_id }.to raise_error(ActionController::RoutingError)
+      expect { get :show, params: { id: invalid_id } }.to raise_error(ActionController::RoutingError)
     end
 
     specify 'with a valid id' do
-      get :show, id: valid_id
+      get :show, params: { id: valid_id }
 
       expect(response).to be_ok
     end
