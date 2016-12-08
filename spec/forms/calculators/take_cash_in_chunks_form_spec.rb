@@ -1,4 +1,4 @@
-RSpec.describe Calculators::TakeCashInChunksForm do
+RSpec.describe Calculators::TakeCashInChunksForm, type: :model do
   subject(:form) { described_class.new(params) }
 
   let(:pot) { 75_000 }

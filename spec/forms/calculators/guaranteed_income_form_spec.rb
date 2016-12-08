@@ -1,4 +1,4 @@
-RSpec.describe Calculators::GuaranteedIncomeForm do
+RSpec.describe Calculators::GuaranteedIncomeForm, type: :model do
   subject(:form) { described_class.new(params) }
 
   let(:pot) { 100_000 }

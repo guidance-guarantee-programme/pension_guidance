@@ -45,6 +45,7 @@ group :development, :test do
   gem 'jasmine-rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do
@@ -59,7 +60,6 @@ group :test do
   gem 'poltergeist'
   gem 'phantomjs-binaries'
   gem 'scss-lint', '~> 0.30'
-  gem 'shoulda-matchers'
   gem 'site_prism'
   gem 'timecop'
   gem 'vcr'

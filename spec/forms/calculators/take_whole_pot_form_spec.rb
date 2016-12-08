@@ -1,4 +1,4 @@
-RSpec.describe Calculators::TakeWholePotForm do
+RSpec.describe Calculators::TakeWholePotForm, type: :model do
   subject(:form) { described_class.new(params) }
 
   let(:pot) { 100_000 }

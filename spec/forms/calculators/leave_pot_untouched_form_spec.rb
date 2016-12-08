@@ -1,4 +1,4 @@
-RSpec.describe Calculators::LeavePotUntouchedForm do
+RSpec.describe Calculators::LeavePotUntouchedForm, type: :model do
   subject(:form) { described_class.new(params) }
 
   let(:pot) { 1_000 }
