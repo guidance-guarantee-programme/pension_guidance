@@ -7,7 +7,7 @@ require 'capybara/poltergeist'
 require 'vcr'
 
 Capybara.javascript_driver = :poltergeist
-Capybara.default_wait_time = 20
+Capybara.default_max_wait_time = 20
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
