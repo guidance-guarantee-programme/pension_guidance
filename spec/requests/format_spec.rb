@@ -14,12 +14,4 @@ RSpec.describe 'Accepted format', type: :request do
       expect(response.status).to eq(200)
     end
   end
-
-  context 'requesting a ZIP formatted resource' do
-    it 'returns a 404 response status' do
-      get '/pension-types.zip'
-
-      expect(response.status).to eq(404)
-    end
-  end
 end
