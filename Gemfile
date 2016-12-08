@@ -66,6 +66,7 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'wraith'
+  gem 'rails-controller-testing'
 end
 
 group :staging, :production do
