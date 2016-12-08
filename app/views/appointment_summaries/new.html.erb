@@ -72,6 +72,12 @@
                       class: 't-supplementary-defined-benefit-pensions' %>
       Final salary or career average pensions
     <% end %>
+
+    <%= f.label :supplementary_pension_transfers, class: 'block-label' do %>
+      <%= f.check_box :supplementary_pension_transfers,
+        class: 't-supplementary-pension-transfers' %>
+      Transfer of pension pot
+    <% end %>
   </fieldset>
 
   <div class="form-group">

@@ -10,6 +10,7 @@ module Pages
       element :supplementary_debt, '.t-supplementary-debt'
       element :supplementary_ill_health, '.t-supplementary-ill-health'
       element :supplementary_defined_benefit_pensions, '.t-supplementary-defined-benefit-pensions'
+      element :supplementary_pension_transfers, '.t-supplementary-pension-transfers'
 
       element :submit_button, '.t-appointment-summary-submit'
     end
