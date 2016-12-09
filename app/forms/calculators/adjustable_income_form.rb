@@ -12,7 +12,7 @@ module Calculators
     validates :age, numericality: { allow_blank: true, greater_than_or_equal_to: 55 }
     validates :desired_monthly_income,
               numericality: { allow_blank: true, greater_than: 0,
-                              less_than: -> (form) { form.errors.include?(:pot) ? Float::INFINITY : form.pot.to_f } }
+                              less_than: ->(form) { form.errors.include?(:pot) ? Float::INFINITY : form.pot.to_f } }
 
     def pot=(pot)
       @pot = String(pot).delete(',').squish
@@ -31,13 +31,13 @@ module Calculators
     end
 
     def estimate
-      if valid?
-        AdjustableIncomeCalculator.new(
-          pot: pot.to_f,
-          age: age.to_f,
-          desired_income: desired_income.to_f
-        ).estimate
-      end
+      return unless valid?
+
+      AdjustableIncomeCalculator.new(
+        pot: pot.to_f,
+        age: age.to_f,
+        desired_income: desired_income.to_f
+      ).estimate
     end
   end
 end

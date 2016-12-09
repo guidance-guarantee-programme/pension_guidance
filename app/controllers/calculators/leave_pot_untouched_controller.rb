@@ -3,9 +3,10 @@ module Calculators
     def show
       @form = LeavePotUntouchedForm.new(form_params)
 
+      return unless request.xhr?
       render partial: 'calculators/leave_pot_untouched/calculator',
              locals: { form: @form },
-             status: (@form.invalid? ? :bad_request : :ok) if request.xhr?
+             status: (@form.invalid? ? :bad_request : :ok)
     end
 
     private

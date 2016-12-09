@@ -3,9 +3,10 @@ module Calculators
     def show
       @form = TakeWholePotForm.new(form_params)
 
+      return unless request.xhr?
       render partial: 'calculators/take_whole_pot/calculator',
              locals: { form: @form },
-             status: (@form.invalid? ? :bad_request : :ok) if request.xhr?
+             status: (@form.invalid? ? :bad_request : :ok)
     end
 
     private

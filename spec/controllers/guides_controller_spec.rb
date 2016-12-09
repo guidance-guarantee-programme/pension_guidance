@@ -1,7 +1,9 @@
 RSpec.describe GuidesController, type: :controller do
   describe 'GET show' do
     before do
-      routes.draw { get '/:id', to: 'guides#show' }
+      routes.draw do
+        get '/:id', to: 'guides#show' # rubocop:disable Rails/HttpPositionalArguments
+      end
     end
 
     after do

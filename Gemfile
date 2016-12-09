@@ -24,10 +24,9 @@ gem 'newrelic_rpm'
 gem 'nokogiri'
 gem 'output-templates', '~> 4.4.3', github: 'guidance-guarantee-programme/output-templates'
 gem 'phoner'
-# Switch back to the original after this is merged:
+gem 'postcodes_io'
 # https://github.com/mbleigh/princely/pull/53
 gem 'princely', github: 'guidance-guarantee-programme/princely', branch: 'remove-alias-method-chain'
-gem 'postcodes_io'
 gem 'puma'
 gem 'rails', '~> 5.0.1'
 gem 'redis'
@@ -59,15 +58,15 @@ group :test do
   gem 'fakeredis'
   gem 'launchy'
   gem 'pdf-inspector', require: 'pdf/inspector'
-  gem 'poltergeist'
   gem 'phantomjs-binaries'
+  gem 'poltergeist'
+  gem 'rails-controller-testing'
   gem 'scss-lint', '~> 0.30'
   gem 'site_prism'
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'
   gem 'wraith'
-  gem 'rails-controller-testing'
 end
 
 group :staging, :production do

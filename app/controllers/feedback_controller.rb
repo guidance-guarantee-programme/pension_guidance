@@ -7,12 +7,11 @@ class FeedbackController < ApplicationController
 
     create_ticket if @booking_feedback.valid?
 
-    if request.xhr?
-      status = @booking_feedback.invalid? ? :bad_request : :ok
+    return unless request.xhr?
+    status = @booking_feedback.invalid? ? :bad_request : :ok
 
-      render partial: 'feedback/result',
-             status: status
-    end
+    render partial: 'feedback/result',
+           status: status
   end
 
   private

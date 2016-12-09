@@ -19,7 +19,7 @@ module Calculators
     validates :chunk,
               presence: true,
               numericality: { allow_blank: true, greater_than: 0,
-                              less_than: -> (form) { form.errors.include?(:pot) ? Float::INFINITY : form.pot.to_f } }
+                              less_than: ->(form) { form.errors.include?(:pot) ? Float::INFINITY : form.pot.to_f } }
 
     def pot=(pot)
       @pot = String(pot).delete(',').squish
