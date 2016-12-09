@@ -1,0 +1,30 @@
+.question-form {
+  .question-form--option {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .question-form--label {
+    display: inline-block;
+    background: $question-form-label;
+    border: 1px solid $question-form-label;
+    padding: 18px 30px 15px 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      border-color: $question-form-label-hover;
+    }
+  }
+
+  .question-form--input {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    cursor: pointer;
+  }
+}

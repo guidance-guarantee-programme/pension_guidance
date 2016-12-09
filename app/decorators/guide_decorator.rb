@@ -1,21 +1,4 @@
-class GuideDecorator
-  delegate(
-    :id,
-    :slug,
-    :concise_label,
-    :description,
-    :option?,
-    :related_to_journey?,
-    :related_to_appointments?,
-    :related_to_booking?,
-    :==,
-    to: :guide
-  )
-
-  def initialize(guide)
-    @guide = guide
-  end
-
+class GuideDecorator < SimpleDelegator
   def url
     "/#{slug}"
   end
@@ -25,7 +8,7 @@ class GuideDecorator
   end
 
   def label
-    guide.label.presence || title
+    super.presence || title
   end
 
   def content
@@ -51,7 +34,9 @@ class GuideDecorator
 
   private
 
-  attr_reader :guide
+  def guide
+    __getobj__
+  end
 
   def content_document
     @content_document ||= Nokogiri::HTML(content)
