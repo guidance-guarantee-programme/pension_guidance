@@ -6,7 +6,7 @@ $(document).ready(function() {
       return false;
     });
 
-  var videos = $('.youtube-video--video');
+  var videos = $('.youtube-video__video');
 
   if(videos.length > 0) {
     var tag = document.createElement('script');

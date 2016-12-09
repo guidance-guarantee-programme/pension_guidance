@@ -6,6 +6,7 @@
 //= require calculators.js
 //= require feedback.js
 //= require disable-button.js
+//= require scroll-to.js
 
 //= require components/BaseComponent
 //= require components/Slider

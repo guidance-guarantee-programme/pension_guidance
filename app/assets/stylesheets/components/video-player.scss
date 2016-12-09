@@ -9,25 +9,26 @@ $progress-bar-background: #bfc1c3;
 .player-container {
   display: block;
   overflow: hidden;
-  margin: 30px 0;
 
   &.player-wide {
     min-width: 580px;
   }
 
-  span {
-    display: block;
-    margin: 0 !important;
-    padding: 0;
-  }
-
   .video {
+    display: block;
     position: relative;
-    z-index: 3000;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
   }
 
   .video iframe {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .logo {
@@ -35,6 +36,8 @@ $progress-bar-background: #bfc1c3;
   }
 
   .control-bar {
+    background: $color-white;
+    float: left;
     position: relative;
     width: 100%;
     height: 60px;
@@ -99,6 +102,7 @@ $progress-bar-background: #bfc1c3;
     }
 
     .volume-controls {
+      color: $color-black;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -109,6 +113,7 @@ $progress-bar-background: #bfc1c3;
       .mute {
         position: absolute;
         bottom: 0;
+        color: $color-black;
         left: 120px;
         height: 40px;
         width: 50px;
@@ -250,5 +255,13 @@ $progress-bar-background: #bfc1c3;
   .ui-helper-hidden-accessible {
     position: absolute;
     left: -5000%;
+  }
+}
+
+.youtube-video {
+  @include media(tablet) {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
   }
 }
