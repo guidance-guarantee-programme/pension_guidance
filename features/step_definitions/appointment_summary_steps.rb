@@ -78,6 +78,8 @@ Given(/^I want extra information about "([^"]*)"$/) do |topic|
     generator.supplementary_ill_health.set true
   when 'Final salary or career average pensions' then
     generator.supplementary_defined_benefit_pensions.set true
+  when 'Transfer pension pot'
+    generator.supplementary_pension_transfers.set true
   end
 end
 
@@ -91,6 +93,8 @@ Then(/^it should include extra information about "(.*?)"$/) do |topic|
                             'ill health'
                           when 'Final salary or career average pensions' then
                             'defined benefit pensions'
+                          when 'Transfer pension pot'
+                            'pension transfer'
                           end
 
   expect(@page.source).to include("<!-- section: #{supplementary_section} -->")

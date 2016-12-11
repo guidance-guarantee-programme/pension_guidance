@@ -16,8 +16,4 @@ class OutputDocument
   def pdf
     Princely.new.pdf_from_string(html)
   end
-
-  def supplementary_pension_transfers
-    false # placeholder until pension transfers is live
-  end
 end
