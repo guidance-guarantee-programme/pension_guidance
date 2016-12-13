@@ -261,8 +261,18 @@ $progress-bar-background: #bfc1c3;
 
 .youtube-video {
   @include media(tablet) {
-    float: left;
+    float: right;
     width: 50%;
-    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.youtube-video a {
+  font-size: .8em;
+
+  color: $color-white;
+
+  &:visited {
+    color: $color-white;
   }
 }

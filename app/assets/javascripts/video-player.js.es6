@@ -17,39 +17,68 @@
     }
 
     init() {
-      this.enableYouTube();
+      this.transcript = {};
+      this.transcript.$toggle = $('.js-video-transcript-toggle');
+      this.transcript.$content = $('.js-video-transcript');
+
+      this.convertLinksToPlayers();
+      this.enableTranscriptToggle();
     }
 
-    enableYouTube() {
-      var $yt_links = $("a[href*='http://www.youtube.com/watch'],a[href*='https://www.youtube.com/watch']");
-      // Create players for our youtube links
-      $.each($yt_links, function(i) {
-        var $holder = $('<span />');
-        $(this).replaceWith($holder);
-        // Find the captions file if it exists
-        var $mycaptions = $(this).siblings('.captions');
-        // Work out if we have captions or not
-        var captionsf = $($mycaptions).length > 0 ? $($mycaptions).attr('href') : null;
-        // Ensure that we extract the last part of the youtube link (the video id)
-        // and pass it to the player() method
-        var link = $(this).attr('href').split("=")[1];
+    convertLinksToPlayers() {
+      const $yt_links = $("a[href*='http://www.youtube.com/watch'],a[href*='https://www.youtube.com/watch']");
 
-        var youTubeURL = (document.location.protocol + '//www.youtube.com/apiplayer?enablejsapi=1&version=3&playerapiid=');
+      $.each($yt_links, (i, link) => {
+        let $holder = $('<span />');
+
+        $(link).replaceWith($holder);
+
+        const $mycaptions = $(this).siblings('.captions'),
+          captionsf = $($mycaptions).length > 0 ? $($mycaptions).attr('href') : null,
+          videoId = $(link).attr('href').split("=")[1],
+          youTubeURL = document.location.protocol + '//www.youtube.com/apiplayer?enablejsapi=1&version=3&playerapiid=';
 
         $holder.player({
-          id:'yt'+i,
-          media:link,
-          captions:captionsf,
+          id: 'yt' + i,
+          media: videoId,
+          captions: captionsf,
           url: youTubeURL,
           flashHeight: '252px'
         });
       });
     }
-  }
 
-  window.moj = window.moj || { Modules: {}, Helpers: {} };
+    enableTranscriptToggle() {
+      this.handleTranscriptToggle();
+      this.transcript.$toggle.removeClass('visually-hidden');
+      this.transcript.$toggle.on('click', this.handleTranscriptToggle.bind(this));
+    }
+
+    handleTranscriptToggle(e) {
+      if (e) {
+        e.preventDefault();
+      }
+
+      if (this.transcript.$content.is(':visible')) {
+        this.transcript.$content.attr('aria-hidden', true).hide();
+        this.transcriptToggleTextReplace('Hide', 'Show');
+      } else {
+        this.transcript.$content
+          .attr('aria-hidden', false)
+          .slideDown()
+          .focus();
+
+        this.transcriptToggleTextReplace('Show', 'Hide');
+      }
+    }
+
+    transcriptToggleTextReplace(from, to) {
+      this.transcript.$toggle.text(this.transcript.$toggle.text().replace(from, to));
+    }
+  }
 
   window.PWPG = window.PWPG || {};
   window.PWPG.VideoPlayer = VideoPlayer;
-  new VideoPlayer()
+
+  new VideoPlayer();
 })();

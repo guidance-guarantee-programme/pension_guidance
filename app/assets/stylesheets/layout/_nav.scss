@@ -106,7 +106,7 @@
   margin-top: 16px;
 
   @include media(tablet) {
-    width: 100%;
+    width: 90%;
     margin-top: 44px;
   }
 }
@@ -173,18 +173,12 @@
 
 .landing-image {
   @include media(tablet) {
-    float: right;
-    margin: 0 0 16px 16px;
+    float: left;
+    margin: 0 16px 16px 0;
     width: 45%;
   }
 
   @include media(desktop) {
     width: 35%;
-  }
-}
-
-.l-landing-promo__logo {
-  @include media(tablet) {
-    float: right;
   }
 }
