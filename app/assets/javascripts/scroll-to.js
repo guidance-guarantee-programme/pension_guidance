@@ -1,16 +1,18 @@
 $(function() {
-    $(document).on('click', '.js-scroll-to', function(e) {
-        var $target = $($(this).attr('href')),
-          offset = $target.offset();
+  'use strict';
 
-        if (offset) {
-          e.preventDefault();
-          $('html, body').animate({
-            'scrollTop': offset.top + 'px'
-          });
+  $(document).on('click', '.js-scroll-to', function(e) {
+      var $target = $($(this).attr('href')),
+        offset = $target.offset();
 
-          $target.attr('tabindex', -1);
-          $target.focus();
-        }
-    });
+      if (offset) {
+        e.preventDefault();
+        $('html, body').animate({
+          'scrollTop': offset.top + 'px'
+        });
+
+        $target.attr('tabindex', -1);
+        $target.focus();
+      }
+  });
 });

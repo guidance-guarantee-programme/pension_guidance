@@ -6,7 +6,6 @@ class HomeController < ApplicationController
   end
 
   def book_an_appointment
-
   end
 
   def footer?
@@ -19,7 +18,7 @@ class HomeController < ApplicationController
     case action_name
     when 'show'
       'home'
-    when "book_an_appointment"
+    when 'book_an_appointment'
       'landing'
     end
   end

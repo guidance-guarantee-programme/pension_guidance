@@ -17,18 +17,18 @@ $progress-bar-background: #bfc1c3;
   .video {
     display: block;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%; // 16:9
     padding-top: 25px;
     height: 0;
-  }
 
-  .video iframe {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    iframe {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .logo {
@@ -42,9 +42,7 @@ $progress-bar-background: #bfc1c3;
     width: 100%;
     height: 60px;
     border-bottom: 1px solid $control-bar-background;
-  }
 
-  .control-bar {
     button {
       background: transparent;
       border: none;
@@ -52,7 +50,8 @@ $progress-bar-background: #bfc1c3;
       cursor: pointer;
     }
 
-    a:focus, button:focus {
+    a:focus,
+    button:focus {
       background-color: $focus-background;
       outline: none;
     }
@@ -71,14 +70,15 @@ $progress-bar-background: #bfc1c3;
     }
 
     .player-controls .play {
-      background-image: url(https://assets.publishing.service.gov.uk/frontend/player-icon-play-5f23ea564bd748ccc9c6e524d5ffbeda9bf8a22d46a8a9c0a4ef8656b017203c.png);
+      background-image: url("https://assets.publishing.service.gov.uk/frontend/player-icon-play-5f23ea564bd748ccc9c6e524d5ffbeda9bf8a22d46a8a9c0a4ef8656b017203c.png");
     }
 
     .player-controls .pause {
-      background-image: url(https://assets.publishing.service.gov.uk/frontend/player-icon-pause-0b5610c829c02671ca50e892d91f0174edba49ee46b646552a8584f6eb6c9657.png);
+      background-image: url("https://assets.publishing.service.gov.uk/frontend/player-icon-pause-0b5610c829c02671ca50e892d91f0174edba49ee46b646552a8584f6eb6c9657.png");
     }
 
-    .player-controls .rewind, .player-controls .forward {
+    .player-controls .rewind,
+    .player-controls .forward {
       position: absolute;
       top: 0;
       z-index: 30;
@@ -92,13 +92,13 @@ $progress-bar-background: #bfc1c3;
 
     .player-controls .rewind {
       left: 0;
-      background-image: url(https://assets.publishing.service.gov.uk/frontend/player-icon-rewind-f6c25d30d21e8b1179a965bf0ccb7c8741bf89a2c084e3a5d1c9b9eb0e6ee729.png);
+      background-image: url("https://assets.publishing.service.gov.uk/frontend/player-icon-rewind-f6c25d30d21e8b1179a965bf0ccb7c8741bf89a2c084e3a5d1c9b9eb0e6ee729.png");
     }
 
     .player-controls .forward {
       left: 100%;
       margin-left: -40px;
-      background-image: url(https://assets.publishing.service.gov.uk/frontend/player-icon-forward-2b7a0f97a46fdd5cf8b530c404d550dfb49d7f06c61956fc01e7dcff832f9af6.png);
+      background-image: url("https://assets.publishing.service.gov.uk/frontend/player-icon-forward-2b7a0f97a46fdd5cf8b530c404d550dfb49d7f06c61956fc01e7dcff832f9af6.png");
     }
 
     .volume-controls {
@@ -127,7 +127,7 @@ $progress-bar-background: #bfc1c3;
         color: $muted-text;
 
         ~ * {
-          opacity: 0.333;
+          opacity: .333;
         }
 
         ~ .vol-display {
@@ -198,9 +198,10 @@ $progress-bar-background: #bfc1c3;
         line-height: 40px;
         background-repeat: no-repeat;
         background-position: center left;
-        background-image: url(https://assets.publishing.service.gov.uk/frontend/player-icon-volume-5e2b2e02188f3c1065656dae9e64d80fb21de5c2455751cb91d4814862394f17.png);
+        background-image: url("https://assets.publishing.service.gov.uk/frontend/player-icon-volume-5e2b2e02188f3c1065656dae9e64d80fb21de5c2455751cb91d4814862394f17.png");
       }
     }
+
     .current-time {
       position: absolute;
       bottom: 0;
