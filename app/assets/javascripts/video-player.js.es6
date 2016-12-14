@@ -19,6 +19,7 @@
     init() {
       this.transcript = {};
       this.transcript.$toggle = $('.js-video-transcript-toggle');
+      this.transcript.$copy = $('.js-video-transcript-copy');
       this.transcript.$content = $('.js-video-transcript');
 
       this.convertLinksToPlayers();
@@ -51,6 +52,7 @@
     enableTranscriptToggle() {
       this.handleTranscriptToggle();
       this.transcript.$toggle.removeClass('visually-hidden');
+      this.transcript.$content.html(this.transcript.$copy.text());
       this.transcript.$toggle.on('click', this.handleTranscriptToggle.bind(this));
     }
 
@@ -60,7 +62,7 @@
       }
 
       if (this.transcript.$content.is(':visible')) {
-        this.transcript.$content.attr('aria-hidden', true).hide();
+        this.transcript.$content.attr('aria-hidden', true).slideUp();
         this.transcriptToggleTextReplace('Hide', 'Show');
       } else {
         this.transcript.$content
