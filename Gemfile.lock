@@ -64,6 +64,7 @@ GEM
     bugsnag (2.8.8)
       multi_json (~> 1.0)
     builder (3.2.2)
+    byebug (9.0.6)
     canonical-rails (0.0.9)
       rails (>= 3.1, < 5.0)
     capybara (2.4.4)
@@ -73,7 +74,7 @@ GEM
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
     cliver (0.3.2)
-    coderay (1.1.0)
+    coderay (1.1.1)
     concurrent-ruby (1.0.2)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
@@ -187,12 +188,13 @@ GEM
       excon (~> 0.39)
     powerpack (0.1.1)
     princely (1.4.1)
-    pry (0.10.1)
+    pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-rails (0.3.4)
-      pry (>= 0.9.10)
+    pry-byebug (3.4.1)
+      byebug (~> 9.0)
+      pry (~> 0.10)
     puma (3.4.0)
     rack (1.6.5)
     rack-contrib (1.2.0)
@@ -374,7 +376,7 @@ DEPENDENCIES
   poltergeist
   postcodes_io
   princely
-  pry-rails
+  pry-byebug
   puma
   rack-contrib
   rails (= 4.2.7.1)
