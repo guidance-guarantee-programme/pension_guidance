@@ -44,7 +44,7 @@ gem 'zendesk_api'
 group :development, :test do
   gem 'jasmine-jquery-rails'
   gem 'jasmine-rails'
-  gem 'pry-rails'
+  gem 'pry-byebug'
   gem 'rspec-rails', '~> 3.0'
 end
 
