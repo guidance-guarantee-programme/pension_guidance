@@ -4,25 +4,11 @@ RSpec.describe Navigation do
   let(:foo_category) { instance_double(Category, id: double, slug: double, title: 'Foo category') }
   let(:bar_category) { instance_double(Category, id: double, slug: double, title: 'Bar category') }
 
-  let(:foo_guide) do
-    instance_double(Guide, content_type: :govspeak, id: 'foo', slug: 'foo', label: 'Foo', option?: double)
-  end
-
-  let(:bar_guide) do
-    instance_double(Guide, content_type: :govspeak, id: 'bar', slug: 'bar', label: 'Bar', option?: double)
-  end
-
-  let(:baz_guide) do
-    instance_double(Guide, content_type: :govspeak, id: 'baz', slug: 'baz', label: 'Baz', option?: double)
-  end
-
-  let(:qux_guide) do
-    instance_double(Guide, content_type: :govspeak, id: 'qux', slug: 'qux', label: 'Qux', option?: double)
-  end
-
-  let(:norf_guide) do
-    instance_double(Guide, content_type: :govspeak, id: 'norf', slug: 'norf', label: 'Norf', option?: double)
-  end
+  let(:foo_guide) { guide_for('foo') }
+  let(:bar_guide) { guide_for('bar') }
+  let(:baz_guide) { guide_for('baz') }
+  let(:qux_guide) { guide_for('qux') }
+  let(:norf_guide) { guide_for('norf') }
 
   let(:taxonomy) do
     Tree::TreeNode.new('home').tap do |root|
@@ -59,7 +45,7 @@ RSpec.describe Navigation do
 
       expect(items.first).to be_a(Navigation::Item)
       expect(items.first.id).to eq(foo_guide.id)
-      expect(items.first.label).to eq(foo_guide.label)
+      expect(items.first.label).to eq(foo_guide.metadata.label)
     end
 
     it 'groups guides within a topic' do
@@ -67,13 +53,13 @@ RSpec.describe Navigation do
       items = topic.items
 
       expect(items[0][0].id).to eq(bar_guide.id)
-      expect(items[0][0].label).to eq(bar_guide.label)
+      expect(items[0][0].label).to eq(bar_guide.metadata.label)
 
       expect(items[0][1].id).to eq(baz_guide.id)
-      expect(items[0][1].label).to eq(baz_guide.label)
+      expect(items[0][1].label).to eq(baz_guide.metadata.label)
 
       expect(items[1][0].id).to eq(qux_guide.id)
-      expect(items[1][0].label).to eq(qux_guide.label)
+      expect(items[1][0].label).to eq(qux_guide.metadata.label)
     end
 
     it 'groups orphaned guides into a more topic' do
@@ -84,7 +70,12 @@ RSpec.describe Navigation do
       expect(topic.label).to eq('More…')
 
       expect(guides.first.id).to eq(norf_guide.id)
-      expect(guides.first.label).to eq(norf_guide.label)
+      expect(guides.first.label).to eq(norf_guide.metadata.label)
     end
+  end
+
+  def guide_for(name)
+    metadata = { label: name.titlecase }
+    GuideDecorator.new(Guide.new(name, content_type: :govspeak, content: '', metadata: metadata))
   end
 end
