@@ -15,6 +15,7 @@ PWPG.clickTracker.init();
 PWPG.mobileNavToggler.init();
 PWPG.calculators.init();
 PWPG.feedback.init();
+PWPG.scrollTo.init();
 
 $('[data-slider]').each(function() {
   'use strict';
