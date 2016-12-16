@@ -22,9 +22,9 @@ class GuideRepository
   end
 
   def all
-    glob_dir('*').each_with_object([]) do |path, result|
-      id = File.basename(path, '.*')
-      result << read_guide(id, path)
+    glob_dir('*').map do |path|
+      id = path.match(%r{^#{dir}/(?<id>[^\.]*)\.(?<ext>.*)$})[:id]
+      read_guide(id, path)
     end
   end
 

@@ -59,7 +59,11 @@ RSpec.describe GuideRepository do
 
   describe '#all' do
     it 'returns an array of guides' do
-      expect(guide_repository.all.map(&:id)).to contain_exactly('the_test_html_guide', 'the_test_govspeak_guide')
+      expect(guide_repository.all.map(&:id)).to include(
+        'the_test_html_guide',
+        'the_test_govspeak_guide',
+        'nested/nested_guide'
+      )
     end
   end
 end
