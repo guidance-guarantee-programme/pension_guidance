@@ -52,7 +52,7 @@ GEM
       robotex (>= 1.0.0)
     arel (6.0.3)
     ast (2.3.0)
-    autoprefixer-rails (6.4.0.1)
+    autoprefixer-rails (6.5.4)
       execjs
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
