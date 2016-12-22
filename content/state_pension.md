@@ -6,7 +6,7 @@ description: The pension you get from the government is called the State Pension
 
 The pension you get from the government is called the State Pension. You get it when you reach [State Pension age](https://www.gov.uk/calculate-state-pension).
 
-^Pension Wise only provides guidance on [defined contribution](/pension-types) pensions – for help with the State Pension speak to The Pensions Advisory Service on 0300 123 1047^
+^Pension Wise only provides guidance on [defined contribution](/pension-types) pensions – [The Pension Service](https://www.gov.uk/contact-pension-service) helps with State Pension eligibility, claims and payments.^
 
 ## New State Pension
 
