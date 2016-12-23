@@ -64,7 +64,7 @@
 
   .l-home-row-callout__content {
     @include media(desktop) {
-      padding-top: 5%;
+      padding-top: 4%;
       padding-bottom: 5%;
     }
   }
@@ -142,7 +142,7 @@
   .l-home-row-callout__content {
     @include media(desktop) {
       background-image: image-url("campaigns/dogs/expectant.png");
-      background-position: 0% 300%;
+      background-position: 0% 31px;
       background-repeat: no-repeat;
       background-size: 49%;
     }
@@ -172,7 +172,7 @@
 .landing-image {
   @include media(tablet) {
     float: right;
-    margin: 0 16px 16px 0;
+    margin: 0 0 16px 32px;
     width: 45%;
   }
 
