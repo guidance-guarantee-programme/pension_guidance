@@ -1,0 +1,26 @@
+<form action="/questions" accept-charset="UTF-8" method="post">
+  <input name="question_id" type="hidden" value="<%= id %>">
+
+  <%= header %>
+
+  <div class="form-group">
+    <label for="response_yes" class="block-label">
+      <input type="radio" name="response" id="response_yes" value="yes">
+      Yes
+    </label>
+
+    <label for="response_no" class="block-label">
+      <input type="radio" name="response" id="response_no" value="no">
+      No
+    </label>
+
+    <label for="response_dont_know" class="block-label">
+      <input type="radio" name="response" id="response_dont_know" value="dont_know">
+      Don't know
+    </label>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="medium button">Next step</button>
+  </div>
+</form>

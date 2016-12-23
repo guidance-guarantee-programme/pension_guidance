@@ -27,8 +27,9 @@ class Taxonomy
 
   def your_pension_details
     category_node('your-pension-details').tap do |node|
-      node << guide_node('pension-types')
+      node << guide_node('pension-type-tool')
       node << guide_node('pension-pot-value')
+      node << guide_node('pension-types')
       node << guide_node('pension-statements')
       node << guide_node('state-pension')
     end
