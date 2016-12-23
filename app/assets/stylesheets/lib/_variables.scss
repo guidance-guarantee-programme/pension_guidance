@@ -25,6 +25,9 @@ $color-razmatazz: #e50050;
 $color-coffee-background-light: #607584;
 $color-coffee-background-dark: #738898;
 
+$color-dogs-background-light: #d62254;
+$color-dogs-background-dark: #b01a45;
+
 // semantic colours
 $color-text: $color-black;
 $color-input-border: $color-grey-silver-sand;
@@ -91,8 +94,8 @@ $fixed-panel-solid-background: $color-white;
 $fixed-panel-transparent-background: rgba(255, 255, 255, .9);
 
 // home
-$home-row-accent-background: $color-coffee-background-light;
-$home-row-callout-background: $color-coffee-background-light;
+$home-row-accent-background: $color-dogs-background-light;
+$home-row-callout-background: $color-dogs-background-light;
 
 //slot-picker
 $slot-picker-prompt: $color-black;

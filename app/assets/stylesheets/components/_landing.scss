@@ -1,12 +1,14 @@
 .l-page-landing-nav {
   overflow: hidden;
+  background: $color-grey-rolling-stone;
+  color: $color-white;
 }
 
 .landing-nav {
   margin-bottom: 0;
 
   @include media(tablet) {
-    float: right;
+    // float: right;
   }
 }
 
@@ -45,10 +47,26 @@
 
 .landing-page {
   background: $grey-3;
+  margin-bottom: 24px;
+
+  #global-header-bar {
+    display: none;
+  }
 
   .l-masthead {
-    background: $govuk-blue;
-    color: $color-white;
+    display: none;
+  }
+
+  .youtube-video a:link,
+  .youtube-video a:visited {
+    color: $color-black;
+  }
+
+  .l-home-row-callout__content {
+    @include media(desktop) {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
   }
 }
 
@@ -57,21 +75,29 @@
   margin-top: 16px;
 
   @include media(tablet) {
-    width: 90%;
-    margin-top: 44px;
+    width: 120%;
+    margin-top: 32px;
   }
 }
 
-.landing-promo {
+.l-landing-promo {
   color: $color-white;
-  padding: 16px 0;
+  padding: 0;
   background-color: $home-row-accent-background;
-  background-image: linear-gradient(to bottom, $color-coffee-background-dark 0%, $color-coffee-background-light 100%);
+  background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
   overflow: hidden;
 
   @include media(tablet) {
-    padding: 28px 0 0;
+    margin-bottom: 28px;
   }
+}
+
+.l-landing-promo__content {
+  background-image: image-url("campaigns/dogs/banner.png");
+  background-position: 92% 55%;
+  background-repeat: no-repeat;
+  background-size: 43%;
+  padding: 19px 0;
 }
 
 .landing-heading {
@@ -102,6 +128,27 @@
   padding-bottom: 14px;
 }
 
+.l-landing-row--flat {
+  padding-top: 0;
+  padding-bottom: 0;
+  // margin-top: 28px;
+}
+
+.l-landing-row--flip {
+  background-image: linear-gradient(to bottom, $color-dogs-background-light 0%, $color-dogs-background-dark 100%);
+}
+
+.l-landing-row--dog {
+  .l-home-row-callout__content {
+    @include media(desktop) {
+      background-image: image-url("campaigns/dogs/expectant.png");
+      background-position: 0% 300%;
+      background-repeat: no-repeat;
+      background-size: 49%;
+    }
+  }
+}
+
 .l-landing {
   overflow: hidden;
   padding-bottom: 0;
@@ -124,7 +171,7 @@
 
 .landing-image {
   @include media(tablet) {
-    float: left;
+    float: right;
     margin: 0 16px 16px 0;
     width: 45%;
   }

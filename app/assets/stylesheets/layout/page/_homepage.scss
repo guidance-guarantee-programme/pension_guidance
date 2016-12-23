@@ -88,7 +88,7 @@
 .l-home-row--callout {
   @extend %outdent-to-full-width;
   background: $home-row-callout-background;
-  background-image: linear-gradient(to bottom, $color-coffee-background-dark 0%, $color-coffee-background-light 100%);
+  background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
   padding: 0;
 }
 
@@ -96,10 +96,10 @@
   color: $color-white;
 
   @include media(desktop) {
-    background-image: image-url("home/coffee_poster.png");
-    background-position: center right;
+    background-image: image-url("campaigns/dogs/poster.png");
+    background-position: 111% 76%;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 73%;
     padding-top: 6%;
     padding-bottom: 6%;
 
