@@ -1,16 +1,11 @@
 <%= render layout: 'layouts/base' do %>
   <div class="l-masthead">
     <div class="l-banner-container">
-      <%= render 'components/logo_link' %>
-      <% if content_for?(:page_nav) %>
-        <%= content_for(:page_nav) %>
-      <% else %>
-        <%= render 'components/page_nav' %>
-      <% end %>
+      <%= content_for(:page_nav) %>
     </div>
   </div>
 
-  <div class="l-home">
+  <div class="l-landing">
     <main role="main" id="content" tabindex="-1">
       <%= yield %>
     </main>

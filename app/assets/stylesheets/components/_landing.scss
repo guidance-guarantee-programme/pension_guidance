@@ -1,0 +1,182 @@
+.l-page-landing-nav {
+  overflow: hidden;
+  background: $color-grey-rolling-stone;
+  color: $color-white;
+}
+
+.landing-nav {
+  margin-bottom: 0;
+
+  @include media(tablet) {
+    // float: right;
+  }
+}
+
+.landing-nav__item {
+  display: block;
+  list-style: none;
+  margin: .4em 0;
+
+  @include media(tablet) {
+    display: inline-block;
+    margin: .2em 0;
+
+    & + & {
+      &:before {
+        content: " | ";
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+.landing-nav__link:link {
+  color: $color-white;
+  text-decoration: none;
+}
+
+.landing-nav__link:hover,
+.landing-nav__link:visited {
+  color: $color-white;
+  text-decoration: underline;
+}
+
+.landing-nav__link:focus {
+  color: $color-black;
+}
+
+.landing-page {
+  background: $grey-3;
+  margin-bottom: 24px;
+
+  #global-header-bar {
+    display: none;
+  }
+
+  .l-masthead {
+    display: none;
+  }
+
+  .youtube-video a:link,
+  .youtube-video a:visited {
+    color: $color-black;
+  }
+
+  .l-home-row-callout__content {
+    @include media(desktop) {
+      padding-top: 4%;
+      padding-bottom: 5%;
+    }
+  }
+}
+
+.landing-logo {
+  width: 150px;
+  margin-top: 16px;
+
+  @include media(tablet) {
+    width: 120%;
+    margin-top: 32px;
+  }
+}
+
+.l-landing-promo {
+  color: $color-white;
+  padding: 0;
+  background-color: $home-row-accent-background;
+  background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
+  overflow: hidden;
+
+  @include media(tablet) {
+    margin-bottom: 28px;
+  }
+}
+
+.l-landing-promo__content {
+  background-image: image-url("campaigns/dogs/banner.png");
+  background-position: 90% 0%;
+  background-repeat: no-repeat;
+  background-size: 53%;
+  padding: 19px 0;
+}
+
+.landing-heading {
+  margin-top: 8px;
+  margin-bottom: 10px;
+
+  @include media(tablet) {
+    margin-top: 32px;
+  }
+
+  @include media(desktop) {
+    margin-top: 45px;
+  }
+}
+
+.landing-subheading {
+  @include bold-36();
+  margin-top: 16px;
+  margin-bottom: .8em;
+
+  @include media(tablet) {
+    margin-top: 0;
+  }
+}
+
+.l-landing-row {
+  padding-top: 28px;
+  padding-bottom: 14px;
+}
+
+.l-landing-row--flat {
+  padding-top: 0;
+  padding-bottom: 0;
+  // margin-top: 28px;
+}
+
+.l-landing-row--flip {
+  background-image: linear-gradient(to bottom, $color-dogs-background-light 0%, $color-dogs-background-dark 100%);
+}
+
+.l-landing-row--dog {
+  .l-home-row-callout__content {
+    @include media(desktop) {
+      background-image: image-url("campaigns/dogs/expectant.png");
+      background-position: 0% 31px;
+      background-repeat: no-repeat;
+      background-size: 49%;
+    }
+  }
+}
+
+.l-landing {
+  overflow: hidden;
+  padding-bottom: 0;
+
+  // scss-lint:disable IdSelector
+  // from: https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_layout.scss#L7
+  // Allow an ID here, this is useful as it matches the GOV.UK template skiplink
+  // scss-lint:disable IdSelector
+  #content {
+    max-width: none;
+    padding-bottom: 0;
+    margin: auto;
+  }
+}
+
+.l-landing-promo {
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-image {
+  @include media(tablet) {
+    float: right;
+    margin: 0 0 16px 32px;
+    width: 45%;
+  }
+
+  @include media(desktop) {
+    width: 35%;
+  }
+}
