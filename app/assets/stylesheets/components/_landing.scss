@@ -62,8 +62,19 @@
     color: $color-black;
   }
 
+  .l-home-row--callout {
+    background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
+  }
+
+  .l-landing-row--flip {
+    background-image: linear-gradient(to bottom, $color-dogs-background-light 0%, $color-dogs-background-dark 100%);
+  }
+
   .l-home-row-callout__content {
     @include media(desktop) {
+      background-image: image-url("campaigns/dogs/poster.png");
+      background-position: 111% 76%;
+      background-size: 73%;
       padding-top: 4%;
       padding-bottom: 5%;
     }
@@ -132,10 +143,6 @@
   padding-top: 0;
   padding-bottom: 0;
   // margin-top: 28px;
-}
-
-.l-landing-row--flip {
-  background-image: linear-gradient(to bottom, $color-dogs-background-light 0%, $color-dogs-background-dark 100%);
 }
 
 .l-landing-row--dog {
