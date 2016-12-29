@@ -111,6 +111,22 @@
   padding: 19px 0;
 }
 
+.landing-promo__call {
+  display: inline-block;
+  position: relative;
+  margin-top: .1em;
+  margin-left: -.3em;
+}
+
+.landing-promo__number {
+  display: inline-block;
+  top: .1em;
+  font-size: 130%;
+  font-weight: bold;
+  position: relative;
+  padding-left: .1em;
+}
+
 .landing-heading {
   margin-top: 8px;
   margin-bottom: 10px;
