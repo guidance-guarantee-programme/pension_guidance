@@ -10,6 +10,6 @@ tags:
 
 # Find out your pension type
 
-{::yes-no-dont-know-question id="pension_type_tool/question_1"}
+{::yes-no-dont-know-question id="pension-type-tool/question-1"}
 ## Was your pension set up by your employer?
 {:/yes-no-dont-know-question}

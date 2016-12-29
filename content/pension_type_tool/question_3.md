@@ -10,7 +10,7 @@ tags:
 
 # Find out your pension type
 
-{::yes-no-dont-know-question id="pension_type_tool/question_3"}
+{::yes-no-dont-know-question id="pension-type-tool/question-3"}
 ## Is your pension provider one of the following:
 
 {:.two-column-list}
