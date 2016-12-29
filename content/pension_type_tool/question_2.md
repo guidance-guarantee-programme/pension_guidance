@@ -10,7 +10,7 @@ tags:
 
 # Find out your pension type
 
-{::yes-no-dont-know-question id="pension_type_tool/question_2"}
+{::yes-no-dont-know-question id="pension-type-tool/question-2"}
 ## Did your pension come from working for one of the following:
 
 * a local council

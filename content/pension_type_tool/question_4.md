@@ -11,7 +11,7 @@ tags:
 
 # Find out your pension type
 
-{::pension-start-year-question id="pension_type_tool/question_4"}
+{::pension-start-year-question id="pension-type-tool/question-4"}
 ## When did you start this pension?
 
 {:/pension-start-year-question}
