@@ -25,6 +25,8 @@ Rails.application.routes.draw do
 
     post 'questions', to: 'questions#next'
 
+    get 'facebook-landing', to: 'marketing#facebook-landing'
+
     resources :locations, only: [:index, :show] do
       member do
         get '/booking-request/step-one',  to: 'booking_requests#step_one'
