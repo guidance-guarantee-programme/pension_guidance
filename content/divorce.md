@@ -4,28 +4,27 @@ description: How pensions are split when a couple divorces or ends their civil p
 
 #Divorce and pensions
 
-The way that a couple’s pension is dealt with when they divorce or have their civil partnership dissolved should be set out as part of a financial settlement.
+Your pension should be included in your financial settlement if you divorce or dissolve your civil partnership.
 
-Even when you and your spouse or civil partner agree on the settlement, it should be confirmed through a court order.
+Even when you agree on a settlement, it should be confirmed through a court order.
 
-If a couple isn’t married or in a civil partnership, their pensions can’t be shared if they split up.
+If you’re not married, or in a civil partnership, your pension can’t be shared if you separate.
 
-^Always get legal advice about your pension if you’re divorcing or dissolving your civil partnership. This is especially important if you’re remarrying and haven’t previously agreed how your former spouse or civil partner’s pension should be dealt with.^
-
+^Always get legal advice about your pension if you’re divorcing or dissolving your civil partnership. Particularly if you’re remarrying and haven’t previously agreed on a financial settlement.^
 
 ##How courts deal with pensions
 
-When a marriage or civil partnership ends, courts deal with the pension arrangements in one of three ways.
+When a marriage or civil partnership ends, courts deal with the pension arrangements in one of 3 ways.
 
-###1. You’re given a percentage share of your former spouse or civil partner’s pension pot(s)
+###1. You’re given a percentage share of your former partner’s pension pot
 
 This is known as [pension sharing](http://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/pension-sharing). The money that you get from the pension pot of your former spouse or civil partner is then legally treated as your money.
 
-###2. A pension’s value is offset against other assets
+###2. The value of a pension is offset against other assets
 
 This is known as [pension offsetting](http://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/pension-offsetting). For example: you keep your pension and your former spouse or civil partner keeps the home.
 
-###3. Once you take your pension money, some of it’s paid to your former spouse or civil partner
+###3. Some of your pension is paid to your former partner
 
 This is known as pension attachment or sometimes [pension earmarking](http://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/pension-earmarking). This is like a maintenance payment directly from one person’s pension pot to their former spouse or civil partner.
 
