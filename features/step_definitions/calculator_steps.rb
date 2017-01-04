@@ -116,5 +116,5 @@ Then(/^I should see how much my tax free lump sum could be$/) do
 end
 
 And(/^I should see how much my guaranteed income could be$/) do
-  expect(@page.calculator.income).to have_content('£2,900')
+  expect(@page.calculator.income).to have_content('£3,100')
 end
