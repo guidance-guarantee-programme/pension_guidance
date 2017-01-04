@@ -22,10 +22,10 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
-
-  # Configure cache control for static files: "public, s-maxage={ 1 year }, maxage={ 30 days }"
-  config.static_cache_control = 'public, s-maxage=31536000, maxage=2592000'
+  if ENV['RAILS_SERVE_STATIC_FILES'].present?
+    config.public_file_server.enabled = true
+    config.public_file_server.headers = { 'Cache-Control' => 'public, s-maxage=31536000, maxage=2592000' }
+  end
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
