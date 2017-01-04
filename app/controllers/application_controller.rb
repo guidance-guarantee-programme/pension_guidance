@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   include Breadcrumbs
 
-  protect_from_forgery
+  protect_from_forgery with: :exception
 
   helper_method :footer?
 
