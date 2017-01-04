@@ -8,7 +8,7 @@ RSpec.describe 'locations journey breadcrumbs', type: :controller do
     let(:guide) { '' }
 
     before do
-      get :show, id: guide
+      get :show, params: { id: guide }
     end
 
     context 'book a free appointment' do
@@ -42,7 +42,7 @@ RSpec.describe 'locations journey breadcrumbs', type: :controller do
 
     context 'appointment location details' do
       before do
-        get :show, id: location_id
+        get :show, params: { id: location_id }
       end
 
       it { is_expected.to eq([book_an_appointment, how_to_book]) }

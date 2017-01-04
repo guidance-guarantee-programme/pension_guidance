@@ -28,7 +28,7 @@ RSpec.describe 'POST /locations/:id/booking-request/complete', type: :request do
 
       expect(BookingRequests).to receive(:create).with(kind_of(BookingRequestForm))
 
-      post booking_request_complete_location_path(id: location_id), payload
+      post booking_request_complete_location_path(id: location_id), params: payload
     end
   end
 end

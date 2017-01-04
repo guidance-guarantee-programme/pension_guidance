@@ -28,7 +28,7 @@ RSpec.describe 'Breadcrumbs', type: :controller do
     let(:breadcrumbs) { [breadcrumb_1] }
 
     before do
-      get :index, breadcrumbs: breadcrumbs
+      get :index, params: { breadcrumbs: breadcrumbs }
     end
 
     specify { expect(controller.breadcrumbs).to eq(breadcrumbs) }
@@ -36,7 +36,7 @@ RSpec.describe 'Breadcrumbs', type: :controller do
 
   context 'setting multiple breadcrumbs' do
     before do
-      get :index, breadcrumbs: breadcrumbs
+      get :index, params: { breadcrumbs: breadcrumbs }
     end
 
     specify { expect(controller.breadcrumbs).to eq(breadcrumbs) }
@@ -44,7 +44,7 @@ RSpec.describe 'Breadcrumbs', type: :controller do
 
   context 'after a request which has set a breadcrumb' do
     before do
-      get :index, breadcrumbs: breadcrumbs
+      get :index, params: { breadcrumbs: breadcrumbs }
       get :index
     end
 

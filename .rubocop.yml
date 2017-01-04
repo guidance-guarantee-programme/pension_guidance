@@ -32,3 +32,6 @@ AmbiguousOperator:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false

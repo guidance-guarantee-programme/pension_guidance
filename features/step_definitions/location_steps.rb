@@ -79,6 +79,7 @@ When(/^I visit the bookmarked page$/) do
   page.driver.visit(@bookmark)
 end
 
+# rubocop:disable Metrics/BlockLength
 Then(/^I should see the following appointment location details:$/) do |table|
   location = Pages::Location.new
 
@@ -112,6 +113,7 @@ Then(/^I should see the following appointment location details:$/) do |table|
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
 
 Then(/^I should be able to get back to the search results$/) do
   location = Pages::Location.new

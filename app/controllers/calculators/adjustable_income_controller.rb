@@ -5,13 +5,12 @@ module Calculators
     def show
       @form = AdjustableIncomeForm.new(form_params)
 
-      if request.xhr?
-        status = @form.invalid? ? :bad_request : :ok
+      return unless request.xhr?
+      status = @form.invalid? ? :bad_request : :ok
 
-        render partial: 'calculators/adjustable_income/calculator',
-               locals: { form: @form },
-               status: status
-      end
+      render partial: 'calculators/adjustable_income/calculator',
+             locals: { form: @form },
+             status: status
     end
 
     private

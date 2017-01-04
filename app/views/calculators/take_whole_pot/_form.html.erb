@@ -1,11 +1,12 @@
 <%
-   form = local_assigns[:form]
-   errors = form&.errors
+  form = local_assigns[:form]
+  messages = form&.errors&.messages
+  errors = form&.errors || {}
 %>
 
 <h2 id="calculator">Estimate what you’d get after tax</h2>
 
-<%= render 'calculators/error_summary', messages: errors&.messages if form&.invalid? %>
+<%= render 'calculators/error_summary', messages: messages if form&.invalid? %>
 
 <form action="/take-whole-pot/estimate#calculator" method="get">
   <%= render 'calculators/form_input_currency',
@@ -13,13 +14,13 @@
              value: form&.income,
              label: 'What is your yearly income?',
              hint: 'Include money you get from work, benefits, savings and State Pension payments',
-             error_messages: errors&.get(:income) %>
+             error_messages: errors[:income] %>
 
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
              label: 'How much is in your pot?',
-             error_messages: errors&.get(:pot) %>
+             error_messages: errors[:pot] %>
 
   <%= render 'calculators/form_input_submit' %>
 </form>

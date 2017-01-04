@@ -1,10 +1,15 @@
-RSpec.describe Entity do
+RSpec.describe Entity, type: :model do
   subject { described_class.new(double, attributes) }
 
   let(:attributes) { Hash.new }
 
   it { is_expected.to have_read_only_attributes(:id) }
-  it { is_expected.to validate_presence_of(:id) }
+
+  it 'validates presence of id' do
+    subject = described_class.new(nil, attributes)
+    subject.validate
+    expect(subject.errors[:id]).to_not be_empty
+  end
 
   context 'when passed unexpected data' do
     let(:attributes) { { foo: :bar } }

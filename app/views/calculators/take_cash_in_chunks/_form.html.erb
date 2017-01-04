@@ -1,11 +1,12 @@
 <%
-   form = local_assigns[:form]
-   errors = form&.errors
+  form = local_assigns[:form]
+  messages = form&.errors&.messages
+  errors = form&.errors || {}
 %>
 
 <h2 id="calculator">Estimate how much you could get</h2>
 
-<%= render 'calculators/error_summary', messages: errors&.messages if form&.invalid? %>
+<%= render 'calculators/error_summary', messages: messages if form&.invalid? %>
 
 <form action="/take-cash-in-chunks/estimate#form" method="get">
   <%= render 'calculators/form_input_currency',
@@ -13,19 +14,19 @@
              value: form&.income,
              label: 'What is your yearly income?',
              hint: 'Include money you get from work, benefits, savings and State Pension payments',
-             error_messages: errors.try(:get, :income) %>
+             error_messages: errors[:income] %>
 
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
              label: 'How much is in your pot?',
-             error_messages: errors&.get(:pot) %>
+             error_messages: errors[:pot] %>
 
   <%= render 'calculators/form_input_currency',
              field: :chunk,
              value: form&.chunk,
              label: 'How much do you want to take as your first cash chunk?',
-             error_messages: errors&.get(:chunk) %>
+             error_messages: errors[:chunk] %>
 
   <%= render 'calculators/form_input_submit' %>
 </form>

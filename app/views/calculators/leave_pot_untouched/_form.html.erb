@@ -1,24 +1,25 @@
 <%
   form = local_assigns[:form]
-  errors = form&.errors
+  messages = form&.errors&.messages
+  errors = form&.errors || {}
 %>
 
 <h2 id="calculator">Estimate how much your pot could grow</h2>
 
-<%= render 'calculators/error_summary', messages: errors&.messages if form&.invalid? %>
+<%= render 'calculators/error_summary', messages: messages if form&.invalid? %>
 
 <form action="/leave-pot-untouched/estimate#form" method="get">
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
              label: 'How much is in your pot?',
-             error_messages: errors&.get(:pot) %>
+             error_messages: errors[:pot] %>
 
   <%= render 'calculators/form_input_currency',
              field: :contribution,
              value: form&.contribution,
              label: 'How much can you pay in each month?',
-             error_messages: errors&.get(:contribution) %>
+             error_messages: errors[:contribution] %>
 
   <%= render 'calculators/form_input_submit' %>
 </form>
