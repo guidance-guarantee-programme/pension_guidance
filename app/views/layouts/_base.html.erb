@@ -1,4 +1,6 @@
 <% content_for :head do %>
+  <%= csrf_meta_tag %>
+
   <!--[if gt IE 8]><!--><%= stylesheet_link_tag 'pensions-guidance', media: 'screen' %><!--<![endif]-->
   <!--[if IE 6]><%= stylesheet_link_tag 'pensions-guidance-ie6', media: 'screen' %><![endif]-->
   <!--[if IE 7]><%= stylesheet_link_tag 'pensions-guidance-ie7', media: 'screen' %><![endif]-->
