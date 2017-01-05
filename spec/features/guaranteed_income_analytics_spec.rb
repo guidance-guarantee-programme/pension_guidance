@@ -18,7 +18,7 @@ RSpec.feature 'Guaranteed income analytics', type: :feature, js: true do
     wait_for_ajax
 
     expect(data_layer).to include('event' => 'CalculatorEstimate',
-                                  'pot_payout' => 3200,
+                                  'pot_payout' => 3400,
                                   'age' => 60,
                                   'pot' => 100_000,
                                   'valid' => true)

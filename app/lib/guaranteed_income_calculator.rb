@@ -31,14 +31,14 @@ class GuaranteedIncomeCalculator
     pot * TAXABLE_POT_PORTION
   end
 
-  # https://pensions-guidance.atlassian.net/wiki/display/WIKI/averaged+annuity+rate
+  # https://pensionwise-guidance.atlassian.net/wiki/pages/viewpage.action?pageId=34237
   def annuity_rate
     case age
-    when 55...60 then 0.03824
-    when 60...65 then 0.04296
-    when 65...70 then 0.04876
-    when 70...75 then 0.05692
-    else              0.06764
+    when 55...60 then 0.04070
+    when 60...65 then 0.04530
+    when 65...70 then 0.05180
+    when 70...75 then 0.05900
+    else              0.07100
     end
   end
 end
