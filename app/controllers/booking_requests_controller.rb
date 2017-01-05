@@ -5,17 +5,17 @@ class BookingRequestsController < ApplicationController
   before_action :set_breadcrumbs
 
   def step_one
-    @booking_feedback = BookingFeedbackForm.new
+    @feedback = FeedbackForm.for_online_booking
   end
 
   def step_two
-    @booking_feedback = BookingFeedbackForm.new
+    @feedback = FeedbackForm.for_online_booking
 
     render :step_one unless @booking_request.step_one_valid?
   end
 
   def complete
-    @booking_feedback = BookingFeedbackForm.new
+    @feedback = FeedbackForm.for_online_booking
 
     if @booking_request.step_two_valid?
       BookingRequests.create(@booking_request)
@@ -31,7 +31,7 @@ class BookingRequestsController < ApplicationController
   end
 
   def ineligible
-    @booking_feedback = BookingFeedbackForm.new
+    @feedback = FeedbackForm.for_online_booking
   end
 
   private

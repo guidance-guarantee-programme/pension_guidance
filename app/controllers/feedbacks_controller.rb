@@ -2,13 +2,13 @@ class FeedbacksController < ApplicationController
   layout 'full_width'
 
   def new
-    @booking_feedback = BookingFeedbackForm.new
+    @feedback = FeedbackForm.for_online_booking
   end
 
   def create
-    @booking_feedback = BookingFeedbackForm.new(booking_feedback_params)
+    @feedback = FeedbackForm.new(booking_feedback_params)
 
-    ZenDesk.create_ticket(@booking_feedback.message_content) if @booking_feedback.valid?
+    ZenDesk.create_ticket(@feedback.message_content) if @feedback.valid?
 
     if request.xhr?
       render_xhr_response
@@ -23,7 +23,7 @@ class FeedbacksController < ApplicationController
   private
 
   def render_xhr_response
-    if @booking_feedback.valid?
+    if @feedback.valid?
       render_result :ok
     else
       render_result :bad_request
@@ -31,7 +31,7 @@ class FeedbacksController < ApplicationController
   end
 
   def render_html_response
-    if @booking_feedback.valid?
+    if @feedback.valid?
       redirect_to thanks_feedback_path
     else
       render :new
@@ -44,11 +44,12 @@ class FeedbacksController < ApplicationController
 
   def booking_feedback_params
     params
-      .fetch(:booking_feedback, {})
+      .fetch(:feedback, {})
       .permit(
         :name,
         :email,
-        :message
+        :message,
+        :feedback_type
       )
   end
 end
