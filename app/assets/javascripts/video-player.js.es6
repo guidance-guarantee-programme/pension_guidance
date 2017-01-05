@@ -24,6 +24,7 @@
       this.transcript.$toggle = $('.js-video-transcript-toggle');
       this.transcript.$copy = $('.js-video-transcript-copy');
       this.transcript.$content = $('.js-video-transcript');
+      this.transcript.$content.attr('aria-hidden', false);
 
       this.embedLink();
       this.enableTranscriptToggle();

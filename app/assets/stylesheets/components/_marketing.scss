@@ -1,5 +1,4 @@
 .marketing-page {
-  background: $grey-3;
   margin-bottom: 24px;
 
   #global-header-bar { // scss-lint:disable IdSelector
@@ -21,16 +20,21 @@
   .l-home-row-callout__content {
     @include media(desktop) {
       background-image: image-url("campaigns/dogs/poster.png");
-      background-position: 111% 76%;
-      background-size: 73%;
-      padding-top: 4%;
-      padding-bottom: 5%;
+      background-position: 97% 0%;
+      background-size: 54%;
+      padding-top: 2%;
+      padding-bottom: 7%;
+
+      @include device-pixel-ratio(2) {
+        background-image: image-url("campaigns/dogs/poster-2x.png");
+      }
     }
   }
 }
 
 .marketing-logo {
   width: 150px;
+  height: 100%;
   margin-top: 16px;
 
   @include media(tablet) {
@@ -40,31 +44,46 @@
 }
 
 .l-marketing-promo {
-  background-color: $home-row-accent-background;
+  background-color: $color-dogs-background-dark;
   background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
   color: $color-white;
   overflow: hidden;
   padding: 0;
   position: relative;
+}
 
+.l-marketing-column {
   @include media(tablet) {
-    margin-bottom: 28px;
+    position: relative;
   }
 }
 
 .l-marketing-promo__content {
   background-image: image-url("campaigns/dogs/banner.png");
-  background-position: 90% 0%;
+  background-position: 90% 92%;
   background-repeat: no-repeat;
-  background-size: 53%;
-  padding: 19px 0;
+  background-size: 28%;
+  padding: 19px 0 0;
+
+  @include media(desktop) {
+    background-size: 37%;
+    background-position: 90% 37%;
+    padding: 19px 0 64px;
+
+    @include device-pixel-ratio(2) {
+      background-image: image-url("campaigns/dogs/banner-2x.png");
+    }
+  }
 }
 
 .marketing-promo__call {
   display: inline-block;
   position: relative;
   margin-top: .1em;
-  margin-left: -.3em;
+
+  @include media(tablet) {
+    margin-left: -.3em;
+  }
 }
 
 .marketing-promo__number {
@@ -74,6 +93,10 @@
   font-weight: bold;
   position: relative;
   padding-left: .1em;
+
+  a[href^="tel"] {
+    color: $color-white;
+  }
 }
 
 .marketing-heading {
@@ -91,12 +114,9 @@
 
 .marketing-subheading {
   @include bold-36();
-  margin-top: 16px;
+  margin-top: 0;
+  padding-top: 16px;
   margin-bottom: .8em;
-
-  @include media(tablet) {
-    margin-top: 0;
-  }
 }
 
 .l-marketing-row {
@@ -111,16 +131,22 @@
 
 .l-marketing-row--dog {
   .l-home-row-callout__content {
-    @include media(desktop) {
+    @include media(tablet) {
       background-image: image-url("campaigns/dogs/expectant.png");
-      background-position: 0% 31px;
+      background-position: 0% 6px;
       background-repeat: no-repeat;
-      background-size: 49%;
+      background-size: 27%;
+      padding-bottom: 5%;
+
+      @include device-pixel-ratio(2) {
+        background-image: image-url("campaigns/dogs/expectant-2x.png");
+      }
     }
   }
 }
 
 .l-marketing {
+  color: $color-white;
   overflow: hidden;
   padding-bottom: 0;
 
@@ -144,5 +170,38 @@
 
   @include media(desktop) {
     width: 35%;
+  }
+}
+
+.marketing-book {
+  margin-bottom: 0;
+}
+
+.l-marketing-faux-column {
+  display: none;
+
+  @include media(tablet) {
+    display: block;
+  }
+}
+
+.marketing-book-content {
+  @include media(tablet) {
+    &:before {
+      content: "";
+      display: block;
+      float: right;
+      height: 0;
+      margin-left: 20px;
+      padding-bottom: 51%;
+      position: relative;
+      width: 50%;
+    }
+  }
+
+  @include media(900px) {
+    &:before {
+      padding-bottom: 40%;
+    }
   }
 }

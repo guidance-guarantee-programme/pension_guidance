@@ -7,16 +7,18 @@ $play-button-light: $color-white;
   @include media(tablet) {
     float: right;
     width: 50%;
-    margin-left: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   a {
     font-size: .8em;
 
-    color: $color-black;
+    color: $color-white;
 
     &:visited {
-      color: $color-black;
+      color: $color-white;
     }
   }
 }
@@ -24,9 +26,11 @@ $play-button-light: $color-white;
 .youtube-video__video {
   @include media-player;
 
-  position: relative;
-  margin-top: 16px;
+  color: $color-black;
   margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 16px;
+  position: relative;
 
   @include media(tablet) {
     margin-top: 0;
@@ -89,3 +93,12 @@ $play-button-light: $color-white;
 .youtube-video-play__bg {
   fill: $play-button-dark;
 }
+
+.youtube-video-transcript {
+  overflow: hidden;
+}
+
+.youtube-video-transcript-text {
+  margin-bottom: 0;
+}
+
