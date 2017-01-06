@@ -173,6 +173,8 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
+    momentjs-rails (2.15.1)
+      railties (>= 3.1)
     multi_json (1.12.1)
     multi_test (0.1.2)
     multipart-post (2.0.0)
@@ -383,6 +385,7 @@ DEPENDENCIES
   jasmine-jquery-rails
   jasmine-rails
   launchy
+  momentjs-rails
   newrelic_rpm
   nokogiri
   output-templates (~> 4.4.3)!
@@ -422,4 +425,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.6
+   1.13.7

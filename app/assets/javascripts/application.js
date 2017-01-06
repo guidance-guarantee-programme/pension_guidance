@@ -1,4 +1,5 @@
 //= require jquery/dist/jquery.min.js
+//= require moment
 //= require govuk_toolkit
 //= require checkbox-radio-init.js
 //= require click-tracker.js
