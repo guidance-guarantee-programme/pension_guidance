@@ -8,33 +8,30 @@
   <div class="l-column-two-thirds">
     <div class="slot-picker" data-slot-picker data-date="2017-01-05">
       <div class="js-slot-picker-calendar-container">
-        <script type="text/html" id="slot-picker-calendar-template">
-          <button class="slot-picker__prev-month">January</button>
-            <h2 class="slot-picker__month js-slot-picker-month">{month}</h2>
-          <button class="slot-picker__next-month">Next Month</button>
-          <ul aria-hidden="true" class="slot-picker-days">
-            <li class="slot-picker-days__day">Mon</li>
-            <li class="slot-picker-days__day">Tue</li>
-            <li class="slot-picker-days__day">Wed</li>
-            <li class="slot-picker-days__day">Thu</li>
-            <li class="slot-picker-days__day">Fri</li>
-            <li class="slot-picker-days__day">Sat</li>
-            <li class="slot-picker-days__day">Sun</li>
-          </ul>
-          <ul class="slot-picker-calendar">
-          </ul>
-        </script>
-        <script type="text/html" id="slot-picker-calendar-faux-day-template">
-            <li class="slot-picker-calendar__day" aria-hidden="true"></li>
-        </script>
-        <script type="text/html" id="slot-picker-calendar-day-template">
+        <h2 class="slot-picker__month js-slot-picker-month"><%= @month %></h2>
+        <button class="slot-picker__next-month">Next Month</button>
+        <ul aria-hidden="true" class="slot-picker-days">
+          <li class="slot-picker-days__day">Mon</li>
+          <li class="slot-picker-days__day">Tue</li>
+          <li class="slot-picker-days__day">Wed</li>
+          <li class="slot-picker-days__day">Thu</li>
+          <li class="slot-picker-days__day">Fri</li>
+          <li class="slot-picker-days__day">Sat</li>
+          <li class="slot-picker-days__day">Sun</li>
+        </ul>
+        <ul class="slot-picker-calendar">
+          <% if @day_of_the_week > 1 %>
+            <li class="slot-picker-calendar__day" aria-hidden="true" style="flex-basis: <%= (100.0/7.0) * (@day_of_the_week - 1) %>%"></li>
+          <% end %>
+          <% @days.each do |day| %>
             <li class="slot-picker-calendar__day">
-            <button class="slot-picker-calendar__action">
-              <span class="visually-hidden">{day}</span>
-              <span aria-hidden="true">{day_number}</span>
-            </button>
-          </li>
-        </script>
+              <<%= @available_days.include?(day) ? "a href=\"/book-telephone-appointment?date=#{day.strftime('%Y-%m-%d')}\"".html_safe : 'span' %> class="slot-picker-calendar__action <% unless @available_days.include?(day) %>slot-picker-calendar__action--busy<% end %> <%= day == @selected_date ? 'slot-picker-calendar__action--selected' : '' %>">
+                <span class="visually-hidden"><%= day.strftime('%A, %B %-d %Y') %> <%= @available_days.include?(day) ? '' : '(unavailable)' %></span>
+                <span aria-hidden="true"><%= day.day %></span>
+              </<% if @available_days.include?(day) %>a<% else %>span<% end %>>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>
@@ -42,6 +39,19 @@
     &nbsp;
   </div>
 </div>
+
+<script type="text/html" id="slot-picker-calendar-faux-day-template">
+    <li class="slot-picker-calendar__day" aria-hidden="true"></li>
+</script>
+
+<script type="text/html" id="slot-picker-calendar-day-template">
+  <li class="slot-picker-calendar__day">
+    <button class="slot-picker-calendar__action">
+      <span class="visually-hidden">{day}</span>
+      <span aria-hidden="true">{day_number}</span>
+    </button>
+  </li>
+</script>
 
 <!-- <select id="slot-picker">
   <optgroup label="Friday 6 January 2017">
