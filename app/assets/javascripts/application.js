@@ -10,6 +10,7 @@
 
 //= require components/BaseComponent
 //= require components/Slider
+//= require components/SlotPicker
 
 PWPG.clickTracker.init();
 PWPG.mobileNavToggler.init();
