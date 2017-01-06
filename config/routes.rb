@@ -14,10 +14,6 @@ Rails.application.routes.draw do
           id: guide.slug
     end
 
-    get 'annuity-registration', to: 'annuity_registration#new', as: :annuity_registration
-    post 'annuity-registration', to: 'annuity_registration#create'
-    get 'annuity-registration/success', to: 'annuity_registration#success', as: :annuity_registration_success
-
     get 'guaranteed-income/estimate', to: 'calculators/guaranteed_income#show'
     get 'adjustable-income/estimate', to: 'calculators/adjustable_income#show'
     get 'leave-pot-untouched/estimate', to: 'calculators/leave_pot_untouched#show'
