@@ -1,11 +1,10 @@
 /* global moment */
-
-{
+(function() {
   'use strict';
 
   class SlotPicker {
-    constructor() {
-      this.$slotPicker = $('.js-slot-picker');
+    constructor($component) {
+      this.$slotPicker = $component;
       this.setDates(this.$slotPicker.data('date'));
       this.$calendarContainer = $('.js-slot-picker-calendar-container');
       this.templates = {
@@ -90,5 +89,7 @@
     }
   }
 
-  new SlotPicker();
-}
+  window.PWPG = window.PWPG || {};
+  window.PWPG.SlotPicker = SlotPicker;
+
+})();

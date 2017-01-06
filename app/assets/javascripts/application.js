@@ -22,3 +22,9 @@ $('[data-slider]').each(function() {
   var $component = $(this);
   new PWPG.Slider($component);
 });
+
+$('[data-slot-picker]').each(function() {
+  'use strict';
+  var $component = $(this);
+  new PWPG.SlotPicker($component);
+});

@@ -4,7 +4,6 @@ class TelephoneBookingController < ApplicationController
   before_action :set_breadcrumbs
 
   def step_one
-
   end
 
   def set_breadcrumbs
