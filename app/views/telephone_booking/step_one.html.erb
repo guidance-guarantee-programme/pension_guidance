@@ -19,7 +19,7 @@
           <li class="slot-picker-days__day">Sat</li>
           <li class="slot-picker-days__day">Sun</li>
         </ul>
-        <ul class="slot-picker-calendar">
+        <ul class="slot-picker-calendar js-slot-picker-calendar">
           <% if @day_of_the_week > 1 %>
             <li class="slot-picker-calendar__day" aria-hidden="true" style="flex-basis: <%= (100.0/7.0) * (@day_of_the_week - 1) %>%"></li>
           <% end %>

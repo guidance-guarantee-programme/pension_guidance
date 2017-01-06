@@ -8,7 +8,6 @@
       this.setDates(this.$slotPicker.data('date'));
       this.$calendarContainer = $('.js-slot-picker-calendar-container');
       this.templates = {
-        'calendar': '#slot-picker-calendar-template',
         'fauxDay': '#slot-picker-calendar-faux-day-template',
         'day': '#slot-picker-calendar-day-template'
       };
@@ -42,8 +41,8 @@
     }
 
     createCalendar() {
-      this.$calendarContainer.html(this.templates.calendar.replace('{month}', this.currentDate.format('MMMM')));
       this.$calendarContainer.find('.slot-picker__next-month').text(this.nextMonth.format('MMMM'));
+      this.$calendarContainer.find('.slot-picker-calendar').html('');
       this.createFauxDays();
       this.createDays();
     }
@@ -85,7 +84,7 @@
         output.push($day);
       }
 
-      this.$calendarContainer.find('.slot-picker-calendar').append(output);
+      this.$calendarContainer.find('.js-slot-picker-calendar').append(output);
     }
   }
 
