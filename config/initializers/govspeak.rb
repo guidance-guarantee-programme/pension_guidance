@@ -29,3 +29,14 @@ Govspeak::Document.extension('multi-choice-questions', regexp) do |partial_name,
     }
   )
 end
+
+Govspeak::Document.extension('feedback', %r(^{::feedback_form /})) do
+  partial = 'feedbacks/feedback_form'
+
+  feedback = FeedbackForm.new(feedback_type: 'pension_type_tool')
+
+  ApplicationController.render(
+    partial: partial,
+    assigns: { feedback: feedback }
+  )
+end
