@@ -2,53 +2,71 @@
 (function() {
   'use strict';
 
-  class SlotPicker {
-    constructor($component) {
-      this.$slotPicker = $component;
-      this.setDates(this.$slotPicker.data('date'));
-      this.$calendarContainer = $('.js-slot-picker-calendar-container');
-      this.templates = {
-        'fauxDay': '#slot-picker-calendar-faux-day-template',
-        'day': '#slot-picker-calendar-day-template'
-      };
+  class SlotPickerDay {
+    constructor(day, month) {
+      this.templateId = '#slot-picker-calendar-day-template';
+      this.day = day;
+      this.month = month;
 
-      this.getTemplates();
-      this.createCalendar();
-      this.bindEvents();
+      this.template = this.getTemplate();
+      this.render();
     }
 
-    setDates(date = this.nextMonth) {
-      this.currentDate = moment(date).startOf('day');
-      this.startOfDisplayedMonth = moment(this.currentDate).startOf('month');
-      this.endOfDisplayedMonth = moment(this.currentDate).endOf('month');
-      this.nextMonth = moment(this.currentDate).add(1, 'month').startOf('month').startOf('day');
+    getTemplate() {
+      return $(this.templateId).html();
     }
 
-    bindEvents() {
-      this.$calendarContainer.on('click', '.slot-picker__next-month', this.handleNextMonth.bind(this));
-    }
+    render() {
+      this.template = this.replaceVars({
+        '{day_number}': this.day.date(),
+        '{day}': this.day.format('dddd, D MMMM YYYY')
+      }, this.template);
 
-    handleNextMonth(e) {
-      e.preventDefault();
-      this.setDates();
-      this.createCalendar();
-    }
+      const $day = $(this.template);
 
-    getTemplates() {
-      for(let template in this.templates) {
-        this.templates[template] = $(this.templates[template]).html();
+      if (this.month.availableDates.indexOf(this.day.format('YYYY-MM-DD')) === -1) {
+       $day.find('.slot-picker-calendar__action').addClass('slot-picker-calendar__action--busy');
+       $day.find('.slot-picker-calendar__action').prop('disabled', 'true');
       }
+
+      return $day;
     }
 
-    createCalendar() {
-      this.$calendarContainer.find('.slot-picker__next-month').text(this.nextMonth.format('MMMM'));
-      this.$calendarContainer.find('.slot-picker-calendar').html('');
+    replaceVars(keyVars, string) {
+      for (let key in keyVars) {
+        string = string.replace(key, keyVars[key]);
+      }
+
+      return string;
+    }
+  }
+
+  class SlotPickerMonth {
+    constructor(calendar) {
+      this.calendar = calendar;
+      this.calendar.$container.find('.slot-picker__next-month').text(this.calendar.nextMonth.format('MMMM'));
+      this.calendar.$container.find('.slot-picker-calendar').html('');
+      this.availableDates = this.getAvailableDates();
+    }
+
+    getAvailableDates() {
+      let availableDates = [];
+
+      $.each(window.availability, function(date) {
+        availableDates.push(date);
+      });
+
+      return availableDates;
+    }
+
+    render() {
       this.createFauxDays();
       this.createDays();
     }
 
     createFauxDays() {
-      const firstOfMonthDayOfWeek = this.startOfDisplayedMonth.day();
+      const template = $('#slot-picker-calendar-faux-day-template').html(),
+        firstOfMonthDayOfWeek = this.calendar.startOfDisplayedMonth.day();
       let fauxDaySize;
 
       if (firstOfMonthDayOfWeek === 1) {
@@ -61,34 +79,50 @@
         fauxDaySize = firstOfMonthDayOfWeek - 1;
       }
 
-      this.$calendarContainer.find('.slot-picker-calendar').html($(this.templates.fauxDay).css('flex-basis', `${(100/7) * fauxDaySize}%`));
+      this.calendar.$container.find('.slot-picker-calendar').html($(template).css('flex-basis', `${(100/7) * fauxDaySize}%`));
     }
 
     createDays() {
-      let output = [],
-       day;
+      let output = [];
 
-      const start = moment(this.startOfDisplayedMonth),
-        end = moment(this.endOfDisplayedMonth);
+      const start = moment(this.calendar.startOfDisplayedMonth),
+        end = moment(this.calendar.endOfDisplayedMonth);
 
-      for (let m = moment(start); m.isBefore(end); m.add(1, 'days')) {
-        day = this.templates.day.replace('{day_number}', m.date());
-        day = day.replace('{day}', m.format('dddd, D MMMM YYYY'));
-        let $day = $(day);
-
-        if (m.isBefore(this.currentDate)) {
-          $day.find('.slot-picker-calendar__action').addClass('slot-picker-calendar__action--busy');
-          $day.find('.slot-picker-calendar__action').prop('disabled', 'true');
-        }
-
-        output.push($day);
+      for (let day = moment(start); day.isBefore(end); day.add(1, 'days')) {
+        output.push(new SlotPickerDay(day, this).render());
       }
 
-      this.$calendarContainer.find('.js-slot-picker-calendar').append(output);
+      this.calendar.$container.find('.js-slot-picker-calendar').append(output);
+    }
+  }
+
+  class SlotPicker {
+    constructor($component) {
+      this.$container = $('.js-slot-picker-calendar-container');
+      this.$slotPicker = $component;
+      this.setDates(this.$slotPicker.data('date'));
+      new SlotPickerMonth(this).render();
+      this.bindEvents();
+    }
+
+    setDates(date = this.nextMonth) {
+      this.currentDate = moment(date).startOf('day');
+      this.startOfDisplayedMonth = moment(this.currentDate).startOf('month');
+      this.endOfDisplayedMonth = moment(this.currentDate).endOf('month');
+      this.nextMonth = moment(this.currentDate).add(1, 'month').startOf('month').startOf('day');
+    }
+
+    bindEvents() {
+      this.$container.on('click', '.slot-picker__next-month', this.handleNextMonth.bind(this));
+    }
+
+    handleNextMonth(e) {
+      e.preventDefault();
+      this.setDates();
+      new SlotPickerMonth(this).render();
     }
   }
 
   window.PWPG = window.PWPG || {};
   window.PWPG.SlotPicker = SlotPicker;
-
 })();
