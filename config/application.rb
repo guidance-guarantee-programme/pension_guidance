@@ -6,6 +6,9 @@ require 'action_view/railtie'
 require 'sprockets/railtie'
 require 'sprockets/es6'
 
+require_relative '../app/repositories/guide_repository'
+require_relative '../app/middleware/strip_session_cookie'
+
 Bundler.require(*Rails.groups)
 
 module PensionGuidance
@@ -23,5 +26,11 @@ module PensionGuidance
     config.action_view.field_error_proc = proc { |html_tag, _|
       html_tag
     }
+
+    config.middleware.insert_before(
+      ActionDispatch::Cookies,
+      Middleware::StripSessionCookie,
+      paths: GuideRepository.new.all.map(&:slug)
+    )
   end
 end

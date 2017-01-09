@@ -1,3 +1,6 @@
+require_relative '../models/guide'
+require_relative '../lib/front_matter_parser'
+
 class GuideRepository
   GuideNotFound = Class.new(StandardError)
 
