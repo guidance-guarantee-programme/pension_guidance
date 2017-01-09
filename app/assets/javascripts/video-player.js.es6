@@ -64,6 +64,17 @@
         });
 
         window.NOMENSA.player.PlayerDaemon.getPlayer('yt' + i).onPlayerReady(function() {
+          const originalOnPlayerStateChange = this.onPlayerStateChange;
+
+          this.onPlayerStateChange = function(stateId) {
+            dataLayer.push({
+              'event': 'onPlayerStateChange',
+              'eventValue': stateId
+            });
+
+            originalOnPlayerStateChange.apply(this, arguments);
+          };
+
           this.play();
         });
       });
