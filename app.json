@@ -19,10 +19,16 @@
   ],
   "buildpacks": [
     {
+      "url": "https://github.com/timshadel/heroku-buildpack-github-netrc.git"
+    },
+    {
       "url": "heroku/nodejs"
     },
     {
       "url": "heroku/ruby"
+    },
+    {
+      "url": "https://github.com/lm-tools/heroku-buildpack-princexml.git"
     }
   ]
 }
