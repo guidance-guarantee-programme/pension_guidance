@@ -25,8 +25,9 @@
       const $day = $(this.template);
 
       if (this.month.availableDates.indexOf(this.day.format('YYYY-MM-DD')) === -1) {
-       $day.find('.slot-picker-calendar__action').addClass('slot-picker-calendar__action--busy');
-       $day.find('.slot-picker-calendar__action').prop('disabled', 'true');
+       $day.find('.slot-picker-calendar__action')
+         .addClass('slot-picker-calendar__action--busy')
+         .prop('disabled', 'true');
       }
 
       return $day;
