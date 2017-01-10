@@ -32,6 +32,7 @@
       }, this.dayTemplate);
 
       $day = $(this.dayTemplate);
+      $day.data('day', this.day);
 
       $day.on('click', this.handleDayClick.bind(this));
 
@@ -54,11 +55,10 @@
 
       $.each(times, (index, time) => {
         output.push($(this.replaceVars({
-          'time': time
+          'time': time,
+          'date': $day.data('day').format('YYYY-MM-DD')
         }, this.timeTemplate)));
       });
-
-      console.log(output);
 
       this.$times.html(output);
     }
