@@ -40,7 +40,7 @@
 
       $day.on('click', this.handleDayClick.bind(this));
 
-      if (this.month.availableDates.indexOf(this.day.format(this.dateFormat.dayData)) === -1) {
+      if (this.month.calendar.availableDates.indexOf(this.day.format(this.dateFormat.dayData)) === -1) {
        $day.find('.slot-picker-calendar__action')
          .addClass('slot-picker-calendar__action--busy')
          .prop('disabled', 'true');
@@ -84,19 +84,9 @@
         'month': 'MMMM'
       },
       this.calendar.$container.find('.js-slot-picker-month').html(this.calendar.currentDate.format(this.dateFormat.month));
+      this.calendar.$container.find('.slot-picker__prev-month').text(this.calendar.prevMonth.format(this.dateFormat.month));
       this.calendar.$container.find('.slot-picker__next-month').text(this.calendar.nextMonth.format(this.dateFormat.month));
       this.calendar.$container.find('.slot-picker-calendar').html('');
-      this.availableDates = this.getAvailableDates();
-    }
-
-    getAvailableDates() {
-      let availableDates = [];
-
-      $.each(window.availability, function(date) {
-        availableDates.push(date);
-      });
-
-      return availableDates;
     }
 
     render() {
@@ -119,7 +109,10 @@
         fauxDaySize = firstOfMonthDayOfWeek - 1;
       }
 
-      this.calendar.$container.find('.slot-picker-calendar').html($(template).css('flex-basis', `${(100/7) * fauxDaySize}%`));
+      this.calendar.$container.find('.slot-picker-calendar')
+      .html(
+        $(template).css('flex-basis', `${(100/7) * fauxDaySize}%`)
+      );
     }
 
     createDays() {
@@ -137,28 +130,77 @@
   }
 
   class SlotPicker {
-    constructor($component) {
+    constructor($slotPicker) {
       this.$container = $('.js-slot-picker-calendar-container');
-      this.$slotPicker = $component;
+      this.$prevMonth = $('.js-slot-picker-prev-month');
+      this.$nextMonth = $('.js-slot-picker-next-month');
+      this.$slotPicker = $slotPicker;
+      this.availableDates = this.getAvailableDates();
+
       this.setDates(this.$slotPicker.data('date'));
-      new SlotPickerMonth(this).render();
       this.bindEvents();
+      this.render();
     }
 
-    setDates(date = this.nextMonth) {
+    getAvailableDates() {
+      let availableDates = [];
+
+      $.each(window.availability, function(date) {
+        availableDates.push(date);
+      });
+
+      availableDates = availableDates.sort();
+
+      return availableDates;
+    }
+
+    getFirstAvailableDate() {
+      return moment(this.availableDates[0]);
+    }
+
+    getLastAvailableDate() {
+      return moment(this.availableDates.slice(-1)[0]);
+    }
+
+    setDates(date) {
       this.currentDate = moment(date).startOf('day');
       this.startOfDisplayedMonth = moment(this.currentDate).startOf('month');
       this.endOfDisplayedMonth = moment(this.currentDate).endOf('month');
       this.nextMonth = moment(this.currentDate).add(1, 'month').startOf('month').startOf('day');
+      this.prevMonth = moment(this.currentDate).subtract(1, 'month').startOf('month').startOf('day');
     }
 
     bindEvents() {
-      this.$container.on('click', '.slot-picker__next-month', this.handleNextMonth.bind(this));
+      this.$container.on('click', '.js-slot-picker-prev-month', this.handlePrevMonth.bind(this));
+      this.$container.on('click', '.js-slot-picker-next-month', this.handleNextMonth.bind(this));
+    }
+
+    handlePrevMonth(e) {
+      this.handleMonthChange(e, this.prevMonth);
     }
 
     handleNextMonth(e) {
+      this.handleMonthChange(e, this.nextMonth);
+    }
+
+    handleMonthChange(e, month) {
       e.preventDefault();
-      this.setDates();
+      this.setDates(month);
+      this.render();
+    }
+
+    render() {
+      this.$prevMonth.removeClass('slot-picker__prev-month--hide');
+      this.$nextMonth.removeClass('slot-picker__next-month--hide');
+
+      if (this.getFirstAvailableDate().format('YYYY-MM') == this.currentDate.format('YYYY-MM')) {
+        this.$prevMonth.addClass('slot-picker__prev-month--hide');
+      }
+
+      if (this.getLastAvailableDate().format('YYYY-MM') == this.currentDate.format('YYYY-MM')) {
+        this.$nextMonth.addClass('slot-picker__next-month--hide');
+      }
+
       new SlotPickerMonth(this).render();
     }
   }

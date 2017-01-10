@@ -24,8 +24,14 @@ class TelephoneBookingController < ApplicationController
     end_of_month = slot.end_of_month
 
     @month = beginning_of_month.strftime('%B')
+    @month_url_var = beginning_of_month.strftime('%Y-%m')
     @next_month = beginning_of_month.next_month.strftime('%B')
     @next_month_url_var = beginning_of_month.next_month.strftime('%Y-%m')
+    @prev_month = beginning_of_month.prev_month.strftime('%B')
+    @prev_month_url_var = beginning_of_month.prev_month.strftime('%Y-%m')
+
+    @is_first_month = slot.strftime('%Y-%m') == @available_days.first.strftime('%Y-%m')
+    @is_last_month = slot.strftime('%Y-%m') == @available_days.last.strftime('%Y-%m')
 
     @days = (beginning_of_month..end_of_month)
 

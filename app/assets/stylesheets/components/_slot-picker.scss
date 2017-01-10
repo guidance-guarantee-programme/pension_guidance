@@ -126,3 +126,12 @@ $calendar-row-height: 50px;
     text-decoration: underline;
   }
 }
+
+.slot-picker-time-header {
+  margin-top: 0;
+}
+
+.slot-picker__next-month--hide,
+.slot-picker__prev-month--hide {
+  display: none;
+}
