@@ -5,24 +5,35 @@
   class SlotPickerDay {
     constructor(day, month) {
       this.templateId = '#slot-picker-calendar-day-template';
+      this.templateTimeSlotId = '#slot-picker-calendar-time';
+      this.$times = $('.js-slot-picker-times');
       this.day = day;
       this.month = month;
 
-      this.template = this.getTemplate();
+      this.dayTemplate = this.getTemplate(this.templateId);
+      this.timeTemplate = this.getTemplate(this.templateTimeSlotId);
       this.render();
     }
 
-    getTemplate() {
-      return $(this.templateId).html();
+    getTemplate(id) {
+      return $(id).html();
+    }
+
+    getAvailableTimes() {
+      return window.availability[this.day.format('YYYY-MM-DD')];
     }
 
     render() {
-      this.template = this.replaceVars({
-        '{day_number}': this.day.date(),
-        '{day}': this.day.format('dddd, D MMMM YYYY')
-      }, this.template);
+      let $day;
 
-      const $day = $(this.template);
+      this.dayTemplate = this.replaceVars({
+        'day_number': this.day.date(),
+        'day': this.day.format('dddd, D MMMM YYYY')
+      }, this.dayTemplate);
+
+      $day = $(this.dayTemplate);
+
+      $day.on('click', this.handleDayClick.bind(this));
 
       if (this.month.availableDates.indexOf(this.day.format('YYYY-MM-DD')) === -1) {
        $day.find('.slot-picker-calendar__action')
@@ -33,9 +44,29 @@
       return $day;
     }
 
+    handleDayClick(event) {
+      this.renderTimeSlots($(event.currentTarget));
+    }
+
+    renderTimeSlots($day) {
+      const times = this.getAvailableTimes();
+      let output = [];
+
+      $.each(times, (index, time) => {
+        output.push($(this.replaceVars({
+          'time': time
+        }, this.timeTemplate)));
+      });
+
+      console.log(output);
+
+      this.$times.html(output);
+    }
+
     replaceVars(keyVars, string) {
       for (let key in keyVars) {
-        string = string.replace(key, keyVars[key]);
+        const regexp = new RegExp(`{${key}}`, 'g');
+        string = string.replace(regexp, keyVars[key]);
       }
 
       return string;
@@ -90,7 +121,7 @@
         end = moment(this.calendar.endOfDisplayedMonth);
 
       for (let day = moment(start); day.isBefore(end); day.add(1, 'days')) {
-        output.push(new SlotPickerDay(day, this).render());
+        output.push(new SlotPickerDay(moment(day), this).render());
       }
 
       this.calendar.$container.find('.js-slot-picker-calendar').append(output);

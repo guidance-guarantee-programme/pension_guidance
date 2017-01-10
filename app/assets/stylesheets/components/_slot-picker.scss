@@ -102,3 +102,27 @@ $calendar-row-height: 50px;
   cursor: not-allowed;
   color: $color-black;
 }
+
+.slot-picker-times {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slot-picker-times__time {
+  border: 1px solid #ccc;
+  height: 50px;
+  flex-basis: 50%;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $color-black;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

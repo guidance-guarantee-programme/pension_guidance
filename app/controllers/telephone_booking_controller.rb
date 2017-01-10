@@ -5,10 +5,10 @@ class TelephoneBookingController < ApplicationController
 
   def step_one
     file = File.read('spec/fixtures/telephone_availability.json')
-    availability = JSON.parse(file)
-    @data = file.html_safe
+    @availability = JSON.parse(file)
+    @data = file
 
-    @available_days = availability.keys.map { |x| Date.parse(x) }.sort
+    @available_days = @availability.keys.map { |x| Date.parse(x) }.sort
 
     set_vars
   end
@@ -24,7 +24,11 @@ class TelephoneBookingController < ApplicationController
 
     @day_of_the_week = beginning_of_month.strftime('%u').to_i
 
-    @selected_date = Date.parse(params[:date]) if params[:date]
+    if params[:date]
+      @selected_date = Date.parse(params[:date])
+      @selected_date_formatted = @selected_date.strftime('%Y-%m-%d')
+      @available_times = @availability[@selected_date.strftime('%Y-%m-%d')]
+    end
   end
 
   def set_breadcrumbs

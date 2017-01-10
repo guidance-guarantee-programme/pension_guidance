@@ -36,9 +36,19 @@
     </div>
   </div>
   <div class="l-column-third">
-    &nbsp;
+    <div class="slot-picker-times js-slot-picker-times">
+    <% if @available_times %>
+      <% @available_times.each do |time| %>
+        <a class="slot-picker-times__time" href="/book-telephone-appointment?date=<%= @selected_date_formatted %>&amp;time=<%= time %>"><%= time %></a>
+      <% end %>
+    <% end %>
+    </div>
   </div>
 </div>
+
+<script type="text/html" id="slot-picker-calendar-time">
+  <a class="slot-picker-times__time" href="/book-telephone-appointment?date={date}&amp;time={time}">{time}</a>
+</script>
 
 <script type="text/html" id="slot-picker-calendar-faux-day-template">
     <li class="slot-picker-calendar__day" aria-hidden="true"></li>
@@ -54,5 +64,5 @@
 </script>
 
 <script>
-window.availability = <%= @data %>;
+window.availability = <%= @data.html_safe %>;
 </script>
