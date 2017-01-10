@@ -4,6 +4,10 @@
 
   class SlotPickerDay {
     constructor(day, month) {
+      this.dateFormat = {
+        'dayData': 'YYYY-MM-DD',
+        'dayLong': 'dddd, D MMMM YYYY'
+      },
       this.templateId = '#slot-picker-calendar-day-template';
       this.templateTimeSlotId = '#slot-picker-calendar-time';
       this.$times = $('.js-slot-picker-times');
@@ -20,7 +24,7 @@
     }
 
     getAvailableTimes() {
-      return window.availability[this.day.format('YYYY-MM-DD')];
+      return window.availability[this.day.format(this.dateFormat.dayData)];
     }
 
     render() {
@@ -28,7 +32,7 @@
 
       this.dayTemplate = this.replaceVars({
         'day_number': this.day.date(),
-        'day': this.day.format('dddd, D MMMM YYYY')
+        'day': this.day.format(this.dateFormat.dayLong)
       }, this.dayTemplate);
 
       $day = $(this.dayTemplate);
@@ -36,7 +40,7 @@
 
       $day.on('click', this.handleDayClick.bind(this));
 
-      if (this.month.availableDates.indexOf(this.day.format('YYYY-MM-DD')) === -1) {
+      if (this.month.availableDates.indexOf(this.day.format(this.dateFormat.dayData)) === -1) {
        $day.find('.slot-picker-calendar__action')
          .addClass('slot-picker-calendar__action--busy')
          .prop('disabled', 'true');
@@ -56,7 +60,7 @@
       $.each(times, (index, time) => {
         output.push($(this.replaceVars({
           'time': time,
-          'date': $day.data('day').format('YYYY-MM-DD')
+          'date': $day.data('day').format(this.dateFormat.dayData)
         }, this.timeTemplate)));
       });
 
@@ -76,7 +80,11 @@
   class SlotPickerMonth {
     constructor(calendar) {
       this.calendar = calendar;
-      this.calendar.$container.find('.slot-picker__next-month').text(this.calendar.nextMonth.format('MMMM'));
+      this.dateFormat = {
+        'month': 'MMMM'
+      },
+      this.calendar.$container.find('.js-slot-picker-month').html(this.calendar.currentDate.format(this.dateFormat.month));
+      this.calendar.$container.find('.slot-picker__next-month').text(this.calendar.nextMonth.format(this.dateFormat.month));
       this.calendar.$container.find('.slot-picker-calendar').html('');
       this.availableDates = this.getAvailableDates();
     }

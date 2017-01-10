@@ -9,7 +9,7 @@
     <div class="slot-picker" data-slot-picker data-date="2017-01-05">
       <div class="js-slot-picker-calendar-container">
         <h2 class="slot-picker__month js-slot-picker-month"><%= @month %></h2>
-        <button class="slot-picker__next-month">Next Month</button>
+        <a href="/book-telephone-appointment?month=<%= @next_month_url_var %>" class="slot-picker__next-month"><%= @next_month %></a>
         <ul aria-hidden="true" class="slot-picker-days">
           <li class="slot-picker-days__day">Mon</li>
           <li class="slot-picker-days__day">Tue</li>

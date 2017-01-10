@@ -14,11 +14,18 @@ class TelephoneBookingController < ApplicationController
   end
 
   def set_vars
-    first_available_slot = @available_days.first
-    beginning_of_month = first_available_slot.beginning_of_month
-    end_of_month = first_available_slot.end_of_month
+    if params[:month]
+      slot = Date.parse("#{params[:month]}-01")
+    else
+      slot = @available_days.first
+    end
+
+    beginning_of_month = slot.beginning_of_month
+    end_of_month = slot.end_of_month
 
     @month = beginning_of_month.strftime('%B')
+    @next_month = beginning_of_month.next_month.strftime('%B')
+    @next_month_url_var = beginning_of_month.next_month.strftime('%Y-%m')
 
     @days = (beginning_of_month..end_of_month)
 
