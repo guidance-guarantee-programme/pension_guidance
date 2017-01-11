@@ -16,6 +16,8 @@ $calendar-border: #ccc;
 $calendar-day-selection: #d5e8f3;
 $calendar-busy-background: #ccc;
 $calendar-row-height: 50px;
+$calendar-days-in-a-week: 7;
+$calendar-day-width: (100% / $calendar-days-in-a-week);
 
 .slot-picker {
   max-width: 400px;
@@ -33,7 +35,7 @@ $calendar-row-height: 50px;
 }
 
 .slot-picker-days__day {
-  flex-basis: calc(100% / 7);
+  flex-basis: $calendar-day-width;
   height: 20px;
   list-style: none;
   margin: 0;
@@ -55,7 +57,7 @@ $calendar-row-height: 50px;
 }
 
 .slot-picker-calendar__day {
-  flex-basis: calc(100% / 7);
+  flex-basis: $calendar-day-width;
   list-style: none;
   margin: 0;
   height: $calendar-row-height;
