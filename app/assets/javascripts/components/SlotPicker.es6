@@ -4,23 +4,19 @@
 
   class SlotPickerDay {
     constructor(day, month) {
-      this.dateFormat = {
-        'dayData': 'YYYY-MM-DD',
-        'dayLong': 'dddd, D MMMM YYYY'
-      },
-      this.templateId = '#slot-picker-calendar-day-template';
-      this.templateTimeSlotId = '#slot-picker-calendar-time';
-      this.$times = $('.js-slot-picker-times');
       this.day = day;
       this.month = month;
 
-      this.dayTemplate = this.getTemplate(this.templateId);
-      this.timeTemplate = this.getTemplate(this.templateTimeSlotId);
+      this.dateFormat = {
+        'dayData': 'YYYY-MM-DD',
+        'dayShort': 'D MMMM YYYY',
+        'dayLong': 'dddd, D MMMM YYYY'
+      };
+      this.$timeSlotHeaderDate = $('.js-slot-picker-time-header-date');
+      this.$times = $('.js-slot-picker-times');
+      this.dayTemplate = $('#slot-picker-calendar-day-template').html();
+      this.timeTemplate = $('#slot-picker-calendar-time').html();
       this.render();
-    }
-
-    getTemplate(id) {
-      return $(id).html();
     }
 
     getAvailableTimes() {
@@ -38,19 +34,33 @@
       $day = $(this.dayTemplate);
       $day.data('day', this.day);
 
-      $day.on('click', this.handleDayClick.bind(this));
-
       if (this.month.calendar.availableDates.indexOf(this.day.format(this.dateFormat.dayData)) === -1) {
        $day.find('.slot-picker-calendar__action')
          .addClass('slot-picker-calendar__action--busy')
          .prop('disabled', 'true');
+      } else {
+        $day.find('button').on('click', this.handleDayClick.bind(this));
       }
 
       return $day;
     }
 
     handleDayClick(event) {
-      this.renderTimeSlots($(event.currentTarget));
+      const $button = $(event.currentTarget),
+        $day = $button.parent();
+      this.showDayAsSelected($button);
+      this.renderTimeSlotHeader($day);
+      this.renderTimeSlots($day);
+    }
+
+    showDayAsSelected($button) {
+      const selectedClass = 'slot-picker-calendar__action--selected';
+      this.month.calendar.$container.find(`.${selectedClass}`).removeClass(selectedClass);
+      $button.addClass('slot-picker-calendar__action--selected');
+    }
+
+    renderTimeSlotHeader($day) {
+      this.$timeSlotHeaderDate.html(`on ${$day.data('day').format(this.dateFormat.dayShort)}`);
     }
 
     renderTimeSlots($day) {

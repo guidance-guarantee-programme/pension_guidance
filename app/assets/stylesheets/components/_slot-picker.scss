@@ -80,7 +80,8 @@ $calendar-day-width: (100% / $calendar-days-in-a-week);
   box-shadow: 0 -1px $calendar-border,
     inset -1px -1px 0 0 $calendar-border;
 
-  &:focus {
+  &:focus,
+  &.slot-picker-calendar__action--selected {
     outline: none;
     background: $calendar-day-selection;
     font-weight: bold;
