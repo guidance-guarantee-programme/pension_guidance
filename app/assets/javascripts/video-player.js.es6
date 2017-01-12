@@ -67,9 +67,18 @@
           const originalOnPlayerStateChange = this.onPlayerStateChange;
 
           this.onPlayerStateChange = function(stateId) {
+            let stateValue = 'UNKNOWN';
+
+            $.each(YT.PlayerState, function(key, value) {
+              if (value === stateId) {
+                stateValue = key;
+                return false;
+              }
+            });
+
             dataLayer.push({
-              'event': 'onPlayerStateChange',
-              'eventValue': stateId
+              'eventCategory': 'Youtube Player',
+              'eventAction': stateValue
             });
 
             originalOnPlayerStateChange.apply(this, arguments);
