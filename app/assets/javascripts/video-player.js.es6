@@ -77,6 +77,7 @@
             });
 
             dataLayer.push({
+              'event': 'PlayerStateChange',
               'eventCategory': 'Youtube Player',
               'eventAction': stateValue
             });
