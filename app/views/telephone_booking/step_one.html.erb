@@ -6,65 +6,38 @@
 
 <div class="l-grid-row">
   <div class="l-column-half">
-    <div class="slot-picker" data-slot-picker data-date="2017-01-05">
-      <div class="js-slot-picker-calendar-container">
-        <a href="/book-telephone-appointment?month=<%= @prev_month_url_var %>" class="js-slot-picker-prev-month slot-picker__prev-month<% if @is_first_month %> slot-picker__prev-month--hide<% end %>"><%= @prev_month %></a>
-        <h2 class="slot-picker__month js-slot-picker-month"><%= @month %></h2>
-        <a href="/book-telephone-appointment?month=<%= @next_month_url_var %>" class="js-slot-picker-next-month slot-picker__next-month<% if @is_last_month %> slot-picker__next-month--hide<% end %>"><%= @next_month %></a>
-        <ul aria-hidden="true" class="slot-picker-days">
-          <li class="slot-picker-days__day">Mon</li>
-          <li class="slot-picker-days__day">Tue</li>
-          <li class="slot-picker-days__day">Wed</li>
-          <li class="slot-picker-days__day">Thu</li>
-          <li class="slot-picker-days__day">Fri</li>
-          <li class="slot-picker-days__day">Sat</li>
-          <li class="slot-picker-days__day">Sun</li>
-        </ul>
-        <ul class="slot-picker-calendar js-slot-picker-calendar">
-          <% if @day_of_the_week > 1 %>
-            <li class="slot-picker-calendar__day" aria-hidden="true" style="flex-basis: <%= (100.0/7.0) * (@day_of_the_week - 1) %>%"></li>
-          <% end %>
-          <% @days.each do |day| %>
-            <li class="slot-picker-calendar__day">
-              <<%= @available_days.include?(day) ? "a href=\"/book-telephone-appointment?month=#{@month_url_var}&amp;date=#{day.strftime('%Y-%m-%d')}\"".html_safe : 'span' %> class="slot-picker-calendar__action <% unless @available_days.include?(day) %>slot-picker-calendar__action--busy<% end %> <%= day == @selected_date ? 'slot-picker-calendar__action--selected' : '' %>">
-                <span class="visually-hidden"><%= day.strftime('%A, %B %-d %Y') %> <%= @available_days.include?(day) ? '' : '(unavailable)' %></span>
-                <span aria-hidden="true"><%= day.day %></span>
-              </<% if @available_days.include?(day) %>a<% else %>span<% end %>>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="l-column-half">
-    <h2 class="slot-picker-time-header">Pick a time <span class="js-slot-picker-time-header-date"></span></h2>
-    <div class="slot-picker-times js-slot-picker-times">
-      <% if @available_times %>
-        <% @available_times.each do |time| %>
-          <a class="slot-picker-times__time" href="/book-telephone-appointment?date=<%= @selected_date_formatted %>&amp;time=<%= time %>"><%= time %></a>
-        <% end %>
+    <div class="slot-picker">
+      <h2>Choose a date</h2>
+
+      <% @months.each do |days| %>
+        <div class="slot-picker-month" data-month="<%= days.first.strftime('%Y-%m') %>">
+          <h3><%= days.first.strftime('%B') %></h3>
+          <ul aria-hidden="true" class="slot-picker-days">
+            <li class="slot-picker-days__day">Mon</li>
+            <li class="slot-picker-days__day">Tue</li>
+            <li class="slot-picker-days__day">Wed</li>
+            <li class="slot-picker-days__day">Thu</li>
+            <li class="slot-picker-days__day">Fri</li>
+            <li class="slot-picker-days__day">Sat</li>
+            <li class="slot-picker-days__day">Sun</li>
+          </ul>
+          <ul class="slot-picker-calendar">
+            <% days.each do |day| %>
+              <li class="slot-picker-calendar__day">
+                <button>2017-01-01</button>
+                <input type="radio" class="slot-picker-calendar__input" value="<%= day.strftime('%Y-%m-%d') %>" id="<%= day.strftime('%Y-%m-%d') %>" name="day" <%= @available_days.include?(day) ? '' : 'disabled="true"' %>>
+                <label for="<%= day.strftime('%Y-%m-%d') %>" class="slot-picker-calendar__action <%= @available_days.include?(day) ? '' : 'slot-picker-calendar__action--busy' %>">
+                  <span class="visually-hidden"><%= day.strftime('%A, %B %-d %Y') %></span>
+                  <span aria-hidden="true"><%= day.day %></span>
+                </label>
+              </li>
+            <% end %>
+          </ul>
+        </div>
       <% end %>
     </div>
   </div>
+  <div class="l-column-half">
+    &nbsp;
+  </div>
 </div>
-
-<script type="text/html" id="slot-picker-calendar-time">
-  <a class="slot-picker-times__time" href="/book-telephone-appointment?date={date}&amp;time={time}">{time}</a>
-</script>
-
-<script type="text/html" id="slot-picker-calendar-faux-day-template">
-    <li class="slot-picker-calendar__day" aria-hidden="true"></li>
-</script>
-
-<script type="text/html" id="slot-picker-calendar-day-template">
-  <li class="slot-picker-calendar__day">
-    <button class="slot-picker-calendar__action">
-      <span class="visually-hidden">{day}</span>
-      <span aria-hidden="true">{day_number}</span>
-    </button>
-  </li>
-</script>
-
-<script>
-window.availability = <%= @data.html_safe %>;
-</script>

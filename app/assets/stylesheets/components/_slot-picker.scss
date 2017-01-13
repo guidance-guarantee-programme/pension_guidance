@@ -138,3 +138,14 @@ $calendar-day-width: (100% / $calendar-days-in-a-week);
 .slot-picker__prev-month--hide {
   display: none;
 }
+
+.slot-picker-calendar__input {
+  visibility: hidden;
+  position: absolute;
+
+  &:checked {
+    & ~ .slot-picker-calendar__action {
+      background: $calendar-day-selection;
+    }
+  }
+}
