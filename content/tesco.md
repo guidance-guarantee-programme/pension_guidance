@@ -6,7 +6,7 @@ tags:
 
 # Book a free guidance appointment with Pension Wise
 
-Pension Wise is a free and impartial government service about your defined contribution pension options. 
+Pension Wise is a free and impartial government service about your defined contribution pension options.
 
 ^Pension Wise does not cover final salary or career average pensions – this includes the now closed Tesco Pension Scheme.^
 
@@ -19,7 +19,7 @@ Tesco and Pension Wise are offering trial appointments for Tesco staff. To book,
 
 # About the appointment
 
-An appointment is a conversation between you and a trained Pension Wise guidance specialist. They last around 45 minutes and take place in private at your workplace. Availability is limited to first come, first served. 
+An appointment is a conversation between you and a trained Pension Wise guidance specialist. They last around 45 minutes and take place in private at your workplace. Availability is limited to first come, first served.
 
 In your appointment, the guidance specialist will:
 
@@ -32,4 +32,8 @@ Afterwards you’ll get a summary of what was discussed.
 
 ^Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.^
 
-You can book your [Pension Wise appointment online](https://tpw.acuityscheduling.com/schedule.php#) now.
+To book your Pension Wise appointment, select your location below:
+
+[England & Wales](https://tpw.acuityscheduling.com/schedule.php)
+[Northern Ireland](https://app.acuityscheduling.com/schedule.php?owner=13020657)
+[Scotland](https://pensionwisecas.acuityscheduling.com/schedule.php)
