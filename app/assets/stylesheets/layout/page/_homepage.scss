@@ -70,7 +70,7 @@
 .l-home-row--accent {
   @extend %outdent-to-full-width;
   background-color: $home-row-accent-background;
-  background-image: linear-gradient(to bottom, $color-coffee-background-dark 0%, $color-coffee-background-light 100%);
+  background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
   color: $color-white;
   position: relative;
   padding: 0;
@@ -78,17 +78,17 @@
 
 .l-home-row-accent__content {
   @include media(desktop) {
-    background-image: image-url("home/coffee_banner.png");
-    background-position: top right;
+    background-image: image-url("home/dogs_banner.png");
+    background-position: 107% 24%;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 75%;
   }
 }
 
 .l-home-row--callout {
   @extend %outdent-to-full-width;
   background: $home-row-callout-background;
-  background-image: linear-gradient(to bottom, $color-coffee-background-dark 0%, $color-coffee-background-light 100%);
+  background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
   padding: 0;
 }
 
@@ -96,7 +96,7 @@
   color: $color-white;
 
   @include media(desktop) {
-    background-image: image-url("home/coffee_poster.png");
+    background-image: image-url("home/dogs_poster.png");
     background-position: center right;
     background-repeat: no-repeat;
     background-size: 50%;
