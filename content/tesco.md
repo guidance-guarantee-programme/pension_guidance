@@ -35,5 +35,7 @@ Afterwards you’ll get a summary of what was discussed.
 To book your Pension Wise appointment, select your location below:
 
 [England & Wales](https://tpw.acuityscheduling.com/schedule.php)
+
 [Northern Ireland](https://app.acuityscheduling.com/schedule.php?owner=13020657)
+
 [Scotland](https://pensionwisecas.acuityscheduling.com/schedule.php)
