@@ -2,7 +2,7 @@
 
 jasmine.getFixtures().fixturesPath = '../../spec/javascripts/fixtures';
 
-describe('mobile nav toggler', function() {
+describe('navigation', function() {
   'use strict';
 
   /**
@@ -27,29 +27,28 @@ describe('mobile nav toggler', function() {
   }
 
   it('should be defined', function() {
-    expect(PWPG.mobileNavToggler).toBeDefined();
+    expect(PWPG.Navigation).toBeDefined();
   });
 
   describe('toggles visibility of the navigation', function() {
     beforeEach(function() {
-      loadFixtures('mobile-nav-toggler.html');
-      PWPG.mobileNavToggler.init();
+      loadFixtures('navigation.html');
+      new PWPG.Navigation();
     });
 
-    it('adds `active` class on first click', function() {
+    it('adds `active` class and correct aria attributes on first click', function() {
       click($('.js-nav-toggler')[0]);
       expect($('.js-nav')).toHaveClass('active');
+      expect($('.js-nav')).toHaveAttr('aria-hidden', 'false');
+      expect($('.js-nav-toggler')).toHaveAttr('aria-expanded', 'true');
     });
 
-    it('removes `active` class on second click', function() {
+    it('removes `active` class and correct aria attributes on second click', function() {
       click($('.js-nav-toggler')[0]);
       click($('.js-nav-toggler')[0]);
       expect($('.js-nav')).not.toHaveClass('active');
-    });
-
-    it('prevents the trigger link from being followed', function() {
-      click($('.js-nav-toggler')[0]);
-      expect(window.location.href.indexOf('#mobilenav')).toBe(-1);
+      expect($('.js-nav')).toHaveAttr('aria-hidden', 'true');
+      expect($('.js-nav-toggler')).toHaveAttr('aria-expanded', 'false');
     });
   });
 });

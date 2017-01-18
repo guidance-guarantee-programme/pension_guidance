@@ -1,12 +1,21 @@
 .l-page-nav {
   overflow: hidden;
 
-  @include media($navigation-full-width) {
+  &:after {
+    content: "mobile";
+    display: none;
+  }
+
+  @include media($navigation-full-width) { // scss-lint:disable DeclarationOrder
     position: absolute;
     top: -4px;
     right: 4px;
     margin: 0;
     overflow: visible;
+
+    &:after {
+      content: "full";
+    }
   }
 
   .nav__list {
