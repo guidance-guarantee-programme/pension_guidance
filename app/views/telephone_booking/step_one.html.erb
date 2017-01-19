@@ -1,0 +1,43 @@
+<div class="l-grid-row">
+  <div class="l-column-full">
+    <h1>Book a telephone appointment</h1>
+  </div>
+</div>
+
+<div class="l-grid-row">
+  <div class="l-column-half">
+    <div class="slot-picker">
+      <h2>Choose a date</h2>
+
+      <% @months.each do |days| %>
+        <div class="slot-picker-month" data-month="<%= days.first.strftime('%Y-%m') %>">
+          <h3><%= days.first.strftime('%B') %></h3>
+          <ul aria-hidden="true" class="slot-picker-days">
+            <li class="slot-picker-days__day">Mon</li>
+            <li class="slot-picker-days__day">Tue</li>
+            <li class="slot-picker-days__day">Wed</li>
+            <li class="slot-picker-days__day">Thu</li>
+            <li class="slot-picker-days__day">Fri</li>
+            <li class="slot-picker-days__day">Sat</li>
+            <li class="slot-picker-days__day">Sun</li>
+          </ul>
+          <ul class="slot-picker-calendar">
+            <% days.each do |day| %>
+              <li class="slot-picker-calendar__day">
+                <button>2017-01-01</button>
+                <input type="radio" class="slot-picker-calendar__input" value="<%= day.strftime('%Y-%m-%d') %>" id="<%= day.strftime('%Y-%m-%d') %>" name="day" <%= @available_days.include?(day) ? '' : 'disabled="true"' %>>
+                <label for="<%= day.strftime('%Y-%m-%d') %>" class="slot-picker-calendar__action <%= @available_days.include?(day) ? '' : 'slot-picker-calendar__action--busy' %>">
+                  <span class="visually-hidden"><%= day.strftime('%A, %B %-d %Y') %></span>
+                  <span aria-hidden="true"><%= day.day %></span>
+                </label>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="l-column-half">
+    &nbsp;
+  </div>
+</div>

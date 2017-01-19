@@ -24,6 +24,8 @@ Rails.application.routes.draw do
 
     get 'facebook-landing', to: 'marketing#facebook-landing'
 
+    get 'book-telephone-appointment', to: 'telephone_booking#step_one'
+
     resources :locations, only: [:index, :show] do
       member do
         get '/booking-request/step-one',  to: 'booking_requests#step_one'

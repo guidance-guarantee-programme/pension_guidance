@@ -1,0 +1,151 @@
+@function striped-background($background) {
+  @return $background repeating-linear-gradient(
+    -45deg,
+    $background,
+    $background 1px,
+    transparentize($color-white, .3) 1px,
+    transparentize($color-white, .3) 6px
+  );
+}
+
+@mixin striped($bg-colour) {
+  background: striped-background($bg-colour);
+}
+
+$calendar-border: #ccc;
+$calendar-day-selection: #d5e8f3;
+$calendar-busy-background: #ccc;
+$calendar-row-height: 50px;
+$calendar-days-in-a-week: 7;
+$calendar-day-width: (100% / $calendar-days-in-a-week);
+
+.slot-picker {
+  max-width: 400px;
+}
+
+.slot-picker__month {
+  margin: 0 0 16px;
+}
+
+.slot-picker-days {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.slot-picker-days__day {
+  flex-basis: $calendar-day-width;
+  height: 20px;
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+  box-shadow: -1px -1px $calendar-border,
+    inset -1px 0 $calendar-border;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .6em;
+  line-height: 1.7;
+}
+
+.slot-picker-calendar {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+}
+
+.slot-picker-calendar__day {
+  flex-basis: $calendar-day-width;
+  list-style: none;
+  margin: 0;
+  height: $calendar-row-height;
+  box-shadow: -1px -1px $calendar-border,
+    inset -1px 0 $calendar-border;
+}
+
+.slot-picker-calendar__action {
+  cursor: pointer;
+  position: relative;
+  font-size: .8em;
+  display: block;
+  border: 0;
+  width: 100%;
+  height: $calendar-row-height;
+  line-height: $calendar-row-height;
+  text-align: center;
+  background: $color-white;
+  user-select: none;
+  box-shadow: 0 -1px $calendar-border,
+    inset -1px -1px 0 0 $calendar-border;
+
+  &:focus,
+  &.slot-picker-calendar__action--selected {
+    outline: none;
+    background: $calendar-day-selection;
+    font-weight: bold;
+  }
+
+  &:link,
+  &:visited,
+  &:hover {
+    color: $color-black;
+    text-decoration: none;
+  }
+}
+
+.slot-picker-calendar__action--selected {
+  background: $calendar-day-selection;
+  font-weight: bold;
+}
+
+.slot-picker-calendar__action--busy {
+  @include striped($calendar-busy-background);
+  cursor: not-allowed;
+  color: $color-black;
+}
+
+.slot-picker-times {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slot-picker-times__time {
+  border: 1px solid #ccc;
+  height: 50px;
+  flex-basis: 50%;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $color-black;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.slot-picker-time-header {
+  margin-top: 0;
+}
+
+.slot-picker__next-month--hide,
+.slot-picker__prev-month--hide {
+  display: none;
+}
+
+.slot-picker-calendar__input {
+  visibility: hidden;
+  position: absolute;
+
+  &:checked {
+    & ~ .slot-picker-calendar__action {
+      background: $calendar-day-selection;
+    }
+  }
+}
