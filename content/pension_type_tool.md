@@ -9,7 +9,7 @@ tags:
 Use this service to:
 
 - check your pension type
-- find out if you can book a Pension Wise appointment
+- find out if you can book a free Pension Wise appointment
 
 If you have a defined contribution (personal or workplace) pension you choose how to take your money – you can then get free guidance about this from one of our pensions specialists.
 
