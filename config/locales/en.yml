@@ -45,6 +45,9 @@ en:
               inclusion: must be 50 or over to be eligible for guidance
             dc_pot:
               accepted: must be selected to be eligible for guidance
+            email:
+              invalid_email: must be formatted correctly
+
         calculators/adjustable_income_form:
           attributes:
             pot:
