@@ -15,7 +15,7 @@ class BookingRequestForm
   with_options if: :step_two? do |step_two|
     step_two.validates :first_name, presence: true
     step_two.validates :last_name, presence: true
-    step_two.validates :email, presence: true, format: { with: /.+@.+\..+/ }
+    step_two.validates :email, presence: true, email: true
     step_two.validates :telephone_number, presence: true
     step_two.validates :memorable_word, presence: true
     step_two.validates :appointment_type, inclusion: { in: %w(50-54 55-plus) }, if: :date_of_birth
