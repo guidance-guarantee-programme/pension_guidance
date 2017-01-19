@@ -47,6 +47,9 @@ RSpec.describe BookingRequestForm do
       it 'requires a reasonably valid email' do
         subject.email = 'blah'
         expect(subject).not_to be_step_two_valid
+
+        subject.email = 'ben@example.com0123456789'
+        expect(subject).not_to be_step_two_valid
       end
 
       it 'requires a valid DOB' do
