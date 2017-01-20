@@ -9,6 +9,7 @@
     PWPG: true
   },
   "rules": {
-    "strict": 1
+    "strict": 1,
+    "curly": 1
   }
 }
