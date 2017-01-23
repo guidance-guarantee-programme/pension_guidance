@@ -20,7 +20,7 @@ class CategoryRepository
   private
 
   def read_category(id, path)
-    source = YAML.load(File.read(path))
+    source = YAML.safe_load(File.read(path))
 
     Category.new(id, title: source['title'], description: source['description'])
   end
