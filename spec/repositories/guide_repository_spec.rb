@@ -66,4 +66,14 @@ RSpec.describe GuideRepository do
       )
     end
   end
+
+  describe '#slugs' do
+    it 'returns an array of slugs' do
+      expect(guide_repository.slugs).to include(
+        'the-test-html-guide',
+        'the-test-govspeak-guide',
+        'nested/nested-guide'
+      )
+    end
+  end
 end
