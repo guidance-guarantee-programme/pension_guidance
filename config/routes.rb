@@ -7,11 +7,11 @@ Rails.application.routes.draw do
 
     get '/book', to: redirect('/appointments', status: 302)
 
-    GuideRepository.new.all.each do |guide|
-      get guide.slug,
+    GuideRepository.slugs.each do |slug|
+      get slug,
           controller: 'guides',
           action: 'show',
-          id: guide.slug
+          id: slug
     end
 
     get 'guaranteed-income/estimate', to: 'calculators/guaranteed_income#show'

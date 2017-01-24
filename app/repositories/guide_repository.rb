@@ -7,6 +7,10 @@ class GuideRepository
   attr_accessor :dir
   private :dir, :dir=
 
+  def self.slugs
+    @slugs ||= new.slugs
+  end
+
   def initialize(dir = Rails.root.join('content'))
     self.dir = dir
   end
@@ -29,6 +33,13 @@ class GuideRepository
       id = path.match(%r{^#{dir}/(?<id>[^\.]*)\.(?<ext>.*)$})[:id]
       read_guide(id, path)
     end
+  end
+
+  def slugs
+    glob_dir('*').map do |path|
+      id = path.match(%r{^#{dir}/(?<id>[^\.]+)\.(?:(?<locale>[^\.]+)\.)?(?<ext>.*)$})[:id]
+      id.tr('_', '-')
+    end.uniq
   end
 
   private
