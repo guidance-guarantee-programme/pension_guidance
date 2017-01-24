@@ -32,16 +32,53 @@ RSpec.describe GuideRepository do
       specify 'with the correct content type' do
         expect(find.content_type).to eq(expected_content_type)
       end
+
+      specify 'with the correct tags' do
+        expect(find.metadata.tags).to eq(expect_tags)
+      end
     end
 
     context 'a govspeak guide' do
       let(:id) { 'the_test_govspeak_guide' }
+
+      it 'lists the available locales' do
+        expect(find.available_locales).to match_array(%i(en without-overrides with-overrides))
+      end
 
       include_examples 'existing guide' do
         let(:expected_content_type) { :govspeak }
         let(:expected_content) { "# This is the test guide\n" }
         let(:expected_label) { 'Tested' }
         let(:expected_description) { 'The guide used for testing' }
+        let(:expect_tags) { %w(testing tags govspeak) }
+      end
+
+      context 'language file without metadata overrides' do
+        before do
+          allow(I18n).to receive(:locale).and_return(:'without-overrides')
+        end
+
+        include_examples 'existing guide' do
+          let(:expected_content_type) { :govspeak }
+          let(:expected_content) { "# This is the test guide without metadata overrides\n" }
+          let(:expected_label) { 'Tested' }
+          let(:expected_description) { 'The guide used for testing' }
+          let(:expect_tags) { %w(testing tags govspeak) }
+        end
+      end
+
+      context 'language file with metadata overrides' do
+        before do
+          allow(I18n).to receive(:locale).and_return(:'with-overrides')
+        end
+
+        include_examples 'existing guide' do
+          let(:expected_content_type) { :govspeak }
+          let(:expected_content) { "# This is the test guide with metadata overrides\n" }
+          let(:expected_label) { 'Tested and overwritten' }
+          let(:expected_description) { 'The guide used for override testing' }
+          let(:expect_tags) { %w(override) }
+        end
       end
     end
 
@@ -53,6 +90,7 @@ RSpec.describe GuideRepository do
         let(:expected_content) { "<h1>This is the test guide</h1>\n" }
         let(:expected_label) { 'Tested' }
         let(:expected_description) { 'The guide used for testing' }
+        let(:expect_tags) { %w(testing tags html) }
       end
     end
   end

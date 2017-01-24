@@ -18,8 +18,8 @@ class GuideRepository
   def find(id)
     dirname = id.tr('-', '_')
     path = glob_dir(dirname)&.first || raise(GuideNotFound)
-
-    read_guide(id, path)
+    locale_paths = glob_dir("#{dirname}.*")
+    read_guide(id, path, locale_paths)
   end
 
   def find_all(*ids)
@@ -29,29 +29,42 @@ class GuideRepository
   end
 
   def all
-    glob_dir('*').map do |path|
-      id = path.match(%r{^#{dir}/(?<id>[^\.]*)\.(?<ext>.*)$})[:id]
-      read_guide(id, path)
-    end
+    glob_dir('*')
+      .group_by { |path| extract_from_path(path, :id) }
+      .map do |id, paths|
+        base_path = paths.detect { |path| extract_from_path(path, :locale).blank? }
+        read_guide(id, base_path, paths - [base_path])
+      end
   end
 
   def slugs
     glob_dir('*').map do |path|
-      id = path.match(%r{^#{dir}/(?<id>[^\.]+)\.(?:(?<locale>[^\.]+)\.)?(?<ext>.*)$})[:id]
-      id.tr('_', '-')
+      extract_from_path(path, :id).tr('_', '-')
     end.uniq
   end
 
   private
 
-  def read_guide(id, path)
-    content_type = file_content_type(path)
-    source = FrontMatterParser.new(File.read(path))
+  def read_guide(id, base_path, locale_paths)
+    locales = Hash[locale_paths.map { |path| [extract_from_path(path, :locale).to_sym, path] }]
 
-    Guide.new(id,
-              content: source.content,
-              content_type: content_type,
-              metadata: source.front_matter)
+    build_guide(
+      id,
+      file_content_type(base_path),
+      front_matter_for(base_path),
+      front_matter_for(locales[I18n.locale]),
+      locales.keys
+    )
+  end
+
+  def build_guide(id, content_type, base_source, locale_source, available_locales)
+    Guide.new(
+      id,
+      content: locale_source.content.presence || base_source.content,
+      content_type: content_type,
+      metadata: base_source.front_matter.merge(locale_source.front_matter),
+      available_locales: available_locales
+    )
   end
 
   def file_content_type(path)
@@ -65,5 +78,17 @@ class GuideRepository
 
   def glob_dir(file_pattern)
     Dir["#{dir}/**/#{file_pattern}.{md,html}"]
+  end
+
+  def extract_from_path(path, field)
+    path.match(%r{^#{dir}/(?<id>[^\.]+)\.(?:(?<locale>[^\.]+)\.)?(?<ext>.*)$})[field]
+  end
+
+  def front_matter_for(path)
+    if path
+      FrontMatterParser.new(File.read(path))
+    else
+      FrontMatterParser.new('')
+    end
   end
 end

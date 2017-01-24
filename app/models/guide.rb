@@ -1,11 +1,12 @@
 class Guide
-  attr_reader :id, :content, :content_type, :metadata
+  attr_reader :id, :content, :content_type, :metadata, :available_locales
 
-  def initialize(id, content: '', content_type: nil, metadata: nil)
+  def initialize(id, content: '', content_type: nil, metadata: nil, available_locales: [])
     @id = id
     @content = content
     @content_type = content_type
     @metadata = OpenStruct.new(metadata)
+    @available_locales = [:en] | available_locales
   end
 
   def ==(other)
