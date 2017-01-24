@@ -35,3 +35,7 @@ Style/FrozenStringLiteralComment:
 
 Style/EmptyMethod:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*

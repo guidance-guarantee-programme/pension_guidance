@@ -14,6 +14,6 @@ class FrontMatterParser
   def parse!
     match_result = source.match(/(?<front_matter>^---$.*?^---$\n)?(?<content>.*)/m)
     self.content = match_result[:content]
-    self.front_matter = match_result[:front_matter].present? ? YAML.load(match_result[:front_matter]) : {}
+    self.front_matter = match_result[:front_matter].present? ? YAML.safe_load(match_result[:front_matter]) : {}
   end
 end

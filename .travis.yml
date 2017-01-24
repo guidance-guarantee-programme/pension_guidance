@@ -13,6 +13,7 @@ env:
   - secure: oZejYlwy5wgEKshf51GbyA62FURMPRolk4snUK5cXQLCSQ+pjleKZq5h7CYlSZfvQNDctw0u3NsFMK9c+FNm057p4/wSvhP1wxz8Zq2jDFRJjmZGIInW5l5Fw7AvDE+Ndn9ndTyi/Ye/xWOIaiI9q9dlqcp62sKTjvHU+w+vGgA=
   - secure: MdrB+5oJX74bc7wSPut3vANmXUlvQN+pJyagxE+tuWWadKb5F4oAAXU2/BtrMqD9f/lxs2d+lh3AxKIWgN/ZUyxNxWZPk8958pqaTbc8eAcYLag4E2fqqyafkJZYW5Dny1lkoIzdmxn4FPHdp8WTfXsnOSmDa56fSj5DwBe4cF0=
 before_install:
+- gem update --system
 - echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
 - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 before_script:
