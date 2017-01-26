@@ -39,6 +39,9 @@
     color: $slot-picker-prompt;
   }
 
+  & + & {
+    padding-top: 10px;
+  }
 }
 
 
