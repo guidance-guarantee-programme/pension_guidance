@@ -9,3 +9,4 @@ Disallow: /take-whole-pot/estimate
 Disallow: /home-alternative
 Disallow: /pension-type-tool/
 Disallow: /facebook-landing
+Disallow: /landing
