@@ -1,4 +1,5 @@
 class FeedbacksController < ApplicationController
+  skip_before_action :verify_authenticity_token
   layout 'full_width'
 
   def new
