@@ -1,10 +1,12 @@
 (function($) {
   'use strict';
 
-  var button = $('[data-disable-with]');
+  var $disableButtons = $('[data-disable-with]');
 
-  button.parents('form').on('submit', function() {
-    button.prop('disabled', true);
-    button.val(button.data('disable-with'));
+  $disableButtons.parents('form').on('submit', function() {
+    var $currentFormButton = $(this).find($disableButtons);
+
+    $currentFormButton.prop('disabled', true);
+    $currentFormButton.val($currentFormButton.data('disable-with'));
   });
 })(jQuery);
