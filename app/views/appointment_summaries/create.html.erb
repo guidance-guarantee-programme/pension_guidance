@@ -6,7 +6,7 @@
 
 <div class="fixed-panel js-fixed-panel hide-from-print">
   <div class="fixed-panel__button">
-    <%= form_for @appointment_summary, url: download_appointment_summaries_path do |f| %>
+    <%= form_for @appointment_summary, url: download_appointment_summaries_path, html: { id: 'download_form' }, namespace: 'download' do |f| %>
 
       <% [*SUPPLEMENTARY_OPTIONS, :appointment_type].each do |field| %>
         <%= f.hidden_field field %>
@@ -17,7 +17,7 @@
   </div>
 
   <div class="fixed-panel__button">
-    <%= form_for @appointment_summary, url: print_appointment_summaries_path, html: { target: "_blank" } do |f| %>
+    <%= form_for @appointment_summary, url: print_appointment_summaries_path, html: { target: '_blank', id: 'print_form' }, namespace: 'print' do |f| %>
       <% [*SUPPLEMENTARY_OPTIONS, :appointment_type].each do |field| %>
         <%= f.hidden_field field %>
       <% end %>
