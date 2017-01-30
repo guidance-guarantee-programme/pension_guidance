@@ -7,8 +7,8 @@ When(/^I select (.*) as my age range$/) do |age|
   generator = @page.generator
 
   case age
-  when '55 or over' then generator.appointment_type_standard.set true
-  when '50 to 54' then generator.appointment_type_50_54.set true
+  when '55 or over' then generator.appointment_type_standard.click
+  when '50 to 54' then generator.appointment_type_50_54.click
   end
 end
 
@@ -19,12 +19,18 @@ When(/^I view the appointment summary$/) do
   @page = Pages::AppointmentSummary.new
 end
 
+When(/^I visit the appointment summary page$/) do
+  step('I visit the digital appointment summary generator')
+  step('I select 55 or over as my age range')
+  step('I view the appointment summary')
+end
+
 Given(/^I generate a valid appointment summary$/) do
   @page = Pages::AppointmentSummaryGenerator.new
   @page.load
 
   generator = @page.generator
-  generator.appointment_type_standard.set true
+  generator.appointment_type_standard.click
 
   generator.submit_button.click
 

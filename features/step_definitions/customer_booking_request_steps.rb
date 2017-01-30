@@ -37,6 +37,12 @@ Then(/^I see the location name "(.*?)"$/) do |name|
   expect(@step_one.location_name.text).to include(name)
 end
 
+When(/^I view the face to face booking form$/) do
+  step('a location is enabled for online booking')
+  step('I browse for the location')
+  step('I opt to book online')
+end
+
 When(/^I choose three available appointment slots$/) do
   @step_one = Pages::BookingStepOne.new
   expect(@step_one).to be_displayed
