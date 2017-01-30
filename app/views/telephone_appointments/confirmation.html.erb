@@ -2,14 +2,14 @@
 
 <p>Thank you for booking a guidance appointment with Pension Wise.</p>
 
-<p>Your reference number is <span class="t-booking-reference"><%= @telephone_appointment.id %></span> and one of our guidance specialists will call you on
+<p>Your reference number is <span class="t-booking-reference"><strong><%= @booking_reference %></strong></span> and one of our guidance specialists will call you on
   <span class="t-start">
     <strong>
-      <%= l(@telephone_appointment.start_at, format: :govuk_date) %>
+      <%= l(@booking_date, format: :govuk_date) %>
     </strong>
     at
     <strong>
-      <%= l(@telephone_appointment.start_at, format: :govuk_time) %>
+      <%= l(@booking_date, format: :govuk_time) %>
     </strong>
   </span>
 </p>

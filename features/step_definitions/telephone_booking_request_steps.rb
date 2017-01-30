@@ -10,8 +10,7 @@ end
 def stub_appointments_api_to_succeed
   allow(@appointment_api_fake).to receive(:create).once do |telephone_appointment|
     @created_telephone_appointment = telephone_appointment
-    telephone_appointment.id = 'test-id'
-    true
+    telephone_appointment.id = 123_456
   end
 end
 
@@ -107,7 +106,7 @@ end
 
 Then(/^they see a confirmation of their appointment$/) do
   @page = Pages::TelephoneAppointmentConfirmation.new
-  expect(@page.booking_reference).to have_text 'test-id'
+  expect(@page.booking_reference).to have_text '123456'
   expect(@page.start).to have_text '17 January 2017 at 12:20pm'
 end
 

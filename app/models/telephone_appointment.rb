@@ -21,6 +21,25 @@ class TelephoneAppointment
     :date_of_birth_day
   )
 
+  validates :start_at, presence: true
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :email, presence: true
+  validates :phone, presence: true
+  validates :memorable_word, presence: true
+  validates :date_of_birth, presence: true
+  validates :accept_terms_and_conditions, inclusion: { in: [true], message: 'must be accepted' }
+
+  def advance!
+    self.step += 1
+    yield
+  end
+
+  def reset!
+    self.step = 1
+    yield
+  end
+
   def eligible?
     age >= 55 && dc_pot_confirmed != 'no'
   end
@@ -39,15 +58,15 @@ class TelephoneAppointment
       memorable_word: memorable_word,
       date_of_birth: date_of_birth,
       opt_out_of_market_research: opt_out_of_market_research,
-      dc_pot_confirmed: dc_pot_confirmed == 'true' ? true : false
+      dc_pot_confirmed: dc_pot_confirmed == 'yes'
     }
   end
 
   def date_of_birth
     parts = [
-      @date_of_birth_year,
-      @date_of_birth_month,
-      @date_of_birth_day
+      date_of_birth_year,
+      date_of_birth_month,
+      date_of_birth_day
     ]
 
     return unless parts.all?(&:present?)
@@ -74,22 +93,14 @@ class TelephoneAppointment
   end
 
   def step
-    Integer(@step)
+    Integer(@step || 1)
   end
 
   def save
-    return false unless valid?
+    return unless valid?
+
     TelephoneAppointmentsApi.new.create(self)
   end
-
-  validates :start_at, presence: true
-  validates :first_name, presence: true
-  validates :last_name, presence: true
-  validates :email, presence: true
-  validates :phone, presence: true
-  validates :memorable_word, presence: true
-  validates :date_of_birth, presence: true
-  validates :accept_terms_and_conditions, inclusion: { in: [true], message: 'must be accepted' }
 
   private
 

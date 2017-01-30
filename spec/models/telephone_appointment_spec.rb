@@ -16,6 +16,10 @@ RSpec.describe TelephoneAppointment, type: :model do
     )
   end
 
+  it 'defaults `step` to 1' do
+    expect(subject.step).to eq(1)
+  end
+
   describe '#save' do
     before do
       allow(api).to receive(:create).and_return(true)
@@ -28,7 +32,7 @@ RSpec.describe TelephoneAppointment, type: :model do
 
     context 'valid object' do
       it 'stores the object in the api' do
-        expect(subject.save).to eq true
+        expect(subject.save).to be_truthy
         expect(api).to have_received(:create).with(subject)
       end
     end
@@ -36,7 +40,7 @@ RSpec.describe TelephoneAppointment, type: :model do
     context 'invalid object' do
       it 'does not store the object in the api' do
         subject.start_at = nil
-        expect(subject.save).to eq false
+        expect(subject.save).to be_falsey
         expect(api).to_not have_received(:create)
       end
     end

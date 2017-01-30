@@ -18,6 +18,10 @@ RSpec.describe TelephoneAppointmentsApi do
       {}
     end
 
+    let(:api_response) do
+      double(headers: { 'Location' => '/appointments/123456' })
+    end
+
     let(:telephone_appointment) do
       TelephoneAppointment.new(
         start_at: Time.zone.now.to_s,
@@ -36,12 +40,14 @@ RSpec.describe TelephoneAppointmentsApi do
     end
 
     it 'posts the telephone appointment' do
-      subject.create(telephone_appointment)
-
-      expect(connection).to have_received(:post).with(
+      expect(connection).to receive(:post).with(
         '/api/v1/appointments',
         telephone_appointment.attributes
-      )
+      ).and_return(api_response)
+
+      expect(subject.create(telephone_appointment)).to be_truthy
+
+      expect(telephone_appointment.id).to eq('123456')
     end
   end
 end

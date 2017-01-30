@@ -1,7 +1,8 @@
 class TelephoneAppointmentsApi
   def create(telephone_appointment)
-    connection.post('/api/v1/appointments', telephone_appointment.attributes)
-    true
+    response = connection.post('/api/v1/appointments', telephone_appointment.attributes)
+
+    telephone_appointment.id = parse_response_location(response)
   rescue HTTPConnection::UnprocessableEntity
     false
   end
@@ -12,6 +13,11 @@ class TelephoneAppointmentsApi
   end
 
   private
+
+  def parse_response_location(response)
+    location = response.headers['Location']
+    location.split('/').last
+  end
 
   def connection
     HTTPConnectionFactory.build(api_uri, connection_options).tap do |c|

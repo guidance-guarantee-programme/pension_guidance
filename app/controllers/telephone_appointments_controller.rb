@@ -2,79 +2,91 @@ class TelephoneAppointmentsController < ApplicationController
   layout 'full_width'
 
   before_action :set_breadcrumbs
-
-  def new
-    @telephone_appointment = TelephoneAppointment.new(step: 1)
+  before_action :telephone_appointment, only: %i(new create)
+  before_action only: %i(new create) do
     @feedback = FeedbackForm.for_online_booking
     retrieve_slots
   end
 
-  def create
-    @telephone_appointment = TelephoneAppointment.new(telephone_appointment_params)
-    @feedback = FeedbackForm.for_online_booking
-    retrieve_slots
+  def new
+  end
 
-    send(:"create_step_#{@telephone_appointment.step}")
+  def create
+    send("create_step_#{telephone_appointment.step}")
+  end
+
+  def confirmation
+    @booking_reference = flash[:booking_reference]
+    @booking_date      = Time.zone.parse(flash[:booking_date])
   end
 
   private
 
+  def telephone_appointment
+    @telephone_appointment ||= TelephoneAppointment.new(telephone_appointment_params)
+  end
+
   def create_step_1
-    @telephone_appointment.step = 2
-    render :new
+    telephone_appointment.advance! { render :new }
   end
 
   def create_step_2
     if request.xhr?
       render partial: 'times', locals: { times: @times }
     else
-      @telephone_appointment.step = 3
-      render :new
+      telephone_appointment.advance! { render :new }
     end
   end
 
-  def create_step_3 # rubocop:disable Metrics/MethodLength
-    if @telephone_appointment.ineligible?
+  def create_step_3
+    if telephone_appointment.ineligible?
       redirect_to ineligible_telephone_appointments_path
-    elsif @telephone_appointment.valid? == false
+    elsif telephone_appointment.invalid?
       render :new
-    elsif @telephone_appointment.save
-      render :confirmation
+    elsif telephone_appointment.save
+      confirm_to_customer(telephone_appointment)
     else
       @slot_assignment_failed = true
-      @telephone_appointment.step = 1
-      render :new
+      telephone_appointment.reset! { render :new }
     end
+  end
+
+  def confirm_to_customer(telephone_appointment)
+    redirect_to(
+      confirmation_telephone_appointments_path,
+      flash: {
+        booking_reference: telephone_appointment.id,
+        booking_date: telephone_appointment.start_at
+      }
+    )
   end
 
   def retrieve_slots
-    slots ||= TelephoneAppointmentsApi.new.slots
+    slots   = TelephoneAppointmentsApi.new.slots
+
     @months = retrieve_months(slots)
-    @times = retrieve_times(slots)
+    @times  = retrieve_times(slots)
   end
 
   def retrieve_months(slots)
-    available_days = slots.keys.map do |date|
-      DateTime.strptime(date, '%Y-%m-%d').to_date
-    end
+    default_months = Hash.new { |h, k| h[k] = [] }
+    available_days = slots.keys.map(&:to_date)
 
-    available_days.each_with_object({}) do |day, months|
-      key = day.change(day: 1)
-      months[key] ||= []
-      months[key] << day
-      months
+    available_days.each_with_object(default_months) do |day, months|
+      months[day.beginning_of_month] << day
     end
   end
 
   def retrieve_times(slots)
-    return unless @telephone_appointment.selected_date
-    key = @telephone_appointment.selected_date.strftime('%Y-%m-%d')
+    return unless telephone_appointment.selected_date
+
+    key = telephone_appointment.selected_date.strftime('%Y-%m-%d')
     slots[key].map { |d| DateTime.parse(d).in_time_zone }
   end
 
   def telephone_appointment_params # rubocop:disable Metrics/MethodLength
     params
-      .require(:telephone_appointment)
+      .fetch(:telephone_appointment, {})
       .permit(
         :step,
         :selected_date,
