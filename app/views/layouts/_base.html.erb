@@ -68,8 +68,6 @@
 <% content_for :body_end do %>
   <%= javascript_include_tag 'application' %>
 
-  <%= render 'research/user_zoom' %>
-
   <% if Rails.env.test? %>
     <%#
     Disable jQuery animations in the test environment to
