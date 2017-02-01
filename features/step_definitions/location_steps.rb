@@ -17,6 +17,10 @@ When(/^I drill down into a specific search result$/) do
   location.link_to.click
 end
 
+When(/^I visit a face to face booking location page$/) do
+  step('I view the details of an appointment location that handles its own booking')
+end
+
 When(/^I view the details of an appointment location that handles its own booking$/) do
   Pages::Location.new.load(id: 'london')
 end

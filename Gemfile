@@ -55,6 +55,7 @@ group :development do
 end
 
 group :test do
+  gem 'axe-matchers'
   gem 'cucumber-rails', require: false
   gem 'fakeredis'
   gem 'launchy'
