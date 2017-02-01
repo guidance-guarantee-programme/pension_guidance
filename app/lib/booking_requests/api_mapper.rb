@@ -13,7 +13,7 @@ module BookingRequests
           date_of_birth: booking_request.date_of_birth.iso8601,
           accessibility_requirements: booking_request.accessibility_requirements,
           marketing_opt_in: booking_request.opt_in,
-          defined_contribution_pot: dc_pot_as_boolean(booking_request.dc_pot),
+          defined_contribution_pot_confirmed: dc_pot_as_boolean(booking_request.dc_pot),
           slots: [
             slot(1, booking_request.primary_slot),
             slot(2, booking_request.secondary_slot),
@@ -35,7 +35,7 @@ module BookingRequests
     end
 
     def self.dc_pot_as_boolean(dc_pot)
-      %w(yes not-sure).any? { |type| dc_pot.include?(type) }
+      dc_pot == 'yes'
     end
   end
 end

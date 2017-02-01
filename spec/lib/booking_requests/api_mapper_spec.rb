@@ -38,7 +38,7 @@ RSpec.describe BookingRequests::ApiMapper do
           date_of_birth: '1950-01-01',
           accessibility_requirements: false,
           marketing_opt_in: false,
-          defined_contribution_pot: true,
+          defined_contribution_pot_confirmed: true,
           slots: [
             { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },
             { priority: 2, date: '2016-01-01', from: '1300', to: '1700' },
@@ -54,12 +54,8 @@ RSpec.describe BookingRequests::ApiMapper do
       expect(described_class.dc_pot_as_boolean('yes')).to be true
     end
 
-    it 'coerces `not-sure` to true' do
-      expect(described_class.dc_pot_as_boolean('not-sure')).to be true
-    end
-
-    it 'coerces `no` to false' do
-      expect(described_class.dc_pot_as_boolean('no')).to be false
+    it 'coerces `not-sure` to false' do
+      expect(described_class.dc_pot_as_boolean('not-sure')).to be false
     end
   end
 end
