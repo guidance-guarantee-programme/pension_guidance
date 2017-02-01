@@ -1,0 +1,7 @@
+.slot-picker-ajax-loader {
+  margin: 0 auto 16px;
+
+  @include media(tablet) {
+    margin: 150px auto 0;
+  }
+}

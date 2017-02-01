@@ -1,0 +1,10 @@
+.slot-picker-confirmed-date {
+  background: $color-white;
+  border: 1px solid $calendar-confirmed-slot-border;
+  box-shadow: 0 0 0 10px $calendar-confirmed-slot-border-2;
+  margin: 16px 10px 32px;
+}
+
+.slot-picker-confirmed-date__text {
+  margin: 8px;
+}

@@ -1,0 +1,11 @@
+<div class="l-column-full">
+  <%= f.hidden_field :start_at, id: 'hidden_telephone_appointment_start_at_step_1' %>
+  <%= render 'hidden_fields', f: f, id_prefix: 'step_1' %>
+
+  <% if @slot_assignment_failed %>
+    <div class="error-summary t-assignment-failed">
+      <h2 class="heading-medium error-summary-heading">There was a problem booking your appointment</h2>
+      <p>There was a problem assigning you an appointment time, please choose again.</p>
+    </div>
+  <% end %>
+</div>

@@ -8,6 +8,15 @@ en:
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'
 
+  date:
+    formats:
+      govuk_date: '%-e %B %Y'
+
+  time:
+    formats:
+      govuk_date: '%-e %B %Y'
+      govuk_time: '%-I:%M%P'
+
   number:
     currency:
       format:

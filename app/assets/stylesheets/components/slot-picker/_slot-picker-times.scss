@@ -1,0 +1,48 @@
+.slot-picker-times {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.slot-picker-times__time {
+  box-sizing: border-box;
+  flex-basis: 50%;
+  float: left;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+  width: 50%;
+
+  &:nth-child(even) {
+    text-align: right;
+  }
+
+  @include media(tablet) { // scss-lint:disable DeclarationOrder
+    &:nth-child(even) {
+      text-align: left;
+    }
+  }
+}
+
+.slot-picker-times__action {
+  background: none;
+  border: 1px solid $color-black;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 0 16px;
+  padding: 8px;
+  width: 98%;
+
+  @include media(tablet) {
+    width: 75%;
+  }
+
+  &:hover,
+  &:focus {
+    background: $calendar-selection;
+  }
+}
+
+.slot-picker-time-header {
+  margin-top: 0;
+}

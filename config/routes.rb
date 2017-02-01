@@ -34,6 +34,14 @@ Rails.application.routes.draw do
       end
     end
 
+    resources :telephone_appointments do
+      collection do
+        get :ineligible
+        get :confirmation
+        get :times
+      end
+    end
+
     resource :feedback, only: [:create, :new] do
       get :thanks
     end

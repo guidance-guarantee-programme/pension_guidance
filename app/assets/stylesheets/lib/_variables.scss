@@ -1,14 +1,13 @@
 // hex colours (http://chir.ag/projects/name-that-color/)
+$color-alto: #dcdcdc;
 $color-black: #0b0c0c;
-$color-grey-rolling-stone: #6f777b;
-$color-grey-silver-sand: #bfc1c3;
-$color-grey-mercury: #e2e2e2;
-$color-grey-porcelain: #e9ebec;
 $color-grey-alabaster: #f8f8f8;
 $color-grey-black-haze: #f4f5f5;
+$color-grey-mercury: #e2e2e2;
+$color-grey-porcelain: #e9ebec;
+$color-grey-rolling-stone: #6f777b;
+$color-grey-silver-sand: #bfc1c3;
 $color-white: #fff;
-
-
 
 $color-blue-biscay: #17375f;
 $color-blue-endeavour: #005ea5;
@@ -100,3 +99,15 @@ $home-row-callout-background: $color-dogs-background-light;
 //slot-picker
 $slot-picker-prompt: $color-black;
 $slot-picker-active-background: $color-blue-curious;
+
+//slot-picker TAP
+$calendar-border: $grey-3;
+$calendar-selection: $light-blue-50;
+$calendar-today: $light-blue;
+$calendar-hover: $light-blue-25;
+$calendar-busy-background-thin-stripes: $color-alto;
+$calendar-busy-background-wide-stripes: $color-grey-alabaster;
+$calendar-day-row-background: $color-grey-alabaster;
+$calendar-confirmed-slot-border: $grey-2;
+$calendar-confirmed-slot-border-2: $grey-3;
+$calendar-row-height: 55px;

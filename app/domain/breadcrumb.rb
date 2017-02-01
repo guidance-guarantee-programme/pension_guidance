@@ -7,6 +7,8 @@ class Breadcrumb
   end
 
   class << self
+    include Rails.application.routes.url_helpers
+
     def book_an_appointment
       new('/appointments', 'Book a free appointment')
     end
@@ -25,6 +27,10 @@ class Breadcrumb
 
     def pension_options
       new('/pension-pot-options', 'What you can do with your pot')
+    end
+
+    def book_a_telephone_appointment
+      new(new_telephone_appointment_path, 'Book a free telephone appointment')
     end
   end
 end

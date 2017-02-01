@@ -1,0 +1,17 @@
+<h1>Your booking is confirmed</h1>
+
+<p>Thank you for booking a guidance appointment with Pension Wise.</p>
+
+<p>Your reference number is <span class="t-booking-reference"><%= @telephone_appointment.id %></span> and one of our guidance specialists will call you on
+  <span class="t-start">
+    <strong>
+      <%= l(@telephone_appointment.start_at, format: :govuk_date) %>
+    </strong>
+    at
+    <strong>
+      <%= l(@telephone_appointment.start_at, format: :govuk_time) %>
+    </strong>
+  </span>
+</p>
+
+<p>You'll receive an email confirming these details and how to prepare for your appointment.</p>
