@@ -1,0 +1,36 @@
+.slot-picker-key {
+  list-style: none;
+  margin: 16px 0 32px;
+}
+
+.slot-picker-key__item {
+  display: inline-block;
+  list-style: none;
+  margin: 0 8px 0 0;
+
+  &:before {
+    border: 1px solid $calendar-border;
+    content: "";
+    display: inline-block;
+    height: 31px;
+    margin-right: 8px;
+    vertical-align: middle;
+    width: 31px;
+  }
+}
+
+.slot-picker-key__item--available {
+  &:before {
+    background: $color-white;
+    content: "";
+    display: inline-block;
+    height: 31px;
+    width: 31px;
+  }
+}
+
+.slot-picker-key__item--unavailable {
+  &:before {
+    @include striped($calendar-busy-background-thin-stripes, $calendar-busy-background-wide-stripes);
+  }
+}

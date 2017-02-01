@@ -14,6 +14,12 @@
   @include grid-column(1/2);
 }
 
+.l-column-half--right {
+  @include media(tablet) {
+    float: right;
+  }
+}
+
 .l-column-third {
   @include grid-column(1/3);
 }

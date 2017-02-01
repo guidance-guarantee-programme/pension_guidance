@@ -1,0 +1,10 @@
+<h2 class="slot-picker-header js-slot-picker-header">Choose a time on <%= l(@telephone_appointment.selected_date, format: :govuk_date) %></h2>
+<ol class="slot-picker-times js-slot-picker-times">
+  <% times.each do |time| %>
+    <li class="slot-picker-times__time">
+      <button class="slot-picker-times__action" value="<%= time %>" name="telephone_appointment[start_at]">
+        <%= l(time, format: :govuk_time) %>
+      </button>
+    </li>
+  <% end %>
+</ol>

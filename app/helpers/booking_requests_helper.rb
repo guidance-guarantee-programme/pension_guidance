@@ -8,7 +8,7 @@ module BookingRequestsHelper
   end
 
   def slot_duration
-    '60 minutes'
+    '45 to 60 minutes'
   end
 
   private
