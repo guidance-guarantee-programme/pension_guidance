@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     post 'questions', to: 'questions#next'
 
     get 'facebook-landing', to: 'marketing#facebook-landing'
+    get 'landing', to: 'marketing#landing'
 
     resources :locations, only: [:index, :show] do
       member do
