@@ -66,7 +66,7 @@ Then(/^I should be informed that Pension Wise cannot find that postcode$/) do
   expect(Pages::Locations.new).to have_invalid_postcode
 end
 
-Then(/^I should be informed that I need to enter a postcode$/) do
+Then(/^I am told to enter a valid postcode$/) do
   expect(Pages::Locations.new).to have_empty_postcode_error
 end
 
