@@ -1,25 +1,7 @@
-<% content_for(:page_title, t('service.title', page_title: 'Find an appointment location near you')) %>
-
-<% content_for(:data_layer) do %>
-  <script>
-    dataLayer = [{
-      'postcodeValid': false
-    }];
-  </script>
+<%= render 'components/error_postcode' do %>
+  <span class="t-invalid-postcode error-message">
+    <strong><%= @postcode.squish %></strong> is not a valid postcode
+  </span>
 <% end %>
 
-<div class="l-grid-row">
-  <div class="l-column-two-thirds">
-    <article role="article" class="text">
-      <h1>Find an appointment location near you</h1>
 
-      <p>Search for your nearest appointment locations.</p>
-
-      <%= render 'components/locations_search', has_error: true %>
-
-      <div class="application-notice info-notice">
-        <p>You can also <a href="/book-phone">book a phone appointment</a>.</p>
-      </div>
-    </article>
-  </div>
-</div>
