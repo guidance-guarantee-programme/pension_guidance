@@ -49,11 +49,9 @@
         <%= f.select(:primary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
         <%= f.select(:secondary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
         <%= f.select(:tertiary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <p>
-          <%= f.button('Continue', type: 'submit', class: 'button t-continue') %>
-        </p>
+        <p>Appointment availability depends on location. You may not get your requested dates. We may need to call you to arrange an alternative date.</p>
+        <p><%= f.button('Continue', type: 'submit', class: 'button t-continue') %></p>
       <% end %>
-      <p>This is a new service. Appointment availability is limited depending on location. We'll call or email to confirm an appointment date with you.</p>
     </div>
 
     <div class="l-column-half">
