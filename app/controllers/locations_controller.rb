@@ -11,15 +11,7 @@ class LocationsController < ApplicationController
     return render :search if @postcode.nil?
     return render :empty_postcode if @postcode.empty?
 
-    @locations = begin
-      Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT).map do |location|
-        LocationSearchResultDecorator.new(location)
-      end
-    rescue Geocoder::InvalidPostcode
-      render :invalid_postcode
-    rescue Geocoder::FailedLookup
-      render :failed_lookup
-    end
+    retrieve_locations
   end
 
   def show
@@ -36,6 +28,18 @@ class LocationsController < ApplicationController
   end
 
   private
+
+  def retrieve_locations
+    @locations = begin
+      Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT).map do |location|
+        LocationSearchResultDecorator.new(location)
+      end
+    rescue Geocoder::InvalidPostcode
+      render :invalid_postcode
+    rescue Geocoder::FailedLookup
+      render :failed_lookup
+    end
+  end
 
   def set_breadcrumbs
     breadcrumb Breadcrumb.book_an_appointment
