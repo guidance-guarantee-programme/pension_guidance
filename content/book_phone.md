@@ -4,12 +4,13 @@ tags:
   - appointments
   - booking
 ---
-
 # How to book a phone appointment
 
-Phone **0800 138 3944**.
+[Book online](/telephone-appointments/new){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
 
-If you’re outside the UK phone +44 20 3733 3495.
+or call **0800 138 3944**.
+
+If you’re outside the UK, call +44 20 3733 3495.
 
 - Call between 8am to 10pm, every day
 - We’ll send you an email to confirm your booking
