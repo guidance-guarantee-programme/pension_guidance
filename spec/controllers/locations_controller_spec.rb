@@ -11,9 +11,9 @@ RSpec.describe LocationsController, type: :controller do
     end
 
     specify 'with an empty postcode' do
-      get :index, params: { postcode: ' ' }
+      get :index, params: { postcode: '' }
 
-      expect(response).to render_template(:search)
+      expect(response).to render_template(:empty_postcode)
     end
 
     specify 'with an invalid postcode' do
