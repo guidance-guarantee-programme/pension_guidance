@@ -5,9 +5,7 @@
       Postcode
       <span class="form-hint">For example, 'SW1A 1AA'</span>
       <% if has_error %>
-        <span class="t-invalid-postcode error-message">
-          <strong><%= @postcode.squish %></strong> is not a valid postcode
-        </span>
+        <%= yield %>
       <% end %>
     </label>
     <input type="text" class="form-control" name="postcode" id="location" value="<%= @postcode&.squish %>">

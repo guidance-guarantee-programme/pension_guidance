@@ -5,6 +5,7 @@ module Pages
     set_url '/locations{?postcode}'
 
     element :invalid_postcode, '.t-invalid-postcode'
+    element :empty_postcode_error, '.t-empty-postcode'
 
     sections :locations, '.t-location' do
       element :name, '.t-name'

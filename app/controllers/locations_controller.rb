@@ -8,7 +8,8 @@ class LocationsController < ApplicationController
   layout 'full_width_with_breadcrumbs', only: %i(show index)
 
   def index
-    return render :search unless @postcode.present?
+    return render :search if @postcode.nil?
+    return render :empty_postcode if @postcode.empty?
 
     @locations = begin
       Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT).map do |location|

@@ -12,6 +12,10 @@ Scenario: Search using an invalid postcode (i.e. one that we can't find)
   When I search for appointment locations near to an invalid postcode
   Then I should be informed that Pension Wise cannot find that postcode
 
+Scenario: Search without entering a postcode
+  When I search for appointment locations without entering a postcode
+  Then I should be informed that I need to enter a postcode
+
 Scenario: Bookmark search results
   Given I have searched for appointment locations near to a valid postcode
   And I have bookmarked the page

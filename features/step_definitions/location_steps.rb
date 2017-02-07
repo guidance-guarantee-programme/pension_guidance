@@ -35,6 +35,10 @@ When(/^I search for appointment locations near to an invalid postcode$/) do
   Pages::Locations.new.load(postcode: postcode)
 end
 
+When(/^I search for appointment locations without entering a postcode$/) do
+  Pages::Locations.new.load(postcode: '')
+end
+
 When(/^I view the details of an appointment location that doesn't handle its own booking$/) do
   Pages::Location.new.load(id: 'paris')
 end
@@ -60,6 +64,10 @@ end
 
 Then(/^I should be informed that Pension Wise cannot find that postcode$/) do
   expect(Pages::Locations.new).to have_invalid_postcode
+end
+
+Then(/^I should be informed that I need to enter a postcode$/) do
+  expect(Pages::Locations.new).to have_empty_postcode_error
 end
 
 Then(/^I should see the details of that appointment location$/) do
