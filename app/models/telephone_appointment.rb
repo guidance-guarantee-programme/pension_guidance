@@ -42,7 +42,7 @@ class TelephoneAppointment
   end
 
   def eligible?
-    age >= 55 && dc_pot_confirmed != 'no'
+    age >= 50 && dc_pot_confirmed != 'no'
   end
 
   def ineligible?
