@@ -127,5 +127,10 @@ RSpec.describe TelephoneAppointment, type: :model do
       subject.accept_terms_and_conditions = nil
       expect(subject).to_not be_valid
     end
+
+    it 'validates presence of dc_pot_confirmed' do
+      subject.dc_pot_confirmed = nil
+      expect(subject).to_not be_valid
+    end
   end
 end

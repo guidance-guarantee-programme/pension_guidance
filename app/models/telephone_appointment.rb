@@ -28,6 +28,7 @@ class TelephoneAppointment
   validates :phone, presence: true
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
+  validates :dc_pot_confirmed, presence: true
   validates :accept_terms_and_conditions, inclusion: { in: [true], message: 'must be accepted' }
 
   def advance!
