@@ -70,7 +70,7 @@ RSpec.describe TelephoneAppointment, type: :model do
 
     context 'older than 50' do
       it 'is eligible' do
-        subject.date_of_birth_year = '1910'
+        subject.date_of_birth_year = '1963'
         expect(subject).to be_eligible
       end
     end
