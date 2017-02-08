@@ -34,7 +34,7 @@ You might also have other income from:
 To get an idea of how much you’ll have in retirement, follow these steps:
 
 s1. [Check how much is in your pension pot](/pension-pot-value) and which pensions you’ve paid into.
-s2. Add your pension pot to your State Pension. Phone the Future Pension Centre on 0345 600 4274 to get a full State Pension statement.
+s2. Add your pension pot to your State Pension. Phone the Future Pension Centre on 0345 3000 168 to get a full State Pension statement.
 s3. Check what other income you’ll have in retirement and how it might change.
 s4. Choose [what to do with your pot](/pension-pot-options) and [shop around](/shop-around) to get quotes from providers.
 s5. Take away the [tax you pay](/tax).
