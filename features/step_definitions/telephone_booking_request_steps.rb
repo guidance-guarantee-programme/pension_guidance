@@ -107,7 +107,8 @@ end
 Then(/^they see a confirmation of their appointment$/) do
   @page = Pages::TelephoneAppointmentConfirmation.new
   expect(@page.booking_reference).to have_text '123456'
-  expect(@page.start).to have_text '17 January 2017 at 12:20pm'
+  expect(@page.start).to have_text '17 January 2017'
+  expect(@page.start).to have_text '12:20pm'
 end
 
 When(/^the slot becomes unavailable while they are filling in their details$/) do
