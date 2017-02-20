@@ -35,7 +35,7 @@ Rails.application.routes.draw do
       end
     end
 
-    resources :telephone_appointments do
+    resources :telephone_appointments, only: %i(new create), path: 'telephone-appointments' do
       collection do
         get :ineligible
         get :confirmation
