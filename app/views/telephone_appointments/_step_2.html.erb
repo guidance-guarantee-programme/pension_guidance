@@ -1,4 +1,6 @@
-  <div class="l-column-half l-column-half--right">
-    <%= render 'hidden_fields', f: f, id_prefix: 'step_2' %>
-    <%= render 'times', times: @times %>
-  </div>
+<% content_for(:page_title, t('service.title', page_title: 'Choose a Time - Book a phone appointment')) %>
+
+<div class="l-column-half l-column-half--right">
+  <%= render 'hidden_fields', f: f, id_prefix: 'step_2' %>
+  <%= render 'times', times: @times %>
+</div>
