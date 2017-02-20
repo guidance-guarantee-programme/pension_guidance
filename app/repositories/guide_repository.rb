@@ -11,6 +11,10 @@ class GuideRepository
     @slugs ||= new.slugs
   end
 
+  def self.cacheable_slugs
+    slugs.reject { |s| /question-\d+\Z/ === s } # rubocop:disable Style/CaseEquality
+  end
+
   def initialize(dir = Rails.root.join('content'))
     self.dir = dir
   end

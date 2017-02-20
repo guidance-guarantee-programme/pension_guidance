@@ -30,7 +30,7 @@ module PensionGuidance
     config.middleware.insert_before(
       ActionDispatch::Cookies,
       Middleware::StripSessionCookie,
-      paths: GuideRepository.slugs
+      paths: GuideRepository.cacheable_slugs
     )
   end
 end

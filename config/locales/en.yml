@@ -1,4 +1,6 @@
 en:
+  pension_type_tool:
+    error: 'Please answer the question to proceed'
 
   service:
     title: '%{page_title} - Pension Wise'
