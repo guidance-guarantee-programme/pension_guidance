@@ -1,6 +1,6 @@
 module Pages
   class NewTelephoneAppointment < SitePrism::Page
-    set_url '/telephone_appointments/new'
+    set_url '/telephone-appointments/new'
 
     element :first_name, '.t-first-name'
     element :last_name, '.t-last-name'
