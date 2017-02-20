@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   include Breadcrumbs
 
   protect_from_forgery with: :exception
+  before_action :set_locale
 
   helper_method :footer?
 
@@ -11,5 +12,9 @@ class ApplicationController < ActionController::Base
 
   def footer?
     true
+  end
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
   end
 end
