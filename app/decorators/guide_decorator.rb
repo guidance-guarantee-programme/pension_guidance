@@ -5,6 +5,10 @@ class GuideDecorator < SimpleDelegator
     "/#{slug}"
   end
 
+  def ga_origin
+    "top-#{slug.split('/').last}"
+  end
+
   def title
     @title ||= headers.values.first
   end

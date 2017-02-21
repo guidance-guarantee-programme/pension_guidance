@@ -15,7 +15,7 @@
       </div>
       <div class="l-column-third l-column-third--sidebar">
         <% if book_an_appointment_link? %>
-          <a href="/appointments" class="book-appointment" id="book-appointment-link">Book a free appointment</a>
+          <a href="/appointments<%= defined?(@guide) ? "?icn=book-appointment&ici=#{@guide.ga_origin}" : '' %>" class="book-appointment">Book a free appointment</a>
         <% end %>
 
         <%= yield :sidebar %>
