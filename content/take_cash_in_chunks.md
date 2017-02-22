@@ -67,6 +67,6 @@ Beware of [pension scams](/scams) contacting you unexpectedly about an investmen
 - Check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
 - Understand [how much tax](/tax) you’ll pay on any money you’re planning to take out.
 
-**Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.**
+**Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-take-cash-in-chunks) to find out more about what you can do with your pot.**
 
 </div>

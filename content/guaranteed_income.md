@@ -76,6 +76,6 @@ Beware of pension scams contacting you unexpectedly about an investment or busin
 - You can [shop around and compare providers](/shop-around) to get the best deal.
 - Understand [how much tax you’ll pay](/tax) on your annuity income.
 
-**Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.**
+**Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-guaranteed-income) to find out more about what you can do with your pot.**
 
 </div>

@@ -28,7 +28,7 @@ As with every investment the value of your pot could go up or down.
 
 ## Continuing to pay in
 
-You (and your employer) can continue to pay into your pot but there may be restrictions. 
+You (and your employer) can continue to pay into your pot but there may be restrictions.
 
 You usually pay tax if savings in your pension pots go above the [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance). This is currently £40,000 a year.
 
@@ -53,6 +53,6 @@ Ask your pension provider the following questions:
 - Does my pot have any special features that could mean I get a better deal, eg a guaranteed annuity rate?
 - Do you have up-to-date details of the person I want to leave my pot to (my ‘beneficiary’)?
 
-**Book a [free Pension Wise appointment](/appointments) to find out more about what you can do with your pot.**
+**Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-leave-pot-untouched) to find out more about what you can do with your pot.**
 
 </div>
