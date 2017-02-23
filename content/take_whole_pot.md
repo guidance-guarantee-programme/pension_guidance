@@ -16,9 +16,11 @@ You can take your whole pension pot as cash.
 
 You pay tax when you take money from your pot. This is because when you’re paying into your pension you get tax relief on your contributions.
 
-%Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
+^Find out [if you can book](/pension-type-tool) a free Pension Wise appointment.^
 
 {::calculator id="take-whole-pot" /}
+
+%Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 
 ## Paying tax
 
@@ -30,6 +32,8 @@ You may pay emergency tax when you take money from your pot which you can claim 
 
 If your provider doesn’t pay your emergency tax back automatically, you can claim it back from
 HM Revenue and Customs.
+
+^Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-take-whole-pot) to find out more about what you can do with your pot.^
 
 ## Benefits
 
@@ -46,7 +50,5 @@ Beware of [pension scams](/scams) contacting you unexpectedly about an investmen
 
 - Ask your provider if you can take 25% tax free.
 - If you want to reinvest the money, talk to a registered [financial adviser](/financial-advice) first.
-
-**Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-take-whole-pot) to find out more about what you can do with your pot.**
 
 </div>
