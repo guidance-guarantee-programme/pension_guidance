@@ -1,3 +1,8 @@
+---
+tags:
+  - welsh
+---
+
 # Cymraeg
 
 Mae gwefan Pensionwise yn y broses o gael ei chyfieithu i'r Gymraeg.
