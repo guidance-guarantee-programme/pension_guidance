@@ -24,6 +24,10 @@ class Guide
     tagged_with?('option')
   end
 
+  def welsh?
+    tagged_with?('welsh')
+  end
+
   def related_to_appointments?
     tagged_with?('appointments')
   end

@@ -3,6 +3,6 @@
 
 <%= render 'option' if @guide.option? %>
 
-<%= @guide.content %>
+<%= @guide.welsh? ? content_tag(:div, @guide.content, lang: 'cy') : @guide.content %>
 
 <%= render 'journey_links' if @guide.related_to_journey? %>

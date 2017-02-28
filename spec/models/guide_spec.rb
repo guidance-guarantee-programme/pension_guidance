@@ -48,6 +48,14 @@ RSpec.describe Guide, type: :model do
     end
   end
 
+  describe '#welsh?' do
+    context 'when tagged with "welsh"' do
+      let(:tags) { %w(welsh) }
+
+      it { is_expected.to be_welsh }
+    end
+  end
+
   describe '#related_to_appointments?' do
     context 'when tagged with "appointments"' do
       let(:tags) { %w(appointments) }
