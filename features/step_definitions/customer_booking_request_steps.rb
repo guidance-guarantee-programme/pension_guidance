@@ -11,10 +11,15 @@ Given(/^the date is (.*)$/) do |date|
   Timecop.travel @date
 end
 
-When(/^I browse for the location$/) do
+When(/^I browse for the location "([^"]*)"$/) do |location|
+  locations = {
+    'Hackney' => 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef',
+    'Dalston' => '183080c6-642b-4b8f-96fd-891f5cd9f9c7'
+  }
+
   with_booking_locations do
     @page = Pages::Location.new
-    @page.load(id: 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef')
+    @page.load(id: locations[location])
   end
 end
 
@@ -37,9 +42,13 @@ Then(/^I see the location name "(.*?)"$/) do |name|
   expect(@step_one.location_name.text).to include(name)
 end
 
+Then(/^I see slots up to the day of closure$/) do
+  expect(@step_one).to have_available_days(count: 1)
+end
+
 When(/^I view the face to face booking form$/) do
   step('a location is enabled for online booking')
-  step('I browse for the location')
+  step('I browse for the location "Hackney"')
   step('I opt to book online')
 end
 

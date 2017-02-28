@@ -5,19 +5,28 @@ Feature: Customer creates a Booking Request
 
 Scenario: Customer browses an online booking enabled location
   Given a location is enabled for online booking
-  When I browse for the location
+  When I browse for the location "Hackney"
   Then I can book online
 
 Scenario: Customer browses a regular location
   Given no locations are enabled for online booking
-  When I browse for the location
+  When I browse for the location "Hackney"
   Then I cannot book online
+
+@javascript @booking_locations @booking_requests @time_travel
+Scenario: Customer books a closing location
+  Given a location is enabled for online booking
+  And the date is "2016-06-17"
+  When I browse for the location "Dalston"
+  And I opt to book online
+  Then I see the location name "Dalston"
+  And I see slots up to the day of closure
 
 @javascript @booking_locations @booking_requests @time_travel
 Scenario: Customer makes an online Booking Request
   Given a location is enabled for online booking
   And the date is "2016-06-17"
-  When I browse for the location
+  When I browse for the location "Hackney"
   And I opt to book online
   Then I see the location name "Hackney"
   When I choose three available appointment slots
@@ -30,7 +39,7 @@ Scenario: Customer makes an online Booking Request
 Scenario: Customer navigates between Booking Request steps
   Given a location is enabled for online booking
   And the date is "2016-06-17"
-  When I browse for the location
+  When I browse for the location "Hackney"
   And I opt to book online
   Then I see the location name "Hackney"
   When I choose three available appointment slots
@@ -46,7 +55,7 @@ Scenario: Customer navigates between Booking Request steps
 Scenario: Customer attempts an invalid Booking Request
   Given a location is enabled for online booking
   And the date is "2016-06-17"
-  When I browse for the location
+  When I browse for the location "Hackney"
   And I opt to book online
   And I choose one available appointment slot
   Then I am told to choose further slots
@@ -60,7 +69,7 @@ Scenario: Customer attempts an invalid Booking Request
 Scenario: Customer is ineligible for guidance
   Given a location is enabled for online booking
   And the date is "2016-06-17"
-  When I browse for the location
+  When I browse for the location "Hackney"
   And I opt to book online
   And I choose three available appointment slots
   And I provide my personal details
@@ -71,7 +80,7 @@ Scenario: Customer is ineligible for guidance
 Scenario: Customer leaves inline feedback
   Given a location is enabled for online booking
   And the date is "2016-06-17"
-  When I browse for the location
+  When I browse for the location "Hackney"
   And I opt to book online
   When I complete the inline feedback
   Then I see my feedback was sent
