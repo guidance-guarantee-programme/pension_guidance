@@ -20,6 +20,8 @@ You don’t pay tax while the money stays in your pot.
 
 Money you leave in your pot can be [passed on](/when-you-die) tax free if you die before the age of 75.
 
+^Find out [if you can book](/pension-type-tool) a free Pension Wise appointment.^
+
 ## Fees and investment risk
 
 You may be charged extra fees if you don't start taking your money when you reach your selected retirement age. Check with your provider.
@@ -33,6 +35,8 @@ You (and your employer) can continue to pay into your pot but there may be restr
 You usually pay tax if savings in your pension pots go above the [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance). This is currently £40,000 a year.
 
 {::calculator id="leave-pot-untouched" /}
+
+^Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-leave-pot-untouched) to find out more about what you can do with your pot.^
 
 ## Scams
 
@@ -52,7 +56,5 @@ Ask your pension provider the following questions:
 - How much can I still pay in?
 - Does my pot have any special features that could mean I get a better deal, eg a guaranteed annuity rate?
 - Do you have up-to-date details of the person I want to leave my pot to (my ‘beneficiary’)?
-
-**Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-leave-pot-untouched) to find out more about what you can do with your pot.**
 
 </div>

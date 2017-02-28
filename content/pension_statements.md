@@ -6,30 +6,33 @@ description: Your pension statement shows your pension type, how much is in your
 
 You normally get one pension statement a year – your provider may call this your annual or yearly statement.
 
-Your statement shows how much is in your pot and usually an estimate of how much you might get when you start taking money from it.
+Your statement shows:
 
-^Knowing what’s in your pension statement will help when you come to [book a free appointment](/appointments) with a Pension Wise guidance specialist.^
+ - how much is in your pot
+ - an estimate of how much you might get when you start taking your money
+ - if your pension has any special features, eg guaranteed annuity rate
+ - your ‘selected retirement age’ (the age you agreed with your provider to retire)
+ - the ‘transfer value’ of your pot – the amount you would get if you moved provider or cashed in your whole pot
+ 
+ ## Your pension type
+ 
+Your statement should tell you if you have a defined contribution or a defined benefit pension – or you can [check which type of pension you have](/pension-type-tool).
 
-Your statement should tell you your [pension type](/pension-types) – defined contribution or defined benefit. It may also show if your pension has any special features like a guaranteed annuity rate.
-It should also include your ‘selected retirement age’ (the age you agreed with your provider to retire).
+If your statement shows a ‘total plan’ or ‘fund value’, it’s likely you have a defined contribution pension.
+
+^You can [book a free Pension Wise appointment](/appointments) if you have a defined contribution pension.^
+
+If it shows a pension value at retirement which is linked to your salary and length of service with an employer, it’s likely you have a defined benefit (final salary or career average) pension.
+
+^You can get help with final salary and career average pensions (defined benefit) at [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk)^
+
+Your statement may use the words ‘scheme’, ‘plan’ or ‘policy’ – this is your provider’s way of describing your pension.
 
 ## The State Pension
 
 You get a [State Pension](https://www.gov.uk/state-pension-statement) statement from the government.
 
 Read more about what’s in your [State Pension statement](https://www.gov.uk/government/publications/your-state-pension-statement-explained-dwp040) on GOV.UK.
-
-## What’s in your pot and your pension type
-
-If your statement shows a ‘total plan’ or ‘fund value’, it’s likely you have a defined contribution pension. This means you can book a Pension Wise appointment and get personal guidance on what you can do with your pot. If it shows a pension value at retirement which is linked to your salary and length of service with an employer, your pension type is likely to be final salary or career average (defined benefit).
-
-^You can get help with final salary and career average pensions (defined benefit) at [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk)^
-
-Your statement may use the words ‘scheme’, ‘plan’ or ‘policy’ – this is your provider’s way of describing your pension.
-
-### Transfer value
-
-Your statement will also normally show the ‘transfer value’ of your pot. This is the amount you would get if you moved provider or cashed in your whole pot.
 
 ## Special features
 

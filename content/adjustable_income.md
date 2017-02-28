@@ -19,6 +19,8 @@ This option is also known as ‘flexi-access drawdown’.
 
 You’ll probably need to be involved in choosing and managing your investments. The value of your pot can go up or down.
 
+^Find out [if you can book](/pension-type-tool) a free Pension Wise appointment.^
+
 Not all pension providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
 {::calculator id="adjustable-income" /}
@@ -40,6 +42,8 @@ If you take the 25% tax-free lump sum, you must get an adjustable income with th
 You can move your pot gradually – you don’t have to move it all at once. Each time you move a sum, 25% is tax free.
 
 If you choose this option, you can leave your money to someone when you die but they may have to pay tax on it.
+
+^Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-adjustable-income) to find out more about what you can do with your pot.^
 
 ## How adjustable income works
 
@@ -77,7 +81,5 @@ Beware of pension scams contacting you unexpectedly about an investment or busin
 - [Shop around](/shop-around) – ask providers what products they offer to suit your circumstances.
 - Get some estimates from other providers on how much your pot could grow and what the fees are – usually you just have to fill in a short form on their website.
 - Make sure you know [how much tax](/tax) you’ll pay on any money you’re planning to take out.
-
-**Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-adjustable-income) to find out more about what you can do with your pot.**
 
 </div>
