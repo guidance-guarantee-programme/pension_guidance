@@ -39,7 +39,7 @@ If the transfer value is lower than your total pot value, you may be charged an 
 2. What is the ‘transfer value’ of my pension? If it’s the same as your pot value, it’s unlikely you’ll be charged a fee when you transfer.
 3. What fees will I have to pay?
 4. Will I lose the right to take out my money at a certain age? This is called a ‘protected pension age’.
-5. Will I lose any [special features](/pension-statement#special-features), eg a guaranteed annuity rate?
+5. Will I lose any [special features](/pension-statements#special-features), eg a guaranteed annuity rate?
 6. Will I lose the right to take a tax-free lump sum of more than 25% of my pension? This is called a ‘protected tax-free sum’.
 
 You then need to [shop around](/shop-around) for a new provider to transfer your pension to.
