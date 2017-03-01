@@ -14,7 +14,7 @@ Your statement shows:
  - your ‘selected retirement age’ (the age you agreed with your provider to retire)
  - the ‘transfer value’ of your pot – the amount you would get if you moved provider or cashed in your whole pot
  
- ## Your pension type
+## Your pension type
  
 Your statement should tell you if you have a defined contribution or a defined benefit pension – or you can [check which type of pension you have](/pension-type-tool).
 
