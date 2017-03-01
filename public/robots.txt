@@ -7,7 +7,14 @@ Disallow: /signposting/
 Disallow: /leave-pot-untouched/estimate
 Disallow: /take-whole-pot/estimate
 Disallow: /home-alternative
-Disallow: /pension-type-tool/
+Disallow: /pension-type-tool/question-2
+Disallow: /pension-type-tool/question-3
+Disallow: /pension-type-tool/question-4
+Disallow: /pension-type-tool/question-4
+Disallow: /pension-type-tool/defined-contribution
+Disallow: /pension-type-tool/might-defined-contribution
+Disallow: /pension-type-tool/most-cases-defined-benefit
+Disallow: /pension-type-tool/most-cases-defined-contribution
 Disallow: /facebook-landing
 Disallow: /landing
 Disallow: /telephone-appointments/
