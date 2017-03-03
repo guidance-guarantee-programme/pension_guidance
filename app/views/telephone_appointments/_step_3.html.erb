@@ -6,7 +6,7 @@
   <h2 class="slot-picker-header">Your details</h2>
 
   <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:first_name) %>">
-    <%= f.label :first_name, class: 'form-label' %>
+    <%= f.label :first_name, class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:first_name) %>
       <span class="error-message"><%= @telephone_appointment.errors[:first_name].to_sentence %></span>
     <% end %>
@@ -14,7 +14,7 @@
   </div>
 
   <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:last_name) %>">
-    <%= f.label :last_name, class: 'form-label' %>
+    <%= f.label :last_name, class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:last_name) %>
       <span class="error-message"><%= @telephone_appointment.errors[:last_name].to_sentence %></span>
     <% end %>
@@ -22,7 +22,7 @@
   </div>
 
   <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:email) %>">
-    <%= f.label :email, class: 'form-label' do %>
+    <%= f.label :email, class: 'form-label-bold' do %>
       Email
       <span class="form-hint">We’ll send an email confirming your appointment date</span>
     <% end %>
@@ -35,7 +35,7 @@
   </div>
 
   <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:phone) %>">
-    <%= f.label :phone, class: 'form-label' do %>
+    <%= f.label :phone, class: 'form-label-bold' do %>
       Phone number
       <span class="form-hint">The number you’d like us to call you on</span>
     <% end %>
@@ -48,10 +48,11 @@
   </div>
 
   <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:memorable_word) %>">
-    <%= f.label :memorable_word, class: 'form-label' do %>
+    <%= f.label :memorable_word, class: 'form-label-bold' do %>
       Your memorable word
       <span class="form-hint">Our guidance specialist will repeat this word when they call so you know it’s us</span>
     <% end %>
+
     <% if @telephone_appointment.errors.include?(:memorable_word) %>
       <span class="error-message"><%= @telephone_appointment.errors[:memorable_word].to_sentence %></span>
     <% end %>
@@ -126,7 +127,7 @@
   <div class="form-group t-dc-pot-confirmed <%= 'error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>">
     <fieldset class="inline">
       <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
-
+      <span class="form-hint">If you have both select ‘Yes’</span>
       <% if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>
         <span class="error-message"><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence %></span>
       <% end %>
@@ -165,7 +166,7 @@
   <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>">
     <fieldset>
       <legend>
-        Terms and conditions
+        <span class="visually-hidden">Terms and conditions</span>
         <% if @telephone_appointment.errors.include?(:opt_in) %>
           <span class="error-message"><%= @telephone_appointment.errors[:opt_in].to_sentence %></span>
         <% end %>
