@@ -23,7 +23,7 @@
       <%= f.hidden_field :tertiary_slot %>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:first_name) %>">
-        <%= f.label :first_name, class: 'form-label' %>
+        <%= f.label :first_name, class: 'form-label-bold' %>
         <% if @booking_request.errors.include?(:first_name) %>
           <span class="error-message"><%= @booking_request.errors[:first_name].to_sentence %></span>
         <% end %>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:last_name) %>">
-        <%= f.label :last_name, class: 'form-label' %>
+        <%= f.label :last_name, class: 'form-label-bold' %>
         <% if @booking_request.errors.include?(:last_name) %>
           <span class="error-message"><%= @booking_request.errors[:last_name].to_sentence %></span>
         <% end %>
@@ -39,7 +39,7 @@
       </div>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:email) %>">
-        <%= f.label :email, class: 'form-label' do %>
+        <%= f.label :email, class: 'form-label-bold' do %>
           Email
           <span class="form-hint">We’ll send an email confirming your appointment date</span>
         <% end %>
@@ -52,7 +52,7 @@
       </div>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:telephone_number) %>">
-        <%= f.label :telephone_number, class: 'form-label' %>
+        <%= f.label :telephone_number, class: 'form-label-bold' %>
         <% if @booking_request.errors.include?(:telephone_number) %>
           <span class="error-message"><%= @booking_request.errors[:telephone_number].to_sentence %></span>
         <% end %>
@@ -60,7 +60,7 @@
       </div>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:memorable_word) %>">
-        <%= f.label :memorable_word, class: 'form-label' do %>
+        <%= f.label :memorable_word, class: 'form-label-bold' do %>
           Your memorable word
           <span class="form-hint">Our guidance specialist will repeat this word when they call so you know it’s us</span>
         <% end %>
@@ -137,7 +137,8 @@
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:dc_pot) %>">
         <fieldset class="inline">
-          <legend>I have a defined contribution pension pot (not a final salary or career average pension)</legend>
+          <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
+          <span class="form-hint">If you have both, select ‘Yes’</span>
 
           <% if @booking_request.errors.include?(:dc_pot) %>
             <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence %></span>
@@ -166,13 +167,14 @@
             <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence %></span>
           <% end %>
           <%= f.check_box :accessibility_requirements %> I have accessibility needs, eg wheelchair access
+          <span class="form-hint" id="accessibility-hint">We’ll contact you for details of your specific needs</span>
         <% end %>
       </div>
 
       <div class="form-group <%= 'error' if @booking_request.errors.include?(:opt_in) %>">
         <fieldset>
           <legend>
-            Terms and conditions
+            <span class="visually-hidden">Terms and conditions</span>
             <% if @booking_request.errors.include?(:opt_in) %>
               <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence %></span>
             <% end %>
