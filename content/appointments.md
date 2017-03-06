@@ -16,13 +16,13 @@ Your appointment will last around 45 to 60 minutes and we will:
 
 You can speak to us over the phone or face to face somewhere local to you.
 
-[Book a phone appointment](/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
-[Book a face-to-face appointment](/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
-
 ## Before you book
 
-You should be aged **50 or over** and have a **defined contribution** pension. This is a pension based on how much you and possibly your employer paid into your pot. It’s not a final salary pension.
+You should be aged **50 or over** and have a **defined contribution** pension (not a final salary or career average pension).
 
 [Not sure what pension type you have?](/pension-type-tool)
+
+[Book a phone appointment](/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
+[Book a face-to-face appointment](/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
 
 ^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^
