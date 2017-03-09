@@ -1,28 +1,49 @@
 .steps {
-  padding-left: 0;
+  counter-reset: step-counter;
   margin-left: 0;
   overflow: hidden;
+  padding-left: 0;
 
   > li {
-    background-position: 0 .87em;
-    background-repeat: no-repeat;
+    display: block;
     list-style-type: decimal;
     margin-left: 0;
     padding: .75em 0 .75em 2.2em;
+    position: relative;
 
     @include ie-lte(8) {
-      margin-left: 1.5em;
-      padding-left: 0;
+      display: list-item;
+      margin: 0 0 5px 1.5em;
+      padding: .75em 0;
     }
-  }
 
-  @for $i from 1 through 14 {
-    li:nth-child(#{$i}) {
-      background-image: image-url("icon-steps/icon-step-#{$i}.png");
+    p {
+      margin: 0;
+    }
 
-      @include device-pixel-ratio() {
-        background-image: image-url("icon-steps/icon-step-#{$i}-2x.png");
-        background-size: 24px 24px;
+    &:before {
+      background: $color-black;
+      border-radius: 50%;
+      color: $color-white;
+      content: counter(step-counter);
+      counter-increment: step-counter;
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      height: 24px;
+      left: 0;
+      line-height: 25px;
+      position: absolute;
+      text-align: center;
+      top: .75em;
+      width: 24px;
+
+      @include ie-lte(8) {
+        display: none;
+      }
+
+      @include media(tablet) {
+        top: .9em;
       }
     }
   }
