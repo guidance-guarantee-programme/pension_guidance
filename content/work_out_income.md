@@ -108,7 +108,9 @@ There’s a limit to how much you can pay into your pot and still get tax relief
 
 If you have more than one pot, you can continue to pay into a pot after you start to take money from another.
 
-The amount you can pay in drops to a maximum of £10,000 a year once you start taking money from a pot. This includes your [tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief) of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
+The amount you can pay in drops to a maximum of £10,000 a year once you start taking money from a pot (changing to £4,000 a year from 6 April 2017).
+
+This includes your [tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief) of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 
 You may still be able to pay into the pot you take money from but you won’t get tax relief on these payments.
 
