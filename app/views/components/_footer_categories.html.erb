@@ -1,7 +1,7 @@
 <div class="footer-categories t-footer-categories">
   <% categories.each do |category| %>
     <div class="footer-categories__<%= category.items.size.humanize %>-column t-footer-category">
-      <h3 class="footer-categories__heading t-footer-category-header"><%= category.label %></h3>
+      <h2 class="footer-categories__heading t-footer-category-header"><%= category.label %></h2>
 
       <% category.items.each do |item| %>
 
