@@ -31,7 +31,7 @@ class BookingRequestForm
   end
 
   def date_of_birth
-    return nil unless /\d{4}-\d{1,2}-\d{1,2}/ === @date_of_birth # rubocop:disable Style/CaseEquality
+    return nil unless /\d{4}-\d{1,2}-\d{1,2}/.match?(@date_of_birth)
 
     Date.parse(@date_of_birth)
   end
