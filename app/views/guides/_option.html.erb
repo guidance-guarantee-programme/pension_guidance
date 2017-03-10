@@ -1,12 +1,12 @@
 <% content_for :sticky_sidebar do %>
-  <div class="l-sticky-sidebar">
+  <aside class="l-sticky-sidebar">
     <div class="sticky-sidebar js-sticky-sidebar sticky-sidebar--<%= @guide.slug %>">
       <div class="sidebar-hr"></div>
       <div class="sticky-sidebar__nav">
         <% @guide.headers.each do |id, text| %>
-          <h2 class="sticky-sidebar__heading">
+          <span class="sticky-sidebar__heading">
             <%= link_to text, "##{id}", class: 't-aside--heading' %>
-          </h2>
+          </span>
         <% end %>
 
         <ul class="sticky-sidebar__list nav">
@@ -24,7 +24,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </aside>
 <% end %>
 
 <% content_for :after_script do %>

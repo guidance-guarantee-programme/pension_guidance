@@ -12,6 +12,14 @@
       margin: 0 30px;
     }
   }
+
+  h2 {
+    @include bold-19;
+
+    @include media(tablet) {
+      margin: 0 15px;
+    }
+  }
 }
 
 .footer-categories {
