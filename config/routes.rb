@@ -43,6 +43,8 @@ Rails.application.routes.draw do
       end
     end
 
+    get '/telephone_appointments/new', to: redirect('/telephone-appointments/new', status: 301)
+
     resource :feedback, only: [:create, :new] do
       get :thanks
     end
