@@ -16,8 +16,8 @@ class TelephoneAppointmentsController < ApplicationController
   end
 
   def confirmation
-    @booking_reference = flash[:booking_reference]
-    @booking_date      = Time.zone.parse(flash[:booking_date])
+    @booking_reference = params[:booking_reference]
+    @booking_date      = Time.zone.parse(params[:booking_date])
   end
 
   private
@@ -52,12 +52,9 @@ class TelephoneAppointmentsController < ApplicationController
   end
 
   def confirm_to_customer(telephone_appointment)
-    redirect_to(
-      confirmation_telephone_appointments_path,
-      flash: {
-        booking_reference: telephone_appointment.id,
-        booking_date: telephone_appointment.start_at
-      }
+    redirect_to confirmation_telephone_appointments_path(
+      booking_reference: telephone_appointment.id,
+      booking_date: telephone_appointment.start_at
     )
   end
 
