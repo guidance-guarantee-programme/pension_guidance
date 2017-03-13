@@ -43,6 +43,8 @@ Then(/^I see the location name "(.*?)"$/) do |name|
 end
 
 Then(/^I see slots up to the day of closure$/) do
+  @step_one.wait_for_available_days
+
   expect(@step_one).to have_available_days(count: 1)
 end
 
