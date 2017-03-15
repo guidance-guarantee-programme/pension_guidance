@@ -18,6 +18,8 @@ module Pages
 
     element :submit, '.t-submit'
 
+    element :continue, '.t-continue'
+
     def choose_date(date)
       page.choose(date)
     end

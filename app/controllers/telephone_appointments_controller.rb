@@ -8,6 +8,8 @@ class TelephoneAppointmentsController < ApplicationController
     retrieve_slots
   end
 
+  helper_method :slot_selected?
+
   def new
   end
 
@@ -33,8 +35,10 @@ class TelephoneAppointmentsController < ApplicationController
   def create_step_2
     if request.xhr?
       render partial: 'times', locals: { times: @times }
-    else
+    elsif slot_selected?
       telephone_appointment.advance! { render :new }
+    else
+      render :new
     end
   end
 
@@ -107,5 +111,9 @@ class TelephoneAppointmentsController < ApplicationController
   def set_breadcrumbs
     breadcrumb Breadcrumb.book_an_appointment
     breadcrumb Breadcrumb.book_a_telephone_appointment
+  end
+
+  def slot_selected?
+    telephone_appointment.start_at
   end
 end

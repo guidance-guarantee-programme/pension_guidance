@@ -1,14 +1,24 @@
-<h2 class="slot-picker-header js-slot-picker-header">Choose a time on <%= l(@telephone_appointment.selected_date, format: :govuk_date) %></h2>
-<% if times.present? %>
-<ol class="slot-picker-times js-slot-picker-times">
-  <% times.each do |time| %>
-    <li class="slot-picker-times__time">
-      <button class="slot-picker-times__action" value="<%= time %>" name="telephone_appointment[start_at]">
-        <%= l(time, format: :govuk_time) %>
-      </button>
-    </li>
+<h2 class="slot-picker-header js-slot-picker-header">
+  <% if times.present? %>
+    Choose a time on <%= l(@telephone_appointment.selected_date, format: :govuk_date) %>
+  <% else %>
+    No times available on <%= l(@telephone_appointment.selected_date, format: :govuk_date) %>
   <% end %>
-</ol>
+</h2>
+<% if times.present? %>
+  <ol class="slot-picker-times js-slot-picker-times" tabindex="-1" id="telephone_appointment_times">
+    <% times.each do |time| %>
+      <li class="slot-picker-times__time">
+        <input class="slot-picker-times__selection" type="radio" value="<%= time %>" id="time-<%= time %>" name="telephone_appointment[start_at]" />
+        <label class="slot-picker-times__time-text" for="time-<%= time %>">
+           <%= l(time, format: :govuk_time) %>
+        </label>
+      </li>
+    <% end %>
+  </ol>
+
+  <input type="submit" value="Continue" class="button t-continue" name="continue" />
 <% else %>
-<p class="t-choose-other-time-message">Sorry there are no times available on this day. Please choose another day.</p>
+  <p class="t-choose-other-time-message">Sorry there are no times available on this day. Please choose another day.</p>
 <% end %>
+<input type="hidden" name="telephone_appointment[selected_date]" value="<%= @telephone_appointment.selected_date %>" />

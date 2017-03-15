@@ -33,7 +33,8 @@ end
 
 def choose_date_and_time
   @page.find('button[value="2017-01-17"]').click
-  @page.click_on('12:20pm')
+  @page.find('label', text: '12:20pm').click
+  @page.continue.click
 end
 
 Given(/^they do not have a DC pot$/) do
