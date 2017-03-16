@@ -61,7 +61,6 @@ RSpec.describe BookingRequestForm do
         subject.date_of_birth = '2010-01-01'
 
         expect(subject.appointment_type).to eq('under-50')
-        expect(subject).not_to be_step_two_valid
         expect(subject).not_to be_eligible
       end
 

@@ -73,6 +73,7 @@ Scenario: Customer is ineligible for guidance
   And I opt to book online
   And I choose three available appointment slots
   And I provide my personal details
+  And I provide ineligible details
   When I submit my completed Booking Request
   Then I am told I am ineligible for guidance
 

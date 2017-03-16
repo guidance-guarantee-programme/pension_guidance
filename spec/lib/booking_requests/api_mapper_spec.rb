@@ -14,8 +14,7 @@ RSpec.describe BookingRequests::ApiMapper do
       email: 'lucius@example.com',
       telephone_number: '0208 244 3987',
       memorable_word: 'meseeks',
-      appointment_type: '55-plus',
-      date_of_birth: '1950-01-01',
+      date_of_birth: '1951-01-01',
       accessibility_requirements: false,
       opt_in: false,
       dc_pot: 'yes'
@@ -35,7 +34,7 @@ RSpec.describe BookingRequests::ApiMapper do
           phone: '0208 244 3987',
           memorable_word: 'meseeks',
           age_range: '55-plus',
-          date_of_birth: '1950-01-01',
+          date_of_birth: '1951-01-01',
           accessibility_requirements: false,
           marketing_opt_in: false,
           defined_contribution_pot_confirmed: true,

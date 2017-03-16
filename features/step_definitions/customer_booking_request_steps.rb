@@ -99,6 +99,13 @@ When(/^I pass the basic eligibility requirements$/) do
   @step_two.check_hidden_radio(@step_two.dc_pot_yes)
 end
 
+When(/^I provide ineligible details$/) do
+  @step_two.date_of_birth_day.set '01'
+  @step_two.date_of_birth_month.set '01'
+  @step_two.date_of_birth_year.set '2010'
+  @step_two.check_hidden_radio(@step_two.dc_pot_yes)
+end
+
 When(/^I submit my completed Booking Request$/) do
   @step_two.submit.click
 end
