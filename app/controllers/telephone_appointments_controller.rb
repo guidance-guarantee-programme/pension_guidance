@@ -39,10 +39,10 @@ class TelephoneAppointmentsController < ApplicationController
   end
 
   def create_step_3
-    if telephone_appointment.ineligible?
-      redirect_to ineligible_telephone_appointments_path
-    elsif telephone_appointment.invalid?
+    if telephone_appointment.invalid?
       render :new
+    elsif telephone_appointment.ineligible?
+      redirect_to ineligible_telephone_appointments_path
     elsif telephone_appointment.save
       confirm_to_customer(telephone_appointment)
     else
