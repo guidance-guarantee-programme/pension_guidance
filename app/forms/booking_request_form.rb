@@ -3,7 +3,7 @@ class BookingRequestForm
 
   attr_accessor :location_id, :primary_slot, :secondary_slot, :tertiary_slot,
                 :first_name, :last_name, :email, :telephone_number,
-                :memorable_word, :appointment_type, :accessibility_requirements,
+                :memorable_word, :accessibility_requirements,
                 :date_of_birth, :opt_in, :dc_pot
 
   with_options if: :step_one? do |step_one|
@@ -18,10 +18,9 @@ class BookingRequestForm
     step_two.validates :email, presence: true, email: true
     step_two.validates :telephone_number, presence: true
     step_two.validates :memorable_word, presence: true
-    step_two.validates :appointment_type, inclusion: { in: %w(50-54 55-plus) }, if: :date_of_birth
     step_two.validates :accessibility_requirements, inclusion: { in: %w(0 1) }
     step_two.validates :opt_in, acceptance: { accept: '1' }
-    step_two.validates :dc_pot, inclusion: { in: %w(yes not-sure) }
+    step_two.validates :dc_pot, inclusion: { in: %w(yes no not-sure) }
     step_two.validates :date_of_birth, presence: true
   end
 
@@ -70,10 +69,18 @@ class BookingRequestForm
     valid?
   end
 
-  def eligible?
-    return true if step_two_valid?
+  def step_two_invalid?
+    !step_two_valid?
+  end
 
-    (errors.keys & %i(appointment_type dc_pot)).empty?
+  def eligible?
+    return unless step_two_valid?
+
+    age >= 50 && dc_pot != 'no'
+  end
+
+  def ineligible?
+    !eligible?
   end
 
   def step_one?

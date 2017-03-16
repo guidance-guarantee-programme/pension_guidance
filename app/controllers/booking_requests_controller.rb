@@ -17,13 +17,13 @@ class BookingRequestsController < ApplicationController
   def complete
     @feedback = FeedbackForm.for_online_booking
 
-    if @booking_request.step_two_valid?
+    if @booking_request.step_two_invalid?
+      render :step_two
+    elsif @booking_request.ineligible?
+      redirect_to booking_request_ineligible_location_path(id: location_id)
+    else
       BookingRequests.create(@booking_request)
       redirect_to booking_request_completed_location_path(id: location_id)
-    else
-      return redirect_to booking_request_ineligible_location_path(id: location_id) unless @booking_request.eligible?
-
-      render :step_two
     end
   end
 
