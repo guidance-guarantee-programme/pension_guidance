@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'home#show'
 
   constraints format: 'html' do
+    delete '/locations_cache', to: 'locations_cache#destroy'
+
     resources :categories, only: 'show', path: 'browse'
 
     get '/book', to: redirect('/appointments', status: 302)
