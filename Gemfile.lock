@@ -190,6 +190,10 @@ GEM
       activemodel (>= 3.0)
       activesupport (>= 3.0)
     log4r (1.1.10)
+    lograge (0.4.1)
+      actionpack (>= 4, < 5.1)
+      activesupport (>= 4, < 5.1)
+      railties (>= 4, < 5.1)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -429,6 +433,7 @@ DEPENDENCIES
   jasmine-jquery-rails
   jasmine-rails
   launchy
+  lograge
   newrelic_rpm
   nokogiri
   output-templates (~> 4.4.5)!
