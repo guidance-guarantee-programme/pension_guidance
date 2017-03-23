@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   include Breadcrumbs
+  include LogrageFilterer
 
   protect_from_forgery with: :exception
 

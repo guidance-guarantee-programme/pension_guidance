@@ -1,4 +1,6 @@
 class LocationsCacheController < ActionController::Base
+  include LogrageFilterer
+
   before_action :token_authenticate
 
   def destroy
