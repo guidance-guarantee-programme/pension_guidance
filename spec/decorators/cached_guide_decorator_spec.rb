@@ -8,8 +8,8 @@ RSpec.describe CachedGuideDecorator do
   subject(:cached_decorator) { described_class.new(decorator, cache) }
 
   describe '#title' do
-    it 'uses the correct cache key' do
-      expect(cache).to receive(:fetch).with("#{id}-#{title}")
+    it 'uses the correct cache key and expiration' do
+      expect(cache).to receive(:fetch).with("#{id}-#{title}", expires_in: 10)
       cached_decorator.title
     end
 
@@ -48,8 +48,8 @@ RSpec.describe CachedGuideDecorator do
   end
 
   describe '#content' do
-    it 'uses the correct cache key' do
-      expect(cache).to receive(:fetch).with("#{id}-#{content}")
+    it 'uses the correct cache key and expiration' do
+      expect(cache).to receive(:fetch).with("#{id}-#{content}", expires_in: 10)
       cached_decorator.content
     end
 
