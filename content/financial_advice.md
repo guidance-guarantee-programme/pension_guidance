@@ -48,4 +48,6 @@ The fees for getting financial advice vary. Before you get advice, ask the advis
 
 You’ll pay a one-off fee if you see the adviser once or a regular fee if the advice is ongoing.
 
+^You can now take money from your pot tax free to get financial advice on your pension. You can take £500 once a year and up to 3 times in total.^
+
 Find out more about [choosing a financial adviser](https://www.moneyadviceservice.org.uk/en/articles/choosing-a-financial-adviser) on the Money Advice Service website.

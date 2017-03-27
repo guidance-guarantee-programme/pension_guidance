@@ -57,7 +57,7 @@ If your provider goes bust you’ll be covered by the [Financial Services Compen
 
 ## Continue to pay in
 
-If you have more than one pension pot, you can take an adjustable income from one and continue to pay into others. The maximum you can pay in is £10,000 a year (changing to £4,000 a year from 6 April 2017).
+If you have more than one pension pot, you can take an adjustable income from one and continue to pay into others. The maximum you can pay in is £4,000 a year.
 
 This includes your tax relief of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 

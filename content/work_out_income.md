@@ -46,7 +46,7 @@ You’re 65 and want to work part time until you’re 70. You decide to take 25%
 
 What you have | Amount
 - | -
-Full New State Pension per year | £8,093.80
+Full New State Pension per year | £8,296.60
 Your total pension pot | £100,000
 Income per year from working part time | £15,000
 
@@ -54,12 +54,12 @@ Income per year from working part time | £15,000
 
 Income | Amount per year
 - | -
-Full New State Pension | + £8,093.80
+Full New State Pension | + £8,296.60
 Income from work | + £15,000
 Money from your adjustable income | +£4,800
-Income before tax | = £27,893.80
-Tax you pay | - £3,378.76
-**Your total retirement income in your 60s** | **= £24,515.04**
+Income before tax | = £28,096.60
+Tax you pay | - £3,319.32
+**Your total retirement income in your 60s** | **= £24,777.28**
 
 You also have the £25,000 tax-free money to supplement your income.
 
@@ -69,11 +69,11 @@ You stop working and decide to take more from your adjustable income investment.
 
 Income | Amount per year
 - | -
-Full New State Pension | + £8,093.80
+Full New State Pension | + £8,296.60
 Money from your adjustable income | + £6,500
-Income before tax | = £14,593.80
-Tax you pay | - £718.76
-**Your total retirement income from 70 onwards** | **= £13,875.04**
+Income before tax | = £14,796.60
+Tax you pay | - £659.32
+**Your total retirement income from 70 onwards** | **= £14,137.28**
 
 You also have the £25,000 tax-free money you took at 65 to supplement your income.
 $E
@@ -106,9 +106,7 @@ If you don’t think you’ll have enough money for your retirement, you could p
 
 There’s a limit to how much you can pay into your pot and still get tax relief. You can pay in up to your [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance). Your allowance changes once you start taking money from your pot.
 
-If you have more than one pot, you can continue to pay into a pot after you start to take money from another.
-
-The amount you can pay in drops to a maximum of £10,000 a year once you start taking money from a pot (changing to £4,000 a year from 6 April 2017).
+If you have more than one pot, you can continue to pay into a pot after you start to take money from another. The amount you can pay in drops to a maximum of £4,000 a year once you start taking money from a pot.
 
 This includes your [tax relief](https://www.gov.uk/tax-on-your-private-pension/pension-tax-relief) of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
 
