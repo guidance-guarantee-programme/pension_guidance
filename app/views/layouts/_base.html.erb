@@ -40,6 +40,10 @@
 
 
 <% content_for :content do %>
+  <% if params[:locale] %>
+    <%= render 'components/language_toggle' %>
+  <% end %>
+
   <%= yield %>
 <% end %>
 

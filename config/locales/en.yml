@@ -1,4 +1,6 @@
 en:
+  language_name: English
+
   pension_type_tool:
     error_title: 'Unable to submit the form'
     error: 'Select an answer'
