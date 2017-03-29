@@ -1,4 +1,5 @@
 <h2 class="slot-picker-header js-slot-picker-header">Choose a time on <%= l(@telephone_appointment.selected_date, format: :govuk_date) %></h2>
+<% if times.present? %>
 <ol class="slot-picker-times js-slot-picker-times">
   <% times.each do |time| %>
     <li class="slot-picker-times__time">
@@ -8,3 +9,6 @@
     </li>
   <% end %>
 </ol>
+<% else %>
+<p class="t-choose-other-time-message">Sorry there are no times available on this day. Please choose another day.</p>
+<% end %>

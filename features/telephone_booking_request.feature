@@ -25,3 +25,8 @@ Scenario: Eligible customer books a telephone appointment
   When they are eligible for an appointment
   Then their appointment is created
   And they see a confirmation of their appointment
+
+Scenario: Slots for a particular day are taken during the attempted booking
+    Given the customer wants to book a phone appointment
+    When they choose a date after the slots on that day have been taken
+    Then they are told to choose another day
