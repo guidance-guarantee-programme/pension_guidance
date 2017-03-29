@@ -23,6 +23,14 @@ Given(/^the customer wants to book a phone appointment$/) do
   expect(@page).to be_displayed
 end
 
+When(/^they choose a date after the slots on that day have been taken$/) do
+  @page.find('button[value="2017-01-21"]').click
+end
+
+Then(/^they are told to choose another day$/) do
+  expect(@page).to have_choose_other_time_message
+end
+
 def choose_date_and_time
   @page.find('button[value="2017-01-17"]').click
   @page.click_on('12:20pm')

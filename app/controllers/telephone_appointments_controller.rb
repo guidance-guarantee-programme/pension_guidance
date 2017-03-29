@@ -78,7 +78,8 @@ class TelephoneAppointmentsController < ApplicationController
     return unless telephone_appointment.selected_date
 
     key = telephone_appointment.selected_date.strftime('%Y-%m-%d')
-    slots[key].map { |d| DateTime.parse(d).in_time_zone }
+
+    Array(slots[key]).map { |d| DateTime.parse(d).in_time_zone }
   end
 
   def telephone_appointment_params # rubocop:disable Metrics/MethodLength
