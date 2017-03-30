@@ -1,6 +1,6 @@
 <% has_error = local_assigns[:has_error] %>
 <form action="/locations" method="get">
-  <div class="form-group <%= 'error' if has_error %>">
+  <div class="form-group <%= 'form-group-error' if has_error %>">
     <label class="form-label-bold" for="location">
       Postcode
       <span class="form-hint">For example, 'SW1A 1AA'</span>

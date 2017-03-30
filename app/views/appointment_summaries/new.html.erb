@@ -26,15 +26,18 @@
     <fieldset class="inline">
       <legend class="visuallyhidden">Your age</legend>
 
-      <%= f.label :appointment_type, value: '50_54', class: 'block-label t-appointment-type-50-54' do %>
-          <%= f.radio_button :appointment_type, '50_54', checked: false %>
+      <div class="multiple-choice">
+        <%= f.radio_button :appointment_type, '50_54', checked: false %>
+        <%= f.label :appointment_type, value: '50_54', class: 't-appointment-type-50-54' do %>
           50 to 54
-      <% end %>
-
-      <%= f.label :appointment_type, value: 'standard', class: 'block-label t-appointment-type-standard' do %>
+        <% end %>
+      </div>
+      <div class="multiple-choice">
         <%= f.radio_button :appointment_type, 'standard', checked: false %>
-        55 or over
-      <% end %>
+        <%= f.label :appointment_type, value: 'standard', class: 't-appointment-type-standard' do %>
+          55 or over
+        <% end %>
+      </div>
     </fieldset>
   </div>
 
@@ -44,38 +47,40 @@
   <fieldset class="form-group">
     <legend class="visuallyhidden">Would you like any extra information on the following?</legend>
 
-    <%= f.label :supplementary_benefits, class: 'block-label' do %>
-      <%= f.check_box :supplementary_benefits,
-                      class: 't-supplementary-benefits' %>
-      How my pension affects my benefits
-    <% end %>
+    <div class="multiple-choice">
+      <%= f.check_box :supplementary_benefits, class: 't-supplementary-benefits' %>
+      <%= f.label :supplementary_benefits do %>
+        How my pension affects my benefits
+      <% end %>
+    </div>
 
+    <div class="multiple-choice">
+      <%= f.check_box :supplementary_debt, class: 't-supplementary-debt' %>
+      <%= f.label :supplementary_debt do %>
+        Getting help with debt
+      <% end %>
+    </div>
 
-    <%= f.label :supplementary_debt, class: 'block-label' do %>
-      <%= f.check_box :supplementary_debt,
-                      class: 't-supplementary-debt' %>
-      Getting help with debt
-    <% end %>
+    <div class="multiple-choice">
+      <%= f.check_box :supplementary_ill_health, class: 't-supplementary-ill-health' %>
+      <%= f.label :supplementary_ill_health do %>
+        Taking my pension if I have ill health
+      <% end %>
+    </div>
 
+    <div class="multiple-choice">
+      <%= f.check_box :supplementary_defined_benefit_pensions, class: 't-supplementary-defined-benefit-pensions' %>
+      <%= f.label :supplementary_defined_benefit_pensions do %>
+        Final salary or career average pensions
+      <% end %>
+    </div>
 
-    <%= f.label :supplementary_ill_health, class: 'block-label' do %>
-      <%= f.check_box :supplementary_ill_health,
-                      class: 't-supplementary-ill-health' %>
-      Taking my pension if I have ill health
-    <% end %>
-
-
-    <%= f.label :supplementary_defined_benefit_pensions, class: 'block-label' do %>
-      <%= f.check_box :supplementary_defined_benefit_pensions,
-                      class: 't-supplementary-defined-benefit-pensions' %>
-      Final salary or career average pensions
-    <% end %>
-
-    <%= f.label :supplementary_pension_transfers, class: 'block-label' do %>
-      <%= f.check_box :supplementary_pension_transfers,
-        class: 't-supplementary-pension-transfers' %>
-      Transferring a pension
-    <% end %>
+    <div class="multiple-choice">
+      <%= f.check_box :supplementary_pension_transfers, class: 't-supplementary-pension-transfers' %>
+      <%= f.label :supplementary_pension_transfers do %>
+        Transferring a pension
+      <% end %>
+    </div>
   </fieldset>
 
   <div class="form-group">
