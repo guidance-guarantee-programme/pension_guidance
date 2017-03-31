@@ -1,21 +1,21 @@
 Given(/^I am on the adjustable income guide$/) do
   @page = Pages::AdjustableIncomeGuide.new
-  @page.load
+  @page.load(locale: :en)
 end
 
 Given(/^I am on the leaving your whole pension pot untouched guide$/) do
   @page = Pages::LeavePotUntouchedGuide.new
-  @page.load
+  @page.load(locale: :en)
 end
 
 Given(/^I am on the take cash in chunks guide$/) do
   @page = Pages::TakeCashInChunksGuide.new
-  @page.load
+  @page.load(locale: :en)
 end
 
 Given(/^I am on the guaranteed income guide$/) do
   @page = Pages::GuaranteedIncomeGuide.new
-  @page.load
+  @page.load(locale: :en)
 end
 
 When(/^I input the total value of my pension pot and how much I could contribute each year$/) do

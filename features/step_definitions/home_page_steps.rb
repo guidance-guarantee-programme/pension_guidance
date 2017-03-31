@@ -1,6 +1,6 @@
 When(/^I visit the (?:homepage|Pension Wise website)$/) do
   @page = Pages::Home.new
-  @page.load
+  @page.load(locale: :en)
 end
 
 Then(/^I see information about the service/) do

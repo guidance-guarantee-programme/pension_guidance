@@ -2,7 +2,7 @@ require_relative 'guide_page'
 
 module Pages
   class TakeCashInChunksGuide < Guide
-    set_url '/take-cash-in-chunks'
+    set_url '/{locale}/take-cash-in-chunks'
 
     section :calculator, '.t-calculator' do
       element :chunk_field, '.t-calculator-chunk'

@@ -15,7 +15,7 @@ class GuidesController < ApplicationController
   end
 
   def find_guide
-    @guide = GuideDecorator.cached_for(GuideRepository.new.find(id))
+    @guide = GuideDecorator.cached_for(GuideRepository.new(I18n.locale).find(id))
   end
 
   def set_breadcrumbs

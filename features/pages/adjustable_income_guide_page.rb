@@ -2,7 +2,7 @@ require_relative 'guide_page'
 
 module Pages
   class AdjustableIncomeGuide < Guide
-    set_url '/adjustable-income'
+    set_url '/{locale}/adjustable-income'
 
     section :calculator, '.t-calculator' do
       element :pot_field, '.t-calculator-pot'

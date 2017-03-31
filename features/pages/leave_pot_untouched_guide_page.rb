@@ -2,7 +2,7 @@ require_relative 'guide_page'
 
 module Pages
   class LeavePotUntouchedGuide < Guide
-    set_url '/leave-pot-untouched'
+    set_url '/{locale}/leave-pot-untouched'
 
     section :calculator, '.t-calculator' do
       element :pot_field, '.t-calculator-pot'
