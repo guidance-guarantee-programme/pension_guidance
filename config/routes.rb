@@ -8,12 +8,11 @@ Rails.application.routes.draw do
 
       get '/book', to: redirect('/appointments', status: 302)
 
-      GuideRepository.slugs.each do |slug|
-        get slug,
-            controller: 'guides',
-            action: 'show',
-            id: slug
-      end
+      get '/*id',
+          controller: 'guides',
+          action: 'show',
+          as: :guide,
+          constraints: ->(req) { GuideRepository.slugs.include?(req.params[:id]) }
 
       get 'guaranteed-income/estimate', to: 'calculators/guaranteed_income#show'
       get 'adjustable-income/estimate', to: 'calculators/adjustable_income#show'
