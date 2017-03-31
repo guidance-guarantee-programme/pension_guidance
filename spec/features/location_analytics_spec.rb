@@ -4,19 +4,19 @@ RSpec.feature 'Location analytics', type: :feature, js: true, vcr: true do
   end
 
   scenario 'Location search available to the Google Tag Manage dataLayer' do
-    visit '/locations?postcode=abc+123'
+    visit '/en/locations?postcode=abc+123'
 
     expect(data_layer).to include('postcodeValid' => false)
   end
 
   scenario 'Location Data available to the Google Tag Manage dataLayer' do
-    visit '/locations/london'
+    visit '/en/locations/london'
 
     expect(data_layer).to include('locationId' => 'london')
   end
 
   scenario 'Search context available to the Google Tag Manage dataLayer' do
-    visit '/locations/london?postcode=sw1a+1aa'
+    visit '/en/locations/london?postcode=sw1a+1aa'
 
     expect(data_layer).to include('locationId' => 'london')
     expect(data_layer).to include('postcode' => 'SW1A 1AA')

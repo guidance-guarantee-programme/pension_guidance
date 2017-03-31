@@ -2,7 +2,7 @@ require_relative 'page'
 
 module Pages
   class Locations < Page
-    set_url '/locations{?postcode}'
+    set_url '/{locale}/locations{?postcode}'
 
     element :invalid_postcode, '.t-invalid-postcode'
     element :empty_postcode_error, '.t-empty-postcode'

@@ -2,7 +2,7 @@ require_relative '../sections/feedback'
 
 module Pages
   class BookingStepOne < Page
-    set_url '/locations/{id}/booking-request/step-one'
+    set_url '/{locale}/locations/{id}/booking-request/step-one'
 
     element :location_name, '.t-location-name'
     element :first_chosen_slot, 'div:nth-child(1).SlotPicker-choice.is-chosen'

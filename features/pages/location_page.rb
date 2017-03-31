@@ -2,7 +2,7 @@ require_relative 'page'
 
 module Pages
   class Location < Page
-    set_url '/locations/{id}'
+    set_url '/{locale}/locations/{id}'
 
     element :back_to_results, '.t-back-to-results'
     element :name, '.t-name'

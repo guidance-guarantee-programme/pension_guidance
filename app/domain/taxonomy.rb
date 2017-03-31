@@ -82,7 +82,7 @@ class Taxonomy
   end
 
   def guide_repository
-    @guide_repository ||= GuideRepository.new
+    @guide_repository ||= GuideRepository.new(I18n.locale)
   end
 
   def home_node

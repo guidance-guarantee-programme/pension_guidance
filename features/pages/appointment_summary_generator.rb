@@ -1,6 +1,6 @@
 module Pages
   class AppointmentSummaryGenerator < Page
-    set_url '/summary-document/new'
+    set_url '/{locale}/summary-document/new'
 
     section :generator, '.t-appointment-summary-generator' do
       element :appointment_type_standard, '.t-appointment-type-standard'

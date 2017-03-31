@@ -2,7 +2,7 @@ RSpec.describe GuidesController, type: :controller do
   describe 'GET show' do
     before do
       routes.draw do
-        get '/:id', to: 'guides#show' # rubocop:disable Rails/HttpPositionalArguments
+        get '/:locale/:id', to: 'guides#show', as: :guide
       end
     end
 
@@ -16,7 +16,7 @@ RSpec.describe GuidesController, type: :controller do
       before do
         allow_any_instance_of(GuideRepository).to receive(:find).and_return(guide)
 
-        get :show, params: { id: 'your-pension-pot-value' }
+        get :show, params: { locale: :en, id: 'your-pension-pot-value' }
       end
 
       specify { expect(response).to be_success }
@@ -25,7 +25,8 @@ RSpec.describe GuidesController, type: :controller do
 
     context 'non-existent guide' do
       it 'should raise exception' do
-        expect { get :show, params: { id: 'non-existent-guide' } }.to raise_exception(GuideRepository::GuideNotFound)
+        expect { get :show, params: { locale: :en, id: 'non-existent-guide' } }
+          .to raise_exception(GuideRepository::GuideNotFound)
       end
     end
   end
