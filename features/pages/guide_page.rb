@@ -2,7 +2,7 @@ require_relative 'page'
 
 module Pages
   class Guide < Page
-    set_url('/{slug}')
+    set_url('/{locale}/{slug}')
     set_url_matcher(%r{\/(\w|-)+$})
 
     element :primary_heading, 'h1'

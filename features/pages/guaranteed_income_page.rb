@@ -2,7 +2,7 @@ require_relative 'guide_page'
 
 module Pages
   class GuaranteedIncomeGuide < Guide
-    set_url '/guaranteed-income'
+    set_url '/{locale}/guaranteed-income'
 
     section :calculator, '.t-calculator' do
       element :pot_field, '.t-calculator-pot'

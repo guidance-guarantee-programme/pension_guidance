@@ -9,10 +9,10 @@ Feature: Journey navigation
     Then previous button navigates to <Previous path>
 
     Examples:
-      | Slug                | Previous path        | Next path            |
-      | leave-pot-untouched |                      | /guaranteed-income   |
-      | guaranteed-income   | /leave-pot-untouched | /adjustable-income   |
-      | adjustable-income   | /guaranteed-income   | /take-cash-in-chunks |
-      | take-cash-in-chunks | /adjustable-income   | /take-whole-pot      |
-      | take-whole-pot      | /take-cash-in-chunks | /mix-options         |
-      | mix-options         | /take-whole-pot      |                      |
+      | Slug                | Previous path           | Next path            |
+      | leave-pot-untouched |                         | /en/guaranteed-income   |
+      | guaranteed-income   | /en/leave-pot-untouched | /en/adjustable-income   |
+      | adjustable-income   | /en/guaranteed-income   | /en/take-cash-in-chunks |
+      | take-cash-in-chunks | /en/adjustable-income   | /en/take-whole-pot      |
+      | take-whole-pot      | /en/take-cash-in-chunks | /en/mix-options         |
+      | mix-options         | /en/take-whole-pot      |                      |

@@ -19,7 +19,8 @@ def stub_appointments_api_to_fail
 end
 
 Given(/^the customer wants to book a phone appointment$/) do
-  @page = Pages::NewTelephoneAppointment.new.tap(&:load)
+  @page = Pages::NewTelephoneAppointment.new
+  @page.load(locale: :en)
   expect(@page).to be_displayed
 end
 

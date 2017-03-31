@@ -19,7 +19,7 @@ When(/^I browse for the location "([^"]*)"$/) do |location|
 
   with_booking_locations do
     @page = Pages::Location.new
-    @page.load(id: locations[location])
+    @page.load(locale: :en, id: locations[location])
   end
 end
 

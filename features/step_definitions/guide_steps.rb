@@ -8,7 +8,7 @@ end
 
 When(/^I visit the (.*) guide$/) do |slug|
   @page = Pages::Guide.new
-  @page.load(slug: slug)
+  @page.load(locale: :en, slug: slug)
 end
 
 Then(/^the guide is displayed$/) do

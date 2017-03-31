@@ -1,6 +1,6 @@
 When(/^I visit the feedback page$/) do
   @page = Pages::Feedback.new
-  @page.load
+  @page.load(locale: :en)
 end
 
 When(/^I leave feedback$/) do

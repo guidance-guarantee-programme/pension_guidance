@@ -1,5 +1,5 @@
 module Pages
   class BookingIneligible < Page
-    set_url '/locations/{id}/booking-request/ineligible'
+    set_url '/{locale}/locations/{id}/booking-request/ineligible'
   end
 end

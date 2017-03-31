@@ -1,6 +1,6 @@
 require 'securerandom'
 
-RSpec.describe 'POST /locations/:id/booking-request/complete', type: :request do
+RSpec.describe 'POST /en/locations/:id/booking-request/complete', type: :request do
   context 'with valid params' do
     before do
       # Provide a location name for the breadcrumbs
@@ -28,7 +28,7 @@ RSpec.describe 'POST /locations/:id/booking-request/complete', type: :request do
 
       expect(BookingRequests).to receive(:create).with(kind_of(BookingRequestForm))
 
-      post booking_request_complete_location_path(id: location_id), params: payload
+      post booking_request_complete_location_path(locale: :en, id: location_id), params: payload
     end
   end
 end

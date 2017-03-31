@@ -1,6 +1,6 @@
 module Pages
   class BookingStepTwo < Page
-    set_url '/locations/{id}/booking-request/step-two'
+    set_url '/{locale}/locations/{id}/booking-request/step-two'
 
     element :error, '.t-errors'
     element :first_name, '.t-first-name'
