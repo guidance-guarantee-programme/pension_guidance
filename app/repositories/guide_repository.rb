@@ -4,8 +4,8 @@ require_relative '../lib/front_matter_parser'
 class GuideRepository
   GuideNotFound = Class.new(StandardError)
 
-  attr_accessor :dir
-  private :dir, :dir=
+  attr_accessor :dir, :locale
+  private :dir, :dir=, :locale, :locale=
 
   def self.slugs
     @slugs ||= new.slugs
@@ -15,7 +15,8 @@ class GuideRepository
     slugs.reject { |s| /question-\d+\Z/ === s } # rubocop:disable Style/CaseEquality
   end
 
-  def initialize(dir = Rails.root.join('content'))
+  def initialize(locale = :en, dir = Rails.root.join('content'))
+    self.locale = locale
     self.dir = dir
   end
 
@@ -34,13 +35,15 @@ class GuideRepository
 
   def all
     glob_dir('*').map do |path|
-      id = path.match(%r{^#{dir}/(?<id>[^\.]*)\.(?<ext>.*)$})[:id]
+      id = path.match(%r{^#{dir}/(?<id>[^\.]+)\.#{locale}\.(?<ext>.*)$})[:id]
       read_guide(id, path)
     end
   end
 
   def slugs
     glob_dir('*').map do |path|
+      # If looking for all slugs take any locale into consideration and
+      # not just the one this repository has been instantiated against
       id = path.match(%r{^#{dir}/(?<id>[^\.]+)\.(?:(?<locale>[^\.]+)\.)?(?<ext>.*)$})[:id]
       id.tr('_', '-')
     end.uniq
@@ -68,6 +71,6 @@ class GuideRepository
   end
 
   def glob_dir(file_pattern)
-    Dir["#{dir}/**/#{file_pattern}.{md,html}"]
+    Dir["#{dir}/**/#{file_pattern}.#{locale}.{md,html}"]
   end
 end
