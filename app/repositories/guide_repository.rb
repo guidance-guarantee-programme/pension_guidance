@@ -56,6 +56,7 @@ class GuideRepository
     source = FrontMatterParser.new(File.read(path))
 
     Guide.new(id,
+              locale,
               content: source.content,
               content_type: content_type,
               metadata: source.front_matter)

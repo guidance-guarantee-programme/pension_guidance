@@ -1,5 +1,6 @@
 RSpec.describe Guide, type: :model do
   let(:id) { 'the_test_guide' }
+  let(:locale) { 'en' }
   let(:content_type) { :govspeak }
   let(:content) { '/examples/test.md' }
   let(:label) { 'Tested' }
@@ -17,10 +18,10 @@ RSpec.describe Guide, type: :model do
   end
 
   subject(:guide) do
-    described_class.new(id, content: content, content_type: content_type, metadata: metadata)
+    described_class.new(id, locale, content: content, content_type: content_type, metadata: metadata)
   end
 
-  %i(id content content_type).each do |attr|
+  %i(id locale content content_type).each do |attr|
     describe "##{attr}" do
       it "returns the initialised #{attr}" do
         expect(guide.public_send(attr)).to eq(public_send(attr))
@@ -44,7 +45,7 @@ RSpec.describe Guide, type: :model do
 
   describe '#==' do
     it 'considers two guides with the same ID as equal' do
-      expect(described_class.new('foo')).to eq(described_class.new('foo'))
+      expect(described_class.new('foo', locale)).to eq(described_class.new('foo', locale))
     end
   end
 
