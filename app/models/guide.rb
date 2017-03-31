@@ -1,8 +1,9 @@
 class Guide
-  attr_reader :id, :content, :content_type, :metadata
+  attr_reader :id, :locale, :content, :content_type, :metadata
 
-  def initialize(id, content: '', content_type: nil, metadata: nil)
+  def initialize(id, locale, content: '', content_type: nil, metadata: nil)
     @id = id
+    @locale = locale
     @content = content
     @content_type = content_type
     @metadata = OpenStruct.new(metadata)
