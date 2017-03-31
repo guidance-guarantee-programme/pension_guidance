@@ -15,6 +15,16 @@ class GuideRepository
     slugs.reject { |s| /question-\d+\Z/ === s } # rubocop:disable Style/CaseEquality
   end
 
+  def self.cacheable_paths
+    # This method is called during Rails' startup, when
+    # `I18n.available_locales` is not yet aware of the Rails config.
+    Rails.application.config.i18n.available_locales.collect do |locale|
+      cacheable_slugs.collect do |slug|
+        "/#{locale}/#{slug}"
+      end
+    end.flatten
+  end
+
   def initialize(locale = I18n.locale, dir = Rails.root.join('content'))
     self.locale = locale
     self.dir = dir
