@@ -25,7 +25,7 @@ module Middleware
 
     def strip?(env)
       path = Rack::Request.new(env).path
-      @paths.include?(path.sub('/', ''))
+      @paths.include?(path)
     end
   end
 end
