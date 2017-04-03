@@ -20,7 +20,9 @@
         <div class="l-marketing-promo">
           <div class="l-page-container l-marketing-promo__content">
             <div class="l-column-third">
-              <a href="/"><%= render partial: 'components/logo_with_strapline_svg', locals: { image_class: 'marketing-logo' } %></a>
+              <%= link_to root_path do %>
+                <%= render partial: 'components/logo_with_strapline_svg', locals: { image_class: 'marketing-logo' } %>
+              <% end %>
             </div>
           </div>
         </div>
@@ -34,7 +36,10 @@
                 <p>Find out about how you can take your pension money, from getting a regular income to taking your whole pot as cash.</p>
                 <p>Speak to us over the phone or in person somewhere local to you.</p>
                 <p>Pension Wise is free and impartial – we don’t recommend products or companies and won’t tell you how to invest your money.</p>
-                <p class="marketing-book"><a href="/appointments" class="button">Book now</a><% if @phone_number %> <span class="marketing-promo__call">or phone <span class="marketing-promo__number"><%= @phone_number %><% end %></span></span></p>
+                <p class="marketing-book">
+                  <%= link_to 'Book now', guide_path('appointments'), class: :button %>
+                  <% if @phone_number %> <span class="marketing-promo__call">or phone <span class="marketing-promo__number"><%= @phone_number %><% end %></span></span>
+                </p>
               </div>
               <div class="youtube-video">
                 <div class="youtube-video__video">

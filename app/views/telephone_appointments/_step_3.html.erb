@@ -177,7 +177,7 @@
       <div class="multiple-choice">
         <%= f.check_box :accept_terms_and_conditions, class: 't-accept-terms-and-conditions' %>
         <%= f.label :accept_terms_and_conditions, class: 't-opt-in' do %>
-          I accept the <a href="/privacy" target="_blank">terms and conditions</a>
+          I accept the <%= link_to 'terms and conditions', guide_path('privacy'), target: :blank %></a>
         <% end %>
       </div>
     </fieldset>

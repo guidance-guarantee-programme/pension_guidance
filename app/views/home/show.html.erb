@@ -13,7 +13,7 @@
 <% content_for(:canonical_path, root_path) %>
 
 <div class="home-intro l-page-container">
-  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <a href="/appointments?icn=book-appointment&amp;ici=top-homepage">book a free appointment</a></p>
+  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <%= link_to 'book a free appointment', guide_path('appointments', icn: 'book-appointment', ici: 'top-homepage') %></p>
 </div>
 
 <div class="l-grid-row l-home-row l-home-row--accent">
@@ -32,7 +32,11 @@
 
       <p>There are different ways you can take the money from your pension pot.</p>
 
-      <p><a href="/pension-pot-options"><b>Not sure where to start?</b></a></p>
+      <p>
+        <%= link_to guide_path('pension-pot-options') do %>
+          <b>Not sure where to start?</b>
+        <% end %>
+      </p>
     </div>
   </div>
 </div>
@@ -40,55 +44,55 @@
 <div class="l-grid-row l-home-row l-home-options">
   <div class="l-page-container">
     <div class="l-home-options__option-container">
-      <a class="l-home-options__link t-option" href="/leave-pot-untouched">
+      <%= link_to guide_path('leave-pot-untouched'), class: 'l-home-options__link t-option' do %>
         <div class="l-home-options__option l-home-options__option--leave-pot-untouched">
           <span class="circle circle--s circle--leave-pot-untouched l-home-options__circle"></span>
           <span class="l-home-options__text">Leave your pot untouched</span>
         </div>
-      </a>
+      <% end %>
     </div>
 
     <div class="l-home-options__option-container">
-      <a class="l-home-options__link t-option" href="/guaranteed-income">
+      <%= link_to guide_path('guaranteed-income'), class: 'l-home-options__link t-option' do %>
         <div class="l-home-options__option l-home-options__option--guaranteed-income">
           <span class="circle circle--s circle--guaranteed-income l-home-options__circle"></span>
           <span class="l-home-options__text">Guaranteed income (annuity)</span>
         </div>
-      </a>
+      <% end %>
     </div>
 
     <div class="l-home-options__option-container">
-      <a class="l-home-options__link t-option" href="/adjustable-income">
+      <%= link_to guide_path('adjustable-income'), class: 'l-home-options__link t-option' do %>
         <div class="l-home-options__option l-home-options__option--adjustable-income">
           <span class="circle circle--s circle--adjustable-income l-home-options__circle"></span>
           <span class="l-home-options__text">Adjustable income</span>
         </div>
-      </a>
+      <% end %>
     </div>
 
     <div class="l-home-options__option-container">
-      <a class="l-home-options__link t-option" href="/take-cash-in-chunks">
+      <%= link_to guide_path('take-cash-in-chunks'), class: 'l-home-options__link t-option' do %>
         <div class="l-home-options__option l-home-options__option--take-cash-in-chunks">
           <span class="circle circle--s circle--take-cash-in-chunks l-home-options__circle"></span>
           <span class="l-home-options__text">Take cash in chunks</span>
         </div>
-      </a>
+      <% end %>
     </div>
 
     <div class="l-home-options__option-container">
-      <a class="l-home-options__link t-option" href="/take-whole-pot">
+      <%= link_to guide_path('take-whole-pot'), class: 'l-home-options__link t-option' do %>
         <div class="l-home-options__option l-home-options__option--take-whole-pot">
           <span class="circle circle--s circle--take-whole-pot l-home-options__circle"></span>
           <span class="l-home-options__text">Take whole pot</span>
         </div>
-      </a>
+      <% end %>
     </div>
 
     <div class="l-home-options__option-container l-home-options__option-container--full-width">
-      <a class="l-home-options__link l-home-options__link--mix-options t-option" href="/mix-options">
+      <%= link_to guide_path('mix-options'), class: 'l-home-options__link l-home-options__link--mix-options t-option' do %>
         <%#-- This is rendered on a single line to fixed a display bug that produces an underline on the next line %>
         <div class="l-home-options__option l-home-options__option--mix-options"><span class="circle circle--s circle--mix-options l-home-options__circle"></span><span class="l-home-options__text">Mix your options</span></div>
-      </a>
+      <% end %>
     </div>
   </div>
 </div>
@@ -103,8 +107,9 @@
       <p>Our pension specialists are impartial – they don’t recommend products or companies and won’t tell you how to invest your money.</p>
 
       <p>Have your appointment over the phone or in person somewhere local to you.</p>
-      <p><a href="/appointments?icn=book-appointment&amp;ici=bottom-homepage" class="button">Book a free appointment</a></p>
-      <p><a href="/pension-type-tool">Find out if you can book</a></p>
+
+      <p><%= link_to 'Book a free appointment', guide_path('appointments', icn: 'book-appointment', ici: 'bottom-homepage'), class: :button %></p>
+      <p><%= link_to 'Find out if you can book', guide_path('pension-type-tool') %></p>
     </div>
   </div>
 </div>
@@ -117,11 +122,11 @@
 
     <div class="l-column-two-thirds">
       <ul class="quick-links">
-        <li class="quick-links__link"><a href="/pension-pot-value">Check how much is in your pot</a></li>
-        <li class="quick-links__link"><a href="/tax">Tax and pensions</a></li>
-        <li class="quick-links__link"><a href="/state-pension">The State Pension</a></li>
-        <li class="quick-links__link"><a href="/scams">How to avoid a pension scam</a></li>
-        <li class="quick-links__link"><a href="/pension-statements">Understand your pension statement</a></li>
+        <li class="quick-links__link"><%= link_to 'Check how much is in your pot', guide_path('pension-pot-value') %></li>
+        <li class="quick-links__link"><%= link_to 'Tax and pensions', guide_path('tax') %></li>
+        <li class="quick-links__link"><%= link_to 'The State Pension', guide_path('state-pension') %></li>
+        <li class="quick-links__link"><%= link_to 'How to avoid a pension scam', guide_path('scams') %></li>
+        <li class="quick-links__link"><%= link_to 'Understand your pension statement', guide_path('pension-statements') %></li>
       </ul>
     </div>
   </div>
