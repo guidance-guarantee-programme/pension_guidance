@@ -27,17 +27,17 @@ You might also have other income from:
 - dividends from investments
 - selling property
 
-^Taking money from your pension pot can [affect your benefits](/benefits).^
+^Taking money from your pension pot can [affect your benefits](/en/benefits).^
 
 ## Work out your retirement income
 
 To get an idea of how much you’ll have in retirement, follow these steps:
 
-s1. [Check how much is in your pension pot](/pension-pot-value) and which pensions you’ve paid into.
+s1. [Check how much is in your pension pot](/en/pension-pot-value) and which pensions you’ve paid into.
 s2. Add your pension pot to your State Pension. Phone the Future Pension Centre on 0345 3000 168 to get a full State Pension statement.
 s3. Check what other income you’ll have in retirement and how it might change.
-s4. Choose [what to do with your pot](/pension-pot-options) and [shop around](/shop-around) to get quotes from providers.
-s5. Take away the [tax you pay](/tax).
+s4. Choose [what to do with your pot](/en/pension-pot-options) and [shop around](/en/shop-around) to get quotes from providers.
+s5. Take away the [tax you pay](/en/tax).
 
 $E
 **Example**
@@ -96,7 +96,7 @@ For example, you might pay less on:
 You might pay more for:
 
 - energy and water bills – you may spend more time at home
-- [care costs](/care-costs)
+- [care costs](/en/care-costs)
 
 ##Increase your retirement income
 
@@ -114,7 +114,7 @@ You may still be able to pay into the pot you take money from but you won’t ge
 
 ###Take your pot later
 
-You may be able to [leave your pot untouched](/leave-pot-untouched) and take it later than the age you agreed with your pension provider (known as your ‘selected retirement age’).
+You may be able to [leave your pot untouched](/en/leave-pot-untouched) and take it later than the age you agreed with your pension provider (known as your ‘selected retirement age’).
 
 Leaving your money invested for longer and continuing to pay in could give you a higher income when you come to take it.
 

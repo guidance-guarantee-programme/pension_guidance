@@ -8,9 +8,9 @@ You don’t have to choose a pension option, eg a guaranteed income (annuity) fr
 
 For example, if you want to buy an annuity, moving to another provider could give you a bigger choice and potentially a higher income.
 
-You can shop around by yourself or with help from a [financial adviser](/financial-advice).
+You can shop around by yourself or with help from a [financial adviser](/en/financial-advice).
 
-^When shopping around [watch out for pension scams](/scams).^
+^When shopping around [watch out for pension scams](/en/scams).^
 
 ## Your current provider
 
@@ -27,7 +27,7 @@ Before looking at other providers you need to check with your current one:
 * if your pot has a guaranteed annuity rate – this could mean you get a better deal by staying
 * if they’ll charge you a fee for moving your pot to another provider
 
-There are many different [types of annuity](/guaranteed-income). You can compare them on the [Money Advice Service website](https://www.moneyadviceservice.org.uk/en/tools/annuities). You’ll need to know:
+There are many different [types of annuity](/en/guaranteed-income). You can compare them on the [Money Advice Service website](https://www.moneyadviceservice.org.uk/en/tools/annuities). You’ll need to know:
 
 * how much you have in your pot
 * the age you plan to retire
@@ -40,7 +40,7 @@ Once you’ve bought an annuity you only have a short period when you can still 
 
 Always ask providers if your annuity quote includes commission fees.
 
-^If you have a health condition that affects your life expectancy you may get more from an [‘enhanced’ annuity](/ill-health).^
+^If you have a health condition that affects your life expectancy you may get more from an [‘enhanced’ annuity](/en/ill-health).^
 
 ## Adjustable income (flexi-access drawdown)
 
@@ -54,5 +54,5 @@ You’ll also need to:
 
 * understand investment terms and choices
 * check what fees you’ll pay for your investment to be managed
-* know how your [pension pot will be taxed](/tax) each time you take money out of it
+* know how your [pension pot will be taxed](/en/tax) each time you take money out of it
 * be aware that if your investments don’t perform well and you take too much from your pot, you could run out of retirement income

@@ -14,8 +14,8 @@ The more information you have prepared when you meet an adviser, the more you wi
 
 Consider speaking to a financial adviser if you want to:
 
-- invest your pot to get an [adjustable income](/adjustable-income) – an adviser can do this for you
-- [mix your pension options](/mix-options)
+- invest your pot to get an [adjustable income](/en/adjustable-income) – an adviser can do this for you
+- [mix your pension options](/en/mix-options)
 - pay more money into your pension
 - leave some of your pension in your will – they can advise on the most tax-efficient way to do this
 

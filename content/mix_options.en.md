@@ -15,7 +15,7 @@ You can mix the ways you take your pension pot.
 - Not all pension providers offer all the options.
 - If you have multiple pots, you can use different options for each pot, eg leave one pot untouched and take cash in chunks from another.
 
-^Find out [if you can book](/pension-type-tool) a free Pension Wise appointment.^
+^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
 
 {: .info-notice--mix-options}
 $E
@@ -30,9 +30,9 @@ $E
 
 ## Financial advice
 
-Mixing your options can be complicated. If you’re interested in this you might want to talk to a [financial adviser](/financial-advice) first.
+Mixing your options can be complicated. If you’re interested in this you might want to talk to a [financial adviser](/en/financial-advice) first.
 
-^Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-mix-options) to find out more about what you can do with your pot.^
+^Book a [free Pension Wise appointment](/en/appointments?icn=book-appointment&amp;ici=bottom-mix-options) to find out more about what you can do with your pot.^
 
 {::options parse_block_html="true" /}
 <div class="next-steps next-steps--mix-options">
@@ -42,6 +42,6 @@ Mixing your options can be complicated. If you’re interested in this you might
 If you’re interested in mixing your options:
 
 - Look at all the options to see which ones are right for you
-- [Shop around](/shop-around) – you don’t have to get an adjustable income or buy an annuity from your current provider
+- [Shop around](/en/shop-around) – you don’t have to get an adjustable income or buy an annuity from your current provider
 
 </div>

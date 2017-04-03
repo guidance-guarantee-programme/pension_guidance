@@ -5,7 +5,7 @@ description: What you can do with your UK pension pot if you move or already liv
 
 # Living abroad and your pension
 
-If you live abroad, or plan on retiring abroad and have a [defined contribution pension](/pension-types) in the UK, you can either:
+If you live abroad, or plan on retiring abroad and have a [defined contribution pension](/en/pension-types) in the UK, you can either:
 
 - leave your pot in the UK and take your money from abroad
 - move your pension pot abroad
@@ -14,7 +14,7 @@ You can also mix these options, eg leave one pension in the UK and move another 
 
 ## Taking your pension from abroad
 
-If you leave your pension pot in the UK, you have the same [UK pension options](/pension-pot-options).
+If you leave your pension pot in the UK, you have the same [UK pension options](/en/pension-pot-options).
 
 UK pension providers don’t usually pay the money from your pension straight into overseas bank accounts. If they do, they may charge fees. Check with your provider.
 
@@ -50,6 +50,6 @@ Contact [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.u
 
 The [International Pension Centre](https://www.gov.uk/international-pension-centre) can help with your State Pension abroad.
 
-You can find a [financial adviser](/financial-advice) to help you choose the right pension option when moving abroad. You may be charged a fee for this advice.
+You can find a [financial adviser](/en/financial-advice) to help you choose the right pension option when moving abroad. You may be charged a fee for this advice.
 
 If you live in a [European Economic Area](https://www.gov.uk/eu-eea) country and need advice from a UK financial adviser, you should check they have legal approval to give financial advice – sometimes known as [passporting](http://www.fca.org.uk/firms/being-regulated/passporting) – in your country.

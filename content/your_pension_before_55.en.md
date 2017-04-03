@@ -10,7 +10,7 @@ In this case you may be able take your pot early even if you have a ‘selected 
 
 You may also have the right under a pension scheme you joined before 6 April 2006 to take your pension before you’re 55. Ask your pension provider if you have a ‘protected pension age’.
 
-%If someone contacts you unexpectedly and says they can help you access your pot before the age of 55 it’s likely to be a [pension scam](/scams). You could lose your money and face a tax charge of up to 55% of the amount taken out or transferred plus further charges from your provider.%
+%If someone contacts you unexpectedly and says they can help you access your pot before the age of 55 it’s likely to be a [pension scam](/en/scams). You could lose your money and face a tax charge of up to 55% of the amount taken out or transferred plus further charges from your provider.%
 
 ## If you’re ill
 
@@ -25,7 +25,7 @@ You may be able to take your whole pot tax free if both of the following apply t
 - you’re expected to live for less than a year
 - your pots are worth less than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) of £1 million
 
-Read more about your [pension when you die](/when-you-die).
+Read more about your [pension when you die](/en/when-you-die).
 
 ## If you have debt
 
