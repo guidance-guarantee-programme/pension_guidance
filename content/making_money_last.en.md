@@ -8,7 +8,7 @@ Knowing how long your money needs to last depends on when you want to start taki
 
 You may decide to leave your pot untouched and keep paying into it — this could give you more money to live on over a shorter period of time. 
 
-You’ll need to [work out what you’ll have in retirement](/work-out-income) before looking at how long your money needs to last. 
+You’ll need to [work out what you’ll have in retirement](/en/work-out-income) before looking at how long your money needs to last. 
 
 ## How long your money needs to last 
 
@@ -20,13 +20,13 @@ You can use the [Office of National Statistics calculator](http://visual.ons.gov
 
 ## When to start taking your pension pot
 
-You decide when to start taking money from your pot – you can do this from age 55. In some rare cases you can [take your money earlier](/your-pension-before-55).
+You decide when to start taking money from your pot – you can do this from age 55. In some rare cases you can [take your money earlier](/en/your-pension-before-55).
 
 Most pensions set the age at which you’re expected to take the money from your pension pot, eg when you turn 65. This is known as your ‘selected retirement date’ and may be different to your State Pension age.
 
 You don’t have to take your money when you reach this date. You can leave your pension pot untouched until you’re ready to take from it.
 
-The longer you leave the money invested and continue to pay into it, the higher your income could be when you choose to take it. You also don’t [pay Income Tax](/tax) on the money for as long as it stays in your pot.
+The longer you leave the money invested and continue to pay into it, the higher your income could be when you choose to take it. You also don’t [pay Income Tax](/en/tax) on the money for as long as it stays in your pot.
 
 You might want to continue working for a while, possibly part time. Many employers offer [flexible working arrangements](https://www.gov.uk/flexible-working) for people close to or over retirement age.
 
@@ -40,6 +40,6 @@ You can’t take the State Pension early but you can delay when you start receiv
 
 Your selected retirement date could influence when you decide to take the money from your pension pot.
 
-You can check your pension paperwork, eg your annual [pension statements](/pension-statements) to find out what age and date you’ve said you want to retire at. Ask your provider if you can’t find it. 
+You can check your pension paperwork, eg your annual [pension statements](/en/pension-statements) to find out what age and date you’ve said you want to retire at. Ask your provider if you can’t find it. 
 
 If you want to change your selected retirement date ask your provider if you have to pay a fee or if it changes the terms of your pension.

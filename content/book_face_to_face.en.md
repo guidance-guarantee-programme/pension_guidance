@@ -9,7 +9,7 @@ tags:
 
 Search for your nearest appointment locations.
 
-<form action="/locations" method="get">
+<form action="/en/locations" method="get">
   <div class="form-group">
     <label class="form-label-bold" for="postcode">
       Postcode
@@ -22,5 +22,5 @@ Search for your nearest appointment locations.
 </form>
 
 <div class="application-notice info-notice">
-  <p>You can also <a href="/book-phone">book a phone appointment</a>.</p>
+  <p>You can also <a href="/en/book-phone">book a phone appointment</a>.</p>
 </div>

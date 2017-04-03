@@ -18,9 +18,9 @@ You don’t have to start taking money from your pension pot when you reach your
 
 You don’t pay tax while the money stays in your pot.
 
-Money you leave in your pot can be [passed on](/when-you-die) tax free if you die before the age of 75.
+Money you leave in your pot can be [passed on](/en/when-you-die) tax free if you die before the age of 75.
 
-^Find out [if you can book](/pension-type-tool) a free Pension Wise appointment.^
+^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
 
 ## Fees and investment risk
 
@@ -36,7 +36,7 @@ You usually pay tax if savings in your pension pots go above the [annual allowan
 
 {::calculator id="leave-pot-untouched" /}
 
-^Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-leave-pot-untouched) to find out more about what you can do with your pot.^
+^Book a [free Pension Wise appointment](/en/appointments?icn=book-appointment&amp;ici=bottom-leave-pot-untouched) to find out more about what you can do with your pot.^
 
 ## Scams
 

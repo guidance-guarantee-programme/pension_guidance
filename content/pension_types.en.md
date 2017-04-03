@@ -9,7 +9,7 @@ Along with the State Pension from the government, there are 2 main types of pens
 - defined contribution – based on how much money has been paid into your pension pot
 - defined benefit (final salary or career average) – based on your salary and how long you’ve worked for your employer
 
-^You can [check which type of pension you have](/pension-type-tool) – this will help you find out if you can have a Pension Wise appointment.^
+^You can [check which type of pension you have](/en/pension-type-tool) – this will help you find out if you can have a Pension Wise appointment.^
 
 ## Defined contribution
 

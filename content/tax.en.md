@@ -36,7 +36,7 @@ This table gives an overview of how much tax you may pay on the money you take f
           <span class="circle circle--s circle--leave-pot-untouched"></span>
         </td>
         <th scope="row">
-          <a href="/leave-pot-untouched">Leave your pot untouched</a>
+          <a href="/en/leave-pot-untouched">Leave your pot untouched</a>
         </th>
         <td>
           Your whole pot while it stays untouched
@@ -50,7 +50,7 @@ This table gives an overview of how much tax you may pay on the money you take f
           <span class="circle circle--s circle--guaranteed-income"></span>
         </td>
         <th scope="row">
-          <a href="/guaranteed-income">Guaranteed income (annuity)</a>
+          <a href="/en/guaranteed-income">Guaranteed income (annuity)</a>
         </th>
         <td>
           25% of your pot before you buy an annuity
@@ -64,7 +64,7 @@ This table gives an overview of how much tax you may pay on the money you take f
           <span class="circle circle--s circle--adjustable-income"></span>
         </td>
         <th scope="row">
-          <a href="/adjustable-income">Adjustable income</a>
+          <a href="/en/adjustable-income">Adjustable income</a>
         </th>
         <td>
           25% of your pot before you invest in an adjustable income
@@ -78,7 +78,7 @@ This table gives an overview of how much tax you may pay on the money you take f
           <span class="circle circle--s circle--take-cash-in-chunks"></span>
         </td>
         <th scope="row">
-          <a href="/take-cash-in-chunks">Take cash in chunks</a>
+          <a href="/en/take-cash-in-chunks">Take cash in chunks</a>
         </th>
         <td>
           25% of each amount you take out
@@ -92,7 +92,7 @@ This table gives an overview of how much tax you may pay on the money you take f
           <span class="circle circle--s circle--take-whole-pot"></span>
         </td>
         <th scope="row">
-          <a href="/take-whole-pot">Take your whole pot in one go</a>
+          <a href="/en/take-whole-pot">Take your whole pot in one go</a>
         </th>
         <td>
           25% of your whole pot
@@ -106,7 +106,7 @@ This table gives an overview of how much tax you may pay on the money you take f
           <span class="circle circle--s circle--mix-options"></span>
         </td>
         <th scope="row">
-          <a href="/mix-options">Mix your options</a>
+          <a href="/en/mix-options">Mix your options</a>
         </th>
         <td>
           Depends on the options you mix

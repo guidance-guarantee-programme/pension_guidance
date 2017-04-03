@@ -26,4 +26,4 @@ You may be able to take your whole pension pot tax free if **all** of the follow
 
 Check the terms of your pension with your provider. Some pensions will keep at least 50% of your pot for your spouse or partner.
 
-You’ll need to think about whether you want a cash sum now or a type of income. You’ll also need to think about how you want to [leave money behind](/when-you-die).
+You’ll need to think about whether you want a cash sum now or a type of income. You’ll also need to think about how you want to [leave money behind](/en/when-you-die).

@@ -10,4 +10,4 @@ It could be pension recycling if you intend to use the tax-free lump sum to pay 
 
 If HM Revenue and Customs decide you have broken pension recycling laws, you may have to pay tax on the whole of the original tax-free lump sum – even if you only recycle some of the money.
 
-Get [financial advice](/financial-advice) if you want to reinvest your tax-free money into a pension.
+Get [financial advice](/en/financial-advice) if you want to reinvest your tax-free money into a pension.

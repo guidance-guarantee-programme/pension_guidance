@@ -16,11 +16,11 @@ Your statement shows:
  
 ## Your pension type
  
-Your statement should tell you if you have a defined contribution or a defined benefit pension – or you can [check which type of pension you have](/pension-type-tool).
+Your statement should tell you if you have a defined contribution or a defined benefit pension – or you can [check which type of pension you have](/en/pension-type-tool).
 
 If your statement shows a ‘total plan’ or ‘fund value’, it’s likely you have a defined contribution pension.
 
-^You can [book a free Pension Wise appointment](/appointments) if you have a defined contribution pension.^
+^You can [book a free Pension Wise appointment](/en/appointments) if you have a defined contribution pension.^
 
 If it shows a pension value at retirement which is linked to your salary and length of service with an employer, it’s likely you have a defined benefit (final salary or career average) pension.
 
