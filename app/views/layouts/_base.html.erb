@@ -56,21 +56,23 @@
 <% end %>
 
 <% content_for :cookie_message do %>
-  <p>Pension Wise uses cookies to make the site simpler. <a href="/cookies">Find out more about
-    cookies</a></p>
+  <p>
+    Pension Wise uses cookies to make the site simpler.
+    <%= link_to 'Find out more about cookies', guide_path('cookies') %>
+  </p>
 <% end %>
 
 <% content_for :footer_support_links do %>
   <div class="footer-meta-inner l-footer-meta">
     <h2 class="visuallyhidden">Support links</h2>
     <ul>
-      <li><a href="/cookies">Cookies</a></li>
-      <li><a href="/privacy">Privacy policy</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/cymraeg" lang="cy">Cymraeg</a></li>
-      <li><a href="http://gov.uk/help/accessibility/" rel="external">Accessibility</a></li>
-      <li><a href="/customer-promise">Customer promise</a></li>
-      <li><a href="/after-your-appointment" class="t-appointment-summary-link">After your appointment</a></li>
+      <li><%= link_to 'Cookies', guide_path('cookies') %></li>
+      <li><%= link_to 'Privacy', guide_path('privacy') %></li>
+      <li><%= link_to 'Contact', guide_path('contact') %></li>
+      <li><%= link_to 'Cymraeg', guide_path('cymraeg'), lang: :cy %></li>
+      <li><%= link_to 'Accessibility', 'http://gov.uk/help/accessibility/', rel: 'external' %></li>
+      <li><%= link_to 'Customer promise', guide_path('customer-promise') %></li>
+      <li><%= link_to 'After your appointment', guide_path('after-your-appointment'), class: 't-appointment-summary-link' %></li>
     </ul>
   </div>
 <% end %>

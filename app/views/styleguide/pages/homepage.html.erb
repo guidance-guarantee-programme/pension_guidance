@@ -9,8 +9,9 @@
     <p>
       Pension Wise is a free and impartial government service that helps you
       understand
-      <strong><a href="/pension-pot-options">
-        what you can do with your pension pot</a></strong>. You’ll get
+      <strong>
+        <%= link_to 'what you can do with your pension pot', guide_path('pension-pot-options') %>
+      </strong>. You’ll get
       information on your pension options, taxes and fees.
     </p>
 
@@ -29,19 +30,13 @@
       <h3>Your pension pot</h3>
       <ul class="unstyled-list t-article-links">
         <li class="unstyled-list__item">
-          <a href="/pension-types">
-            Know your pension type
-          </a>
+          <%= link_to 'Know your pension type', guide_path('pension-types') %>
         </li>
         <li class="unstyled-list__item">
-          <a href="/pension-pot-value">
-            Check the value of your pension pot
-          </a>
+          <%= link_to 'Check the value of your pension pot', guide_path('pension-pot-value') %>
         </li>
         <li class="unstyled-list__item">
-          <a href="/divorce">
-            If you're divorced
-          </a>
+          <%= link_to "If you're divorced", guide_path('divorce') %>
         </li>
       </ul>
     </div>
@@ -49,19 +44,13 @@
       <h3>Your options</h3>
       <ul class="unstyled-list">
         <li class="unstyled-list__item">
-          <a href="/pension-pot-options">
-            What you can do with your pension pot
-          </a>
+          <%= link_to 'What you can do with your pension pot', guide_path('pension-pot-options') %>
         </li>
         <li class="unstyled-list__item">
-          <a href="/shop-around">
-            Shop around and compare providers
-          </a>
+          <%= link_to 'Shop around and compare providers', guide_path('shop-around') %>
         </li>
         <li class="unstyled-list__item">
-          <a href="/living-abroad">
-            Living abroad and your pension
-          </a>
+          <%= link_to 'Living abroad and your pension', guide_path('living-abroad') %>
         </li>
       </ul>
     </div>
@@ -71,28 +60,20 @@
       <h3>Your money in retirement</h3>
       <ul class="unstyled-list">
         <li class="unstyled-list__item">
-          <a href="/making-money-last">
-            Make your money last
-          </a>
+          <%= link_to 'Make your money last', guide_path('making-money-last') %>
         </li>
         <li class="unstyled-list__item">
-          <a href="/work-out-income">
-            Work out what you’ll have in retirement
-          </a>
+          <%= link_to 'Work out what you’ll have in retirement', guide_path('work-out-income') %>
         </li>
         <li class="unstyled-list__item">
-          <a href="/benefits">
-            If you're on benefits
-          </a>
+          <%= link_to '', guide_path('benefits') %>
         </li>
       </ul>
 
       <h3>Tax</h3>
       <ul class="unstyled-list">
         <li class="unstyled-list__item">
-          <a href="/tax">
-            Tax you pay on your pension
-          </a>
+          <%= link_to 'Tax you pay on your pension', guide_path('tax') %>
         </li>
       </ul>
 
@@ -101,23 +82,17 @@
       <h3>Scams</h3>
       <ul class="unstyled-list">
         <li class="unstyled-list__item">
-          <a href="/scams">
-            How to avoid a scam
-          </a>
+          <%= link_to 'How to avoid a scam', guide_path('scams') %>
         </li>
       </ul>
 
       <h3>Complaints</h3>
       <ul class="unstyled-list">
         <li class="unstyled-list__item">
-          <a href="/pension-complaints">
-            How to complain about a pension
-          </a>
+          <%= link_to 'How to complain about a pension', guide_path('pension-complaints') %>
         </li>
         <li class="unstyled-list__item">
-          <a href="/complaints">
-            Complain about Pension Wise
-          </a>
+          <%= link_to 'Complain about Pension Wise', guide_path('complaints') %>
         </li>
       </ul>
     </div>
@@ -136,7 +111,8 @@
 
       <p>If you prefer to speak to someone, you’ll soon be able to talk to an
         impartial guidance specialist on the phone or face to face. The guidance
-        you get will be based on <a href="/6-steps-you-need-to-take">steps you can follow on this website</a>.
+        you get will be based on
+        <%= link_to 'steps you can follow on this website', guide_path('6-steps-you-need-to-take') %>.
         Register your interest if you’d like to take part in upcoming trials of
         phone or face-to-face guidance.</p>
 
@@ -171,9 +147,9 @@
         </li>
       </ul>
 
-      <p><a href="/know-your-pension-type">
-        Help with understanding your pension type
-      </a></p>
+      <p>
+        <%= link_to 'Help with understanding your pension type', guide_path('know-your-pension-type') %>
+      </p>
 
     </div>
     <div class="l-column-half">

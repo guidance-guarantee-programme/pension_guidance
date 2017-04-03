@@ -2,13 +2,13 @@
   <h2 class="link-promo__heading">Book a free appointment</h2>
   <ul class="link-promo__list">
     <li class="link-promo__item">
-      <a href="/appointments#who-can-book" id="book-appointment-who">Who can book</a>
+      <%= link_to 'Who can book', guide_path('appointments', anchor: 'who-can-book'), id: 'book-appointment-who' %>
     </li>
     <li class="link-promo__item">
-      <a href="/appointments#what-youll-get-from-the-appointment" id="book-appointment-what">What you will get from the appointment</a>
+      <%= link_to 'What you will get from the appointment', guide_path('appointments', anchor: 'what-youll-get-from-the-appointment'), id: 'book-appointment-what' %>
     </li>
     <li class="link-promo__item">
-      <a href="/appointments#make-the-most-of-your-appointment" id="book-appointment-make-the-most">Make the most of your appointment</a>
+      <%= link_to 'Make the most of your appointment', guide_path('appointments', anchor: 'make-the-most-of-your-appointment'), id: 'book-appointment-make-the-most' %>
     </li>
   </ul>
 </div>
