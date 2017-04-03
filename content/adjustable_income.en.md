@@ -23,7 +23,7 @@ You’ll probably need to be involved in choosing and managing your investments.
 
 Not all pension providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
-{::calculator id="adjustable-income" /}
+{::calculator id="adjustable-income" locale="en" /}
 
 ## Tax
 

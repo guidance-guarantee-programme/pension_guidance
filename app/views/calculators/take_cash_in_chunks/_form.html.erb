@@ -9,7 +9,7 @@
   form: Calculators::TakeCashInChunksForm,
   errors: errors if form&.invalid? %>
 
-<form action="/take-cash-in-chunks/estimate#form" method="get">
+<form action="<%= "/#{locale}/take-cash-in-chunks/estimate#form" %>" method="get">
   <%= render 'calculators/form_input_currency',
              field: :income,
              value: form&.income,

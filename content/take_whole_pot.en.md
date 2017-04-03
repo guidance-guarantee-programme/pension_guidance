@@ -18,7 +18,7 @@ You pay tax when you take money from your pot. This is because when you’re pay
 
 ^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
 
-{::calculator id="take-whole-pot" /}
+{::calculator id="take-whole-pot" locale="en" /}
 
 %Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 
