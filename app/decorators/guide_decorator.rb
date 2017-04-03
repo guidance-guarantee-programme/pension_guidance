@@ -1,8 +1,10 @@
 class GuideDecorator < SimpleDelegator
   delegate :concise_label, :description, to: :metadata
 
+  include Rails.application.routes.url_helpers
+
   def url
-    "/#{slug}"
+    guide_path(slug, locale: guide.locale)
   end
 
   def ga_origin

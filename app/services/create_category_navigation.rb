@@ -1,17 +1,18 @@
 class CreateCategoryNavigation
-  attr_accessor :category_id, :category_tree
-  private :category_id=, :category_tree=
+  attr_accessor :category_id, :category_tree, :locale
+  private :category_id=, :category_tree=, :locale=
 
-  def initialize(category_id, category_tree)
+  def initialize(category_id, category_tree, locale)
     self.category_id = category_id
     self.category_tree = category_tree
+    self.locale = locale
   end
 
   def call
     category = CategoryRepository.new.find(category_id)
     guides = nodes.map(&method(:extract)).map(&method(:decorate))
 
-    CategoryNavigation.new(category, guides)
+    CategoryNavigation.new(category, guides, locale)
   end
 
   private

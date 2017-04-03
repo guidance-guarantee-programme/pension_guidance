@@ -15,7 +15,8 @@ RSpec.describe GuideDecorator, type: :decorator do
   end
 
   describe '.for' do
-    let(:guide) { Guide.new('test-guide', content_type: content_type) }
+    let(:locale) { :en }
+    let(:guide) { Guide.new('test-guide', locale, content_type: content_type) }
 
     subject(:decorator) { GuideDecorator.for(guide) }
 

@@ -1,14 +1,15 @@
 RSpec.describe Navigation do
-  subject(:navigation) { Navigation.new(taxonomy) }
+  let(:locale) { :en }
+  subject(:navigation) { Navigation.new(taxonomy, locale) }
 
   let(:foo_category) { instance_double(Category, id: double, slug: double, title: 'Foo category') }
   let(:bar_category) { instance_double(Category, id: double, slug: double, title: 'Bar category') }
 
-  let(:foo_guide) { guide_for('foo') }
-  let(:bar_guide) { guide_for('bar') }
-  let(:baz_guide) { guide_for('baz') }
-  let(:qux_guide) { guide_for('qux') }
-  let(:norf_guide) { guide_for('norf') }
+  let(:foo_guide) { guide_for('foo', locale) }
+  let(:bar_guide) { guide_for('bar', locale) }
+  let(:baz_guide) { guide_for('baz', locale) }
+  let(:qux_guide) { guide_for('qux', locale) }
+  let(:norf_guide) { guide_for('norf', locale) }
 
   let(:taxonomy) do
     Tree::TreeNode.new('home').tap do |root|
@@ -74,8 +75,8 @@ RSpec.describe Navigation do
     end
   end
 
-  def guide_for(name)
+  def guide_for(name, locale)
     metadata = { label: name.titlecase }
-    GuideDecorator.new(Guide.new(name, content_type: :govspeak, content: '', metadata: metadata))
+    GuideDecorator.new(Guide.new(name, locale, content_type: :govspeak, content: '', metadata: metadata))
   end
 end
