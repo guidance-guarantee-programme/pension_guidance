@@ -19,7 +19,7 @@ class GuidesController < ApplicationController
   end
 
   def set_breadcrumbs
-    breadcrumb(Breadcrumb.book_an_appointment) if @guide.related_to_booking?
-    breadcrumb(Breadcrumb.pension_options) if @guide.option?
+    breadcrumb(Breadcrumb.book_an_appointment(params[:locale])) if @guide.related_to_booking?
+    breadcrumb(Breadcrumb.pension_options(params[:locale])) if @guide.option?
   end
 end
