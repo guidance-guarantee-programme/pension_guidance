@@ -11,12 +11,12 @@ module Pages
     element :date_of_birth_year, '.t-date-of-birth-year'
     element :telephone_number, '.t-telephone-number'
     element :memorable_word, '.t-memorable-word'
-    element :accessibility_requirements, '.t-accessibility-requirements'
-    element :opt_in, '.t-opt-in'
+    element :accessibility_requirements, '.t-accessibility-requirements', visible: false
+    element :opt_in, '.t-opt-in', visible: false
 
-    element :dc_pot_yes, '.t-dc-pot-1'
-    element :dc_pot_no, '.t-dc-pot-2'
-    element :dc_pot_not_sure, '.t-dc-pot-3'
+    element :dc_pot_yes, '.t-dc-pot-1', visible: false
+    element :dc_pot_no, '.t-dc-pot-2', visible: false
+    element :dc_pot_not_sure, '.t-dc-pot-3', visible: false
 
     element :submit, '.t-submit'
     element :back, '.t-back'

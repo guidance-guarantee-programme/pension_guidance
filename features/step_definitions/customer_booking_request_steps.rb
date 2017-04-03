@@ -88,22 +88,22 @@ When(/^I provide my personal details$/) do
   @step_two.email.set 'rick@example.com'
   @step_two.telephone_number.set '07715 930 459'
   @step_two.memorable_word.set 'birdperson'
-  @step_two.check_hidden_checkbox(@step_two.accessibility_requirements, true)
-  @step_two.check_hidden_checkbox(@step_two.opt_in, true)
+  @step_two.accessibility_requirements.set false
+  @step_two.opt_in.set true
 end
 
 When(/^I pass the basic eligibility requirements$/) do
   @step_two.date_of_birth_day.set '01'
   @step_two.date_of_birth_month.set '01'
   @step_two.date_of_birth_year.set '1950'
-  @step_two.check_hidden_radio(@step_two.dc_pot_yes)
+  @step_two.dc_pot_yes.set true
 end
 
 When(/^I provide ineligible details$/) do
   @step_two.date_of_birth_day.set '01'
   @step_two.date_of_birth_month.set '01'
   @step_two.date_of_birth_year.set '2010'
-  @step_two.check_hidden_radio(@step_two.dc_pot_yes)
+  @step_two.dc_pot_yes.set true
 end
 
 When(/^I submit my completed Booking Request$/) do

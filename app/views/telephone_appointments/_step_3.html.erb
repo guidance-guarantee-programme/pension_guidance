@@ -5,23 +5,23 @@
 
   <h2 class="slot-picker-header">Your details</h2>
 
-  <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:first_name) %>">
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:first_name) %>">
     <%= f.label :first_name, class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:first_name) %>
       <span class="error-message"><%= @telephone_appointment.errors[:first_name].to_sentence %></span>
     <% end %>
-    <%= f.text_field :first_name, class: 't-first-name form-control' %>
+    <%= f.text_field :first_name, class: "t-first-name form-control #{'form-control-error' if @telephone_appointment.errors.include?(:first_name)}" %>
   </div>
 
-  <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:last_name) %>">
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:last_name) %>">
     <%= f.label :last_name, class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:last_name) %>
       <span class="error-message"><%= @telephone_appointment.errors[:last_name].to_sentence %></span>
     <% end %>
-    <%= f.text_field :last_name, class: 't-last-name form-control' %>
+    <%= f.text_field :last_name, class: "t-last-name form-control #{'form-control-error' if @telephone_appointment.errors.include?(:last_name)}" %>
   </div>
 
-  <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:email) %>">
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:email) %>">
     <%= f.label :email, class: 'form-label-bold' do %>
       Email
       <span class="form-hint">We’ll send an email confirming your appointment date</span>
@@ -31,10 +31,10 @@
       <span class="error-message"><%= @telephone_appointment.errors[:email].to_sentence %></span>
     <% end %>
 
-    <%= f.email_field :email, class: 't-email form-control' %>
+    <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @telephone_appointment.errors.include?(:email)}" %>
   </div>
 
-  <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:phone) %>">
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:phone) %>">
     <%= f.label :phone, class: 'form-label-bold' do %>
       Phone number
       <span class="form-hint">The number you’d like us to call you on</span>
@@ -44,10 +44,10 @@
       <span class="error-message"><%= @telephone_appointment.errors[:phone].to_sentence %></span>
     <% end %>
 
-    <%= f.text_field :phone, class: 't-phone form-control' %>
+    <%= f.text_field :phone, class: "t-phone form-control #{'form-control-error' if @telephone_appointment.errors.include?(:phone)}" %>
   </div>
 
-  <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:memorable_word) %>">
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:memorable_word) %>">
     <%= f.label :memorable_word, class: 'form-label-bold' do %>
       Your memorable word
       <span class="form-hint">Our guidance specialist will repeat this word when they call so you know it’s us</span>
@@ -56,10 +56,10 @@
     <% if @telephone_appointment.errors.include?(:memorable_word) %>
       <span class="error-message"><%= @telephone_appointment.errors[:memorable_word].to_sentence %></span>
     <% end %>
-    <%= f.text_field :memorable_word, class: 't-memorable-word form-control' %>
+    <%= f.text_field :memorable_word, class: "t-memorable-word form-control #{'form-control-error' if @telephone_appointment.errors.include?(:memorable_word)}" %>
   </div>
 
-  <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:date_of_birth) %>">
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:date_of_birth) %>">
     <fieldset>
       <legend>
         <span class="form-label-bold">
@@ -77,7 +77,7 @@
               use_label: false,
               value: f.object.date_of_birth.try(:day),
               placeholder: 'DD',
-              class: 'f-dob__input form-control js-dob-day t-date-of-birth-day',
+              class: "f-dob__input form-control js-dob-day t-date-of-birth-day #{'form-control-error' if @telephone_appointment.errors.include?(:date_of_birth)}",
               pattern: '[0-9]*',
               min: 1,
               max: 31,
@@ -94,7 +94,7 @@
               use_label: false,
               value: f.object.date_of_birth.try(:month),
               placeholder: 'MM',
-              class: 'form-dob__input form-control js-dob-month t-date-of-birth-month',
+              class: "form-dob__input form-control js-dob-month t-date-of-birth-month #{'form-control-error' if @telephone_appointment.errors.include?(:date_of_birth)}",
               pattern: '[0-9]*',
               min: 1,
               max: 12
@@ -110,7 +110,7 @@
               use_label: false,
               value: f.object.date_of_birth.try(:year),
               placeholder: 'YYYY',
-              class: 'form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year',
+              class: "form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year #{'form-control-error' if @telephone_appointment.errors.include?(:date_of_birth)}",
               pattern: '[0-9]*',
               min: 120.years.ago.year,
               max: Date.today.year
@@ -124,7 +124,7 @@
     </fieldset>
   </div>
 
-  <div class="form-group t-dc-pot-confirmed <%= 'error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>">
+  <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>">
     <fieldset class="inline">
       <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
       <span class="form-hint">If you have both select ‘Yes’</span>
@@ -132,48 +132,54 @@
         <span class="error-message"><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence %></span>
       <% end %>
 
-      <%= f.label :dc_pot_confirmed, value: 'yes', class: 'block-label' do %>
-          <%= f.radio_button :dc_pot_confirmed, 'yes' %>
-          Yes
-      <% end %>
+      <div class="multiple-choice">
+        <%= f.radio_button :dc_pot_confirmed, 'yes' %>
+        <%= f.label :dc_pot_confirmed, value: 'yes' do %>Yes<% end %>
+      </div>
 
-      <%= f.label :dc_pot_confirmed, value: 'no', class: 'block-label' do %>
-          <%= f.radio_button :dc_pot_confirmed, 'no', class: 't-dc-pot-confirmed-no' %>
-          No
-      <% end %>
+      <div class="multiple-choice">
+        <%= f.radio_button :dc_pot_confirmed, 'no', class: 't-dc-pot-confirmed-no' %>
+        <%= f.label :dc_pot_confirmed, value: 'no' do %>No<% end %>
+      </div>
 
-      <%= f.label :dc_pot_confirmed, value: 'not-sure', class: 'block-label' do %>
+      <div class="multiple-choice">
         <%= f.radio_button :dc_pot_confirmed, 'not-sure' %>
-        Not sure
-      <% end %>
+        <%= f.label :dc_pot_confirmed, value: 'not-sure' do %>Not sure<% end %>
+      </div>
     </fieldset>
   </div>
 
-  <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:opt_out_of_market_research) %>">
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:opt_out_of_market_research) %>">
     <fieldset>
       <legend>
         <% if @telephone_appointment.errors.include?(:opt_in) %>
           <span class="error-message"><%= @telephone_appointment.errors[:opt_out_of_market_research].to_sentence %></span>
         <% end %>
       </legend>
-      <%= f.label :opt_out_of_market_research, class: 'block-label selection-button-checkbox t-opt-in' do %>
-        <%= f.check_box :opt_out_of_market_research, class: 't-opt-out-of-market-research' %> Opt out of market research
-        <span class="form-hint">If you don't want us to contact you about your experience of our service</span>
-      <% end %>
+      <div class="multiple-choice">
+        <%= f.check_box :opt_out_of_market_research, class: 't-opt-out-of-market-research' %>
+        <%= f.label :opt_out_of_market_research, class: 't-opt-in' do %>
+          Opt out of market research
+          <span class="form-hint">If you don't want us to contact you about your experience of our service</span>
+        <% end %>
+      </div>
     </fieldset>
   </div>
 
-  <div class="form-group <%= 'error' if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>">
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>">
     <fieldset>
       <legend>
         <span class="visually-hidden">Terms and conditions</span>
-        <% if @telephone_appointment.errors.include?(:opt_in) %>
-          <span class="error-message"><%= @telephone_appointment.errors[:opt_in].to_sentence %></span>
+        <% if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>
+          <span class="error-message"><%= @telephone_appointment.errors[:accept_terms_and_conditions].to_sentence %></span>
         <% end %>
       </legend>
-      <%= f.label :accept_terms_and_conditions, class: 'block-label selection-button-checkbox t-opt-in' do %>
-        <%= f.check_box :accept_terms_and_conditions, class: 't-accept-terms-and-conditions' %> I accept the <a href="/privacy" target="_blank">terms and conditions</a>
-      <% end %>
+      <div class="multiple-choice">
+        <%= f.check_box :accept_terms_and_conditions, class: 't-accept-terms-and-conditions' %>
+        <%= f.label :accept_terms_and_conditions, class: 't-opt-in' do %>
+          I accept the <a href="/privacy" target="_blank">terms and conditions</a>
+        <% end %>
+      </div>
     </fieldset>
   </div>
 

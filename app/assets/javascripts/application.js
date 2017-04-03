@@ -1,7 +1,7 @@
 //= require jquery/dist/jquery.min.js
 //= require pubsub.js
 //= require govuk_toolkit
-//= require checkbox-radio-init.js
+//= stub govuk/selection-buttons
 //= require click-tracker.js
 //= require calculators.js
 //= require feedback.js
