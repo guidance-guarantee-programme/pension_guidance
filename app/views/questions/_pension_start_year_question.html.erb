@@ -1,4 +1,4 @@
-<form action="/questions" accept-charset="UTF-8" method="post">
+<form action="<%= "/#{locale}/questions" %>" accept-charset="UTF-8" method="post">
   <input name="question_id" type="hidden" value="<%= id %>">
 
   <%= header %>

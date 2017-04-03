@@ -20,7 +20,7 @@ Not all providers offer this option. If your current provider doesn’t offer it
 
 ^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
 
-{::calculator id="take-cash-in-chunks" /}
+{::calculator id="take-cash-in-chunks" locale="en" /}
 
 %Taking a large sum of cash from your pot can mean you pay a higher amount of tax.%
 

@@ -1,16 +1,16 @@
 ---
 description: Who is your pension provider?
 answers:
-  'yes': /pension-type-tool/most-cases-defined-contribution
-  'no': /pension-type-tool/question-4
-  dont_know: /pension-type-tool/question-4
+  'yes': /en/pension-type-tool/most-cases-defined-contribution
+  'no': /en/pension-type-tool/question-4
+  dont_know: /en/pension-type-tool/question-4
 tags:
   - appointments
 ---
 
 # Find out your pension type
 
-{::yes-no-dont-know-question id="pension-type-tool/question-3"}
+{::yes-no-dont-know-question id="pension-type-tool/question-3" locale="en"}
 ## Is your pension provider one of the following:
 
 {:.two-column-list}
