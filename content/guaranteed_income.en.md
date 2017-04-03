@@ -19,7 +19,7 @@ If you’re currently receiving a pension income it’s likely that you’ve alr
 
 ^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
 
-{::calculator id="guaranteed-income" /}
+{::calculator id="guaranteed-income" locale="en" /}
 
 ## How an annuity is calculated
 

@@ -34,7 +34,7 @@ You (and your employer) can continue to pay into your pot but there may be restr
 
 You usually pay tax if savings in your pension pots go above the [annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance). This is currently £40,000 a year.
 
-{::calculator id="leave-pot-untouched" /}
+{::calculator id="leave-pot-untouched" locale="en" /}
 
 ^Book a [free Pension Wise appointment](/en/appointments?icn=book-appointment&amp;ici=bottom-leave-pot-untouched) to find out more about what you can do with your pot.^
 
