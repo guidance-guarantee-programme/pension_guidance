@@ -6,6 +6,8 @@
   <!--[if IE 7]><%= stylesheet_link_tag 'pensions-guidance-ie7', media: 'screen' %><![endif]-->
   <!--[if IE 8]><%= stylesheet_link_tag 'pensions-guidance-ie8', media: 'screen' %><![endif]-->
 
+  <%= yield :override_styles %>
+
   <%= stylesheet_link_tag 'pensions-guidance-print', media: 'print' %>
 
   <% unless content_for?(:canonical_path) %>

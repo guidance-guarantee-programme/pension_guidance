@@ -1,0 +1,98 @@
+<% content_for(:page_title, t('service.homepage.title')) %>
+<% content_for(:meta_description, 'A free and impartial government service that helps you understand ' +
+  'the options for your pension pot.') %>
+
+<% content_for(:canonical_path, '/') %>
+
+<% content_for(:override_styles) do %>
+  <%= stylesheet_link_tag "experiments/experiments" %>
+<% end %>
+
+<div class="home-intro l-page-container">
+  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <a href="/appointments?icn=book-appointment&amp;ici=top-homepage">book a free appointment</a></p>
+</div>
+
+<div class="l-grid-row l-home-row l-home-row--accent">
+  <div class="l-page-container l-home-row-accent__content">
+    <div class="l-home-row-accent__column">
+      <h1 class="l-home-single-column-heading">Welcome to Pension Wise</h1>
+      <p>Free and impartial government guidance about your pension options</p>
+    </div>
+
+    <div class="quick-links">
+      <h2 class="quick-links__header">Popular on Pension Wise</h2>
+      <ul class="quick-links__list">
+        <li class="quick-links__item"><a href="/pension-pot-value" class="quick-links__link">Check how much is in your pot</a></li>
+        <li class="quick-links__item"><a href="/tax" class="quick-links__link">Tax and pensions</a></li>
+        <li class="quick-links__item"><a href="/state-pension" class="quick-links__link">The State Pension</a></li>
+        <li class="quick-links__item"><a href="/scams" class="quick-links__link">How to avoid a pension scam</a></li>
+        <li class="quick-links__item"><a href="/pension-statements" class="quick-links__link">Understand your pension statement</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="l-grid-row l-home-row l-home-row-options l-home-row-options--alt">
+  <div class="l-page-container">
+    <div class="l-column-third">
+      <h2 class="l-home-single-column-subheading">Who?</h2>
+
+      <p>Pension Wise can help if you:</p>
+
+      <ul>
+        <li>Are aged 50 or over</li>
+        <li>Have a personal or workplace pension</li>
+        <li>Want to make sense of your options</li>
+      </ul>
+    </div>
+    <div class="l-column-third l-home-central-column">
+      <h2 class="l-home-single-column-subheading">What?</h2>
+
+      <p>What is a Pension Wise appointment?</p>
+
+      <ul>
+        <li>Specialist pension guidance</li>
+        <li>45 to 60 minutes</li>
+        <li>Over the phone or local to you</li>
+      </ul>
+    </div>
+    <div class="l-column-third">
+      <h2 class="l-home-single-column-subheading">How?</h2>
+
+      <p>How to book an appointment?</p>
+
+      <ul>
+        <li>Phone</li>
+        <li>Online</li>
+      </ul>
+
+      <a href="/appointments" class="button">Book a free appointment</a>
+    </div>
+  </div>
+</div>
+
+<div class="l-grid-row l-home-row l-home-row-options">
+  <div class="l-page-container">
+    <div class="l-column-half">
+      <h2 class="l-home-single-column-subheading">Find out your pension type</h2>
+
+      <p>Use this service to:</p>
+
+      <ul>
+        <li>Understand your pension type</li>
+        <li>Find out if you can book a free Pension Wise appointment</li>
+      </ul>
+
+      <a href="/pension-type-tool">Check your pension type</a>
+    </div>
+    <div class="l-column-half l-home-right-column">
+      <h2 class="l-home-single-column-subheading">Not sure where to start</h2>
+
+      <p>There are different ways you can take the money from your pension pot.</p>
+
+      <p>Learn about leaving your pot untouched, taking cash in chunks or getting a regular income.</p>
+
+      <a href="/pension-pot-options">Explore your options</a>
+    </div>
+  </div>
+</div>
