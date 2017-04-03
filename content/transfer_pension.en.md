@@ -2,7 +2,7 @@
 
 You may wish to transfer some or all of your pots to a different provider if:
 
-- your current provider doesn’t offer the [pension option](/pension-pot-options) you want
+- your current provider doesn’t offer the [pension option](/en/pension-pot-options) you want
 - you want to combine pots to simplify your pensions
 - you want to pay less in fees
 - you want a higher income from your pension
@@ -10,7 +10,7 @@ You may wish to transfer some or all of your pots to a different provider if:
 
 ## Combining pension pots
 
-It’s likely that you’ve paid into more than one [defined contribution](/pension-types) pension pot if you’ve had more than one job.
+It’s likely that you’ve paid into more than one [defined contribution](/en/pension-types) pension pot if you’ve had more than one job.
 
 Combining your pots could make your pensions easier to manage and help you save on fees. You need to check if you’ll:
 
@@ -27,11 +27,11 @@ Looking at the transfer value of your pot may help you work out if your pension 
 
 If the transfer value is the same as your pot value, it’s unlikely you’ll be charged a fee when you transfer.
 
-If the transfer value is lower than your total pot value, you may be charged an early exit fee. Your pot may have had [‘market value reduction’ or ‘adjustment’](/pension-statements#special-features) applied – ask your provider about the difference in values.
+If the transfer value is lower than your total pot value, you may be charged an early exit fee. Your pot may have had [‘market value reduction’ or ‘adjustment’](/en/pension-statements#special-features) applied – ask your provider about the difference in values.
 
 ## How to transfer a pension
 
-^You may have to get [financial advice](/transfer-pension#getting-financial-advice) before you can transfer your pension.^
+^You may have to get [financial advice](/en/transfer-pension#getting-financial-advice) before you can transfer your pension.^
 
 ### Questions to ask your **current** provider:
 
@@ -39,10 +39,10 @@ If the transfer value is lower than your total pot value, you may be charged an 
 2. What is the ‘transfer value’ of my pension? If it’s the same as your pot value, it’s unlikely you’ll be charged a fee when you transfer.
 3. What fees will I have to pay?
 4. Will I lose the right to take out my money at a certain age? This is called a ‘protected pension age’.
-5. Will I lose any [special features](/pension-statements#special-features), eg a guaranteed annuity rate?
+5. Will I lose any [special features](/en/pension-statements#special-features), eg a guaranteed annuity rate?
 6. Will I lose the right to take a tax-free lump sum of more than 25% of my pension? This is called a ‘protected tax-free sum’.
 
-You then need to [shop around](/shop-around) for a new provider to transfer your pension to.
+You then need to [shop around](/en/shop-around) for a new provider to transfer your pension to.
 
 ### Questions to ask your **new** provider:
 
@@ -60,12 +60,12 @@ You’ll need to complete an application form to request the transfer. If you’
 
 Legally you **must**  get financial advice if you want to transfer from a:
 
- - [defined benefit](/pension-types#defined-benefit-final-salary-or-career-average) pension worth more than £30,000
- - [defined contribution](/pension-types#defined-contribution) pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (eg a guaranteed annuity rate)
+ - [defined benefit](/en/pension-types#defined-benefit-final-salary-or-career-average) pension worth more than £30,000
+ - [defined contribution](/en/pension-types#defined-contribution) pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (eg a guaranteed annuity rate)
 
 ## Defined benefit pensions
 
-If you have a final salary or career average pension (‘defined benefit’), you would need to transfer it to a defined contribution pension to be able to choose one of the [pension options](/pension-pot-options).
+If you have a final salary or career average pension (‘defined benefit’), you would need to transfer it to a defined contribution pension to be able to choose one of the [pension options](/en/pension-pot-options).
 
 The value of your defined benefit pension gets transferred as cash and is invested into a defined contribution pot.
 
@@ -75,7 +75,7 @@ Not all defined benefit pensions allow you to transfer out – ask your scheme a
 
 ## Scams
 
-If someone contacts you unexpectedly and says they can help you transfer your pot it’s likely to be a [pension scam](/scams).
+If someone contacts you unexpectedly and says they can help you transfer your pot it’s likely to be a [pension scam](/en/scams).
 
 ## Get free help and advice
 

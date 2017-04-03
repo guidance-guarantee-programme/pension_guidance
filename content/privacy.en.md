@@ -29,7 +29,7 @@ The information we collect on the website includes:
 
 - your IP address, and details of which version of [web browser](https://www.gov.uk/help/browsers) you used
 
-- information on how you use the site, using [cookies](/cookies) and page tagging techniques to help us improve the website
+- information on how you use the site, using [cookies](/en/cookies) and page tagging techniques to help us improve the website
 
 This helps us to:
 

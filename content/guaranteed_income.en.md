@@ -17,7 +17,7 @@ You can use your pension pot to buy an insurance policy that gives you a guarant
 
 If you’re currently receiving a pension income it’s likely that you’ve already bought an annuity or are taking an income from a final salary or career average (defined benefit) pension.
 
-^Find out [if you can book](/pension-type-tool) a free Pension Wise appointment.^
+^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
 
 {::calculator id="guaranteed-income" /}
 
@@ -33,7 +33,7 @@ How much income you get each year from an annuity depends on things like:
 
 You may have to pay administration fees.
 
-If the insurance company you bought your annuity with goes bust the [Financial Services Compensation Scheme](/protection) will cover you in full.
+If the insurance company you bought your annuity with goes bust the [Financial Services Compensation Scheme](/en/protection) will cover you in full.
 
 ## Types of annuity
 
@@ -61,11 +61,11 @@ If you decide to buy an annuity you can still take up to 25% of your pension pot
 
 You could then buy an annuity with the other 75%.
 
-You [pay tax on income from an annuity](/tax), just like you do on your salary. This is because when you’re paying into your pension you get tax relief on your contributions.
+You [pay tax on income from an annuity](/en/tax), just like you do on your salary. This is because when you’re paying into your pension you get tax relief on your contributions.
 
-If you take the 25% tax-free lump sum you must buy an annuity with the rest or use one of the [other pension options](/pension-pot-options).
+If you take the 25% tax-free lump sum you must buy an annuity with the rest or use one of the [other pension options](/en/pension-pot-options).
 
-^Book a [free Pension Wise appointment](/appointments?icn=book-appointment&amp;ici=bottom-guaranteed-income) to find out more about what you can do with your pot.^
+^Book a [free Pension Wise appointment](/en/appointments?icn=book-appointment&amp;ici=bottom-guaranteed-income) to find out more about what you can do with your pot.^
 
 ## Scams
 Beware of pension scams contacting you unexpectedly about an investment or business opportunity that you’ve not spoken to them about before. You could lose all your money and face tax of up to 55% and extra fees.
@@ -77,7 +77,7 @@ Beware of pension scams contacting you unexpectedly about an investment or busin
 
 - Ask your provider if your pension pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
 - Ask your provider about the types of annuity they offer, eg if you’re in poor health you could get a better rate.
-- You can [shop around and compare providers](/shop-around) to get the best deal.
-- Understand [how much tax you’ll pay](/tax) on your annuity income.
+- You can [shop around and compare providers](/en/shop-around) to get the best deal.
+- Understand [how much tax you’ll pay](/en/tax) on your annuity income.
 
 </div>

@@ -10,7 +10,7 @@ For independent help, you can contact:
 - [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk/) 
 - [The Money Advice Service](https://www.moneyadviceservice.org.uk/en)
 
-If you’d like to speak to someone about your pension options, you can [book an appointment](/appointments) with a Pension Wise guidance specialist.
+If you’d like to speak to someone about your pension options, you can [book an appointment](/en/appointments) with a Pension Wise guidance specialist.
 
 ## Send us feedback about Pension Wise
 
@@ -36,7 +36,7 @@ If your complaint is about:
 
 - a face-to-face guidance appointment – include the time, date and location of your appointment
 
-^Read our guide if you want to [complain about a pension or pension provider](/pension-complaints).^
+^Read our guide if you want to [complain about a pension or pension provider](/en/pension-complaints).^
 
 We’ll let you know when we’ve received your complaint and aim to give a full response within 20 working days.
 

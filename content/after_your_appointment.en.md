@@ -9,7 +9,7 @@ After your appointment, use this to:
 - view a summary of the pension options discussed in your<br>Pension Wise appointment
 - print or download the summary
 
-<a class="button button-start" href="/summary-document/new" role="button">Start now</a>
+<a class="button button-start" href="/en/summary-document/new" role="button">Start now</a>
 
 ## Before you start
 
@@ -19,4 +19,4 @@ Could you spare a few minutes to answer some questions about your Pension Wise a
 
 You can <a rel="external" href="http://research.pensionwise.gov.uk/s/telephonecustomersurvey/" target="_blank">give feedback on your appointment here</a>.
 
-^If you haven’t yet had a Pension Wise appointment, you can [book an appointment](/appointments).^
+^If you haven’t yet had a Pension Wise appointment, you can [book an appointment](/en/appointments).^

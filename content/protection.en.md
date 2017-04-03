@@ -7,7 +7,7 @@ How your pension is protected depends on your pension type.
 
 ## Defined contribution pensions
 
-If your employer goes out of business you won’t lose your pension pot. This is because [defined contribution](/pension-types) pensions are usually run by pension providers, not employers.
+If your employer goes out of business you won’t lose your pension pot. This is because [defined contribution](/en/pension-types) pensions are usually run by pension providers, not employers.
 
 ^Some defined contribution pensions are run by a trust chosen by the employer. Contact your employer for exact compensation details.^
 
@@ -30,4 +30,4 @@ You’ll usually receive:
 
 You can claim for up to 100% of the current value of your pot if your annuity provider can’t pay you and is authorised by the FCA.
 
-^Contact your provider if you need to [complain about a pension](/pension-complaints).^
+^Contact your provider if you need to [complain about a pension](/en/pension-complaints).^

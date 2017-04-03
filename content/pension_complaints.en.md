@@ -42,7 +42,7 @@ You can contact the [Financial Ombudsman Service](http://www.financial-ombudsman
 
 This service can help if you think you got the wrong financial advice which led you to take out a pension that wasn’t right for you. It can also help with some types of complaint about how a pension is sold or marketed.
 
-Usually, the Financial Ombudsman Service doesn’t provide help with complaints about workplace pensions - a type of pension arranged by your employer. Check with your provider if you’re not sure about your [pension type](/pension-types).
+Usually, the Financial Ombudsman Service doesn’t provide help with complaints about workplace pensions - a type of pension arranged by your employer. Check with your provider if you’re not sure about your [pension type](/en/pension-types).
 
 Once an Ombudsman is dealing with your complaint, you won’t usually get more help with your complaint from another Ombudsman or organisation.
 
