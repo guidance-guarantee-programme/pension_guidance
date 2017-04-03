@@ -1,5 +1,6 @@
 RSpec.describe CategoryDecorator, type: :decorator do
-  subject(:decorator) { described_class.new(category) }
+  let(:locale) { 'en' }
+  subject(:decorator) { described_class.new(category, locale) }
 
   let(:category) do
     instance_double(Category,
@@ -10,7 +11,7 @@ RSpec.describe CategoryDecorator, type: :decorator do
   end
 
   let(:category_id) { double }
-  let(:category_slug) { double }
+  let(:category_slug) { 'slug' }
   let(:category_title) { double }
   let(:category_description) { double }
 
@@ -50,7 +51,7 @@ RSpec.describe CategoryDecorator, type: :decorator do
     subject { decorator.url }
 
     it 'constructs a browse path using the object slug' do
-      is_expected.to eq("/browse/#{category_slug}")
+      is_expected.to eq("/#{locale}/browse/#{category_slug}")
     end
   end
 end

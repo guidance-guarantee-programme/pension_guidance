@@ -2,11 +2,12 @@ class Navigation
   Item = Struct.new(:id, :label, :url, :option, :parent)
   Topic = Struct.new(:id, :label, :url, :items)
 
-  attr_accessor :taxonomy
-  private :taxonomy=
+  attr_accessor :taxonomy, :locale
+  private :taxonomy=, :locale=
 
-  def initialize(taxonomy)
+  def initialize(taxonomy, locale)
     self.taxonomy = taxonomy
+    self.locale = locale
   end
 
   def topics
@@ -18,7 +19,7 @@ class Navigation
   private
 
   def find_topic(node)
-    category = CategoryDecorator.new(node.content)
+    category = CategoryDecorator.new(node.content, locale)
     guides = find_guides(node.children).reject(&:empty?)
 
     Topic.new(category.id, category.label, category.url, guides)
@@ -55,7 +56,7 @@ class Navigation
   end
 
   def more_category
-    @more_category ||= CategoryDecorator.new(CategoryRepository.new.find('more'))
+    @more_category ||= CategoryDecorator.new(CategoryRepository.new.find('more'), locale)
   end
 
   def more_topic
