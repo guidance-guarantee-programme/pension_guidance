@@ -1,3 +1,5 @@
+<% content_for :html_lang, I18n.locale %>
+
 <% content_for :head do %>
   <%= csrf_meta_tag %>
 
@@ -9,6 +11,12 @@
   <%= yield :override_styles %>
 
   <%= stylesheet_link_tag 'pensions-guidance-print', media: 'print' %>
+
+  <% if params[:locale] %>
+    <% I18n.available_locales.each do |alternate_locale| %>
+      <link href="<%= url_for(params.permit(:id, :ici, :icn, :locale).merge(locale: alternate_locale, only_path: false)) %>" hreflang="<%= alternate_locale %>-GB" rel="alternate" />
+    <% end %>
+  <% end %>
 
   <% unless content_for?(:canonical_path) %>
     <%= canonical_tag rescue nil %>
