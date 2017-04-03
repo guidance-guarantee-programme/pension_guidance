@@ -1,5 +1,6 @@
 RSpec.describe Navigation do
-  subject(:navigation) { Navigation.new(taxonomy) }
+  let(:locale) { :en }
+  subject(:navigation) { Navigation.new(taxonomy, locale) }
 
   let(:foo_category) { instance_double(Category, id: double, slug: double, title: 'Foo category') }
   let(:bar_category) { instance_double(Category, id: double, slug: double, title: 'Bar category') }
@@ -76,6 +77,6 @@ RSpec.describe Navigation do
 
   def guide_for(name)
     metadata = { label: name.titlecase }
-    GuideDecorator.new(Guide.new(name, content_type: :govspeak, content: '', metadata: metadata))
+    GuideDecorator.new(Guide.new(name, locale, content_type: :govspeak, content: '', metadata: metadata))
   end
 end

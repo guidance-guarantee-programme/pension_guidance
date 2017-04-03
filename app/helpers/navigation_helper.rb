@@ -1,6 +1,6 @@
 module NavigationHelper
   def navigation
-    @navigation ||= Navigation.new(Taxonomy.instance.tree)
+    @navigation ||= Navigation.new(Taxonomy.instance.tree, params[:locale])
   end
 
   def navigation_topics(topics)

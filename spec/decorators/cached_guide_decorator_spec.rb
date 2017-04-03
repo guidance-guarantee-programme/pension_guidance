@@ -1,15 +1,18 @@
 RSpec.describe CachedGuideDecorator do
   let(:id) { 'id' }
+  let(:locale) { 'en' }
   let(:title) { 'title' }
   let(:content) { 'content' }
   let(:cache) { double }
-  let(:decorator) { double(id: id, title: title, content: content, slug: '', description: '', label: '', url: '') }
+  let(:decorator) do
+    double(id: id, locale: locale, title: title, content: content, slug: '', description: '', label: '', url: '')
+  end
 
   subject(:cached_decorator) { described_class.new(decorator, cache) }
 
   describe '#title' do
     it 'uses the correct cache key and expiration' do
-      expect(cache).to receive(:fetch).with("#{id}-#{title}", expires_in: 10)
+      expect(cache).to receive(:fetch).with("#{id}-#{locale}-#{title}", expires_in: 10)
       cached_decorator.title
     end
 
@@ -49,7 +52,7 @@ RSpec.describe CachedGuideDecorator do
 
   describe '#content' do
     it 'uses the correct cache key and expiration' do
-      expect(cache).to receive(:fetch).with("#{id}-#{content}", expires_in: 10)
+      expect(cache).to receive(:fetch).with("#{id}-#{locale}-#{content}", expires_in: 10)
       cached_decorator.content
     end
 

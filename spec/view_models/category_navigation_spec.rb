@@ -1,5 +1,6 @@
 RSpec.describe CategoryNavigation do
-  subject(:browser) { CategoryNavigation.new(category, guides) }
+  let(:locale) { :en }
+  subject(:browser) { CategoryNavigation.new(category, guides, locale) }
 
   let(:category) do
     instance_double(Category, id: double, title: double, description: double)
