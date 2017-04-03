@@ -10,7 +10,7 @@
       <%= render 'components/locations_search' %>
 
       <div class="application-notice info-notice">
-        <p>You can also <a href="/book-phone">book a phone appointment</a>.</p>
+        <p>You can also <%= link_to 'book a phone appointment', guide_path('book-phone') %>.</p>
       </div>
     </article>
   </div>

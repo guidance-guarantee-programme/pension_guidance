@@ -4,7 +4,7 @@
 <% content_for(:canonical_path, root_path) %>
 
 <div class="home-intro l-page-container">
-  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <a href="/appointments?icn=book-appointment&amp;ici=top-homepage">book a free appointment</a></p>
+  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <%= link_to 'book a free appointment', guide_path('appointments', icn: 'book-appointment', ici: 'top-homepage') %></p>
 </div>
 
 <div class="l-grid-row l-home-row l-home-row--accent">
@@ -17,11 +17,11 @@
     <div class="quick-links">
       <h2 class="quick-links__header">Popular on Pension Wise</h2>
       <ul class="quick-links__list">
-        <li class="quick-links__item"><a href="/pension-pot-value" class="quick-links__link">Check how much is in your pot</a></li>
-        <li class="quick-links__item"><a href="/tax" class="quick-links__link">Tax and pensions</a></li>
-        <li class="quick-links__item"><a href="/state-pension" class="quick-links__link">The State Pension</a></li>
-        <li class="quick-links__item"><a href="/scams" class="quick-links__link">How to avoid a pension scam</a></li>
-        <li class="quick-links__item"><a href="/pension-statements" class="quick-links__link">Understand your pension statement</a></li>
+        <li class="quick-links__item"><%= link_to 'Check how much is in your pot', guide_path('pension-pot-value'), class: 'quick-links__link' %></li>
+        <li class="quick-links__item"><%= link_to 'Tax and pensions', guide_path('tax'), class: 'quick-links__link' %></li>
+        <li class="quick-links__item"><%= link_to 'The State Pension', guide_path('state-pension'), class: 'quick-links__link' %></li>
+        <li class="quick-links__item"><%= link_to 'How to avoid a pension scam', guide_path('scams'), class: 'quick-links__link' %></li>
+        <li class="quick-links__item"><%= link_to 'Understand your pension statement', guide_path('pension-statements'), class: 'quick-links__link' %></li>
       </ul>
     </div>
   </div>
@@ -61,7 +61,7 @@
         <li>Online</li>
       </ul>
 
-      <a href="/appointments" class="button t-book">Book a free appointment</a>
+      <%= link_to 'Book a free appointment', appointments_path, class: 'button t-book' %>
     </div>
   </div>
 </div>
@@ -78,7 +78,7 @@
         <li>Find out if you can book a free Pension Wise appointment</li>
       </ul>
 
-      <a href="/pension-type-tool">Check your pension type</a>
+      <%= link_to 'Check your pension type', guide_path('pension-type-tool') %>
     </div>
     <div class="l-column-half l-home-right-column">
       <h2 class="l-home-single-column-subheading">Not sure where to start</h2>
@@ -87,7 +87,7 @@
 
       <p>Learn about leaving your pot untouched, taking cash in chunks or getting a regular income.</p>
 
-      <a href="/pension-pot-options">Explore your options</a>
+      <%= link_to 'Explore your options', guide_path('pension-pot-options') %>
     </div>
   </div>
 </div>

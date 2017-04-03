@@ -31,8 +31,8 @@
   <div class="application-notice info-notice">
     <p>
       You’ll probably need to know the total value of your pension pot if you
-      want to <a href="/appointments">talk to an expert</a> or get useful help
-      on what to do with it.
+      want to <%= link_to 'talk to an expert', guide_path('appointments') %>
+      or get useful help on what to do with it.
     </p>
   </div>
 
@@ -40,7 +40,7 @@
 
   <p>
     You can take 25% of your whole pension pot tax-free. After that you have to
-    <a href="/tax-on-your-pension/1">pay Income Tax</a>.
+    <%= link_to 'pay Income Tax', guide_path('tax-on-your-pension/1') %>.
   </p>
 
   <div class="application-notice help-notice">

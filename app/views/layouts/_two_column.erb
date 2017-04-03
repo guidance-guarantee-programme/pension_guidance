@@ -15,7 +15,10 @@
       </div>
       <div class="l-column-third l-column-third--sidebar">
         <% if book_an_appointment_link? %>
-          <a href="/appointments<%= defined?(@guide) ? "?icn=book-appointment&ici=#{@guide.ga_origin}" : '' %>" class="book-appointment">Book a free appointment</a>
+          <% guide_path_options = defined?(@guide) ? { icn: 'book-appointment', ici: @guide.ga_origin } : {} %>
+          <%= link_to guide_path('appointments', guide_path_options), class: 'book-appointment' do %>
+            Book a free appointment
+          <% end %>
         <% end %>
 
         <%= yield :sidebar %>
