@@ -1,6 +1,7 @@
 # rubocop:disable Metrics/BlockLength
 Rails.application.routes.draw do
   root 'home#show'
+  get 'home-alternative', to: 'home#show_experiment'
 
   constraints format: 'html' do
     delete '/locations_cache', to: 'locations_cache#destroy'
