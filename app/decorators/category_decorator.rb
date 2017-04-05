@@ -3,7 +3,7 @@ class CategoryDecorator
 
   include Rails.application.routes.url_helpers
 
-  def initialize(category, locale)
+  def initialize(category, locale = I18n.locale)
     @category = category
     @locale = locale
   end

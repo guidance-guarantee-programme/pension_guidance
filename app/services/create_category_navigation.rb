@@ -2,7 +2,7 @@ class CreateCategoryNavigation
   attr_accessor :category_id, :category_tree, :locale
   private :category_id=, :category_tree=, :locale=
 
-  def initialize(category_id, category_tree, locale)
+  def initialize(category_id, category_tree, locale = I18n.locale)
     self.category_id = category_id
     self.category_tree = category_tree
     self.locale = locale

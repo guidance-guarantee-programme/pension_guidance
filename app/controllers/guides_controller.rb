@@ -15,11 +15,11 @@ class GuidesController < ApplicationController
   end
 
   def find_guide
-    @guide = GuideDecorator.cached_for(GuideRepository.new(I18n.locale).find(id))
+    @guide = GuideDecorator.cached_for(GuideRepository.new.find(id))
   end
 
   def set_breadcrumbs
-    breadcrumb(Breadcrumb.book_an_appointment(params[:locale])) if @guide.related_to_booking?
-    breadcrumb(Breadcrumb.pension_options(params[:locale])) if @guide.option?
+    breadcrumb(Breadcrumb.book_an_appointment) if @guide.related_to_booking?
+    breadcrumb(Breadcrumb.pension_options) if @guide.option?
   end
 end

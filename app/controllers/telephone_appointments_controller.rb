@@ -109,8 +109,8 @@ class TelephoneAppointmentsController < ApplicationController
   end
 
   def set_breadcrumbs
-    breadcrumb Breadcrumb.book_an_appointment(params[:locale])
-    breadcrumb Breadcrumb.book_a_telephone_appointment(params[:locale])
+    breadcrumb Breadcrumb.book_an_appointment
+    breadcrumb Breadcrumb.book_a_telephone_appointment
   end
 
   def slot_selected?

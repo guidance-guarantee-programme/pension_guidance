@@ -1,7 +1,7 @@
 class CategoryNavigation
   extend Forwardable
 
-  def initialize(category, guides, locale)
+  def initialize(category, guides, locale = I18n.locale)
     self.category = category
     self.guides = guides
     self.locale = locale
