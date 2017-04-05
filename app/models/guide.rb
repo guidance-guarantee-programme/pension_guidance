@@ -1,7 +1,7 @@
 class Guide
   attr_reader :id, :locale, :content, :content_type, :metadata
 
-  def initialize(id, locale, content: '', content_type: nil, metadata: nil)
+  def initialize(id, locale = I18n.locale, content: '', content_type: nil, metadata: nil)
     @id = id
     @locale = locale
     @content = content
