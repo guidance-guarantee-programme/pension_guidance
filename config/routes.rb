@@ -84,4 +84,7 @@ Rails.application.routes.draw do
     mount JasmineRails::Engine => '/specs'
     mount JasmineFixtures => '/spec/javascripts/fixtures'
   end
+
+  get '/', to: redirect('/en')
+  get '/*path', to: redirect('/en/%{path}'), constraints: ->(req) { req.params[:path] !~ /^(en|cy)/ }
 end
