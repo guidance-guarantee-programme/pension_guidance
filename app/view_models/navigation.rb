@@ -5,7 +5,7 @@ class Navigation
   attr_accessor :taxonomy, :locale
   private :taxonomy=, :locale=
 
-  def initialize(taxonomy, locale)
+  def initialize(taxonomy, locale = I18n.locale)
     self.taxonomy = taxonomy
     self.locale = locale
   end

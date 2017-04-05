@@ -15,7 +15,7 @@ class GuideRepository
     slugs.reject { |s| /question-\d+\Z/ === s } # rubocop:disable Style/CaseEquality
   end
 
-  def initialize(locale = :en, dir = Rails.root.join('content'))
+  def initialize(locale = I18n.locale, dir = Rails.root.join('content'))
     self.locale = locale
     self.dir = dir
   end
