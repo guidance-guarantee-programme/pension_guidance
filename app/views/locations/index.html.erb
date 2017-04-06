@@ -2,7 +2,7 @@
 
 <h1>Appointment locations near <%= @postcode.squish.upcase %></h1>
 
-<p>These are the <%= @locations.length %> locations nearest to <%= @postcode.squish.upcase %>.</p>
+<p>There are <%= @locations.length %> locations near to <%= @postcode.squish.upcase %>.</p>
 
 <ol class="location-list">
   <% @locations.each do |location| %>
