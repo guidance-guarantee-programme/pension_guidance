@@ -50,7 +50,7 @@
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:memorable_word) %>">
     <%= f.label :memorable_word, class: 'form-label-bold' do %>
       Your memorable word
-      <span class="form-hint">Our guidance specialist will repeat this word when they call so you know it’s us</span>
+      <span class="form-hint">Our pension specialist will repeat this word when they call so you know it’s us</span>
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:memorable_word) %>
@@ -188,8 +188,7 @@
   </div>
 </div>
 <div class="l-column-third">
-  <h2 class="slot-picker-header">Your appointment</h2>
-  <p>You requested this date for your appointment</p>
+  <h2 class="slot-picker-header">Your requested appointment</h2>
   <div class="slot-picker-confirmed-date">
     <p class="slot-picker-confirmed-date__text"><b><%= l(@telephone_appointment.start_at, format: :govuk_date) %></b></p>
     <p class="slot-picker-confirmed-date__text"><%= l(@telephone_appointment.start_at, format: :govuk_time) %>, 45 to 60 minutes</p>
