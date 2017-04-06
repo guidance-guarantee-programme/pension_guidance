@@ -1,5 +1,5 @@
 ---
-description: Call 0300 330 1001 between 8am to 10pm, every day.
+description: Find an appointment location near you.
 tags:
   - appointments
   - booking
