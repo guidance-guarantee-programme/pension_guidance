@@ -23,7 +23,7 @@ gem 'humanize'
 gem 'inline_svg'
 gem 'newrelic_rpm'
 gem 'nokogiri'
-gem 'output-templates', '~> 4.4.5', github: 'guidance-guarantee-programme/output-templates'
+gem 'output-templates', '~> 4.5.0', github: 'guidance-guarantee-programme/output-templates'
 gem 'phoner'
 gem 'postcodes_io'
 # https://github.com/mbleigh/princely/pull/53
