@@ -30,7 +30,7 @@ class Breadcrumb
     end
 
     def book_a_telephone_appointment
-      new(new_telephone_appointment_path, 'Book a free telephone appointment')
+      new(new_telephone_appointment_path, 'Book a phone appointment')
     end
   end
 end
