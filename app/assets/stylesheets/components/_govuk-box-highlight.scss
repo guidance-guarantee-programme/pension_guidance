@@ -1,0 +1,6 @@
+.govuk-box-highlight__header {
+  @include media(tablet) {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
