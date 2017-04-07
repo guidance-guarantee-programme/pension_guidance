@@ -1,2 +1,106 @@
 cy:
   language_name: Cymraeg
+
+  pension_type_tool:
+    error_title: 'Unable to submit the form'
+    error: 'Select an answer'
+
+  service:
+    title: '%{page_title} - Pension Wise'
+    homepage:
+      title: 'Pension Wise - Get to know your options'
+
+  styleguide:
+    title: 'Style guide: %{page_title} - Pension Wise'
+
+  date:
+    formats:
+      govuk_date: '%-e %B %Y'
+
+  time:
+    formats:
+      govuk_date: '%-e %B %Y'
+      govuk_time: '%-I:%M%P'
+
+  number:
+    currency:
+      format:
+        unit: £
+        precision: 0
+    percentage:
+      format:
+        strip_insignificant_zeros: true
+
+  activemodel:
+    attributes:
+      telephone_appointment:
+        dc_pot_confirmed: Defined contribution pension
+        accept_terms_and_conditions: Terms and conditions
+      booking_request_form:
+        primary_slot: Slot 1
+        secondary_slot: Slot 2
+        tertiary_slot: Slot 3
+        appointment_type: Age range
+        dc_pot: Defined contribution pension
+        opt_in: Terms and conditions
+        telephone_number: Phone number
+      appointment_summary:
+        appointment_type: Your age
+    errors:
+      models:
+        annuity_registration_form:
+          attributes:
+            annuity_type:
+              inclusion: is not selected
+            appointment_type:
+              inclusion: is not selected
+        appointment_summary:
+          attributes:
+            appointment_type:
+              inclusion: select a range
+        booking_request_form:
+          attributes:
+            first_name:
+              blank: enter a name
+            last_name:
+              blank: enter a name
+            email:
+              invalid_email: enter a valid email address
+            telephone_number:
+              blank: enter a phone number
+            memorable_word:
+              blank: enter a word
+            date_of_birth:
+              blank: enter a valid date of birth
+            opt_in:
+              accepted: please accept
+            appointment_type:
+              inclusion: must be 50 or over to be eligible for guidance
+            dc_pot:
+              inclusion: select an option
+        telephone_appointment:
+          attributes:
+            first_name:
+              blank: enter a name
+            last_name:
+              blank: enter a name
+            email:
+              invalid_email: enter a valid email address
+            phone:
+              blank: enter a phone number
+            memorable_word:
+              blank: enter a word
+            date_of_birth:
+              blank: enter a valid date of birth
+            dc_pot_confirmed:
+              inclusion: select an option
+            accept_terms_and_conditions:
+              inclusion: please accept
+        feedback_form:
+          attributes:
+            name:
+              blank: enter a name
+            email:
+              invalid: enter a valid email address
+            message:
+              blank: enter a message
