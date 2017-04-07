@@ -10,7 +10,7 @@ class CreateCategoryNavigation
 
   def call
     category = CategoryRepository.new.find(category_id)
-    guides = nodes.map(&method(:extract)).map(&method(:decorate))
+    guides = nodes.map { |n| extract(n) }.map { |n| decorate(n) }
 
     CategoryNavigation.new(category, guides, locale)
   end
@@ -28,7 +28,7 @@ class CreateCategoryNavigation
 
   def extract(node)
     if node.has_children?
-      [node.content, *node.children.map(&method(:extract))]
+      [node.content, *node.children.map { |c| extract(c) }]
     else
       node.content
     end
@@ -37,7 +37,7 @@ class CreateCategoryNavigation
   def decorate(guide_or_guides)
     case guide_or_guides
     when Array
-      guide_or_guides.map(&method(:decorate))
+      guide_or_guides.map { |g| decorate(g) }
     else
       GuideDecorator.cached_for(guide_or_guides)
     end

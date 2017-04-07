@@ -11,7 +11,7 @@ class Navigation
   end
 
   def topics
-    topics = parented.collect(&method(:find_topic))
+    topics = parented.collect { |n| find_topic(n) }
     topics << more_topic unless more_topic.items.empty?
     topics
   end
@@ -33,7 +33,11 @@ class Navigation
   end
 
   def find_orphan_guides(nodes)
-    nodes.reject(&:has_children?).map(&:content).map(&GuideDecorator.method(:cached_for)).map(&method(:build_item))
+    nodes
+      .reject(&:has_children?)
+      .map(&:content)
+      .map { |g| GuideDecorator.cached_for(g) }
+      .map { |g| build_item(g) }
   end
 
   def find_parented_guides(nodes)
@@ -72,6 +76,9 @@ class Navigation
   end
 
   def orphan_guides
-    @orphan_guides ||= orphans.map(&:content).map(&GuideDecorator.method(:cached_for)).map(&method(:build_item))
+    @orphan_guides ||= orphans
+                       .map(&:content)
+                       .map { |g| GuideDecorator.cached_for(g) }
+                       .map { |g| build_item(g) }
   end
 end
