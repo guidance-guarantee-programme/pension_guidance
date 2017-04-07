@@ -5,7 +5,7 @@
       <%= render 'components/page_nav' %>
     </div>
   </div>
-
+  <%= render 'components/language_banner' if show_language_banner? %>
   <main role="main" id="content" tabindex="-1">
     <%= render 'components/breadcrumbs' %>
     <%= yield %>
