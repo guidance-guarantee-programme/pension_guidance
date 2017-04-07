@@ -22,4 +22,8 @@ class GuidesController < ApplicationController
     breadcrumb(Breadcrumb.book_an_appointment) if @guide.related_to_booking?
     breadcrumb(Breadcrumb.pension_options) if @guide.option?
   end
+
+  def show_language_banner?
+    false
+  end
 end
