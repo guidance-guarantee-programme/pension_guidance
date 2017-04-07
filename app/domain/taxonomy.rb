@@ -4,7 +4,7 @@ class Taxonomy
   include Singleton
 
   def tree
-    @tree ||= home.tap do |node|
+    home.tap do |node|
       node << guide_node('living-abroad')
       node << guide_node('divorce')
       node << guide_node('protection')
@@ -78,11 +78,11 @@ class Taxonomy
   end
 
   def category_repository
-    @category_repository ||= CategoryRepository.new
+    CategoryRepository.new
   end
 
   def guide_repository
-    @guide_repository ||= GuideRepository.new
+    GuideRepository.new
   end
 
   def home_node

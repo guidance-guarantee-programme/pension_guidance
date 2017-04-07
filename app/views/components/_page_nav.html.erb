@@ -1,4 +1,4 @@
-<% cache 'page_nav', expires_in: 2.hours do %>
+<% cache "page_nav_#{I18n.locale}", expires_in: 2.hours do %>
   <div class="l-page-nav">
     <%= render 'components/nav' %>
   </div>
