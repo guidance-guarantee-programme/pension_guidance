@@ -5,13 +5,14 @@
 
     <% if @booking_request.errors.any? %>
       <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-        <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-          There was a problem with your details
-        </h1>
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          Unable to submit the form
+        </h2>
+        <p>Check the following:</p>
 
         <ul class="error-summary-list">
-          <% @booking_request.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
+          <% @booking_request.errors.each do |key, message| %>
+            <li><%= link_to "#{BookingRequestForm.human_attribute_name key} – #{message}", "#booking_request_#{key}" %></li>
           <% end %>
         </ul>
       </div>
@@ -25,7 +26,7 @@
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:first_name) %>">
         <%= f.label :first_name, class: 'form-label-bold' %>
         <% if @booking_request.errors.include?(:first_name) %>
-          <span class="error-message"><%= @booking_request.errors[:first_name].to_sentence %></span>
+          <span class="error-message"><%= @booking_request.errors[:first_name].to_sentence.capitalize %></span>
         <% end %>
         <%= f.text_field :first_name, class: "t-first-name form-control #{'form-control-error' if @booking_request.errors.include?(:first_name)}" %>
       </div>
@@ -33,7 +34,7 @@
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:last_name) %>">
         <%= f.label :last_name, class: 'form-label-bold' %>
         <% if @booking_request.errors.include?(:last_name) %>
-          <span class="error-message"><%= @booking_request.errors[:last_name].to_sentence %></span>
+          <span class="error-message"><%= @booking_request.errors[:last_name].to_sentence.capitalize %></span>
         <% end %>
         <%= f.text_field :last_name, class: "t-last-name form-control #{'form-control-error' if @booking_request.errors.include?(:last_name)}" %>
       </div>
@@ -45,7 +46,7 @@
         <% end %>
 
         <% if @booking_request.errors.include?(:email) %>
-          <span class="error-message"><%= @booking_request.errors[:email].to_sentence %></span>
+          <span class="error-message"><%= @booking_request.errors[:email].to_sentence.capitalize %></span>
         <% end %>
 
         <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @booking_request.errors.include?(:email)}" %>
@@ -54,7 +55,7 @@
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:telephone_number) %>">
         <%= f.label :telephone_number, class: 'form-label-bold' %>
         <% if @booking_request.errors.include?(:telephone_number) %>
-          <span class="error-message"><%= @booking_request.errors[:telephone_number].to_sentence %></span>
+          <span class="error-message"><%= @booking_request.errors[:telephone_number].to_sentence.capitalize %></span>
         <% end %>
         <%= f.text_field :telephone_number, class: "t-telephone-number form-control #{'form-control-error' if @booking_request.errors.include?(:telephone_number)}" %>
       </div>
@@ -65,7 +66,7 @@
           <span class="form-hint">Our pension specialist will repeat this word when they call so you know it’s us</span>
         <% end %>
         <% if @booking_request.errors.include?(:memorable_word) %>
-          <span class="error-message"><%= @booking_request.errors[:memorable_word].to_sentence %></span>
+          <span class="error-message"><%= @booking_request.errors[:memorable_word].to_sentence.capitalize %></span>
         <% end %>
         <%= f.text_field :memorable_word, class: "t-memorable-word form-control #{'form-control-error' if @booking_request.errors.include?(:memorable_word)}" %>
       </div>
@@ -78,7 +79,7 @@
             </span>
             <span class="form-hint" id="dob-hint">You must be aged 50 or over to book an appointment, eg 31 3 1950</span>
           </legend>
-          <div class="form-date">
+          <div class="form-date" id="booking_request_date_of_birth" tabindex="-1">
             <div class="form-group form-group-day">
               <label class="form-label" for="<%= f.object_name %>_date_of_birth_3i">Day</label>
               <%=
@@ -130,18 +131,18 @@
             </div>
           </div>
           <% if @booking_request.errors.include?(:date_of_birth) %>
-            <span class="error-message"><%= @booking_request.errors[:date_of_birth].to_sentence %></span>
+            <span class="error-message"><%= @booking_request.errors[:date_of_birth].to_sentence.capitalize %></span>
           <% end %>
         </fieldset>
       </div>
 
-      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:dc_pot) %>">
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:dc_pot) %>" id="booking_request_dc_pot" tabindex="-1">
         <fieldset class="inline">
           <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
           <span class="form-hint">If you have both, select ‘Yes’</span>
 
           <% if @booking_request.errors.include?(:dc_pot) %>
-            <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence %></span>
+            <span class="error-message"><%= @booking_request.errors[:dc_pot].to_sentence.capitalize %></span>
           <% end %>
 
           <div class="multiple-choice">
@@ -172,7 +173,7 @@
           <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %>
           <%= f.label :accessibility_requirements do %>
             <% if @booking_request.errors.include?(:accessibility_requirements) %>
-              <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence %></span>
+              <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence.capitalize %></span>
             <% end %>
             I have accessibility needs, eg wheelchair access
             <span class="form-hint" id="accessibility-hint">We’ll contact you for details of your specific needs</span>
@@ -185,7 +186,7 @@
           <legend>
             <span class="visually-hidden">Terms and conditions</span>
             <% if @booking_request.errors.include?(:opt_in) %>
-              <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence %></span>
+              <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence.capitalize %></span>
             <% end %>
           </legend>
           <div class="multiple-choice">

@@ -1,16 +1,17 @@
 <div class="l-grid-row">
-  <div class="l-column-full">
+  <div class="l-column-two-thirds">
     <h1>Book a phone appointment</h1>
 
     <% if @telephone_appointment.errors.any? %>
       <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-        <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-          There was a problem with your details
-        </h1>
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          Unable to submit the form
+        </h2>
+        <p>Check the following:</p>
 
         <ul class="error-summary-list">
-          <% @telephone_appointment.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
+          <% @telephone_appointment.errors.each do |key, message| %>
+            <li><%= link_to "#{TelephoneAppointment.human_attribute_name key} – #{message}", "#telephone_appointment_#{key}" %></li>
           <% end %>
         </ul>
       </div>
