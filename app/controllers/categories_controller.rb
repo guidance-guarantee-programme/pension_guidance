@@ -4,4 +4,8 @@ class CategoriesController < ApplicationController
 
     expires_in Rails.application.config.cache_max_age, public: true
   end
+
+  def content_lang_matches_locale?
+    true
+  end
 end
