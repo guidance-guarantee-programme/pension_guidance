@@ -4,7 +4,7 @@
       <%= content_for(:page_nav) %>
     </div>
   </div>
-  <%= render 'components/language_banner' if show_language_banner? %>
+  <%= render 'components/language_banner' unless default_locale? || content_lang_matches_locale? %>
   <div class="l-marketing">
     <main role="main" id="content" tabindex="-1">
       <% content_for(:page_title, t('service.homepage.title')) %>
