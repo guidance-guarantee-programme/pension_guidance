@@ -1,4 +1,4 @@
-<% content_for :html_lang, I18n.locale %>
+<% content_for :html_lang, default_locale? || !content_lang_matches_locale? ? I18n.default_locale : I18n.locale %>
 
 <% content_for :head do %>
   <%= csrf_meta_tag %>

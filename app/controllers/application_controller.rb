@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   before_action :set_locale
 
-  helper_method :footer?, :alternate_locales, :show_language_banner?
+  helper_method :footer?, :alternate_locales, :default_locale?, :content_lang_matches_locale?
 
   if ENV['AUTH_USERNAME'] && ENV['AUTH_PASSWORD']
     http_basic_authenticate_with name: ENV['AUTH_USERNAME'], password: ENV['AUTH_PASSWORD']
@@ -32,7 +32,13 @@ class ApplicationController < ActionController::Base
     options.reverse_merge(locale: I18n.locale)
   end
 
-  def show_language_banner?
-    I18n.locale != I18n.default_locale
+  def default_locale?
+    I18n.locale == I18n.default_locale
+  end
+
+  def content_lang_matches_locale?
+    # By default, anything not in the default locale
+    # is assumed to not be translated.
+    default_locale?
   end
 end
