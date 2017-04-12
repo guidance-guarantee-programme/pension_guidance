@@ -11,3 +11,42 @@ en:
             contribution:
               not_a_number: Using numbers, please enter how much you can pay in each month
               greater_than_or_equal_to: How much you can pay in each month must be £0 or more
+
+  calculators:
+    leave_pot_untouched:
+      estimate:
+        summary:
+          message:
+            html: |
+              Your pot could be worth this much over the
+              next <span class="t-calculator-years">%{years}</span>:
+          table:
+            headings:
+              years_left: Years left untouched
+              amount: Amount in your pot
+            row:
+              html: |
+                <tr>
+                  <td>%{years_left}</td>
+                  <td class="t-calculator-future-pot-size"><span class="calculator__highlight">%{amount}</span></td>
+                </tr>
+        slider_label: 'or try paying in a different amount each month:'
+        notes:
+          html: |
+            <li>
+              This is an estimate based on your whole pot growing at a rate of about
+              %{growth_rate} per year — this may vary.
+            </li>
+            <li>
+              The amount in your pot will be affected by inflation and any fees your provider charges.
+            </li>
+            <li>
+              You must leave your whole pot — you can't take just the 25% tax-free lump sum and leave the rest.
+            </li>
+
+      form:
+        pot_value_label: How much is in your pot?
+        contribution_label: How much can you pay in each month?
+
+      show:
+        back: Back to description
