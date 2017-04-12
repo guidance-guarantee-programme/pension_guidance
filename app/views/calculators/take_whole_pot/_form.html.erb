@@ -4,7 +4,7 @@
   errors = form&.errors || {}
 %>
 
-<h2 id="calculator">Estimate what you’d get after tax</h2>
+<h2 id="calculator"><%= t('.heading') %></h2>
 
 <%= render 'calculators/error_summary', messages: messages if form&.invalid? %>
 
@@ -12,14 +12,14 @@
   <%= render 'calculators/form_input_currency',
              field: :income,
              value: form&.income,
-             label: 'What is your yearly income?',
-             hint: 'Include money you get from work, benefits, savings and State Pension payments',
+             label: t('.income_label'),
+             hint: t('.income_hint'),
              error_messages: errors[:income] %>
 
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
-             label: 'How much is in your pot?',
+             label: t('.pot_value_label'),
              error_messages: errors[:pot] %>
 
   <%= render 'calculators/form_input_submit' %>
