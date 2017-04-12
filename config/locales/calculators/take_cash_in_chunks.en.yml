@@ -1,22 +1,27 @@
 en:
   activemodel:
+    attributes:
+      calculators/take_cash_in_chunks_form:
+        pot: How much is in your pot?
+        income: What is your yearly income?
+        chunk: How much do you want to take as your first cash chunk?
     errors:
       models:
         calculators/take_cash_in_chunks_form:
           attributes:
             pot:
-              blank: Please enter the amount in your pot
-              not_a_number: Using numbers, please enter the amount in your pot
-              greater_than: The amount in your pot must be at least £1
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than: amount must be at least £1
             income:
-              blank: Please enter your income for the year
-              not_a_number: Using numbers, please enter your income for the year
-              greater_than_or_equal_to: Your income for the year must be £0 or more
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than_or_equal_to: amount must be £0 or more
             chunk:
-              blank: Please enter how much you want to take in your first year
-              not_a_number: Using numbers, please enter how much you want to take in your first year
-              greater_than: How much you take in your first year must be at least £1
-              less_than: How much you take in your first year must be less than your pension pot value
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than: amount must be at least £1
+              less_than: amount must be less than your pension pot value
 
   calculators:
     take_cash_in_chunks:
@@ -49,10 +54,6 @@ en:
 
       form:
         heading: Estimate how much you could get
-        income_label: What is your yearly income?
         income_hint: Include money you get from work, benefits, savings and State Pension payments
-        pot_value_label: How much is in your pot?
-        chunk_label: How much do you want to take as your first cash chunk?
-
       show:
         back: Back to description

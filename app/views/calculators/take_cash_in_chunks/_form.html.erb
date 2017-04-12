@@ -1,31 +1,32 @@
 <%
   form = local_assigns[:form]
-  messages = form&.errors&.messages
   errors = form&.errors || {}
 %>
 
 <h2 id="calculator"><%= t('.heading') %></h2>
 
-<%= render 'calculators/error_summary', messages: messages if form&.invalid? %>
+<%= render 'calculators/error_summary',
+  form: Calculators::TakeCashInChunksForm,
+  errors: errors if form&.invalid? %>
 
 <form action="/take-cash-in-chunks/estimate#form" method="get">
   <%= render 'calculators/form_input_currency',
              field: :income,
              value: form&.income,
-             label: t('.income_label'),
+             label: Calculators::TakeCashInChunksForm.human_attribute_name(:income),
              hint: t('.income_hint'),
              error_messages: errors[:income] %>
 
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
-             label: t('.pot_value_label'),
+             label: Calculators::TakeCashInChunksForm.human_attribute_name(:pot),
              error_messages: errors[:pot] %>
 
   <%= render 'calculators/form_input_currency',
              field: :chunk,
              value: form&.chunk,
-             label: t('.chunk_label'),
+             label: Calculators::TakeCashInChunksForm.human_attribute_name(:chunk),
              error_messages: errors[:chunk] %>
 
   <%= render 'calculators/form_input_submit' %>

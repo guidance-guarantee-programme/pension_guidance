@@ -1,16 +1,20 @@
 en:
   activemodel:
+    attributes:
+      calculators/guaranteed_income_form:
+        pot: 'How much is in your pot?'
+        age: 'What age do you want to take your money?'
     errors:
       models:
         calculators/guaranteed_income_form:
           attributes:
             pot:
-              blank: Please enter the amount in your pot
-              not_a_number: Using numbers, please enter the amount in your pot
-              greater_than: The amount in your pot must be at least £1
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than: amount must be at least £1
             age:
-              blank: Please enter the age you plan to retire at
-              not_a_number: Using numbers, please enter how much you can pay in each month
+              blank: enter a figure
+              not_a_number: use numbers only
               greater_than_or_equal_to: We can only provide an estimate for people aged 55 to 75. If you’re over 75 you can compare annuities on the <a href="https://www.moneyadviceservice.org.uk/en/tools/annuities">Money Advice Service website</a>.
               less_than_or_equal_to: We can only provide an estimate for people aged 55 to 75. If you’re over 75 you can compare annuities on the <a href="https://www.moneyadviceservice.org.uk/en/tools/annuities">Money Advice Service website</a>.
 
@@ -39,8 +43,5 @@ en:
 
       form:
         heading: Estimate how much your guaranteed income could be
-        pot_value_label: How much is in your pot?
-        age_label: What age do you want to take your money?
-
       show:
         back: Back to description

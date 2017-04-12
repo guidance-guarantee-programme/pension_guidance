@@ -1,17 +1,21 @@
 en:
   activemodel:
+    attributes:
+      calculators/take_whole_pot_form:
+        pot: How much is in your pot?
+        income: What is your yearly income?
     errors:
       models:
         calculators/take_whole_pot_form:
           attributes:
             pot:
-              blank: Please enter the amount in your pot
-              not_a_number: Using numbers, please enter the amount in your pot
-              greater_than: The amount in your pot must be at least £1
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than: amount must be at least £1
             income:
-              blank: Please enter your income for the year
-              not_a_number: Using numbers, please enter your income for the year
-              greater_than_or_equal_to: Your income for the year must be £0 or more
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than_or_equal_to: amount must be £0 or more
 
   calculators:
     take_whole_pot:
@@ -39,8 +43,6 @@ en:
 
       form:
         heading: Estimate what you’d get after tax
-        income_label: What is your yearly income?
         income_hint: Include money you get from work, benefits, savings and State Pension payments
-        pot_value_label: How much is in your pot?
       show:
         back: Back to description

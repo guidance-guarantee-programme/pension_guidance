@@ -1,16 +1,20 @@
 en:
   activemodel:
+    attributes:
+      calculators/leave_pot_untouched_form:
+        pot: 'How much is in your pot?'
+        contribution: 'How much can you pay in each month?'
     errors:
       models:
         calculators/leave_pot_untouched_form:
           attributes:
             pot:
-              blank: Please enter the amount in your pot
-              not_a_number: Using numbers, please enter the amount in your pot
-              greater_than: The amount in your pot must be at least £1
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than: amount must be at least £1
             contribution:
-              not_a_number: Using numbers, please enter how much you can pay in each month
-              greater_than_or_equal_to: How much you can pay in each month must be £0 or more
+              not_a_number: use numbers only
+              greater_than_or_equal_to: amount must be £0 or more
 
   calculators:
     leave_pot_untouched:
@@ -43,10 +47,7 @@ en:
             <li>
               You must leave your whole pot — you can't take just the 25% tax-free lump sum and leave the rest.
             </li>
-
       form:
-        pot_value_label: How much is in your pot?
-        contribution_label: How much can you pay in each month?
-
+        heading: Estimate how much your pot could grow
       show:
         back: Back to description
