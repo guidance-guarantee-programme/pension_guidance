@@ -1,0 +1,6 @@
+en:
+  calculators:
+    error_summary:
+      heading: There was a problem with your details
+    form_input_submit:
+      submit_tag: Calculate
