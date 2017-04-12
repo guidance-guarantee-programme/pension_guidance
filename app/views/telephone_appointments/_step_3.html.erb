@@ -8,7 +8,7 @@
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:first_name) %>">
     <%= f.label :first_name, class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:first_name) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:first_name].to_sentence %></span>
+      <span class="error-message"><%= @telephone_appointment.errors[:first_name].to_sentence.capitalize %></span>
     <% end %>
     <%= f.text_field :first_name, class: "t-first-name form-control #{'form-control-error' if @telephone_appointment.errors.include?(:first_name)}" %>
   </div>
@@ -16,7 +16,7 @@
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:last_name) %>">
     <%= f.label :last_name, class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:last_name) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:last_name].to_sentence %></span>
+      <span class="error-message"><%= @telephone_appointment.errors[:last_name].to_sentence.capitalize %></span>
     <% end %>
     <%= f.text_field :last_name, class: "t-last-name form-control #{'form-control-error' if @telephone_appointment.errors.include?(:last_name)}" %>
   </div>
@@ -28,7 +28,7 @@
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:email) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:email].to_sentence %></span>
+      <span class="error-message"><%= @telephone_appointment.errors[:email].to_sentence.capitalize %></span>
     <% end %>
 
     <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @telephone_appointment.errors.include?(:email)}" %>
@@ -41,7 +41,7 @@
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:phone) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:phone].to_sentence %></span>
+      <span class="error-message"><%= @telephone_appointment.errors[:phone].to_sentence.capitalize %></span>
     <% end %>
 
     <%= f.text_field :phone, class: "t-phone form-control #{'form-control-error' if @telephone_appointment.errors.include?(:phone)}" %>
@@ -54,7 +54,7 @@
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:memorable_word) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:memorable_word].to_sentence %></span>
+      <span class="error-message"><%= @telephone_appointment.errors[:memorable_word].to_sentence.capitalize %></span>
     <% end %>
     <%= f.text_field :memorable_word, class: "t-memorable-word form-control #{'form-control-error' if @telephone_appointment.errors.include?(:memorable_word)}" %>
   </div>
@@ -67,7 +67,7 @@
         </span>
         <span class="form-hint" id="dob-hint">You must be aged 50 or over to book an appointment, eg 31 3 1950</span>
       </legend>
-      <div class="form-date">
+      <div class="form-date" id="telephone_appointment_date_of_birth" tabindex="-1">
         <div class="form-group form-group-day">
           <label class="form-label" for="<%= f.object_name %>_date_of_birth_day">Day</label>
           <%=
@@ -119,17 +119,17 @@
         </div>
       </div>
       <% if @telephone_appointment.errors.include?(:date_of_birth) %>
-        <span class="error-message"><%= @telephone_appointment.errors[:date_of_birth].to_sentence %></span>
+        <span class="error-message"><%= @telephone_appointment.errors[:date_of_birth].to_sentence.capitalize %></span>
       <% end %>
     </fieldset>
   </div>
 
-  <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>">
+  <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>" id="telephone_appointment_dc_pot_confirmed" tabindex="-1">
     <fieldset class="inline">
       <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
       <span class="form-hint">If you have both select ‘Yes’</span>
       <% if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>
-        <span class="error-message"><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence %></span>
+        <span class="error-message"><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence.capitalize %></span>
       <% end %>
 
       <div class="multiple-choice">
@@ -153,7 +153,7 @@
     <fieldset>
       <legend>
         <% if @telephone_appointment.errors.include?(:opt_in) %>
-          <span class="error-message"><%= @telephone_appointment.errors[:opt_out_of_market_research].to_sentence %></span>
+          <span class="error-message"><%= @telephone_appointment.errors[:opt_out_of_market_research].to_sentence.capitalize %></span>
         <% end %>
       </legend>
       <div class="multiple-choice">
@@ -171,7 +171,7 @@
       <legend>
         <span class="visually-hidden">Terms and conditions</span>
         <% if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>
-          <span class="error-message"><%= @telephone_appointment.errors[:accept_terms_and_conditions].to_sentence %></span>
+          <span class="error-message"><%= @telephone_appointment.errors[:accept_terms_and_conditions].to_sentence.capitalize %></span>
         <% end %>
       </legend>
       <div class="multiple-choice">

@@ -24,12 +24,12 @@ class TelephoneAppointment
   validates :start_at, presence: true
   validates :first_name, presence: true
   validates :last_name, presence: true
-  validates :email, presence: true
+  validates :email, email: true
   validates :phone, presence: true
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
-  validates :dc_pot_confirmed, presence: true
-  validates :accept_terms_and_conditions, inclusion: { in: [true], message: 'must be accepted' }
+  validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
+  validates :accept_terms_and_conditions, inclusion: { in: [true] }
 
   def advance!
     self.step += 1
