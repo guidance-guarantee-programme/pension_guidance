@@ -1,28 +1,15 @@
 <div id="js-estimate">
   <p>
-    If you take <span class="t-calculator-chunk calculator__highlight"><%= number_to_currency(estimate.chunk) %></span> from your
-    <span class="t-calculator-pot"><%= number_to_currency(estimate.pot) %></span> pot, you could get:
-
-    <strong class="calculator__estimate__number t-calculator-chunk-remaining">
-      <%= number_to_currency(estimate.chunk_remaining) %>
-    </strong>
-
-    We estimate you’ll pay:
-
-    <strong class="calculator__estimate__number t-calculator-chunk-tax">
-      <%= number_to_currency(estimate.chunk_tax) %> in tax
-    </strong>
-
-    Leaving:
-
-    <strong class="calculator__estimate__number t-calculator-pot-remaining">
-      <%= number_to_currency(estimate.pot_remaining) %> in your pot
-    </strong>
+    <%= t('.summary.html', chunk: number_to_currency(estimate.chunk),
+                           pot_value: number_to_currency(estimate.pot),
+                           chunk_remaining: number_to_currency(estimate.chunk_remaining),
+                           chunk_tax: number_to_currency(estimate.chunk_tax),
+                           pot_remaining: number_to_currency(estimate.pot_remaining)) %>
   </p>
 </div>
 
 <p>
-  <label for="slider">or try a different cash chunk:</label>
+  <label for="slider"><%= t('.slider_label') %></label>
   <%= render 'components/slider', {
       id: 'slider',
       target: '#chunk',
@@ -36,12 +23,7 @@
 </p>
 
 <ul>
-  <li>
-    This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate.
-</li>
-  <li>
-    If you’re in Scotland your calculation will be different.
-  </li>
+  <%= t('.notes.html') %>
 </ul>
 
 <script>

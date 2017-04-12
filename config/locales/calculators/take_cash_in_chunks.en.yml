@@ -17,3 +17,42 @@ en:
               not_a_number: Using numbers, please enter how much you want to take in your first year
               greater_than: How much you take in your first year must be at least £1
               less_than: How much you take in your first year must be less than your pension pot value
+
+  calculators:
+    take_cash_in_chunks:
+      estimate:
+        summary:
+          html: |
+            If you take <span class="t-calculator-chunk calculator__highlight">%{chunk}</span> from your
+            <span class="t-calculator-pot">%{pot_value}</span> pot, you could get:
+
+            <strong class="calculator__estimate__number t-calculator-chunk-remaining">%{chunk_remaining}</strong>
+
+            We estimate you’ll pay:
+
+            <strong class="calculator__estimate__number t-calculator-chunk-tax">%{chunk_tax} in tax</strong>
+
+            Leaving:
+
+            <strong class="calculator__estimate__number t-calculator-pot-remaining">
+              %{pot_remaining} in your pot
+            </strong>
+        slider_label: 'or try a different cash chunk:'
+        notes:
+          html: |
+            <li>
+              This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate.
+            </li>
+            <li>
+              If you’re in Scotland your calculation will be different.
+            </li>
+
+      form:
+        heading: Estimate how much you could get
+        income_label: What is your yearly income?
+        income_hint: Include money you get from work, benefits, savings and State Pension payments
+        pot_value_label: How much is in your pot?
+        chunk_label: How much do you want to take as your first cash chunk?
+
+      show:
+        back: Back to description
