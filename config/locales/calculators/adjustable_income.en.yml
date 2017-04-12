@@ -19,3 +19,42 @@ en:
               blank: Please enter the age you plan to retire at
               not_a_number: Using numbers, please enter the age you want to retire
               greater_than_or_equal_to: We can only provide an estimate for those over 55
+
+  calculators:
+    adjustable_income:
+      estimate:
+        summary:
+          html: |
+            Based on what you’ve told us, if you use your %{pot_value} pension pot to take an adjustable income, you could get:
+
+            <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} tax free</strong>
+
+            and
+
+            <strong class="calculator__estimate__number">
+              a monthly income of <span class="calculator__highlight">%{drawdown_amount}</span>
+              until you’re <span class="t-calculator-age-for-desired-income calculator__highlight">%{until_age}</span>
+            </strong>
+        slider_label: 'or try a different monthly income:'
+        notes:
+          html: |
+            <li class="t-calculator-life-expectancy-income">
+              Average life expectancy for those aged 55 is mid-to-late 80s. A monthly income of %{monthly_income}
+              could last until you’re %{until_age}, though you could live longer.
+            </li>
+            <li>You could pay Income Tax on your monthly income.</li>
+            <li>
+              This is an estimate based on the amount in your pot growing at a rate of about
+              %{growth_rate}% per year — this may vary.
+            </li>
+            <li>
+              If you’re in Scotland your calculation will be different.
+            </li>
+
+      form:
+        heading: Estimate how much you could get
+        pot_value_label: How much is in your pot?
+        age_label: What age do you want to take your money?
+
+      show:
+        back: Back to description

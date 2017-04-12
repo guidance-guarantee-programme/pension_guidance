@@ -4,7 +4,7 @@
   errors = form&.errors || {}
 %>
 
-<h2 id="calculator">Estimate how much you could get</h2>
+<h2 id="calculator"><%= t('.heading') %></h2>
 
 <%= render 'calculators/error_summary', messages: messages if form&.invalid? %>
 
@@ -12,7 +12,7 @@
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
-             label: 'How much is in your pot?',
+             label: t('.pot_value_label'),
              error_messages: errors[:pot] %>
 
   <%= render 'calculators/form_input_hidden',
@@ -23,7 +23,7 @@
              field: :age,
              css_classes: 'js-scroll-target',
              value: form&.age,
-             label: 'What age do you want to take your money?',
+             label: t('.age_label'),
              error_messages: errors[:age] %>
 
   <%= render 'calculators/form_input_submit' %>
