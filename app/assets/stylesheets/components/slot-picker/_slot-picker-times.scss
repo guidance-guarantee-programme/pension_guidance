@@ -10,6 +10,7 @@
   float: left;
   list-style: none;
   margin: 0;
+  position: relative;
   text-align: left;
   width: 50%;
 
@@ -24,21 +25,34 @@
   }
 }
 
-.slot-picker-times__action {
-  background: none;
+.slot-picker-times__selection {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+
+  &:checked {
+    + .slot-picker-times__time-text {
+      background: $calendar-selection;
+    }
+  }
+}
+
+.slot-picker-times__time-text {
   border: 1px solid $color-black;
+  box-sizing: border-box;
   cursor: pointer;
+  display: block;
   font-size: 1em;
   margin: 0 0 16px;
   padding: 8px;
+  text-align: center;
   width: 98%;
 
   @include media(tablet) {
     width: 75%;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background: $calendar-selection;
   }
 }
