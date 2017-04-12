@@ -8,7 +8,7 @@ We will:
 
 - Aim to answer your call to our booking centre in 20 seconds or less
 - Explain clearly how to contact us, including booking a free 45-minute appointment
-- Offer you a choice of a telephone or face-to-face appointment within 14 days
+- Offer you a choice of a phone or face-to-face appointment
 - Find a face-to-face appointment in a place convenient for you
 
 ##After you book
