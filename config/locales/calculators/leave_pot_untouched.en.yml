@@ -1,0 +1,13 @@
+en:
+  activemodel:
+    errors:
+      models:
+        calculators/leave_pot_untouched_form:
+          attributes:
+            pot:
+              blank: Please enter the amount in your pot
+              not_a_number: Using numbers, please enter the amount in your pot
+              greater_than: The amount in your pot must be at least £1
+            contribution:
+              not_a_number: Using numbers, please enter how much you can pay in each month
+              greater_than_or_equal_to: How much you can pay in each month must be £0 or more

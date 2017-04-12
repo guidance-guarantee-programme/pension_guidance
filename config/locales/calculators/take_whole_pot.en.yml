@@ -1,0 +1,14 @@
+en:
+  activemodel:
+    errors:
+      models:
+        calculators/take_whole_pot_form:
+          attributes:
+            pot:
+              blank: Please enter the amount in your pot
+              not_a_number: Using numbers, please enter the amount in your pot
+              greater_than: The amount in your pot must be at least £1
+            income:
+              blank: Please enter your income for the year
+              not_a_number: Using numbers, please enter your income for the year
+              greater_than_or_equal_to: Your income for the year must be £0 or more
