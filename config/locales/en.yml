@@ -1,6 +1,7 @@
 en:
   pension_type_tool:
-    error: 'Please answer the question to proceed'
+    error_title: 'Unable to submit the form'
+    error: 'Select an answer'
 
   service:
     title: '%{page_title} - Pension Wise'
@@ -41,6 +42,8 @@ en:
         dc_pot: Defined contribution pension
         opt_in: Terms and conditions
         telephone_number: Phone number
+      appointment_summary:
+        appointment_type: Your age
     errors:
       models:
         annuity_registration_form:
@@ -52,7 +55,7 @@ en:
         appointment_summary:
           attributes:
             appointment_type:
-              inclusion: Please select the age range you are in
+              inclusion: select a range
         booking_request_form:
           attributes:
             first_name:
@@ -91,3 +94,11 @@ en:
               inclusion: select an option
             accept_terms_and_conditions:
               inclusion: please accept
+        feedback_form:
+          attributes:
+            name:
+              blank: enter a name
+            email:
+              invalid: enter a valid email address
+            message:
+              blank: enter a message
