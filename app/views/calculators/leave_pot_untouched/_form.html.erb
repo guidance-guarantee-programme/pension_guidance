@@ -12,13 +12,13 @@
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,
-             label: 'How much is in your pot?',
+             label: t('.pot_value_label'),
              error_messages: errors[:pot] %>
 
   <%= render 'calculators/form_input_currency',
              field: :contribution,
              value: form&.contribution,
-             label: 'How much can you pay in each month?',
+             label: t('.contribution_label'),
              error_messages: errors[:contribution] %>
 
   <%= render 'calculators/form_input_submit' %>

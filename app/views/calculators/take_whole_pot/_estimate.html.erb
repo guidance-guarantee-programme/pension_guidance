@@ -8,27 +8,11 @@
 </script>
 
 <p>
-  If you take your whole <%= number_to_currency(estimate.pot) %> pot in one go, you could get:
-
-  <strong class="calculator__estimate__number t-pot-received">
-    <%= number_to_currency(estimate.pot_received) %>
-  </strong>
-
-  We estimate you’ll pay:
-
-  <strong class="calculator__estimate__number t-pot-tax">
-    <%= number_to_currency(estimate.pot_tax) %> in tax
-  </strong>
+  <%= t('.summary.html', pot_value: number_to_currency(estimate.pot),
+                         pot_received: number_to_currency(estimate.pot_received),
+                         pot_tax: number_to_currency(estimate.pot_tax)) %>
 </p>
 
 <ul>
-  <li>
-    Your total includes your 25% tax-free lump sum.
-  </li>
-  <li>
-    This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate.
-  </li>
-  <li>
-    If you’re in Scotland your calculation will be different.
-  </li>
+  <%= t('.notes.html') %>
 </ul>

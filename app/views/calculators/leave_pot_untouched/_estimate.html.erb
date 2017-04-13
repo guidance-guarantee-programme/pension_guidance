@@ -1,28 +1,24 @@
 <div id="js-estimate">
-  <p>Your pot could be worth this much over the
-    next <%= content_tag(:span, pluralize(estimate.size, 'years'), class: 't-calculator-years') %>:</p>
+  <p><%= t('.summary.message.html', years: pluralize(estimate.size, 'years')) %></p>
 
   <table>
     <caption class="visuallyhidden">Estimated pot growth</caption>
     <thead>
     <tr>
-      <th>Years left untouched</th>
-      <th>Amount in your pot</th>
+      <th><%= t('.summary.table.headings.years_left') %></th>
+      <th><%= t('.summary.table.headings.amount') %></th>
     </tr>
     </thead>
     <tbody>
-    <% estimate.each_with_index do |value, year| %>
-      <tr>
-        <td><%= year + 1 %></td>
-        <td class="t-calculator-future-pot-size"><span class="calculator__highlight"><%= number_to_currency(value) %></span></td>
-      </tr>
-    <% end %>
+      <% estimate.each_with_index do |value, year| %>
+        <%= t('.summary.table.row.html', years_left: year + 1, amount: number_to_currency(value)) %>
+      <% end %>
     </tbody>
   </table>
 </div>
 
 <p>
-  <label for="slider">or try paying in a different amount each month:</label>
+  <label for="slider"><%= t('.slider_label') %></label>
   <%= render 'components/slider', {
       id: 'slider',
       target: '#contribution',
@@ -36,15 +32,5 @@
 </p>
 
 <ul class="t-calculator-notes">
-  <li>
-    This is an estimate based on your whole pot growing at a rate of about
-    <%= number_to_percentage(LeavePotUntouchedCalculator::INTEREST_RATE * 100) %>
-    per year — this may vary.
-  </li>
-  <li>
-    The amount in your pot will be affected by inflation and any fees your provider charges.
-  </li>
-  <li>
-    You must leave your whole pot — you can't take just the 25% tax-free lump sum and leave the rest.
-  </li>
+  <%= t('.notes.html', growth_rate: number_to_percentage(LeavePotUntouchedCalculator::INTEREST_RATE * 100)) %>
 </ul>

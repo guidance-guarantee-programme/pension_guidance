@@ -1,20 +1,9 @@
 <p>
-  Based on what you’ve told us, if you use your <%= number_to_currency(pot) %> pension pot to buy an annuity, you could get:
-
-  <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">
-    <%= number_to_currency(estimate[:tax_free_lump_sum]) %> tax free
-  </strong>
-
-  and get:
-
-  <strong class="calculator__estimate__number t-calculator-income">
-    <%= number_to_currency(estimate[:income]) %> guaranteed annual taxable income, for the rest of your life
-  </strong>
+  <%= t('.summary.html', pot_value: number_to_currency(pot),
+                         estimate: number_to_currency(estimate[:tax_free_lump_sum]),
+                         income: number_to_currency(estimate[:income])) %>
 </p>
 
 <ul class="t-calculator-notes">
-  <li>This estimate is for a single-life annuity.</li>
-  <li>You may be better off with a joint-life annuity that pays your spouse or partner after you die, or an enhanced annuity which pays more if you smoke or have a medical condition.</li>
-  <li>If you’re in Scotland your calculation will be different.</li>
+  <%= t('.notes.html') %>
 </ul>
-

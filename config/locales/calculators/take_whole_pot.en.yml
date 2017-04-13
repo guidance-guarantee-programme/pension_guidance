@@ -1,0 +1,46 @@
+en:
+  activemodel:
+    errors:
+      models:
+        calculators/take_whole_pot_form:
+          attributes:
+            pot:
+              blank: Please enter the amount in your pot
+              not_a_number: Using numbers, please enter the amount in your pot
+              greater_than: The amount in your pot must be at least £1
+            income:
+              blank: Please enter your income for the year
+              not_a_number: Using numbers, please enter your income for the year
+              greater_than_or_equal_to: Your income for the year must be £0 or more
+
+  calculators:
+    take_whole_pot:
+      estimate:
+        summary:
+          html: |
+            If you take your whole %{pot_value} pot in one go, you could get:
+
+            <strong class="calculator__estimate__number t-pot-received">%{pot_received}</strong>
+
+            We estimate you’ll pay:
+
+            <strong class="calculator__estimate__number t-pot-tax">%{pot_tax} in tax</strong>
+        notes:
+          html: |
+            <li>
+              Your total includes your 25% tax-free lump sum.
+            </li>
+            <li>
+              This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate.
+            </li>
+            <li>
+              If you’re in Scotland your calculation will be different.
+            </li>
+
+      form:
+        heading: Estimate what you’d get after tax
+        income_label: What is your yearly income?
+        income_hint: Include money you get from work, benefits, savings and State Pension payments
+        pot_value_label: How much is in your pot?
+      show:
+        back: Back to description
