@@ -1,7 +1,7 @@
 <div class="language-toggle">
   <div class="language-toggle__inner">
     <% alternate_locales.each do |alternate_locale| %>
-      <%= link_to url_for(params.permit(:id, :ici, :icn, :locale).merge(locale: alternate_locale)), lang: alternate_locale, class: 'language-toggle__lang' do %>
+      <%= link_to url_for(params.permit(:id, :ici, :icn, :locale).merge(locale: alternate_locale)), lang: alternate_locale, class: 'language-toggle__lang t-language-toggle' do %>
         <%= t('language_name', locale: alternate_locale) %>
       <% end %>
     <% end %>
