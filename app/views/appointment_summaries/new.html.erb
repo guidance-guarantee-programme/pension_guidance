@@ -8,13 +8,15 @@
 
   <% if @appointment_summary.errors.any? %>
     <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
-      <h1 class="heading-medium error-summary-heading" id="error-summary-heading">
-        There was a problem with your details
-      </h1>
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading">
+        Unable to submit the form
+      </h2>
+
+      <p>Check the following:</p>
 
       <ul class="error-summary-list">
         <% @appointment_summary.errors.each do |attribute, attribute_message| %>
-          <li><a href="#<%= attribute %>"><%= sanitize(attribute_message, :tags => []) %></a></li>
+          <li><%= link_to "#{AppointmentSummary.human_attribute_name attribute} – #{sanitize(attribute_message, :tags => [])}", "##{attribute}" %></li>
         <% end %>
       </ul>
     </div>
@@ -22,9 +24,13 @@
 
   <h2 id="age">Your age</h2>
 
-  <div class="form-group">
+  <div class="form-group <%= 'form-group-error' if @appointment_summary.errors.include?(:appointment_type) %>" id="appointment_type" tabindex="-1">
     <fieldset class="inline">
       <legend class="visuallyhidden">Your age</legend>
+
+      <% if @appointment_summary.errors.include?(:appointment_type) %>
+        <span class="error-message"><%= @appointment_summary.errors[:appointment_type].to_sentence.capitalize %></span>
+      <% end %>
 
       <div class="multiple-choice">
         <%= f.radio_button :appointment_type, '50_54', checked: false %>

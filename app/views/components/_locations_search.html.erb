@@ -8,7 +8,7 @@
         <%= yield %>
       <% end %>
     </label>
-    <input type="text" class="form-control" name="postcode" id="location" value="<%= @postcode&.squish %>" required="true">
+    <input type="text" class="form-control<%= ' form-control-error' if has_error %>" name="postcode" id="location" value="<%= @postcode&.squish %>" required="true">
     <input type="submit" class="button" value="Search">
   </div>
 </form>

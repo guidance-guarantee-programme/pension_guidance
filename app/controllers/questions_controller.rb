@@ -1,4 +1,4 @@
-# rubocop:disable Metrics/AbcSize, Lint/AssignmentInCondition
+# rubocop:disable Lint/AssignmentInCondition
 class QuestionsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
@@ -8,7 +8,7 @@ class QuestionsController < ApplicationController
     if answer = question.metadata.answers[params[:response]]
       redirect_to answer
     else
-      redirect_to "/#{params[:question_id]}", alert: I18n.t('pension_type_tool.error')
+      redirect_to "/#{params[:question_id]}", alert: true
     end
   end
 end

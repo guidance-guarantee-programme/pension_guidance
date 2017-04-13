@@ -1,9 +1,25 @@
+<% if @feedback.errors.any? %>
+  <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+    <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+      Unable to submit the form
+    </h2>
+
+    <p>Check the following:</p>
+
+    <ul class="error-summary-list">
+      <% @feedback.errors.each do |key, message| %>
+        <li><%= link_to "#{FeedbackForm.human_attribute_name key} – #{message}", "#feedback_#{key}" %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <%= form_for @feedback, url: feedback_path, as: :feedback, html: { class: 'js-feedback-form' } do |f| %>
   <%= f.hidden_field :feedback_type %>
   <div class="form-group <%= 'form-group-error' if @feedback.errors.include?(:name) %>">
     <%= f.label :name, class: 'form-label' %>
     <% if @feedback.errors.include?(:name) %>
-      <span class="error-message"><%= @feedback.errors[:name].to_sentence %></span>
+      <span class="error-message"><%= @feedback.errors[:name].to_sentence.capitalize %></span>
     <% end %>
     <%= f.text_field :name, class: "t-feedback-name form-control #{'form-control-error' if @feedback.errors.include?(:name)}" %>
   </div>
@@ -11,7 +27,7 @@
   <div class="form-group <%= 'form-group-error' if @feedback.errors.include?(:email) %>">
     <%= f.label :email, class: 'form-label' %>
     <% if @feedback.errors.include?(:email) %>
-      <span class="error-message"><%= @feedback.errors[:email].to_sentence %></span>
+      <span class="error-message"><%= @feedback.errors[:email].to_sentence.capitalize %></span>
     <% end %>
     <%= f.text_field :email, class: "t-feedback-email form-control #{'form-control-error' if @feedback.errors.include?(:email)}" %>
   </div>
@@ -19,7 +35,7 @@
   <div class="form-group <%= 'form-group-error' if @feedback.errors.include?(:message) %>">
     <%= f.label :message, class: 'form-label' %>
     <% if @feedback.errors.include?(:message) %>
-      <span class="error-message"><%= @feedback.errors[:message].to_sentence %></span>
+      <span class="error-message"><%= @feedback.errors[:message].to_sentence.capitalize %></span>
     <% end %>
     <%= f.text_area :message, class: "t-feedback-message form-control #{'form-control-error' if @feedback.errors.include?(:message)}" %>
   </div>
