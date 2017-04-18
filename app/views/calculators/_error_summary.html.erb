@@ -1,14 +1,14 @@
 <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
 
-  <h1 class="heading-medium error-summary-heading" id="error-summary-heading">
+  <h2 class="heading-medium error-summary-heading" id="error-summary-heading">
     <%= t('.heading') %>
-  </h1>
+  </h2>
 
   <ul class="error-summary-list">
-    <% messages.each do |attribute, attribute_messages| %>
-      <% attribute_messages.each do |attribute_message| %>
-        <li><a href="#<%= attribute %>"><%= sanitize(attribute_message, :tags => []) %></a></li>
-      <% end %>
+    <% errors.each do |attribute, message| %>
+      <li>
+        <%= link_to "#{form.human_attribute_name attribute} – #{sanitize(message, :tags => [])}", "##{attribute}" %>
+      </li>
     <% end %>
   </ul>
 

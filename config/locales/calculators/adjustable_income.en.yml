@@ -1,24 +1,28 @@
 en:
   activemodel:
+    attributes:
+      calculators/adjustable_income_form:
+        pot: 'How much is in your pot?'
+        age: 'What age do you want to take your money?'
     errors:
       models:
         calculators/adjustable_income_form:
           attributes:
             pot:
-              blank: Please enter the amount in your pot
-              not_a_number: Using numbers, please enter the amount in your pot
-              greater_than: The amount in your pot must be at least £1
-              less_than: The amount in your pot must be less than £5,000,000
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than: amount must be at least £1
+              less_than: amount must be less than £5,000,000
             desired_monthly_income:
-              blank: Please enter the amount you would like to take per month
-              not_a_number: Using numbers, please enter the amount you would like to take per month
-              greater_than_or_equal_to: Your desired income for the month must be £0 or more
-              less_than: Your monthly income must be less than your pension pot value
-              greater_than: Your desired monthly income must be more than zero
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than_or_equal_to: amount must be £0 or more
+              less_than: amount must be less than your pension pot value
+              greater_than: amount must be more than zero
             age:
-              blank: Please enter the age you plan to retire at
-              not_a_number: Using numbers, please enter the age you want to retire
-              greater_than_or_equal_to: We can only provide an estimate for those over 55
+              blank: enter a figure
+              not_a_number: use numbers only
+              greater_than_or_equal_to: enter an age over 55
 
   calculators:
     adjustable_income:
@@ -53,8 +57,5 @@ en:
 
       form:
         heading: Estimate how much you could get
-        pot_value_label: How much is in your pot?
-        age_label: What age do you want to take your money?
-
       show:
         back: Back to description
