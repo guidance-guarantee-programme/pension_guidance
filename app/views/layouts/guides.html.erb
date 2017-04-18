@@ -2,9 +2,9 @@
   <article role="article" class="text">
     <% if flash[:alert] %>
       <div class="error-summary alert-alert" aria-labelledby="error-summary-heading" role="group">
-        <h2 class="heading-medium error-summary-heading" id="error-summary-heading"><%= t('pension_type_tool.error_title') %></h2>
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading"><%= t('calculators.error_summary.heading') %></h2>
         <ul>
-          <li><%= link_to t('pension_type_tool.error'), '#question' %></li>
+          <li><%= link_to t('calculators.error_summary.select_an_answer'), '#question' %></li>
         </ul>
       </div>
     <% end %>

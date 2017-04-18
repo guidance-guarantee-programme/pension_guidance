@@ -14,7 +14,7 @@ RSpec.feature 'Questions', type: :feature do
       page.click_on 'Next step'
 
       expect(page.current_url).to match(guide.slug)
-      expect(page).to have_content(I18n.t('pension_type_tool.error'))
+      expect(page).to have_content(I18n.t('calculators.error_summary.select_an_answer'))
     end
   end
 

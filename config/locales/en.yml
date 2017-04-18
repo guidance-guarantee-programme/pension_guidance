@@ -1,8 +1,4 @@
 en:
-  pension_type_tool:
-    error_title: 'Unable to submit the form'
-    error: 'Select an answer'
-
   service:
     title: '%{page_title} - Pension Wise'
     homepage:
