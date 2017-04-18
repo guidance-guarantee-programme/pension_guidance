@@ -3,11 +3,9 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rspec/rails'
 
-require 'capybara/poltergeist'
 require 'vcr'
 
-Capybara.javascript_driver = :poltergeist
-Capybara.default_max_wait_time = 20
+require_relative '../features/support/poltergeist'
 
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 
