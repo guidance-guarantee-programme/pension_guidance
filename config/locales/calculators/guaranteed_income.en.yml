@@ -15,8 +15,8 @@ en:
             age:
               blank: enter a figure
               not_a_number: use numbers only
-              greater_than_or_equal_to: We can only provide an estimate for people aged 55 to 75. If you’re over 75 you can compare annuities on the <a href="https://www.moneyadviceservice.org.uk/en/tools/annuities">Money Advice Service website</a>.
-              less_than_or_equal_to: We can only provide an estimate for people aged 55 to 75. If you’re over 75 you can compare annuities on the <a href="https://www.moneyadviceservice.org.uk/en/tools/annuities">Money Advice Service website</a>.
+              greater_than_or_equal_to: you must be aged 55 to 75
+              less_than_or_equal_to: you must be aged 55 to 75 – you can compare annuities on the <a href="https://www.moneyadviceservice.org.uk/en/tools/annuities">Money Advice Service website</a>
 
   calculators:
     guaranteed_income:
