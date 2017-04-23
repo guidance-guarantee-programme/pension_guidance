@@ -45,4 +45,7 @@ Rails.application.configure do
 
   # Disable caching. All cache reads and writes result in a cache miss.
   config.cache_store = :null_store
+
+  # Precompile in travis to resolve poltergeist timeouts
+  config.assets.compile = ENV['TRAVIS'] ? false : true
 end
