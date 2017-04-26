@@ -8,10 +8,18 @@ class LocationsController < ApplicationController
   layout 'full_width_with_breadcrumbs', only: %i(show index)
 
   def index
-    return render :search if @postcode.nil?
-    return render :empty_postcode if @postcode.empty?
+    if @postcode.nil?
+      locations = Locations::Repository.new.all
 
-    retrieve_locations
+      @locations_by_letter = locations.group_by { |location| location.name.first }
+      @locations_total     = locations.count
+
+      render :a_to_z
+    elsif @postcode.empty?
+      render :empty_postcode
+    else
+      retrieve_locations
+    end
   end
 
   def show

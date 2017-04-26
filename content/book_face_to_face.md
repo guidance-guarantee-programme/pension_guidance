@@ -17,6 +17,7 @@ Search for your nearest appointment locations.
     </label>
     <input type="text" class="form-control" id="postcode" name="postcode" value="" required="true">
     <input type="submit" class="button" id="btn-search" value="Search">
+    <p>or view the <a href="/locations">list of locations</a></p>
   </div>
 </form>
 

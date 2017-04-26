@@ -7,7 +7,7 @@ RSpec.describe LocationsController, type: :controller do
     specify 'without a postcode param' do
       get :index
 
-      expect(response).to render_template(:search)
+      expect(response).to render_template(:a_to_z)
     end
 
     specify 'with an empty postcode' do
