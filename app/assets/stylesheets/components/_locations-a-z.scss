@@ -1,0 +1,24 @@
+.locations-a-z-total__count {
+  @include bold-80;
+}
+
+.locations-a-z-letter {
+  @include bold-48;
+
+  &:first-of-type {
+    @include media(tablet) {
+      margin-top: 0;
+    }
+  }
+}
+
+.locations-a-z-letter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.locations-a-z-letter-list__location {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
