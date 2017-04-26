@@ -1,23 +1,36 @@
 //*-------------- mixins --------------------*/
-@mixin bullet($color, $radius, $top: 5px) {
+@mixin bullet($color, $radius, $top: 2px) {
   &:before {
     content: "";
     display: block;
     position: absolute;
     top: $top;
-    left: -40px;
+    left: 0;
     width: $radius;
     height: $radius;
     border-radius: $radius;
     background: $color;
+
+    @include media(1080px) {
+      left: -30px;
+    }
   }
 }
 
 //*----------- summary document styles ----*/
 
 .summary-document {
+  .icon {
+    display: block;
+  }
+
   .option {
     position: relative;
+    padding-left: 25px;
+
+    @include media(1080px) {
+      padding-left: 0;
+    }
   }
 
   .option--untouched {
@@ -64,7 +77,7 @@
     &.option {
 
       &:before {
-        top: 15px;
+        top: 7px;
       }
     }
   }
