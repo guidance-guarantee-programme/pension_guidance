@@ -34,11 +34,11 @@ class GuaranteedIncomeCalculator
   # https://pensionwise-guidance.atlassian.net/wiki/pages/viewpage.action?pageId=34237
   def annuity_rate
     case age
-    when 55...60 then 0.04016
-    when 60...65 then 0.04494
-    when 65...70 then 0.05172
-    when 70...75 then 0.05964
-    else              0.07201
+    when 55...60 then 0.03944
+    when 60...65 then 0.04420
+    when 65...70 then 0.05104
+    when 70...75 then 0.05824
+    else              0.07068
     end
   end
 end
