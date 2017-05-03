@@ -1,0 +1,48 @@
+en:
+  activemodel:
+    attributes:
+      calculators/take_whole_pot_form:
+        pot: Faint sydd yn eich cronfa?
+        income: Beth yw eich incwm blynyddol?
+    errors:
+      models:
+        calculators/take_whole_pot_form:
+          attributes:
+            pot:
+              blank: rhowch ffigwr
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than: mae'n rhaid i'r swm fod o leiaf £1
+            income:
+              blank: rhowch ffigwr
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than_or_equal_to: mae'n rhaid i'r swm fod yn £0 neu fwy
+
+  calculators:
+    take_whole_pot:
+      estimate:
+        summary:
+          html: |
+            Os byddwch yn cymryd eich cronfa %{pot_value} gyfan ar un tro, gallech gael:
+
+            <strong class="calculator__estimate__number t-pot-received">%{pot_received}</strong>
+
+            Rydym yn amcangyfrif y byddwch yn talu:
+
+            <strong class="calculator__estimate__number t-pot-tax">%{pot_tax} mewn treth</strong>
+        notes:
+          html: |
+            <li>
+              Mae eich cyfanswm yn cynnwys eich 25% lwmp swm di-dreth.
+            </li>
+            <li>
+              Amcangyfrif yw hwn — mae'r union swm o dreth a dalwch yn dibynnu ar gyfanswm eich incwm ar gyfer y flwyddyn a'ch cyfradd treth.
+            </li>
+            <li>
+              Os ydych yn yr Alban bydd eich cyfrifiad yn wahannol.
+            </li>
+
+      form:
+        heading: Amcangyfrif o beth fyddwch yn ei gael ar ôl treth
+        income_hint: Dylech gynnwys arian a gewch o waith, budd-daliadau, cynilion a thaliadau Pensiwn y Wladwriaeth
+      show:
+        back: Yn ôl i'r disgrifiad
