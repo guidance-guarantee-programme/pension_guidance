@@ -10,6 +10,22 @@ en:
     homepage:
       title: 'Pension Wise - Get to know your options'
 
+  breadcrumbs:
+    book_a_telephone_appointment:
+      title: Book a phone appointment
+    book_an_appointment:
+      slug: appointments
+      title: Book a free appointment
+    how_to_book_phone:
+      slug: book-phone
+      title: How to book a phone appointment
+    how_to_book_face_to_face:
+      slug: book-face-to-face
+      title: Find an appointment location near you
+    pension_options:
+      slug: pension-pot-options
+      title: What you can do with your pot
+
   layout:
     footer_support_links:
       - title: Cookies
