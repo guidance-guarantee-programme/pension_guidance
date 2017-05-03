@@ -66,12 +66,9 @@
   <div class="footer-meta-inner l-footer-meta">
     <h2 class="visuallyhidden">Support links</h2>
     <ul>
-      <li><%= link_to 'Cookies', guide_path('cookies') %></li>
-      <li><%= link_to 'Privacy', guide_path('privacy') %></li>
-      <li><%= link_to 'Contact', guide_path('contact') %></li>
-      <li><%= link_to 'Accessibility', 'http://gov.uk/help/accessibility/', rel: 'external' %></li>
-      <li><%= link_to 'Customer promise', guide_path('customer-promise') %></li>
-      <li><%= link_to 'After your appointment', guide_path('after-your-appointment'), class: 't-appointment-summary-link' %></li>
+      <% t('layout.footer_support_links').each do |link| %>
+        <li><%= link_to link[:title], link[:url], link[:options] %></li>
+      <% end %>
     </ul>
   </div>
 <% end %>
