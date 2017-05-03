@@ -10,6 +10,26 @@ cy:
     homepage:
       title: 'Pension Wise - Get to know your options'
 
+  layout:
+    footer_support_links:
+      - title: Cwcis
+        url: '/cy/cookies'
+      - title: Preifatrwydd
+        url: '/cy/privacy'
+      - title: Cysylltu
+        url: '/cy/contact'
+      - title: Hygyrchedd
+        url: 'http://gov.uk/help/accessibility/'
+        options:
+          rel: external
+          lang: en
+      - title: Addewid i gwsmeriaid
+        url: '/cy/customer-promise'
+      - title: Ar ôl eich apwyntiad
+        url: '/cy/after-your-appointment'
+        options:
+          class: t-appointment-summary-link
+
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'
 
