@@ -10,7 +10,7 @@ class Breadcrumb
     include Rails.application.routes.url_helpers
 
     def book_an_appointment(locale = I18n.locale)
-      new(guide_path('appointments', locale: locale), 'Book a free appointment')
+      guide_breadcrumb(:book_an_appointment, locale)
     end
 
     def book_online(location_id, location_name, locale = I18n.locale)
@@ -18,19 +18,27 @@ class Breadcrumb
     end
 
     def how_to_book_phone(locale = I18n.locale)
-      new(guide_path('book-phone', locale: locale), 'How to book a phone appointment')
+      guide_breadcrumb(:how_to_book_phone, locale)
     end
 
     def how_to_book_face_to_face(locale = I18n.locale)
-      new(guide_path('book-face-to-face', locale: locale), 'Find an appointment location near you')
+      guide_breadcrumb(:how_to_book_face_to_face, locale)
     end
 
     def pension_options(locale = I18n.locale)
-      new(guide_path('pension-pot-options', locale: locale), 'What you can do with your pot')
+      guide_breadcrumb(:pension_options, locale)
     end
 
     def book_a_telephone_appointment(locale = I18n.locale)
-      new(new_telephone_appointment_path(locale: locale), 'Book a phone appointment')
+      title = I18n.t('breadcrumbs.book_a_telephone_appointment')[:title]
+      new(new_telephone_appointment_path(locale: locale), title)
+    end
+
+    private
+
+    def guide_breadcrumb(translation_key, locale)
+      t = I18n.t("breadcrumbs.#{translation_key}")
+      new(guide_path(t[:slug], locale: locale), t[:title])
     end
   end
 end
