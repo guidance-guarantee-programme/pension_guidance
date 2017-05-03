@@ -10,6 +10,25 @@ en:
     homepage:
       title: 'Pension Wise - Get to know your options'
 
+  layout:
+    footer_support_links:
+      - title: Cookies
+        url: '/en/cookies'
+      - title: Privacy
+        url: '/en/privacy'
+      - title: Contact
+        url: '/en/contact'
+      - title: Accessibility
+        url: 'http://gov.uk/help/accessibility/'
+        options:
+          rel: external
+      - title: Customer promise
+        url: '/en/customer-promise'
+      - title: After your appointment
+        url: '/en/after-your-appointment'
+        options:
+          class: t-appointment-summary-link
+
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'
 
