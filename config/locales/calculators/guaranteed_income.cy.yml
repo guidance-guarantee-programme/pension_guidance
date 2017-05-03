@@ -1,0 +1,47 @@
+en:
+  activemodel:
+    attributes:
+      calculators/guaranteed_income_form:
+        pot: 'Faint sydd yn eich cronfa?'
+        age: 'Pa oedran ydych chi eisiau cymryd eich arian?'
+    errors:
+      models:
+        calculators/guaranteed_income_form:
+          attributes:
+            pot:
+              blank: rhowch ffigwr
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than: mae'n rhaid i'r swm fod o leiaf £1
+            age:
+              blank: rhowch ffigwr
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than_or_equal_to: mae'n rhaid i chi fod yn 55 i 75 oed
+              less_than_or_equal_to: mae'n rhaid i chi fod yn 55 i 75 oed – gallwch gymharu blwydd-daliadau ar <a href="https://www.moneyadviceservice.org.uk/en/tools/annuities">wefan y Gwasanaeth Cynghori Ariannol</a>
+
+  calculators:
+    guaranteed_income:
+      estimate:
+        summary:
+          html: |
+            Yn seiliedig ar beth rydych wedi'i ddweud wrthym, os byddwch yn defnyddio eich cronfa bensiwn %{pot_value} i brynu blwydd-dal, gallech gael:
+
+            <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} yn ddi-dreth</strong>
+
+            a chael:
+
+            <strong class="calculator__estimate__number t-calculator-income">
+              %{income} o incwm trethadwy blynyddol gwarantedig, am weddill eich oes
+            </strong>
+        notes:
+          html: |
+            <li>Mae hwn yn amcangyfrif ar gyfer blwydd-dal bywyd sengl.</li>
+            <li>
+              Efallai y byddwch yn well eich byd gyda blwydd-dal bywyd ar y cyd sy'n talu eich priod neu bartner wedi i chi farw,
+              neu blwydd-dal uwch sy'n talu mwy os ydych yn ysmygu neu mae gennych gyflwr meddygol.
+            </li>
+            <li>Os ydych yn yr Alban bydd eich cyfrifiad yn wahannol.</li>
+
+      form:
+        heading: Amcangyfrif o faint allai eich incwm gwarantedig fod
+      show:
+        back: Yn ôl i'r disgrifiad
