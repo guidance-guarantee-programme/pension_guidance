@@ -1,6 +1,6 @@
 RSpec.describe CategoryRepository do
   subject(:repository) do
-    described_class.new(File.expand_path('../../fixtures', __FILE__))
+    described_class.new(:en, File.expand_path('../../fixtures', __FILE__))
   end
 
   describe '#find' do

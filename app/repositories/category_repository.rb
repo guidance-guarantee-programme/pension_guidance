@@ -3,10 +3,11 @@ require 'yaml'
 class CategoryRepository
   CategoryNotFound = Class.new(StandardError)
 
-  attr_accessor :dir
-  private :dir, :dir=
+  attr_accessor :dir, :locale
+  private :dir, :dir=, :locale, :locale=
 
-  def initialize(dir = Rails.root.join('categories'))
+  def initialize(locale = I18n.locale, dir = Rails.root.join('categories'))
+    self.locale = locale
     self.dir = dir
   end
 
@@ -26,6 +27,6 @@ class CategoryRepository
   end
 
   def glob_dir(file_pattern)
-    Dir["#{dir}/**/#{file_pattern}.yml"]
+    Dir["#{dir}/**/#{file_pattern}.#{locale}.yml"]
   end
 end
