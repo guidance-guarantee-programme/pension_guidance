@@ -1,0 +1,53 @@
+en:
+  activemodel:
+    attributes:
+      calculators/leave_pot_untouched_form:
+        pot: 'Faint sydd yn eich cronfa?'
+        contribution: 'Faint allwch chi ei dalu i mewn bob mis?'
+    errors:
+      models:
+        calculators/leave_pot_untouched_form:
+          attributes:
+            pot:
+              blank: rhowch ffigwr
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than: mae'n rhaid i'r swm fod o leiaf £1
+            contribution:
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than_or_equal_to: mae'n rhaid i'r swm fod yn £0 neu fwy
+
+  calculators:
+    leave_pot_untouched:
+      estimate:
+        summary:
+          message:
+            html: |
+              Gallai eich cronfa fod werth gymaint a hyn dros y 
+              <span class="t-calculator-years">%{years}</span> nesaf:
+          table:
+            headings:
+              years_left: Blynyddoedd sydd heb eu cyffwrdd
+              amount: Y swm yn eich cronfa
+            row:
+              html: |
+                <tr>
+                  <td>%{years_left}</td>
+                  <td class="t-calculator-future-pot-size"><span class="calculator__highlight">%{amount}</span></td>
+                </tr>
+        slider_label: 'neu rhowch gynnig ar dalu swm gwahanol i mewn bob mis:'
+        notes:
+          html: |
+            <li>
+              Mae hwn yn amcangyfrif yn seiliedig ar eich cronfa gyfan yn tyfu ar gyfradd o tua
+              %{growth_rate} y flwyddyn — gallai hyn amrywio.
+            </li>
+            <li>
+              Bydd y swm yn eich cronfa yn cael ei effeithio gan chwyddiant ac unrhyw ffioedd mae eich darparwr yn eu codi.
+            </li>
+            <li>
+              Mae'n rhaid i chi adael eich gornfa gyfan — ni allwch gymryd y lwmp swm 25% di-dreth a gadael y gweddill.
+            </li>
+      form:
+        heading: Amcangyfrif o faint allai eich cronfa dyfu
+      show:
+        back: Yn ôl i'r disgrifiad
