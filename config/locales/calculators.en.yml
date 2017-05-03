@@ -2,5 +2,6 @@ en:
   calculators:
     error_summary:
       heading: Unable to submit the form
+      select_an_answer: Select an answer
     form_input_submit:
       submit_tag: Calculate
