@@ -66,7 +66,7 @@ en:
               invalid_email: enter a valid email address
             telephone_number:
               blank: enter a phone number
-              format: enter a valid phone number
+              invalid: enter a valid phone number
             memorable_word:
               blank: enter a word
             date_of_birth:
@@ -87,7 +87,7 @@ en:
               invalid_email: enter a valid email address
             phone:
               blank: enter a phone number
-              format: enter a valid phone number
+              invalid: enter a valid phone number
             memorable_word:
               blank: enter a word
             date_of_birth:
