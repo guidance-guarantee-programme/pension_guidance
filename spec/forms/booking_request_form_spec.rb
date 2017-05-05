@@ -44,6 +44,18 @@ RSpec.describe BookingRequestForm do
         end
       end
 
+      it 'requires a reasonably valid phone number' do
+        ['+447715930459', '(0208) 252 4729', '07715-930-459'].each do |number|
+          subject.telephone_number = number
+          expect(subject).to be_step_two_valid
+        end
+
+        ['ben@example.com', '      ', '02089292992e'].each do |number|
+          subject.telephone_number = number
+          expect(subject).not_to be_step_two_valid
+        end
+      end
+
       it 'requires a reasonably valid email' do
         subject.email = 'blah'
         expect(subject).not_to be_step_two_valid

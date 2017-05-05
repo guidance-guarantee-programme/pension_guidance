@@ -25,7 +25,7 @@ class TelephoneAppointment
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :email, email: true
-  validates :phone, presence: true
+  validates :phone, presence: true, format: /\A([\d+\-\s\+()]+)\z/
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
   validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }

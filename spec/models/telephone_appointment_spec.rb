@@ -113,6 +113,18 @@ RSpec.describe TelephoneAppointment, type: :model do
       expect(subject).to_not be_valid
     end
 
+    it 'validates format of phone number' do
+      ['+447715930459', '(0208) 252 4729', '07715-930-459'].each do |number|
+        subject.phone = number
+        expect(subject).to be_valid
+      end
+
+      ['ben@example.com', '      ', '02089292992e'].each do |number|
+        subject.phone = number
+        expect(subject).to be_invalid
+      end
+    end
+
     it 'validates presence of memorable_word' do
       subject.memorable_word = nil
       expect(subject).to_not be_valid
