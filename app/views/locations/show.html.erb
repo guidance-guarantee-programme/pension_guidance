@@ -41,9 +41,9 @@
         <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
       </p>
 
-      Or book by phone <strong class="t-phone"><%= @location.phone %></strong>.
+      Or call <strong class="t-phone"><%= @location.phone %></strong>.
     <% else %>
-      Book by phone <strong class="t-phone"><%= @location.phone %></strong>.
+      Call <strong class="t-phone"><%= @location.phone %></strong>.
     <% end %>
 
     <% if @location.hours.present? %>
