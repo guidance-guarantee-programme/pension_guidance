@@ -4,12 +4,12 @@ class BookingRequestForm
   attr_accessor :location_id, :primary_slot, :secondary_slot, :tertiary_slot,
                 :first_name, :last_name, :email, :telephone_number,
                 :memorable_word, :accessibility_requirements,
-                :date_of_birth, :opt_in, :dc_pot
+                :date_of_birth, :opt_in, :dc_pot, :dates_required
 
   with_options if: :step_one? do |step_one|
     step_one.validates :primary_slot, presence: true
-    step_one.validates :secondary_slot, presence: true
-    step_one.validates :tertiary_slot, presence: true
+    step_one.validates :secondary_slot, presence: true, if: :validate_secondary_slot?
+    step_one.validates :tertiary_slot, presence: true, if: :validate_tertiary_slot?
   end
 
   with_options if: :step_two? do |step_two|
@@ -26,6 +26,9 @@ class BookingRequestForm
 
   def initialize(location_id, opts)
     @location_id = location_id
+
+    @dates_required ||= [slots_for_calendar.count, 3].min
+
     super(opts)
   end
 
@@ -43,6 +46,14 @@ class BookingRequestForm
     else
       '55-plus'
     end
+  end
+
+  def validate_secondary_slot?
+    slots_for_calendar.count > 1
+  end
+
+  def validate_tertiary_slot?
+    slots_for_calendar.count > 2
   end
 
   def slots_for_calendar
