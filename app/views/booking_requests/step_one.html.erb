@@ -11,14 +11,15 @@
           There was a problem with your chosen dates
         </h1>
 
-        <p>Please select 3 dates for your appointment.</p>
+        <p>Please select <%= pluralize(@booking_request.dates_required, 'date') %> for your appointment.</p>
       </div>
     </div>
   <% end %>
 
   <div class="SlotPicker"
        data-today="<%= Date.today %>"
-       data-limit-exceeded-error="You can only select 3 choices. Go back to change your dates or continue.">
+       data-limit-exceeded-error="You can only select <%= pluralize(@booking_request.dates_required, 'choice') %>. Go back to change your dates or continue."
+       data-option-limit="<%= @booking_request.dates_required %>">
     <div class="l-column-half">
       <div class="SlotPicker-timeSlots show-only-with-js">
         <ul class="SlotPicker-days">
@@ -47,8 +48,8 @@
 
       <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
         <%= f.select(:primary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <%= f.select(:secondary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <%= f.select(:tertiary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+        <%= f.select(:secondary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) if @booking_request.dates_required > 1 %>
+        <%= f.select(:tertiary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) if @booking_request.dates_required > 2 %>
         <p>Appointment availability depends on location. You may not get your requested dates. We may need to call you to arrange an alternative date.</p>
         <p><%= f.button('Continue', type: 'submit', class: 'button t-continue') %></p>
       <% end %>
@@ -168,9 +169,11 @@
     </div>
   </div>
 
-  {{#if first}}
-  <p class="SlotPicker-slot-explainer">Choose 2 alternative dates in case your first choice isn’t available.</p>
-  {{/if}}
+  <% if @booking_request.dates_required > 1 %>
+    {{#if first}}
+    <p class="SlotPicker-slot-explainer">Choose <%= pluralize(@booking_request.dates_required - 1, 'alternative date') %> in case your first choice isn’t available.</p>
+    {{/if}}
+  <% end %>
 </script>
 
 <script type="text/html" id="DateSlider-tmplDay">

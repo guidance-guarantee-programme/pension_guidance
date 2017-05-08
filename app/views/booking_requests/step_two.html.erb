@@ -222,7 +222,7 @@
           </div>
         </div>
       </div>
-
+      <% unless @booking_request.secondary_slot.nil? || @booking_request.secondary_slot.empty? %>
       <div class="SlotPicker-choice is-chosen">
         <div class="SlotPicker-choiceInner">
           <div class="SlotPicker-position"><span>2</span></div>
@@ -233,7 +233,8 @@
           </div>
         </div>
       </div>
-
+      <% end %>
+      <% unless @booking_request.tertiary_slot.nil? || @booking_request.tertiary_slot.empty? %>
       <div class="SlotPicker-choice is-chosen">
         <div class="SlotPicker-choiceInner">
           <div class="SlotPicker-position"><span>3</span></div>
@@ -244,6 +245,7 @@
           </div>
         </div>
       </div>
+      <% end %>
     </div>
 
     <p>

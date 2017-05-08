@@ -16,8 +16,8 @@ module BookingRequests
           defined_contribution_pot_confirmed: dc_pot_as_boolean(booking_request.dc_pot),
           slots: [
             slot(1, booking_request.primary_slot),
-            slot(2, booking_request.secondary_slot),
-            slot(3, booking_request.tertiary_slot)
+            booking_request.secondary_slot.present? ? slot(2, booking_request.secondary_slot) : nil,
+            booking_request.tertiary_slot.present? ? slot(3, booking_request.tertiary_slot) : nil
           ]
         }
       }
