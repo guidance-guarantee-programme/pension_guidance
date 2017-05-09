@@ -27,6 +27,7 @@ en:
       title: What you can do with your pot
 
   layout:
+    book_a_free_appointment: Book a free appointment
     footer_support_links:
       - title: Cookies
         url: '/en/cookies'
