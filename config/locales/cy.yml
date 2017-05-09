@@ -29,6 +29,7 @@ cy:
       title: Edrych faint sydd yn eich cronfa bensiwn
 
   layout:
+    book_a_free_appointment: Trefnu apwyntiad am ddim
     footer_support_links:
       - title: Cwcis
         url: '/cy/cookies'
