@@ -5,6 +5,13 @@
   width: 100%;
   color: $color-white;
   font-size: .8em;
+
+  // govuk template javascript adds a style="display:block" to
+  // cookie banner. This detects for the style attribute and
+  // adjusts the positioning of the language link accordingly
+  #global-cookie-message[style] ~ & { // scss-lint:disable IdSelector
+    top: 40px;
+  }
 }
 
 .language-toggle__inner {
