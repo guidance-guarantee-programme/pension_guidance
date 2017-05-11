@@ -29,7 +29,10 @@
     <% if @feedback.errors.include?(:email) %>
       <span class="error-message"><%= @feedback.errors[:email].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :email, class: "t-feedback-email form-control #{'form-control-error' if @feedback.errors.include?(:email)}" %>
+
+    <div class="email-outer">
+      <%= f.text_field :email, class: "t-feedback-email form-control #{'form-control-error' if @feedback.errors.include?(:email)}", data: email_validation_data_attributes %>
+    </div>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @feedback.errors.include?(:message) %>">

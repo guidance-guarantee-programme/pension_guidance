@@ -1,0 +1,15 @@
+.button-link {
+  @include core-19;
+  background: transparent;
+  border: 0;
+  color: $color-blue-endeavour;
+  cursor: pointer;
+  display: inline;
+  padding: 0;
+  text-decoration: underline;
+  user-select: text;
+
+  &:hover {
+    color: $color-blue-curious;
+  }
+}

@@ -31,7 +31,9 @@
       <span class="error-message"><%= @telephone_appointment.errors[:email].to_sentence.capitalize %></span>
     <% end %>
 
-    <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @telephone_appointment.errors.include?(:email)}" %>
+    <div class="email-outer">
+      <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @telephone_appointment.errors.include?(:email)}", data: email_validation_data_attributes %>
+    </div>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:phone) %>">
