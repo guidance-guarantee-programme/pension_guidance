@@ -14,7 +14,6 @@ module Pages
 
     element :dc_pot_confirmed_no, '.t-dc-confirmed-pot-no', visible: false
     element :opt_out_of_market_research, '.t-opt-out-of-market-research', visible: false
-    element :accept_terms_and_conditions, '.t-accept-terms-and-conditions', visible: false
 
     element :submit, '.t-submit'
 

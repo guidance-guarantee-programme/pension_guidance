@@ -33,7 +33,6 @@ en:
     attributes:
       telephone_appointment:
         dc_pot_confirmed: Defined contribution pension
-        accept_terms_and_conditions: Terms and conditions
       booking_request_form:
         primary_slot: Slot 1
         secondary_slot: Slot 2
@@ -91,8 +90,6 @@ en:
               blank: enter a valid date of birth
             dc_pot_confirmed:
               inclusion: select an option
-            accept_terms_and_conditions:
-              inclusion: please accept
         feedback_form:
           attributes:
             name:
