@@ -89,7 +89,6 @@ When(/^I provide my personal details$/) do
   @step_two.telephone_number.set '07715 930 459'
   @step_two.memorable_word.set 'birdperson'
   @step_two.accessibility_requirements.set false
-  @step_two.opt_in.set true
 end
 
 When(/^I pass the basic eligibility requirements$/) do

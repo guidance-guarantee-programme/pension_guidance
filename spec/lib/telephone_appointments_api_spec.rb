@@ -33,9 +33,7 @@ RSpec.describe TelephoneAppointmentsApi do
         date_of_birth_year: '1920',
         date_of_birth_month: '10',
         date_of_birth_day: '23',
-        dc_pot_confirmed: 'yes',
-        opt_out_of_market_research: 'true',
-        accept_terms_and_conditions: 'true'
+        dc_pot_confirmed: 'yes'
       )
     end
 

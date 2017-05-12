@@ -57,7 +57,6 @@ class BookingRequestsController < ApplicationController
         :memorable_word,
         :date_of_birth,
         :accessibility_requirements,
-        :opt_in,
         :dc_pot
       )
   end

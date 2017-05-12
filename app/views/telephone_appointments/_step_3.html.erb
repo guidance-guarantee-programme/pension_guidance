@@ -149,40 +149,6 @@
     </fieldset>
   </div>
 
-  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:opt_out_of_market_research) %>">
-    <fieldset>
-      <legend>
-        <% if @telephone_appointment.errors.include?(:opt_in) %>
-          <span class="error-message"><%= @telephone_appointment.errors[:opt_out_of_market_research].to_sentence.capitalize %></span>
-        <% end %>
-      </legend>
-      <div class="multiple-choice">
-        <%= f.check_box :opt_out_of_market_research, class: 't-opt-out-of-market-research' %>
-        <%= f.label :opt_out_of_market_research, class: 't-opt-in' do %>
-          I don't want to be contacted in the future
-          <span class="form-hint">If you don't want to tell us about your experience of Pension Wise</span>
-        <% end %>
-      </div>
-    </fieldset>
-  </div>
-
-  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>">
-    <fieldset>
-      <legend>
-        <span class="visually-hidden">Terms and conditions</span>
-        <% if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>
-          <span class="error-message"><%= @telephone_appointment.errors[:accept_terms_and_conditions].to_sentence.capitalize %></span>
-        <% end %>
-      </legend>
-      <div class="multiple-choice">
-        <%= f.check_box :accept_terms_and_conditions, class: 't-accept-terms-and-conditions' %>
-        <%= f.label :accept_terms_and_conditions, class: 't-opt-in' do %>
-          I accept the <a href="/privacy" target="_blank">terms and conditions</a>
-        <% end %>
-      </div>
-    </fieldset>
-  </div>
-
   <div class="form-group">
     <%= f.submit 'Confirm appointment', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
   </div>

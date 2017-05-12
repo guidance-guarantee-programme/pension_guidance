@@ -11,7 +11,6 @@ RSpec.describe BookingRequests::Api, :vcr do
         memorable_word: 'meseeks',
         age_range: '55-plus',
         accessibility_requirements: false,
-        marketing_opt_in: false,
         defined_contribution_pot: true,
         slots: [
           { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },

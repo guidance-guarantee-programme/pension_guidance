@@ -15,7 +15,6 @@ RSpec.describe BookingRequestForm do
         memorable_word: 'meseeks',
         date_of_birth: '1950-01-01',
         accessibility_requirements: '0',
-        opt_in: '1',
         dc_pot: 'yes'
       )
     end
@@ -78,11 +77,6 @@ RSpec.describe BookingRequestForm do
 
       it 'requires accessibility_requirements to be true or false' do
         subject.accessibility_requirements = nil
-        expect(subject).not_to be_step_two_valid
-      end
-
-      it 'requires opt_in to be true' do
-        subject.opt_in = false
         expect(subject).not_to be_step_two_valid
       end
 
