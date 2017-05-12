@@ -40,7 +40,6 @@ en:
         tertiary_slot: Slot 3
         appointment_type: Age range
         dc_pot: Defined contribution pension
-        opt_in: Terms and conditions
         telephone_number: Phone number
       appointment_summary:
         appointment_type: Your age
@@ -71,8 +70,6 @@ en:
               blank: enter a word
             date_of_birth:
               blank: enter a valid date of birth
-            opt_in:
-              accepted: please accept
             appointment_type:
               inclusion: must be 50 or over to be eligible for guidance
             dc_pot:

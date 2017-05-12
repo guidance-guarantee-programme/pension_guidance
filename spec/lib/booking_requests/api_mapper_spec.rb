@@ -16,7 +16,6 @@ RSpec.describe BookingRequests::ApiMapper do
       memorable_word: 'meseeks',
       date_of_birth: '1951-01-01',
       accessibility_requirements: false,
-      opt_in: false,
       dc_pot: 'yes'
     )
   end
@@ -36,7 +35,7 @@ RSpec.describe BookingRequests::ApiMapper do
           age_range: '55-plus',
           date_of_birth: '1951-01-01',
           accessibility_requirements: false,
-          marketing_opt_in: false,
+          marketing_opt_in: true,
           defined_contribution_pot_confirmed: true,
           slots: [
             { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },

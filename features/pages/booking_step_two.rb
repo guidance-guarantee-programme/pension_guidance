@@ -12,7 +12,6 @@ module Pages
     element :telephone_number, '.t-telephone-number'
     element :memorable_word, '.t-memorable-word'
     element :accessibility_requirements, '.t-accessibility-requirements', visible: false
-    element :opt_in, '.t-opt-in', visible: false
 
     element :dc_pot_yes, '.t-dc-pot-1', visible: false
     element :dc_pot_no, '.t-dc-pot-2', visible: false
