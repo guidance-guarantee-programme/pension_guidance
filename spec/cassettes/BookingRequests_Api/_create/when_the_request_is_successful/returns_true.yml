@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"booking_request":{"location_id":"4c852869-9cad-43bd-b3d5-357dd377e3d3","name":"Lucius
-        Needful","email":"lucius@example.com","phone":"0208 244 3987","memorable_word":"meseeks","age_range":"55-plus","accessibility_requirements":false,"marketing_opt_in":false,"defined_contribution_pot":true,"slots":[{"priority":1,"date":"2016-01-01","from":"0900","to":"1300"},{"priority":2,"date":"2016-01-01","from":"1300","to":"1700"},{"priority":3,"date":"2016-01-02","from":"0900","to":"1300"}]}}'
+        Needful","email":"lucius@example.com","phone":"0208 244 3987","memorable_word":"meseeks","age_range":"55-plus","accessibility_requirements":false,"marketing_opt_in":true,"defined_contribution_pot":true,"slots":[{"priority":1,"date":"2016-01-01","from":"0900","to":"1300"},{"priority":2,"date":"2016-01-01","from":"1300","to":"1700"},{"priority":3,"date":"2016-01-02","from":"0900","to":"1300"}]}}'
     headers:
       User-Agent:
       - PensionWise/1.0 (hurrdurr.local; benlovell; 92031) ruby/2.3.1 (112; x86_64-darwin15)
@@ -50,6 +50,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
+    http_version:
   recorded_at: Sun, 03 Jul 2016 09:38:42 GMT
 recorded_with: VCR 2.9.3
