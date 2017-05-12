@@ -50,8 +50,6 @@ Given(/^they do not have a DC pot$/) do
   @page.date_of_birth_year.set '1920'
 
   choose('No')
-  @page.opt_out_of_market_research.set(true)
-  @page.accept_terms_and_conditions.set(true)
 
   @page.submit.click
 end
@@ -74,8 +72,6 @@ Given(/^they are below the minimum age$/) do
   @page.date_of_birth_year.set '2013'
 
   choose('Yes')
-  @page.opt_out_of_market_research.set(true)
-  @page.accept_terms_and_conditions.set(true)
 
   @page.submit.click
 end
@@ -95,8 +91,6 @@ Given(/^they are eligible for an appointment$/) do
   @page.date_of_birth_year.set '1920'
 
   choose('Yes')
-  @page.opt_out_of_market_research.set(true)
-  @page.accept_terms_and_conditions.set(true)
 
   @page.submit.click
 end
@@ -109,8 +103,6 @@ Then(/^their appointment is created$/) do
   expect(@created_telephone_appointment.phone).to eq '923902302'
   expect(@created_telephone_appointment.memorable_word).to eq 'words'
   expect(@created_telephone_appointment.date_of_birth).to eq DateTime.new(1920, 10, 23).in_time_zone
-  expect(@created_telephone_appointment.opt_out_of_market_research).to eq true
-  expect(@created_telephone_appointment.accept_terms_and_conditions).to eq true
 end
 
 Then(/^they see a confirmation of their appointment$/) do
@@ -135,8 +127,6 @@ When(/^the slot becomes unavailable while they are filling in their details$/) d
   @page.date_of_birth_year.set '1920'
 
   choose('Yes')
-  @page.opt_out_of_market_research.set(true)
-  @page.accept_terms_and_conditions.set(true)
 
   @page.submit.click
 end

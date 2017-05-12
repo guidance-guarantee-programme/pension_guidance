@@ -181,23 +181,6 @@
         </div>
       </div>
 
-      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:opt_in) %>">
-        <fieldset>
-          <legend>
-            <span class="visually-hidden">Terms and conditions</span>
-            <% if @booking_request.errors.include?(:opt_in) %>
-              <span class="error-message"><%= @booking_request.errors[:opt_in].to_sentence.capitalize %></span>
-            <% end %>
-          </legend>
-          <div class="multiple-choice">
-            <%= f.check_box :opt_in, class: 't-opt-in' %>
-            <%= f.label :opt_in do %>
-              I accept the <a href="/privacy" target="_blank">terms and conditions</a>
-            <% end %>
-          </div>
-        </fieldset>
-      </div>
-
       <div class="form-group">
         <%= f.submit 'Submit booking request', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
       </div>

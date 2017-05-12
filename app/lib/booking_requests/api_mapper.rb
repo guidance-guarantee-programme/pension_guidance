@@ -12,7 +12,6 @@ module BookingRequests
           age_range: booking_request.appointment_type,
           date_of_birth: booking_request.date_of_birth.iso8601,
           accessibility_requirements: booking_request.accessibility_requirements,
-          marketing_opt_in: booking_request.opt_in,
           defined_contribution_pot_confirmed: dc_pot_as_boolean(booking_request.dc_pot),
           slots: [
             slot(1, booking_request.primary_slot),
