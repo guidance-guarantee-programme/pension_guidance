@@ -4,7 +4,7 @@ description: Beth i'w ystyried pan rydych yn gweithio allan faint o amser bydd e
 
 # Gwneud eich arian barhau
 
-Mae gwybod pa mor hir mae angen i'ch arian barhau yn dibynnu ar pryd rydych am ddechrau ei gymryd a beth yw eich cynlluniau at y dyfodol, er enghraifft efallai y byddwch am barhau i weithio ar ôl i chi gyrraedd [oedran Pensiwn y Wladwriaeth](https://www.gov.uk/calculate-state-pension/y/age) neu ddyddiad ymddeol eich pensiwn.
+Mae gwybod pa mor hir mae angen i'ch arian barhau yn dibynnu ar pryd rydych am ddechrau ei gymryd a beth yw eich cynlluniau at y dyfodol, er enghraifft efallai y byddwch am barhau i weithio ar ôl i chi gyrraedd [oedran Pensiwn y Wladwriaeth](https://www.gov.uk/calculate-state-pension/y/age) neu ddyddiad ymddeol ar eich pensiwn.
 
 Efallai y byddwch yn penderfynu gadael eich cronfa heb ei gyffwrdd a pharhau i dalu i mewn iddo - gallai hyn roi mwy o arian i chi fyw arno dros gyfnod byrrach o amser.
 
@@ -36,9 +36,9 @@ Bydd angen i chi hefyd benderfynu pryd i gymryd eich Pensiwn y Wladwriaeth ar ô
 
 Ni allwch gymryd Pensiwn y Wladwriaeth yn gynnar ond gallwch oedi pryd y byddwch yn dechrau ei gael - gelwir hyn yn [gohirio'r Pensiwn y Wladwriaeth](https://www.gov.uk/deferring-state-pension/what-you-may-get).
 
-## Darganfod dyddiad eich ymddeol
+## Darganfod dyddiad eich ymddeoliad
 
-Gallai eich dyddiad ymddeol a ddewiswyd ddylanwadu ar pan fyddwch yn penderfynu i gymryd yr arian allan o'ch cronfa bensiwn.
+Gallai eich dyddiad ymddeol a ddewiswyd ddylanwadu ar pryd fyddwch yn penderfynu i gymryd yr arian allan o'ch cronfa bensiwn.
 
 Gallwch wirio gwaith papur eich pensiwn, er enghraifft eich [datganiadau pensiwn](/cy/pension-statements) blynyddol i gael gwybod pa oedran a dyddiad rydych wedi'i ddweud rydych eisiau ymddeol. Gofynnwch i'ch darparwr os nad ydych yn gallu ddod o hyd iddo.
 
