@@ -11,7 +11,7 @@ tags:
 
 Gallwch gael incwm o'ch cronfa bensiwn sy'n addasadwy. Mae hyn yn golygu eich bod yn cael incwm rheolaidd ond gallwch ei newid neu gymryd arian allan os ydych angen gwneud hynny.
 
-- Byddwch yn cael 25% o'ch cronfa fel swm o arian sengl, di-dreth.
+- Byddwch yn cael 25% o'ch cronfa fel un swm o arian, di-dreth.
 - Mae'r 75% arall yn cael ei fuddsoddi i roi incwm rheolaidd, trethadwy i chi.
 - Gallwch addasu'r incwm rydych yn ei gymryd a phryd y byddwch yn ei gymryd.
 
@@ -47,7 +47,7 @@ Os byddwch yn dewis yr opsiwn hwn, gallwch adael eich arian i rywun pan fyddwch 
 
 ## Sut mae incwm addasadwy yn gweithio
 
-Bydd eich darparwr yn cynnig gwahanol fuddsoddiadau gyda gwahanol risgiau i chi. Chi sy'n dewis y buddsoddiadau sy'n addas ar eich cyfer chi ac yn cael incwm wedi ymddeol oddi wrthynt. Dylech feddwl am faint rydych yn cymryd allan bob blwyddyn a [pha mor hir mae angen i'ch arian bara last](/cy/making-money-last).
+Bydd eich darparwr yn cynnig gwahanol fuddsoddiadau gyda gwahanol risgiau i chi. Chi sy'n dewis y buddsoddiadau sy'n addas ar eich cyfer chi ac yn cael incwm wedi ymddeol oddi wrthynt. Dylech feddwl am faint rydych yn cymryd allan bob blwyddyn a [pha mor hir mae angen i'ch arian barhau](/cy/making-money-last).
 
 Gall ymgynghorydd ariannol eich helpu i greu cynllun buddsoddi ar gyfer eich arian. Gallant eich cynghori ar faint y gallwch ei gymryd allan i wneud yr arian bara mor hir â phosibl. Byddant yn codi ffi arnoch am hyn.
 
@@ -58,6 +58,7 @@ Os yw eich darparwr yn mynd i'r wal, bydd y [Cynllun Iawndal Gwasanaethau Ariann
 ## Parhau i dalu mewn
 
 Os oes gennych fwy nag un gronfa bensiwn, gallwch gymryd incwm addasadwy o un a pharhau i dalu i mewn i rai eraill. Yr uchafswm y gallwch ei dalu mewn yw £4,000 y flwyddyn.
+
 Mae hyn yn cynnwys eich rhyddhad treth o 20%. Er enghraifft, er mwyn cael cyfraniad o £10,000 byddai ond yn rhaid i chi dalu £8,000.
 
 Efallai y byddwch yn dal i allu talu i mewn i'r gronfa rydych yn gymryd eich incwm addasadwy ohonni ond ni fyddwch yn cael gostyngiad treth ar y taliadau hyn.
@@ -80,6 +81,6 @@ Byddwch yn ofalus o sgiâmau pensiwn yn cysylltu â chi yn annisgwyl am fuddsodd
 - Dylech gael [cyngor ariannol](/cy/financial-advice) os oes gennych ddiddordeb mewn cael incwm addasadwy.
 - [Chwilio o gwmpas](/cy/shop-around) – gofynnwch i ddarparwyr pa gynhyrchion maent yn eu cynnig i weddu â'ch amgylchiadau.
 - Dylech gael amcangyfrifon gan ddarparwyr eraill ar faint y gallai eich cronfa dyfu a beth yw'r ffioedd - fel arfer bydd ond rhaid i chi lenwi ffurflen fer ar eu gwefan.
-- Gwnewch yn siŵr eich bod yn gwybod [faint o dreth](/cy/tax) y byddwch yn ei dalu ar unrhyw arian rydych yn bwriadu ei gymryd allan y byddwch yn ei dalu ar unrhyw arian rydych yn bwriadu ei gymryd allan.
+- Gwnewch yn siŵr eich bod yn gwybod [faint o dreth](/cy/tax) y byddwch yn ei dalu ar unrhyw arian rydych yn bwriadu ei gymryd allan.
 
 </div>
