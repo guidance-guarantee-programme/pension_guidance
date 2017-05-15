@@ -15,7 +15,7 @@ Gallwch gymysgu y ffyrdd rydych yn cymryd eich cronfa bensiwn.
 - Nid yw pob darparwr pensiwn yn cynnig yr holl opsiynau.
 - Os oes gennych nifer o gronfeydd, gallwch ddefnyddio opsiynau gwahanol ar gyfer pob cronfa, er enghraifft gadael un gronfa heb ei gyffwrdd a cymryd arian allan o un arall.
 
-^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) aapwyntiad Pension Wise am ddim.^
+^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) apwyntiad Pension Wise am ddim.^
 
 {: .info-notice--mix-options}
 $E
