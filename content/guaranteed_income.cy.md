@@ -15,9 +15,9 @@ Gallwch ddefnyddio eich cronfa bensiwn i brynu polisi yswiriant sy'n rhoi incwm 
 - Gallwch gymryd 25% o'ch cronfa fel arian parod di-dreth a phrynu blwydd-dal gyda'r 75% arall.
 - Rydych yn talu treth ar eich incwm blwydd-dal.
 
-^Os ydych ar hyn o bryd yn derbyn incwm pensiwn mae'n debygol eich bod eisoes wedi prynu blwydd-dal neu'n cymryd incwm o bensiwn cyflog terfynol neu gyfartaledd gyrfa (buddion wedi'u diffinio.^
+^Os ydych ar hyn o bryd yn derbyn incwm pensiwn mae'n debygol eich bod eisoes wedi prynu blwydd-dal neu'n cymryd incwm o bensiwn cyflog terfynol neu gyfartaledd gyrfa (buddion wedi'u diffinio).^
 
-^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) aapwyntiad Pension Wise am ddim.^
+^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) apwyntiad Pension Wise am ddim.^
 
 {::calculator id="guaranteed-income" locale="cy" /}
 
