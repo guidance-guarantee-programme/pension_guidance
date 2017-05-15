@@ -1,11 +1,11 @@
 ---
-label: Gadel y cyfan o'ch cronfa heb ei gyffwrdd
+label: Gadael y cyfan o'ch cronfa heb ei gyffwrdd
 description: Gallwch chi benderfynu pryd i gymryd arian allan o'ch cronfa bensiwn.
 tags:
   - option
 ---
 
-# Gadel y cyfan o'ch cronfa heb ei gyffwrdd
+# Gadael y cyfan o'ch cronfa heb ei gyffwrdd
 
 ## Trosolwg
 
@@ -20,7 +20,7 @@ Nid ydych yn talu treth tra bod yr arian yn aros yn eich cronfa.
 
 Gall arian y byddwch yn ei adael yn eich cronfa gael ei [drosglwyddo'n](/cy/when-you-die) ddi-dreth os byddwch yn marw cyn 75 oed.
 
-^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) aapwyntiad Pension Wise am ddim.^
+^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) apwyntiad Pension Wise am ddim.^
 
 ## Ffioedd a risg buddsoddi
 
@@ -57,6 +57,5 @@ Gofynnwch y cwestiynau canlynol i'ch darparwr pensiwn:
 - Oes gan fy nghronfa unrhyw nodweddion arbennig a allai olygu i mi gael bargen well, er enghraifft cyfradd blwydd-dal gwarantedig?
 - Oes gennych chi fanylion cyfredol y person rwyf am adael fy nghronfa iddynt (fy 'buddiolwr')?
 
-** Trefnwch [apwyntiad Pension Wise yn rhad ac am ddim](/cy/appointments?icn=book-appointment&amp;ici=bottom-leave-pot-untouched) i gael gwybod mwy am yr hyn y gallwch ei wneud gyda'ch cronfa.**
 
 </div>
