@@ -37,7 +37,7 @@ $E
 
 ### Blwydd-dal cyfalaf a ddiogelir
 
-Mae hyn hefyd yn cael ei adnabod fel blwydd-dal 'gwerth a ddiogelir'. Mae eich buddiolwr yn etifeddu lwmp swm - dyma eich cronfa lllai unrhyw daliadau blwydd-dal rydych wedi'u cymryd cyn i chi farw.
+Mae hyn hefyd yn cael ei adnabod fel blwydd-dal 'gwerth a ddiogelir'. Mae eich buddiolwr yn etifeddu lwmp swm - dyma eich cronfa llai unrhyw daliadau blwydd-dal rydych wedi'u cymryd cyn i chi farw.
 
 ### Incwm addasadwy
 
@@ -49,7 +49,7 @@ Gallwch ddewis pwy rydych eisiau i dderbyn unrhyw arian sydd ar ôl yn eich cron
 Etifeddiaeth| Eich oedran pan fyddwch yn marw | Treth maent yn ei dalu
 -|-|-|-
 Arian rydych wedi'i gymryd allan o'ch cronfa sydd heb ei ddefnyddio | Unrhyw oed | Treth Etifeddu yn seiliedig ar faint eich ystad
-Arian sy'n dal yn eich cronfa O dan 75 oed | Dim, os ydynt yn ei gymryd o fewn 2 flynedd
+Arian sy'n dal yn eich cronfa | O dan 75 oed | Dim, os ydynt yn ei gymryd o fewn 2 flynedd
 Arian sy'n dal yn eich cronfa | 75 oed neu hŷn | Treth Incwm
 Incwm addasadwy | O dan 75 oed | Dim
 Incwm addasadwy| 75 oed neu hŷn | Treth Incwm
