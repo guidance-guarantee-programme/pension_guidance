@@ -40,7 +40,7 @@ Eich cyfrifoldeb chi yw dweud wrth DWP, CThEM neu eich cyngor lleol os ydych chi
 
 Yn ogystal ag unrhyw incwm neu arian sy’n cael ei gymryd o’ch cronfa bensiwn, efallai bydd eich asedau eraill (er enghraifft cynilion a buddsoddiadau) yn cyfrif pan fyddwch yn cael eich asesu am fudd-daliadau.
 
-Darllenwch fwy am [hawl i bensiynau a budd-daliadau](https://www.gov.uk/government/publications/pension-flexibilities-and-dwp-benefits) a [Credyd Pensiwn](https://www.gov.uk/pension-credit).
+Darllenwch fwy am [hawl i bensiynau a budd-daliadau](https://www.gov.uk/government/publications/pension-flexibilities-and-dwp-benefits) a [Chredyd Pensiwn](https://www.gov.uk/credyd-pensiwn).
 
 ## Cael help gyda budd-daliadau
 
@@ -48,4 +48,4 @@ Defnyddiwch [gyfrifiannell budd-daliadau annibynnol](https://www.gov.uk/benefits
 
 Gallwch fynd i’ch [Pwynt Gwybodaeth am Wasanaeth](http://pensions-service.direct.gov.uk/en/information-points/home.asp) lleol am help a chyngor am nifer o fudd-daliadau. Mae angen i chi wneud trefniadau am gyngor wyneb yn wyneb.
 
-Gallwch hefyd gael help gan y [gwasanaeth Cyngor Ar  Bopeth](http://www.adviceguide.org.uk/england/benefits_e/benefits_older_people_ew/benefits_for_older_people.htm) a’r [Gwasanaeth Cynghori Ariannol](https://www.moneyadviceservice.org.uk/cy/articles/ble-i-gael-cymorth-a-chyngor-am-fudd-daliadau).
+Gallwch hefyd gael help gan y [gwasanaeth Cyngor Ar  Bopeth](https://www.citizensadvice.org.uk/cymraeg/benefits/older-people/benefits-for-older-people/) a’r [Gwasanaeth Cynghori Ariannol](https://www.moneyadviceservice.org.uk/cy/articles/ble-i-gael-cymorth-a-chyngor-am-fudd-daliadau).
