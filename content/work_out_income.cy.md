@@ -6,7 +6,7 @@ description: Beth i'w ystyried pan rydych yn gweithio allan faint o incwm fydd g
 
 Pan fyddwch yn cyrraedd amser ymddeol mae'n debygol y bydd eich incwm yn llai a bydd eich costau byw yn newid.
 
-I weithio allan os bydd gennych ddigon o arian i fyw arno ar ôl ymddeol, bydd angen i ch:
+I weithio allan os bydd gennych ddigon o arian i fyw arno ar ôl ymddeol, bydd angen i chi:
 
 - cael gwybod beth y byddwch yn ei gael o'ch cronfa bensiwn, Pensiwn y Wladwriaeth ac unrhyw incwm arall a allai fod gennych
 - cyfrifo'r dreth y byddwch yn ei dalu ar eich incwm wedi ymddeol
@@ -29,12 +29,12 @@ Efallai y byddwch hefyd yn cael incwm arall o:
 
 ^Gall cymryd arian o'ch cronfa bensiwn [effeithio ar eich budd-daliadau](/cy/benefits).^
 
-## Gweithio allan eich incwm wedi ymddeol
+## Gweithio allan eich incwm ar ôl ymddeol
 
 I gael syniad o faint fydd gennych ar ôl ymddeol, dilynwch y camau hyn:
 
 s1. [Gwiriwch faint sydd yn eich cronfa bensiwn](/cy/pension-pot-value) a pha bensiynau rydych wedi talu i mewn iddynt.
-s2. Ychwanegwch eich cronfa bensiwn i'ch Pensiwn y Wladwriaeth. Ffoniwch Ganolfan Pensiwn y Dyfodol ar 0345 600 4274 i gael datganiad Pensiwn y Wladwriaeth llawn.
+s2. Ychwanegwch eich cronfa bensiwn i'ch Pensiwn y Wladwriaeth. Ffoniwch Ganolfan Pensiwn y Dyfodol ar 0345 3000 168 i gael datganiad Pensiwn y Wladwriaeth llawn.
 s3. Gwiriwch pa incwm arall fydd gennych ar ôl ymddeol a sut y gallai newid.
 s4. Dewiswch [beth i'w wneud gyda'ch cronfa](/cy/pension-pot-options) ac [edrych o gwmpas](/cy/shop-around) i gael dyfynbrisiau gan ddarparwyr.
 s5. Tynnwch allan y [dreth rydych yn ei dalu](/cy/tax).
@@ -98,7 +98,7 @@ Efallai y byddwch yn talu mwy am:
 - biliau ynni a dŵr - efallai y byddwch yn treulio mwy o amser gartref
 - [costau gofal](/cy/care-costs)
 
-## Cynyddu eich incwm wedi ymddeol
+## Cynyddu eich incwm ar ôl ymddeol
 
 Os nad ydych yn meddwl y bydd gennych ddigon o arian ar gyfer eich ymddeoliad, gallech dalu mwy i mewn i'ch cronfa nawr, cymryd eich cronfa'n hwyrach ymlaen neu oedi cymryd Pensiwn y Wladwriaeth.
 
