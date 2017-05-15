@@ -16,7 +16,7 @@ Gallwch gymryd eich cronfa bensiwn cyfan fel arian parod.
 
 Rydych yn talu treth pan fyddwch yn cymryd arian allan o'ch cronfa. Mae hyn oherwydd pan fyddwch chi'n talu i mewn i'ch pensiwn rydych yn cael gostyngiad treth ar eich cyfraniadau.
 
-^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) aapwyntiad Pension Wise am ddim.^
+^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) apwyntiad Pension Wise am ddim.^
 
 {::calculator id="take-whole-pot" locale="cy" /}
 
