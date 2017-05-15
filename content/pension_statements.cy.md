@@ -1,35 +1,38 @@
 ---
-description: Mae eich datganiad pensiwn yn dangos y math o bensiwn sydd gennych, faint sydd yn eich cronfa ac os oes gan eich pensiwn unrhyw nodweddion arbennig.
+description: Mae eich datganiad pensiwn yn dangos y math o bensiwn sydd gennych, faint sydd yn eich cronfa ac os oes gan eich pensiwn unrhyw nodweddion arbennig
 ---
 
 # Deall eich datganiad pensiwn
 
 Fel arfer, byddwch yn cael un datganiad pensiwn y flwyddyn - efallai y bydd eich darparwr yn galw hyn eich datganiad blynyddol.
 
-Mae eich datganiad yn dangos faint sydd yn eich cronfa ac fel arfer amcangyfrif o faint y gallech ei gael pan fyddwch yn dechrau cymryd arian ohono.
+Mae eich datganiad yn dangos:
 
-^Bydd gwybod beth sydd yn eich datganiad pensiwn yn helpu pan fyddwch yn dod i [drefnu apwyntiad am ddim](/cy/appointments) gyda ymgynghorydd arbenigol Pension Wise.^
+ - faint sydd yn eich cronfa
+ - amcangyfrif o faint y gallech ei gael pan fyddwch yn dechrau cymryd arian
+ - os oes gan eich pensiwn unrhyw nodweddion arbennig, er enghraifft cyfradd blwydd-dal gwarantedig
+ - eich 'oedran ymddeol a ddewiswyd' (yr oedran roeddech wedi'i gytuno gyda'ch darparwr i ymddeol)
+ - ‘gwerth trosglwyddo’ eich cronfa – y swm y byddech yn ei gael os byddech yn symud darparwr neu'n cyfnewid eich cronfa gyfan am arian
+ 
+## Eich math o bensiwn
+ 
+Dylai eich datganiad ddweud wrthych os oes gennych bensiwn cyfraniadau wedi'u diffinio neu fuddion wedi'u diffinio – neu gallwch [edrych pa fath o bensiwn sydd gennych](/pension-type-tool).
 
-Dylai eich datganiad ddweud wrthych eich [math o bensiwn](/cy/pension-types) – cyfraniadau wedi'u diffinio neu fuddion wedi'u diffinio. Gall hefyd ddangos os oes gan eich pensiwn unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig.
-Dylai hefyd gynnwys eich 'oedran ymddeol a ddewiswyd' (yr oedran roeddech wedi'i gytuno gyda'ch darparwr i ymddeol).
+Os yw eich datganiad yn dangos  ‘cyfanswm y cynllun’ neu ‘gwerth y gronfa’, mae'n debyg bod gennych gynllun pensiwn cyfraniadau wedi'u diffinio.
+
+^Gallwch [drefnu apwyntiad Pension Wise](/appointments) os oes gennych bensiwn cyfraniadau wedi'u diffinio.^
+
+Os yw'n dangos gwerth y pensiwn ar ymddeoliad sy'n gysylltiedig â'ch cyflog a hyd y gwasanaeth gyda chyflogwr, mae'n debygol fod gennych bensiwn buddion wedi'u diffinio (cyflog terfynol neu gyfartaledd gyrfa).
+
+^Gallwch gael help gyda phensiynau cyflog terfynol a chyfartaledd gyrfa (buddion wedi'u diffinio) gan y [Gwasanaeth Cynghori ar Bensiynau](http://www.pensionsadvisoryservice.org.uk)^
+
+Efallai bydd eich datganiad yn ddefnyddio'r geiriau, 'cynllun' neu 'polisi' – mae hyn yn ffordd eich darparwr o ddisgrifio eich pensiwn.
 
 ## Pensiwn y Wladwriaeth
 
 Rydych yn cael datganiad [Pensiwn y Wladwriaeth](https://www.gov.uk/state-pension-statement) gan y llywodraeth.
 
 Darllenwch fwy am beth sydd yn eich [datganiad Pensiwn y Wladwriaeth](https://www.gov.uk/government/publications/your-state-pension-statement-explained-dwp040) ar GOV.UK.
-
-## Beth sydd yn eich cronfa a'ch math o bensiwn
-
-Os yw eich datganiad yn dangos 'gynllun yn ei gyfanswm' neu 'gwerth y gronfa', mae'n debygol bod gennych bensiwn cyfraniadau wedi'u diffinio. Mae hyn yn golygu y gallwch drefnu apwyntiad Pension Wise a chael arweiniad personol ar yr hyn y gallwch ei wneud gyda'ch cronfa. Os yw'n dangos gwerth y pensiwn ar ymddeoliad sy'n gysylltiedig â'ch cyflog a hyd y gwasanaeth gyda chyflogwr, mae eich math o bensiwn yn debygol o fod yn gyflog terfynol neu gyfartaledd gyrfa (buddion wedi'u diffinio).
-
-^Gallwch gael help gyda phensiynau cyflog terfynol a chyfartaledd gyrfa (buddion wedi'u diffinio) gan y [Gwasanaeth Cynghori ar Bensiynau](http://www.pensionsadvisoryservice.org.uk)^
-
-Efallai bydd eich datganiad yn ddefnyddio'r geiriau, 'cynllun' neu 'polisi'  - mae hyn yn ffordd eich darparwr o ddisgrifio eich pensiwn.
-
-### Gwerth trosglwyddo
-
-Bydd eich datganiad hefyd fel arfer yn dangos  'gwerth trosglwyddo' eich cronfa. Dyma'r swm y byddech yn ei gael os byddech yn symud darparwr neu'n cyfnewid eich cronfa gyfan am arian.
 
 ## Nodweddion arbennig
 
@@ -43,14 +46,15 @@ Efallai y byddwch hefyd yn cael gwybodaeth am nodweddion arbennig yn y dogfennau
 
 Chwiliwch am 'cyfradd blwydd-dal gwarantedig' yn eich datganiad - yn enwedig os dechreuoch eich pensiwn yn ystod yr 1980au neu'r 1990au. Mae hyn yn golygu y bydd eich pensiwn yn talu cyfradd sefydlog o incwm. Byddai'r swm wedi cael ei osod pan ddechreuoch eich pensiwn a gall gynnig gwerth gwell na blwydd-daliadau sydd ar gael mewn mannau eraill.
 
-Nid yw hyn yr un peth â blwydd-dal 'cyfnod gwarantedig' - un sy'n stopio talu ar ddiwedd tymor penodol, ee 10 mlynedd.
+Nid yw hyn yr un peth â blwydd-dal 'cyfnod gwarantedig' - un sy'n stopio talu ar ddiwedd tymor penodol, er enghraifft 10 mlynedd.
 
-### Gostyngiadau gwerth marchnad neu addasiadau
+### Gostyngiadau neu addasiadau gwerth marchnad
 
 Os yw eich datganiad yn dangos bod eich pensiwn yn cael ei fuddsoddi mewn cronfa 'gydag elw', gallai olygu bod ganddi 'ostyngiad gwerth marchnad' neu 'addasiad'. Mae hyn yn golygu bod y swm yn eich cronfa yn cael ei ostwng o dan rai amgylchiadau.
 
 ### Ffioedd gadael yn gynnar
 
-Gall edrych ar werth trosglwyddo eich cronfa helpu i weithio allan os oes gan eich pensiwn 'ffi gadael yn gynnar'.
+Gall edrych ar werth trosglwyddo eich cronfa helpu i weithio allan os oes gan eich pensiwn 'ffi gadael yn gynnar'. 
 
 Os yw'r gwerth trosglwyddo yr un fath â gwerth eich cronfa, mae'n annhebygol y byddwch yn gorfod talu ffi pan fyddwch yn trosglwyddo. Os yw'r gwerth trosglwyddo yn is na chyfanswm gwerth eich cronfa, efallai y codir ffi gadael yn gynnar.
+
