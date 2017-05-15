@@ -6,6 +6,7 @@ module Pages
     element :first_name, '.t-first-name'
     element :last_name, '.t-last-name'
     element :email, '.t-email'
+    element :email_suggestion, '.t-suggestion'
     element :date_of_birth_day, '.t-date-of-birth-day'
     element :date_of_birth_month, '.t-date-of-birth-month'
     element :date_of_birth_year, '.t-date-of-birth-year'

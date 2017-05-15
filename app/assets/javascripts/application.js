@@ -1,4 +1,5 @@
 //= require jquery/dist/jquery.min.js
+//= require mailgun-validator-jquery
 //= require pubsub.js
 //= require govuk_toolkit
 //= stub govuk/selection-buttons
@@ -12,6 +13,7 @@
 //= require components/Slider
 //= require components/SlotPicker
 //= require components/SlotPickerSingleTime
+//= require components/EmailValidation
 
 PWPG.clickTracker.init();
 PWPG.calculators.init();
@@ -36,6 +38,14 @@ $('[data-slot-picker-single-time]').each(function() {
     $form = $('.js-day-picker-form');
 
   new PWPG.SlotPickerSingleTime($component, $form);
+});
+
+$('[data-email-validation]').each(function() {
+  'use strict';
+
+  var $component = $(this);
+
+  new PWPG.EmailValidation($component);
 });
 
 new PWPG.Navigation();

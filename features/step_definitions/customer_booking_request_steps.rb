@@ -91,6 +91,41 @@ When(/^I provide my personal details$/) do
   @step_two.accessibility_requirements.set false
 end
 
+When(/^I enter an email address with a typo$/) do
+  with_mock_mailgun_response(
+    is_valid: false,
+    address: 'morty.sanchez@gmall.com',
+    parts: {
+      display_name: nil,
+      local_part: 'morty.sanchez',
+      domain: 'gmall.com'
+    },
+    did_you_mean: 'morty.sanchez@gmail.com'
+  )
+
+  @step_two = Pages::BookingStepTwo.new
+  expect(@step_two).to be_displayed
+
+  @step_two.email.set 'morty.sanchez@gmall.com'
+  @step_two.telephone_number.click
+end
+
+When(/^I enter an invalid email address$/) do
+  with_mock_mailgun_response(
+    is_valid: false,
+    address: 'morty.sanchez@totallyinvalid',
+    parts: {
+      display_name: nil,
+      local_part: 'morty.sanchez',
+      domain: 'totallyinvalid'
+    },
+    did_you_mean: nil
+  )
+
+  @step_two.email.set 'morty.sanchez@totallyinvalid'
+  @step_two.telephone_number.click
+end
+
 When(/^I pass the basic eligibility requirements$/) do
   @step_two.date_of_birth_day.set '01'
   @step_two.date_of_birth_month.set '01'
@@ -213,6 +248,14 @@ end
 
 Then(/^I see my feedback was sent$/) do
   expect(page).to have_content('Thank you for your help')
+end
+
+Then(/^I see a correction suggestion$/) do
+  expect(@step_two.email_suggestion).to have_content('morty.sanchez@gmail.com')
+end
+
+Then(/^I see a warning of an invalid email address$/) do
+  expect(@step_two).to have_content("That doesn't look like a valid address")
 end
 
 def with_booking_locations

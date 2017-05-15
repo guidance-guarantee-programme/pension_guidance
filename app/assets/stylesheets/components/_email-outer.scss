@@ -1,0 +1,14 @@
+.email-outer {
+  position: relative;
+
+  .ajax-loader {
+    position: absolute;
+    top: 5px;
+    right: 2%;
+
+    @include media(tablet) {
+      right: 51%;
+      top: 8px;
+    }
+  }
+}

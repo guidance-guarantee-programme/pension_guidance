@@ -20,6 +20,14 @@ Scenario: Customer books a telephone appointment but the slot becomes unavailabl
   Then their appointment is created
   And they see a confirmation of their appointment
 
+@javascript @mock_mailgun
+Scenario: Eligible customer makes mistakes in their email address
+  Given the customer wants to book a phone appointment
+  When they fill in an email address with a typo
+  Then they see a message suggesting a correct email address
+  When they fill in an invalid email address
+  Then they see a message saying the email address is invalid
+
 Scenario: Eligible customer books a telephone appointment
   Given the customer wants to book a phone appointment
   When they are eligible for an appointment

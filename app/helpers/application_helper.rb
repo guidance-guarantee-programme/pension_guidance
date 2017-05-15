@@ -14,4 +14,12 @@ module ApplicationHelper
       concat link_to(guide.label, guide.url, class: 't-guide-link')
     end
   end
+
+  def email_validation_data_attributes
+    {
+      'email-validation': true,
+      api_key: 'pubkey-b37c931b1fcef90bf2d83b7cdfd6df39',
+      api_host: Rails.env.test? ? 'http://localhost:9293' : nil
+    }
+  end
 end
