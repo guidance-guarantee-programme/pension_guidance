@@ -27,7 +27,7 @@ Gwyliwch allan os yw unigolyn neu gwmni yn:
 * eich annog i gymryd lwmp swm mawr, neu'ch cronfa bensiwn i gyd ar yr un pryd, ac i adael iddynt fuddsoddi hynny ar eich rhan
 * gofyn i chi drosglwyddo eich arian yn gyflym, hyd yn oed anfon dogfennau i chi drwy negesydd - peidiwch byth a gwneud penderfyniad ar frys am eich arian pensiwn
 * defnyddio geiriau fel 'rhyddhad pensiwn', 'benthyciad', 'bwlch', 'adolygiad pensiwn am ddim' neu 'fuddsoddiad unwaith ac am byth'
-* cynnig buddsoddiad i chi sydd wedi'i ddisgrifio fel 'unigryw', 'tramor', 'amgylcheddol gyfeillgar', 'moesegol' neu mewn diwydiant 'newydd'
+* cynnig buddsoddiad i chi sydd wedi'i ddisgrifio fel 'unigryw', 'tramor', 'cyfeillgar i'r amgylchedd', 'moesegol' neu mewn diwydiant 'newydd'
 
 Darllenwch [enghreifftiau o sgiâmau pensiwn go iawn](http://www.thepensionsregulator.gov.uk/docs/pension-scams-booklet-members.pdf). (PDF, 1MB, 5 tudalen)
 
@@ -41,7 +41,7 @@ Dylech bob amser ffonio eich darparwr os ydych yn derbyn e-bost yn dweud eu bod 
 
 Edrychwch i weld os yw'r person neu gwmni sy'n cysylltu â chi ar y [Gofrestr Gwasanaethau Ariannol](http://www.fca.org.uk/register) neu ffoniwch yr Awdurdod Ymddygiad Ariannol ar 0800 111 6768. Os byddwch yn galw person neu'r cwmni'n ôl, defnyddiwch y rhif ffôn a restrir ar y Gofrestr Gwasanaethau Ariannol.
 
-Efallai bydd rhywun yn cysylltu â chi sy'n honni i fod yn ddarparwr pensiwn, ymymgynghorydd ariannol neu o'r llywodraeth.
+Efallai bydd rhywun yn cysylltu â chi sy'n honni i fod yn ddarparwr pensiwn, ymgynghorydd ariannol neu o'r llywodraeth.
 
 %Os oes unrhyw un yn eich galw ar hap yn honni eu bod o'r llywodraeth ac yn gofyn am eich manylion personol neu ariannol, peidiwch  â'u datgelu iddynt. Rhowch y ffôn i lawr os oes angen.%
 
@@ -49,7 +49,7 @@ Darllenwch fwy am [osgoi a hysbysu am sgiâmau ar y rhyngrwyd a gwe-rwydo](https
 
 ## Os ydych wedi cael eich targedu
 
-Os ydych yn meddwl eich bod wedi dioddef twyll pensiwn, ffoniwch Action Fraud ar 0300 123 2040 neu ddefnyddiwch eu [offeryn hysbysu ar-lein](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime).
+Os ydych yn meddwl eich bod wedi dioddef twyll pensiwn, ffoniwch Action Fraud ar 0300 123 2040 neu defnyddiwch eu [offeryn hysbysu ar-lein](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime).
 
 Siaradwch â'r Gwasanaeth Cynghori ar Bensiynau os oes rhywun wedi cysylltu â chi'n annisgwyl am eich pensiwn.
 
