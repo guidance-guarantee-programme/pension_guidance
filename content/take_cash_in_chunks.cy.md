@@ -18,7 +18,7 @@ Mae rhai darparwyr pensiwn yn codi ffi i gymryd arian allan.
 
 Nid yw pob darparwr yn cynnig yr opsiwn hwn. Os nad yw eich darparwr presennol yn ei gynnig, gallwch drosglwyddo eich cronfa i ddarparwr arall ond efallai y bydd rhaid i chi dalu ffi.
 
-^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) aapwyntiad Pension Wise am ddim.^
+^Darganfyddwch [os allwch drefnu](/cy/pension-type-tool) apwyntiad Pension Wise am ddim.^
 
 {::calculator id="take-cash-in-chunks" locale="cy" /}
 
