@@ -11,7 +11,7 @@ Mae 6 ffordd y gallwch gymryd eich cronfa bensiwn cyfraniadau wedi'u diffinio.
 <div class="options-overview">
   <div class="options-overview__item">
     <div class="circle circle--s circle--leave-pot-untouched"></div>
-    <h2>Gadel y cyfan o'ch cronfa heb ei gyffwrdd</h2>
+    <h2>Gadael y cyfan o'ch cronfa heb ei gyffwrdd</h2>
     <p>Nid oes rhaid i chi ddechrau cymryd arian allan o'ch cronfa bensiwn pan fyddwch yn cyrraedd eich 'oedran ymddeol a ddewiswyd'. Gallwch adael eich arian wedi'i fuddsoddi yn eich cronfa hyd nes y byddwch ei angen.</p>
     <p><a class="t-option" href="/cy/leave-pot-untouched">Mwy am adael y cyfan o'ch cronfa heb ei gyffwrdd</a></p>
   </div>
@@ -30,7 +30,7 @@ Mae 6 ffordd y gallwch gymryd eich cronfa bensiwn cyfraniadau wedi'u diffinio.
   <div class="options-overview__item">
     <div class="circle circle--s circle--take-cash-in-chunks"></div>
     <h2>Cymryd arian allan fesul tipyn</h2>
-    <p>Gallwch gymryd symiau llai o arian allan o'ch cronfa hyd nes y byddwch yn rhedeg allan. Nid yw eich 25% swm di-dreth yn cael ei dalu mewn lwmp swm - rydych yn ei gael dros gyfnod o amser.</p>
+    <p>Gallwch gymryd symiau llai o arian allan o'ch cronfa hyd nes y byddwch yn rhedeg allan. Nid yw eich swm di-dreth 25% yn cael ei dalu mewn lwmp swm - rydych yn ei gael dros gyfnod o amser.</p>
     <p><a class="t-option" href="/cy/take-cash-in-chunks">Mwy am gymryd arian allan fesul tipyn</a></p>
   </div>
   <div class="options-overview__item">
