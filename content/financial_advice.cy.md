@@ -30,7 +30,7 @@ Dylech hefyd ystyried siarad ag ymgynghorydd ariannol os ydych am wneud un o'r r
 
 Gwiriwch bod eich ymgynghorydd wedi'i [awdurdodi gan yr FCA](https://register.fca.org.uk/).
 
-Chwiliwch [cyfeiriadur ymgynghorydd ymddeol](https://directory.moneyadviceservice.org.uk/en) y Gwasanaeth Cynghori Ariannol i ddod o hyd i ymgynghorydd.
+Chwiliwch [cyfeiriadur ymgynghorydd ymddeol](https://directory.moneyadviceservice.org.uk/cy) y Gwasanaeth Cynghori Ariannol i ddod o hyd i ymgynghorydd.
 
 ### Ymgynghorwyr annibynnol neu gyfyngedig
 
