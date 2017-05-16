@@ -1,7 +1,6 @@
 .l-home {
   overflow: hidden;
-  padding-bottom: 1em;
-
+  padding-bottom: 16px;
   // scss-lint:disable IdSelector
   // from: https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_layout.scss#L7
   // Allow an ID here, this is useful as it matches the GOV.UK template skiplink
@@ -19,6 +18,7 @@
 
 .l-home-single-column-heading {
   @include bold-48();
+  margin-bottom: 0;
 
   @include media(desktop) {
     font-size: 50px;
@@ -27,7 +27,7 @@
 }
 
 .l-home-single-column-subheading {
-  @include bold-36();
+  @include bold-27();
   margin-bottom: .75em;
 }
 
@@ -36,33 +36,15 @@
   margin-top: 0;
 }
 
-.l-home-header {
-  position: relative;
-  margin-top: 19px;
-  margin-bottom: 21px;
-
-  @include media(tablet) {
-    margin-top: 25px;
-    margin-bottom: 28px;
-  }
-}
-
 .l-home-row {
   padding-top: 28px;
   padding-bottom: 14px;
 }
 
-.l-home-row-accent__content,
-.l-home-row-callout__content {
-  padding-top: 28px;
-  padding-bottom: 14px;
-}
-
-.l-home-row-accent__column,
-.l-home-row-callout__column {
+.l-home-row-accent__column {
   @include grid-column(1/1);
 
-  @include media(desktop) {
+  @include media(tablet) {
     @include grid-column(1/2);
   }
 }
@@ -77,6 +59,10 @@
 }
 
 .l-home-row-accent__content {
+  padding-bottom: 14px;
+  padding-top: 28px;
+  position: relative;
+
   @include media(desktop) {
     background-image: image-url("home/dogs_banner.png");
     background-position: 107% 24%;
@@ -85,207 +71,23 @@
   }
 }
 
-.l-home-row--callout {
-  @extend %outdent-to-full-width;
-  background: $home-row-callout-background;
-  background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
-  padding: 0;
-}
-
-.l-home-row-callout__content {
-  color: $color-white;
-
-  @include media(desktop) {
-    background-image: image-url("home/dogs_poster.png");
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    padding-top: 6%;
-    padding-bottom: 6%;
-
-    .lte-ie8 & {
-      background-image: none;
-    }
-  }
-
-  a:link,
-  a:visited {
-    color: $color-white;
+.l-home-central-column {
+  @include media(tablet) {
+    border-left: 1px solid $color-grey-hit;
+    border-right: 1px solid $color-grey-hit;
   }
 }
 
-.l-home-statistics {
-  clear: both;
-  margin-top: 0;
-  padding-top: 0;
-  color: $color-white;
-}
-
-.l-home-intro-container {
-  position: relative;
-}
-
-.l-home-folks {
-  display: none;
+.l-home-right-column {
+  margin-top: 20px;
 
   @include media(tablet) {
-    display: block;
-    max-width: 100%;
-    max-height: 207px;
-    position: absolute;
-    top: -35px;
+    border-left: 1px solid $color-grey-hit;
+    margin-top: 0;
   }
 }
 
-.l-home-signposts {
-  display: none;
-
-  @include media(tablet) {
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
+.l-home-row-options--alt {
+  background: $grey-3;
 }
 
-.l-home-options {
-  padding-top: 0;
-}
-
-.l-home-options__option-container {
-  @include media(tablet) {
-    @include grid-column(1/3);
-  }
-
-  @include media(desktop) {
-    @include grid-column(1/5);
-  }
-}
-
-.l-home-options__option-container--full-width {
-  clear: both;
-  width: 100%;
-}
-
-.l-home-options__text {
-  display: inline-block;
-  font-weight: bold;
-  position: relative;
-  margin-left: 21px;
-  text-decoration: underline;
-
-  @include media(tablet) {
-    margin-left: 5px;
-    top: -19px;
-
-    .l-home-options__link--mix-options & {
-      margin-left: 10px;
-    }
-  }
-}
-
-.l-home-options__link {
-  display: block;
-}
-
-.l-home-options__link--mix-options {
-  @include media(tablet) {
-    display: inline-block;
-
-    .circle {
-      display: inline-block;
-      top: -17px;
-    }
-  }
-}
-
-.l-home-options__circle {
-  float: left;
-
-  @include media(tablet) {
-    float: none;
-    position: relative;
-    left: 3px;
-    top: -25px;
-  }
-}
-
-.l-home-options__option {
-  padding: 12px 14px;
-  margin-bottom: 8px;
-
-  @include media(tablet) {
-    padding: 45px 12px 0;
-    min-height: 90px;
-  }
-}
-
-.l-home-options__option--leave-pot-untouched {
-  background: transparentize($color-option-leave-pot-untouched, .7);
-
-  &:hover {
-    background: transparentize($color-option-leave-pot-untouched, .8);
-  }
-}
-
-.l-home-options__option--guaranteed-income {
-  background: transparentize($color-option-guaranteed-income, .7);
-
-  &:hover {
-    background: transparentize($color-option-guaranteed-income, .8);
-  }
-}
-
-.l-home-options__option--adjustable-income {
-  background: transparentize($color-option-adjustable-income, .8);
-
-  &:hover {
-    background: transparentize($color-option-adjustable-income, .7);
-  }
-}
-
-.l-home-options__option--take-cash-in-chunks {
-  background: transparentize($color-option-take-cash, .7);
-
-  &:hover {
-    background: transparentize($color-option-take-cash, .8);
-  }
-}
-
-.l-home-options__option--take-whole-pot {
-  background: transparentize($color-option-take-whole-pot, .7);
-
-  &:hover {
-    background: transparentize($color-option-take-whole-pot, .8);
-  }
-}
-
-.l-home-options__option--mix-options {
-  background: transparentize($color-option-mix-options, .7);
-  margin-bottom: 24px;
-
-  @include media(tablet) {
-    background: none;
-    margin: 17px 0 0;
-    min-height: 0;
-    padding: 15px 0 0;
-  }
-
-  &:hover {
-    background: transparentize($color-option-mix-options, .8);
-
-    @include media(tablet) {
-      background: none;
-    }
-  }
-}
-
-.l-home-appointment {
-  display: none;
-
-  @include media(tablet) {
-    display: block;
-    margin-bottom: 22px;
-    max-height: 260px;
-    max-width: 260px;
-  }
-}

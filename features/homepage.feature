@@ -5,4 +5,5 @@ Feature: Homepage
 
   Scenario: Visit homepage
     When I visit the homepage
-    Then I see links to the different pension options
+    Then I see information about the service
+    And I see a link to book a free appointment
