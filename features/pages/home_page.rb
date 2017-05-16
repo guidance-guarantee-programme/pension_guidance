@@ -7,6 +7,9 @@ module Pages
     elements :links, '.t-article-links'
     element :appointment_summary_link, '.t-appointment-summary-link'
 
-    elements :options, '.t-option'
+    element :book, '.t-book'
+    element :who, '.t-who'
+    element :what, '.t-what'
+    element :how, '.t-how'
   end
 end
