@@ -10,15 +10,19 @@
   }
 
   .l-home-row--callout {
+    @extend %outdent-to-full-width;
+    background: $home-row-callout-background;
     background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
-  }
-
-  .l-marketing-row--flip {
-    background-image: linear-gradient(to bottom, $color-dogs-background-light 0%, $color-dogs-background-dark 100%);
+    padding: 0;
   }
 
   .l-home-row-callout__content {
+    color: $color-white;
+    padding-top: 28px;
+    padding-bottom: 14px;
+
     @include media(desktop) {
+      background-repeat: no-repeat;
       background-image: image-url("campaigns/dogs/poster.png");
       background-position: 97% 0%;
       background-size: 54%;
@@ -28,7 +32,32 @@
       @include device-pixel-ratio(2) {
         background-image: image-url("campaigns/dogs/poster-2x.png");
       }
+
+      .lte-ie8 & {
+        background-image: none;
+      }
     }
+
+    a:link,
+    a:visited {
+      color: $color-white;
+    }
+  }
+
+  .l-marketing-row--flip {
+    background-image: linear-gradient(to bottom, $color-dogs-background-light 0%, $color-dogs-background-dark 100%);
+  }
+
+  .l-home-row-callout__column {
+    @include grid-column(1/1);
+
+    @include media(desktop) {
+      @include grid-column(1/2);
+    }
+  }
+
+  .l-home-single-column-subheading {
+    @include bold-36();
   }
 }
 
