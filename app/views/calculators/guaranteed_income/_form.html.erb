@@ -9,7 +9,7 @@
   form: Calculators::GuaranteedIncomeForm,
   errors: errors if form&.invalid? %>
 
-<form action="/guaranteed-income/estimate#form" method="get">
+<form action="<%= "/#{locale}/guaranteed-income/estimate#form" %>" method="get">
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,

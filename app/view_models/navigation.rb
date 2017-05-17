@@ -2,15 +2,16 @@ class Navigation
   Item = Struct.new(:id, :label, :url, :option, :parent)
   Topic = Struct.new(:id, :label, :url, :items)
 
-  attr_accessor :taxonomy
-  private :taxonomy=
+  attr_accessor :taxonomy, :locale
+  private :taxonomy=, :locale=
 
-  def initialize(taxonomy)
+  def initialize(taxonomy, locale = I18n.locale)
     self.taxonomy = taxonomy
+    self.locale = locale
   end
 
   def topics
-    topics = parented.collect(&method(:find_topic))
+    topics = parented.collect { |n| find_topic(n) }
     topics << more_topic unless more_topic.items.empty?
     topics
   end
@@ -18,7 +19,7 @@ class Navigation
   private
 
   def find_topic(node)
-    category = CategoryDecorator.new(node.content)
+    category = CategoryDecorator.new(node.content, locale)
     guides = find_guides(node.children).reject(&:empty?)
 
     Topic.new(category.id, category.label, category.url, guides)
@@ -32,7 +33,11 @@ class Navigation
   end
 
   def find_orphan_guides(nodes)
-    nodes.reject(&:has_children?).map(&:content).map(&GuideDecorator.method(:cached_for)).map(&method(:build_item))
+    nodes
+      .reject(&:has_children?)
+      .map(&:content)
+      .map { |g| GuideDecorator.cached_for(g) }
+      .map { |g| build_item(g) }
   end
 
   def find_parented_guides(nodes)
@@ -55,7 +60,7 @@ class Navigation
   end
 
   def more_category
-    @more_category ||= CategoryDecorator.new(CategoryRepository.new.find('more'))
+    @more_category ||= CategoryDecorator.new(CategoryRepository.new.find('more'), locale)
   end
 
   def more_topic
@@ -71,6 +76,9 @@ class Navigation
   end
 
   def orphan_guides
-    @orphan_guides ||= orphans.map(&:content).map(&GuideDecorator.method(:cached_for)).map(&method(:build_item))
+    @orphan_guides ||= orphans
+                       .map(&:content)
+                       .map { |g| GuideDecorator.cached_for(g) }
+                       .map { |g| build_item(g) }
   end
 end

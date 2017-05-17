@@ -1,4 +1,6 @@
 en:
+  language_name: English
+
   pension_type_tool:
     error_title: 'Unable to submit the form'
     error: 'Select an answer'
@@ -7,6 +9,42 @@ en:
     title: '%{page_title} - Pension Wise'
     homepage:
       title: 'Pension Wise - Get to know your options'
+
+  breadcrumbs:
+    book_a_telephone_appointment:
+      title: Book a phone appointment
+    book_an_appointment:
+      slug: appointments
+      title: Book a free appointment
+    how_to_book_phone:
+      slug: book-phone
+      title: How to book a phone appointment
+    how_to_book_face_to_face:
+      slug: book-face-to-face
+      title: Find an appointment location near you
+    pension_options:
+      slug: pension-pot-options
+      title: What you can do with your pot
+
+  layout:
+    book_a_free_appointment: Book a free appointment
+    footer_support_links:
+      - title: Cookies
+        url: '/en/cookies'
+      - title: Privacy
+        url: '/en/privacy'
+      - title: Contact
+        url: '/en/contact'
+      - title: Accessibility
+        url: 'http://gov.uk/help/accessibility/'
+        options:
+          rel: external
+      - title: Customer promise
+        url: '/en/customer-promise'
+      - title: After your appointment
+        url: '/en/after-your-appointment'
+        options:
+          class: t-appointment-summary-link
 
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'

@@ -1,6 +1,6 @@
 When(/^I visit a category$/) do
   @page = Pages::Category.new
-  @page.load(slug: 'taking-your-pension-money')
+  @page.load(locale: :en, slug: 'taking-your-pension-money')
 end
 
 Then(/^the page title corresponds to the title of the category/) do

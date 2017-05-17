@@ -1,6 +1,7 @@
 RSpec.describe 'locations journey breadcrumbs', type: :controller do
-  let(:book_an_appointment) { Breadcrumb.book_an_appointment.title }
-  let(:how_to_book) { Breadcrumb.how_to_book_face_to_face.title }
+  let(:locale) { :en }
+  let(:book_an_appointment) { Breadcrumb.book_an_appointment(locale).title }
+  let(:how_to_book) { Breadcrumb.how_to_book_face_to_face(locale).title }
 
   subject(:breadcrumbs) { assigns(:breadcrumbs).map(&:title) }
 
@@ -8,7 +9,7 @@ RSpec.describe 'locations journey breadcrumbs', type: :controller do
     let(:guide) { '' }
 
     before do
-      get :show, params: { id: guide }
+      get :show, params: { locale: locale, id: guide }
     end
 
     context 'book a free appointment' do
@@ -34,7 +35,7 @@ RSpec.describe 'locations journey breadcrumbs', type: :controller do
 
     context 'find a face-to-face appointment location' do
       before do
-        get :index
+        get :index, params: { locale: locale }
       end
 
       it { is_expected.to eq([book_an_appointment, how_to_book]) }
@@ -42,7 +43,7 @@ RSpec.describe 'locations journey breadcrumbs', type: :controller do
 
     context 'appointment location details' do
       before do
-        get :show, params: { id: location_id }
+        get :show, params: { locale: locale, id: location_id }
       end
 
       it { is_expected.to eq([book_an_appointment, how_to_book]) }

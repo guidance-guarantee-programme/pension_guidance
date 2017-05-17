@@ -38,7 +38,7 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
   end
 
   def enter_valid_data
-    visit '/take-whole-pot'
+    visit '/en/take-whole-pot'
 
     fill_in 'pot', with: pot
     fill_in 'income', with: income

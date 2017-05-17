@@ -1,6 +1,6 @@
 When(/^I visit the digital appointment summary generator$/) do
   @page = Pages::AppointmentSummaryGenerator.new
-  @page.load
+  @page.load(locale: :en)
 end
 
 When(/^I select (.*) as my age range$/) do |age|
@@ -27,7 +27,7 @@ end
 
 Given(/^I generate a valid appointment summary$/) do
   @page = Pages::AppointmentSummaryGenerator.new
-  @page.load
+  @page.load(locale: :en)
 
   generator = @page.generator
   generator.appointment_type_standard.click
@@ -71,7 +71,7 @@ end
 
 Given(/^I want extra information about "([^"]*)"$/) do |topic|
   @page = Pages::AppointmentSummaryGenerator.new
-  @page.load
+  @page.load(locale: :en)
 
   generator = @page.generator
 

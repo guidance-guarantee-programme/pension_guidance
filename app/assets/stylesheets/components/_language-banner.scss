@@ -1,0 +1,13 @@
+.language-banner {
+  box-sizing: border-box;
+  color: $color-white;
+  padding: 0;
+  background: $govuk-blue;
+  overflow: hidden;
+}
+
+.language-banner__text {
+  @include core-16;
+  clear: both;
+  margin: 8px 0;
+}

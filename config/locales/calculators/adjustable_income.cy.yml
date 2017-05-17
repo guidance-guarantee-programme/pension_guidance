@@ -1,0 +1,61 @@
+cy:
+  activemodel:
+    attributes:
+      calculators/adjustable_income_form:
+        pot: 'Faint sydd yn eich cronfa?'
+        age: 'Pa oedran ydych chi eisiau cymryd eich arian?'
+    errors:
+      models:
+        calculators/adjustable_income_form:
+          attributes:
+            pot:
+              blank: rhowch ffigwr
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than: mae'n rhaid i'r swm fod o leiaf £1
+              less_than: mae'n rhaid i'r swm fod yn llai na £5,000,000
+            desired_monthly_income:
+              blank: rhowch ffigwr
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than_or_equal_to: mae'n rhaid i'r swm fod yn £0 neu fwy
+              less_than: mae'n rhaid i'r swm fod yn llai na gwerth eich cronfa bensiwn
+              greater_than: mae'n rhaid i'r swm fod yn fwy na sero
+            age:
+              blank: rhowch ffigwr
+              not_a_number: defnyddiwch rifau yn unig
+              greater_than_or_equal_to: rhowch oed dros 55
+
+  calculators:
+    adjustable_income:
+      estimate:
+        summary:
+          html: |
+            Yn seiliedig ar beth rydych wedi'i ddweud wrthym, os byddwch yn defnyddio eich cronfa bensiwn %{pot_value} i gymryd incwm addasiadwy, gallech gael:
+
+            <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} yn ddi-dreth</strong>
+
+            ac
+
+            <strong class="calculator__estimate__number">
+              incwm misol o <span class="calculator__highlight">%{drawdown_amount}</span>
+              hyd nes rydych yn <span class="t-calculator-age-for-desired-income calculator__highlight">%{until_age}</span>
+            </strong>
+        slider_label: 'neu rhowch gynnig ar incwm misol gwahanol:'
+        notes:
+          html: |
+            <li class="t-calculator-life-expectancy-income">
+              Y disgwyliad oes ar gyfartaledd i'r rhai sy'n 55 oed yw canol i ddiwedd eu 80au. Gallai incwm misol o %{monthly_income}
+              barhau tan rydych yn %{until_age} oed, er y gallech fyw'n hirach.
+            </li>
+            <li>Gallech dalu Treth Incwm ar eich incwm misol.</li>
+            <li>
+              Mae hwn yn amcangyfrif yn seiliedig ar y swm yn eich cronfa yn tyfu ar gyfradd o tua
+              %{growth_rate}% y flwyddyn — gallai hyn amrywio.
+            </li>
+            <li>
+              Os ydych yn yr Alban bydd eich cyfrifiad yn wahannol.
+            </li>
+
+      form:
+        heading: Amcangyfrif o faint allech chi ei gael
+      show:
+        back: Yn ôl i'r disgrifiad

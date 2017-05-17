@@ -43,7 +43,7 @@ RSpec.feature 'Take Cash In Chunks analytics', type: :feature, js: true do
   end
 
   def enter_valid_data
-    visit '/take-cash-in-chunks'
+    visit '/en/take-cash-in-chunks'
 
     fill_in 'pot', with: pot
     fill_in 'income', with: income

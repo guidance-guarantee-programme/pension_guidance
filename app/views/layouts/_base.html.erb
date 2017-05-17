@@ -1,3 +1,5 @@
+<% content_for :html_lang, default_locale? || !content_lang_matches_locale? ? I18n.default_locale : I18n.locale %>
+
 <% content_for :head do %>
   <%= csrf_meta_tag %>
 
@@ -9,6 +11,12 @@
   <%= yield :override_styles %>
 
   <%= stylesheet_link_tag 'pensions-guidance-print', media: 'print' %>
+
+  <% if params[:locale] %>
+    <% I18n.available_locales.each do |alternate_locale| %>
+      <link href="<%= url_for(params.permit(:id, :ici, :icn, :locale).merge(locale: alternate_locale, only_path: false)) %>" hreflang="<%= alternate_locale %>-GB" rel="alternate" />
+    <% end %>
+  <% end %>
 
   <% unless content_for?(:canonical_path) %>
     <%= canonical_tag rescue nil %>
@@ -40,25 +48,27 @@
 
 
 <% content_for :content do %>
+  <% if params[:locale] %>
+    <%= render 'components/language_toggle' %>
+  <% end %>
+
   <%= yield %>
 <% end %>
 
 <% content_for :cookie_message do %>
-  <p>Pension Wise uses cookies to make the site simpler. <a href="/cookies">Find out more about
-    cookies</a></p>
+  <p>
+    Pension Wise uses cookies to make the site simpler.
+    <%= link_to 'Find out more about cookies', guide_path('cookies') %>
+  </p>
 <% end %>
 
 <% content_for :footer_support_links do %>
   <div class="footer-meta-inner l-footer-meta">
     <h2 class="visuallyhidden">Support links</h2>
     <ul>
-      <li><a href="/cookies">Cookies</a></li>
-      <li><a href="/privacy">Privacy policy</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/cymraeg" lang="cy">Cymraeg</a></li>
-      <li><a href="http://gov.uk/help/accessibility/" rel="external">Accessibility</a></li>
-      <li><a href="/customer-promise">Customer promise</a></li>
-      <li><a href="/after-your-appointment" class="t-appointment-summary-link">After your appointment</a></li>
+      <% t('layout.footer_support_links').each do |link| %>
+        <li><%= link_to link[:title], link[:url], link[:options] %></li>
+      <% end %>
     </ul>
   </div>
 <% end %>

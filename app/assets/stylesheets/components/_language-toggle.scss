@@ -1,0 +1,54 @@
+.language-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  color: $color-white;
+  font-size: .8em;
+
+  // govuk template javascript adds a style="display:block" to
+  // cookie banner. This detects for the style attribute and
+  // adjusts the positioning of the language link accordingly
+  #global-cookie-message[style] ~ & { // scss-lint:disable IdSelector
+    top: 40px;
+  }
+}
+
+.language-toggle__inner {
+  max-width: 990px;
+  margin: 19px auto 0;
+  text-align: right;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@include media(tablet) {
+  .language-toggle__inner {
+    padding: 0 30px;
+  }
+}
+
+@include media(1020px) {
+  .language-toggle__inner {
+    padding: 0 15px;
+  }
+}
+
+.language-toggle__lang {
+  &:link,
+  &:visited {
+    color: $color-white;
+  }
+
+  &:focus {
+    color: $color-black;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+
+  &:hover {
+    color: $color-silver;
+  }
+}

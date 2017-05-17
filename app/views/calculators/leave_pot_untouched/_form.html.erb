@@ -9,7 +9,7 @@
   form: Calculators::LeavePotUntouchedForm,
   errors: errors if form&.invalid? %>
 
-<form action="/leave-pot-untouched/estimate#form" method="get">
+<form action="<%= "/#{locale}/leave-pot-untouched/estimate#form" %>" method="get">
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,

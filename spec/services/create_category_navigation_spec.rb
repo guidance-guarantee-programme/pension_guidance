@@ -1,5 +1,6 @@
 RSpec.describe CreateCategoryNavigation do
-  subject(:service) { described_class.new(category_id, category_tree) }
+  let(:locale) { :en }
+  subject(:service) { described_class.new(category_id, category_tree, locale) }
 
   let(:foo_category) { instance_double(Category, id: double, title: 'Foo category') }
   let(:bar_category) { instance_double(Category, id: double, title: 'Bar category') }

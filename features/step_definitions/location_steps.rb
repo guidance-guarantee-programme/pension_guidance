@@ -5,7 +5,7 @@ end
 When(/^I search for appointment locations near to a valid postcode$/) do
   postcode = 'BT7 3AP' # Belfast
 
-  Pages::Locations.new.load(postcode: postcode)
+  Pages::Locations.new.load(locale: :en, postcode: postcode)
 end
 
 Given(/^I have drilled down into a specific search result$/) do
@@ -22,7 +22,7 @@ When(/^I visit a face to face booking location page$/) do
 end
 
 When(/^I view the details of an appointment location that handles its own booking$/) do
-  Pages::Location.new.load(id: 'london')
+  Pages::Location.new.load(locale: :en, id: 'london')
 end
 
 Given(/^I have bookmarked the page$/) do
@@ -32,15 +32,15 @@ end
 When(/^I search for appointment locations near to an invalid postcode$/) do
   postcode = 'invalid'
 
-  Pages::Locations.new.load(postcode: postcode)
+  Pages::Locations.new.load(locale: :en, postcode: postcode)
 end
 
 When(/^I search for appointment locations without entering a postcode$/) do
-  Pages::Locations.new.load(postcode: '')
+  Pages::Locations.new.load(locale: :en, postcode: '')
 end
 
 When(/^I view the details of an appointment location that doesn't handle its own booking$/) do
-  Pages::Location.new.load(id: 'paris')
+  Pages::Location.new.load(locale: :en, id: 'paris')
 end
 
 Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) do |_number_of_locations|

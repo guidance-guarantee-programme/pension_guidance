@@ -1,7 +1,7 @@
 <% if @feedback.valid? %>
   <h3>Thank you for your help</h3>
 
-  <p>If you have more extensive feedback, please visit our <a href="/contact">contact page.</a></p>
+  <p>If you have more extensive feedback, please visit our <%= link_to 'contact page', guide_path('contact') %>.</a></p>
 <% else %>
   <h3>We were unable to send your feedback</h3>
 

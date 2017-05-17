@@ -1,11 +1,11 @@
 <nav class="breadcrumbs" aria-label="breadcrumb" role="navigation">
   <ul class="breadcrumbs__list">
     <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link t-breadcrumb" href="/">Home</a>
+      <%= link_to 'Home', root_path, class: 'breadcrumbs__link t-breadcrumb' %>
     </li>
     <% breadcrumbs.each do |breadcrumb| %>
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link t-breadcrumb" href="<%= breadcrumb.path %>"><%= breadcrumb.title %></a>
+        <%= link_to breadcrumb.title, breadcrumb.path, class: 'breadcrumbs__link t-breadcrumb' %>
       </li>
     <% end %>
   </ul>

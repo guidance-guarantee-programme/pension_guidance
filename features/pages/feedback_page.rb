@@ -2,7 +2,7 @@ require_relative '../sections/feedback'
 
 module Pages
   class Feedback < Page
-    set_url '/feedback/new'
+    set_url '/{locale}/feedback/new'
 
     section :feedback, Sections::Feedback, '.t-feedback'
 

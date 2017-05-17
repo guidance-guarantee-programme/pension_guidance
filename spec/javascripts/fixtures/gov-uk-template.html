@@ -12,14 +12,14 @@
   <div class="nav">
     <ul class="nav__list js-nav">
       <li class="nav__item">
-        <a href="/category-pension-details" class="nav__item-label">Your pension details</a>
+        <%= link_to 'Your pension details', guide_path('category-pension-details') %>
 
         <div class="nav__sub-nav">
           <ul class="nav__sub-nav-list">
-            <li class="nav__item"><a href="/pension-types">Know your pension type</a></li>
-            <li class="nav__item"><a href="/pension-pot-value">Check how much is in your pot</a></li>
-            <li class="nav__item"><a href="/understand-your-statement">Understand your pension statement</a></li>
-            <li class="nav__item"><a href="/state-pension">The State Pension</a></li>
+            <li class="nav__item"><%= link_to 'Know your pension type', guide_path('pension-types') %></li>
+            <li class="nav__item"><%= link_to 'Check how much is in your pot', guide_path('pension-pot-value') %></li>
+            <li class="nav__item"><%= link_to 'Understand your pension statement', guide_path('understand-your-statement') %></li>
+            <li class="nav__item"><%= link_to 'The State Pension', guide_path('state-pension') %></li>
           </ul>
         </div>
       </li>
