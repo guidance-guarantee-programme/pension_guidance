@@ -29,7 +29,7 @@ Watch out if an individual or company:
 * uses words like ‘pension liberation’, ‘loan’, ‘loophole’, ‘free pension review’ or ‘one-off investment’
 * offers you an investment described as ‘unique’, ‘overseas’, ‘environmentally friendly’, ‘ethical’ or in a ‘new’ industry
 
-Read [examples of real pension scams](http://www.thepensionsregulator.gov.uk/docs/pension-scams-booklet-members.pdf). (PDF, 1MB, 5 pages)
+Read about avoiding pension scams on [the Pensions Regulator website](http://www.thepensionsregulator.gov.uk/individuals/dangers-of-pension-scams.aspx).
 
 %Beware of copycat websites – some websites can look like they’re official government services like Pension Wise when they’re not.%
 

@@ -29,7 +29,7 @@ Gwyliwch allan os yw unigolyn neu gwmni yn:
 * defnyddio geiriau fel 'rhyddhad pensiwn', 'benthyciad', 'bwlch', 'adolygiad pensiwn am ddim' neu 'fuddsoddiad unwaith ac am byth'
 * cynnig buddsoddiad i chi sydd wedi'i ddisgrifio fel 'unigryw', 'tramor', 'cyfeillgar i'r amgylchedd', 'moesegol' neu mewn diwydiant 'newydd'
 
-Darllenwch [enghreifftiau o sgiâmau pensiwn go iawn](http://www.thepensionsregulator.gov.uk/docs/pension-scams-booklet-members.pdf). (PDF, 1MB, 5 tudalen)
+Darllenwch [enghreifftiau o sgiâmau pensiwn go iawn](http://www.thepensionsregulator.gov.uk/individuals/dangers-of-pension-scams.aspx).
 
 %Byddwch yn wyliadwrus o wefannau efelychu - gall rhai gwefannau edrych fel eu bod yn wasanaethau swyddogol y llywodraeth fel Pension Wise pan dydyn nhw ddim.%
 
