@@ -57,6 +57,8 @@ cy:
       govuk_date: '%-e %B %Y'
 
   time:
+    am: am
+    pm: pm
     formats:
       govuk_date: '%-e %B %Y'
       govuk_time: '%-I:%M%P'
