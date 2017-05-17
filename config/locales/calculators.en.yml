@@ -4,3 +4,4 @@ en:
       heading: Unable to submit the form
     form_input_submit:
       submit_tag: Calculate
+    loading_message: Please wait

@@ -66,8 +66,11 @@
         this.$loadingStatus.remove();
       }
 
-      this.$loadingStatus = $('<span class="calculator__loading-status">Please wait...</span>').
-                           insertAfter(this.$submitButton);
+      this.$loadingMessage = this.$calculator.find('.js-calculator-form').data('loading-message');
+      this.$loadingStatus = $('<span class="calculator__loading-status">' +
+                              this.$loadingMessage +
+                              '...</span>');
+      this.$loadingStatus.insertAfter(this.$submitButton);
       this.$scrollTarget = this.$submitButton;
 
       if ($customScrollTarget.length) {

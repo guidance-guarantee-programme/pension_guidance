@@ -4,3 +4,4 @@ cy:
       heading: Methu anfon y ffurflen
     form_input_submit:
       submit_tag: Cyfrifo
+    loading_message: Arhoswch
