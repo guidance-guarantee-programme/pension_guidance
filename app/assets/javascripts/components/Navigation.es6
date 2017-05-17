@@ -10,7 +10,6 @@
     init() {
       this.$trigger = $('.js-nav-toggler');
       this.$target = $('.js-nav');
-      this.$nav = $('.l-page-nav');
       this.mobileSize = 'mobile';
 
       this.setNavigationHiddenStatus();
@@ -18,7 +17,7 @@
     }
 
     getPageSize() {
-      const el = window.getComputedStyle(this.$nav[0], ':after');
+      const el = window.getComputedStyle(this.$component[0], ':after');
 
       return el ? el.getPropertyValue('content') : this.mobileSize;
     }

@@ -48,4 +48,10 @@ $('[data-email-validation]').each(function() {
   new PWPG.EmailValidation($component);
 });
 
-new PWPG.Navigation();
+$('[data-navigation]').each(function() {
+  'use strict';
+
+  var $component = $(this);
+
+  new PWPG.Navigation($component);
+});

@@ -33,7 +33,7 @@ describe('navigation', function() {
   describe('toggles visibility of the navigation', function() {
     beforeEach(function() {
       loadFixtures('navigation.html');
-      new PWPG.Navigation();
+      new PWPG.Navigation($('.js-nav'));
     });
 
     it('adds `active` class and correct aria attributes on first click', function() {
