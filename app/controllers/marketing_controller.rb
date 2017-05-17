@@ -6,7 +6,7 @@ class MarketingController < ApplicationController
     render :index
   end
 
-  def pp
+  def about
     @phone_number = '0800 138 8287'
     render :index
   end

@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 
       get 'landing', to: 'marketing#index'
       get 'facebook-landing', to: 'marketing#facebook'
-      get 'landing-pp', to: 'marketing#pp'
+      get 'about', to: 'marketing#about'
 
       resources :locations, only: [:index, :show] do
         member do
@@ -84,6 +84,7 @@ Rails.application.routes.draw do
     mount JasmineFixtures => '/spec/javascripts/fixtures'
   end
 
+  get 'landing-pp', to: redirect('/about')
   get '/', to: redirect('/en')
   get '/*path', to: redirect('/en/%{path}'), constraints: ->(req) { req.params[:path] !~ /^(en|cy)/ }
 end
