@@ -49,6 +49,10 @@ cy:
         options:
           class: t-appointment-summary-link
 
+  pagination:
+    previous: Blaenorol
+    next: Nesaf
+
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'
 
@@ -57,6 +61,8 @@ cy:
       govuk_date: '%-e %B %Y'
 
   time:
+    am: am
+    pm: pm
     formats:
       govuk_date: '%-e %B %Y'
       govuk_time: '%-I:%M%P'

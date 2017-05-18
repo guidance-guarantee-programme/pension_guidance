@@ -2,7 +2,7 @@
   <%- if previous_guide %>
     <li class="pager__item pager__item--previous">
       <a href="<%= previous_guide.url %>" rel="prev" class="t-previous-page">
-        <span class="pager__label">Previous</span>
+        <span class="pager__label"><%= t('pagination.previous') %></span>
         <span class="pager__title">
           <%= previous_guide.label %>
         </span>
@@ -12,7 +12,7 @@
   <%- if next_guide %>
     <li class="pager__item pager__item--next">
       <a href="<%= next_guide.url %>" rel="next" class="t-next-page">
-        <span class="pager__label">Next</span>
+        <span class="pager__label"><%= t('pagination.next') %></span>
         <span class="pager__title">
           <%= next_guide.label %>
         </span>

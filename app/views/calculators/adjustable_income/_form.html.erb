@@ -9,7 +9,7 @@
   form: Calculators::AdjustableIncomeForm,
   errors: errors if form&.invalid? %>
 
-<form action="<%= "/#{locale}/adjustable-income/estimate#form" %>" method="get">
+<form action="<%= "/#{locale}/adjustable-income/estimate#form" %>" method="get" class="js-calculator-form" data-loading-message="<%= t('calculators.loading_message') %>">
   <%= render 'calculators/form_input_currency',
              field: :pot,
              value: form&.pot,

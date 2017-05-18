@@ -9,7 +9,7 @@
   form: Calculators::TakeWholePotForm,
   errors: errors if form&.invalid? %>
 
-<form action="<%= "/#{locale}/take-whole-pot/estimate#calculator" %>" method="get">
+<form action="<%= "/#{locale}/take-whole-pot/estimate#calculator" %>" method="get" class="js-calculator-form" data-loading-message="<%= t('calculators.loading_message') %>">
   <%= render 'calculators/form_input_currency',
              field: :income,
              value: form&.income,

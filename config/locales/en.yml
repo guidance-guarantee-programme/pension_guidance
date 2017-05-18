@@ -46,6 +46,10 @@ en:
         options:
           class: t-appointment-summary-link
 
+  pagination:
+    previous: Previous
+    next: Next
+
   styleguide:
     title: 'Style guide: %{page_title} - Pension Wise'
 
@@ -54,6 +58,8 @@ en:
       govuk_date: '%-e %B %Y'
 
   time:
+    am: am
+    pm: pm
     formats:
       govuk_date: '%-e %B %Y'
       govuk_time: '%-I:%M%P'
