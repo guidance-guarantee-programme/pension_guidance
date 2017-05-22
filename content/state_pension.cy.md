@@ -20,7 +20,7 @@ Nid ydych fel arfer yn cael Pensiwn y Wladwriaeth yn awtomatig - rhaid i chi [wn
 
 ## Cael datganiad Pensiwn y Wladwriaeth
 
-Gallwch gael [datganiad Pensiwn y Wladwriaeth](https://www.gov.uk/state-pension-statement) i gael gwybod faint y gallech ei gael a'r nifer o flynyddoedd cymhwyso ar eich [cofnod Yswiriant Gwladol](https://www.gov.uk/check-national-insurance-record).
+[Gwiriwch eich Pensiwn y Wladwriaeth ar-lein](https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth) i gael rhagolwg Pensiwn y Wladwriaeth i gael gwybod faint allech chi ei gael, pryd allech ei gael ac os allech ei wella.
 
 ## Gohirio Pensiwn y Wladwriaeth
 
