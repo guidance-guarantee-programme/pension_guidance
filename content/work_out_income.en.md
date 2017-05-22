@@ -34,7 +34,7 @@ You might also have other income from:
 To get an idea of how much you’ll have in retirement, follow these steps:
 
 s1. [Check how much is in your pension pot](/en/pension-pot-value) and which pensions you’ve paid into.
-s2. Add your pension pot to your State Pension. Phone the Future Pension Centre on 0345 3000 168 to get a full State Pension statement.
+s2. Add your pension pot to your State Pension. [Check your State Pension online](https://www.gov.uk/check-state-pension) to get a State Pension forecast to find out how much you could get, when you could get it and if you could increase it.
 s3. Check what other income you’ll have in retirement and how it might change.
 s4. Choose [what to do with your pot](/en/pension-pot-options) and [shop around](/en/shop-around) to get quotes from providers.
 s5. Take away the [tax you pay](/en/tax).
@@ -98,7 +98,7 @@ You might pay more for:
 - energy and water bills – you may spend more time at home
 - [care costs](/en/care-costs)
 
-##Increase your retirement income
+## Increase your retirement income
 
 If you don’t think you’ll have enough money for your retirement, you could pay more into your pot now, take your pot later or delay taking the State Pension.
 
@@ -112,19 +112,14 @@ This includes your [tax relief](https://www.gov.uk/tax-on-your-private-pension/p
 
 You may still be able to pay into the pot you take money from but you won’t get tax relief on these payments.
 
-###Take your pot later
+### Take your pot later
 
 You may be able to [leave your pot untouched](/en/leave-pot-untouched) and take it later than the age you agreed with your pension provider (known as your ‘selected retirement age’).
 
 Leaving your money invested for longer and continuing to pay in could give you a higher income when you come to take it.
 
-##State Pension
+## State Pension
 
 You can delay when you get the State Pension to help increase your income in retirement. This is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension/what-you-may-get).
-
-You may be able to [top up your State Pension](https://www.gov.uk/statepensiontopup) if you’re:
-
-- a man born before 6 April 1951
-- a woman born before 6 April 1953
 
 ^Find out more about [ways to boost your pension](https://www.moneyadviceservice.org.uk/en/articles/ways-to-boost-your-pension-in-the-run-up-to-retirement) from the Money Advice Service.^
