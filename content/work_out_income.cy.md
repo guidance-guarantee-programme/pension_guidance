@@ -34,7 +34,7 @@ Efallai y byddwch hefyd yn cael incwm arall o:
 I gael syniad o faint fydd gennych ar ôl ymddeol, dilynwch y camau hyn:
 
 s1. [Gwiriwch faint sydd yn eich cronfa bensiwn](/cy/pension-pot-value) a pha bensiynau rydych wedi talu i mewn iddynt.
-s2. Ychwanegwch eich cronfa bensiwn i'ch Pensiwn y Wladwriaeth. Ffoniwch Ganolfan Pensiwn y Dyfodol ar 0345 3000 168 i gael datganiad Pensiwn y Wladwriaeth llawn.
+s2. Ychwanegwch eich cronfa bensiwn i'ch Pensiwn y Wladwriaeth. [Gwiriwch eich Pensiwn y Wladwriaeth ar-lein](https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth) i gael rhagolwg Pensiwn y Wladwriaeth i gael gwybod faint allech chi ei gael, pryd allech ei gael ac os allech ei wella.
 s3. Gwiriwch pa incwm arall fydd gennych ar ôl ymddeol a sut y gallai newid.
 s4. Dewiswch [beth i'w wneud gyda'ch cronfa](/cy/pension-pot-options) ac [edrych o gwmpas](/cy/shop-around) i gael dyfynbrisiau gan ddarparwyr.
 s5. Tynnwch allan y [dreth rydych yn ei dalu](/cy/tax).
