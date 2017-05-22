@@ -33,6 +33,12 @@ RSpec.configure do |config|
     mocks.syntax = :expect
     mocks.verify_partial_doubles = true
   end
+
+  # Reset the locale after each example to ensure
+  # all tests start with the expected default locale.
+  config.after(:each) do
+    I18n.locale = :en
+  end
 end
 
 VCR.configure do |config|
