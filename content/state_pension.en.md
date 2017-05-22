@@ -20,10 +20,8 @@ You don’t normally get the State Pension automatically – you have to [claim 
 
 ## Get a State Pension statement
 
-You can get a [State Pension statement](https://www.gov.uk/state-pension-statement) to find out how much you may get and the number of qualifying years on your [National Insurance record](https://www.gov.uk/check-national-insurance-record).
+[Check your State Pension online](https://www.gov.uk/check-state-pension) to find out how much you could get, when you could get it, and if you could increase the amount you get.
 
 ## Defer the State Pension
 
 You can increase your income in retirement if you don’t claim your State Pension when you reach State Pension age. This is called [deferring the State Pension](https://www.gov.uk/deferring-state-pension).
-
-You may also be able to [top up](https://www.gov.uk/statepensiontopup) your State Pension.
