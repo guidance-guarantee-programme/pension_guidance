@@ -18,10 +18,10 @@
     <% end %>
   <% end %>
 
-  <% unless content_for?(:canonical_path) %>
-    <%= canonical_tag rescue nil %>
+  <% if !default_locale? && !content_lang_matches_locale? %>
+    <link href="<%= url_for(params.permit!.merge(locale: I18n.default_locale, host: canonical_host, protocol: canonical_protocol)) %>" rel="canonical" />
   <% else %>
-    <link href="<%= canonical_protocol + canonical_host + content_for(:canonical_path) %>" rel="canonical" />
+    <%= canonical_tag rescue nil %>
   <% end %>
 
   <% if content_for?(:meta_description) %>

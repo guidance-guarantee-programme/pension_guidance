@@ -1,8 +1,5 @@
 <% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
 <% content_for(:meta_description, @guide.description) %>
-<% if !default_locale? && !content_lang_matches_locale? %>
-  <% content_for(:canonical_path, guide_path(params[:id], locale: I18n.default_locale)) %>
-<% end %>
 
 <%= render 'option' if @guide.option? %>
 
