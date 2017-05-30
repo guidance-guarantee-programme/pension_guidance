@@ -29,12 +29,12 @@
       guidance specialist.
     </p>
 
-    <h2 class="heading-small">Address</h2>
+    <h2>Address</h2>
     <div class="t-address">
       <%= simple_format(@location.address) %>
     </div>
 
-    <h2 class="heading-small">Ways to book</h2>
+    <h2>How to book</h2>
 
     <% if @location.online_booking_enabled? %>
       <p>
@@ -52,16 +52,13 @@
 
     <p>The appointment times available can change depending on your location.</p>
 
-    <% if @location.booking_location %>
-      <p>
-        Tell the operator that you want to book a Pension Wise appointment at
-        <%= @location.name %> Citizens Advice.
-      </p>
-    <% end %>
+    <h2>Before you book</h2>
+
+    <p>You should be aged <b>50 or over</b> and have a <%= link_to 'defined contribution', guide_path('pension-types') %> pension (not a final salary or career average pension).</p>
   </div>
 
   <div class="l-column-half">
-    <h2 class="heading-small" style="margin-top: 0;">Find us here:</h2>
+    <h2 style="margin-top: 0;">Find us here:</h2>
 
     <a href="https://maps.google.com/maps?q=<%= @location.address %>" target="_blank">
       <img
