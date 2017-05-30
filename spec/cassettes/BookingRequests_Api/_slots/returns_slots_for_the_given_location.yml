@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3002/api/v1/locations/ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef/bookable_slots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson.local; benlovell; 4960) ruby/2.4.1 (111; x86_64-darwin16)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"30e0980a6990368b8a05d93d3b57ae26"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ce71f102-595d-4c92-b209-c435e3c61926
+      X-Runtime:
+      - '0.153204'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '[{"date":"2017-06-02","start":"0900","end":"1300"},{"date":"2017-06-02","start":"1300","end":"1700"},{"date":"2017-06-07","start":"0900","end":"1300"},{"date":"2017-06-07","start":"1300","end":"1700"},{"date":"2017-06-09","start":"0900","end":"1300"},{"date":"2017-06-09","start":"1300","end":"1700"},{"date":"2017-06-14","start":"0900","end":"1300"},{"date":"2017-06-14","start":"1300","end":"1700"},{"date":"2017-06-16","start":"0900","end":"1300"},{"date":"2017-06-16","start":"1300","end":"1700"},{"date":"2017-06-21","start":"0900","end":"1300"},{"date":"2017-06-21","start":"1300","end":"1700"},{"date":"2017-06-23","start":"0900","end":"1300"},{"date":"2017-06-23","start":"1300","end":"1700"},{"date":"2017-06-28","start":"0900","end":"1300"},{"date":"2017-06-28","start":"1300","end":"1700"},{"date":"2017-06-30","start":"0900","end":"1300"},{"date":"2017-06-30","start":"1300","end":"1700"},{"date":"2017-07-05","start":"0900","end":"1300"},{"date":"2017-07-05","start":"1300","end":"1700"},{"date":"2017-07-07","start":"0900","end":"1300"},{"date":"2017-07-07","start":"1300","end":"1700"}]'
+    http_version: 
+  recorded_at: Tue, 30 May 2017 11:37:09 GMT
+recorded_with: VCR 3.0.3

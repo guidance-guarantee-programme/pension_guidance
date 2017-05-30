@@ -27,7 +27,7 @@ Feature: Accessibility of pages
     When I visit the appointment summary page
     Then the page should be accessible
 
-  @booking_locations
+  @booking_locations @booking_requests
   Scenario: Slot picker for face to face booking is not accessible while we develop our own slot picker
     When I view the face to face booking form
     Then the page should be accessible excluding ".SlotPicker"

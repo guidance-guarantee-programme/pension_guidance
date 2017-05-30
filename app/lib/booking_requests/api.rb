@@ -6,6 +6,11 @@ module BookingRequests
       true
     end
 
+    def slots(location_id)
+      response = connection.get "/api/v1/locations/#{location_id}/bookable_slots"
+      response.body
+    end
+
     private
 
     def connection
