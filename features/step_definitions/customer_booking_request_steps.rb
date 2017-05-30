@@ -42,12 +42,6 @@ Then(/^I see the location name "(.*?)"$/) do |name|
   expect(@step_one.location_name.text).to include(name)
 end
 
-Then(/^I see slots up to the day of closure$/) do
-  @step_one.wait_for_available_days
-
-  expect(@step_one).to have_available_days(count: 1)
-end
-
 When(/^I view the face to face booking form$/) do
   step('a location is enabled for online booking')
   step('I browse for the location "Hackney"')

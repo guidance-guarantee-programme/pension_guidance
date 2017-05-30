@@ -31,4 +31,17 @@ RSpec.describe BookingRequests::Api, :vcr do
       end
     end
   end
+
+  describe '#slots' do
+    it 'returns slots for the given location' do
+      slots = subject.slots('ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef')
+
+      expect(slots).to be_present
+      expect(slots.first).to eq(
+        'date'  => '2017-06-02',
+        'start' => '0900',
+        'end'   => '1300'
+      )
+    end
+  end
 end

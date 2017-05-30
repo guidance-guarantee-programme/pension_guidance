@@ -45,7 +45,7 @@ class BookingRequestForm
   end
 
   def slots_for_calendar
-    @slots_for_calendar ||= booking_location.location_for(location_id).slots.map(&:to_calendar)
+    @slots_for_calendar ||= BookingRequests.slots(location_id)
   end
 
   def booking_location
