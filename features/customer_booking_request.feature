@@ -14,15 +14,6 @@ Scenario: Customer browses a regular location
   Then I cannot book online
 
 @javascript @booking_locations @booking_requests @time_travel
-Scenario: Customer books a closing location
-  Given a location is enabled for online booking
-  And the date is "2016-06-17"
-  When I browse for the location "Dalston"
-  And I opt to book online
-  Then I see the location name "Dalston"
-  And I see slots up to the day of closure
-
-@javascript @booking_locations @booking_requests @time_travel
 Scenario: Customer makes an online Booking Request
   Given a location is enabled for online booking
   And the date is "2016-06-17"
