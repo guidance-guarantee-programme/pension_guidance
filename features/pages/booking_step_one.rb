@@ -12,6 +12,8 @@ module Pages
     elements :available_days, '.BookingCalendar-date--bookable'
     elements :time_slots, '.SlotPicker-day.is-active > label'
 
+    element :phone, '.t-phone'
+
     section :feedback, Sections::Feedback, '.t-feedback'
 
     def morning_slot

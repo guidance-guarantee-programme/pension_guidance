@@ -88,3 +88,11 @@ Scenario: Customer leaves inline feedback
   And I opt to book online
   When I complete the inline feedback
   Then I see my feedback was sent
+
+@booking_locations @no_availability
+Scenario: Customer attempts to book a location with no availability
+  Given a location is enabled for online booking
+  When I browse for the location "Hackney"
+  And I opt to book online
+  Then I see the location name "Hackney"
+  And I see a message to phone for availability
