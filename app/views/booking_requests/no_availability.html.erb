@@ -1,0 +1,10 @@
+<% content_for(:page_title, t('service.title', page_title: "Book an appointment at #{@booking_request.location_name}")) %>
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
+    <p>There are no available appointments at this location.</p>
+    <p>For an appointment at an alternative location call <b class="t-phone"><%= @booking_request.twilio_number %></b>.</p>
+  </div>
+</div>
+
+

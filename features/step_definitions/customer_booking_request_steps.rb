@@ -252,6 +252,10 @@ Then(/^I see a warning of an invalid email address$/) do
   expect(@step_two).to have_content("That doesn't look like a valid address")
 end
 
+Then(/^I see a message to phone for availability$/) do
+  expect(@step_one).to have_phone
+end
+
 def with_booking_locations
   previous_path = Locations.geo_json_path_or_url
   Locations.geo_json_path_or_url = Rails.root.join(*@locations_path)
