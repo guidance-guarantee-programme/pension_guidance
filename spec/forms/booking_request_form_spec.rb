@@ -15,7 +15,8 @@ RSpec.describe BookingRequestForm do
         memorable_word: 'meseeks',
         date_of_birth: '1950-01-01',
         accessibility_requirements: '0',
-        dc_pot: 'yes'
+        dc_pot: 'yes',
+        additional_info: ''
       )
     end
 
@@ -84,6 +85,11 @@ RSpec.describe BookingRequestForm do
         subject.dc_pot = false
         expect(subject).not_to be_step_two_valid
         expect(subject).not_to be_eligible
+      end
+
+      it 'ensures `additional_info` is no longer than 160 characters' do
+        subject.additional_info = '*' * 161
+        expect(subject).not_to be_step_two_valid
       end
     end
   end

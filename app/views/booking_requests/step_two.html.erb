@@ -183,6 +183,16 @@
         </div>
       </div>
 
+      <div class="form-group" data-character-limit>
+        <%= f.label :additional_info, class: 'form-label-bold' do %>
+          Additional information
+          <span class="form-hint">
+            eg Any times you’re not available
+          </span>
+        <% end %>
+        <%= f.text_area :additional_info, class: 'form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
+      </div>
+
       <div class="form-group">
         <%= f.submit 'Submit booking request', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
       </div>

@@ -4,7 +4,7 @@ class BookingRequestForm
   attr_accessor :location_id, :primary_slot, :secondary_slot, :tertiary_slot,
                 :first_name, :last_name, :email, :telephone_number,
                 :memorable_word, :accessibility_requirements,
-                :date_of_birth, :dc_pot
+                :date_of_birth, :dc_pot, :additional_info
 
   with_options if: :step_one? do |step_one|
     step_one.validates :primary_slot, presence: true
@@ -21,6 +21,7 @@ class BookingRequestForm
     step_two.validates :accessibility_requirements, inclusion: { in: %w(0 1) }
     step_two.validates :dc_pot, inclusion: { in: %w(yes no not-sure) }
     step_two.validates :date_of_birth, presence: true
+    step_two.validates :additional_info, length: { maximum: 160 }, allow_blank: true
   end
 
   def initialize(location_id, opts)
