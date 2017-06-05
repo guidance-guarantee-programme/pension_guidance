@@ -46,9 +46,10 @@ end
 Then(/^I should see the (\d+) appointment locations nearest to that postcode$/) do |_number_of_locations|
   page_locations = Pages::Locations.new.locations
 
-  expected_locations = ['London', 'Paris', 'New York']
+  expected_locations = ['London', 'Hackney', 'Paris', 'New York']
   expected_addresses = [
     '1 Horse Guards Road SW1A 2HQ',
+    'Hackney Citizens Advice 300 Mare St Hackney London E8 1HE',
     '35 Rue du Faubourg Saint-Honoré 75008 Paris',
     'Manhattan NY 10036 United States'
   ]

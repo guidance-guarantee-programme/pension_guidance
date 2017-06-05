@@ -21,6 +21,24 @@
     },
     {
       "type": "Feature",
+      "id": "ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0551488,
+          51.5443995
+        ]
+      },
+      "properties": {
+        "title": "Hackney",
+        "address": "Hackney Citizens Advice\n300 Mare St\nHackney\nLondon\nE8 1HE",
+        "phone": "345 6789",
+        "hours": "Mon-Fri 9-5",
+        "twilio_number": "+442086291106"
+      }
+    },
+    {
+      "type": "Feature",
       "id": "paris",
       "geometry": {
         "type": "Point",

@@ -46,9 +46,9 @@
       </div>
 
       <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
-        <%= f.select(:primary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <%= f.select(:secondary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <%= f.select(:tertiary_slot, @booking_request.slots_for_calendar, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+        <%= f.select(:primary_slot, @booking_request.slots, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+        <%= f.select(:secondary_slot, @booking_request.slots, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
+        <%= f.select(:tertiary_slot, @booking_request.slots, { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
         <p>Appointment availability depends on location. You may not get your requested dates. We may need to call you to arrange an alternative date.</p>
         <p><%= f.button('Continue', type: 'submit', class: 'button t-continue') %></p>
       <% end %>
