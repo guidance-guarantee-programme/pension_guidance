@@ -14,6 +14,7 @@
 //= require components/SlotPicker
 //= require components/SlotPickerSingleTime
 //= require components/EmailValidation
+//= require components/CharacterLimit
 
 PWPG.clickTracker.init();
 PWPG.calculators.init();
@@ -54,4 +55,12 @@ $('[data-navigation]').each(function() {
   var $component = $(this);
 
   new PWPG.Navigation($component);
+});
+
+$('[data-character-limit]').each(function() {
+  'use strict';
+
+  var $component = $(this);
+
+  new PWPG.CharacterLimit($component);
 });

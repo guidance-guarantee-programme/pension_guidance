@@ -14,6 +14,7 @@ module BookingRequests
           accessibility_requirements: booking_request.accessibility_requirements,
           marketing_opt_in: true,
           defined_contribution_pot_confirmed: dc_pot_as_boolean(booking_request.dc_pot),
+          additional_info: booking_request.additional_info,
           slots: [
             slot(1, booking_request.primary_slot),
             slot(2, booking_request.secondary_slot),
