@@ -13,7 +13,7 @@ Scenario: Customer browses a regular location
   When I browse for the location "Hackney"
   Then I cannot book online
 
-@javascript @booking_locations @booking_requests @time_travel
+@javascript @booking_locations @time_travel
 Scenario: Customer makes an online Booking Request
   Given a location is enabled for online booking
   And the date is "2016-06-17"
@@ -26,7 +26,7 @@ Scenario: Customer makes an online Booking Request
   And I submit my completed Booking Request
   Then my Booking Request is confirmed
 
-@javascript @booking_locations @booking_requests @time_travel
+@javascript @booking_locations @time_travel
 Scenario: Customer navigates between Booking Request steps
   Given a location is enabled for online booking
   And the date is "2016-06-17"
@@ -42,7 +42,7 @@ Scenario: Customer navigates between Booking Request steps
   And I submit my completed Booking Request
   Then my Booking Request is confirmed
 
-@javascript @booking_locations @booking_requests @time_travel @mock_mailgun
+@javascript @booking_locations @time_travel @mock_mailgun
 Scenario: Customer makes a mistakes in their email address and gets a suggestions
   Given a location is enabled for online booking
   And the date is "2016-06-17"
@@ -54,7 +54,7 @@ Scenario: Customer makes a mistakes in their email address and gets a suggestion
   When I enter an invalid email address
   Then I see a warning of an invalid email address
 
-@javascript @booking_locations @booking_requests @time_travel
+@javascript @booking_locations @time_travel
 Scenario: Customer attempts an invalid Booking Request
   Given a location is enabled for online booking
   And the date is "2016-06-17"
@@ -68,7 +68,7 @@ Scenario: Customer attempts an invalid Booking Request
   And I submit my incomplete Booking Request
   Then I am told to complete my personal details
 
-@javascript @booking_locations @booking_requests @time_travel
+@javascript @booking_locations @time_travel
 Scenario: Customer is ineligible for guidance
   Given a location is enabled for online booking
   And the date is "2016-06-17"
@@ -80,7 +80,7 @@ Scenario: Customer is ineligible for guidance
   When I submit my completed Booking Request
   Then I am told I am ineligible for guidance
 
-@javascript @booking_locations @time_travel @booking_requests
+@javascript @booking_locations @time_travel
 Scenario: Customer leaves inline feedback
   Given a location is enabled for online booking
   And the date is "2016-06-17"
