@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.postcodes.io/postcodes/E81HE
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.55.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.11.5
+      Date:
+      - Wed, 07 Jun 2017 11:17:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '738'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"2e2-IEA4KFOhx0iz0zbF5aKVLGUKEIk"
+      X-Gnu:
+      - Michael J Blanchard
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":200,"result":{"postcode":"E8 1HE","quality":1,"eastings":534971,"northings":184697,"country":"England","nhs_ha":"London","longitude":-0.0549775612977771,"latitude":51.5450351286447,"parliamentary_constituency":"Hackney
+        South and Shoreditch","european_electoral_region":"London","primary_care_trust":"City
+        and Hackney Teaching","region":"London","lsoa":"Hackney 017A","msoa":"Hackney
+        017","incode":"1HE","outcode":"E8","admin_district":"Hackney","parish":"Hackney,
+        unparished area","admin_county":null,"admin_ward":"Homerton","ccg":"NHS City
+        and Hackney","nuts":"Hackney and Newham","codes":{"admin_district":"E09000012","admin_county":"E99999999","admin_ward":"E05009376","parish":"E43000202","ccg":"E38000035","nuts":"UKI41"}}}'
+    http_version: 
+  recorded_at: Wed, 07 Jun 2017 11:17:11 GMT
+recorded_with: VCR 3.0.3

@@ -20,6 +20,15 @@
             <%= location.distance %> miles
           </p>
 
+          <% if location.limited_availability? %>
+            <div class="notice notice--extra-spacing">
+              <i class="icon icon-information">
+                <span class="visually-hidden">Info</span>
+              </i>
+              <strong class="small">Limited appointment availability</strong>
+            </div>
+          <% end %>
+
           <% if location.online_booking_enabled? && location.slots_available? %>
             <p>
               <%= link_to 'Book online', booking_request_step_one_location_path(location.id), class: 'button t-book-online' %>

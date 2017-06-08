@@ -27,5 +27,13 @@ module Locations
     def slots_available?
       !no_availability?
     end
+
+    def limited_availability?
+      slots_available? && slots.size < 3
+    end
+
+    def postcode
+      address.split("\n").last
+    end
   end
 end

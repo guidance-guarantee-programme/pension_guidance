@@ -1,7 +1,18 @@
 <% content_for(:page_title, t('service.title', page_title: "Book an appointment at #{@booking_request.location_name}")) %>
 <div class="l-grid-row">
-  <div class="l-column-two-thirds">
+  <div class="l-column-full">
     <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
+
+    <% if @locations.present? %>
+      <div class="t-limited-availability error-summary" style="border-color: orange; margin-top: 15px;">
+        <p>There is limited availability in this location. Other locations near <%= @booking_request.location_name %>:</p>
+        <ul>
+          <% @locations.each do |location| %>
+          <li><a href="<%= booking_request_step_one_location_path(location.id) %>"><%= location.name %></a> (<%= location.distance %> miles away)</li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
   </div>
 
   <% if @booking_request.errors.any? %>
