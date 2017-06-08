@@ -32,7 +32,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   # https://github.com/mbleigh/princely/pull/53
   gem 'princely', github: 'guidance-guarantee-programme/princely', branch: 'remove-alias-method-chain'
   gem 'puma'
-  gem 'rails', '~> 5.0.1'
+  gem 'rails', '~> 5.1.1'
   gem 'redis'
   gem 'rgeo'
   gem 'rgeo-geojson'
