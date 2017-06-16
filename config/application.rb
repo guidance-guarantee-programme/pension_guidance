@@ -30,10 +30,13 @@ module PensionGuidance
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.yml')]
     config.i18n.available_locales = %i(en cy)
 
+    # Strip cookies to cache guides and localised home pages
+    cacheable_paths = GuideRepository.cacheable_paths.push('/en', '/cy')
+
     config.middleware.insert_before(
       ActionDispatch::Cookies,
       Middleware::StripSessionCookie,
-      paths: GuideRepository.cacheable_paths
+      paths: cacheable_paths
     )
   end
 end
