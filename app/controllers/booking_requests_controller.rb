@@ -7,7 +7,7 @@ class BookingRequestsController < ApplicationController
   def step_one
     @feedback = FeedbackForm.for_online_booking
 
-    if @booking_request.slots_for_calendar.empty?
+    if @booking_request.no_availability?
       render :no_availability
     else
       render :step_one

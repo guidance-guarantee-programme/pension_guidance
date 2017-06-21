@@ -2,8 +2,11 @@ RSpec.describe BookingRequests do
   let(:api) { instance_double(BookingRequests::Api) }
 
   describe '.slots' do
+    around do |example|
+      with_stubbed_booking_requests_api(api, example)
+    end
+
     before do
-      BookingRequests.api = api
       allow(api).to receive(:slots).and_return(
         [{ 'date' => '2017-06-02', 'start' => '0900', 'end' => '1300' }]
       )
@@ -24,8 +27,11 @@ RSpec.describe BookingRequests do
       let(:booking_request) { Hash[blah: 'welp'] }
       let(:result) { Hash.new }
 
+      around do |example|
+        with_stubbed_booking_requests_api(api, example)
+      end
+
       before do
-        BookingRequests.api = api
         allow(BookingRequests::ApiMapper).to receive(:map).with(booking_request).and_return(result)
         allow(api).to receive(:create).with(result).and_return(true)
       end

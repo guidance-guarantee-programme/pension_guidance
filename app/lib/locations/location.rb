@@ -15,5 +15,17 @@ module Locations
     def online_booking_enabled?
       online_booking_enabled
     end
+
+    def slots
+      @slots ||= BookingRequests.slots(id)
+    end
+
+    def no_availability?
+      slots.empty?
+    end
+
+    def slots_available?
+      !no_availability?
+    end
   end
 end

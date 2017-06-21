@@ -45,13 +45,15 @@ class BookingRequestForm
     end
   end
 
-  def slots_for_calendar
-    @slots_for_calendar ||= BookingRequests.slots(location_id)
+  def location
+    @location ||= Locations.find(location_id)
   end
 
   def booking_location
     @booking_location ||= BookingLocations.find(location_id)
   end
+
+  delegate :slots, :no_availability?, to: :location
 
   delegate :id, to: :booking_location, prefix: :booking_location
 
