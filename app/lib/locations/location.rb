@@ -23,5 +23,9 @@ module Locations
     def no_availability?
       slots.empty?
     end
+
+    def slots_available?
+      !no_availability?
+    end
   end
 end
