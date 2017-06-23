@@ -14,4 +14,4 @@ Disallow: /*/facebook-landing
 Disallow: /*/landing
 Disallow: /*/about
 Disallow: /*/telephone-appointments/
-Disallow: /*/booking-request/
+Disallow: /*/locations/*/booking-request/step-one
