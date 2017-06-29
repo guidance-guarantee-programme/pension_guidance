@@ -218,6 +218,7 @@
         </div>
       </div>
 
+      <% if @booking_request.secondary_slot.present? %>
       <div class="SlotPicker-choice is-chosen">
         <div class="SlotPicker-choiceInner">
           <div class="SlotPicker-position"><span>2</span></div>
@@ -228,7 +229,9 @@
           </div>
         </div>
       </div>
+      <% end %>
 
+      <% if @booking_request.tertiary_slot.present? %>
       <div class="SlotPicker-choice is-chosen">
         <div class="SlotPicker-choiceInner">
           <div class="SlotPicker-position"><span>3</span></div>
@@ -239,6 +242,7 @@
           </div>
         </div>
       </div>
+      <% end %>
     </div>
 
     <p>
