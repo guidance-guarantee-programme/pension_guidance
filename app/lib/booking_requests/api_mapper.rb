@@ -19,12 +19,14 @@ module BookingRequests
             slot(1, booking_request.primary_slot),
             slot(2, booking_request.secondary_slot),
             slot(3, booking_request.tertiary_slot)
-          ]
+          ].compact
         }
       }
     end
 
     def self.slot(priority, slot_text)
+      return if slot_text.blank?
+
       date, from, to = slot_text.match(/\A(\d{4}-\d{2}-\d{2})-(\d{4})-(\d{4})\z/).captures
 
       {

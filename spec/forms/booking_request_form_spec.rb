@@ -6,8 +6,6 @@ RSpec.describe BookingRequestForm do
       described_class.new(
         location_id,
         primary_slot: '2016-01-01-0900-1300',
-        secondary_slot: '2016-01-01-1300-1700',
-        tertiary_slot: '2016-01-02-0900-1300',
         first_name: 'Lucius',
         last_name: 'Needful',
         email: 'lucius@example.com',
@@ -27,12 +25,10 @@ RSpec.describe BookingRequestForm do
     end
 
     context 'step one' do
-      %w(primary secondary tertiary).each do |slot|
-        it "requires the #{slot} slot" do
-          subject.public_send("#{slot}_slot=", nil)
+      it 'requires the first slot' do
+        subject.primary_slot = nil
 
-          expect(subject).to_not be_step_one_valid
-        end
+        expect(subject).to_not be_step_one_valid
       end
     end
 

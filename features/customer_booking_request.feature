@@ -55,14 +55,12 @@ Scenario: Customer makes a mistakes in their email address and gets a suggestion
   Then I see a warning of an invalid email address
 
 @javascript @booking_locations @time_travel
-Scenario: Customer attempts an invalid Booking Request
+Scenario: Customer chooses a single slot
   Given a location is enabled for online booking
   And the date is "2016-06-17"
   When I browse for the location "Hackney"
   And I opt to book online
   And I choose one available appointment slot
-  Then I am told to choose further slots
-  When I choose a further two appointment slots
   Then I progress to the personal details step
   When I pass the basic eligibility requirements
   And I submit my incomplete Booking Request

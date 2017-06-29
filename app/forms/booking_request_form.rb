@@ -6,11 +6,7 @@ class BookingRequestForm
                 :memorable_word, :accessibility_requirements,
                 :date_of_birth, :dc_pot, :additional_info
 
-  with_options if: :step_one? do |step_one|
-    step_one.validates :primary_slot, presence: true
-    step_one.validates :secondary_slot, presence: true
-    step_one.validates :tertiary_slot, presence: true
-  end
+  validates :primary_slot, presence: true, if: :step_one?
 
   with_options if: :step_two? do |step_two|
     step_two.validates :first_name, presence: true
