@@ -10,6 +10,10 @@ class BookingRequestsController < ApplicationController
     if @booking_request.no_availability?
       render :no_availability
     else
+      if @booking_request.limited_availability?
+        @locations = @booking_request.alternate_locations
+      end
+
       render :step_one
     end
   end

@@ -49,7 +49,7 @@ class BookingRequestForm
     @booking_location ||= BookingLocations.find(location_id)
   end
 
-  delegate :slots, :no_availability?, to: :location
+  delegate :slots, :no_availability?, :limited_availability?, to: :location
 
   delegate :id, to: :booking_location, prefix: :booking_location
 
@@ -91,6 +91,14 @@ class BookingRequestForm
 
   def step_two?
     @step == 2
+  end
+
+  def alternate_locations(limit: 5, radius: 5)
+    Locations
+      .nearest_to_postcode(location.postcode, radius: radius)
+      .reject { |l| l.id == location_id || l.limited_availability? || l.no_availability? }
+      .take(limit)
+      .map { |l| LocationSearchResultDecorator.new(l) }
   end
 
   private

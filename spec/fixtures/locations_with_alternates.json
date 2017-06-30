@@ -1,0 +1,124 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "704cb1cf-82ad-4051-9a93-abe01a851584",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9341485,
+          54.5957306
+        ]
+      },
+      "properties": {
+        "title": "Belfast Citizens Advice Bureau",
+        "address": "Merrion Business Centre\n58 Howard St\nBelfast\nBT1 6PJ",
+        "booking_location_id": "928543c7-e8f0-45b2-a300-c2f996b007d9",
+        "phone": "0300 1 233 233",
+        "hours": "",
+        "online_booking_enabled":true
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.0551488,
+          51.5443995
+        ]
+      },
+      "properties":{
+        "title":"Hackney",
+        "address":"Hackney Citizens Advice\n300 Mare St\nHackney\nLondon\nE8 1HE",
+        "booking_location_id":"a77a031a-8037-4510-b1f7-63d4aab7b103",
+        "phone":"",
+        "hours":"",
+        "twilio_number":"+442086291106",
+        "online_booking_enabled":true
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"1cc67bbb-b879-4def-8713-99255a0bce03",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.0459925,
+          51.64864129999999
+        ]
+      },
+      "properties":{
+        "title":"Enfield",
+        "address":"Unit 3\nVincent House\n2E Nags Head Road, Ponders End\nEnfield\nMiddlesex\nEN3 7FN",
+        "booking_location_id":"a77a031a-8037-4510-b1f7-63d4aab7b103",
+        "phone":"",
+        "hours":"",
+        "twilio_number":"+442030953977",
+        "online_booking_enabled":true
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"c165d25e-f27b-4ce9-b3d3-e7415ebaa93c",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.0692058,
+          51.5955922
+        ]
+      },
+      "properties":{
+        "title":"Haringey",
+        "address":"551B Tottenham High Road\nHaringey\nLondon\nN17 6SB",
+        "booking_location_id":"a77a031a-8037-4510-b1f7-63d4aab7b103",
+        "phone":"",
+        "hours":"",
+        "twilio_number":"+442033896895",
+        "online_booking_enabled":true
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"89821b79-b132-4893-bc9f-c247dd9009fd",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          0.0252717,
+          51.5126254
+        ]
+      },
+      "properties":{
+        "title":"Newham",
+        "address":"20 Freemasons Road\nLondon\nE16 3NA",
+        "booking_location_id":"a77a031a-8037-4510-b1f7-63d4aab7b103",
+        "phone":"",
+        "hours":"",
+        "twilio_number":"+442030952775",
+        "online_booking_enabled":true
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"1a1ad00f-d967-448a-a4a6-772369fa5087",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.0675028,
+          51.5186601
+        ]
+      },
+      "properties":{
+        "title":"Tower Hamlets",
+        "address":"32 Greatorex Street\nTower Hamlets\nLondon\nE1 5NP",
+        "booking_location_id":"a77a031a-8037-4510-b1f7-63d4aab7b103",
+        "phone":"",
+        "hours":"",
+        "twilio_number":"+442033897138",
+        "online_booking_enabled":true
+      }
+    }
+  ]
+}
