@@ -14,12 +14,12 @@
 
   <% if params[:locale] %>
     <% I18n.available_locales.each do |alternate_locale| %>
-      <link href="<%= url_for(params.permit(:id, :ici, :icn, :locale).merge(locale: alternate_locale, only_path: false)) %>" hreflang="<%= alternate_locale %>-GB" rel="alternate" />
+      <link href="<%= alternate_url(alternate_locale, only_path: false) %>" hreflang="<%= alternate_locale %>-GB" rel="alternate" />
     <% end %>
   <% end %>
 
   <% if !default_locale? && !content_lang_matches_locale? %>
-    <link href="<%= url_for(params.permit!.merge(locale: I18n.default_locale, host: canonical_host, protocol: canonical_protocol)) %>" rel="canonical" />
+    <link href="<%= alternate_url(I18n.default_locale, host: canonical_host, protocol: canonical_protocol) %>" rel="canonical" />
   <% else %>
     <%= canonical_tag rescue nil %>
   <% end %>
