@@ -27,6 +27,12 @@ cy:
     pension_options:
       slug: pension-pot-options
       title: Edrych faint sydd yn eich cronfa bensiwn
+    build_your_pensions_summary:
+      slug: explore-your-options
+      title: Build your pensions summary
+    explore_your_options_step_one:
+      slug: explore-your-options/step-one
+      title: The 6 pension options
 
   layout:
     book_a_free_appointment: Trefnu apwyntiad am ddim

@@ -1,0 +1,9 @@
+.build-your-own-progress {
+  color: $color-grey-rolling-stone;
+  position: relative;
+  top: 12px;
+
+  @include media(tablet) {
+    top: 24px;
+  }
+}

@@ -26,6 +26,16 @@ Rails.application.routes.draw do
       get 'facebook-landing', to: 'marketing#facebook'
       get 'about', to: 'marketing#about'
 
+      scope 'explore-your-options', controller: 'pension_summaries', as: :explore_your_options do
+        root action: 'start'
+
+        get 'step-one'
+        get 'step-two'
+        get 'summary'
+        get 'download'
+        get 'print'
+      end
+
       resources :locations, only: [:index, :show] do
         member do
           get '/booking-request/step-one',  to: 'booking_requests#step_one'

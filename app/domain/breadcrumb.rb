@@ -34,6 +34,16 @@ class Breadcrumb
       new(new_telephone_appointment_path(locale: locale), title)
     end
 
+    def build_your_pensions_summary(locale = I18n.locale)
+      title = I18n.t('breadcrumbs.build_your_pensions_summary')[:title]
+      new(explore_your_options_root_path(locale: locale), title)
+    end
+
+    def explore_your_options_step_one(locale = I18n.locale)
+      title = I18n.t('breadcrumbs.explore_your_options_step_one')[:title]
+      new(explore_your_options_step_one_path(locale: locale), title)
+    end
+
     private
 
     def guide_breadcrumb(translation_key, locale)
