@@ -1,12 +1,12 @@
 ---
-description: Gelwir y pensiwn a gewch gan y llywodraeth yn Bensiwn y Wladwriaeth. Dim ond arweiniad ar bensiynau cyfraniadau wedi'u diffinio mae Pensiwn Wise yn ei roi.
+description: Gelwir y pensiwn a gewch gan y llywodraeth yn Bensiwn y Wladwriaeth. Dim ond arweiniad ar bensiynau cyfraniadau wedi’u diffinio mae Pensiwn Wise yn ei roi.
 ---
 
 # Pensiwn y Wladwriaeth
 
 Gelwir y pensiwn a gewch gan y llywodraeth yn Bensiwn y Wladwriaeth. Byddwch yn ei gael pan fyddwch yn cyrraedd [oedran Pensiwn y Wladwriaeth](https://www.gov.uk/calculate-state-pension).
 
-^Dim ond arweiniad ar bensiynau [cyfraniadau wedi'u diffinio](/cy/pension-types) mae Pensiwn Wise yn ei roi – [Y Gwasanaeth Pensiwn](https://www.gov.uk/cysylltwch-gwasanaeth-pensiwn) sy’n helpu gyda hawl, ceisiadau a thaliadau Pensiwn y Wladwriaeth.^
+^Dim ond arweiniad ar bensiynau [cyfraniadau wedi’u diffinio](/cy/pension-types) mae Pensiwn Wise yn ei roi – [Y Gwasanaeth Pensiwn](https://www.gov.uk/cysylltwch-gwasanaeth-pensiwn) sy’n helpu gyda hawl, ceisiadau a thaliadau Pensiwn y Wladwriaeth.^
 
 ## Pensiwn y Wladwriaeth Newydd
 

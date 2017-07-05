@@ -17,7 +17,7 @@ This might, for example, be income you get from an annuity, a tax-free lump sum,
 After you or your partner reach Pension Credit qualifying age any money you **take out of** or **leave in** your pot will be taken into account when your income is assessed. 
 
 $E
-**Example** You’re 67 and applying for Housing Benefit. You have a pension pot of £40,000 and have taken £10,000 tax-free cash from your pot. Your remaining pot is £30,000. Because you’re past Pension Credit qualifying age both amounts will count when you're assessed for benefits.
+**Example** You’re 67 and applying for Housing Benefit. You have a pension pot of £40,000 and have taken £10,000 tax-free cash from your pot. Your remaining pot is £30,000. Because you’re past Pension Credit qualifying age both amounts will count when you’re assessed for benefits.
 $E
 
 ### Leaving your pot untouched 
@@ -31,7 +31,7 @@ They’ll take this amount into account when they assess your income.
 If you take an adjustable income they’ll look at how much you’d get if you bought an annuity, and how much adjustable income you’re taking. The higher amount will be used when you’re assessed for benefits.
 
 $E
-**Example** You’re 69 and applying for Council Tax Reduction. You have a pension pot of £40,000 and take an adjustable income of £1,000 a year from it. Your local council have calculated that you could get £1,800 a year from an annuity – they'll use this figure when you're assessed for benefits.
+**Example** You’re 69 and applying for Council Tax Reduction. You have a pension pot of £40,000 and take an adjustable income of £1,000 a year from it. Your local council have calculated that you could get £1,800 a year from an annuity – they’ll use this figure when you’re assessed for benefits.
 $E
 
 It’s your responsibility to tell DWP, HMRC or your local council if you or your partner take any money from your pension pot.
