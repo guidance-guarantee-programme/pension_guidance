@@ -1,37 +1,37 @@
 ---
-description: Gallwch ond cymryd arian o'ch pensiwn cyn eich bod yn 55 oed mewn achosion prin, er enghraifft os ydych yn ddifrifol wael.
+description: Gallwch ond cymryd arian o’ch pensiwn cyn eich bod yn 55 oed mewn achosion prin, er enghraifft os ydych yn ddifrifol wael.
 ---
 
 # Cymryd eich pensiwn cyn 55 oed
 
-Fel arfer ni allwch gymryd arian o'ch cronfa bensiwn cyn eich bod yn 55 oed, ond mae rhai achosion prin pan y gallwch, er enghraifft os ydych yn ddifrifol wael.
+Fel arfer ni allwch gymryd arian o’ch cronfa bensiwn cyn eich bod yn 55 oed, ond mae rhai achosion prin pan y gallwch, er enghraifft os ydych yn ddifrifol wael.
 
-Yn yr achos hwn, efallai y gallwch gymryd eich cronfa yn gynnar, hyd yn oed os oes gennych 'oedran ymddeol a ddewiswyd' (oedran rydych wedi'i gytuno i ymddeol gyda darparwr eich pensiwn).
+Yn yr achos hwn, efallai y gallwch gymryd eich cronfa yn gynnar, hyd yn oed os oes gennych ‘oedran ymddeol a ddewiswyd’ (oedran rydych wedi’i gytuno i ymddeol gyda darparwr eich pensiwn).
 
-Efallai y bydd gennych hefyd yr hawl o dan gynllun pensiwn rydych wedi ymuno â cyn 6 Ebrill 2006 i gymryd eich pensiwn cyn eich bod yn 55 oed. Gofynnwch i'ch darparwr pensiwn os oes gennych ‘oedran pensiwn wedi'i ddiogelu’.
+Efallai y bydd gennych hefyd yr hawl o dan gynllun pensiwn rydych wedi ymuno â cyn 6 Ebrill 2006 i gymryd eich pensiwn cyn eich bod yn 55 oed. Gofynnwch i’ch darparwr pensiwn os oes gennych ‘oedran pensiwn wedi’i ddiogelu’.
 
-%Os bydd rhywun yn cysylltu â chi yn annisgwyl ac yn dweud y gallant eich helpu i gael mynediad i'ch cronfa cyn 55 oed, mae'n debygol o fod yn [sgâm pensiwn](/cy/scams). Gallech golli eich arian a wynebu cost treth o hyd at 55% o'r swm a gymerwyd allan neu a drosglwyddwyd yn ogystal â chostau pellach gan eich darparwr.%
+%Os bydd rhywun yn cysylltu â chi yn annisgwyl ac yn dweud y gallant eich helpu i gael mynediad i’ch cronfa cyn 55 oed, mae’n debygol o fod yn [sgâm pensiwn](/cy/scams). Gallech golli eich arian a wynebu cost treth o hyd at 55% o’r swm a gymerwyd allan neu a drosglwyddwyd yn ogystal â chostau pellach gan eich darparwr.%
 
-## Os ydych chi'n sâl
+## Os ydych chi’n sâl
 
 Efallai y byddwch yn gallu cymryd eich cronfa cyn eich bod yn 55 oed os na allwch weithio oherwydd eich bod yn rhy sâl.
 
-Siaradwch â'ch darparwr am reolau eich pensiwn - bydd yn dibynnu ar eu diffiniad o 'salwch'.
+Siaradwch â’ch darparwr am reolau eich pensiwn - bydd yn dibynnu ar eu diffiniad o ‘salwch’.
 
-### Os ydych chi'n ddifrifol wael
+### Os ydych chi’n ddifrifol wael
 
-Efallai y byddwch yn gallu cymryd eich cronfa gyfan yn ddi-dreth os yw'r ddau o'r canlynol yn berthnasol i chi:
+Efallai y byddwch yn gallu cymryd eich cronfa gyfan yn ddi-dreth os yw’r ddau o’r canlynol yn berthnasol i chi:
 
 - mae disgwyl i chi fyw am lai na blwyddyn
-- mae eich cronfeydd yn werth llai na'r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) o £1 miliwn
+- mae eich cronfeydd yn werth llai na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) o £1 miliwn
 
 Darllenwch fwy am eich [pensiwn pan fyddwch yn marw](/cy/when-you-die).
 
 ## Os oes gennych ddyledion
 
-Os ydych chi'n meddwl defnyddio arian o'ch cronfa i dalu dyledion, dylech gael cyngor yn gyntaf. Mae'n rhaid i chi feddwl yn ofalus am yr arian y byddwch ei angen ar ôl ymddeol.
+Os ydych chi’n meddwl defnyddio arian o’ch cronfa i dalu dyledion, dylech gael cyngor yn gyntaf. Mae’n rhaid i chi feddwl yn ofalus am yr arian y byddwch ei angen ar ôl ymddeol.
 
-Bydd rhaid i chi dalu treth ar unrhyw swm o arian rydych yn ei gymryd allan o'ch cronfa. Efallai na fydd gennych ddigon yn weddill ar ôl treth i dalu eich dyledion.
+Bydd rhaid i chi dalu treth ar unrhyw swm o arian rydych yn ei gymryd allan o’ch cronfa. Efallai na fydd gennych ddigon yn weddill ar ôl treth i dalu eich dyledion.
 
 I gael cyngor ar ddyled yn diduedd ac am ddim, ewch i:
 

@@ -24,7 +24,7 @@ Money you leave in your pot can be [passed on](/en/when-you-die) tax free if you
 
 ## Fees and investment risk
 
-You may be charged extra fees if you don't start taking your money when you reach your selected retirement age. Check with your provider.
+You may be charged extra fees if you don’t start taking your money when you reach your selected retirement age. Check with your provider.
 
 As with every investment the value of your pot could go up or down.
 

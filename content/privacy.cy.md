@@ -5,9 +5,9 @@ description: Dysgwch sut rydym yn casglu gwybodaeth neu ddata penodol amdanoch c
 
 ## Beth yw Pension Wise?
 
-Mae Pension Wise yn wasanaeth rhad ac am ddim a diduedd gan y llywodraeth sy'n eich helpu i ddeall eich opsiynau pensiwn cyfraniadau wedi'u diffinio.
+Mae Pension Wise yn wasanaeth rhad ac am ddim a diduedd gan y llywodraeth sy’n eich helpu i ddeall eich opsiynau pensiwn cyfraniadau wedi’u diffinio.
 
-Mae'r gwasanaeth yn cael ei ddarparu gan yr Adran Gwaith a Phensiynau mewn partneriaeth gyda Chyngor ar Bopeth a'r Gwasanaeth Cynghori ar Bensiynau.
+Mae’r gwasanaeth yn cael ei ddarparu gan yr Adran Gwaith a Phensiynau mewn partneriaeth gyda Chyngor ar Bopeth a’r Gwasanaeth Cynghori ar Bensiynau.
 
 Rydym yn casglu gwybodaeth neu ddata penodol amdanoch chi pan fyddwch yn defnyddio Pension Wise.
 
@@ -15,9 +15,9 @@ Rydym yn casglu gwybodaeth neu ddata penodol amdanoch chi pan fyddwch yn defnydd
 
 Yn ystod apwyntiad arweiniad Pension Wise gofynnir cwestiynau am eich materion personol a theuluol, trefniadau a chynlluniau ariannol a chyflwr iechyd cyffredinol.
 
-Caiff y manylion hyn eu defnyddio i ddarparu crynodeb o'ch apwyntiad. Gallent gael eu defnyddio i helpu'r llywodraeth a thrydydd partïon ddadansoddi a gwella perfformiad y gwasanaeth.
+Caiff y manylion hyn eu defnyddio i ddarparu crynodeb o’ch apwyntiad. Gallent gael eu defnyddio i helpu’r llywodraeth a thrydydd partïon ddadansoddi a gwella perfformiad y gwasanaeth.
 
-Ar gyfer fersiynau digidol y crynodeb o'r apwyntiad, mae eich enw a'ch cyfeiriad e-bost yn cael ei rannu gyda Gwasanaeth Digidol y Llywodraeth. Os caiff ei rannu yn y modd hwn, bydd eich gwybodaeth yn cael ei ddefnyddio dim ond ar gyfer y diben hwn ac ni chaiff ei datgelu ymhellach.
+Ar gyfer fersiynau digidol y crynodeb o’r apwyntiad, mae eich enw a’ch cyfeiriad e-bost yn cael ei rannu gyda Gwasanaeth Digidol y Llywodraeth. Os caiff ei rannu yn y modd hwn, bydd eich gwybodaeth yn cael ei ddefnyddio dim ond ar gyfer y diben hwn ac ni chaiff ei datgelu ymhellach.
 
 Ar gyfer apwyntiadau dros y ffôn, mae galwadau yn cael eu recordio a’u cadw.
 
@@ -33,11 +33,11 @@ Mae’r wybodaeth rydym yn ei gasglu ar y wefan yn cynnwys:
 
 Mae hyn yn ei helpu i:
 
-- gwella'r safle trwy fonitro sut rydych yn ei ddefnyddio
+- gwella’r safle trwy fonitro sut rydych yn ei ddefnyddio
 - ymateb i unrhyw adborth a anfonwch atom, os ydych wedi gofyn i ni wneud hynny
 - rhoi gwybodaeth i chi am wasanaethau lleol os ydych ei eisiau
 
-^Ni allwn adnabod eich defnydd o'r wefan drwy ddefnyddio eich data.^
+^Ni allwn adnabod eich defnydd o’r wefan drwy ddefnyddio eich data.^
 
 ### Y lle mae eich data yn cael ei gadw
 
@@ -53,10 +53,10 @@ Ni fyddwn yn rhannu eich gwybodaeth gydag unrhyw sefydliadau eraill ar gyfer mar
 
 Mae Pension Wise yn cynnwys dolenni i ac o wefannau eraill.
 
-Mae'r polisi preifatrwydd hwn yn berthnasol i Pension Wise yn unig, ac nid yw'n cynnwys gwasanaethau eraill y llywodraeth a thrafodion rydym yn cysylltu â hwy.
+Mae’r polisi preifatrwydd hwn yn berthnasol i Pension Wise yn unig, ac nid yw’n cynnwys gwasanaethau eraill y llywodraeth a thrafodion rydym yn cysylltu â hwy.
 
-Os byddwch yn mynd i wefan arall o’r wefan hon, darllenwch y polisi preifatrwydd ar y wefan i gael gwybod beth mae'n ei wneud gyda'ch gwybodaeth.
+Os byddwch yn mynd i wefan arall o’r wefan hon, darllenwch y polisi preifatrwydd ar y wefan i gael gwybod beth mae’n ei wneud gyda’ch gwybodaeth.
 
 ## Eich hawliau
 
-Gallwch ddarganfod pa wybodaeth sydd gennym amdanoch chi, a gofyn i ni beidio â defnyddio unrhyw ran o'r wybodaeth rydym yn ei chasglu.
+Gallwch ddarganfod pa wybodaeth sydd gennym amdanoch chi, a gofyn i ni beidio â defnyddio unrhyw ran o’r wybodaeth rydym yn ei chasglu.

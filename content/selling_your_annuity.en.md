@@ -2,7 +2,7 @@
 description: The rules on selling an annuity are no longer changing.
 ---
 
-# If you've already bought an annuity
+# If you’ve already bought an annuity
 
 The rules on selling an annuity will no longer change in 2017. 
 

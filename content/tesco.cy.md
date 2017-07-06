@@ -6,7 +6,7 @@ tags:
 
 # Trefnu apwyntiad am ddim am arweiniad gyda Pension Wise
 
-Mae Pension Wise yn wasanaeth diduedd am ddim gan y llywodraeth am eich opsiynau pensiwn cyfraniadau wedi'u diffinio.
+Mae Pension Wise yn wasanaeth diduedd am ddim gan y llywodraeth am eich opsiynau pensiwn cyfraniadau wedi’u diffinio.
 
 ^Nid yw Pension Wise yn cwmpasu pensiwn cyflog terfynol neu bensiwn cyfartaledd gyrfa – mae hyn yn cynnwys Cynllun Pensiwn Tesco sydd wedi cau.^
 
@@ -15,7 +15,7 @@ Mae Pension Wise yn wasanaeth diduedd am ddim gan y llywodraeth am eich opsiynau
 Mae Tesco a Pension Wise yn cynnig apwyntiadau ar dreial i staff Tesco. I drefnu, mae’n rhaid i chi:
 
 -  bod yn 50 oed neu drosodd
--  bod gyda phensiwn cyfraniadau wedi'u diffinio – mae hyn yn cynnwys y Tesco Retirement Savings Plan.
+-  bod gyda phensiwn cyfraniadau wedi’u diffinio – mae hyn yn cynnwys y Tesco Retirement Savings Plan.
 
 # Yr apwyntiad
 

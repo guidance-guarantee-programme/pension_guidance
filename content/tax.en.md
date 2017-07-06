@@ -164,7 +164,7 @@ You may pay emergency tax when you take money from your pot. You can [claim this
 ### If you continue to work
 Your employer will take any tax you owe off your earnings and your State Pension. This is called Pay As You Earn (PAYE). 
 
-If your total income (including money from pensions and PAYE) is £100,000 or more for the tax year, or if you're self-employed, you'll have to fill in a Self-Assessment tax return.
+If your total income (including money from pensions and PAYE) is £100,000 or more for the tax year, or if you’re self-employed, you’ll have to fill in a Self-Assessment tax return.
 
 ### If you have other income
 You’re responsible for paying tax on other income you have, eg from property or investments, and you might have to fill in a Self-Assessment tax return.

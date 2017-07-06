@@ -23,7 +23,7 @@ These pensions are usually protect by the [Pension Protection Fund](http://www.p
 
 You’ll usually receive:
 
-- 100% compensation if you’ve reached your ’selected retirement age’ (the age you agreed with your pension provider to retire)
+- 100% compensation if you’ve reached your ‘selected retirement age’ (the age you agreed with your pension provider to retire)
 - 90% compensation if you’re below your selected retirement age
 
 ## Annuities

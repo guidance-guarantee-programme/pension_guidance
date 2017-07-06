@@ -13,7 +13,7 @@ Search for your nearest appointment locations.
   <div class="form-group">
     <label class="form-label-bold" for="postcode">
       Postcode
-      <span class="form-hint">For example, 'SW1A 1AA'</span>
+      <span class="form-hint">For example, ‘SW1A 1AA’</span>
     </label>
     <input type="text" class="form-control" id="postcode" name="postcode" value="" required="true">
     <input type="submit" class="button" id="btn-search" value="Search">

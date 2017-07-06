@@ -22,7 +22,7 @@ Consider speaking to a financial adviser if you want to:
 You must get independent financial advice, by law, if you have a:
 
 - final salary or career average pension (known as a ‘defined benefit’ pension) worth more than £30,000 and you want to transfer it to a defined contribution pension scheme
-- defined contribution pension worth more than £30,000 with a guarantee about what you'll be paid when you retire (eg a guaranteed annuity rate) and you want to give it up to do something else with your pot
+- defined contribution pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (eg a guaranteed annuity rate) and you want to give it up to do something else with your pot
 
 You should also consider speaking to a financial adviser if you want to do either of these and your pension is worth £30,000 or less.
 

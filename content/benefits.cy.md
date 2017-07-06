@@ -4,7 +4,7 @@ description: Sut y gall cymryd eich pensiwn effeithio ar eich budd-daliadau. Fel
 
 # Budd-daliadau
 
-Gall unrhyw arian bensiwn sydd gennych effeithio ar eich hawl i fudd-daliadau. Mae hyn yn berthnasol os ydych yn cymryd arian allan o'ch cronfa bensiwn neu ei adael i mewn.
+Gall unrhyw arian bensiwn sydd gennych effeithio ar eich hawl i fudd-daliadau. Mae hyn yn berthnasol os ydych yn cymryd arian allan o’ch cronfa bensiwn neu ei adael i mewn.
 
 ## Cyn oedran cymhwyso ar gyfer Credyd Pensiwn
 
@@ -36,7 +36,7 @@ $E
 
 Eich cyfrifoldeb chi yw dweud wrth DWP, CThEM neu eich cyngor lleol os ydych chi neu’ch partner yn cymryd unrhyw arian o’ch cronfa bensiwn.
 
-%Os ydych yn gwario neu roi'r arian i ffwrdd yn fwriadol (gan gynnwys arian di-dreth) o'ch cronfa bensiwn i gael neu gynyddu budd-daliadau, efallai y bydd yr Adran Gwaith a Phensiynau neu’ch cyngor lleol yn asesu eich hawl eto ac yn eich trin fel bod yr arian hwnnw yn parhau i fod gennych.%
+%Os ydych yn gwario neu roi’r arian i ffwrdd yn fwriadol (gan gynnwys arian di-dreth) o’ch cronfa bensiwn i gael neu gynyddu budd-daliadau, efallai y bydd yr Adran Gwaith a Phensiynau neu’ch cyngor lleol yn asesu eich hawl eto ac yn eich trin fel bod yr arian hwnnw yn parhau i fod gennych.%
 
 Yn ogystal ag unrhyw incwm neu arian sy’n cael ei gymryd o’ch cronfa bensiwn, efallai bydd eich asedau eraill (er enghraifft cynilion a buddsoddiadau) yn cyfrif pan fyddwch yn cael eich asesu am fudd-daliadau.
 
