@@ -1,0 +1,6 @@
+// Modify z-index of the logo due to being
+// obscured by `.language-toggle`
+.header-logo {
+  position: relative;
+  z-index: 1;
+}
