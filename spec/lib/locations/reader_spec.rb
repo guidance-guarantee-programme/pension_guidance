@@ -6,26 +6,33 @@ RSpec.describe Locations::Reader, '#call' do
   let(:ttl) { 1 }
   let(:json) { 'json' }
   let(:path) { '/path/to/locations.json' }
-  let(:redis) { Redis.new }
-  let(:reader) { described_class.new(path, redis, ttl) }
+  let(:redis_pool) { REDIS_POOL }
+  let(:reader) { described_class.new(path, redis_pool, ttl) }
+
+  def redis
+    redis_pool.with do |connection|
+      yield connection
+    end
+  end
 
   def json_in_redis
-    redis.get(key)
+    redis { |redis| redis.get(key) }
   end
 
   def keys_in_redis
-    redis.keys('*')
+    redis { |redis| redis.keys('*') }
   end
 
   def expiry_in_seconds
-    redis.ttl(key)
+    redis { |redis| redis.ttl(key) }
   end
 
   subject(:read) { reader.call }
 
   before do
     Timecop.freeze(now)
-    redis.flushdb
+    redis(&:flushdb)
+
     allow(reader).to receive(:read_json).with(path).and_return(json)
   end
 
@@ -68,8 +75,10 @@ RSpec.describe Locations::Reader, '#call' do
       let(:existing_json) { 'existing json' }
 
       before do
-        redis.set(key, existing_json)
-        read
+        redis do |redis|
+          redis.set(key, existing_json)
+          read
+        end
       end
 
       it { is_expected.to eq(existing_json) }
