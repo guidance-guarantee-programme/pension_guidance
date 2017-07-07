@@ -4,12 +4,12 @@ module Locations
   class Reader
     DEFAULT_TTL = 60
 
-    attr_accessor :path, :redis
+    attr_accessor :path, :redis_pool
     attr_reader :ttl
 
-    def initialize(path, redis = Redis.new, ttl = ENV['LOCATIONS_TTL'])
+    def initialize(path, redis_pool = REDIS_POOL, ttl = ENV['LOCATIONS_TTL'])
       self.path = path
-      self.redis = redis
+      self.redis_pool = redis_pool
       self.ttl = ttl
     end
 
@@ -32,14 +32,16 @@ module Locations
     end
 
     def cached_json
-      json = redis.get('locations')
+      redis_pool.with do |redis|
+        json = redis.get('locations')
 
-      unless json
-        json = read_json(path)
-        redis.setex('locations', ttl, json)
+        unless json
+          json = read_json(path)
+          redis.setex('locations', ttl, json)
+        end
+
+        return json
       end
-
-      json
     end
 
     def read_json(path)

@@ -12,6 +12,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'booking_locations'
   gem 'bugsnag'
   gem 'canonical-rails'
+  gem 'connection_pool'
   gem 'email_validation'
   gem 'faraday'
   gem 'faraday-conductivity'

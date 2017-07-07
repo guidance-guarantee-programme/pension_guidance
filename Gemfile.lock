@@ -103,6 +103,7 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     concurrent-ruby (1.0.5)
+    connection_pool (2.2.1)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     cucumber (2.4.0)
@@ -418,6 +419,7 @@ DEPENDENCIES
   booking_locations!
   bugsnag!
   canonical-rails!
+  connection_pool!
   cucumber-rails!
   email_validation!
   fakeredis!
@@ -477,4 +479,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.0
+   1.15.1
