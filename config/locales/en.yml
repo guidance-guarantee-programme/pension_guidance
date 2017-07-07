@@ -7,8 +7,6 @@ en:
 
   service:
     title: '%{page_title} - Pension Wise'
-    homepage:
-      title: 'Pension Wise - Get to know your options'
 
   breadcrumbs:
     book_a_telephone_appointment:
@@ -148,3 +146,61 @@ en:
               invalid: enter a valid email address
             message:
               blank: enter a message
+  home:
+    show:
+      title: Pension Wise - Get to know your options
+      description: A free and impartial government service that helps you understand the options for your pension pot.
+      intro:
+        html: |
+          Phone <b>0800 138 3944</b> to <a href="%{appointment_url}">book a free appointment</a>
+      heading: Welcome to Pension Wise
+      sub_heading: Free and impartial government guidance about your pension options
+      quick_links:
+        heading: Popular on Pension Wise
+        items:
+          - title: What you can do with your pot
+            slug: pension-pot-options
+          - title: What you can do with your pot
+            slug: pension-pot-options
+          - title: Check how much is in your pot
+            slug: pension-pot-value
+          - title: Tax and pensions
+            slug: tax
+          - title: The State Pension
+            slug: state-pension
+      who:
+        title: Who?
+        subtitle: "Pension Wise can help if you:"
+        points:
+          - are aged 50 or over
+          - have a personal or workplace pension
+          - want to make sense of your options
+      what:
+        title: What?
+        subtitle: What is a Pension Wise appointment?
+        points:
+          - Specialist pension guidance
+          - 45 to 60 minutes
+          - Over the phone or local to you
+      how:
+        title: How?
+        subtitle: How to book an appointment?
+        points:
+          - Phone
+          - Online
+        book_appointment_button: Book a free appointment
+      your_pension_type:
+        title: Find out your pension type
+        subtitle: "Use this service to:"
+        points:
+          - understand your pension type
+          - find out if you can book a free Pension Wise appointment
+        link: Check your pension type
+      where_to_start:
+        title: Not sure where to start
+        content:
+          html: |
+            <p>There are different ways you can take the money from your pension pot.</p>
+
+            <p>Learn about leaving your pot untouched, taking cash in chunks or getting a regular income.</p>
+        link: Explore your options

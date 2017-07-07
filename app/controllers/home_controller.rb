@@ -8,4 +8,8 @@ class HomeController < ApplicationController
   def footer?
     true
   end
+
+  def content_lang_matches_locale?
+    true
+  end
 end

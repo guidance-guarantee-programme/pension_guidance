@@ -1,26 +1,27 @@
-<% content_for(:page_title, t('service.homepage.title')) %>
-<% content_for(:meta_description, 'A free and impartial government service that helps you understand ' +
-  'the options for your pension pot.') %>
+<% content_for(:page_title, t('.title')) %>
+<% content_for(:meta_description, t('.description')) %>
 
 <div class="home-intro l-page-container">
-  <p class="home-intro__text">Phone <b>0800 138 3944</b> to <%= link_to 'book a free appointment', guide_path('appointments', icn: 'book-appointment', ici: 'top-homepage') %></p>
+  <p class="home-intro__text">
+    <%= t('.intro.html', appointment_url: guide_path('appointments', icn: 'book-appointment', ici: 'top-homepage')) %>
+  </p>
 </div>
 
 <div class="l-grid-row l-home-row l-home-row--accent">
   <div class="l-page-container l-home-row-accent__content">
     <div class="l-home-row-accent__column">
-      <h1 class="l-home-single-column-heading">Welcome to Pension Wise</h1>
-      <p>Free and impartial government guidance about your pension options</p>
+      <h1 class="l-home-single-column-heading"><%= t('.heading') %></h1>
+      <p><%= t('.sub_heading') %></p>
     </div>
 
     <div class="quick-links">
-      <h2 class="quick-links__header">Popular on Pension Wise</h2>
+      <h2 class="quick-links__header"><%= t('.quick_links.heading') %></h2>
       <ul class="quick-links__list">
-        <li class="quick-links__item"><%= link_to 'What you can do with your pot', guide_path('pension-pot-options'), class: 'quick-links__link' %></li>
-        <li class="quick-links__item"><%= link_to 'Check how much is in your pot', guide_path('pension-pot-value'), class: 'quick-links__link' %></li>
-        <li class="quick-links__item"><%= link_to 'Tax and pensions', guide_path('tax'), class: 'quick-links__link' %></li>
-        <li class="quick-links__item"><%= link_to 'The State Pension', guide_path('state-pension'), class: 'quick-links__link' %></li>
-        <li class="quick-links__item"><%= link_to 'How to avoid a pension scam', guide_path('scams'), class: 'quick-links__link' %></li>
+        <% t('.quick_links.items').each do |item| %>
+          <li class="quick-links__item">
+            <%= link_to item[:title], guide_path(item[:slug]), class: 'quick-links__link' %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>
@@ -29,38 +30,39 @@
 <div class="l-grid-row l-home-row l-home-row-options l-home-row-options--alt">
   <div class="l-page-container">
     <div class="l-column-third">
-      <h2 class="l-home-single-column-subheading t-who">Who?</h2>
+      <h2 class="l-home-single-column-subheading t-who"><%= t('.who.title') %></h2>
 
-      <p>Pension Wise can help if you:</p>
+      <p><%= t('.who.subtitle') %></p>
 
       <ul>
-        <li>are aged 50 or over</li>
-        <li>have a personal or workplace pension</li>
-        <li>want to make sense of your options</li>
+        <% t('.who.points').each do |point| %>
+          <li><%= point %></li>
+        <% end %>
       </ul>
     </div>
     <div class="l-column-third l-home-central-column">
-      <h2 class="l-home-single-column-subheading t-what">What?</h2>
+      <h2 class="l-home-single-column-subheading t-what"><%= t('.what.title') %></h2>
 
-      <p>What is a Pension Wise appointment?</p>
+      <p><%= t('.what.subtitle') %></p>
 
       <ul>
-        <li>Specialist pension guidance</li>
-        <li>45 to 60 minutes</li>
-        <li>Over the phone or local to you</li>
+        <% t('.what.points').each do |point| %>
+          <li><%= point %></li>
+        <% end %>
       </ul>
     </div>
     <div class="l-column-third">
-      <h2 class="l-home-single-column-subheading t-how">How?</h2>
+      <h2 class="l-home-single-column-subheading t-how"><%= t('.how.title') %></h2>
 
-      <p>How to book an appointment?</p>
+      <p><%= t('.how.subtitle') %></p>
 
       <ul>
-        <li>Phone</li>
-        <li>Online</li>
+        <% t('.how.points').each do |point| %>
+          <li><%= point %></li>
+        <% end %>
       </ul>
 
-      <%= link_to 'Book a free appointment', guide_path('appointments'), class: 'button t-book' %>
+      <%= link_to t('.how.book_appointment_button'), guide_path('appointments'), class: 'button t-book' %>
     </div>
   </div>
 </div>
@@ -68,25 +70,24 @@
 <div class="l-grid-row l-home-row l-home-row-options">
   <div class="l-page-container">
     <div class="l-column-half">
-      <h2 class="l-home-single-column-subheading">Find out your pension type</h2>
+      <h2 class="l-home-single-column-subheading"><%= t('.your_pension_type.title') %></h2>
 
-      <p>Use this service to:</p>
+      <p><%= t('.your_pension_type.subtitle') %></p>
 
       <ul>
-        <li>understand your pension type</li>
-        <li>find out if you can book a free Pension Wise appointment</li>
+        <% t('.your_pension_type.points').each do |point| %>
+          <li><%= point %></li>
+        <% end %>
       </ul>
 
-      <%= link_to 'Check your pension type', guide_path('pension-type-tool') %>
+      <%= link_to t('.your_pension_type.link'), guide_path('pension-type-tool') %>
     </div>
     <div class="l-column-half l-home-right-column">
-      <h2 class="l-home-single-column-subheading">Not sure where to start</h2>
+      <h2 class="l-home-single-column-subheading"><%= t('.where_to_start.title') %></h2>
 
-      <p>There are different ways you can take the money from your pension pot.</p>
+      <p><%= t('.where_to_start.content.html') %></p>
 
-      <p>Learn about leaving your pot untouched, taking cash in chunks or getting a regular income.</p>
-
-      <%= link_to 'Explore your options', explore_your_options_root_path %>
+      <%= link_to t('.where_to_start.link'), explore_your_options_root_path %>
     </div>
   </div>
 </div>
