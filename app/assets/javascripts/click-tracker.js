@@ -34,6 +34,10 @@
       track('article a', 'content');
       track('.ga-options-table a', 'options table');
       track('.pager a', 'pager');
+
+      // pension summaries
+      track('.js-print-pension-summary-button', 'print pension summary');
+      track('.js-download-pension-summary-button', 'download pension summary');
     }
   };
 
