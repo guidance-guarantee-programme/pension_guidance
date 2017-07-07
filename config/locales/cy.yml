@@ -7,8 +7,6 @@ cy:
 
   service:
     title: '%{page_title} - Pension Wise'
-    homepage:
-      title: 'Pension Wise - Get to know your options'
 
   # A lot of these are still in English because none of
   # the booking journey is currently translated.
@@ -155,3 +153,61 @@ cy:
               invalid: enter a valid email address
             message:
               blank: enter a message
+  home:
+    show:
+      title: Pension Wise - Cael gwybod eich opsiynau
+      description: Gwasanaeth am ddim a di-duedd gan y llywodraeth sy’n eich helpu i ddeall yr opsiynau ar gyfer eich cronfa bensiwn.
+      intro:
+        html: |
+          Ffoniwch <b>0800 138 3944</b> i <a href="%{appointment_url}">drefnu apwyntiad am ddim</a>
+      heading: Croeso i Pension Wise
+      sub_heading: Cyngor am ddim a di-duedd gan y llywodraeth am eich opsiynau pensiwn
+      quick_links:
+        heading: Yn boblogaidd ar Pension Wise
+        items:
+          - title: Beth allwch chi ei wneud gyda’ch cronfa bensiwn
+            slug: opsiynau-cronfa-bensiwn
+          - title: Edrych faint sydd yn eich cronfa bensiwn
+            slug: gwerth-cronfa-bensiwn
+          - title: Treth a phensiynau
+            slug: treth
+          - title: Pensiwn y Wladwriaeth
+            slug: pensiwn-y-wladwriaeth
+          - title: Sut i osgoi sgi‚m pensiwn
+            slug: sgiamiau
+      who:
+        title: Pwy?
+        subtitle: "Gall Pension Wise helpu os ydych:"
+        points:
+          - yn 50 oed neu drosodd
+          - gyda phensiwn personol neu bensiwn gweithle
+          - eisiau gwneud synnwyr o’ch opsiynau
+      what:
+        title: Beth?
+        subtitle: Beth yw apwyntiad Pension Wise?
+        points:
+          - Arweiniad arbenigol ar bensiynau
+          - 45 i 60 munud
+          - Dros y ffÙn neu’n lleol i chi
+      how:
+        title: Sut?
+        subtitle: Sut i drefnu apwyntiad?
+        points:
+          - FfÙn
+          - Ar-lein
+        book_appointment_button: Trefnu apwyntiad am ddim
+      your_pension_type:
+        title: Dod o hyd i’ch math o bensiwn
+        subtitle: "Defnyddiwch y gwasanaeth hwn i:"
+        points:
+          - deall eich math o bensiwn
+          - darganfod os gallwch drefnu apwyntiad Pension Wise am ddim
+        link: Gwirio eich math o bensiwn
+      where_to_start:
+        title: Dim yn siwr ble i ddechrau
+        content:
+          html: |
+            <p>Mae ffyrdd gwahanol y gallwch gymryd arian o’ch cronfa bensiwn.</p>
+
+            <p>Dysgwch am adael eich cronfa heb ei gyffwrdd, cymryd arian fesul tipyn neu gael incwm rheolaidd.</p>
+        link: Edrych ar eich opsiynau
