@@ -165,16 +165,16 @@ cy:
       quick_links:
         heading: Yn boblogaidd ar Pension Wise
         items:
-          - title: Beth allwch chi ei wneud gyda’ch cronfa bensiwn
-            slug: opsiynau-cronfa-bensiwn
-          - title: Edrych faint sydd yn eich cronfa bensiwn
-            slug: gwerth-cronfa-bensiwn
+          - title: Beth i’w wneud gyda’ch cronfa
+            slug: pension-pot-options
+          - title: Edrych faint sydd yn eich cronfa
+            slug: pension-pot-value
           - title: Treth a phensiynau
-            slug: treth
+            slug: tax
           - title: Pensiwn y Wladwriaeth
-            slug: pensiwn-y-wladwriaeth
-          - title: Sut i osgoi sgi‚m pensiwn
-            slug: sgiamiau
+            slug: state-pension
+          - title: Sut i osgoi sgiâm pensiwn
+            slug: scams
       who:
         title: Pwy?
         subtitle: "Gall Pension Wise helpu os ydych:"

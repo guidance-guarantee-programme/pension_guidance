@@ -160,14 +160,14 @@ en:
         items:
           - title: What you can do with your pot
             slug: pension-pot-options
-          - title: What you can do with your pot
-            slug: pension-pot-options
           - title: Check how much is in your pot
             slug: pension-pot-value
           - title: Tax and pensions
             slug: tax
           - title: The State Pension
             slug: state-pension
+          - title: How to avoid a pension scam
+            slug: scams
       who:
         title: Who?
         subtitle: "Pension Wise can help if you:"
