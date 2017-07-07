@@ -160,8 +160,6 @@ en:
         items:
           - title: What you can do with your pot
             slug: pension-pot-options
-          - title: What you can do with your pot
-            slug: pension-pot-options
           - title: Check how much is in your pot
             slug: pension-pot-value
           - title: Tax and pensions
