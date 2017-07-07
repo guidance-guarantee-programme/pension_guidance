@@ -1,0 +1,22 @@
+<% content_for(:page_title, t('service.title', page_title: t('.title'))) %>
+
+<%= @guide.content %>
+
+<%= form_for @summary, url: explore_your_options_step_two_path, method: :get do |f| %>
+  <fieldset class="form-group build-your-own">
+    <legend class="visuallyhidden"><%= t('.accessible_legend') %></legend>
+
+    <% PensionSummary::PRIMARY_OPTIONS.each do |step| %>
+      <div class="multiple-choice">
+        <%= f.check_box step, { class: "t-options-#{step.dasherize} form-control" }, 1 %>
+        <%= f.label step, class: 'block-label selection-button-checkbox' do %>
+          <strong><%= t("pension_summaries.options.#{step}.title") %></strong>
+        <% end %>
+      </div>
+
+      <p class="form-hint"><%= t("pension_summaries.options.#{step}.hint") %></p>
+    <% end %>
+  </fieldset>
+
+  <%= f.submit t('.next_button'), class: :button %>
+<% end %>

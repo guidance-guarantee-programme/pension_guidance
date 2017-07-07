@@ -1,0 +1,39 @@
+<% content_for(:page_title, t('service.title', page_title: t('.title'))) %>
+
+<%= @guide.content %>
+
+<%= form_for @summary, url: explore_your_options_summary_path, method: :get do |f| %>
+  <fieldset class="form-group">
+    <legend class="visuallyhidden"><%= t('.secondary_steps.accessible_legend') %></legend>
+
+    <% PensionSummary::SECONDARY_OPTIONS.each do |step| %>
+      <div class="multiple-choice">
+        <%= f.check_box step, { class: "t-options-#{step.dasherize} form-control" }, 1 %>
+        <%= f.label step, class: 'block-label selection-button-checkbox' do %>
+          <strong><%= t("pension_summaries.options.#{step}.title") %></strong>
+        <% end %>
+      </div>
+    <% end %>
+  </fieldset>
+
+  <p><%= t('.compulsory_steps.introduction') %></p>
+
+  <fieldset class="form-group">
+    <legend class="visuallyhidden"><%= t('.compulsory_steps.accessible_legend') %></legend>
+
+    <% PensionSummary::COMPULSORY_OPTIONS.each do |step| %>
+      <div class="multiple-choice">
+        <%= f.check_box step, { disabled: true, class: "checkbox--readonly t-options-#{step.dasherize} form-control" }, 1 %>
+        <%= f.label step, class: 'block-label selection-button-checkbox' do %>
+          <strong><%= t("pension_summaries.options.#{step}.title") %></strong>
+        <% end %>
+      </div>
+    <% end %>
+  </fieldset>
+
+  <% PensionSummary::PRIMARY_OPTIONS.each do |step| %>
+    <%= f.hidden_field step %>
+  <% end %>
+
+  <%= f.submit t('.next_button'), class: :button %>
+<% end %>

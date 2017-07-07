@@ -1,0 +1,13 @@
+<% content_for(:page_title, t('service.title', page_title: t('.title'))) %>
+
+<%= @guide.content %>
+
+<%= link_to t('.start_now_button'), explore_your_options_step_one_path, class: 'button button-start' %>
+
+<p>
+  <%= link_to t('.not_sure_what_type_of_pension_link'), guide_path('pension-type-tool') %>
+</p>
+
+<p>
+  <%= t('.get_help_message.html') %>
+</p>

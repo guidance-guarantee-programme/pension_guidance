@@ -1,0 +1,53 @@
+<% content_for(:page_title, t('service.title', page_title: t('.title'))) %>
+
+<% if @summary.first_step? %>
+  <div class="build-your-own-intro">
+    <%= t('.first_step_introduction.html') %>
+  </div>
+<% end %>
+
+<span class="build-your-own-progress">
+  <%= t('.pagination', current_page: @summary.current_step_number, total_pages: @summary.selected_steps.count) %>
+</span>
+
+<%= @guide.content %>
+
+<% unless @summary.last_step? %>
+  <%= form_for @summary, url: explore_your_options_summary_path, method: :get do |f| %>
+    <%= f.hidden_field :current_step, value: @summary.next_step %>
+
+    <% PensionSummary::OPTIONS.each do |step| %>
+      <%= f.hidden_field step %>
+    <% end %>
+
+    <%= f.submit t('.next_button'), class: :button %>
+  <% end %>
+
+  <p>
+    <%= link_to t('.book_a_free_appointment_link'), guide_path('appointments') %>
+  </p>
+<% end %>
+
+<% content_for :sticky_sidebar do %>
+  <aside class="l-sticky-sidebar">
+    <div class="sticky-sidebar js-sticky-sidebar">
+      <div class="sidebar-hr"></div>
+      <div class="sticky-sidebar__nav">
+        <span class="sticky-sidebar__heading">
+          <strong><%= t('.sidebar.heading') %></strong>
+        </span>
+        <ul class="sticky-sidebar__list nav">
+          <% @summary.selected_steps.each do |step| %>
+            <li>
+              <%= link_to skip_to_step_path(step), class: 'sticky-sidebar__link' do %>
+                <%= t("pension_summaries.options.#{step}.title") %>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+        <%= link_to t('.sidebar.print_button'), print_summary_path, class: 'button' %>
+        <%= link_to t('.sidebar.download_button'), download_summary_path, class: 'button' %>
+      </div>
+    </div>
+  </aside>
+<% end %>

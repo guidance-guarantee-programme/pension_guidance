@@ -1,0 +1,20 @@
+.build-your-own {
+  .multiple-choice {
+    &:last-of-type {
+      .block-label {
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  .form-hint {
+    clear: both;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid $color-grey-mercury;
+
+    &:last-of-type {
+      border: 0;
+    }
+  }
+}

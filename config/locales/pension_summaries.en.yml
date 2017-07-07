@@ -1,0 +1,72 @@
+en:
+  pension_summaries:
+    start:
+      title: Build your pensions summary
+      start_now_button: Start now
+      not_sure_what_type_of_pension_link: Not sure what pension type you have?
+      get_help_message:
+        html: |
+          You can get help with the State Pension from the
+          <a href="https://www.gov.uk/contact-pension-service" target="_blank">Pensions Service</a>.
+
+    step_one:
+      title: The 6 pension options - Build your pensions summary
+      accessible_legend: Which options are you interested in?
+      next_button: Next
+
+    step_two:
+      title: Add extra information - Build your pensions summary
+      secondary_steps:
+        accessible_legend: What other information are you interested in?
+      compulsory_steps:
+        introduction: "You'll also get some important information to read about:"
+        accessible_legend: "You'll also get some important information to read about:"
+      next_button: Next
+
+    summary:
+      title: Summary - Build your pensions summary
+      first_step_introduction:
+        html: |
+          <p>This is your pensions summary. It includes important information on scams and tax in addition to the pages you selected.</p>
+          <p>You can print or download the summary.</p>
+      pagination: Page %{current_page} of %{total_pages}
+      next_button: Next
+      book_a_free_appointment_link: Book a free appointment
+      sidebar:
+        heading: Your Pension Summary
+        print_button: Print
+        download_button: Download
+
+    options:
+      leave_your_pot_untouched:
+        title: Leave your pot untouched
+        hint: You don’t have to take your pension money at your ‘selected retirement age’ – the age you agreed with your provider to retire. You can leave your pension invested and take it when you’re ready.
+      get_a_guaranteed_income:
+        title: Get a guaranteed income (annuity)
+        hint: You can use your pension money to buy an insurance policy which gives you a guaranteed income for life or a fixed number of years. You can take up to 25% of your pot tax free before you buy an annuity.
+      get_an_adjustable_income:
+        title: Get an adjustable income
+        hint: This option allows you to decide how much pension money to take and how long you want it to last. You can take some of your money as cash – up to 25% is tax free. The rest is invested to give you a taxable income.
+      take_cash:
+        title: Take cash in chunks
+        hint: This option allows you to decide how much pension money to take and when to take it. Your pot stays invested and you take small chunks over time until it runs out – 25% of each amount you take out is tax free.
+      take_whole:
+        title: Take your whole pot in one go
+        hint: You can take your whole pension pot as cash – 25% is tax free and the other 75% is taxed along with any other income you have, eg from work, savings or investments.
+      mix_your_options:
+        title: Mix your options
+        hint: You can mix your options, eg use some of your pension to get an adjustable income and some to buy an annuity. If you have more than one pot, you can choose different options for each one, eg leave one pot untouched and take cash in chunks from another.
+      how_my_pension_affects_my_benefits:
+        title: How my pension affects my benefits
+      getting_help_with_debt:
+        title: Getting help with debt
+      taking_my_pension_if_im_ill:
+        title: Taking my pension if I’m ill
+      transferring_my_pension_to_another_provider:
+        title: Transferring my pension to another provider
+      scams:
+        title: Scams
+      how_my_pension_is_taxed:
+        title: Tax you pay on your pension
+      final:
+        title: Further free and impartial guidance

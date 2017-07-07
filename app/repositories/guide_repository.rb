@@ -31,8 +31,8 @@ class GuideRepository
   end
 
   def find(id)
-    dirname = id.tr('-', '_')
-    path = glob_dir(dirname)&.first || raise(GuideNotFound)
+    filename = id.tr('-', '_')
+    path = Dir["#{dir}/#{filename}.#{locale}.{md,html}"].first || raise(GuideNotFound)
 
     read_guide(id, path)
   end
