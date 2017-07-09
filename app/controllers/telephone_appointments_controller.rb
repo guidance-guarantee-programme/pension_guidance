@@ -18,6 +18,8 @@ class TelephoneAppointmentsController < ApplicationController
   end
 
   def confirmation
+    return redirect_to root_path unless params[:booking_reference]
+
     @booking_reference = params[:booking_reference]
     @booking_date      = Time.zone.parse(params[:booking_date])
   end
