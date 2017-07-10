@@ -45,10 +45,15 @@ class PensionSummariesController < ApplicationController
     GuideDecorator.cached_for(GuideRepository.new.find("pension_summary/#{slug}"))
   end
 
+  PENSION_SUMMARY_PARAMS = [
+    *PensionSummary::OPTIONS,
+    :current_step
+  ].freeze
+
   def summary_params
     params
       .fetch(:pension_summary, {})
-      .permit(*PensionSummary::OPTIONS, :current_step)
+      .permit(PENSION_SUMMARY_PARAMS)
   end
 
   def set_summary
@@ -58,6 +63,14 @@ class PensionSummariesController < ApplicationController
   def set_breadcrumbs
     breadcrumb Breadcrumb.build_your_pensions_summary if params[:action] != 'start'
     breadcrumb Breadcrumb.explore_your_options_step_one if %w(start step_one).exclude?(params[:action])
+  end
+
+  def alternate_url(new_locale, options = {})
+    new_params = params.permit(:id, :locale, pension_summary: PENSION_SUMMARY_PARAMS)
+    new_params.merge!(options)
+    new_params[:locale] = new_locale
+
+    url_for(new_params)
   end
 
   def skip_to_step_path(step)
