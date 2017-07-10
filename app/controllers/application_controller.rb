@@ -28,19 +28,12 @@ class ApplicationController < ActionController::Base
     I18n.available_locales - Array(I18n.locale)
   end
 
-  def alternate_url(new_locale, options = {}) # rubocop:disable Metrics/MethodLength
-    new_params = params.delete_if { |k| %w(utf8 authenticity_token).include?(k) }
-    new_params = new_params.permit(
-      :id,
-      :ici,
-      :icn,
-      :locale,
-      pension_summary: [*PensionSummary::OPTIONS, :current_step]
-    )
-    new_params.merge!(options)
-    new_params[:locale] = new_locale
+  # Override in controllers to account for their
+  # particular permitted parameters.
+  def alternate_url(new_locale, options = {})
+    options[:locale] = new_locale
 
-    url_for(new_params)
+    url_for(options)
   end
   helper_method :alternate_url
 

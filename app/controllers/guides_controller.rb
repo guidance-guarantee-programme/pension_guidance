@@ -41,4 +41,12 @@ class GuidesController < ApplicationController
   def content_lang_matches_locale?
     UNTRANSLATED_GUIDE_SLUGS.exclude?(params[:id])
   end
+
+  def alternate_url(new_locale, options = {})
+    new_params = params.permit(:id, :ici, :icn, :locale)
+    new_params.merge!(options)
+    new_params[:locale] = new_locale
+
+    url_for(new_params)
+  end
 end
