@@ -15,8 +15,4 @@ Ar ôl eich apwyntiad, defnyddiwch hwn i:
 
 Dylech fod wedi cael apwyntiad dros y ffôn neu wyneb yn wyneb gydag arbenigwr arweiniad Pension Wise.
 
-Oes gennych chi ychydig o amser i ateb rhywfaint o gwestiynau am eich apwyntiad Pension Wise? Gallai unrhyw adborth a roddwch ein helpu i wella ein gwasanaeth.
-
-Gallwch <a rel="external" href="http://research.pensionwise.gov.uk/s/telephonecustomersurvey/" target="_blank">roi adborth ar eich apwyntiad yma </a>.
-
 ^Os nad ydych wedi cael apwyntiad Pension Wise eto, gallwch [drefnu apwyntiad](/cy/appointments).^
