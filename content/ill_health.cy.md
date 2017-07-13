@@ -21,7 +21,7 @@ Mae rheolau treth arbennig yn berthnasol os oes gennych salwch difrifol sy’n g
 Efallai y byddwch yn gallu cymryd eich cronfa bensiwn gyfan yn ddi-dreth os yw **pob un** o’r canlynol yn berthnasol i chi:
 
 - Mae disgwyl i chi fyw am lai na blwyddyn oherwydd salwch difrifol.
-- Rydych o dan 75 oed (os ydych chi dros 75 oed byddwch yn talu treth o 45% ar y lwmp swm).
+- Rydych o dan 75 oed (os ydych chi dros 75 oed byddwch yn talu Treth Incwm ar y lwmp swm).
 - Nid oes gennych fwy na’r lwfans oes o £1 miliwn mewn arian pensiwn.
 
 Gwiriwch delerau eich pensiwn gyda’ch darparwr. Bydd rhai pensiynau yn cadw o leiaf 50% o’ch cronfa ar gyfer eich priod neu bartner.
