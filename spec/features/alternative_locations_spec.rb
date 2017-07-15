@@ -14,6 +14,7 @@ RSpec.feature 'Alternative locations' do
       given_a_location_with_limited_availability_and_available_alternatives do
         when_i_try_to_book_an_appointment
         then_i_should_see_suggested_alternative_locations
+        and_i_should_not_see_online_booking_disabled_locations
         and_i_should_not_be_suggested_anywhere_more_than_5_miles_away
         and_i_should_not_be_suggested_anywhere_with_less_than_3_slots
       end
@@ -94,6 +95,12 @@ end
 
 def then_i_should_see_suggested_alternative_locations
   expect(page).to have_selector('.t-limited-availability')
+end
+
+def and_i_should_not_see_online_booking_disabled_locations
+  within('.t-limited-availability') do
+    expect(page).to have_no_content('Newham')
+  end
 end
 
 def and_i_should_not_be_suggested_anywhere_more_than_5_miles_away

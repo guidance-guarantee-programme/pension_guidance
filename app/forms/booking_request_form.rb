@@ -96,7 +96,7 @@ class BookingRequestForm
   def alternate_locations(limit: 5, radius: 5)
     Locations
       .nearest_to_postcode(location.postcode, radius: radius)
-      .reject { |l| l.id == location_id || l.limited_availability? || l.no_availability? }
+      .reject { |l| l.id == location_id || l.online_booking_disabled? || l.limited_availability? || l.no_availability? }
       .take(limit)
       .map { |l| LocationSearchResultDecorator.new(l) }
   end
