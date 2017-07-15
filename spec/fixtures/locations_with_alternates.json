@@ -97,7 +97,7 @@
         "phone":"",
         "hours":"",
         "twilio_number":"+442030952775",
-        "online_booking_enabled":true
+        "online_booking_enabled":false
       }
     },
     {
