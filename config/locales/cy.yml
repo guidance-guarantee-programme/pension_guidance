@@ -188,12 +188,12 @@ cy:
         points:
           - Arweiniad arbenigol ar bensiynau
           - 45 i 60 munud
-          - Dros y ffÙn neu’n lleol i chi
+          - Dros y ffôn neu’n lleol i chi
       how:
         title: Sut?
         subtitle: Sut i drefnu apwyntiad?
         points:
-          - FfÙn
+          - Ffôn
           - Ar-lein
         book_appointment_button: Trefnu apwyntiad am ddim
       your_pension_type:
