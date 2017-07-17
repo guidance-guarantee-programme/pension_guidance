@@ -161,7 +161,7 @@ cy:
         html: |
           Ffoniwch <b>0800 138 3944</b> i <a href="%{appointment_url}">drefnu apwyntiad am ddim</a>
       heading: Croeso i Pension Wise
-      sub_heading: Cyngor am ddim a di-duedd gan y llywodraeth am eich opsiynau pensiwn
+      sub_heading: Cyngor am ddim a di-duedd gan y llywodraeth am eich opsiynau pensiwn cyfraniadau wedi’u diffinio
       quick_links:
         heading: Yn boblogaidd ar Pension Wise
         items:
@@ -188,12 +188,12 @@ cy:
         points:
           - Arweiniad arbenigol ar bensiynau
           - 45 i 60 munud
-          - Dros y ffÙn neu’n lleol i chi
+          - Dros y ffôn neu’n lleol i chi
       how:
         title: Sut?
         subtitle: Sut i drefnu apwyntiad?
         points:
-          - FfÙn
+          - Ffôn
           - Ar-lein
         book_appointment_button: Trefnu apwyntiad am ddim
       your_pension_type:
