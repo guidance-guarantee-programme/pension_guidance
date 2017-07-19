@@ -38,6 +38,9 @@
       // pension summaries
       track('.js-print-pension-summary-button', 'print pension summary');
       track('.js-download-pension-summary-button', 'download pension summary');
+
+      // booking requests
+      track('.js-alternate-location-link', 'alternate location');
     }
   };
 
