@@ -9,6 +9,8 @@ en:
     title: '%{page_title} - Pension Wise'
 
   breadcrumbs:
+    home:
+      title: Home
     book_a_telephone_appointment:
       title: Book a phone appointment
     book_an_appointment:
