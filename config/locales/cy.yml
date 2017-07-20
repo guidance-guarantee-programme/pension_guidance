@@ -52,6 +52,8 @@ cy:
         url: '/cy/after-your-appointment'
         options:
           class: t-appointment-summary-link
+      - title: Pension Wise i gyflogwyr
+        url: '/cy/for-employers'
 
   pagination:
     previous: Blaenorol
