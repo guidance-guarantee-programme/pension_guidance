@@ -24,7 +24,7 @@ Byddant yn cael apwyntiad arweiniad am ddim gydag un o’n harbenigwyr pensiynau
 - egluro sut mae bob opsiwn yn cael ei drethu
 - rhoi’r camau nesaf iddynt eu cymryd
 
-Gall yr apwyntiad fod dros y ffÙn neu wyneb yn wyneb rhywle sy’n lleol iddynt ac o bosib yn y gweithle ar gyfer staff cymwys.
+Gall yr apwyntiad fod dros y ffôn neu wyneb yn wyneb rhywle sy’n lleol iddynt ac o bosib yn y gweithle ar gyfer staff cymwys.
 
 ^Mae ein harweiniad yn ddiduedd ac ni fyddwn yn argymell unrhyw gynnyrch neu gwmnÔau ac ni fyddwn yn dweud wrthynt sut i fuddsoddi eu harian.^
 
