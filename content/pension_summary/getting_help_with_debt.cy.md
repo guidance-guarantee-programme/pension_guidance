@@ -1,20 +1,20 @@
-# Debt and pensions
+# Dyled a phensiynau
 
-You should think carefully about taking money from your pension pot to pay off debts. Money you take from your pot now could leave you with less to live on in the future.
+Dylech feddwl yn ofalus am gymryd arian allan o’ch cronfa bensiwn i ad-dalu unrhyw ddyledion. Gallai arian y byddwch yn ei gymryd o’ch cronfa eich gadael gyda llai i fyw arno yn y dyfodol.
 
-If you have an arrangement to pay your debts, creditors may be able to access some or all of the pension income or lump sums you take.
+Os oes gennych drefniant i dalu eich dyledion, efallai y bydd credydwyr yn gallu cael mynediad i rywfaint neu’r cyfan o’r incwm pensiwn neu lwmp swm rydych yn ei gymryd.
 
-This includes money or income from:
+Mae hyn yn cynnwys arian neu incwm o:
 
-* a guaranteed income (annuity)
-* an adjustable income
-* cash in chunks
-* taking your whole pot in one go
+* incwm gwarantedig (blwydd-dal)
+* incwm addasadwy
+* arian fesul tipyn
+* cymryd eich cronfa gyfan ar un tro
 
-Find out the status of any debt arrangement you have before choosing a pension option.
+Darganfyddwch statws unrhyw drefniant dyled sydd gennych cyn dewis opsiwn pensiwn.
 
-## Getting help with debt
+## Cael help gyda dyled
 
-Take your time when deciding what to do with your pot and don’t rush into a decision.
+Cymerwch eich amser wrth benderfynu beth i’w wneud gyda’ch cronfa a pheidiwch â rhuthro i benderfyniad.
 
-For more information about debt you can speak to the [Money Advice Service](https://www.moneyadviceservice.org.uk/cy). Their website contains information on taking control of debt and they can also help you find a free and confidential debt advice service near you.
+Am fwy o wybodaeth am ddyled gallwch siarad gyda’r [Gwasanaeth Cynghori Ariannol](https://www.moneyadviceservice.org.uk/cy). Mae eu gwefan yn cynnwys gwybodaeth am gymryd rheolaeth ar ddyled a gallant hefyd eich helpu i ddod o hyd i wasanaeth cyngor ar ddyledion am ddim a chyfrinachol yn eich ardal chi.

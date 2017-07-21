@@ -1,22 +1,22 @@
-# Explore your pension options
+# Edrych i mewn i’ch opsiynau pensiwn
 
-If you have a defined contribution (personal or workplace) pension you
-choose how to take your money.
+Os oes gennych bensiwn cyfraniadau wedi’u diffinio (personol neu weithle) chi sy’n
+dewis sut i gymryd eich arian.
 
-You can use this service to find out about:
+Gallwch ddefnyddio’r gwasanaeth hwn i gael gwybod am:
 
-* the options for taking your pension money
-* how each option is taxed
-* next steps to take
-* questions to ask your provider
+* yr opsiynnau ar gyfer cymryd eich arian pensiwn
+* sut mae bob opsiwn yn cael ei drethu
+* y camau nesaf i’w cymryd
+* cwestiynau i’w gofyn i’ch darparwr
 
-## How it works
+## Sut mae’n gweithio
 
-1. You’ll get a brief summary of the 6 options for taking a defined contribution pension.
-2. Select the ones you’re most interested in for more detailed information.
-3. You can then choose extra information, eg how your pension is taxed.
-4. Print or download your summary.
+1. Byddwch yn cael crynodeb byr o’r 6 opsiwn ar gyfer cymryd pensiwn cyfraniadau wedi’u diffinio.
+2. Dewiswch y rhai mae gennych fwyaf o ddiddordeb ynddynt i gael gwybodaeth fwy manwl.
+3. Yna gallwch ddewis mwy o wybodaeth, er enghraifft sut mae’ch pensiwn yn cael ei drethu.
+4. Argraffwch neu lawr lwythwch eich crynodeb.
 
-## Before you start
+## Cyn i chi ddechrau
 
-You need to have a **defined contribution** pension (not a final salary or career average pension).
+Bydd angen i chi gael pensiwn **cyfraniadau wedi’u diffinio** (dim pensiwn cyflog terfynol neu gyfartaledd gyrfa).

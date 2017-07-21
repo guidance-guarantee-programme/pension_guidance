@@ -1,49 +1,49 @@
-# Further free and impartial guidance
+# Arweiniad pellach diduedd am ddim
 
 {:.not-printed}
-If you’d like more information on your options, you can book a Pension Wise appointment. You’ll talk to one of our pension specialists over the phone or in person somewhere local to you.
+Os hoffech gael mwy o wybodaeth am eich opsiynau, gallwch drefnu apwyntiad Pension Wise. Byddwch yn siarad ag un o’n harbennigwyr pensiwn dros y ffôn neu rhywle lleol i chi.
 
 {:.not-printed}
-[Book a free appointment](/appointments){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
+[Trefnu apwyntiad am ddim](/appointments){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
 
-## Help with annuities, debt and finding a financial adviser:
+## Help gyda blwydd-daliadau, dyled, a dod o hyd i ymgynghorydd ariannol:
 
 $C
-### The Money Advice Service
+### Y Gwasanaeth Cynghori Ariannol
 [moneyadviceservice.org.uk](https://moneyadviceservice.org.uk)<br>
-Phone: 0300 500 5000<br>
-From outside the UK: +44 144 382 7658
+Ffôn: 0300 500 5000<br>
+O’r tu allan i’r DU: +44 144 382 7658
 $C
 
-## Help with benefits and debt:
+## Help gyda budd-daliadau a dyled:
 
 $C
-### Citizens Advice
+### Cyngor Ar Bopeth
 [citizensadvice.org.uk](https://citizensadvice.org.uk)<br>
-Phone:<br>
-England: 03444 111 444<br>
-Scotland: 0808 800 9060
+Ffôn:<br>
+Lloegr: 03444 111 444<br>
+Yr Alban: 0808 800 9060
 $C
 
 $C
-### Northern Ireland Citizens Advice
+### Cyngor Ar Bopeth Gogledd Iwerddon
 [citizensadvice.co.uk](https://citizensadvice.org.uk)
 $C
 
-## Help with scams, State Pension, final salary and defined contribution pensions:
+## Help gyda sgamiau, Pensiwn y Wladwriaeth a phensiynau cyflog terfynol a chyfraniadau wedi’u diffinio:
 
 $C
-### The Pensions Advisory Service
+### Y Gwasanaeth Cynghori ar Bensiynau
 [pensionsadvisoryservice.org.uk](https://pensionsadvisoryservice.org.uk)<br>
-Phone: 0300 123 1047<br>
-From outside the UK: +44 207 9325780
+Ffôn: 0300 123 1047<br>
+O’r tu allan i’r DU: +44 207 9325780
 $C
 
-## Find a lost pension:
+## Dod o hyd i bensiwn a gollwyd:
 
 $C
-### The Pensions Tracing Service
-[gov.uk/find-pension-contact-details](https://www.gov.uk/find-pension-contact-details)<br>
-Phone: 0345 6002 537<br>
-From outside the UK: +44 191 215 4491
+### y Gwasanaeth Olrhain Pensiynau
+[www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn](https://www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn)<br>
+Ffôn: 0345 6002 537<br>
+O’r tu allan i’r DU: +44 191 215 4491
 $C

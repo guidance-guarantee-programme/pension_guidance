@@ -1,72 +1,72 @@
 cy:
   pension_summaries:
     start:
-      title: Build your pensions summary
-      start_now_button: Start now
-      not_sure_what_type_of_pension_link: Not sure what pension type you have?
+      title: Creu eich crynodeb o bensiynau
+      start_now_button: Dechrau nawr
+      not_sure_what_type_of_pension_link: Ddim yn siwr sut fath o bensiwn sydd gennych?
       get_help_message:
         html: |
-          You can get help with the State Pension from the
-          <a href="https://www.gov.uk/contact-pension-service" target="_blank">Pensions Service</a>.
+          Gallwch gael help gyda Phensiwn y Wladwriaeth gan
+          <a href="https://www.gov.uk/cysylltwch-gwasanaeth-pensiwn" target="_blank">Y Gwasanaeth Pensiwn</a>.
 
     step_one:
-      title: The 6 pension options - Build your pensions summary
-      accessible_legend: Which options are you interested in?
-      next_button: Next
+      title: Y 6 opsiwn pensiwn - Creu eich crynodeb o bensiynau
+      accessible_legend: Pa opsiynau mae gennych ddiddordeb ynddynt?
+      next_button: Nesaf
 
     step_two:
-      title: Add extra information - Build your pensions summary
+      title: Ychwanegu gwybodaeth ychwanegol - Creu eich crynodeb o bensiynau
       secondary_steps:
-        accessible_legend: What other information are you interested in?
+        accessible_legend: Pa wybodaeth arall mae gennych ddiddordeb ynddo?
       compulsory_steps:
-        introduction: "You'll also get some important information to read about:"
-        accessible_legend: "You'll also get some important information to read about:"
-      next_button: Next
+        introduction: "Byddwch hefyd yn cael rhywfaint o wybodaeth bwysig i ddarllen amdano:"
+        accessible_legend: "Byddwch hefyd yn cael rhywfaint o wybodaeth bwysig i ddarllen amdano:"
+      next_button: Nesaf
 
     summary:
-      title: Summary - Build your pensions summary
+      title: Crynodeb - Creu eich crynodeb o bensiynau
       first_step_introduction:
         html: |
-          <p>This is your pensions summary. It includes important information on scams and tax in addition to the pages you selected.</p>
-          <p>You can print or download the summary.</p>
-      pagination: Page %{current_page} of %{total_pages}
-      next_button: Next
-      book_a_free_appointment_link: Book a free appointment
+          <p>Dyma eich crynodeb o bensiynau. Mae’n cynnwys gwybodaeth bwysig am sgamiau a threth yn ychwanegol i’r tudalennau rydych wedi’u dewis.</p>
+          <p>Gallwch argraffu neu lawrlwytho’r crynodeb.</p>
+      pagination: Tudalen %{current_page} o %{total_pages}
+      next_button: Nesaf
+      book_a_free_appointment_link: Trefnu apwyntiad am ddim
       sidebar:
-        heading: Your Pension Summary
-        print_button: Print
-        download_button: Download
+        heading: Eich Crynodeb Pensiwn
+        print_button: Argraffu
+        download_button: Lawr lwytho
 
     options:
       leave_your_pot_untouched:
-        title: Leave your pot untouched
-        hint: You don’t have to take your pension money at your ‘selected retirement age’ – the age you agreed with your provider to retire. You can leave your pension invested and take it when you’re ready.
+        title: Gadael eich cronfa heb ei gyffwrdd
+        hint: Nid oes yn rhaid i chi gymryd eich arian pensiwn ar gyrraedd eich ‘oedran ymddeol a ddewiswyd’ - yr oedran rydych wedi’i gytuno i ymddeol gyda’ch darparwr. Gallwch adael eich pensiwn wedi’i fuddsoddi a’i gymryd pan rydych yn barod.
       get_a_guaranteed_income:
-        title: Get a guaranteed income (annuity)
-        hint: You can use your pension money to buy an insurance policy which gives you a guaranteed income for life or a fixed number of years. You can take up to 25% of your pot tax free before you buy an annuity.
+        title: Cael incwm gwarantedig (blwydd-dal)
+        hint: Gallwch ddefnyddio eich arian pensiwn i brynu polisi yswiriant sy’n rhoi incwm gwarantedig i chi am oes neu ar gyfer nifer penodol o flynyddoedd. Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth cyn prynu blwydd-dal.
       get_an_adjustable_income:
-        title: Get an adjustable income
-        hint: This option allows you to decide how much pension money to take and how long you want it to last. You can take some of your money as cash – up to 25% is tax free. The rest is invested to give you a taxable income.
+        title: Cael incwm addasadwy
+        hint: Mae’r opsiwn hwn yn gadael i chi benderfynu faint o arian pensiwn i’w gymryd allan a pha mor hir rydych am iddo barhau. Gallwch gymryd rhywfaint o’ch arian fel arian parod - mae hyd at 25% yn ddi-dreth. Mae’r gweddill yn cael ei fuddsoddi i roi incwm trethadwy i chi.
       take_cash:
-        title: Take cash in chunks
-        hint: This option allows you to decide how much pension money to take and when to take it. Your pot stays invested and you take small chunks over time until it runs out – 25% of each amount you take out is tax free.
+        title: Cymryd arian allan fesul tipyn
+        hint: Mae’r opsiwn hwn yn gadael i chi benderfynu faint o arian pensiwn i’w gymryd a phryd i’w gymryd. Mae’ch cronfa yn parhau i fod wedi’i fuddsoddi ac rydych yn cymryd symiau bychan fesul tipyn dros gyfnod o amser nes mae’n rhedeg allan  - mae 25% o bob swm rydych yn ei gymryd allan yn ddi-dreth.
       take_whole:
-        title: Take your whole pot in one go
-        hint: You can take your whole pension pot as cash – 25% is tax free and the other 75% is taxed along with any other income you have, eg from work, savings or investments.
+        title: Cymryd eich cronfa gyfan ar un tro
+        hint: Gallwch gymryd eich cronfa bensiwn gyfan ar un tro fel arian parod - mae 25% yn ddi-dreth ac mae’r 75% arall yn cael ei drethu gydag unrhyw incwm arall sydd gennych, er enghraifft o waith, cynilion neu fuddsoddiadau.
       mix_your_options:
-        title: Mix your options
-        hint: You can mix your options, eg use some of your pension to get an adjustable income and some to buy an annuity. If you have more than one pot, you can choose different options for each one, eg leave one pot untouched and take cash in chunks from another.
+        title: Cymysgu eich opsiynau
+        hint: Gallwch gymysgu eich opsiynau, er enghraifft defnyddio rhywfaint o’ch cronfa i gael incwm addasadwy a rhywfaint i brynu blwydd-dal. Os oes gennych fwy nag un gronfa gallwch ddefnyddio opsiynau gwahanol ar gyfer pob un, er enghraifft gadael un gronfa heb ei gyffwrdd a chymryd arian allan fesul tipyn o un arall.
       how_my_pension_affects_my_benefits:
-        title: How my pension affects my benefits
+        title: Sut mae fy mhensiwn yn effeithio ar fy mudd-daliadau
       getting_help_with_debt:
-        title: Getting help with debt
+        title: Cael help gyda dyled
       taking_my_pension_if_im_ill:
-        title: Taking my pension if I’m ill
+        title: Cymryd fy mhensiwn os wyf yn sâl
       transferring_my_pension_to_another_provider:
-        title: Transferring my pension to another provider
+        title: Trosglwyddo fy mhensiwn i ddarparwr arall
       scams:
-        title: Scams
+        title: Sgamiau
       how_my_pension_is_taxed:
-        title: Tax you pay on your pension
+        title: Treth rydych yn ei dalu ar eich pensiwn
       final:
-        title: Further free and impartial guidance
+        title: Arweiniad pellach diduedd ac am ddim

@@ -1,22 +1,22 @@
-# Take cash in chunks
+# Cymryd arian allan fesul tipyn
 
-Instead of taking your whole pot in one go, you take smaller chunks over time until your money runs out – 25% of each chunk you take out is tax free and the rest is taxable.
+Yn lle cymryd eich cronfa gyfan mewn un tro, rydych yn cymryd llai allan fesul tipyn dros gyfnod o amser tan mae eich arian yn rhedeg allan - mae 25% o bob darn rydych yn ei dynnu allan yn ddi-dreth ac mae’r gweddill yn drethadwy.
 
-## Key facts
+## Ffeithiau allweddol
 
-* The chunks of cash you take get taxed along with any other income you have, eg from work, savings or investments.
-* You’re likely to be involved in choosing and managing your investments.
-* You can spread the chunks out over multiple tax years to reduce your income which could mean you pay less tax.
-* Providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
-* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the ‘money purchase allowance’).
-* If you invest your pot into flexi-access drawdown, you won’t be able to take any more tax-free cash and can’t use this option.
+* Mae’r arian rydych yn ei dynnu allan fesul tipyn yn cael ei drethu gydag unrhyw incwm arall sydd gennych, er enghraifft o waith, cynilion neu fuddsoddiadau.
+* Mae’n debygol y byddwch yn rhan o ddewis a rheoli eich buddsoddiadau.
+* Gallwch ledaenu’r cymryd allan fesul tipyn dros nifer o flynyddoedd treth i leihau eich incwm a allai olygu y byddech yn talu llai o dreth.
+* Efallai y bydd darparwyr yn disgrifio’r opsiwn hwn fel ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
+* Efallai y gallech barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a elwir yn ‘lwfans prynu arian’).
+* Os ydych yn buddsoddi eich cronfa i mewn i dynnu allan hyblyg, ni fyddwch yn gallu cymryd dim mwy o arian yn ddi-dreth ac ni allwch ddefnyddio’r opsiwn hwn.
 
-## Next steps
+## Camau nesaf
 
-If you’re interested in this option, you’ll need to contact your provider and ask the following questions.
+Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch darparwr a gofyn y cwestiynau canlynol.
 
-### Questions to ask your provider
+### Cwestiynau i’w gofyn i’ch darparwr
 
-1. Do you offer ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?
-2. Will you charge me a fee if I move my pot to a provider that offers this option?
-3. Does my pot have any special features like a guaranteed annuity rate?
+1. Ydych chi’n cynnig ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?
+2. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?
+3. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?

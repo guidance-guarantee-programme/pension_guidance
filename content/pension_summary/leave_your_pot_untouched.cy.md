@@ -1,23 +1,23 @@
-# Leave your pot untouched
+# Gadael eich cronfa heb ei gyffwrdd
 
-You can leave your money invested in your pot until you need it. Your pot could grow further and give you a larger amount of money to last for a shorter amount of time. You (and your employer) can still pay into your pot but there may be restrictions.
+Gallwch adael eich arian wedi’i fuddsoddi yn eich cronfa tan fyddwch chi ei angen. Gallai eich cronfa dyfu ymhellach a rhoi swm mwy o arian i chi i barhau am lai o amser. Gallwch chi (a’ch cyflogwr) ddal i dalu i mewn i’ch cronfa ond efallai bydd cyfyngiadau.
 
-## Key facts
+## Ffeithiau allweddol
 
-* While the money stays in your pot you don’t pay tax on it.
-* It’s up to you when you take the money out – the earliest is usually aged 55, unless you have a serious illness.
-* If someone contacts you unexpectedly about getting money out of your pot before you’re 55, it’s nearly always a pension scam.
-* Money left untouched can be passed on when you die.
+* Tra bydd yr arian yn aros yn eich cronfa nid ydych yn talu treth arno.
+* Mae i fyny i chi pryd fyddwch yn cymryd yr arian allan – y cynharaf fel arfer yw 55 oed, oni bai fod gennych salwch difrifol.
+* Os bydd rhywun yn cysylltu â chi yn annisgwyl am gael arian o’ch cronfa cyn rydych yn 55 oed, mae bron bob amser yn sgiâm pensiwn.
+* Gall arian sydd heb ei gyffwrdd cael ei drosglwyddo ymlaen pan fyddwch yn marw.
 
-## Next steps
+## Camau nesaf
 
-If you’re interested in this option, you’ll need to contact your provider and ask the following questions.
+Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch darparwr a gofyn y cwestiynau canlynol.
 
-### Questions to ask your provider
-1. Do I have to take the money by a certain date?
-2. What are the fees for continuing to leave my pot untouched?
-3. How much is the pot likely to grow or go down each year?
-4. How is the money invested and can I change this if I want?
-5. How much can I still pay in?
-6. Does my pot have any special features like a guaranteed annuity rate?
-7. Do you have up-to-date details of who I want to leave my pot to (my ‘beneficiary’) when I die?
+### Cwestiynau i’w gofyn i’ch darparwr
+1. Oes rhaid i mi gymryd yr arian erbyn dyddiad penodol?
+2. Beth yw’r ffioedd am adael fy nghronfa heb ei gyffwrdd?
+3. Faint mae’r gronfa yn debygol o dyfu neu fynd i lawr bob blwyddyn?
+4. Sut mae’r arian yn cael ei fuddsoddi a galla i newid hyn os wyf eisiau?
+5. Faint allai ddal i dalu i mewn?
+6. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
+7. Oes gennych chi fanylion cyfredol o bwy rwyf am adael fy nghronfa i (fy ‘muddiolwr’) pan fyddaf yn marw?

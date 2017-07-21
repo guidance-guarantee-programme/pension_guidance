@@ -1,29 +1,29 @@
-# Pension scams
+# Sgamiau pensiwn
 
-A pension scam is where someone tries to con you out of money in your pension pot. A scam will often start with a ‘cold call’ – this can be a phone call, a text message, an email, a visit in person, or other ways.
+Sgiâm pensiwn yw pan fydd rhywun yn ceisio eich twyllo chi allan o arian yn eich cronfa bensiwn. Yn aml bydd sgiâm yn dechrau gyda ‘galwad ar hap’ - gall hwn fod yn alwad ffôn, neges testun, e-bost, ymweliad personol neu ffyrdd eraill.
 
-^Never let yourself be pressured into making a decision during a cold call.^
+^Peidiwch byth a gadael i rywun roi pwysau arnoch i wneud penderfyniad yn ystod galwad ar hap.^
 
-## How to spot a scam
+## Sut i adnabod sgiâm
 
-It’s likely to be a scam if an individual or company:
+Mae’n debygol i fod yn sgiâm os yw unigolyn neu gwmni yn:
 
-* says they can help you access your pension money before 55
-* encourages you to take out a large lump sum or your whole pot in one go and to let them invest it for you
-* asks you to transfer your money quickly, even sending documents to you by courier – you should never rush a decision about your pension money
-* uses words like ‘pension liberation’, ‘loan’, ‘loophole’ or ‘free pension review’
-* offers you an investment described as ‘unique’, ‘overseas’, ‘environmentally friendly’, ‘ethical’ or in a ‘new’ industry
+* dweud y gallant eich helpu i gael mynediad i’ch pensiwn cyn 55 oed
+* eich annog i gymryd cyfandaliad mawr neu’ch cronfa bensiwn i gyd ar yr un pryd ac i adael iddynt ei fuddsoddi ar eich rhan
+* gofyn i chi drosglwyddo eich arian yn gyflym, hyd yn oed anfon dogfennau i chi drwy negesydd - peidiwch byth a gwneud penderfyniad ar frys am eich arian pensiwn
+* defnyddio geiriau fel ‘rhyddhad pensiwn’, ‘benthyciad’, ‘bwlch’ neu ‘adolygiad pensiwn am ddim’
+* cynnig buddsoddiad i chi sydd wedi’i ddisgrifio fel ‘unigryw’, ‘tramor’, ‘amgylcheddol gyfeillgar’, ‘moesegol’ neu mewn diwydiant ‘newydd’
 
-Always phone your provider if you receive an email saying that they’ve changed their bank details and want you to make payments into a new account – this is almost always a scam.
+Dylech bob amser ffonio eich darparwr os ydych yn derbyn e-bost yn dweud eu bod wedi newid eu manylion banc ac eisiau i chi wneud taliadau i gyfrif newydd - mae hyn bron bob amser yn sgiâm.
 
-%Once you’ve transferred your pension money into a scam, it’s too late. You could lose all your money and face a tax bill of up to 55% of the amount transferred. Your provider may also charge you fees.%
+%Unwaith y byddwch wedi trosglwyddo eich arian i mewn i sgiâm, mae’n rhy hwyr. Gallech golli eich holl arian â wynebu bil treth o hyd at 55% o’r swm a drosglwyddwyd. Efallai bydd eich darparwr hefyd yn codi ffi arnoch.%
 
-## Reporting a pension scam
+## Hysbysu am sgiâm pensiwn
 
-Action Fraud is the UK’s fraud and internet crime reporting centre. If you think you’ve been the victim of a pension scam call them or report it using their [online reporting tool](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime).
+Action Fraud yw’r ganolfan ar gyfer hysbysu am dwyll a throseddau rhyngrwyd yn y DU. Os ydych yn meddwl eich bod wedi dioddef sgiâm pensiwn dylech eu ffonio neu ei hysbysu drwy ddefnyddio eu [teclyn hysbysu ar-lein](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime).
 
 **Action Fraud**
 $C
-Telephone: 0300 123 2040<br>
-From outside the UK: +44 169 826 4700 or +44 289 016 9853
+Ffôn: 0300 123 2040<br>
+O’r tu allan i’r DU: +44 169 826 4700 neu +44 289 016 9853
 $C

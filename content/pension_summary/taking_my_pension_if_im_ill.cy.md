@@ -1,34 +1,34 @@
-# Pensions and ill health
+# Pensiynau a salwch
 
-## If you’re ill
+## Os ydych yn sâl
 
-You may be able to take your pension pot early if you can’t work because you’re too ill.
+Efallai y byddwch yn gallu cymryd eich cronfa pensiwn yn gynnar os na allwch weithio oherwydd eich bod yn rhy sâl.
 
-This could be before you’re 55 or your ‘selected retirement age’ – the age you agreed with your provider to retire. Speak to your provider about the rules of your pension.
+Gallai hyn fod cyn eich bod yn 55 oed neu’ch ‘oedran ymddeol a ddewiswyd’ - yr oedran roeddech wedi’i gytuno gyda’ch darparwr i ymddeol. Siaradwch â’ch darparwr am reolau eich pensiwn.
 
-An ‘enhanced’ or ‘impaired’ annuity may pay more than a standard annuity if you smoke or have a medical condition, eg diabetes or high blood pressure.
+Gall blwydd-dal ‘uwch’ neu ‘nam’ dalu mwy na blwydd-dal safonol os ydych yn ysmygu neu os oes gennych gyflwr meddygol, er enghraifft clefyd y siwgr neu bwysedd gwaed uchel.
 
-## If you have a serious illness
+## Os oes gennych salwch difrifol
 
-Special tax rules apply if you have a serious illness which means you’re expected to live for less than a year.
+Mae rheolau treth arbennig yn berthnasol os oes gennych salwch difrifol sy’n golygu bod disgwyl i chi fyw am lai na blwyddyn.
 
-You may be able to take your whole pension pot tax free if **all** of the following apply to you:
+Efallai y byddwch yn gallu cymryd eich cronfa bensiwn gyfan yn ddi-dreth os yw **pob un** o’r canlynol yn berthnasol i chi:
 
-* you’re expected to live for less than a year because of serious illness
-* you’re under 75 (if you’re over 75 you pay Income Tax on the lump sum)
-* you don’t have more than the lifetime allowance of £1 million in pension money
+* mae disgwyl i chi fyw am lai na blwyddyn oherwydd salwch difrifol
+* rydych o dan 75 oed (os ydych chi dros 75 oed byddwch yn talu treth o 45% ar y lwmp swm)
+* nid oes gennych fwy na’r lwfans oes o £1 miliwn mewn arian pensiwn
 
-Check the terms of your pension with your provider. Some pensions will keep at least 50% of your pot for your spouse or partner.
+Gwiriwch delerau eich pensiwn gyda’ch darparwr. Bydd rhai pensiynau yn cadw o leiaf 50% o’ch cronfa ar gyfer eich priod neu’ch partner.
 
-## Next steps
+## Camau nesaf
 
-### Things to consider
+### Pethau i’w hystyried
 
-* Think about whether you want a cash sum now or a type of income
-* Think about how you want to leave money behind
-* Think about the most tax-efficient way of leaving your money – you can speak to a financial adviser to help with this
+* Ystyriwch a ydych eisiau swm o arian yn awr neu fath o incwm
+* Meddyliwch am sut rydych eisiau gadael eich arian
+* Meddyliwch am y ffordd fwyaf treth-effeithlon o adael eich arian - gallwch siarad ag ymgynghorydd ariannol i helpu gyda hyn
 
-### Questions to ask your provider
+### Cwestiynau i’w gofyn i’ch darparwr
 
-1. What are the rules on taking my money if I’m seriously ill?
-2. Do you have up-to-date details of who I want to leave money to (my ‘beneficiary’)?
+1. Beth yw’r rheolau ar gymryd fy arian os wyf yn ddifrifol wael?
+2. Oes gennych chi fanylion cyfredol y person rwyf am adael fy arian iddynt (fy ‘buddiolwr’)?

@@ -1,32 +1,32 @@
-# Pension transfers
+# Trosglwyddiadau penswn
 
-Before you transfer, you’ll need to find out if:
+Cyn i chi drosglwyddo, bydd angen i chi gael gwybod os:
 
-* your current provider will allow you to move
-* the new provider will accept the transfer
+* bydd eich darparwr presennol yn caniatau i chi symud
+* bydd y darparwr newydd yn derbyn y trosglwyddiad
 
-Ask your current provider how long it will take to transfer and if you:
+Gofynnwch i’ch darparwr presennol pa mor hir y bydd yn ei gymryd i drosglwyddo ac os:
 
-* have to pay fees
-* lose any right you have to take your money at a certain age
-* lose any special features, eg a guaranteed annuity rate
-* lose any right to take a tax-free lump sum of more than 25% of your pension pot
+* oes rhaid i chi dalu ffioedd
+* byddwch yn colli unrhyw hawl roedd gennych i gymryd eich arian allan ar oedran penodol
+* byddwch yn colli unrhyw nodweddion arbennig, er enghraifft gyfradd blwydd-dal gwarantedig
+* byddwch yn colli unrhyw hawl oedd gennych i gymryd lwmp swm di-dreth o fwy na 25% o’ch cronfa bensiwn
 
-You should also ask the provider you’re moving to if you’ll have to make regular payments into the new pension.
+Dylech hefyd ofyn i’r darparwr rydych yn symud iddo os bydd rhaid i chi wneud taliadau rheolaidd i mewn i’r pensiwn newydd.
 
-To help you calculate if it’s worth transferring, ask your provider how much your pot is likely to be worth when you retire. You can then shop around and get comparisons from other providers – by yourself or with help from a financial adviser.
+I’ch helpu i weithio allan os yw’n werth trosglwyddo, gofynnwch i’ch darparwr faint mae eich cronfa yn debygol o fod gwerth pan fyddwch yn ymddeol. Yna gallwch chwilio o gwmpas a chael cymariaethau gan ddarparwyr eraill - ar eich pen eich hun neu gyda chymorth ymgynghorydd ariannol.
 
-## Transfer value
+## Gwerth trosglwyddo
 
-Ask your provider what the ‘transfer value’ of your pot is. This is the amount your pot would be worth if you moved to a different provider.
+Gofynnwch i’ch darparwr beth yw ‘gwerth trosglwyddo’ eich cronfa. Dyma fyddai gwerth eich cronfa os byddech yn symud i ddarparwr gwahanol.
 
-The transfer value could be lower than your total pot value. This could mean there is an ‘early exit fee’ or your pot has been reduced or adjusted. Ask your provider to explain the difference in values.
+Gallai’r gwerth trosglwyddo fod yn is na chyfanswm gwerth eich cronfa. Gallai hyn olygu bod ‘ffi ymadael yn gynnar’ neu fod eich cronfa wedi cael ei leihau neu ei addasu. Gofynnwch i’ch darparwr i egluro’r gwahaniaeth rhwng y gwerthoedd.
 
-## Getting financial advice
+## Cael cyngor ariannol
 
-You can get impartial advice about pension transfers from a financial adviser.
+Gallwch gael cyngor diduedd am drosglwyddiadau pensiwn gan ymgynghorydd ariannol.
 
-You must get financial advice if you want to transfer from a:
+Mae’n rhaid i chi gael cyngor ariannol os ydych am drosglwyddo o:
 
-* defined benefit pension worth more than £30,000
-* defined contribution pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (eg a guaranteed annuity rate)
+* pensiwn buddion wedi’u diffinio gwerth mwy na £30,000
+* pensiwn cyfraniadau wedi’u diffinio gwerth mwy na £30,000 gyda gwarant am yr hyn y bydd yn cael ei dalu i chi pan fyddwch yn ymddeol (er enghraifft gyfradd blwydd-dal gwarantedig)
