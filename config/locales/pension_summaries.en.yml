@@ -19,8 +19,8 @@ en:
       secondary_steps:
         accessible_legend: What other information are you interested in?
       compulsory_steps:
-        introduction: "You'll also get some important information to read about:"
-        accessible_legend: "You'll also get some important information to read about:"
+        introduction: "You’ll also get some important information to read about:"
+        accessible_legend: "You’ll also get some important information to read about:"
       next_button: Next
 
     summary:
