@@ -8,7 +8,10 @@
         <p>There is limited availability in this location. Other locations near <%= @booking_request.location_name %>:</p>
         <ul>
           <% @locations.each do |location| %>
-          <li><a href="<%= booking_request_step_one_location_path(location.id) %>"><%= location.name %></a> (<%= location.distance %> miles away)</li>
+          <li>
+            <%= link_to location.name, booking_request_step_one_location_path(location.id), class: 'js-alternate-location-link' %>
+            (<%= location.distance %> miles away)
+          </li>
           <% end %>
         </ul>
       </div>
