@@ -1,13 +1,13 @@
-# Getting started
+# Dechrau
 
-This is a summary of the defined contribution pension options you selected to read about. This is your personal or workplace pension and is based on how much has been paid into your pot.
+Mae hwn yn grynodeb o’r opsiynau pensiwn cyfraniadau wedi’u diffinio rydych wedi dewis i ddarllen amdanynt. Hwn yw eich pensiwn personol neu weithle ac mae’n seiliedig ar faint sydd wedi cael ei dalu i’ch cronfa.
 
-This is not a final salary or career average pension.
+Nid yw hwn yn bensiwn cyflog terfynol neu gyfartaledd gyrfa.
 
-You may have more than one defined contribution pension pot. You can choose different options for each pot.
+Efallai bod gennych fwy nag un gronfa bensiwn cyfraniadau wedi’u diffinio. Gallwch ddewis opsiynau gwahanol ar gyfer bob cronfa.
 
-If you want to talk about your options for taking your money you can book a free Pension Wise appointment.
+Os ydych eisiau sgwrs am eich opsiynau ar gyfer cymryd eich arian, gallwch drefnu apwyntiad Pension Wise am ddim.
 
-An appointment is a conversation with a pension specialist. You can speak to us over the phone or face to face somewhere local to you.
+Mae apwyntiad yn sgwrs gydag arbenigwr pensiynau. Gallwch siarad â ni dros y ffôn neu wyneb yn wyneb rhywle sy’n lleol i chi.
 
-Go to [pensionwise.gov.uk/appointments](https://www.pensionwise.gov.uk/cy/appointments) to book online or call 0800 138 3944 (+44 20 3733 3495 if you’re outside the UK).
+Ewch i [pensionwise.gov.uk/appointments](https://www.pensionwise.gov.uk/cy/appointments) i drefnu ar-lein neu ffoniwch 0800 138 3944 (+44 20 3733 3495 os ydych y tu allan i’r DU).

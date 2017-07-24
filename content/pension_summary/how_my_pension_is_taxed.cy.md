@@ -1,54 +1,54 @@
-# Tax you pay on your pension
+# Treth rydych yn ei dalu ar eich pensiwn
 
-You pay Income Tax on 75% of your pension pot. How much you pay depends on your total income for the year and your tax rate.
+Rydych yn talu Treth Incwm ar 75% o’ch cronfa bensiwn. Mae faint fyddwch yn ei dalu yn dibynnu ar gyfanswm eich incwm am y flwyddyn a’ch cyfradd dreth.
 
-## Other tax you could pay
+## Treth arall y gallech ei dalu
 
-You could also pay Income Tax on:
+Gallech hefyd dalu Treth Incwm ar:
 
-- your State Pension
-- earnings from employment or self-employment
-- any other income, eg money from rental income, savings, investments
-- any taxable benefits you might get, eg Carer’s Allowance
+- eich Pensiwn y Wladwriaeth
+- enillion o gyflogaeth neu hunangyflogaeth
+- unrhyw incwm arall, er enghraifft arian o incwm rhent, cynilion, buddsoddiadau
+- unrhyw fudd-daliadau trethadwy y gallech fod yn eu cael, er enghraifft Lwfans Gofalwr
 
-## The 25% tax-free amount
+## Yr 25% di-dreth
 
-Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £11,500.
+Nid yw eich swm di-dreth yn defnyddio dim o’ch Lwfans Personol - y swm o incwm nad oes rhaid i chi dalu treth arno. Y Lwfans Personol safonol yw £11,500.
 
-There are 2 ways you can take your tax-free amount.
+Mae yna 2 ffordd y gallwch gymryd eich swm di-dreth.
 
-### Take it all in one go
+### Ei gymryd i gyd mewn un tro
 
-You can take 25% as a lump sum without paying tax. If you do this, you can’t leave the remaining 75% untouched. You must either:
+Gallwch gymryd 25% fel lwmp swm heb dalu treth. Os byddwch yn gwneud hyn, ni allwch adael y 75% sy’n weddill heb ei gyffwrdd. Rhaid i chi naill ai:
 
-- buy a guaranteed income (annuity)
-- get an adjustable income (flexi-access drawdown)
-- take the whole pot as cash
+- prynu incwm gwarantedig (blwydd-dal)
+- cael incwm addasadwy (tynnu allan hyblyg)
+- cymryd y gronfa gyfan fel arian parod
 
-^**Example**<br/><br/>Your pot is £60,000 and you take £15,000 – this is your tax-free lump sum. You buy an annuity with the remaining £45,000 which pays you £2,000 a year. This money is taxable.^
+^**Enghraifft**<br/><br/>Mae eich cronfa yn £60,000 ac rydych yn cymryd allan £15,000 - dyma eich lwmp swm di-dreth. Rydych yn prynu blwydd-dal gyda’r £45,000 sy’n weddill sy’n talu £2,000 y flwyddyn i chi. Mae’r arian hwn yn drethadwy.^
 
-### Take it in chunks
+### Ei gymryd fesul tipyn
 
-You can take smaller cash sums from your pension pot without paying tax. 25% of each chunk is tax free.
+Gallwch gymryd allan symiau o arian llai o’ch cronfa bensiwn heb dalu treth. Mae 25% o bob darn yn ddi-dreth.
 
-^**Example**<br /><br />Your pot is £60,000 and you take £1,000 every month – £250 of this is tax free. The remaining £750 is taxable.^
+^**Enghraifft**<br /><br />Mae eich cronfa yn £60,000 ac rydych yn cymryd allan £1,000 bob mis - mae £250 o hyn yn ddi-dreth. Mae’r £750 sy’n weddill yn drethadwy.^
 
-## How your tax is paid
+## Sut mae eich treth yn cael ei dalu
 
-Money you take from your pot comes from your provider with the tax already taken off.
+Mae’r arian rydych yn ei gymryd o’ch cronfa yn dod o’ch darparwr gyda’r dreth eisoes wedi’i dynnu ohono.
 
-Your provider will also take off any tax due on your State Pension.
+Bydd eich darparwr hefyd yn tynnu allan unrhyw dreth sy’n ddyledus ar eich Pensiwn y Wladwriaeth.
 
-You may pay emergency tax when you take money from your pot. You can [claim this back](https://www.gov.uk/claim-tax-refund/you-get-a-pension) from HM Revenue and Customs.
+Efallai y byddwch yn talu treth brys pan fyddwch yn cymryd arian o’ch cronfa. Gallwch [hawlio hwn yn ôl](https://www.gov.uk/claim-tax-refund/you-get-a-pension) gan Gyllid a Thollau EM.
 
-### If you continue to work
+### Os byddwch yn parhau i weithio
 
-Your employer will take any tax you owe off your earnings and your State Pension. This is called Pay As You Earn (PAYE).
+Bydd eich cyflogwr yn tynnu unrhyw dreth sy’n ddyledus gennych o’ch enillion a’ch Pensiwn y Wladwriaeth. Gelwir hyn yn Talu Wrth Ennill (PAYE).
 
-If your total income (including money from pensions and PAYE) is £100,000 or more for the tax year, or if you’re self-employed, you’ll have to fill in a Self-Assessment tax return.
+Os yw cyfanswm eich incwm (gan gynnwys arian o bensiynau a PAYE) yn £100,000 neu fwy ar gyfer y flwyddyn dreth, neu os ydych yn hunangyflogedig, bydd rhaid i chi lenwi ffurflen dreth Hunanasesiad.
 
-### If you have other income
+### Os oes gennych incwm arall
 
-You’re responsible for paying tax on other income you have, eg from property or investments, and you might have to fill in a Self-Assessment tax return.
+Chi sy’n gyfrifol am dalu treth ar incwm arall sydd gennych, er enghraifft o eiddo neu fuddsoddiadau, ac efallai y bydd rhaid i chi lenwi ffurflen dreth Hunanasesiad.
 
-^You usually pay tax if your pension pots are worth more than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). This is currently £1 million.^
+^Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). Ar hyn o bryd mae hyn yn £1 miliwn.^

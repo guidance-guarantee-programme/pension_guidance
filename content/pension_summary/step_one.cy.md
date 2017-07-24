@@ -1,7 +1,7 @@
-# The 6 pension options
+# Y 6 opsiwn pensiwn
 
-Below is a list of the options you have for taking your pension money.
+Isod mae rhestr o’r opsiynnau sydd gennych ar gyfer cymryd eich arian pensiwn.
 
-Read the summaries and select the ones you’re interested in for more detailed information.
+Darllenwch y crynodebau a dewiswch y rhai mae gennych ddiddordeb ynddynt am wybodaeth fanylach.
 
-^If you have more than one pot you can choose different options for each one.^
+^Os oes gennych fwy nag un gronfa gallwch ddefnyddio opsiynau gwahanol ar gyfer pob un.^

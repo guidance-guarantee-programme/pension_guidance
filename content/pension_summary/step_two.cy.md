@@ -1,3 +1,3 @@
-# Add extra information
+# Ychwanegu gwybodaeth ychwanegol
 
-What else do you want to find out about? (select as many as apply)
+Beth arall ydych chi eisiau darganfod amdano? (dewiswch bob un sy’n berthnasol)

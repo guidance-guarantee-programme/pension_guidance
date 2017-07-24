@@ -1,24 +1,24 @@
-# Take your whole pot in one go
+# Cymryd eich cronfa gyfan ar un tro
 
-You can take your whole pension pot as cash. The money from your pot will be added to any other income you have over the tax year.
+Gallwch gymryd eich cronfa gyfan ar un tro. Bydd yr arian o’ch cronfa yn cael ei ychwanegu at unrhyw incwm arall sydd gennych dros y flwyddyn dreth.
 
-## Key facts
+## Ffeithiau allweddol
 
-* If you take your whole pension pot in one go 25% is tax free and the remaining 75% is taxable.
-* Adding a large cash sum to your income could put you in a higher tax band.
-* You can take up to 3 small pots of up to £10,000 without it counting towards your annual or lifetime tax allowance.
-* Taking your whole pot in one go could affect your entitlement to benefits.
-* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the ‘money purchase annual allowance’).
+* Os ydych yn cymryd eich cronfa bensiwn cyfan mewn un tro mae 25% yn ddi-dreth ac mae’r 75% sy’n weddill yn drethadwy.
+* Gallai ychwanegu swm mawr o arian i’ch incwm olygu eich bod yn cael eich symud i gyfradd dreth uwch.
+* Gallwch gymryd hyd at 3 cronfa fechan o hyd at £10,000 heb iddo gyfrif tuag at eich lwfans treth blynyddol neu oes.
+* Gallai cymryd eich cronfa gyfan mewn un tro effeithio ar eich hawl i fudd-daliadau.
+* Efallai y gallech barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a elwir yn ‘lwfans prynu arian’).
 
-You should think about this option. Once you’ve taken the money out you can’t change the decision and you lose the tax-free status it had while in your pot.  
+Dylech feddwl yn ofalus am yr opsiwn hwn. Unwaith y byddwch wedi cymryd yr arian allan ni allwch newid y penderfyniad a byddwch yn colli’r statws di-dreth oedd ganddo tra yn eich cronfa.  
 
-^You need to be aware of ‘pension recycling’ tax laws if you plan to cash in one pot and pay into another.^
+^Mae angen i chi fod yn ymwybodol o ddeddfau treth ‘ailgylchu pensiwn’ os ydych yn bwriadu cyfnewid un gronfa a thalu i mewn i un arall.^
 
-## Next steps
+## Camau nesaf
 
-If you’re interested in this option, contact your provider and ask the following questions.
+Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch darparwr a gofyn y cwestiynau canlynol.
 
-###  Questions to ask your provider
+###  Cwestiynau i’w gofyn i’ch darparwr
 
-1. Can I take my whole pot in one go?
-2. Will you charge me a fee if I move my pot to a provider that offers this option?
+1. Allai gymryd fy nghronfa gyfan mewn un tro?
+2. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?

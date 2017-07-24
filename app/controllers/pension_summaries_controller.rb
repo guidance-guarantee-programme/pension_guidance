@@ -73,6 +73,10 @@ class PensionSummariesController < ApplicationController
     url_for(new_params)
   end
 
+  def content_lang_matches_locale?
+    true
+  end
+
   def skip_to_step_path(step)
     new_params = summary_params.merge(current_step: step)
     explore_your_options_summary_path(pension_summary: new_params)

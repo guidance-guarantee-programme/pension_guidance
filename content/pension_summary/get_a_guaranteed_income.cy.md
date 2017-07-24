@@ -1,20 +1,20 @@
-# Get a guaranteed income (annuity)
+# Cael incwm gwarantedig (blwydd-dal)
 
-An annuity can give you a guaranteed income for the rest of your life. You can shop around for an annuity – you don’t have to buy one from your current pension provider.
+Gall blwydd-dal roi incwm gwarantedig i chi am weddill eich oes. Gallwch chwilio o gwmpas am flwydd-dal – nid oes rhaid i chi brynu un gan eich darparwr pensiwn cyfredol.
 
-## Key facts
+## Ffeithiau allweddol
 
-* This is a type of insurance product which gives a guaranteed income.
-* You can buy an annuity for a fixed term, eg 10 years or for the rest of your life.
-* You can take up to 25% of your pot tax free – if you do this you must buy an annuity with the remaining 75% within 6 months or use one of the other options.
-* There are many different types of annuity and it’s important you get the right one for you.
+* Mae hwn yn fath o gynnyrch yswiriant sy’n rhoi incwm gwarantedig i chi.
+* Gallwch brynu blwydd-dal am gyfnod penodol, er enghraifft 10 mlynedd neu am weddill eich oes.
+* Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth – os byddwch yn gwneud hyn, rhaid i chi brynu blwydd-dal gyda’r 75% sy’n weddill o fewn 6 mis neu ddefnyddio un o’r opsiynau eraill.
+* Mae yna lawer o wahanol fathau o flwydd-dal ac mae’n bwysig eich bod yn cael yr un iawn i chi.
 
-## Next steps
+## Camau nesaf
 
-If you’re interested in this option, you’ll need to contact your provider and ask the following questions.
+Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch darparwr a gofyn y cwestiynau canlynol.
 
-### Questions to ask your provider
+### Cwestiynau i’w gofyn i’ch darparwr
 
-1. Does my pot have any special features like a guaranteed annuity rate?
-2. Do I qualify for an enhanced or impaired annuity? You’ll need to tell your provider if you smoke or have a medical condition.
-3. Which types of annuity do you offer?
+1. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
+2. Ydw i’n gymwys am flwydd-dal uwch neu amharedig? Bydd angen i chi ddweud wrth eich darparwr os ydych yn ysmygu neu os oes gennych gyflwr meddygol.
+3. Pa fath o flwydd-dal ydych chi’n ei gynnig?
