@@ -33,7 +33,7 @@ module Locations
     end
 
     def limited_availability?
-      slots_available? && slots.size < 3
+      online_booking_enabled? && slots_available? && slots.size < 3
     end
 
     def postcode
