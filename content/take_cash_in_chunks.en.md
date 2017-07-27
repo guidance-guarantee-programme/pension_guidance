@@ -49,9 +49,9 @@ HM Revenue and Customs.
 
 ## Continuing to pay in
 
-If you have more than one pension pot, you can take chunks of cash from one and continue to pay into others. The maximum you can pay in is £4,000 a year. 
+If you have more than one pension pot, you can take cash in chunks from one and continue to pay into others. You may have to pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance (MPAA)’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot)).
 
-This includes your tax relief of 20%. For example, to get a contribution of £10,000 you would only have to pay in £8,000.
+This includes your tax relief of 20%. For example, to get a contribution of £4,000 you would only have to pay in £3,200.
 
 Your provider may also let you continue to pay into the pot you take cash from.
 
