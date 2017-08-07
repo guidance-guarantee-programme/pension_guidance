@@ -4,7 +4,7 @@ class FeedbackForm
   attr_accessor :name, :email, :message, :feedback_type
 
   validates :name, presence: true
-  validates :email, format: { with: /.+@.+\..+/ }
+  validates :email, email: true
   validates :message, presence: true
   validates :feedback_type, inclusion: { in: %w(online_booking pension_type_tool) }
 
