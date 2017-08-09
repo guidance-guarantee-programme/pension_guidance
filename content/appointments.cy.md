@@ -4,32 +4,32 @@ tags:
   - appointments
 ---
 
-# Book a free Pension Wise appointment
+# Trefnwch apwyntiad Pension Wise yn rhad ac am ddim
 
-Pension Wise is able to deliver your appointment in Welsh.
+Mae Pension Wise yn gallu darparu eich apwyntiad drwy gyfrwng y Gymraeg.
 
-An appointment is a conversation with a pension specialist. You’ll talk about the options you have for taking your pension money.
+Mae apwyntiad yn sgwrs gydag arbenigwr pensiynau. Byddwch yn siarad am yr opsiynau sydd gennych ar gyfer cymryd eich arian pensiwn.
 
-Your appointment will last around 45 to 60 minutes and we will:
+Bydd eich apwyntiad yn parhau am 45 i 60 munud a byddwn yn:
 
-- explain your pension options
-- explain how each option is taxed
-- give you next steps to take
+- egluro eich opsiynau pensiwn
+- egluro sut mae pob opsiwn yn cael ei drethu
+- grhoi’r camau nesaf i chi eu cymryd
 
-You can speak to us over the phone or face to face.
+Gallwch siarad â ni dros y ffôn neu wyneb yn wyneb.
 
-## Before you book
+## Cyn i chi drefnu
 
-You should be aged **50 or over** and have a **defined contribution** pension (not a final salary or career average pension).
+Dylech fod yn **50 oed neu drosodd** a bod gyda phensiwn **cyfraniadau wedi'u diffinio** (nid pensiwn cyflog terfynol neu gyfartaledd gyrfa).
 
-[Not sure what pension type you have?](/cy/pension-type-tool)
+[Ddim yn siwr pa fath o bensiwn sydd gennych chi?](/cy/pension-type-tool)
 
-## How to book an appointment
+## Sut i drefnu apwyntiad
 
-Call **0800 138 3944**
+Ffoniwch **0800 138 3944**
 
-If you’re outside the UK, call +44 20 3733 3495.
+Os ydych y tu allan i’r DU, ffoniwch +44 20 3733 3495.
 
-[Find out about call charges](https://www.gov.uk/costau-galwadau)
+[Darganfyddwch am gostau galwadau](https://www.gov.uk/costau-galwadau)
 
-^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^
+^Mae ein harweiniad yn ddi-duedd – ni fyddwn yn argymell unrhyw gynnyrch neu gwmnïau ac ni fyddwn yn dweud wrthych sut i fuddsoddi eich arian.^
