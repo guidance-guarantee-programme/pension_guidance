@@ -5,7 +5,6 @@ class GuidesController < ApplicationController
   before_action :set_breadcrumbs
 
   UNTRANSLATED_GUIDE_SLUGS = %w(
-    appointments
     book-face-to-face
     book-phone
     pension-type-tool
