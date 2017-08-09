@@ -15,4 +15,6 @@ Disallow: /*/landing
 Disallow: /*/about
 Disallow: /*/telephone-appointments/
 Disallow: /*/locations/*/booking-request/step-one
+Disallow: /cy/book-face-to-face
+Disallow: /cy/book-phone
 Disallow: /styleguide/*
