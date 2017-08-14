@@ -4,32 +4,25 @@ tags:
   - appointments
 ---
 
-# Trefnwch apwyntiad Pension Wise yn rhad ac am ddim
+# Book a free Pension Wise appointment
 
-Mae Pension Wise yn gallu darparu eich apwyntiad drwy gyfrwng y Gymraeg.
+An appointment is a conversation with a pension specialist. You’ll talk about the options you have for taking your pension money.
 
-Mae apwyntiad yn sgwrs gydag arbenigwr pensiynau. Byddwch yn siarad am yr opsiynau sydd gennych ar gyfer cymryd eich arian pensiwn.
+Your appointment will last around 45 to 60 minutes and we will:
 
-Bydd eich apwyntiad yn parhau am 45 i 60 munud a byddwn yn:
+- explain your pension options
+- explain how each option is taxed
+- give you next steps to take
 
-- egluro eich opsiynau pensiwn
-- egluro sut mae pob opsiwn yn cael ei drethu
-- grhoi’r camau nesaf i chi eu cymryd
+You can speak to us over the phone or face to face somewhere local to you.
 
-Gallwch siarad â ni dros y ffôn neu wyneb yn wyneb.
+## Before you book
 
-## Cyn i chi drefnu
+You should be aged **50 or over** and have a **defined contribution** pension (not a final salary or career average pension).
 
-Dylech fod yn **50 oed neu drosodd** a bod gyda phensiwn **cyfraniadau wedi'u diffinio** (nid pensiwn cyflog terfynol neu gyfartaledd gyrfa).
+[Not sure what pension type you have?](/cy/pension-type-tool)
 
-[Ddim yn siwr pa fath o bensiwn sydd gennych chi?](/cy/pension-type-tool)
+[Book a phone appointment](/cy/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
+[Book a face-to-face appointment](/cy/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
 
-## Sut i drefnu apwyntiad
-
-Ffoniwch **0800 138 3944**
-
-Os ydych y tu allan i’r DU, ffoniwch +44 20 3733 3495.
-
-[Darganfyddwch am gostau galwadau](https://www.gov.uk/costau-galwadau)
-
-^Mae ein harweiniad yn ddi-duedd – ni fyddwn yn argymell unrhyw gynnyrch neu gwmnïau ac ni fyddwn yn dweud wrthych sut i fuddsoddi eich arian.^
+^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^
