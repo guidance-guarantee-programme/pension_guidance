@@ -1,6 +1,6 @@
 @import "design-patterns/media-player";
 
-$play-button-dark: $color-dogs-background-dark;
+$play-button-dark: $color-pizza-background-dark;
 $play-button-light: $color-white;
 
 .youtube-video {
@@ -96,9 +96,18 @@ $play-button-light: $color-white;
 
 .youtube-video-transcript {
   overflow: hidden;
+  color: $color-black;
 }
 
 .youtube-video-transcript-text {
   margin-bottom: 0;
+}
+
+.youtube-video__link {
+  &:link,
+  &:visited,
+  &:focus {
+    color: $color-black;
+  }
 }
 
