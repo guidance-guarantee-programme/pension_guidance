@@ -68,7 +68,8 @@ class BookingRequestsController < ApplicationController
         :date_of_birth,
         :accessibility_requirements,
         :dc_pot,
-        :additional_info
+        :additional_info,
+        :opt_in
       )
   end
 

@@ -168,6 +168,23 @@
     </fieldset>
   </div>
 
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>">
+    <fieldset>
+      <legend>
+        <span class="visually-hidden">Terms and conditions</span>
+        <% if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>
+          <span class="error-message"><%= @telephone_appointment.errors[:accept_terms_and_conditions].to_sentence.capitalize %></span>
+        <% end %>
+      </legend>
+      <div class="multiple-choice">
+        <%= f.check_box :accept_terms_and_conditions, class: 't-accept-terms-and-conditions' %>
+        <%= f.label :accept_terms_and_conditions, class: 't-opt-in' do %>
+          I accept the <a href="/privacy" target="_blank">terms and conditions</a>
+        <% end %>
+      </div>
+    </fieldset>
+  </div>
+
   <div class="form-group">
     <%= f.submit 'Confirm appointment', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
   </div>
