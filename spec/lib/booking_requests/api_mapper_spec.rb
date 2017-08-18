@@ -17,6 +17,7 @@ RSpec.describe BookingRequests::ApiMapper do
       date_of_birth: '1951-01-01',
       accessibility_requirements: false,
       additional_info: nil,
+      opt_in: false,
       dc_pot: 'yes'
     )
   end
@@ -37,7 +38,7 @@ RSpec.describe BookingRequests::ApiMapper do
           date_of_birth: '1951-01-01',
           accessibility_requirements: false,
           additional_info: '',
-          marketing_opt_in: true,
+          marketing_opt_in: false,
           defined_contribution_pot_confirmed: true,
           slots: [
             { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },
