@@ -40,7 +40,7 @@ def when_i_view_a_translated_welsh_article
 end
 
 def when_i_view_an_untranslated_welsh_article
-  visit guide_path('appointments', locale: :cy)
+  visit guide_path('book-phone', locale: :cy)
 end
 
 def then_i_do_not_see_a_message_about_it_not_being_translated
@@ -58,7 +58,7 @@ end
 
 def and_the_canonical_tag_points_to_the_english_article
   canonical_tag = page.find('link[rel="canonical"]', visible: false)
-  expect(canonical_tag[:href]).to eq guide_url('appointments', locale: :en, host: CanonicalRails.host)
+  expect(canonical_tag[:href]).to eq guide_url('book-phone', locale: :en, host: CanonicalRails.host)
 end
 
 def when_i_visit_an_address_without_a_locale
