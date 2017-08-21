@@ -14,4 +14,8 @@ class MarketingController < ApplicationController
   def footer?
     false
   end
+
+  def alternate_locales
+    []
+  end
 end
