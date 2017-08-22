@@ -15,7 +15,8 @@ RSpec.describe BookingRequestForm do
         accessibility_requirements: '0',
         additional_info: '',
         opt_in: '1',
-        dc_pot: 'yes'
+        dc_pot: 'yes',
+        remote_ip: '214.142.214.142'
       )
     end
 
@@ -23,6 +24,30 @@ RSpec.describe BookingRequestForm do
       expect(subject).to be_step_one_valid
       expect(subject).to be_step_two_valid
       expect(subject).to be_eligible
+    end
+
+    describe '#placed_by_agent?' do
+      before do
+        ENV['TP_IP_ADDRESSES'] = '214.142.214.142'
+      end
+
+      after do
+        ENV.delete('TP_IP_ADDRESSES')
+      end
+
+      context 'when the IP matches' do
+        it 'is true' do
+          expect(subject).to be_placed_by_agent
+        end
+      end
+
+      context 'when the IP does not match' do
+        it 'is false' do
+          subject.remote_ip = '127.0.0.1'
+
+          expect(subject).not_to be_placed_by_agent
+        end
+      end
     end
 
     context 'step one' do

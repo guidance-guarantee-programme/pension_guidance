@@ -4,7 +4,8 @@ class BookingRequestForm
   attr_accessor :location_id, :primary_slot, :secondary_slot, :tertiary_slot,
                 :first_name, :last_name, :email, :telephone_number,
                 :memorable_word, :accessibility_requirements,
-                :date_of_birth, :dc_pot, :additional_info, :opt_in
+                :date_of_birth, :dc_pot, :additional_info, :opt_in,
+                :remote_ip
 
   validates :primary_slot, presence: true, if: :step_one?
 
@@ -80,6 +81,10 @@ class BookingRequestForm
     return unless step_two_valid?
 
     age >= 50 && dc_pot != 'no'
+  end
+
+  def placed_by_agent?
+    PlacedByAgent.new(remote_ip).call
   end
 
   def ineligible?

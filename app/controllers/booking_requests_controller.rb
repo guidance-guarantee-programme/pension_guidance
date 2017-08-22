@@ -70,7 +70,7 @@ class BookingRequestsController < ApplicationController
         :dc_pot,
         :additional_info,
         :opt_in
-      )
+      ).merge(remote_ip: request.remote_ip)
   end
 
   def munge_date_params!
