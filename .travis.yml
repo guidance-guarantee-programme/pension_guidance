@@ -3,6 +3,7 @@ language: ruby
 cache:
   bundler: true
   directories:
+  - $HOME/.phantomjs
   - ".downloads"
   - node_modules
   - tmp/cache/assets/test
