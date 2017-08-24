@@ -64,7 +64,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
     gem 'fakeredis'
     gem 'launchy'
     gem 'pdf-inspector', require: 'pdf/inspector'
-    gem 'phantomjs-binaries'
+    gem 'phantomjs'
     gem 'poltergeist'
     gem 'rails-controller-testing'
     gem 'scss-lint', '~> 0.30'
