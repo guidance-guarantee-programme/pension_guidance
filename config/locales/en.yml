@@ -11,6 +11,8 @@ en:
   breadcrumbs:
     home:
       title: Home
+    tesco_locations:
+      title: Tesco locations
     book_a_telephone_appointment:
       title: Book a phone appointment
     book_an_appointment:

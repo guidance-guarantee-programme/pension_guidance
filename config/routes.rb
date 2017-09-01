@@ -39,6 +39,14 @@ Rails.application.routes.draw do
         get 'print'
       end
 
+      namespace :tesco, locale: :en do
+        resources :locations, only: :index do
+          member do
+            get '/bookings/step-one', to: 'bookings#step_one'
+          end
+        end
+      end
+
       resources :locations, only: [:index, :show] do
         member do
           get '/booking-request/step-one',  to: 'booking_requests#step_one'
