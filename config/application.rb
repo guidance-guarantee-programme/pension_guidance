@@ -11,7 +11,26 @@ require_relative '../app/middleware/strip_session_cookie'
 
 Bundler.require(*Rails.groups)
 
+require 'ipaddr'
+
 module PensionGuidance
+  TRUSTED_CLOUDFLARE_IPS = %w(
+    103.21.244.0/22
+    103.22.200.0/22
+    103.31.4.0/22
+    104.16.0.0/12
+    108.162.192.0/18
+    131.0.72.0/22
+    141.101.64.0/18
+    162.158.0.0/15
+    172.64.0.0/13
+    173.245.48.0/20
+    188.114.96.0/20
+    190.93.240.0/20
+    197.234.240.0/22
+    198.41.128.0/17
+  ).map { |ip| IPAddr.new(ip) }
+
   class Application < Rails::Application
     config.action_controller.include_all_helpers = false
     config.action_dispatch.rescue_responses.merge! 'CategoryRepository::CategoryNotFound' => :not_found,
@@ -37,6 +56,13 @@ module PensionGuidance
       ActionDispatch::Cookies,
       Middleware::StripSessionCookie,
       paths: cacheable_paths
+    )
+
+    config.middleware.swap(
+      ActionDispatch::RemoteIp,
+      ActionDispatch::RemoteIp,
+      true,
+      TRUSTED_CLOUDFLARE_IPS
     )
   end
 end
