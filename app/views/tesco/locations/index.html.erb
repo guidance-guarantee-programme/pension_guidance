@@ -1,0 +1,42 @@
+<% content_for(:page_title, t('service.title', page_title: 'Tesco Locations')) %>
+
+<h1>Tesco locations</h1>
+
+<p>There is <%= pluralize(@locations.length, 'location') %>.</p>
+
+<ol class="location-list">
+  <% @locations.each do |location| %>
+    <li class="location-list__item t-location">
+      <div class="l-grid-row">
+        <div class="l-column-two-thirds">
+          <h2 class="location-list__name t-name"><%= location.name %></h2>
+
+          <div class="t-address">
+            <%= simple_format(location.address) %>
+          </div>
+
+          <p>
+            <%= link_to 'Book online',
+              bookings_step_one_tesco_location_path(id: location.id),
+              class: 'button t-book-online'
+            %>
+          </p>
+        </div>
+
+        <div class="l-column-third">
+          <a href="https://maps.google.com/maps?q=<%= url_encode(location.postcode) %>" target="_blank">
+            <img
+              height="300"
+              alt="map showing the location of <%= location.name %> (link opens external website in new window)"
+              style="border:0; position: relative;"
+              src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= url_encode(location.postcode) %>&center=<%= url_encode(location.postcode) %>&size=300x300&scale=2&zoom=15&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
+          </a>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ol>
+
+<div class="application-notice info-notice">
+  <p>You can also <%= link_to 'book a phone appointment', guide_path('book-phone') %>.</p>
+</div>
