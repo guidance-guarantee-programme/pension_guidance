@@ -5,6 +5,11 @@ module Tesco
       response.body
     end
 
+    def slots(location_id)
+      response = connection.get("/api/v1/locations/#{location_id}/slots")
+      response.body
+    end
+
     private
 
     def connection

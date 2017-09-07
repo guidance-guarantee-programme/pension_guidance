@@ -13,4 +13,16 @@ RSpec.describe Tesco::Api do
       )
     end
   end
+
+  describe '#slots', vcr: true do
+    subject { described_class.new.slots(1) }
+
+    it 'returns deserialized slots' do
+      expect(subject).to be_present
+
+      expect(subject.keys).to match_array(
+        %w(2017-09-11 2017-09-12 2017-09-13 2017-09-14 2017-09-15)
+      )
+    end
+  end
 end
