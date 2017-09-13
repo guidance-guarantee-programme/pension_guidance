@@ -5,7 +5,13 @@ module Tesco
     api.locations.map { |location| Location.new(location) }
   end
 
-  def self.slots(location_id)
-    api.slots(location_id).map { |slot| Slot.new(slot) }
+  def self.location(location_id)
+    response = api.location(location_id)
+
+    Location.new(response)
+  end
+
+  def self.create(booking)
+    api.create(booking)
   end
 end
