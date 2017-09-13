@@ -85,6 +85,9 @@ en:
 
   activemodel:
     attributes:
+      tesco/booking:
+        dc_pot_confirmed: Defined contribution pension
+        accept_terms_and_conditions: Terms and conditions
       telephone_appointment:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
@@ -135,6 +138,25 @@ en:
           attributes:
             email_address:
               invalid_email: enter a valid email address
+        tesco/booking:
+          attributes:
+            first_name:
+              blank: enter a name
+            last_name:
+              blank: enter a name
+            email:
+              invalid_email: enter a valid email address
+            phone:
+              blank: enter a phone number
+              invalid: enter a valid phone number
+            memorable_word:
+              blank: enter a word
+            date_of_birth:
+              blank: enter a valid date of birth
+            dc_pot_confirmed:
+              inclusion: select an option
+            accept_terms_and_conditions:
+              inclusion: please accept
         telephone_appointment:
           attributes:
             first_name:

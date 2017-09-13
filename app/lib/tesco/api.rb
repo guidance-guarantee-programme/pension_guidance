@@ -1,16 +1,32 @@
 module Tesco
   class Api
+    def create(booking)
+      response = connection.post(
+        "/api/v1/locations/#{booking.location_id}/appointments",
+        booking.attributes
+      )
+
+      booking.id = parse_response_location(response)
+    rescue HTTPConnection::UnprocessableEntity
+      false
+    end
+
     def locations
       response = connection.get('/api/v1/locations')
       response.body
     end
 
-    def slots(location_id)
-      response = connection.get("/api/v1/locations/#{location_id}/slots")
+    def location(location_id)
+      response = connection.get("/api/v1/locations/#{location_id}")
       response.body
     end
 
     private
+
+    def parse_response_location(response)
+      location = response.headers['Location']
+      location.split('/').last
+    end
 
     def connection
       HTTPConnectionFactory.build(api_uri, connection_options).tap do |c|

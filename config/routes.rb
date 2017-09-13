@@ -41,8 +41,12 @@ Rails.application.routes.draw do
 
       namespace :tesco, locale: :en do
         resources :locations, only: :index do
-          member do
-            get '/bookings/step-one', to: 'bookings#step_one'
+          resources :bookings, only: %i(new create) do
+            collection do
+              get :ineligible
+              get :confirmation
+              get :times
+            end
           end
         end
       end

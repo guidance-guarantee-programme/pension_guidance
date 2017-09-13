@@ -14,6 +14,13 @@ class Breadcrumb
       new(tesco_locations_path(locale: locale), title)
     end
 
+    def tesco_location(location_id, location_name, locale = I18n.locale)
+      new(
+        new_tesco_location_booking_path(location_id: location_id, locale: locale),
+        location_name
+      )
+    end
+
     def book_an_appointment(locale = I18n.locale)
       guide_breadcrumb(:book_an_appointment, locale)
     end
