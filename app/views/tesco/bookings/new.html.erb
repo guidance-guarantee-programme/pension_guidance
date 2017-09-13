@@ -1,0 +1,39 @@
+<div class="l-grid-row">
+ <div class="l-column-full">
+   <h1>Book an appointment at <%= @location.name %></h1>
+
+    <% if @booking.errors.any? || (params[:continue] && !slot_selected?) %>
+      <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          Unable to submit the form
+        </h2>
+
+        <p>Check the following:</p>
+
+        <ul class="error-summary-list">
+          <% @booking.errors.each do |key, message| %>
+            <li><%= link_to "#{Tesco::Booking.human_attribute_name key} – #{message}", "#booking_#{key}" %></li>
+          <% end %>
+          <% unless slot_selected? %>
+            <li><%= link_to 'Select a time', "#booking_times" %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  </div>
+
+  <%= form_for @booking, as: :booking, url: tesco_location_bookings_path(location_id: location_id), html: { id: "form_booking_step_#{@booking.step}" } do |f| %>
+    <%= f.hidden_field(:step, id: 'hidden_booking_step') %>
+    <%= render "step_#{@booking.step}", f: f %>
+
+    <% if @booking.step == 1 %>
+      <div class="l-column-half l-column-half--right" data-slot-picker-single-time>
+        <%= render 'times_js' %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <% if @booking.step == 1 || @booking.step == 2 %>
+    <%= render 'day_picker' %>
+  <% end %>
+</div>

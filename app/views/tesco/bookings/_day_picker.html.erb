@@ -1,0 +1,82 @@
+<div class="l-column-half" data-slot-picker>
+  <%= form_for @booking, as: :booking, url: tesco_location_bookings_path(location_id: location_id), html: { class: 'js-day-picker-form' } do |f| %>
+    <%= render 'hidden_fields', f: f, id_prefix: 'day_picker' %>
+    <%= f.hidden_field(:step, value: 1, id: 'hidden_booking_step_day_picker') %>
+    <h2 class="slot-picker-header">Choose a day</h2>
+    <div>
+      <% @months.each do |month, days| %>
+        <%
+          month_index = @months.keys.index(month)
+          prev_month_index = month_index - 1
+          next_month_index = month_index + 1
+          prev_month = prev_month_index != -1 ? @months.keys[prev_month_index] : nil
+          next_month = next_month_index != @months.keys.length ? @months.keys[next_month_index] : nil
+        %>
+
+        <div class="slot-picker-month js-slot-picker-month">
+          <div class="slot-picker-container">
+            <div class="slot-picker-nav">
+              <div class="slot-picker-nav__item slot-picker-nav__item--prev">
+                <% if prev_month %>
+                  <button class="js-slot-picker-prev-month hidden slot-picker-nav-button slot-picker-nav-button--prev">
+                    <span class="visually-hidden"><%= prev_month.strftime('%B') %></span>
+                    <span class="slot-picker-nav-button__long-text" aria-hidden="true"><%= prev_month.strftime('%B') %></span>
+                    <span class="slot-picker-nav-button__short-text" aria-hidden="true"><%= prev_month.strftime('%b') %></span>
+                  </button>
+                <% end %>
+              </div>
+              <h3 class="slot-picker-nav__item">
+                <%= month.strftime('%B') %>
+              </h3>
+              <div class="slot-picker-nav__item slot-picker-nav__item--next">
+                <% if next_month %>
+                  <button class="js-slot-picker-next-month hidden slot-picker-nav-button slot-picker-nav-button--next">
+                    <span class="visually-hidden"><%= next_month.strftime('%B') %></span>
+                    <span class="slot-picker-nav-button__long-text" aria-hidden="true"><%= next_month.strftime('%B') %></span>
+                    <span class="slot-picker-nav-button__short-text" aria-hidden="true"><%= next_month.strftime('%b') %></span>
+                  </button>
+                <% end %>
+              </div>
+            </div>
+            <ul aria-hidden="true" class="slot-picker-days">
+              <li class="slot-picker-days__day">Mon</li>
+              <li class="slot-picker-days__day">Tue</li>
+              <li class="slot-picker-days__day">Wed</li>
+              <li class="slot-picker-days__day">Thu</li>
+              <li class="slot-picker-days__day">Fri</li>
+              <li class="slot-picker-days__day">Sat</li>
+              <li class="slot-picker-days__day">Sun</li>
+            </ul>
+            <ul class="slot-picker-calendar">
+              <li class="slot-picker-calendar__day slot-picker-calendar__day--<%= month.strftime('%A').downcase %>" aria-hidden="true"></li>
+              <% month.upto(month.change(day: -1)) do |day| %>
+                <%
+                  selected = day == @booking.selected_date
+                  disabled = !days.include?(day) || selected
+                  busy = !days.include?(day)
+                  today = day == Date.today
+
+                  classes = []
+                  classes << 'slot-picker-calendar__action--selected' if selected
+                  classes << 'slot-picker-calendar__action--busy' if busy
+                  classes << 'slot-picker-calendar__action--today' if today
+                  classes = classes.join(' ')
+                %>
+                <li class="slot-picker-calendar__day">
+                  <%= button_tag '', value: day, name: 'booking[selected_date]', class: "js-day-button slot-picker-calendar__action #{classes}", disabled: disabled, 'aria-pressed': day == @booking.selected_date ? true : false do %>
+                    <span class="visually-hidden"><%= l(day, format: :govuk_date) %></span>
+                    <span class="slot-picker-calendar__day-text" aria-hidden="true"><%= day.day %></span>
+                  <% end %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <ul class="slot-picker-key" aria-hidden="true">
+      <li class="slot-picker-key__item slot-picker-key__item--available">Available</li>
+      <li class="slot-picker-key__item slot-picker-key__item--unavailable">Unavailable</li>
+    </ul>
+  <% end %>
+</div>
