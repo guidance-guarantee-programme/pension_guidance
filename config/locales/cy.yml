@@ -13,6 +13,9 @@ cy:
   breadcrumbs:
     home:
       title: Cartref
+    tesco:
+      title: Book a free guidance appointment at Tesco
+      slug: tesco
     tesco_locations:
       title: Tesco locations
     book_a_telephone_appointment:

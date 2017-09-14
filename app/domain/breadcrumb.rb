@@ -9,6 +9,10 @@ class Breadcrumb
   class << self
     include Rails.application.routes.url_helpers
 
+    def tesco_landing_page(locale = I18n.locale)
+      guide_breadcrumb(:tesco, locale)
+    end
+
     def tesco_locations(locale = I18n.locale)
       title = I18n.t('breadcrumbs.tesco_locations')[:title]
       new(tesco_locations_path(locale: locale), title)

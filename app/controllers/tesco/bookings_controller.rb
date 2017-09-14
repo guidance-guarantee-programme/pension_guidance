@@ -121,7 +121,7 @@ module Tesco
     end
 
     def set_breadcrumbs
-      breadcrumb Breadcrumb.book_an_appointment
+      breadcrumb Breadcrumb.tesco_landing_page
       breadcrumb Breadcrumb.tesco_locations
       breadcrumb Breadcrumb.tesco_location(location.id, location.name)
     end
