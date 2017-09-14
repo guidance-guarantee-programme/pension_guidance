@@ -12,10 +12,12 @@ Pension Wise is a free and impartial government service about your defined contr
 
 # Tesco and Pension Wise
 
-Tesco and Pension Wise are offering trial appointments for Tesco staff. To book, you must:
+Tesco and Pension Wise are offering appointments for Tesco employees. To book, you must:
 
 -  be aged 50 or over
 -  have a defined contribution pension – this includes the Tesco Retirement Savings Plan.
+
+[Book a free guidance appointment](/en/tesco/locations){: .button }
 
 # About the appointment
 
@@ -31,11 +33,3 @@ In your appointment, the guidance specialist will:
 Afterwards you’ll get a summary of what was discussed.
 
 ^Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.^
-
-To book your Pension Wise appointment, select your location below:
-
-[England & Wales](https://tpw.acuityscheduling.com/schedule.php)
-
-[Northern Ireland](https://app.acuityscheduling.com/schedule.php?owner=13020657)
-
-[Scotland](https://pensionwisecas.acuityscheduling.com/schedule.php)
