@@ -60,7 +60,9 @@ class BookingRequestForm
   end
 
   def twilio_number
-    booking_location.online_booking_twilio_number
+    booking_location
+      .location_for(location_id)
+      .online_booking_twilio_number
   end
 
   def step_one_valid?
