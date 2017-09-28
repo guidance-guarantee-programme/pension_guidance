@@ -20,7 +20,8 @@ module Tesco
       :date_of_birth_year,
       :date_of_birth_month,
       :date_of_birth_day,
-      :location_id
+      :location_id,
+      :room
     )
 
     validates :start_at, presence: true

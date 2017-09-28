@@ -16,7 +16,11 @@
     </div>
 
     <div class="t-location">
-      <p><strong>Location</strong><%= simple_format(@location.address) %></p>
+      <p>
+      <strong>Location</strong>
+      <br><%= @booking_room %>
+      <%= simple_format(@location.address) %>
+      </p>
     </div>
 
     <h2>What happens next?</h2>

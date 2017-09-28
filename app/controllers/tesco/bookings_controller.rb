@@ -18,6 +18,7 @@ module Tesco
       return redirect_to root_path unless params[:booking_reference]
 
       @booking_reference = params[:booking_reference]
+      @booking_room      = params[:booking_room]
       @booking_date      = Time.zone.parse(params[:booking_date])
     end
 
@@ -54,7 +55,8 @@ module Tesco
       redirect_to confirmation_tesco_location_bookings_path(
         location_id: location_id,
         booking_reference: booking.id,
-        booking_date: booking.start_at
+        booking_date: booking.start_at,
+        booking_room: booking.room
       )
     end
 

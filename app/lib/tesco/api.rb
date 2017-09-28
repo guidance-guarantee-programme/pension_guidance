@@ -6,7 +6,8 @@ module Tesco
         booking.attributes
       )
 
-      booking.id = parse_response_location(response)
+      booking.id   = response.body['id']
+      booking.room = response.body['room']
     rescue HTTPConnection::UnprocessableEntity
       false
     end
@@ -22,11 +23,6 @@ module Tesco
     end
 
     private
-
-    def parse_response_location(response)
-      location = response.headers['Location']
-      location.split('/').last
-    end
 
     def connection
       HTTPConnectionFactory.build(api_uri, connection_options).tap do |c|

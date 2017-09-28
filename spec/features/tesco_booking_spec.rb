@@ -23,6 +23,7 @@ RSpec.feature 'Tesco Bookings' do
 
       def create(booking)
         booking.id = 123_456
+        booking.room = 'Room.1'
       end
     end.new
   end
@@ -69,6 +70,7 @@ RSpec.feature 'Tesco Bookings' do
     expect(@page.booking_reference).to have_text('123456')
     expect(@page.start).to have_text('13 September 2017')
     expect(@page.start).to have_text('9:10am')
+    expect(@page).to have_text('Room.1')
     expect(@page).to have_location
   end
 end
