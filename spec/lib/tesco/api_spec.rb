@@ -1,4 +1,28 @@
 RSpec.describe Tesco::Api do
+  describe '#create', vcr: true do
+    it 'responds successfully' do
+      booking = Tesco::Booking.new(
+        location_id: 1,
+        start_at: '2017-10-02 08:15 UTC',
+        first_name: 'Rick',
+        last_name: 'Sanchez',
+        email: 'rick@example.com',
+        phone: '07715 930 444',
+        memorable_word: 'cheese',
+        date_of_birth_year: '1960',
+        date_of_birth_month: '01',
+        date_of_birth_day: '01',
+        dc_pot_confirmed: true,
+        opt_out_of_market_research: true
+      )
+
+      described_class.new.create(booking)
+
+      expect(booking.id).to eq(10)
+      expect(booking.room).to eq('R1')
+    end
+  end
+
   describe '#locations', vcr: true do
     subject { described_class.new.locations }
 
