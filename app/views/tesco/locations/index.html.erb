@@ -2,7 +2,7 @@
 
 <h1>Tesco locations</h1>
 
-<p>There is <%= pluralize(@locations.length, 'location') %>.</p>
+<p>There <%= @locations.length > 1 ? 'are' : 'is' %> <%= pluralize(@locations.length, 'location') %>.</p>
 
 <ol class="location-list">
   <% @locations.each do |location| %>

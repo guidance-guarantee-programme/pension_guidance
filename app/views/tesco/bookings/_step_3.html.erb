@@ -37,10 +37,7 @@
   </div>
 
   <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:phone) %>">
-    <%= f.label :phone, class: 'form-label-bold' do %>
-      Phone number
-      <span class="form-hint">The number you’d like us to call you on</span>
-    <% end %>
+    <%= f.label :phone, 'Phone number', class: 'form-label-bold' %>
 
     <% if @booking.errors.include?(:phone) %>
       <span class="error-message"><%= @booking.errors[:phone].to_sentence.capitalize %></span>
@@ -52,7 +49,7 @@
   <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:memorable_word) %>">
     <%= f.label :memorable_word, class: 'form-label-bold' do %>
       Your memorable word
-      <span class="form-hint">Our pension specialist will repeat this word when they call so you know it’s us</span>
+      <span class="form-hint">Our pension specialist will repeat this word if they need to call, so you know it’s us</span>
     <% end %>
 
     <% if @booking.errors.include?(:memorable_word) %>
@@ -129,7 +126,7 @@
   <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @booking.errors.include?(:dc_pot_confirmed) %>" id="booking_dc_pot_confirmed" tabindex="-1">
     <fieldset class="inline">
       <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
-      <span class="form-hint">If you have both select ‘Yes’</span>
+      <span class="form-hint">Also select ‘Yes’ if you have both</span>
       <% if @booking.errors.include?(:dc_pot_confirmed) %>
         <span class="error-message"><%= @booking.errors[:dc_pot_confirmed].to_sentence.capitalize %></span>
       <% end %>
