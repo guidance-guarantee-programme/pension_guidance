@@ -201,6 +201,7 @@ cy:
               blank: enter a name
             email:
               invalid: enter a valid email address
+              invalid_email: enter a valid email address
             message:
               blank: enter a message
   home:

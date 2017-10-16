@@ -6,6 +6,7 @@ module Tesco
     before_action :booking
     before_action :retrieve_slots
     before_action :set_breadcrumbs
+    before_action :set_feedback
 
     def new
     end
@@ -126,6 +127,10 @@ module Tesco
       breadcrumb Breadcrumb.tesco_landing_page
       breadcrumb Breadcrumb.tesco_locations
       breadcrumb Breadcrumb.tesco_location(location.id, location.name)
+    end
+
+    def set_feedback
+      @feedback = FeedbackForm.for_tesco
     end
   end
 end

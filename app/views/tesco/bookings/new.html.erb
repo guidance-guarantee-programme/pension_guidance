@@ -36,4 +36,8 @@
   <% if @booking.step == 1 || @booking.step == 2 %>
     <%= render 'day_picker' %>
   <% end %>
+
+  <div class="l-column-two-thirds">
+    <%= render 'feedbacks/feedback_form' %>
+  </div>
 </div>

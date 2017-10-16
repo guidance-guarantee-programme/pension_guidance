@@ -1,3 +1,20 @@
 <% content_for(:page_title, t('service.title', page_title: 'Sorry, you’re unable to have an appointment')) %>
 
-<%= render partial: 'ineligible', locals: { telephone: true } %>
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <h1>Sorry, you’re unable to have an appointment</h1>
+
+    <p>You must be aged <strong>50 or over</strong> with a
+    <strong>defined contribution</strong> pension to have a Pension Wise appointment.</p>
+
+    <div role="note" aria-label="Information" class="application-notice info-notice">
+      <p>Pension Wise only provides guidance on defined contribution pensions. For help with defined benefit (final salary or career average) pensions go to <a rel="external" href="https://www.pensionsadvisoryservice.org.uk/">The Pensions Advisory Service</a>.</p>
+    </div>
+
+    <p>You can also find out what <%= link_to 'type of pension you have', guide_path('pension-type-tool') %> you have.</p>
+  </div>
+
+  <div class="l-column-two-thirds">
+    <%= render 'feedbacks/feedback_form' %>
+  </div>
+</div>
