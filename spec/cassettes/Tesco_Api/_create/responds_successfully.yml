@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3008/api/v1/locations/1/appointments
+    body:
+      encoding: UTF-8
+      string: '{"start_at":"2017-10-02 08:15:00 UTC","first_name":"Rick","last_name":"Sanchez","email":"rick@example.com","phone":"07715
+        930 444","memorable_word":"cheese","date_of_birth":"1960-01-01","opt_out_of_market_research":false,"dc_pot_confirmed":false}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson; benlovell; 47827) ruby/2.4.2 (198; x86_64-darwin16)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"937308918c580bbb0ec42b4173d1bbe5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f045795-38ee-4528-8fe9-3f11c34fb4f7
+      X-Runtime:
+      - '0.414120'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":10,"room":"R1"}'
+    http_version: 
+  recorded_at: Sun, 01 Oct 2017 10:13:50 GMT
+recorded_with: VCR 3.0.3

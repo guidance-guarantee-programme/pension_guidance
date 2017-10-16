@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3008/api/v1/locations/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson; benlovell; 3149) ruby/2.4.1 (111; x86_64-darwin16)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0ccb660e0b6c5971910cbf3025bc035a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '049df344-5e12-4146-b130-3050870b2d30'
+      X-Runtime:
+      - '0.566574'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"name":"Tesco 1","address_line_one":"1 Some Street","address_line_two":"Some
+        Place","address_line_three":"","town":"Some Town","county":"Some County","postcode":"RG2
+        9FL","windowed_slots":{"2017-09-12":["2017-09-12T09:20:00.000Z","2017-09-12T11:00:00.000Z","2017-09-12T14:00:00.000Z","2017-09-12T15:40:00.000Z"],"2017-09-13":["2017-09-13T08:10:00.000Z","2017-09-13T11:10:00.000Z","2017-09-13T13:10:00.000Z","2017-09-13T14:50:00.000Z"],"2017-09-14":["2017-09-14T09:20:00.000Z","2017-09-14T11:30:00.000Z","2017-09-14T13:10:00.000Z","2017-09-14T14:20:00.000Z"],"2017-09-15":["2017-09-15T08:50:00.000Z","2017-09-15T11:00:00.000Z","2017-09-15T13:40:00.000Z","2017-09-15T15:00:00.000Z"]}}'
+    http_version: 
+  recorded_at: Mon, 11 Sep 2017 12:12:54 GMT
+recorded_with: VCR 3.0.3

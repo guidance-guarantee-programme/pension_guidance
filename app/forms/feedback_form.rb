@@ -6,10 +6,14 @@ class FeedbackForm
   validates :name, presence: true
   validates :email, email: true
   validates :message, presence: true
-  validates :feedback_type, inclusion: { in: %w(online_booking pension_type_tool) }
+  validates :feedback_type, inclusion: { in: %w(tesco online_booking pension_type_tool) }
 
   def self.for_online_booking
     new(feedback_type: 'online_booking')
+  end
+
+  def self.for_tesco
+    new(feedback_type: 'tesco')
   end
 
   def message_content
@@ -20,8 +24,12 @@ class FeedbackForm
     )
   end
 
-  def message_identifier
+  def message_identifier # rubocop:disable Metrics/MethodLength
     {
+      'tesco' => {
+        subject: 'Tesco Online Booking zen_desk',
+        tags: %w(tesco)
+      },
       'online_booking' => {
         subject: 'Online Booking zen_desk',
         tags: %w(online_booking)

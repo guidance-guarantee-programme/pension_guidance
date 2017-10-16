@@ -11,6 +11,12 @@
       this.headerSelector = '.js-slot-picker-header';
       this.errorHeaderSelector = '.js-slot-picker-error-header';
 
+      if ($form.find('input[name="telephone_appointment[step]"]').length) {
+        this.$prefix = 'telephone_appointment';
+      } else {
+        this.$prefix = 'booking';
+      }
+
       $.subscribe('slot-picker-day-selected', this.handleDaySelected.bind(this));
     }
 
@@ -26,13 +32,13 @@
     }
 
     requestTimes(date) {
-      $.post(
-        this.$form.attr('action'),
-        {
-          'telephone_appointment[step]': 2,
-          'telephone_appointment[selected_date]': date,
-          'authenticity_token': this.$form.find('input[name=authenticity_token]').val()
-        }
+      var data = {};
+      data[`${this.$prefix}[step]`] = 2;
+      data[`${this.$prefix}[selected_date]`] = date;
+      data['authenticity_token'] = this.$form.find('input[name=authenticity_token]').val();
+
+      $.post(this.$form.attr('action'),
+        data
       )
       .done(this.displayTimes.bind(this))
       .fail(this.displayError.bind(this));
