@@ -20,7 +20,8 @@ RSpec.feature 'Tesco locations' do
             'address_line_two' => 'Shire Park',
             'address_line_three' => 'Kestrel Way',
             'county' => 'Welwyn Garden City',
-            'postcode' => 'AL7 1GA'
+            'postcode' => 'AL7 1GA',
+            'available' => true
           }
         ]
       end

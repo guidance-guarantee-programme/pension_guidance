@@ -15,12 +15,21 @@
             <%= simple_format(location.address) %>
           </div>
 
-          <p>
-            <%= link_to 'Book online',
-              new_tesco_location_booking_path(location_id: location.id),
-              class: 'button t-book-online'
-            %>
-          </p>
+          <% if location.available? %>
+            <p>
+              <%= link_to 'Book online',
+                new_tesco_location_booking_path(location_id: location.id),
+                class: 'button t-book-online'
+              %>
+            </p>
+          <% else %>
+            <div class="notice notice--extra-spacing">
+              <i class="icon icon-information">
+                <span class="visually-hidden">Info</span>
+              </i>
+              <strong class="small">This location is fully booked</strong>
+            </div>
+          <% end %>
         </div>
 
         <div class="l-column-third">

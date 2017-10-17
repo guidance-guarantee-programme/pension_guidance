@@ -10,5 +10,9 @@ module Tesco
         postcode
       ].reject(&:blank?).join("\n")
     end
+
+    def available?
+      available
+    end
   end
 end
