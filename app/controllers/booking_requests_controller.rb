@@ -69,6 +69,7 @@ class BookingRequestsController < ApplicationController
         :accessibility_requirements,
         :dc_pot,
         :additional_info,
+        :where_you_heard,
         :opt_in
       ).merge(remote_ip: request.remote_ip)
   end

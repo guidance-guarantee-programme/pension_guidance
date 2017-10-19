@@ -22,7 +22,8 @@ RSpec.describe 'POST /en/locations/:id/booking-request/complete', type: :request
           date_of_birth: '1940-01-01',
           accessibility_requirements: '0',
           opt_in: '1',
-          dc_pot: 'yes'
+          dc_pot: 'yes',
+          where_you_heard: '1'
         }
       }
 

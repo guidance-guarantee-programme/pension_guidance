@@ -105,6 +105,7 @@ cy:
         dc_pot: Defined contribution pension
         opt_in: Terms and conditions
         telephone_number: Phone number
+        where_you_heard: Where did you first hear of Pension Wise
       appointment_summary:
         appointment_type: Your age
       telephone_appointment:
@@ -151,6 +152,8 @@ cy:
             appointment_type:
               inclusion: must be 50 or over to be eligible for guidance
             dc_pot:
+              inclusion: select an option
+            where_you_heard:
               inclusion: select an option
         complaint:
           attributes:
