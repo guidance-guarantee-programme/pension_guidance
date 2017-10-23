@@ -16,6 +16,7 @@ class TelephoneAppointment
     :opt_out_of_market_research,
     :accept_terms_and_conditions,
     :dc_pot_confirmed,
+    :where_you_heard,
     :date_of_birth_year,
     :date_of_birth_month,
     :date_of_birth_day
@@ -30,6 +31,7 @@ class TelephoneAppointment
   validates :date_of_birth, presence: true
   validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
   validates :accept_terms_and_conditions, inclusion: { in: [true] }
+  validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
 
   def advance!
     self.step += 1
@@ -59,7 +61,8 @@ class TelephoneAppointment
       memorable_word: memorable_word,
       date_of_birth: date_of_birth,
       opt_out_of_market_research: opt_out_of_market_research,
-      dc_pot_confirmed: dc_pot_confirmed == 'yes'
+      dc_pot_confirmed: dc_pot_confirmed == 'yes',
+      where_you_heard: where_you_heard
     }
   end
 

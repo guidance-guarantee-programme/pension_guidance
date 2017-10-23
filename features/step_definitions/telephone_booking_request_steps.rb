@@ -95,6 +95,7 @@ Given(/^they do not have a DC pot$/) do
   choose('No')
   @page.opt_out_of_market_research.set(true)
   @page.accept_terms_and_conditions.set(true)
+  @page.where_you_heard.select('Other')
 
   @page.submit.click
 end
@@ -119,6 +120,7 @@ Given(/^they are below the minimum age$/) do
   choose('Yes')
   @page.opt_out_of_market_research.set(true)
   @page.accept_terms_and_conditions.set(true)
+  @page.where_you_heard.select('Other')
 
   @page.submit.click
 end
@@ -140,6 +142,7 @@ Given(/^they are eligible for an appointment$/) do
   choose('Yes')
   @page.opt_out_of_market_research.set(true)
   @page.accept_terms_and_conditions.set(true)
+  @page.where_you_heard.select('Other')
 
   @page.submit.click
 end
@@ -154,6 +157,7 @@ Then(/^their appointment is created$/) do
   expect(@created_telephone_appointment.date_of_birth).to eq DateTime.new(1920, 10, 23).in_time_zone
   expect(@created_telephone_appointment.opt_out_of_market_research).to eq true
   expect(@created_telephone_appointment.accept_terms_and_conditions).to eq true
+  expect(@created_telephone_appointment.where_you_heard).to eq '17'
 end
 
 Then(/^they see a confirmation of their appointment$/) do
@@ -180,6 +184,7 @@ When(/^the slot becomes unavailable while they are filling in their details$/) d
   choose('Yes')
   @page.opt_out_of_market_research.set(true)
   @page.accept_terms_and_conditions.set(true)
+  @page.where_you_heard.select('Other')
 
   @page.submit.click
 end

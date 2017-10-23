@@ -94,9 +94,6 @@ cy:
       tesco/booking:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
-      telephone_appointment:
-        dc_pot_confirmed: Defined contribution pension
-        accept_terms_and_conditions: Terms and conditions
       booking_request_form:
         primary_slot: Slot 1
         secondary_slot: Slot 2
@@ -111,16 +108,7 @@ cy:
       telephone_appointment:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
-      booking_request_form:
-        primary_slot: Slot 1
-        secondary_slot: Slot 2
-        tertiary_slot: Slot 3
-        appointment_type: Age range
-        dc_pot: Defined contribution pension
-        opt_in: Terms and conditions
-        telephone_number: Phone number
-      appointment_summary:
-        appointment_type: Your age
+        where_you_heard: Where did you first hear of Pension Wise
     errors:
       models:
         annuity_registration_form:
@@ -198,6 +186,8 @@ cy:
               inclusion: select an option
             accept_terms_and_conditions:
               inclusion: please accept
+            where_you_heard:
+              inclusion: select an option
         feedback_form:
           attributes:
             name:
