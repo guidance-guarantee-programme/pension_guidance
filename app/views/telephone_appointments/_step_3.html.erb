@@ -168,6 +168,18 @@
     </fieldset>
   </div>
 
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:where_you_heard) %>">
+    <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label-bold' %>
+    <% if @telephone_appointment.errors.include?(:where_you_heard) %>
+      <span class="error-message"><%= @telephone_appointment.errors[:where_you_heard].to_sentence.capitalize %></span>
+    <% end %>
+    <%= f.select :where_you_heard,
+          options_for_select(WhereYouHeard::OPTIONS.invert.to_a, @telephone_appointment.where_you_heard),
+          { include_blank: true},
+          { class: "t-where-you-heard form-control #{'form-control-error' if @telephone_appointment.errors.include?(:where_you_heard)}" }
+    %>
+  </div>
+
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>">
     <fieldset>
       <legend>

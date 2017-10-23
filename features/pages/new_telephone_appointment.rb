@@ -12,6 +12,7 @@ module Pages
     element :phone, '.t-phone'
     element :memorable_word, '.t-memorable-word'
     element :choose_other_time_message, '.t-choose-other-time-message'
+    element :where_you_heard, '.t-where-you-heard'
 
     element :dc_pot_confirmed_no, '.t-dc-confirmed-pot-no', visible: false
     element :opt_out_of_market_research, '.t-opt-out-of-market-research', visible: false

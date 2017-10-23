@@ -12,7 +12,8 @@ RSpec.describe TelephoneAppointment, type: :model do
       date_of_birth_day: '23',
       dc_pot_confirmed: 'yes',
       opt_out_of_market_research: 'true',
-      accept_terms_and_conditions: 'true'
+      accept_terms_and_conditions: 'true',
+      where_you_heard: '1'
     )
   end
 
