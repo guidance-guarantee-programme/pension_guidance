@@ -16,7 +16,8 @@ RSpec.describe BookingRequestForm do
         additional_info: '',
         opt_in: '1',
         dc_pot: 'yes',
-        remote_ip: '214.142.214.142'
+        remote_ip: '214.142.214.142',
+        where_you_heard: '1'
       )
     end
 
@@ -116,6 +117,11 @@ RSpec.describe BookingRequestForm do
 
       it 'ensures `additional_info` is no longer than 160 characters' do
         subject.additional_info = '*' * 161
+        expect(subject).not_to be_step_two_valid
+      end
+
+      it 'requires the `where_you_heard`' do
+        subject.where_you_heard = ''
         expect(subject).not_to be_step_two_valid
       end
     end

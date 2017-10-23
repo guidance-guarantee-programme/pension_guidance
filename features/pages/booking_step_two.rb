@@ -13,6 +13,7 @@ module Pages
     element :telephone_number, '.t-telephone-number'
     element :memorable_word, '.t-memorable-word'
     element :accessibility_requirements, '.t-accessibility-requirements', visible: false
+    element :where_you_heard, '.t-where-you-heard'
     element :opt_in, '.t-opt-in', visible: false
 
     element :dc_pot_yes, '.t-dc-pot-1', visible: false

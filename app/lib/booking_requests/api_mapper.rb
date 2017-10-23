@@ -16,6 +16,7 @@ module BookingRequests
           defined_contribution_pot_confirmed: dc_pot_as_boolean(booking_request.dc_pot),
           additional_info: booking_request.additional_info.to_s,
           placed_by_agent: booking_request.placed_by_agent?,
+          where_you_heard: booking_request.where_you_heard,
           slots: [
             slot(1, booking_request.primary_slot),
             slot(2, booking_request.secondary_slot),

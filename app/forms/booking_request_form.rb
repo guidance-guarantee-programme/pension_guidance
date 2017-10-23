@@ -5,7 +5,7 @@ class BookingRequestForm
                 :first_name, :last_name, :email, :telephone_number,
                 :memorable_word, :accessibility_requirements,
                 :date_of_birth, :dc_pot, :additional_info, :opt_in,
-                :remote_ip
+                :remote_ip, :where_you_heard
 
   validates :primary_slot, presence: true, if: :step_one?
 
@@ -20,6 +20,7 @@ class BookingRequestForm
     step_two.validates :dc_pot, inclusion: { in: %w(yes no not-sure) }
     step_two.validates :date_of_birth, presence: true
     step_two.validates :additional_info, length: { maximum: 160 }, allow_blank: true
+    step_two.validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
   end
 
   def initialize(location_id, opts)

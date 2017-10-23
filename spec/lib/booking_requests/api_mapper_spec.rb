@@ -19,7 +19,8 @@ RSpec.describe BookingRequests::ApiMapper do
       additional_info: nil,
       opt_in: false,
       dc_pot: 'yes',
-      remote_ip: '127.0.0.1'
+      remote_ip: '127.0.0.1',
+      where_you_heard: '1'
     )
   end
 
@@ -42,6 +43,7 @@ RSpec.describe BookingRequests::ApiMapper do
           marketing_opt_in: false,
           defined_contribution_pot_confirmed: true,
           placed_by_agent: false,
+          where_you_heard: '1',
           slots: [
             { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },
             { priority: 2, date: '2016-01-01', from: '1300', to: '1700' }
