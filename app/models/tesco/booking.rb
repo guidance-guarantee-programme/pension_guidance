@@ -45,7 +45,7 @@ module Tesco
     end
 
     def eligible?
-      age >= 50 && dc_pot_confirmed != 'no'
+      age_at_appointment >= 50 && dc_pot_confirmed != 'no'
     end
 
     def ineligible?
@@ -106,14 +106,10 @@ module Tesco
       Tesco.create(self)
     end
 
-    private
+    def age_at_appointment
+      return 0 unless date_of_birth && start_at
 
-    def age
-      return 0 unless date_of_birth
-
-      age = Time.zone.today.year - date_of_birth.year
-      age -= 1 if Time.zone.today.to_date < date_of_birth + age.years
-      age
+      ((start_at.to_date - date_of_birth) / 365).floor
     end
   end
 end
