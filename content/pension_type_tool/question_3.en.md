@@ -20,7 +20,7 @@ tags:
 * AXA
 * Barclays
 * Capita
-* Fidelilty
+* Fidelity
 * Friends Life
 * Halifax
 * Hargreaves Lansdown
