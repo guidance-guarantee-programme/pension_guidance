@@ -4,6 +4,7 @@ class LocationsController < ApplicationController
   before_action :set_breadcrumbs
   before_action :set_postcode
   before_action :send_cache_headers
+  before_action :identify_agent
 
   layout 'full_width_with_breadcrumbs', only: %i(show index)
 
@@ -36,6 +37,15 @@ class LocationsController < ApplicationController
   end
 
   private
+
+  def agent?
+    @agent
+  end
+  helper_method :agent?
+
+  def identify_agent
+    @agent = PlacedByAgent.new(request.remote_ip).call
+  end
 
   def retrieve_locations
     @locations = begin

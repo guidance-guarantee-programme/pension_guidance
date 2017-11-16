@@ -46,9 +46,13 @@
     <% end %>
 
     <% if @location.online_booking_enabled? && @location.slots_available? %>
-      <p>
-        <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
-      </p>
+      <% if agent? %>
+        <p><%= link_to 'Book on behalf of customer', agent_booking_path(@location.id), class: 'button t-agent-book-online' %></p>
+      <% else %>
+        <p>
+          <%= link_to 'Book online', booking_request_step_one_location_path(@location.id), class: 'button t-book-online' %>
+        </p>
+      <% end %>
 
       Or call <strong class="t-phone"><%= @location.phone %></strong>.
     <% else %>
