@@ -86,10 +86,6 @@ class BookingRequestForm
     age >= 50 && dc_pot != 'no'
   end
 
-  def placed_by_agent?
-    PlacedByAgent.new(remote_ip).call
-  end
-
   def ineligible?
     !eligible?
   end
