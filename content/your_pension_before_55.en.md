@@ -27,17 +27,6 @@ You may be able to take your whole pot tax free if both of the following apply t
 
 Read more about your [pension when you die](/en/when-you-die).
 
-## If you have debt
-
-If you’re thinking about using money from your pot to pay off debts you should get advice first. You have to think carefully about the money you’ll need in retirement.
-
-You’ll have to pay tax on any cash sum you take from your pot. You may not have enough left after tax to cover your debts.
-
-For free and impartial debt advice go to:
-
-- [The Money Advice Service](https://www.moneyadviceservice.org.uk/en/categories/debt-and-borrowing)
-- [Citizens Advice](https://www.citizensadvice.org.uk/debt-and-money/help-with-debt/)
-
 ## The State Pension
 
 The earliest you can get your State Pension is when you reach your [State Pension age](https://www.gov.uk/calculate-state-pension/y/age). 
