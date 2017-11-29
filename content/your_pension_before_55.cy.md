@@ -27,17 +27,6 @@ Efallai y byddwch yn gallu cymryd eich cronfa gyfan yn ddi-dreth os yw’r ddau 
 
 Darllenwch fwy am eich [pensiwn pan fyddwch yn marw](/cy/when-you-die).
 
-## Os oes gennych ddyledion
-
-Os ydych chi’n meddwl defnyddio arian o’ch cronfa i dalu dyledion, dylech gael cyngor yn gyntaf. Mae’n rhaid i chi feddwl yn ofalus am yr arian y byddwch ei angen ar ôl ymddeol.
-
-Bydd rhaid i chi dalu treth ar unrhyw swm o arian rydych yn ei gymryd allan o’ch cronfa. Efallai na fydd gennych ddigon yn weddill ar ôl treth i dalu eich dyledion.
-
-I gael cyngor ar ddyled yn diduedd ac am ddim, ewch i:
-
-- [Y Gwasanaeth Cynghori Ariannol](https://www.moneyadviceservice.org.uk/en/categories/debt-and-borrowing)
-- [Cyngor ar Bopeth](https://www.citizensadvice.org.uk/debt-and-money/help-with-debt/)
-
 ## Pensiwn y Wladwriaeth
 
 Y cynharaf y gallwch gael eich Pensiwn y Wladwriaeth yw pan fyddwch yn cyrraedd eich [oedran Pensiwn y Wladwriaeth](https://www.gov.uk/calculate-state-pension/y/age).
