@@ -17,7 +17,6 @@ Feature: Accessibility of pages
       | leave-pot-untouched      |
       | tax                      |
       | summary-document/new     |
-      | feedback/new             |
 
   Scenario: Location page is accessible
     When I visit a face to face booking location page

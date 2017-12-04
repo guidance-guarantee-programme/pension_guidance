@@ -37,7 +37,6 @@ paths:
   summary_document_new: /summary-document/new
   locations: /locations?postcode=
   cookies: /cookies
-  feedback_new: /feedback/new
   location_postcode: /locations?postcode=sw16+2hq
   location_id: /locations/0337ef4d-0076-48c6-a588-98e5ca5b91dd?postcode=Bl31ep+
   location_booking: /locations/ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef/booking-request/step-one

@@ -8,8 +8,12 @@ class FeedbackForm
   validates :message, presence: true
   validates :feedback_type, inclusion: { in: %w(tesco online_booking pension_type_tool) }
 
-  def self.for_online_booking
+  def self.for_face_to_face_booking
     new(feedback_type: 'online_booking')
+  end
+
+  def self.for_phone_booking
+    new(feedback_type: 'phone_booking')
   end
 
   def self.for_tesco
@@ -31,8 +35,12 @@ class FeedbackForm
         tags: %w(tesco)
       },
       'online_booking' => {
-        subject: 'Online Booking zen_desk',
-        tags: %w(online_booking)
+        subject: 'Face-to-Face Online Booking zen_desk',
+        tags: %w(online_booking f2f)
+      },
+      'phone_booking' => {
+        subject: 'Phone Online Booking zen_desk',
+        tags: %w(online_booking phone)
       },
       'pension_type_tool' => {
         subject: 'Pension type tool zen_desk',
