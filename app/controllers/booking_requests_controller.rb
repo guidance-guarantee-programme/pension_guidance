@@ -3,10 +3,9 @@ class BookingRequestsController < ApplicationController
 
   before_action :set_booking_request
   before_action :set_breadcrumbs
+  before_action :set_feedback
 
   def step_one
-    @feedback = FeedbackForm.for_online_booking
-
     if @booking_request.no_availability?
       render :no_availability
     else
@@ -19,14 +18,10 @@ class BookingRequestsController < ApplicationController
   end
 
   def step_two
-    @feedback = FeedbackForm.for_online_booking
-
     render :step_one unless @booking_request.step_one_valid?
   end
 
   def complete
-    @feedback = FeedbackForm.for_online_booking
-
     if @booking_request.step_two_invalid?
       render :step_two
     elsif @booking_request.ineligible?
@@ -41,7 +36,6 @@ class BookingRequestsController < ApplicationController
   end
 
   def ineligible
-    @feedback = FeedbackForm.for_online_booking
   end
 
   private
@@ -94,5 +88,9 @@ class BookingRequestsController < ApplicationController
     breadcrumb Breadcrumb.book_an_appointment
     breadcrumb Breadcrumb.how_to_book_face_to_face
     breadcrumb Breadcrumb.book_online(location_id, @booking_request.location_name)
+  end
+
+  def set_feedback
+    @feedback = FeedbackForm.for_face_to_face_booking
   end
 end
