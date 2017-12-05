@@ -22,7 +22,6 @@ Scenario: Appointment location that handles its own booking
   Then I should see the following appointment location details:
     | its name                              |
     | its address                           |
-    | its opening hours                     |
     | its Pension Wise booking phone number |
   And there are no search results to return to
 
@@ -31,5 +30,4 @@ Scenario: Appointment location that doesn't handle its own booking
   Then I should see the following appointment location details:
     | its name                                           |
     | its address                                        |
-    | booking location opening hours                     |
     | booking location Pension Wise booking phone number |
