@@ -77,7 +77,7 @@ Then(/^I should see the details of that appointment location$/) do
   expect(location).to be_displayed(id: 'london')
   expect(location.name.text).to eq('London')
 
-  %i(address phone hours).each do |element|
+  %i(address phone).each do |element|
     expect(location.public_send(element)).to be_visible
   end
 
