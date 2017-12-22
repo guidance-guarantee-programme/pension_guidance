@@ -15,6 +15,7 @@ env:
   - secure: MdrB+5oJX74bc7wSPut3vANmXUlvQN+pJyagxE+tuWWadKb5F4oAAXU2/BtrMqD9f/lxs2d+lh3AxKIWgN/ZUyxNxWZPk8958pqaTbc8eAcYLag4E2fqqyafkJZYW5Dny1lkoIzdmxn4FPHdp8WTfXsnOSmDa56fSj5DwBe4cF0=
 before_install:
 - gem update --system
+- gem install bundler
 - echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
 - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 before_script:
