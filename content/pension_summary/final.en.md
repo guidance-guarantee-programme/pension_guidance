@@ -44,6 +44,6 @@ $C
 $C
 ### The Pensions Tracing Service
 [gov.uk/find-pension-contact-details](https://www.gov.uk/find-pension-contact-details)<br>
-Phone: 0345 6002 537<br>
+Phone: 0800 731 0193<br>
 From outside the UK: +44 191 215 4491
 $C
