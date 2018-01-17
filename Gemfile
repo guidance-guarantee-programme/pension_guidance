@@ -30,8 +30,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'output-templates', '~> 4.9', github: 'guidance-guarantee-programme/output-templates'
   gem 'phoner'
   gem 'postcodes_io'
-  # https://github.com/mbleigh/princely/pull/53
-  gem 'princely', github: 'guidance-guarantee-programme/princely', branch: 'remove-alias-method-chain'
+  gem 'princely'
   gem 'puma'
   gem 'rails', '~> 5.1.1'
   gem 'redis'

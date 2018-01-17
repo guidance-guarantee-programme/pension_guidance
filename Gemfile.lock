@@ -7,13 +7,6 @@ GIT
       sass
 
 GIT
-  remote: https://github.com/guidance-guarantee-programme/princely.git
-  revision: 4ea8b6be15257b5afc3cfdb1767b8d8c75c72750
-  branch: remove-alias-method-chain
-  specs:
-    princely (2.0.2)
-
-GIT
   remote: https://github.com/guidance-guarantee-programme/rubytree.git
   revision: 06f53ee78cc2a48377c1bd177d3bc83c1504701c
   branch: 24fix
@@ -238,6 +231,7 @@ GEM
     postcodes_io (0.2.0)
       excon (~> 0.39)
     powerpack (0.1.1)
+    princely (2.1.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
