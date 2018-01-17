@@ -36,7 +36,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'redis'
   gem 'rgeo'
   gem 'rgeo-geojson'
-  gem 'rubytree', github: 'guidance-guarantee-programme/rubytree', branch: '24fix'
+  gem 'rubytree'
   gem 'sassc-rails'
   gem 'sprockets-es6'
   gem 'sprockets-rails'
