@@ -13,13 +13,19 @@ class Complaint
     valid?
   end
 
+  def requester_email
+    return email_address if email_address.present?
+
+    'contact@pensionwise.gov.uk'
+  end
+
   private
 
   def zendesk_content
     {
       subject: 'Complaint',
       name: name,
-      email: email_address,
+      email: requester_email,
       message: combined_message,
       tags: %w(complaint)
     }

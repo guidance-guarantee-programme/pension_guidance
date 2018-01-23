@@ -7,4 +7,8 @@ Rails.application.config.filter_parameters += %i(
   phone
   telephone_number
   memorable_word
+  email_address
+  phone_booking_message
+  face_to_face_message
+  other_message
 )
