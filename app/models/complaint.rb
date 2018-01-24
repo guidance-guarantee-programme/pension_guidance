@@ -16,7 +16,7 @@ class Complaint
   def requester_email
     return email_address if email_address.present?
 
-    'contact@pensionwise.gov.uk'
+    'zendesk@pensionwise.gov.uk'
   end
 
   private
