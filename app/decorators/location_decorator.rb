@@ -1,9 +1,8 @@
 class LocationDecorator < SimpleDelegator
-  def initialize(location, booking_location: nil, nearest_locations: nil)
+  def initialize(location, booking_location: nil)
     __setobj__(location)
 
     self._booking_location = booking_location
-    self.nearest_locations = nearest_locations
   end
 
   def address_encoded
@@ -22,21 +21,7 @@ class LocationDecorator < SimpleDelegator
     _booking_location.nil? ? nil : _booking_location.name
   end
 
-  def search_context
-    @search_context ||= begin
-      return unless nearest_locations.present?
-
-      index = nearest_locations.index { |location| location.id == id }
-      return unless index
-
-      position = index + 1
-      distance = format('%.2f', nearest_locations[index].distance)
-
-      LocationSearchContext.new(position: position, distance: distance)
-    end
-  end
-
   private
 
-  attr_accessor :_booking_location, :nearest_locations
+  attr_accessor :_booking_location
 end

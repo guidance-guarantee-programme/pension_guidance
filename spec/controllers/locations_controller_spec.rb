@@ -1,17 +1,11 @@
 RSpec.describe LocationsController, type: :controller do
-  describe 'GET index' do
+  describe 'POST search' do
     before do
       allow(Locations).to receive(:nearest_to_postcode).and_return([double, double])
     end
 
-    specify 'without a postcode param' do
-      get :index, params: { locale: :en }
-
-      expect(response).to render_template(:a_to_z)
-    end
-
     specify 'with an empty postcode' do
-      get :index, params: { locale: :en, postcode: '' }
+      post :search, params: { locale: :en, postcode: '' }
 
       expect(response).to render_template(:empty_postcode)
     end
@@ -19,7 +13,7 @@ RSpec.describe LocationsController, type: :controller do
     specify 'with an invalid postcode' do
       allow(Locations).to receive(:nearest_to_postcode).and_raise(Geocoder::InvalidPostcode)
 
-      get :index, params: { locale: :en, postcode: 'LONDON' }
+      post :search, params: { locale: :en, postcode: 'LONDON' }
 
       expect(response).to render_template(:invalid_postcode)
     end
@@ -27,15 +21,15 @@ RSpec.describe LocationsController, type: :controller do
     specify 'with a failed postcode lookup' do
       allow(Locations).to receive(:nearest_to_postcode).and_raise(Geocoder::FailedLookup)
 
-      get :index, params: { locale: :en, postcode: 'BT7 3AP' }
+      post :search, params: { locale: :en, postcode: 'BT7 3AP' }
 
       expect(response).to render_template(:failed_lookup)
     end
 
     specify 'with a postcode' do
-      get :index, params: { locale: :en, postcode: 'BT7 3AP' }
+      post :search, params: { locale: :en, postcode: 'BT7 3AP' }
 
-      expect(response).to render_template(:index)
+      expect(response).to render_template(:search)
     end
   end
 
