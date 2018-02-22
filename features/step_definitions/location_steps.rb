@@ -5,7 +5,10 @@ end
 When(/^I search for appointment locations near to a valid postcode$/) do
   postcode = 'BT7 3AP' # Belfast
 
-  Pages::Locations.new.load(locale: :en, postcode: postcode)
+  @page = Pages::LocationSearch.new
+  @page.load(locale: :en)
+  @page.postcode.set(postcode)
+  @page.submit.click
 end
 
 Given(/^I have drilled down into a specific search result$/) do
@@ -25,18 +28,20 @@ When(/^I view the details of an appointment location that handles its own bookin
   Pages::Location.new.load(locale: :en, id: 'london')
 end
 
-Given(/^I have bookmarked the page$/) do
-  @bookmark = page.driver.current_url
-end
-
 When(/^I search for appointment locations near to an invalid postcode$/) do
   postcode = 'invalid'
 
-  Pages::Locations.new.load(locale: :en, postcode: postcode)
+  @page = Pages::LocationSearch.new
+  @page.load(locale: :en)
+  @page.postcode.set(postcode)
+  @page.submit.click
 end
 
 When(/^I search for appointment locations without entering a postcode$/) do
-  Pages::Locations.new.load(locale: :en, postcode: '')
+  @page = Pages::LocationSearch.new
+  @page.load(locale: :en)
+  @page.postcode.set('')
+  @page.submit.click
 end
 
 When(/^I view the details of an appointment location that doesn't handle its own booking$/) do
@@ -88,10 +93,6 @@ Then(/^I should see the details of that appointment location$/) do
                                                  ])
 end
 
-When(/^I visit the bookmarked page$/) do
-  page.driver.visit(@bookmark)
-end
-
 # rubocop:disable Metrics/BlockLength
 Then(/^I should see the following appointment location details:$/) do |table|
   location = Pages::Location.new
@@ -127,14 +128,3 @@ Then(/^I should see the following appointment location details:$/) do |table|
   end
 end
 # rubocop:enable Metrics/BlockLength
-
-Then(/^I should be able to get back to the search results$/) do
-  location = Pages::Location.new
-  postcode = URI.parse(location.current_url).query
-  location.back_to_results.click
-  expect(Pages::Locations.new.current_url).to end_with(postcode)
-end
-
-Then(/^there are no search results to return to$/) do
-  expect(Pages::Location.new).to_not have_back_to_results
-end

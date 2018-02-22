@@ -52,6 +52,10 @@ Rails.application.routes.draw do
       end
 
       resources :locations, only: [:index, :show] do
+        collection do
+          post 'search'
+        end
+
         member do
           get '/booking-request/step-one',  to: 'booking_requests#step_one'
           post '/booking-request/step-two', to: 'booking_requests#step_two'

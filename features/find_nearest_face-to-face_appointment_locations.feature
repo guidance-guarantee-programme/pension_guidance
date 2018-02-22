@@ -15,9 +15,3 @@ Scenario: Search using an invalid postcode (i.e. one that we can't find)
 Scenario: Search without entering a postcode
   When I search for appointment locations without entering a postcode
   Then I am told to enter a valid postcode
-
-Scenario: Bookmark search results
-  Given I have searched for appointment locations near to a valid postcode
-  And I have bookmarked the page
-  When I visit the bookmarked page
-  Then I should see the 5 appointment locations nearest to that postcode

@@ -9,14 +9,15 @@ tags:
 
 Search for your nearest appointment locations.
 
-<form action="/cy/locations" method="get">
+<form action="/cy/locations/search" method="post">
   <div class="form-group">
     <label class="form-label-bold" for="postcode">
       Postcode
       <span class="form-hint">For example, ‘SW1A 1AA’</span>
     </label>
-    <input type="text" class="form-control" id="postcode" name="postcode" value="" required="true">
-    <input type="submit" class="button" id="btn-search" value="Search">
+    <input type="text" class="t-postcode form-control" id="postcode" name="postcode" value="" required="true">
+    <input type="submit" class="button t-submit" id="btn-search" value="Search">
+    <p>or view the <a href="/locations">list of locations</a></p>
   </div>
 </form>
 

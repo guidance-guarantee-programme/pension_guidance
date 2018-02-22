@@ -5,18 +5,19 @@ class LocationsController < ApplicationController
   before_action :set_postcode
   before_action :send_cache_headers
   before_action :identify_agent
+  skip_before_action :verify_authenticity_token
 
-  layout 'full_width_with_breadcrumbs', only: %i(show index)
+  layout 'full_width_with_breadcrumbs', only: %i(show search)
 
   def index
-    if @postcode.nil?
-      locations = Locations::Repository.new.all
+    locations = Locations::Repository.new.all
 
-      @locations_by_letter = locations.group_by { |location| location.name.first }
-      @locations_total     = locations.count
+    @locations_by_letter = locations.group_by { |location| location.name.first }
+    @locations_total     = locations.count
+  end
 
-      render :a_to_z
-    elsif @postcode.empty?
+  def search
+    if @postcode.empty?
       render :empty_postcode
     else
       retrieve_locations
@@ -29,11 +30,8 @@ class LocationsController < ApplicationController
     raise(ActionController::RoutingError, 'Location Not Found') unless location
 
     booking_location = Locations.find(location.booking_location_id) if location.booking_location_id.present?
-    nearest_locations = Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT) rescue nil
 
-    @location = LocationDecorator.new(location,
-                                      booking_location: booking_location,
-                                      nearest_locations: nearest_locations)
+    @location = LocationDecorator.new(location, booking_location: booking_location)
   end
 
   private
