@@ -52,4 +52,4 @@ Gall y [Ganolfan Pensiynau Ryngwladol](https://www.gov.uk/international-pension-
 
 Gallwch ddod o hyd i [ymgynghorydd ariannol](/cy/financial-advice) i’ch helpu i ddewis yr opsiwn pensiwn cywir pan fyddwch yn symud dramor. Efallai y byddwch yn gorfod talu ffi am y cyngor hwn.
 
-Os ydych yn byw mewn gwlad yr [Ardal Economaidd Ewropeaidd](https://www.gov.uk/eu-eea) ac angen cyngor gan ymgynghorydd ariannol y DU, dylech wirio bod ganddynt gymeradwyaeth gyfreithiol i roi cyngor ariannol - a elwir weithiau yn [pasbortio](http://www.fca.org.uk/firms/being-regulated/passporting) – yn eich gwlad.
+Os ydych yn byw mewn gwlad yr [Ardal Economaidd Ewropeaidd](https://www.gov.uk/eu-eea) ac angen cyngor gan ymgynghorydd ariannol y DU, dylech wirio bod ganddynt gymeradwyaeth gyfreithiol i roi cyngor ariannol - a elwir weithiau yn [pasbortio](http://www.fca.org.uk/firms/passporting) – yn eich gwlad.
