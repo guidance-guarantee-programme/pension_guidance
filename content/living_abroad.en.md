@@ -52,4 +52,4 @@ The [International Pension Centre](https://www.gov.uk/international-pension-cent
 
 You can find a [financial adviser](/en/financial-advice) to help you choose the right pension option when moving abroad. You may be charged a fee for this advice.
 
-If you live in a [European Economic Area](https://www.gov.uk/eu-eea) country and need advice from a UK financial adviser, you should check they have legal approval to give financial advice – sometimes known as [passporting](http://www.fca.org.uk/firms/being-regulated/passporting) – in your country.
+If you live in a [European Economic Area](https://www.gov.uk/eu-eea) country and need advice from a UK financial adviser, you should check they have legal approval to give financial advice – sometimes known as [passporting](http://www.fca.org.uk/firms/passporting) – in your country.

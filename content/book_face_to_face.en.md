@@ -21,6 +21,11 @@ Search for your nearest appointment locations.
   </div>
 </form>
 
+**Due to the recent adverse weather, you may experience slightly than longer
+waiting times in receiving confirmation of your Pension Wise appointment.
+Please bear with us and we will do our best to get back to you as quickly as we
+can.**
+
 <div class="application-notice info-notice">
   <p>You can also <a href="/en/book-phone">book a phone appointment</a>.</p>
 </div>
