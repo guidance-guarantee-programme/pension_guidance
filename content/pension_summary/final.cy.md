@@ -11,7 +11,7 @@ Os hoffech gael mwy o wybodaeth am eich opsiynau, gallwch drefnu apwyntiad Pensi
 $C
 ### Y Gwasanaeth Cynghori Ariannol
 [moneyadviceservice.org.uk](https://moneyadviceservice.org.uk)<br>
-Ffôn: 0300 500 5000<br>
+Ffôn: 0800 138 7777<br>
 O’r tu allan i’r DU: +44 144 382 7658
 $C
 
