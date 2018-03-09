@@ -17,6 +17,8 @@ Mae Tesco a Pension Wise yn cynnig apwyntiadau ar dreial i staff Tesco. I drefnu
 -  bod yn 50 oed neu drosodd
 -  bod gyda phensiwn cyfraniadau wedi’u diffinio – mae hyn yn cynnwys y Tesco Retirement Savings Plan.
 
+[Book a free guidance appointment](/cy/tesco/locations){: .button }
+
 # Yr apwyntiad
 
 Mae apwyntiad yn sgwrs rwng chi ac arbenigwr arweiniad Pension Wise hyfforddedig. Dylent barhau am 45 munud a chymryd lle yn breifat yn eich gweithle. Mae argaeledd wedi cyfyngu ar y sail y cyntaf i’r felin.
@@ -32,10 +34,4 @@ Wedyn cewch grynodeb o beth gafodd ei drafod.
 
 ^Mae arbenigwyr arweiniad Pension Wise yn ddiduedd. Ni fyddant yn argymell unrhyw gynhyrchion neu gwmniau ac ni fyddant yn dweud wrthych sut i fuddsoddi eich arian.^
 
-I drefnu eich apwyntiad Pension Wise, dewiswch eich lleoliad isod:
-
-[Cymru a Lloegr](https://tpw.acuityscheduling.com/schedule.php)
-
-[Gogledd Iwerddon](https://app.acuityscheduling.com/schedule.php?owner=13020657)
-
-[Yr Alban](https://pensionwisecas.acuityscheduling.com/schedule.php)
+If you have any questions or feedback regarding your appointment you can [contact us](/en/feedback/new?feedback[feedback_type]=tesco).
