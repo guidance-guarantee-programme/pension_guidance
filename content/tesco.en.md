@@ -33,3 +33,5 @@ In your appointment, the guidance specialist will:
 Afterwards you’ll get a summary of what was discussed.
 
 ^Pension Wise guidance specialists are impartial. They don’t recommend any products or companies and won’t tell you how to invest your money.^
+
+If you have any questions or feedback regarding your appointment you can [contact us](/en/feedback/new?feedback[feedback_type]=tesco).

@@ -1,6 +1,15 @@
 require 'spec_helper'
 
 RSpec.feature 'Customer feedback', js: true do
+  scenario 'Can be accessed via Tesco landing page' do
+    visit '/en/tesco'
+
+    click_on 'contact us'
+
+    expect(page).to have_content('Feedback')
+    expect(page).to have_content('Message')
+  end
+
   scenario 'can be left on the pension type tool' do
     begin
       allow_forgery_protection = FeedbacksController.allow_forgery_protection

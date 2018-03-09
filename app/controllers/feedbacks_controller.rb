@@ -3,7 +3,7 @@ class FeedbacksController < ApplicationController
   layout 'full_width'
 
   def new
-    @feedback = FeedbackForm.new(booking_request_params)
+    @feedback = FeedbackForm.new(booking_feedback_params)
   end
 
   def create
