@@ -40,7 +40,7 @@ Rails.application.routes.draw do
       end
 
       namespace :tesco, locale: :en do
-        resources :locations, only: :index do
+        resources :locations, only: %i(index show) do
           resources :bookings, only: %i(new create) do
             collection do
               get :ineligible

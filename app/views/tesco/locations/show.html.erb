@@ -1,0 +1,40 @@
+<% content_for(:page_title, t('service.title', page_title: @location.name)) %>
+
+<%= link_to 'Back to locations', tesco_locations_path, class: 'link-back' %>
+
+<h1 class="t-name"><%= @location.name %></h1>
+
+<div class="l-grid-row">
+  <div class="l-column-half">
+    <h2>Address</h2>
+    <div class="t-address">
+      <%= simple_format(@location.address) %>
+    </div>
+
+    <% if @location.available? %>
+      <p>
+        <%= link_to 'Book online',
+          new_tesco_location_booking_path(location_id: @location.id),
+          class: 'button t-book-online'
+        %>
+      </p>
+    <% else %>
+      <div class="notice notice--extra-spacing">
+        <i class="icon icon-information">
+          <span class="visually-hidden">Info</span>
+        </i>
+        <strong class="small">This location is fully booked</strong>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="l-column-half">
+    <a href="https://maps.google.com/maps?q=<%= url_encode(@location.postcode) %>" target="_blank">
+      <img
+        height="300"
+        alt="map showing the location of <%= @location.name %> (link opens external website in new window)"
+        style="border:0; position: relative;"
+        src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= url_encode(@location.postcode) %>&center=<%= url_encode(@location.postcode) %>&size=300x300&scale=2&zoom=15&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
+    </a>
+  </div>
+</div>
