@@ -10,47 +10,22 @@
     <strong class="small">All our Tesco locations are currently fully booked.</strong>
   </div>
 <% else %>
-  <p>There <%= @locations.length > 1 ? 'are' : 'is' %> <%= pluralize(@locations.length, 'location') %>.</p>
-<% end %>
-
-<ol class="location-list">
-  <% @locations.each do |location| %>
-    <li class="location-list__item t-location">
-      <div class="l-grid-row">
-        <div class="l-column-two-thirds">
-          <h2 class="location-list__name t-name"><%= location.name %></h2>
-
-          <div class="t-address">
-            <%= simple_format(location.address) %>
-          </div>
-
-          <% if location.available? %>
-            <p>
-              <%= link_to 'Book online',
-                new_tesco_location_booking_path(location_id: location.id),
-                class: 'button t-book-online'
-              %>
-            </p>
-          <% else %>
-            <div class="notice notice--extra-spacing">
-              <i class="icon icon-information">
-                <span class="visually-hidden">Info</span>
-              </i>
-              <strong class="small">This location is fully booked</strong>
-            </div>
+  <div class="l-grid-row">
+    <div class="l-column-third">
+      <span class="locations-a-z-total">
+        <div>Tesco locations</div>
+        <span class="locations-a-z-total__count"><%= @locations_total %></span>
+      </span>
+    </div>
+    <div class="l-column-two-thirds">
+      <% @locations_by_letter.each do |letter, locations| %>
+        <h2 class="locations-a-z-letter"><%= letter %></h2>
+        <ol class="locations-a-z-letter-list">
+          <% locations.each do |location| %>
+          <li class="locations-a-z-letter-list__location"><%= link_to location.name, tesco_location_path(location.id), class: 't-location' %></li>
           <% end %>
-        </div>
-
-        <div class="l-column-third">
-          <a href="https://maps.google.com/maps?q=<%= url_encode(location.postcode) %>" target="_blank">
-            <img
-              height="300"
-              alt="map showing the location of <%= location.name %> (link opens external website in new window)"
-              style="border:0; position: relative;"
-              src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= url_encode(location.postcode) %>&center=<%= url_encode(location.postcode) %>&size=300x300&scale=2&zoom=15&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
-          </a>
-        </div>
-      </div>
-    </li>
-  <% end %>
-</ol>
+        </ol>
+      <% end %>
+    </div>
+  </div>
+<% end %>

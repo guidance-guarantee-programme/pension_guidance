@@ -1,4 +1,5 @@
 # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
+require_relative '../../features/pages/tesco_location'
 require_relative '../../features/pages/tesco_locations'
 
 RSpec.feature 'Tesco locations' do
@@ -6,6 +7,8 @@ RSpec.feature 'Tesco locations' do
     given_bookable_tesco_locations_exist do
       when_the_customer_visits_the_tesco_locations_page
       then_they_see_the_locations
+      when_they_click_on_the_location
+      then_they_see_the_full_location_details
     end
   end
 
@@ -25,6 +28,10 @@ RSpec.feature 'Tesco locations' do
           }
         ]
       end
+
+      def location(*)
+        locations.first
+      end
     end.new
 
     yield
@@ -36,12 +43,18 @@ RSpec.feature 'Tesco locations' do
 
   def then_they_see_the_locations
     expect(@page).to have_locations(count: 1)
+    expect(@page.locations.first).to have_text('Tesco Headquarters')
+  end
 
-    @page.locations.first.tap do |hq|
-      expect(hq.name).to have_text('Tesco Headquarters')
-      expect(hq.address).to have_text('Tesco House')
+  def when_they_click_on_the_location
+    @page.locations.first.click
+  end
 
-      expect(hq).to have_book_online
-    end
+  def then_they_see_the_full_location_details
+    @page = Pages::TescoLocation.new
+    expect(@page).to be_displayed
+    expect(@page.name).to have_text('Tesco Headquarters')
+    expect(@page.address).to have_text('Tesco House')
+    expect(@page).to have_book_online
   end
 end

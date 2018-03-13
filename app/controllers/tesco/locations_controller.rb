@@ -5,10 +5,21 @@ module Tesco
     before_action :set_breadcrumbs
 
     def index
-      @locations = Tesco.locations
+      expires_in Rails.application.config.cache_max_age, public: true
+
+      @locations_by_letter = locations.group_by(&:name_index)
+      @locations_total     = locations.count
+    end
+
+    def show
+      @location = Tesco.location(params[:id])
     end
 
     private
+
+    def locations
+      @locations ||= Tesco.locations
+    end
 
     def set_breadcrumbs
       breadcrumb Breadcrumb.tesco_landing_page
