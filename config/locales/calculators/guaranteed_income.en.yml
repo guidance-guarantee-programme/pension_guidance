@@ -34,12 +34,11 @@ en:
             </strong>
         notes:
           html: |
-            <li>This estimate is for a single-life annuity.</li>
+            <li>This estimate is for a single-life non-escalating annuity.</li>
             <li>
               You may be better off with a joint-life annuity that pays your spouse or partner after you die,
               or an enhanced annuity which pays more if you smoke or have a medical condition.
             </li>
-            <li>If you’re in Scotland your calculation will be different.</li>
 
       form:
         heading: Estimate how much your guaranteed income could be
