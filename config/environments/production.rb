@@ -2,15 +2,14 @@ require 'redis-rails'
 
 EXCEPTIONS = %w(controller action format id).freeze
 
-Rails.application.configure do # rubocop:disable Metrics/BlockLength
+Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Use lograge in the single-line heroku router style
   config.lograge.enabled = true
   config.lograge.custom_options = lambda do |event|
     {
-      params: event.payload[:params].except(*EXCEPTIONS),
-      remote_ip: event.payload[:remote_ip]
+      params: event.payload[:params].except(*EXCEPTIONS)
     }
   end
 
