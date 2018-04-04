@@ -55,7 +55,7 @@ Siaradwch â’r Gwasanaeth Cynghori ar Bensiynau os oes rhywun wedi cysylltu â
 
 $C
 **Y Gwasanaeth Cynghori ar Bensiynau**<br />
-Ffôn: 0300 123 1047<br />
+Ffôn: 0800 011 3797<br />
 Dydd Llun i ddydd Gwener, 9am i 5pm<br />
 [Cael gwybod am gostau galwadau](https://www.gov.uk/costau-galwadau)
 $C
