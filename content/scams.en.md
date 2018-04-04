@@ -55,7 +55,7 @@ Speak to The Pensions Advisory Service if you’ve been unexpectedly contacted b
 
 $C
 **The Pensions Advisory Service**<br />
-Telephone: 0300 123 1047<br />
+Telephone: 0800 011 3797<br />
 Monday to Friday, 9am to 5pm<br />
 [Find out about call charges](https://www.gov.uk/call-charges)
 $C

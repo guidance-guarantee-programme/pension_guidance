@@ -38,7 +38,7 @@ $C
 $C
 ### The Pensions Advisory Service
 [pensionsadvisoryservice.org.uk](https://pensionsadvisoryservice.org.uk)<br>
-Phone: 0300 123 1047<br>
+Phone: 0800 011 3797<br>
 From outside the UK: +44 207 9325780
 $C
 

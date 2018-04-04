@@ -19,7 +19,7 @@ Os ydych eisoes wedi dilyn proses gwyno eich darparwr pensiwn, mae yna ffyrdd gw
 
 ### Cwyno am sut mae eich pensiwn wedi cael ei redeg
 
-Gallwch gysylltu â’r Gwasanaeth Cynghori ar Bensiynau (TPAS) ar 0300 123 1047 neu drwy ddefnyddio eu [ffurflen ymholiadau ar-lein](http://www.pensionsadvisoryservice.org.uk/contacting-us/online-enquiry-form).
+Gallwch gysylltu â’r Gwasanaeth Cynghori ar Bensiynau (TPAS) ar 0800 011 3797 neu drwy ddefnyddio eu [ffurflen ymholiadau ar-lein](http://www.pensionsadvisoryservice.org.uk/contacting-us/online-enquiry-form).
 
 Gall TPAS roi cyngor annibynnol am ddim i chi os yw eich cwyn yn ymwneud â sut mae eich pensiwn wedi cael ei redeg, er enghraifft os yw eich darparwr:
 

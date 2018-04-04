@@ -38,7 +38,7 @@ $C
 $C
 ### Y Gwasanaeth Cynghori ar Bensiynau
 [pensionsadvisoryservice.org.uk](https://pensionsadvisoryservice.org.uk)<br>
-Ffôn: 0300 123 1047<br>
+Ffôn: 0800 011 3797<br>
 O’r tu allan i’r DU: +44 207 9325780
 $C
 
