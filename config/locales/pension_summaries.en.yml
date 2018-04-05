@@ -36,6 +36,10 @@ en:
         heading: Your Pension Summary
         print_button: Print
         download_button: Download
+      feedback_sidebar:
+        heading: We need your feedback
+        body: This is a new way for us to deliver our guidance digitally, so we would like to know what you think of it.
+        link_text: Help us improve
 
     options:
       leave_your_pot_untouched:

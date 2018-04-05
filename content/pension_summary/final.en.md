@@ -7,8 +7,6 @@ If you’d like more information on your options, you can book a Pension Wise ap
 {:.not-printed}
 [Book a free appointment](/appointments){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
 
-[Give us your feedback](http://research.pensionwise.gov.uk/s/online_exit_poll/)
-
 ## Help with annuities, debt and finding a financial adviser:
 
 $C

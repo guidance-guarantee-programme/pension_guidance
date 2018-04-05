@@ -50,4 +50,15 @@
       </div>
     </div>
   </aside>
+
+  <div class="sticky-sidebar js-sticky-sidebar">
+    <div class="sidebar-hr"></div>
+    <div class="sticky-sidebar__nav">
+      <span class="sticky-sidebar__heading">
+        <strong><%= t('.feedback_sidebar.heading') %></strong>
+      </span>
+      <p><%= t('.feedback_sidebar.body') %></p>
+      <%= link_to t('.feedback_sidebar.link_text'), 'http://research.pensionwise.gov.uk/s/online_exit_poll/', class: 'button', rel: 'external', target: '_blank' %>
+    </div>
+  </div>
 <% end %>
