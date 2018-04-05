@@ -7,8 +7,6 @@ Os hoffech gael mwy o wybodaeth am eich opsiynau, gallwch drefnu apwyntiad Pensi
 {:.not-printed}
 [Trefnu apwyntiad am ddim](/appointments){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
 
-[Give us your feedback](http://research.pensionwise.gov.uk/s/online_exit_poll/)
-
 ## Help gyda blwydd-daliadau, dyled, a dod o hyd i ymgynghorydd ariannol:
 
 $C
