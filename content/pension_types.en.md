@@ -48,6 +48,6 @@ The pension you get from the government is called the State Pension. You get it 
 
 You don’t normally get it automatically – you have to [claim the State Pension](https://www.gov.uk/state-pension/how-to-claim).
 
-The most you can currently get from the basic State Pension is £122.30.
+The most you can currently get from the basic State Pension is £125.95.
 
 If you reached State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension).

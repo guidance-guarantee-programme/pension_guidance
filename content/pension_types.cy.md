@@ -48,6 +48,6 @@ Gelwir y pensiwn a gewch gan y llywodraeth yn Bensiwn y Wladwriaeth. Byddwch yn 
 
 Nid ydych fel arfer yn ei gael yn awtomatig - mae’n rhaid i chi [wneud cais am Bensiwn y Wladwriaeth](https://www.gov.uk/state-pension/how-to-claim).
 
-Y mwyaf y gallwch ei gael o Bensiwn y Wladwriaeth sylfaenol ar hyn o bryd yw £122.30.
+Y mwyaf y gallwch ei gael o Bensiwn y Wladwriaeth sylfaenol ar hyn o bryd yw £125.95.
 
 Os gwnaethoch gyrraedd oedran Pensiwn y Wladwriaeth ar neu ar ôl 6 Ebrill 2016 byddwch yn cael [Pensiwn y Wladwriaeth newydd](https://www.gov.uk/new-state-pension).

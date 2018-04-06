@@ -10,11 +10,11 @@ Gelwir y pensiwn a gewch gan y llywodraeth yn Bensiwn y Wladwriaeth. Byddwch yn 
 
 ## Pensiwn y Wladwriaeth Newydd
 
-Os gwnaethoch gyrraedd oedran Pensiwn y Wladwriaeth ar neu ar ôl 6 Ebrill 2016 byddwch yn cael [Pensiwn y Wladwriaeth newydd](https://www.gov.uk/new-state-pension). Y taliad Pensiwn y Wladwriaeth newydd llawn yw £159.55 yr wythnos.
+Os gwnaethoch gyrraedd oedran Pensiwn y Wladwriaeth ar neu ar ôl 6 Ebrill 2016 byddwch yn cael [Pensiwn y Wladwriaeth newydd](https://www.gov.uk/new-state-pension). Y taliad Pensiwn y Wladwriaeth newydd llawn yw £164.35 yr wythnos.
 
 ## Pensiwn y Wladwriaeth sylfaenol
 
-Os gwnaethoch gyrraedd oedran Pensiwn y Wladwriaeth cyn 6 Ebrill 2016, byddwch yn cael [Pensiwn y Wladwriaeth sylfaenol](https://www.gov.uk/state-pension/overview). Y mwyaf y gallwch ei gael o Bensiwn y Wladwriaeth sylfaenol ar hyn o bryd yw £122.30 yr wythnos.
+Os gwnaethoch gyrraedd oedran Pensiwn y Wladwriaeth cyn 6 Ebrill 2016, byddwch yn cael [Pensiwn y Wladwriaeth sylfaenol](https://www.gov.uk/state-pension/overview). Y mwyaf y gallwch ei gael o Bensiwn y Wladwriaeth sylfaenol ar hyn o bryd yw £125.95 yr wythnos.
 
 Nid ydych fel arfer yn cael Pensiwn y Wladwriaeth yn awtomatig - rhaid i chi [wneud cais amdano](https://www.gov.uk/new-state-pension/how-to-claim).
 
