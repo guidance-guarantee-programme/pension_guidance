@@ -13,7 +13,7 @@ Gallech hefyd dalu Treth Incwm ar:
 
 ## Yr 25% di-dreth
 
-Nid yw eich swm di-dreth yn defnyddio dim o’ch Lwfans Personol - y swm o incwm nad oes rhaid i chi dalu treth arno. Y Lwfans Personol safonol yw £11,500.
+Nid yw eich swm di-dreth yn defnyddio dim o’ch Lwfans Personol - y swm o incwm nad oes rhaid i chi dalu treth arno. Y Lwfans Personol safonol yw £11,850.
 
 Mae yna 2 ffordd y gallwch gymryd eich swm di-dreth.
 

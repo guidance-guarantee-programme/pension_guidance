@@ -6,7 +6,7 @@ description: Rydych yn talu treth ar unrhyw incwm, yn cynnwys pensiwn, sydd dros
 
 Pan fyddwch yn cymryd arian allan o’ch cronfa bensiwn, mae 25% yn ddi-dreth. Byddwch yn talu Treth Incwm ar y 75% arall.
 
-Nid yw eich swm di-dreth yn defnyddio dim o’ch Lwfans Personol - y swm o incwm nad oes rhaid i chi dalu treth arno. Y Lwfans Personol safonol yw £11,500.
+Nid yw eich swm di-dreth yn defnyddio dim o’ch Lwfans Personol - y swm o incwm nad oes rhaid i chi dalu treth arno. Y Lwfans Personol safonol yw £11,850.
 
 Mae faint o dreth rydych yn ei dalu yn dibynnu ar gyfanswm eich incwm am y flwyddyn a’ch cyfradd treth.
 

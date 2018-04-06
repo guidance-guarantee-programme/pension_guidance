@@ -35,7 +35,7 @@ Os byddwch yn lledaenu’r symiau o arian dros fwy nag un flwyddyn dreth, efalla
 {: .info-notice--take-cash}
 $E
 **Enghraifft**
-Mae eich cronfa yn £60,000. Rydych yn cymryd allan £4,000 bob blwyddyn - £1,000 yn ddi-dreth a £3,000 yn drethadwy. Rydych yn gweithio rhan amser ac yn ennill £12,000 y flwyddyn. Mae cyfanswm eich enillion a’r arian trethadwy rydych wedi’i gymryd allan o’ch cronfa yn £15,000. Mae hyn yn uwch na’r Lwfans Personol safonol o £11,500. Rydych yn talu £700 mewn treth.
+Mae eich cronfa yn £60,000. Rydych yn cymryd allan £4,000 bob blwyddyn - £1,000 yn ddi-dreth a £3,000 yn drethadwy. Rydych yn gweithio rhan amser ac yn ennill £12,000 y flwyddyn. Mae cyfanswm eich enillion a’r arian trethadwy rydych wedi’i gymryd allan o’ch cronfa yn £15,000. Mae hyn yn uwch na’r Lwfans Personol safonol o £11,850. Rydych yn talu £630 mewn treth.
 $E
 
 Bydd eich darparwr pensiwn yn tynnu’r [dreth sy’n ddyledus gennych](/cy/tax#How your tax is paid) cyn iddynt dalu’r arian i chi.
