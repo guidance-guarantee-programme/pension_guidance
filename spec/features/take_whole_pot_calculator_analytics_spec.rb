@@ -17,8 +17,14 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
 
     wait_for_ajax
 
-    expect(data_layer).to include('event' => 'CalculatorEstimate', 'valid' => true, 'income' => 7_000,
-                                  'pot' => 100_000, 'tax_paid' => 21_500, 'pot_payout' => 78_500)
+    expect(data_layer).to include(
+      'event' => 'CalculatorEstimate',
+      'valid' => true,
+      'income' => 7_000,
+      'pot' => 100_000,
+      'tax_paid' => 21_160,
+      'pot_payout' => 78_840
+    )
   end
 
   private
