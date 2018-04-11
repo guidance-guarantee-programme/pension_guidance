@@ -18,5 +18,11 @@ RSpec.describe FeedbackForm do
 
       expect(subject).to be_invalid
     end
+
+    it 'permits the phone booking feedback type' do
+      subject.feedback_type = 'phone_booking'
+
+      expect(subject).to be_valid
+    end
   end
 end
