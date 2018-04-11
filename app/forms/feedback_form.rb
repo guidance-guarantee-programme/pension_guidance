@@ -6,7 +6,7 @@ class FeedbackForm
   validates :name, presence: true
   validates :email, email: true
   validates :message, presence: true
-  validates :feedback_type, inclusion: { in: %w(tesco online_booking pension_type_tool) }
+  validates :feedback_type, inclusion: { in: %w(phone_booking tesco online_booking pension_type_tool) }
 
   def self.for_face_to_face_booking
     new(feedback_type: 'online_booking')
