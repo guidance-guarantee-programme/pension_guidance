@@ -1,21 +1,21 @@
 ---
-description: In most cases you’ll have a defined contribution pension
+description: Yn y mwyafrif o achosion bydd gennych bensiwn cyfraniadau wedi’u diffinio
 tags:
   - appointments
 ---
 
-# Find out your pension type
+# Dod o hyd i’ch math o bensiwn
 
-## In most cases you’ll have a defined contribution pension
+## Yn y mwyafrif o achosion bydd gennych bensiwn cyfraniadau wedi’u diffinio
 
-These are sometimes known as ‘money purchase’ pensions. The amount you get depends on how much was paid in and how well the investments have done.
+Mae’r rhain weithiau’n cael eu hadnabod fel pensiynau ‘prynu arian’. Mae’r swm a gewch yn dibynnu ar faint rydych wedi’i dalu i mewn a pha mor dda mae eich buddsoddiadau wedi’u gwneud.
 
-You choose how to take money from your pension pot.
+Chi sy’n dewis sut i gymryd arian o’ch cronfa bensiwn.
 
-You can book a free Pension Wise appointment to talk about your options for taking your money.
+Gallwch drefnu apwyntiad Pension Wise am ddim i siarad am eich opsiynau ar gyfer cymryd eich arian.
 
-[Book a free appointment](/cy/appointments){: .button}
+[Trefnu apwyntaid am ddim](/cy/appointments){: .button}
 
-^You can also [check another pension](/cy/pension-type-tool) or [explore your pension options](/cy/explore-your-options).^
+^Gallwch hefyd [wirio pensiwn arall](/cy/pension-type-tool) neu [edrych drwy eich opsiynau pensiwn](/cy/explore-your-options).^
 
-[Give us your feedback](http://research.pensionwise.gov.uk/s/PTTfeedback/)
+[Rhowch eich adborth i ni](http://research.pensionwise.gov.uk/s/PTTfeedback/)
