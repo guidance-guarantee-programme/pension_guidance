@@ -1,5 +1,5 @@
 ---
-description: Was your pension set up by your employer?
+description: A gafodd eich pensiwn ei sefydlu gan eich cyflogwr?
 answers:
   'yes': /cy/pension-type-tool/question-2
   'no': /cy/pension-type-tool/defined-contribution
@@ -8,10 +8,10 @@ tags:
   - appointments
 ---
 
-# Find out your pension type
+# Dod o hyd i’ch math o bensiwn
 
 {::yes-no-dont-know-question id="pension-type-tool/question-1" locale="cy"}
-## Was your pension set up by your employer?
+## A gafodd eich pensiwn ei sefydlu gan eich cyflogwr?
 {:/yes-no-dont-know-question}
 
 {::feedback_form /}
