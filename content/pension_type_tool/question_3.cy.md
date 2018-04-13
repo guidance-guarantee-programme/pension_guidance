@@ -1,5 +1,5 @@
 ---
-description: Who is your pension provider?
+description: Pwy yw eich darparwr pensiwn?
 answers:
   'yes': /cy/pension-type-tool/most-cases-defined-contribution
   'no': /cy/pension-type-tool/question-4
@@ -8,10 +8,10 @@ tags:
   - appointments
 ---
 
-# Find out your pension type
+# Dod o hyd i’ch math o bensiwn
 
 {::yes-no-dont-know-question id="pension-type-tool/question-3" locale="cy"}
-## Is your pension provider one of the following:
+## A yw eich darparwr pensiwn yn un o’r canlynol:
 
 {:.two-column-list}
 * Aegon
@@ -43,7 +43,7 @@ tags:
 * Wesleyan General
 * Zurich
 
-^Some of these companies may have had different names in the past or have merged with other companies, eg Aviva used to be Norwich Union.^
+^Efallai bod rhai o’r cwmniau hyn wedi cael enwau gwahanol yn y gorffenol neu wedi uno â chwmniau eraill, ee roedd Aviva yn arfer bod yn Norwich Union.^
 {:/yes-no-dont-know-question}
 
 {::feedback_form /}
