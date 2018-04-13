@@ -1,5 +1,5 @@
 ---
-description: When did you start this pension?
+description: Pryd wnaethoch chi ddechrau’r pensiwn hwn?
 answers:
   1995_or_before: /cy/pension-type-tool/most-cases-defined-benefit
   1996_to_2000: /cy/pension-type-tool/most-cases-defined-contribution
@@ -9,10 +9,10 @@ tags:
   - appointments
 ---
 
-# Find out your pension type
+# Dod o hyd i’ch math o bensiwn
 
 {::pension-start-year-question id="pension-type-tool/question-4" locale="cy"}
-## When did you start this pension?
+## Pryd wnaethoch chi ddechrau’r pensiwn hwn?
 
 {:/pension-start-year-question}
 
