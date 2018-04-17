@@ -1,18 +1,18 @@
 ---
-description: In most cases you’ll have a defined benefit pension
+description: Yn y mwyafrif o achosion bydd gennych bensiwn buddion wedi’u diffinio
 tags:
   - appointments
 ---
 
-# Find out your pension type
+# Dod o hyd i’ch math o bensiwn
 
-## In most cases you’ll have a defined benefit pension
+## Yn y mwyafrif o achosion bydd gennych bensiwn buddion wedi’u diffinio
 
-Pension Wise only gives guidance on defined contribution pensions.
+Dim ond ar bensiynau cyfraniadau wed’u diffinio y mae Pension Wise yn rhoi arweiniad.
 
-For guidance on defined benefit pensions go to the [The Pensions Advisory Service](http://www.pensionsadvisoryservice.org.uk)
-– for the State Pension go to the [Pension Service](https://www.gov.uk/contact-pension-service).
+Am arweiniad ar bensiynau buddion wedi’u diffinio ewch i’r [Gwasanaeth Cynghori ar Bensiynau](http://www.pensionsadvisoryservice.org.uk)
+– ar gyfer Pensiwn y Wladwriaeth ewch i’r [Gwasanaeth Pensiwn](https://www.gov.uk/contact-pension-service).
 
-^If you have more than one pension, you may also have a defined contribution pension – [check another pension](/cy/pension-type-tool).^
+^Os oes gennych fwy nag un pensiwn, efallai bod gennych bensiwn cyfraniadau wedi’u diffinio hefyd – [gwirio pensiwn arall](/cy/pension-type-tool).^
 
-[Give us your feedback](http://research.pensionwise.gov.uk/s/PTTfeedback/)
+[Rhowch eich adborth i ni](http://research.pensionwise.gov.uk/s/PTTfeedback/)
