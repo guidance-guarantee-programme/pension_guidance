@@ -6,6 +6,11 @@ cy:
     error: 'Select an answer'
 
   questions:
+    yes_no_dont_know_question:
+      yes_option: 'Yes'
+      no_option: 'No'
+      dont_know: 'Don’t know'
+      next_step: 'Next step'
     pension_start_year_question:
       1995_or_before: '1995 or before'
       1996_to_2000: '1996 to 2000'

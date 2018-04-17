@@ -8,21 +8,21 @@
   <div class="form-group">
     <div class="multiple-choice">
       <input type="radio" name="response" id="response_yes" value="yes">
-      <label for="response_yes">Yes</label>
+      <label for="response_yes"><%= t('.yes_option') %></label>
     </div>
 
     <div class="multiple-choice">
       <input type="radio" name="response" id="response_no" value="no">
-      <label for="response_no">No</label>
+      <label for="response_no"><%= t('.no_option') %></label>
     </div>
 
     <div class="multiple-choice">
       <input type="radio" name="response" id="response_dont_know" value="dont_know">
-      <label for="response_dont_know">Don't know</label>
+      <label for="response_dont_know"><%= t('.dont_know') %></label>
     </div>
   </div>
 
   <div class="form-group">
-    <button type="submit" class="medium button">Next step</button>
+    <button type="submit" class="medium button"><%= t('.next_step') %></button>
   </div>
 </form>
