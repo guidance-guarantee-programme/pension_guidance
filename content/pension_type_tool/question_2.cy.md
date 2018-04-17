@@ -1,5 +1,5 @@
 ---
-description: Employer your pension came from?
+description: Pensiwn cyflogwr yn dod o?
 answers:
   'yes': /cy/pension-type-tool/most-cases-defined-benefit
   'no': /cy/pension-type-tool/question-3
@@ -8,18 +8,18 @@ tags:
   - appointments
 ---
 
-# Find out your pension type
+# Dod o hyd i’ch math o bensiwn
 
 {::yes-no-dont-know-question id="pension-type-tool/question-2" locale="cy"}
-## Did your pension come from working for one of the following:
+## A ddaeth eich pensiwn o ganlyniad i weithio i un o’r canlynol:
 
-* a local council
-* the government
-* a school or university
-* the NHS
-* the emergency services
-* the armed forces
-* any other public sector employer, eg social services
+* cyngor lleol
+* y llywodraeth
+* ysgol neu brif ysgol
+* y GIG
+* y gwasanaethau brys
+* y lluoedd arfog
+* unrhyw gyflogwr sector gyhoeddus arall, ee gwasanaethau cymdeithasol
 {:/yes-no-dont-know-question}
 
 {::feedback_form /}
