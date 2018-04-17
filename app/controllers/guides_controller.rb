@@ -7,15 +7,6 @@ class GuidesController < ApplicationController
   UNTRANSLATED_GUIDE_SLUGS = %w(
     book-face-to-face
     book-phone
-    pension-type-tool
-    pension-type-tool/defined-contribution
-    pension-type-tool/might-defined-contribution
-    pension-type-tool/most-cases-defined-benefit
-    pension-type-tool/most-cases-defined-contribution
-    pension-type-tool/question-1
-    pension-type-tool/question-2
-    pension-type-tool/question-3
-    pension-type-tool/question-4
   ).freeze
 
   def show
