@@ -5,6 +5,14 @@ en:
     error_title: 'Unable to submit the form'
     error: 'Select an answer'
 
+  questions:
+    pension_start_year_question:
+      1995_or_before: '1995 or before'
+      1996_to_2000: '1996 to 2000'
+      2001_or_later: '2001 or later'
+      dont_know: 'Don’t know'
+      next_step: 'Next step'
+
   service:
     title: '%{page_title} - Pension Wise'
 
