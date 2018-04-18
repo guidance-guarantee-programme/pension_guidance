@@ -1,27 +1,27 @@
 ---
 label: Dod o hyd i’ch math o bensiwn
-description: Find out your pension type
+description: Dod o hyd i’ch math o bensiwn
 tags:
   - appointments
 ---
 
-# Find out your pension type
+# Dod o hyd i’ch math o bensiwn
 
-Use this service to:
+Defnyddiwch y gwasanaeth hwn i:
 
-- check your pension type
-- find out if you can book a free Pension Wise appointment
+- gwirio eich math o bensiwn
+- darganfod os gallwch drefnu apwyntiad Pension Wise am ddim
 
-If you have a defined contribution (personal or workplace) pension you choose how to take your money – you can then get free guidance about this from one of our pensions specialists.
+Os oes gennych bensiwn cyfraniadau wedi’u diffinio (personol neu gweithle) rydych chi’n dewis sut i gymryd eich arian - yna gallwch gael arweiniad am ddim am hyn gan un o’n arbenigwyr pensiwn.
 
-^You’ll need to check each pension separately if you have more than one.^
+^Bydd angen i chi wirio bob pensiwn ar wahân os oes gennych fwy nag un.^
 
-[Start now](/cy/pension-type-tool/question-1){: .button}
+[Dechrau nawr](/cy/pension-type-tool/question-1){: .button}
 
-## Before you start
+## Cyn i chi ddechrau
 
-You must be aged **50 or over** to book a Pension Wise appointment.
+Mae’n rhaid i chi fod yn **50 neu drosodd** i drefnu apwyntiad Pension Wise.
 
-You can get help with the State Pension from the [Pensions Service](http://www.gov.uk/contact-pension-service).
+Gallwch gael help gyda Phensiwn y Wladwriaeth gan y [Gwasanaeth Pensiwn](http://www.gov.uk/contact-pension-service).
 
 {::feedback_form /}
