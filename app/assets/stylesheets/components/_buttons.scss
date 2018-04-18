@@ -1,3 +1,11 @@
 .button {
   margin: 0 15px 15px 0;
 }
+
+.summary {
+  display: none;
+
+  @include media(tablet) {
+    display: block;
+  }
+}
