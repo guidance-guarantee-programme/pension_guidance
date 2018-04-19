@@ -4,6 +4,6 @@ RSpec.describe QuestionsController, type: :controller do
   subject { post 'next', params: { locale: :en, question_id: 'pension-type-tool/question-1' } }
 
   it 'correctly redirects back when no answer is provided' do
-    expect(subject).to redirect_to('http://test.host/pension-type-tool/question-1')
+    expect(subject).to redirect_to('http://test.host/en/pension-type-tool/question-1')
   end
 end
