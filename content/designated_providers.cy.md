@@ -1,14 +1,14 @@
 ---
-label: Designated providers of Pension Wise guidance
-description: Designated providers of Pension Wise guidance
+label: Darparwyr dynodedig o arweiniad Pension Wise
+description: Darparwyr dynodedig o arweiniad Pension Wise
 ---
 
-# Designated providers of Pension Wise guidance
+# Darparwyr dynodedig o arweiniad Pension Wise
 
-The designated providers of Pension Wise guidance are:
+Y darparwyr dynodedig o arweiniad Pension Wise yw:
 
-* The Pensions Advisory Service Limited
-* The National Association of Citizens Advice Bureaux
-* The Scottish Association of Citizens Advice Bureaux
-* The Northern Ireland Association of Citizens Advice Bureaux
+* Y Gwasanaeth Cynghori ar Bensiynau Cyfyngedig
+* Cymdeithas Genedlaethol Cyngor ar Bopeth
+* Cymdeithas Cyngor ar Bopeth yr Alban
+* Cymdeithas Cyngor ar Bopeth Gogledd Iwerddon
 * Teleperformance SE

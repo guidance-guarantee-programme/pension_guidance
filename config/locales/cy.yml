@@ -74,7 +74,7 @@ cy:
           class: t-appointment-summary-link
       - title: Pension Wise i gyflogwyr
         url: '/cy/for-employers'
-      - title: Designated providers
+      - title: Darparwyr dynodedig
         url: '/cy/designated-providers'
 
   pagination:
