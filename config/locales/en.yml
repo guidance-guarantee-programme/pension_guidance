@@ -71,6 +71,8 @@ en:
           class: t-appointment-summary-link
       - title: Pension Wise for employers
         url: '/en/for-employers'
+      - title: Designated providers
+        url: '/en/designated-providers'
 
   pagination:
     previous: Previous
