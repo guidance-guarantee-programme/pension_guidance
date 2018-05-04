@@ -74,6 +74,8 @@ cy:
           class: t-appointment-summary-link
       - title: Pension Wise i gyflogwyr
         url: '/cy/for-employers'
+      - title: Designated providers
+        url: '/cy/designated-providers'
 
   pagination:
     previous: Blaenorol
