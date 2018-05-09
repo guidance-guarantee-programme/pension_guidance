@@ -5,7 +5,7 @@ You can get an income from your pension pot that’s adjustable. This means you 
 ## Key facts
 
 * You get an income from your pot which is taxable. You decide how much to take out and when, and how long you want it to last.
-* You can take up to 25% of your pot tax free – if you do this, you must move the remaining 75% into an adjustable income product within 6 months or use one of the other options.
+* You can take up to 25% of your pot tax free – if you do this, you must move the remaining 75% into an adjustable income product or use one of the other options.
 * You’re likely to be involved in choosing and managing your investments.
 * As with all investments, the value of your pot can go up or down.
 * This option is also known as ‘flexi-access drawdown’.

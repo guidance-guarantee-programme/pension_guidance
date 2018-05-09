@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: e6c1110de2992e1acb343c98c3d2ae15e92afe69
+  revision: 8818d69b8138f1496c45aaf382128c4534b7f843
   specs:
-    output-templates (4.9.2)
+    output-templates (4.9.3)
       actionview
       sass
 
@@ -91,7 +91,7 @@ GEM
     connection_pool (2.2.1)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
-    crass (1.0.3)
+    crass (1.0.4)
     cucumber (2.4.0)
       builder (>= 2.1.2)
       cucumber-core (~> 1.5.0)

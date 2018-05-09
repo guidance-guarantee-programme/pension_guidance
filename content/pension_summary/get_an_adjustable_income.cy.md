@@ -5,7 +5,7 @@ Gallwch gael incwm o’ch cronfa bensiwn sy’n addasadwy. Mae hyn yn golygu eic
 ## Ffeithiau allweddol
 
 * Rydych yn cael incwm o’ch cronfa sy’n drethadwy. Chi sy’n penderfynu faint i’w gymryd a phryd, ac am faint rydych eisiau iddo barhau.
-* Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth - os byddwch yn gwneud hyn, mae’n rhaid i chi symud y 75% sy’n weddill i mewn i gynnyrch incwm addasadwy o fewn 6 mis neu ddefnyddio un o’r opsiynau eraill.
+* Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth - os byddwch yn gwneud hyn, mae’n rhaid i chi symud y 75% sy’n weddill i mewn i gynnyrch incwm addasadwy o neu ddefnyddio un o’r opsiynau eraill.
 * Mae’n debygol y byddwch yn cymryd rhan mewn dewis a rheoli eich buddsoddiadau.
 * Fel gyda phob buddsoddiad, gall gwerth eich cronfa fynd i fyny neu i lawr.
 * Mae’r opsiwn hwn hefyd yn cael ei adnabod fel ‘tynnu allan hyblyg’.
