@@ -169,4 +169,4 @@ Os yw cyfanswm eich incwm (gan gynnwys arian o bensiynau a PAYE) yn £100,000 ne
 ### Os oes gennych incwm arall
 Chi sy’n gyfrifol am dalu treth ar incwm arall sydd gennych, er enghraifft o eiddo neu fuddsoddiadau, ac efallai y bydd rhaid i chi lenwi ffurflen dreth Hunanasesiad.
 
-^Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r [lwfans oes.](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) Ar hyn o bryd mae hyn yn £1 miliwn.^
+^Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r [lwfans oes.](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) Ar hyn o bryd mae hyn yn £1.03 miliwn.^
