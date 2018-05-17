@@ -11,9 +11,8 @@ RSpec.describe TelephoneAppointment, type: :model do
       date_of_birth_month: '10',
       date_of_birth_day: '23',
       dc_pot_confirmed: 'yes',
-      opt_out_of_market_research: 'true',
-      accept_terms_and_conditions: 'true',
-      where_you_heard: '1'
+      where_you_heard: '1',
+      gdpr_consent: 'yes'
     )
   end
 
@@ -133,11 +132,6 @@ RSpec.describe TelephoneAppointment, type: :model do
 
     it 'validates presence of date_of_birth' do
       subject.date_of_birth_year = nil
-      expect(subject).to_not be_valid
-    end
-
-    it 'validates truthiness of accept_terms_and_conditions' do
-      subject.accept_terms_and_conditions = nil
       expect(subject).to_not be_valid
     end
 

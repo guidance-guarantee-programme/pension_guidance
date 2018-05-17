@@ -13,13 +13,12 @@ class TelephoneAppointment
     :memorable_word,
     :appointment_type,
     :date_of_birth,
-    :opt_out_of_market_research,
-    :accept_terms_and_conditions,
     :dc_pot_confirmed,
     :where_you_heard,
     :date_of_birth_year,
     :date_of_birth_month,
-    :date_of_birth_day
+    :date_of_birth_day,
+    :gdpr_consent
   )
 
   validates :start_at, presence: true
@@ -30,7 +29,6 @@ class TelephoneAppointment
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
   validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
-  validates :accept_terms_and_conditions, inclusion: { in: [true] }
   validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
 
   def advance!
@@ -60,9 +58,9 @@ class TelephoneAppointment
       phone: phone,
       memorable_word: memorable_word,
       date_of_birth: date_of_birth,
-      opt_out_of_market_research: opt_out_of_market_research,
       dc_pot_confirmed: dc_pot_confirmed == 'yes',
-      where_you_heard: where_you_heard
+      where_you_heard: where_you_heard,
+      gdpr_consent: gdpr_consent
     }
   end
 
@@ -78,14 +76,6 @@ class TelephoneAppointment
     parts.map!(&:to_i)
 
     Date.new(*parts)
-  end
-
-  def opt_out_of_market_research
-    %w(1 true).include?(@opt_out_of_market_research)
-  end
-
-  def accept_terms_and_conditions
-    %w(1 true).include?(@accept_terms_and_conditions)
   end
 
   def selected_date
