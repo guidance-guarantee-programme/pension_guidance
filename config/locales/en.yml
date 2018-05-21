@@ -333,6 +333,9 @@ en:
             other: If your complaint is about anything else, please provide as much detail as you can
           help:
             other: e.g I tried to call Hackney CAB but no one answered
+          privacy:
+            html: |
+              <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be <a href="/en/privacy">found here</a>.</p>
         sent:
           html: |
             <p>
