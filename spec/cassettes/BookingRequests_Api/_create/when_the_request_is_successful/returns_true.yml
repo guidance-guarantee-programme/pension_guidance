@@ -5,21 +5,21 @@ http_interactions:
     uri: http://localhost:3002/api/v1/booking_requests
     body:
       encoding: UTF-8
-      string: '{"booking_request":{"location_id":"4c852869-9cad-43bd-b3d5-357dd377e3d3","name":"Lucius
-        Needful","email":"lucius@example.com","phone":"0208 244 3987","memorable_word":"meseeks","age_range":"55-plus","accessibility_requirements":false,"marketing_opt_in":false,"defined_contribution_pot":true,"slots":[{"priority":1,"date":"2016-01-01","from":"0900","to":"1300"},{"priority":2,"date":"2016-01-01","from":"1300","to":"1700"},{"priority":3,"date":"2016-01-02","from":"0900","to":"1300"}]}}'
+      string: '{"booking_request":{"booking_location_id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef","location_id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef","name":"Lucius
+        Needful","email":"lucius@example.com","phone":"0208 244 3987","memorable_word":"meseeks","age_range":"55-plus","accessibility_requirements":false,"defined_contribution_pot_confirmed":true,"gdpr_consent":"yes","slots":[{"priority":1,"date":"2016-01-01","from":"0900","to":"1300"},{"priority":2,"date":"2016-01-01","from":"1300","to":"1700"},{"priority":3,"date":"2016-01-02","from":"0900","to":"1300"}]}}'
     headers:
       User-Agent:
-      - PensionWise/1.0 (hurrdurr.local; benlovell; 92031) ruby/2.3.1 (112; x86_64-darwin15)
+      - PensionWise/1.0 (birdperson.local; benlovell; 61218) ruby/2.5.1 (57; x86_64-darwin17)
+      Accept:
+      - application/json
       Content-Type:
       - application/json
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
   response:
     status:
       code: 201
-      message: 'Created '
+      message: Created
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -28,28 +28,21 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Type:
-      - text/html
+      - application/json
       Cache-Control:
       - no-cache
-      X-Request-Id:
-      - 5ad9c4cd-8fdb-4a36-bde0-7b7b26e5336f
-      X-Runtime:
-      - '0.374995'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.3.1/2016-04-26)
-      Date:
-      - Sun, 03 Jul 2016 09:38:42 GMT
-      Content-Length:
-      - '0'
-      Connection:
-      - Keep-Alive
       Set-Cookie:
-      - _planner_session=ZkRheERyQTlkN1dzeStpcHgwcm9hUUM4cFdRcnA2NzBIWmtzRmk3VmIwT3QvREx3Z0lpYnV4bVRzNlkwbERKakE5WDlsT0YrKzZWVk1FcmZwZFY1bWc9PS0tdDBUbXE3WHBDTFZjaktwZ0hlY0F1QT09--9cd69b29107f80f20ac1a99cfbd38966a09e3c30;
+      - _planner_session=S1orMWR4REF5WUoxVHpoQ2VMbkREME53bGlUcnVCUzBKaDE0S1Z4THZRbzBMVVl0alJ0Y09VR1JPTHIvb29hVG1RaWJwWTVHdWlxMmRWcUlac0RxRjgxVU14RVQ3ak03RnVQdythakFoaVV3YUFzc2RaWENYQm1wV29SZXBTa3RSOTdSbHdDWkZxMk16RTdtTjJUdW5NNnU0QjhuRWM4cEpUcjNuYVFGbGRNaFo2WnJiVzZ6emtIOHhBT0lWQks5LS00dFl2WTZkemxLeVgvdThMSnNyQUd3PT0%3D--ff2948eb2f7614de6845c7797cfb28d84edd5def;
         path=/; HttpOnly
-      - request_method=POST; path=/
+      X-Request-Id:
+      - 1eadca22-283f-4fd3-b5df-54572b221b54
+      X-Runtime:
+      - '0.339140'
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 03 Jul 2016 09:38:42 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Mon, 21 May 2018 17:42:03 GMT
+recorded_with: VCR 3.0.3

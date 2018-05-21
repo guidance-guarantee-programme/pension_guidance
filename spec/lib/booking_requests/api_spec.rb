@@ -4,15 +4,16 @@ RSpec.describe BookingRequests::Api, :vcr do
   let(:payload) do
     {
       booking_request: {
-        location_id: SecureRandom.uuid,
+        booking_location_id: 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef',
+        location_id: 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef',
         name: 'Lucius Needful',
         email: 'lucius@example.com',
         phone: '0208 244 3987',
         memorable_word: 'meseeks',
         age_range: '55-plus',
         accessibility_requirements: false,
-        marketing_opt_in: false,
-        defined_contribution_pot: true,
+        defined_contribution_pot_confirmed: true,
+        gdpr_consent: 'yes',
         slots: [
           { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },
           { priority: 2, date: '2016-01-01', from: '1300', to: '1700' },
