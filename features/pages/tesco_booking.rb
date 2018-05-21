@@ -12,8 +12,9 @@ module Pages
     element :memorable_word, '.t-memorable-word'
     element :dc_pot_confirmed, '.t-dc-pot-confirmed-yes', visible: false
     element :dc_pot_confirmed_no, '.t-dc-confirmed-pot-no', visible: false
-    element :opt_out_of_market_research, '.t-opt-out-of-market-research', visible: false
-    element :accept_terms_and_conditions, '.t-accept-terms-and-conditions', visible: false
+    element :gdpr_consent_yes, '.t-gdpr-consent-yes', visible: false
+    element :gdpr_consent_no, '.t-gdpr-consent-no', visible: false
+    element :gdpr_consent_no_response, '.t-gdpr-consent-no-response', visible: false
 
     element :submit, '.t-submit'
     element :continue, '.t-continue'

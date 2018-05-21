@@ -3,7 +3,7 @@ RSpec.describe Tesco::Api do
     it 'responds successfully' do
       booking = Tesco::Booking.new(
         location_id: 1,
-        start_at: '2017-10-02 08:15 UTC',
+        start_at: '2018-05-25 07:00 UTC',
         first_name: 'Rick',
         last_name: 'Sanchez',
         email: 'rick@example.com',
@@ -13,13 +13,13 @@ RSpec.describe Tesco::Api do
         date_of_birth_month: '01',
         date_of_birth_day: '01',
         dc_pot_confirmed: true,
-        opt_out_of_market_research: true
+        gdpr_consent: nil
       )
 
       described_class.new.create(booking)
 
-      expect(booking.id).to eq(10)
-      expect(booking.room).to eq('R1')
+      expect(booking.id).to eq(299)
+      expect(booking.room).to eq('HIGH 2.2')
     end
   end
 

@@ -53,9 +53,7 @@ RSpec.feature 'Tesco Bookings' do
     @page.date_of_birth_month.set('01')
     @page.date_of_birth_year.set('1950')
     @page.memorable_word.set('snootboop')
-
-    @page.opt_out_of_market_research.set(true)
-    @page.accept_terms_and_conditions.set(true)
+    @page.gdpr_consent_yes.set(true)
     @page.dc_pot_confirmed.set(true)
 
     @page.submit.click

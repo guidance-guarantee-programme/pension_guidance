@@ -14,14 +14,13 @@ module Tesco
       :memorable_word,
       :appointment_type,
       :date_of_birth,
-      :opt_out_of_market_research,
-      :accept_terms_and_conditions,
       :dc_pot_confirmed,
       :date_of_birth_year,
       :date_of_birth_month,
       :date_of_birth_day,
       :location_id,
-      :room
+      :room,
+      :gdpr_consent
     )
 
     validates :start_at, presence: true
@@ -32,7 +31,6 @@ module Tesco
     validates :memorable_word, presence: true
     validates :date_of_birth, presence: true
     validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
-    validates :accept_terms_and_conditions, inclusion: { in: [true] }
 
     def advance!
       self.step += 1
@@ -61,8 +59,8 @@ module Tesco
         phone: phone,
         memorable_word: memorable_word,
         date_of_birth: date_of_birth,
-        opt_out_of_market_research: opt_out_of_market_research,
-        dc_pot_confirmed: dc_pot_confirmed == 'yes'
+        dc_pot_confirmed: dc_pot_confirmed == 'yes',
+        gdpr_consent: gdpr_consent.to_s
       }
     end
 
@@ -78,14 +76,6 @@ module Tesco
       parts.map!(&:to_i)
 
       Date.new(*parts)
-    end
-
-    def opt_out_of_market_research
-      %w(1 true).include?(@opt_out_of_market_research)
-    end
-
-    def accept_terms_and_conditions
-      %w(1 true).include?(@accept_terms_and_conditions)
     end
 
     def selected_date
