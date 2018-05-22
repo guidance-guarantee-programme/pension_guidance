@@ -48,3 +48,7 @@ $C
 Phone: 0800 731 0193<br>
 From outside the UK: +44 191 215 4491
 $C
+
+## Privacy notice
+
+Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at [www.pensionwise.gov.uk/en/privacy](https://www.pensionwise.gov.uk/en/privacy).

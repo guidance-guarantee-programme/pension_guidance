@@ -48,3 +48,7 @@ $C
 Ffôn: 0345 6002 537<br>
 O’r tu allan i’r DU: +44 191 215 4491
 $C
+
+## Privacy notice
+
+Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at [www.pensionwise.gov.uk/en/privacy](https://www.pensionwise.gov.uk/en/privacy).
