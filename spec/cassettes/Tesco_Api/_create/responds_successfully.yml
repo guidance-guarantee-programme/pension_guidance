@@ -5,11 +5,11 @@ http_interactions:
     uri: http://localhost:3008/api/v1/locations/1/appointments
     body:
       encoding: UTF-8
-      string: '{"start_at":"2017-10-02 08:15:00 UTC","first_name":"Rick","last_name":"Sanchez","email":"rick@example.com","phone":"07715
-        930 444","memorable_word":"cheese","date_of_birth":"1960-01-01","opt_out_of_market_research":false,"dc_pot_confirmed":false}'
+      string: '{"start_at":"2018-05-25 07:00:00 UTC","first_name":"Rick","last_name":"Sanchez","email":"rick@example.com","phone":"07715
+        930 444","memorable_word":"cheese","date_of_birth":"1960-01-01","dc_pot_confirmed":false,"gdpr_consent":""}'
     headers:
       User-Agent:
-      - PensionWise/1.0 (birdperson; benlovell; 47827) ruby/2.4.2 (198; x86_64-darwin16)
+      - PensionWise/1.0 (birdperson.local; benlovell; 47924) ruby/2.5.1 (57; x86_64-darwin17)
       Accept:
       - application/json
       Content-Type:
@@ -30,18 +30,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"937308918c580bbb0ec42b4173d1bbe5"
+      - W/"465308fb8468ba9ce856efa95a8dee4f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9f045795-38ee-4528-8fe9-3f11c34fb4f7
+      - 8b63dbaf-d1d5-4404-b9cc-7ddd126440c5
       X-Runtime:
-      - '0.414120'
+      - '0.155927'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":10,"room":"R1"}'
+      string: '{"id":299,"room":"HIGH 2.2"}'
     http_version: 
-  recorded_at: Sun, 01 Oct 2017 10:13:50 GMT
+  recorded_at: Mon, 21 May 2018 11:03:16 GMT
 recorded_with: VCR 3.0.3

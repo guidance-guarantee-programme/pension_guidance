@@ -93,8 +93,7 @@ module Tesco
           :memorable_word,
           :date_of_birth,
           :dc_pot_confirmed,
-          :opt_out_of_market_research,
-          :accept_terms_and_conditions,
+          :gdpr_consent,
           :date_of_birth_year,
           :date_of_birth_month,
           :date_of_birth_day
