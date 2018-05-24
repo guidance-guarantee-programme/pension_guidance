@@ -64,7 +64,7 @@ class BookingRequestsController < ApplicationController
         :dc_pot,
         :additional_info,
         :where_you_heard,
-        :opt_in
+        :gdpr_consent
       ).merge(remote_ip: request.remote_ip)
   end
 

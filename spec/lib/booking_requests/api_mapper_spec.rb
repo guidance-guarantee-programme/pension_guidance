@@ -17,7 +17,7 @@ RSpec.describe BookingRequests::ApiMapper do
       date_of_birth: '1951-01-01',
       accessibility_requirements: false,
       additional_info: nil,
-      opt_in: false,
+      gdpr_consent: 'yes',
       dc_pot: 'yes',
       where_you_heard: '1'
     )
@@ -39,7 +39,7 @@ RSpec.describe BookingRequests::ApiMapper do
           date_of_birth: '1951-01-01',
           accessibility_requirements: false,
           additional_info: '',
-          marketing_opt_in: false,
+          gdpr_consent: 'yes',
           defined_contribution_pot_confirmed: true,
           where_you_heard: '1',
           slots: [
