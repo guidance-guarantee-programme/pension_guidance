@@ -4,3 +4,4 @@
 /vendor/assets/bower_components
 npm-debug.log
 wraith/shots
+.byebug_history
