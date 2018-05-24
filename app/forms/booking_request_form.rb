@@ -82,7 +82,12 @@ class BookingRequestForm
   def eligible?
     return unless step_two_valid?
 
-    age >= 50 && dc_pot != 'no'
+    at = [primary_slot, secondary_slot, tertiary_slot]
+         .reject(&:blank?)
+         .map(&:in_time_zone)
+         .min
+
+    age(at) >= 50 && dc_pot != 'no'
   end
 
   def ineligible?
@@ -107,11 +112,11 @@ class BookingRequestForm
 
   private
 
-  def age
+  def age(at = Time.zone.today)
     return 0 unless date_of_birth
 
-    age = Time.zone.today.year - date_of_birth.year
-    age -= 1 if Time.zone.today.to_date < date_of_birth + age.years
+    age = at.year - date_of_birth.year
+    age -= 1 if at.to_date < date_of_birth + age.years
     age
   end
 end
