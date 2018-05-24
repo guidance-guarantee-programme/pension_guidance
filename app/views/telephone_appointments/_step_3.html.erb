@@ -135,7 +135,7 @@
       <% end %>
 
       <div class="multiple-choice">
-        <%= f.radio_button :dc_pot_confirmed, 'yes' %>
+        <%= f.radio_button :dc_pot_confirmed, 'yes', class: 't-dc-pot-confirmed-yes' %>
         <%= f.label :dc_pot_confirmed, value: 'yes' do %>Yes<% end %>
       </div>
 
@@ -147,23 +147,6 @@
       <div class="multiple-choice">
         <%= f.radio_button :dc_pot_confirmed, 'not-sure' %>
         <%= f.label :dc_pot_confirmed, value: 'not-sure' do %>Not sure<% end %>
-      </div>
-    </fieldset>
-  </div>
-
-  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:opt_out_of_market_research) %>">
-    <fieldset>
-      <legend>
-        <% if @telephone_appointment.errors.include?(:opt_in) %>
-          <span class="error-message"><%= @telephone_appointment.errors[:opt_out_of_market_research].to_sentence.capitalize %></span>
-        <% end %>
-      </legend>
-      <div class="multiple-choice">
-        <%= f.check_box :opt_out_of_market_research, class: 't-opt-out-of-market-research' %>
-        <%= f.label :opt_out_of_market_research, class: 't-opt-in' do %>
-          I don't want to be contacted in the future
-          <span class="form-hint">If you don't want to tell us about your experience of Pension Wise</span>
-        <% end %>
       </div>
     </fieldset>
   </div>
@@ -180,25 +163,36 @@
     %>
   </div>
 
-  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>">
-    <fieldset>
-      <legend>
-        <span class="visually-hidden">Terms and conditions</span>
-        <% if @telephone_appointment.errors.include?(:accept_terms_and_conditions) %>
-          <span class="error-message"><%= @telephone_appointment.errors[:accept_terms_and_conditions].to_sentence.capitalize %></span>
-        <% end %>
-      </legend>
+  <div class="form-group t-gdpr-consent" id="telephone_appointment_gdpr_consent" tabindex="-1">
+    <fieldset class="inline">
+      <legend>Customer research consent</legend>
+      <span class="form-hint">
+        Your feedback helps us improve the service. Is it OK if we share your
+        contact details with our trusted research partner? Ipsos MORI may
+        contact you to ask if you would like to provide feedback and you can
+        decide then if you want to take part.
+      </span>
+
       <div class="multiple-choice">
-        <%= f.check_box :accept_terms_and_conditions, class: 't-accept-terms-and-conditions' %>
-        <%= f.label :accept_terms_and_conditions, class: 't-opt-in' do %>
-          I accept the <a href="/privacy" target="_blank">terms and conditions</a>
-        <% end %>
+        <%= f.radio_button :gdpr_consent, 'yes', class: 't-gdpr-consent-yes' %>
+        <%= f.label :gdpr_consent, value: 'yes' do %>Yes<% end %>
+      </div>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :gdpr_consent, 'no', class: 't-gdpr-consent-no' %>
+        <%= f.label :gdpr_consent, value: 'no' do %>No<% end %>
       </div>
     </fieldset>
   </div>
 
   <div class="form-group">
     <%= f.submit 'Confirm appointment', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
+  </div>
+
+  <div role="note" aria-label="Information" class="application-notice info-notice">
+    <p>Pension Wise collects and stores personal data for the purpose of delivering Pensions Guidance.</p>
+    <p>Your data will be shared with our delivery partners (Citizens Advice, The Pensions Advisory Service and Teleperformance) only where it is necessary to provide you with Pension Wise guidance.</p>
+    <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be <%= link_to 'found here', guide_path('privacy') %>.</p>
   </div>
 </div>
 <div class="l-column-third">

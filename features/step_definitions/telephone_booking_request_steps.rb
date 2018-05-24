@@ -91,11 +91,9 @@ Given(/^they do not have a DC pot$/) do
   @page.date_of_birth_day.set '23'
   @page.date_of_birth_month.set '10'
   @page.date_of_birth_year.set '1920'
-
-  choose('No')
-  @page.opt_out_of_market_research.set(true)
-  @page.accept_terms_and_conditions.set(true)
+  @page.dc_pot_confirmed_no.set(true)
   @page.where_you_heard.select('Other')
+  @page.gdpr_consent_yes.set(true)
 
   @page.submit.click
 end
@@ -116,11 +114,9 @@ Given(/^they are below the minimum age$/) do
   @page.date_of_birth_day.set '23'
   @page.date_of_birth_month.set '10'
   @page.date_of_birth_year.set '2013'
-
-  choose('Yes')
-  @page.opt_out_of_market_research.set(true)
-  @page.accept_terms_and_conditions.set(true)
+  @page.dc_pot_confirmed_yes.set(true)
   @page.where_you_heard.select('Other')
+  @page.gdpr_consent_yes.set(true)
 
   @page.submit.click
 end
@@ -138,10 +134,8 @@ Given(/^they are eligible for an appointment$/) do
   @page.date_of_birth_day.set '23'
   @page.date_of_birth_month.set '10'
   @page.date_of_birth_year.set '1920'
-
-  choose('Yes')
-  @page.opt_out_of_market_research.set(true)
-  @page.accept_terms_and_conditions.set(true)
+  @page.dc_pot_confirmed_yes.set(true)
+  @page.gdpr_consent_yes.set(true)
   @page.where_you_heard.select('Other')
 
   @page.submit.click
@@ -155,8 +149,7 @@ Then(/^their appointment is created$/) do
   expect(@created_telephone_appointment.phone).to eq '923902302'
   expect(@created_telephone_appointment.memorable_word).to eq 'words'
   expect(@created_telephone_appointment.date_of_birth).to eq DateTime.new(1920, 10, 23).in_time_zone
-  expect(@created_telephone_appointment.opt_out_of_market_research).to eq true
-  expect(@created_telephone_appointment.accept_terms_and_conditions).to eq true
+  expect(@created_telephone_appointment.gdpr_consent).to eq 'yes'
   expect(@created_telephone_appointment.where_you_heard).to eq '17'
 end
 
@@ -180,11 +173,9 @@ When(/^the slot becomes unavailable while they are filling in their details$/) d
   @page.date_of_birth_day.set '23'
   @page.date_of_birth_month.set '10'
   @page.date_of_birth_year.set '1920'
-
-  choose('Yes')
-  @page.opt_out_of_market_research.set(true)
-  @page.accept_terms_and_conditions.set(true)
+  @page.dc_pot_confirmed_yes.set(true)
   @page.where_you_heard.select('Other')
+  @page.gdpr_consent_yes.set(true)
 
   @page.submit.click
 end

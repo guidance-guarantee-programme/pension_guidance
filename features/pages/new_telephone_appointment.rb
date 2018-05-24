@@ -14,9 +14,11 @@ module Pages
     element :choose_other_time_message, '.t-choose-other-time-message'
     element :where_you_heard, '.t-where-you-heard'
 
-    element :dc_pot_confirmed_no, '.t-dc-confirmed-pot-no', visible: false
-    element :opt_out_of_market_research, '.t-opt-out-of-market-research', visible: false
-    element :accept_terms_and_conditions, '.t-accept-terms-and-conditions', visible: false
+    element :dc_pot_confirmed_yes, '.t-dc-pot-confirmed-yes'
+    element :dc_pot_confirmed_no, '.t-dc-pot-confirmed-no'
+
+    element :gdpr_consent_yes, '.t-gdpr-consent-yes'
+    element :gdpr_consent_no, '.t-gdpr-consent-no'
 
     element :submit, '.t-submit'
 
