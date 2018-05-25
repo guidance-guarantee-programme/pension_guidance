@@ -42,7 +42,7 @@ class TelephoneAppointment
   end
 
   def eligible?
-    age >= 50 && dc_pot_confirmed != 'no'
+    start_at.present? && age(start_at) >= 50 && dc_pot_confirmed != 'no'
   end
 
   def ineligible?
@@ -98,11 +98,11 @@ class TelephoneAppointment
 
   private
 
-  def age
+  def age(at)
     return 0 unless date_of_birth
 
-    age = Time.zone.today.year - date_of_birth.year
-    age -= 1 if Time.zone.today.to_date < date_of_birth + age.years
+    age = at.year - date_of_birth.year
+    age -= 1 if at.to_date < date_of_birth + age.years
     age
   end
 end
