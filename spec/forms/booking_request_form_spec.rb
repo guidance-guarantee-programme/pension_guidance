@@ -1,7 +1,7 @@
 RSpec.describe BookingRequestForm do
-  describe 'validation' do
-    let(:location_id) { SecureRandom.uuid }
+  let(:location_id) { SecureRandom.uuid }
 
+  describe 'validation' do
     subject do
       described_class.new(
         location_id,
@@ -89,8 +89,17 @@ RSpec.describe BookingRequestForm do
         expect(subject).not_to be_eligible
       end
 
-      it 'is valid if the person is older than 50 right now' do
-        subject.date_of_birth = '1950-01-01'
+      it 'is valid if the person is exactly 50 at time of the primary slot' do
+        subject.date_of_birth = '2100-01-01'
+
+        expect(subject.appointment_type).to eq('50-54')
+        expect(subject).to be_eligible
+      end
+
+      it 'is valid if the person is exactly 55 at time of the primary slot' do
+        subject.date_of_birth = '2095-01-01'
+
+        expect(subject.appointment_type).to eq('55-plus')
         expect(subject).to be_eligible
       end
 
@@ -114,6 +123,21 @@ RSpec.describe BookingRequestForm do
         subject.where_you_heard = ''
         expect(subject).not_to be_step_two_valid
       end
+    end
+  end
+
+  context 'appointment_type' do
+    subject do
+      described_class.new(location_id, primary_slot: '2150-01-01-0900-1300')
+    end
+
+    it 'converts date of birth into an age range' do
+      subject.date_of_birth = '2100-01-01'
+      expect(subject.appointment_type).to eq '50-54'
+    end
+
+    it 'is under 50 if no date of birth set' do
+      expect(subject.appointment_type).to eq 'under-50'
     end
   end
 end
