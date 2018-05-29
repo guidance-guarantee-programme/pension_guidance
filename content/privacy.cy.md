@@ -112,7 +112,7 @@ uniongyrchol, neu drwy e-bostio
 
 Byddwch yn cael crynodeb o’ch apwyntiad.
 
-##Sut rydym yn defnyddio’ch gwybodaeth – gwefan
+## Sut rydym yn defnyddio’ch gwybodaeth – gwefan
 
 Mae’r wybodaeth a gasglwn ar y wefan yn cynnwys:
 
@@ -131,14 +131,14 @@ Ni allwn adnabod eich defnydd o’r wefan yn bersonol wrth ddefnyddio’r data h
 Bydd unrhyw ddata personol a gesglir yn cael ei ddileu ar ôl cael ei storio’n
 ddiogel am 2 flynedd.
 
-##Sut rydym yn defnyddio eich gwybodaeth-cwynion
+## Sut rydym yn defnyddio eich gwybodaeth-cwynion
 
 Os oes gennych gŵyn fyw, byddwn yn storio eich data trefnu apwyntiad am fwy
 na’n cyfnod cadw safonol os bydd angen ymateb yn effeithiol i’r gŵyn a delio ag
 unrhyw apeliadau dilynol. Bydd unrhyw gwynion yn cael eu storio am 2 flynedd o
 ddyddiad y penderfyniad.
 
-##Sut rydym yn defnyddio’ch gwybodaeth – ymchwil
+## Sut rydym yn defnyddio’ch gwybodaeth – ymchwil
 
 Yn ystod eich rhyngweithiadau â Pension Wise, gofynnir i chi a fyddech chi’n
 fodlon bod ein partner ymchwil yn cysylltu â chi. Os ydych chi’n cytuno i hyn,
@@ -153,13 +153,13 @@ gwella’r gwasanaeth Pension Wise.
 Gallwch chi dynnu’ch caniatâd i gysylltu â Ipsos Mori ar unrhyw adeg, trwy
 e-bostio [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk)
 
-##Storio’ch data yn ddiogel
+## Storio’ch data yn ddiogel
 
 Rydym yn storio eich data ar serfwyr diogel o fewn yr UE. Mae gennym
 weithdrefnau a nodweddion diogelwch ar waith i gadw eich data yn ddiogel ar ôl
 i ni ei dderbyn.
 
-##Dolenni i wefannau eraill
+## Dolenni i wefannau eraill
 
 Mae Pension Wise yn cynnwys dolenni i  ac oddi ar wefannau eraill. 
 
@@ -170,9 +170,9 @@ iddynt.
 Os ydych chi’n mynd i wefan arall o’r un hwn, darllenwch y polisi preifatrwydd
 ar y wefan honno i ddarganfod beth mae’n ei wneud gyda’ch gwybodaeth
 
-##Eich hawliau
+## Eich hawliau
 
-###Hawl i wrthwynebu
+### Hawl i wrthwynebu
 
 Yn unol ag Erthygl 21 o’r Rheoliadau Gwarchod Data Cyffredinol, mae gennych yr
 hawl i wrthwynebu i ni brosesu eich data. Yn dibynnu ar natur y cais, gall hyn
@@ -183,7 +183,7 @@ gwnaethoch wrthwynebu i ni  ddefnyddio eich cyfeiriad e-bost a’ch cyfeiriad
 post, ni fyddem yn gallu anfon cadarnhad o’ch trefniant apwyntiad, neu grynodeb
 o’ch apwyntiad.
 
-###Hawliau eraill
+### Hawliau eraill
 
 Mae gennych yr hawl i gael mynediad at unrhyw un o’ch data personol y mae
 Pension Wise yn ei ddal. Mae gennych hawl i gael copi o’ch data, a’r hawl i
