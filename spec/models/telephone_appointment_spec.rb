@@ -1,15 +1,15 @@
 RSpec.describe TelephoneAppointment, type: :model do
   subject do
     TelephoneAppointment.new(
-      start_at: Time.zone.now.to_s,
+      start_at: '2200-01-01 11:46:24 UTC',
       first_name: 'First',
       last_name: 'Last',
       email: 'email@example.org',
       phone: '29309203023',
       memorable_word: 'hello',
       date_of_birth_year: '1920',
-      date_of_birth_month: '10',
-      date_of_birth_day: '23',
+      date_of_birth_month: '01',
+      date_of_birth_day: '01',
       dc_pot_confirmed: 'yes',
       where_you_heard: '1',
       gdpr_consent: 'yes'
@@ -70,14 +70,36 @@ RSpec.describe TelephoneAppointment, type: :model do
 
     context 'older than 50' do
       it 'is eligible' do
-        subject.date_of_birth_year = '1963'
+        subject.date_of_birth_year = '1950'
+
+        expect(subject).to be_eligible
+      end
+    end
+
+    context 'without a start_at' do
+      it 'is ineligible' do
+        subject.start_at = nil
+
+        expect(subject).to_not be_eligible
+      end
+    end
+
+    context 'exactly 50' do
+      it 'is eligible' do
+        subject.date_of_birth_year = '2150'
+        subject.date_of_birth_month = '01'
+        subject.date_of_birth_day = '01'
+
         expect(subject).to be_eligible
       end
     end
 
     context 'younger than 50' do
       it 'is ineligible' do
-        subject.date_of_birth_year = '2016'
+        subject.date_of_birth_year = '2150'
+        subject.date_of_birth_month = '01'
+        subject.date_of_birth_day = '02'
+
         expect(subject).to_not be_eligible
       end
     end
