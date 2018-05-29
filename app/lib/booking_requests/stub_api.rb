@@ -1,6 +1,7 @@
 module BookingRequests
   class StubApi
-    def create(*)
+    def create(*payload)
+      Rails.logger.info(payload)
       true
     end
 

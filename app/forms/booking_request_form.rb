@@ -108,10 +108,19 @@ class BookingRequestForm
   private
 
   def age
-    return 0 unless date_of_birth
+    at = earliest_slot
 
-    age = Time.zone.today.year - date_of_birth.year
-    age -= 1 if Time.zone.today.to_date < date_of_birth + age.years
+    return 0 unless date_of_birth || at.nil?
+
+    age = at.year - date_of_birth.year
+    age -= 1 if at.to_date < date_of_birth + age.years
     age
+  end
+
+  def earliest_slot
+    [primary_slot, secondary_slot, tertiary_slot]
+      .reject(&:blank?)
+      .map(&:in_time_zone)
+      .min
   end
 end

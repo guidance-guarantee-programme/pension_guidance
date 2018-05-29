@@ -1,17 +1,17 @@
 RSpec.describe BookingRequestForm do
-  describe 'validation' do
-    let(:location_id) { SecureRandom.uuid }
+  let(:location_id) { SecureRandom.uuid }
 
+  describe 'validation' do
     subject do
       described_class.new(
         location_id,
-        primary_slot: '2016-01-01-0900-1300',
+        primary_slot: '2150-01-01-0900-1300',
         first_name: 'Lucius',
         last_name: 'Needful',
         email: 'lucius@example.com',
         telephone_number: '0208 244 3987',
         memorable_word: 'meseeks',
-        date_of_birth: '1950-01-01',
+        date_of_birth: '2100-01-01',
         accessibility_requirements: '0',
         additional_info: '',
         dc_pot: 'yes',
@@ -68,11 +68,39 @@ RSpec.describe BookingRequestForm do
         expect(subject).not_to be_step_two_valid
       end
 
-      it 'requires appointment_type to be within permitted values' do
-        subject.date_of_birth = '2010-01-01'
+      it 'is invalid if the person in under 50 at time of the primary slot' do
+        subject.primary_slot = '2149-12-31-0900-1300'
 
         expect(subject.appointment_type).to eq('under-50')
         expect(subject).not_to be_eligible
+      end
+
+      it 'is invalid if the person in under 50 at time of the secondary slot' do
+        subject.secondary_slot = '2149-12-31-0900-1300'
+
+        expect(subject.appointment_type).to eq('under-50')
+        expect(subject).not_to be_eligible
+      end
+
+      it 'is invalid if the person in under 50 at time of the tertiary slot' do
+        subject.tertiary_slot = '2149-12-31-0900-1300'
+
+        expect(subject.appointment_type).to eq('under-50')
+        expect(subject).not_to be_eligible
+      end
+
+      it 'is valid if the person is exactly 50 at time of the primary slot' do
+        subject.date_of_birth = '2100-01-01'
+
+        expect(subject.appointment_type).to eq('50-54')
+        expect(subject).to be_eligible
+      end
+
+      it 'is valid if the person is exactly 55 at time of the primary slot' do
+        subject.date_of_birth = '2095-01-01'
+
+        expect(subject.appointment_type).to eq('55-plus')
+        expect(subject).to be_eligible
       end
 
       it 'requires accessibility_requirements to be true or false' do
@@ -95,6 +123,21 @@ RSpec.describe BookingRequestForm do
         subject.where_you_heard = ''
         expect(subject).not_to be_step_two_valid
       end
+    end
+  end
+
+  context 'appointment_type' do
+    subject do
+      described_class.new(location_id, primary_slot: '2150-01-01-0900-1300')
+    end
+
+    it 'converts date of birth into an age range' do
+      subject.date_of_birth = '2100-01-01'
+      expect(subject.appointment_type).to eq '50-54'
+    end
+
+    it 'is under 50 if no date of birth set' do
+      expect(subject.appointment_type).to eq 'under-50'
     end
   end
 end
