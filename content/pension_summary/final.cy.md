@@ -43,12 +43,12 @@ $C
 ## Dod o hyd i bensiwn a gollwyd:
 
 $C
-### y Gwasanaeth Olrhain Pensiynau
+### Y Gwasanaeth Olrhain Pensiynau
 [www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn](https://www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn)<br>
 Ffôn: 0345 6002 537<br>
 O’r tu allan i’r DU: +44 191 215 4491
 $C
 
-## Privacy notice
+## Hysbysiad preifatrwydd
 
-Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at [www.pensionwise.gov.uk/en/privacy](https://www.pensionwise.gov.uk/en/privacy).
+Gellir dod o hyd i wybodaeth ar sut mae Pension Wise yn casglu, prosesu a storio eich data, a gwybodaeth am eich hawliau mewn perthynas i’r data rydym yn ei gadw yn [www.pensionwise.gov.uk/cy/privacy](https://www.pensionwise.gov.uk/cy/privacy).
