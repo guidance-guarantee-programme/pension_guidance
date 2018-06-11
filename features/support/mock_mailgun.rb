@@ -13,8 +13,7 @@ Before('@mock_mailgun') do
 end
 
 After('@mock_mailgun') do
-  @mailgun_server.shutdown
-  @mailgun_thread.kill
+  @mailgun_thread.kill while system('lsof -t -i:9293 > /dev/null')
 end
 
 def with_mock_mailgun_response(response)
