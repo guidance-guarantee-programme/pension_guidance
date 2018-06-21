@@ -87,13 +87,14 @@ by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
 ###Health data
 
-For appointments delivered by Citizens Advice England and Wales, basic health
-data may be stored in general terms as part of the record of appointment where
-it is relevant to your pension options (for example a health condition may
-entitle you to an enhanced annuity). Where this occurs, processing and
-retention of this data for a period of 2 years is in accordance with Article
-9(2)(g) of the General Data Protection Regulations, in reference to Schedule 1,
-Part 2(6)(1 and 2) of the Data Protection Act 2018.
+For appointments delivered by Citizens Advice England and Wales, any basic
+health data you provide when requesting an appointment online and during the
+appointment may be stored in general terms as part of the record of
+appointment, where it is relevant to your pension options (for example a health
+condition may entitle you to an enhanced annuity). Where this occurs,
+processing and retention of this data for a period of 2 years is in accordance
+with Article 9(2)(g) of the General Data Protection Regulations, in reference
+to Schedule 1, Part 2(6)(1 and 2) of the Data Protection Act 2018.
 
 Citizens Advice England and Wales will ask for your consent to store any basic
 health data discussed in your appointment for a period of six years, in line
