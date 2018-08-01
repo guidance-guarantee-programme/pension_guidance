@@ -13,15 +13,7 @@
 <%= @guide.content %>
 
 <% unless @summary.last_step? %>
-  <%= form_for @summary, url: explore_your_options_summary_path, method: :get do |f| %>
-    <%= f.hidden_field :current_step, value: @summary.next_step %>
-
-    <% PensionSummary::OPTIONS.each do |step| %>
-      <%= f.hidden_field step %>
-    <% end %>
-
-    <%= f.submit t('.next_button'), class: :button %>
-  <% end %>
+  <%= link_to t('.next_button'), explore_your_options_summary_path(id: @summary.id, step: @summary.next_step), class: 'button button-next' %>
 
   <p>
     <%= link_to t('.book_a_free_appointment_link'), guide_path('appointments'), class: 'summary' %>

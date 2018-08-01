@@ -1,5 +1,4 @@
-class PensionSummary
-  include ActiveModel::Model
+class PensionSummary < ApplicationRecord
 
   # 'Steps' are all the topics involved in the summary,
   # (including one that isn't offered as an option, 'final')
@@ -45,34 +44,33 @@ class PensionSummary
 
   OPTIONS = [*PRIMARY_OPTIONS, *SECONDARY_OPTIONS, *COMPULSORY_OPTIONS].freeze
 
-  attr_accessor *STEPS
-
-  attr_accessor :current_step
-
-  def initialize(*)
-    super
-
-    # Compulsory options are 'preselected'
-    # options in the form. Forced selections.
-    COMPULSORY_OPTIONS.each do |step|
-      public_send("#{step}=", true)
-    end
-
-    # Any steps that aren't offered as options
-    # are implicitly selected.
-    (STEPS - OPTIONS).each do |step|
-      public_send("#{step}=", true)
-    end
-
-    self.current_step ||= selected_steps.first
+  def generate(now = Time.current)
+    update(generated_at: now)
   end
 
-  def attributes
-    STEPS.each_with_object({}) { |o, memo| memo[o] = public_send(o) }
+  def generated?
+    generated_at?
+  end
+
+  def steps
+    attributes.slice(*STEPS)
   end
 
   def selected_steps
-    attributes.delete_if { |_, v| [1, '1', true, 'true'].exclude?(v) }.keys
+    steps.each_with_object([]) { |(k, v), m| m << k if v }
+  end
+
+  def current_step
+    @current_step ||= selected_steps.first
+  end
+
+  def current_step=(step)
+    @current_step = \
+      if selected_steps.include?(step)
+        step
+      else
+        selected_steps.first
+      end
   end
 
   def current_step_number

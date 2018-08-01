@@ -120,6 +120,11 @@ GEM
     erubi (1.7.1)
     excon (0.55.0)
     execjs (2.7.0)
+    factory_bot (4.10.0)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.10.0)
+      factory_bot (~> 4.10.0)
+      railties (>= 3.0.0)
     fakeredis (0.6.0)
       redis (~> 3.2)
     faraday (0.11.0)
@@ -418,6 +423,7 @@ DEPENDENCIES
   cucumber-rails!
   database_cleaner!
   email_validation!
+  factory_bot_rails!
   fakeredis!
   faraday!
   faraday-conductivity!

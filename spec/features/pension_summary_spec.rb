@@ -18,7 +18,7 @@ def and_i_choose_to_explore_my_pension_options
 end
 
 def and_i_begin_the_questionnaire
-  click_link('Start now')
+  click_button('Start now')
 end
 
 def and_i_select_all_pension_options
@@ -58,6 +58,6 @@ def then_i_view_a_summary_with_all_pages # rubocop:disable Metrics/MethodLength
 
   titles.each do |title|
     expect(page).to have_content(title)
-    click_button('Next') unless title == titles.last
+    click_link('Next') unless title == titles.last
   end
 end

@@ -62,6 +62,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
     gem 'axe-matchers'
     gem 'cucumber-rails', require: false
     gem 'database_cleaner'
+    gem 'factory_bot_rails'
     gem 'fakeredis'
     gem 'launchy'
     gem 'pdf-inspector', require: 'pdf/inspector'

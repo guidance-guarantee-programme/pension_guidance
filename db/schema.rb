@@ -10,9 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20180727155556) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "pgcrypto"
+
+  create_table "pension_summaries", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.boolean "leave_your_pot_untouched", default: false, null: false
+    t.boolean "get_a_guaranteed_income", default: false, null: false
+    t.boolean "get_an_adjustable_income", default: false, null: false
+    t.boolean "take_cash", default: false, null: false
+    t.boolean "take_whole", default: false, null: false
+    t.boolean "mix_your_options", default: false, null: false
+    t.boolean "how_my_pension_affects_my_benefits", default: false, null: false
+    t.boolean "getting_help_with_debt", default: false, null: false
+    t.boolean "taking_my_pension_if_im_ill", default: false, null: false
+    t.boolean "transferring_my_pension_to_another_provider", default: false, null: false
+    t.boolean "scams", default: true, null: false
+    t.boolean "how_my_pension_is_taxed", default: true, null: false
+    t.boolean "final", default: true, null: false
+    t.datetime "generated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

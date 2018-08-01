@@ -37,6 +37,10 @@ Rails.application.routes.draw do
         get 'summary'
         get 'download'
         get 'print'
+
+        post 'start', action: 'create'
+        post 'step-one', action: 'save_primary_options'
+        post 'step-two', action: 'save_secondary_options'
       end
 
       namespace :tesco, locale: :en do

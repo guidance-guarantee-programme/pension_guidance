@@ -2,7 +2,9 @@
 
 <%= @guide.content %>
 
-<%= form_for @summary, url: explore_your_options_summary_path, method: :get do |f| %>
+<%= form_for @summary, url: explore_your_options_step_two_path, method: :post do |f| %>
+  <%= hidden_field_tag :id, @summary.id %>
+
   <fieldset class="form-group">
     <legend class="visuallyhidden"><%= t('.secondary_steps.accessible_legend') %></legend>
 
@@ -30,10 +32,6 @@
       </div>
     <% end %>
   </fieldset>
-
-  <% PensionSummary::PRIMARY_OPTIONS.each do |step| %>
-    <%= f.hidden_field step %>
-  <% end %>
 
   <%= f.submit t('.next_button'), class: :button %>
 <% end %>
