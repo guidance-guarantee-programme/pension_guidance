@@ -1,5 +1,5 @@
 RSpec.describe BookingRequests do
-  let(:api) { instance_double(BookingRequests::Api) }
+  let(:api) { object_double(BookingRequests::Api.new) }
 
   describe '.slots' do
     around do |example|
