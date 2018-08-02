@@ -36,8 +36,13 @@
           </li>
         <% end %>
       </ul>
-      <%= link_to t('.sidebar.print_button'), print_summary_path, class: 'button' %>
-      <%= link_to t('.sidebar.download_button'), download_summary_path, class: 'button' %>
+      <% if @summary.pilot? %>
+        <%= link_to t('.sidebar.print_button'), print_summary_path, target: '_blank', class: 'button' %>
+        <%= link_to t('.sidebar.download_button'), download_summary_path, target: '_blank', class: 'button' %>
+      <% else %>
+        <%= link_to t('.sidebar.print_button'), print_summary_path, class: 'button' %>
+        <%= link_to t('.sidebar.download_button'), download_summary_path, class: 'button' %>
+      <% end %>
     </div>
   </aside>
 
