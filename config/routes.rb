@@ -32,6 +32,7 @@ Rails.application.routes.draw do
       scope 'explore-your-options', controller: 'pension_summaries', as: :explore_your_options do
         root action: 'start'
 
+        get 'about-you'
         get 'step-one'
         get 'step-two'
         get 'summary'
@@ -39,6 +40,7 @@ Rails.application.routes.draw do
         get 'print'
 
         post 'start', action: 'create'
+        post 'about-you', action: 'save_about_you'
         post 'step-one', action: 'save_primary_options'
         post 'step-two', action: 'save_secondary_options'
       end

@@ -2,6 +2,7 @@
 class PensionSummariesController < ApplicationController
   layout 'guides'
 
+  before_action :set_pilot_cookie, only: %i(start)
   before_action :create_summary, only: %i(create)
   before_action :set_summary, except: %i(start create)
   before_action :show_summary, if: :generated?, only: %i(step_one step_two)
@@ -17,7 +18,23 @@ class PensionSummariesController < ApplicationController
   end
 
   def create
-    redirect_to explore_your_options_step_one_url(id: @summary.id)
+    if pilot_summaries?
+      redirect_to explore_your_options_about_you_url(id: @summary.id)
+    else
+      redirect_to explore_your_options_step_one_url(id: @summary.id)
+    end
+  end
+
+  def about_you
+    @guide = get_guide('about-you')
+  end
+
+  def save_about_you
+    if @summary.update(about_you_params)
+      redirect_to explore_your_options_step_one_url(id: @summary.id)
+    else
+      render :about_you
+    end
   end
 
   def step_one
@@ -74,6 +91,12 @@ class PensionSummariesController < ApplicationController
     GuideDecorator.cached_for(GuideRepository.new.find("pension_summary/#{slug}"))
   end
 
+  def about_you_params
+    params
+      .fetch(:pension_summary, {})
+      .permit(:age, :gender, *PensionSummary::ABOUT_YOUR_PENSION)
+  end
+
   def primary_params
     params
       .fetch(:pension_summary, {})
@@ -91,7 +114,7 @@ class PensionSummariesController < ApplicationController
   end
 
   def create_summary
-    @summary = PensionSummary.create!
+    @summary = PensionSummary.create!(pilot: pilot_summaries?)
   end
 
   def set_summary
@@ -118,6 +141,26 @@ class PensionSummariesController < ApplicationController
     breadcrumb Breadcrumb.build_your_pensions_summary if params[:action] != 'start'
     breadcrumb Breadcrumb.explore_your_options_step_one if %w(start step_one).exclude?(params[:action])
   end
+
+  def set_pilot_cookie
+    return if pilot_cookie?
+
+    cookies.permanent[:pilot_summaries] = \
+      if params[:locale] == 'cy'
+        'false'
+      else
+        rand > 0.5 ? 'true' : 'false'
+      end
+  end
+
+  def pilot_cookie?
+    cookies[:pilot_summaries].present?
+  end
+
+  def pilot_summaries?
+    cookies[:pilot_summaries] == 'true'
+  end
+  helper_method :pilot_summaries?
 
   def alternate_url(new_locale, options = {})
     url_for(params.permit(:id, :step).merge(options).merge(locale: new_locale))

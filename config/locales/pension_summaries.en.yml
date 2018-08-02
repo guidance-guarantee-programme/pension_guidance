@@ -9,6 +9,44 @@ en:
           You can get help with the State Pension from the
           <a href="https://www.gov.uk/contact-pension-service" target="_blank">Pensions Service</a>.
 
+    about_you:
+      title: Firstly – a little bit about you
+      age:
+        legend: Which of these age groups are you in?
+        under_fifty: "Under 50"
+        fifty_to_fifty_four: "50–54"
+        fifty_five_to_fifty_nine: "54–59"
+        sixty_to_sixty_four: "60–64"
+        sixty_five_to_sixty_nine: "65–69"
+        seventy_or_over: "70 or over"
+      gender:
+        legend: What gender do you identify with?
+        male: Male
+        female: Female
+        unspecified: Prefer not to say
+        other: Other
+      pension_types:
+        notice: "Pension Wise only provides guidance on what you can do with a defined contribution pension."
+        legend:
+          html: |
+            <p>
+              Which of these types of pension posts have you got: <br>
+              <span class="form-hint">Please select each type you have</span>
+            </p>
+        defined_contribution:
+          html: |
+            Defined contribution <br>
+            <span class="form-hint">sometimes called money purchase pensions</span>
+        defined_benefit:
+          html: |
+            Defined benefit <br>
+            <span class="form-hint">often called final salary pension or career average</span>
+        uncertain:
+          html: |
+            I’m not sure what type(s) of pension I have <br>
+            <a href="/en/pension-type-tool" class="form-hint">not sure what pension type you have?</a>
+      next_button: Next
+
     step_one:
       title: The 6 pension options - Build your pensions summary
       accessible_legend: Which options are you interested in?

@@ -53,7 +53,32 @@ class PensionSummary < ApplicationRecord
 
   OPTIONS = [*PRIMARY_OPTIONS, *SECONDARY_OPTIONS, *COMPULSORY_OPTIONS].freeze
 
+  ABOUT_YOUR_GENDER = %w(
+    male
+    female
+    unspecified
+    other
+  ).freeze
+
+  ABOUT_YOUR_AGE = %w(
+    under_fifty
+    fifty_to_fifty_four
+    fifty_five_to_fifty_nine
+    sixty_to_sixty_four
+    sixty_five_to_sixty_nine
+    seventy_or_over
+  ).freeze
+
+  ABOUT_YOUR_PENSION = %w(
+    defined_contribution
+    defined_benefit
+    uncertain
+  ).freeze
+
   has_many :step_viewings
+
+  validates :gender, inclusion: { in: ABOUT_YOUR_GENDER, allow_blank: true }
+  validates :age, inclusion: { in: ABOUT_YOUR_AGE, allow_blank: true }
 
   def generate(now = Time.current)
     update(generated_at: now)
