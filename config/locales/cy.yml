@@ -124,6 +124,11 @@ cy:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
         where_you_heard: Where did you first hear of Pension Wise
+  activerecord:
+    attributes:
+      pension_summary:
+        name: Enw
+        email: E-bost
     errors:
       models:
         annuity_registration_form:

@@ -14,6 +14,7 @@
     "GITHUB_AUTH_TOKEN": ""
   },
   "addons": [
+    "heroku-postgresql",
     "heroku-redis",
     "logentries"
   ],

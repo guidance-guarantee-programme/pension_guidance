@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/LineLength
 RSpec.feature 'The pension summary', type: :feature do
   scenario 'Viewing the complete pension summary' do
     given_the_pilot_summaries_cookie_is_set_to_false
@@ -19,7 +20,10 @@ RSpec.feature 'The pension summary', type: :feature do
     and_i_answer_the_questions_about_me
     and_i_select_all_pension_options
     and_i_select_all_extra_options
-    then_i_view_a_summary_with_all_pages
+    and_i_view_a_summary_with_all_pages
+    and_i_fill_out_the_improving_the_service_form
+    and_i_fill_out_the_your_experience_form
+    then_i_view_a_thank_you_page
   end
 end
 
@@ -89,4 +93,28 @@ def then_i_view_a_summary_with_all_pages # rubocop:disable Metrics/MethodLength
     expect(page).to have_content(title)
     click_link('Next') unless title == titles.last
   end
+end
+
+def and_i_view_a_summary_with_all_pages
+  then_i_view_a_summary_with_all_pages
+  click_link('Next')
+end
+
+def and_i_fill_out_the_improving_the_service_form
+  check('I give my consent for my contact details to be shared with Ipsos MORI for this purpose')
+  fill_in('Name', with: 'Jim Bob')
+  fill_in('Email', with: 'jim@bob.com')
+  choose('England')
+  click_button('Next')
+end
+
+def and_i_fill_out_the_your_experience_form
+  choose('Very satisfied')
+  fill_in('Please let use know anything that has made you particularly satisfied or dissatisfied with the Pension Wise service:', with: 'Everything was great')
+  select('TV advert', from: 'Where did you first hear of Pension Wise?')
+  click_button('Next')
+end
+
+def then_i_view_a_thank_you_page
+  expect(page).to have_content('Thank you')
 end

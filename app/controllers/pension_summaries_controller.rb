@@ -66,6 +66,41 @@ class PensionSummariesController < ApplicationController
     @guide = get_guide(@summary.current_step)
   end
 
+  def improving_our_service
+    @summary.current_step = 'improving_our_service'
+    @guide = get_guide('improving-our-service')
+  end
+
+  def save_research_details
+    @guide = get_guide('improving-our-service')
+
+    if @summary.update(research_params)
+      redirect_to explore_your_options_your_experience_url(id: @summary.id)
+    else
+      render :improving_our_service
+    end
+  end
+
+  def your_experience
+    @summary.current_step = 'your_experience'
+    @guide = get_guide('your-experience')
+  end
+
+  def save_feedback
+    @guide = get_guide('your-experience')
+
+    if @summary.update(feedback_params)
+      redirect_to explore_your_options_thank_you_url(id: @summary.id)
+    else
+      render :your_experience
+    end
+  end
+
+  def thank_you
+    @summary.current_step = 'thank_you'
+    @guide = get_guide('thank-you')
+  end
+
   def print
     @intro = get_guide('print-introduction')
     @guides = @summary.selected_steps.collect { |s| get_guide(s) }
@@ -107,6 +142,18 @@ class PensionSummariesController < ApplicationController
     params
       .fetch(:pension_summary, {})
       .permit(*PensionSummary::SECONDARY_OPTIONS)
+  end
+
+  def research_params
+    params
+      .fetch(:pension_summary, {})
+      .permit(:consent_given, :name, :email, :country)
+  end
+
+  def feedback_params
+    params
+      .fetch(:pension_summary, {})
+      .permit(:satisfaction, :comments, :where_you_heard)
   end
 
   def summary_id

@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/ClassLength
 class PensionSummary < ApplicationRecord
   class StepViewing < ApplicationRecord
     belongs_to :pension_summary
@@ -28,6 +29,12 @@ class PensionSummary < ApplicationRecord
     taking_my_pension_if_im_ill
     transferring_my_pension_to_another_provider
     final
+  ).freeze
+
+  PILOT_STEPS = %w(
+    improving_our_service
+    your_experience
+    thank_you
   ).freeze
 
   PRIMARY_OPTIONS = %w(
@@ -75,6 +82,15 @@ class PensionSummary < ApplicationRecord
     uncertain
   ).freeze
 
+  COUNTRIES = %w(
+    england
+    scotland
+    wales
+    northern_ireland
+    channel_islands_or_isle_of_man
+    other
+  ).freeze
+
   has_many :step_viewings
 
   validates :gender, inclusion: { in: ABOUT_YOUR_GENDER, allow_blank: true }
@@ -92,8 +108,24 @@ class PensionSummary < ApplicationRecord
     attributes.slice(*STEPS)
   end
 
+  def pilot_steps
+    if pilot?
+      Hash[PILOT_STEPS.zip([true] * PILOT_STEPS.size)]
+    else
+      {}
+    end
+  end
+
+  def all_steps
+    attributes.merge(pilot_steps).slice(*STEPS, *PILOT_STEPS)
+  end
+
   def selected_steps
     steps.each_with_object([]) { |(k, v), m| m << k if v }
+  end
+
+  def all_selected_steps
+    all_steps.each_with_object([]) { |(k, v), m| m << k if v }
   end
 
   def current_step
@@ -102,17 +134,17 @@ class PensionSummary < ApplicationRecord
 
   def current_step=(step)
     @current_step = \
-      if selected_steps.include?(step)
+      if all_selected_steps.include?(step)
         step
       else
-        selected_steps.first
+        all_selected_steps.first
       end
 
     step_viewings.create!(step: @current_step)
   end
 
   def current_step_number
-    selected_steps.index(current_step) + 1
+    all_selected_steps.index(current_step) + 1
   end
 
   def first_step?

@@ -121,6 +121,11 @@ en:
         where_you_heard: Where did you first hear of Pension Wise
       appointment_summary:
         appointment_type: Your age
+  activerecord:
+    attributes:
+      pension_summary:
+        name: Name
+        email: Email
     errors:
       models:
         annuity_registration_form:

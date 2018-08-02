@@ -15,7 +15,7 @@ en:
         legend: Which of these age groups are you in?
         under_fifty: "Under 50"
         fifty_to_fifty_four: "50–54"
-        fifty_five_to_fifty_nine: "54–59"
+        fifty_five_to_fifty_nine: "55–59"
         sixty_to_sixty_four: "60–64"
         sixty_five_to_sixty_nine: "65–69"
         seventy_or_over: "70 or over"
@@ -70,18 +70,79 @@ en:
       pagination: Page %{current_page} of %{total_pages}
       next_button: Next
       book_a_free_appointment_link: Book a free appointment
-      sidebar:
-        heading: Your Pension Summary
-        print_button: Print
-        download_button: Download
-      feedback_sidebar:
-        heading: We need your feedback
-        body: This is a new way for us to deliver our guidance digitally, so we would like to know what you think of it.
-        link_text: Help us improve
       privacy_notice:
         html: |
           <h2 id="privacy-notice">Privacy notice</h2>
           <p>Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at <a rel="external" href="https://www.pensionwise.gov.uk/en/privacy">www.pensionwise.gov.uk/en/privacy</a>.</p>
+
+    sidebar:
+      heading: Your Pension Summary
+      print_button: Print
+      download_button: Download
+      feedback:
+        heading: We need your feedback
+        body: This is a new way for us to deliver our guidance digitally, so we would like to know what you think of it.
+        link_text: Help us improve
+
+    improving_our_service:
+      title: Improving our service
+      pagination: Page %{current_page} of %{total_pages}
+      consent_given: I give my consent for my contact details to be shared with Ipsos MORI for this purpose.
+      next_button: Next
+      privacy_notice:
+        html: |
+          <h2 id="privacy-notice">Privacy notice</h2>
+          <p>Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at <a rel="external" href="https://www.pensionwise.gov.uk/en/privacy">www.pensionwise.gov.uk/en/privacy</a>.</p>
+      consent:
+        accessible_legend: Do you give consent for Ipsos MORI to contact you?
+      country:
+        legend: Which country do you live in?
+        england: England
+        scotland: Scotland
+        wales: Wales
+        northern_ireland: Northern Ireland
+        channel_islands_or_isle_of_man: Channel Islands or Isle of Man
+        other: Other
+
+    your_experience:
+      title: Your experience of Pension Wise
+      pagination: Page %{current_page} of %{total_pages}
+      next_button: Next
+      satisfaction:
+        legend: Finally, to help provide us with some immediate feedback on the service, thinking about your overall experience of Pension Wise, how satisfied or dissatisfied are you with the service?
+        one: Very dissatisfied
+        two: Fairly dissatisfied
+        three: Neither satisfied nor dissatisfied
+        four: Fairly satisfied
+        five: Very satisfied
+      comments: "Please let use know anything that has made you particularly satisfied or dissatisfied with the Pension Wise service:"
+      where_you_heard:
+        label: Where did you first hear of Pension Wise?
+        options:
+          - [ 'An employer', 1 ]
+          - [ 'A Pension Provider', 2 ]
+          - [ 'Internet search', 3 ]
+          - [ 'Online advertising', 4 ]
+          - [ 'Social media', 5 ]
+          - [ 'The Government’s GOV.UK website', 6 ]
+          - [ 'TV advert', 7 ]
+          - [ 'Radio advert', 8 ]
+          - [ 'Newspaper/Magazine advert', 9 ]
+          - [ 'Local advertising - billboards, buses, bus stops', 10 ]
+          - [ 'Mentioned in a TV/radio programme or newspaper/magazine/online article', 11 ]
+          - [ 'A Financial Adviser', 12 ]
+          - [ 'Money Advice Service (MAS)', 13 ]
+          - [ 'The Pensions Advisory Service (TPAS)', 14 ]
+          - [ 'Citizens Advice', 15 ]
+          - [ 'Relative/Friend/Colleague', 16 ]
+          - [ 'Jobcentre Plus', 18 ]
+          - [ 'Other', 17 ]
+
+      many_thanks: Many thanks for providing feedback on the service.
+
+    thank_you:
+      title: Thank you
+      pagination: Page %{current_page} of %{total_pages}
 
     options:
       leave_your_pot_untouched:

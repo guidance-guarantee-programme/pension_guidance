@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180802075219) do
+ActiveRecord::Schema.define(version: 20180802121813) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,14 @@ ActiveRecord::Schema.define(version: 20180802075219) do
     t.boolean "defined_contribution"
     t.boolean "defined_benefit"
     t.boolean "uncertain"
+    t.boolean "consent_given", default: false, null: false
+    t.string "name", limit: 100
+    t.string "email", limit: 100
+    t.string "country", limit: 50
+    t.integer "satisfaction"
+    t.text "comments"
+    t.integer "where_you_heard"
+    t.datetime "submitted_at"
   end
 
   create_table "pension_summary_step_viewings", force: :cascade do |t|

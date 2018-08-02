@@ -1,0 +1,39 @@
+<% content_for :sidebar do %>
+  <aside>
+    <div class="sidebar-hr"></div>
+    <div class="sticky-sidebar__nav">
+      <span class="sticky-sidebar__heading">
+        <strong><%= t('.heading') %></strong>
+      </span>
+      <ul class="sticky-sidebar__list nav">
+        <% @summary.selected_steps.each do |step| %>
+          <li>
+            <%= link_to skip_to_step_path(step), class: 'sticky-sidebar__link' do %>
+              <%= t("pension_summaries.options.#{step}.title") %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+      <% if @summary.pilot? %>
+        <%= link_to t('.print_button'), print_summary_path, target: '_blank', class: 'button' %>
+        <%= link_to t('.download_button'), download_summary_path, target: '_blank', class: 'button' %>
+      <% else %>
+        <%= link_to t('.print_button'), print_summary_path, class: 'button' %>
+        <%= link_to t('.download_button'), download_summary_path, class: 'button' %>
+      <% end %>
+    </div>
+  </aside>
+
+  <div>
+    <div class="sidebar-hr"></div>
+    <% unless @summary.pilot? %>
+      <div class="sticky-sidebar__nav">
+        <span class="sticky-sidebar__heading">
+          <strong><%= t('.feedback.heading') %></strong>
+        </span>
+        <p><%= t('.feedback.body') %></p>
+        <%= link_to t('.feedback.link_text'), 'http://research.pensionwise.gov.uk/s/online_exit_poll/', class: 'button', rel: 'external', target: '_blank' %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
