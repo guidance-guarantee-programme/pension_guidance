@@ -96,12 +96,20 @@ class PensionSummary < ApplicationRecord
   validates :gender, inclusion: { in: ABOUT_YOUR_GENDER, allow_blank: true }
   validates :age, inclusion: { in: ABOUT_YOUR_AGE, allow_blank: true }
 
-  def generate(now = Time.current)
-    update(generated_at: now)
+  def generate(attrs, now: Time.current)
+    update(attrs.merge(generated_at: now))
   end
 
   def generated?
     generated_at?
+  end
+
+  def submit(attrs, now: Time.current)
+    update(attrs.merge(submitted_at: now))
+  end
+
+  def submitted?
+    submitted_at?
   end
 
   def steps

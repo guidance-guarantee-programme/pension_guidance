@@ -54,8 +54,7 @@ class PensionSummariesController < ApplicationController
   end
 
   def save_secondary_options
-    if @summary.update(secondary_params)
-      @summary.generate
+    if @summary.generate(secondary_params)
       redirect_to explore_your_options_summary_url(id: @summary.id)
     else
       render :step_two
@@ -89,7 +88,7 @@ class PensionSummariesController < ApplicationController
   def save_feedback
     @guide = get_guide('your-experience')
 
-    if @summary.update(feedback_params)
+    if @summary.submit(feedback_params)
       redirect_to explore_your_options_thank_you_url(id: @summary.id)
     else
       render :your_experience
