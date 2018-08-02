@@ -20,9 +20,6 @@
   ],
   "buildpacks": [
     {
-      "url": "https://github.com/timshadel/heroku-buildpack-github-netrc.git"
-    },
-    {
       "url": "heroku/nodejs"
     },
     {
