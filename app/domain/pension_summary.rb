@@ -1,4 +1,13 @@
 class PensionSummary < ApplicationRecord
+  class StepViewing < ApplicationRecord
+    belongs_to :pension_summary
+
+    class << self
+      def default_scope
+        order(:created_at)
+      end
+    end
+  end
 
   # 'Steps' are all the topics involved in the summary,
   # (including one that isn't offered as an option, 'final')
@@ -44,6 +53,8 @@ class PensionSummary < ApplicationRecord
 
   OPTIONS = [*PRIMARY_OPTIONS, *SECONDARY_OPTIONS, *COMPULSORY_OPTIONS].freeze
 
+  has_many :step_viewings
+
   def generate(now = Time.current)
     update(generated_at: now)
   end
@@ -71,6 +82,8 @@ class PensionSummary < ApplicationRecord
       else
         selected_steps.first
       end
+
+    step_viewings.create!(step: @current_step)
   end
 
   def current_step_number

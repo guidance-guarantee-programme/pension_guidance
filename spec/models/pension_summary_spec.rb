@@ -24,6 +24,8 @@ RSpec.describe PensionSummary, type: :model do
     it { is_expected.to have_db_column(:generated_at).of_type(:datetime).with_options(null: true) }
     it { is_expected.to have_db_column(:created_at).of_type(:datetime).with_options(null: false) }
     it { is_expected.to have_db_column(:updated_at).of_type(:datetime).with_options(null: false) }
+
+    it { is_expected.to have_many(:step_viewings) }
   end
 
   describe '#generated?' do
@@ -97,6 +99,10 @@ RSpec.describe PensionSummary, type: :model do
 
   describe '#current_step=' do
     subject { FactoryBot.create(:pension_summary, :generated) }
+
+    it 'logs a step viewing' do
+      expect { subject.current_step = 'scams' }.to change { subject.step_viewings.count }.by(1)
+    end
 
     context 'when the step has been selected' do
       it 'sets the current step' do
