@@ -78,6 +78,10 @@ en:
         heading: We need your feedback
         body: This is a new way for us to deliver our guidance digitally, so we would like to know what you think of it.
         link_text: Help us improve
+      privacy_notice:
+        html: |
+          <h2 id="privacy-notice">Privacy notice</h2>
+          <p>Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at <a rel="external" href="https://www.pensionwise.gov.uk/en/privacy">www.pensionwise.gov.uk/en/privacy</a>.</p>
 
     options:
       leave_your_pot_untouched:

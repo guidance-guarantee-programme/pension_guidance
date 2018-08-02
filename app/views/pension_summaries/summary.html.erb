@@ -12,7 +12,9 @@
 
 <%= @guide.content %>
 
-<% unless @summary.last_step? %>
+<% if @summary.last_step? %>
+  <%= t('.privacy_notice.html') %>
+<% else %>
   <%= link_to t('.next_button'), explore_your_options_summary_path(id: @summary.id, step: @summary.next_step), class: 'button button-next' %>
 
   <p>

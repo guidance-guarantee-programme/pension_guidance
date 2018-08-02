@@ -48,7 +48,3 @@ $C
 Ffôn: 0345 6002 537<br>
 O’r tu allan i’r DU: +44 191 215 4491
 $C
-
-## Hysbysiad preifatrwydd
-
-Gellir dod o hyd i wybodaeth ar sut mae Pension Wise yn casglu, prosesu a storio eich data, a gwybodaeth am eich hawliau mewn perthynas i’r data rydym yn ei gadw yn [www.pensionwise.gov.uk/cy/privacy](https://www.pensionwise.gov.uk/cy/privacy).
