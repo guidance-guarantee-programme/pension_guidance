@@ -22,6 +22,7 @@ before_script:
 - "(cd .downloads; [ -d prince-9.0r5-linux-amd64-static ] || curl -s https://www.princexml.com/download/prince-9.0r5-linux-amd64-static.tar.gz | tar xzf -)"
 - echo $PWD | ./.downloads/prince-9.0r5-linux-amd64-static/install.sh
 - npm install
+- bundle exec rake db:create db:migrate RAILS_ENV=test
 notifications:
   slack:
     secure: AAOOmT8WC2VhlOAyxthZdbJlnpShzgo6HAOH+jyivKdgS5Na+GuNtEY45g5GCjBv7rlf8q+ZyG4tOwgnQ3ylB9f85B1HcGol+qnhs/0T787XjRVTOgPj6k2iFLUlwOBHhPE4oxpjXz6vp+gaqL5BlU4nYqG185tOp/SK/V3SWW8=
