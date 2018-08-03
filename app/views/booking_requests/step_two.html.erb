@@ -180,8 +180,8 @@
             <% if @booking_request.errors.include?(:accessibility_requirements) %>
               <span class="error-message"><%= @booking_request.errors[:accessibility_requirements].to_sentence.capitalize %></span>
             <% end %>
-            I have accessibility needs, eg wheelchair access
-            <span class="form-hint" id="accessibility-hint">We’ll contact you for details of your specific needs</span>
+            I require an adjustment to help me access my appointment eg wheelchair access, BSL interpreter
+            <span class="form-hint" id="accessibility-hint">We may contact you for details of your specific needs</span>
           <% end %>
         </div>
       </div>
@@ -190,7 +190,7 @@
         <%= f.label :additional_info, class: 'form-label-bold' do %>
           Additional information
           <span class="form-hint">
-            eg any times you’re not available
+            eg any times you’re not available, accessibility adjustments
           </span>
         <% end %>
         <%= f.text_area :additional_info, class: 'form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
