@@ -103,6 +103,9 @@ cy:
         northern_ireland: Gogledd Iwerddon
         channel_islands_or_isle_of_man: Ynysoedd y Sianel neu Ynys Manaw
         other: Arall
+      errors:
+        heading: Mae'n ddrwg gennyf, digwyddodd un neu fwy o wallau
+        description: Os ydych chi wedi rhoi caniatâd i Ipsos MORI gysylltu â chi yna llenwch eich enw a chyfeiriad e-bost dilys. Os nad ydych am gysylltu â nhw, yna tynnwch eich enw a / neu gyfeiriad e-bost oddi ar y ffurflen.
 
     your_experience:
       title: Eich profiad o Pension Wise

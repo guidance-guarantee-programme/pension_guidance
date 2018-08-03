@@ -10,6 +10,8 @@ class PensionSummary < ApplicationRecord
     end
   end
 
+  EMAIL_REGEX = /\A[^@\s]+@[^@\s]+\.[^@\s]+\z/
+
   # 'Steps' are all the topics involved in the summary,
   # (including one that isn't offered as an option, 'final')
   # Also this array specifies the order they're presented,
@@ -96,6 +98,24 @@ class PensionSummary < ApplicationRecord
   validates :gender, inclusion: { in: ABOUT_YOUR_GENDER, allow_blank: true }
   validates :age, inclusion: { in: ABOUT_YOUR_AGE, allow_blank: true }
 
+  validate if: :consent_given? do
+    errors.add(:name, :blank) unless name?
+    errors.add(:email, :blank) unless email?
+    errors.add(:email, :invalid) unless email_valid?
+  end
+
+  validate if: :name? do
+    errors.add(:consent_given, :accepted) unless consent_given?
+    errors.add(:email, :blank) unless email?
+    errors.add(:email, :invalid) unless email_valid?
+  end
+
+  validate if: :email? do
+    errors.add(:consent_given, :accepted) unless consent_given?
+    errors.add(:name, :blank) unless name?
+    errors.add(:email, :invalid) unless email_valid?
+  end
+
   def generate(attrs, now: Time.current)
     update(attrs.merge(generated_at: now))
   end
@@ -165,5 +185,9 @@ class PensionSummary < ApplicationRecord
 
   def next_step
     selected_steps[current_step_number]
+  end
+
+  def email_valid?
+    email.to_s =~ EMAIL_REGEX
   end
 end

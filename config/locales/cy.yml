@@ -217,6 +217,15 @@ cy:
               invalid_email: enter a valid email address
             message:
               blank: enter a message
+        pension_summary:
+          attributes:
+            consent_given:
+              accepted: rhaid rhoi caniatâd os ydych wedi llenwi'ch enw a / neu'ch cyfeiriad e-bost
+            name:
+              blank: rhowch enw
+            email:
+              blank: rhowch gyfeiriad e-bost dilys
+              invalid: rhowch gyfeiriad e-bost dilys
   home:
     show:
       title: Pension Wise - Cael gwybod eich opsiynau

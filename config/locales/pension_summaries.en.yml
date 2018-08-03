@@ -103,6 +103,9 @@ en:
         northern_ireland: Northern Ireland
         channel_islands_or_isle_of_man: Channel Islands or Isle of Man
         other: Other
+      errors:
+        heading: Sorry, one or more errors occurred
+        description: If you have given consent to be contacted by Ipsos MORI then please fill out your name and a valid email address. If you do not want to be contacted then please remove your name and/or email address from the form.
 
     your_experience:
       title: Your experience of Pension Wise
