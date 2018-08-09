@@ -56,6 +56,39 @@
   color: $color-white;
   position: relative;
   padding: 0;
+
+  &.apples {
+    background-color: $color-apples-background;
+    background-image: linear-gradient(to bottom, $color-apples-background-dark 0%, $color-apples-background-light 100%);
+
+    .l-home-row-accent__content {
+      @include media(desktop) {
+        background-image: image-url("home/banners/apples.png");
+      }
+    }
+  }
+
+  &.paint {
+    background-color: $color-paint-background;
+    background-image: linear-gradient(to bottom, $color-paint-background-dark 0%, $color-paint-background-light 100%);
+
+    .l-home-row-accent__content {
+      @include media(desktop) {
+        background-image: image-url("home/banners/paint.png");
+      }
+    }
+  }
+
+  &.peppers {
+    background-color: $color-peppers-background;
+    background-image: linear-gradient(to bottom, $color-peppers-background-dark 0%, $color-peppers-background-light 100%);
+
+    .l-home-row-accent__content {
+      @include media(desktop) {
+        background-image: image-url("home/banners/peppers.png");
+      }
+    }
+  }
 }
 
 .l-home-row-accent__content {
