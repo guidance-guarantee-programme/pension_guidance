@@ -66,3 +66,10 @@ $('[data-character-limit]').each(function() {
 
   new PWPG.CharacterLimit($component);
 });
+
+$('[data-radio-toggle]').each(function() {
+  'use strict';
+
+  var $component = $(this);
+  new GOVUK.ShowHideContent().init($component); // jshint ignore:line
+});

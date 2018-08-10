@@ -106,7 +106,37 @@ cy:
 
   activemodel:
     errors:
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: angen ei dderbyn
+        blank: methu bod yn wag
+        confirmation: heb fod yn gyfateb
+        empty: methu bod yn wag
+        equal_to: angen bod yn %{count}
+        even: rhaid bod yn eilrif
+        exclusion: wedi cadw
+        greater_than: angen bod yn fwy na %{count}
+        greater_than_or_equal_to: angen bod yr un maint neu fwy na %{count}
+        inclusion: heb fod yn y rhestr
+        invalid: heb fod yn nheilwng
+        less_than: angen bod yn llai na %{count}
+        less_than_or_equal_to: angen bod yr un maint neu lai na %{count}
+        not_a_number: heb fod yn rhif
+        not_an_integer: heb fod yn rhif llawn
+        odd: rhaid bod yn odrif
+        record_invalid: 'Gwirio wedi methu: %{errors}'
+        taken: wedi'i gymryd yn barod
+        too_long: yn rhy hir (cewch %{count} llythyren ar y fwyaf)
+        too_short: yn rhy fyr (rhaid am o leiaf %{count} llythyren)
+        wrong_length: gyda maint anghywir o lythrennau (dylai fod yn %{count} llythyren)
+
       models:
+        welsh_language/booking_request:
+          attributes:
+            date_of_birth:
+              invalid: Rhaid i chi fod yn 50 oed neu’n hŷn
+            email:
+              invalid_email: Rhaid bod yn e-bost dilys
         tesco/booking:
           attributes:
             first_name:
@@ -188,6 +218,19 @@ cy:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
         where_you_heard: Where did you first hear of Pension Wise
+      welsh_language/booking_request:
+        booking_type: Apwyntiad wyneb yn wyneb neu dros y ffôn
+        first_name: Enw cyntaf
+        last_name: Cyfenw
+        email: E-bost
+        phone: Rhif ffôn
+        memorable_word: Eich gair cofiadwy
+        date_of_birth: Dyddiad Geni
+        defined_contribution_pot_confirmed: Mae gennyf bot pensiwn cyfraniad diffiniedig
+        additional_info: Gwybodaeth ychwanegol
+        where_you_heard: Ble wnaethoch glywed yn gyntaf am Pension Wise?
+        location_id: Lleoliad apwyntiad sy’n well gennych
+
   activerecord:
     attributes:
       pension_summary:

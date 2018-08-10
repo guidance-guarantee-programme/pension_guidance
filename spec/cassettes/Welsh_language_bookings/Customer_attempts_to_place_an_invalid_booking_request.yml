@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3010/api/v1/locations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson.local; benlovell; 65891) ruby/2.5.1 (57; x86_64-darwin17)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"82cba884bbb788a1e68fc6265efb9db9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fd60def7-327b-47ca-8a47-3e1b9ba2772c
+      X-Runtime:
+      - '0.673836'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '[{"id":34,"name":"Abergavenny (Monmouthshire Citizens Advice)"},{"id":35,"name":"Ammanford
+        Library"},{"id":36,"name":"Bargoed (Caerphilly Citizens Advice)"},{"id":37,"name":"Brynmawr
+        Citizens Advice"},{"id":51,"name":"Caernarfon (Citizens Advice)"},{"id":38,"name":"Caldicot
+        (Monmouthshire Citizens Advice)"},{"id":52,"name":"Canolfan Ni Corwen (Extended
+        Advice Service)"},{"id":39,"name":"Cardigan (Age Cymru)"},{"id":41,"name":"Carmarthen
+        (CAVs)"},{"id":40,"name":"Carmarthen Citizens Advice"},{"id":42,"name":"Chepstow
+        (Monmouthshire Citizens Advice)"},{"id":43,"name":"Cwmbran (Torfaen Citizens
+        Advice)"},{"id":44,"name":"Haverfordwest (Pembrokeshire Citizens Advice)"},{"id":53,"name":"Llandudno
+        (Cylch Conwy District Citizens Advice)"},{"id":54,"name":"Llangefni (Ynys
+        Mon Citizens Advice)"},{"id":45,"name":"Merthyr Tydfil (Citizens Advice)"},{"id":55,"name":"Mold
+        (Flintshire Citizens Advice)"},{"id":46,"name":"Neath Library"},{"id":47,"name":"Newport
+        (Citizens Advice)"},{"id":48,"name":"Pontypridd (Rhondda Cynon Taff Citizens
+        Advice)"},{"id":56,"name":"Pwllheli (Gwynedd Citizens Advice)"},{"id":49,"name":"Swansea
+        Citizens Advice"},{"id":50,"name":"Wrexham (BAWSO)"}]'
+    http_version: 
+  recorded_at: Mon, 20 Aug 2018 09:36:46 GMT
+- request:
+    method: get
+    uri: http://localhost:3010/api/v1/locations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson.local; benlovell; 65891) ruby/2.5.1 (57; x86_64-darwin17)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"82cba884bbb788a1e68fc6265efb9db9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b35a3506-d25b-4a05-b90d-16aadfdb3ed4
+      X-Runtime:
+      - '0.247413'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '[{"id":34,"name":"Abergavenny (Monmouthshire Citizens Advice)"},{"id":35,"name":"Ammanford
+        Library"},{"id":36,"name":"Bargoed (Caerphilly Citizens Advice)"},{"id":37,"name":"Brynmawr
+        Citizens Advice"},{"id":51,"name":"Caernarfon (Citizens Advice)"},{"id":38,"name":"Caldicot
+        (Monmouthshire Citizens Advice)"},{"id":52,"name":"Canolfan Ni Corwen (Extended
+        Advice Service)"},{"id":39,"name":"Cardigan (Age Cymru)"},{"id":41,"name":"Carmarthen
+        (CAVs)"},{"id":40,"name":"Carmarthen Citizens Advice"},{"id":42,"name":"Chepstow
+        (Monmouthshire Citizens Advice)"},{"id":43,"name":"Cwmbran (Torfaen Citizens
+        Advice)"},{"id":44,"name":"Haverfordwest (Pembrokeshire Citizens Advice)"},{"id":53,"name":"Llandudno
+        (Cylch Conwy District Citizens Advice)"},{"id":54,"name":"Llangefni (Ynys
+        Mon Citizens Advice)"},{"id":45,"name":"Merthyr Tydfil (Citizens Advice)"},{"id":55,"name":"Mold
+        (Flintshire Citizens Advice)"},{"id":46,"name":"Neath Library"},{"id":47,"name":"Newport
+        (Citizens Advice)"},{"id":48,"name":"Pontypridd (Rhondda Cynon Taff Citizens
+        Advice)"},{"id":56,"name":"Pwllheli (Gwynedd Citizens Advice)"},{"id":49,"name":"Swansea
+        Citizens Advice"},{"id":50,"name":"Wrexham (BAWSO)"}]'
+    http_version: 
+  recorded_at: Mon, 20 Aug 2018 09:36:51 GMT
+recorded_with: VCR 3.0.3

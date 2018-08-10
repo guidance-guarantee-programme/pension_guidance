@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3010/api/v1/locations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson.local; benlovell; 33486) ruby/2.5.1 (57; x86_64-darwin17)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"82cba884bbb788a1e68fc6265efb9db9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 95075c11-e832-4baf-9e35-e689d0884e27
+      X-Runtime:
+      - '0.033752'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '[{"id":34,"name":"Abergavenny (Monmouthshire Citizens Advice)"},{"id":35,"name":"Ammanford
+        Library"},{"id":36,"name":"Bargoed (Caerphilly Citizens Advice)"},{"id":37,"name":"Brynmawr
+        Citizens Advice"},{"id":51,"name":"Caernarfon (Citizens Advice)"},{"id":38,"name":"Caldicot
+        (Monmouthshire Citizens Advice)"},{"id":52,"name":"Canolfan Ni Corwen (Extended
+        Advice Service)"},{"id":39,"name":"Cardigan (Age Cymru)"},{"id":41,"name":"Carmarthen
+        (CAVs)"},{"id":40,"name":"Carmarthen Citizens Advice"},{"id":42,"name":"Chepstow
+        (Monmouthshire Citizens Advice)"},{"id":43,"name":"Cwmbran (Torfaen Citizens
+        Advice)"},{"id":44,"name":"Haverfordwest (Pembrokeshire Citizens Advice)"},{"id":53,"name":"Llandudno
+        (Cylch Conwy District Citizens Advice)"},{"id":54,"name":"Llangefni (Ynys
+        Mon Citizens Advice)"},{"id":45,"name":"Merthyr Tydfil (Citizens Advice)"},{"id":55,"name":"Mold
+        (Flintshire Citizens Advice)"},{"id":46,"name":"Neath Library"},{"id":47,"name":"Newport
+        (Citizens Advice)"},{"id":48,"name":"Pontypridd (Rhondda Cynon Taff Citizens
+        Advice)"},{"id":56,"name":"Pwllheli (Gwynedd Citizens Advice)"},{"id":49,"name":"Swansea
+        Citizens Advice"},{"id":50,"name":"Wrexham (BAWSO)"}]'
+    http_version: 
+  recorded_at: Wed, 15 Aug 2018 13:07:22 GMT
+- request:
+    method: post
+    uri: http://localhost:3010/api/v1/booking_requests
+    body:
+      encoding: UTF-8
+      string: '{"first_name":"Ben","last_name":"Smith","email":"ben@example.com","phone":"07715
+        930 455","memorable_word":"spoon","date_of_birth":"1960-01-01","defined_contribution_pot_confirmed":"yes","accessibility_needs":"1","additional_info":"Before
+        1PM.","where_you_heard":"1","gdpr_consent":"yes"}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson.local; benlovell; 33486) ruby/2.5.1 (57; x86_64-darwin17)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 1dbc1bbe-3d31-413a-abbc-0fc65f9e9e1a
+      X-Runtime:
+      - '0.040574'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 15 Aug 2018 13:07:23 GMT
+recorded_with: VCR 3.0.3

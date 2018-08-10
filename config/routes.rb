@@ -62,6 +62,14 @@ Rails.application.routes.draw do
         end
       end
 
+      resources :booking_requests,
+                only: %i(new create),
+                path: 'booking-requests',
+                locale: :cy,
+                module: :welsh_language do
+        get :completed, on: :collection
+      end
+
       resources :locations, only: [:index, :show] do
         collection do
           post 'search'
