@@ -110,7 +110,7 @@ end
 
 def and_i_fill_out_the_your_experience_form
   choose('Very satisfied')
-  fill_in('Please let use know anything that has made you particularly satisfied or dissatisfied with the Pension Wise service:', with: 'Everything was great')
+  fill_in('Please let us know anything that has made you particularly satisfied or dissatisfied with the Pension Wise service:', with: 'Everything was great')
   select('TV advert', from: 'Where did you first hear of Pension Wise?')
   click_button('Next')
 end
