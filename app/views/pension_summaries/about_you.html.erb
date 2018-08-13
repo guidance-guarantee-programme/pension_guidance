@@ -25,7 +25,7 @@
       <div class="multiple-choice">
         <%= f.radio_button :age, option, { class: "t-about-your-age-#{option.dasherize} form-control" } %>
         <%= f.label :age, value: option, class: 'block-label selection-button-radio' do %>
-          <%= t(".age.#{option}") %>
+          <%= t(".age.#{option}", default: option) %>
         <% end %>
       </div>
     <% end %>

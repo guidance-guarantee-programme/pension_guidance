@@ -69,14 +69,14 @@ class PensionSummary < ApplicationRecord
     other
   ).freeze
 
-  ABOUT_YOUR_AGE = %w(
-    under_fifty
-    fifty_to_fifty_four
-    fifty_five_to_fifty_nine
-    sixty_to_sixty_four
-    sixty_five_to_sixty_nine
-    seventy_or_over
-  ).freeze
+  ABOUT_YOUR_AGE = [
+    'Under 50',
+    '50-54',
+    '55-59',
+    '60-64',
+    '65-69',
+    '70 or over'
+  ].freeze
 
   ABOUT_YOUR_PENSION = %w(
     defined_contribution

@@ -13,12 +13,8 @@ en:
       title: Firstly – a little bit about you
       age:
         legend: Which of these age groups are you in?
-        under_fifty: "Under 50"
-        fifty_to_fifty_four: "50–54"
-        fifty_five_to_fifty_nine: "55–59"
-        sixty_to_sixty_four: "60–64"
-        sixty_five_to_sixty_nine: "65–69"
-        seventy_or_over: "70 or over"
+        "Under 50": "Under 50"
+        "70 or over": "70 or over"
       gender:
         legend: What gender do you identify with?
         male: Male

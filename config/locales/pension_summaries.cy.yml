@@ -13,12 +13,8 @@ cy:
       title: Yn gyntaf - ychydig amdanoch chi
       age:
         legend: Pa un o'r grwpiau oedran hyn ydych chi?
-        under_fifty: "Dan 50 oed"
-        fifty_to_fifty_four: "50–54"
-        fifty_five_to_fifty_nine: "55–59"
-        sixty_to_sixty_four: "60–64"
-        sixty_five_to_sixty_nine: "65–69"
-        seventy_or_over: "70 neu drosodd"
+        "Under 50": "Dan 50 oed"
+        "70 or over": "70 neu drosodd"
       gender:
         legend: Pa ryw ydych chi'n ei adnabod?
         male: Gwryw
