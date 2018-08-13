@@ -9,6 +9,40 @@ cy:
           Gallwch gael help gyda Phensiwn y Wladwriaeth gan
           <a href="https://www.gov.uk/cysylltwch-gwasanaeth-pensiwn" target="_blank">Y Gwasanaeth Pensiwn</a>.
 
+    about_you:
+      title: Yn gyntaf - ychydig amdanoch chi
+      age:
+        legend: Pa un o'r grwpiau oedran hyn ydych chi?
+        "Under 50": "Dan 50 oed"
+        "70 or over": "70 neu drosodd"
+      gender:
+        legend: Pa ryw ydych chi'n ei adnabod?
+        male: Gwryw
+        female: Benyw
+        unspecified: Mae'n well gennyf beidio â dweud
+        other: Arall
+      pension_types:
+        notice: "Dim ond Pensiwn Wise sy'n rhoi arweiniad ar yr hyn y gallwch ei wneud gyda phensiwn cyfraniad diffiniedig."
+        legend:
+          html: |
+            <p>
+              Pa un o'r mathau hyn o swyddi pensiwn sydd gennych chi: <br>
+              <span class="form-hint">Dewiswch bob math sydd gennych</span>
+            </p>
+        defined_contribution:
+          html: |
+            Cyfraniad diffiniedig <br>
+            <span class="form-hint">weithiau'n cael eu galw'n bensiynau prynu arian</span>
+        defined_benefit:
+          html: |
+            Buddion diffiniedig <br>
+            <span class="form-hint">a elwir yn aml yn bensiwn cyflog terfynol neu gyfartaledd gyrfa</span>
+        uncertain:
+          html: |
+            Dydw i ddim yn siŵr pa fath (au) o bensiwn sydd gennyf <br>
+            <a href="/cy/pension-type-tool" class="form-hint">ddim yn siŵr pa fath o bensiwn sydd gennych?</a>
+      next_button: Nesaf
+
     step_one:
       title: Y 6 opsiwn pensiwn - Creu eich crynodeb o bensiynau
       accessible_legend: Pa opsiynau mae gennych ddiddordeb ynddynt?
@@ -32,14 +66,81 @@ cy:
       pagination: Tudalen %{current_page} o %{total_pages}
       next_button: Nesaf
       book_a_free_appointment_link: Trefnu apwyntiad am ddim
-      sidebar:
-        heading: Eich Crynodeb Pensiwn
-        print_button: Argraffu
-        download_button: Lawr lwytho
-      feedback_sidebar:
-        heading: We need your feedback
-        body: This is a new way for us to deliver our guidance digitally, so we would like to know what you think of it.
-        link_text: Help us improve
+      privacy_notice:
+        html: |
+          <h2 id="hysbysiad-preifatrwydd">Hysbysiad preifatrwydd</h2>
+          <p>Gellir dod o hyd i wybodaeth ar sut mae Pension Wise yn casglu, prosesu a storio eich data, a gwybodaeth am eich hawliau mewn perthynas i’r data rydym yn ei gadw yn <a rel="external" href="https://www.pensionwise.gov.uk/cy/privacy">www.pensionwise.gov.uk/cy/privacy</a>.</p>
+
+    sidebar:
+      heading: Eich Crynodeb Pensiwn
+      print_button: Argraffu
+      download_button: Lawr lwytho
+      feedback:
+        heading: Mae angen eich adborth arnom
+        body: Mae hon yn ffordd newydd i ni gyflawni ein harweiniad yn ddigidol, felly hoffem wybod beth yw eich barn ohono.
+        link_text: Helpwch ni i wella
+
+    improving_our_service:
+      title: Gwella ein gwasanaeth
+      pagination: Tudalen %{current_page} o %{total_pages}
+      consent_given: Rwy'n rhoi fy nghaniatâd i rannu fy manylion cyswllt â Ipsos MORI at y diben hwn.
+      next_button: Nesaf
+      privacy_notice:
+        html: |
+          <h2 id="hysbysiad-preifatrwydd">Hysbysiad preifatrwydd</h2>
+          <p>Gellir dod o hyd i wybodaeth ar sut mae Pension Wise yn casglu, prosesu a storio eich data, a gwybodaeth am eich hawliau mewn perthynas i’r data rydym yn ei gadw yn <a rel="external" href="https://www.pensionwise.gov.uk/cy/privacy">www.pensionwise.gov.uk/cy/privacy</a>.</p>
+      consent:
+        accessible_legend: Ydych chi'n rhoi caniatâd i Ipsos MORI gysylltu â chi?
+      country:
+        legend: Pa wlad ydych chi'n byw ynddo?
+        england: Lloegr
+        scotland: Yr Alban
+        wales: Cymru
+        northern_ireland: Gogledd Iwerddon
+        channel_islands_or_isle_of_man: Ynysoedd y Sianel neu Ynys Manaw
+        other: Arall
+      errors:
+        heading: Mae'n ddrwg gennyf, digwyddodd un neu fwy o wallau
+        description: Os ydych chi wedi rhoi caniatâd i Ipsos MORI gysylltu â chi yna llenwch eich enw a chyfeiriad e-bost dilys. Os nad ydych am gysylltu â nhw, yna tynnwch eich enw a / neu gyfeiriad e-bost oddi ar y ffurflen.
+
+    your_experience:
+      title: Eich profiad o Pension Wise
+      pagination: Tudalen %{current_page} o %{total_pages}
+      next_button: Nesaf
+      satisfaction:
+        legend: Yn olaf, i helpu i roi rhywfaint o adborth ar unwaith ar y gwasanaeth, gan feddwl am eich profiad cyffredinol o Pension Wise, pa mor fodlon neu anfodlon ydych chi gyda'r gwasanaeth?
+        one: Anfodlon iawn
+        two: Yn eithaf anfodlon
+        three: Nid oeddent yn fodlon nac yn anfodlon
+        four: Gweddol fodlon
+        five: Bodlon iawn
+      comments: "Gadewch i ni wybod unrhyw beth sydd wedi eich gwneud yn arbennig o fodlon neu'n anfodlon gyda'r gwasanaeth Pension Wise:"
+      where_you_heard:
+        label: Ble wnaethoch chi glywed gyntaf am Pension Wise?
+        options:
+          - [ "Cyflogwr", 1 ]
+          - [ "Darparwr Pensiwn", 2 ]
+          - [ "Chwiliad Rhyngrwyd", 3 ]
+          - [ "hysbysebu ar-lein", 4 ]
+          - [ "Social media", 5 ]
+          - [ "Gwefan GOV.UK y Llywodraeth", 6 ]
+          - [ "Hysbyseb teledu", 7 ]
+          - [ "Hysbyseb radio", 8 ]
+          - [ "Hysbyseb papur newydd / cylchgrawn", 9 ]
+          - [ "Hysbysebu lleol - hysbysfyrddau, bysiau, arosfannau bws", 10 ]
+          - [ "Wedi'i grybwyll mewn rhaglen deledu / radio neu bapur newydd / cylchgrawn / erthygl ar-lein", 11 ]
+          - [ "Cynghorydd Ariannol", 12 ]
+          - [ "Money Advice Service (MAS)", 13 ]
+          - [ "The Pensions Advisory Service (TPAS)", 14 ]
+          - [ "Citizens Advice", 15 ]
+          - [ "Perthynas / Cyfaill / Cyfaill", 16 ]
+          - [ "Jobcentre Plus", 18 ]
+          - [ "Arall", 17 ]
+      many_thanks: Diolch yn fawr am roi adborth ar y gwasanaeth.
+
+    thank_you:
+      title: Diolch
+      pagination: Tudalen %{current_page} o %{total_pages}
 
     options:
       leave_your_pot_untouched:

@@ -121,6 +121,11 @@ en:
         where_you_heard: Where did you first hear of Pension Wise
       appointment_summary:
         appointment_type: Your age
+  activerecord:
+    attributes:
+      pension_summary:
+        name: Name
+        email: Email
     errors:
       models:
         annuity_registration_form:
@@ -209,6 +214,15 @@ en:
               invalid_email: enter a valid email address
             message:
               blank: enter a message
+        pension_summary:
+          attributes:
+            consent_given:
+              accepted: consent must be given if you have filled out your name and/or email address
+            name:
+              blank: enter a name
+            email:
+              blank: enter a valid email address
+              invalid: enter a valid email address
   home:
     show:
       title: Pension Wise - Get to know your options

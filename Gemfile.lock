@@ -109,6 +109,7 @@ GEM
       nokogiri (~> 1.5)
       railties (>= 4, < 5.2)
     cucumber-wire (0.0.1)
+    database_cleaner (1.7.0)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.3)
@@ -119,6 +120,11 @@ GEM
     erubi (1.7.1)
     excon (0.55.0)
     execjs (2.7.0)
+    factory_bot (4.10.0)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.10.0)
+      factory_bot (~> 4.10.0)
+      railties (>= 3.0.0)
     fakeredis (0.6.0)
       redis (~> 3.2)
     faraday (0.11.0)
@@ -214,6 +220,7 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
+    pg (1.0.0)
     phantomjs (2.1.1.0)
     phoner (1.0.1)
       activesupport
@@ -414,7 +421,9 @@ DEPENDENCIES
   canonical-rails!
   connection_pool!
   cucumber-rails!
+  database_cleaner!
   email_validation!
+  factory_bot_rails!
   fakeredis!
   faraday!
   faraday-conductivity!
@@ -435,6 +444,7 @@ DEPENDENCIES
   nokogiri!
   output-templates (~> 4.9)!
   pdf-inspector!
+  pg (>= 0.18)!
   phantomjs!
   phoner!
   poltergeist!

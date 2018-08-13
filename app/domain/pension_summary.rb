@@ -1,5 +1,16 @@
-class PensionSummary
-  include ActiveModel::Model
+# rubocop:disable Metrics/ClassLength
+class PensionSummary < ApplicationRecord
+  class StepViewing < ApplicationRecord
+    belongs_to :pension_summary
+
+    class << self
+      def default_scope
+        order(:created_at)
+      end
+    end
+  end
+
+  EMAIL_REGEX = /\A[^@\s]+@[^@\s]+\.[^@\s]+\z/
 
   # 'Steps' are all the topics involved in the summary,
   # (including one that isn't offered as an option, 'final')
@@ -20,6 +31,12 @@ class PensionSummary
     taking_my_pension_if_im_ill
     transferring_my_pension_to_another_provider
     final
+  ).freeze
+
+  PILOT_STEPS = %w(
+    improving_our_service
+    your_experience
+    thank_you
   ).freeze
 
   PRIMARY_OPTIONS = %w(
@@ -45,38 +62,117 @@ class PensionSummary
 
   OPTIONS = [*PRIMARY_OPTIONS, *SECONDARY_OPTIONS, *COMPULSORY_OPTIONS].freeze
 
-  attr_accessor *STEPS
+  ABOUT_YOUR_GENDER = %w(
+    male
+    female
+    unspecified
+    other
+  ).freeze
 
-  attr_accessor :current_step
+  ABOUT_YOUR_AGE = [
+    'Under 50',
+    '50-54',
+    '55-59',
+    '60-64',
+    '65-69',
+    '70 or over'
+  ].freeze
 
-  def initialize(*)
-    super
+  ABOUT_YOUR_PENSION = %w(
+    defined_contribution
+    defined_benefit
+    uncertain
+  ).freeze
 
-    # Compulsory options are 'preselected'
-    # options in the form. Forced selections.
-    COMPULSORY_OPTIONS.each do |step|
-      public_send("#{step}=", true)
-    end
+  COUNTRIES = %w(
+    england
+    scotland
+    wales
+    northern_ireland
+    channel_islands_or_isle_of_man
+    other
+  ).freeze
 
-    # Any steps that aren't offered as options
-    # are implicitly selected.
-    (STEPS - OPTIONS).each do |step|
-      public_send("#{step}=", true)
-    end
+  has_many :step_viewings
 
-    self.current_step ||= selected_steps.first
+  validates :gender, inclusion: { in: ABOUT_YOUR_GENDER, allow_blank: true }
+  validates :age, inclusion: { in: ABOUT_YOUR_AGE, allow_blank: true }
+
+  validate if: :consent_given? do
+    errors.add(:name, :blank) unless name?
+    errors.add(:email, :blank) unless email?
+    errors.add(:email, :invalid) unless email_valid?
   end
 
-  def attributes
-    STEPS.each_with_object({}) { |o, memo| memo[o] = public_send(o) }
+  validate if: :name? do
+    errors.add(:consent_given, :accepted) unless consent_given?
+    errors.add(:email, :blank) unless email?
+    errors.add(:email, :invalid) unless email_valid?
+  end
+
+  validate if: :email? do
+    errors.add(:consent_given, :accepted) unless consent_given?
+    errors.add(:name, :blank) unless name?
+    errors.add(:email, :invalid) unless email_valid?
+  end
+
+  def generate(attrs, now: Time.current)
+    update(attrs.merge(generated_at: now))
+  end
+
+  def generated?
+    generated_at?
+  end
+
+  def submit(attrs, now: Time.current)
+    update(attrs.merge(submitted_at: now))
+  end
+
+  def submitted?
+    submitted_at?
+  end
+
+  def steps
+    attributes.slice(*STEPS)
+  end
+
+  def pilot_steps
+    if pilot?
+      Hash[PILOT_STEPS.zip([true] * PILOT_STEPS.size)]
+    else
+      {}
+    end
+  end
+
+  def all_steps
+    attributes.merge(pilot_steps).slice(*STEPS, *PILOT_STEPS)
   end
 
   def selected_steps
-    attributes.delete_if { |_, v| [1, '1', true, 'true'].exclude?(v) }.keys
+    steps.each_with_object([]) { |(k, v), m| m << k if v }
+  end
+
+  def all_selected_steps
+    all_steps.each_with_object([]) { |(k, v), m| m << k if v }
+  end
+
+  def current_step
+    @current_step ||= selected_steps.first
+  end
+
+  def current_step=(step)
+    @current_step = \
+      if all_selected_steps.include?(step)
+        step
+      else
+        all_selected_steps.first
+      end
+
+    step_viewings.create!(step: @current_step)
   end
 
   def current_step_number
-    selected_steps.index(current_step) + 1
+    all_selected_steps.index(current_step) + 1
   end
 
   def first_step?
@@ -89,5 +185,9 @@ class PensionSummary
 
   def next_step
     selected_steps[current_step_number]
+  end
+
+  def email_valid?
+    email.to_s =~ EMAIL_REGEX
   end
 end

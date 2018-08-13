@@ -14,13 +14,11 @@
     "GITHUB_AUTH_TOKEN": ""
   },
   "addons": [
+    "heroku-postgresql",
     "heroku-redis",
     "logentries"
   ],
   "buildpacks": [
-    {
-      "url": "https://github.com/timshadel/heroku-buildpack-github-netrc.git"
-    },
     {
       "url": "heroku/nodejs"
     },
@@ -28,7 +26,7 @@
       "url": "heroku/ruby"
     },
     {
-      "url": "https://github.com/lm-tools/heroku-buildpack-princexml.git"
+      "url": "https://github.com/guidance-guarantee-programme/heroku-buildpack-princexml.git#version-bump"
     }
   ]
 }

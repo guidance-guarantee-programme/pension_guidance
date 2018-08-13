@@ -124,6 +124,11 @@ cy:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
         where_you_heard: Where did you first hear of Pension Wise
+  activerecord:
+    attributes:
+      pension_summary:
+        name: Enw
+        email: E-bost
     errors:
       models:
         annuity_registration_form:
@@ -212,6 +217,15 @@ cy:
               invalid_email: enter a valid email address
             message:
               blank: enter a message
+        pension_summary:
+          attributes:
+            consent_given:
+              accepted: rhaid rhoi caniatâd os ydych wedi llenwi'ch enw a / neu'ch cyfeiriad e-bost
+            name:
+              blank: rhowch enw
+            email:
+              blank: rhowch gyfeiriad e-bost dilys
+              invalid: rhowch gyfeiriad e-bost dilys
   home:
     show:
       title: Pension Wise - Cael gwybod eich opsiynau

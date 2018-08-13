@@ -32,11 +32,22 @@ Rails.application.routes.draw do
       scope 'explore-your-options', controller: 'pension_summaries', as: :explore_your_options do
         root action: 'start'
 
+        get 'about-you'
         get 'step-one'
         get 'step-two'
         get 'summary'
+        get 'improving-our-service'
+        get 'your-experience'
+        get 'thank-you'
         get 'download'
         get 'print'
+
+        post 'start', action: 'create'
+        post 'about-you', action: 'save_about_you'
+        post 'step-one', action: 'save_primary_options'
+        post 'step-two', action: 'save_secondary_options'
+        post 'improving-our-service', action: 'save_research_details'
+        post 'your-experience', action: 'save_feedback'
       end
 
       namespace :tesco, locale: :en do

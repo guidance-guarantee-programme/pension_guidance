@@ -7,56 +7,23 @@
 <% end %>
 
 <span class="build-your-own-progress">
-  <%= t('.pagination', current_page: @summary.current_step_number, total_pages: @summary.selected_steps.count) %>
+  <%= t('.pagination', current_page: @summary.current_step_number, total_pages: @summary.all_selected_steps.count) %>
 </span>
 
 <%= @guide.content %>
 
-<% unless @summary.last_step? %>
-  <%= form_for @summary, url: explore_your_options_summary_path, method: :get do |f| %>
-    <%= f.hidden_field :current_step, value: @summary.next_step %>
-
-    <% PensionSummary::OPTIONS.each do |step| %>
-      <%= f.hidden_field step %>
-    <% end %>
-
-    <%= f.submit t('.next_button'), class: :button %>
+<% if @summary.last_step? %>
+  <% if @summary.pilot? %>
+    <%= link_to t('.next_button'), explore_your_options_improving_our_service_path(id: @summary.id), class: 'button button-next' %>
+  <% else %>
+    <%= t('.privacy_notice.html') %>
   <% end %>
+<% else %>
+  <%= link_to t('.next_button'), explore_your_options_summary_path(id: @summary.id, step: @summary.next_step), class: 'button button-next' %>
 
   <p>
     <%= link_to t('.book_a_free_appointment_link'), guide_path('appointments'), class: 'summary' %>
   </p>
 <% end %>
 
-<% content_for :sidebar do %>
-  <aside>
-    <div class="sidebar-hr"></div>
-    <div class="sticky-sidebar__nav">
-      <span class="sticky-sidebar__heading">
-        <strong><%= t('.sidebar.heading') %></strong>
-      </span>
-      <ul class="sticky-sidebar__list nav">
-        <% @summary.selected_steps.each do |step| %>
-          <li>
-            <%= link_to skip_to_step_path(step), class: 'sticky-sidebar__link' do %>
-              <%= t("pension_summaries.options.#{step}.title") %>
-            <% end %>
-          </li>
-        <% end %>
-      </ul>
-      <%= link_to t('.sidebar.print_button'), print_summary_path, class: 'button' %>
-      <%= link_to t('.sidebar.download_button'), download_summary_path, class: 'button' %>
-    </div>
-  </aside>
-
-  <div>
-    <div class="sidebar-hr"></div>
-    <div class="sticky-sidebar__nav">
-      <span class="sticky-sidebar__heading">
-        <strong><%= t('.feedback_sidebar.heading') %></strong>
-      </span>
-      <p><%= t('.feedback_sidebar.body') %></p>
-      <%= link_to t('.feedback_sidebar.link_text'), 'http://research.pensionwise.gov.uk/s/online_exit_poll/', class: 'button', rel: 'external', target: '_blank' %>
-    </div>
-  </div>
-<% end %>
+<%= render 'sidebar' %>

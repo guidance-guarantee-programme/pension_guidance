@@ -1,5 +1,7 @@
 sudo: false
 language: ruby
+addons:
+  postgresql: "9.6"
 cache:
   bundler: true
   directories:
@@ -16,13 +18,13 @@ env:
 before_install:
 - gem update --system
 - gem install bundler
-- echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
 - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 before_script:
 - "[ -d .downloads ] || mkdir .downloads"
 - "(cd .downloads; [ -d prince-9.0r5-linux-amd64-static ] || curl -s https://www.princexml.com/download/prince-9.0r5-linux-amd64-static.tar.gz | tar xzf -)"
 - echo $PWD | ./.downloads/prince-9.0r5-linux-amd64-static/install.sh
 - npm install
+- bundle exec rake db:create db:migrate RAILS_ENV=test
 notifications:
   slack:
     secure: AAOOmT8WC2VhlOAyxthZdbJlnpShzgo6HAOH+jyivKdgS5Na+GuNtEY45g5GCjBv7rlf8q+ZyG4tOwgnQ3ylB9f85B1HcGol+qnhs/0T787XjRVTOgPj6k2iFLUlwOBHhPE4oxpjXz6vp+gaqL5BlU4nYqG185tOp/SK/V3SWW8=

@@ -1,0 +1,74 @@
+<% content_for(:page_title, t('service.title', page_title: t('.title'))) %>
+
+<span class="build-your-own-progress">
+  <%= t('.pagination', current_page: @summary.current_step_number, total_pages: @summary.all_selected_steps.count) %>
+</span>
+
+<%= @guide.content %>
+
+<%= form_for @summary, url: explore_your_options_improving_our_service_path, method: :post do |f| %>
+  <%= hidden_field_tag :id, @summary.id %>
+
+  <% if @summary.errors.any? %>
+    <div class="error-summary" role="alert" aria-labelledby="error-summary-heading" tabindex="-1">
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading">
+        <%= t('.errors.heading') %>
+      </h2>
+
+      <p>
+        <%= t('.errors.description') %>
+      </p>
+    </div>
+  <% end %>
+
+  <div class="form-group <%= 'form-group-error' if @summary.errors.include?(:consent_given) %>">
+    <div class="multiple-choice">
+      <%= f.check_box :consent_given, { class: "t-consent-given form-control" } %>
+      <%= f.label :consent_given, class: 'block-label selection-button-checkbox' do %>
+        <%= t(".consent_given") %>
+        <% if @summary.errors.include?(:consent_given) %>
+          <span class="error-message"><%= @summary.errors[:consent_given].first %></span>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @summary.errors.include?(:name) %>">
+    <%= f.label :name, class: "form-label #{'form-label-bold' if @summary.errors.include?(:name)}" do |builder| %>
+      <%= builder.translation %>
+      <% if @summary.errors.include?(:name) %>
+        <span class="error-message"><%= @summary.errors[:name].first %></span>
+      <% end %>
+    <% end %>
+    <%= f.text_field :name, class: "t-name form-control #{'form-control-error' if @summary.errors.include?(:name)}" %>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @summary.errors.include?(:email) %>">
+    <%= f.label :email, class: "form-label  #{'form-label-bold' if @summary.errors.include?(:email)}" do |builder| %>
+      <%= builder.translation %>
+      <% if @summary.errors.include?(:email) %>
+        <span class="error-message"><%= @summary.errors[:email].first %></span>
+      <% end %>
+    <% end %>
+    <%= f.text_field :email, class: "t-email form-control #{'form-control-error' if @summary.errors.include?(:email)}" %>
+  </div>
+
+  <fieldset class="form-group country-of-residence">
+    <legend class="form-label"><%= t('.country.legend') %></legend>
+
+    <% PensionSummary::COUNTRIES.each do |option| %>
+      <div class="multiple-choice">
+        <%= f.radio_button :country, option, { class: "t-country-#{option.dasherize} form-control" } %>
+        <%= f.label :country, value: option, class: 'block-label selection-button-radio' do %>
+          <%= t(".country.#{option}") %>
+        <% end %>
+      </div>
+    <% end %>
+  </fieldset>
+
+  <%= t('.privacy_notice.html') %>
+
+  <%= f.submit t('.next_button'), class: :button %>
+<% end %>
+
+<%= render 'sidebar' %>
