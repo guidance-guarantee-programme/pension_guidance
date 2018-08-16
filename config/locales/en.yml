@@ -102,42 +102,8 @@ en:
         strip_insignificant_zeros: true
 
   activemodel:
-    attributes:
-      tesco/booking:
-        dc_pot_confirmed: Defined contribution pension
-        accept_terms_and_conditions: Terms and conditions
-      telephone_appointment:
-        dc_pot_confirmed: Defined contribution pension
-        accept_terms_and_conditions: Terms and conditions
-        where_you_heard: Where did you first hear of Pension Wise
-      booking_request_form:
-        primary_slot: Slot 1
-        secondary_slot: Slot 2
-        tertiary_slot: Slot 3
-        appointment_type: Age range
-        dc_pot: Defined contribution pension
-        opt_in: Terms and conditions
-        telephone_number: Phone number
-        where_you_heard: Where did you first hear of Pension Wise
-      appointment_summary:
-        appointment_type: Your age
-  activerecord:
-    attributes:
-      pension_summary:
-        name: Name
-        email: Email
     errors:
       models:
-        annuity_registration_form:
-          attributes:
-            annuity_type:
-              inclusion: is not selected
-            appointment_type:
-              inclusion: is not selected
-        appointment_summary:
-          attributes:
-            appointment_type:
-              inclusion: select a range
         booking_request_form:
           attributes:
             first_name:
@@ -161,10 +127,6 @@ en:
               inclusion: select an option
             where_you_heard:
               inclusion: select an option
-        complaint:
-          attributes:
-            email_address:
-              invalid_email: enter a valid email address
         tesco/booking:
           attributes:
             first_name:
@@ -205,6 +167,47 @@ en:
               inclusion: please accept
             where_you_heard:
               inclusion: select an option
+
+    attributes:
+      tesco/booking:
+        dc_pot_confirmed: Defined contribution pension
+        accept_terms_and_conditions: Terms and conditions
+      telephone_appointment:
+        dc_pot_confirmed: Defined contribution pension
+        accept_terms_and_conditions: Terms and conditions
+        where_you_heard: Where did you first hear of Pension Wise
+      booking_request_form:
+        primary_slot: Slot 1
+        secondary_slot: Slot 2
+        tertiary_slot: Slot 3
+        appointment_type: Age range
+        dc_pot: Defined contribution pension
+        opt_in: Terms and conditions
+        telephone_number: Phone number
+        where_you_heard: Where did you first hear of Pension Wise
+      appointment_summary:
+        appointment_type: Your age
+  activerecord:
+    attributes:
+      pension_summary:
+        name: Name
+        email: Email
+    errors:
+      models:
+        annuity_registration_form:
+          attributes:
+            annuity_type:
+              inclusion: is not selected
+            appointment_type:
+              inclusion: is not selected
+        appointment_summary:
+          attributes:
+            appointment_type:
+              inclusion: select a range
+        complaint:
+          attributes:
+            email_address:
+              invalid_email: enter a valid email address
         feedback_form:
           attributes:
             name:
