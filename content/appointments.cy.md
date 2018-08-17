@@ -14,7 +14,7 @@ Bydd eich apwyntiad yn parhau am 45 i 60 munud a byddwn yn:
 
 - egluro eich opsiynau pensiwn
 - egluro sut mae pob opsiwn yn cael ei drethu
-- grhoi’r camau nesaf i chi eu cymryd
+- rhoi’r camau nesaf i chi eu cymryd
 
 Gallwch siarad â ni dros y ffôn neu wyneb yn wyneb.
 
