@@ -24,6 +24,8 @@ Dylech fod yn **50 oed neu drosodd** a bod gyda phensiwn **cyfraniadau wedi'u di
 
 [Ddim yn siwr pa fath o bensiwn sydd gennych chi?](/cy/pension-type-tool)
 
+[Archebwch apwyntiad am ddim](/cy/booking-requests/new){: .button #welsh-booking-button style="font-size: 0.9em;"}
+
 ## Sut i drefnu apwyntiad
 
 Ffoniwch **0800 138 3944**

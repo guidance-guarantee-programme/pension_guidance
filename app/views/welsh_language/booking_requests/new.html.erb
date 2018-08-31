@@ -1,0 +1,269 @@
+<% content_for(:page_title, t('service.title', page_title: 'Gofynnwch am apwyntiad Pension Wise am ddim')) %>
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <h1>Gofynnwch am apwyntiad Pension Wise am ddim</h1>
+
+    <% if @booking_request.errors.any? %>
+      <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          Methu â chyflwyno’r ffurflen
+        </h2>
+        <p>Gwiriwch y canlynol:</p>
+
+        <ul class="error-summary-list">
+          <% @booking_request.errors.each do |key, message| %>
+            <li><%= link_to "#{WelshLanguage::BookingRequest.human_attribute_name key} – #{message}", "#booking_request_#{key}" %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <%= form_for @booking_request, url: booking_requests_path, as: :booking_request do |f| %>
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:booking_type) %>" data-radio-toggle>
+        <fieldset>
+          <legend>
+            <h1 class="heading-medium">Apwyntiad Wyneb yn Wyneb neu Dros y Ffôn</h1>
+          </legend>
+
+          <% if @booking_request.errors.include?(:booking_type) %>
+            <span class="error-message"><%= @booking_request.errors[:booking_type].to_sentence.capitalize %></span>
+          <% end %>
+
+          <div class="multiple-choice" data-target="face-to-face-appointment">
+            <%= f.radio_button :booking_type, 'face-to-face', class: 't-face-to-face-booking' %>
+            <%= f.label :booking_type, value: 'face-to-face' do %>
+              Wyneb yn Wyneb
+            <% end %>
+          </div>
+          <div class="panel panel-border-narrow js-hidden" id="face-to-face-appointment">
+            <%= f.label :location_id, 'Lleoliad apwyntiad sy’n well gennych', class: 'form-label-bold' %>
+            <% if @booking_request.errors.include?(:location_id) %>
+              <span class="error-message"><%= @booking_request.errors[:location_id].to_sentence.capitalize %></span>
+            <% end %>
+            <%= f.select :location_id,
+                  options_from_collection_for_select(@welsh_locations, 'id', 'name', @booking_request.location_id),
+                  { include_blank: true },
+                  { class: "t-location form-control #{'form-control-error' if @booking_request.errors.include?(:location_id)}" }
+            %>
+          </div>
+
+          <div class="multiple-choice">
+            <%= f.radio_button :booking_type, 'phone', class: 't-phone-booking' %>
+            <%= f.label :booking_type, value: 'phone' do %>Ffôn<% end %>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:first_name) %>">
+        <%= f.label :first_name, 'Enw cyntaf', class: 'form-label-bold' %>
+        <% if @booking_request.errors.include?(:first_name) %>
+          <span class="error-message"><%= @booking_request.errors[:first_name].to_sentence.capitalize %></span>
+        <% end %>
+        <%= f.text_field :first_name, class: "t-first-name form-control #{'form-control-error' if @booking_request.errors.include?(:first_name)}" %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:last_name) %>">
+        <%= f.label :last_name, 'Cyfenw', class: 'form-label-bold' %>
+        <% if @booking_request.errors.include?(:last_name) %>
+          <span class="error-message"><%= @booking_request.errors[:last_name].to_sentence.capitalize %></span>
+        <% end %>
+        <%= f.text_field :last_name, class: "t-last-name form-control #{'form-control-error' if @booking_request.errors.include?(:last_name)}" %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:email) %>">
+        <%= f.label :email, 'E-bost', class: 'form-label-bold' %>
+
+        <% if @booking_request.errors.include?(:email) %>
+          <span class="error-message"><%= @booking_request.errors[:email].to_sentence.capitalize %></span>
+        <% end %>
+
+        <div class="email-outer">
+          <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @booking_request.errors.include?(:email)}", data: email_validation_data_attributes %>
+        </div>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:phone) %>">
+        <%= f.label :phone, 'Rhif ffôn', class: 'form-label-bold' %>
+
+        <% if @booking_request.errors.include?(:phone) %>
+          <span class="error-message"><%= @booking_request.errors[:phone].to_sentence.capitalize %></span>
+        <% end %>
+
+        <%= f.text_field :phone, class: "t-phone form-control #{'form-control-error' if @booking_request.errors.include?(:phone)}" %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:memorable_word) %>">
+        <%= f.label :memorable_word, class: 'form-label-bold' do %>
+          Eich gair cofiadwy
+          <span class="form-hint">Bydd ein harbenigwr pensiwn yn ailddweud  y gair hwn pan fyddant yn ffonio felly rydych yn  gwybod mai nhw ydynt.</span>
+        <% end %>
+
+        <% if @booking_request.errors.include?(:memorable_word) %>
+          <span class="error-message"><%= @booking_request.errors[:memorable_word].to_sentence.capitalize %></span>
+        <% end %>
+
+        <%= f.text_field :memorable_word, class: "t-memorable-word form-control #{'form-control-error' if @booking_request.errors.include?(:memorable_word)}" %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:date_of_birth) %>">
+        <fieldset>
+          <legend>
+            <span class="form-label-bold">Dyddiad Geni</span>
+            <span class="form-hint" id="dob-hint">Rhaid i chi fod yn 50 oed neu’n hŷn i archebu apwyntiad, ee 31 3 1950</span>
+          </legend>
+          <div class="form-date" id="booking_request_date_of_birth" tabindex="-1">
+            <div class="form-group form-group-day">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_3i">Diwrnod</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(3i)',
+                  id: "#{f.object_name}_date_of_birth_3i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:day),
+                  placeholder: 'DD',
+                  class: "f-dob__input form-control js-dob-day t-date-of-birth-day #{'form-control-error' if @booking_request.errors.include?(:date_of_birth)}",
+                  pattern: '[0-9]*',
+                  min: 1,
+                  max: 31,
+                  'aria-describedby': 'dob-hint'
+                )
+              %>
+            </div>
+            <div class="form-group form-group-month">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_2i">Mis</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(2i)',
+                  id: "#{f.object_name}_date_of_birth_2i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:month),
+                  placeholder: 'MM',
+                  class: "form-dob__input form-control js-dob-month t-date-of-birth-month #{'form-control-error' if @booking_request.errors.include?(:date_of_birth)}",
+                  pattern: '[0-9]*',
+                  min: 1,
+                  max: 12
+                )
+              %>
+            </div>
+            <div class="form-group form-group-year">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_1i">Blwyddyn</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(1i)',
+                  id: "#{f.object_name}_date_of_birth_1i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:year),
+                  placeholder: 'YYYY',
+                  class: "form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year #{'form-control-error' if @booking_request.errors.include?(:date_of_birth)}",
+                  pattern: '[0-9]*',
+                  min: 120.years.ago.year,
+                  max: Date.today.year
+                )
+              %>
+            </div>
+          </div>
+          <% if @booking_request.errors.include?(:date_of_birth) %>
+            <span class="error-message"><%= @booking_request.errors[:date_of_birth].to_sentence.capitalize %></span>
+          <% end %>
+        </fieldset>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:defined_contribution_pot_confirmed) %>" id="booking_request_dc_pot" tabindex="-1">
+        <fieldset class="inline">
+          <legend class="bold">Mae gennyf bot pensiwn cyfraniad diffiniedig (nid pensiwn cyflog terfynol neu gyfartaledd gyrfaol)</legend>
+          <span class="form-hint">Os oes gennych y ddau, dewiswch ‘Oes’</span>
+
+          <% if @booking_request.errors.include?(:defined_contribution_pot_confirmed) %>
+            <span class="error-message"><%= @booking_request.errors[:defined_contribution_pot_confirmed].to_sentence.capitalize %></span>
+          <% end %>
+
+          <div class="multiple-choice">
+            <%= f.radio_button :defined_contribution_pot_confirmed, 'yes', class: 't-dc-pot-1' %>
+            <%= f.label :defined_contribution_pot_confirmed, value: 'yes' do %>
+              Oes
+            <% end %>
+          </div>
+
+          <div class="multiple-choice">
+            <%= f.radio_button :defined_contribution_pot_confirmed, 'no', class: 't-dc-pot-2' %>
+            <%= f.label :defined_contribution_pot_confirmed, value: 'no' do %>
+              Na
+            <% end %>
+          </div>
+
+          <div class="multiple-choice">
+            <%= f.radio_button :defined_contribution_pot_confirmed, 'not-sure', class: 't-dc-pot-3' %>
+            <%= f.label :defined_contribution_pot_confirmed, value: 'not-sure' do %>
+              Ansicr
+            <% end %>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:accessibility_needs) %>">
+        <div class="multiple-choice">
+          <%= f.check_box :accessibility_needs, class: 't-accessibility-needs' %>
+          <%= f.label :accessibility_needs do %>
+            <% if @booking_request.errors.include?(:accessibility_needs) %>
+              <span class="error-message"><%= @booking_request.errors[:accessibility_needs].to_sentence.capitalize %></span>
+            <% end %>
+            Mae gennyf  anghenion hygyrchedd, ee mynediad i gadair olwyn
+            <span class="form-hint" id="accessibility-hint">Byddwn yn cysylltu â chi am fanylion eich anghenion penodol</span>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :additional_info, class: 'form-label-bold' do %>
+          Gwybodaeth ychwanegol
+          <span class="form-hint">e.e. ar adegau nad ydych ar gael</span>
+        <% end %>
+        <%= f.text_area :additional_info, class: 'form-control form-control-3-4 js-character-limit-input t-additional-info', rows: 5, maxlength: 160 %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:where_you_heard) %>">
+        <%= f.label :where_you_heard, 'Ble wnaethoch glywed gyntaf am Pension Wise?', class: 'form-label-bold' %>
+        <% if @booking_request.errors.include?(:where_you_heard) %>
+          <span class="error-message"><%= @booking_request.errors[:where_you_heard].to_sentence.capitalize %></span>
+        <% end %>
+        <%= f.select :where_you_heard,
+              options_for_select(t('pension_summaries.your_experience.where_you_heard.options'), @booking_request.where_you_heard),
+              { include_blank: true },
+              { class: "t-where-you-heard form-control #{'form-control-error' if @booking_request.errors.include?(:where_you_heard)}" }
+        %>
+      </div>
+
+      <div class="form-group t-gdpr-consent" id="telephone_appointment_gdpr_consent" tabindex="-1">
+        <fieldset class="inline">
+          <legend>Caniatâd ymchwil i gwsmeriaid</legend>
+          <span class="form-hint">
+            Mae eich adborth yn ein helpu i wella’r gwasanaeth. A yw’n iawn os ydym yn rhannu eich 
+            manylion cyswllt gyda’n partner ymchwil dibynadwy? Efallai y bydd Ipsos MORI yn cysylltu 
+            â chi i ofyn a hoffech roi adborth a gallwch benderfynu, os ydych chi am gymryd rhan.
+          </span>
+
+          <div class="multiple-choice">
+            <%= f.radio_button :gdpr_consent, 'yes', class: 't-gdpr-consent-yes' %>
+            <%= f.label :gdpr_consent, value: 'yes' do %>Hoffwn<% end %>
+          </div>
+
+          <div class="multiple-choice">
+            <%= f.radio_button :gdpr_consent, 'no', class: 't-gdpr-consent-no' %>
+            <%= f.label :gdpr_consent, value: 'no' do %>Na<% end %>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit 'Anfon cais archebu', class: 'button t-submit', data: { disable_with: 'Arhoswch os gwelwch yn dda...' } %>
+      </div>
+
+      <div role="note" aria-label="Information" class="application-notice info-notice">
+        <p>Mae Pension Wise yn casglu ac yn storio data personol at ddibenion cyflwyno Canllaw Pensiynau.</p>
+        <p>Bydd eich data yn cael ei rannu gyda Chyngor ar Bopeth yn unig os oes angen rhoi arweiniad Pensiwn Wise i chi.</p>
+        <p>Gellir dod o hyd i fanylion llawn ein polisi preifatrwydd, gan gynnwys gwybodaeth am eich hawliau mewn perthynas â’r data a gynhaliwyd <%= link_to 'gennym yma', guide_path('privacy') %>.</p>
+      </div>
+
+    <% end %>
+  </div>
+</div>
