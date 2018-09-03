@@ -18,7 +18,7 @@ You should have had a phone or face-to-face appointment with a Pension Wise guid
 Some information in the summary may not apply if during your appointment we found that you:
 
 - have a Section 32 arrangement – you may not be able to transfer your pension
-- are already taking an adjustable income (flexi-access drawdown)
+- are already taking an adjustable income (receiving income from a drawdown arrangement)
 - have inherited your pension pot – the amount of tax you pay will be different
 
 In these cases all the options may not be available. You’ll need to contact your provider for more details.
