@@ -128,7 +128,7 @@ class PensionSummariesController < ApplicationController
   def about_you_params
     params
       .fetch(:pension_summary, {})
-      .permit(:age, :gender, *PensionSummary::ABOUT_YOUR_PENSION)
+      .permit(:age, :gender)
   end
 
   def primary_params

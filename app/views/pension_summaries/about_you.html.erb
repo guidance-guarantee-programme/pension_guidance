@@ -31,24 +31,5 @@
     <% end %>
   </fieldset>
 
-  <fieldset class="form-group about-your-pension">
-    <legend class="form-label">
-      <%= t('.pension_types.legend.html') %>
-    </legend>
-
-    <% PensionSummary::ABOUT_YOUR_PENSION.each do |option| %>
-      <div class="multiple-choice">
-        <%= f.check_box option, { class: "t-about-your-pension-#{option.dasherize} form-control" }, option %>
-        <%= f.label option, class: 'block-label selection-button-checkbox' do %>
-          <%= t(".pension_types.#{option}.html") %>
-        <% end %>
-      </div>
-    <% end %>
-  </fieldset>
-
-  <div role="note" aria-label="Information" class="application-notice info-notice">
-    <p><%= t('.pension_types.notice') %></p>
-  </div>
-
   <%= f.submit t('.next_button'), class: :button %>
 <% end %>

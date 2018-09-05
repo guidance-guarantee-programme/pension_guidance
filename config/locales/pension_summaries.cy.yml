@@ -21,26 +21,6 @@ cy:
         female: Benyw
         unspecified: Mae'n well gennyf beidio â dweud
         other: Arall
-      pension_types:
-        notice: "Dim ond Pensiwn Wise sy'n rhoi arweiniad ar yr hyn y gallwch ei wneud gyda phensiwn cyfraniad diffiniedig."
-        legend:
-          html: |
-            <p>
-              Pa un o'r mathau hyn o swyddi pensiwn sydd gennych chi: <br>
-              <span class="form-hint">Dewiswch bob math sydd gennych</span>
-            </p>
-        defined_contribution:
-          html: |
-            Cyfraniad diffiniedig <br>
-            <span class="form-hint">weithiau'n cael eu galw'n bensiynau prynu arian</span>
-        defined_benefit:
-          html: |
-            Buddion diffiniedig <br>
-            <span class="form-hint">a elwir yn aml yn bensiwn cyflog terfynol neu gyfartaledd gyrfa</span>
-        uncertain:
-          html: |
-            Dydw i ddim yn siŵr pa fath (au) o bensiwn sydd gennyf <br>
-            <a href="/cy/pension-type-tool" class="form-hint">ddim yn siŵr pa fath o bensiwn sydd gennych?</a>
       next_button: Nesaf
 
     step_one:

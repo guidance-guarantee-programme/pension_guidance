@@ -50,7 +50,6 @@ end
 def and_i_answer_the_questions_about_me
   choose('Male')
   choose('Under 50')
-  check('Defined contribution')
   click_button('Next')
 end
 

@@ -78,12 +78,6 @@ class PensionSummary < ApplicationRecord
     '70 or over'
   ].freeze
 
-  ABOUT_YOUR_PENSION = %w(
-    defined_contribution
-    defined_benefit
-    uncertain
-  ).freeze
-
   COUNTRIES = %w(
     england
     scotland

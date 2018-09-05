@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180802121813) do
+ActiveRecord::Schema.define(version: 20180905002400) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,9 +36,6 @@ ActiveRecord::Schema.define(version: 20180802121813) do
     t.boolean "pilot", default: false, null: false
     t.string "gender", limit: 30
     t.string "age", limit: 30
-    t.boolean "defined_contribution"
-    t.boolean "defined_benefit"
-    t.boolean "uncertain"
     t.boolean "consent_given", default: false, null: false
     t.string "name", limit: 100
     t.string "email", limit: 100

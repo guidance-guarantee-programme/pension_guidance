@@ -21,26 +21,6 @@ en:
         female: Female
         unspecified: Prefer not to say
         other: Other
-      pension_types:
-        notice: "Pension Wise only provides guidance on what you can do with a defined contribution pension."
-        legend:
-          html: |
-            <p>
-              Which of these types of pension posts have you got: <br>
-              <span class="form-hint">Please select each type you have</span>
-            </p>
-        defined_contribution:
-          html: |
-            Defined contribution <br>
-            <span class="form-hint">sometimes called money purchase pensions</span>
-        defined_benefit:
-          html: |
-            Defined benefit <br>
-            <span class="form-hint">often called final salary pension or career average</span>
-        uncertain:
-          html: |
-            I’m not sure what type(s) of pension I have <br>
-            <a href="/en/pension-type-tool" class="form-hint">not sure what pension type you have?</a>
       next_button: Next
 
     step_one:
