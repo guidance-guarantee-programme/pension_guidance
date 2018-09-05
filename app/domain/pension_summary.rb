@@ -34,7 +34,6 @@ class PensionSummary < ApplicationRecord
   ).freeze
 
   PILOT_STEPS = %w(
-    improving_our_service
     your_experience
     thank_you
   ).freeze

@@ -30,6 +30,8 @@ class PensionSummariesController < ApplicationController
   end
 
   def save_about_you
+    @guide = get_guide('about-you')
+
     if @summary.update(about_you_params)
       redirect_to explore_your_options_step_one_url(id: @summary.id)
     else
@@ -63,21 +65,6 @@ class PensionSummariesController < ApplicationController
 
   def summary
     @guide = get_guide(@summary.current_step)
-  end
-
-  def improving_our_service
-    @summary.current_step = 'improving_our_service'
-    @guide = get_guide('improving-our-service')
-  end
-
-  def save_research_details
-    @guide = get_guide('improving-our-service')
-
-    if @summary.update(research_params)
-      redirect_to explore_your_options_your_experience_url(id: @summary.id)
-    else
-      render :improving_our_service
-    end
   end
 
   def your_experience
@@ -128,7 +115,7 @@ class PensionSummariesController < ApplicationController
   def about_you_params
     params
       .fetch(:pension_summary, {})
-      .permit(:age, :gender)
+      .permit(:consent_given, :name, :email, :age, :gender, :country)
   end
 
   def primary_params
@@ -141,12 +128,6 @@ class PensionSummariesController < ApplicationController
     params
       .fetch(:pension_summary, {})
       .permit(*PensionSummary::SECONDARY_OPTIONS)
-  end
-
-  def research_params
-    params
-      .fetch(:pension_summary, {})
-      .permit(:consent_given, :name, :email, :country)
   end
 
   def feedback_params

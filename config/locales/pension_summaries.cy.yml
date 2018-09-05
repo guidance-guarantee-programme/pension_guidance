@@ -11,6 +11,10 @@ cy:
 
     about_you:
       title: Yn gyntaf - ychydig amdanoch chi
+      errors:
+        heading: Mae'n ddrwg gennyf, digwyddodd un neu fwy o wallau
+        description: Os ydych chi wedi rhoi caniatâd i Ipsos MORI gysylltu â chi yna llenwch eich enw a chyfeiriad e-bost dilys. Os nad ydych am gysylltu â nhw, yna tynnwch eich enw a / neu gyfeiriad e-bost oddi ar y ffurflen.
+      consent_given: Rwy'n rhoi fy nghaniatâd i rannu fy manylion cyswllt â Ipsos MORI at y diben hwn.
       age:
         legend: Pa un o'r grwpiau oedran hyn ydych chi?
         "Under 50": "Dan 50 oed"
@@ -21,6 +25,21 @@ cy:
         female: Benyw
         unspecified: Mae'n well gennyf beidio â dweud
         other: Arall
+      country:
+        legend: Pa wlad ydych chi'n byw ynddo?
+        england: Lloegr
+        scotland: Yr Alban
+        wales: Cymru
+        northern_ireland: Gogledd Iwerddon
+        channel_islands_or_isle_of_man: Ynysoedd y Sianel neu Ynys Manaw
+        other: Arall
+      ipsos_statement:
+        html: |
+          <p>We carry out customer research via our independent research partner (Ipsos MORI). We ask a sample of customers about their experience of using Pension Wise. Your details will not be used for any other purpose, you will not be contacted by Ipsos MORI for any other reason and if you are contacted you can decide whether to take part.</p>
+      privacy_notice:
+        html: |
+          <h2 id="hysbysiad-preifatrwydd">Hysbysiad preifatrwydd</h2>
+          <p>Gellir dod o hyd i wybodaeth ar sut mae Pension Wise yn casglu, prosesu a storio eich data, a gwybodaeth am eich hawliau mewn perthynas i’r data rydym yn ei gadw yn <a rel="external" href="https://www.pensionwise.gov.uk/cy/privacy">www.pensionwise.gov.uk/cy/privacy</a>.</p>
       next_button: Nesaf
 
     step_one:
@@ -59,29 +78,6 @@ cy:
         heading: Mae angen eich adborth arnom
         body: Mae hon yn ffordd newydd i ni gyflawni ein harweiniad yn ddigidol, felly hoffem wybod beth yw eich barn ohono.
         link_text: Helpwch ni i wella
-
-    improving_our_service:
-      title: Gwella ein gwasanaeth
-      pagination: Tudalen %{current_page} o %{total_pages}
-      consent_given: Rwy'n rhoi fy nghaniatâd i rannu fy manylion cyswllt â Ipsos MORI at y diben hwn.
-      next_button: Nesaf
-      privacy_notice:
-        html: |
-          <h2 id="hysbysiad-preifatrwydd">Hysbysiad preifatrwydd</h2>
-          <p>Gellir dod o hyd i wybodaeth ar sut mae Pension Wise yn casglu, prosesu a storio eich data, a gwybodaeth am eich hawliau mewn perthynas i’r data rydym yn ei gadw yn <a rel="external" href="https://www.pensionwise.gov.uk/cy/privacy">www.pensionwise.gov.uk/cy/privacy</a>.</p>
-      consent:
-        accessible_legend: Ydych chi'n rhoi caniatâd i Ipsos MORI gysylltu â chi?
-      country:
-        legend: Pa wlad ydych chi'n byw ynddo?
-        england: Lloegr
-        scotland: Yr Alban
-        wales: Cymru
-        northern_ireland: Gogledd Iwerddon
-        channel_islands_or_isle_of_man: Ynysoedd y Sianel neu Ynys Manaw
-        other: Arall
-      errors:
-        heading: Mae'n ddrwg gennyf, digwyddodd un neu fwy o wallau
-        description: Os ydych chi wedi rhoi caniatâd i Ipsos MORI gysylltu â chi yna llenwch eich enw a chyfeiriad e-bost dilys. Os nad ydych am gysylltu â nhw, yna tynnwch eich enw a / neu gyfeiriad e-bost oddi ar y ffurflen.
 
     your_experience:
       title: Eich profiad o Pension Wise
