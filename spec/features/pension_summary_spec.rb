@@ -21,7 +21,6 @@ RSpec.feature 'The pension summary', type: :feature do
     and_i_select_all_pension_options
     and_i_select_all_extra_options
     and_i_view_a_summary_with_all_pages
-    and_i_fill_out_the_improving_the_service_form
     and_i_fill_out_the_your_experience_form
     then_i_view_a_thank_you_page
   end
@@ -48,9 +47,12 @@ def and_i_begin_the_questionnaire
 end
 
 def and_i_answer_the_questions_about_me
+  check('I give my consent for my contact details to be shared with Ipsos MORI for this purpose')
+  fill_in('Name', with: 'Jim Bob')
+  fill_in('Email', with: 'jim@bob.com')
   choose('Male')
   choose('Under 50')
-  check('Defined contribution')
+  choose('England')
   click_button('Next')
 end
 
@@ -98,14 +100,6 @@ end
 def and_i_view_a_summary_with_all_pages
   then_i_view_a_summary_with_all_pages
   click_link('Next')
-end
-
-def and_i_fill_out_the_improving_the_service_form
-  check('I give my consent for my contact details to be shared with Ipsos MORI for this purpose')
-  fill_in('Name', with: 'Jim Bob')
-  fill_in('Email', with: 'jim@bob.com')
-  choose('England')
-  click_button('Next')
 end
 
 def and_i_fill_out_the_your_experience_form

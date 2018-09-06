@@ -11,6 +11,10 @@ en:
 
     about_you:
       title: Firstly – a little bit about you
+      errors:
+        heading: Sorry, one or more errors occurred
+        description: If you have given consent to be contacted by Ipsos MORI then please fill out your name and a valid email address. If you do not want to be contacted then please remove your name and/or email address from the form.
+      consent_given: I give my consent for my contact details to be shared with Ipsos MORI for this purpose.
       age:
         legend: Which of these age groups are you in?
         "Under 50": "Under 50"
@@ -21,26 +25,21 @@ en:
         female: Female
         unspecified: Prefer not to say
         other: Other
-      pension_types:
-        notice: "Pension Wise only provides guidance on what you can do with a defined contribution pension."
-        legend:
-          html: |
-            <p>
-              Which of these types of pension posts have you got: <br>
-              <span class="form-hint">Please select each type you have</span>
-            </p>
-        defined_contribution:
-          html: |
-            Defined contribution <br>
-            <span class="form-hint">sometimes called money purchase pensions</span>
-        defined_benefit:
-          html: |
-            Defined benefit <br>
-            <span class="form-hint">often called final salary pension or career average</span>
-        uncertain:
-          html: |
-            I’m not sure what type(s) of pension I have <br>
-            <a href="/en/pension-type-tool" class="form-hint">not sure what pension type you have?</a>
+      country:
+        legend: Which country do you live in?
+        england: England
+        scotland: Scotland
+        wales: Wales
+        northern_ireland: Northern Ireland
+        channel_islands_or_isle_of_man: Channel Islands or Isle of Man
+        other: Other
+      ipsos_statement:
+        html: |
+          <p>We carry out customer research via our independent research partner (Ipsos MORI). We ask a sample of customers about their experience of using Pension Wise. Your details will not be used for any other purpose, you will not be contacted by Ipsos MORI for any other reason and if you are contacted you can decide whether to take part.</p>
+      privacy_notice:
+        html: |
+          <h2 id="privacy-notice">Privacy notice</h2>
+          <p>Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at <a rel="external" href="https://www.pensionwise.gov.uk/en/privacy">www.pensionwise.gov.uk/en/privacy</a>.</p>
       next_button: Next
 
     step_one:
@@ -79,29 +78,6 @@ en:
         heading: We need your feedback
         body: This is a new way for us to deliver our guidance digitally, so we would like to know what you think of it.
         link_text: Help us improve
-
-    improving_our_service:
-      title: Improving our service
-      pagination: Page %{current_page} of %{total_pages}
-      consent_given: I give my consent for my contact details to be shared with Ipsos MORI for this purpose.
-      next_button: Next
-      privacy_notice:
-        html: |
-          <h2 id="privacy-notice">Privacy notice</h2>
-          <p>Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at <a rel="external" href="https://www.pensionwise.gov.uk/en/privacy">www.pensionwise.gov.uk/en/privacy</a>.</p>
-      consent:
-        accessible_legend: Do you give consent for Ipsos MORI to contact you?
-      country:
-        legend: Which country do you live in?
-        england: England
-        scotland: Scotland
-        wales: Wales
-        northern_ireland: Northern Ireland
-        channel_islands_or_isle_of_man: Channel Islands or Isle of Man
-        other: Other
-      errors:
-        heading: Sorry, one or more errors occurred
-        description: If you have given consent to be contacted by Ipsos MORI then please fill out your name and a valid email address. If you do not want to be contacted then please remove your name and/or email address from the form.
 
     your_experience:
       title: Your experience of Pension Wise

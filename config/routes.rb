@@ -36,7 +36,6 @@ Rails.application.routes.draw do
         get 'step-one'
         get 'step-two'
         get 'summary'
-        get 'improving-our-service'
         get 'your-experience'
         get 'thank-you'
         get 'download'
@@ -46,7 +45,6 @@ Rails.application.routes.draw do
         post 'about-you', action: 'save_about_you'
         post 'step-one', action: 'save_primary_options'
         post 'step-two', action: 'save_secondary_options'
-        post 'improving-our-service', action: 'save_research_details'
         post 'your-experience', action: 'save_feedback'
       end
 

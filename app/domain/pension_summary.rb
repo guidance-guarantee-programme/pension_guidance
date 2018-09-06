@@ -34,7 +34,6 @@ class PensionSummary < ApplicationRecord
   ).freeze
 
   PILOT_STEPS = %w(
-    improving_our_service
     your_experience
     thank_you
   ).freeze
@@ -77,12 +76,6 @@ class PensionSummary < ApplicationRecord
     '65-69',
     '70 or over'
   ].freeze
-
-  ABOUT_YOUR_PENSION = %w(
-    defined_contribution
-    defined_benefit
-    uncertain
-  ).freeze
 
   COUNTRIES = %w(
     england
