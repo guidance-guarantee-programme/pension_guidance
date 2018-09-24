@@ -121,6 +121,36 @@
         padding-right: 60px;
       }
     }
+
+    table {
+      margin: 1em 0 2em;
+      border-collapse: collapse;
+    }
+
+    th {
+      font-weight: bold;
+      margin: .4em .5em .4em 0;
+      text-align: left;
+    }
+
+    th, td {
+      vertical-align: top;
+    }
+
+    td {
+      border-top: 1px solid grey;
+    }
+
+    .options-table th {
+      font-weight: bold;
+      width: 33%;
+    }
+
+    .options-table td {
+      padding-top: .9em;
+      padding-bottom: .9em;
+      width: 33%;
+    }
   </style>
 </head>
 <body>
@@ -137,6 +167,8 @@
       <div class="page-break"></div>
     <% end %>
   <% end %>
+
+  <%= @outro.content %>
 </body>
 <script>
   window.print();
