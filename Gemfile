@@ -27,7 +27,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'inline_svg'
   gem 'newrelic_rpm'
   gem 'nokogiri'
-  gem 'output-templates', '~> 4.9', github: 'guidance-guarantee-programme/output-templates'
+  gem 'output-templates', '~> 4.9', github: 'guidance-guarantee-programme/output-templates', branch: 'signposting'
   gem 'pg', '>= 0.18'
   gem 'phoner'
   gem 'postcodes_io'
