@@ -1,135 +1,135 @@
-# Trusted sources of additional information
+# Ffynonhellau dibynadwy o wybodaeth ychwanegol
 
-Pension Wise consider these organisations to be trusted sources of additional information:
+Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o wybodaeth ychwanegol:
 
 <table class="options-table">
   <thead>
     <tr>
-      <th scope="col">Organisation</th>
-      <th scope="col">Query</th>
+      <th scope="col">Sefydliad</th>
+      <th scope="col">Ymholiad</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <strong>The Pensions Advisory Service</strong><br>
+        <strong>Y Gwasanaeth Cynghori ar Bensiynau</strong><br>
         <a href="https://pensionsadvisoryservice.org.uk">pensionsadvisoryservice.org.uk</a><br>
-        Phone: 0800 011 3797
+        Ffôn: 0800 011 3797
       </td>
       <td>
-        For general pension queries and complaints, including help avoiding pension scams and saving into a pension scheme
+        Ar gyfer ymholiadau pensiwn cyffredinol a chwynion, yn cynnwys help i osgoi sgamiau pensiwn a chynilo i gynllun pensiwn
       </td>
     </tr>
     <tr>
       <td>
-        <strong>Citizens Advice</strong><br>
-        England & Wales<br>
+        <strong>Cyngor Ar Bopeth</strong><br>
+        Cymru a Lloegr<br>
         <a href="https://www.citizensadvice.org.uk">www.citizensadvice.org.uk</a><br>
-        Phone:<br>
-        03444 111 444 (England)<br>
-        03444 77 20 20 (Wales)<br><br>
+        Ffôn:<br>
+        03444 111 444 (Lloegr)<br>
+        03444 77 20 20 (Cymru)<br><br>
 
-        Scotland<br>
+        Yr Alban<br>
         <a href="https://www.cas.org.uk">www.cas.org.uk</a><br>
-        Contact local bureau
+        Cystlltwch â changen lleol
       </td>
       <td>
         <ul>
-          <li>Debt</li>
-          <li>Social Care</li>
-          <li>State Benefits</li>
-          <li>Employment rights</li>
-          <li>Consumer rights</li>
-          <li>Relationships</li>
-          <li>Housing</li>
-          <li>Discrimination</li>
-          <li>Tax</li>
+          <li>Dyled</li>
+          <li>Gofal Cymdeithasol</li>
+          <li>Budd-daliadau’r Wladwriaeth</li>
+          <li>Hawliau cyflogaeth</li>
+          <li>Hawliau defnyddwyr</li>
+          <li>Perthnasau</li>
+          <li>Tai</li>
+          <li>Gwahaniaethu</li>
+          <li>Treth</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>
-        <strong>Money Advice Service</strong><br>
-        <a href="https://www.moneyadviceservice.org.uk">www.moneyadviceservice.org.uk</a><br>
-        Phone: 0800 138 7777
+        <strong>Y Gwasanaeth Cynghori Ariannol</strong><br>
+        <a href="https://www.moneyadviceservice.org.uk/cy">www.moneyadviceservice.org.uk/cy</a><br>
+        Ffôn: 0800 138 0555
       </td>
       <td>
         <ul>
-        <li>Annuity Comparison Tool <a href="https://comparison.moneyadviceservice.org.uk">comparison.moneyadviceservice.org.uk</a></li>
-        <li>Retirement adviser directory <a href="https://directory.moneyadviceservice.org.uk">directory.moneyadviceservice.org.uk</a></li>
-        <li>Understand and compare Income Drawdown <a href="https://www.moneyadviceservice.org.uk/en/retirement-income-options/income-drawdown">www.moneyadviceservice.org.uk/en/retirement-income-options/income-drawdown</a></li>
-        <li>Debt and borrowing</li>
-        <li>Budgeting and managing money</li>
-        <li>Saving and investing</li>
-        <li>Pensions and retirement</li>
-        <li>Work and redundancy</li>
-        <li>Benefits</li>
-        <li>Births, deaths and family</li>
-        <li>Insurance</li>
-        <li>Homes and mortgages</li>
-        <li>Care and disability</li>
+        <li>Offeryn Cymharu Blwydd-dal <a href=" https://comparison.moneyadviceservice.org.uk/cy/tools/annuities">comparison.moneyadviceservice.org.uk/cy/tools/annuities</a></li>
+        <li>Cyfeirlyfr cynghori ar ymddeoliad <a href=" https://directory.moneyadviceservice.org.uk/cy">directory.moneyadviceservice.org.uk/cy</a></li>
+        <li>Deall a chymharu Tynnu Incwm i Lawr <a href=" https://www.moneyadviceservice.org.uk/cy/opsiynau-incwm-ymddeoliad/income-drawdown">www.moneyadviceservice.org.uk/cy/opsiynau-incwm-ymddeoliad/income-drawdown</a></li>
+        <li>Dyled a benthyca</li>
+        <li>Cyllidebu a rheoli arian</li>
+        <li>Cynilo a buddsoddi</li>
+        <li>Pensiynau ac ymddeoliad</li>
+        <li>Gwaith a diswyddo</li>
+        <li>Budd-daliadau</li>
+        <li>Genedigaethau, marwolaethau a theulu</li>
+        <li>Yswiriant</li>
+        <li>Cartrefi a morgesis</li>
+        <li>Gofal ac anabledd</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>
-        <strong>Pension Ombudsman</strong><br>
+        <strong>Ombwdsmon Pensiynau</strong><br>
         <a href="https://www.pensions-ombudsman.org.uk">www.pensions-ombudsman.org.uk</a><br>
-        Phone: 0800 917 4487
+        Ffôn: 0800 917 4487
       </td>
       <td>
-        Complaints about the maladministration of pensions
+        Cwynion am gamweinyddu pensiynau
       </td>
     </tr>
     <tr>
       <td>
-        <strong>Financial Ombudsman</strong><br>
+        <strong>Ombwdsmon Ariannol</strong><br>
         <a href="https://www.financial-ombudsman.org.uk">www.financial-ombudsman.org.uk</a><br>
-        Phone: 0800 023 4567
+        Ffôn: 0800 023 4567
       </td>
       <td>
-        Complaints about the sales and marketing of pensions
+        Cwynion am werthu a marchnata pensiynau
       </td>
     </tr>
     <tr>
       <td>
         <strong>Action Fraud</strong><br>
         <a href="https://www.actionfraud.police.uk">www.actionfraud.police.uk</a><br>
-        Phone: 0300 123 2040
+        Ffôn: 0300 123 2040
       </td>
       <td>
-        For information on scams or to report a scam
+        Am wybodaeth ar sgamiau neu i roi gwybod am sgam
       </td>
     </tr>
     <tr>
       <td>
-        <strong>HM Revenue and Customs</strong><br>
+        <strong>Cyllid a Thollau EM</strong><br>
         <a href="https://www.gov.uk/contact-hmrc">www.gov.uk/contact-hmrc</a><br>
-        Phone: 0300 200 3300
+        Ffôn: 0300 200 3300
       </td>
       <td>
         <ul>
-          <li>Self Assessment</li>
-          <li>Tax credits</li>
-          <li>Child Benefit</li>
-          <li>Income Tax</li>
-          <li>National Insurance</li>
-          <li>Tax for employers</li>
-          <li>VAT</li>
+          <li>Hunanasesiad</li>
+          <li>Credydau Treth</li>
+          <li>Budd-dal Plant</li>
+          <li>Treth Incwm</li>
+          <li>Yswiriant Gwladol</li>
+          <li>Treth i gyflogwyr </li>
+          <li>TAW</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>
-        <strong>Financial Conduct Authority (FCA)</strong><br>
+        <strong>Awdurdod Ymddygiad Ariannol (FCA)</strong><br>
         <a href="https://www.fca.org.uk">www.fca.org.uk</a><br>
-        Phone: 0800 111 6768
+        Ffôn: 0800 111 6768
       </td>
       <td>
         <ul>
-          <li>Check the FCA register to see if a firm or adviser is regulated <a href="https://www.fca.org.uk/register">www.fca.org.uk/register</a></li>
-          <li>Check list of unauthorised schemes and individuals to avoid <a href="https://www.fca.org.uk/scamsmart/warning-list/search">www.fca.org.uk/scamsmart/warning-list/search</a></li>
-          <li>Useful information on scams</li>
+          <li>Edrychwch ar gofrestr yr FCA i weld os yw busnes neu ymgynghorydd wedi’u rheoleiddio <a href="https://www.fca.org.uk/register">www.fca.org.uk/register</a></li>
+          <li>Edrychwch ar restr o gynlluniau sydd heb eu hawrdudodi ac unigolion i’w hosgoi <a href="https://www.fca.org.uk/scamsmart/warning-list/search">www.fca.org.uk/scamsmart/warning-list/search</a></li>
+          <li>Gwybodaeth ddefnyddiol ar sgamiau</li>
         </ul>
       </td>
     </tr>
@@ -137,24 +137,24 @@ Pension Wise consider these organisations to be trusted sources of additional in
       <td>
         <strong>GOV.UK</strong><br>
         <a href="https://www.gov.uk">www.gov.uk</a><br>
-        <a href="https://www.gov.uk/check-state-pension">www.gov.uk/check-state-pension</a><br>
-        <a href="https://www.gov.uk/find-pension-contact-details">www.gov.uk/find-pension-contact-details</a><br>
+        <a href="https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth">www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth</a><br>
+        <a href="https://www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn">www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn</a><br>
         <a href="https://www.gov.uk/state-pension-age">www.gov.uk/state-pension-age</a><br>
-        Phone:<br>
-        0800 731 0175 (Future Pension Centre)<br>
-        0800 731 0193 (Pension Tracing Service)
+        Ffôn:<br>
+        0800 731 0175 (Canolfan Pensiwn y Dyfodol)<br>
+        0800 731 0193 (Gwasanaeth Olrhain Pensiwn)
       </td>
       <td>
         <ul>
-          <li>Working, jobs and pensions eg State Pension, Tracing a pension</li>
-          <li>Tax credits</li>
-          <li>Births, deaths, marriages</li>
-          <li>Divorce</li>
-          <li>Lasting Power of Attorney</li>
-          <li>Employment & Self-employment</li>
-          <li>Disabled people</li>
-          <li>Housing and local services</li>
-          <li>Money and tax</li>
+          <li>Gwaith, swyddi a phensiynau ee Pensiwn y Wladwriaeth, Olrhain pensiwn </li>
+          <li>Credydau Treth</li>
+          <li>Genedigaethau, marwolaethau, priodasau </li>
+          <li>Ysgariad</li>
+          <li>Pwer Atwrnai Parhaus</li>
+          <li>Cyflogseth a Hunangyflogaeth</li>
+          <li>Pobl anabl</li>
+          <li>Tai a gwasanaethau lleol</li>
+          <li>Arian a threth</li>
         </ul>
       </td>
     </tr>
@@ -162,40 +162,40 @@ Pension Wise consider these organisations to be trusted sources of additional in
       <td>
         <strong>MIND</strong><br>
         <a href="https://www.mind.org.uk">www.mind.org.uk</a><br>
-        Phone: 0300 123 3393
+        Ffôn: 0300 123 3393
       </td>
       <td>
         <ul>
-          <li>Types of mental health problems</li>
-          <li>Where to get help</li>
-          <li>Medication and alternative treatments</li>
-          <li>Advocacy</li>
+          <li>Mathau o broblemau iechyd meddwl</li>
+          <li>Ble i gael help</li>
+          <li>Meddyginiaeth a thriniaethau amgen</li>
+          <li>Eiriolaeth</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>
-        <strong>Samaritans</strong><br>
+        <strong>Samariaid</strong><br>
         <a href="https://www.samaritans.org">www.samaritans.org</a><br>
-        Phone: 116 123<br>
-        Email: <a href="mailto:jo@samaritans.org">jo@samaritans.org</a>
+        Ffôn: 116 123<br>
+        E-bost: <a href="mailto:jo@samaritans.org">jo@samaritans.org</a>
       </td>
       <td>
-        Samaritans offer a safe place for people to talk any time they like, in their own way – about whatever’s getting to them. They don’t have to be suicidal
+        Mae’r Samariaid yn cynnig man diogel i bobl seared unrhyw bryd maent eisiau, yn eu ffordd eu hunain – am beth bynnag sy’n eu peoni. Ni does yn rhaid iddynt fod yn teimlo fel lladd eu hunain
       </td>
     </tr>
     <tr>
       <td>
-        <strong>Alzheimers Society</strong><br>
+        <strong>Cymdeithas Alzheimers</strong><br>
         <a href="https://www.alzheimers.org.uk">www.alzheimers.org.uk</a><br>
-        Phone: 0330 333 0804
+        Ffôn: 0330 333 0804
       </td>
       <td>
         <ul>
-          <li>Daily living</li>
-          <li>Help with Care</li>
-          <li>Staying Independent</li>
-          <li>Legal and Financial</li>
+          <li>Bywyd bob dydd</li>
+          <li>Help gyda Gofal</li>
+          <li>Aros yn Annibynnol Independent</li>
+          <li>Cyfreithiol ac Ariannol </li>
         </ul>
       </td>
     </tr>
