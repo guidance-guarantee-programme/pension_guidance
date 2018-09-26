@@ -88,14 +88,16 @@ class PensionSummariesController < ApplicationController
   end
 
   def print
-    @intro = get_guide('print-introduction')
+    @intro  = get_guide('print-introduction')
+    @outro  = get_guide('trusted-sources', prefixed: false)
     @guides = @summary.selected_steps.collect { |s| get_guide(s) }
 
     render 'pension_summaries/print', layout: false
   end
 
   def download
-    @intro = get_guide('print-introduction')
+    @intro  = get_guide('print-introduction')
+    @outro  = get_guide('trusted-sources', prefixed: false)
     @guides = @summary.selected_steps.collect { |s| get_guide(s) }
 
     render pdf: 'your pension summary from Pension Wise',
@@ -108,8 +110,10 @@ class PensionSummariesController < ApplicationController
 
   private
 
-  def get_guide(slug)
-    GuideDecorator.cached_for(GuideRepository.new.find("pension_summary/#{slug}"))
+  def get_guide(slug, prefixed: true)
+    path = prefixed ? "pension_summary/#{slug}" : slug
+
+    GuideDecorator.cached_for(GuideRepository.new.find(path))
   end
 
   def about_you_params
