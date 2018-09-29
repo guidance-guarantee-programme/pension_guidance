@@ -25,7 +25,7 @@ Rails.application.routes.draw do
 
       post 'questions', to: 'questions#next'
 
-      get 'landing', to: 'marketing#index'
+      get 'landing', to: 'marketing#landing'
       get 'facebook-landing', to: 'marketing#facebook'
       get 'about', to: 'marketing#about'
 
