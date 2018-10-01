@@ -1,14 +1,31 @@
 class MarketingController < ApplicationController
   layout false
 
-  def facebook
+  def landing
+    @campaign = 'dogs'
     @phone_number = '0800 138 3375'
-    render :index
+
+    respond_to do |format|
+      format.html { render :index }
+    end
+  end
+
+  def facebook
+    @campaign = 'dogs'
+    @phone_number = '0800 138 3375'
+
+    respond_to do |format|
+      format.html { render :index }
+    end
   end
 
   def about
-    @phone_number = '0800 138 8287'
-    render :index
+    @campaign = 'peppers'
+    @phone_number = '0800 138 3375'
+
+    respond_to do |format|
+      format.html { render :index }
+    end
   end
 
   def footer?
