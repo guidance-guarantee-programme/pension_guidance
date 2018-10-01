@@ -42,3 +42,7 @@ Govspeak::Document.extension('feedback', %r(^{::feedback_form /})) do
     assigns: { feedback: feedback }
   )
 end
+
+Govspeak::Document.extension('webchat', %r(^{::webchat /})) do
+  ApplicationController.render(partial: 'components/webchat')
+end

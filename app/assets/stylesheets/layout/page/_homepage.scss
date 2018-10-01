@@ -52,18 +52,24 @@
 .l-home-row--accent {
   @extend %outdent-to-full-width;
   background-color: $home-row-accent-background;
-  background-image: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
+  background: linear-gradient(to bottom, $color-dogs-background-dark 0%, $color-dogs-background-light 100%);
+  background-size: 100%;
   color: $color-white;
   position: relative;
   padding: 0;
 
   &.apples {
     background-color: $color-apples-background;
-    background-image: linear-gradient(to bottom, $color-apples-background-dark 0%, $color-apples-background-light 100%);
+    background: linear-gradient(to bottom, $color-apples-background-dark 0%, $color-apples-background-light 100%);
 
-    .l-home-row-accent__content {
-      @include media(desktop) {
-        background-image: image-url("home/banners/apples.png");
+    @include media(desktop) {
+      background: image-url("home/banners/apples.png") no-repeat center, linear-gradient(to bottom, $color-apples-background-dark 0%, $color-apples-background-light 100%);
+      background-size: auto 100%, 100%;
+    }
+
+    .quick-links {
+      @include media(tablet) {
+        background: transparentize($color-apples-background-light, .6);
       }
     }
   }
@@ -72,20 +78,30 @@
     background-color: $color-paint-background;
     background-image: linear-gradient(to bottom, $color-paint-background-dark 0%, $color-paint-background-light 100%);
 
-    .l-home-row-accent__content {
-      @include media(desktop) {
-        background-image: image-url("home/banners/paint.png");
+    @include media(desktop) {
+      background: image-url("home/banners/paint.png") no-repeat center, linear-gradient(to bottom, $color-paint-background-dark 0%, $color-paint-background-light 100%);
+      background-size: auto 100%, 100%;
+    }
+
+    .quick-links {
+      @include media(tablet) {
+        background: transparentize($color-paint-background-light, .6);
       }
     }
   }
 
   &.peppers {
     background-color: $color-peppers-background;
-    background-image: linear-gradient(to bottom, $color-peppers-background-dark 0%, $color-peppers-background-light 100%);
+    background: linear-gradient(to bottom, $color-peppers-background-dark 0%, $color-peppers-background-light 100%);
 
-    .l-home-row-accent__content {
-      @include media(desktop) {
-        background-image: image-url("home/banners/peppers.png");
+    @include media(desktop) {
+      background: image-url("home/banners/peppers.png") no-repeat center, linear-gradient(to bottom, $color-peppers-background-dark 0%, $color-peppers-background-light 100%);
+      background-size: auto 100%, 100%;
+    }
+
+    .quick-links {
+      @include media(tablet) {
+        background: transparentize($color-peppers-background-light, .6);
       }
     }
   }
@@ -95,13 +111,6 @@
   padding-bottom: 14px;
   padding-top: 28px;
   position: relative;
-
-  @include media(desktop) {
-    background-image: image-url("home/dogs_banner.png");
-    background-position: 107% 24%;
-    background-repeat: no-repeat;
-    background-size: 75%;
-  }
 }
 
 .l-home-central-column {

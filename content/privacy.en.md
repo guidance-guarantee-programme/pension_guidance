@@ -25,6 +25,9 @@ Your data will be shared between Pension Wise and our delivery partners
 (Citizens Advice, The Pensions Advisory Service and Teleperformance) only where
 it is necessary for the purpose of providing you with Pension Wise guidance.
 
+For eligibility webchat with the Pensions Advisory Service, your transcript is
+stored for a period of 12 months before being deleted.
+
 We won’t share your information with any other organisations for marketing or
 commercial purposes, and we don’t pass on your details to other websites.
 

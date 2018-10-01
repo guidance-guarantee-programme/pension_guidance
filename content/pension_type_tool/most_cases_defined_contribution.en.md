@@ -18,4 +18,5 @@ You can book a free Pension Wise appointment to talk about your options for taki
 
 ^You can also [check another pension](/en/pension-type-tool) or [explore your pension options](/en/explore-your-options).^
 
+{::webchat /}
 [Give us your feedback](http://research.pensionwise.gov.uk/s/PTTfeedback/)
