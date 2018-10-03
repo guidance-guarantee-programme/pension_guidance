@@ -2,7 +2,7 @@
 class PensionSummariesController < ApplicationController
   layout 'guides'
 
-  before_action :set_pilot_cookie, only: %i(start)
+  before_action :set_pilot_cookie, if: :pilot_enabled?, only: %i(start)
   before_action :create_summary, only: %i(create)
   before_action :set_summary, except: %i(start create)
   before_action :show_summary, if: :generated?, only: %i(step_one step_two)
@@ -173,6 +173,10 @@ class PensionSummariesController < ApplicationController
     breadcrumb Breadcrumb.explore_your_options_step_one if %w(start step_one).exclude?(params[:action])
   end
 
+  def pilot_enabled?
+    ENV['PILOT_SUMMARIES'] == 'true'
+  end
+
   def set_pilot_cookie
     return if pilot_cookie?
 
@@ -189,7 +193,7 @@ class PensionSummariesController < ApplicationController
   end
 
   def pilot_summaries?
-    cookies[:pilot_summaries] == 'true'
+    pilot_enabled? && cookies[:pilot_summaries] == 'true'
   end
   helper_method :pilot_summaries?
 
