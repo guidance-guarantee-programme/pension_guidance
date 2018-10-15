@@ -184,8 +184,12 @@ class PensionSummariesController < ApplicationController
       if params[:locale] == 'cy'
         'false'
       else
-        rand > 0.5 ? 'true' : 'false'
+        rand > pilot_ratio ? 'true' : 'false'
       end
+  end
+
+  def pilot_ratio
+    ENV.fetch('PILOT_RATIO', '0.5').to_f
   end
 
   def pilot_cookie?
