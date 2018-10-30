@@ -16,6 +16,8 @@ module ApplicationHelper
   end
 
   def email_validation_data_attributes
+    return '' if ENV['DISABLE_MAILGUN_VALIDATION']
+
     {
       'email-validation': true,
       api_key: ENV.fetch('MAILGUN_VALIDATION_KEY') { 'pubkey-b37c931b1fcef90bf2d83b7cdfd6df39' },
