@@ -10,6 +10,6 @@ module BookingRequests
   def self.slots(location_id)
     response = api.slots(location_id)
 
-    response.map { |slot| Slot.new(slot).to_calendar }
+    response.map { |slot| Slot.new(slot) }
   end
 end

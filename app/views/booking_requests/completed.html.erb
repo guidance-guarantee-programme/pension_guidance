@@ -1,23 +1,6 @@
-<% content_for(:page_title, t('service.title', page_title: 'We’ve received your booking request')) %>
-<div class="l-grid-row">
-  <div class="l-column-two-thirds">
-    <div class="govuk-box-highlight">
-      <h1 class="bold-large govuk-box-highlight__header">We’ve received<br>your booking request</h1>
-    </div>
+<% content_for(:page_title, t('service.title', page_title: 'We’ve received your request')) %>
 
-    <h2>What happens next?</h2>
-
-    <p>We’ll email you within 2 working days to confirm the date and time of
-    your appointment. If you do not receive this email please check your junk
-    or spam folder.</p>
-
-    <div class="application-notice info-notice">
-      <p>Appointment availability depends on location. You may not get your requested dates. We may need to call you to arrange an alternative date.</p>
-    </div>
-
-    <p><a href="https://research.pensionwise.gov.uk/s/bookingfeedback/">Give us your feedback</a></p>
-  </div>
-</div>
+<%= confirmation(@booking_request) %>
 
 <script>
   window.dataLayer = window.dataLayer || [];

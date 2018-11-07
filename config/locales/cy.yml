@@ -463,3 +463,40 @@ cy:
               <a href="http://www.parliament.uk/mps-lords-and-offices/mps/">get help with finding your MP</a>
               if you don’t know who they are. The Ombudsman usually only looks at complaints that ICE has already reviewed.
             </p>
+  booking_requests:
+    booking_completed:
+      html: |
+        <div class="l-grid-row">
+          <div class="l-column-two-thirds">
+            <div class="govuk-box-highlight">
+              <h1 class="bold-large govuk-box-highlight__header">We’ve received<br>your booking request</h1>
+            </div>
+
+            <h2>What happens next?</h2>
+
+            <p>We’ll email you within 2 working days to confirm the date and time of
+            your appointment. If you do not receive this email please check your junk
+            or spam folder.</p>
+
+            <div class="application-notice info-notice">
+              <p>Appointment availability depends on location. You may not get your requested dates. We may need to call you to arrange an alternative date.</p>
+            </div>
+
+            <p><a href="https://research.pensionwise.gov.uk/s/bookingfeedback/">Give us your feedback</a></p>
+          </div>
+        </div>
+    appointment_completed:
+      html: |
+        <div class="l-grid-row">
+          <div class="l-column-two-thirds">
+            <div class="govuk-box-highlight">
+              <h1 class="bold-large govuk-box-highlight__header">We’ve booked<br>your appointment</h1>
+            </div>
+
+            <h2>What happens next?</h2>
+
+            <p>We’ll email you to confirm these details. You’ll also receive information to help you prepare for your appointment.</p>
+
+            <p><a href="https://research.pensionwise.gov.uk/s/bookingfeedback/">Give us your feedback</a></p>
+          </div>
+        </div>

@@ -246,8 +246,8 @@
   </div>
 
   <div class="l-column-third">
-    <h2>Your dates</h2>
-    <p>You requested these dates for an appointment.</p>
+    <h2>Your <%= 'date'.pluralize(@booking_request.max_selected_slots) %></h2>
+    <p>Your requested <%= 'date'.pluralize(@booking_request.max_selected_slots) %> for an appointment.</p>
 
     <div class="is-chosen SlotPicker--selected SlotPicker--read-only">
       <div class="SlotPicker-choice is-chosen">
@@ -289,7 +289,7 @@
     </div>
 
     <p>
-      <%= link_to 'Change dates',
+    <%= link_to "Change #{'date'.pluralize(@booking_request.max_selected_slots)}",
         booking_request_step_one_location_path(
           id: location_id,
           booking_request: {

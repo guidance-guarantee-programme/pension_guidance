@@ -8,7 +8,7 @@ daemonize false
 pidfile 'tmp/pids/puma.pid'
 state_path 'tmp/pids/puma.state'
 
-workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+workers Integer(ENV['WEB_CONCURRENCY'] || 1)
 threads Integer(ENV['MAX_THREADS'] || 5), Integer(ENV['MAX_THREADS'] || 5)
 
 bind 'unix://tmp/sockets/puma.sock'

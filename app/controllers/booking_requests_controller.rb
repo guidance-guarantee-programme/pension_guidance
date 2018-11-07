@@ -26,9 +26,11 @@ class BookingRequestsController < ApplicationController
       render :step_two
     elsif @booking_request.ineligible?
       redirect_to booking_request_ineligible_location_path(id: location_id)
-    else
-      BookingRequests.create(@booking_request)
+    elsif BookingRequests.create(@booking_request)
       redirect_to booking_request_completed_location_path(id: location_id)
+    else
+      redirect_to booking_request_step_one_path(id: location_id),
+                  notice: 'The slot was taken. Please choose another slot.'
     end
   end
 

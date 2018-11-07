@@ -1,10 +1,16 @@
 module BookingRequestsHelper
+  def confirmation(booking_request)
+    key = booking_request.realtime? ? 'appointment_completed' : 'booking_completed'
+
+    t("booking_requests.#{key}.html")
+  end
+
   def slot_as_formatted_date(slot_text)
     Date.parse(slot_properties(slot_text)[:date]).strftime('%A, %b %e')
   end
 
   def slot_period(slot_text)
-    slot_properties(slot_text)[:from] == '0900' ? 'Morning' : 'Afternoon'
+    BookingRequests::Slot.new(slot_properties(slot_text)).period
   end
 
   def slot_duration
@@ -18,8 +24,8 @@ module BookingRequestsHelper
 
     {
       date: date,
-      from: from,
-      to: to
+      start: from,
+      end: to
     }
   end
 end
