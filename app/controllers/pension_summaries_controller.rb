@@ -197,9 +197,13 @@ class PensionSummariesController < ApplicationController
   end
 
   def pilot_summaries?
-    pilot_enabled? && cookies[:pilot_summaries] == 'true'
+    force_pilot_summaries? || pilot_enabled? && cookies[:pilot_summaries] == 'true'
   end
   helper_method :pilot_summaries?
+
+  def force_pilot_summaries?
+    ENV['FORCE_PILOT_SUMMARIES'] == 'true' && params[:locale] == 'en'
+  end
 
   def alternate_url(new_locale, options = {})
     url_for(params.permit(:id, :step).merge(options).merge(locale: new_locale))
