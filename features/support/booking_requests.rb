@@ -30,7 +30,11 @@ Around('@realtime_availability') do |_, block|
       end
 
       def create(*)
-        true
+        {
+          'reference' => '1',
+          'location' => 'Hackney',
+          'proceeded_at' => '2018-11-21 13:00'
+        }
       end
     end.new
 

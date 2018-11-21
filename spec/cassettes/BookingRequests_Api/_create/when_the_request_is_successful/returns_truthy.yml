@@ -5,11 +5,11 @@ http_interactions:
     uri: http://localhost:3002/api/v1/booking_requests
     body:
       encoding: UTF-8
-      string: '{"booking_request":{"booking_location_id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef","location_id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef","name":"Lucius
+      string: '{"booking_request":{"booking_location_id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef","location_id":"183080c6-642b-4b8f-96fd-891f5cd9f9c7","name":"Lucius
         Needful","email":"lucius@example.com","phone":"0208 244 3987","memorable_word":"meseeks","age_range":"55-plus","accessibility_requirements":false,"defined_contribution_pot_confirmed":true,"gdpr_consent":"yes","slots":[{"priority":1,"date":"2016-01-01","from":"0900","to":"1300"},{"priority":2,"date":"2016-01-01","from":"1300","to":"1700"},{"priority":3,"date":"2016-01-02","from":"0900","to":"1300"}]}}'
     headers:
       User-Agent:
-      - PensionWise/1.0 (birdperson.local; benlovell; 61218) ruby/2.5.1 (57; x86_64-darwin17)
+      - PensionWise/1.0 (birdperson.local; benlovell; 30778) ruby/2.5.1 (57; x86_64-darwin17)
       Accept:
       - application/json
       Content-Type:
@@ -27,22 +27,27 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
+      Etag:
+      - W/"44136fa355b3678a1146ad16f7e8649e"
       Cache-Control:
-      - no-cache
-      Set-Cookie:
-      - _planner_session=S1orMWR4REF5WUoxVHpoQ2VMbkREME53bGlUcnVCUzBKaDE0S1Z4THZRbzBMVVl0alJ0Y09VR1JPTHIvb29hVG1RaWJwWTVHdWlxMmRWcUlac0RxRjgxVU14RVQ3ak03RnVQdythakFoaVV3YUFzc2RaWENYQm1wV29SZXBTa3RSOTdSbHdDWkZxMk16RTdtTjJUdW5NNnU0QjhuRWM4cEpUcjNuYVFGbGRNaFo2WnJiVzZ6emtIOHhBT0lWQks5LS00dFl2WTZkemxLeVgvdThMSnNyQUd3PT0%3D--ff2948eb2f7614de6845c7797cfb28d84edd5def;
-        path=/; HttpOnly
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1eadca22-283f-4fd3-b5df-54572b221b54
+      - 620fdf02-8d96-4780-94cd-55a86b75047c
       X-Runtime:
-      - '0.339140'
+      - '0.162798'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: ''
+      string: "{}"
     http_version: 
-  recorded_at: Mon, 21 May 2018 17:42:03 GMT
+  recorded_at: Wed, 21 Nov 2018 16:26:16 GMT
 recorded_with: VCR 3.0.3

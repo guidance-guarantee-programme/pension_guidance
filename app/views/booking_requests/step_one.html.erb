@@ -42,7 +42,7 @@
 
   <div class="SlotPicker"
        data-today="<%= Date.today %>"
-       data-limit-exceeded-error="Go back to change your dates or continue."
+       data-limit-exceeded-error="To change your date go back and remove the current selection. Otherwise continue."
        data-option-limit="<%= @booking_request.max_selected_slots %>">
     <div class="l-column-half">
       <div class="SlotPicker-timeSlots show-only-with-js">
@@ -74,7 +74,6 @@
         <%= f.select(:primary_slot, @booking_request.slots.map(&:to_calendar), { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
         <%= f.select(:secondary_slot, @booking_request.slots.map(&:to_calendar), { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
         <%= f.select(:tertiary_slot, @booking_request.slots.map(&:to_calendar), { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <p>Appointment availability depends on location. We may need to call you to arrange an alternative date.</p>
         <p><%= f.button('Continue', type: 'submit', class: 'button t-continue') %></p>
       <% end %>
     </div>

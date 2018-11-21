@@ -2,7 +2,12 @@ module BookingRequests
   class StubApi
     def create(*payload)
       Rails.logger.info(payload)
-      true
+
+      {
+        'reference' => '1',
+        'proceeded_at' => '2018-11-21 13:00',
+        'location' => 'Hackney'
+      }
     end
 
     def slots(*)

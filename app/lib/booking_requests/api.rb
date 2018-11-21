@@ -1,9 +1,10 @@
 module BookingRequests
   class Api
     def create(booking_request)
-      connection.post '/api/v1/booking_requests', booking_request
-
-      true
+      response = connection.post '/api/v1/booking_requests', booking_request
+      response.body
+    rescue HTTPConnection::UnprocessableEntity
+      false
     end
 
     def slots(location_id)

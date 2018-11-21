@@ -1,8 +1,8 @@
 module BookingRequestsHelper
   def confirmation(booking_request)
-    key = booking_request.realtime? ? 'appointment_completed' : 'booking_completed'
+    partial = booking_request.realtime? ? 'appointment_confirmation' : 'booking_request_confirmation'
 
-    t("booking_requests.#{key}.html")
+    render partial: partial
   end
 
   def slot_as_formatted_date(slot_text)
