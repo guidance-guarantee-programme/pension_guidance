@@ -15,10 +15,7 @@ RSpec.describe BookingRequests do
     it 'returns slots for the calendar' do
       response = BookingRequests.slots('ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef')
 
-      expect(response.first).to include(
-        'Friday, Jun  2 - Morning',
-        '2017-06-02-0900-1300'
-      )
+      expect(response.first.to_calendar).to include('Friday, Jun  2 - Morning', '2017-06-02-0900-1300')
     end
   end
 

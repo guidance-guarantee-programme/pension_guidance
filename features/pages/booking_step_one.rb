@@ -5,14 +5,13 @@ module Pages
     set_url '/{locale}/locations/{id}/booking-request/step-one'
 
     element :location_name, '.t-location-name'
-    element :first_chosen_slot, 'div:nth-child(1).SlotPicker-choice.is-chosen'
-    element :last_chosen_slot, 'div:nth-child(3).SlotPicker-choice.is-chosen'
     element :continue, '.t-continue'
+    element :phone, '.t-phone'
 
     elements :available_days, '.BookingCalendar-date--bookable'
     elements :time_slots, '.SlotPicker-day.is-active > label'
-
-    element :phone, '.t-phone'
+    elements :chosen_slots, '.SlotPicker-choice.is-chosen'
+    elements :slot_options, '.SlotPicker-choice'
 
     section :feedback, Sections::Feedback, '.t-feedback'
 

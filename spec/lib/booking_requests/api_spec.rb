@@ -5,7 +5,7 @@ RSpec.describe BookingRequests::Api, :vcr do
     {
       booking_request: {
         booking_location_id: 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef',
-        location_id: 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef',
+        location_id: '183080c6-642b-4b8f-96fd-891f5cd9f9c7',
         name: 'Lucius Needful',
         email: 'lucius@example.com',
         phone: '0208 244 3987',
@@ -27,8 +27,8 @@ RSpec.describe BookingRequests::Api, :vcr do
 
   describe '#create' do
     context 'when the request is successful' do
-      it 'returns true' do
-        expect(subject.create(payload)).to be true
+      it 'returns truthy' do
+        expect(subject.create(payload)).to be_truthy
       end
     end
   end

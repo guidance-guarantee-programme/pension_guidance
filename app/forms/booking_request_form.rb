@@ -1,4 +1,4 @@
-class BookingRequestForm
+class BookingRequestForm # rubocop:disable ClassLength
   include ActiveModel::Model
 
   attr_accessor :location_id, :primary_slot, :secondary_slot, :tertiary_slot,
@@ -51,7 +51,15 @@ class BookingRequestForm
     @booking_location ||= BookingLocations.find(location_id)
   end
 
-  delegate :slots, :no_availability?, :limited_availability?, to: :location
+  def max_selected_slots
+    @max_selected_slots ||= realtime_slots? ? 1 : 3
+  end
+
+  def realtime?
+    max_selected_slots == 1
+  end
+
+  delegate :slots, :no_availability?, :limited_availability?, :realtime_slots?, to: :location
 
   delegate :id, to: :booking_location, prefix: :booking_location
 

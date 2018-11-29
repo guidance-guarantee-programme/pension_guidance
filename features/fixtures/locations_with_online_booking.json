@@ -17,7 +17,8 @@
         "booking_location_id": "",
         "phone": "+442085256360",
         "hours": "Monday to Friday, 9:30am to 5pm",
-        "online_booking_enabled": true
+        "online_booking_enabled": true,
+        "realtime": false
       }
     },
     {
@@ -36,7 +37,8 @@
         "booking_location_id": "ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef",
         "phone": "+442085256360",
         "hours": "Monday to Friday, 9:30am to 5pm",
-        "online_booking_enabled": true
+        "online_booking_enabled": true,
+        "realtime": false
       }
     }
   ]

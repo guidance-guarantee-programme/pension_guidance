@@ -34,7 +34,9 @@
         "address": "Hackney Citizens Advice\n300 Mare St\nHackney\nLondon\nE8 1HE",
         "phone": "345 6789",
         "hours": "Mon-Fri 9-5",
-        "twilio_number": "+442086291106"
+        "twilio_number": "+442086291106",
+        "online_booking_enabled": true,
+        "realtime": true
       }
     },
     {

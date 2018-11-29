@@ -10,7 +10,10 @@ module Locations
                   :hours,
                   :twilio_number,
                   :online_booking_enabled,
-                  :lat_lng
+                  :lat_lng,
+                  :realtime
+
+    alias realtime? realtime
 
     def online_booking_enabled?
       online_booking_enabled
@@ -22,6 +25,12 @@ module Locations
 
     def slots
       @slots ||= BookingRequests.slots(id)
+    end
+
+    def realtime_slots?
+      return false unless realtime?
+
+      slots.any?(&:realtime?)
     end
 
     def no_availability?

@@ -6,6 +6,32 @@ Given(/^no locations are enabled for online booking$/) do
   @locations_path = %w(features fixtures locations_without_online_booking.json)
 end
 
+Then(/^I can only choose one slot$/) do
+  expect(@step_one).to have_slot_options(count: 1)
+end
+
+When(/^I choose the first available realtime slot$/) do
+  @step_one.wait_for_available_days
+  @step_one.available_days.first.click
+
+  @step_one.wait_for_time_slots
+  @step_one.time_slots.first.click
+
+  @step_one.wait_for_chosen_slots
+  @step_one.continue.click
+end
+
+Then(/^I see my one chosen slot$/) do
+  @step_two = Pages::BookingStepTwo.new
+  expect(@step_two).to have_chosen_slots(count: 1)
+end
+
+Then(/^my appointment is confirmed$/) do
+  @page = Pages::BookingConfirmation.new
+  expect(@page).to be_displayed
+  expect(@page).to have_text('We’ve booked your appointment')
+end
+
 Given(/^the date is (.*)$/) do |date|
   @date = Date.parse(date)
   Timecop.travel @date
@@ -24,7 +50,7 @@ When(/^I browse for the location "([^"]*)"$/) do |location|
 end
 
 Then(/^I can book online$/) do
-  expect(@page.book_online).to be_visible
+  expect(@page).to have_book_online
 end
 
 Then(/^I cannot book online$/) do
@@ -69,7 +95,7 @@ When(/^I choose three available appointment slots$/) do
   @step_one.morning_slot.click
 
   # wait for the last slot to be confirmed
-  @step_one.wait_for_last_chosen_slot
+  @step_one.wait_for_chosen_slots
   @step_one.continue.click
 end
 
@@ -141,8 +167,9 @@ When(/^I submit my completed Booking Request$/) do
 end
 
 Then(/^my Booking Request is confirmed$/) do
-  @confirmation = Pages::BookingConfirmation.new
-  expect(@confirmation).to be_displayed
+  @page = Pages::BookingConfirmation.new
+  expect(@page).to be_displayed
+  expect(@page).to have_text('We’ve received your booking request')
 end
 
 When(/^I choose one available appointment slot$/) do
@@ -158,7 +185,7 @@ When(/^I choose one available appointment slot$/) do
   @step_one.morning_slot.click
 
   # wait for the slot to be confirmed and proceed
-  @step_one.wait_for_first_chosen_slot
+  @step_one.wait_for_chosen_slots
   @step_one.continue.click
 end
 
@@ -183,7 +210,7 @@ When(/^I choose a further two appointment slots$/) do
   @step_one.afternoon_slot.click
 
   # wait for slots to be confirmed and proceed
-  @step_one.wait_for_last_chosen_slot
+  @step_one.wait_for_chosen_slots
   @step_one.continue.click
 end
 
@@ -212,10 +239,8 @@ end
 
 Then(/^my chosen slots persist$/) do
   expect(@step_one).to be_displayed
-  @step_one.wait_for_last_chosen_slot
 
-  expect(@step_one).to have_first_chosen_slot
-  expect(@step_one).to have_last_chosen_slot
+  expect(@step_one).to have_chosen_slots(count: 3)
 end
 
 When(/^I go forward$/) do
