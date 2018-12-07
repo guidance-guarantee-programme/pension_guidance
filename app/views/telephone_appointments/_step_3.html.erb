@@ -149,6 +149,7 @@
         <%= f.label :dc_pot_confirmed, value: 'not-sure' do %>Not sure<% end %>
       </div>
     </fieldset>
+    <p><%= render partial: 'components/webchat' %></p>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:where_you_heard) %>">

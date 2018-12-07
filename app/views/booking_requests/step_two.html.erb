@@ -171,6 +171,7 @@
             <% end %>
           </div>
         </fieldset>
+        <p><%= render partial: 'components/webchat' %></p>
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:accessibility_requirements) %>">
