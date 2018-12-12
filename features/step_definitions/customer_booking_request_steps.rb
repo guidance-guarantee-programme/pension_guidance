@@ -10,7 +10,7 @@ Then(/^I can only choose one slot$/) do
   expect(@step_one).to have_slot_options(count: 1)
 end
 
-When(/^I choose the first available realtime slot$/) do
+When(/^I choose the first available (non-)?realtime slot$/) do |_|
   @step_one.wait_for_available_days
   @step_one.available_days.first.click
 
