@@ -26,7 +26,7 @@ Scenario: Customer makes a realtime online appointment
   And I pass the basic eligibility requirements
   Then I see my one chosen slot
   When I submit my completed Booking Request
-  Then my appointment is confirmed
+  Then my Booking Request is confirmed
 
 @javascript @booking_locations @time_travel
 Scenario: Customer makes an online Booking Request
