@@ -7,6 +7,8 @@ Given(/^no locations are enabled for online booking$/) do
 end
 
 Then(/^I can only choose one slot$/) do
+  @step_one.wait_until_slot_options_visible
+
   expect(@step_one).to have_slot_options(count: 1)
 end
 
@@ -240,6 +242,7 @@ end
 Then(/^my chosen slots persist$/) do
   expect(@step_one).to be_displayed
 
+  @step_one.wait_until_chosen_slots_visible
   expect(@step_one).to have_chosen_slots(count: 3)
 end
 
