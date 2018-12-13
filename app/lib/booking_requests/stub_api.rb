@@ -4,9 +4,6 @@ module BookingRequests
       Rails.logger.info(payload)
 
       {
-        'reference' => '1',
-        'proceeded_at' => '2018-11-21 13:00',
-        'location' => 'Hackney'
       }
     end
 

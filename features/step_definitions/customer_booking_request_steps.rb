@@ -7,10 +7,12 @@ Given(/^no locations are enabled for online booking$/) do
 end
 
 Then(/^I can only choose one slot$/) do
+  @step_one.wait_until_slot_options_visible
+
   expect(@step_one).to have_slot_options(count: 1)
 end
 
-When(/^I choose the first available realtime slot$/) do
+When(/^I choose the first available (non-)?realtime slot$/) do |_|
   @step_one.wait_for_available_days
   @step_one.available_days.first.click
 
@@ -240,6 +242,7 @@ end
 Then(/^my chosen slots persist$/) do
   expect(@step_one).to be_displayed
 
+  @step_one.wait_until_chosen_slots_visible
   expect(@step_one).to have_chosen_slots(count: 3)
 end
 

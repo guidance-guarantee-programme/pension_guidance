@@ -1,6 +1,6 @@
 module BookingRequestsHelper
-  def confirmation(booking_request)
-    partial = booking_request.realtime? ? 'appointment_confirmation' : 'booking_request_confirmation'
+  def confirmation
+    partial = flash[:reference] ? 'appointment_confirmation' : 'booking_request_confirmation'
 
     render partial: partial
   end
