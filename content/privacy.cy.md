@@ -3,6 +3,19 @@ description: Dysgwch sut rydym yn casglu gwybodaeth neu ddata penodol amdanoch c
 ---
 # Polisi preifatrwydd
 
+##Single Financial Guidance Body
+
+From 1st January 2019, the services currently delivered by Pension Wise, The
+Money Advice Service and The Pensions Advisory Service will be delivered by the
+[Single Financial Guidance Body](https://www.gov.uk/government/organisations/single-financial-guidance-body).
+In order to maintain the high levels of service we will be transferring all
+customer records over to the new body.
+
+If you would like more information on how your data is processed please see our
+[privacy policy](/cy/privacy) or contact [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk). Your data privacy rights
+will not be affected and further details can be found at
+[https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
+
 ## Beth yw Pension Wise?
 
 Mae Pension Wise yn wasanaeth am ddim a diduedd y llywodraeth sy’n eich helpu i
