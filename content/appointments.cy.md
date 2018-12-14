@@ -35,3 +35,18 @@ Os ydych y tu allan i’r DU, ffoniwch +44 20 3733 3495.
 [Darganfyddwch am gostau galwadau](https://www.gov.uk/costau-galwadau)
 
 ^Mae ein harweiniad yn ddi-duedd – ni fyddwn yn argymell unrhyw gynnyrch neu gwmnïau ac ni fyddwn yn dweud wrthych sut i fuddsoddi eich arian.^
+
+<div role="note" aria-label="Single Financial Guidance Body Note" class="application-notice info-notice">
+  <p>
+    From 1st January 2019, the services currently delivered by Pension Wise, The
+    Money Advice Service and The Pensions Advisory Service will be delivered by the
+    <a href="https://https://www.gov.uk/government/organisations/single-financial-guidance-body">Single Financial Guidance Body</a>. In order to maintain the high levels of
+    service we will be transferring all customer records over to the new body.
+  </p>
+  <p>
+    If you would like more information on how your data is processed please see our
+    <a href="/en/privacy">privacy policy</a> or contact <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>. Your data privacy rights
+    will not be affected and further details can be found at
+    <a href="https://ico.org.uk/your-data-matters/">https://ico.org.uk/your-data-matters</a>
+  </p>
+</div>

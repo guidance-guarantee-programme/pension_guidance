@@ -26,3 +26,18 @@ You should be aged **50 or over** and have a **defined contribution** pension (n
 [Book a face-to-face appointment](/en/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
 
 ^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^
+
+<div role="note" aria-label="Single Financial Guidance Body Note" class="application-notice info-notice">
+  <p>
+    From 1st January 2019, the services currently delivered by Pension Wise, The
+    Money Advice Service and The Pensions Advisory Service will be delivered by the
+    <a href="https://www.gov.uk/government/organisations/single-financial-guidance-body">Single Financial Guidance Body</a>. In order to maintain the high levels of
+    service we will be transferring all customer records over to the new body.
+  </p>
+  <p>
+    If you would like more information on how your data is processed please see our
+    <a href="/en/privacy">privacy policy</a> or contact <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>. Your data privacy rights
+    will not be affected and further details can be found at
+    <a href="https://ico.org.uk/your-data-matters/">https://ico.org.uk/your-data-matters</a>
+  </p>
+</div>
