@@ -3,26 +3,26 @@ description: Dysgwch sut rydym yn casglu gwybodaeth neu ddata penodol amdanoch c
 ---
 # Polisi preifatrwydd
 
-##Single Financial Guidance Body
+## The Single Financial Guidance Body
 
-From 1st January 2019, the services currently delivered by Pension Wise, The
-Money Advice Service and The Pensions Advisory Service will be delivered by the
-[Single Financial Guidance Body](https://www.gov.uk/government/organisations/single-financial-guidance-body).
-In order to maintain the high levels of service we will be transferring all
-customer records over to the new body.
+As of 1st January 2019, Pension Wise, The Money Advice Service and The Pensions
+Advisory Service are delivered by the [Single Financial Guidance Body](https://singlefinancialguidancebody.org.uk). Your
+data privacy rights are not affected.
+
+The Single Financial Guidance Body privacy notice can be [found here](https://singlefinancialguidancebody.org.uk/#openModal2). 
 
 If you would like more information on how your data is processed please see our
-[privacy policy](/cy/privacy) or contact [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk). Your data privacy rights
-will not be affected and further details can be found at
-[https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
+[privacy policy](/cy/privacy) or email [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+
+Further information on your rights can be found at [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
 
 ## Beth yw Pension Wise?
 
 Mae Pension Wise yn wasanaeth am ddim a diduedd y llywodraeth sy’n eich helpu i
 ddeall eich opsiynau pensiwn cyfraniad diffiniedig.
 
-Darperir y gwasanaeth gan yr Adran Gwaith a Phensiynau mewn partneriaeth â
-Chyngor ar Bopeth, Y Gwasanaeth Cynghori ar Bensiynau a Teleperformance.
+The service is provided in partnership with Citizens Advice, The Pensions
+Advisory Service and Teleperformance.
 
 ## Eich data personol
 
@@ -127,6 +127,13 @@ uniongyrchol, neu drwy e-bostio
 
 Byddwch yn cael crynodeb o’ch apwyntiad.
 
+## How we use your information - appointment summary
+
+After your appointment we will send you a document to summarise what was
+discussed. We will ask for your postal address and/or email address to send
+this to you. We also use your postcode to understand the spread of where our
+appointment customers are located across the UK.
+
 ## Sut rydym yn defnyddio’ch gwybodaeth – gwefan
 
 Mae’r wybodaeth a gasglwn ar y wefan yn cynnwys:
@@ -217,5 +224,5 @@ a’r broses ar gyfer codi pryderon ar gael yn <a
 href="https://ico.org.uk/for-the-public"
 rel="external">ico.org.uk/for-the-public</a>
 
-Y Swyddog Diogelu Data sy’n gyfrifol am y gwasanaeth Pension Wise yw Dominic
-Hartley.
+Y Swyddog Diogelu Data sy’n gyfrifol am y gwasanaeth Pension Wise yw Emma
+Wheeler.

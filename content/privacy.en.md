@@ -3,26 +3,26 @@ description: Find out how we collect certain information or data about you when 
 ---
 #Privacy policy
 
-##Single Financial Guidance Body
+##The Single Financial Guidance Body
 
-From 1st January 2019, the services currently delivered by Pension Wise, The
-Money Advice Service and The Pensions Advisory Service will be delivered by the
-[Single Financial Guidance Body](https://www.gov.uk/government/organisations/single-financial-guidance-body).
-In order to maintain the high levels of service we will be transferring all
-customer records over to the new body.
+As of 1st January 2019, Pension Wise, The Money Advice Service and The Pensions
+Advisory Service are delivered by the [Single Financial Guidance Body](https://singlefinancialguidancebody.org.uk). Your
+data privacy rights are not affected.
+
+The Single Financial Guidance Body privacy notice can be [found here](https://singlefinancialguidancebody.org.uk/#openModal2). 
 
 If you would like more information on how your data is processed please see our
-[privacy policy](/en/privacy) or contact [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk). Your data privacy rights
-will not be affected and further details can be found at
-[https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
+[privacy policy](/en/privacy) or email [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+
+Further information on your rights can be found at [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
 
 ##What is Pension Wise?
 
 Pension Wise is a free and impartial government service which helps you
 understand your defined contribution pension options.
 
-The service is provided by The Department for Work and Pensions in partnership
-with Citizens Advice, The Pensions Advisory Service and Teleperformance.
+The service is provided in partnership with Citizens Advice, The Pensions
+Advisory Service and Teleperformance.
 
 ##Your personal data
 
@@ -122,6 +122,13 @@ by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
 You will be provided with a summary of your appointment.
 
+##How we use your information - appointment summary
+
+After your appointment we will send you a document to summarise what was
+discussed. We will ask for your postal address and/or email address to send
+this to you. We also use your postcode to understand the spread of where our
+appointment customers are located across the UK.
+
 ##How we use your information - website
 
 The information we collect on the website includes:
@@ -208,5 +215,5 @@ rights and the process for raising a concern can be found at <a
 href="https://ico.org.uk/for-the-public"
 rel="external">ico.org.uk/for-the-public</a>.
 
-The Data Protection Officer responsible for the Pension Wise service is Dominic
-Hartley.
+The Data Protection Officer responsible for the Pension Wise service is Emma
+Wheeler.
