@@ -73,13 +73,3 @@ $('[data-radio-toggle]').each(function() {
   var $component = $(this);
   new GOVUK.ShowHideContent().init($component); // jshint ignore:line
 });
-
-$('[data-sfgb-banner]').each(function() {
-  'use strict';
-
-  $(this).click(function(event) {
-    event.preventDefault();
-
-    $('.js-sfgb-banner').fadeOut();
-  });
-});

@@ -233,27 +233,11 @@ en:
       intro:
         html: |
           Phone <b>0800 138 3944</b> to <a href="%{appointment_url}">book a free appointment</a>
+      sfgb:
+        html: |
+          <p class="home-intro__text">The Pension Wise service is being delivered by the <a href="https://singlefinancialguidancebody.org.uk">Single Financial Guidance Body</a></p>
       heading: Welcome to Pension Wise
       sub_heading: Free and impartial government guidance about your defined contribution pension options
-      sfgb_banner:
-        html: |
-          <div class="sfgb-banner js-sfgb-banner">
-            <p>
-              From 1st January 2019, the services currently delivered by Pension Wise, The
-              Money Advice Service and The Pensions Advisory Service will be delivered by the
-              <a href="https://www.gov.uk/government/organisations/single-financial-guidance-body">Single Financial Guidance Body</a>. In order to maintain the high levels of
-              service we will be transferring all customer records over to the new body.
-            </p>
-            <p>
-              If you would like more information on how your data is processed please see our
-              <a href="/en/privacy">privacy policy</a> or contact <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>. Your data privacy rights
-              will not be affected and further details can be found at
-              <a href="https://ico.org.uk/your-data-matters/">https://ico.org.uk/your-data-matters</a>
-            </p>
-            <p>
-              <a href="#" class="show-only-with-js" data-sfgb-banner>Dismiss this notice</a>
-            </p>
-          </div>
       quick_links:
         heading: Popular on Pension Wise
         items:
