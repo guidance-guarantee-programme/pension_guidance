@@ -1,0 +1,19 @@
+.sfgb-footer {
+  background: $sfgb-background;
+}
+
+.sfgb-footer-meta {
+  @include media(tablet) {
+    margin: auto;
+    max-width: 1024px;
+  }
+
+  .sfgb-logo {
+    margin-top: 5px;
+    height: 40px;
+
+    @include media(tablet) {
+      margin-left: 30px;
+    }
+  }
+}
