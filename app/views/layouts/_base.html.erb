@@ -82,6 +82,14 @@
 <% end %>
 
 <% content_for :body_end do %>
+  <div class="sfgb-footer">
+    <div class="sfgb-footer-meta">
+      <a href="https://singlefinancialguidancebody.org.uk" target="_blank">
+        <%= image_tag('sfgb_logo.png', class: 'sfgb-logo', alt: 'Single Financial Guidance Body') %>
+      </a>
+    </div>
+  </div>
+
   <%= javascript_include_tag 'application' %>
 
   <% if Rails.env.test? %>
