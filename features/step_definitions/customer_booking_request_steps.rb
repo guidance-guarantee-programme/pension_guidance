@@ -261,7 +261,7 @@ When(/^I complete the inline feedback$/) do
 
   @step_one.feedback.tap do |f|
     f.toggle.click
-    f.wait_for_name
+    f.wait_until_name_visible
 
     f.name.set 'Ben'
     f.email.set 'ben@example.com'
