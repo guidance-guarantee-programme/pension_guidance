@@ -2,7 +2,7 @@
 
 Sgiâm pensiwn yw pan fydd rhywun yn ceisio eich twyllo chi allan o arian yn eich cronfa bensiwn. Yn aml bydd sgiâm yn dechrau gyda ‘galwad ar hap’ - gall hwn fod yn alwad ffôn, neges testun, e-bost, ymweliad personol neu ffyrdd eraill.
 
-^Peidiwch byth a gadael i rywun roi pwysau arnoch i wneud penderfyniad yn ystod galwad ar hap.^
+^If someone calls you out of the blue about your pension, the call is illegal and likely to be a fraudster. You should end the call immediately and alert the [Information Commissioner’s Office (ICO)](https://ico.org.uk/make-a-complaint/nuisance-calls-and-messages/).^
 
 ## Sut i adnabod sgiâm
 
