@@ -13,7 +13,7 @@ Bydd sgiâm pensiwn - pan fydd rhywun yn ceisio eich twyllo chi allan o’ch cro
 
 ^Os bydd rhywun yn cysylltu â chi yn annisgwyl ac yn dweud y gallant eich helpu i gael mynediad at eich cronfa cyn 55 oed, mae’n debygol o fod yn sigâm.^
 
-Os oes rhywun yn eich ffonio yn annisgwyl am eich pensiwn, mae'r alwad yn anghyfreithlon ac yn debygol o fod gan dwyllwyr. Dylech derfynu'r alwad yn syth a rhoi gwybod i [Swyddfa'r Comisiynnydd Gwybodaeth (ICO)](https://ico.org.uk/make-a-complaint/nuisance-calls-and-messages/).
+Os oes rhywun yn eich ffonio yn annisgwyl am eich pensiwn, mae’r alwad yn anghyfreithlon ac yn debygol o fod gan dwyllwyr. Dylech derfynu’r alwad yn syth a rhoi gwybod i [Swyddfa’r Comisiynnydd Gwybodaeth (ICO)](https://ico.org.uk/make-a-complaint/nuisance-calls-and-messages/).
 
 Efallai y cewch gynnig ffordd ddeniadol i fuddsoddi eich cronfa bensiwn, er enghraifft buddsoddi mewn gwesty newydd sy’n cael ei adeiladu mewn lleoliad egsotig. Mae’r rhan fwyaf o’r cynigion hyn yn ffug ond gallant ymddangos yn gredadwy iawn. Eu nod yw i’ch cael i gyfnewid eich cronfa bensiwn a throsglwyddo’r arian.
 
