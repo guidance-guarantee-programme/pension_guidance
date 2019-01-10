@@ -36,17 +36,18 @@ Os ydych y tu allan i’r DU, ffoniwch +44 20 3733 3495.
 
 ^Mae ein harweiniad yn ddi-duedd – ni fyddwn yn argymell unrhyw gynnyrch neu gwmnïau ac ni fyddwn yn dweud wrthych sut i fuddsoddi eich arian.^
 
-<div role="note" aria-label="Single Financial Guidance Body Note" class="application-notice info-notice">
+<div role="note" aria-label="Nodyn Corff Cyfarwyddyd Ariannol Sengl" class="application-notice info-notice">
   <p>
-    From 1st January 2019, the services currently delivered by Pension Wise, The
-    Money Advice Service and The Pensions Advisory Service will be delivered by the
-    <a href="https://https://www.gov.uk/government/organisations/single-financial-guidance-body">Single Financial Guidance Body</a>. In order to maintain the high levels of
-    service we will be transferring all customer records over to the new body.
+    O’r 1af Ionawr 2019, bydd y gwasanaethau sydd ar hyn o bryd yn cael eu cyflenwi gan Pension Wise, Y
+    Gwasanaeth Cynghori Ariannol a’r Gwasanaeth Cynghori ar Bensiynau yn cael eu cyflenwi gan y
+    <a href="https://https://www.gov.uk/government/organisations/single-financial-guidance-body">Corff Cyfarwyddyd Ariannol Sengl</a>. Er mwyn cynnal y lefelau uchel o 
+    Wasanaeth byddwn yn trosglwyddo pob cofnod cwsmeriaid i’r corf newydd.
   </p>
   <p>
-    If you would like more information on how your data is processed please see our
-    <a href="/en/privacy">privacy policy</a> or contact <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>. Your data privacy rights
-    will not be affected and further details can be found at
+    Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu, gweler ein
+    <a href="/en/privacy">polisi preifatrwydd </a> neu cysylltwch â <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>. Ni fydd eich hawliau preifatrwydd data
+    Yn cael eu heffeithio a gellir dod o hyd i fanylion pellach yn
     <a href="https://ico.org.uk/your-data-matters/">https://ico.org.uk/your-data-matters</a>
   </p>
 </div>
+
