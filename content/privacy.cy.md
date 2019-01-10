@@ -3,18 +3,17 @@ description: Dysgwch sut rydym yn casglu gwybodaeth neu ddata penodol amdanoch c
 ---
 # Polisi preifatrwydd
 
-## The Single Financial Guidance Body
+## Y Corff Cyfarwyddyd Ariannol Sengl
 
-As of 1st January 2019, Pension Wise, The Money Advice Service and The Pensions
-Advisory Service are delivered by the [Single Financial Guidance Body](https://singlefinancialguidancebody.org.uk). Your
-data privacy rights are not affected.
+Fel ag o’r 1af Ionawr 2019, mae Pension Wise, Y Gwasanaeth Cynghori Ariannol a’r Gwasanaeth Cynghori ar Bensiynau yn cael eu cyflenwi gan y [Corff Cyfarwyddyd Ariannol Sengl](https://singlefinancialguidancebody.org.uk). Nid yw eich
+Hawliau preifatrwydd data yn cael eu heffeithio.
 
-The Single Financial Guidance Body privacy notice can be [found here](https://singlefinancialguidancebody.org.uk/#openModal2). 
+Gellir dod o hyd i hysbysiad preifatrwydd y Corff Cyfarwyddyd Ariannol Sengl [yma](https://singlefinancialguidancebody.org.uk/#openModal2). 
 
-If you would like more information on how your data is processed please see our
-[privacy policy](/cy/privacy) or email [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu, gweler ein
+[polisi preifatrwydd](/cy/privacy) neu e-bostiwch [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
-Further information on your rights can be found at [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
+Gellir dod o hyd i fwy o fanylion am eich hawliau yn [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
 
 ## Beth yw Pension Wise?
 
