@@ -281,7 +281,7 @@ cy:
           Ffoniwch <b>0800 138 3944</b> i <a href="%{appointment_url}">drefnu apwyntiad am ddim</a>
       sfgb:
         html: |
-          <p class="home-intro__text">The Pension Wise service is being delivered by the <a href="https://singlefinancialguidancebody.org.uk">Single Financial Guidance Body</a></p>
+          <p class="home-intro__text">Mae’r gwasanaeth Pension Wise yn cael ei gyflenwi gan y <a href="https://singlefinancialguidancebody.org.uk">Corff Cyfarwyddyd Ariannol Sengl</a></p>
       heading: Croeso i Pension Wise
       sub_heading: Cyngor am ddim a di-duedd gan y llywodraeth am eich opsiynau pensiwn cyfraniadau wedi’u diffinio
       quick_links:
@@ -336,42 +336,37 @@ cy:
 
   contact:
     new:
-      description: Find out the different ways to contact Pension Wise, including how to send us feedback and how to make a complaint.
+      description: Darganfyddwch am y ffyrdd gwahanol i gysylltu â Pension Wise, yn cynnwys sut i anfon adborth i ni a sut i wneud cwyn.
       contact_us:
-        title: Contact us
+        title: Cysylltu â ni
         content:
           html: |
             <div role="note" aria-label="Information" class="application-notice info-notice">
-              <p>Pension Wise can’t answer specific questions about your pension.</p>
+              <p>Ni all Pension Wise ateb cwestiynau penodol am eich pensiwn.</p>
             </div>
-
-            <p>For independent help, you can contact:</p>
-
+            <p>Am help annibynnol, gallwch gysylltu â:</p>
             <ul>
               <li>
-                <a href="http://www.pensionsadvisoryservice.org.uk/">The Pensions Advisory Service</a>
+                <a href="http://www.pensionsadvisoryservice.org.uk/">Y Gwasanaeth Cynghori ar Bensiynau</a>
               </li>
               <li>
-                <a href="https://www.moneyadviceservice.org.uk/en/">The Money Advice Service</a>
+                <a href="https://www.moneyadviceservice.org.uk/en/">Y Gwasanaeth Cynghori Ariannol</a>
               </li>
             </ul>
-
             <p>
-              If you’d like to speak to someone about your pension options, you can
-              <a href="/en/appointments">book an appointment</a> with a Pension Wise guidance specialist.
+              Os hoffech siarad â rhywun am eich opsiynau pensiwn, gallwch
+              <a href="/en/appointments">drefnu apwyniad</a> gydag arbenigwr arweiniad Pension Wise.
             </p>
       send_us_feedback:
-        title: Send us feedback about Pension Wise
+        title: Anfonnwch adborth i ni am Pension Wise
         content:
           html: |
             <p>
-              You can email Pension Wise at <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>.
+              Gallwch e-bostio Pension Wise yn <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>.
             </p>
-
             <p>
-              You can also write to us by post:
+              Gallwch hefyd ysgrifennu atom drwy’r post:
             </p>
-
             <div class="address">
               <div class="adr org fn">
                 <p>
@@ -384,85 +379,80 @@ cy:
               </div>
             </div>
       complaints:
-        title: Complaints
+        title: Cwynion
         intro:
           html: |
             <p>
-              If you have a complaint about Pension Wise, please fill in and submit the form below.
+              Os oes gennych gwyn am Pension Wise, cwblhewch ac anfonnwch y ffurflen isod.
             </p>
         form:
           error:
-            heading: Unable to submit the form
-            message: 'Check the following:'
+            heading: Methu ag anfon y ffurflen
+            message: 'Edrychwch dros y canlynol:'
           notes:
-            phone_booking: If your complaint is about a phone guidance appointment – include your booking reference number (you’ll find this in your confirmation email)
-            face_to_face: If your complaint is about a face-to-face guidance appointment – include the time, date and location of your appointment
-            other: If your complaint is about anything else, please provide as much detail as you can
+            phone_booking: Os yw eich cwyn am apwyntiad arweiniad dros y ffôn – dylech gynnwys eich rhif cyfeirnod trefnu (gallwch weld hwn yn eich e-bost o gadarnhad)
+            face_to_face: Os yw eich cwyn am apwyntiad arweiniad wyneb i wyneb – dylech gynnwys yr amser, dyddiad a lleoliad eich apwyntiad
+            other: Os yw eich cwyn am unrhyw beth arall, dylech roi cyn gymaint o fanylion ag y gallwch
           help:
-            other: e.g I tried to call Hackney CAB but no one answered
+            other: e.e ceisiais ffonio CAB Bangor ond ni atebodd neb
           privacy:
             html: |
-              <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be <a href="/cy/privacy">found here</a>.</p>
+              <p>Gellir dod o hyd i fanylion llawn am ein polisi preifatrwydd, yn cynnwys gwybodaeth am eich hawliau mewn perthynas â’r data y gallwch ei gadw <a href="/cy/privacy">yma</a>.</p>
         sent:
           html: |
             <p>
-              <strong>Your complaint has been submitted.</strong>
+              <strong>Mae eich cwyn wedi cael ei anfon.</strong>
             </p>
         guide:
           html: |
             <div role="note" aria-label="Information" class="application-notice info-notice">
               <p>
-                Read our guide if you want to
-                <a href="/en/pension-complaints">complain about a pension or pension provider</a>.
+                Darllenwch ein canllaw os ydych eisiau
+                <a href="/en/pension-complaints">cwyno am bensiwn neu ddarparwr pensiwn </a>.
               <p>
             </div>
         promises:
           html: |
             <p>
-              We’ll let you know when we’ve received your complaint and aim to give a full response within 20 working days.
+              Byddwn yn rhoi gwybod i chi pan fyddwn wedi derbyn eich cwyn ac yn anelu i roi ymateb llawn i chi i fewn 20 diwrnod gwaith.
             </p>
-
             <p>
-              If we can’t do this (eg, if we need more time to investigate your complaint) we’ll let you know the reason
-              for the delay and when you can expect a response.
+              Os na allwn wneud hyn (e.e, os ydym angen mwy o amser i ymchwilio i’ch cwyn) byddwn yn gadael i chi wybod beth yw’r rheswm
+              dros yr oedi a pryd y gallwch ddisgwyl ymateb.
             </p>
       take_things_further:
-        title: If you need to take things further
+        title: Os ydych angen mynd a phethau ymhellach
         content:
           html: |
             <p>
-              If you’re not satisfied with our response to your complaint, you can write to
-              <a href="mailto: complaints@pensionwise.gov.uk">complaints@pensionwise.gov.uk</a> to get it escalated.
+              Os nad ydych yn fodlon gyda’n ymateb i’ch cwyn, gallwch ysgrifennu at
+              <a href="mailto: complaints@pensionwise.gov.uk">complaints@pensionwise.gov.uk</a> iddo gael ei uwchraddio.
             </p>
-
             <p>
-              In your email, state the reason why you’re unhappy with our first response and include copies of your
-              original complaint and our response. We’ll then investigate and get back to you within 20 working days.
+              Yn eich e-bost, dywedwch y rheswm pam rydych yn anhapus gyda’n ymateb cyntaf a chynnwys copiau o’ch
+              cwyn gwreiddiol a’n ymateb. Yna byddwn yn ymchwilio ac ymateb i chi o fewn 20 diwrnod gwaith.
             </p>
       get_more_help:
-        title: Getting more help
+        title: Cael mwy o help
         content:
           html: |
             <p>
-              The <a href="https://www.gov.uk/government/organisations/independent-case-examiner">Independent Case Examiner (ICE)</a>
-              is a free and impartial service that can investigate your complaint to see whether we’ve dealt with it in the right way.
+              Mae’r <a href="https://www.gov.uk/government/organisations/independent-case-examiner">Archwilydd Achosion Annibynnol (ICE)</a>
+              yn wasanaeth di-duedd, rhad ac am ddim sy’n gallu ymchwilio i’ch cwyn i weld os ydym wedi delio ag ef yn y ffordd gywir.
             </p>
-
             <div role="note" aria-label="Information" class="application-notice info-notice">
               <p>
-                ICE will only look at your complaint after you’ve been through the full Pension Wise complaints process first.
-                It can’t consider disputes about policy or legal matters.
+                Bydd ICE ond yn edrych ar eich cwyn ar ôl i chi fynd trwy holl broses gwyno Pension Wise yn gyntaf.
+                Ni all ystyried anghydfodau am bolisi neu faterion cyfreithiol.
               </p>
             </div>
-
             <p>
-              You’ll need to send them a copy of your complaint as well as letters or emails that we sent in response.
-              ICE usually won’t look at a complaint received more than 6 months after the date of our final response.
+              Bydd angen i chi anfon copi o’ch cwyn iddynt yn ogystal â llythyrau neu e-byst rydym wedi’u hanfon mewn ymateb.
+              Fel arfer ni fydd ICE yn edrych ar gŵyn a dderbynir mwy na 6 mis ar ôl dyddiad ein hymateb terfynol.
             </p>
-
             <p>
-              You can also ask an MP to refer your complaint to the independent
-              <a href="http://www.ombudsman.org.uk">Parliamentary and Health Service Ombudsman</a>. You can
-              <a href="http://www.parliament.uk/mps-lords-and-offices/mps/">get help with finding your MP</a>
-              if you don’t know who they are. The Ombudsman usually only looks at complaints that ICE has already reviewed.
+              Gallwch hefyd ofyn i AS i gyfeirio eich cwyn i’r
+              <a href="http://www.ombudsman.org.uk">Ombwdsmon Seneddol a’r Gwasanaeth Iechyd</a>. Gallwch
+              <a href="http://www.parliament.uk/mps-lords-and-offices/mps/">gael help i ddod o hyd i’ch AS</a>
+              os nad ydych yn gwybod pwy ydynt. Fel arfer dim ond ar gwynion y mae ICE eisoes wedi’u hadolygu y mae’r Ombwdsmon yn edrych arnynt.
             </p>
