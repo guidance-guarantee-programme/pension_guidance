@@ -30,15 +30,15 @@ module BookingRequests
     end
 
     def open_timeout
-      ENV.fetch('BOOKING_REQUESTS_API_OPEN_TIMEOUT', 2)
+      ENV.fetch('BOOKING_REQUESTS_API_OPEN_TIMEOUT', 2).to_i
     end
 
     def read_timeout
-      ENV.fetch('BOOKING_REQUESTS_API_READ_TIMEOUT', 2)
+      ENV.fetch('BOOKING_REQUESTS_API_READ_TIMEOUT', 2).to_i
     end
 
     def retries
-      ENV.fetch('BOOKING_REQUESTS_API_RETRIES', 0)
+      ENV.fetch('BOOKING_REQUESTS_API_RETRIES', 0).to_i
     end
 
     def bearer_token
