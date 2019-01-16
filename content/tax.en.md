@@ -125,8 +125,8 @@ You could also pay Income Tax on:
 
 - your State Pension
 - earnings from employment or self-employment
-- any other income, eg money from rental income, savings, investments
-- any taxable benefits you might get, eg Carer’s Allowance
+- any other income, e.g. money from rental income, savings, investments
+- any taxable benefits you might get, e.g. Carer’s Allowance
 
 ## The 25% tax-free amount
 There are 2 ways you can take your tax-free amount.
@@ -167,7 +167,7 @@ Your employer will take any tax you owe off your earnings and your State Pension
 If your total income (including money from pensions and PAYE) is £100,000 or more for the tax year, or if you’re self-employed, you’ll have to fill in a Self-Assessment tax return.
 
 ### If you have other income
-You’re responsible for paying tax on other income you have, eg from property or investments, and you might have to fill in a Self-Assessment tax return.
+You’re responsible for paying tax on other income you have, e.g. from property or investments, and you might have to fill in a Self-Assessment tax return.
 
 ^You usually pay tax if your pension pots are worth more than the [lifetime allowance.](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) This is currently £1,073,000.^
 

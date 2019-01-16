@@ -135,10 +135,10 @@ en:
         hint: This option allows you to decide how much pension money to take and when to take it. Your pot stays invested and you take small chunks over time until it runs out – 25% of each amount you take out is tax free.
       take_whole:
         title: Take your whole pot in one go
-        hint: You can take your whole pension pot as cash – 25% is tax free and the other 75% is taxed along with any other income you have, eg from work, savings or investments.
+        hint: You can take your whole pension pot as cash – 25% is tax free and the other 75% is taxed along with any other income you have, e.g. from work, savings or investments.
       mix_your_options:
         title: Mix your options
-        hint: You can mix your options, eg use some of your pension to get an adjustable income and some to buy an annuity. If you have more than one pot, you can choose different options for each one, eg leave one pot untouched and take cash in chunks from another.
+        hint: You can mix your options, e.g. use some of your pension to get an adjustable income and some to buy an annuity. If you have more than one pot, you can choose different options for each one, eg leave one pot untouched and take cash in chunks from another.
       how_my_pension_affects_my_benefits:
         title: How my pension affects my benefits
       getting_help_with_debt:

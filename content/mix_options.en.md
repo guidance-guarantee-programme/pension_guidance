@@ -11,9 +11,9 @@ tags:
 
 You can mix the ways you take your pension pot.
 
-- You can mix the pension options, eg use some of your pot to get an adjustable income and some to buy an annuity.
+- You can mix the pension options, e.g. use some of your pot to get an adjustable income and some to buy an annuity.
 - Not all pension providers offer all the options.
-- If you have multiple pots, you can use different options for each pot, eg leave one pot untouched and take cash in chunks from another.
+- If you have multiple pots, you can use different options for each pot, e.g. leave one pot untouched and take cash in chunks from another.
 
 ^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
 

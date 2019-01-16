@@ -1,10 +1,10 @@
 ---
-description: You can only take money from your pension before 55 in rare cases, eg when you’re seriously ill. 
+description: You can only take money from your pension before 55 in rare cases, e.g. when you’re seriously ill. 
 ---
 
 # Taking your pension before 55
 
-You usually can’t take money from your pension pot before you’re 55 but there are some rare cases when you can, eg if you’re seriously ill. 
+You usually can’t take money from your pension pot before you’re 55 but there are some rare cases when you can, e.g. if you’re seriously ill. 
 
 In this case you may be able take your pot early even if you have a ‘selected retirement age’ (an age you agreed with your pension provider to retire).
 

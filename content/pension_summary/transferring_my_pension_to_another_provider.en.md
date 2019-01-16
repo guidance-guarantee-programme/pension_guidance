@@ -9,7 +9,7 @@ Ask your current provider how long it will take to transfer and if you:
 
 * have to pay fees
 * lose any right you have to take your money at a certain age
-* lose any special features, eg a guaranteed annuity rate
+* lose any special features, e.g. a guaranteed annuity rate
 * lose any right to take a tax-free lump sum of more than 25% of your pension pot
 
 You should also ask the provider you’re moving to if you’ll have to make regular payments into the new pension.

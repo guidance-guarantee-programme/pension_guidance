@@ -6,7 +6,7 @@ You may be able to take your pension pot early if you can’t work because you�
 
 This could be before you’re 55 or your ‘selected retirement age’ – the age you agreed with your provider to retire. Speak to your provider about the rules of your pension.
 
-An ‘enhanced’ or ‘impaired’ annuity may pay more than a standard annuity if you smoke or have a medical condition, eg diabetes or high blood pressure.
+An ‘enhanced’ or ‘impaired’ annuity may pay more than a standard annuity if you smoke or have a medical condition, e.g. diabetes or high blood pressure.
 
 ## If you have a serious illness
 

@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the age you agreed with your provider to retire). You could leave the money invested, eg while you’re working.
+You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the age you agreed with your provider to retire). You could leave the money invested, e.g. while you’re working.
 
 - The money in your pot could grow.
 - You could have more money to last a shorter length of time.
@@ -54,7 +54,7 @@ Ask your pension provider the following questions:
 - How much is the pot likely to grow each year?
 - How is the money invested and can I change this if I want?
 - How much can I still pay in?
-- Does my pot have any special features that could mean I get a better deal, eg a guaranteed annuity rate?
+- Does my pot have any special features that could mean I get a better deal, e.g. a guaranteed annuity rate?
 - Do you have up-to-date details of the person I want to leave my pot to (my ‘beneficiary’)?
 
 </div>

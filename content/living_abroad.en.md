@@ -10,7 +10,7 @@ If you live abroad, or plan on retiring abroad and have a [defined contribution 
 - leave your pot in the UK and take your money from abroad
 - move your pension pot abroad
 
-You can also mix these options, eg leave one pension in the UK and move another abroad.
+You can also mix these options, e.g. leave one pension in the UK and move another abroad.
 
 ## Taking your pension from abroad
 

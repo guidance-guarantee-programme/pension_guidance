@@ -1,11 +1,11 @@
 # Mix your options
 
-You can mix your options, eg use some of your pot to get an adjustable income and some to buy an annuity.
+You can mix your options, e.g. use some of your pot to get an adjustable income and some to buy an annuity.
 
 ## Key facts
 
 * Not all providers offer all the options.
-* If you have more than one pot, you can use different options for each pot, eg leave one untouched and take cash in chunks from another.
+* If you have more than one pot, you can use different options for each pot, e.g. leave one untouched and take cash in chunks from another.
 
 ## Next steps
 

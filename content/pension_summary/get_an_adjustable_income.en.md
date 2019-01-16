@@ -20,7 +20,7 @@ If you’re interested in this option, you’ll need to contact your provider an
 ### Questions to ask your provider
 
 1. Do you offer flexi-access drawdown?
-2. Will I have to pay any fees, eg each time I take a payment?
+2. Will I have to pay any fees, e.g. each time I take a payment?
 3. How much could my pot grow or go down? Some providers now offer products which include guarantees.
 4. Will you charge me a fee if I move my pot to a provider that offers this option?
 5. Does my pot have any special features like a guaranteed annuity rate?

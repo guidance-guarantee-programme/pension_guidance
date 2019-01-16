@@ -12,7 +12,7 @@ This could be before you’re 55 or your ‘selected retirement age’ – the a
 
 Speak to your provider about the rules of your pension – it will depend on their definition of ‘ill health’.
 
-^An ‘enhanced’ or ‘impaired’ annuity may pay more than a standard annuity if you smoke or have a medical condition, eg diabetes or high blood pressure.^
+^An ‘enhanced’ or ‘impaired’ annuity may pay more than a standard annuity if you smoke or have a medical condition, e.g. diabetes or high blood pressure.^
 
 ## If you’re seriously ill
 

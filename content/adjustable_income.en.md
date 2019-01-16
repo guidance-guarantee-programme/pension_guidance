@@ -78,7 +78,7 @@ Beware of pension scams contacting you unexpectedly about an investment or busin
 ## Next steps
 
 - Ask your current provider if they offer flexi-access drawdown and what they charge in fees – if they don’t offer it, you can transfer your pot but you might be charged a fee.
-- Check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
+- Check if your pot has any special features that could mean you get a better deal, e.g. a guaranteed annuity rate.
 - Get [financial advice](/en/financial-advice) if you’re interested in getting an adjustable income.
 - [Shop around](/en/shop-around) – ask providers what products they offer to suit your circumstances.
 - Get some estimates from other providers on how much your pot could grow and what the fees are – usually you just have to fill in a short form on their website.

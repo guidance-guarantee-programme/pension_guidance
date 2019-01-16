@@ -15,7 +15,7 @@ It’s likely that you’ve paid into more than one [defined contribution](/en/p
 Combining your pots could make your pensions easier to manage and help you save on fees. You need to check if you’ll:
 
  - be charged fees to transfer one pot to another
- - lose any special features, eg a guaranteed annuity rate
+ - lose any special features, e.g. a guaranteed annuity rate
 
 You’ll need to speak to each provider separately to find out their rules on combining pots.
 
@@ -39,7 +39,7 @@ If the transfer value is lower than your total pot value, you may be charged an 
 2. What is the ‘transfer value’ of my pension? If it’s the same as your pot value, it’s unlikely you’ll be charged a fee when you transfer.
 3. What fees will I have to pay?
 4. Will I lose the right to take out my money at a certain age? This is called a ‘protected pension age’.
-5. Will I lose any [special features](/en/pension-statements#special-features), eg a guaranteed annuity rate?
+5. Will I lose any [special features](/en/pension-statements#special-features), e.g. a guaranteed annuity rate?
 6. Will I lose the right to take a tax-free lump sum of more than 25% of my pension? This is called a ‘protected tax-free sum’.
 
 You then need to [shop around](/en/shop-around) for a new provider to transfer your pension to.
@@ -47,7 +47,7 @@ You then need to [shop around](/en/shop-around) for a new provider to transfer y
 ### Questions to ask your **new** provider:
 
 1. Do I apply to transfer through you or my current provider?
-2. Are there any fees for transferring in, eg set-up fees?
+2. Are there any fees for transferring in, e.g. set-up fees?
 3. Do I have to make regular payments into the new pension?
 4. What investment funds and levels of risk do you offer? You may need help from a financial adviser with this.
 5. What options do you have for when I want to take my money out?

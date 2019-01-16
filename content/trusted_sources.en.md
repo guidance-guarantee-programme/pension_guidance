@@ -158,7 +158,7 @@ Pension Wise consider these organisations to be trusted sources of additional in
       </td>
       <td>
         <ul>
-          <li>Working, jobs and pensions eg State Pension, Tracing a pension</li>
+          <li>Working, jobs and pensions e.g. State Pension, Tracing a pension</li>
           <li>Tax credits</li>
           <li>Births, deaths, marriages</li>
           <li>Divorce</li>

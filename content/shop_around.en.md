@@ -4,7 +4,7 @@ description: When deciding what to do with your pension money in retirement, rem
 
 # Shop around and compare providers
 
-You don’t have to choose a pension option, eg a guaranteed income (annuity) from your current pension provider. You can switch your provider before taking your money.
+You don’t have to choose a pension option, e.g. a guaranteed income (annuity) from your current pension provider. You can switch your provider before taking your money.
 
 For example, if you want to buy an annuity, moving to another provider could give you a bigger choice and potentially a higher income.
 
@@ -32,7 +32,7 @@ There are many different [types of annuity](/en/guaranteed-income). You can comp
 * how much you have in your pot
 * the age you plan to retire
 * the postcode of where you’ll live when you retire
-* the type of annuity you want, eg one that only pays income for a fixed term
+* the type of annuity you want, e.g. one that only pays income for a fixed term
 
 You’ll need to answer questions about your health and lifestyle. 
 

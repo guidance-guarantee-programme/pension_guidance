@@ -30,7 +30,7 @@ Not all providers offer this option. If your current provider doesn’t offer it
 
 You pay tax when you take money from your pot because you get tax relief when you pay into your pension.
 
-The money you take from your pot will be added to any other income you have for that year, eg State Pension payments, benefits, interest from savings, salary. This could mean that taking a large amount of cash in one go will bump you into a higher tax rate.
+The money you take from your pot will be added to any other income you have for that year, e.g. State Pension payments, benefits, interest from savings, salary. This could mean that taking a large amount of cash in one go will bump you into a higher tax rate.
 
 If you spread the cash amounts over more than one tax year, you might pay less tax on them.
 
@@ -72,7 +72,7 @@ Beware of [pension scams](/en/scams) contacting you unexpectedly about an invest
 
 - Ask your current provider if they offer the option – also known as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS) – and what they charge in fees.
 - If they don’t offer it, you can transfer your pot but you might be charged a fee.
-- Check if your pot has any special features that could mean you get a better deal, eg a guaranteed annuity rate.
+- Check if your pot has any special features that could mean you get a better deal, e.g. a guaranteed annuity rate.
 - Understand [how much tax](/en/tax) you’ll pay on any money you’re planning to take out.
 
 </div>

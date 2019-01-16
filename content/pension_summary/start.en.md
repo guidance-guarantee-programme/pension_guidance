@@ -14,7 +14,7 @@ You can use this service to find out about:
 
 1. You’ll get a brief summary of the 6 options for taking a defined contribution pension.
 2. Select the ones you’re most interested in for more detailed information.
-3. You can then choose extra information, eg how your pension is taxed.
+3. You can then choose extra information, e.g. how your pension is taxed.
 4. Print or download your summary.
 
 ## Before you start

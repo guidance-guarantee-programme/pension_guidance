@@ -28,7 +28,7 @@ You pay tax when you take money from your pot. This is because when you’re pay
 
 Your pension provider will take off the [tax you owe](/en/tax#How your tax is paid) before they pay you the cash.
 
-The cash you take will be added to any other income you have over the tax year, eg money from work, savings and benefits.
+The cash you take will be added to any other income you have over the tax year, e.g. money from work, savings and benefits.
 
 You may pay emergency tax when you take money from your pot which you can claim back.
 
