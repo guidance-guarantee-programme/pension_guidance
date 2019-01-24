@@ -349,7 +349,7 @@ en:
             other: e.g I tried to call Hackney CAB but no one answered
           privacy:
             html: |
-              <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be <a href="/en/privacy">found here</a>.</p>
+              <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be found in our <a href="/en/privacy">privacy policy</a>.</p>
         sent:
           html: |
             <p>
