@@ -14,6 +14,7 @@
           </li>
         <% end %>
       </ul>
+      <div class="grid-row">
       <% if @summary.pilot? %>
         <div class="column-one-quarter">
           <%= link_to t('.print_button'), print_summary_path, target: '_blank', class: 'button' %>
@@ -27,6 +28,7 @@
         </div>
         <div class="column-one-quarter"><%= link_to t('.download_button'), download_summary_path, class: 'button' %></div>
       <% end %>
+      </div>
     </div>
   </aside>
 
