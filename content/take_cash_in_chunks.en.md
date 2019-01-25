@@ -18,7 +18,7 @@ Some pension providers charge a fee to take cash out.
 
 Not all providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 
-^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
+^[Find out if you can book a free Pension Wise appointment](/en/pension-type-tool)^
 
 ^This calculator will not calculate tax accurately for individuals living in Scotland as income tax calculations are different. [Get an estimate](https://www.gov.uk/estimate-income-tax) of how much tax you’ll pay.^
 

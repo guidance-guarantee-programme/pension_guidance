@@ -19,7 +19,7 @@ This option is also known as ‘flexi-access drawdown’.
 
 You’ll probably need to be involved in choosing and managing your investments. The value of your pot can go up or down.
 
-^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
+^[Find out if you can book a free Pension Wise appointment](/en/pension-type-tool)^
 
 Not all pension providers offer this option. If your current provider doesn’t offer it, you can transfer your pot to another provider but you might have to pay a fee.
 

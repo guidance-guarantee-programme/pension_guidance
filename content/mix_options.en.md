@@ -15,7 +15,7 @@ You can mix the ways you take your pension pot.
 - Not all pension providers offer all the options.
 - If you have multiple pots, you can use different options for each pot, e.g. leave one pot untouched and take cash in chunks from another.
 
-^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
+^[Find out if you can book a free Pension Wise appointment](/en/pension-type-tool)^
 
 {: .info-notice--mix-options}
 $E
