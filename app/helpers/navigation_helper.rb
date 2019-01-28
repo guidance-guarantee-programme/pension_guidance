@@ -28,7 +28,7 @@ module NavigationHelper
   private
 
   def navigation_topic_link(topic)
-    link_to(topic.label, topic.url, class: 'nav__item-label')
+    link_to(topic.label, topic.url, class: 'nav__item-label', 'aria-haspopup': true)
   end
 
   def navigation_topic_list(groups, classes)
