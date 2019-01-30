@@ -27,14 +27,5 @@
   </div>
 
   <div class="l-column-half">
-    <h2 style="margin-top: 0;">Find us here:</h2>
-
-    <a href="https://maps.google.com/maps?q=<%= @location.address_encoded %>" target="_blank">
-      <img
-        height="450"
-        alt="map showing the location of <%= @location.name %> (link opens external website in new window)"
-        style="border:0; position: relative; width:100%;"
-        src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= @location.address_encoded %>&center=<%= @location.address_encoded %>&size=440x330&zoom=15&scale=2&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
-    </a>
   </div>
 </div>

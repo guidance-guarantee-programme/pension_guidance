@@ -29,12 +29,5 @@
   </div>
 
   <div class="l-column-half">
-    <a href="https://maps.google.com/maps?q=<%= url_encode(@location.postcode) %>" target="_blank">
-      <img
-        height="300"
-        alt="map showing the location of <%= @location.name %> (link opens external website in new window)"
-        style="border:0; position: relative;"
-        src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= url_encode(@location.postcode) %>&center=<%= url_encode(@location.postcode) %>&size=300x300&scale=2&zoom=15&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
-    </a>
   </div>
 </div>
