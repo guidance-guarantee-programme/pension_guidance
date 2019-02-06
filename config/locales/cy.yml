@@ -279,9 +279,6 @@ cy:
       intro:
         html: |
           Ffoniwch <b>0800 138 3944</b> i <a href="%{appointment_url}">drefnu apwyntiad am ddim</a>
-      sfgb:
-        html: |
-          <p class="home-intro__text">Mae’r gwasanaeth Pension Wise yn cael ei gyflenwi gan y <a href="https://singlefinancialguidancebody.org.uk">Corff Cyfarwyddyd Ariannol Sengl</a></p>
       heading: Croeso i Pension Wise
       sub_heading: Cyngor am ddim a di-duedd gan y llywodraeth am eich opsiynau pensiwn cyfraniadau wedi’u diffinio
       quick_links:
