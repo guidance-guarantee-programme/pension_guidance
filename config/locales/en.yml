@@ -233,9 +233,6 @@ en:
       intro:
         html: |
           Phone <b>0800 138 3944</b> to <a href="%{appointment_url}">book a free appointment</a>
-      sfgb:
-        html: |
-          <p class="home-intro__text">The Pension Wise service is being delivered by the <a href="https://singlefinancialguidancebody.org.uk">Single Financial Guidance Body</a></p>
       heading: Welcome to Pension Wise
       sub_heading: Free and impartial government guidance about your defined contribution pension options
       quick_links:
