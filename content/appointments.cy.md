@@ -35,19 +35,3 @@ Os ydych y tu allan i’r DU, ffoniwch +44 20 3733 3495.
 [Darganfyddwch am gostau galwadau](https://www.gov.uk/costau-galwadau)
 
 ^Mae ein harweiniad yn ddi-duedd – ni fyddwn yn argymell unrhyw gynnyrch neu gwmnïau ac ni fyddwn yn dweud wrthych sut i fuddsoddi eich arian.^
-
-<div role="note" aria-label="Nodyn Corff Cyfarwyddyd Ariannol Sengl" class="application-notice info-notice">
-  <p>
-    O’r 1af Ionawr 2019, bydd y gwasanaethau sydd ar hyn o bryd yn cael eu cyflenwi gan Pension Wise, Y
-    Gwasanaeth Cynghori Ariannol a’r Gwasanaeth Cynghori ar Bensiynau yn cael eu cyflenwi gan y
-    <a href="https://https://www.gov.uk/government/organisations/single-financial-guidance-body">Corff Cyfarwyddyd Ariannol Sengl</a>. Er mwyn cynnal y lefelau uchel o 
-    Wasanaeth byddwn yn trosglwyddo pob cofnod cwsmeriaid i’r corf newydd.
-  </p>
-  <p>
-    Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu, gweler ein
-    <a href="/en/privacy">polisi preifatrwydd </a> neu cysylltwch â <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>. Ni fydd eich hawliau preifatrwydd data
-    Yn cael eu heffeithio a gellir dod o hyd i fanylion pellach yn
-    <a href="https://ico.org.uk/your-data-matters/">https://ico.org.uk/your-data-matters</a>
-  </p>
-</div>
-
