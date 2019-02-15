@@ -2,7 +2,7 @@ class MarketingController < ApplicationController
   layout false
 
   def landing
-    @campaign = 'dogs'
+    @campaign = 'apples'
     @phone_number = '0800 138 3375'
 
     respond_to do |format|
