@@ -1,24 +1,55 @@
+require 'csv'
+
 module HomeHelper
-  BANNER_IMAGES = %w(paint peppers).freeze
-  BANNER_START = '2018-08-20'.to_date
-  BANNER_INDEX = '2018-08-06'.to_date
-  BANNER_ROTATION = 14
   BANNER_OVERRIDE = %w(apples paint peppers).freeze
+  BANNER_DATE = /\A\d{4}-\d{2}-\d{2}\z/
 
-  def banner_image(today = Date.current)
-    return banner_image_override if banner_image_override?
+  BANNER_SCHEDULE = <<~CSV.freeze
+    2019-02-17,peppers
+    2019-03-02,apples
+    2019-12-31,paint
+  CSV
 
-    if today >= BANNER_START
-      BANNER_IMAGES[banner_image_index(today)]
+  class BannerSchedule
+    attr_reader :schedule, :current_date
+    delegate :last, to: :schedule
+
+    class << self
+      def current(schedule, current_date)
+        new(schedule, current_date).current
+      end
+    end
+
+    def initialize(schedule, current_date)
+      @schedule = schedule
+      @current_date = current_date
+    end
+
+    def current
+      schedule.detect(method(:last)) { |row| row.first > current_date }.last
+    end
+  end
+
+  def banner_image(today = banner_date)
+    if banner_image_override?
+      banner_image_override
     else
-      ''
+      scheduled_banner_image(today)
     end
   end
 
   private
 
-  def banner_image_index(today)
-    ((today - BANNER_INDEX).to_i / BANNER_ROTATION) % BANNER_IMAGES.size
+  def banner_date_override?
+    params.key?(:banner_date) && params[:banner_date].match?(BANNER_DATE)
+  end
+
+  def banner_date_override
+    Date.iso8601(params[:banner_date].to_s)
+  end
+
+  def banner_date
+    banner_date_override? ? banner_date_override : Date.current
   end
 
   def banner_image_override?
@@ -27,5 +58,13 @@ module HomeHelper
 
   def banner_image_override
     params[:banner]
+  end
+
+  def banner_image_schedule
+    CSV.parse(ENV.fetch('BANNER_SCHEDULE', BANNER_SCHEDULE), converters: [:date])
+  end
+
+  def scheduled_banner_image(today)
+    BannerSchedule.current(banner_image_schedule, today)
   end
 end

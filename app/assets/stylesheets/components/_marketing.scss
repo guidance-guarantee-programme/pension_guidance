@@ -1,6 +1,4 @@
 .marketing-page {
-  margin-bottom: 24px;
-
   #global-header-bar { // scss-lint:disable IdSelector
     display: none;
   }
@@ -93,6 +91,55 @@
 
         @include device-pixel-ratio(2) {
           background-image: image-url("campaigns/dogs/expectant-2x.png");
+        }
+      }
+    }
+  }
+}
+
+.l-campaign-apples {
+  .l-home-row--callout {
+    background: $color-apples-background-light;
+    background-image: linear-gradient(to bottom, $color-apples-background-dark 0%, $color-apples-background-light 100%);
+  }
+
+  .l-home-row-callout__content {
+    @include media(desktop) {
+      background-image: image-url("campaigns/apples/poster.png");
+
+      @include device-pixel-ratio(2) {
+        background-image: image-url("campaigns/apples/poster-2x.png");
+      }
+    }
+  }
+
+  .l-marketing-row--flip {
+    background-color: $color-apples-background-dark;
+    background-image: linear-gradient(to bottom, $color-apples-background-light 0%, $color-apples-background-dark 100%);
+  }
+
+  .l-marketing-promo {
+    background-color: $color-dogs-background-dark;
+    background-image: linear-gradient(to bottom, $color-apples-background-dark 0%, $color-apples-background-light 100%);
+  }
+
+  .l-marketing-promo__content {
+    background-image: image-url("campaigns/apples/banner.png");
+
+    @include media(desktop) {
+      @include device-pixel-ratio(2) {
+        background-image: image-url("campaigns/apples/banner-2x.png");
+      }
+    }
+  }
+
+  .l-marketing-row--campaign {
+    .l-home-row-callout__content {
+      @include media(tablet) {
+        background-image: image-url("campaigns/apples/expectant.png");
+
+        @include device-pixel-ratio(2) {
+          background-image: image-url("campaigns/apples/expectant-2x.png");
         }
       }
     }
