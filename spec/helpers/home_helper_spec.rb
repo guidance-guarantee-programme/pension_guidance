@@ -3,90 +3,82 @@ RSpec.describe HomeHelper, type: :helper do
     subject { helper.banner_image(today) }
 
     context 'before the start date' do
-      let(:today) { Date.civil(2018, 8, 14) }
-
-      it 'returns an empty string' do
-        expect(subject).to be_empty
-      end
-    end
-
-    context 'from the W/C 20 Aug' do
-      let(:today) { Date.civil(2018, 8, 20) }
+      let(:today) { Date.civil(2019, 2, 16) }
 
       it 'returns peppers' do
         expect(subject).to eq('peppers')
       end
     end
 
-    context 'from the W/C 27 Aug' do
-      let(:today) { Date.civil(2018, 8, 27) }
+    context 'from the 17 February, 2019' do
+      let(:today) { Date.civil(2019, 2, 17) }
 
-      it 'returns peppers' do
-        expect(subject).to eq('peppers')
+      it 'returns apples' do
+        expect(subject).to eq('apples')
       end
     end
 
-    context 'from the W/C 3 Sep' do
-      let(:today) { Date.civil(2018, 9, 3) }
+    context 'from the 2 March, 2019' do
+      let(:today) { Date.civil(2019, 3, 2) }
 
       it 'returns paint' do
         expect(subject).to eq('paint')
       end
     end
 
-    context 'from the W/C 10 Sep' do
-      let(:today) { Date.civil(2018, 9, 10) }
+    context 'past the end of the schedule' do
+      let(:today) { Date.civil(2020, 1, 1) }
 
       it 'returns paint' do
         expect(subject).to eq('paint')
       end
     end
 
-    context 'from the W/C 17 Sep' do
-      let(:today) { Date.civil(2018, 9, 17) }
-
-      it 'returns peppers' do
-        expect(subject).to eq('peppers')
+    describe 'when using a custom schedule' do
+      let(:schedule) do
+        <<~CSV
+          2019-02-17,paint
+          2019-03-02,peppers
+          2019-12-31,apples
+        CSV
       end
-    end
 
-    context 'from the W/C 24 Sep' do
-      let(:today) { Date.civil(2018, 9, 24) }
-
-      it 'returns peppers' do
-        expect(subject).to eq('peppers')
+      around do |example|
+        ENV['BANNER_SCHEDULE'] = schedule
+        example.run
+        ENV.delete('BANNER_SCHEDULE')
       end
-    end
 
-    context 'from the W/C 1 Oct' do
-      let(:today) { Date.civil(2018, 10, 1) }
+      context 'before the start date' do
+        let(:today) { Date.civil(2019, 2, 16) }
 
-      it 'returns paint' do
-        expect(subject).to eq('paint')
+        it 'returns paint' do
+          expect(subject).to eq('paint')
+        end
       end
-    end
 
-    context 'from the W/C 8 Oct' do
-      let(:today) { Date.civil(2018, 10, 8) }
+      context 'from the 17 February, 2019' do
+        let(:today) { Date.civil(2019, 2, 17) }
 
-      it 'returns paint' do
-        expect(subject).to eq('paint')
+        it 'returns peppers' do
+          expect(subject).to eq('peppers')
+        end
       end
-    end
 
-    context 'from the W/C 15 Oct' do
-      let(:today) { Date.civil(2018, 10, 15) }
+      context 'from the 2 March, 2019' do
+        let(:today) { Date.civil(2019, 3, 2) }
 
-      it 'returns peppers' do
-        expect(subject).to eq('peppers')
+        it 'returns apples' do
+          expect(subject).to eq('apples')
+        end
       end
-    end
 
-    context 'from the W/C 22 Oct' do
-      let(:today) { Date.civil(2018, 10, 22) }
+      context 'past the end of the schedule' do
+        let(:today) { Date.civil(2020, 1, 1) }
 
-      it 'returns peppers' do
-        expect(subject).to eq('peppers')
+        it 'returns apples' do
+          expect(subject).to eq('apples')
+        end
       end
     end
   end
