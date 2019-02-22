@@ -20,6 +20,7 @@ Efallai na fydd rhywfaint o’r wybodaeth yn y crynodeb yn berthnasol os byddwn 
 - bod gennych gytundeb Adran 32 – efallai na fyddwch yn gallu trosglwyddo eich pensiwn
 - rydych eisioes yn cymryd incwm addasiadwy (yn derbyn incwm o gytundeb tynnu allan)
 - rydych wedi etifeddu eich cronfa bensiwn – bydd y swm o dreth a dalwch yn wahanol
+- bod gennych flwydd-dal cyfnod penodol ac mae swm aeddfedu'n daladwy
 
 Yn yr achosion hyn efallai na fydd pob opsiwn ar gael. Bydd angen i chi gysylltu â’ch darparwr am fwy o wybodaeth.
 
