@@ -20,6 +20,7 @@ Some information in the summary may not apply if during your appointment we foun
 - have a Section 32 arrangement – you may not be able to transfer your pension
 - are already taking an adjustable income (receiving income from a drawdown arrangement)
 - have inherited your pension pot – the amount of tax you pay will be different
+- have a fixed term annuity and a maturity amount is payable
 
 In these cases all the options may not be available. You’ll need to contact your provider for more details.
 
