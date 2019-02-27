@@ -16,6 +16,7 @@ RSpec.feature 'The pension summary', type: :feature do
     scenario 'Viewing the pilot pension summary' do
       given_the_pilot_summaries_cookie_is_set_to_true
       and_pilot_summaries_are_enabled
+      and_pilot_data_collection_is_enabled
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
@@ -60,6 +61,7 @@ RSpec.feature 'The pension summary', type: :feature do
       given_the_pilot_summaries_cookie_is_set_to_false
       and_pilot_summaries_are_enabled
       and_pilot_summaries_are_enforced
+      and_pilot_data_collection_is_enabled
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
@@ -76,6 +78,7 @@ RSpec.feature 'The pension summary', type: :feature do
       given_the_pilot_summaries_cookie_is_set_to_false
       and_pilot_summaries_are_enabled
       and_pilot_summaries_are_enforced
+      and_pilot_data_collection_is_enabled
 
       when_i_am_on_the_home_page(locale: 'cy')
       and_i_choose_to_explore_my_pension_options
@@ -89,6 +92,7 @@ RSpec.feature 'The pension summary', type: :feature do
       given_the_pilot_summaries_cookie_is_set_to_true
       and_pilot_summaries_are_enabled
       and_pilot_summaries_are_enforced
+      and_pilot_data_collection_is_enabled
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
@@ -99,6 +103,24 @@ RSpec.feature 'The pension summary', type: :feature do
       and_i_view_a_summary_with_all_pages
       and_i_fill_out_the_your_experience_form
       then_i_view_a_thank_you_page
+    end
+
+    context 'and data collection is disabled' do
+      scenario 'Viewing the pilot pension summary' do
+        given_the_pilot_summaries_cookie_is_set_to_true
+        and_pilot_summaries_are_enabled
+        and_pilot_summaries_are_enforced
+        and_pilot_data_collection_is_disabled
+
+        when_i_am_on_the_home_page
+        and_i_choose_to_explore_my_pension_options
+        and_i_begin_the_questionnaire
+        and_i_select_all_pension_options
+        and_i_select_all_extra_options
+        and_i_view_a_summary_with_all_pages
+        and_i_fill_out_the_your_experience_form
+        then_i_view_a_thank_you_page
+      end
     end
   end
 end
@@ -124,6 +146,14 @@ end
 def and_pilot_summaries_are_enforced
   allow(ENV).to receive(:[]).and_call_original
   allow(ENV).to receive(:[]).with('FORCE_PILOT_SUMMARIES').and_return('true')
+end
+
+def and_pilot_data_collection_is_enabled
+  allow(ENV).to receive(:[]).with('PILOT_DATA_COLLECTION').and_return('true')
+end
+
+def and_pilot_data_collection_is_disabled
+  allow(ENV).to receive(:[]).with('PILOT_DATA_COLLECTION').and_return(nil)
 end
 
 def when_i_am_on_the_home_page(locale: 'en')
