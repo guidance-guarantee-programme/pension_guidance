@@ -8,6 +8,7 @@ class PensionSummariesController < ApplicationController
   before_action :show_summary, if: :generated?, only: %i(step_one step_two)
   before_action :set_current_step, only: %i(summary)
   before_action :set_breadcrumbs
+  before_action :skip_about_you, unless: :pilot_data_collection?, only: %i(about_you save_about_you)
 
   rescue_from ActiveRecord::RecordNotFound do
     redirect_to explore_your_options_root_url
@@ -203,6 +204,14 @@ class PensionSummariesController < ApplicationController
 
   def force_pilot_summaries?
     ENV['FORCE_PILOT_SUMMARIES'] == 'true' && params[:locale] == 'en'
+  end
+
+  def pilot_data_collection?
+    ENV['PILOT_DATA_COLLECTION'] == 'true'
+  end
+
+  def skip_about_you
+    redirect_to explore_your_options_step_one_url(id: @summary.id)
   end
 
   def alternate_url(new_locale, options = {})
