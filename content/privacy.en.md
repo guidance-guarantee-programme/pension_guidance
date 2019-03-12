@@ -1,9 +1,9 @@
 ---
 description: Find out how we collect certain information or data about you when you use Pension Wise.
 ---
-#Privacy policy
+# Privacy policy
 
-##The Single Financial Guidance Body
+## The Single Financial Guidance Body
 
 As of 1st January 2019, Pension Wise, The Money Advice Service and The Pensions
 Advisory Service are delivered by the [Single Financial Guidance Body](https://singlefinancialguidancebody.org.uk). Your
@@ -16,7 +16,7 @@ If you would like more information on how your data is processed please see our
 
 Further information on your rights can be found at [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
 
-##What is Pension Wise?
+## What is Pension Wise?
 
 Pension Wise is a free and impartial government service which helps you
 understand your defined contribution pension options.
@@ -24,7 +24,7 @@ understand your defined contribution pension options.
 The service is provided in partnership with Citizens Advice, The Pensions
 Advisory Service and Teleperformance.
 
-##Your personal data
+## Your personal data
 
 Pension Wise collects and stores personal data for the purpose of delivering
 Pensions Guidance in accordance with the statutory requirement described in
@@ -44,7 +44,7 @@ stored for a period of 12 months before being deleted.
 We won’t share your information with any other organisations for marketing or
 commercial purposes, and we don’t pass on your details to other websites.
 
-##How we use your information - booking an appointment
+## How we use your information - booking an appointment
 
 When you use our online booking system or call our booking phone line, you will
 be asked to provide your name, telephone number, email address, date of birth,
@@ -57,14 +57,14 @@ require to help you to access the appointment.
 
 If you have no further contact with Pension Wise after booking an appointment
 (for example if you subsequently cancel the appointment and do not re-book),
-your personal data will be stored in our booking system for a period of 2 years
+your personal data will be stored in our booking system for a maximum of 2 years
 from the date the booking was made and then deleted. Calls to our booking line
 are recorded and stored for 6 months.
 
 The lawful basis for Pension Wise processing personal data for this purpose is
 set out in Article 6(1)(e) of the General Data Protection Regulations.
 
-##How we use your information - guidance appointments
+## How we use your information - guidance appointments
 
 Face to face and telephone appointments are delivered through Citizens Advice,
 The Pensions Advisory Service and Teleperformance.
@@ -76,19 +76,19 @@ of health to inform the discussion with the guidance specialist.
 Some of these details may be stored on our systems as part of the record of
 your appointment.
 
-###Personal data
+### Personal data
 
 The lawful basis for Pension Wise processing this data for the delivery of
 appointments in conjunction with our delivery partners (the Citizens Advice
 network, The Pensions Advisory Service and Teleperformance), and storing your
-data securely for a period of 2 years, is set out in Article 6(1)(e) of the
+data securely for a maximum of 2 years, is set out in Article 6(1)(e) of the
 General Data Protection Regulations; _“performance of a task carried out in the
 public interest or in the exercise of official authority vested in the
 controller”_
 
-For appointments with the Pensions Advisory Service and Teleperformance, key
-details from your appointment are stored, and calls are recorded and stored,
-for a period of two years before being deleted.
+For telephone appointments with the Pensions Advisory Service, Citizens Advice
+and Teleperformance, key details from your appointment are stored, and calls
+are recorded and stored, for a maximum of two years before being deleted.
 
 For appointments delivered by the Citizens Advice network, they will ask for
 your consent to store key details from your appointment for a period of six
@@ -101,35 +101,35 @@ processing of his or her personal data for one or more specific purposes”_
 Consent can be withdrawn at any time by contacting Citizens Advice directly, or
 by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
-###Health data
+### Health data
 
 For appointments delivered by Citizens Advice England and Wales, any basic
 health data you provide when requesting an appointment online and during the
 appointment may be stored in general terms as part of the record of
 appointment, where it is relevant to your pension options (for example a health
 condition may entitle you to an enhanced annuity). Where this occurs,
-processing and retention of this data for a period of 2 years is in accordance
+processing and retention of this data for a maximum of 2 years is in accordance
 with Article 9(2)(g) of the General Data Protection Regulations, in reference
 to Schedule 1, Part 2(6)(1 and 2) of the Data Protection Act 2018.
 
-Citizens Advice England and Wales will ask for your consent to store any basic
-health data discussed in your appointment for a period of six years, in line
-with their organisational retention policy. This consent process is in
-accordance with Article 9(2)(a) of the General Data Protection Regulations.
+Citizens Advice will ask for your consent to store any basic health data
+discussed in your appointment for a period of six years, in line with their
+organisational retention policy. This consent process is in accordance with
+Article 9(2)(a) of the General Data Protection Regulations.
 
 Consent can be withdrawn at any time by contacting Citizens Advice directly, or
 by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
 You will be provided with a summary of your appointment.
 
-##How we use your information - appointment summary
+## How we use your information - appointment summary
 
 After your appointment we will send you a document to summarise what was
 discussed. We will ask for your postal address and/or email address to send
 this to you. We also use your postcode to understand the spread of where our
 appointment customers are located across the UK.
 
-##How we use your information - website
+## How we use your information - website
 
 The information we collect on the website includes:
 
@@ -145,16 +145,17 @@ This helps us to:
 
 We can’t personally identify your use of the website using this data.
 
-Any personal data collected will be deleted after being securely stored for 2 years.
+Any personal data collected will be deleted after being securely stored for a
+maximum of 2 years.
 
-##How we use your information - complaints 
+## How we use your information - complaints 
 
 If you have a live complaint we will store your booking and appointment data
 for longer than our standard retention period if it is necessary to effectively
 respond to the complaint and deal with any subsequent appeals. Any complaints
 will be stored for 2 years from the date of resolution.
 
-##How we use your information - research
+## How we use your information - research
 
 During your interactions with Pension Wise you will be asked if you would be
 happy to be contacted by our research partner. If you consent to this, Ipsos
@@ -169,12 +170,12 @@ Pension Wise service.
 You can withdraw your consent to be contacted by Ipsos Mori at any time, by
 emailing contact@pensionwise.gov.uk 
 
-##Storing your data securely
+## Storing your data securely
 
 We store your data on secure servers within the EU. We have procedures and
 security features in place to keep your data secure once we receive it.
  
-##Links to other websites
+## Links to other websites
 
 Pension Wise contains links to and from other websites.
 
@@ -184,9 +185,9 @@ government services and transactions that we link to.
 If you go to another website from this one, read the privacy policy on that
 website to find out what it does with your information.
 
-##Your rights
+## Your rights
 
-###Right to object
+### Right to object
 
 In accordance with Article 21 of the General Data Protection Regulations, you
 have the right to object to us processing your data. Depending on the nature of
@@ -197,7 +198,7 @@ As another example, if you objected to us using both your email address and
 your postal address, we would not be able to send you a confirmation of your
 appointment booking, or a summary of your appointment.
 
-###Other rights
+### Other rights
 
 You have the right to access any of your personal data that Pension Wise hold.
 You have a right to be given a copy of your data, and a right to correct any
