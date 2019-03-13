@@ -20,8 +20,8 @@ Gellir dod o hyd i fwy o fanylion am eich hawliau yn [https://ico.org.uk/your-da
 Mae Pension Wise yn wasanaeth am ddim a diduedd y llywodraeth sy’n eich helpu i
 ddeall eich opsiynau pensiwn cyfraniad diffiniedig.
 
-The service is provided in partnership with Citizens Advice, The Pensions
-Advisory Service and Teleperformance.
+Darperir y gwasanaeth mewn partneriaeth gyda Cyngor ar Bopeth, Y Gwasanaeth
+Cynghori ar Bensiynau a Teleperformance.
 
 ## Eich data personol
 
@@ -57,7 +57,7 @@ arnoch i’ch helpu i gael mynediad i’r apwyntiad
 Os nad oes gennych unrhyw gysylltiad pellach â Pension Wise ar ôl trefnu
 apwyntiad (er enghraifft, os byddwch chi wedyn yn canslo’r apwyntiad ac nad
 ydych yn ail drefnu apwyntiad), bydd eich data personol yn cael ei storio yn
-ein system trefnu apwyntiad am gyfnod o 2 flynedd o’r dyddiad y trefnwyd yr
+ein system trefnu apwyntiad am uchafswm o 2 flynedd o’r dyddiad y trefnwyd yr
 apwyntiad ac yna’i ddileu. Mae galwadau i’n llinell trefnu apwyntiad yn cael eu
 cofnodi a’u storio am 6 mis.
 
@@ -81,14 +81,14 @@ apwyntiad.
 
 Nodi’r sail gyfreithlon i Pensiwn Wise brosesu’r data hwn ar gyfer cyflwyno
 apwyntiadau ar y cyd â’r (Gwasanaeth Cynghori ar Bensiynau a TelePerformance),
-a  storio eich data’n ddiogel am 2 gyfnod o 2 flynedd, wedi’i nodi yn Erthygl 6
+a  storio eich data’n ddiogel am 2 uchafswm o 2 flynedd, wedi’i nodi yn Erthygl 6
 (1) (e) o’r Rheoliadau Gwarchod Data Cyffredinol; _“perfformiad tasg a
 gynhaliwyd er budd y cyhoedd neu wrth arfer awdurdod swyddogol a freiniwyd yn y
 rheolwr”_.
 
-I gael apwyntiadau gyda’r Gwasanaeth Cynghori ar Bensiynau a TelePerformance,
-caiff manylion allweddol o’ch apwyntiad eu storio, a chaiff galwadau eu
-recordio a’u storio, am gyfnod o ddwy flynedd cyn cael eu dileu.
+Ar gyfer apwyntiadau gyda’r Gwasanaeth Cynghori ar Bensiynau, Cyngor ar Bopeth
+a Teleperformance, caiff manylion allweddol o’ch apwyntiad eu storio, a caiff
+galwadau eu recordio a’u storio, am uchafswm o ddwy flynedd cyn cael eu dileu.
 
 Ar gyfer apwyntiadau a gyflwynir gan rwydwaith Cyngor ar Bopeth, byddant yn
 gofyn am eich caniatâd i storio manylion allweddol eich apwyntiad am gyfnod o
@@ -110,13 +110,13 @@ apwyntiad ar-lein ac yn ystod yr apwyntiad gael ei storio yn nhermau
 cyffredinol fel rhan o’r cofnod o’r apwyntiad, lle mae’n berthnasol i’ch
 opsiynau pensiwn (er enghraifft, gall cyflwr iechyd eich galluogi i gael
 blwydd-dal uwch). Ble mae hyn yn digwydd, mae prosesu a chadw’r data hwn am
-gyfnod o 2 flynedd yn unol ag Erthygl 9 (2) (g) o’r Rheoliadau Gwarchod Data
+uchafswm o 2 flynedd yn unol ag Erthygl 9 (2) (g) o’r Rheoliadau Gwarchod Data
 Cyffredinol, mewn cyfeiriad at Atodlen 1, Rhan 2 (6) (1 a 2 ) o Ddeddf Diogelu
 Data 2018.
 
-Bydd Cyngor ar Bopeth Cymru a Lloegr yn gofyn am eich caniatâd i storio unrhyw
-ddata iechyd sylfaenol a drafodir yn eich apwyntiad am gyfnod o chwe blynedd,
-yn unol â’u polisi cadw trefniadaeth. Mae’r broses ganiatâd hon yn unol ag
+Bydd Cyngor ar Bopeth yn gofyn am eich caniatâd i storio unrhyw ddata iechyd
+sylfaenol a drafodir yn eich apwyntiad am gyfnod o chwe blynedd, yn unol â’u
+polisi cadw trefniadaeth. Mae’r broses ganiatâd hon yn unol ag
 Erthygl 9 (2) (a) o’r Rheoliadau Gwarchod Data Cyffredinol.
 
 Gellir tynnu caniatâd ar unrhyw adeg trwy gysylltu â Chyngor ar Bopeth yn
@@ -150,7 +150,7 @@ Mae hyn yn ein helpu ni i:
 Ni allwn adnabod eich defnydd o’r wefan yn bersonol wrth ddefnyddio’r data hwn.
 
 Bydd unrhyw ddata personol a gesglir yn cael ei ddileu ar ôl cael ei storio’n
-ddiogel am 2 flynedd.
+ddiogel am uchafswm o 2 flynedd.
 
 ## Sut rydym yn defnyddio eich gwybodaeth-cwynion
 
