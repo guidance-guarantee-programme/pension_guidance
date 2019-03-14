@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: f146cc0986018b77866ef58ed0f4907739f30cb9
+  revision: ac66721df60b6635c6f8c8f464754eec8ddab642
   specs:
-    output-templates (4.9.8)
+    output-templates (4.10.1)
       actionview
       sass
 
@@ -442,7 +442,7 @@ DEPENDENCIES
   lograge!
   newrelic_rpm!
   nokogiri!
-  output-templates (~> 4.9)!
+  output-templates (~> 4.10)!
   pdf-inspector!
   pg (>= 0.18)!
   phantomjs!
