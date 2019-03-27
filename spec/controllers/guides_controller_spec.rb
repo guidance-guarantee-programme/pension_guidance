@@ -19,7 +19,7 @@ RSpec.describe GuidesController, type: :controller do
         get :show, params: { locale: :en, id: 'your-pension-pot-value' }
       end
 
-      specify { expect(response).to be_success }
+      specify { expect(response).to be_successful }
       specify { expect(assigns(:guide)).to_not be_nil }
     end
 

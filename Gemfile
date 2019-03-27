@@ -33,7 +33,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'postcodes_io'
   gem 'princely'
   gem 'puma'
-  gem 'rails', '~> 5.1.1'
+  gem 'rails', '~> 5.2'
   gem 'redis'
   gem 'rgeo'
   gem 'rgeo-geojson'
@@ -59,8 +59,9 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   end
 
   group :test do
-    gem 'axe-matchers'
-    gem 'cucumber-rails', require: false
+    gem 'axe-matchers', '2.1.0'
+    gem 'cucumber', '3.0.2'
+    gem 'cucumber-rails', '1.6.0', require: false
     gem 'database_cleaner'
     gem 'factory_bot_rails'
     gem 'fakeredis'
