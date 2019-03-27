@@ -1,4 +1,4 @@
-When(/^I visit the (?:homepage|Pension Wise website)$/) do
+When(/^I visit the (homepage|Pension Wise website)$/) do |_|
   @page = Pages::Home.new
   @page.load(locale: :en)
 end
