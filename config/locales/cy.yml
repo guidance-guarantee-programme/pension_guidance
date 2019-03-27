@@ -274,7 +274,7 @@ cy:
               invalid: rhowch gyfeiriad e-bost dilys
   home:
     show:
-      title: Pension Wise - Cael gwybod eich opsiynau
+      title: 'Pension Wise | 50 neu drosodd? | Dod i wybod eich opsiynau'
       description: Gwasanaeth am ddim a di-duedd gan y llywodraeth sy’n eich helpu i ddeall yr opsiynau ar gyfer eich cronfa bensiwn.
       intro:
         html: |
