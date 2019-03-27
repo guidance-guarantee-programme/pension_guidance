@@ -228,7 +228,7 @@ en:
               invalid: enter a valid email address
   home:
     show:
-      title: Pension Wise - Get to know your options
+      title: 'Pension Wise | Over 50? | Get to know your options'
       description: A free and impartial government service that helps you understand the options for your pension pot.
       intro:
         html: |
