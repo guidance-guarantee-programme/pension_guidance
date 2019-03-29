@@ -29,6 +29,10 @@ Rails.application.routes.draw do
       get 'facebook-landing', to: 'marketing#facebook'
       get 'about', to: 'marketing#about'
 
+      constraints platform: /linkedin|google|facebook/, campaign: /apples|dogs|paint|peppers/ do
+        get ':platform-:campaign', to: 'marketing#campaign', as: :marketing_campaign
+      end
+
       scope 'explore-your-options', controller: 'pension_summaries', as: :explore_your_options do
         root action: 'start'
 
