@@ -7,19 +7,19 @@ RSpec.describe IncomeTaxCalculator do
     context 'when £100,000 and below total income' do
       let(:income) { 100_000 }
 
-      it { is_expected.to eq(11_850) }
+      it { is_expected.to eq(12_500) }
     end
 
     context 'when between £100,000 and £121,200 total income' do
       let(:income) { 110_000 }
 
-      it { is_expected.to eq(6_850) }
+      it { is_expected.to eq(7_500) }
     end
 
     context 'when £121,200 and above total income' do
       let(:income) { 122_000 }
 
-      it { is_expected.to eq(850) }
+      it { is_expected.to eq(1500) }
     end
   end
 
@@ -39,19 +39,19 @@ RSpec.describe IncomeTaxCalculator do
       describe 'and taxable portion of lump sum is within the basic rate band' do
         let(:lump_sum) { 20_000 }
 
-        it { is_expected.to eq(basic: 630, higher: 0, additional: 0) }
+        it { is_expected.to eq(basic: 500, higher: 0, additional: 0) }
       end
 
       describe 'and taxable portion of lump sum is within the higher rate band' do
         let(:lump_sum) { 60_500 }
 
-        it { is_expected.to eq(basic: 6705, higher: 0, additional: 0) }
+        it { is_expected.to eq(basic: 6575, higher: 0, additional: 0) }
       end
 
       describe 'and taxable portion of lump sum is within the additional rate band' do
         let(:lump_sum) { 220_000 }
 
-        it { is_expected.to eq(basic: 6900, higher: 46_200, additional: 6750) }
+        it { is_expected.to eq(basic: 7500, higher: 45_000, additional: 6750) }
       end
     end
 
@@ -67,13 +67,13 @@ RSpec.describe IncomeTaxCalculator do
       describe 'and taxable portion of lump sum is within the higher rate band' do
         let(:lump_sum) { 50_000 }
 
-        it { is_expected.to eq(basic: 6270, higher: 2460, additional: 0) }
+        it { is_expected.to eq(basic: 7000, higher: 1000, additional: 0) }
       end
 
       describe 'and taxable portion of lump sum is within the additional rate band' do
         let(:lump_sum) { 200_000 }
 
-        it { is_expected.to eq(basic: 3900, higher: 46_200, additional: 6750) }
+        it { is_expected.to eq(basic: 4500, higher: 45_000, additional: 6750) }
       end
     end
 
@@ -104,9 +104,9 @@ RSpec.describe IncomeTaxCalculator do
 
   [
     { income: 0, lump_sum: 10_000, lump_sum_tax: 0, lump_sum_received: 10_000 },
-    { income: 10_000, lump_sum: 20_000, lump_sum_tax: 2_630, lump_sum_received: 17_370 },
-    { income: 30_000, lump_sum: 50_000, lump_sum_tax: 11_730, lump_sum_received: 38_270 },
-    { income: 0, lump_sum: 160_000, lump_sum_tax: 40_360, lump_sum_received: 119_640 },
+    { income: 10_000, lump_sum: 20_000, lump_sum_tax: 2_500, lump_sum_received: 17_500 },
+    { income: 30_000, lump_sum: 50_000, lump_sum_tax: 11_000, lump_sum_received: 39_000 },
+    { income: 0, lump_sum: 160_000, lump_sum_tax: 39_500, lump_sum_received: 120_500 },
     { income: 70_000, lump_sum: 250_000, lump_sum_tax: 80_375, lump_sum_received: 169_625 }
   ].each do |scenario|
     context "with a lump sum of £#{scenario[:lump_sum]} and an income of £#{scenario[:income]}" do
