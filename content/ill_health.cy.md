@@ -22,7 +22,7 @@ Efallai y byddwch yn gallu cymryd eich cronfa bensiwn gyfan yn ddi-dreth os yw *
 
 - Mae disgwyl i chi fyw am lai na blwyddyn oherwydd salwch difrifol.
 - Rydych o dan 75 oed (os ydych chi dros 75 oed byddwch yn talu Treth Incwm ar y lwmp swm).
-- Nid oes gennych fwy na’r lwfans oes o £1.03 miliwn mewn arian pensiwn.
+- Nid oes gennych fwy na’r lwfans oes o £1,055,000 mewn arian pensiwn.
 
 Gwiriwch delerau eich pensiwn gyda’ch darparwr. Bydd rhai pensiynau yn cadw o leiaf 50% o’ch cronfa ar gyfer eich priod neu bartner.
 
