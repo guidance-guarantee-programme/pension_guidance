@@ -50,4 +50,4 @@ You don’t normally get it automatically – you have to [claim the State Pensi
 
 The most you can currently get from the basic State Pension is £125.95.
 
-If you reached State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension).
+If you reached State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension) payment which is £168.60 a week. If you reached State Pension age before 6 April 2016 the most you can currently get from the basic State Pension is £129.20 a week.
