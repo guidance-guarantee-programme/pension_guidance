@@ -13,7 +13,7 @@ You could also pay Income Tax on:
 
 ## The 25% tax-free amount
 
-Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £11,850.
+Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £12,500.
 
 There are 2 ways you can take your tax-free amount.
 
@@ -51,4 +51,4 @@ If your total income (including money from pensions and PAYE) is £100,000 or mo
 
 You’re responsible for paying tax on other income you have, eg from property or investments, and you might have to fill in a Self-Assessment tax return.
 
-^You usually pay tax if your pension pots are worth more than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). This is currently £1.03 million.^
+^You usually pay tax if your pension pots are worth more than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). This is currently £1,055,000.
