@@ -46,7 +46,7 @@ Rydych yn 65 oed ac eisiau gweithio’n rhan amser hyd nes y byddwch yn 70. Rydy
 
 Beth sydd gennych | Swm
 - | -
-Pensiwn y Wladwriaeth Newydd llawn y flwyddyn | £8,296.60
+Pensiwn y Wladwriaeth Newydd llawn y flwyddyn | £8,767.20
 Cyfanswm eich cronfa bensiwn | £100,000
 Incwm y flwyddyn o weithio’n rhan amser | £15,000
 
@@ -54,12 +54,12 @@ Incwm y flwyddyn o weithio’n rhan amser | £15,000
 
 Incwm | Swm y flwyddyn
 - | -
-Pensiwn y Wladwriaeth Newydd llawn | + £8,296.60
+Pensiwn y Wladwriaeth Newydd llawn | + £8,767.20
 Incwm o waith | + £15,000
 Arian o’ch incwm addasadwy | +£4,800
-Incwm cyn treth | = £28,096.60
-Treth rydych yn ei dalu | - £3,319.32
-**Cyfanswm eich incwm wedi ymddeol yn eich 60au** | **= £24,777.28**
+Incwm cyn treth | = £28,567.20
+Treth rydych yn ei dalu | - £3,213.44
+**Cyfanswm eich incwm wedi ymddeol yn eich 60au** | **= £25,353.76**
 
 Mae gennych hefyd yr arian di-dreth o £25,000 i ychwanegu at eich incwm.
 
@@ -69,11 +69,11 @@ Rydych yn roi’r gorau i weithio ac yn penderfynu cymryd mwy o’ch buddsoddiad
 
 Incwm | Swm y flwyddyn
 - | -
-Pensiwn y Wladwriaeth Newydd llawn | + £8,296.60
+Pensiwn y Wladwriaeth Newydd llawn | + £8,767.20
 Arian o’ch incwm addasadwy | + £6,500
-Incwm cyn treth | = £14,796.60
-Treth rydych yn ei dalu | - £659.32
-**Cyfanswm eich incwm ymddeol o 70 oed ymlaen** | **= £14,137.28**
+Incwm cyn treth | = £15,267.20
+Treth rydych yn ei dalu | - £553.44
+**Cyfanswm eich incwm ymddeol o 70 oed ymlaen** | **= £14,713.76**
 
 Mae gennych hefyd yr arian di-dreth o £25,000 a gymeroch yn 65 oed i ychwanegu at eich incwm.
 $E
