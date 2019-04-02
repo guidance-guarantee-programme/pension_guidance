@@ -56,4 +56,4 @@ Adjustable income | 75 or older | Income Tax
 Joint, guaranteed period or capital protected annuity | Under 75 | Zero
 Joint, guaranteed period or capital protected annuity | 75 or older | Income Tax
 
-%Your beneficiary might pay extra tax if the amount you take from your pot before you die plus the amount you leave behind is more than £1 million.%
+%Your beneficiary might pay extra tax if the amount you take from your pot before you die plus the amount you leave behind is more than £1,055,000.%
