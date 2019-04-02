@@ -8,6 +8,7 @@ class MarketingController < ApplicationController
   end
   alias facebook landing
   alias about landing
+  alias campaign landing
 
   def footer?
     false
