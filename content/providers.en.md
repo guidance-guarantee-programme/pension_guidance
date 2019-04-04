@@ -7,7 +7,7 @@ description: Providers of Pension Wise guidance
 
 The providers of Pension Wise guidance are:
 
-* Single Financial Guidance Body
+* Money and Pensions Service
 * The National Association of Citizens Advice Bureaux
 * The Scottish Association of Citizens Advice Bureaux
 * Teleperformance SE
