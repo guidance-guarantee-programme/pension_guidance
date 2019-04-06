@@ -10,7 +10,6 @@ Feature: Guides
     Examples:
       | Slug                   |
       | adjustable-income      |
-      | selling-your-annuity   |
       | benefits               |
       | book                   |
       | care-costs             |

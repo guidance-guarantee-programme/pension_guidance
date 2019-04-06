@@ -13,7 +13,7 @@ Gallech hefyd dalu Treth Incwm ar:
 
 ## Yr 25% di-dreth
 
-Nid yw eich swm di-dreth yn defnyddio dim o’ch Lwfans Personol - y swm o incwm nad oes rhaid i chi dalu treth arno. Y Lwfans Personol safonol yw £11,850.
+Nid yw eich swm di-dreth yn defnyddio dim o’ch Lwfans Personol - y swm o incwm nad oes rhaid i chi dalu treth arno. Y Lwfans Personol safonol yw £12,500.
 
 Mae yna 2 ffordd y gallwch gymryd eich swm di-dreth.
 
@@ -51,4 +51,4 @@ Os yw cyfanswm eich incwm (gan gynnwys arian o bensiynau a PAYE) yn £100,000 ne
 
 Chi sy’n gyfrifol am dalu treth ar incwm arall sydd gennych, er enghraifft o eiddo neu fuddsoddiadau, ac efallai y bydd rhaid i chi lenwi ffurflen dreth Hunanasesiad.
 
-^Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). Ar hyn o bryd mae hyn yn £1 miliwn.^
+^Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). Ar hyn o bryd mae hyn yn £1,055,000.
