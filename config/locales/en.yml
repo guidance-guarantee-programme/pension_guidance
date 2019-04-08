@@ -1,6 +1,11 @@
 en:
   language_name: English
 
+  layouts:
+    base:
+      provided_by: Pension Wise is provided by
+      logo_text: Money and Pensions Service
+
   pension_type_tool:
     error_title: 'Unable to submit the form'
     error: 'Select an answer'

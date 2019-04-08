@@ -3,12 +3,12 @@ description: Dysgwch sut rydym yn casglu gwybodaeth neu ddata penodol amdanoch c
 ---
 # Polisi preifatrwydd
 
-## Y Corff Cyfarwyddyd Ariannol Sengl
+## Y Gwasanaeth Arian a Phensiynau
 
-Fel ag o’r 1af Ionawr 2019, mae Pension Wise, Y Gwasanaeth Cynghori Ariannol a’r Gwasanaeth Cynghori ar Bensiynau yn cael eu cyflenwi gan y [Corff Cyfarwyddyd Ariannol Sengl](https://singlefinancialguidancebody.org.uk). Nid yw eich
+Fel ag o’r 1af Ionawr 2019, mae Pension Wise, Y Gwasanaeth Cynghori Ariannol a’r Gwasanaeth Cynghori ar Bensiynau yn cael eu cyflenwi gan y [Gwasanaeth Arian a Phensiynau](https://www.moneyandpensionsservice.org.uk). Nid yw eich
 Hawliau preifatrwydd data yn cael eu heffeithio.
 
-Gellir dod o hyd i hysbysiad preifatrwydd y Corff Cyfarwyddyd Ariannol Sengl [yma](https://singlefinancialguidancebody.org.uk/#openModal2). 
+Gellir dod o hyd i hysbysiad preifatrwydd y Gwasanaeth Arian a Phensiynau [yma](https://www.moneyandpensionsservice.org.uk/privacy-notice).
 
 Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu, gweler ein
 [polisi preifatrwydd](/cy/privacy) neu e-bostiwch [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).

@@ -1,6 +1,11 @@
 cy:
   language_name: Cymraeg
 
+  layouts:
+    base:
+      provided_by: Darperir Pension Wise gan
+      logo_text: Gwasanaeth Arian a Phensiynau
+
   pension_type_tool:
     error_title: 'Methu ag anfon y ffurflen'
     error: 'Dewiswch ateb'
