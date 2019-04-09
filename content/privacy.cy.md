@@ -10,8 +10,8 @@ Hawliau preifatrwydd data yn cael eu heffeithio.
 
 Gellir dod o hyd i hysbysiad preifatrwydd y Gwasanaeth Arian a Phensiynau [yma](https://www.moneyandpensionsservice.org.uk/privacy-notice).
 
-Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu, gweler ein
-[polisi preifatrwydd](/cy/privacy) neu e-bostiwch [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu, gweler
+e-bostiwch [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
 Gellir dod o hyd i fwy o fanylion am eich hawliau yn [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
 

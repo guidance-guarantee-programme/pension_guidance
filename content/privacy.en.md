@@ -11,8 +11,8 @@ data privacy rights are not affected.
 
 The Money and Pensions Service privacy notice can be [found here](https://www.moneyandpensionsservice.org.uk/privacy-notice). 
 
-If you would like more information on how your data is processed please see our
-[privacy policy](/en/privacy) or email [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+If you would like more information on how your data is processed, please email
+[contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
 Further information on your rights can be found at [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
 
