@@ -52,7 +52,7 @@ Rails.application.routes.draw do
         post 'your-experience', action: 'save_feedback'
       end
 
-      namespace :tesco, locale: :en do
+      scope 'employers/:employer_id', module: :employer, as: :employer, employer_id: 1, locale: :en do # tesco = 1
         resources :locations, only: %i(index show) do
           resources :bookings, only: %i(new create) do
             collection do

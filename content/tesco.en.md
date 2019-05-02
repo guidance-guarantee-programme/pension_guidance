@@ -17,7 +17,7 @@ Tesco and Pension Wise are offering appointments for Tesco employees. To book, y
 -  be aged 50 or over
 -  have a defined contribution pension – this includes the Tesco Retirement Savings Plan.
 
-[Book a free guidance appointment](/en/tesco/locations){: .button }
+[Book a free guidance appointment](/en/employers/1/locations){: .button }
 
 # About the appointment
 

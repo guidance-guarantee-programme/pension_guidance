@@ -31,11 +31,6 @@ cy:
   breadcrumbs:
     home:
       title: Cartref
-    tesco:
-      title: Book a free guidance appointment at Tesco
-      slug: tesco
-    tesco_locations:
-      title: Tesco locations
     book_a_telephone_appointment:
       title: Book a phone appointment
     book_an_appointment:
@@ -142,7 +137,7 @@ cy:
               invalid: Rhaid i chi fod yn 50 oed neu’n hŷn
             email:
               invalid_email: Rhaid bod yn e-bost dilys
-        tesco/booking:
+        employer/booking:
           attributes:
             first_name:
               blank: enter a name
@@ -205,7 +200,7 @@ cy:
               inclusion: select an option
 
     attributes:
-      tesco/booking:
+      employer/booking:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
       booking_request_form:

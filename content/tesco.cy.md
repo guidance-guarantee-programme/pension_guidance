@@ -17,7 +17,7 @@ Mae Tesco a Pension Wise yn cynnig apwyntiadau ar dreial i staff Tesco. I drefnu
 -  bod yn 50 oed neu drosodd
 -  bod gyda phensiwn cyfraniadau wedi’u diffinio – mae hyn yn cynnwys y Tesco Retirement Savings Plan.
 
-[Book a free guidance appointment](/cy/tesco/locations){: .button }
+[Book a free guidance appointment](/cy/employer/1/locations){: .button }
 
 # Yr apwyntiad
 
