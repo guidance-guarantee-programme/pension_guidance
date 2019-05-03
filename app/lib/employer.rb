@@ -1,6 +1,4 @@
 module Employer
-  cattr_accessor :api
-
   def self.employer(employer_id)
     response = api.employer(employer_id)
 
@@ -15,5 +13,13 @@ module Employer
 
   def self.create(booking)
     api.create(booking)
+  end
+
+  def self.api
+    @api ||= Employer::Api.new
+  end
+
+  def self.api=(api)
+    @api = api
   end
 end
