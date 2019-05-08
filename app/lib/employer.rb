@@ -16,7 +16,7 @@ module Employer
   end
 
   def self.api
-    @api ||= Employer::Api.new
+    @api ||= ::Employer::Api.new
   end
 
   def self.api=(api)
