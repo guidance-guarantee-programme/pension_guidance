@@ -22,7 +22,7 @@
         <h2 class="locations-a-z-letter"><%= letter %></h2>
         <ol class="locations-a-z-letter-list">
           <% locations.each do |location| %>
-          <li class="locations-a-z-letter-list__location"><%= link_to location.name, employer_location_path(location.id), class: 't-location' %></li>
+          <li class="locations-a-z-letter-list__location"><%= link_to location.name, employer_location_path(employer_id: employer_id, id: location.id), class: 't-location' %></li>
           <% end %>
         </ol>
       <% end %>
