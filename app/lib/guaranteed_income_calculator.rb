@@ -34,11 +34,11 @@ class GuaranteedIncomeCalculator
   # https://docs.google.com/spreadsheets/d/18oScEdlwr-msjdhFIotqpi4Z_6UnKR5xiQO5ctmEnRE/edit#gid=0
   def annuity_rate
     case age
-    when 55...60 then 0.04373
-    when 60...65 then 0.04806
-    when 65...70 then 0.05523
-    when 70...75 then 0.06210
-    else              0.07237
+    when 55...60 then 0.04251
+    when 60...65 then 0.04670
+    when 65...70 then 0.05346
+    when 70...75 then 0.06123
+    else              0.07092
     end
   end
 end
