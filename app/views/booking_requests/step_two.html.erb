@@ -224,12 +224,12 @@
 
           <div class="multiple-choice">
             <%= f.radio_button :gdpr_consent, 'yes', class: 't-gdpr-consent-yes' %>
-            <%= f.label :gdpr_consent, value: 'yes' do %>Yes<% end %>
+            <%= f.label :gdpr_consent, value: 'yes', aria: { label: 'Yes, I consent to my contact details being shared for customer research' } do %>Yes<% end %>
           </div>
 
           <div class="multiple-choice">
             <%= f.radio_button :gdpr_consent, 'no', class: 't-gdpr-consent-no' %>
-            <%= f.label :gdpr_consent, value: 'no' do %>No<% end %>
+            <%= f.label :gdpr_consent, value: 'no', aria: { label: 'No, I do not consent to my contact details being shared for customer research' } do %>No<% end %>
           </div>
         </fieldset>
       </div>
