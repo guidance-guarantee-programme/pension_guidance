@@ -71,7 +71,7 @@
       </legend>
       <div class="form-date" id="booking_date_of_birth" tabindex="-1">
         <div class="form-group form-group-day">
-          <label class="form-label" for="<%= f.object_name %>_date_of_birth_day">Day</label>
+          <label aria-label="Date of birth, day e.g. 25" class="form-label" for="<%= f.object_name %>_date_of_birth_day">Day</label>
           <%=
             f.number_field(
               'date_of_birth_day',
@@ -82,13 +82,12 @@
               class: "f-dob__input form-control js-dob-day t-date-of-birth-day #{'form-control-error' if @booking.errors.include?(:date_of_birth)}",
               pattern: '[0-9]*',
               min: 1,
-              max: 31,
-              'aria-describedby': 'dob-hint'
+              max: 31
             )
           %>
         </div>
         <div class="form-group form-group-month">
-          <label class="form-label" for="<%= f.object_name %>_date_of_birth_month">Month</label>
+          <label aria-label="Date of birth, month e.g. 12" class="form-label" for="<%= f.object_name %>_date_of_birth_month">Month</label>
           <%=
             f.number_field(
               'date_of_birth_month',
@@ -104,7 +103,7 @@
           %>
         </div>
         <div class="form-group form-group-year">
-          <label class="form-label" for="<%= f.object_name %>_date_of_birth_year">Year</label>
+          <label aria-label="Date of birth, year e.g. 1950" class="form-label" for="<%= f.object_name %>_date_of_birth_year">Year</label>
           <%=
             f.number_field(
               'date_of_birth_year',
@@ -114,7 +113,7 @@
               placeholder: 'YYYY',
               class: "form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year #{'form-control-error' if @booking.errors.include?(:date_of_birth)}",
               pattern: '[0-9]*',
-              min: 120.years.ago.year,
+              min: 100.years.ago.year,
               max: Date.today.year
             )
           %>
