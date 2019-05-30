@@ -18,10 +18,4 @@ If you have a defined contribution (personal or workplace) pension you choose ho
 [Start now](/en/pension-type-tool/question-1){: .button .button-start}
 {::webchat /}
 
-## Before you start
-
-You must be aged **50 or over** to book a Pension Wise appointment.
-
-You can get help with the State Pension from the [Pensions Service](http://www.gov.uk/contact-pension-service).
-
 {::feedback_form /}
