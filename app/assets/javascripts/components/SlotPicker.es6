@@ -42,13 +42,11 @@
 
       $currentSelectedButton
         .removeClass(this.selectedClass)
-        .attr('disabled', false)
-        .attr('aria-pressed', false);
+        .attr('disabled', false);
 
       $selectedButton
         .addClass(this.selectedClass)
-        .attr('disabled', true)
-        .attr('aria-pressed', true);
+        .attr('disabled', true);
 
       $.publish('slot-picker-day-selected', $selectedButton);
     }
