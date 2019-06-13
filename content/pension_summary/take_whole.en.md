@@ -22,3 +22,7 @@ If you’re interested in this option, contact your provider and ask the followi
 
 1. Can I take my whole pot in one go?
 2. Will you charge me a fee if I move my pot to a provider that offers this option?
+
+{: .hide-from-screen }
+[Further guidance on taking your whole pot in one go](https://www.pensionwise.gov.uk/en/take-whole-pot)<br>
+[www.pensionwise.gov.uk/en/take-whole-pot](https://www.pensionwise.gov.uk/en/take-whole-pot)

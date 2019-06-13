@@ -30,3 +30,7 @@ Mae’n rhaid i chi gael cyngor ariannol os ydych am drosglwyddo o:
 
 * pensiwn buddion wedi’u diffinio gwerth mwy na £30,000
 * pensiwn cyfraniadau wedi’u diffinio gwerth mwy na £30,000 gyda gwarant am yr hyn y bydd yn cael ei dalu i chi pan fyddwch yn ymddeol (er enghraifft gyfradd blwydd-dal gwarantedig)
+
+{: .hide-from-screen }
+[Further guidance on pensions transfers](https://www.pensionwise.gov.uk/en/transfer-pension)<br>
+[www.pensionwise.gov.uk/en/transfer-pension](https://www.pensionwise.gov.uk/en/transfer-pension)

@@ -32,3 +32,7 @@ Check the terms of your pension with your provider. Some pensions will keep at l
 
 1. What are the rules on taking my money if I’m seriously ill?
 2. Do you have up-to-date details of who I want to leave money to (my ‘beneficiary’)?
+
+{: .hide-from-screen }
+[Further guidance on pensions and ill health](https://www.pensionwise.gov.uk/en/ill-health)<br>
+[www.pensionwise.gov.uk/en/ill-health](https://www.pensionwise.gov.uk/en/ill-health)

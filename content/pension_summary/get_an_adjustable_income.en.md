@@ -24,3 +24,7 @@ If you’re interested in this option, you’ll need to contact your provider an
 3. How much could my pot grow or go down? Some providers now offer products which include guarantees.
 4. Will you charge me a fee if I move my pot to a provider that offers this option?
 5. Does my pot have any special features like a guaranteed annuity rate?
+
+{: .hide-from-screen }
+[Further guidance on getting an adjustable income](https://www.pensionwise.gov.uk/en/adjustable-income)<br>
+[www.pensionwise.gov.uk/en/adjustable-income](https://www.pensionwise.gov.uk/en/adjustable-income)

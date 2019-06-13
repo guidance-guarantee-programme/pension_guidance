@@ -24,3 +24,7 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 3. Faint allai fy nghronfa dyfu neu fynd i lawr? Mae rhai darparwyr yn cynnig cynhyrchion sy’n cynnwys gwarantau.
 4. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?
 5. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
+
+{: .hide-from-screen }
+[Further guidance on getting an adjustable income](https://www.pensionwise.gov.uk/en/adjustable-income)<br>
+[www.pensionwise.gov.uk/en/adjustable-income](https://www.pensionwise.gov.uk/en/adjustable-income)

@@ -21,3 +21,7 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 5. Faint allai ddal i dalu i mewn?
 6. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
 7. Oes gennych chi fanylion cyfredol o bwy rwyf am adael fy nghronfa i (fy ‘muddiolwr’) pan fyddaf yn marw?
+
+{: .hide-from-screen }
+[Further guidance on leaving your pot untouched](https://www.pensionwise.gov.uk/en/leave-pot-untouched)<br>
+[www.pensionwise.gov.uk/en/leave-pot-untouched](https://www.pensionwise.gov.uk/en/leave-pot-untouched)

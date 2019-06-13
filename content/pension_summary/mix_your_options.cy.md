@@ -16,3 +16,7 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 1. Pa opsiynau pensiwn ydych chi’n eu cynnig?
 2. Allai gymysgu rhai o’r opsiynau gyda’i gilydd?
 3. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig y dewisiadau rwyf eisiau?
+
+{: .hide-from-screen }
+[Further guidance on mixing your options](https://www.pensionwise.gov.uk/en/mix-options)<br>
+[www.pensionwise.gov.uk/en/mix-options](https://www.pensionwise.gov.uk/en/mix-options)

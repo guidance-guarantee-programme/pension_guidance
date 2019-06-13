@@ -20,3 +20,7 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 1. Ydych chi’n cynnig ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?
 2. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?
 3. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
+
+{: .hide-from-screen }
+[Further guidance on taking cash in chunks](https://www.pensionwise.gov.uk/en/take-cash-in-chunks)<br>
+[www.pensionwise.gov.uk/en/take-cash-in-chunks](https://www.pensionwise.gov.uk/en/take-cash-in-chunks)

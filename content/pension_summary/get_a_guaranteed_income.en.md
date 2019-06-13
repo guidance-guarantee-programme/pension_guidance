@@ -18,3 +18,7 @@ If you’re interested in this option, you’ll need to contact your provider an
 1. Does my pot have any special features like a guaranteed annuity rate?
 2. Do I qualify for an enhanced or impaired annuity? You’ll need to tell your provider if you smoke or have a medical condition.
 3. Which types of annuity do you offer?
+
+{: .hide-from-screen }
+[Further guidance on getting a guaranteed income (annuity)](https://www.pensionwise.gov.uk/en/guaranteed-income)<br>
+[www.pensionwise.gov.uk/en/guaranteed-income](https://www.pensionwise.gov.uk/en/guaranteed-income)

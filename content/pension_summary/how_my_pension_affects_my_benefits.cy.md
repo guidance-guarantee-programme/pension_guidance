@@ -20,3 +20,7 @@ Efallai y bydd eich asedau eraill (er enghraifft cynilion a buddsoddiadau) hefyd
 ## Cael help gyda budd-daliadau
 
 I gael rhagor o wybodaeth am hawl i fudd-daliadau gallwch siarad â Chyngor ar Bopeth. Cysylltwch â’r Ganolfan Bensiwn Ryngwladol os ydych yn byw dramor ac rydych yn cael budd-daliadau.
+
+{: .hide-from-screen }
+[Further guidance on benefits and pension income](https://www.pensionwise.gov.uk/en/benefits)<br>
+[www.pensionwise.gov.uk/en/benefits](https://www.pensionwise.gov.uk/en/benefits)

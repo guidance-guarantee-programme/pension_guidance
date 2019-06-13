@@ -16,3 +16,7 @@ If you’re interested in this option, you’ll need to contact your provider an
 1. Which pensions do you offer?
 2. Can I mix some options together?
 3. Will you charge me a fee if I move my pot to a provider that offers the option I want?
+
+{: .hide-from-screen }
+[Further guidance on mixing your options](https://www.pensionwise.gov.uk/en/mix-options)<br>
+[www.pensionwise.gov.uk/en/mix-options](https://www.pensionwise.gov.uk/en/mix-options)

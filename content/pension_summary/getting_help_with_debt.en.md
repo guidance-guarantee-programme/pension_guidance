@@ -18,3 +18,7 @@ Find out the status of any debt arrangement you have before choosing a pension o
 Take your time when deciding what to do with your pot and don’t rush into a decision.
 
 For more information about debt you can speak to the [Money Advice Service](https://www.moneyadviceservice.org.uk/en). Their website contains information on taking control of debt and they can also help you find a free and confidential debt advice service near you.
+
+{: .hide-from-screen }
+[Further guidance on debt and pensions](https://www.pensionwise.gov.uk/en/debt)<br>
+[www.pensionwise.gov.uk/en/debt](https://www.pensionwise.gov.uk/en/debt)

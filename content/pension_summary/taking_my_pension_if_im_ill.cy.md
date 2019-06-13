@@ -32,3 +32,7 @@ Gwiriwch delerau eich pensiwn gyda’ch darparwr. Bydd rhai pensiynau yn cadw o 
 
 1. Beth yw’r rheolau ar gymryd fy arian os wyf yn ddifrifol wael?
 2. Oes gennych chi fanylion cyfredol y person rwyf am adael fy arian iddynt (fy ‘buddiolwr’)?
+
+{: .hide-from-screen }
+[Further guidance on pensions and ill health](https://www.pensionwise.gov.uk/en/ill-health)<br>
+[www.pensionwise.gov.uk/en/ill-health](https://www.pensionwise.gov.uk/en/ill-health)

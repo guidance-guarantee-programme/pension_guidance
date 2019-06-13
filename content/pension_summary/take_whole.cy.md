@@ -22,3 +22,7 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 
 1. Allai gymryd fy nghronfa gyfan mewn un tro?
 2. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?
+
+{: .hide-from-screen }
+[Further guidance on taking your whole pot in one go](https://www.pensionwise.gov.uk/en/take-whole-pot)<br>
+[www.pensionwise.gov.uk/en/take-whole-pot](https://www.pensionwise.gov.uk/en/take-whole-pot)
