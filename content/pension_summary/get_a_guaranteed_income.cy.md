@@ -18,3 +18,7 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 1. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
 2. Ydw i’n gymwys am flwydd-dal uwch neu amharedig? Bydd angen i chi ddweud wrth eich darparwr os ydych yn ysmygu neu os oes gennych gyflwr meddygol.
 3. Pa fath o flwydd-dal ydych chi’n ei gynnig?
+
+{: .hide-from-screen }
+[Further guidance on getting a guaranteed income (annuity)](https://www.pensionwise.gov.uk/en/guaranteed-income)<br>
+[www.pensionwise.gov.uk/en/guaranteed-income](https://www.pensionwise.gov.uk/en/guaranteed-income)

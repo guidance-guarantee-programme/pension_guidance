@@ -20,3 +20,7 @@ If you’re interested in this option, you’ll need to contact your provider an
 1. Do you offer ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?
 2. Will you charge me a fee if I move my pot to a provider that offers this option?
 3. Does my pot have any special features like a guaranteed annuity rate?
+
+{: .hide-from-screen }
+[Further guidance on taking cash in chunks](https://www.pensionwise.gov.uk/en/take-cash-in-chunks)<br>
+[www.pensionwise.gov.uk/en/take-cash-in-chunks](https://www.pensionwise.gov.uk/en/take-cash-in-chunks)

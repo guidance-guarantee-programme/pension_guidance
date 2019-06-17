@@ -30,3 +30,7 @@ You must get financial advice if you want to transfer from a:
 
 * defined benefit pension worth more than £30,000
 * defined contribution pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (eg a guaranteed annuity rate)
+
+{: .hide-from-screen }
+[Further guidance on pensions transfers](https://www.pensionwise.gov.uk/en/transfer-pension)<br>
+[www.pensionwise.gov.uk/en/transfer-pension](https://www.pensionwise.gov.uk/en/transfer-pension)

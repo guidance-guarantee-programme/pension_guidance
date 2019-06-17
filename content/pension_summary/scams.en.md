@@ -27,3 +27,7 @@ $C
 Telephone: 0300 123 2040<br>
 From outside the UK: +44 169 826 4700 or +44 289 016 9853
 $C
+
+{: .hide-from-screen }
+[Further guidance on pension scams](https://www.pensionwise.gov.uk/en/scams)<br>
+[www.pensionwise.gov.uk/en/scams](https://www.pensionwise.gov.uk/en/scams)
