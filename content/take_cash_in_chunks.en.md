@@ -35,7 +35,7 @@ If you spread the cash amounts over more than one tax year, you might pay less t
 {: .info-notice--take-cash}
 $E
 **Example**
-Your pot is £60,000. You take out £4,000 each year – £1,000 is tax free and £3,000 is taxable. You work part-time and earn £12,000 a year. The total of your earnings and the taxable cash you’ve taken from your pot is £15,000. This is above the standard Personal Allowance of £11,850. You pay £630 in tax.
+Your pot is £60,000. You take out £4,000 each year – £1,000 is tax free and £3,000 is taxable. You work part-time and earn £12,000 a year. The total of your earnings and the taxable cash you’ve taken from your pot is £15,000. This is above the standard Personal Allowance of £12,500. You pay £630 in tax.
 $E
 
 Your pension provider will take off the [tax you owe](/en/tax#How your tax is paid) before they pay you the cash.
