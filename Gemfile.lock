@@ -73,7 +73,7 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     backports (3.12.0)
-    booking_locations (0.22.0)
+    booking_locations (0.24.0)
       activesupport (>= 4, <= 6)
       globalid
     bugsnag (5.2.0)
