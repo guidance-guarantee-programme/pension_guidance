@@ -25,8 +25,3 @@ Feature: Accessibility of pages
   Scenario: Appointment summary page is accessible
     When I visit the appointment summary page
     Then the page should be accessible skipping: region
-
-  @booking_locations
-  Scenario: Slot picker for face to face booking is not accessible while we develop our own slot picker
-    When I view the face to face booking form
-    Then the page should be accessible excluding ".SlotPicker" skipping: region

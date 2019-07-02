@@ -5,11 +5,11 @@ http_interactions:
     uri: http://localhost:3002/api/v1/booking_requests
     body:
       encoding: UTF-8
-      string: '{"booking_request":{"booking_location_id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef","location_id":"183080c6-642b-4b8f-96fd-891f5cd9f9c7","name":"Lucius
-        Needful","email":"lucius@example.com","phone":"0208 244 3987","memorable_word":"meseeks","age_range":"55-plus","accessibility_requirements":false,"defined_contribution_pot_confirmed":true,"gdpr_consent":"yes","slots":[{"priority":1,"date":"2016-01-01","from":"0900","to":"1300"},{"priority":2,"date":"2016-01-01","from":"1300","to":"1700"},{"priority":3,"date":"2016-01-02","from":"0900","to":"1300"}]}}'
+      string: '{"booking_request":{"booking_location_id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef","location_id":"ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef","name":"Lucius
+        Needful","email":"lucius@example.com","phone":"0208 244 3987","memorable_word":"meseeks","date_of_birth":"1950-01-01","age_range":"55-plus","accessibility_requirements":false,"defined_contribution_pot_confirmed":true,"gdpr_consent":"yes","slots":[{"priority":1,"date":"2019-07-18","from":"0830","to":"0930"}]}}'
     headers:
       User-Agent:
-      - PensionWise/1.0 (birdperson.local; benlovell; 30778) ruby/2.5.1 (57; x86_64-darwin17)
+      - PensionWise/1.0 (birdperson.local; benlovell; 92256) ruby/2.6.2 (47; x86_64-darwin18)
       Accept:
       - application/json
       Content-Type:
@@ -36,18 +36,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"44136fa355b3678a1146ad16f7e8649e"
+      - W/"2aa0cb7d4d657b5472d38934ad017ae7"
       Cache-Control:
       - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _planner_session=mbhazjXCHR6Ki3BY%2B%2FvddAwAbGSkApUGWYh%2BgIVl%2BKp5RiU5TuEXa6WMgVRJcRmL%2BpHC%2FGpAaOKqZ%2B%2FtXjfZn0AQataxc%2FatowfkpnjI2XnGz%2Blav33KiNQvHSaN7P1XpvedFktRpxoVlEeZwA2barj6YQCJThMMHYm5PQqApxQASl8m8HAXnasEGA%3D%3D--crp7qGmr%2Fpy5A7Ob--LWGf569tH6xv0%2BKB8JVDqg%3D%3D;
+        path=/; HttpOnly
       X-Request-Id:
-      - 620fdf02-8d96-4780-94cd-55a86b75047c
+      - d612978e-98b6-43cf-a77b-f0941dc99ba2
       X-Runtime:
-      - '0.162798'
+      - '1.312107'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: "{}"
+      string: '{"reference":"168215","proceeded_at":"2019-07-18T08:30:00.000Z","location":"Hackney"}'
     http_version: 
-  recorded_at: Wed, 21 Nov 2018 16:26:16 GMT
+  recorded_at: Tue, 16 Jul 2019 09:01:49 GMT
 recorded_with: VCR 3.0.3

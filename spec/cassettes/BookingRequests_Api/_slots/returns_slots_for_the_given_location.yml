@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3002/api/v1/locations/ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef/bookable_slots
+    uri: http://localhost:3002/api/v2/locations/ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef/bookable_slots
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - PensionWise/1.0 (birdperson.local; benlovell; 4960) ruby/2.4.1 (111; x86_64-darwin16)
+      - PensionWise/1.0 (birdperson.local; benlovell; 92256) ruby/2.6.2 (47; x86_64-darwin18)
       Accept:
       - application/json
       Accept-Encoding:
@@ -24,21 +24,27 @@ http_interactions:
       - 1; mode=block
       X-Content-Type-Options:
       - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"30e0980a6990368b8a05d93d3b57ae26"
+      - W/"11ab685b79d70d279371128f7dbb4996"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ce71f102-595d-4c92-b209-c435e3c61926
+      - cf68df78-81b8-41bc-b8b9-e399c8207896
       X-Runtime:
-      - '0.153204'
+      - '0.109512'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '[{"date":"2017-06-02","start":"0900","end":"1300"},{"date":"2017-06-02","start":"1300","end":"1700"},{"date":"2017-06-07","start":"0900","end":"1300"},{"date":"2017-06-07","start":"1300","end":"1700"},{"date":"2017-06-09","start":"0900","end":"1300"},{"date":"2017-06-09","start":"1300","end":"1700"},{"date":"2017-06-14","start":"0900","end":"1300"},{"date":"2017-06-14","start":"1300","end":"1700"},{"date":"2017-06-16","start":"0900","end":"1300"},{"date":"2017-06-16","start":"1300","end":"1700"},{"date":"2017-06-21","start":"0900","end":"1300"},{"date":"2017-06-21","start":"1300","end":"1700"},{"date":"2017-06-23","start":"0900","end":"1300"},{"date":"2017-06-23","start":"1300","end":"1700"},{"date":"2017-06-28","start":"0900","end":"1300"},{"date":"2017-06-28","start":"1300","end":"1700"},{"date":"2017-06-30","start":"0900","end":"1300"},{"date":"2017-06-30","start":"1300","end":"1700"},{"date":"2017-07-05","start":"0900","end":"1300"},{"date":"2017-07-05","start":"1300","end":"1700"},{"date":"2017-07-07","start":"0900","end":"1300"},{"date":"2017-07-07","start":"1300","end":"1700"}]'
+      string: '{"2019-07-26":["2019-07-26T11:00:00.000Z","2019-07-26T12:00:00.000Z","2019-07-26T14:30:00.000Z"]}'
     http_version: 
-  recorded_at: Tue, 30 May 2017 11:37:09 GMT
+  recorded_at: Tue, 16 Jul 2019 09:01:49 GMT
 recorded_with: VCR 3.0.3

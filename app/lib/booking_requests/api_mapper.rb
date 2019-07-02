@@ -17,25 +17,18 @@ module BookingRequests
           where_you_heard: booking_request.where_you_heard,
           gdpr_consent: booking_request.gdpr_consent.to_s,
           slots: [
-            slot(1, booking_request.primary_slot),
-            slot(2, booking_request.secondary_slot),
-            slot(3, booking_request.tertiary_slot)
-          ].compact
+            slot(booking_request.start_at)
+          ]
         }
       }
     end
 
-    def self.slot(priority, slot_text)
-      return if slot_text.blank?
+    def self.slot(start_at)
+      date = start_at.to_date.to_s(:db)
+      from = start_at.dup.to_s(:time).sub(':', '')
+      to   = start_at.dup.advance(hours: 1).to_s(:time).sub(':', '')
 
-      date, from, to = slot_text.match(/\A(\d{4}-\d{2}-\d{2})-(\d{4})-(\d{4})\z/).captures
-
-      {
-        priority: priority,
-        date: date,
-        from: from,
-        to: to
-      }
+      { priority: 1, date: date, from: from, to: to }
     end
 
     def self.dc_pot_as_boolean(dc_pot)

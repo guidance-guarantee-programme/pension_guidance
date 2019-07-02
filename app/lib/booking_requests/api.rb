@@ -8,7 +8,7 @@ module BookingRequests
     end
 
     def slots(location_id)
-      response = connection.get "/api/v1/locations/#{location_id}/bookable_slots"
+      response = connection.get "/api/v2/locations/#{location_id}/bookable_slots"
       response.body
     end
 

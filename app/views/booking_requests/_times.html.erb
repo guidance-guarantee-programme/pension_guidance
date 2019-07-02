@@ -1,0 +1,24 @@
+<h2 class="slot-picker-header js-slot-picker-header">
+  <% if times.present? %>
+    Choose a time on <%= l(@booking_request.selected_date, format: :govuk_date) %>
+  <% else %>
+    No times available on <%= l(@booking_request.selected_date, format: :govuk_date) %>
+  <% end %>
+</h2>
+<% if times.present? %>
+  <ol class="slot-picker-times js-slot-picker-times" tabindex="-1" id="booking_request_times">
+    <% times.each do |time| %>
+      <li class="slot-picker-times__time">
+        <input class="slot-picker-times__selection" type="radio" value="<%= time %>" id="time-<%= time %>" name="booking_request[start_at]" />
+        <label class="slot-picker-times__time-text t-time" for="time-<%= time %>">
+           <%= l(time, format: :govuk_time) %>
+        </label>
+      </li>
+    <% end %>
+  </ol>
+
+  <input type="submit" value="Continue" class="button t-continue" name="continue" />
+<% else %>
+  <p class="t-choose-other-time-message">Sorry there are no times available on this day. Please choose another day.</p>
+<% end %>
+<input type="hidden" name="booking_request[selected_date]" value="<%= @booking_request.selected_date %>" />

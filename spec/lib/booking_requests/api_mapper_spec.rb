@@ -6,9 +6,7 @@ RSpec.describe BookingRequests::ApiMapper do
 
     BookingRequestForm.new(
       location_id,
-      primary_slot: '2016-01-01-0900-1300',
-      secondary_slot: '2016-01-01-1300-1700',
-      tertiary_slot: '',
+      start_at: '2016-01-01 09:00 UTC',
       first_name: 'Lucius',
       last_name: 'Needful',
       email: 'lucius@example.com',
@@ -43,8 +41,7 @@ RSpec.describe BookingRequests::ApiMapper do
           defined_contribution_pot_confirmed: true,
           where_you_heard: '1',
           slots: [
-            { priority: 1, date: '2016-01-01', from: '0900', to: '1300' },
-            { priority: 2, date: '2016-01-01', from: '1300', to: '1700' }
+            { priority: 1, date: '2016-01-01', from: '0900', to: '1000' }
           ]
         }
       )
