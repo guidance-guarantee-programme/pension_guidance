@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3008/api/v1/locations/1/appointments
+    body:
+      encoding: UTF-8
+      string: '{"start_at":"2019-05-10 06:00:00 UTC","first_name":"Rick","last_name":"Sanchez","email":"rick@example.com","phone":"07715
+        930 444","memorable_word":"cheese","date_of_birth":"1960-01-01","dc_pot_confirmed":false,"gdpr_consent":""}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson.local; benlovell; 22021) ruby/2.6.2 (47; x86_64-darwin18)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9cf01cccb5a62b7dae8af56fa9680dff"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 90103b35-df0d-49c7-b825-5891f2d80e8d
+      X-Runtime:
+      - '1.007848'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":4843,"room":"Room no.1"}'
+    http_version: 
+  recorded_at: Thu, 02 May 2019 15:23:26 GMT
+recorded_with: VCR 3.0.3

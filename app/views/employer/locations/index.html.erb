@@ -1,0 +1,31 @@
+<% content_for(:page_title, t('service.title', page_title: "#{employer.name} Locations")) %>
+
+<h1><%= employer.name %> locations</h1>
+
+<% if @locations.length.zero? %>
+  <div class="notice notice--extra-spacing">
+    <i class="icon icon-information">
+      <span class="visually-hidden">Info</span>
+    </i>
+    <strong class="small">All our <%= employer.name %> locations are currently fully booked.</strong>
+  </div>
+<% else %>
+  <div class="l-grid-row">
+    <div class="l-column-third">
+      <span class="locations-a-z-total">
+        <div><%= employer.name %> locations</div>
+        <span class="locations-a-z-total__count"><%= @locations_total %></span>
+      </span>
+    </div>
+    <div class="l-column-two-thirds">
+      <% @locations_by_letter.each do |letter, locations| %>
+        <h2 class="locations-a-z-letter"><%= letter %></h2>
+        <ol class="locations-a-z-letter-list">
+          <% locations.each do |location| %>
+          <li class="locations-a-z-letter-list__location"><%= link_to location.name, employer_location_path(employer_id: employer_id, id: location.id), class: 't-location' %></li>
+          <% end %>
+        </ol>
+      <% end %>
+    </div>
+  </div>
+<% end %>
