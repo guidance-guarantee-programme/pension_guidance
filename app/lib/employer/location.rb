@@ -1,5 +1,9 @@
 module Employer
   class Location < OpenStruct
+    def name_index
+      name.first
+    end
+
     def address
       [
         address_line_one,

@@ -7,7 +7,7 @@ module Employer
     def index
       expires_in Rails.application.config.cache_max_age, public: true
 
-      @locations_by_letter = locations.group_by(&:name)
+      @locations_by_letter = locations.group_by(&:name_index)
       @locations_total     = locations.count
     end
 
