@@ -5,7 +5,6 @@
     "jquery": "~1.11.2",
     "jquery-ui": "~1.11.2",
     "bootstrap": "~3.3.6",
-    "moj.slot-picker": "git://github.com/guidance-guarantee-programme/moj_slotpicker.git#master",
     "accessible.media.player": "git://github.com/alphagov/Accessible-Media-Player.git#master",
     "handlebars": "~4.0.5"
   },
