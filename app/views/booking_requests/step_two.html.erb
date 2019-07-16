@@ -244,32 +244,23 @@
     <%= render 'feedbacks/feedback_form' %>
   </div>
 
-  <div class="l-column-third">
-    <h2>Your requested appointment</h2>
-
-    <div class="is-chosen SlotPicker--selected SlotPicker--read-only">
-      <div class="SlotPicker-choice is-chosen">
-        <div class="SlotPicker-choiceInner">
-          <div class="SlotPicker-position"><span>1</span></div>
-          <div class="SlotPicker-choiceContent">
-            <p class="SlotPicker-date"><%= l(@booking_request.start_at, format: :govuk_date) %></p>
-            <p class="SlotPicker-time">
-              <%= l(@booking_request.start_at, format: :govuk_time) %>, 45 to 60 minutes</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p>
-    <%= link_to 'Change date',
-        booking_request_step_one_location_path(
-          id: location_id,
-          booking_request: { start_at: @booking_request.start_at }
-        ),
-        class: 't-back'
-      %>
-    </p>
+<div class="l-column-third">
+  <h2 class="slot-picker-header">Your requested appointment</h2>
+  <div class="slot-picker-confirmed-date">
+    <p class="slot-picker-confirmed-date__text"><b><%= l(@booking_request.start_at, format: :govuk_date) %></b></p>
+    <p class="slot-picker-confirmed-date__text"><%= l(@booking_request.start_at, format: :govuk_time) %>, 45 to 60 minutes</p>
   </div>
+
+  <p>
+  <%= link_to 'Change date/time',
+      booking_request_step_one_location_path(
+        id: location_id,
+        booking_request: { start_at: @booking_request.start_at }
+      ),
+      class: 't-back'
+    %>
+  </p>
+</div>
 </div>
 
 <script>

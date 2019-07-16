@@ -15,7 +15,7 @@ end
 
 Then(/^I see my one chosen slot$/) do
   @step_two = Pages::BookingStepTwo.new
-  expect(@step_two).to have_chosen_slots(count: 1)
+  expect(@step_two).to have_chosen_slot
 end
 
 Then(/^my appointment is confirmed$/) do

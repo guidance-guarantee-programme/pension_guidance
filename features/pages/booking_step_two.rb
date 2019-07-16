@@ -2,7 +2,7 @@ module Pages
   class BookingStepTwo < Page
     set_url '/{locale}/locations/{id}/booking-request/step-two'
 
-    elements :chosen_slots, '.SlotPicker-choice'
+    element :chosen_slot, '.slot-picker-confirmed-date'
 
     element :error, '.t-errors'
     element :first_name, '.t-first-name'
