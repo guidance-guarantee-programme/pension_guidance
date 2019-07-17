@@ -46,6 +46,6 @@ Mae’r ffioedd am gael cyngor ariannol yn amrywio. Cyn i chi gael cyngor, gofyn
 - pryd mae disgwyl i chi dalu
 - os oes ffi am ymgynghoriad cychwynnol - mae llawer o ymgynghorwyr yn cynnig hwn am ddim
 
-Byddwch yn talu ffi untro os ydych yn gweld yr ymgynghorydd unwaith neu ffi reolaidd os yw’r cyngor yn parhau.
+^You may be able to access the Pension Advice Allowance towards paying for financial advice. This allows you to take £500 once a year and up to 3 times in total to pay towards the cost of financial advice. Not all pension providers offer this payment method, so you should check with your provider if it is available.^
 
 Cewch wybod mwy am [ddewis ymgynghorydd ariannol](https://www.moneyadviceservice.org.uk/cy/articles/dewis-cynghorydd-ariannol) ar wefan y Gwasanaeth Cynghori Ariannol.
