@@ -126,7 +126,7 @@ class BookingRequestForm # rubocop:disable ClassLength
   def validate_step_one
     return unless step_one?
 
-    errors.add(:start_at) if start_at.blank? && !selected_date
+    errors.add(:start_at) if start_at.blank? || !selected_date
   end
 
   def age

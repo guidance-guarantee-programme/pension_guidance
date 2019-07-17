@@ -5,6 +5,7 @@ RSpec.describe BookingRequestForm do
     subject do
       described_class.new(
         location_id,
+        selected_date: '2150-01-01',
         start_at: '2150-01-01 09:00:00 UTC',
         first_name: 'Lucius',
         last_name: 'Needful',
@@ -30,6 +31,12 @@ RSpec.describe BookingRequestForm do
     context 'step one' do
       it 'requires the first slot' do
         subject.start_at = nil
+
+        expect(subject).to_not be_step_one_valid
+      end
+
+      it 'requires the selected date' do
+        subject.selected_date = nil
 
         expect(subject).to_not be_step_one_valid
       end
