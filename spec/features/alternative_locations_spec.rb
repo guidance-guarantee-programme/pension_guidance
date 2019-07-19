@@ -29,28 +29,23 @@ RSpec.feature 'Alternative locations' do
   end
 end
 
-def given_a_location_with_limited_availability_and_available_alternatives(&block) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/LineLength
+def given_a_location_with_limited_availability_and_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Metrics/LineLength
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
-      def slots(location_id) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+      def slots(location_id) # rubocop:disable Metrics/MethodLength
+        two_days   = 2.days.from_now.to_date.to_s(:db)
+        three_days = 3.days.from_now.to_date.to_s(:db)
+
         case location_id
-        when 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef' # Hackney
-          [
-            { date: 2.days.from_now.to_date.iso8601, start: '0900', end: '1300' },
-            { date: 2.days.from_now.to_date.iso8601, start: '1300', end: '1700' }
-          ]
-        when 'c165d25e-f27b-4ce9-b3d3-e7415ebaa93c' # Haringey
-          [
-            { date: 2.days.from_now.to_date.iso8601, start: '0900', end: '1300' },
-            { date: 2.days.from_now.to_date.iso8601, start: '1300', end: '1700' }
-          ]
+        when 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef', 'c165d25e-f27b-4ce9-b3d3-e7415ebaa93c' # Hackney, Haringey
+          {
+            two_days => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"]
+          }
         else
-          [
-            { date: 2.days.from_now.to_date.iso8601, start: '0900', end: '1300' },
-            { date: 2.days.from_now.to_date.iso8601, start: '1300', end: '1700' },
-            { date: 3.days.from_now.to_date.iso8601, start: '0900', end: '1300' },
-            { date: 3.days.from_now.to_date.iso8601, start: '1300', end: '1700' }
-          ]
+          {
+            two_days   => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
+            three_days => ["#{three_days} 09:00:00 UTC", "#{three_days} 13:00:00 UTC"]
+          }
         end
       end
     end.new
@@ -61,29 +56,31 @@ def given_a_location_with_limited_availability_but_no_available_alternatives(&bl
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id)
+        two_days = 2.days.from_now.to_date.to_s(:db)
+
         if location_id == 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef' # Hackney
-          [
-            { date: 2.days.from_now.to_date.iso8601, start: '0900', end: '1300' },
-            { date: 2.days.from_now.to_date.iso8601, start: '1300', end: '1700' }
-          ]
+          {
+            two_days => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"]
+          }
         else
-          []
+          {}
         end
       end
     end.new
   end
 end
 
-def given_a_location_without_limited_availability(&block) # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+def given_a_location_without_limited_availability(&block) # rubocop:disable Metrics/MethodLength
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
-      def slots(_) # rubocop:disable Metrics/AbcSize
-        [
-          { date: 2.days.from_now.to_date.iso8601, start: '0900', end: '1300' },
-          { date: 2.days.from_now.to_date.iso8601, start: '1300', end: '1700' },
-          { date: 3.days.from_now.to_date.iso8601, start: '0900', end: '1300' },
-          { date: 3.days.from_now.to_date.iso8601, start: '1300', end: '1700' }
-        ]
+      def slots(*)
+        two_days   = 2.days.from_now.to_date.to_s(:db)
+        three_days = 3.days.from_now.to_date.to_s(:db)
+
+        {
+          two_days   => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
+          three_days => ["#{three_days} 09:00:00 UTC", "#{three_days} 13:00:00 UTC"]
+        }
       end
     end.new
   end

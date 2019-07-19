@@ -5,7 +5,8 @@ RSpec.describe BookingRequestForm do
     subject do
       described_class.new(
         location_id,
-        primary_slot: '2150-01-01-0900-1300',
+        selected_date: '2150-01-01',
+        start_at: '2150-01-01 09:00:00 UTC',
         first_name: 'Lucius',
         last_name: 'Needful',
         email: 'lucius@example.com',
@@ -29,7 +30,13 @@ RSpec.describe BookingRequestForm do
 
     context 'step one' do
       it 'requires the first slot' do
-        subject.primary_slot = nil
+        subject.start_at = nil
+
+        expect(subject).to_not be_step_one_valid
+      end
+
+      it 'requires the selected date' do
+        subject.selected_date = nil
 
         expect(subject).to_not be_step_one_valid
       end
@@ -69,21 +76,7 @@ RSpec.describe BookingRequestForm do
       end
 
       it 'is invalid if the person in under 50 at time of the primary slot' do
-        subject.primary_slot = '2149-12-31-0900-1300'
-
-        expect(subject.appointment_type).to eq('under-50')
-        expect(subject).not_to be_eligible
-      end
-
-      it 'is invalid if the person in under 50 at time of the secondary slot' do
-        subject.secondary_slot = '2149-12-31-0900-1300'
-
-        expect(subject.appointment_type).to eq('under-50')
-        expect(subject).not_to be_eligible
-      end
-
-      it 'is invalid if the person in under 50 at time of the tertiary slot' do
-        subject.tertiary_slot = '2149-12-31-0900-1300'
+        subject.start_at = '2149-12-31 09:00:00 UTC'
 
         expect(subject.appointment_type).to eq('under-50')
         expect(subject).not_to be_eligible
@@ -128,7 +121,7 @@ RSpec.describe BookingRequestForm do
 
   context 'appointment_type' do
     subject do
-      described_class.new(location_id, primary_slot: '2150-01-01-0900-1300')
+      described_class.new(location_id, start_at: '2150-01-01 09:00:00 UTC')
     end
 
     it 'converts date of birth into an age range' do

@@ -17,7 +17,7 @@ http_interactions:
       Server:
       - nginx/1.14.0
       Date:
-      - Tue, 16 Jul 2019 10:22:54 GMT
+      - Tue, 16 Jul 2019 10:22:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -38,5 +38,5 @@ http_interactions:
         and Shoreditch","admin_district":"Hackney","parish":"Hackney, unparished area","admin_county":null,"admin_ward":"Homerton","ced":null,"ccg":"NHS
         City and Hackney","nuts":"Hackney and Newham","codes":{"admin_district":"E09000012","admin_county":"E99999999","admin_ward":"E05009376","parish":"E43000202","parliamentary_constituency":"E14000721","ccg":"E38000035","ced":"E99999999","nuts":"UKI41"}}}'
     http_version: 
-  recorded_at: Tue, 16 Jul 2019 10:22:54 GMT
+  recorded_at: Tue, 16 Jul 2019 10:22:44 GMT
 recorded_with: VCR 3.0.3

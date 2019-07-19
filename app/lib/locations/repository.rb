@@ -35,8 +35,7 @@ module Locations
         hours: feature.property('hours'),
         twilio_number: feature.property('twilio_number'),
         online_booking_enabled: feature.property('online_booking_enabled'),
-        lat_lng: [feature.geometry.y, feature.geometry.x],
-        realtime: feature.property('realtime')
+        lat_lng: [feature.geometry.y, feature.geometry.x]
       ]
     end
   end

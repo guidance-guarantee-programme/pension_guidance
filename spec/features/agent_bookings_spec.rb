@@ -38,10 +38,11 @@ RSpec.feature 'Identifying as a TP agent' do
   def and_the_locations_are_available
     BookingRequests.api = Class.new do
       def slots(*)
-        [
-          { date: 2.days.from_now.to_date.iso8601, start: '0900', end: '1300' },
-          { date: 2.days.from_now.to_date.iso8601, start: '1300', end: '1700' }
-        ]
+        two_days = 2.days.from_now.to_date.iso8601
+
+        {
+          two_days => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"]
+        }
       end
     end.new
   end

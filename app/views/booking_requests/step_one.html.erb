@@ -40,182 +40,23 @@
     </div>
   <% end %>
 
-  <div class="SlotPicker"
-       data-today="<%= Date.today %>"
-       data-limit-exceeded-error="To change your date go back and remove the current selection. Otherwise continue."
-       data-option-limit="<%= @booking_request.max_selected_slots %>">
-    <div class="l-column-half">
-      <div class="SlotPicker-timeSlots show-only-with-js">
-        <ul class="SlotPicker-days">
-          <li class="SlotPicker-day SlotPicker-day--past">
-            <h2 class="SlotPicker-dayTitle"></h2>
-            <p>It is not possible to book an appointment in the past.</p>
-          </li>
-          <li class="SlotPicker-day SlotPicker-day--unavailable">
-            <h2 class="SlotPicker-dayTitle"></h2>
-            <p>It is not possible to book an appointment on this day.</p>
-          </li>
-          <li class="SlotPicker-day SlotPicker-day--beyond">
-            <h2 class="SlotPicker-dayTitle"></h2>
-            <p>You can book an appointment between 3 days and 8 weeks in advance, depending on local availability.</p>
-          </li>
-          <li class="SlotPicker-day SlotPicker-day--leadtime">
-            <h2 class="SlotPicker-dayTitle"></h2>
-            <p>You can book an appointment between 3 days and 8 weeks in advance, depending on local availability.</p>
-          </li>
-        </ul>
+  <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
+    <% if @booking_request.times? %>
+      <div class="l-column-half l-column-half--right" data-slot-picker-single-time>
+        <%= render 'times_js' %>
       </div>
+    <% end %>
+  <% end %>
 
-      <div class="SlotPicker-choices show-only-with-js">
-        <p class="SlotPicker-promoteHelp">Use the arrows to put your visit choices in the order that suits you best.</p>
-      </div>
-
-      <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
-        <%= f.select(:primary_slot, @booking_request.slots.map(&:to_calendar), { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <%= f.select(:secondary_slot, @booking_request.slots.map(&:to_calendar), { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <%= f.select(:tertiary_slot, @booking_request.slots.map(&:to_calendar), { include_blank: "" }, { class: 'SlotPicker-input hide-only-with-js' }) %>
-        <p><%= f.button('Continue', type: 'submit', class: 'button t-continue') %></p>
-      <% end %>
-    </div>
-
-    <div class="l-column-half">
-      <div class="BookingCalendar show-only-with-js">
-        <div class="BookingCalendar-header">
-          <a href="#" class="BookingCalendar-nav BookingCalendar-nav--prev"></a>
-          <strong class="BookingCalendar-currentMonth"></strong>
-          <a href="#" class="BookingCalendar-nav BookingCalendar-nav--next"></a>
-        </div>
-
-        <table class="BookingCalendar-dates table-font-xsmall">
-          <thead>
-            <tr>
-              <th>Mon</th>
-              <th>Tue</th>
-              <th>Wed</th>
-              <th>Thu</th>
-              <th>Fri</th>
-              <th>Sat</th>
-              <th>Sun</th>
-            </tr>
-          </thead>
-        </table>
-
-        <div class="BookingCalendar-mask">
-          <table class="BookingCalendar-dates table-font-xsmall">
-            <tbody class="BookingCalendar-datesBody">
-            </tbody>
-          </table>
-        </div>
-
-        <ul class="BookingCalendar-legend">
-          <li>
-            <span class="BookingCalendar-legendBox"></span>
-            <p class="BookingCalendar-legendDesc">Available</p>
-          </li>
-          <li>
-            <span class="BookingCalendar-legendBox BookingCalendar-legendBox--unavailable"></span>
-            <p class="BookingCalendar-legendDesc">Unavailable</p>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <% if @booking_request.days? || @booking_request.times? %>
+    <%= render 'day_picker' %>
+  <% end %>
 
     <div class="l-column-two-thirds">
       <%= render 'feedbacks/feedback_form' %>
     </div>
   </div>
 </div>
-
-<script type="text/html" id="SlotPicker-tmplDay">
-  <li class="SlotPicker-day" id="date-{{ slot }}">
-    <h2 class="SlotPicker-dayTitle">{{ date }}</h2>
-    {{#if oneSlot}}
-      <p class="SlotPicker-dayOneSlot">Only one time is available on this day, select it to continue</p>
-    {{/if}}
-    {{{ slots }}}
-  </li>
-</script>
-
-<script type="text/html" id="SlotPicker-tmplTimeSlot">
-  <label class="SlotPicker-label" for="slot-{{ slot }}">
-    <input class="SlotPicker-slot" type="checkbox" value="{{ slot }}" id="slot-{{ slot }}">
-    <strong class="SlotPicker-time">
-    {{#ifCond duration '4 hrs'}}
-      {{#ifCond ../time '9am'}}
-      Morning
-      {{else}}
-      Afternoon
-      {{/ifCond}}
-    {{else}}
-      {{../time}}
-    {{/ifCond}}
-    </strong>
-    <span class="SlotPicker-duration"><%= slot_duration %></span>
-  </label>
-</script>
-
-<script type="text/html" id="BookingCalendar-tmplRow">
-  <tr>
-    {{{ cells }}}
-  </tr>
-</script>
-
-<script type="text/html" id="BookingCalendar-tmplDate">
-  <td class="{{ klass }}">
-    <div class="BookingCalendar-content">
-      <a class="BookingCalendar-dateLink" data-date="{{ date }}" href="#date-{{ date }}">
-        <span class="BookingCalendar-day">{{ day }}</span>
-        {{#if today}}
-          <span class="BookingCalendar-tag BookingCalendar-tag--today">Today</span>
-        {{/if}}
-        {{#if newMonth}}
-          <span class="BookingCalendar-tag" id="month-{{ monthIso }}">{{ monthShort }}</span>
-        {{/if}}
-      </a>
-    </div>
-  </td>
-</script>
-
-<script type="text/html" id="BookingCalendar-tmplNav">
-  {{ monthAbr }}<span class="BookingCalendar-navFull">{{ monthRemaining }}</span>
-</script>
-
-<script type="text/html" id="SlotPicker-tmplChoice">
-  <div class="SlotPicker-choice">
-    <div class="SlotPicker-choiceInner">
-      <div class="SlotPicker-position"><span>{{ num }}</span></div>
-      <div class="SlotPicker-choiceContent">
-        <p class="SlotPicker-date"></p>
-        <p class="SlotPicker-time"></p>
-      </div>
-      <p class="SlotPicker-prompt">Choose a date and time from the calendar</p>
-      {{#unless first}}
-        <a class="SlotPicker-icon SlotPicker-icon--promote" href="#">Promote</a>
-      {{/unless}}
-      <a class="SlotPicker-icon SlotPicker-icon--remove" href="#">Remove</a>
-    </div>
-  </div>
-</script>
-
-<script type="text/html" id="DateSlider-tmplDay">
-  <li data-date="{{ isoDate }}" class="{{ klass }}">
-    {{#if dayLabel}}
-      <small>{{ weekDay }}</small>
-    {{/if}}
-    {{ day }}
-  </li>
-</script>
-
-<script type="text/html" id="DateSlider-tmplMonth">
-  <span data-date="{{ yearMonth }}">{{ month }}</span>
-</script>
-
-<% content_for :after_script do %>
-  <%= javascript_include_tag 'slot-picker' %>
-  <script>
-    var slotPicker = new PWPG.SlotPicker();
-  </script>
-<% end %>
 
 <script>
   window.dataLayer = window.dataLayer || [];

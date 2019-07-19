@@ -13,11 +13,17 @@ class BookingRequestsController < ApplicationController
         @locations = @booking_request.alternate_locations
       end
 
+      retrieve_slots
+
       render :step_one
     end
   end
 
   def step_two
+    retrieve_slots
+
+    return render partial: 'times', locals: { times: @times } if request.xhr?
+
     render :step_one unless @booking_request.step_one_valid?
   end
 
@@ -42,6 +48,30 @@ class BookingRequestsController < ApplicationController
 
   private
 
+  def retrieve_slots
+    slots   = @booking_request.slots
+
+    @months = retrieve_months(slots)
+    @times  = retrieve_times(slots)
+  end
+
+  def retrieve_months(slots)
+    default_months = Hash.new { |h, k| h[k] = [] }
+    available_days = slots.keys.map(&:to_date)
+
+    available_days.each_with_object(default_months) do |day, months|
+      months[day.beginning_of_month] << day
+    end
+  end
+
+  def retrieve_times(slots)
+    return unless @booking_request.selected_date
+
+    key = @booking_request.selected_date.strftime('%Y-%m-%d')
+
+    Array(slots[key]).map { |d| DateTime.parse(d).in_time_zone }
+  end
+
   def location_id
     params[:id]
   end
@@ -53,9 +83,8 @@ class BookingRequestsController < ApplicationController
     params
       .fetch(:booking_request, {})
       .permit(
-        :primary_slot,
-        :secondary_slot,
-        :tertiary_slot,
+        :start_at,
+        :selected_date,
         :first_name,
         :last_name,
         :email,

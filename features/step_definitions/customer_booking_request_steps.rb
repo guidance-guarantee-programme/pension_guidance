@@ -6,26 +6,16 @@ Given(/^no locations are enabled for online booking$/) do
   @locations_path = %w(features fixtures locations_without_online_booking.json)
 end
 
-Then(/^I can only choose one slot$/) do
-  @step_one.wait_until_slot_options_visible
-
-  expect(@step_one).to have_slot_options(count: 1)
-end
-
-When(/^I choose the first available (non-)?realtime slot$/) do |_|
+When(/^I choose the first available realtime slot$/) do
   @step_one.wait_for_available_days
-  @step_one.available_days.first.click
-
-  @step_one.wait_for_time_slots
-  @step_one.time_slots.first.click
-
-  @step_one.wait_for_chosen_slots
+  @step_one.choose_date('2018-11-07')
+  @step_one.choose_time('9:00am')
   @step_one.continue.click
 end
 
 Then(/^I see my one chosen slot$/) do
   @step_two = Pages::BookingStepTwo.new
-  expect(@step_two).to have_chosen_slots(count: 1)
+  expect(@step_two).to have_chosen_slot
 end
 
 Then(/^my appointment is confirmed$/) do
@@ -76,7 +66,7 @@ When(/^I view the face to face booking form$/) do
   step('I opt to book online')
 end
 
-When(/^I choose three available appointment slots$/) do
+When(/^I choose one available appointment slot$/) do
   @step_one = Pages::BookingStepOne.new
   expect(@step_one).to be_displayed
 
@@ -84,20 +74,9 @@ When(/^I choose three available appointment slots$/) do
   @step_one.wait_for_available_days
   expect(@step_one).to have_available_days
 
-  # select the morning slot on the first day
-  @step_one.available_days.first.click
-  @step_one.morning_slot.click
-
-  # select the afternoon slot on the first day
-  @step_one.available_days.first.click
-  @step_one.afternoon_slot.click
-
-  # select the morning slot on the last day
-  @step_one.available_days.last.click
-  @step_one.morning_slot.click
-
-  # wait for the last slot to be confirmed
-  @step_one.wait_for_chosen_slots
+  # select the first available day and slot
+  @step_one.choose_date('2016-06-20')
+  @step_one.choose_time('9:00am')
   @step_one.continue.click
 end
 
@@ -174,46 +153,10 @@ Then(/^my Booking Request is confirmed$/) do
   expect(@page).to have_text('We’ve received your booking request')
 end
 
-When(/^I choose one available appointment slot$/) do
-  @step_one = Pages::BookingStepOne.new
-  expect(@step_one).to be_displayed
-
-  # wait for the calendar to bind
-  @step_one.wait_for_available_days
-  expect(@step_one).to have_available_days
-
-  # choose only the first slot
-  @step_one.available_days.first.click
-  @step_one.morning_slot.click
-
-  # wait for the slot to be confirmed and proceed
-  @step_one.wait_for_chosen_slots
-  @step_one.continue.click
-end
-
 Then(/^I am told to choose further slots$/) do
   @step_two = Pages::BookingStepTwo.new
   expect(@step_two).to be_displayed
   expect(@step_two).to have_error
-end
-
-When(/^I choose a further two appointment slots$/) do
-  @step_one = Pages::BookingStepOne.new
-
-  # wait for the calendar to bind
-  @step_one.wait_for_available_days
-  expect(@step_one).to have_available_days
-
-  # choose the remaining two required slots
-  @step_one.available_days.last.click
-  @step_one.morning_slot.click
-
-  @step_one.available_days.last.click
-  @step_one.afternoon_slot.click
-
-  # wait for slots to be confirmed and proceed
-  @step_one.wait_for_chosen_slots
-  @step_one.continue.click
 end
 
 Then(/^I progress to the personal details step$/) do
@@ -237,13 +180,6 @@ When(/^I go back$/) do
   expect(@step_two).to be_displayed
 
   @step_two.back.click
-end
-
-Then(/^my chosen slots persist$/) do
-  expect(@step_one).to be_displayed
-
-  @step_one.wait_until_chosen_slots_visible
-  expect(@step_one).to have_chosen_slots(count: 3)
 end
 
 When(/^I go forward$/) do

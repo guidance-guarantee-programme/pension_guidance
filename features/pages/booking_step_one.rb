@@ -8,21 +8,17 @@ module Pages
     element :continue, '.t-continue'
     element :phone, '.t-phone'
 
-    elements :available_days, '.BookingCalendar-date--bookable'
-    elements :time_slots, '.SlotPicker-day.is-active > label'
-    elements :chosen_slots, '.SlotPicker-choice.is-chosen'
-    elements :slot_options, '.SlotPicker-choice'
+    elements :available_days, 'button:enabled.js-day-button'
+    elements :time_slots, '.t-time'
 
     section :feedback, Sections::Feedback, '.t-feedback'
 
-    def morning_slot
-      wait_for_time_slots
-      time_slots.first
+    def choose_date(date)
+      page.click_on(date)
     end
 
-    def afternoon_slot
-      wait_for_time_slots
-      time_slots.last
+    def choose_time(time)
+      page.choose(time)
     end
   end
 end

@@ -1,13 +1,13 @@
 class BookingRequestForm # rubocop:disable ClassLength
   include ActiveModel::Model
 
-  attr_accessor :location_id, :primary_slot, :secondary_slot, :tertiary_slot,
-                :first_name, :last_name, :email, :telephone_number,
-                :memorable_word, :accessibility_requirements,
-                :date_of_birth, :dc_pot, :additional_info,
-                :remote_ip, :where_you_heard, :gdpr_consent
+  attr_accessor :location_id, :first_name, :last_name, :email, :telephone_number,
+                :memorable_word, :accessibility_requirements, :date_of_birth,
+                :dc_pot, :additional_info, :remote_ip, :where_you_heard, :gdpr_consent
 
-  validates :primary_slot, presence: true, if: :step_one?
+  attr_writer :selected_date, :start_at
+
+  validate :validate_step_one
 
   with_options if: :step_two? do |step_two|
     step_two.validates :first_name, presence: true
@@ -25,6 +25,22 @@ class BookingRequestForm # rubocop:disable ClassLength
   def initialize(location_id, opts)
     @location_id = location_id
     super(opts)
+  end
+
+  def selected_date
+    Time.zone.parse(@selected_date) if @selected_date.present?
+  end
+
+  def start_at
+    Time.zone.parse(@start_at) if @start_at.present?
+  end
+
+  def days?
+    true
+  end
+
+  def times?
+    true
   end
 
   def date_of_birth
@@ -51,15 +67,7 @@ class BookingRequestForm # rubocop:disable ClassLength
     @booking_location ||= BookingLocations.find(location_id)
   end
 
-  def max_selected_slots
-    @max_selected_slots ||= realtime_slots? ? 1 : 3
-  end
-
-  def realtime?
-    max_selected_slots == 1
-  end
-
-  delegate :slots, :no_availability?, :limited_availability?, :realtime_slots?, to: :location
+  delegate :slots, :no_availability?, :limited_availability?, to: :location
 
   delegate :id, to: :booking_location, prefix: :booking_location
 
@@ -115,20 +123,19 @@ class BookingRequestForm # rubocop:disable ClassLength
 
   private
 
+  def validate_step_one
+    return unless step_one?
+
+    errors.add(:start_at) if start_at.blank? || !selected_date
+  end
+
   def age
-    at = earliest_slot
+    at = start_at.in_time_zone
 
     return 0 unless date_of_birth || at.nil?
 
     age = at.year - date_of_birth.year
     age -= 1 if at.to_date < date_of_birth + age.years
     age
-  end
-
-  def earliest_slot
-    [primary_slot, secondary_slot, tertiary_slot]
-      .reject(&:blank?)
-      .map(&:in_time_zone)
-      .min
   end
 end
