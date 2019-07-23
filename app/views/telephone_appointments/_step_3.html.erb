@@ -8,17 +8,17 @@
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:first_name) %>">
     <%= f.label :first_name, class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:first_name) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:first_name].to_sentence.capitalize %></span>
+      <span class="error-message" id="first_name_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:first_name].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :first_name, class: "t-first-name form-control #{'form-control-error' if @telephone_appointment.errors.include?(:first_name)}" %>
+    <%= f.text_field :first_name, aria: { describedby: 'first_name_error' }, class: "t-first-name form-control #{'form-control-error' if @telephone_appointment.errors.include?(:first_name)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:last_name) %>">
     <%= f.label :last_name, class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:last_name) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:last_name].to_sentence.capitalize %></span>
+      <span class="error-message" id="last_name_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:last_name].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :last_name, class: "t-last-name form-control #{'form-control-error' if @telephone_appointment.errors.include?(:last_name)}" %>
+    <%= f.text_field :last_name, aria: { describedby: 'last_name_error' }, class: "t-last-name form-control #{'form-control-error' if @telephone_appointment.errors.include?(:last_name)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:email) %>">
@@ -28,11 +28,11 @@
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:email) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:email].to_sentence.capitalize %></span>
+      <span class="error-message" id="email_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:email].to_sentence.capitalize %></span>
     <% end %>
 
     <div class="email-outer">
-      <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @telephone_appointment.errors.include?(:email)}" %>
+      <%= f.email_field :email, aria: { describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @telephone_appointment.errors.include?(:email)}" %>
     </div>
   </div>
 
@@ -43,10 +43,10 @@
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:phone) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:phone].to_sentence.capitalize %></span>
+      <span class="error-message" id="phone_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:phone].to_sentence.capitalize %></span>
     <% end %>
 
-    <%= f.text_field :phone, class: "t-phone form-control #{'form-control-error' if @telephone_appointment.errors.include?(:phone)}" %>
+    <%= f.text_field :phone, aria: { describedby: 'phone_error' }, class: "t-phone form-control #{'form-control-error' if @telephone_appointment.errors.include?(:phone)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:memorable_word) %>">
@@ -56,9 +56,9 @@
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:memorable_word) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:memorable_word].to_sentence.capitalize %></span>
+      <span class="error-message" id="memorable_word_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:memorable_word].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :memorable_word, class: "t-memorable-word form-control #{'form-control-error' if @telephone_appointment.errors.include?(:memorable_word)}" %>
+    <%= f.text_field :memorable_word, aria: { describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @telephone_appointment.errors.include?(:memorable_word)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:date_of_birth) %>">
@@ -82,7 +82,8 @@
               class: "f-dob__input form-control js-dob-day t-date-of-birth-day #{'form-control-error' if @telephone_appointment.errors.include?(:date_of_birth)}",
               pattern: '[0-9]*',
               min: 1,
-              max: 31
+              max: 31,
+              aria: { describedby: 'date_of_birth_error' }
             )
           %>
         </div>
@@ -98,7 +99,8 @@
               class: "form-dob__input form-control js-dob-month t-date-of-birth-month #{'form-control-error' if @telephone_appointment.errors.include?(:date_of_birth)}",
               pattern: '[0-9]*',
               min: 1,
-              max: 12
+              max: 12,
+              aria: { describedby: 'date_of_birth_error' }
             )
           %>
         </div>
@@ -114,13 +116,14 @@
               class: "form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year #{'form-control-error' if @telephone_appointment.errors.include?(:date_of_birth)}",
               pattern: '[0-9]*',
               min: 100.years.ago.year,
-              max: Date.today.year
+              max: Date.today.year,
+              aria: { describedby: 'date_of_birth_error' }
             )
           %>
         </div>
       </div>
       <% if @telephone_appointment.errors.include?(:date_of_birth) %>
-        <span class="error-message"><%= @telephone_appointment.errors[:date_of_birth].to_sentence.capitalize %></span>
+        <span class="error-message" id="date_of_birth_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:date_of_birth].to_sentence.capitalize %></span>
       <% end %>
     </fieldset>
   </div>
@@ -130,22 +133,22 @@
       <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
       <span class="form-hint">If you have both select ‘Yes’</span>
       <% if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>
-        <span class="error-message"><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence.capitalize %></span>
+        <span class="error-message" id="dc_pot_confirmed_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence.capitalize %></span>
       <% end %>
 
       <div class="multiple-choice">
-        <%= f.radio_button :dc_pot_confirmed, 'yes', class: 't-dc-pot-confirmed-yes' %>
-        <%= f.label :dc_pot_confirmed, value: 'yes' do %>Yes<% end %>
+        <%= f.radio_button :dc_pot_confirmed, 'yes', aria: { describedby: 'dc_pot_confirmed_error' }, class: 't-dc-pot-confirmed-yes' %>
+        <%= f.label :dc_pot_confirmed, value: 'yes', aria: { label: 'Yes, I have a defined contribution pot' }  do %>Yes<% end %>
       </div>
 
       <div class="multiple-choice">
-        <%= f.radio_button :dc_pot_confirmed, 'no', class: 't-dc-pot-confirmed-no' %>
-        <%= f.label :dc_pot_confirmed, value: 'no' do %>No<% end %>
+        <%= f.radio_button :dc_pot_confirmed, 'no', aria: { describedby: 'dc_pot_confirmed_error' }, class: 't-dc-pot-confirmed-no' %>
+        <%= f.label :dc_pot_confirmed, value: 'no', aria: { label: 'No, I do not have a defined contribution pot' } do %>No<% end %>
       </div>
 
       <div class="multiple-choice">
-        <%= f.radio_button :dc_pot_confirmed, 'not-sure' %>
-        <%= f.label :dc_pot_confirmed, value: 'not-sure' do %>Not sure<% end %>
+        <%= f.radio_button :dc_pot_confirmed, 'not-sure', aria: { describedby: 'dc_pot_confirmed_error' } %>
+        <%= f.label :dc_pot_confirmed, value: 'not-sure', aria: { label: 'I am not sure if I have a defined contribution pot' } do %>Not sure<% end %>
       </div>
     </fieldset>
     <p><%= render partial: 'components/webchat' %></p>
@@ -180,12 +183,12 @@
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:where_you_heard) %>">
     <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:where_you_heard) %>
-      <span class="error-message"><%= @telephone_appointment.errors[:where_you_heard].to_sentence.capitalize %></span>
+      <span class="error-message" id="where_you_heard_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:where_you_heard].to_sentence.capitalize %></span>
     <% end %>
     <%= f.select :where_you_heard,
           options_for_select(WhereYouHeard::OPTIONS.invert.to_a, @telephone_appointment.where_you_heard),
           { include_blank: true},
-          { class: "t-where-you-heard form-control #{'form-control-error' if @telephone_appointment.errors.include?(:where_you_heard)}" }
+          { aria: { describedby: 'where_you_heard_error' }, class: "t-where-you-heard form-control #{'form-control-error' if @telephone_appointment.errors.include?(:where_you_heard)}" }
     %>
   </div>
 

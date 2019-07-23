@@ -1,4 +1,4 @@
-class TelephoneAppointment
+class TelephoneAppointment # rubocop:disable ClassLength
   include ActiveModel::Model
 
   attr_accessor(
