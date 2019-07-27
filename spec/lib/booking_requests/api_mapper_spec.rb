@@ -17,7 +17,8 @@ RSpec.describe BookingRequests::ApiMapper do
       additional_info: nil,
       gdpr_consent: 'yes',
       dc_pot: 'yes',
-      where_you_heard: '1'
+      where_you_heard: '1',
+      pension_provider: 'aviva'
     )
   end
 
@@ -40,6 +41,7 @@ RSpec.describe BookingRequests::ApiMapper do
           gdpr_consent: 'yes',
           defined_contribution_pot_confirmed: true,
           where_you_heard: '1',
+          pension_provider: 'aviva',
           slots: [
             { priority: 1, date: '2016-01-01', from: '0900', to: '1000' }
           ]

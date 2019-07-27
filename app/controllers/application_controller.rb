@@ -16,6 +16,15 @@ class ApplicationController < ActionController::Base
     rescue_from I18n::InvalidLocale, with: :not_found
   end
 
+  def pension_provider
+    cookies.permanent[:pension_provider]
+  end
+  helper_method :pension_provider
+
+  def pension_provider=(value)
+    cookies.permanent[:pension_provider] = value
+  end
+
   def footer?
     true
   end
