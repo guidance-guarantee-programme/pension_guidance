@@ -22,6 +22,8 @@ module Pages
     element :gdpr_consent_yes, '.t-gdpr-consent-yes'
     element :gdpr_consent_no, '.t-gdpr-consent-no'
 
+    element :pension_provider_banner, '.t-pension-provider-banner'
+
     element :submit, '.t-submit'
 
     element :continue, '.t-continue'

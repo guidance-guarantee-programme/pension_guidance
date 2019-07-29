@@ -1,4 +1,4 @@
-class BookingRequestsController < ApplicationController # rubocop:disable ClassLength
+class BookingRequestsController < ApplicationController
   layout 'full_width'
 
   before_action :set_booking_request
