@@ -19,35 +19,26 @@ If you’ve already followed your pension provider’s complaints process, there
 
 ###Complaining about how your pension has been run
 
-You can contact The Pensions Advisory Service (TPAS) on 0800 011 3797 or by using their [online enquiry form](http://www.pensionsadvisoryservice.org.uk/contacting-us/online-enquiry-form).
+You have the right to refer your complaint to The Pensions Ombudsman free of charge.
+The Pensions Ombudsman deals with complaints and disputes which concern the
+administration and/or management of occupational and personal pension schemes.
 
-TPAS can give you free and independent advice if your complaint is about how your pension has been run, eg if your provider:
+Contact with The Pensions Ombudsman about a complaint needs to be made within three years of when the event(s) you are complaining about happened – or, if later, within three years of when you first knew about it (or ought to have known about it). There is discretion for those time limits to be extended.
 
-* has given you the wrong information
-* has taken too long to do something
+The Pensions Ombudsman can be contacted at:
 
-TPAS can work with you and your pension provider to find a solution. However:
+10 South Colonnade, Canary Wharf<br/>
+London, E14 4PU<br/>
+Tel: 0800 917 4487<br/>
+Email: [enquiries@pensions-ombudsman.org.uk](mailto:enquiries@pensions-ombudsman.org.uk)<br/>
+Website: [www.pensions-ombudsman.org.uk](https://www.pensions-ombudsman.org.uk)
 
-* it can’t make any legal decisions about whether your complaint is justified
-* it can’t help you if you’ve already started legal action about your complaint
+You can also [submit a complaint form online](https://www.pensions-ombudsman.org.uk/our-service/make-a-complaint)
 
-If TPAS can’t resolve your complaint about how your pension’s been run, you can contact the [Pensions Ombudsman Service](https://www.pensions-ombudsman.org.uk/about-us/) on 020 7630 2200 or at <enquiries@pensions-ombudsman.org.uk>.
+If you have general requests for information or guidance concerning your pension arrangements contact:
 
-The Pensions Ombudsman Service can help if your complaint is about how your pension has been run. It’s a free and impartial organisation and has legal powers to uphold or reject complaints.
-
-
-###Complaints about financial advice
-
-You can contact the [Financial Ombudsman Service](http://www.financial-ombudsman.org.uk/publications/technical_notes/pension-complaints-our-jurisdiction.html) on 0800 023 4567 or at <complaint.info@financial-ombudsman.org.uk>. The service is free and impartial. It has legal powers to uphold or reject complaints.
-
-This service can help if you think you got the wrong financial advice which led you to take out a pension that wasn’t right for you. It can also help with some types of complaint about how a pension is sold or marketed.
-
-Usually, the Financial Ombudsman Service doesn’t provide help with complaints about workplace pensions - a type of pension arranged by your employer. Check with your provider if you’re not sure about your [pension type](/en/pension-types).
-
-Once an Ombudsman is dealing with your complaint, you won’t usually get more help with your complaint from another Ombudsman or organisation.
-
-
-##The State Pension
-
-
-Contact the Pension Service if you have a [complaint about the State Pension](https://www.gov.uk/complain-pension-service).
+The Pensions Advisory Service<br/>
+11 Belgrave Road<br/>
+London, SW1V 1RB <br/>
+Tel: 0800 011 3797<br/>
+Website: [www.pensionsadvisoryservice.org.uk](https://www.pensionsadvisoryservice.org.uk)
