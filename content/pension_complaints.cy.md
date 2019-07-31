@@ -17,37 +17,26 @@ Mae’n well i wneud eich cwyn yn ysgrifenedig ac i gael ymateb ysgrifenedig. Ma
 
 Os ydych eisoes wedi dilyn proses gwyno eich darparwr pensiwn, mae yna ffyrdd gwahanol o fynd â phethau ymhellach.
 
-### Cwyno am sut mae eich pensiwn wedi cael ei redeg
+Mae gennych yr hawl i gyfeirio’ch cwyn at yr Ombwdsmon Pensiynau am ddim.
 
-Gallwch gysylltu â’r Gwasanaeth Cynghori ar Bensiynau (TPAS) ar 0800 011 3797 neu drwy ddefnyddio eu [ffurflen ymholiadau ar-lein](http://www.pensionsadvisoryservice.org.uk/contacting-us/online-enquiry-form).
+Mae’r Ombwdsmon Pensiynau yn delio â chwynion ac anghydfodau sy’n ymwneud â gweinyddu a/neu reoli cynlluniau pensiwn galwedigaethol a phersonol.
 
-Gall TPAS roi cyngor annibynnol am ddim i chi os yw eich cwyn yn ymwneud â sut mae eich pensiwn wedi cael ei redeg, er enghraifft os yw eich darparwr:
+Mae angen cysylltu â’r Ombwdsmon Pensiynau ynglŷn â chwyn o fewn tair blynedd ar ôl i’r digwyddiad(au) rydych yn cwyno amdanynt ddigwydd - neu, os yw’n ddiweddarach, o fewn tair blynedd ar ôl i chi wybod amdano gyntaf (neu y dylech fod wedi gwybod amdano). Mae yna ddisgresiwn i’r terfynau amser hynny gael eu hymestyn.
 
-* wedi rhoi’r wybodaeth anghywir i chi
-* wedi cymryd gormod o amser i wneud rhywbeth
+Gellir cysylltu â’r Ombwdsmon Pensiynau yn:
 
-Gall TPAS weithio gyda chi a’ch darparwr pensiwn i ddod o hyd i ateb. Fodd bynnag:
+10 South Colonnade, Canary Wharf<br/>
+London, E14 4PU<br/>
+Ffôn: 0800 917 4487<br/>
+E-bost: [enquiries@pensions-ombudsman.org.uk](mailto:enquiries@pensions-ombudsman.org.uk)<br/>
+Gwefan: [www.pensions-ombudsman.org.uk](https://www.pensions-ombudsman.org.uk)
 
-* ni all wneud unrhyw benderfyniadau cyfreithiol ynghylch a yw eich cwyn yn gyfiawn
-* ni all eich helpu os ydych eisoes wedi dechrau camau cyfreithiol ynghylch eich cwyn
+Gallwch hefyd [gyflwyno ffurflen gwyno ar-lein](https://www.pensions-ombudsman.org.uk/our-service/make-a-complaint)
 
-Os na all TPAS ddatrys eich cwyn am sut mae eich pensiwn wedi cael ei redeg, gallwch gysylltu â’r [Gwasanaeth Ombwdsmon Pensiynau](https://www.pensions-ombudsman.org.uk/about-us/) ar 020 7630 2200 neu ar <enquiries@pensions-ombudsman.org.uk>.
+Os oes gennych geisiadau cyffredinol am wybodaeth neu arweiniad ynghylch eich trefniadau pensiwn, cysylltwch â:
 
-Gall y Gwasanaeth Ombwdsmon Pensiynau helpu os yw eich cwyn yn ymwneud â sut mae eich pensiwn wedi cael ei redeg. Mae’n sefydliad diduedd ac am ddim ac mae ganddo bwerau cyfreithiol i gadarnhau neu wrthod cwynion.
-
-
-### Cwynion am gyngor ariannol
-
-Gallwch gysylltu â’r [Gwasanaeth Ombwdsmon Ariannol](http://www.financial-ombudsman.org.uk/publications/technical_notes/pension-complaints-our-jurisdiction.html) ar 0800 023 4567 neu ar <complaint.info@financial-ombudsman.org.uk>. Mae’r gwasanaeth yn ddiduedd ac am ddim. Mae ganddo bwerau cyfreithiol i gadarnhau neu wrthod cwynion.
-
-Gall y gwasanaeth hwn helpu os ydych yn meddwl y cawsoch y cyngor ariannol anghywir a arweiniodd i chi drefnu pensiwn nad oedd yn addas i chi. Gall hefyd helpu gyda rhai mathau o gwynion am y ffordd mae pensiwn yn cael ei werthu neu ei farchnata.
-
-Fel arfer, nid yw’r Gwasanaeth Ombwdsmon Ariannol yn darparu cymorth gyda chwynion am bensiynau gweithle - math o bensiwn a drefnir gan eich cyflogwr. Holwch eich darparwr os nad ydych yn siwr am eich [math o bensiwn](/cy/pension-types).
-
-Unwaith y bydd Ombwdsmon yn delio â’ch cwyn, ni fyddwch fel arfer yn cael mwy o help gyda’ch cwyn gan Ombwdsmon neu sefydliad arall.
-
-
-## Pensiwn y Wladwriaeth
-
-
-Cysylltwch â’r Gwasanaeth Pensiwn os oes gennych [gŵyn am Bensiwn y Wladwriaeth](https://www.gov.uk/complain-pension-service).
+The Pensions Advisory Service<br/>
+11 Belgrave Road<br/>
+London, SW1V 1RB<br/>
+Ffôn: 0800 011 3797<br/>
+Gwefan: [www.pensionsadvisoryservice.org.uk](https://www.pensionsadvisoryservice.org.uk)
