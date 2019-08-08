@@ -6,8 +6,8 @@
     </div>
   </div>
   <%= render 'components/language_banner' unless default_locale? || content_lang_matches_locale? %>
+  <%= render 'components/breadcrumbs' %>
   <main role="main" id="content" tabindex="-1">
-    <%= render 'components/breadcrumbs' %>
     <%= yield %>
   </main>
 <% end %>

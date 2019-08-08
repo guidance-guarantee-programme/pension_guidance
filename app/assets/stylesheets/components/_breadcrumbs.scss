@@ -1,4 +1,13 @@
 .breadcrumbs {
   @include breadcrumbs;
   overflow: hidden;
+
+  .breadcrumbs__list {
+    margin: 0 15px;
+
+    @include media(tablet) {
+      margin: auto;
+      max-width: 960px;
+    }
+  }
 }
