@@ -4,7 +4,7 @@
     <h1>Your details</h1>
 
     <% if @booking_request.errors.any? %>
-      <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+      <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
         <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
           Unable to submit the form
         </h2>

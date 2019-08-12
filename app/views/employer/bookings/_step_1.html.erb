@@ -5,7 +5,7 @@
   <%= render 'hidden_fields', f: f, id_prefix: 'step_1' %>
 
   <% if @slot_assignment_failed %>
-    <div class="error-summary t-assignment-failed">
+    <div class="error-summary t-assignment-failed" role="alert" aria-labelledby="error-summary-heading" data-error-summary>
       <h2 class="heading-medium error-summary-heading">There was a problem booking your appointment</h2>
       <p>There was a problem assigning you an appointment time, please choose again.</p>
     </div>

@@ -20,7 +20,7 @@
 
   <% if flash[:alert] %>
   <div class="l-column-two-thirds">
-    <div class="error-summary alert-alert" aria-labelledby="error-summary-heading" role="group">
+    <div class="error-summary alert-alert" aria-labelledby="error-summary-heading" role="alert" data-error-summary>
       <h1 class="heading-medium error-summary-heading" id="error-summary-heading"><%= flash[:alert] %></h1>
 
       <p>The chosen slot was taken during your booking. Please try again with a different slot.</p>
