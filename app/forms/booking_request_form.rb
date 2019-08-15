@@ -72,7 +72,7 @@ class BookingRequestForm # rubocop:disable ClassLength
   delegate :id, to: :booking_location, prefix: :booking_location
 
   def location_name
-    booking_location.name_for(location_id)
+    booking_location&.name_for(location_id)
   end
 
   def twilio_number

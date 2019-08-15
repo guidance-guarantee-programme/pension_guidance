@@ -6,12 +6,12 @@ class BookingRequestsController < ApplicationController
   before_action :set_feedback
 
   def step_one
+    raise(ActionController::RoutingError, 'Location Not Found') unless @booking_request.location
+
     if @booking_request.no_availability?
       render :no_availability
     else
-      if @booking_request.limited_availability?
-        @locations = @booking_request.alternate_locations
-      end
+      @locations = @booking_request.alternate_locations if @booking_request.limited_availability?
 
       retrieve_slots
 
