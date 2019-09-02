@@ -67,7 +67,7 @@ $('[data-character-limit]').each(function() {
   new PWPG.CharacterLimit($component);
 });
 
-$('[data-radio-toggle]').each(function() {
+$('[data-radio-toggle], [data-checkbox-toggle]').each(function() {
   'use strict';
 
   var $component = $(this);

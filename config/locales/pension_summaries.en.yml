@@ -10,7 +10,7 @@ en:
           <a href="https://www.gov.uk/contact-pension-service" target="_blank">Pensions Service</a>.
 
     about_you:
-      title: Firstly – a little bit about you
+      title: Firstly – a bit about you
       errors:
         heading: Sorry, one or more errors occurred
         description: If you have given consent to be contacted by Ipsos MORI then please fill out your name and a valid email address. If you do not want to be contacted then please remove your name and/or email address from the form.
@@ -35,10 +35,11 @@ en:
         other: Other
       ipsos_statement:
         html: |
-          <p>We carry out customer research via our independent research partner (Ipsos MORI). We ask a sample of customers about their experience of using Pension Wise. Your details will not be used for any other purpose, you will not be contacted by Ipsos MORI for any other reason and if you are contacted you can decide whether to take part.</p>
+          <h2>Help us improve our service</h2>
+          <p>We carry out customer research via our independent research partner (Ipsos MORI). We ask a sample of customers about their experience of using Pension Wise to improve our services. Any details you provide will be used solely for this purpose.</p>
       privacy_notice:
         html: |
-          <h2 id="privacy-notice">Privacy notice</h2>
+          <h2>Privacy notice</h2>
           <p>Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at <a rel="external" href="https://www.pensionwise.gov.uk/en/privacy">www.pensionwise.gov.uk/en/privacy</a>.</p>
       next_button: Next
 
