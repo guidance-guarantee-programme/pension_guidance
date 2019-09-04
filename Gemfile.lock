@@ -218,7 +218,6 @@ GEM
     multi_json (1.13.1)
     multi_test (0.1.2)
     multipart-post (2.0.0)
-    newrelic_rpm (4.5.0.337)
     nio4r (2.3.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
@@ -455,7 +454,6 @@ DEPENDENCIES
   jasmine-rails!
   launchy!
   lograge!
-  newrelic_rpm!
   nokogiri!
   output-templates (~> 4.10)!
   pdf-inspector!
