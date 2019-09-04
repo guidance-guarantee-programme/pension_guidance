@@ -35,7 +35,8 @@ cy:
         other: Arall
       ipsos_statement:
         html: |
-          <p>We carry out customer research via our independent research partner (Ipsos MORI). We ask a sample of customers about their experience of using Pension Wise. Your details will not be used for any other purpose, you will not be contacted by Ipsos MORI for any other reason and if you are contacted you can decide whether to take part.</p>
+          <h2>Helpwch ni i wella ein gwasanaeth</h2>
+          <p>Rydym yn cynnal ymchwil cwsmeriaid drwy ein partner ymchwil annibynnol (Ipsos MORI). Rydym yn gofyn i gynrychiolaeth o gwsmeriaid am eu profiad o ddefnyddio Pension Wise i wella ein gwasanaethau. Bydd unrhyw fanylion a ddarparwch ond yn cael eu defnyddio i’r diben hwn.</p>
       privacy_notice:
         html: |
           <h2 id="hysbysiad-preifatrwydd">Hysbysiad preifatrwydd</h2>
