@@ -25,7 +25,6 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'govuk_template'
   gem 'humanize'
   gem 'inline_svg'
-  gem 'newrelic_rpm'
   gem 'nokogiri'
   gem 'output-templates', '~> 4.10', github: 'guidance-guarantee-programme/output-templates'
   gem 'pg', '>= 0.18'
