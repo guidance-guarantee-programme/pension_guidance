@@ -35,15 +35,15 @@ class TelephoneAppointmentsApi
   end
 
   def open_timeout
-    ENV.fetch('TAP_APPOINTMENTS_API_OPEN_TIMEOUT', 2)
+    ENV.fetch('TAP_APPOINTMENTS_API_OPEN_TIMEOUT', 2).to_i
   end
 
   def read_timeout
-    ENV.fetch('TAP_APPOINTMENTS_API_READ_TIMEOUT', 2)
+    ENV.fetch('TAP_APPOINTMENTS_API_READ_TIMEOUT', 2).to_i
   end
 
   def retries
-    ENV.fetch('TAP_APPOINTMENTS_API_RETRIES', 0)
+    ENV.fetch('TAP_APPOINTMENTS_API_RETRIES', 0).to_i
   end
 
   def api_uri
