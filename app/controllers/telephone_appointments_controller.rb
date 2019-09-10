@@ -106,7 +106,9 @@ class TelephoneAppointmentsController < ApplicationController
         :date_of_birth_year,
         :date_of_birth_month,
         :date_of_birth_day,
-        :gdpr_consent
+        :gdpr_consent,
+        :accessibility_requirements,
+        :notes
       )
   end
 

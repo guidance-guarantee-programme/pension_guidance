@@ -152,6 +152,29 @@
     <p><%= render partial: 'components/webchat' %></p>
   </div>
 
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accessibility_requirements) %>">
+    <div class="multiple-choice">
+      <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %>
+      <%= f.label :accessibility_requirements do %>
+        <% if @telephone_appointment.errors.include?(:accessibility_requirements) %>
+          <span class="error-message"><%= @telephone_appointment.errors[:accessibility_requirements].to_sentence.capitalize %></span>
+        <% end %>
+        I require help or an adjustment to help me access my appointment
+        <span class="form-hint" id="accessibility-hint">We may contact you for details of your specific needs</span>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="form-group" data-character-limit>
+    <%= f.label :notes, class: 'form-label-bold' do %>
+      Additional information
+      <span class="form-hint">
+        eg accessibility adjustments
+      </span>
+    <% end %>
+    <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
+  </div>
+
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:where_you_heard) %>">
     <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:where_you_heard) %>

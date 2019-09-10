@@ -13,6 +13,8 @@ module Pages
     element :memorable_word, '.t-memorable-word'
     element :choose_other_time_message, '.t-choose-other-time-message'
     element :where_you_heard, '.t-where-you-heard'
+    element :accessibility_requirements, '.t-accessibility-requirements'
+    element :additional_info, '.t-additional-info'
 
     element :dc_pot_confirmed_yes, '.t-dc-pot-confirmed-yes'
     element :dc_pot_confirmed_no, '.t-dc-pot-confirmed-no'

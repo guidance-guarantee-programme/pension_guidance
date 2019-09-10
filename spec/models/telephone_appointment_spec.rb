@@ -12,7 +12,9 @@ RSpec.describe TelephoneAppointment, type: :model do
       date_of_birth_day: '01',
       dc_pot_confirmed: 'yes',
       where_you_heard: '1',
-      gdpr_consent: 'yes'
+      gdpr_consent: 'yes',
+      accessibility_requirements: '1',
+      notes: 'meh'
     )
   end
 
