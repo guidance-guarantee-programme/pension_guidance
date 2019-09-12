@@ -18,7 +18,9 @@ class TelephoneAppointment
     :date_of_birth_year,
     :date_of_birth_month,
     :date_of_birth_day,
-    :gdpr_consent
+    :gdpr_consent,
+    :accessibility_requirements,
+    :notes
   )
 
   validates :start_at, presence: true
@@ -30,6 +32,8 @@ class TelephoneAppointment
   validates :date_of_birth, presence: true
   validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
   validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
+  validates :notes, length: { maximum: 160 }, allow_blank: true
+  validates :accessibility_requirements, inclusion: { in: %w(0 1) }
 
   def advance!
     self.step += 1
@@ -60,7 +64,9 @@ class TelephoneAppointment
       date_of_birth: date_of_birth,
       dc_pot_confirmed: dc_pot_confirmed == 'yes',
       where_you_heard: where_you_heard,
-      gdpr_consent: gdpr_consent
+      gdpr_consent: gdpr_consent,
+      accessibility_requirements: accessibility_requirements,
+      notes: notes
     }
   end
 
