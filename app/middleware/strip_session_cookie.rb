@@ -24,8 +24,11 @@ module Middleware
     end
 
     def strip?(env)
-      path = Rack::Request.new(env).path
-      @paths.include?(path)
+      req = Rack::Request.new(env)
+
+      return false if PlacedByAgent.new(req.ip).call
+
+      @paths.include?(req.path)
     end
   end
 end

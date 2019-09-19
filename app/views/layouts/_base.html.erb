@@ -93,6 +93,20 @@
     </div>
   </div>
 
+  <% if agent? %>
+    <div class="referrer-banner t-referrer-banner">
+      <% if unresolved_referral %>
+        <%= link_to edit_referral_path, class: 't-call-outcome' do %>
+          Pension Provider: <%= unresolved_referral.friendly_pension_provider %>, 
+          Surname: <%= unresolved_referral.surname %>, 
+          Date of birth: <%= l(unresolved_referral.date_of_birth, format: :govuk_date) %>
+        <% end %>
+      <% else %>
+        <%= link_to 'Assign a Pension Provider', new_referral_path, class: 't-assign' %>
+      <% end %>
+    </div>
+  <% end %>
+
   <%= javascript_include_tag 'application' %>
 
   <% if Rails.env.test? %>

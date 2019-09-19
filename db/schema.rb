@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180905002400) do
+ActiveRecord::Schema.define(version: 2019_09_19_080755) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
   enable_extension "pgcrypto"
+  enable_extension "plpgsql"
 
   create_table "pension_summaries", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.boolean "leave_your_pot_untouched", default: false, null: false
@@ -51,6 +51,17 @@ ActiveRecord::Schema.define(version: 20180905002400) do
     t.string "step", limit: 100, null: false
     t.datetime "created_at", null: false
     t.index ["pension_summary_id"], name: "index_pension_summary_step_viewings_on_pension_summary_id"
+  end
+
+  create_table "referrals", force: :cascade do |t|
+    t.string "agent_identifier", null: false
+    t.string "pension_provider", default: "", null: false
+    t.string "surname", default: "", null: false
+    t.string "call_outcome", default: "", null: false
+    t.date "date_of_birth", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["agent_identifier"], name: "index_referrals_on_agent_identifier"
   end
 
   add_foreign_key "pension_summary_step_viewings", "pension_summaries"

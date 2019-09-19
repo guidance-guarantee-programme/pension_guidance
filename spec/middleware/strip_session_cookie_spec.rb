@@ -14,6 +14,18 @@ RSpec.describe Middleware::StripSessionCookie, '#call' do
         expect(headers).to be_empty
       end
     end
+
+    it 'never strips for agents' do
+      allow(ENV).to receive(:[]).with('I_AM_AN_AGENT').and_return(true)
+
+      env = { 'HTTP_COOKIE' => 'ohai', 'PATH_INFO' => '/en/tax', 'REMOTE_ADDR' => '127.0.0.1' }
+
+      expect(app).to receive(:call).with(env).and_return(response)
+
+      subject.call(env).tap do |_, headers, _|
+        expect(headers).to be_present
+      end
+    end
   end
 
   context 'with no matching path' do

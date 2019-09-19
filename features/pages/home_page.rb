@@ -11,5 +11,9 @@ module Pages
     element :who, '.t-who'
     element :what, '.t-what'
     element :how, '.t-how'
+
+    section :referrer_banner, '.t-referrer-banner' do
+      element :assign, '.t-assign'
+    end
   end
 end

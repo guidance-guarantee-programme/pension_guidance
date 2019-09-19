@@ -1,0 +1,29 @@
+<% content_for(:page_title, t('service.title', page_title: 'Assign a Pension Provider')) %>
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <h1>Assign a Pension Provider</h1>
+
+    <% if @referral.errors.any? %>
+      <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          Unable to submit the form
+        </h2>
+        <p>Check the following:</p>
+
+        <ul class="error-summary-list">
+          <% @referral.errors.each do |key, message| %>
+            <li><%= link_to "#{Referral.human_attribute_name key} – #{message}", "#referral_#{key}" %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <%= form_for @referral, url: referral_path do |f| %>
+      <%= render partial: 'form', locals: { f: f } %>
+
+      <div class="form-group">
+        <%= f.submit 'Assign this Pension Provider', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -102,6 +102,8 @@ Rails.application.routes.draw do
         post :download, on: :member
         post :print, on: :member
       end
+
+      resource :referral, only: %i(new create edit update), locale: :en
     end
   end
 
