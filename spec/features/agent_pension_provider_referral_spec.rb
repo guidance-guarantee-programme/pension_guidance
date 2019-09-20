@@ -4,6 +4,18 @@ require_relative '../../features/pages/new_referral'
 require_relative '../../features/pages/edit_referral'
 
 RSpec.feature 'Agent referral from a pension provider' do
+  scenario 'Agent opens telephone bookings tab', js: true do
+    given_the_user_is_identified_as_an_agent do
+      when_they_visit_the_appointments_page
+      then_the_telephone_button_opens_a_tap_booking_tab
+    end
+  end
+
+  scenario 'Regular customer opens telephone bookings', js: true do
+    when_they_visit_the_appointments_page
+    then_the_telephone_button_opens_the_phone_bookings_page
+  end
+
   scenario 'Opening and closing a referral' do
     given_the_user_is_identified_as_an_agent do
       and_pension_providers_are_configured do
@@ -21,6 +33,28 @@ RSpec.feature 'Agent referral from a pension provider' do
     then_they_do_not_see_the_banner
     when_they_attempt_to_visit_the_referral_page
     then_they_are_not_authorised
+  end
+
+  def when_they_visit_the_appointments_page
+    visit '/en/appointments'
+  end
+
+  def then_the_telephone_button_opens_a_tap_booking_tab
+    wait_for_ajax
+
+    phone_button = page.find('#phone-button')
+
+    expect(phone_button['href']).to end_with('/appointments/new')
+    expect(phone_button['target']).to eq('_blank')
+  end
+
+  def then_the_telephone_button_opens_the_phone_bookings_page
+    wait_for_ajax
+
+    phone_button = page.find('#phone-button')
+
+    expect(phone_button['href']).to end_with('/en/book-phone')
+    expect(phone_button['target']).to be_empty
   end
 
   def given_the_user_is_identified_as_an_agent

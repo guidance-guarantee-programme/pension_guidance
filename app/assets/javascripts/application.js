@@ -15,10 +15,17 @@
 //= require components/SlotPickerSingleTime
 //= require components/EmailValidation
 //= require components/CharacterLimit
+//= require components/PhoneButton
 
 PWPG.clickTracker.init();
 PWPG.calculators.init();
 PWPG.feedback.init();
+
+$('[data-phone-button]').each(function() {
+  'use strict';
+  var $component = $(this);
+  new PWPG.PhoneButton($component);
+});
 
 $('[data-slider]').each(function() {
   'use strict';

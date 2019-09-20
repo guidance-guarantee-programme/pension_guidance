@@ -136,6 +136,8 @@ Rails.application.routes.draw do
     mount JasmineFixtures => '/spec/javascripts/fixtures'
   end
 
+  get '/agent', to: 'agents#show'
+
   get '/providers/:id', to: 'providers#show', constraints: ->(req) { PensionProvider[req.params[:id]] }
 
   get 'landing-pp', to: redirect('/about')
