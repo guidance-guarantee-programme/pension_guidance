@@ -1,6 +1,6 @@
 # rubocop:disable Metrics/ClassLength
 class PensionSummariesController < ApplicationController
-  layout 'guides'
+  layout 'optimise_guides'
 
   before_action :set_pilot_cookie, if: :pilot_enabled?, only: %i(start)
   before_action :create_summary, only: %i(create)
@@ -9,6 +9,8 @@ class PensionSummariesController < ApplicationController
   before_action :set_current_step, only: %i(summary)
   before_action :set_breadcrumbs
   before_action :skip_about_you, unless: :pilot_data_collection?, only: %i(about_you save_about_you)
+
+  skip_before_action :verify_authenticity_token
 
   rescue_from ActiveRecord::RecordNotFound do
     redirect_to explore_your_options_root_url
