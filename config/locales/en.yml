@@ -127,6 +127,8 @@ en:
               inclusion: select an option
             where_you_heard:
               inclusion: select an option
+            additional_info:
+              blank: describe the help or accessibility adjustments you require
         employer/booking:
           attributes:
             first_name:
@@ -167,6 +169,8 @@ en:
               inclusion: please accept
             where_you_heard:
               inclusion: select an option
+            notes:
+              blank: describe the help or accessibility adjustments you require
 
     attributes:
       employer/booking:
@@ -176,6 +180,7 @@ en:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
         where_you_heard: Where did you first hear of Pension Wise
+        notes: Additional information
       booking_request_form:
         primary_slot: Slot 1
         secondary_slot: Slot 2

@@ -19,12 +19,17 @@ class BookingRequestForm # rubocop:disable ClassLength
     step_two.validates :dc_pot, inclusion: { in: %w(yes no not-sure) }
     step_two.validates :date_of_birth, presence: true
     step_two.validates :additional_info, length: { maximum: 160 }, allow_blank: true
+    step_two.validates :additional_info, presence: true, if: :accessibility_requirements?
     step_two.validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
   end
 
   def initialize(location_id, opts)
     @location_id = location_id
     super(opts)
+  end
+
+  def accessibility_requirements?
+    accessibility_requirements == '1'
   end
 
   def selected_date
