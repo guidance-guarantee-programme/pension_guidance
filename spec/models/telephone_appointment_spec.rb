@@ -163,5 +163,20 @@ RSpec.describe TelephoneAppointment, type: :model do
       subject.dc_pot_confirmed = nil
       expect(subject).to_not be_valid
     end
+
+    context 'when accessibility requirements are needed' do
+      it 'requires notes' do
+        subject.notes = ''
+        expect(subject).to_not be_valid
+      end
+    end
+
+    context 'when accessibility requirements are not needed' do
+      it 'does not require notes' do
+        subject.accessibility_requirements = '0'
+        subject.notes = ''
+        expect(subject).to be_valid
+      end
+    end
   end
 end

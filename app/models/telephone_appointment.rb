@@ -33,7 +33,12 @@ class TelephoneAppointment
   validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
   validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
   validates :notes, length: { maximum: 160 }, allow_blank: true
+  validates :notes, presence: true, if: :accessibility_requirements?
   validates :accessibility_requirements, inclusion: { in: %w(0 1) }
+
+  def accessibility_requirements?
+    accessibility_requirements == '1'
+  end
 
   def advance!
     self.step += 1

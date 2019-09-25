@@ -116,6 +116,14 @@ RSpec.describe BookingRequestForm do
         subject.where_you_heard = ''
         expect(subject).not_to be_step_two_valid
       end
+
+      context 'when accessibility requirements are specified' do
+        it 'requires additional info' do
+          subject.accessibility_requirements = '1'
+          subject.additional_info = ''
+          expect(subject).not_to be_step_two_valid
+        end
+      end
     end
   end
 

@@ -95,6 +95,7 @@ Given(/^they do not have a DC pot$/) do
   @page.where_you_heard.select('Other')
   @page.gdpr_consent_yes.set(true)
   @page.accessibility_requirements.set(true)
+  @page.additional_info.set('Bleh bleh')
 
   @page.submit.click
 end
@@ -119,6 +120,7 @@ Given(/^they are below the minimum age$/) do
   @page.where_you_heard.select('Other')
   @page.gdpr_consent_yes.set(true)
   @page.accessibility_requirements.set(true)
+  @page.additional_info.set('Bleh bleh')
 
   @page.submit.click
 end
@@ -140,6 +142,7 @@ Given(/^they are eligible for an appointment$/) do
   @page.gdpr_consent_yes.set(true)
   @page.where_you_heard.select('Other')
   @page.accessibility_requirements.set(true)
+  @page.additional_info.set('Bleh bleh')
 
   @page.submit.click
 end
@@ -181,6 +184,7 @@ When(/^the slot becomes unavailable while they are filling in their details$/) d
   @page.where_you_heard.select('Other')
   @page.gdpr_consent_yes.set(true)
   @page.accessibility_requirements.set(true)
+  @page.additional_info.set('Bleh')
 
   @page.submit.click
 end
