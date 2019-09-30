@@ -159,7 +159,7 @@
         <% if @telephone_appointment.errors.include?(:accessibility_requirements) %>
           <span class="error-message"><%= @telephone_appointment.errors[:accessibility_requirements].to_sentence.capitalize %></span>
         <% end %>
-        I require help or an adjustment to help me access my appointment
+        I require an adjustment to help me access my appointment
         <span class="form-hint" id="accessibility-hint">Please provide further details in the additional information box. We may contact you for details of your specific needs</span>
       <% end %>
     </div>
