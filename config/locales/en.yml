@@ -128,7 +128,7 @@ en:
             where_you_heard:
               inclusion: select an option
             additional_info:
-              blank: describe the help or accessibility adjustments you require
+              blank: describe the accessibility adjustments you require
         employer/booking:
           attributes:
             first_name:
@@ -170,7 +170,7 @@ en:
             where_you_heard:
               inclusion: select an option
             notes:
-              blank: describe the help or accessibility adjustments you require
+              blank: describe the accessibility adjustments you require
 
     attributes:
       employer/booking:
