@@ -2,6 +2,7 @@ module Pages
   class BookingStepTwo < Page
     set_url '/{locale}/locations/{id}/booking-request/step-two'
 
+    element :pension_provider_banner, '.t-pension-provider-banner'
     element :chosen_slot, '.slot-picker-confirmed-date'
 
     element :error, '.t-errors'

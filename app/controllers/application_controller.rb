@@ -16,6 +16,29 @@ class ApplicationController < ActionController::Base
     rescue_from I18n::InvalidLocale, with: :not_found
   end
 
+  def agent_identifier
+    cookies.permanent['agent_identifier'] ||= SecureRandom.hex(4)
+  end
+
+  def unresolved_referral
+    @unresolved_referral ||= Referral.unresolved.find_by(agent_identifier: agent_identifier)
+  end
+  helper_method :unresolved_referral
+
+  def agent?
+    @agent ||= PlacedByAgent.new(request.remote_ip).call
+  end
+  helper_method :agent?
+
+  def pension_provider
+    cookies.permanent[:pension_provider]
+  end
+  helper_method :pension_provider
+
+  def pension_provider=(value)
+    cookies.permanent[:pension_provider] = value
+  end
+
   def footer?
     true
   end

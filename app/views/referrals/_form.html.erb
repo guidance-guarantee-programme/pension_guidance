@@ -1,0 +1,125 @@
+<% content_for(:page_title, t('service.title', page_title: 'Final Nudge Outcome')) %>
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <h1>Final Nudge Outcome</h1>
+
+    <% if @referral.errors.any? %>
+      <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+          Unable to submit the form
+        </h2>
+        <p>Check the following:</p>
+
+        <ul class="error-summary-list">
+          <% @referral.errors.each do |key, message| %>
+            <li><%= link_to "#{Referral.human_attribute_name key} – #{message}", "#referral_#{key}" %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <%= form_for @referral, url: referral_path do |f| %>
+      <%= f.hidden_field :agent_identifier %>
+
+      <div class="form-group <%= 'form-group-error' if @referral.errors.include?(:pension_provider) %>">
+        <%= f.label :pension_provider, class: 'form-label-bold' %>
+        <% if @referral.errors.include?(:pension_provider) %>
+          <span class="error-message"><%= @referral.errors[:pension_provider].to_sentence.capitalize %></span>
+        <% end %>
+        <%= f.select :pension_provider,
+              options_for_select(PensionProvider.all.invert.to_a, @referral.pension_provider),
+              { include_blank: true },
+              { class: "t-pension-provider form-control #{'form-control-error' if @referral.errors.include?(:pension_provider)}" }
+        %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @referral.errors.include?(:surname) %>">
+        <%= f.label :surname, class: 'form-label-bold' %>
+        <% if @referral.errors.include?(:surname) %>
+          <span class="error-message"><%= @referral.errors[:surname].to_sentence.capitalize %></span>
+        <% end %>
+        <%= f.text_field :surname, class: "t-surname form-control #{'form-control-error' if @referral.errors.include?(:surname)}" %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @referral.errors.include?(:date_of_birth) %>">
+        <fieldset>
+          <legend>
+            <span class="form-label-bold">
+              Date of birth
+            </span>
+          </legend>
+          <div class="form-date" id="referral_date_of_birth" tabindex="-1">
+            <div class="form-group form-group-day">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_3i">Day</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(3i)',
+                  id: "#{f.object_name}_date_of_birth_3i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:day),
+                  placeholder: 'DD',
+                  class: "f-dob__input form-control js-dob-day t-date-of-birth-day #{'form-control-error' if @referral.errors.include?(:date_of_birth)}",
+                  pattern: '[0-9]*',
+                  min: 1,
+                  max: 31,
+                  'aria-describedby': 'dob-hint'
+                )
+              %>
+            </div>
+            <div class="form-group form-group-month">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_2i">Month</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(2i)',
+                  id: "#{f.object_name}_date_of_birth_2i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:month),
+                  placeholder: 'MM',
+                  class: "form-dob__input form-control js-dob-month t-date-of-birth-month #{'form-control-error' if @referral.errors.include?(:date_of_birth)}",
+                  pattern: '[0-9]*',
+                  min: 1,
+                  max: 12
+                )
+              %>
+            </div>
+            <div class="form-group form-group-year">
+              <label class="form-label" for="<%= f.object_name %>_date_of_birth_1i">Year</label>
+              <%=
+                f.number_field(
+                  'date_of_birth(1i)',
+                  id: "#{f.object_name}_date_of_birth_1i",
+                  use_label: false,
+                  value: f.object.date_of_birth.try(:year),
+                  placeholder: 'YYYY',
+                  class: "form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year #{'form-control-error' if @referral.errors.include?(:date_of_birth)}",
+                  pattern: '[0-9]*',
+                  min: 120.years.ago.year,
+                  max: Date.today.year
+                )
+              %>
+            </div>
+          </div>
+          <% if @referral.errors.include?(:date_of_birth) %>
+            <span class="error-message"><%= @referral.errors[:date_of_birth].to_sentence.capitalize %></span>
+          <% end %>
+        </fieldset>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @referral.errors.include?(:call_outcome) %>">
+        <%= f.label :call_outcome, class: 'form-label-bold' %>
+        <% if @referral.errors.include?(:call_outcome) %>
+          <span class="error-message"><%= @referral.errors[:call_outcome].to_sentence.capitalize %></span>
+        <% end %>
+        <%= f.select :call_outcome,
+              options_for_select(CallOutcome::ALL, @referral.call_outcome),
+              { include_blank: true },
+              { class: "t-outcome form-control #{'form-control-error' if @referral.errors.include?(:call_outcome)}" }
+        %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit 'Assign Outcome', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
+      </div>
+    <% end %>
+  </div>
+</div>

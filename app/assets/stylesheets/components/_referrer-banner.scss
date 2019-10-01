@@ -1,0 +1,21 @@
+.referrer-banner {
+  background: $color-grey-alabaster;
+  border-top: 1px solid $border-colour;
+  bottom: 0;
+  font-size: 24px;
+  font-weight: bold;
+  left: 0;
+  padding: .5em;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+
+  a:visited {
+    color: $link-colour;
+  }
+
+  a:hover {
+    color: $link-hover-colour;
+  }
+}

@@ -14,6 +14,8 @@ threads Integer(ENV['MAX_THREADS'] || 5), Integer(ENV['MAX_THREADS'] || 5)
 bind 'unix://tmp/sockets/puma.sock'
 port ENV['PORT'] || 3000
 
+worker_timeout 3600 if ENV['RACK_ENV']
+
 preload_app!
 
 # on_worker_boot do

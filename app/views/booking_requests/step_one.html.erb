@@ -3,6 +3,8 @@
   <div class="l-column-full">
     <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
 
+    <%= render partial: 'shared/pension_provider_banner' if pension_provider %>
+
     <% if @locations.present? %>
       <div class="t-limited-availability error-summary" style="border-color: orange; margin-top: 15px;">
         <p>There is limited availability in this location. Other locations near <%= @booking_request.location_name %>:</p>

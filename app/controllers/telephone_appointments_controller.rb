@@ -108,8 +108,9 @@ class TelephoneAppointmentsController < ApplicationController
         :date_of_birth_day,
         :gdpr_consent,
         :accessibility_requirements,
-        :notes
-      )
+        :notes,
+        :gdpr_consent
+      ).merge(pension_provider: pension_provider)
   end
 
   def set_breadcrumbs

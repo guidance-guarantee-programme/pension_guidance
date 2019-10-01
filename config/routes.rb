@@ -102,6 +102,8 @@ Rails.application.routes.draw do
         post :download, on: :member
         post :print, on: :member
       end
+
+      resource :referral, only: %i(new create edit update), locale: :en
     end
   end
 
@@ -133,6 +135,10 @@ Rails.application.routes.draw do
     mount JasmineRails::Engine => '/specs'
     mount JasmineFixtures => '/spec/javascripts/fixtures'
   end
+
+  get '/agent', to: 'agents#show'
+
+  get '/providers/:id', to: 'providers#show', constraints: ->(req) { PensionProvider[req.params[:id]] }
 
   get 'landing-pp', to: redirect('/about')
   get '/', to: redirect('/en')

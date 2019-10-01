@@ -196,3 +196,18 @@ When(/^they choose another time slot$/) do
 
   @page.submit.click
 end
+
+Given('a pension provider has visited via their landing page') do
+  visit '/providers/aviva'
+end
+
+When('they attempt to place an appointment') do
+  @page = Pages::NewTelephoneAppointment.new
+  @page.load(locale: :en)
+  expect(@page).to be_displayed
+end
+
+Then('they see the pension provider banner') do
+  expect(@page).to have_pension_provider_banner
+  expect(@page.pension_provider_banner).to have_text('Aviva')
+end

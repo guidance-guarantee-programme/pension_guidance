@@ -14,7 +14,8 @@ RSpec.describe TelephoneAppointment, type: :model do
       where_you_heard: '1',
       gdpr_consent: 'yes',
       accessibility_requirements: '1',
-      notes: 'meh'
+      notes: 'meh',
+      pension_provider: 'aviva'
     )
   end
 
