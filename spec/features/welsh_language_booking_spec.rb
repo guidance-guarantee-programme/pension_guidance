@@ -73,7 +73,6 @@ RSpec.feature 'Welsh language bookings' do
   end
 
   def then_they_are_told_there_are_errors
-    @page.wait_until_errors_visible
     expect(@page).to have_errors
   end
 end
