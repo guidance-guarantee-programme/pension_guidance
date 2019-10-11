@@ -22,4 +22,4 @@ tags:
 * unrhyw gyflogwr sector gyhoeddus arall, ee gwasanaethau cymdeithasol
 {:/yes-no-dont-know-question}
 
-{::feedback_form /}
+{::feedback_link /}

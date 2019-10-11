@@ -18,4 +18,4 @@ Os oes gennych bensiwn cyfraniadau wedi’u diffinio (personol neu gweithle) ryd
 
 [Dechrau nawr](/cy/pension-type-tool/question-1){: .button}
 
-{::feedback_form /}
+{::feedback_link /}

@@ -21,11 +21,6 @@ RSpec.feature 'Questions', type: :feature do
   scenario 'can leave feedback' do
     visit '/pension-type-tool/question-1'
 
-    page.find('.t-feedback-name').set 'Jim Bob'
-    page.find('.t-feedback-email').set 'jim@bob.com'
-    page.find('.t-feedback-message').set 'Jim Bob rulez'
-    page.find('.t-feedback-submit').click
-
-    expect(page).to have_content('Thank you for your help')
+    expect(page).to have_content('Is there anything wrong with this page?')
   end
 end
