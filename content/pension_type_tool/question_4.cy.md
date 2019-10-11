@@ -16,4 +16,4 @@ tags:
 
 {:/pension-start-year-question}
 
-{::feedback_form /}
+{::feedback_link /}

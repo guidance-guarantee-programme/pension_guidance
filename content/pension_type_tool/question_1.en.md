@@ -15,4 +15,4 @@ tags:
 {:/yes-no-dont-know-question}
 
 {::webchat /}
-{::feedback_form /}
+{::feedback_link /}

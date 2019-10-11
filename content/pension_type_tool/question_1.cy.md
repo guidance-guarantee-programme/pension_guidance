@@ -14,4 +14,4 @@ tags:
 ## Ydy eich pensiwn wedi cael ei sefydlu gan eich cyflogwr?
 {:/yes-no-dont-know-question}
 
-{::feedback_form /}
+{::feedback_link /}
