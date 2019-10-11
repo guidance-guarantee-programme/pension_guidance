@@ -104,6 +104,15 @@ en:
   activemodel:
     errors:
       models:
+        feedback_form:
+          attributes:
+            name:
+              blank: enter a name
+            email:
+              invalid: enter a valid email address
+              invalid_email: enter a valid email address
+            message:
+              blank: enter a message
         booking_request_form:
           attributes:
             first_name:
@@ -213,15 +222,6 @@ en:
           attributes:
             email_address:
               invalid_email: enter a valid email address
-        feedback_form:
-          attributes:
-            name:
-              blank: enter a name
-            email:
-              invalid: enter a valid email address
-              invalid_email: enter a valid email address
-            message:
-              blank: enter a message
         pension_summary:
           attributes:
             consent_given:

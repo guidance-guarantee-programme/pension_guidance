@@ -131,6 +131,15 @@ cy:
         wrong_length: gyda maint anghywir o lythrennau (dylai fod yn %{count} llythyren)
 
       models:
+        feedback_form:
+          attributes:
+            name:
+              blank: enter a name
+            email:
+              invalid: enter a valid email address
+              invalid_email: enter a valid email address
+            message:
+              blank: enter a message
         welsh_language/booking_request:
           attributes:
             date_of_birth:
@@ -254,15 +263,6 @@ cy:
               blank: enter a name
             email_address:
               invalid_email: enter a valid email address
-        feedback_form:
-          attributes:
-            name:
-              blank: enter a name
-            email:
-              invalid: enter a valid email address
-              invalid_email: enter a valid email address
-            message:
-              blank: enter a message
         pension_summary:
           attributes:
             consent_given:
