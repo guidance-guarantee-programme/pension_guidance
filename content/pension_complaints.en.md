@@ -37,8 +37,6 @@ You can also [submit a complaint form online](https://www.pensions-ombudsman.org
 
 If you have general requests for information or guidance concerning your pension arrangements contact:
 
-The Pensions Advisory Service<br/>
-11 Belgrave Road<br/>
-London, SW1V 1RB <br/>
-Tel: 0800 011 3797<br/>
-Website: [www.pensionsadvisoryservice.org.uk](https://www.pensionsadvisoryservice.org.uk)
+The Money and Pensions Service<br/>
+120 Holborn<br/>
+London EC1N 2TD

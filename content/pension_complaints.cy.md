@@ -35,8 +35,6 @@ Gallwch hefyd [gyflwyno ffurflen gwyno ar-lein](https://www.pensions-ombudsman.o
 
 Os oes gennych geisiadau cyffredinol am wybodaeth neu arweiniad ynghylch eich trefniadau pensiwn, cysylltwch â:
 
-The Pensions Advisory Service<br/>
-11 Belgrave Road<br/>
-London, SW1V 1RB<br/>
-Ffôn: 0800 011 3797<br/>
-Gwefan: [www.pensionsadvisoryservice.org.uk](https://www.pensionsadvisoryservice.org.uk)
+The Money and Pensions Service<br/>
+120 Holborn<br/>
+London EC1N 2TD
