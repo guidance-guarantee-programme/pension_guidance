@@ -61,7 +61,7 @@ You’ll need to complete an application form to request the transfer. If you’
 Legally you **must**  get financial advice if you want to transfer from a:
 
  - [defined benefit](/en/pension-types#defined-benefit-final-salary-or-career-average) pension worth more than £30,000
- - [defined contribution](/en/pension-types#defined-contribution) pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (eg a guaranteed annuity rate)
+ - [defined contribution](/en/pension-types#defined-contribution) pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (e.g. a guaranteed annuity rate)
 
 ## Defined benefit pensions
 

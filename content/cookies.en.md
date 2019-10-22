@@ -24,7 +24,7 @@ Google Analytics stores information about:
 - how you got to the website 
 - what you click on while you’re visiting the website
 
-We don’t collect or store your personal information (eg your name or address) so this information can’t be used to identify who you are.
+We don’t collect or store your personal information (e.g. your name or address) so this information can’t be used to identify who you are.
 
 ^We don’t allow Google to use or share our analytics data.^
 

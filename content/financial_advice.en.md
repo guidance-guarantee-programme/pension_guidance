@@ -4,7 +4,7 @@ description: When and how to get financial advice about what to do with your pen
 
 #Seeing a financial adviser
 
-An adviser will ask about your finances, personal circumstances, your goals and how you feel about taking risks with your money. This will help them to recommend retirement income products (eg flexi-access drawdown, different types of annuity) that are right for you.
+An adviser will ask about your finances, personal circumstances, your goals and how you feel about taking risks with your money. This will help them to recommend retirement income products (e.g. flexi-access drawdown, different types of annuity) that are right for you.
 
 Find out more about what [an adviser might ask you](https://www.fca.org.uk/consumers/what-adviser-might-ask-you) from the Financial Conduct Authority (FCA) website.
 
@@ -22,7 +22,7 @@ Consider speaking to a financial adviser if you want to:
 You must get independent financial advice, by law, if you have a:
 
 - final salary or career average pension (known as a ‘defined benefit’ pension) worth more than £30,000 and you want to transfer it to a defined contribution pension scheme
-- defined contribution pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (eg a guaranteed annuity rate) and you want to give it up to do something else with your pot
+- defined contribution pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (e.g. a guaranteed annuity rate) and you want to give it up to do something else with your pot
 
 You should also consider speaking to a financial adviser if you want to do either of these and your pension is worth £30,000 or less.
 
@@ -36,7 +36,7 @@ Search the Money Advice Service’s [retirement adviser directory](https://direc
 
 Always ask an adviser if they’re independent or restricted.
 
-Restricted advisers are limited to certain types of products (eg only annuities) or the providers they can choose from. Independent advisers cover the whole market.
+Restricted advisers are limited to certain types of products (e.g. only annuities) or the providers they can choose from. Independent advisers cover the whole market.
 
 ##Paying for financial advice
 

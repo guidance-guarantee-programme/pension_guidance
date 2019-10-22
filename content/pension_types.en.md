@@ -27,7 +27,7 @@ These include:
 
 - Executive pension plan
 - Group personal pension
-- Master trust pension (eg NEST, NOW pension, the People’s Pension)
+- Master trust pension (e.g. NEST, NOW pension, the People’s Pension)
 - SIPP (Self Invested Personal Pension)
 - SSAS (Small Self Administered Schemes)
 - Stakeholder pension
