@@ -55,7 +55,7 @@
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:telephone_number) %>">
         <%= f.label :telephone_number, class: 'form-label-bold' do %>
           Phone number
-          <span class="form-hint">We’ll send an SMS appointment reminder when a mobile number is provided</span>
+          <span class="form-hint">We’ll send an SMS appointment reminder if a mobile number is provided</span>
         <% end %>
         <% if @booking_request.errors.include?(:telephone_number) %>
           <span class="error-message" id="telephone_number_error"><span class="visually-hidden">Error: </span><%= @booking_request.errors[:telephone_number].to_sentence.capitalize %></span>
