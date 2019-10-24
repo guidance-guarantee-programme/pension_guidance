@@ -84,7 +84,10 @@
           </legend>
           <div class="form-date" id="booking_request_date_of_birth" tabindex="-1">
             <div class="form-group form-group-day">
-              <label aria-label="Date of birth, day e.g. 25" class="form-label" for="<%= f.object_name %>_date_of_birth_3i">Day</label>
+              <label aria-label="Date of birth, day e.g. 25" class="form-label" for="<%= f.object_name %>_date_of_birth_3i">
+                <span class="visually-hidden">Date of birth, day e.g. 25</span>
+                <span aria-hidden="true">Day</span>
+              </label>
               <%=
                 f.number_field(
                   'date_of_birth(3i)',
@@ -101,7 +104,10 @@
               %>
             </div>
             <div class="form-group form-group-month">
-              <label aria-label="Date of birth, month e.g. 12" class="form-label" for="<%= f.object_name %>_date_of_birth_2i">Month</label>
+              <label aria-label="Date of birth, month e.g. 12" class="form-label" for="<%= f.object_name %>_date_of_birth_2i">
+                <span class="visually-hidden">Date of birth, month e.g. 12</span>
+                <span aria-hidden="true">Month</span>
+              </label>
               <%=
                 f.number_field(
                   'date_of_birth(2i)',
@@ -118,7 +124,10 @@
               %>
             </div>
             <div class="form-group form-group-year">
-              <label aria-label="Date of birth, year e.g. 1950" class="form-label" for="<%= f.object_name %>_date_of_birth_1i">Year</label>
+              <label aria-label="Date of birth, year e.g. 1950" class="form-label" for="<%= f.object_name %>_date_of_birth_1i">
+                <span class="visually-hidden">Date of birth, year e.g. 1950</span>
+                <span aria-hidden="true">Year</span>
+              </label>
               <%=
                 f.number_field(
                   'date_of_birth(1i)',
