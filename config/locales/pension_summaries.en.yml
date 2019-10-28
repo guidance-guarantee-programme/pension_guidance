@@ -18,6 +18,10 @@ en:
       age:
         legend: Which of these age groups are you in?
         "Under 50": "Under 50"
+        "50-54": "50 to 54"
+        "55-59": "55 to 59"
+        "60-64": "60 to 64"
+        "65-69": "65 to 60"
         "70 or over": "70 or over"
       gender:
         legend: What gender do you identify with?
