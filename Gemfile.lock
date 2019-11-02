@@ -219,7 +219,7 @@ GEM
     multi_test (0.1.2)
     multipart-post (2.0.0)
     nio4r (2.3.1)
-    nokogiri (1.10.3)
+    nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     parallel (1.10.0)
     parser (2.4.0.0)
