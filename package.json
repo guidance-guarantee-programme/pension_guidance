@@ -9,8 +9,7 @@
     "babel-preset-es2015": "^6.6.0",
     "eslint": "^1.10.3",
     "jscs": "latest",
-    "jshint": "latest",
-    "imageoptim": "^0.4.1",
+    "jshint": "^2.10.3",
     "svgexport": "^0.2.8"
   },
   "scripts": {
@@ -19,8 +18,6 @@
     "jshint": "jshint app/assets/javascripts/**.js spec/javascripts/**.js",
     "eslint": "eslint app/assets/javascripts/**/*.es6",
     "jscs": "jscs app/assets/javascripts/**.js spec/javascripts/**.js",
-    "svgexport": "npm run svg-calculator",
-    "svg-calculator": "svgexport svg/calculator.svg app/assets/images/css/calculator.png 20: 100% && svgexport svg/calculator.svg app/assets/images/css/calculator-2x.png 40: 100% && imageoptim app/assets/images/css/calculator.png app/assets/images/css/calculator-2x.png",
     "wraith": "wraith capture ./wraith/configs/capture.yaml"
   }
 }
