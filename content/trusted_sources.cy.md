@@ -57,7 +57,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         <ul>
         <li>Offeryn Cymharu Blwydd-dal <a href=" https://comparison.moneyadviceservice.org.uk/cy/tools/annuities">comparison.moneyadviceservice.org.uk/cy/tools/annuities</a></li>
         <li>Cyfeirlyfr cynghori ar ymddeoliad <a href=" https://directory.moneyadviceservice.org.uk/cy">directory.moneyadviceservice.org.uk/cy</a></li>
-        <li>Deall a chymharu Tynnu Incwm i Lawr <a href=" https://www.moneyadviceservice.org.uk/cy/opsiynau-incwm-ymddeoliad/income-drawdown">www.moneyadviceservice.org.uk/cy/opsiynau-incwm-ymddeoliad/income-drawdown</a></li>
+        <li>Deall a chymharu Tynnu Incwm i Lawr <a href="https://www.moneyadviceservice.org.uk/cy/tools/pension-drawdown-calculator">www.moneyadviceservice.org.uk/cy/tools/pension-drawdown-calculator</a></li>
         <li>Dyled a benthyca</li>
         <li>Cyllidebu a rheoli arian</li>
         <li>Cynilo a buddsoddi</li>
