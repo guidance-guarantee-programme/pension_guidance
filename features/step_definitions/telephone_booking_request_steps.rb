@@ -24,48 +24,6 @@ Given(/^the customer wants to book a phone appointment$/) do
   expect(@page).to be_displayed
 end
 
-When(/^they fill in an email address with a typo$/) do
-  choose_date_and_time
-
-  with_mock_mailgun_response(
-    is_valid: false,
-    address: 'something@gmall.com',
-    parts: {
-      display_name: nil,
-      local_part: 'something',
-      domain: 'gmall.com'
-    },
-    did_you_mean: 'something@gmail.com'
-  )
-
-  @page.email.set 'something@gmall.com'
-  @page.phone.click
-end
-
-When(/^they fill in an invalid email address$/) do
-  with_mock_mailgun_response(
-    is_valid: false,
-    address: 'something@totallyinvalid',
-    parts: {
-      display_name: nil,
-      local_part: 'something',
-      domain: 'totallyinvalid'
-    },
-    did_you_mean: nil
-  )
-
-  @page.email.set 'something@totallyinvalid'
-  @page.phone.click
-end
-
-Then(/^they see a message suggesting a correct email address$/) do
-  expect(@page.email_suggestion).to have_content('something@gmail.com')
-end
-
-Then(/^they see a message saying the email address is invalid$/) do
-  expect(@page).to have_content("That doesn't look like a valid address")
-end
-
 When(/^they choose a date after the slots on that day have been taken$/) do
   @page.find('button[value="2017-01-21"]').click
 end

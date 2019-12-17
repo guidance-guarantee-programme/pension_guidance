@@ -44,18 +44,6 @@ Scenario: Customer makes a realtime online appointment
   When I submit my completed Booking Request
   Then my appointment is confirmed
 
-@javascript @booking_locations @time_travel @mock_mailgun
-Scenario: Customer makes a mistakes in their email address and gets a suggestions
-  Given a location is enabled for online booking
-  And the date is "2016-06-17"
-  When I browse for the location "Hackney"
-  And I opt to book online
-  And I choose one available appointment slot
-  And I enter an email address with a typo
-  Then I see a correction suggestion
-  When I enter an invalid email address
-  Then I see a warning of an invalid email address
-
 @javascript @booking_locations @time_travel
 Scenario: Customer chooses a single slot
   Given a location is enabled for online booking

@@ -3,10 +3,6 @@ ruby IO.read('.ruby-version').strip
 # force Bundler to use HTTPS for github repos
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-mailgun-validator-jquery', '0.0.3'
-end
-
 source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'autoprefixer-rails'
   gem 'booking_locations'

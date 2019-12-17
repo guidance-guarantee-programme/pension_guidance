@@ -31,7 +31,7 @@
     <% end %>
 
     <div class="email-outer">
-      <%= f.text_field :email, class: "t-feedback-email form-control #{'form-control-error' if @feedback.errors.include?(:email)}", data: email_validation_data_attributes %>
+      <%= f.text_field :email, class: "t-feedback-email form-control #{'form-control-error' if @feedback.errors.include?(:email)}" %>
     </div>
   </div>
 
