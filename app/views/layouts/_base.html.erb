@@ -44,6 +44,7 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PPZZQ9');</script>
   <%# End Google Tag Manager %>
+
 <% end %>
 
 
@@ -51,6 +52,17 @@
   <% if params[:locale] %>
     <%= render 'components/language_toggle' %>
   <% end %>
+
+  <div class="maps-header">
+    <div class="maps-header-wrapper">
+      <div class="maps-header-meta">
+        <span class="maps-text"><%= t('.provided_by') %></span>
+        <a href="https://www.moneyandpensionsservice.org.uk" target="_blank">
+          <%= image_tag("maps_logo_#{I18n.locale}.png", class: 'maps-logo', alt: t('.logo_text')) %>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <%= yield %>
 <% end %>

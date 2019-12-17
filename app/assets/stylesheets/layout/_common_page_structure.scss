@@ -1,6 +1,5 @@
 .l-masthead {
   background: $color-masthead-bg;
-  margin-top: -10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -13,4 +12,9 @@
 .l-page-container {
   @extend %site-width-container;
   @extend %contain-floats;
+}
+
+// scss-lint:disable IdSelector
+#global-header-bar {
+  display: none !important; // scss-lint:disable ImportantRule
 }
