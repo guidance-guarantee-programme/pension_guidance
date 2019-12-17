@@ -32,7 +32,7 @@
     <% end %>
 
     <div class="email-outer">
-      <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @telephone_appointment.errors.include?(:email)}", data: email_validation_data_attributes %>
+      <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @telephone_appointment.errors.include?(:email)}" %>
     </div>
   </div>
 
