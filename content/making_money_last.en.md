@@ -14,7 +14,7 @@ You’ll need to [work out what you’ll have in retirement](/en/work-out-income
 
 You’ll need to think about how to make the money you’ve got last for the rest of your lifetime.
 
-You can use the [Office of National Statistics calculator](http://visual.ons.gov.uk/how-long-will-my-pension-need-to-last/) to estimate your life expectancy. This can help you plan how long your pension may need to last – but lifestyle choices and other factors may affect how long you live. 
+You can use the [Office of National Statistics calculator](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/articles/lifeexpectancycalculator/2019-06-07) to estimate your life expectancy. This can help you plan how long your pension may need to last – but lifestyle choices and other factors may affect how long you live. 
 
 %Taking too much of your pension money in early retirement could mean you don’t have enough for later.%
 
