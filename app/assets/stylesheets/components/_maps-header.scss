@@ -1,36 +1,25 @@
-.maps-footer {
+.maps-header {
   background: $maps-background;
 }
 
-.maps-footer-wrapper {
+.maps-header-wrapper {
   @include media(tablet) {
     margin: auto;
     max-width: 1024px;
   }
 }
 
-.maps-footer-meta {
+.maps-header-meta {
   display: flex;
   flex-direction: row;
   flex: 0 1 auto;
   align-items: center;
   // scss-lint:disable PropertySpelling
-  justify-items: start;
+  justify-content: flex-end;
   margin: 0 15px;
   padding: 12px 0;
 
   @include media(tablet) {
     margin: 0 30px;
   }
-}
-
-.maps-text {
-  font-size: 14px;
-  color: $white;
-}
-
-.maps-logo {
-  display: block;
-  height: 35px;
-  margin-left: 15px;
 }
