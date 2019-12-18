@@ -14,7 +14,7 @@ Bydd angen i chi [weithio allan beth fydd gennych ar ôl ymddeol](/cy/work-out-i
 
 Bydd angen i chi feddwl am sut i wneud yr arian sydd gennych barhau am weddill eich oes.
 
-Gallwch ddefnyddio [cyfrifiannell y Swyddfa Ystadegau Gwladol](http://visual.ons.gov.uk/how-long-will-my-pension-need-to-last/) i amcangyfrif pa mor hir rydych yn disgwyl byw. Gall hyn eich helpu i gynllunio pa mor hir y bydd angen i’ch pensiwn barhau - ond efallai y bydd dewisiadau ffordd o fyw a ffactorau eraill yn effeithio ar ba mor hir rydych yn byw.
+Gallwch ddefnyddio [cyfrifiannell y Swyddfa Ystadegau Gwladol](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/articles/lifeexpectancycalculator/2019-06-07) i amcangyfrif pa mor hir rydych yn disgwyl byw. Gall hyn eich helpu i gynllunio pa mor hir y bydd angen i’ch pensiwn barhau - ond efallai y bydd dewisiadau ffordd o fyw a ffactorau eraill yn effeithio ar ba mor hir rydych yn byw.
 
 %Gallai cymryd allan gormod o’ch arian pensiwn wrth ymddeol yn gynnar olygu nad oes digon ar gyfer hwyrach ymlaen.%
 
