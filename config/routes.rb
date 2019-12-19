@@ -26,8 +26,8 @@ Rails.application.routes.draw do
       post 'questions', to: 'questions#next'
 
       get 'landing', to: 'marketing#landing'
-      get 'facebook-landing', to: 'marketing#facebook'
-      get 'about', to: 'marketing#about'
+      get 'facebook-landing', to: 'marketing#landing'
+      get 'about', to: 'marketing#landing'
 
       constraints platform: /linkedin|google|facebook/, campaign: /apples|dogs|paint|peppers/ do
         get ':platform-:campaign', to: 'marketing#campaign', as: :marketing_campaign

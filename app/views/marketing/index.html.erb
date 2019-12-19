@@ -24,6 +24,9 @@
                 <%= render partial: 'components/logo_with_strapline_svg', locals: { image_class: 'marketing-logo' } %>
               <% end %>
             </div>
+            <div class="l-column-two-thirds">
+              <%= link_to 'Book free appointment', guide_path('appointments'), class: %w(button l-marketing-promo__button) %>
+            </div>
           </div>
         </div>
       </div>
@@ -37,8 +40,8 @@
                 <p>Speak to us over the phone or in person somewhere local to you.</p>
                 <p>Pension Wise is free and impartial – we don’t recommend products or companies and won’t tell you how to invest your money.</p>
                 <p class="marketing-book">
-                  <%= link_to 'Book now', guide_path('appointments'), class: :button %>
-                  <span class="marketing-promo__call">or phone <span class="marketing-promo__number"><%= campaign_phone_number %></span></span>
+                  <%= link_to 'Book phone appointment', guide_path('book-phone'), class: :button %>
+                  <%= link_to 'Book face-to-face appointment', guide_path('book-face-to-face'), class: :button %>
                 </p>
               </div>
               <div class="youtube-video">
@@ -96,11 +99,23 @@
 
       <div id="about-pensionwise" class="l-grid-row l-marketing-row l-marketing-row--flat l-marketing-row--flip l-home-row--callout">
         <div class="l-page-container l-home-row-callout__content">
-          <div class="l-home-row-callout__column">
+          <div class="l-column-two-thirds">
             <h2 class="l-home-single-column-subheading">About Pension Wise</h2>
             <p>Pension Wise is a free and impartial government service.</p>
             <p>We were set up in 2015 after changes to pension rules gave people more choice over what they could do with their money.</p>
             <p>We provide appointments through Citizens Advice and The Pensions Advisory Service over the phone and in person across the UK.</p>
+            <p>Book your free appointment with Pension Wise today and get to know your options.</p>
+            <p><%= link_to 'Book now', guide_path('appointments'), class: :button %></p>
+          </div>
+          <div class="l-column-third">
+            <%= link_to guide_path('appointments') do %>
+              <%= image_tag(
+                'campaigns/landing-page.gif',
+                alt: '93% of customers are satisfied with their Pension Wise experience. 95% of customers recommend Pension Wise to friends and family.',
+                class: 'landing-image',
+                srcset: { 'campaigns/landing-page-2x.gif' => '2x' })
+              %>
+            <% end %>
           </div>
         </div>
       </div>
