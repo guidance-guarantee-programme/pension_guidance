@@ -19,6 +19,7 @@ module Employer
       :date_of_birth_month,
       :date_of_birth_day,
       :location_id,
+      :employer_id,
       :room,
       :gdpr_consent
     )

@@ -14,9 +14,9 @@ class Breadcrumb
       new(employer_locations_path(employer_id: employer_id), title)
     end
 
-    def employer_location(location_id, location_name, locale = I18n.locale)
+    def employer_location(employer_id, location_id, location_name, locale = I18n.locale)
       new(
-        new_employer_location_booking_path(location_id: location_id, locale: locale),
+        new_employer_location_booking_path(employer_id: employer_id, location_id: location_id, locale: locale),
         location_name
       )
     end
