@@ -54,6 +54,7 @@ module Employer
 
     def confirm_to_customer(booking)
       redirect_to confirmation_employer_location_bookings_path(
+        employer_id: employer_id,
         location_id: location_id,
         booking_reference: booking.id,
         booking_date: booking.start_at,
@@ -107,7 +108,7 @@ module Employer
           :date_of_birth_year,
           :date_of_birth_month,
           :date_of_birth_day
-        ).merge(location_id: location_id)
+        ).merge(location_id: location_id, employer_id: employer_id)
     end
 
     def slot_selected?
@@ -134,7 +135,7 @@ module Employer
 
     def set_breadcrumbs
       breadcrumb Breadcrumb.employer_locations(employer_id, employer.name)
-      breadcrumb Breadcrumb.employer_location(location.id, location.name)
+      breadcrumb Breadcrumb.employer_location(employer_id, location.id, location.name)
     end
 
     def set_feedback
