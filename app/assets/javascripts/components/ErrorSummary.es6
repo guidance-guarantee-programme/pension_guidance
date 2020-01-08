@@ -5,7 +5,13 @@
     constructor($component) {
       super($component);
 
-      this.$component.focus();
+      $component.focus();
+
+      $component.find('a').on('click', (e)=> {
+        e.preventDefault();
+        var href = $(e.target).attr('href');
+        $(href).focus();
+      })
     }
   }
 
