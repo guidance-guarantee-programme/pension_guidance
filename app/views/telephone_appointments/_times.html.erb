@@ -9,9 +9,9 @@
   <ol class="slot-picker-times js-slot-picker-times" tabindex="-1" id="telephone_appointment_times">
     <% times.each do |time| %>
       <li class="slot-picker-times__time">
-        <input class="slot-picker-times__selection" type="radio" value="<%= time %>" id="time-<%= time %>" name="telephone_appointment[start_at]" />
-        <label class="slot-picker-times__time-text" for="time-<%= time %>">
+        <label class="slot-picker-times__time-text">
            <%= l(time, format: :govuk_time) %>
+           <input class="slot-picker-times__selection" type="radio" value="<%= time %>" name="telephone_appointment[start_at]" />
         </label>
       </li>
     <% end %>

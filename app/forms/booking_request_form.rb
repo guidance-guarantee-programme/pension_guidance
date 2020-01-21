@@ -14,7 +14,7 @@ class BookingRequestForm # rubocop:disable ClassLength
     step_two.validates :first_name, presence: true
     step_two.validates :last_name, presence: true
     step_two.validates :email, email: true
-    step_two.validates :telephone_number, presence: true, format: /\A([\d+\-\s\+()]+)\z/
+    step_two.validate :validate_telephone_number
     step_two.validates :memorable_word, presence: true
     step_two.validates :accessibility_requirements, inclusion: { in: %w(0 1) }
     step_two.validates :dc_pot, inclusion: { in: %w(yes no not-sure) }
@@ -133,6 +133,13 @@ class BookingRequestForm # rubocop:disable ClassLength
     return unless step_one?
 
     errors.add(:start_at) if start_at.blank? || !selected_date
+  end
+
+  def validate_telephone_number
+    unless telephone_number.present? &&
+           /\A([\d+\-\s\+()]+)\z/ === telephone_number # rubocop:disable CaseEquality
+      errors.add(:telephone_number, :invalid)
+    end
   end
 
   def age

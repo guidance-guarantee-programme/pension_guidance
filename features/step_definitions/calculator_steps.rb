@@ -68,7 +68,11 @@ Then(/^I should see how much my pot could be worth for each of the next (\d+) ye
   calculator.wait_for_future_pot_sizes
 
   expect(calculator).to have_future_pot_sizes(count: years)
-  expect(calculator.future_pot_size_figures).to eq(future_pot_sizes)
+
+  future_pot_sizes.each_with_index do |future_pot_size, index|
+    expect(calculator.future_pot_size_figures[index]).to end_with(future_pot_size)
+  end
+
   expect(calculator.years).to have_content("#{years} years")
 end
 

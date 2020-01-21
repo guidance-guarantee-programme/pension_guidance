@@ -237,7 +237,7 @@ en:
       description: A free and impartial government service that helps you understand the options for your pension pot.
       intro:
         html: |
-          Phone <b>0800 138 3944</b> to <a href="%{appointment_url}">book a free appointment</a>
+          To <a href="%{appointment_url}">book a free appointment</a> phone <b>0800 138 3944</b>
       heading: Welcome to Pension Wise
       sub_heading: Free and impartial government guidance about your defined contribution pension options
       quick_links:

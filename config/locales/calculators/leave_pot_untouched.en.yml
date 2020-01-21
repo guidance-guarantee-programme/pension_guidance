@@ -32,7 +32,9 @@ en:
               html: |
                 <tr>
                   <td>%{years_left}</td>
-                  <td class="t-calculator-future-pot-size"><span class="calculator__highlight">%{amount}</span></td>
+                  <td class="t-calculator-future-pot-size">
+                  <span class="calculator__highlight"><span class="visually-hidden">After %{years_left} years left untouched, the amount in your pot is </span>%{amount}</span>
+                  </td>
                 </tr>
         slider_label: 'or try paying in a different amount each month:'
         notes:

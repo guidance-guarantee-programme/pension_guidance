@@ -43,7 +43,7 @@ RSpec.describe BookingRequestForm do
     end
 
     context 'step two' do
-      %w(first_name last_name email telephone_number memorable_word).each do |field|
+      %w(first_name last_name email memorable_word).each do |field|
         it "requires a #{field}" do
           subject.public_send("#{field}=", '')
           expect(subject).not_to be_step_two_valid
@@ -56,7 +56,7 @@ RSpec.describe BookingRequestForm do
           expect(subject).to be_step_two_valid
         end
 
-        ['ben@example.com', '      ', '02089292992e'].each do |number|
+        ['ben@example.com', '     ', '02089292992e'].each do |number|
           subject.telephone_number = number
           expect(subject).not_to be_step_two_valid
         end

@@ -19,19 +19,11 @@
   </fieldset>
 
   <p><%= t('.compulsory_steps.introduction') %></p>
-
-  <fieldset class="form-group">
-    <legend class="visuallyhidden"><%= t('.compulsory_steps.accessible_legend') %></legend>
-
+  <ul>
     <% PensionSummary::COMPULSORY_OPTIONS.each do |step| %>
-      <div class="multiple-choice">
-        <%= f.check_box step, { disabled: true, class: "checkbox--readonly t-options-#{step.dasherize} form-control" }, 1 %>
-        <%= f.label step, class: 'block-label selection-button-checkbox' do %>
-          <strong><%= t("pension_summaries.options.#{step}.title") %></strong>
-        <% end %>
-      </div>
+      <li><%= t("pension_summaries.options.#{step}.title") %></li>
     <% end %>
-  </fieldset>
+  </ul>
 
   <%= f.submit t('.next_button'), class: :button %>
 <% end %>

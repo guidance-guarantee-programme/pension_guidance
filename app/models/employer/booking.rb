@@ -28,7 +28,7 @@ module Employer
     validates :first_name, presence: true
     validates :last_name, presence: true
     validates :email, email: true
-    validates :phone, presence: true, format: /\A([\d+\-\s\+()]+)\z/
+    validate  :validate_phone
     validates :memorable_word, presence: true
     validates :date_of_birth, presence: true
     validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
@@ -101,6 +101,14 @@ module Employer
       return 0 unless date_of_birth && start_at
 
       ((start_at.to_date - date_of_birth) / 365).floor
+    end
+
+    private
+
+    def validate_phone
+      unless phone.present? && /\A([\d+\-\s\+()]+)\z/ === phone # rubocop:disable GuardClause, CaseEquality
+        errors.add(:phone, :invalid)
+      end
     end
   end
 end

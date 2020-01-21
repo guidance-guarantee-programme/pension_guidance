@@ -43,6 +43,7 @@
         this.$target.addClass('active');
         this.$target.attr('aria-hidden', false);
         this.$trigger.attr('aria-expanded', true);
+        this.$target.after('<span></span>');
       }
     }
   }

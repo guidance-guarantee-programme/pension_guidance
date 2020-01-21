@@ -27,6 +27,9 @@
             })
             .appendTo(this.$component);
 
+      this.$textInput.attr('aria-label', this.$textInput.data('text-label'));
+      this.$rangeInput.attr('aria-label', this.$textInput.data('slider-label'));
+
       this.syncInputs();
       this.decorateSlider();
 
