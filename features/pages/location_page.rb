@@ -11,6 +11,7 @@ module Pages
     element :hours, '.t-hours'
     element :book_online, '.t-book-online'
     element :agent_book_online, '.t-agent-book-online'
+    element :accessibility_information, '.t-accessibility-information'
 
     elements :breadcrumbs, '.t-breadcrumb'
   end

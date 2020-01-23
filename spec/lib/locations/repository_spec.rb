@@ -16,6 +16,7 @@ RSpec.describe Locations::Repository do
   specify { expect(location.booking_location_id).to eq(booking_location_id) }
   specify { expect(location.phone).to eq(phone) }
   specify { expect(location.lat_lng).to eq(lat_lng) }
+  specify { expect(location.accessibility_information).to eq('Some stuff') }
 
   describe '#find' do
     let(:id) { 'invalid' }
