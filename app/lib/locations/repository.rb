@@ -30,6 +30,7 @@ module Locations
         id: feature.feature_id,
         name: feature.property('title'),
         address: feature.property('address'),
+        accessibility_information: feature.property('accessibility_information'),
         booking_location_id: feature.property('booking_location_id'),
         phone: feature.property('phone'),
         hours: feature.property('hours'),

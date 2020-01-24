@@ -81,6 +81,7 @@ Then(/^I should see the details of that appointment location$/) do
 
   expect(location).to be_displayed(id: 'london')
   expect(location.name.text).to eq('London')
+  expect(location.accessibility_information).to have_text('Lift is temporarily out of action')
 
   %i(address phone).each do |element|
     expect(location.public_send(element)).to be_visible

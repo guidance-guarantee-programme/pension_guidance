@@ -16,7 +16,8 @@
         "address": "1 Horse Guards Road\nSW1A 2HQ",
         "phone": "123 456",
         "hours": "Mon-Fri 9-5",
-        "twilio_number": "+44123456789"
+        "twilio_number": "+44123456789",
+        "accessibility_information": "Lift is temporarily out of action"
       }
     },
     {

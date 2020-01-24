@@ -12,6 +12,12 @@
       guidance specialist.
     </p>
 
+    <% if @location.accessibility_information? %>
+      <div class="application-notice info-notice t-accessibility-information">
+        <p><%= @location.accessibility_information %></p>
+      </div>
+    <% end %>
+
     <h2>Address</h2>
     <div class="t-address">
       <%= simple_format(@location.address) %>

@@ -5,12 +5,17 @@ module Locations
     attr_accessor :id,
                   :name,
                   :address,
+                  :accessibility_information,
                   :booking_location_id,
                   :phone,
                   :hours,
                   :twilio_number,
                   :online_booking_enabled,
                   :lat_lng
+
+    def accessibility_information?
+      accessibility_information.present?
+    end
 
     def online_booking_enabled?
       online_booking_enabled
