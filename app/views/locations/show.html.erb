@@ -13,9 +13,9 @@
     </p>
 
     <% if @location.accessibility_information? %>
-      <div class="application-notice info-notice t-accessibility-information">
-        <p><%= @location.accessibility_information %></p>
-      </div>
+      <h2>Accessibility</h2>
+
+      <p class="t-accessibility-information"><%= @location.accessibility_information %></p>
     <% end %>
 
     <h2>Address</h2>
