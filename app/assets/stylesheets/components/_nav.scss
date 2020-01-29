@@ -43,8 +43,8 @@
       }
     }
 
-    &:hover,
-    &:focus {
+    &:focus-within,
+    &:hover {
       background: $navigation-background;
       z-index: $navigation-z-top;
 
