@@ -5,17 +5,20 @@ require_relative '../../features/pages/employer_booking_confirmation'
 RSpec.feature 'Tesco Bookings' do
   scenario 'Placing a successful booking', js: true do
     Timecop.travel('2017-09-12 13:00') do
-      given_the_tesco_hq_location_is_configured
-      when_the_customer_attempts_a_booking
-      and_they_choose_an_available_day
-      and_they_choose_an_available_time
-      and_they_fill_in_their_personal_details
-      then_the_booking_is_placed
-      and_they_see_the_confirmation
+      given_the_tesco_hq_location_is_configured do
+        when_the_customer_attempts_a_booking
+        and_they_choose_an_available_day
+        and_they_choose_an_available_time
+        and_they_fill_in_their_personal_details
+        then_the_booking_is_placed
+        and_they_see_the_confirmation
+      end
     end
   end
 
   def given_the_tesco_hq_location_is_configured
+    previous = Employer.api
+
     Employer.api = Class.new do
       def employer(*)
         JSON.parse(IO.read('spec/fixtures/tesco_hq.json'))
@@ -30,6 +33,10 @@ RSpec.feature 'Tesco Bookings' do
         booking.room = 'Room.1'
       end
     end.new
+
+    yield
+  ensure
+    Employer.api = previous
   end
 
   def when_the_customer_attempts_a_booking

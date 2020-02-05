@@ -4,6 +4,10 @@ module Employer
 
     before_action :set_breadcrumbs
 
+    rescue_from HTTPConnection::ResourceNotFound do
+      render 'errors/not_found', status: :not_found
+    end
+
     def index
       expires_in Rails.application.config.cache_max_age, public: true
 

@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3008/api/v1/employers/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson.local; benlovell; 78717) ruby/2.6.5 (114; x86_64-darwin19)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"76554681bc8a1652837bb5183ab42df1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 861b4d47-9ccf-43a6-a889-c15886a66767
+      X-Runtime:
+      - '0.525468'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"name":"BSI Group","locations":[{"id":703,"name":"Hemel Hempstead","address_line_one":"Kitemark
+        House","address_line_two":"Maylands Avenue","address_line_three":"","town":"Hemel
+        Hempstead","county":"Hertfordshire","postcode":"HP2 4SQ","available":false}]}'
+    http_version: 
+  recorded_at: Wed, 05 Feb 2020 13:47:18 GMT
+- request:
+    method: get
+    uri: http://localhost:3008/api/v1/locations/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson.local; benlovell; 78717) ruby/2.6.5 (114; x86_64-darwin19)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - fb435251-899e-4a2a-af0d-f85d4a9f075e
+      X-Runtime:
+      - '0.011751'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 05 Feb 2020 13:47:18 GMT
+recorded_with: VCR 3.0.3
