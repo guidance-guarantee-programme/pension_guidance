@@ -13,6 +13,8 @@ RSpec.feature 'Employer locations' do
   end
 
   def given_bookable_tesco_locations_exist
+    previous = Employer.api
+
     Employer.api = Class.new do
       def employer(*)
         {
@@ -38,6 +40,8 @@ RSpec.feature 'Employer locations' do
     end.new
 
     yield
+  ensure
+    Employer.api = previous
   end
 
   def when_the_customer_visits_the_tesco_locations_page
