@@ -48,4 +48,4 @@ Defnyddiwch [gyfrifiannell budd-daliadau annibynnol](https://www.gov.uk/benefits
 
 Gallwch fynd i’ch [Pwynt Gwybodaeth am Wasanaeth](http://pensions-service.direct.gov.uk/en/information-points/home.asp) lleol am help a chyngor am nifer o fudd-daliadau. Mae angen i chi wneud trefniadau am gyngor wyneb yn wyneb.
 
-Gallwch hefyd gael help gan y [gwasanaeth Cyngor Ar  Bopeth](https://www.citizensadvice.org.uk/cymraeg/benefits/older-people/benefits-for-older-people/) a’r [Gwasanaeth Cynghori Ariannol](https://www.moneyadviceservice.org.uk/cy/articles/ble-i-gael-cymorth-a-chyngor-am-fudd-daliadau).
+Gallwch hefyd gael help gan a’r [Gwasanaeth Cynghori Ariannol](https://www.moneyadviceservice.org.uk/cy/articles/ble-i-gael-cymorth-a-chyngor-am-fudd-daliadau).
