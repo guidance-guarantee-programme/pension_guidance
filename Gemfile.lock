@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: ee6bc32be91a08b0cb7b3bb51476658fe5ba73ef
+  revision: 1c13b08708e27b4f6a0565a7130277483c861e47
   specs:
-    output-templates (4.14.0)
+    output-templates (4.15.0)
       actionview
       sass
 
@@ -91,11 +91,11 @@ GEM
     coderay (1.1.1)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.6)
     connection_pool (2.2.1)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
-    crass (1.0.5)
+    crass (1.0.6)
     cucumber (3.0.2)
       builder (>= 2.1.2)
       cucumber-core (~> 3.0.0)
@@ -170,7 +170,7 @@ GEM
     hashie (3.5.5)
     htmlentities (4.3.4)
     humanize (1.3.0)
-    i18n (1.7.0)
+    i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     image_size (1.5.0)
@@ -213,12 +213,12 @@ GEM
     mimemagic (0.3.3)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.13.0)
+    minitest (5.14.0)
     multi_json (1.13.1)
     multi_test (0.1.2)
     multipart-post (2.0.0)
     nio4r (2.5.2)
-    nokogiri (1.10.7)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     parallel (1.10.0)
     parser (2.4.0.0)
