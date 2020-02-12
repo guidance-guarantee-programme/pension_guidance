@@ -73,6 +73,15 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
     </tr>
     <tr>
       <td>
+        <strong>Pensions and Lifetime Savings Association (PLSA)</strong><br>
+        <a href="https://retirementlivingstandards.org.uk">retirementlivingstandards.org.uk</a>
+      </td>
+      <td>
+        For general pension queries and complaints, including help avoiding pension scams and saving into a pension scheme
+      </td>
+    </tr>
+    <tr>
+      <td>
         <strong>Ombwdsmon Pensiynau</strong><br>
         <a href="https://www.pensions-ombudsman.org.uk">www.pensions-ombudsman.org.uk</a><br>
         Ffôn: 0800 917 4487
