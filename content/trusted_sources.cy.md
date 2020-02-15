@@ -77,7 +77,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         <a href="https://retirementlivingstandards.org.uk">retirementlivingstandards.org.uk</a>
       </td>
       <td>
-        For general pension queries and complaints, including help avoiding pension scams and saving into a pension scheme
+        To help savers think in a practical way about the kind of lifestyle they might lead in retirement
       </td>
     </tr>
     <tr>
