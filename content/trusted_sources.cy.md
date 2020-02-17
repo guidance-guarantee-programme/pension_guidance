@@ -73,11 +73,11 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
     </tr>
     <tr>
       <td>
-        <strong>Pensions and Lifetime Savings Association (PLSA)</strong><br>
+        <strong>Cymdeithas Pensiynau a Chynilion Gydol Oes (PLSA)</strong><br>
         <a href="https://retirementlivingstandards.org.uk">retirementlivingstandards.org.uk</a>
       </td>
       <td>
-        To help savers think in a practical way about the kind of lifestyle they might lead in retirement
+        I helpu cynilwyr i feddwl mewn ffordd ymarferol am y math o ffordd o fyw y gallent ei arwain ar ôl ymddeol 
       </td>
     </tr>
     <tr>
