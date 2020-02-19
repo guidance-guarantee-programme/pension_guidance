@@ -87,6 +87,7 @@ cy:
   date:
     formats:
       govuk_date: '%-e %B %Y'
+      calendar_date: '%A %e %B %Y'
 
   time:
     am: am

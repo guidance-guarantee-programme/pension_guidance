@@ -64,7 +64,7 @@
                 %>
                 <li class="slot-picker-calendar__day">
                   <%= button_tag '', value: day, name: 'telephone_appointment[selected_date]', class: "js-day-button slot-picker-calendar__action #{classes}", disabled: disabled do %>
-                    <span class="visually-hidden"><%= l(day, format: :govuk_date) %></span>
+                    <span class="visually-hidden"><%= l(day, format: :calendar_date) %></span>
                     <span class="slot-picker-calendar__day-text" aria-hidden="true"><%= day.day %></span>
                   <% end %>
                 </li>
