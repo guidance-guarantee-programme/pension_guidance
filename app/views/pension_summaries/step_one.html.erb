@@ -13,10 +13,9 @@
         <%= f.check_box step, { class: "t-options-#{step.dasherize} form-control" }, 1 %>
         <%= f.label step, class: 'block-label selection-button-checkbox' do %>
           <strong><%= t("pension_summaries.options.#{step}.title") %></strong>
+          <p class="form-hint"><%= t("pension_summaries.options.#{step}.hint") %></p>
         <% end %>
       </div>
-
-      <p class="form-hint"><%= t("pension_summaries.options.#{step}.hint") %></p>
     <% end %>
   </fieldset>
 
