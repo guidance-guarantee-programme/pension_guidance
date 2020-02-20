@@ -26,20 +26,18 @@ Advisory Service and Teleperformance.
 
 ## Your personal data
 
-Pension Wise collects and stores personal data for the purpose of delivering
-Pensions Guidance in accordance with the statutory requirement described in
-Section 333B(1) of the Financial Services and Markets Act 2000. The lawful
-basis for Pension Wise processing personal data is set out in Article 6(1)(e)
-of the General Data Protection Regulations as follows:
+Pension Wise collects and stores personal data for the purpose of providing you
+with Pension Wise guidance, and for quality and training purposes in accordance
+with the statutory requirement described in Section 333B(1) of the Financial
+Services and Markets Act 2000. The lawful basis for Pension Wise processing
+personal data is set out in Article 6(1)(e) of the General Data Protection
+Regulations as follows:
 
 ^processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller^
 
 Your data will be shared between Pension Wise and our delivery partners
 (Citizens Advice, The Pensions Advisory Service and Teleperformance) only where
 it is necessary for the purpose of providing you with Pension Wise guidance.
-
-For eligibility webchat with the Pensions Advisory Service, your transcript is
-stored for a period of 12 months before being deleted.
 
 We won’t share your information with any other organisations for marketing or
 commercial purposes, and we don’t pass on your details to other websites.
@@ -61,6 +59,9 @@ your personal data will be stored in our booking system for a maximum of 2 years
 from the date the booking was made and then deleted. Calls to our booking line
 are recorded and stored for 6 months.
 
+For eligibility webchat with the Pensions Advisory Service, your transcript is
+stored for a period of 12 months before being deleted.
+
 The lawful basis for Pension Wise processing personal data for this purpose is
 set out in Article 6(1)(e) of the General Data Protection Regulations.
 
@@ -73,22 +74,22 @@ During a Pension Wise guidance appointment questions will be asked about your
 personal and family affairs, financial arrangements and plans and general state
 of health to inform the discussion with the guidance specialist.
 
-Some of these details may be stored on our systems as part of the record of
-your appointment.
+Details of these will be stored on our systems as part of the record of your
+appointment.
 
 ### Personal data
 
 The lawful basis for Pension Wise processing this data for the delivery of
 appointments in conjunction with our delivery partners (the Citizens Advice
-network, The Pensions Advisory Service and Teleperformance), and storing your
+network and The Pensions Advisory Service), and storing your
 data securely for a maximum of 2 years, is set out in Article 6(1)(e) of the
 General Data Protection Regulations; _“performance of a task carried out in the
 public interest or in the exercise of official authority vested in the
 controller”_
 
-For telephone appointments with the Pensions Advisory Service, Citizens Advice
-and Teleperformance, key details from your appointment are stored, and calls
-are recorded and stored, for a maximum of two years before being deleted.
+For telephone appointments with the Pensions Advisory Service and Citizens
+Advice, key details from your appointment are stored, and calls are recorded
+and stored, for a maximum of two years before being deleted.
 
 For appointments delivered by the Citizens Advice network, they will ask for
 your consent to store key details from your appointment for a period of six
@@ -103,9 +104,9 @@ by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
 ### Health data
 
-For appointments delivered by Citizens Advice England and Wales, any basic
-health data you provide when requesting an appointment online and during the
-appointment may be stored in general terms as part of the record of
+For face-to-face appointments delivered by Citizens Advice England and Wales,
+any basic health data you provide when requesting an appointment online and
+during the appointment will be stored in general terms as part of the record of
 appointment, where it is relevant to your pension options (for example a health
 condition may entitle you to an enhanced annuity). Where this occurs,
 processing and retention of this data for a maximum of 2 years is in accordance
@@ -124,10 +125,11 @@ You will be provided with a summary of your appointment.
 
 ## How we use your information - appointment summary
 
-After your appointment we will send you a document to summarise what was
-discussed. We will ask for your postal address and/or email address to send
-this to you. We also use your postcode to understand the spread of where our
-appointment customers are located across the UK.
+After your appointment we will send you a standard document which summarises
+the core content of a Pension Wise appointment. We will ask for your postal
+address and/or email address to send this to you. We also use your postcode to
+understand the spread of where our appointment customers are located across the
+UK.
 
 ## How we use your information - website
 
