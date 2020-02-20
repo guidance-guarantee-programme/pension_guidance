@@ -22,6 +22,10 @@
     <% end %>
   </div>
 
+  <% if @telephone_appointment.step == 1 || @telephone_appointment.step == 2 %>
+    <%= render 'day_picker' %>
+  <% end %>
+
   <%= form_for @telephone_appointment, html: { id: "form_telephone_appointment_step_#{@telephone_appointment.step}" } do |f| %>
     <%= f.hidden_field(:step, id: 'hidden_telephone_appointment_step') %>
     <%= render "step_#{@telephone_appointment.step}", f: f %>
@@ -31,10 +35,6 @@
         <%= render 'times_js' %>
       </div>
     <% end %>
-  <% end %>
-
-  <% if @telephone_appointment.step == 1 || @telephone_appointment.step == 2 %>
-    <%= render 'day_picker' %>
   <% end %>
 
   <div class="l-column-two-thirds">
