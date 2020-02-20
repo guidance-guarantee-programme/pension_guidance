@@ -5,6 +5,10 @@ class LocationDecorator < SimpleDelegator
     self._booking_location = booking_location
   end
 
+  def coordinates
+    lat_lng.join(',')
+  end
+
   def address_encoded
     @address_encoded ||= ERB::Util.url_encode(address.gsub("\n", ', ').squish)
   end
