@@ -6,11 +6,11 @@ description: Dysgwch sut rydym yn casglu gwybodaeth neu ddata penodol amdanoch c
 ## Y Gwasanaeth Arian a Phensiynau
 
 Fel ag o’r 1af Ionawr 2019, mae Pension Wise, Y Gwasanaeth Cynghori Ariannol a’r Gwasanaeth Cynghori ar Bensiynau yn cael eu cyflenwi gan y [Gwasanaeth Arian a Phensiynau](https://www.moneyandpensionsservice.org.uk). Nid yw eich
-Hawliau preifatrwydd data yn cael eu heffeithio.
+hawliau preifatrwydd data yn cael eu heffeithio.
 
 Gellir dod o hyd i hysbysiad preifatrwydd y Gwasanaeth Arian a Phensiynau [yma](https://www.moneyandpensionsservice.org.uk/privacy-notice).
 
-Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu, gweler
+Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu, 
 e-bostiwch [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
 
 Gellir dod o hyd i fwy o fanylion am eich hawliau yn [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
@@ -25,26 +25,26 @@ Cynghori ar Bensiynau a Teleperformance.
 
 ## Eich data personol
 
-Mae Pension Wise yn casglu ac yn storio data personol at ddibenion cyflwyno
-Canllawiau Pensiynau yn unol â’r gofyniad statudol a ddisgrifir yn Adran 333B
+Mae Pension Wise yn casglu ac yn storio data personol at ddibenion eich darparu gydag
+arweiniad Pension Wise, ac at ddibenion ansawdd ac hyfforddiant yn unol â’r gofyniad statudol a ddisgrifir yn Adran 333B
 (1) o Ddeddf Gwasanaethau a Marchnadoedd Ariannol 2000. Mae sail gyfreithlon ar
-gyfer Pension Wise  i brosesu data personol wedi’i nodi yn Erthygl 6 (1) (e)
+gyfer Pension Wise i brosesu data personol wedi’i nodi yn Erthygl 6 (1) (e)
 o’r Rheoliadau Gwarchod Data Cyffredinol fel a ganlyn:
 
-^Mae angen prosesu ar gyfer cyflawni tasg a wnaed er budd y cyhoedd neu wrth arfer awdurdod swyddogol a freiniwyd yn y rheolwr^
+^mae angen prosesu ar gyfer cyflawni tasg a wnaed er budd y cyhoedd neu wrth arfer awdurdod swyddogol a freiniwyd yn y rheolwr^
 
-Bydd eich data yn cael ei rannu dim ond rhwng Pension Wise a’n partneriaid
+Bydd eich data ond yn cael ei rannu rhwng Pension Wise a’n partneriaid
 cyflenwi (Cyngor ar Bopeth, Y Gwasanaeth Cynghori ar Bensiynau a
-Teleperformance) yn unig lle bo hynny’n angenrheidiol er mwyn rhoi arweiniad
+Teleperformance) lle bo hynny’n angenrheidiol er mwyn rhoi arweiniad
 Pensiwn Wise i chi.
 
 Ni fyddwn yn rhannu eich gwybodaeth gydag unrhyw sefydliadau eraill at
 ddibenion marchnata neu ddibenion masnachol, ac nid ydym yn trosglwyddo’ch
-manylion at wefannau eraill.
+manylion i wefannau eraill.
 
 ## Sut rydym yn defnyddio’ch gwybodaeth - trefnu apwyntiad
 
-Pan fyddwch chi’n defnyddio ein system trefnu apwyntiad ar-lein neu ffonio ein
+Pan fyddwch yn defnyddio ein system trefnu apwyntiad ar-lein neu ffonio ein
 llinell ffôn trefnu apwyntiad, gofynnir i chi roi eich enw, rhif ffôn,
 cyfeiriad e-bost, dyddiad geni, a math o bensiwn a fydd yn cael ei storio ar
 ein system a’i ddefnyddio at ddibenion gwirio cymhwyster a threfnu slot
@@ -55,13 +55,15 @@ byddwn hefyd yn storio data am unrhyw addasiadau rhesymol y bydd eu hangen
 arnoch i’ch helpu i gael mynediad i’r apwyntiad
 
 Os nad oes gennych unrhyw gysylltiad pellach â Pension Wise ar ôl trefnu
-apwyntiad (er enghraifft, os byddwch chi wedyn yn canslo’r apwyntiad ac nad
-ydych yn ail drefnu apwyntiad), bydd eich data personol yn cael ei storio yn
+apwyntiad (er enghraifft, os byddwch wedyn yn canslo’r apwyntiad a
+ddim yn ail drefnu apwyntiad), bydd eich data personol yn cael ei storio yn
 ein system trefnu apwyntiad am uchafswm o 2 flynedd o’r dyddiad y trefnwyd yr
-apwyntiad ac yna’i ddileu. Mae galwadau i’n llinell trefnu apwyntiad yn cael eu
-cofnodi a’u storio am 6 mis.
+apwyntiad ac yna’n cael ei ddileu. Mae galwadau i’n llinell trefnu apwyntiad yn cael eu
+recordio a’u storio am 6 mis.
 
-Nodir sail gyfreithlon ar gyfer prosesu data personol Pensiwn Wise at y diben
+Ar gyfer sgwrs awe cymhwyster gyda'r Gwasanaeth Cynghori ar Bensiynau, mae eich trawsgrifiad yn cael ei storio am gyfnod o 12 mis cyn cael ei ddileu.
+
+Nodir y sail gyfreithlon ar gyfer prosesu data personol Pensiwn Wise at y diben
 hwn yn Erthygl 6 (1) (e) o’r Rheoliadau Gwarchod Data Cyffredinol
 
 ## Sut rydym yn defnyddio’ch gwybodaeth – apwyntiadau arweiniad
@@ -77,24 +79,22 @@ arweiniad.
 Gellir storio rhai o’r manylion hyn ar ein systemau fel rhan o gofnod eich
 apwyntiad.
 
-### Data Personol
+### Data personol
 
-Nodi’r sail gyfreithlon i Pensiwn Wise brosesu’r data hwn ar gyfer cyflwyno
-apwyntiadau ar y cyd â’r (Gwasanaeth Cynghori ar Bensiynau a TelePerformance),
-a  storio eich data’n ddiogel am 2 uchafswm o 2 flynedd, wedi’i nodi yn Erthygl 6
+Nodir y sail gyfreithlon i Pensiwn Wise brosesu’r data hwn ar gyfer cyflwyno
+apwyntiadau ar y cyd â’n partneriaid cyflwyno (rhwydwaith Cyngor ar Bopeth ar Gwasanaeth Cynghori ar Bensiynau),
+a  storio eich data’n ddiogel am uchafswm o 2 flynedd, yn Erthygl 6
 (1) (e) o’r Rheoliadau Gwarchod Data Cyffredinol; _“perfformiad tasg a
 gynhaliwyd er budd y cyhoedd neu wrth arfer awdurdod swyddogol a freiniwyd yn y
 rheolwr”_.
 
-Ar gyfer apwyntiadau gyda’r Gwasanaeth Cynghori ar Bensiynau, Cyngor ar Bopeth
-a Teleperformance, caiff manylion allweddol o’ch apwyntiad eu storio, a caiff
+Ar gyfer apwyntiadau ffôn gyda’r Gwasanaeth Cynghori ar Bensiynau a Chyngor ar Bopeth, caiff manylion allweddol o’ch apwyntiad eu storio, a caiff
 galwadau eu recordio a’u storio, am uchafswm o ddwy flynedd cyn cael eu dileu.
 
 Ar gyfer apwyntiadau a gyflwynir gan rwydwaith Cyngor ar Bopeth, byddant yn
 gofyn am eich caniatâd i storio manylion allweddol eich apwyntiad am gyfnod o
-chwe blynedd, yn unol â’u cyfnod cadw trefniadaethol. Mae hyn i ymateb i unrhyw
-sylwadau/cwynion sy’n codi o fewn y cyfnod statud 6 mlynedd gofyngiad.  Mae
-sail gyfreithiol am hwn yn cael ei nodi yn Erthygl 6 (1) (a) o’r Rheoliadau
+chwe blynedd, yn unol â’u polisi cadw trefniadaethol. Mae hyn i ymateb i unrhyw
+sylwadau/cwynion sy’n codi o fewn statud y cyfnod cyfyngu 6 mlynedd.  Nodir y sail gyfreithlon am hwn yn Erthygl 6 (1) (a) o’r Rheoliadau
 Gwarchod Data Cyffredinol; _“mae’r pwnc data wedi rhoi caniatâd i brosesu ei
 data/ei ddata personol ar gyfer un neu fwy diben penodol”_.
 
@@ -104,8 +104,8 @@ uniongyrchol, neu drwy e-bostio
 
 ### Data iechyd
 
-Ar gyfer apwyntiadau a gyflwynir gan Gyngor ar Bopeth Cymru a Lloegr, gall
-unrhyw ddata iechyd sylfaenol rydych yn ei ddarparu wrth wneud cais am
+Ar gyfer apwyntiadau wyneç yn wyneb a gyflwynir gan Gyngor ar Bopeth Cymru a Lloegr, gall
+unrhyw ddata iechyd sylfaenol rydych yn ei ddarparu wrth ofyn am
 apwyntiad ar-lein ac yn ystod yr apwyntiad gael ei storio yn nhermau
 cyffredinol fel rhan o’r cofnod o’r apwyntiad, lle mae’n berthnasol i’ch
 opsiynau pensiwn (er enghraifft, gall cyflwr iechyd eich galluogi i gael
@@ -126,43 +126,43 @@ uniongyrchol, neu drwy e-bostio
 
 Byddwch yn cael crynodeb o’ch apwyntiad.
 
-## How we use your information - appointment summary
+## Sut rydym yn defnyddio’ch gwybodaeth - crynodeb o apwyntiad
 
-After your appointment we will send you a document to summarise what was
-discussed. We will ask for your postal address and/or email address to send
-this to you. We also use your postcode to understand the spread of where our
-appointment customers are located across the UK.
+Ar ôl eich apwyntiad byddwn yn anfon dogfen safonol i chi sy'n crynhoi cynnwys craidd
+yr apwyntiad Pension Wise. Byddwn yn gofyn am eich cyfeiriad post a/neu gyfeiriad e-bost i anfon
+hwn i chi. Rydym hefyd yn defnyddio'ch cod post i ddeall ble mae ein
+cwsmeriaid sy'n cael apwyntiad wedi'u lleoli ar draws y DU.
 
 ## Sut rydym yn defnyddio’ch gwybodaeth – gwefan
 
 Mae’r wybodaeth a gasglwn ar y wefan yn cynnwys:
 
 - cwestiynau, ymholiadau neu adborth rydych chi’n eu gadael, gan gynnwys eich cyfeiriad e-bost os byddwch yn anfon e-bost at Pension Wise
-- eich cyfeiriad IP, a manylion pa fersiwn o’r porwr gwe a ddefnyddiasoch
-- gwybodaeth am sut rydych chi’n defnyddio’r wefan, gan ddefnyddio cwcis a thechnegau tagio tudalen i’n helpu i wella’r wefan
+- eich cyfeiriad IP, a manylion pa fersiwn o’r porwr gwe a ddefnyddwyd gennych
+- gwybodaeth am sut rydych yn defnyddio’r wefan, gan ddefnyddio cwcis a thechnegau tagio tudalen i’n helpu i wella’r wefan
 
 Mae hyn yn ein helpu ni i:
 
 - gwella’r safle trwy fonitro sut y caiff ei ddefnyddio
-- ymateb i unrhyw adborth a anfonwch atom, os ydych chi wedi gofyn i ni
-- rhoi gwybodaeth i chi am wasanaethau lleol os ydych chi eisiau hynny
+- ymateb i unrhyw adborth a anfonwch atom, os ydych wedi gofyn i ni
+- rhoi gwybodaeth i chi am wasanaethau lleol os ydych eisiau hynny
 
 Ni allwn adnabod eich defnydd o’r wefan yn bersonol wrth ddefnyddio’r data hwn.
 
 Bydd unrhyw ddata personol a gesglir yn cael ei ddileu ar ôl cael ei storio’n
 ddiogel am uchafswm o 2 flynedd.
 
-## Sut rydym yn defnyddio eich gwybodaeth-cwynion
+## Sut rydym yn defnyddio eich gwybodaeth - cwynion
 
-Os oes gennych gŵyn fyw, byddwn yn storio eich data trefnu apwyntiad am fwy
+Os oes gennych gŵyn fyw, byddwn yn storio eich data trefnu ac apwyntiad am fwy
 na’n cyfnod cadw safonol os bydd angen ymateb yn effeithiol i’r gŵyn a delio ag
 unrhyw apeliadau dilynol. Bydd unrhyw gwynion yn cael eu storio am 2 flynedd o
 ddyddiad y penderfyniad.
 
 ## Sut rydym yn defnyddio’ch gwybodaeth – ymchwil
 
-Yn ystod eich rhyngweithiadau â Pension Wise, gofynnir i chi a fyddech chi’n
-fodlon bod ein partner ymchwil yn cysylltu â chi. Os ydych chi’n cytuno i hyn,
+Yn ystod eich rhyngweithiadau â Pension Wise, gofynnir i chi a fyddech yn
+fodlon bod ein partner ymchwil yn cysylltu â chi. Os ydych yn cytuno i hyn,
 efallai y bydd Ipsos Mori yn cysylltu â chi i ofyn a ydych am gymryd rhan mewn
 ymchwil a gwerthusiad o’ch profiad o Pension Wise. Mae cymryd rhan yn gwbl
 wirfoddol ac ni fydd yn effeithio ar y gwasanaeth a gewch gan Pension Wise.
@@ -171,7 +171,7 @@ Pension Wise, a’r camau yr ydych wedi’u cymryd tuag at gael mynediad i’ch
 pensiwn ers eich apwyntiad. Mae’r ymchwil hwn yn ein helpu ni i ddatblygu a
 gwella’r gwasanaeth Pension Wise.
 
-Gallwch chi dynnu’ch caniatâd i gysylltu â Ipsos Mori ar unrhyw adeg, trwy
+Gallwch dynnu’ch caniatâd i Ipsos Mori gysylltu ar unrhyw adeg, trwy
 e-bostio [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk)
 
 ## Storio’ch data yn ddiogel
@@ -182,13 +182,13 @@ i ni ei dderbyn.
 
 ## Dolenni i wefannau eraill
 
-Mae Pension Wise yn cynnwys dolenni i  ac oddi ar wefannau eraill. 
+Mae Pension Wise yn cynnwys dolenni i  ac o wefannau eraill. 
 
 Dim ond i Pension Wise y mae’r polisi preifatrwydd hwn yn berthnasol, ac nid
-yw’n cwmpasu gwasanaethau a thrafodion eraill y llywodraeth yr ydym yn cysylltu
+yw’n cwmpasu gwasanaethau a thrafodion eraill y llywodraeth rydym yn cysylltu
 iddynt.
 
-Os ydych chi’n mynd i wefan arall o’r un hwn, darllenwch y polisi preifatrwydd
+Os ydych yn mynd i wefan arall o’r un yma, darllenwch y polisi preifatrwydd
 ar y wefan honno i ddarganfod beth mae’n ei wneud gyda’ch gwybodaeth
 
 ## Eich hawliau
@@ -210,7 +210,7 @@ Mae gennych yr hawl i gael mynediad at unrhyw un o’ch data personol y mae
 Pension Wise yn ei ddal. Mae gennych hawl i gael copi o’ch data, a’r hawl i
 gywiro unrhyw anghywirdeb yn y data. Gallwch ofyn am ddileu rhywfaint neu’ch
 holl ddata neu gyfyngiad yn y defnydd o’ch data. Gallwch hefyd ofyn bod
-rhywfaint o’r data sydd gennym yn cael ei drosglwyddo i drydydd parti
+rhywfaint o’r data sydd gennym yn cael ei drosglwyddo i drydydd parti.
 
 Os hoffech gysylltu â ni mewn perthynas â’ch data neu ein polisïau data,
 gallwch e-bostio
