@@ -26,7 +26,7 @@
         <% if @booking_request.errors.include?(:first_name) %>
           <span class="error-message" id="first_name_error"><span class="visually-hidden">Error: </span><%= @booking_request.errors[:first_name].to_sentence.capitalize %></span>
         <% end %>
-        <%= f.text_field :first_name, aria: { describedby: 'first_name_error' }, class: "t-first-name form-control #{'form-control-error' if @booking_request.errors.include?(:first_name)}" %>
+        <%= f.text_field :first_name, aria: { required: true, describedby: 'first_name_error' }, class: "t-first-name form-control #{'form-control-error' if @booking_request.errors.include?(:first_name)}" %>
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:last_name) %>">
@@ -34,7 +34,7 @@
         <% if @booking_request.errors.include?(:last_name) %>
           <span class="error-message" id="last_name_error"><span class="visually-hidden">Error: </span><%= @booking_request.errors[:last_name].to_sentence.capitalize %></span>
         <% end %>
-        <%= f.text_field :last_name, aria: { describedby: 'last_name_error' }, class: "t-last-name form-control #{'form-control-error' if @booking_request.errors.include?(:last_name)}" %>
+        <%= f.text_field :last_name, aria: { required: true, describedby: 'last_name_error' }, class: "t-last-name form-control #{'form-control-error' if @booking_request.errors.include?(:last_name)}" %>
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:email) %>">
@@ -48,7 +48,7 @@
         <% end %>
 
         <div class="email-outer">
-          <%= f.email_field :email, aria: { describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @booking_request.errors.include?(:email)}" %>
+          <%= f.email_field :email, aria: { required: true, describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @booking_request.errors.include?(:email)}" %>
         </div>
       </div>
 
@@ -60,7 +60,7 @@
         <% if @booking_request.errors.include?(:telephone_number) %>
           <span class="error-message" id="telephone_number_error"><span class="visually-hidden">Error: </span><%= @booking_request.errors[:telephone_number].to_sentence.capitalize %></span>
         <% end %>
-        <%= f.text_field :telephone_number, aria: { describedby: 'telephone_number_error' }, class: "t-telephone-number form-control #{'form-control-error' if @booking_request.errors.include?(:telephone_number)}" %>
+        <%= f.text_field :telephone_number, aria: { required: true, describedby: 'telephone_number_error' }, class: "t-telephone-number form-control #{'form-control-error' if @booking_request.errors.include?(:telephone_number)}" %>
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:memorable_word) %>">
@@ -71,7 +71,7 @@
         <% if @booking_request.errors.include?(:memorable_word) %>
           <span class="error-message" id="memorable_word_error"><span class="visually-hidden">Error: </span><%= @booking_request.errors[:memorable_word].to_sentence.capitalize %></span>
         <% end %>
-        <%= f.text_field :memorable_word, aria: { describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @booking_request.errors.include?(:memorable_word)}" %>
+        <%= f.text_field :memorable_word, aria: { required: true, describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @booking_request.errors.include?(:memorable_word)}" %>
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:date_of_birth) %>">
@@ -99,7 +99,7 @@
                   pattern: '[0-9]*',
                   min: 1,
                   max: 31,
-                  aria: { describedby: 'date_of_birth_error' }
+                  aria: { required: true, describedby: 'date_of_birth_error' }
                 )
               %>
             </div>
@@ -119,7 +119,7 @@
                   pattern: '[0-9]*',
                   min: 1,
                   max: 12,
-                  aria: { describedby: 'date_of_birth_error' }
+                  aria: { required: true, describedby: 'date_of_birth_error' }
                 )
               %>
             </div>
@@ -139,7 +139,7 @@
                   pattern: '[0-9]*',
                   min: 100.years.ago.year,
                   max: Date.today.year,
-                  aria: { describedby: 'date_of_birth_error' }
+                  aria: { required: true, describedby: 'date_of_birth_error' }
                 )
               %>
             </div>
@@ -151,7 +151,7 @@
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:dc_pot) %>" id="booking_request_dc_pot" tabindex="-1">
-        <fieldset class="inline">
+        <fieldset class="inline" aria-required="true">
           <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
           <span class="form-hint">If you have both, select ‘Yes’</span>
 
@@ -211,7 +211,7 @@
         <%= f.select :where_you_heard,
               options_for_select(WhereYouHeard::OPTIONS.invert.to_a, @booking_request.where_you_heard),
               { include_blank: true},
-              { aria: { describedby: 'where_you_heard_error' }, class: "t-where-you-heard form-control #{'form-control-error' if @booking_request.errors.include?(:where_you_heard)}" }
+              { aria: { required: true, describedby: 'where_you_heard_error' }, class: "t-where-you-heard form-control #{'form-control-error' if @booking_request.errors.include?(:where_you_heard)}" }
         %>
       </div>
 
