@@ -1,6 +1,6 @@
 class LocationSearchResultDecorator < SimpleDelegator
-  def address_encoded
-    @address_encoded ||= ERB::Util.url_encode(address.gsub("\n", ', ').squish)
+  def coordinates
+    lat_lng.join(',')
   end
 
   def distance
