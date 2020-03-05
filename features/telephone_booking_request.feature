@@ -30,9 +30,3 @@ Scenario: Slots for a particular day are taken during the attempted booking
     Given the customer wants to book a phone appointment
     When they choose a date after the slots on that day have been taken
     Then they are told to choose another day
-
-@pension_providers
-Scenario: Tracking a final-nudge appointment
-  Given a pension provider has visited via their landing page
-  When they attempt to place an appointment
-  Then they see the pension provider banner

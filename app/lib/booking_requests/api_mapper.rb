@@ -16,7 +16,6 @@ module BookingRequests
           additional_info: booking_request.additional_info.to_s,
           where_you_heard: booking_request.where_you_heard,
           gdpr_consent: booking_request.gdpr_consent.to_s,
-          pension_provider: booking_request.pension_provider.to_s,
           slots: [
             slot(booking_request.start_at)
           ]
