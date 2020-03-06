@@ -13,23 +13,6 @@ Scenario: Customer browses a regular location
   When I browse for the location "Hackney"
   Then I cannot book online
 
-@javascript @booking_locations @time_travel @realtime_availability @pension_providers
-Scenario: Pension provider makes a realtime online appointment
-  Given a location is enabled for online booking
-  And the date is "2018-11-01"
-  And the provider visits their landing page
-  When I browse for the location "Hackney"
-  And I opt to book online
-  Then I see the location name "Hackney"
-  And I see the pension provider banner
-  When I choose the first available realtime slot
-  Then I see the pension provider banner
-  When I provide my personal details
-  And I pass the basic eligibility requirements
-  Then I see my one chosen slot
-  When I submit my completed Booking Request
-  Then my appointment is confirmed
-
 @javascript @booking_locations @time_travel @realtime_availability
 Scenario: Customer makes a realtime online appointment
   Given a location is enabled for online booking

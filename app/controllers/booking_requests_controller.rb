@@ -96,10 +96,7 @@ class BookingRequestsController < ApplicationController
         :additional_info,
         :where_you_heard,
         :gdpr_consent
-      ).merge(
-        remote_ip: request.remote_ip,
-        pension_provider: pension_provider
-      )
+      ).merge(remote_ip: request.remote_ip)
   end
 
   def munge_date_params!

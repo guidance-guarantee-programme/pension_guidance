@@ -22,7 +22,7 @@ You should be aged **50 or over** and have a **defined contribution** pension (n
 
 [Not sure what pension type you have?](/en/pension-type-tool)
 
-[Book a phone appointment](/en/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;" data-phone-button=""}
+[Book a phone appointment](/en/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
 [Book a face-to-face appointment](/en/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
 
 ^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^

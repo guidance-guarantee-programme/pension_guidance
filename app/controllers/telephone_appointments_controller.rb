@@ -110,7 +110,7 @@ class TelephoneAppointmentsController < ApplicationController
         :accessibility_requirements,
         :notes,
         :gdpr_consent
-      ).merge(pension_provider: pension_provider)
+      )
   end
 
   def set_breadcrumbs

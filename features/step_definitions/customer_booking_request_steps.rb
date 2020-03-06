@@ -1,12 +1,3 @@
-Given('the provider visits their landing page') do
-  visit '/providers/aviva'
-end
-
-Then('I see the pension provider banner') do
-  expect(@step_one).to have_pension_provider_banner
-  expect(@step_one.pension_provider_banner).to have_text('Aviva')
-end
-
 Given(/^a location is enabled for online booking$/) do
   @locations_path = %w(features fixtures locations_with_online_booking.json)
 end

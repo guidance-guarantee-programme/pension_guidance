@@ -4,7 +4,6 @@ module Pages
   class BookingStepOne < Page
     set_url '/{locale}/locations/{id}/booking-request/step-one'
 
-    element :pension_provider_banner, '.t-pension-provider-banner'
     element :location_name, '.t-location-name'
     element :continue, '.t-continue'
     element :phone, '.t-phone'
