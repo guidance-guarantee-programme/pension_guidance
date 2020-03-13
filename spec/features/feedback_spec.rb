@@ -2,8 +2,6 @@ require 'spec_helper'
 
 RSpec.feature 'Customer feedback', js: true do
   scenario 'Can be accessed via Tesco landing page' do
-    skip 'temporarily disabled due to zendesk'
-
     visit '/en/tesco'
 
     click_on 'contact us'
