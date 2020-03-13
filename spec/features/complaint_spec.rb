@@ -2,8 +2,6 @@ require 'spec_helper'
 
 RSpec.feature 'Customer complaints' do
   scenario 'a complaint can be completed via the contact page' do
-    skip 'temporarily disabled due to zendesk'
-
     visit '/contact'
 
     fill_in 'Name', with: 'Jim Bob'
