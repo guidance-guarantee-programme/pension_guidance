@@ -16,7 +16,10 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'foreman'
   gem 'gaffe'
   gem 'govspeak', '~> 3.2'
-  gem 'govuk_elements_rails'
+  gem 'govuk_elements_rails',
+      github: 'guidance-guarantee-programme/govuk_elements_rails',
+      branch: 'missing-symlinks',
+      submodules: true
   gem 'govuk_frontend_toolkit'
   gem 'govuk_template'
   gem 'humanize'
