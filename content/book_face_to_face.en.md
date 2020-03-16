@@ -24,3 +24,11 @@ Search for your nearest appointment locations.
 <div class="application-notice info-notice">
   <p>You can also <a href="/en/book-phone">book a phone appointment</a>.</p>
 </div>
+
+<div class="application-notice help-notice">
+  <p>
+  The ongoing response to coronavirus may impact appointment availability at
+  some locations. Please bear with us and we will do our best to maintain
+  up-to-date availability of appointments.
+  </p>
+</div>
