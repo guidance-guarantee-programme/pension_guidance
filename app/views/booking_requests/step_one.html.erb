@@ -3,6 +3,14 @@
   <div class="l-column-full">
     <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
 
+    <div class="application-notice help-notice">
+      <p>
+      The ongoing response to coronavirus may impact appointment availability at
+      some locations. Please bear with us and we will do our best to maintain
+      up-to-date availability of appointments.
+      </p>
+    </div>
+
     <% if @locations.present? %>
       <div class="t-limited-availability error-summary" style="border-color: orange; margin-top: 15px;">
         <p>There is limited availability in this location. Other locations near <%= @booking_request.location_name %>:</p>

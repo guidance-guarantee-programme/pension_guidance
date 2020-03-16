@@ -4,6 +4,14 @@
   <%= f.hidden_field :start_at, id: 'hidden_booking_start_at_step_1' %>
   <%= render 'hidden_fields', f: f, id_prefix: 'step_1' %>
 
+  <div class="application-notice help-notice">
+    <p>
+    The ongoing response to coronavirus may impact appointment availability at
+    some locations. Please bear with us and we will do our best to maintain
+    up-to-date availability of appointments.
+    </p>
+  </div>
+
   <% if @slot_assignment_failed %>
     <div class="error-summary t-assignment-failed">
       <h2 class="heading-medium error-summary-heading">There was a problem booking your appointment</h2>

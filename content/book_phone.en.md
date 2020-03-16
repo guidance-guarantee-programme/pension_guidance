@@ -17,6 +17,10 @@ If you’re outside the UK, call +44 20 3733 3495.
 
 [Find out about call charges](https://www.gov.uk/call-charges)
 
+<div class="application-notice help-notice">
+  <p>The ongoing response to coronavirus may impact appointment availability.</p>
+</div>
+
 <div class="application-notice info-notice">
   <p>You can also <a href="/en/book-face-to-face">book a face-to-face appointment</a>.</p>
 </div>
