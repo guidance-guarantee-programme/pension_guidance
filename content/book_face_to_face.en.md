@@ -31,4 +31,8 @@ Search for your nearest appointment locations.
   some locations. Please bear with us and we will do our best to maintain
   up-to-date availability of appointments.
   </p>
+  <p>
+  If you are unable to find a suitable appointment or can no longer attend,
+  you can <a href="/en/explore-your-options">explore your options</a>.
+  </p>
 </div>

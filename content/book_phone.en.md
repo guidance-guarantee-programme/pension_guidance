@@ -19,6 +19,7 @@ If you’re outside the UK, call +44 20 3733 3495.
 
 <div class="application-notice help-notice">
   <p>The ongoing response to coronavirus may impact appointment availability.</p>
+  <p>If you are unable to find a suitable appointment or can no longer attend, you can <a href="/en/explore-your-options">explore your options</a>.</p>
 </div>
 
 <div class="application-notice info-notice">
