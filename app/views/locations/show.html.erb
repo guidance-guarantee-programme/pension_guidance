@@ -25,6 +25,17 @@
 
     <%= render partial: 'location', locals: { location: @location } %>
 
+    <div class="application-notice help-notice">
+      <p>
+      The ongoing response to coronavirus may impact appointment availability at
+      some locations.
+      </p>
+      <p>
+      If you are unable to find a suitable appointment or can no longer attend,
+      you can <a href="/en/explore-your-options">explore your options</a>.
+      </p>
+    </div>
+
     <% if @location.slots_available? %>
       <h2>Before you book</h2>
 

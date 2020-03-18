@@ -27,6 +27,7 @@ You should be aged **50 or over** and have a **defined contribution** pension (n
 
 <div class="application-notice help-notice">
   <p>The ongoing response to coronavirus may impact appointment availability.</p>
+  <p>If you are unable to find a suitable appointment or can no longer attend, you can <a href="/en/explore-your-options">explore your options</a>.</p>
 </div>
 
 ^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^
