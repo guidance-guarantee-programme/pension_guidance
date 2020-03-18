@@ -3,7 +3,7 @@ cy:
 
   layouts:
     base:
-      covid19_banner: 'Coronavirus (COVID-19): what you need to do'
+      covid19_banner: 'Coronafeirws (COVID-19): beth sydd angen i chi ei wneud'
       provided_by: Darperir Pension Wise gan
       logo_text: Gwasanaeth Arian a Phensiynau
 
