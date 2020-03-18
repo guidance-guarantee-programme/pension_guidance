@@ -1,0 +1,29 @@
+.covid19-header {
+  background: $covid19-background;
+}
+
+.covid19-header-wrapper {
+  @include media(tablet) {
+    margin: auto;
+    max-width: 1024px;
+  }
+}
+
+.covid19-header-meta {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  align-items: center;
+  // scss-lint:disable PropertySpelling
+  margin: 0 15px;
+  padding: 12px 0;
+
+  @include media(tablet) {
+    margin: 0 30px;
+  }
+
+  a {
+    color: $color-white;
+    font-weight: bold;
+  }
+}

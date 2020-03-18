@@ -3,6 +3,7 @@ en:
 
   layouts:
     base:
+      covid19_banner: 'Coronavirus (COVID-19): what you need to do'
       provided_by: Pension Wise is provided by
       logo_text: Money and Pensions Service
 
