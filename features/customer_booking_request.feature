@@ -1,3 +1,4 @@
+@wip
 Feature: Customer creates a Booking Request
   As a customer
   I want to request an appointment
