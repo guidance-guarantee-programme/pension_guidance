@@ -1,5 +1,5 @@
 ---
-description: Book a phone or face-to-face appointment with Pension Wise for personal guidance on your pension pot options.
+description: Book a phone appointment with Pension Wise for personal guidance on your pension pot options.
 tags:
   - appointments
 ---
@@ -14,8 +14,6 @@ Your appointment will last around 45 to 60 minutes and we will:
 - explain how each option is taxed
 - give you next steps to take
 
-You can speak to us over the phone or face to face somewhere local to you.
-
 ## Before you book
 
 You should be aged **50 or over** and have a **defined contribution** pension (not a final salary or career average pension).
@@ -23,10 +21,9 @@ You should be aged **50 or over** and have a **defined contribution** pension (n
 [Not sure what pension type you have?](/en/pension-type-tool)
 
 [Book a phone appointment](/en/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
-[Book a face-to-face appointment](/en/book-face-to-face){: .button #face-to-face-button style="font-size: 0.9em;"}
 
 <div class="application-notice help-notice">
-  <p>The ongoing response to coronavirus may impact appointment availability.</p>
+  <p>There are no face-to-face appointments available due to the ongoing response to coronavirus.</p>
   <p>If you are unable to find a suitable appointment or can no longer attend, you can <a href="/en/explore-your-options">explore your options</a>.</p>
 </div>
 
