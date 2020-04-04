@@ -23,7 +23,7 @@ Speak to your provider about the rules of your pension – it’ll depend on the
 You may be able to take your whole pot tax free if both of the following apply to you:
 
 - you’re expected to live for less than a year
-- your pots are worth less than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) of £1,055,000.
+- your pots are worth less than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) of £1,073,000.
 
 Read more about your [pension when you die](/en/when-you-die).
 
