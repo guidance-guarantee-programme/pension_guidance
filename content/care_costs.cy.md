@@ -30,11 +30,6 @@ Os nad ydych yn cymryd incwm, byddant yn edrych i weld faint y byddech yn ei dde
 
 Os ydych yn cymryd incwm addasadwy byddant yn edrych ar faint y byddech yn ei gael os byddech wedi prynu blwydd-dal, a faint o incwm addasadwy rydych yn ei gymryd. Bydd y swm uwch yn cael ei ddefnyddio i asesu eich incwm.
 
-$E
-**Enghraifft**
-Rydych yn 69 oed ac yn gofyn am rywfaint o help yn y cartref gyda phrydau bwyd, siopa a glanhau. Mae gennych gronfa bensiwn o £40,000 ac yn cymryd incwm addasadwy o £1,000 y flwyddyn ohono. Mae eich cyngor lleol wedi cyfrifo y gallech gael £1,800 y flwyddyn o flwydd-dal. Byddant yn cymryd £1,800 i ystyriaeth wrth asesu eich incwm.
-$E
-
 ### Cymryd arian allan o’ch pensiwn
 
 Os ydych yn cymryd allan arian fesul tipyn neu eich cronfa gyfan ar un tro ac yn ei roi i mewn i gynilion neu ei fuddsoddi, bydd eich cyngor lleol yn ei drin fel ased a’i gynnwys pan fyddant yn gweithio allan beth y gallwch fforddio ei dalu.

@@ -30,11 +30,6 @@ If you don’t take an income, they’ll check how much you’d receive if you b
 
 If you take an adjustable income they’ll look at how much you’d get if you bought an annuity, and depending on how much you withdraw from your pot, they may class it as capital or income in the assessment of your benefits.
 
-$E
-**Example**
-You’re 69 and ask for some help at home with meals, shopping and cleaning. You have a pension pot of £40,000 and take an adjustable income of £1,000 a year from it. Your local council have calculated that you could get £1,800 a year from an annuity. They will take £1,800 into account when assessing your income.
-$E
-
 ### Taking cash from your pension
 
 If you take cash in chunks or your whole pot in one go and put it into savings or invest it, your local council will treat it as an asset and include it when they work out what you can afford to pay.
