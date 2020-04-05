@@ -56,4 +56,4 @@ Incwm addasadwy| 75 oed neu hŷn | Treth Incwm
 Blwydd-dal ar y cyd, cyfnod gwarantedig neu cyfalaf a ddiogelir| O dan 75 oed | Dim
 Blwydd-dal ar y cyd, cyfnod gwarantedig neu cyfalaf a ddiogelir | 75 oed neu hŷn | Treth Incwm
 
-%Efallai y bydd eich buddiolwr yn talu treth ychwanegol os yw’r swm rydych yn ei gymryd o’ch cronfa cyn i chi farw a’r swm y byddwch yn ei adael ar ôl yn fwy na £1,055,000.%
+%Efallai y bydd eich buddiolwr yn talu treth ychwanegol os yw’r swm rydych yn ei gymryd o’ch cronfa cyn i chi farw a’r swm y byddwch yn ei adael ar ôl yn fwy na £1,073,000.%

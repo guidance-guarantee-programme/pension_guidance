@@ -30,10 +30,6 @@ They’ll take this amount into account when they assess your income.
 
 If you take an adjustable income they’ll look at how much you’d get if you bought an annuity, and how much adjustable income you’re taking. The higher amount will be used when you’re assessed for benefits.
 
-$E
-**Example** You’re 69 and applying for Council Tax Reduction. You have a pension pot of £40,000 and take an adjustable income of £1,000 a year from it. Your local council have calculated that you could get £1,800 a year from an annuity – they’ll use this figure when you’re assessed for benefits.
-$E
-
 It’s your responsibility to tell DWP, HMRC or your local council if you or your partner take any money from your pension pot.
 
 %If you deliberately spend or give away money (including tax-free cash) from your pension pot to get or increase benefits, DWP or your local council may assess your eligibility again and treat you as still having that money.%

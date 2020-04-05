@@ -22,7 +22,7 @@ You may be able to take your whole pension pot tax free if **all** of the follow
 
 - You’re expected to live for less than a year because of serious illness.
 - You’re under 75 (if you’re over 75 you pay Income Tax on the lump sum).
-- You don’t have more than the lifetime allowance of £1,055,000 in pension money.
+- You don’t have more than the lifetime allowance of £1,073,000 in pension money.
 
 Check the terms of your pension with your provider. Some pensions will keep at least 50% of your pot for your spouse or partner.
 
