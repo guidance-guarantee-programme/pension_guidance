@@ -28,7 +28,7 @@ If you don’t take an income, they’ll check how much you’d receive if you b
 
 ### Adjustable income
 
-If you take an adjustable income they’ll look at how much you’d get if you bought an annuity, and how much adjustable income you’re taking. The higher amount will be used to assess your income.
+If you take an adjustable income they’ll look at how much you’d get if you bought an annuity, and depending on how much you withdraw from your pot, they may class it as capital or income in the assessment of your benefits.
 
 $E
 **Example**

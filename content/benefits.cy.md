@@ -30,10 +30,6 @@ Byddant yn cymryd hyn i ystyriaeth pan fyddant yn asesu eich incwm.
 
 Os ydych yn cymryd incwm addasadwy byddant yn edrych ar faint y byddech yn ei gael os byddech wedi prynu blwydd-dal, a faint o incwm addasadwy rydych yn ei gymryd. Bydd y swm uwch yn cael ei ddefnyddio pan fyddwch yn cael eich asesu am fudd-daliadau.
 
-$E
-**Enghraifft** Rydych yn 69 oed ac yn gwneud cais am Ostyngiad Treth Cyngor. Mae gennych gronfa bensiwn o £40,000 ac yn cymryd incwm addasadwy o £1,000 y flwyddyn ohono. Mae eich cyngor lleol wedi cyfrifo y gallech gael £1,800 y flwyddyn o flwydd-dal – byddant yn defnyddio’r ffigwr hwn pan fyddwch yn cael eich asesu am fudd-daliadau.
-$E
-
 Eich cyfrifoldeb chi yw dweud wrth DWP, CThEM neu eich cyngor lleol os ydych chi neu’ch partner yn cymryd unrhyw arian o’ch cronfa bensiwn.
 
 %Os ydych yn gwario neu roi’r arian i ffwrdd yn fwriadol (gan gynnwys arian di-dreth) o’ch cronfa bensiwn i gael neu gynyddu budd-daliadau, efallai y bydd yr Adran Gwaith a Phensiynau neu’ch cyngor lleol yn asesu eich hawl eto ac yn eich trin fel bod yr arian hwnnw yn parhau i fod gennych.%
