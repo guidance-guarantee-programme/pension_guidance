@@ -28,7 +28,7 @@ Os nad ydych yn cymryd incwm, byddant yn edrych i weld faint y byddech yn ei dde
 
 ### Incwm addasadwy
 
-Os ydych yn cymryd incwm addasadwy byddant yn edrych ar faint y byddech yn ei gael os byddech wedi prynu blwydd-dal, a faint o incwm addasadwy rydych yn ei gymryd. Bydd y swm uwch yn cael ei ddefnyddio i asesu eich incwm.
+Os cymerwch incwm y gellir ei addasu, byddant yn edrych ar faint y byddwch yn ei gael pe byddech wedi prynu blwydd-dal, ac yn dibynnu ar faint y byddwch yn ei dynnu o'ch cronfa, gallant ei ddynodi fel cyfalaf neu incwm wrth asesu eich budd-daliadau.
 
 ### Cymryd arian allan o’ch pensiwn
 
