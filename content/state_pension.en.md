@@ -10,11 +10,11 @@ The pension you get from the government is called the State Pension. You get it 
 
 ## New State Pension
 
-If you reached State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension). The full new State Pension payment is £175.18 a week.
+If you reached State Pension age on or after 6 April 2016 you’ll get the [new State Pension](https://www.gov.uk/new-state-pension). The full new State Pension payment is £175.20 a week.
 
 ## Basic State Pension
 
-If you reached State Pension age before 6 April 2016, you’ll get the [basic State Pension](https://www.gov.uk/state-pension/overview). The most you can currently get from the basic State Pension is £134.24 a week.
+If you reached State Pension age before 6 April 2016, you’ll get the [basic State Pension](https://www.gov.uk/state-pension/overview). The most you can currently get from the basic State Pension is £134.25 a week.
 
 You don’t normally get the State Pension automatically – you have to [claim it](https://www.gov.uk/new-state-pension/how-to-claim).
 
