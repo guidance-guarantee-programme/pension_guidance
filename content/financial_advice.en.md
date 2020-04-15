@@ -17,7 +17,7 @@ Consider speaking to a financial adviser if you want to:
 - invest your pot to get an [adjustable income](/en/adjustable-income) – an adviser can do this for you
 - [mix your pension options](/en/mix-options)
 - pay more money into your pension
-- leave some of your pension in your will – they can advise on the most tax-efficient way to do this
+- receive advice about how to distribute money on your death through a will – they can advise on the most tax-efficient way to do this
 
 You must get independent financial advice, by law, if you have a:
 
