@@ -14,7 +14,7 @@ Gallai hyn, er enghraifft, fod yn incwm a gewch o flwydd-dal, lwmp swm di-dreth,
 
 ## Ar ôl oedran cymhwyso ar gyfer Credyd Pensiwn
 
-Ar ôl i chi neu’ch partner gyrraedd yr oedran cymhwyso ar gyfer Credyd Pensiwn bydd unrhyw arian rydych yn ei **gymryd allan o** neu’n **ei adael i mewn yn** eich cronfa yn cael ei gymryd i ystyriaeth pan fydd eich incwm yn cael ei asesu.
+Ar ôl i chi neu’ch partner gyrraedd oedran cymhwyso Credyd Pensiwn, bydd unrhyw arian y bydd y naill ohonoch **yn ei gymryd allan** eich potiau pensiwn ac unrhyw arian **sy’n cael ei adael i mewn** y pot sy’n eiddo i’r unigolyn dros oedran cymhwyso Credyd Pensiwn yn cael ei ystyried pan fydd eich incwm yn cael ei asesu.
 
 $E
 **Enghraifft** Rydych yn 67 oed ac yn gwneud cais am Fudd-dal Tai. Mae gennych gronfa bensiwn o £40,000 ac rydych wedi cymryd £10,000 o arian yn ddi-dreth o’ch cronfa. Eich cronfa sy’n weddill yw £30,000. Oherwydd eich bod ar ôl oedran cymhwyso ar gyfer Credyd Pensiwn bydd y ddau swm yn cyfrif pan fyddwch yn cael eich asesu am fudd-daliadau.

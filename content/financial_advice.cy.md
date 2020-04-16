@@ -17,7 +17,7 @@ Dylech ystyried siarad ag ymgynghorydd ariannol os ydych eisiau:
 - buddsoddi eich cronfa i gael [incwm addasadwy](/cy/adjustable-income) – gall ymgynghorydd wneud hyn ar eich rhan
 - [cymysgu eich opsiynau pensiwn](/cy/mix-options)
 - talu mwy o arian i mewn i’ch pensiwn
-- gadael rhywfaint o’ch pensiwn yn eich ewyllys - gallant roi cyngor ar y ffordd mwyaf treth-effeithlon i wneud hyn
+- cael cyngor ar sut i ddosbarthu arian ar eich marwolaeth trwy ewyllys - gallant gynghori ar y ffordd fwyaf effeithlon o ran treth i wneud hyn 
 
 Mae’n rhaid i chi gael cyngor ariannol annibynnol, yn ôl y gyfraith, os oes gennych:
 
