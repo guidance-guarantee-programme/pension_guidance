@@ -79,7 +79,6 @@ RSpec.feature 'Tesco Bookings' do
     expect(@page.booking_reference).to have_text('123456')
     expect(@page.start).to have_text('13 September 2017')
     expect(@page.start).to have_text('9:10am')
-    expect(@page).to have_text('Room.1')
-    expect(@page).to have_location
+    expect(@page.location).to have_text('Phone appointment')
   end
 end
