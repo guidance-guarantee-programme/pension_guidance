@@ -39,7 +39,7 @@
   <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:phone) %>">
     <%= f.label :phone, class: 'form-label-bold' do %>
       Phone number
-      <span class="form-hint">We’ll send an SMS appointment reminder if a mobile number is provided</span>
+      <span class="form-hint">The number you’d like us to call you on. We’ll send an SMS appointment reminder if a mobile number is provided</span>
     <% end %>
 
     <% if @booking.errors.include?(:phone) %>
@@ -52,7 +52,7 @@
   <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:memorable_word) %>">
     <%= f.label :memorable_word, class: 'form-label-bold' do %>
       Your memorable word
-      <span class="form-hint">Our pension specialist will repeat this word if they need to call, so you know it’s us</span>
+      <span class="form-hint">Our pension specialist will repeat this word when they call so you know it’s us</span>
     <% end %>
 
     <% if @booking.errors.include?(:memorable_word) %>
