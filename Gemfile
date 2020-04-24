@@ -32,6 +32,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'princely'
   gem 'puma'
   gem 'rails', '~> 5.2'
+  gem 'recaptcha'
   gem 'redis'
   gem 'rgeo'
   gem 'rgeo-geojson'
