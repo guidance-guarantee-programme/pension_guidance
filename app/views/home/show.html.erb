@@ -13,17 +13,6 @@
       <h1 class="l-home-single-column-heading"><%= t('.heading') %></h1>
       <p><%= t('.sub_heading') %></p>
     </div>
-
-    <div class="quick-links">
-      <h2 class="quick-links__header"><%= t('.quick_links.heading') %></h2>
-      <ul class="quick-links__list">
-        <% t('.quick_links.items').each do |item| %>
-          <li class="quick-links__item">
-            <%= link_to item[:title], guide_path(item[:slug]), class: 'quick-links__link' %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
   </div>
 </div>
 

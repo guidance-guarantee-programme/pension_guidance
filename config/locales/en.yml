@@ -242,19 +242,6 @@ en:
           To <a href="%{appointment_url}">book a free appointment</a> phone <b>0800 138 3944</b>
       heading: Welcome to Pension Wise
       sub_heading: Free and impartial government guidance about your defined contribution pension options
-      quick_links:
-        heading: Popular on Pension Wise
-        items:
-          - title: What you can do with your pot
-            slug: pension-pot-options
-          - title: Check how much is in your pot
-            slug: pension-pot-value
-          - title: Tax and pensions
-            slug: tax
-          - title: The State Pension
-            slug: state-pension
-          - title: How to avoid a pension scam
-            slug: scams
       who:
         title: Who?
         subtitle: "Pension Wise can help if you:"

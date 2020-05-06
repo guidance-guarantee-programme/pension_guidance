@@ -283,19 +283,6 @@ cy:
           I <a href="%{appointment_url}">drefnu apwyntiad am ddim</a> ffoniwch <b>0800 138 3944</b>
       heading: Croeso i Pension Wise
       sub_heading: Cyngor am ddim a di-duedd gan y llywodraeth am eich opsiynau pensiwn cyfraniadau wedi’u diffinio
-      quick_links:
-        heading: Yn boblogaidd ar Pension Wise
-        items:
-          - title: Beth i’w wneud gyda’ch cronfa
-            slug: pension-pot-options
-          - title: Edrych faint sydd yn eich cronfa
-            slug: pension-pot-value
-          - title: Treth a phensiynau
-            slug: tax
-          - title: Pensiwn y Wladwriaeth
-            slug: state-pension
-          - title: Sut i osgoi sgiâm pensiwn
-            slug: scams
       who:
         title: Pwy?
         subtitle: "Gall Pension Wise helpu os ydych:"
