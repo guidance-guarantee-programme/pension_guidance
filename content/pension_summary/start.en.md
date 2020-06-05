@@ -1,6 +1,6 @@
 # Explore your pension options
 
-If you have a defined contribution (personal or workplace) pension you
+If you have a UK based defined contribution (personal or workplace) pension you
 choose how to take your money.
 
 You can use this service to find out about:
@@ -19,4 +19,4 @@ You can use this service to find out about:
 
 ## Before you start
 
-You need to have a **defined contribution** pension (not a final salary or career average pension).
+You need to have a UK based **defined contribution** pension (not a final salary or career average pension).
