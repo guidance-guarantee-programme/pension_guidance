@@ -10,7 +10,7 @@ tags:
 
 or call **0800 138 3944**.
 
-If you’re outside the UK, call +44 20 3733 3495.
+If you’re outside the UK, call +44 20 3733 3495. You must have a UK based pension.
 
 - Call between 8am to 8pm, Monday to Friday
 - We’ll send you an email to confirm your booking

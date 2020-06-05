@@ -16,7 +16,7 @@ Your appointment will last around 45 to 60 minutes and we will:
 
 ## Before you book
 
-You should be aged **50 or over** and have a **defined contribution** pension (not a final salary or career average pension).
+You should be aged **50 or over** and have a UK based **defined contribution** pension (not a final salary or career average pension).
 
 [Not sure what pension type you have?](/en/pension-type-tool)
 
