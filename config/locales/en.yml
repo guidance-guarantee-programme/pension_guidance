@@ -3,8 +3,6 @@ en:
 
   layouts:
     base:
-      covid19_banner: 'Coronavirus (COVID-19): what you need to do'
-      will_it_affect_banner: 'Will it affect your pension?'
       provided_by: Pension Wise is provided by
       logo_text: Money and Pensions Service
 

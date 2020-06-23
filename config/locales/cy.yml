@@ -3,8 +3,6 @@ cy:
 
   layouts:
     base:
-      covid19_banner: 'Coronafeirws (COVID-19): beth sydd angen i chi ei wneud'
-      will_it_affect_banner: 'A fydd yn effeithio fy mhensiwn?'
       provided_by: Darperir Pension Wise gan
       logo_text: Gwasanaeth Arian a Phensiynau
 
