@@ -1,0 +1,44 @@
+.quick-links {
+  @include bold-19;
+  margin-bottom: 0;
+
+  @include media(tablet) {
+    background: transparentize($color-black, .1);
+    padding: 16px 16px 16px 0;
+    width: 29%;
+    min-width: 300px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.quick-links__list {
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+.quick-links__item {
+  list-style: none;
+  margin-left: 16px;
+}
+
+.quick-links__link {
+  &:link,
+  &:visited {
+    @include bold-16;
+    color: $color-white;
+  }
+
+  &:hover {
+    color: $color-silver;
+  }
+
+  &:focus {
+    color: $color-black !important; // scss-lint:disable ImportantRule
+  }
+}
+
+.quick-links__header {
+  @include core-14;
+  margin: 0 16px;
+}

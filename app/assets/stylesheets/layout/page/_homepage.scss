@@ -66,6 +66,12 @@
       background: image-url("home/banners/apples.png") no-repeat center, linear-gradient(to bottom, $color-apples-background-dark 0%, $color-apples-background-light 100%);
       background-size: auto 100%, 100%;
     }
+
+    .quick-links {
+      @include media(tablet) {
+        background: transparentize($color-apples-background-light, .6);
+      }
+    }
   }
 
   &.paint {
@@ -76,6 +82,12 @@
       background: image-url("home/banners/paint.png") no-repeat center, linear-gradient(to bottom, $color-paint-background-dark 0%, $color-paint-background-light 100%);
       background-size: auto 100%, 100%;
     }
+
+    .quick-links {
+      @include media(tablet) {
+        background: transparentize($color-paint-background-light, .6);
+      }
+    }
   }
 
   &.peppers {
@@ -85,6 +97,12 @@
     @include media(desktop) {
       background: image-url("home/banners/peppers.png") no-repeat center, linear-gradient(to bottom, $color-peppers-background-dark 0%, $color-peppers-background-light 100%);
       background-size: auto 100%, 100%;
+    }
+
+    .quick-links {
+      @include media(tablet) {
+        background: transparentize($color-peppers-background-light, .6);
+      }
     }
   }
 }
