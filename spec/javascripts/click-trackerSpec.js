@@ -51,6 +51,11 @@ describe('click tracker', function() {
       setUpFixtureTest('homepage.html');
     });
 
+    it('adds click tracking to links the quick links', function() {
+      $('.quick-links a').trigger('click');
+      expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('quick links', '/url');
+    });
+
     it('adds click tracking to links in the introduction', function() {
       $('.l-home-top-slot .l-column-third a').trigger('click');
       expect(PWPG.clickEventLogger.sendEvent).toHaveBeenCalledWith('introduction', '/url');

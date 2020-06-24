@@ -16,8 +16,3 @@ If you’re outside the UK, call +44 20 3733 3495. You must have a UK based pens
 - We’ll send you an email to confirm your booking
 
 [Find out about call charges](https://www.gov.uk/call-charges)
-
-<div class="application-notice help-notice">
-  <p>The ongoing response to coronavirus may impact appointment availability.</p>
-  <p>If you are unable to find a suitable appointment or can no longer attend, you can <a href="/en/explore-your-options">explore your options</a>.</p>
-</div>
