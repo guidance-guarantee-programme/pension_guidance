@@ -5,6 +5,7 @@ class Taxonomy
 
   def tree
     home.tap do |node|
+      node << guide_node('coronavirus-and-your-pensions')
       node << guide_node('living-abroad')
       node << guide_node('divorce')
       node << guide_node('protection')
