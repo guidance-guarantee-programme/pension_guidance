@@ -24,7 +24,7 @@ You should be aged **50 or over** and have a UK based **defined contribution** p
 
 <div class="application-notice help-notice">
   <p>There are no face-to-face appointments available due to the ongoing response to coronavirus.</p>
-  <p>If you are unable to find a suitable phone appointment or can no longer attend, you can <a href="/en/explore-your-options">explore your options</a>.</p>
+  <p>If a phone appointment is not suitable you can <a href="/en/explore-your-options">explore your options</a>.</p>
 </div>
 
 ^Our guidance is impartial – we won’t recommend any products or companies and won’t tell you how to invest your money.^
