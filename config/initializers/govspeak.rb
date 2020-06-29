@@ -33,7 +33,7 @@ Govspeak::Document.extension('multi-choice-questions', regexp) do |partial_name,
 end
 
 Govspeak::Document.extension('feedback', %r(^{::feedback_link /})) do
-  ApplicationController.render(partial: 'feedbacks/feedback_link')
+  ''
 end
 
 Govspeak::Document.extension('webchat', %r(^{::webchat /})) do
