@@ -52,7 +52,7 @@ Scenario: Customer is ineligible for guidance
   When I submit my completed Booking Request
   Then I am told I am ineligible for guidance
 
-@javascript @booking_locations @time_travel
+@javascript @booking_locations @time_travel @wip
 Scenario: Customer leaves inline feedback
   Given a location is enabled for online booking
   And the date is "2016-06-17"
