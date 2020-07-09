@@ -5,6 +5,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'autoprefixer-rails'
+  gem 'azure-storage-blob'
   gem 'booking_locations'
   gem 'bugsnag'
   gem 'canonical-rails'
@@ -29,6 +30,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'pg', '>= 0.18'
   gem 'phoner'
   gem 'postcodes_io'
+  gem 'postgres-copy'
   gem 'princely'
   gem 'puma'
   gem 'rails', '~> 5.2'
