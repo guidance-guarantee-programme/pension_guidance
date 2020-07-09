@@ -1,9 +1,12 @@
 namespace :export do
   desc 'Export CSV data to blob storage for analysis'
   task blob: :environment do
+    from_timestamp = ENV.fetch('FROM') { 3.months.ago }
+
     PensionSummary.public_send(:acts_as_copy_target)
 
     data = PensionSummary
+           .where('created_at >= ? or updated_at >= ?', from_timestamp, from_timestamp)
            .select(
              'id, leave_your_pot_untouched, get_a_guaranteed_income, take_cash, take_whole,
              mix_your_options, how_my_pension_affects_my_benefits, getting_help_with_debt,
@@ -18,7 +21,7 @@ namespace :export do
 
     client.create_block_blob(
       'pw-prd-data',
-      "MAPS_PWBLZ_PENSIONSUM_#{Time.current.strftime('%Y%m%d%H%M%S')}.csv",
+      "/To_Be_Processed/MAPS_PWBLZ_PENSIONSUM_#{Time.current.strftime('%Y%m%d%H%M%S')}.csv",
       data
     )
   end
