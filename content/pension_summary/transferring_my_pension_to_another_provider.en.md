@@ -9,7 +9,7 @@ Ask your current provider how long it will take to transfer and if you:
 
 * have to pay fees
 * lose any right you have to take your money at a certain age
-* lose any special features, eg a guaranteed annuity rate
+* lose any special features, e.g. a guaranteed annuity rate
 * lose any right to take a tax-free lump sum of more than 25% of your pension pot
 
 You should also ask the provider you’re moving to if you’ll have to make regular payments into the new pension.
@@ -29,7 +29,7 @@ You can get impartial advice about pension transfers from a financial adviser.
 You must get financial advice if you want to transfer from a:
 
 * defined benefit pension worth more than £30,000
-* defined contribution pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (eg a guaranteed annuity rate)
+* defined contribution pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (e.g. a guaranteed annuity rate)
 
 {: .hide-from-screen }
 [Further guidance on pensions transfers](https://www.pensionwise.gov.uk/en/transfer-pension)<br>

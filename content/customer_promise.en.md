@@ -42,7 +42,7 @@ We will:
 
 ##Accessibility
 
-- Make sure you can get a face-to-face appointment if you have a disability -- eg wheelchair access or in British Sign Language if you’re deaf
+- Make sure you can get a face-to-face appointment if you have a disability -- e.g. wheelchair access or in British Sign Language if you’re deaf
 - Send your summary in braille or large print if you’re blind or partially sighted
 
 ^In return we need you to:^

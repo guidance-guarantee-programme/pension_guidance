@@ -16,7 +16,7 @@ Your local council will work out how much you can afford to contribute towards y
 
 - any money in or taken from your pension pot – either as cash or income
 - any other income you have
-- your assets (eg savings and investments)
+- your assets (e.g. savings and investments)
 
 ## How your pension pot is assessed
 

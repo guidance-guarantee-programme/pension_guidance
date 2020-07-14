@@ -16,7 +16,7 @@ You can take your whole pension pot as cash.
 
 You pay tax when you take money from your pot. This is because when you’re paying into your pension you get tax relief on your contributions.
 
-^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
+^[Find out if you can book a free Pension Wise appointment](/en/pension-type-tool)^
 
 ^This calculator will not calculate tax accurately for individuals living in Scotland as income tax calculations are different. [Get an estimate](https://www.gov.uk/estimate-income-tax) of how much tax you’ll pay.^
 
@@ -28,7 +28,7 @@ You pay tax when you take money from your pot. This is because when you’re pay
 
 Your pension provider will take off the [tax you owe](/en/tax#How your tax is paid) before they pay you the cash.
 
-The cash you take will be added to any other income you have over the tax year, eg money from work, savings and benefits.
+The cash you take will be added to any other income you have over the tax year, e.g. money from work, savings and benefits.
 
 You may pay emergency tax when you take money from your pot which you can claim back.
 

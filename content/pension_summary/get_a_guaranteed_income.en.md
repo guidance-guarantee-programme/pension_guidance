@@ -5,7 +5,7 @@ An annuity can give you a guaranteed income for the rest of your life. You can s
 ## Key facts
 
 * This is a type of insurance product which gives a guaranteed income.
-* You can buy an annuity for a fixed term, eg 10 years or for the rest of your life.
+* You can buy an annuity for a fixed term, e.g. 10 years or for the rest of your life.
 * You can take up to 25% of your pot tax free – if you do this you must buy an annuity with the remaining 75% or use one of the other options.
 * There are many different types of annuity and it’s important you get the right one for you.
 

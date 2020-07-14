@@ -15,7 +15,7 @@ A pension scam – when someone tries to con you out of your pension money – w
 
 If someone calls you out of the blue about your pension, the call is illegal and likely to be a fraudster. You should end the call immediately and alert the [Information Commissioner’s Office (ICO)](https://ico.org.uk/make-a-complaint/nuisance-calls-and-messages/).
 
-You may be offered a tempting way to invest your pension pot, eg investing it in a new hotel being built in an exotic location. Most of these offers are fake but can appear very convincing. Their aim is to get you to cash in your pension pot and transfer the money.
+You may be offered a tempting way to invest your pension pot, e.g. investing it in a new hotel being built in an exotic location. Most of these offers are fake but can appear very convincing. Their aim is to get you to cash in your pension pot and transfer the money.
 
 %Once you’ve transferred your money into a scam, it’s too late. You could lose all your pension money as well as face [tax of up to 55%](https://www.gov.uk/tax-on-pension/higher-tax-on-unauthorised-payments) or huge additional fees.%
 

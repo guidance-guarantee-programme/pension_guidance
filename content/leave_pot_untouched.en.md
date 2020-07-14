@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the age you agreed with your provider to retire). You could leave the money invested, eg while you’re working.
+You don’t have to start taking money from your pension pot when you reach your ‘selected retirement age’ (the age you agreed with your provider to retire). You could leave the money invested, e.g. while you’re working.
 
 - The money in your pot could grow.
 - You could have more money to last a shorter length of time.
@@ -18,9 +18,9 @@ You don’t have to start taking money from your pension pot when you reach your
 
 You don’t pay tax while the money stays in your pot.
 
-Money you leave in your pot can be [passed on](/en/when-you-die) tax free if you die before the age of 75.
+Money you leave in your pot can be passed on tax free if you die before the age of 75. Find out [what happens to your pot when you die](/en/when-you-die).
 
-^Find out [if you can book](/en/pension-type-tool) a free Pension Wise appointment.^
+^[Find out if you can book a free Pension Wise appointment](/en/pension-type-tool)^
 
 ## Fees and investment risk
 
@@ -54,7 +54,7 @@ Ask your pension provider the following questions:
 - How much is the pot likely to grow each year?
 - How is the money invested and can I change this if I want?
 - How much can I still pay in?
-- Does my pot have any special features that could mean I get a better deal, eg a guaranteed annuity rate?
+- Does my pot have any special features that could mean I get a better deal, e.g. a guaranteed annuity rate?
 - Do you have up-to-date details of the person I want to leave my pot to (my ‘beneficiary’)?
 
 </div>

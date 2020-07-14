@@ -9,7 +9,7 @@ As of 1st January 2019, Pension Wise, The Money Advice Service and The Pensions
 Advisory Service are delivered by the [Money and Pensions Service](https://www.moneyandpensionsservice.org.uk). Your
 data privacy rights are not affected.
 
-The Money and Pensions Service privacy notice can be [found here](https://www.moneyandpensionsservice.org.uk/privacy-notice). 
+The Money and Pensions Service privacy notice can be [found here](https://www.moneyandpensionsservice.org.uk/privacy-notice){: aria-label="Money and Pensions Service privacy notice"}
 
 If you would like more information on how your data is processed, please email
 [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).

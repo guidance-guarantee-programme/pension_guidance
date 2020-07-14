@@ -10,7 +10,7 @@
     <% if @booking.errors.include?(:first_name) %>
       <span class="error-message" id="first_name_error"><span class="visually-hidden">Error: </span><%= @booking.errors[:first_name].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :first_name, aria: { describedby: 'first_name_error' }, class: "t-first-name form-control #{'form-control-error' if @booking.errors.include?(:first_name)}" %>
+    <%= f.text_field :first_name, aria: { required: true, describedby: 'first_name_error' }, class: "t-first-name form-control #{'form-control-error' if @booking.errors.include?(:first_name)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:last_name) %>">
@@ -18,7 +18,7 @@
     <% if @booking.errors.include?(:last_name) %>
       <span class="error-message" id="last_name_error"><span class="visually-hidden">Error: </span><%= @booking.errors[:last_name].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :last_name, aria: { describedby: 'last_name_error' }, class: "t-last-name form-control #{'form-control-error' if @booking.errors.include?(:last_name)}" %>
+    <%= f.text_field :last_name, aria: { required: true, describedby: 'last_name_error' }, class: "t-last-name form-control #{'form-control-error' if @booking.errors.include?(:last_name)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:email) %>">
@@ -32,7 +32,7 @@
     <% end %>
 
     <div class="email-outer">
-      <%= f.email_field :email, aria: { describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @booking.errors.include?(:email)}" %>
+      <%= f.email_field :email, aria: { required: true, describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @booking.errors.include?(:email)}" %>
     </div>
   </div>
 
@@ -46,7 +46,7 @@
       <span class="error-message" id="phone_error"><span class="visually-hidden">Error: </span><%= @booking.errors[:phone].to_sentence.capitalize %></span>
     <% end %>
 
-    <%= f.text_field :phone, aria: { describedby: 'phone_error' }, class: "t-phone form-control #{'form-control-error' if @booking.errors.include?(:phone)}" %>
+    <%= f.text_field :phone, aria: { required: true, describedby: 'phone_error' }, class: "t-phone form-control #{'form-control-error' if @booking.errors.include?(:phone)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:memorable_word) %>">
@@ -58,7 +58,7 @@
     <% if @booking.errors.include?(:memorable_word) %>
       <span class="error-message" id="memorable_word_error"><span class="visually-hidden">Error: </span><%= @booking.errors[:memorable_word].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :memorable_word, aria: { describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @booking.errors.include?(:memorable_word)}" %>
+    <%= f.text_field :memorable_word, aria: { required: true, describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @booking.errors.include?(:memorable_word)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:date_of_birth) %>">
@@ -67,11 +67,14 @@
         <span class="form-label-bold">
           Date of birth
         </span>
-        <span class="form-hint" id="dob-hint">You must be aged 50 or over to book an appointment, eg 31 3 1950</span>
+        <span class="form-hint" id="dob-hint">You must be aged 50 or over to book an appointment, e.g. 31 3 1950</span>
       </legend>
       <div class="form-date" id="booking_date_of_birth" tabindex="-1">
         <div class="form-group form-group-day">
-          <label aria-label="Date of birth, day e.g. 25" class="form-label" for="<%= f.object_name %>_date_of_birth_day">Day</label>
+          <label aria-label="Date of birth, day e.g. 25" class="form-label" for="<%= f.object_name %>_date_of_birth_day">
+            <span class="visually-hidden">Date of birth, day e.g. 25</span>
+            <span aria-hidden="true">Day</span>
+          </label>
           <%=
             f.number_field(
               'date_of_birth_day',
@@ -83,12 +86,15 @@
               pattern: '[0-9]*',
               min: 1,
               max: 31,
-              aria: { describedby: 'date_of_birth_error' }
+              aria: { required: true, describedby: 'date_of_birth_error' }
             )
           %>
         </div>
         <div class="form-group form-group-month">
-          <label aria-label="Date of birth, month e.g. 12" class="form-label" for="<%= f.object_name %>_date_of_birth_month">Month</label>
+          <label aria-label="Date of birth, month e.g. 12" class="form-label" for="<%= f.object_name %>_date_of_birth_month">
+            <span class="visually-hidden">Date of birth, month e.g. 12</span>
+            <span aria-hidden="true">Month</span>
+          </label>
           <%=
             f.number_field(
               'date_of_birth_month',
@@ -100,12 +106,15 @@
               pattern: '[0-9]*',
               min: 1,
               max: 12,
-              aria: { describedby: 'date_of_birth_error' }
+              aria: { required: true, describedby: 'date_of_birth_error' }
             )
           %>
         </div>
         <div class="form-group form-group-year">
-          <label aria-label="Date of birth, year e.g. 1950" class="form-label" for="<%= f.object_name %>_date_of_birth_year">Year</label>
+          <label aria-label="Date of birth, year e.g. 1950" class="form-label" for="<%= f.object_name %>_date_of_birth_year">
+            <span class="visually-hidden">Date of birth, year e.g. 1950</span>
+            <span aria-hidden="true">Year</span>
+          </label>
           <%=
             f.number_field(
               'date_of_birth_year',
@@ -117,7 +126,7 @@
               pattern: '[0-9]*',
               min: 100.years.ago.year,
               max: Date.today.year,
-              aria: { describedby: 'date_of_birth_error' }
+              aria: { required: true, describedby: 'date_of_birth_error' }
             )
           %>
         </div>
@@ -129,7 +138,7 @@
   </div>
 
   <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @booking.errors.include?(:dc_pot_confirmed) %>" id="booking_dc_pot_confirmed" tabindex="-1">
-    <fieldset class="inline">
+    <fieldset class="inline" aria-required="true">
       <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
       <span class="form-hint">Also select ‘Yes’ if you have both</span>
       <% if @booking.errors.include?(:dc_pot_confirmed) %>
@@ -182,7 +191,7 @@
   <div role="note" aria-label="Information" class="application-notice info-notice">
     <p>Pension Wise collects and stores personal data for the purpose of delivering Pensions Guidance.</p>
     <p>Your data will be shared with Citizens Advice only where it is necessary to provide you with Pension Wise guidance.</p>
-    <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be <%= link_to 'found here', guide_path('privacy') %>.</p>
+    <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be found in our <%= link_to 'privacy policy', guide_path('privacy') %>.</p>
   </div>
 </div>
 <div class="l-column-third">

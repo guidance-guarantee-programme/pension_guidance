@@ -4,7 +4,7 @@ Instead of taking your whole pot in one go, you take smaller chunks over time un
 
 ## Key facts
 
-* The chunks of cash you take get taxed along with any other income you have, eg from work, savings or investments.
+* The chunks of cash you take get taxed along with any other income you have, e.g. from work, savings or investments.
 * You’re likely to be involved in choosing and managing your investments.
 * You can spread the chunks out over multiple tax years to reduce your income which could mean you pay less tax.
 * Providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).

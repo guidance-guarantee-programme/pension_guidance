@@ -10,7 +10,7 @@ Your statement shows:
 
  - how much is in your pot
  - an estimate of how much you might get when you start taking your money
- - if your pension has any special features, eg guaranteed annuity rate
+ - if your pension has any special features, e.g. guaranteed annuity rate
  - your ‘selected retirement age’ (the age you agreed with your provider to retire)
  - the ‘transfer value’ of your pot – the amount you would get if you moved provider or cashed in your whole pot
  
@@ -46,7 +46,7 @@ You may also find information on special features in the documents you got when 
 
 Look for ‘guaranteed annuity rate’ in your statement – especially if you started your pension during the 1980s or 1990s. This means your pension will pay a fixed rate of income. The amount would have been set when you started your pension and may offer better value than annuities available elsewhere.
 
-This is not the same as a ‘guaranteed period’ annuity – one which stops paying at the end of a set term, eg 10 years.
+This is not the same as a ‘guaranteed period’ annuity – one which stops paying at the end of a set term, e.g. 10 years.
 
 ### Market value reductions or adjustments
 

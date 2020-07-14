@@ -13,10 +13,17 @@
 //= require components/SlotPicker
 //= require components/SlotPickerSingleTime
 //= require components/CharacterLimit
+//= require components/ErrorSummary
 
 PWPG.clickTracker.init();
 PWPG.calculators.init();
 PWPG.feedback.init();
+
+$('[data-error-summary]').each(function() {
+  'use strict';
+  var $component = $(this);
+  new PWPG.ErrorSummary($component);
+});
 
 $('[data-slider]').each(function() {
   'use strict';

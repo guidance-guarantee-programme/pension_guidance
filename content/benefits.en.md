@@ -34,7 +34,7 @@ It’s your responsibility to tell DWP, HMRC or your local council if you or you
 
 %If you deliberately spend or give away money (including tax-free cash) from your pension pot to get or increase benefits, DWP or your local council may assess your eligibility again and treat you as still having that money.%
 
-As well as any income or cash taken from your pension pot, your other assets (eg savings and investments) may also count when you’re assessed for benefits.
+As well as any income or cash taken from your pension pot, your other assets (e.g. savings and investments) may also count when you’re assessed for benefits.
 
 Read more about [pensions and benefit entitlement](https://www.gov.uk/government/publications/pension-flexibilities-and-dwp-benefits) and [Pension Credit](https://www.gov.uk/pension-credit).
 

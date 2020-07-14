@@ -21,7 +21,7 @@ You’ll most likely have pensions from your employer, personal pensions you set
 You might also have other income from:
 
 - work — if you carry on working for some years
-- benefits — eg pension credit, housing benefit, council tax reduction
+- benefits — e.g. pension credit, housing benefit, council tax reduction
 - rental income
 - interest from savings or pensioner bonds
 - dividends from investments

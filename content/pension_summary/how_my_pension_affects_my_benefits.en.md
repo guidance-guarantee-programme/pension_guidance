@@ -15,7 +15,7 @@ It’s your responsibility to tell The Department for Work and Pensions (DWP), H
 
 %If you deliberately spend or give away money (including tax-free cash) from your pot to get or increase benefits and help with care costs, DWP, HMRC or your local council may assess your finances again and treat you as still having that money.%
 
-Your other assets (eg savings and investments) may also be added to income or cash taken from your pot when you’re assessed for benefits.
+Your other assets (e.g. savings and investments) may also be added to income or cash taken from your pot when you’re assessed for benefits.
 
 ## Getting help with benefits
 
