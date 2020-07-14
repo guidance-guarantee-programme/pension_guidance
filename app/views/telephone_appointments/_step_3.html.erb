@@ -39,7 +39,7 @@
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:phone) %>">
     <%= f.label :phone, class: 'form-label-bold' do %>
       Phone number
-      <span class="form-hint">The number you’d like us to call you on. We’ll send an SMS appointment reminder if a mobile number is provided</span>
+      <span class="form-hint">The number you’d like us to call you on. We’ll send an SMS appointment reminder when a mobile number is provided</span>
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:phone) %>
