@@ -29,6 +29,9 @@ Pension Wise consider these organisations to be trusted sources of additional in
         03444 111 444 (England)<br>
         03444 77 20 20 (Wales)<br><br>
 
+        Northern Ireland<br>
+        <a href="https://www.citizensadvice.org.uk/about-us/northern-ireland/">www.citizensadvice.org.uk/about-us/northern-ireland/</a><br><br>
+
         Scotland<br>
         <a href="https://www.cas.org.uk">www.cas.org.uk</a><br>
         Contact local bureau

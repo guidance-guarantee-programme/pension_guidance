@@ -29,6 +29,9 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         03444 111 444 (Lloegr)<br>
         03444 77 20 20 (Cymru)<br><br>
 
+        Gogledd Iwerddon<br>
+        <a href="https://www.citizensadvice.org.uk/about-us/northern-ireland/">www.citizensadvice.org.uk/about-us/northern-ireland/</a><br><br>
+
         Yr Alban<br>
         <a href="https://www.cas.org.uk">www.cas.org.uk</a><br>
         Cystlltwch â changen lleol
