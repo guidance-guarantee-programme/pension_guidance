@@ -6,11 +6,80 @@
 
 <%= t('.send_us_feedback.content.html') %>
 
-<h2>Complaints</h2>
+<h2 id="complaints"><%= t('.complaints.title') %></h2>
 
-<p>You can email Pension Wise at <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a></p>
+<% if params[:sent] %>
+  <%= t('.complaints.sent.html') %>
+<% else %>
+  <%= t('.complaints.intro.html') %>
 
-<%= t('.complaints.guide.html') %>
+  <%= form_for @complaint, url: contact_path(anchor: :complaints) do |f| %>
+    <% if f.object.errors.any? %>
+      <div class="error-summary t-errors" role="group" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading">
+          <%= t('.complaints.form.error.heading') %>
+        </h2>
+
+        <p><%= t('.complaints.form.error.message') %></p>
+
+        <ul class="error-summary-list">
+          <% f.object.errors.each do |key, message| %>
+            <li><%= link_to "#{Complaint.human_attribute_name key} – #{message}", "#feedback_#{key}" %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-group <%= 'form-group-error' if f.object.errors.include?(:name) %>">
+      <%= f.label :name, class: 'form-label' %>
+      <% if f.object.errors.include?(:name) %>
+        <span class="error-message"><%= f.object.errors[:name].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if f.object.errors.include?(:email_address) %>">
+      <%= f.label :email_address, 'Email', class: 'form-label' %>
+      <% if f.object.errors.include?(:email_address) %>
+        <span class="error-message"><%= f.object.errors[:email_address].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.email_field :email_address, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <p>
+        <%= t('.complaints.form.notes.phone_booking') %>
+      </p>
+      <%= f.text_area :phone_booking_message, class: 'form-control form-control-3-4', rows: 5 %>
+    </div>
+
+    <div class="form-group">
+      <p>
+        <%= t('.complaints.form.notes.face_to_face') %>
+      </p>
+      <%= f.text_area :face_to_face_message, class: 'form-control form-control-3-4', rows: 5 %>
+    </div>
+
+    <div class="form-group">
+      <p>
+        <%= t('.complaints.form.notes.other') %>
+      </p>
+      <%= f.text_area :other_message, class: 'form-control form-control-3-4', rows: 5, placeholder: t('.complaints.form.help.other') %>
+    </div>
+
+    <%= t('.complaints.form.privacy.html') %>
+
+    <div class="form-group <%= 'form-group-error' if f.object.errors.include?(:robot) %>" id="feedback_robot">
+      <%= recaptcha_tags %>
+    </div>
+
+    <div class="form-group">
+      <%= f.submit 'Send complaint', class: 'button' %>
+    </div>
+  <% end %>
+
+  <%= t('.complaints.guide.html') %>
+<% end %>
 
 <%= t('.complaints.promises.html') %>
 
