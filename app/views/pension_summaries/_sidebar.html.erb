@@ -14,20 +14,10 @@
           </li>
         <% end %>
       </ul>
-      <% if @summary.pilot? %>
-        <div class="column-one-quarter">
-          <%= link_to t('.print_button'), print_summary_path, target: '_blank', class: 'button' %>
-          <span class="visually-hidden"> - </span>
-        </div>
-        <div class="column-one-quarter"><%= link_to t('.download_button'), download_summary_path, target: '_blank', class: 'button' %></div>
-      <% else %>
-        <div class="column-one-quarter">
-          <%= link_to t('.print_button'), print_summary_path, class: 'button' %>
-          <span class="visually-hidden"> - </span>
-        </div>
-        <div class="column-one-quarter"><%= link_to t('.download_button'), download_summary_path, class: 'button' %></div>
-      <% end %>
-    </div>
+
+      <%= link_to t('.print_button'), print_summary_path, target: '_blank', class: 'button' %>
+      <span class="visually-hidden"> - </span>
+      <%= link_to t('.download_button'), download_summary_path, target: '_blank', class: 'button' %>
   </aside>
 
   <div>
