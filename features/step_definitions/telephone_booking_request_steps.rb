@@ -18,10 +18,32 @@ def stub_appointments_api_to_fail
   allow(@appointment_api_fake).to receive(:create).once.and_return(false)
 end
 
+Given(/^the agent makes a smarter signposting referral$/) do
+  @page = Pages::SmarterSignpostingReferral.new
+  @page.load
+end
+
 Given(/^the customer wants to book a phone appointment$/) do
   @page = Pages::NewTelephoneAppointment.new
   @page.load(locale: :en)
   expect(@page).to be_displayed
+end
+
+Then('they are redirected to the telephone booking') do
+  @page = Pages::NewTelephoneAppointment.new
+  expect(@page).to be_displayed
+end
+
+Then('they are shown the signposting banner') do
+  expect(@page).to have_smarter_signposting_banner
+end
+
+When('they cancel the referral') do
+  @page.cancel_smarter_signposting.click
+end
+
+Then('they are not shown the signposting banner') do
+  expect(@page).to have_no_smarter_signposting_banner
 end
 
 When(/^they choose a date after the slots on that day have been taken$/) do

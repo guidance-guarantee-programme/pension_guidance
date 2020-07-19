@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|cy/ do
     root 'home#show'
 
+    resource :smarter_signposting, only: %i(new destroy), path: 'smarter'
+
     constraints format: 'html' do
       resources :categories, only: 'show', path: 'browse'
 

@@ -15,6 +15,8 @@ module Pages
     element :where_you_heard, '.t-where-you-heard'
     element :accessibility_requirements, '.t-accessibility-requirements'
     element :additional_info, '.t-additional-info'
+    element :smarter_signposting_banner, '.t-smarter-signposted-banner'
+    element :cancel_smarter_signposting, '.t-cancel-smarter-signposting'
 
     element :dc_pot_confirmed_yes, '.t-dc-pot-confirmed-yes'
     element :dc_pot_confirmed_no, '.t-dc-pot-confirmed-no'

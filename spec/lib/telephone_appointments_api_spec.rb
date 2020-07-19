@@ -34,7 +34,8 @@ RSpec.describe TelephoneAppointmentsApi do
         date_of_birth_month: '10',
         date_of_birth_day: '23',
         dc_pot_confirmed: 'yes',
-        gdpr_consent: 'yes'
+        gdpr_consent: 'yes',
+        smarter_signposted: 'true'
       )
     end
 

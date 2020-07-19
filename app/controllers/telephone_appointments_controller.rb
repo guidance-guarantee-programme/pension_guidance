@@ -122,7 +122,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :accessibility_requirements,
         :notes,
         :gdpr_consent
-      )
+      ).merge(smarter_signposted: smarter_signposted?)
   end
 
   def set_breadcrumbs
@@ -133,4 +133,9 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   def slot_selected?
     telephone_appointment.start_at
   end
+
+  def smarter_signposted?
+    cookies.permanent[:smarter_signposted] == 'true'
+  end
+  helper_method :smarter_signposted?
 end

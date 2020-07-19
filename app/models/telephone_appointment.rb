@@ -20,7 +20,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
     :date_of_birth_day,
     :gdpr_consent,
     :accessibility_requirements,
-    :notes
+    :notes,
+    :smarter_signposted
   )
 
   validates :start_at, presence: true
@@ -79,7 +80,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
       where_you_heard: where_you_heard,
       gdpr_consent: gdpr_consent,
       accessibility_requirements: accessibility_requirements,
-      notes: notes
+      notes: notes,
+      smarter_signposted: smarter_signposted
     }
   end
 
