@@ -1,4 +1,4 @@
-class TelephoneAppointmentsController < ApplicationController
+class TelephoneAppointmentsController < ApplicationController # rubocop:disable ClassLength
   layout 'full_width'
 
   before_action :set_breadcrumbs
@@ -22,6 +22,11 @@ class TelephoneAppointmentsController < ApplicationController
 
     @booking_reference = params[:booking_reference]
     @booking_date      = Time.zone.parse(params[:booking_date])
+  end
+
+  def ineligible
+    @ineligible_age     = params[:ineligible_age]
+    @ineligible_pension = params[:ineligible_pension]
   end
 
   private
@@ -48,13 +53,20 @@ class TelephoneAppointmentsController < ApplicationController
     if telephone_appointment.invalid?
       render :new
     elsif telephone_appointment.ineligible?
-      redirect_to ineligible_telephone_appointments_path
+      ineligible_for_customer(telephone_appointment)
     elsif telephone_appointment.save
       confirm_to_customer(telephone_appointment)
     else
       @slot_assignment_failed = true
       telephone_appointment.reset! { render :new }
     end
+  end
+
+  def ineligible_for_customer(telephone_appointment)
+    redirect_to ineligible_telephone_appointments_path(
+      ineligible_age: telephone_appointment.ineligible_age?,
+      ineligible_pension: telephone_appointment.ineligible_pension?
+    )
   end
 
   def confirm_to_customer(telephone_appointment)

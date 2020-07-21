@@ -51,11 +51,19 @@ class TelephoneAppointment # rubocop:disable ClassLength
   end
 
   def eligible?
-    start_at.present? && age(start_at) >= 50 && dc_pot_confirmed != 'no'
+    !ineligible?
   end
 
   def ineligible?
-    !eligible?
+    ineligible_pension? || ineligible_age?
+  end
+
+  def ineligible_pension?
+    dc_pot_confirmed == 'no'
+  end
+
+  def ineligible_age?
+    start_at.blank? || age(start_at) < 50
   end
 
   def attributes # rubocop:disable Metrics/MethodLength
