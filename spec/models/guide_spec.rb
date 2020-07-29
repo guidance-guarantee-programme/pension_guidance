@@ -80,4 +80,12 @@ RSpec.describe Guide, type: :model do
       it { is_expected.to be_option }
     end
   end
+
+  describe '#call_to_action?' do
+    context 'when tagged with "call-to-action"' do
+      let(:tags) { %w(call-to-action) }
+
+      it { is_expected.to be_call_to_action }
+    end
+  end
 end

@@ -1,5 +1,7 @@
 ---
 description: Sut mae pensiynau yn cael eu rhannu pan fydd cwpwl yn ysgaru neu’n dod a’u partneriaeth sifil i ben.
+tags:
+  - call-to-action
 ---
 
 # Ysgaru a phensiynau

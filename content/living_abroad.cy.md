@@ -1,6 +1,8 @@
 ---
 label: Byw dramor
 description: Beth allwch chi ei wneud gyda’ch cronfa bensiwn yn y DU os ydych yn symud neu eisoes yn byw dramor.
+tags:
+  - call-to-action
 ---
 
 # Byw dramor a’ch pensiwn

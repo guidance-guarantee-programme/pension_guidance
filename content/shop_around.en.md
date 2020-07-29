@@ -1,5 +1,7 @@
 ---
 description: When deciding what to do with your pension money in retirement, remember to compare pension products and providers.
+tags:
+  - call-to-action
 ---
 
 # Shop around and compare providers

@@ -1,5 +1,7 @@
 ---
 description: Y gwahaniaeth rhwng pensiynau cyfraniadau wedi’u diffinio a buddion wedi’u diffinio a gwybodaeth am Bensiwn y Wladwriaeth.
+tags:
+  - call-to-action
 ---
 
 # Mathau o bensiwn

@@ -1,5 +1,7 @@
 ---
 description: The pension you get from the government is called the State Pension. Pension Wise only provides guidance on defined contribution pensions.
+tags:
+  - call-to-action
 ---
 
 # The State Pension

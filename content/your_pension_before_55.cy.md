@@ -1,5 +1,7 @@
 ---
 description: Gallwch ond cymryd arian o’ch pensiwn cyn eich bod yn 55 oed mewn achosion prin, er enghraifft os ydych yn ddifrifol wael.
+tags:
+  - call-to-action
 ---
 
 # Cymryd eich pensiwn cyn 55 oed

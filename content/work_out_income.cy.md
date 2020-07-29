@@ -1,5 +1,7 @@
 ---
 description: Beth i’w ystyried pan rydych yn gweithio allan faint o incwm fydd gennych ar ôl ymddeol, yn cynnwys eich pensiwn, ffynonellau incwm a chostau.
+tags:
+  - call-to-action
 ---
 
 # Gweithio allan beth fydd gennych ar ôl ymddeol

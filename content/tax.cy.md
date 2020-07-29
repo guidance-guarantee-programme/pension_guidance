@@ -1,5 +1,7 @@
 ---
 description: Rydych yn talu treth ar unrhyw incwm, yn cynnwys pensiwn, sydd dros eich Lwfans Personol di-dreth.
+tags:
+  - call-to-action
 ---
 
 # Treth rydych yn ei dalu ar eich pensiwn

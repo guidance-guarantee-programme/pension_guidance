@@ -1,5 +1,7 @@
 ---
 description: Efallai y byddwch yn gallu cymryd eich cronfa pensiwn yn gynnar os ydych yn rhy sâl i weithio neu os oes gennych salwch difrifol sy’n golygu bod disgwyl i chi fyw am lai na blwyddyn.
+tags:
+  - call-to-action
 ---
 
 # Salwch a phensiynau

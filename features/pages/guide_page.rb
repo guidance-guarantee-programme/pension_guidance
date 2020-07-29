@@ -20,6 +20,8 @@ module Pages
     element :next_link, '.t-next-page'
     element :previous_link, '.t-previous-page'
 
+    element :booking_call_to_action, '.t-cta'
+
     def aside_heading_url
       aside_heading['href']
     end

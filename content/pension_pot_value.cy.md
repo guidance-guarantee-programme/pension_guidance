@@ -1,6 +1,8 @@
 ---
 label: Edrych faint sydd yn eich cronfa bensiwn
 description: Sut i gael gwybod faint o arian sydd gennych yn eich cronfa bensiwn gyfan, a faint o gronfeydd rydych wedi talu i mewn iddynt.
+tags:
+  - call-to-action
 ---
 
 # Edrych faint sydd yn eich cronfa bensiwn

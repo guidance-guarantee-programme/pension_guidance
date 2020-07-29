@@ -1,5 +1,7 @@
 ---
 description: You can only take money from your pension before 55 in rare cases, e.g. when you’re seriously ill. 
+tags:
+  - call-to-action
 ---
 
 # Taking your pension before 55

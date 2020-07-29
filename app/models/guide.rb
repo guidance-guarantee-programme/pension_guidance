@@ -37,6 +37,10 @@ class Guide
     tagged_with?('booking')
   end
 
+  def call_to_action?
+    tagged_with?('call-to-action')
+  end
+
   private
 
   def tagged_with?(tag)

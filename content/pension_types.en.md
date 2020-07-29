@@ -1,5 +1,7 @@
 ---
 description: The difference between defined contribution and defined benefit pensions and information on the State Pension.
+tags:
+  - call-to-action
 ---
 
 # Pension types

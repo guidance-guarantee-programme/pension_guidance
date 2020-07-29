@@ -1,5 +1,7 @@
 ---
 description: Darganfyddwch pa iawndal a gewch os na all eich darparwr dalu eich pensiwn neu flwydd-dal.
+tags:
+  - call-to-action
 ---
 # Sut y caiff eich pensiwn ei ddiogelu
 

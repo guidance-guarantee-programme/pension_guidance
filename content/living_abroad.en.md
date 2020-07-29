@@ -1,6 +1,8 @@
 ---
 label: Living abroad
 description: What you can do with your UK pension pot if you move or already live abroad.
+tags:
+  - call-to-action
 ---
 
 # Living abroad and your pension

@@ -1,5 +1,7 @@
 ---
 description: Pryd a sut i gael cyngor ariannol am beth i’w wneud gyda’ch arian pensiwn mewn ymddeoliad.
+tags:
+  - call-to-action
 ---
 
 # Gweld ymgynghorydd ariannol

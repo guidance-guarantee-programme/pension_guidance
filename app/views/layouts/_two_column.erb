@@ -14,13 +14,6 @@
         <%= yield %>
       </div>
       <div class="l-column-third l-column-third--sidebar">
-        <% if book_an_appointment_link? %>
-          <% guide_path_options = defined?(@guide) ? { icn: 'book-appointment', ici: @guide.ga_origin } : {} %>
-          <%= link_to guide_path('appointments', guide_path_options), class: 'book-appointment' do %>
-            <%= t('layout.book_a_free_appointment') %>
-          <% end %>
-        <% end %>
-
         <%= yield :sidebar %>
         <%= yield :sticky_sidebar %>
       </div>
