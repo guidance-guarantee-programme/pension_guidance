@@ -43,8 +43,13 @@ RSpec.describe LocationsController, type: :controller do
       allow(Locations).to receive(:find).with(valid_id).and_return(location)
     end
 
-    specify 'with an invalid id' do
-      expect { get :show, params: { locale: :en, id: invalid_id } }.to raise_error(ActionController::RoutingError)
+    context 'with an invalid id' do
+      it 'redirects permanently to the locations index' do
+        get :show, params: { locale: :en, id: invalid_id }
+
+        expect(response).to be_redirection
+        expect(response.location).to end_with('/en/locations')
+      end
     end
 
     specify 'with a valid id' do
