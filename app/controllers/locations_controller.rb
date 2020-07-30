@@ -27,7 +27,7 @@ class LocationsController < ApplicationController
   def show
     location = Locations.find(params[:id])
 
-    raise(ActionController::RoutingError, 'Location Not Found') unless location
+    return redirect_to(locations_path(locale: locale), status: :moved_permanently) unless location
 
     booking_location = Locations.find(location.booking_location_id) if location.booking_location_id.present?
 
