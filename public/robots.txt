@@ -21,3 +21,5 @@ Disallow: /*/tesco/*
 Disallow: /cy/book-face-to-face
 Disallow: /cy/book-phone
 Disallow: /styleguide/*
+
+Sitemap: https://www.pensionwise.gov.uk/sitemap.xml
