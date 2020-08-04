@@ -1,5 +1,7 @@
 ---
 description: How taking your pension can affect your benefits. Usually, the greater your income, the fewer benefits you’ll get.
+tags:
+  - call-to-action
 ---
 
 # Benefits

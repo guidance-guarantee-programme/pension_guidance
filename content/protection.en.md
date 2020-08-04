@@ -1,5 +1,7 @@
 ---
 description: Find out what compensation you get if your provider can’t pay your pension or annuity.
+tags:
+  - call-to-action
 ---
 # How your pension is protected
 

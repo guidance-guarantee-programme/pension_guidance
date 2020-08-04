@@ -1,5 +1,7 @@
 ---
 description: Sut y gallai cymryd eich pensiwn neu gadael eich cronfa heb ei gyffwrdd effeithio ar faint fydd yn rhaid i chi ei dalu am ofal.
+tags:
+  - call-to-action
 ---
 
 # Costau gofal

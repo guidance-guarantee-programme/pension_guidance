@@ -1,5 +1,7 @@
 ---
 description: Sut y gall cymryd eich pensiwn effeithio ar eich budd-daliadau. Fel arfer, y mwyaf yw eich incwm, y lleiaf o fudd-daliadau a gewch.
+tags:
+  - call-to-action
 ---
 
 # Budd-daliadau

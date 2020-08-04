@@ -1,5 +1,7 @@
 ---
 description: How taking your pension or leaving your pot untouched can affect how much you have to pay for care.
+tags:
+  - call-to-action
 ---
 
 # Care costs

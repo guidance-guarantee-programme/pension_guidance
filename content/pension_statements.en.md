@@ -1,5 +1,7 @@
 ---
 description: Your pension statement shows your pension type, how much is in your pot and whether your pension has any special features.
+tags:
+  - call-to-action
 ---
 
 # Understand your pension statement

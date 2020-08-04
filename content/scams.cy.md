@@ -1,6 +1,8 @@
 ---
 label: Sut i osgoi sgiâm pensiwn
 description: Sut i adnabod yr arwyddion o sgiâm pensiwn, sut i ddiogelu eich hun a beth i’w wneud os ydych wedi cael eich targedu.
+tags:
+  - call-to-action
 ---
 
 # Sut i osgoi sgiâm pensiwn

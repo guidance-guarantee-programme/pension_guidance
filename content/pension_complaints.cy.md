@@ -1,5 +1,7 @@
 ---
 description: Sut i gwyno am eich pensiwn neu ddarparwr pensiwn, a phwy y gallwch fynd atynt i gael help os nad yw eich darparwr yn datrys eich cwyn.
+tags:
+  - call-to-action
 ---
 
 # Sut i gwyno am bensiwn

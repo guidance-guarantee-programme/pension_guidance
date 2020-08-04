@@ -1,5 +1,7 @@
 ---
 description: Pan rydych yn penderfynu beth i’w wneud gyda’ch arian pensiwn mewn ymddeoliad, cofiwch gymharu cynhyrch a darparwyr pensiwn.
+tags:
+  - call-to-action
 ---
 
 # Chwilio o gwmpas a chymharu darparwyr

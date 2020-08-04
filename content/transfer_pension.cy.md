@@ -1,3 +1,8 @@
+---
+tags:
+  - call-to-action
+---
+
 # Trosglwyddo eich pensiwn
 
 Efallai y byddwch yn dymuno trosglwyddo rhywfaint neu’r cyfan o’ch cronfeydd i ddarparwr gwahanol os:

@@ -1,5 +1,7 @@
 ---
 description: Beth i’w ystyried pan rydych yn gweithio allan faint o amser bydd eich arian pensiwn yn parhau, yn cynnwys eich dyddiad ymddeol, oed, costau a sut bydd eich incwm yn newid.
+tags:
+  - call-to-action
 ---
 
 # Gwneud eich arian barhau

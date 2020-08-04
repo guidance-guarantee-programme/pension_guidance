@@ -1,5 +1,7 @@
 ---
 description: Mae eich datganiad pensiwn yn dangos y math o bensiwn sydd gennych, faint sydd yn eich cronfa ac os oes gan eich pensiwn unrhyw nodweddion arbennig
+tags:
+  - call-to-action
 ---
 
 # Deall eich datganiad pensiwn

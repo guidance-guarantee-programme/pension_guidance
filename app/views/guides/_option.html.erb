@@ -1,6 +1,8 @@
 <% content_for :sticky_sidebar do %>
-  <aside class="l-sticky-sidebar">
-    <div class="sticky-sidebar js-sticky-sidebar sticky-sidebar--<%= @guide.slug %>">
+  <aside class="l-sticky-sidebar js-sticky-sidebar">
+    <%= render partial: 'shared/specialist_call_out' %>
+
+    <div class="sticky-sidebar sticky-sidebar--<%= @guide.slug %>">
       <div class="sidebar-hr"></div>
       <div class="sticky-sidebar__nav">
         <% @guide.headers.each do |id, text| %>

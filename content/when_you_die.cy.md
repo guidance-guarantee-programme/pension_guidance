@@ -1,5 +1,7 @@
 ---
 description: Beth sy’n digwydd i’ch pensiwn cyfraniadau wedi’u diffinio pan fyddwch yn marw, yn cynnwys y dreth mae eich buddiolwr yn ei dalu.
+tags:
+  - call-to-action
 ---
 
 # Eich pensiwn pan fyddwch yn marw

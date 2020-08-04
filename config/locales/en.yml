@@ -51,7 +51,12 @@ en:
       title: The 6 pension options
 
   layout:
-    book_a_free_appointment: Book a free appointment
+    speak_to_a_specialist: Speak to a specialist
+    speak_to_a_specialist_body:
+      html: |
+        Need help making sense of your pension pot options? <br><br>
+        Get free, impartial guidance from a pension specialist over the phone or face-to-face.
+    book_a_free_appointment: Book your free appointment
     footer_support_links:
       - title: Cookies
         url: '/en/cookies'

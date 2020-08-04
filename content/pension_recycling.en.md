@@ -1,5 +1,7 @@
 ---
 description: Be aware of pension recycling laws if you take your tax-fee lump sum and then pay into a pension.
+tags:
+  - call-to-action
 ---
 
 # Pension recycling

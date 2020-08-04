@@ -37,6 +37,7 @@ The options for how courts split pension pots are the same as in the rest of the
 
 There are differences in how pension options are applied in Scotland. Read more about how [courts deal with pensions in Scotland](https://www.moneyadviceservice.org.uk/en/articles/dividing-pensions-on-divorce-or-dissolution).
 
+Find out more about [divorce and pensions](https://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/divorce-dissolution-and-separation) or speak to a pension specialist from The Pensions Advisory Service on 0800 011 3797.
 
 ##The State Pension
 

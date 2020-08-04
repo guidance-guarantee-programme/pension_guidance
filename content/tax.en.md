@@ -1,5 +1,7 @@
 ---
 description: You pay tax on any income, including pension, that’s above your tax-free Personal Allowance.
+tags:
+  - call-to-action
 ---
 
 # Tax you pay on your pension

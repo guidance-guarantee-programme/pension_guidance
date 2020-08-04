@@ -53,7 +53,12 @@ cy:
       title: The 6 pension options
 
   layout:
-    book_a_free_appointment: Trefnu apwyntiad am ddim
+    speak_to_a_specialist: Siaradwch ag arbenigwr
+    speak_to_a_specialist_body:
+      html: |
+        Angen help i wneud synnwyr o'ch opsiynau pot pensiwn? <br><br>
+        Cewch gyngor, diduedd am ddim gan arbenigwr pensiwn dros y ffôn neu wyneb yn wyneb.
+    book_a_free_appointment: Trefnwch eich apwyntiad am ddim
     footer_support_links:
       - title: Cwcis
         url: '/cy/cookies'

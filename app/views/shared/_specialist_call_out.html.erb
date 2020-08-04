@@ -1,0 +1,10 @@
+<% guide_path_options = defined?(@guide) ? { icn: 'book-appointment', ici: @guide.ga_origin } : {} %>
+<div class="speak-specialist t-cta">
+  <div class="speak-header"><span>?</span><div><%= t('layout.speak_to_a_specialist') %></div></div>
+  <div class="speak-body">
+    <%= t('layout.speak_to_a_specialist_body.html') %>
+    <%= link_to guide_path('appointments', guide_path_options), class: 'speak-link button' do %>
+      <%= t('layout.book_a_free_appointment') %>
+    <% end %>
+  </div>
+</div>

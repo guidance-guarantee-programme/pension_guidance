@@ -1,5 +1,7 @@
 ---
 description: Dylech fod yn ymwybodol o gyfreithiau ailgylchu pensiwn os ydych yn cymryd lwmp swm di-dreth ac yna yn ei dalu i mewn i bensiwn.
+tags:
+  - call-to-action
 ---
 
 # Ailgylchu pensiwn

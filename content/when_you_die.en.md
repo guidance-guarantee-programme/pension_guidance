@@ -1,5 +1,7 @@
 ---
 description: What happens to your defined contribution pension when you die, including the tax your beneficiary pays.
+tags:
+  - call-to-action
 ---
 
 # Your pension when you die

@@ -1,3 +1,8 @@
+---
+tags:
+  - call-to-action
+---
+
 # Transfer your pension
 
 You may wish to transfer some or all of your pots to a different provider if:

@@ -1,5 +1,7 @@
 ---
 description: What to consider when working out how long your pension money will last, including your retirement date, age, costs and how your income will change.
+tags:
+  - call-to-action
 ---
 
 # Make your money last
