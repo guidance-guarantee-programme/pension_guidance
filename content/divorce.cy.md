@@ -37,6 +37,7 @@ Mae’r opsiynau ar gyfer sut mae’r llysoedd yn rhannu cronfeydd pensiwn yr un
 
 Mae gwahaniaethau yn y ffordd mae opsiynau pensiwn yn cael eu cymhwyso yn yr Alban. Darllenwch fwy am sut mae’r [llysoedd yn delio â phensiynau yn yr Alban](https://www.moneyadviceservice.org.uk/cy/articles/rhannu-pensiynau-wrth-ysgaru-neu-ddiddymu).
 
+Dysgwch ragor am [ysgaru a phensiynau](https://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/divorce-dissolution-and-separation) neu siarad ag arbenigwr pensiynau o’r Gwasanaeth Cynghori ar Bensiynau ar 0800 011 3797.
 
 ## Pensiwn y Wladwriaeth
 
