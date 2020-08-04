@@ -8,6 +8,7 @@ RSpec.feature 'Call to action visible in specific guides' do
       /en
       /en/tesco
       /en/cookies
+      /en/divorce
     ).each do |path|
       visit path
 
@@ -40,7 +41,6 @@ RSpec.feature 'Call to action visible in specific guides' do
       /en/care-costs
       /en/when-you-die
       /en/living-abroad
-      /en/divorce
       /en/protection
       /en/pension-recycling
       /en/pension-complaints
