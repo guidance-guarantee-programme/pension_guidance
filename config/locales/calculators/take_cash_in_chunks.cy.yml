@@ -56,6 +56,6 @@ cy:
         heading: Amcangyfrif o faint allwch chi ei gael
         income_hint:
           html: |
-            Dylech gynnwys arian a gewch o waith, budd-daliadau, cynilion a thaliadau Pensiwn y Wladwriaeth
+            Cynhwyswch arian a gewch o'r gwaith, Pensiwn y Wladwriaeth ac unrhyw incwm trethadwy arall sydd gennych. Darganfyddwch ragor o wybodaeth ar <a href="https://www.gov.uk/treth-incwm/budddaliadaur-wladwriaeth-syn-rhydd-dreth-a-threthadwy" target="_blank">ba incwm arall sy'n drethadwy</a>.
       show:
         back: Yn ôl i'r disgrifiad

@@ -32,7 +32,7 @@ cy:
         notes:
           html: |
             <li>
-              Mae eich cyfanswm yn cynnwys eich 25% lwmp swm di-dreth.
+              Mae'r cyfrifiad hwn yn tybio bod gennych hawl i 25% o gyfanswm eich pot fel cyfandaliad di-dreth.
             </li>
             <li>
               Amcangyfrif yw hwn — mae'r union swm o dreth a dalwch yn dibynnu ar gyfanswm eich incwm ar gyfer y flwyddyn a'ch cyfradd treth.
@@ -45,6 +45,6 @@ cy:
         heading: Amcangyfrif o beth fyddwch yn ei gael ar ôl treth
         income_hint:
           html: |
-            Dylech gynnwys arian a gewch o waith, budd-daliadau, cynilion a thaliadau Pensiwn y Wladwriaeth
+            Cynhwyswch arian a gewch o'r gwaith, Pensiwn y Wladwriaeth ac unrhyw incwm trethadwy arall sydd gennych. Darganfyddwch ragor o wybodaeth ar <a href="https://www.gov.uk/treth-incwm/budddaliadaur-wladwriaeth-syn-rhydd-dreth-a-threthadwy" target="_blank">ba incwm arall sy'n drethadwy</a>.
       show:
         back: Yn ôl i'r disgrifiad
