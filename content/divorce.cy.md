@@ -26,8 +26,6 @@ Gelwir hyn yn [gwrthbwyso pensiwn](http://www.pensionsadvisoryservice.org.uk/abo
 
 ### 3. Mae rhywfaint o’ch pensiwn yn cael ei dalu i’ch cyn bartner
 
-Gelwir hyn yn atodiad pensiwn neu weithiau’n [clustnodi pensiwn](http://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/pension-earmarking). Mae hwn yn debyg i daliad cynhaliaeth uniongyrchol o gronfa pensiwn un person i’w priod neu bartner sifil blaenorol.
-
 O dan y trefniant hwn, gall arian o’ch lwmp swm di-dreth hefyd fynd i’ch priod neu bartner sifil blaenorol.
 
 
@@ -58,3 +56,7 @@ Byddwch yn colli’r hawliau hyn os byddwch yn ailbriodi neu’n ymrwymo i bartn
 Ni all eich [Pensiwn y Wladwriaeth newydd](https://www.gov.uk/new-state-pension) gael ei rhannu os yw eich priodas neu bartneriaeth sifil yn dod i ben.
 
 Os oes gennych ‘taliad wedi’i ddiogelu’, gallai’r llys orchymyn bod hyn yn cael ei rannu rhyngddoch. Mae hwn yn daliad ychwanegol y gallech ei gael ar ben y Pensiwn y Wladwriaeth llawn.
+
+##Mwy o wybodaeth
+
+Gelwir hyn yn atodiad pensiwn neu weithiau’n [clustnodi pensiwn](http://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/pension-earmarking). Mae hwn yn debyg i daliad cynhaliaeth uniongyrchol o gronfa pensiwn un person i’w priod neu bartner sifil blaenorol.
