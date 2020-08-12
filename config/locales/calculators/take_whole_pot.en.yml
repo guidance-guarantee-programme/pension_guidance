@@ -40,6 +40,8 @@ en:
 
       form:
         heading: Estimate what you’d get after tax
-        income_hint: Include money you get from work, benefits, savings and State Pension payments
+        income_hint:
+          html: |
+            Include money you get from work, State Pension and any other taxable income you have. Find out more information on <a href="https://www.gov.uk/income-tax/taxfree-and-taxable-state-benefits" target="_blank">what other income is taxable</a>.
       show:
         back: Back to description

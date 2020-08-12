@@ -54,6 +54,8 @@ cy:
 
       form:
         heading: Amcangyfrif o faint allwch chi ei gael
-        income_hint: Dylech gynnwys arian a gewch o waith, budd-daliadau, cynilion a thaliadau Pensiwn y Wladwriaeth
+        income_hint:
+          html: |
+            Dylech gynnwys arian a gewch o waith, budd-daliadau, cynilion a thaliadau Pensiwn y Wladwriaeth
       show:
         back: Yn ôl i'r disgrifiad

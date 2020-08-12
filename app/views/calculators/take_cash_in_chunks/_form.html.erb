@@ -14,7 +14,7 @@
              field: :income,
              value: form&.income,
              label: Calculators::TakeCashInChunksForm.human_attribute_name(:income),
-             hint: t('.income_hint'),
+             hint: t('.income_hint.html'),
              error_messages: errors[:income] %>
 
   <%= render 'calculators/form_input_currency',
