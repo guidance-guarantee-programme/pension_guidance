@@ -37,8 +37,6 @@ The options for how courts split pension pots are the same as in the rest of the
 
 There are differences in how pension options are applied in Scotland. Read more about how [courts deal with pensions in Scotland](https://www.moneyadviceservice.org.uk/en/articles/dividing-pensions-on-divorce-or-dissolution).
 
-Find out more about [divorce and pensions](https://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/divorce-dissolution-and-separation) or speak to a pension specialist from The Pensions Advisory Service on 0800 011 3797.
-
 ##The State Pension
 
 How divorce affects your State Pension will depend on which State Pension you get.
@@ -59,3 +57,6 @@ Your [new State Pension](https://www.gov.uk/new-state-pension) can’t be shared
 
 If you have a ‘protected payment’, the court could order that this is shared between you. This is an additional payment you may get on top of the full State Pension.
 
+##More information
+
+Find out more about [divorce and pensions](https://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/when-relationships-end/divorce-dissolution-and-separation) or speak to a pension specialist from The Pensions Advisory Service on 0800 011 3797.
