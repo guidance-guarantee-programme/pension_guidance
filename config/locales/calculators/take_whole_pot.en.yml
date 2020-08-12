@@ -32,7 +32,7 @@ en:
         notes:
           html: |
             <li>
-              Your total includes your 25% tax-free lump sum.
+              This calculation assumes you are entitled to 25% of your total pot as a tax-free lump sum.
             </li>
             <li>
               This is an estimate — the exact amount of tax you pay depends on your total income for the year and your tax rate.
@@ -40,6 +40,8 @@ en:
 
       form:
         heading: Estimate what you’d get after tax
-        income_hint: Include money you get from work, benefits, savings and State Pension payments
+        income_hint:
+          html: |
+            Include money you get from work, State Pension and any other taxable income you have. Find out more information on <a href="https://www.gov.uk/income-tax/taxfree-and-taxable-state-benefits" target="_blank">what other income is taxable</a>.
       show:
         back: Back to description
