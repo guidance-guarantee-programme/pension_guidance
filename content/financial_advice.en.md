@@ -21,7 +21,7 @@ Consider speaking to a financial adviser if you want to:
 - pay more money into your pension
 - receive advice about how to distribute money on your death through a will – they can advise on the most tax-efficient way to do this
 
-You must get independent financial advice, by law, if you have a:
+You must get regulated financial advice, by law, if you have a:
 
 - final salary or career average pension (known as a ‘defined benefit’ pension) worth more than £30,000 and you want to transfer it to a defined contribution pension scheme
 - defined contribution pension worth more than £30,000 with a guarantee about what you’ll be paid when you retire (e.g. a guaranteed annuity rate) and you want to give it up to do something else with your pot

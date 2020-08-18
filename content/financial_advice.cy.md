@@ -21,7 +21,7 @@ Dylech ystyried siarad ag ymgynghorydd ariannol os ydych eisiau:
 - talu mwy o arian i mewn i’ch pensiwn
 - cael cyngor ar sut i ddosbarthu arian ar eich marwolaeth trwy ewyllys - gallant gynghori ar y ffordd fwyaf effeithlon o ran treth i wneud hyn 
 
-Mae’n rhaid i chi gael cyngor ariannol annibynnol, yn ôl y gyfraith, os oes gennych:
+Rhaid i chi gael cyngor ariannol rheoledig, yn ôl y gyfraith, os oes gennych chi:
 
 - pensiwn cyflog terfynol neu bensiwn cyfartaledd gyrfa (a elwir fel pensiwn ‘buddion wedi’u diffinio’) sy’n werth mwy na £30,000 ac rydych am ei drosglwyddo i gynllun pensiwn cyfraniadau wedi’u diffinio
 - pensiwn cyfraniadau wedi’u diffinio sy’n werth mwy na £30,000 gyda gwarant am yr hyn y byddwch yn cael eich talu pan fyddwch yn ymddeol (er enghraifft cyfradd blwydd-dal gwarantedig) ac rydych am ei roi i fyny i wneud rhywbeth arall â’ch cronfa
