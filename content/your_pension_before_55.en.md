@@ -1,10 +1,11 @@
 ---
-description: You can only take money from your pension before 55 in rare cases, e.g. when you’re seriously ill. 
+label: Taking your pension before 55
+description: You can only take money from your pension before 55 in rare cases. Find out more and book a Pension Wise appointment today.
 tags:
   - call-to-action
 ---
 
-# Taking your pension before 55
+# Can I cash in my pension before 55?
 
 You usually can’t take money from your pension pot before you’re 55 but there are some rare cases when you can, e.g. if you’re seriously ill. 
 

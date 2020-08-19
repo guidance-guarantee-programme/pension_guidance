@@ -1,10 +1,11 @@
 ---
-description: What to consider when working out how much retirement income you’ll have, including your pension, other sources of income and costs.
+label: Work out what you’ll have in retirement
+description: Find out what to consider when working out your total income in retirement, and how to budget. 
 tags:
   - call-to-action
 ---
 
-# Work out what you’ll have in retirement
+# What will my total income in retirement be?
 
 When you reach retirement your income is likely to be less and your living costs will change.
 

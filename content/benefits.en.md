@@ -1,10 +1,11 @@
 ---
-description: How taking your pension can affect your benefits. Usually, the greater your income, the fewer benefits you’ll get.
+label: Benefits
+description: Find out how taking your pension can affect your state benefits. Book a Pension Wise appointment today.
 tags:
   - call-to-action
 ---
 
-# Benefits
+# How accessing your pension can affect state benefit entitlement
 
 Any pension money you have may affect your entitlement to benefits. This applies if you take money out of your pension pot or leave it in.
 

@@ -1,9 +1,11 @@
 ---
+label: Transfer your pension
+description: Find out how whether you could transfer your pension to a new provider and how to combine your pension pots. Book a Pension Wise appointment today.
 tags:
   - call-to-action
 ---
 
-# Transfer your pension
+# Pension transfer - can I transfer my pension?
 
 You may wish to transfer some or all of your pots to a different provider if:
 

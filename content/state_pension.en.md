@@ -1,10 +1,10 @@
 ---
-description: The pension you get from the government is called the State Pension. Pension Wise only provides guidance on defined contribution pensions.
+description: Find out basic information about your State Pension and where to go for detailed information. 
 tags:
   - call-to-action
 ---
 
-# The State Pension
+# State Pension
 
 The pension you get from the government is called the State Pension. You get it when you reach [State Pension age](https://www.gov.uk/calculate-state-pension).
 

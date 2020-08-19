@@ -1,6 +1,6 @@
 ---
 label: Take your whole pot
-description: You can cash in your whole pension pot – 75% of that money is taxable.
+description: Use our calculator to estimate how much tax you'll pay if you cash in your pension pot. Book a Pension Wise appointment today.
 tags:
   - option
 ---

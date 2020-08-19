@@ -1,10 +1,11 @@
 ---
-description: What happens to your defined contribution pension when you die, including the tax your beneficiary pays.
+label: Your pension when you die
+description: Find out what happens to your defined contribution pension when you die, including the tax your beneficiary pays. Book a Pension Wise appointment today.
 tags:
   - call-to-action
 ---
 
-# Your pension when you die
+# What happens to your pension when you die?
 
 The way you take your pension will affect how you can leave it to your beneficiary (the person who inherits it) when you die.
 

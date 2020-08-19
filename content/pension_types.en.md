@@ -1,10 +1,11 @@
 ---
-description: The difference between defined contribution and defined benefit pensions and information on the State Pension.
+label: Pension types
+description: Learn about the different types of pension, such as defined contribution and defined benefit pensions.
 tags:
   - call-to-action
 ---
 
-# Pension types
+# What are the different types of pension?
 
 Along with the State Pension from the government, there are 2 main types of pension:
 

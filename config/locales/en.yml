@@ -24,7 +24,7 @@ en:
       next_step: 'Next step'
 
   service:
-    title: '%{page_title} - Pension Wise'
+    title: '%{page_title} | Pension Wise'
 
   breadcrumbs:
     home:
@@ -238,8 +238,8 @@ en:
               invalid: enter a valid email address
   home:
     show:
-      title: 'Pension Wise | 50 or over? | Get to know your options'
-      description: A free and impartial government service that helps you understand the options for your pension pot.
+      title: '50 or over? | Get to know your pension options | Pension Wise'
+      description: Pension Wise is a free and impartial government service that helps you understand the options for your pension pot.
       intro:
         html: |
           To <a href="%{appointment_url}">book a free appointment</a> phone <b>0800 138 3944</b>

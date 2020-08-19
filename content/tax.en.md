@@ -1,10 +1,11 @@
 ---
-description: You pay tax on any income, including pension, that’s above your tax-free Personal Allowance.
+label: Tax you pay on your pension
+description: Find out how much tax you will pay on your pension payments. Book a Pension Wise appointment today.
 tags:
   - call-to-action
 ---
 
-# Tax you pay on your pension
+# What tax do you pay on your pension?
 
 When you take money from your pension pot, 25% is tax free. You pay Income Tax on the other 75%.
 
