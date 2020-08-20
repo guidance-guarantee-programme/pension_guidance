@@ -1,6 +1,6 @@
 ---
 label: Get a guaranteed income (annuity)
-description: You can use your pension pot to buy an insurance policy that guarantees you an income for the rest of your life.
+description: Find out how to use your pension pot to buy a guaranteed income. Book a Pension Wise appointment today.
 tags:
   - option
 ---

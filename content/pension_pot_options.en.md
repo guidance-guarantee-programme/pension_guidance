@@ -1,8 +1,9 @@
 ---
 label: What you can do with your pot
-description: You can usually take 25% of your pension pot tax free and then choose from a range of options.
+description: You can usually take 25% of your pension pot tax free and then choose from a range of options. Book a Pension Wise appointment today.
 ---
-# What you can do with your pension pot
+
+# Pension options - what can I do with my pot?
 
 There are 6 ways you can take your defined contribution pension pot.
 

@@ -1,6 +1,6 @@
 ---
 label: Get an adjustable income
-description: Your money is invested in a flexi-access drawdown fund to give you a regular income with the option to take cash when you need to.
+description: You can choose to take an income or lump sums from your pension pot, by using a flexi-access drawdown arrangement. Book a Pension Wise appointment today.
 tags:
   - option
 ---

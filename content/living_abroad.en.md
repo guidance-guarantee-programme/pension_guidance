@@ -1,11 +1,11 @@
 ---
 label: Living abroad
-description: What you can do with your UK pension pot if you move or already live abroad.
+description: What you can do with your UK pension pot if you move or already live abroad. Book a Pension Wise appointment today.
 tags:
   - call-to-action
 ---
 
-# Living abroad and your pension
+# What happens to my pension when I move abroad?
 
 If you live abroad, or plan on retiring abroad and have a [defined contribution pension](/en/pension-types) in the UK, you can either:
 

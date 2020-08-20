@@ -1,10 +1,11 @@
 ---
-description: Your pension statement shows your pension type, how much is in your pot and whether your pension has any special features.
+label: Understand your pension statement
+description: Your pension statement shows your pension type, how much is in your pot and if your pension has any special features. Book a Pension Wise appointment today.
 tags:
   - call-to-action
 ---
 
-# Understand your pension statement
+# How to understand your pension statement
 
 You normally get one pension statement a year – your provider may call this your annual or yearly statement.
 

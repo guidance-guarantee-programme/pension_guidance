@@ -1,10 +1,11 @@
 ---
-description: When and how to get financial advice about what to do with your pension money in retirement.
+label: Seeing a financial adviser
+description: Find out when and how to get financial advice about what to do with your pension money in retirement. Book a Pension Wise appointment today.
 tags:
   - call-to-action
 ---
 
-#Seeing a financial adviser
+# Do I need a financial advisor?
 
 An adviser will ask about your finances, personal circumstances, your goals and how you feel about taking risks with your money. This will help them to recommend retirement income products (e.g. flexi-access drawdown, different types of annuity) that are right for you.
 

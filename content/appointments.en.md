@@ -1,5 +1,5 @@
 ---
-description: Book a phone appointment with Pension Wise for personal guidance on your pension pot options.
+description: Pension Wise offers free and impartial guidance that helps you understand the pension payment options available. You can book a free phone appointment with Pension Wise for guidance on your options.
 tags:
   - appointments
 ---

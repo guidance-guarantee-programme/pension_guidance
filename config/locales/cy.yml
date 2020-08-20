@@ -24,7 +24,7 @@ cy:
       next_step: 'Cam nesaf'
 
   service:
-    title: '%{page_title} - Pension Wise'
+    title: '%{page_title} | Pension Wise'
 
   # A lot of these are still in English because none of
   # the booking journey is currently translated.
