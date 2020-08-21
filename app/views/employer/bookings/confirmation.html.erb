@@ -8,18 +8,15 @@
         Your reference number is <br>
         <strong class="heading-medium t-booking-reference"><%= @booking_reference %></strong>
       </p>
+      <p>
+        Your Pension Wise appointment will be delivered by telephone. We will
+        call you on the phone number provided.
+      </p>
     </div>
 
     <div class="t-start">
       <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>
       <p><strong>Time</strong><br><%= l(@booking_date.in_time_zone('London'), format: :govuk_time) %></p>
-    </div>
-
-    <div class="t-location">
-      <p>
-      <strong>Location</strong>
-      <br>Phone appointment
-      </p>
     </div>
 
     <h2>What happens next?</h2>
