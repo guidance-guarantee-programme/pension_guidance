@@ -1,10 +1,10 @@
 ---
-description: Rydych yn talu treth ar unrhyw incwm, yn cynnwys pensiwn, sydd dros eich Lwfans Personol di-dreth.
+description: Darganfyddwch faint o dreth y byddwch chi'n ei thalu ar eich taliadau pensiwn. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - call-to-action
 ---
 
-# Treth rydych yn ei dalu ar eich pensiwn
+# Pa dreth ydych chi'n ei thalu ar eich pensiwn?
 
 Pan fyddwch yn cymryd arian allan o’ch cronfa bensiwn, mae 25% yn ddi-dreth. Byddwch yn talu Treth Incwm ar y 75% arall.
 

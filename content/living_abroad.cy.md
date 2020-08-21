@@ -1,11 +1,11 @@
 ---
 label: Byw dramor
-description: Beth allwch chi ei wneud gyda’ch cronfa bensiwn yn y DU os ydych yn symud neu eisoes yn byw dramor.
+description: Beth allwch ei wneud gyda'ch cronfa bensiwn yn y DU os ydych yn symud neu eisoes yn byw dramor. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - call-to-action
 ---
 
-# Byw dramor a’ch pensiwn
+# Beth sy'n digwydd i'm pensiwn pan fyddaf yn symud dramor?
 
 Os ydych yn byw dramor, neu’n cynllunio i ymddeol dramor ac mae gennych [bensiwn cyfraniadau wedi’u diffinio](/cy/pension-types) yn y DU, gallwch unai:
 

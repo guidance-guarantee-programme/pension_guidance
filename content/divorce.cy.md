@@ -1,8 +1,8 @@
 ---
-description: Sut mae pensiynau yn cael eu rhannu pan fydd cwpwl yn ysgaru neu’n dod a’u partneriaeth sifil i ben.
+description: Darganfyddwch wybodaeth sylfaenol am sut mae pensiynau'n cael eu rhannu pan fydd cwpl yn ysgaru neu'n dod â'u partneriaeth sifil i ben.
 ---
 
-# Ysgaru a phensiynau
+# Pensiynau ac Ysgaru
 
 Dylai eich pensiwn gael ei gynnwys yn eich setliad ariannol os ydych yn ysgaru neu’n diddymu eich partneriaeth sifil.
 

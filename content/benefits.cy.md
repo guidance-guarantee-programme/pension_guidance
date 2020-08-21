@@ -1,10 +1,11 @@
 ---
-description: Sut y gall cymryd eich pensiwn effeithio ar eich budd-daliadau. Fel arfer, y mwyaf yw eich incwm, y lleiaf o fudd-daliadau a gewch.
+label: Budd-daliadau
+description: Darganfyddwch sut y gall cymryd eich pensiwn effeithio ar eich Pensiwn y Wladwriaeth. Trefnwch apwyntiad Pension Wise heddiw. 
 tags:
   - call-to-action
 ---
 
-# Budd-daliadau
+# Sut gall cymryd eich pensiwn effeithio ar eich hawl i Pensiwn y Wladwriaeth
 
 Gall unrhyw arian bensiwn sydd gennych effeithio ar eich hawl i fudd-daliadau. Mae hyn yn berthnasol os ydych yn cymryd arian allan o’ch cronfa bensiwn neu ei adael i mewn.
 

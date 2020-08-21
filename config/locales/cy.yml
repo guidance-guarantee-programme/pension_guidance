@@ -279,8 +279,8 @@ cy:
               invalid: rhowch gyfeiriad e-bost dilys
   home:
     show:
-      title: 'Pension Wise | 50 neu drosodd? | Dod i wybod eich opsiynau'
-      description: Gwasanaeth am ddim a di-duedd gan y llywodraeth sy’n eich helpu i ddeall yr opsiynau ar gyfer eich cronfa bensiwn.
+      title: '50 neu drosodd? | Dewch i wybod am eich opsiynau pensiwn | Pension Wise'
+      description: Mae Pension Wise yn wasanaeth diduedd am ddim gan y llywodraeth sy'n eich helpu i ddeall yr opsiynau ar gyfer eich cronfa bensiwn.
       intro:
         html: |
           I <a href="%{appointment_url}">drefnu apwyntiad am ddim</a> ffoniwch <b>0800 138 3944</b>

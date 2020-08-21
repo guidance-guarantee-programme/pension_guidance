@@ -1,10 +1,11 @@
 ---
-description: Gallwch ond cymryd arian o’ch pensiwn cyn eich bod yn 55 oed mewn achosion prin, er enghraifft os ydych yn ddifrifol wael.
+label: Cymryd eich pensiwn cyn 55 oed
+description: Dim ond mewn achosion prin y gallwch chi gymryd arian o'ch pensiwn cyn eich bod yn 55. Darganfyddwch fwy a threfnu apwyntiad Pension Wise heddiw.
 tags:
   - call-to-action
 ---
 
-# Cymryd eich pensiwn cyn 55 oed
+# A allaf gyfnewid fy mhensiwn cyn 55?
 
 Fel arfer ni allwch gymryd arian o’ch cronfa bensiwn cyn eich bod yn 55 oed, ond mae rhai achosion prin pan y gallwch, er enghraifft os ydych yn ddifrifol wael.
 

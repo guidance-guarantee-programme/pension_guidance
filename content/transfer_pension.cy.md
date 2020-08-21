@@ -1,9 +1,11 @@
 ---
+label: Trosglwyddo eich pensiwn
+description: Darganfyddwch sut y gallech drosglwyddo'ch pensiwn i ddarparwr newydd a sut i gyfuno'ch cronfeydd pensiwn. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - call-to-action
 ---
 
-# Trosglwyddo eich pensiwn
+# Trosglwyddo Pensiwn: A allaf drosglwyddi fy mhensiwn?
 
 Efallai y byddwch yn dymuno trosglwyddo rhywfaint neu’r cyfan o’ch cronfeydd i ddarparwr gwahanol os:
 

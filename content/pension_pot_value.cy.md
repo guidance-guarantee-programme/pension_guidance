@@ -1,11 +1,11 @@
 ---
 label: Edrych faint sydd yn eich cronfa bensiwn
-description: Sut i gael gwybod faint o arian sydd gennych yn eich cronfa bensiwn gyfan, a faint o gronfeydd rydych wedi talu i mewn iddynt.
+description: Sut i ddarganfod faint o arian sydd gennych chi yn eich cronfa bensiwn, a faint o gronfeydd pensiwn rydych chi wedi talu iddyn nhw. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - call-to-action
 ---
 
-# Edrych faint sydd yn eich cronfa bensiwn
+# Cronfa Pensiwn - Beth yw gwerth fy nghronfa pensiwn?
 
 Os ydych yn ansicr faint sydd gennych yn eich cronfa bensiwn gyfan, neu faint o gronfeydd rydych wedi talu i mewn iddynt, mae yna ffyrdd gwahanol i gael gwybod.
 

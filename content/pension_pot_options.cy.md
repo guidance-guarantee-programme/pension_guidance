@@ -1,8 +1,9 @@
 ---
 label: Beth allwch chi ei wneud gyda’ch cronfa bensiwn
-description: Fel arfer, gallwch gymryd allan 25% o’ch cronfa yn ddi-dreth ac yna dewis o ystod o opsiynau.
+description: Fel arfer gallwch gymryd 25% o'ch cronfa bensiwn yn ddi-dreth a wedyn dewis o blith ystod o opsiynau. Trefnwch apwyntiad Pension Wise heddiw.
 ---
-# Beth allwch chi ei wneud gyda’ch cronfa bensiwn
+
+# Opsiynau Pensiwn: Beth allaf  ei wneud gyda fy nghronfa? 
 
 Mae 6 ffordd y gallwch gymryd eich cronfa bensiwn cyfraniadau wedi’u diffinio.
 

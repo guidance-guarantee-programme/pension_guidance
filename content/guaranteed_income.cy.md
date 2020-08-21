@@ -1,6 +1,6 @@
 ---
 label: Cael incwm gwarantedig (blwydd-dal)
-description: Gallwch ddefnyddio eich cronfa bensiwn i brynu polisi yswiriant sy’n rhoi incwm gwarantedig i chi am weddill eich oes.
+description: Darganfyddwch sut i ddefnyddio'ch cronfa bensiwn i brynu incwm gwarantedig. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - option
 ---
