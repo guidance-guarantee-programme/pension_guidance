@@ -1,5 +1,5 @@
 ---
-description: Gelwir y pensiwn a gewch gan y llywodraeth yn Bensiwn y Wladwriaeth. Dim ond arweiniad ar bensiynau cyfraniadau wedi’u diffinio mae Pensiwn Wise yn ei roi.
+description: Darganfyddwch wybodaeth sylfaenol am eich Pensiwn Gwladol a ble i fynd am wybodaeth manwl.
 tags:
   - call-to-action
 ---

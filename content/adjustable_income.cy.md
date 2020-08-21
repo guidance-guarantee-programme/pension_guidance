@@ -1,6 +1,6 @@
 ---
 label: Cael incwm addasadwy
-description: Mae eich arian yn cael ei fuddsoddi mewn cronfa tynnu allan hyblyg i roi incwm rheolaidd i chi gyda’r opsiwn o gymryd arian allan pan rydych angen gwneud hynny.
+description: Gallwch ddewis cymryd incwm neu gyfandaliadau o'ch cronfa bensiwn, trwy ddefnyddio trefniant tynnu allan hyblyg. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - option
 ---

@@ -1,10 +1,11 @@
 ---
-description: Mae eich datganiad pensiwn yn dangos y math o bensiwn sydd gennych, faint sydd yn eich cronfa ac os oes gan eich pensiwn unrhyw nodweddion arbennig
+label: Deall eich datganiad pensiwn
+description: Mae eich datganiad pensiwn yn dangos eich math o bensiwn, faint sydd yn eich cronfa ac a oes gan eich pensiwn unrhyw nodweddion arbennig.Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - call-to-action
 ---
 
-# Deall eich datganiad pensiwn
+# Sut i ddeall eich datganiad pensiwn
 
 Fel arfer, byddwch yn cael un datganiad pensiwn y flwyddyn - efallai y bydd eich darparwr yn galw hyn eich datganiad blynyddol.
 

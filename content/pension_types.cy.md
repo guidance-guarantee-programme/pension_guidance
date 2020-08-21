@@ -1,10 +1,11 @@
 ---
-description: Y gwahaniaeth rhwng pensiynau cyfraniadau wedi’u diffinio a buddion wedi’u diffinio a gwybodaeth am Bensiwn y Wladwriaeth.
+label: Mathau o bensiwn
+description: Dysgwch am y gwahanol fathau o bensiwn, fel pensiwn cyfraniadau wedi ei ddiffinio a pensiwn budd-daliadau wedi ei ddiffinio.
 tags:
   - call-to-action
 ---
 
-# Mathau o bensiwn
+# Beth yw'r gwahanol fathau o bensiwn?
 
 Ynghyd â’r Pensiwn y Wladwriaeth gan y llywodraeth, mae yna 2 brif fath o bensiwn:
 

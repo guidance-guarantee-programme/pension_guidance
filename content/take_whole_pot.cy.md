@@ -1,11 +1,11 @@
 ---
 label: Cymryd eich cronfa bensiwn cyfan
-description: Gallwch gymryd eich cronfa bensiwn cyfan - mae 75% o’r arian hwnnw’n drethadwy.
+description: Defnyddiwch ein cyfrifiannell i amcangyfrif faint o dreth y byddwch yn ei dalu os byddwch yn cymryd arian allan o'ch cronfa bensiwn. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - option
 ---
 
-# Cymryd eich cronfa bensiwn cyfan ar yr un pryd
+# Cymerwch eich cronfa bensiwn cyfan ar yr un pryd
 
 ## Trosolwg
 

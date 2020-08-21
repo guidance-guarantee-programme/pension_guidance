@@ -1,10 +1,10 @@
 ---
-description: Book a phone or face-to-face appointment with Pension Wise for personal guidance on your pension pot options.
+description: Mae Pension Wise yn ganllaw diduedd am ddim sy'n eich helpu i ddeall yr opsiynau talu pensiwn sydd ar gael, gallwch drefnu apwyntiad ffôn am ddim gyda Pension Wise i gael arweiniad ar eich opsiynau.
 tags:
   - appointments
 ---
 
-# Trefnwch apwyntiad Pension Wise yn rhad ac am ddim
+# Trefnwch eich apwyntiad Pension Wise am ddim
 
 Mae Pension Wise yn gallu darparu eich apwyntiad drwy gyfrwng y Gymraeg.
 

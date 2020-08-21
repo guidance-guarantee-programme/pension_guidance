@@ -1,10 +1,11 @@
 ---
-description: Beth sy’n digwydd i’ch pensiwn cyfraniadau wedi’u diffinio pan fyddwch yn marw, yn cynnwys y dreth mae eich buddiolwr yn ei dalu.
+label: Eich pensiwn pan fyddwch yn marw
+description: Darganfyddwch beth sy'n digwydd i'ch pensiwn cyfraniadau diffiniedig pan fyddwch chi'n marw, gan gynnwys y dreth y mae'ch buddiolwr yn ei thalu. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - call-to-action
 ---
 
-# Eich pensiwn pan fyddwch yn marw
+# Beth fydd yn digwydd i'ch pensiwn pan fyddwch yn marw?
 
 Bydd y ffordd rydych yn cymryd eich pensiwn yn effeithio ar sut y gallwch chi ei adael i’ch buddiolwr (y sawl sy’n ei etifeddu) pan fyddwch yn marw.
 

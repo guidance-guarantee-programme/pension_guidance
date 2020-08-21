@@ -1,10 +1,10 @@
 ---
-description: Beth i’w ystyried pan rydych yn gweithio allan faint o incwm fydd gennych ar ôl ymddeol, yn cynnwys eich pensiwn, ffynonellau incwm a chostau.
+description: Darganfyddwch beth i'w ystyried wrth gyfrifo cyfanswm eich incwm ar ôl ymddeol, a sut i gyllidebu. 
 tags:
   - call-to-action
 ---
 
-# Gweithio allan beth fydd gennych ar ôl ymddeol
+# Beth fydd cyfanswm fy incwm ar ôl ymddeol?
 
 Pan fyddwch yn cyrraedd amser ymddeol mae’n debygol y bydd eich incwm yn llai a bydd eich costau byw yn newid.
 

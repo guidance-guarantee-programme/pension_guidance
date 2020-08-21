@@ -1,10 +1,11 @@
 ---
-description: Pryd a sut i gael cyngor ariannol am beth i’w wneud gyda’ch arian pensiwn mewn ymddeoliad.
+label: Gweld ymgynghorydd ariannol
+description: Darganfyddwch pryd a sut i gael cyngor ariannol ynghylch beth i'w wneud â'ch arian pensiwn ar ôl ymddeol. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - call-to-action
 ---
 
-# Gweld ymgynghorydd ariannol
+# A oes angen ymgynghorydd ariannol arnaf?
 
 Bydd ymgynghorydd yn gofyn am eich sefyllfa ariannol, amgylchiadau personol, eich nodau a sut rydych yn teimlo am gymryd risgiau gyda’ch arian. Bydd hyn yn eu helpu i argymell cynhyrchion incwm ymddeol (er enghraifft tynnu allan hyblyg, gwahanol fathau o flwydd-dal) sy’n addas ar eich cyfer chi.
 
