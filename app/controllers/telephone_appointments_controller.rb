@@ -1,5 +1,7 @@
 class TelephoneAppointmentsController < ApplicationController # rubocop:disable ClassLength
-  layout 'full_width'
+  skip_before_action :verify_authenticity_token
+
+  layout 'embedded'
 
   before_action :set_breadcrumbs
   before_action :telephone_appointment, only: %i(new create)

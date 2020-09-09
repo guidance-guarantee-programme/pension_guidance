@@ -1,5 +1,5 @@
 require_relative './production'
 
 Rails.application.configure do
-  # Settings specified here will take precedence over those in config/production.rb.
+  config.action_dispatch.default_headers = { 'X-Frame-Options' => 'ALLOWALL' }
 end

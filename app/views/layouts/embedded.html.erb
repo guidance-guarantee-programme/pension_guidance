@@ -1,0 +1,81 @@
+<% @omit_header = true %>
+
+<% content_for :override_styles do %>
+  <style>
+    #footer { display: none; }
+  </style>
+<% end %>
+
+<% content_for :html_lang, default_locale? || !content_lang_matches_locale? ? I18n.default_locale : I18n.locale %>
+
+<% content_for :head do %>
+  <%= csrf_meta_tag %>
+
+  <!--[if gt IE 8]><!--><%= stylesheet_link_tag 'pensions-guidance', media: 'screen' %><!--<![endif]-->
+  <!--[if IE 6]><%= stylesheet_link_tag 'pensions-guidance-ie6', media: 'screen' %><![endif]-->
+  <!--[if IE 7]><%= stylesheet_link_tag 'pensions-guidance-ie7', media: 'screen' %><![endif]-->
+  <!--[if IE 8]><%= stylesheet_link_tag 'pensions-guidance-ie8', media: 'screen' %><![endif]-->
+
+  <%= yield :override_styles %>
+
+  <%= stylesheet_link_tag 'pensions-guidance-print', media: 'print' %>
+
+  <% if params[:locale] %>
+    <% I18n.available_locales.each do |alternate_locale| %>
+      <link href="<%= alternate_url(alternate_locale, only_path: false) %>" hreflang="<%= alternate_locale %>-GB" rel="alternate" />
+    <% end %>
+  <% end %>
+
+  <% if !default_locale? && !content_lang_matches_locale? %>
+    <link href="<%= alternate_url(I18n.default_locale, host: canonical_host, protocol: canonical_protocol) %>" rel="canonical" />
+  <% else %>
+    <%= canonical_tag rescue nil %>
+  <% end %>
+
+  <% if content_for?(:meta_description) %>
+    <meta name="description" content="<%= content_for(:meta_description) %>">
+  <% end %>
+
+  <%# Tell IE11+ there is no "browserconfig.xml" %>
+  <meta name="msapplication-config" content="none">
+<% end %>
+
+<% content_for :body_start do %>
+  <%= yield :data_layer %>
+
+  <%# Google Tag Manager %>
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PPZZQ9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PPZZQ9');</script>
+  <%# End Google Tag Manager %>
+<% end %>
+
+<% content_for :content do %>
+  <main role="main" id="content" tabindex="-1">
+    <%= yield %>
+  </main>
+<% end %>
+
+<% content_for :body_end do %>
+  <%= javascript_include_tag 'application' %>
+
+  <% if Rails.env.test? %>
+    <%#
+    Disable jQuery animations in the test environment to
+    increase speed of the test suite and give us a more
+    consistent DOM to make assertions against. Without this,
+    we were seeing frequent intermittent test failures.
+    %>
+    <script>
+      $.fx.off = true;
+    </script>
+  <% end %>
+
+  <%= yield :after_script %>
+<% end %>
+
+<%= render template: 'layouts/govuk_template' %>
