@@ -18,6 +18,8 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
       </td>
       <td>
         Ar gyfer ymholiadau pensiwn cyffredinol a chwynion, yn cynnwys help i osgoi sgamiau pensiwn a chynilo i gynllun pensiwn
+
+        <p>Coronafeirws (COVID-19) – <a href="https://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/coronavirus-how-will-this-affect-my-pension-or-investments">A fydd yn effeithio fy mhensiwn?</a></p>
       </td>
     </tr>
     <tr>
@@ -58,6 +60,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
       </td>
       <td>
         <ul>
+        <li>Coronafeirws (COVID-19) <a href="https://www.moneyadviceservice.org.uk/cy/tools/money-navigator-tool">cymorth ariannol</a></li>
         <li>Offeryn Cymharu Blwydd-dal <a href=" https://comparison.moneyadviceservice.org.uk/cy/tools/annuities">comparison.moneyadviceservice.org.uk/cy/tools/annuities</a></li>
         <li>Cyfeirlyfr cynghori ar ymddeoliad <a href=" https://directory.moneyadviceservice.org.uk/cy">directory.moneyadviceservice.org.uk/cy</a></li>
         <li>Deall a chymharu Tynnu Incwm i Lawr <a href="https://www.moneyadviceservice.org.uk/cy/tools/pension-drawdown-calculator">www.moneyadviceservice.org.uk/cy/tools/pension-drawdown-calculator</a></li>
@@ -152,6 +155,10 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         <a href="https://www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth">www.gov.uk/gwirio-eich-pensiwn-y-wladwriaeth</a><br>
         <a href="https://www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn">www.gov.uk/dod-o-hyd-i-fanylion-cyswllt-pensiwn</a><br>
         <a href="https://www.gov.uk/state-pension-age">www.gov.uk/state-pension-age</a><br>
+        <a href="https://www.gov.uk/estimate-income-tax">www.gov.uk/estimate-income-tax</a><br>
+        <a href="https://www.gov.uk/tax-on-pension/tax-when-you-live-abroad">www.gov.uk/tax-when-you-live-abroad</a><br>
+        <a href="https://www.gov.uk/tax-uk-income-live-abroad/taxed-twice">www.gov.uk/tax-uk-income-live-abroad/taxed-twice</a><br>
+        <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-and-capital-gains-tax-enquiries-for-non-uk-residents">www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-and-capital-gains-tax-enquiries-for-non-uk-residents</a><br>
         Ffôn:<br>
         0800 731 0175 (Canolfan Pensiwn y Dyfodol)<br>
         0800 731 0193 (Gwasanaeth Olrhain Pensiwn)
@@ -167,6 +174,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
           <li>Pobl anabl</li>
           <li>Tai a gwasanaethau lleol</li>
           <li>Arian a threth</li>
+          <li>Treth yr Alban</li>
         </ul>
       </td>
     </tr>

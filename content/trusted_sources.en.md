@@ -18,6 +18,8 @@ Pension Wise consider these organisations to be trusted sources of additional in
       </td>
       <td>
         For general pension queries and complaints, including help avoiding pension scams and saving into a pension scheme
+
+        <p>Coronavirus (COVID-19) – <a href="https://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/coronavirus-how-will-this-affect-my-pension-or-investments">how will this affect my pension or investments</a></p>
       </td>
     </tr>
     <tr>
@@ -58,6 +60,7 @@ Pension Wise consider these organisations to be trusted sources of additional in
       </td>
       <td>
         <ul>
+        <li>Coronavirus (COVID-19) <a href="https://www.moneyadviceservice.org.uk/en/tools/money-navigator-tool">financial help</a></li>
         <li>Annuity Comparison Tool <a href="https://comparison.moneyadviceservice.org.uk">comparison.moneyadviceservice.org.uk</a></li>
         <li>Retirement adviser directory <a href="https://directory.moneyadviceservice.org.uk">directory.moneyadviceservice.org.uk</a></li>
         <li>Understand and compare Income Drawdown <a href="https://www.moneyadviceservice.org.uk/en/tools/pension-drawdown-calculator/">www.moneyadviceservice.org.uk/en/tools/pension-drawdown-calculator</a></li>
@@ -152,6 +155,10 @@ Pension Wise consider these organisations to be trusted sources of additional in
         <a href="https://www.gov.uk/check-state-pension">www.gov.uk/check-state-pension</a><br>
         <a href="https://www.gov.uk/find-pension-contact-details">www.gov.uk/find-pension-contact-details</a><br>
         <a href="https://www.gov.uk/state-pension-age">www.gov.uk/state-pension-age</a><br>
+        <a href="https://www.gov.uk/estimate-income-tax">www.gov.uk/estimate-income-tax</a><br>
+        <a href="https://www.gov.uk/tax-on-pension/tax-when-you-live-abroad">www.gov.uk/tax-when-you-live-abroad</a><br>
+        <a href="https://www.gov.uk/tax-uk-income-live-abroad/taxed-twice">www.gov.uk/tax-uk-income-live-abroad/taxed-twice</a><br>
+        <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-and-capital-gains-tax-enquiries-for-non-uk-residents">www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-and-capital-gains-tax-enquiries-for-non-uk-residents</a><br>
         Phone:<br>
         0800 731 0175 (Future Pension Centre)<br>
         0800 731 0193 (Pension Tracing Service)
@@ -167,6 +174,7 @@ Pension Wise consider these organisations to be trusted sources of additional in
           <li>Disabled people</li>
           <li>Housing and local services</li>
           <li>Money and tax</li>
+          <li>Scottish tax</li>
         </ul>
       </td>
     </tr>
