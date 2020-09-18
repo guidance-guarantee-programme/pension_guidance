@@ -79,15 +79,6 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
     </tr>
     <tr>
       <td>
-        <strong>Cymdeithas Pensiynau a Chynilion Gydol Oes (PLSA)</strong><br>
-        <a href="https://retirementlivingstandards.org.uk">retirementlivingstandards.org.uk</a>
-      </td>
-      <td>
-        I helpu cynilwyr i feddwl mewn ffordd ymarferol am y math o ffordd o fyw y gallent ei arwain ar ôl ymddeol 
-      </td>
-    </tr>
-    <tr>
-      <td>
         <strong>Ombwdsmon Pensiynau</strong><br>
         <a href="https://www.pensions-ombudsman.org.uk">www.pensions-ombudsman.org.uk</a><br>
         Ffôn: 0800 917 4487

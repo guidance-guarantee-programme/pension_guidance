@@ -15,9 +15,17 @@ Find out the status of any debt arrangement you have before choosing a pension o
 
 ## Getting help with debt
 
-Take your time when deciding what to do with your pot and don’t rush into a decision.
+If you are considering taking pension payments to pay off debts, there may be other debt repayment options, and debt advice may be able to help you choose which debt solution best suits your needs.
 
-For more information about debt you can speak to the [Money Advice Service](https://www.moneyadviceservice.org.uk/en). Their website contains information on taking control of debt and they can also help you find a free and confidential debt advice service near you.
+Take your time when deciding what to do with your pot and don’t rush into a decision. For more information about debt you can speak to the [Money Advice Service](https://www.moneyadviceservice.org.uk). There is a lot of useful information about debt management on their website, and many useful online tools.
+
+There are lots of free advice services available across the UK. The [debt advice locator tool](https://www.moneyadviceservice.org.uk/en/tools/debt-advice-locator) on the Money Advice Service website can help you find the best type of advice to suit your needs.
+
+Citizens Advice provides free, independent and [impartial debt advice](https://www.citizensadvice.org.uk/debt-and-money/).
+
+Citizens Advice Scotland: You can talk about debt issues with a [trained adviser](https://www.citizensadvice.org.uk/scotland/debt-and-money/).
+
+You also find [support in Northern Ireland](https://www.citizensadvice.org.uk/about-us/northern-ireland/).
 
 {: .hide-from-screen }
 [Further guidance on debt and pensions](https://www.pensionwise.gov.uk/en/debt)<br>
