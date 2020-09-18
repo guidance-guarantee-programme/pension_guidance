@@ -246,6 +246,8 @@ en:
       heading: Welcome to Pension Wise
       sub_heading: Free and impartial government guidance about your defined contribution pension options
       quick_links:
+        scam_heading: 'Scam warning'
+        scam_link_title: 'Be aware of pension scams'
         heading: 'Coronavirus (COVID-19)'
         items:
           - title: 'Will it affect your pension?'
