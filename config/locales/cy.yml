@@ -287,8 +287,8 @@ cy:
       heading: Croeso i Pension Wise
       sub_heading: Cyngor am ddim a di-duedd gan y llywodraeth am eich opsiynau pensiwn cyfraniadau wedi’u diffinio
       quick_links:
-        scam_heading: 'Scam warning'
-        scam_link_title: 'Be aware of pension scams'
+        scam_heading: 'Rhybudd sgâm'
+        scam_link_title: 'Byddwch yn ymwybodol o sgamiau pensiwn'
         heading: 'Coronafeirws (COVID-19)'
         items:
           - title: 'A fydd yn effeithio fy mhensiwn?'
