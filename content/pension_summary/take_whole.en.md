@@ -12,8 +12,6 @@ You can take your whole pension pot as cash. The money from your pot will be add
 
 You should think about this option. Once you’ve taken the money out you can’t change the decision and you lose the tax-free status it had while in your pot.  
 
-^You need to be aware of ‘pension recycling’ tax laws if you plan to cash in one pot and pay into another.^
-
 ## Next steps
 
 If you’re interested in this option, contact your provider and ask the following questions.

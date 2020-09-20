@@ -1,10 +1,12 @@
 # Benefits and pension income
 
-If you’re claiming benefits or planning to apply for means-tested benefits in the future, any income from your pension pot will be taken into account. This may affect your entitlement to some benefits or mean you get less money.
+Any money you take from your pension pot will be counted towards the income or savings that are assessed when checking your eligibility for some state benefits. This may affect your entitlement to some benefits or mean you get less money.
+
+If you or anyone in your household are receiving or have received any means-tested state benefits in the last 12 months, or you plan to apply for them, you should contact the relevant paying authority to check how accessing your pension can affect your entitlement.
 
 ## When your pension affects your benefits
 
-The way money from your pension is assessed depends on whether you or your partner have reached the qualifying age for Pension Credit – use the State Pension calculator on GOV.UK to check when this is.
+The way money from your pension is assessed depends on whether you or your partner have reached the qualifying age for Pension Credit, which is the same as your State Pension Age – use the State Pension Age calculator on GOV.UK to check when this is.
 
 Money from your (or your partner’s) pot may affect your entitlement to benefits:
 

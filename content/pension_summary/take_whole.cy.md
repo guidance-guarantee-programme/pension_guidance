@@ -12,8 +12,6 @@ Gallwch gymryd eich cronfa gyfan ar un tro. Bydd yr arian o’ch cronfa yn cael 
 
 Dylech feddwl yn ofalus am yr opsiwn hwn. Unwaith y byddwch wedi cymryd yr arian allan ni allwch newid y penderfyniad a byddwch yn colli’r statws di-dreth oedd ganddo tra yn eich cronfa.  
 
-^Mae angen i chi fod yn ymwybodol o ddeddfau treth ‘ailgylchu pensiwn’ os ydych yn bwriadu cyfnewid un gronfa a thalu i mewn i un arall.^
-
 ## Camau nesaf
 
 Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch darparwr a gofyn y cwestiynau canlynol.

@@ -26,7 +26,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'humanize'
   gem 'inline_svg'
   gem 'nokogiri'
-  gem 'output-templates', '~> 4.10', github: 'guidance-guarantee-programme/output-templates'
+  gem 'output-templates', github: 'guidance-guarantee-programme/output-templates'
   gem 'pg', '>= 0.18'
   gem 'phoner'
   gem 'postcodes_io'

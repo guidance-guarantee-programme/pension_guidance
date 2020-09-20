@@ -11,9 +11,9 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: ce44808f9071da8ad0dcb26773d956a6856b3843
+  revision: ecfd395c8b8f629f749b4bd434be9cc75815dfea
   specs:
-    output-templates (4.22.0)
+    output-templates (4.23.0)
       actionview
       sass
 
@@ -482,7 +482,7 @@ DEPENDENCIES
   launchy!
   lograge!
   nokogiri!
-  output-templates (~> 4.10)!
+  output-templates!
   pdf-inspector!
   pg (>= 0.18)!
   phantomjs!
