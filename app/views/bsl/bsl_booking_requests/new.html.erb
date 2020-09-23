@@ -1,7 +1,9 @@
 <% content_for(:page_title, t('service.title', page_title: 'British Sign Language Bookings')) %>
 <div class="l-grid-row">
   <div class="l-column-two-thirds">
-    <h1>Book a free BSL booking request</h1>
+    <h1>Request a free British Sign Language video appointment</h1>
+    <p>We can provide a British Sign Language interpreter appointment by video, depending on your needs.</p>
+    <p>Complete the form to request an appointment and we’ll contact you within 2 working days.</p>
 
     <% if @booking_request.errors.any? %>
       <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
@@ -53,7 +55,7 @@
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:phone) %>">
         <%= f.label :phone, class: 'form-label-bold' do %>
           Phone number
-          <span class="form-hint">We’ll send an SMS appointment reminder if a mobile number is provided. If you’re booking a telephone appointment, this is the number we will call you on</span>
+          <span class="form-hint">We’ll send an SMS appointment reminder if a mobile number is provided</span>
         <% end %>
 
         <% if @booking_request.errors.include?(:phone) %>
@@ -190,7 +192,7 @@
         <%= f.label :additional_info, class: 'form-label-bold' do %>
           Additional information
           <span class="form-hint">
-            eg accessibility adjustments
+            e.g. accessibility adjustments, contact preferences
           </span>
         <% end %>
         <%= f.text_area :additional_info, class: 'form-control form-control-3-4 js-character-limit-input t-additional-info', rows: 5, maxlength: 160 %>
