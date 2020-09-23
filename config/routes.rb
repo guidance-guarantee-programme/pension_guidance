@@ -74,6 +74,14 @@ Rails.application.routes.draw do
         get :completed, on: :collection
       end
 
+      resources :bsl_booking_requests,
+                only: %i(new create),
+                path: 'bsl-booking-requests',
+                locale: :en,
+                module: :bsl do
+        get :completed, on: :collection
+      end
+
       resources :locations, only: [:index, :show] do
         collection do
           post 'search'

@@ -143,6 +143,31 @@ en:
               inclusion: select an option
             additional_info:
               blank: describe the accessibility adjustments you require
+        bsl/booking_request:
+          attributes:
+            first_name:
+              blank: enter a name
+            last_name:
+              blank: enter a name
+            email:
+              invalid_email: enter a valid email address
+            telephone_number:
+              blank: enter a phone number
+              invalid: enter a valid phone number
+            memorable_word:
+              blank: enter a word
+            date_of_birth:
+              blank: enter a valid date of birth
+            opt_in:
+              accepted: please accept
+            appointment_type:
+              inclusion: must be 50 or over to be eligible for guidance
+            defined_contribution_pot_confirmed:
+              inclusion: select an option
+            where_you_heard:
+              inclusion: select an option
+            additional_info:
+              blank: describe the accessibility adjustments you require
         employer/booking:
           attributes:
             first_name:
