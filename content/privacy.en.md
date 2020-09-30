@@ -36,8 +36,9 @@ Regulations as follows:
 ^processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller^
 
 Your data will be shared between Pension Wise and our delivery partners
-(Citizens Advice, The Pensions Advisory Service and Teleperformance) only where
-it is necessary for the purpose of providing you with Pension Wise guidance.
+(Citizens Advice, The Pensions Advisory Service and Teleperformance) where it
+is necessary for the purpose of providing you with Pension Wise guidance, for
+training and quality purposes and to investigate complaints.
 
 We won’t share your information with any other organisations for marketing or
 commercial purposes, and we don’t pass on your details to other websites.
@@ -91,13 +92,24 @@ For telephone appointments with the Pensions Advisory Service and Citizens
 Advice, key details from your appointment are stored, and calls are recorded
 and stored, for a maximum of two years before being deleted.
 
-For appointments delivered by the Citizens Advice network, they will ask for
-your consent to store key details from your appointment for a period of six
-years, in line with their organisational retention policy. This is to respond
-to any comments/complaints that arise within the 6 year statute of limitation
-period. The lawful basis for this is set out in Article 6(1)(a) of the General
-Data Protection Regulations; _“the data subject has given consent to the
-processing of his or her personal data for one or more specific purposes”_
+For appointments delivered by Citizens Advice (England and Wales), they will
+ask for your consent to store key details from your appointment for a period of
+six years, in line with their organisational retention policy. This is to
+respond to any comments/complaints that arise within the 6 year statute of
+limitation period. The lawful basis for this is set out in Article 6(1)(a) of
+the General Data Protection Regulations; _“the data subject has given consent to
+the processing of his or her personal data for one or more specific purposes.”_
+
+For appointments delivered by Citizens Advice Scotland, key details from your
+appointment will be stored for 6 years, in line with their organisational
+retention policy. This is to respond to any comments/complaints that arise
+within the 6 year statute of limitation period. The lawful basis for this is
+set out in Article 6(1)(f) of the General Data Protection Regulations;
+_“processing is necessary for the purposes of the legitimate interests pursued
+by the controller or by a third party except where such interests are
+overridden by the interests or fundamental rights and freedoms of the data
+subject which require protection of personal data, in particular where the data
+subject is a child.”_
 
 Consent can be withdrawn at any time by contacting Citizens Advice directly, or
 by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
@@ -113,10 +125,16 @@ processing and retention of this data for a maximum of 2 years is in accordance
 with Article 9(2)(g) of the General Data Protection Regulations, in reference
 to Schedule 1, Part 2(6)(1 and 2) of the Data Protection Act 2018.
 
-Citizens Advice will ask for your consent to store any basic health data
-discussed in your appointment for a period of six years, in line with their
-organisational retention policy. This consent process is in accordance with
-Article 9(2)(a) of the General Data Protection Regulations.
+Citizens Advice (England and Wales) will ask for your consent to store any
+basic health data discussed in your appointment for a period of six years, in
+line with their organisational retention policy. This consent process is in
+accordance with Article 9(2)(a) of the General Data Protection Regulations.
+ 
+Citizens Advice Scotland does not keep a written record of health data relating
+to Pension Wise appointments. However, special category data that you disclose
+during a telephone appointment will be stored on an audio recording for 2
+years. You will be reminded of this at the start of the call and advised that
+you are under no obligation to disclose any special category data.
 
 Consent can be withdrawn at any time by contacting Citizens Advice directly, or
 by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
@@ -151,6 +169,10 @@ Any personal data collected will be deleted after being securely stored for a
 maximum of 2 years.
 
 ## How we use your information - complaints 
+
+In order to investigate complaints effectively, details of your interactions
+with Pension Wise will be shared between Pension Wise and our delivery partners
+(Citizens Advice, The Pensions Advisory Service and Teleperformance).
 
 If you have a live complaint we will store your booking and appointment data
 for longer than our standard retention period if it is necessary to effectively
@@ -189,7 +211,63 @@ website to find out what it does with your information.
 
 ## Your rights
 
-### Right to object
+We want to make sure you are aware of your rights in relation to the personal
+information we process. We have described those rights and the circumstances in
+which they apply below.
+
+### Access
+
+You have a right to get access to the personal information we hold about you.
+For more information on how to get access to your information and the documents
+we need you to submit or to make a formal Subject Access Request (SAR) please
+[complete the SAR Form](https://maps.org.uk/wp-content/uploads/2020/06/SAR-subject-access-request-form.pdf). This can be submitted via email
+[dpo@maps.org.uk](mailto:dpo@maps.org.uk) or by post.
+
+### Rectification
+
+You have a right to rectification of inaccurate personal information and to
+update incomplete personal information. If you believe that any of the
+information that we hold about you is inaccurate, you have a right to request
+that we restrict the processing of that information and to rectify the
+inaccurate personal information.
+
+### Erasure
+
+You have a right to request that we delete your personal information. Under
+Article 17 of the GDPR individuals have the right to have personal data erased.
+The right is not absolute and only applies in certain circumstances.
+
+You may request that we delete your personal information if you believe that:
+
+- we no longer need to process your information for the purposes for which it was provided
+- we have requested your permission to process your personal information and you wish to withdraw your consent
+- we are not using your information in a lawful manner
+
+The right to erasure does not apply if processing is necessary for one of the following reasons: 
+
+- to exercise the right of freedom of expression and information
+- to comply with a legal obligation
+- for the performance of a task carried out in the public interest or in the exercise of official authority
+- for archiving purposes in the public interest, scientific research historical
+  research or statistical purposes where erasure is likely to render impossible
+  or seriously impair the achievement of that processing
+- for the establishment, exercise or defence of legal claims
+
+For further information go to the [Information Commissioner’s Office (ICO)](https://ico.org.uk).
+
+### Restriction
+
+You have a right to request us to restrict the processing of your personal
+information. You may request us to restrict processing your personal
+information if you believe that:
+
+- any of the information that we hold about you is inaccurate
+- we no longer need to process your information for the purposes for which it
+  was provided, but you require the information to establish, exercise or
+  defend legal claims
+- we are not using your information in a lawful manner
+
+### Objection
 
 In accordance with Article 21 of the General Data Protection Regulations, you
 have the right to object to us processing your data. Depending on the nature of
@@ -198,25 +276,31 @@ For example, if you wanted a telephone appointment but objected to us using
 your phone number, we would not be able to call you to conduct the appointment.
 As another example, if you objected to us using both your email address and
 your postal address, we would not be able to send you a confirmation of your
-appointment booking, or a summary of your appointment.
+appointment booking, or a summary of your appointment. 
 
-### Other rights
+### Withdraw consent
 
-You have the right to access any of your personal data that Pension Wise hold.
-You have a right to be given a copy of your data, and a right to correct any
-inaccuracies in the data. You can request deletion of some or all of your data
-or a restriction in the use of your data. You can also request that some of the
-data we hold is transferred to a third party.
+You have a right to withdraw your consent. Where we rely on your permission to
+process your personal information, you have a right to withdraw your consent at
+any time. We will always make it clear where we need your permission to
+undertake specific processing activities.
 
-If you wish to contact us in relation to your data or our data policies, you
-can email [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk)
-setting out your query.
+### Lodge complaints
+
+You have a right to lodge a complaint. If you wish to raise a complaint on how
+we have handled your personal information, you can contact our Data Protection
+Officer who will investigate the matter and report back to you.
+
+If you wish to exercise any of these rights, if you have any queries about how
+we use your personal information that are not answered here, or if you wish to
+complain to our Data Protection Officer, please contact us:
+
+Email: [dpo@maps.org.uk](mailto:dpo@maps.org.uk)<br>
+Post: The Money and Pensions Service, Holborn Centre, 120 Holborn, London, EC1N 2TD<br>
+Telephone: 020 7943 0500
+
+The Data Protection Officer responsible for the Pension Wise service is Emma Wheeler.
 
 You have the right to raise concerns you have about our handling of your data
 with the Information Commissioner’s Office (ICO). Further details on your
-rights and the process for raising a concern can be found at <a
-href="https://ico.org.uk/for-the-public"
-rel="external">ico.org.uk/for-the-public</a>.
-
-The Data Protection Officer responsible for the Pension Wise service is Emma
-Wheeler.
+rights and [the process for raising a concern](https://ico.org.uk/for-the-public) are here.
