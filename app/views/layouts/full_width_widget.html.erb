@@ -1,0 +1,46 @@
+<%
+  @omit_header = true
+  @omit_footer = true
+  @omit_skiplink_container = true
+  @omit_cookie_message     = true
+
+  content_for :body_classes, 't-full-width-widget'
+%>
+
+<% content_for :head do %>
+  <!--[if gt IE 8]><!--><%= stylesheet_link_tag 'pensions-guidance', media: 'screen' %><!--<![endif]-->
+  <!--[if IE 6]><%= stylesheet_link_tag 'pensions-guidance-ie6', media: 'screen' %><![endif]-->
+  <!--[if IE 7]><%= stylesheet_link_tag 'pensions-guidance-ie7', media: 'screen' %><![endif]-->
+  <!--[if IE 8]><%= stylesheet_link_tag 'pensions-guidance-ie8', media: 'screen' %><![endif]-->
+
+  <%= stylesheet_link_tag 'money-helper-overrides', media: 'screen' %>
+
+  <%# Tell IE11+ there is no "browserconfig.xml" %>
+  <meta name="msapplication-config" content="none">
+<% end %>
+
+<% content_for :content do %>
+  <main role="main" id="content" tabindex="-1">
+    <%= yield %>
+  </main>
+<% end %>
+
+<% content_for :body_end do %>
+  <%= javascript_include_tag 'application' %>
+
+  <% if Rails.env.test? %>
+    <%#
+    Disable jQuery animations in the test environment to
+    increase speed of the test suite and give us a more
+    consistent DOM to make assertions against. Without this,
+    we were seeing frequent intermittent test failures.
+    %>
+    <script>
+      $.fx.off = true;
+    </script>
+  <% end %>
+
+  <%= yield :after_script %>
+<% end %>
+
+<%= render template: 'layouts/govuk_template' %>

@@ -1,5 +1,5 @@
 class TelephoneAppointmentsController < ApplicationController # rubocop:disable ClassLength
-  layout 'full_width'
+  include Embeddable
 
   before_action :set_breadcrumbs
   before_action :telephone_appointment, only: %i(new create)

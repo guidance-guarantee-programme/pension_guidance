@@ -1,7 +1,5 @@
 <div class="l-grid-row">
   <div class="l-column-full">
-    <h1>Book a phone appointment</h1>
-
     <%= render partial: 'smarter_signposted_banner' if smarter_signposted? %>
 
     <% if @telephone_appointment.errors.any? || (params[:continue] && !slot_selected?) %>
