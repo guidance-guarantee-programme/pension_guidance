@@ -15,4 +15,6 @@ If you’re outside the UK, call +44 20 3733 3495. You must have a UK based pens
 - Call between 8am to 8pm, Monday to Friday
 - We’ll send you an email to confirm your booking
 
+[Need a British Sign Language interpreter?](/en/bsl-booking-requests/new)
+
 [Find out about call charges](https://www.gov.uk/call-charges)
