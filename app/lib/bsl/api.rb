@@ -22,19 +22,19 @@ module Bsl
     end
 
     def open_timeout
-      ENV.fetch('WELSH_API_OPEN_TIMEOUT', 2).to_i
+      ENV.fetch('ALTERNATIVE_API_OPEN_TIMEOUT', 2).to_i
     end
 
     def read_timeout
-      ENV.fetch('WELSH_API_READ_TIMEOUT', 2).to_i
+      ENV.fetch('ALTERNATIVE_API_READ_TIMEOUT', 2).to_i
     end
 
     def retries
-      ENV.fetch('WELSH_API_RETRIES', 0).to_i
+      ENV.fetch('ALTERNATIVE_API_RETRIES', 0).to_i
     end
 
     def api_uri
-      ENV.fetch('WELSH_API_URI', 'http://localhost:3010')
+      ENV.fetch('ALTERNATIVE_API_URI', 'http://localhost:3010')
     end
   end
 end
