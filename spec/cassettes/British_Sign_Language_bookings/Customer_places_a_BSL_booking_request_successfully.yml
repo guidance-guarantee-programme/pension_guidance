@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3010/api/v1/bsl_booking_requests
+    body:
+      encoding: UTF-8
+      string: '{"first_name":"Ben","last_name":"Smith","email":"ben@example.com","phone":"07715
+        930 455","memorable_word":"spoon","date_of_birth":"1960-01-01","defined_contribution_pot_confirmed":"yes","accessibility_needs":"1","additional_info":"Before
+        1PM.","where_you_heard":"7","gdpr_consent":"yes"}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson; benlovell; 65813) ruby/2.6.5 (114; x86_64-darwin19)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 51adf95d-eea7-467f-8351-a87c83c6b72f
+      X-Runtime:
+      - '0.169619'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Wed, 23 Sep 2020 12:00:25 GMT
+recorded_with: VCR 3.0.3

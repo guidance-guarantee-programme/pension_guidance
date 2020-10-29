@@ -1,12 +1,7 @@
-module WelshLanguage
+module Bsl
   class Api
-    def locations
-      response = connection.get('/api/v1/locations')
-      response.body
-    end
-
     def create_booking(booking_request)
-      response = connection.post('/api/v1/booking_requests', booking_request)
+      response = connection.post('/api/v1/bsl_booking_requests', booking_request)
       response.success?
     end
 
