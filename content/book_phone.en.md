@@ -17,4 +17,6 @@ If you’re outside the UK, call +44 20 3733 3495. You must have a UK based pens
 
 [Need a British Sign Language interpreter?](/en/bsl-booking-requests/new)
 
+[Attending an appointment on behalf of a family member or friend?](/en/third-party-appointments)
+
 [Find out about call charges](https://www.gov.uk/call-charges)
