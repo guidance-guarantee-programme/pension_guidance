@@ -78,6 +78,8 @@ The value of your defined benefit pension gets transferred as cash and is invest
 
 ^Think very carefully before you decide to do this – you would be giving up a fixed income for a less certain one and it’s possible you’ll be worse off.^
 
+Make sure you [understand the risks](https://www.fca.org.uk/consumers/pension-transfer-defined-benefit), to help you make an informed decision.
+
 Not all defined benefit pensions allow you to transfer out – ask your scheme administrator.
 
 ## Scams

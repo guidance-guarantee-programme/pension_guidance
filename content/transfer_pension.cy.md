@@ -78,6 +78,8 @@ Mae gwerth eich pensiwn buddion wedi’u diffinio yn cael ei drosglwyddo fel ari
 
 ^Meddyliwch yn ofalus iawn cyn i chi benderfynu gwneud hyn – byddech yn rhoi’r gorau i incwm sefydlog am un llai sicr ac mae’n bosib y byddech yn waeth eich byd.^
 
+Gwnewch yn siŵr eich bod yn [deall y risgiau](https://www.fca.org.uk/consumers/pension-transfer-defined-benefit), i’ch helpu i wneud penderfyniad gwybodus.
+
 Nid yw pob pensiwn buddion wedi’u diffinio yn caniatáu i chi drosglwyddo allan - gofynnwch i weinyddwr eich cynllun.
 
 ## Sgiâmau
