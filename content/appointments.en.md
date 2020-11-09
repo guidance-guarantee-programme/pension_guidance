@@ -22,6 +22,8 @@ You should be aged **50 or over** and have a UK based **defined contribution** p
 
 [Need a British Sign Language interpreter?](/en/bsl-booking-requests/new)
 
+[Attending an appointment on behalf of a family member or friend?](/en/third-party-appointments)
+
 [Book a phone appointment](/en/book-phone){: .button #phone-button style="font-size: 0.9em; padding-left: 2em; padding-right: 2em;"}
 
 <div class="application-notice help-notice">
