@@ -19,41 +19,6 @@
     <% end %>
 
     <%= form_for @booking_request, url: booking_requests_path, as: :booking_request do |f| %>
-      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:booking_type) %>" data-radio-toggle>
-        <fieldset>
-          <legend>
-            <h1 class="heading-medium">Apwyntiad Wyneb yn Wyneb neu Dros y Ffôn</h1>
-          </legend>
-
-          <% if @booking_request.errors.include?(:booking_type) %>
-            <span class="error-message"><%= @booking_request.errors[:booking_type].to_sentence.capitalize %></span>
-          <% end %>
-
-          <div class="multiple-choice" data-target="face-to-face-appointment">
-            <%= f.radio_button :booking_type, 'face-to-face', class: 't-face-to-face-booking' %>
-            <%= f.label :booking_type, value: 'face-to-face' do %>
-              Wyneb yn Wyneb
-            <% end %>
-          </div>
-          <div class="panel panel-border-narrow js-hidden" id="face-to-face-appointment">
-            <%= f.label :location_id, 'Lleoliad apwyntiad sy’n well gennych', class: 'form-label-bold' %>
-            <% if @booking_request.errors.include?(:location_id) %>
-              <span class="error-message"><%= @booking_request.errors[:location_id].to_sentence.capitalize %></span>
-            <% end %>
-            <%= f.select :location_id,
-                  options_from_collection_for_select(@welsh_locations, 'id', 'name', @booking_request.location_id),
-                  { include_blank: true },
-                  { class: "t-location form-control #{'form-control-error' if @booking_request.errors.include?(:location_id)}" }
-            %>
-          </div>
-
-          <div class="multiple-choice">
-            <%= f.radio_button :booking_type, 'phone', class: 't-phone-booking' %>
-            <%= f.label :booking_type, value: 'phone' do %>Ffôn<% end %>
-          </div>
-        </fieldset>
-      </div>
-
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:first_name) %>">
         <%= f.label :first_name, 'Enw cyntaf', class: 'form-label-bold' %>
         <% if @booking_request.errors.include?(:first_name) %>

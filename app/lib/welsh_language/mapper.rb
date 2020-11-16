@@ -5,7 +5,7 @@ module WelshLanguage
     end
 
     def call # rubocop:disable MethodLength, AbcSize
-      attributes = {
+      {
         first_name: booking_request.first_name,
         last_name: booking_request.last_name,
         email: booking_request.email,
@@ -18,9 +18,6 @@ module WelshLanguage
         where_you_heard: booking_request.where_you_heard,
         gdpr_consent: booking_request.gdpr_consent.to_s
       }
-
-      attributes[:location_id] = booking_request.location_id if booking_request.face_to_face?
-      attributes
     end
 
     private

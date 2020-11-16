@@ -3,7 +3,6 @@ module WelshLanguage
     layout 'full_width'
 
     def new
-      @welsh_locations = WelshLanguage.locations
       @booking_request = BookingRequest.new(booking_request_params)
     end
 
@@ -15,8 +14,6 @@ module WelshLanguage
 
         redirect_to completed_booking_requests_path
       else
-        @welsh_locations = WelshLanguage.locations
-
         render :new
       end
     end
@@ -41,7 +38,6 @@ module WelshLanguage
         .fetch(:booking_request, {})
         .permit(
           :booking_type,
-          :location_id,
           :first_name,
           :last_name,
           :email,

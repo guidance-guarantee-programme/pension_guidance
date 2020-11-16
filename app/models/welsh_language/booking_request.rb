@@ -3,8 +3,6 @@ module WelshLanguage
     include ActiveModel::Model
 
     attr_accessor(
-      :booking_type,
-      :location_id,
       :first_name,
       :last_name,
       :email,
@@ -19,8 +17,6 @@ module WelshLanguage
 
     attr_writer :date_of_birth
 
-    validates :booking_type, inclusion: { in: %w(face-to-face phone) }
-    validates :location_id, presence: true, if: :face_to_face?
     validates :first_name, presence: true
     validates :last_name, presence: true
     validates :email, email: true
@@ -37,10 +33,6 @@ module WelshLanguage
       return nil unless /\d{4}-\d{1,2}-\d{1,2}/.match?(@date_of_birth)
 
       Date.parse(@date_of_birth)
-    end
-
-    def face_to_face?
-      booking_type == 'face-to-face'
     end
 
     def payload
