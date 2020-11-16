@@ -4,12 +4,13 @@ require_relative '../../features/pages/welsh_language_booking_completed'
 RSpec.feature 'Welsh language bookings' do
   scenario 'Customer attempts to place an invalid booking request', js: true, vcr: true do
     when_the_customer_views_the_welsh_language_booking_form
-    and_chooses_a_telephone_booking
     when_they_submit_their_booking_request
     then_they_are_told_there_are_errors
   end
 
   scenario 'Customer places a face-to-face booking request successfully', js: true, vcr: true do
+    skip 'temporarily disabled face-to-face bookings due to COVID-19'
+
     when_the_customer_views_the_welsh_language_booking_form
     and_chooses_a_face_to_face_booking
     and_selects_their_preferred_location
@@ -20,7 +21,6 @@ RSpec.feature 'Welsh language bookings' do
 
   scenario 'Customer places a telephone booking request successfully', js: true, vcr: true do
     when_the_customer_views_the_welsh_language_booking_form
-    and_chooses_a_telephone_booking
     and_provides_their_details
     when_they_submit_their_booking_request
     then_the_booking_is_created

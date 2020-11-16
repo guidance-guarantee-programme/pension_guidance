@@ -1,8 +1,6 @@
 RSpec.describe WelshLanguage::BookingRequest do
   let(:attributes) do
     {
-      'booking_type' => 'face-to-face',
-      'location_id' => '1',
       'first_name' => 'Bob',
       'last_name' => 'Smith',
       'email' => 'bob@example.com',
@@ -31,6 +29,8 @@ RSpec.describe WelshLanguage::BookingRequest do
   end
 
   it 'requires a location for face-to-face' do
+    skip 'COVID-19'
+
     subject.location_id = nil
 
     expect(subject).to be_face_to_face
@@ -38,6 +38,8 @@ RSpec.describe WelshLanguage::BookingRequest do
   end
 
   it 'does not require a location for phone bookings' do
+    skip 'COVID-19'
+
     subject.booking_type = 'phone'
     subject.location_id  = nil
 
