@@ -139,7 +139,7 @@ module Employer
     end
 
     def set_feedback
-      @feedback = FeedbackForm.for_tesco
+      @feedback = FeedbackForm.for_employer
     end
   end
 end
