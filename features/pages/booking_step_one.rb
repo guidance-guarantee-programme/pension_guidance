@@ -14,11 +14,11 @@ module Pages
     section :feedback, Sections::Feedback, '.t-feedback'
 
     def choose_date(date)
-      page.click_on(date)
+      page.find("button[value='#{date}']").click
     end
 
     def choose_time(time)
-      page.choose(time)
+      page.find('label', text: time).click
     end
   end
 end

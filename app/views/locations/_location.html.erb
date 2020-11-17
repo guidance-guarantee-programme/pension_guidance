@@ -1,7 +1,35 @@
-<div class="notice notice--extra-spacing">
-  <i class="icon icon-information">
-    <span class="visually-hidden">Info</span>
-  </i>
-  <strong class="small">No appointment availability</strong>
-</div>
-<p>You can also <%= link_to 'book a phone appointment', guide_path('book-phone') %>.</p>
+<% if location.limited_availability? %>
+  <div class="notice notice--extra-spacing">
+    <i class="icon icon-information">
+      <span class="visually-hidden">Info</span>
+    </i>
+    <strong class="small">Limited appointment availability</strong>
+  </div>
+<% end %>
+
+<% if location.online_booking_enabled? %>
+  <% if location.slots_available? %>
+    <% if agent? %>
+      <p><%= link_to 'Book on behalf of customer', agent_booking_path(location.id), class: 'button t-agent-book-online', target: '_blank' %></p>
+    <% else %>
+      <p>
+        <%= link_to 'Book online', booking_request_step_one_location_path(location.id), class: 'button t-book-online' %>
+      </p>
+    <% end %>
+    <p>
+      Or call <strong class="t-phone"><%= location.phone %></strong>.
+    </p>
+  <% else %>
+    <div class="notice notice--extra-spacing">
+      <i class="icon icon-information">
+        <span class="visually-hidden">Info</span>
+      </i>
+      <strong class="small">No appointment availability</strong>
+    </div>
+    <p>You can also <%= link_to 'book a phone appointment', guide_path('book-phone') %>.</p>
+  <% end %>
+<% else %>
+  <p>
+    Call <strong class="t-phone"><%= location.phone %></strong>.
+  </p>
+<% end %>

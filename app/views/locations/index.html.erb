@@ -2,7 +2,21 @@
 
 <h1>Pension Wise appointment locations</h1>
 
-<div class="application-notice help-notice">
-  <p>There are no face-to-face appointments available due to the ongoing response to coronavirus.</p>
-  <p>If you are unable to find a suitable <%= link_to 'phone appointment', guide_path('book-phone') %> or can no longer attend, you can <a href="/en/explore-your-options">explore your options</a>.</p>
+<div class="l-grid-row">
+  <div class="l-column-third">
+    <span class="locations-a-z-total">
+      <div>Appointment locations</div>
+      <span class="locations-a-z-total__count"><%= @locations_total %></span>
+    </span>
+  </div>
+  <div class="l-column-two-thirds">
+    <% @locations_by_letter.each do |letter, locations| %>
+      <h2 class="locations-a-z-letter"><%= letter %></h2>
+      <ol class="locations-a-z-letter-list">
+        <% locations.each do |location| %>
+        <li class="locations-a-z-letter-list__location"><%= link_to location.name, location_path(location.id) %></li>
+        <% end %>
+      </ol>
+    <% end %>
+  </div>
 </div>

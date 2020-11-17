@@ -1,4 +1,4 @@
-@vcr @wip
+@vcr
 Feature: View face-to-face appointment location details
   As a customer who'd prefer a face-to-face appointment
   I want full details of a specific appointment location
