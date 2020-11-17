@@ -12,8 +12,6 @@ RSpec.feature 'Identifying as a TP agent' do
   end
 
   scenario 'Viewing locations as an agent' do
-    skip 'this is temporarily disabled due to COVID-19'
-
     given_the_user_is_an_agent do
       and_locations_exist_for_online_booking
       and_the_locations_are_available
