@@ -1,6 +1,6 @@
 module Bsl
   class BslBookingRequestsController < ApplicationController
-    layout 'full_width'
+    include Embeddable
 
     def new
       @booking_request = BookingRequest.new(booking_request_params)
