@@ -1,8 +1,9 @@
 class GuidesController < ApplicationController
-  layout 'guides'
+  layout :guide_layout
 
   before_action :find_guide
   before_action :set_breadcrumbs
+  after_action  :set_frame_options, if: -> { @guide.embeddable? }
 
   UNTRANSLATED_GUIDE_SLUGS = %w(
     book-face-to-face
@@ -14,6 +15,18 @@ class GuidesController < ApplicationController
   end
 
   private
+
+  def guide_layout
+    if @guide.embeddable?
+      'full_width_widget'
+    else
+      'guides'
+    end
+  end
+
+  def set_frame_options
+    response.headers.except! 'X-Frame-Options'
+  end
 
   def id
     params[:id]

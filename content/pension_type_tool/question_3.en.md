@@ -6,6 +6,7 @@ answers:
   dont_know: /en/pension-type-tool/question-4
 tags:
   - appointments
+  - embeddable
 ---
 
 # Find out your pension type
