@@ -1,6 +1,6 @@
 # rubocop:disable Metrics/ClassLength
 class PensionSummariesController < ApplicationController
-  layout 'guides'
+  include Embeddable
 
   before_action :set_pilot_cookie, if: :pilot_enabled?, only: %i(start)
   before_action :create_summary, only: %i(create)
