@@ -41,6 +41,10 @@ class Guide
     tagged_with?('call-to-action')
   end
 
+  def embeddable?
+    tagged_with?('embeddable')
+  end
+
   private
 
   def tagged_with?(tag)

@@ -7,6 +7,7 @@ answers:
   dont_know: /cy/pension-type-tool/might-defined-contribution
 tags:
   - appointments
+  - embeddable
 ---
 
 # Dod o hyd i’ch math o bensiwn

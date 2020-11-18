@@ -2,6 +2,7 @@
 description: Efallai bod gennych bensiwn cyfraniadau wedi’u diffinio
 tags:
   - appointments
+  - embeddable
 ---
 
 # Dod o hyd i’ch math o bensiwn

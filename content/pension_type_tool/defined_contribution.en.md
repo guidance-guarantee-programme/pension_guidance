@@ -2,6 +2,7 @@
 description: You have a defined contribution pension
 tags:
   - appointments
+  - embeddable
 ---
 
 # Find out your pension type

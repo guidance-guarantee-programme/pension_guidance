@@ -2,6 +2,7 @@
 description: In most cases you’ll have a defined benefit pension
 tags:
   - appointments
+  - embeddable
 ---
 
 # Find out your pension type
