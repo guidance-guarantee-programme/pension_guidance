@@ -21,18 +21,23 @@
 
 <% content_for :content do %>
   <main role="main" id="content" tabindex="-1">
-    <article role="article" class="text">
-      <% if flash[:alert] %>
-        <div class="error-summary alert-alert" aria-labelledby="error-summary-heading" role="alert" data-error-summary>
-          <h2 class="heading-medium error-summary-heading" id="error-summary-heading"><%= t('pension_type_tool.error_title') %></h2>
-          <ul>
-            <li><%= link_to t('pension_type_tool.error'), '#question' %></li>
-          </ul>
-        </div>
-      <% end %>
-    </article>
+    <div class="l-grid-row">
+      <div class="l-column-two-thirds">
+        <% if flash[:alert] %>
+          <div class="error-summary alert-alert" aria-labelledby="error-summary-heading" role="alert" data-error-summary>
+            <h2 class="heading-medium error-summary-heading" id="error-summary-heading"><%= t('pension_type_tool.error_title') %></h2>
+            <ul>
+              <li><%= link_to t('pension_type_tool.error'), '#question' %></li>
+            </ul>
+          </div>
+        <% end %>
 
-    <%= yield %>
+        <%= yield %>
+      </div>
+      <div class="l-column-third l-column-third--sidebar">
+        <%= yield :sidebar %>
+      </div>
+    </div>
   </main>
 <% end %>
 
