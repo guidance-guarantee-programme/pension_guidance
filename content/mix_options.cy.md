@@ -3,6 +3,7 @@ label: Cymysgu eich opsiynau
 description: Gallwch gymysgu eich opsiynau pensiwn i fod yn addas i’ch amgylchiadau ar amseroedd gwahanol yn ystod ymddeoliad.
 tags:
   - option
+  - embeddable
 ---
 
 # Cymysgu eich opsiynau pensiwn

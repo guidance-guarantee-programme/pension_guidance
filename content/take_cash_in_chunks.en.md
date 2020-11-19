@@ -3,6 +3,7 @@ label: Take cash in chunks
 description: You can take smaller chunks of cash from your pension pot until it runs out. Learn more about this option and contact Pension Wise today.
 tags:
   - option
+  - embeddable
 ---
 
 # Can I take small cash sums from my pension pot?

@@ -19,6 +19,7 @@
       </aside>
 
       <% content_for :after_script do %>
+        <%= javascript_include_tag 'disable-button' %>
         <%= javascript_include_tag 'bootstrap/js/affix' %>
         <%= javascript_include_tag 'bootstrap/js/scrollspy' %>
 
