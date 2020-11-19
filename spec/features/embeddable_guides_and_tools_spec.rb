@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-RSpec.feature 'Pension Type Tool' do
-  scenario 'Pages are embeddable' do
+RSpec.feature 'Embeddable guides and tools' do
+  scenario 'Pages are embeddable when tagged as such' do
     @guides = GuideRepository.new.all.select(&:embeddable?)
 
     @guides.each do |guide|

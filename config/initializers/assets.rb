@@ -30,6 +30,7 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   bootstrap/js/scrollspy.js
                                                   handlebars/handlebars.js
                                                   slot-picker.js
+                                                  disable-button.js
                                                   accessible.media.player/core/css/player-core.css
                                                   accessible.media.player/custom/css/player-theme.css
                                                   video-player.js

@@ -3,6 +3,7 @@ label: Gadael y cyfan o’ch cronfa heb ei gyffwrdd
 description: Gallwch chi benderfynu pryd i gymryd arian allan o’ch cronfa bensiwn.
 tags:
   - option
+  - embeddable
 ---
 
 # Gadael y cyfan o’ch cronfa heb ei gyffwrdd

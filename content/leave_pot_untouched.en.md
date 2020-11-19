@@ -3,6 +3,7 @@ label: Leave your pot untouched
 description: You can decide when you take money from your pension pot.
 tags:
   - option
+  - embeddable
 ---
 
 # Leave your whole pension pot untouched

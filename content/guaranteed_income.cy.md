@@ -3,6 +3,7 @@ label: Cael incwm gwarantedig (blwydd-dal)
 description: Darganfyddwch sut i ddefnyddio'ch cronfa bensiwn i brynu incwm gwarantedig. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - option
+  - embeddable
 ---
 
 # Cael incwm gwarantedig (blwydd-dal)
