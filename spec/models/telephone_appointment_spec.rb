@@ -123,8 +123,18 @@ RSpec.describe TelephoneAppointment, type: :model do
       expect(subject).to_not be_valid
     end
 
+    it 'validates first name does not contain digits' do
+      subject.first_name = '07731 292 999'
+      expect(subject).to_not be_valid
+    end
+
     it 'validates presence of last_name' do
       subject.last_name = nil
+      expect(subject).to_not be_valid
+    end
+
+    it 'validates last name does not contain digits' do
+      subject.last_name = 'Ben 303030'
       expect(subject).to_not be_valid
     end
 
