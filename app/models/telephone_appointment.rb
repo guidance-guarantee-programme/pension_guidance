@@ -25,8 +25,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
   )
 
   validates :start_at, presence: true
-  validates :first_name, presence: true
-  validates :last_name, presence: true
+  validates :first_name, presence: true, format: { without: /\d+/ }
+  validates :last_name, presence: true, format: { without: /\d+/ }
   validates :email, email: true
   validate  :validate_phone
   validates :memorable_word, presence: true

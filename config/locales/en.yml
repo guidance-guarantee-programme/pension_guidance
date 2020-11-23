@@ -191,8 +191,10 @@ en:
           attributes:
             first_name:
               blank: enter a name
+              invalid: must not contain numerical digits
             last_name:
               blank: enter a name
+              invalid: must not contain numerical digits
             email:
               invalid_email: enter a valid email address
             phone:
