@@ -1,6 +1,6 @@
 # rubocop:disable Rails/OutputSafety
 class AppointmentSummariesController < ApplicationController
-  layout 'guides', only: [:new, :create]
+  include Embeddable
 
   helper_method :appointment_type
 
