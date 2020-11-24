@@ -1,5 +1,5 @@
 class ContactController < ApplicationController
-  layout 'guides'
+  include Embeddable
 
   before_action :new_complaint
 
