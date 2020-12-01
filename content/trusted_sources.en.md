@@ -63,7 +63,6 @@ Pension Wise consider these organisations to be trusted sources of additional in
         <li>Coronavirus (COVID-19) <a href="https://www.moneyadviceservice.org.uk/en/tools/money-navigator-tool">financial help</a></li>
         <li>Annuity Comparison Tool <a href="https://comparison.moneyadviceservice.org.uk">comparison.moneyadviceservice.org.uk</a></li>
         <li>Retirement adviser directory <a href="https://directory.moneyadviceservice.org.uk">directory.moneyadviceservice.org.uk</a></li>
-        <li>Understand and compare Income Drawdown <a href="https://www.moneyadviceservice.org.uk/en/tools/pension-drawdown-calculator/">www.moneyadviceservice.org.uk/en/tools/pension-drawdown-calculator</a></li>
         <li>Debt and borrowing</li>
         <li>Budgeting and managing money</li>
         <li>Saving and investing</li>
