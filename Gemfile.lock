@@ -11,9 +11,9 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: ecfd395c8b8f629f749b4bd434be9cc75815dfea
+  revision: 2b29bf26e3cffe2d93042c0291b35eb40e6b0e42
   specs:
-    output-templates (4.23.0)
+    output-templates (4.24.0)
       actionview
       sass
 
@@ -148,7 +148,7 @@ GEM
     email_validation (1.2.1)
       localized_each_validator (>= 1.0.1)
     equalizer (0.0.11)
-    erubi (1.9.0)
+    erubi (1.10.0)
     excon (0.71.1)
     execjs (2.7.0)
     factory_bot (4.10.0)
@@ -217,7 +217,7 @@ GEM
       activesupport (>= 4)
       railties (>= 4)
       request_store (~> 1.0)
-    loofah (2.7.0)
+    loofah (2.8.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -410,7 +410,7 @@ GEM
     tilt (2.0.10)
     timecop (0.8.1)
     ttfunk (1.5.0)
-    tzinfo (1.2.7)
+    tzinfo (1.2.8)
       thread_safe (~> 0.1)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
