@@ -29,7 +29,6 @@ RSpec.feature 'Welsh language bookings' do
   def when_the_customer_views_the_welsh_language_booking_form
     @page = Pages::WelshLanguageBookingRequest.new
     @page.load
-    @page.accept_cookies!
 
     expect(@page).to be_displayed
   end
