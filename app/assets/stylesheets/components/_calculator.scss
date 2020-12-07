@@ -3,31 +3,10 @@
 }
 
 .calculator--in-article {
-  border-left: 10px solid $color-black;
   padding-left: 1.5em;
 
   h2 {
     margin-top: 1em;
-  }
-
-  &.calculator--leave-pot-untouched {
-    border-left-color: $color-option-leave-pot-untouched;
-  }
-
-  &.calculator--guaranteed-income {
-    border-left-color: $color-option-guaranteed-income;
-  }
-
-  &.calculator--adjustable-income {
-    border-left-color: $color-option-adjustable-income;
-  }
-
-  &.calculator--take-cash-in-chunks {
-    border-left-color: $color-option-take-cash;
-  }
-
-  &.calculator--take-whole-pot {
-    border-left-color: $color-option-take-whole-pot;
   }
 
   &.calculator--mix-options {

@@ -44,11 +44,6 @@ RSpec.feature 'Call to action visible in specific guides' do
       /en/protection
       /en/pension-recycling
       /en/pension-complaints
-      /en/leave-pot-untouched
-      /en/guaranteed-income
-      /en/adjustable-income
-      /en/take-cash-in-chunks
-      /en/take-whole-pot
       /en/mix-options
     ).each do |path|
       visit path

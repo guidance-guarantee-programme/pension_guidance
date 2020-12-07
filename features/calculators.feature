@@ -6,7 +6,6 @@ Feature: Calculators
   Scenario Outline: Load a guide
     When I visit the <Slug> guide
     Then the calculator is displayed
-    And the booking call to action is displayed
 
     Examples:
       | Slug                |
