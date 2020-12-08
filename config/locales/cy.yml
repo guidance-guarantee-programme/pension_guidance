@@ -67,7 +67,7 @@ cy:
       - title: Cysylltu
         url: '/cy/contact'
       - title: Hygyrchedd
-        url: 'http://gov.uk/help/accessibility/'
+        url: '/cy/accessibility-statement'
         options:
           rel: external
           lang: en

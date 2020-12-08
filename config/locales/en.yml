@@ -64,8 +64,8 @@ en:
         url: '/en/privacy'
       - title: Contact
         url: '/en/contact'
-      - title: Accessibility
-        url: 'http://gov.uk/help/accessibility/'
+      - title: Accessibility statement
+        url: '/en/accessibility-statement'
         options:
           rel: external
       - title: Customer promise
