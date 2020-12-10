@@ -12,7 +12,7 @@ namespace :export do
              mix_your_options, how_my_pension_affects_my_benefits, getting_help_with_debt,
              taking_my_pension_if_im_ill, transferring_my_pension_to_another_provider
              scams, how_my_pension_is_taxed, final, gender, age, consent_given,
-             country, created_at, updated_at'
+             country, created_at, updated_at, generated_at'
            ).order(:created_at).copy_to_string
 
     client = Azure::Storage::Blob::BlobService.create_from_connection_string(
