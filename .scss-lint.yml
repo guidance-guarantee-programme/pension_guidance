@@ -186,3 +186,8 @@ linters:
 
   Compass::*:
     enabled: false
+
+  ImportantRule:
+    enabled: true
+    exclude:
+      - app/assets/stylesheets/money-helper-overrides.scss
