@@ -22,8 +22,16 @@ $primary-blue: #0f19a0;
 $secondary: #000b3b;
 $magenta: #c82a87;
 $magenta-dark: #ae0060;
+$outline: #f0f05a;
+$active-background: #9c0052;
+$disabled-background: #e5e5e5;
+$hover-background: #ae0060;
 $form-border: #60637e;
-$form-border-focus: #8200d1;
+$focus-colour: #8200d1;
+$link-colour: $magenta;
+$link-visited-colour: #792b9e;
+$link-hover-colour: #ae0060;
+$colour-white: #fff;
 
 html,
 body,
@@ -43,6 +51,7 @@ label,
 .error-message,
 a,
 legend,
+fieldset
 li {
   font-family: "roobert", Arial, sans-serif !important;
 }
@@ -50,7 +59,7 @@ li {
 h1,
 h2,
 h3 {
-  color: $primary-blue;
+  color: $primary-blue !important;
 }
 
 p {
@@ -60,18 +69,50 @@ p {
 }
 
 a {
-  color: $magenta;
+  color: $magenta !important;
 }
 
 a:hover {
-  color: $magenta-dark;
+  color: $magenta-dark !important;
+  text-decoration: none !important;
+}
+
+a:focus {
+  background-color: $outline;
+  outline: 3px solid $outline;
 }
 
 .button {
   background-color: $magenta !important;
-  box-shadow: 0 3px 0 rgba(0, 11, 59, .25);
-  border-radius: 4px;
-  font-weight: 600;
+  box-shadow: 0 3px 0 rgba(0, 11, 59, .25) !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+}
+
+.button:active {
+  background: $active-background !important;
+  border: 3px solid $outline !important;
+  box-shadow: 0 1px 0 $colour-white, inset 0 5px 2px rgba(0, 11, 59, .25) !important;
+}
+
+.button:focus {
+  background: $outline !important;
+  border: 3px solid $focus-colour !important;
+  color: $secondary !important;
+}
+
+.button:hover {
+  background: $hover-background !important;
+  box-shadow: 0 1px 0 rgba(0, 11, 59, .25) !important;
+  border-radius: 4px !important;
+}
+
+.button[disabled="disabled"] {
+  background: $disabled-background !important;
+}
+
+.button[disabled="disabled"]:focus {
+  outline: none !important;
 }
 
 .form-control {
@@ -81,7 +122,17 @@ a:hover {
 }
 
 .form-control:focus {
-  border: 2px solid $form-border-focus !important;
+  border: 2px solid $focus-colour !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid $outline !important;
+  outline-offset: 0 !important;
   box-sizing: border-box !important;
   border-radius: 4px !important;
 }
