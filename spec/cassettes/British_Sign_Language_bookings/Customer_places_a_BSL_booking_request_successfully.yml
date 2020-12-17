@@ -7,10 +7,12 @@ http_interactions:
       encoding: UTF-8
       string: '{"first_name":"Ben","last_name":"Smith","email":"ben@example.com","phone":"07715
         930 455","memorable_word":"spoon","date_of_birth":"1960-01-01","defined_contribution_pot_confirmed":"yes","accessibility_needs":"1","additional_info":"Before
-        1PM.","where_you_heard":"7","gdpr_consent":"yes"}'
+        1PM.","where_you_heard":"7","gdpr_consent":"yes","support":"yes","support_name":"Dave
+        David","support_relationship":"Carer","support_email":"dave@example.com","support_phone":"07715
+        930 455"}'
     headers:
       User-Agent:
-      - PensionWise/1.0 (birdperson; benlovell; 65813) ruby/2.6.5 (114; x86_64-darwin19)
+      - PensionWise/1.0 (birdperson; benlovell; 59986) ruby/2.6.5 (114; x86_64-darwin19)
       Accept:
       - application/json
       Content-Type:
@@ -39,14 +41,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 51adf95d-eea7-467f-8351-a87c83c6b72f
+      - 713887e0-f864-4804-b533-57278f128065
       X-Runtime:
-      - '0.169619'
+      - '0.284847'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: ''
     http_version:
-  recorded_at: Wed, 23 Sep 2020 12:00:25 GMT
+  recorded_at: Thu, 17 Dec 2020 10:27:49 GMT
 recorded_with: VCR 3.0.3

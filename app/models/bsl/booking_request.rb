@@ -12,7 +12,12 @@ module Bsl
       :accessibility_needs,
       :additional_info,
       :where_you_heard,
-      :gdpr_consent
+      :gdpr_consent,
+      :supported,
+      :support_name,
+      :support_relationship,
+      :support_phone,
+      :support_email
     )
 
     attr_writer :date_of_birth
@@ -29,6 +34,12 @@ module Bsl
     validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
     validate :validate_age_eligibility, if: :date_of_birth
 
+    validates :supported, inclusion: { in: %w(yes no) }
+    validates :support_name, presence: true, if: :supported?
+    validates :support_relationship, presence: true, if: :supported?
+    validates :support_email, email: true, if: :supported?
+    validates :support_phone, presence: true, format: /\A([\d+\-\s\+()]+)\z/, if: :supported?
+
     def date_of_birth
       return nil unless /\d{4}-\d{1,2}-\d{1,2}/.match?(@date_of_birth)
 
@@ -40,6 +51,10 @@ module Bsl
     end
 
     private
+
+    def supported?
+      supported == 'yes'
+    end
 
     def validate_age_eligibility
       errors.add(:date_of_birth) if age < 50
