@@ -168,6 +168,17 @@ en:
               inclusion: select an option
             additional_info:
               blank: describe the accessibility adjustments you require
+            support:
+              inclusion: select an option
+            support_name:
+              blank: enter a name
+            support_relationship:
+              blank: enter their relationship to you
+            support_email:
+              invalid_email: enter a valid email address
+            support_phone:
+              blank: enter a phone number
+              invalid: enter a valid phone number
         employer/booking:
           attributes:
             first_name:
@@ -214,6 +225,12 @@ en:
               blank: describe the accessibility adjustments you require
 
     attributes:
+      bsl/booking_request:
+        supported: Will someone be joining you for support
+        support_name: Their name
+        support_relationship: Their relationship to you
+        support_email: Their email
+        support_phone: Their phone number
       employer/booking:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions

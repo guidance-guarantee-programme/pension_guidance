@@ -189,6 +189,77 @@
         </div>
       </div>
 
+      <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:supported) %>" id="supported" tabindex="-1" data-radio-toggle>
+        <fieldset class="inline">
+          <legend class="form-label-bold">Will someone be joining you for support?</legend>
+
+          <% if @booking_request.errors.include?(:supported) %>
+            <span class="error-message"><%= @booking_request.errors[:supported].to_sentence.capitalize %></span>
+          <% end %>
+
+          <div class="multiple-choice" data-target="support-fields">
+            <%= f.radio_button :supported, 'yes', class: 't-supported-yes', data: { target: 'support-fields' } %>
+            <%= f.label :supported, value: 'yes' do %>
+              Yes
+            <% end %>
+          </div>
+
+          <div class="multiple-choice">
+            <%= f.radio_button :supported, 'no', class: 't-supported-no' %>
+            <%= f.label :supported, value: 'no' do %>
+              No
+            <% end %>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <div id="support-fields" class="js-hidden application-notice info-notice">
+        <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:support_name) %>">
+          <%= f.label :support_name, class: 'form-label-bold' %>
+          <% if @booking_request.errors.include?(:support_name) %>
+            <span class="error-message"><%= @booking_request.errors[:support_name].to_sentence.capitalize %></span>
+          <% end %>
+          <%= f.text_field :support_name, class: "t-support-name form-control #{'form-control-error' if @booking_request.errors.include?(:support_name)}" %>
+        </div>
+
+        <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:support_relationship) %>">
+          <%= f.label :support_relationship, class: 'form-label-bold' %>
+          <% if @booking_request.errors.include?(:support_relationship) %>
+            <span class="error-message"><%= @booking_request.errors[:support_relationship].to_sentence.capitalize %></span>
+          <% end %>
+          <%= f.text_field :support_relationship, class: "t-support-relationship form-control #{'form-control-error' if @booking_request.errors.include?(:support_relationship)}" %>
+        </div>
+
+        <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:support_email) %>">
+          <%= f.label :support_email, class: 'form-label-bold' do %>
+            Their email
+            <span class="form-hint">We may need to email them if we’re unable to reach you</span>
+          <% end %>
+
+          <% if @booking_request.errors.include?(:support_email) %>
+            <span class="error-message"><%= @booking_request.errors[:support_email].to_sentence.capitalize %></span>
+          <% end %>
+
+          <div class="email-outer">
+            <%= f.email_field :support_email, class: "t-support-email form-control #{'form-control-error' if @booking_request.errors.include?(:support_email)}" %>
+          </div>
+        </div>
+
+        <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:support_phone) %>">
+          <%= f.label :support_phone, class: 'form-label-bold' do %>
+            Their phone number
+            <span class="form-hint">We may need to phone them if we’re unable to reach you</span>
+          <% end %>
+
+          <% if @booking_request.errors.include?(:support_phone) %>
+            <span class="error-message"><%= @booking_request.errors[:support_phone].to_sentence.capitalize %></span>
+          <% end %>
+
+          <%= f.text_field :support_phone, class: "t-support-phone form-control #{'form-control-error' if @booking_request.errors.include?(:support_phone)}" %>
+        </div>
+      </div>
+
       <div class="form-group">
         <%= f.label :additional_info, class: 'form-label-bold' do %>
           Additional information

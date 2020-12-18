@@ -15,6 +15,14 @@ module Pages
     element :additional_info, '.t-additional-info'
     element :where_you_heard, '.t-where-you-heard'
     element :gdpr_consent_yes, '.t-gdpr-consent-yes', visible: false
+
+    element :supported_yes, '.t-supported-yes', visible: false
+    element :supported_no, '.t-supported-no', visible: false
+    element :support_name, '.t-support-name'
+    element :support_relationship, '.t-support-relationship'
+    element :support_email, '.t-support-email'
+    element :support_phone, '.t-support-phone'
+
     element :submit, '.t-submit'
 
     elements :errors, '.form-group-error'

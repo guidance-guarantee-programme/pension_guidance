@@ -16,7 +16,12 @@ module Bsl
         accessibility_needs: booking_request.accessibility_needs,
         additional_info: booking_request.additional_info,
         where_you_heard: booking_request.where_you_heard,
-        gdpr_consent: booking_request.gdpr_consent.to_s
+        gdpr_consent: booking_request.gdpr_consent.to_s,
+        support: booking_request.supported,
+        support_name: booking_request.support_name,
+        support_relationship: booking_request.support_relationship,
+        support_email: booking_request.support_email,
+        support_phone: booking_request.support_phone
       }
     end
 
