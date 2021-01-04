@@ -18,10 +18,6 @@
       </div>
     <% end %>
 
-    <div class="info-notice application-notice">
-      <p>Nodwch y bydd unrhyw geisiadau a gyflwynir ar ôl 22 Rhagfyr 2020 yn cael eu prosesu o 4 Ionawr 2021 ar y cynharaf.</p>
-    </div>
-
     <%= form_for @booking_request, url: booking_requests_path, as: :booking_request do |f| %>
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:first_name) %>">
         <%= f.label :first_name, 'Enw cyntaf', class: 'form-label-bold' %>
