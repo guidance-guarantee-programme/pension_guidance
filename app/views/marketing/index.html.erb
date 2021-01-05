@@ -6,7 +6,7 @@
   </div>
   <%= render 'components/language_banner' unless default_locale? || content_lang_matches_locale? %>
   <div class="l-marketing l-campaign-<%= current_campaign %>">
-    <main role="main" id="content" tabindex="-1">
+    <main id="content" tabindex="-1">
       <% content_for(:page_title, t('home.show.title')) %>
       <% content_for(:meta_description, 'A free and impartial government service that helps you understand ' +
         'the options for your pension pot.') %>

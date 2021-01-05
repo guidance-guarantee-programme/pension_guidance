@@ -15,7 +15,7 @@
   </div>
   <%= render 'components/language_banner' unless default_locale? || content_lang_matches_locale? %>
   <div class="l-home">
-    <main role="main" id="content" tabindex="-1">
+    <main id="content" tabindex="-1">
       <%= yield %>
     </main>
   </div>
