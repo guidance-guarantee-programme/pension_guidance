@@ -68,7 +68,7 @@ RSpec.describe Navigation do
       guides = topic.items.flatten
 
       expect(topic.id).to eq('more')
-      expect(topic.label).to eq('More…')
+      expect(topic.label).to eq('Further guidance…')
 
       expect(guides.first.id).to eq(norf_guide.id)
       expect(guides.first.label).to eq(norf_guide.metadata.label)

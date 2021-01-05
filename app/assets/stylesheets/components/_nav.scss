@@ -62,8 +62,6 @@
 .nav__item--single {
   @include media($navigation-full-width) {
     position: relative;
-    top: -12px;
-    padding-top: 25px;
     padding-bottom: 25px;
   }
 }
