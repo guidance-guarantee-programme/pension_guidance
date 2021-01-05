@@ -33,7 +33,7 @@ Ffôn: 0800 917 4487<br/>
 E-bost: [enquiries@pensions-ombudsman.org.uk](mailto:enquiries@pensions-ombudsman.org.uk)<br/>
 Gwefan: [www.pensions-ombudsman.org.uk](https://www.pensions-ombudsman.org.uk)
 
-Gallwch hefyd [gyflwyno ffurflen gwyno ar-lein](https://www.pensions-ombudsman.org.uk/our-service/make-a-complaint)
+Gallwch hefyd [gyflwyno ffurflen gwyno ar-lein](https://www.pensions-ombudsman.org.uk/making-complaint)
 
 Os oes gennych geisiadau cyffredinol am wybodaeth neu arweiniad ynghylch eich trefniadau pensiwn, cysylltwch â:
 

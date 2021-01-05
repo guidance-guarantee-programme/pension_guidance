@@ -35,7 +35,7 @@ Tel: 0800 917 4487<br/>
 Email: [enquiries@pensions-ombudsman.org.uk](mailto:enquiries@pensions-ombudsman.org.uk)<br/>
 Website: [www.pensions-ombudsman.org.uk](https://www.pensions-ombudsman.org.uk)
 
-You can also [submit a complaint form online](https://www.pensions-ombudsman.org.uk/our-service/make-a-complaint)
+You can also [submit a complaint form online](https://www.pensions-ombudsman.org.uk/making-complaint)
 
 If you have general requests for information or guidance concerning your pension arrangements contact:
 

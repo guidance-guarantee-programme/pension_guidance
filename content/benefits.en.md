@@ -45,7 +45,5 @@ Read more about [pensions and benefit entitlement](https://www.gov.uk/government
 
 Use a free and [independent benefits calculator](https://www.gov.uk/benefits-calculators) to see what benefits you might be eligible for.
 
-You can go to your local [Service Information Point](http://pensions-service.direct.gov.uk/en/information-points/home.asp) for help and advice about many benefits. You need to book for face-to-face advice.
-
 You can also get help from the [Money Advice Service](https://www.moneyadviceservice.org.uk/en/articles/where-to-get-help-and-advice-about-benefits).
 

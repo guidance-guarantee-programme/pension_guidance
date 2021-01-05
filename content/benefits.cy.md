@@ -45,6 +45,4 @@ Darllenwch fwy am [hawl i bensiynau a budd-daliadau](https://www.gov.uk/governme
 
 Defnyddiwch [gyfrifiannell budd-daliadau annibynnol](https://www.gov.uk/benefits-calculators) i weld pa fudd-daliadau y gallech fod â hawl iddynt.
 
-Gallwch fynd i’ch [Pwynt Gwybodaeth am Wasanaeth](http://pensions-service.direct.gov.uk/en/information-points/home.asp) lleol am help a chyngor am nifer o fudd-daliadau. Mae angen i chi wneud trefniadau am gyngor wyneb yn wyneb.
-
 Gallwch hefyd gael help gan a’r [Gwasanaeth Cynghori Ariannol](https://www.moneyadviceservice.org.uk/cy/articles/ble-i-gael-cymorth-a-chyngor-am-fudd-daliadau).
