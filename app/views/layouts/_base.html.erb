@@ -58,7 +58,7 @@
     <%= render 'components/language_toggle' %>
   <% end %>
 
-  <div class="maps-header">
+  <div class="maps-header" role="region" aria-label="<%= t('.provided_by') %> <%= t('.logo_text') %>">
     <div class="maps-header-wrapper">
       <div class="maps-header-meta">
         <span class="maps-text"><%= t('.provided_by') %></span>
@@ -92,7 +92,7 @@
 <% end %>
 
 <% content_for :body_end do %>
-  <div class="maps-footer">
+  <div class="maps-footer" role="region" aria-label="<%= t('.provided_by') %> <%= t('.logo_text') %>">
     <div class="maps-footer-wrapper">
       <div class="maps-footer-meta">
         <span class="maps-text"><%= t('.provided_by') %></span>
