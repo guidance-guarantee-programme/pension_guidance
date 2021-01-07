@@ -139,7 +139,7 @@
 
   <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @booking.errors.include?(:dc_pot_confirmed) %>" id="booking_dc_pot_confirmed" tabindex="-1">
     <fieldset class="inline" aria-required="true">
-      <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
+      <legend>I have a defined contribution pension pot (<strong>not</strong> a final salary or career average pension)</legend>
       <span class="form-hint">Also select ‘Yes’ if you have both</span>
       <% if @booking.errors.include?(:dc_pot_confirmed) %>
         <span class="error-message" id="dc_pot_confirmed_error"><span class="visually-hidden">Error: </span><%= @booking.errors[:dc_pot_confirmed].to_sentence.capitalize %></span>
