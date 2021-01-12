@@ -5,7 +5,7 @@
     <%= render partial: 'smarter_signposted_banner' if smarter_signposted? %>
 
     <% if @telephone_appointment.errors.any? || (params[:continue] && !slot_selected?) %>
-      <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
+      <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" aria-atomic="true" tabindex="-1" data-error-summary>
         <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
           Unable to submit the form
         </h2>
