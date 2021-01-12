@@ -308,8 +308,6 @@ GEM
       thor (>= 0.19.0, < 2.0)
     rainbow (2.2.1)
     rake (13.0.1)
-    recaptcha (5.5.0)
-      json
     redis (3.3.5)
     redis-actionpack (5.0.1)
       actionpack (>= 4.0, < 6)
@@ -483,7 +481,6 @@ DEPENDENCIES
   rails (~> 5.2)!
   rails-controller-testing!
   rails_12factor!
-  recaptcha!
   redis!
   redis-rails!
   rgeo!

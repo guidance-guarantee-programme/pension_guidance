@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.feature 'Customer complaints' do
-  scenario 'a complaint can be completed via the contact page', js: true do
+  scenario 'a complaint can be completed via the contact page' do
     visit '/contact'
 
     click_on 'Accept all cookies'

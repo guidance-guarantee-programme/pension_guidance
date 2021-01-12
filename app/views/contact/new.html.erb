@@ -69,10 +69,6 @@
 
     <%= t('.complaints.form.privacy.html') %>
 
-    <div class="form-group <%= 'form-group-error' if f.object.errors.include?(:robot) %>" id="feedback_robot">
-      <%= recaptcha_tags %>
-    </div>
-
     <div class="form-group">
       <%= f.submit 'Send complaint', class: 'button' %>
     </div>
