@@ -1,4 +1,4 @@
-/*New colours based on the design*/
+// New colours based on the design
 $color-blue-primary: #0f19a0;
 $color-magenta-primary: #c82a87;
 $color-magenta-light-primary: #db7bb4;
@@ -11,7 +11,7 @@ $color-teal-dark-secondary: #00788f;
 $color-dark-blue-secondary: #000b3b;
 $color-grey-secondary: #60637e;
 
-$color-white-supporting: #ffffff;
+$color-white-supporting: #fff;
 $color-grey-blue-supporting: #9da1ca;
 $color-grey: #e5e5e5;
 $color-light-grey-supporting: #f3f1f3;
@@ -20,7 +20,8 @@ $color-white-smoke-supporting: #eeebee;
 
 $color-violet-primary: #8200d1;
 $color-violet-secondary: #8e2b9e;
-$color-violet-supporting: linear-gradient(0deg, #8800d1, #8800d1), #ffffff;
+$color-violet-gradient: #8800d1;
+$color-violet-supporting: linear-gradient(0deg, $color-violet-gradient, $color-violet-gradient), $color-white-supporting;
 
 //Risk colours used in some tools
 $error-red: #d00000;
@@ -38,7 +39,7 @@ $color-text: $color-dark-blue-secondary;
 $color-support-active: $color-magenta-active-dark-primary;
 $color-hover-over: $color-magenta-dark-primary;
 
-/*Media queries variables*/
+// Media queries variables
 
 $mq-xs: 0 !default;
 $mq-xs-max: (479px) !default;

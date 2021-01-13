@@ -1,4 +1,4 @@
-@import "money-helper-variables.scss";
+@import "money-helper-variables";
 
 @font-face {
   font-family: "roobert";
@@ -18,6 +18,129 @@
     font-url("Roobert-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+
+.calculator {
+  // Buttons
+  h1,
+  h2,
+  h3 {
+    color: $color-blue-primary;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 23px;
+    color: $color-dark-blue-secondary;
+  }
+
+  // links
+  a {
+    &:active {
+      color: $color-magenta-primary;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $color-magenta-dark-primary;
+    }
+
+    &:focus {
+      outline: none;
+      color: $color-dark-blue-secondary;
+      background-color: $color-yellow-secondary;
+      border-bottom: 4px solid $color-violet-primary;
+    }
+
+    &:target {
+      color: $color-violet-secondary;
+    }
+  }
+
+  // buttons
+  .button {
+    box-shadow: 0 3px 0 rgba(0, 11, 59, .25);
+    background: $color-white-supporting;
+    color: $color-magenta-primary;
+    border: 1px solid $color-magenta-primary;
+    border-radius: 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+    height: 40px;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 600;
+
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $color-magenta-dark-primary;
+      background: $color-light-grey-supporting;
+      border: 1px solid $color-magenta-dark-primary;
+      box-shadow: 0 1px 0 rgba(0, 11, 59, .25);
+    }
+
+    &:focus,
+    &:active,
+    &:active:focus {
+      padding: 6px 10px;
+      border: 3px solid $color-violet-primary;
+      color: $color-dark-blue-secondary;
+      outline: none;
+    }
+
+    &:focus {
+      background: $color-yellow-secondary;
+      box-shadow: 0 1px 0 rgba(0, 11, 59, .25);
+    }
+
+    &:active,
+    &:active:focus {
+      background: $color-light-grey-supporting;
+      box-shadow: 0 1px 0 $color-white-supporting,
+        inset 0 5px 2px rgba(0, 11, 59, .25);
+    }
+
+    &.button--primary {
+      color: $color-white-supporting;
+      background: $color-magenta-primary;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, .25);
+
+      &:hover {
+        color: $color-white-supporting;
+        background: $color-magenta-dark-primary;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+      }
+
+      &:focus {
+        background: $color-yellow-secondary;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+        color: $color-dark-blue-secondary;
+      }
+
+      &:active,
+      &:active:focus {
+        background: $color-magenta-dark-primary;
+        border: 3px solid $color-yellow-secondary;
+        color: $color-white-supporting;
+        box-shadow: 0 1px 0 $color-white-supporting,
+          inset 0 5px 2px rgba(0, 11, 59, .25);
+      }
+    }
+
+    &:disabled {
+      background-color: transparent;
+      border: 1px solid $color-grey;
+      color: $color-grey-secondary;
+      box-shadow: none;
+    }
+
+    &.button--compact .icon {
+      display: none;
+    }
+  }
 }
 
 html,
@@ -40,66 +163,6 @@ a,
 legend,
 fieldset li {
   font-family: "roobert", Arial, sans-serif !important;
-}
-
-h1,
-h2,
-h3 {
-  color: $color-blue-primary !important;
-}
-
-p {
-  font-size: 16px !important;
-  line-height: 23px !important;
-  color: $color-dark-blue-secondary !important;
-}
-
-a {
-  color: $color-magenta-primary !important;
-}
-
-a:hover {
-  color: $color-magenta-dark-primary !important;
-  text-decoration: none !important;
-}
-
-a:focus {
-  background-color: $color-yellow-secondary;
-  outline: 3px solid $color-yellow-secondary;
-}
-
-.button {
-  background-color: $color-magenta-primary !important;
-  box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25) !important;
-  border-radius: 4px !important;
-  font-weight: 600 !important;
-}
-
-.button:active {
-  background: $color-magenta-active-dark-primary !important;
-  border: 3px solid $color-yellow-secondary !important;
-  box-shadow: 0 1px 0 $color-white-supporting,
-    inset 0 5px 2px rgba(0, 11, 59, 0.25) !important;
-}
-
-.button:focus {
-  background: $color-yellow-secondary !important;
-  border: 3px solid $color-violet-primary !important;
-  color: $color-dark-blue-secondary !important;
-}
-
-.button:hover {
-  background: $color-magenta-dark-primary !important;
-  box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25) !important;
-  border-radius: 4px !important;
-}
-
-.button[disabled="disabled"] {
-  background: $color-grey !important;
-}
-
-.button[disabled="disabled"]:focus {
-  outline: none !important;
 }
 
 .form-control {
