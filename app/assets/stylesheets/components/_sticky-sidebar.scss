@@ -91,6 +91,12 @@
   display: inline-block;
   position: relative;
   margin-bottom: 4px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($grey-1, 3);
+  }
 
   .active & {
     color: $color-black;
