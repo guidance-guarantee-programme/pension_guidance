@@ -20,6 +20,10 @@
   font-style: normal;
 }
 
+html * {
+  font-family: "roobert", Arial, sans-serif !important;
+}
+
 .calculator {
   // Buttons
   h1,
@@ -141,48 +145,70 @@
       display: none;
     }
   }
+
+  // inputs
+  input[type="text"] {
+    min-height: 40px;
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="select"],
+  input[type="email"],
+  input[type="search"],
+  input[type="password"],
+  textarea {
+    border-radius: 4px;
+  }
+  // outlines
+  input[type="submit"]:focus,
+  input[type="checkbox"]:focus,
+  input[type="radio"]:focus,
+  textarea:focus {
+    outline: solid 0.1875rem $color-violet-primary;
+  }
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="search"]:focus,
+  input[type="password"]:focus {
+    outline: 2px solid $color-violet-primary;
+    background-color: $color-yellow-secondary;
+  }
+  // hover
+  input[type="checkbox"]:hover,
+  input[type="radio"]:hover {
+    outline: solid 0.1875rem $color-violet-primary;
+  }
+
+  // select
+  select {
+    background-color: $color-white-supporting;
+    border: 1px solid $color-grey-secondary;
+    border-radius: 4px;
+    font-weight: normal;
+    font-style: italic;
+    color: $color-grey-secondary;
+    padding: 8px 15px;
+
+    &:focus {
+      color: $color-dark-blue-secondary;
+      outline: 2px solid $color-violet-primary;
+      background-color: $color-yellow-secondary;
+    }
+  }
+
+  // radio buttons
+  .input--radio-first,
+  .input--radio {
+    width: 28px;
+    height: 28px;
+    border: 1px solid $color-grey-secondary;
+
+    &:focus {
+      border: 2px solid $color-violet-primary;
+      outline: 2px solid $color-yellow-secondary;
+    }
+  }
 }
 
-html,
-body,
-button,
-input,
-table,
-td,
-th,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-label,
-.form-hint,
-.error-message,
-a,
-legend,
-fieldset li {
-  font-family: "roobert", Arial, sans-serif !important;
-}
 
-.form-control {
-  border: 1px solid $color-grey-secondary !important;
-  box-sizing: border-box !important;
-  border-radius: 4px !important;
-}
-
-.form-control:focus {
-  border: 2px solid $color-violet-primary !important;
-  box-sizing: border-box !important;
-  border-radius: 4px !important;
-}
-
-input:focus,
-textarea:focus,
-select:focus,
-button:focus {
-  outline: 3px solid $color-yellow-secondary !important;
-  outline-offset: 0 !important;
-  box-sizing: border-box !important;
-  border-radius: 4px !important;
-}
