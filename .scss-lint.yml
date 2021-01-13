@@ -1,15 +1,15 @@
 # Default application configuration that all configurations inherit from.
 
-scss_files: 'app/assets/stylesheets/**/*.css.scss'
+scss_files: "app/assets/stylesheets/**/*.css.scss"
 
 exclude:
-  - '.downloads/**/*'
-  - 'lib/prince/**/*'
-  - 'node_modules/**/*'
-  - 'vendor/assets/**/*'
-  - 'vendor/bundle/**/*'
-  - 'public/assets/**/*'
-  - 'tmp/**/*'
+  - ".downloads/**/*"
+  - "lib/prince/**/*"
+  - "node_modules/**/*"
+  - "vendor/assets/**/*"
+  - "vendor/bundle/**/*"
+  - "public/assets/**/*"
+  - "tmp/**/*"
 
 linters:
   BangFormat:
@@ -83,7 +83,7 @@ linters:
     width: 2
 
   LeadingZero:
-    enabled: true
+    enabled: false
     style: exclude_zero # or 'include_zero'
 
   MergeableSelector:
