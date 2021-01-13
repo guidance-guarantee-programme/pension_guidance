@@ -1,0 +1,51 @@
+/*New colours based on the design*/
+$color-blue-primary: #0f19a0;
+$color-magenta-primary: #c82a87;
+$color-magenta-light-primary: #db7bb4;
+$color-magenta-dark-primary: #ae0060;
+$color-magenta-active-dark-primary: #9c0052;
+
+$color-yellow-secondary: #f0f05a;
+$color-teal-light-secondary: #6fd8d8;
+$color-teal-dark-secondary: #00788f;
+$color-dark-blue-secondary: #000b3b;
+$color-grey-secondary: #60637e;
+
+$color-white-supporting: #ffffff;
+$color-grey-blue-supporting: #9da1ca;
+$color-grey: #e5e5e5;
+$color-light-grey-supporting: #f3f1f3;
+$color-grey-white-supporting: #fbfafb;
+$color-white-smoke-supporting: #eeebee;
+
+$color-violet-primary: #8200d1;
+$color-violet-secondary: #8e2b9e;
+$color-violet-supporting: linear-gradient(0deg, #8800d1, #8800d1), #ffffff;
+
+//Risk colours used in some tools
+$error-red: #d00000;
+$risk-medium: #ffc200;
+$risk-low: #008021;
+
+$color-focus-style: $color-violet-supporting;
+$color-card-focus-state: $color-white-smoke-supporting;
+$color-card-hover-state: $color-grey-white-supporting;
+$color-light-grey-background: $color-light-grey-supporting;
+$color-form-outline: $color-grey-blue-supporting;
+$color-page-background: $color-white-supporting;
+$color-form-font-placeholder: $color-grey-secondary;
+$color-text: $color-dark-blue-secondary;
+$color-support-active: $color-magenta-active-dark-primary;
+$color-hover-over: $color-magenta-dark-primary;
+
+/*Media queries variables*/
+
+$mq-xs: 0 !default;
+$mq-xs-max: (479px) !default;
+$mq-s: (480px) !default;
+$mq-s-max: (719px) !default;
+$mq-m: (720px) !default;
+$mq-m-max: (959px) !default;
+$mq-l: (960px) !default;
+$mq-l-max: (1199px) !default;
+$mq-xl: (1200px) !default;
