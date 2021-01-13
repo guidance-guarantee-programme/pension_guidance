@@ -47,23 +47,17 @@
     </div>
 
     <div class="form-group">
-      <p>
-        <%= t('.complaints.form.notes.phone_booking') %>
-      </p>
+      <%= f.label :phone_booking_message, t('.complaints.form.notes.phone_booking'), class: 'form-label' %>
       <%= f.text_area :phone_booking_message, class: 'form-control form-control-3-4', rows: 5 %>
     </div>
 
     <div class="form-group">
-      <p>
-        <%= t('.complaints.form.notes.face_to_face') %>
-      </p>
+      <%= f.label :face_to_face_message, t('.complaints.form.notes.face_to_face'), class: 'form-label' %>
       <%= f.text_area :face_to_face_message, class: 'form-control form-control-3-4', rows: 5 %>
     </div>
 
     <div class="form-group">
-      <p>
-        <%= t('.complaints.form.notes.other') %>
-      </p>
+      <%= f.label :other_message, t('.complaints.form.notes.other'), class: 'form-label' %>
       <%= f.text_area :other_message, class: 'form-control form-control-3-4', rows: 5, placeholder: t('.complaints.form.help.other') %>
     </div>
 
