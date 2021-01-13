@@ -150,6 +150,7 @@ html * {
   input[type="text"] {
     min-height: 40px;
   }
+
   input[type="text"],
   input[type="number"],
   input[type="select"],
@@ -159,13 +160,15 @@ html * {
   textarea {
     border-radius: 4px;
   }
+
   // outlines
   input[type="submit"]:focus,
   input[type="checkbox"]:focus,
   input[type="radio"]:focus,
   textarea:focus {
-    outline: solid 0.1875rem $color-violet-primary;
+    outline: solid .1875rem $color-violet-primary;
   }
+
   input[type="text"]:focus,
   input[type="number"]:focus,
   input[type="email"]:focus,
@@ -177,7 +180,7 @@ html * {
   // hover
   input[type="checkbox"]:hover,
   input[type="radio"]:hover {
-    outline: solid 0.1875rem $color-violet-primary;
+    outline: solid .1875rem $color-violet-primary;
   }
 
   // select
@@ -208,6 +211,120 @@ html * {
       border: 2px solid $color-violet-primary;
       outline: 2px solid $color-yellow-secondary;
     }
+  }
+
+  // slider styles
+  input[type="range"] {
+    height: 40px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 4px;
+  }
+
+  input[type="range"]:focus {
+    border: 2px solid $color-violet-primary;
+    outline: none;
+  }
+  // webkit
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px $color-black;
+    background: $color-magenta-primary;
+    border-radius: 7px;
+    border: 0 solid $color-black-supporting;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    box-shadow: 0 0 0 $color-blue-dark;
+    border: 2px solid $color-magenta-primary;
+    height: 28px;
+    width: 28px;
+    border-radius: 15px;
+    background: $color-magenta-primary;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+
+  input[type="range"]:hover::-webkit-slider-thumb {
+    background: $color-magenta-dark-primary;
+  }
+
+  input[type="range"]:focus::-webkit-slider-thumb {
+    border: 2px solid $color-violet-primary;
+    background: $color-yellow-secondary;
+  }
+
+  input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: $color-magenta-primary;
+  }
+
+  // moz
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px $color-black;
+    background: $color-magenta-primary;
+    border-radius: 7px;
+    border: 0 solid $color-black-supporting;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    box-shadow: 0 0 0 $color-blue-dark;
+    border: 2px solid $color-magenta-primary;
+    height: 28px;
+    width: 28px;
+    border-radius: 15px;
+    background: $color-magenta-primary;
+    cursor: pointer;
+  }
+
+  // ms
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  input[type="range"]::-ms-fill-lower {
+    background: $color-magenta-primary;
+    border: 0 solid $color-black-supporting;
+    border-radius: 14px;
+    box-shadow: 1px 1px 1px $color-black;
+  }
+
+  input[type="range"]::-ms-fill-upper {
+    background: $color-magenta-primary;
+    border: 0 solid $color-black-supporting;
+    border-radius: 14px;
+    box-shadow: 1px 1px 1px $color-black;
+  }
+
+  input[type="range"]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0 0 0 $color-blue-dark;
+    border: 2px solid $color-magenta-primary;
+    height: 28px;
+    width: 28px;
+    border-radius: 15px;
+    background: $color-magenta-primary;
+    cursor: pointer;
+  }
+
+  input[type="range"]:focus::-ms-fill-lower {
+    background: $color-magenta-primary;
+  }
+
+  input[type="range"]:focus::-ms-fill-upper {
+    background: $color-magenta-primary;
   }
 }
 
