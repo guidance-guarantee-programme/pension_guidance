@@ -1,14 +1,42 @@
-table {
-  margin: 1em 0 2em;
+@import "../money-helper-variables";
+
+table,
+th,
+td {
+  font-size: 16px;    
+  line-height: 23px;
+}
+
+thead > tr {
+  background-color: $color-white-supporting;
+  color: $color-dark-blue-secondary;
+  border-bottom: 1px solid $color-grey-blue-supporting;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+th,
+th > p {
+  font-weight: 700;
+}
+
+th,
+td {
+  border-right: 0;
+  border-bottom: 1px solid $color-grey-blue-supporting;
+}
+
+tbody tr td:first-of-type {
+  font-weight: 700;
+}
+
+tr:nth-child(even) {
+  background-color: $color-white-supporting;
 }
 
 caption {
   @include bold-24;
   margin: .4em .5em .4em 0;
   text-align: left;
-}
-
-th,
-td {
-  vertical-align: top;
 }

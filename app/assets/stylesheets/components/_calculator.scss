@@ -1,3 +1,5 @@
+@import "../money-helper-variables";
+
 .calculator {
   overflow: hidden;
 }
@@ -44,6 +46,7 @@
 
 .calculator__estimate__number {
   @include bold-24;
+  color: $color-magenta-primary;
   display: block;
   margin: .4em .5em .4em 0;
 }
