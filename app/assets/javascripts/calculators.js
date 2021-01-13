@@ -37,6 +37,10 @@
       this._scrollTo(this.$calculator).then($.proxy(function() {
         this._toggleLoading(false);
       }, this));
+
+      $('.js-error-summary').each(function() {
+        new PWPG.ErrorSummary($(this));
+      });
     },
 
     _refresh: function(html, $partial) {
