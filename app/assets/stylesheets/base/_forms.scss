@@ -1,4 +1,78 @@
-input[type="search"] {
-  -webkit-appearance: none;
-  border-radius: 0;
+@import "../money-helper-variables";
+// maps styles
+// inputs
+.form-control {
+  padding: 0;
+}
+
+input[type="text"] {
+  min-height: 40px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="select"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+textarea {
+  border: 1px solid $color-grey-secondary;
+  border-radius: 4px;
+
+  &.form-control-error {
+    border: 2px solid $error-red;
+  }
+}
+
+// outlines
+input[type="submit"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
+textarea:focus {
+  outline: solid 0.1875rem $color-violet-primary;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus {
+  border: 2px solid $color-violet-primary;
+  outline: 4px solid $color-yellow-secondary;
+  background-color: $color-white-supporting;
+}
+// hover
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  outline: solid 0.1875rem $color-violet-primary;
+}
+
+// select
+select {
+  background-color: $color-white-supporting;
+  border: 1px solid $color-grey-secondary;
+  border-radius: 4px;
+  font-weight: normal;
+  font-style: italic;
+  color: $color-grey-secondary;
+  padding: 8px 15px;
+
+  &:focus {
+    color: $color-dark-blue-secondary;
+    outline: 2px solid $color-violet-primary;
+    background-color: $color-yellow-secondary;
+  }
+}
+
+// radio buttons
+.input--radio-first,
+.input--radio {
+  width: 28px;
+  height: 28px;
+  border: 1px solid $color-grey-secondary;
+
+  &:focus {
+    border: 2px solid $color-violet-primary;
+    outline: 2px solid $color-yellow-secondary;
+  }
 }
