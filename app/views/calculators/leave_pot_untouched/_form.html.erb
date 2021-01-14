@@ -3,7 +3,7 @@
   errors = form&.errors || {}
 %>
 
-<h2 id="calculator"><%= t('.heading') %></h2>
+<h2 id="calculator" class="calculator-heading"><%= t('.heading') %></h2>
 
 <%= render 'calculators/error_summary',
   form: Calculators::LeavePotUntouchedForm,
