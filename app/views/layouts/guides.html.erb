@@ -1,7 +1,7 @@
 <%= render layout: 'layouts/two_column' do %>
   <article class="text">
     <% if flash[:alert] %>
-      <div class="error-summary" aria-labelledby="error-summary-heading" role="alert" data-error-summary>
+      <div class="error-summary" aria-labelledby="error-summary-heading" role="alert" data-error-summary data-error-group>
         <h2 class="heading-medium error-summary-heading" id="error-summary-heading"><%= t('pension_type_tool.error_title') %></h2>
         <ul class="error-summary-list">
           <li><%= link_to t('pension_type_tool.error'), '#question' %></li>

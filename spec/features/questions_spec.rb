@@ -23,4 +23,13 @@ RSpec.feature 'Questions', type: :feature do
 
     expect(page).to have_content('Is there anything wrong with this page?')
   end
+
+  scenario 'Errors are correctly described', js: true do
+    visit '/en/pension-type-tool/question-1'
+
+    page.click_on('Next step')
+
+    expect(page.find('.js-error-message')).to have_text
+    expect(page).to have_css('.form-group-error')
+  end
 end

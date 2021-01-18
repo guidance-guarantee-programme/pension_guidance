@@ -7,11 +7,21 @@
 
       $component.focus();
 
-      $component.find('a').on('click', (e)=> {
+      var firstError = $component.find('a');
+
+      firstError.on('click', (e)=> {
         e.preventDefault();
         var href = $(e.target).attr('href');
         $(href).focus();
-      })
+      });
+
+      var heading = $('#question > h2');
+
+      if (heading.length) {
+        $('.js-error-message').text(firstError.text());
+
+        firstError.text(`${heading.text()} – ${firstError.text()}`);
+      }
     }
   }
 

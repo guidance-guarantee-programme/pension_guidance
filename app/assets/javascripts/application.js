@@ -14,6 +14,7 @@
 //= require components/SlotPickerSingleTime
 //= require components/CharacterLimit
 //= require components/ErrorSummary
+//= require components/ErrorGroup
 
 PWPG.clickTracker.init();
 PWPG.calculators.init();
@@ -23,6 +24,12 @@ $('[data-error-summary]').each(function() {
   'use strict';
   var $component = $(this);
   new PWPG.ErrorSummary($component);
+});
+
+$('[data-error-group]').each(function() {
+  'use strict';
+  var $component = $(this);
+  new PWPG.ErrorGroup($component);
 });
 
 $('[data-slider]').each(function() {
