@@ -144,3 +144,34 @@ a {
     display: none;
   }
 }
+
+// radio buttons
+.multiple-choice [type="radio"] + label::before,
+.multiple-choice [type="radio"] + label::after {
+  display: none;
+}
+
+.multiple-choice {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    float: right;
+  }
+}
+
+.multiple-choice input {
+  position: inherit;
+  margin: auto;
+  width: 22px;
+  height: 22px;
+  border: 1px solid $color-grey-secondary;
+  opacity: 1;
+
+  &:focus,
+  &:hover {
+    outline: 2px solid $color-violet-primary;
+  }
+}
