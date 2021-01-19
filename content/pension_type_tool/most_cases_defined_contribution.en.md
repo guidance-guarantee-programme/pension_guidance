@@ -15,7 +15,7 @@ You choose how to take money from your pension pot.
 
 You can book a free Pension Wise appointment to talk about your options for taking your money.
 
-[Book a free appointment](/en/appointments){: .button}
+[Book a fredjfhbshjkfbvkdsbfe appointment](/en/appointments){: .button .button--primary}
 
 ^You can also [check another pension](/en/pension-type-tool) or [explore your pension options](/en/explore-your-options).^
 
