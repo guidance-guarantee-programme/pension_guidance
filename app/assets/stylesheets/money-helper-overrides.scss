@@ -160,19 +160,19 @@ a {
   label {
     float: right;
   }
-}
 
-.multiple-choice input {
-  position: inherit;
-  margin: auto;
-  width: 22px;
-  height: 22px;
-  border: 1px solid $color-grey-secondary;
-  opacity: 1;
+  input {
+    position: inherit;
+    margin: auto;
+    width: 22px;
+    height: 22px;
+    border: 1px solid $color-grey-secondary;
+    opacity: 1;
 
-  &:focus,
-  &:hover {
-    outline: 2px solid $color-violet-primary;
+    &:focus,
+    &:hover {
+      outline: 2px solid $color-violet-primary;
+    }
   }
 }
 
@@ -190,18 +190,15 @@ ol ol li {
   display: block;
   margin-bottom: 14px;
   margin-left: 36px;
-}
 
-ul li::before,
-ol li::before,
-ul ul li::before,
-ol ol li::before {
-  position: absolute;
-  text-align: center;
-  color: $color-violet-primary;
-  width: 11px;
-  left: -23px;
-  top: 6px;
+  &::before {
+    position: absolute;
+    text-align: center;
+    color: $color-violet-primary;
+    width: 11px;
+    left: -23px;
+    top: 6px;
+  }
 }
 
 ul li::before {
@@ -212,12 +209,12 @@ ul li::before {
 ol {
   counter-reset: item;
   padding-left: 0;
-}
 
-ol li::before {
-  content: counter(item) ".";
-  counter-increment: item;
-  font-weight: 700;
+  li::before {
+    content: counter(item) ".";
+    counter-increment: item;
+    font-weight: 700;
+  }
 }
 
 ul ul li::before,
