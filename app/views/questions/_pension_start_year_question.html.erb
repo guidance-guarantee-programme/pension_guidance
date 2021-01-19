@@ -1,10 +1,8 @@
 <form action="<%= "/#{locale}/questions" %>" accept-charset="UTF-8" method="post">
   <input name="question_id" type="hidden" value="<%= id %>">
 
-  <div class="form-group js-question">
-    <div id="question" tabindex="-1">
-      <%= header %>
-    </div>
+  <fieldset class="form-group js-question">
+    <legend id="question" tabindex="-1"><%= header %></legend>
 
     <span class="error-message js-error-message"></span>
 
@@ -27,7 +25,7 @@
       <input type="radio" name="response" id="response_dont_know" value="dont_know">
       <label for="response_dont_know"><%= t('.dont_know') %></label>
     </div>
-  </div>
+  </fieldset>
 
   <div class="form-group">
     <button type="submit" class="medium button"><%= t('.next_step') %></button>
