@@ -175,3 +175,53 @@ a {
     outline: 2px solid $color-violet-primary;
   }
 }
+
+// lists
+ul,
+ol {
+  margin: 20px 0;
+}
+
+ul li,
+ol li,
+ul ul li,
+ol ol li {
+  position: relative;
+  display: block;
+  margin-bottom: 14px;
+  margin-left: 36px;
+}
+
+ul li::before,
+ol li::before,
+ul ul li::before,
+ol ol li::before {
+  position: absolute;
+  text-align: center;
+  color: $color-violet-primary;
+  width: 11px;
+  left: -23px;
+  top: 6px;
+}
+
+ul li::before {
+  content: "•";
+  font-size: 1.5rem;
+}
+
+ol {
+  counter-reset: item;
+  padding-left: 0;
+}
+
+ol li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  font-weight: 700;
+}
+
+ul ul li::before,
+ol ol li::before {
+  content: "-";
+  font-size: 1.2rem;
+}
