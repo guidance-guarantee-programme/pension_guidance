@@ -12,7 +12,7 @@ data privacy rights are not affected.
 The Money and Pensions Service privacy notice can be [found here](https://www.moneyandpensionsservice.org.uk/privacy-notice){: aria-label="Money and Pensions Service privacy notice"}
 
 If you would like more information on how your data is processed, please email
-[contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+[appointments@pensionwise.gov.uk](mailto:appointments@pensionwise.gov.uk).
 
 Further information on your rights can be found at [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
 
@@ -112,7 +112,7 @@ subject which require protection of personal data, in particular where the data
 subject is a child.”_
 
 Consent can be withdrawn at any time by contacting Citizens Advice directly, or
-by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+by emailing [appointments@pensionwise.gov.uk](mailto:appointments@pensionwise.gov.uk).
 
 ### Health data
 
@@ -137,7 +137,7 @@ years. You will be reminded of this at the start of the call and advised that
 you are under no obligation to disclose any special category data.
 
 Consent can be withdrawn at any time by contacting Citizens Advice directly, or
-by emailing [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+by emailing [appointments@pensionwise.gov.uk](mailto:appointments@pensionwise.gov.uk).
 
 You will be provided with a summary of your appointment.
 
@@ -192,7 +192,7 @@ since your appointment. This research helps us to develop and improve the
 Pension Wise service. 
 
 You can withdraw your consent to be contacted by Ipsos Mori at any time, by
-emailing contact@pensionwise.gov.uk 
+emailing appointments@pensionwise.gov.uk
 
 ## Storing your data securely
 

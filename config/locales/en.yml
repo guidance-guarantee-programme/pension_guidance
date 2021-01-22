@@ -363,7 +363,7 @@ en:
         content:
           html: |
             <p>
-              You can email Pension Wise at <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>.
+              You can email Pension Wise at <a href="mailto:appointments@pensionwise.gov.uk">appointments@pensionwise.gov.uk</a>.
             </p>
 
             <p>
@@ -430,7 +430,7 @@ en:
           html: |
             <p>
               If you’re not satisfied with our response to your complaint, you can write to
-              <a href="mailto: complaints@pensionwise.gov.uk">complaints@pensionwise.gov.uk</a> to get it escalated.
+              <a href="mailto:appointments@pensionwise.gov.uk">appointments@pensionwise.gov.uk</a> to get it escalated.
             </p>
 
             <p>
