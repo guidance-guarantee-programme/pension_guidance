@@ -28,4 +28,4 @@ The appointment can be over the phone or face to face somewhere local to them �
 
 ^Our guidance is impartial – we won’t recommend any products or companies and won’t tell them how to invest their money.^
 
-Find out more about working directly with Pension Wise by emailing us at <contact@pensionwise.gov.uk>
+Find out more about working directly with Pension Wise by emailing us at <appointments@pensionwise.gov.uk>

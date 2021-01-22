@@ -13,7 +13,7 @@ hawliau preifatrwydd data yn cael eu heffeithio.
 Gellir dod o hyd i hysbysiad preifatrwydd y Gwasanaeth Arian a Phensiynau [yma](https://www.moneyandpensionsservice.org.uk/privacy-notice){: aria-label="Hysbysiad preifatrwydd y Gwasanaeth Arian a Phensiynau"}
 
 Os hoffech gael mwy o wybodaeth ar sut mae eich data yn cael ei brosesu,
-e-bostiwch [contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+e-bostiwch [appointments@pensionwise.gov.uk](mailto:appointments@pensionwise.gov.uk).
 
 Gellir dod o hyd i fwy o fanylion am eich hawliau yn
 [https://ico.org.uk/your-data-matters](https://ico.org.uk/your-data-matters/)
@@ -117,7 +117,7 @@ enwedig lle mae’r data pwnc yn blentyn. ”_
 
 Gellir tynnu caniatâd ar unrhyw adeg trwy gysylltu â Chyngor ar Bopeth yn
 uniongyrchol, neu drwy e-bostio
-[contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+[appointments@pensionwise.gov.uk](mailto:appointments@pensionwise.gov.uk).
 
 ### Data iechyd
 
@@ -145,7 +145,7 @@ arbennig.
 
 Gellir tynnu caniatâd yn ôl ar unrhyw adeg trwy gysylltu â Chyngor ar Bopeth yn
 uniongyrchol, neu drwy e-bostio
-[contact@pensionwise.gov.uk](mailto:contact@pensionwise.gov.uk).
+[appointments@pensionwise.gov.uk](mailto:appointments@pensionwise.gov.uk).
 
 Byddwch yn cael crynodeb o’ch apwyntiad.
 
@@ -201,7 +201,7 @@ pensiwn ers eich apwyntiad. Mae’r ymchwil hwn yn ein helpu ni i ddatblygu a
 gwella’r gwasanaeth Pension Wise.
 
 Gallwch dynnu’ch caniatâd yn ôl i Ipsos Mori gysylltu ar unrhyw adeg, trwy
-e-bostio contact@pensionwise.gov.uk
+e-bostio appointments@pensionwise.gov.uk
 
 ## Storio’ch data yn ddiogel
 

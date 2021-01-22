@@ -28,4 +28,4 @@ Gall yr apwyntiad fod dros y ffôn neu wyneb yn wyneb rhywle sy’n lleol iddynt
 
 ^Mae ein harweiniad yn ddiduedd ac ni fyddwn yn argymell unrhyw gynnyrch neu gwmnÔau ac ni fyddwn yn dweud wrthynt sut i fuddsoddi eu harian.^
 
-Darganfyddwch fwy am weithio’n uniongyrchol gyda Pension Wise drwy ein e-bostio yn <contact@pensionwise.gov.uk>
+Darganfyddwch fwy am weithio’n uniongyrchol gyda Pension Wise drwy ein e-bostio yn <appointments@pensionwise.gov.uk>
