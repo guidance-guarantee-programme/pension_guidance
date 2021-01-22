@@ -52,7 +52,8 @@
       this.getTimesHeader()
         .attr('tabindex', -1)
         .focus()
-        .removeAttr('tabindex');
+        .removeAttr('tabindex')
+        .attr('role', 'alert');
     }
 
     displayError() {
