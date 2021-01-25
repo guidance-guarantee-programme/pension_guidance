@@ -173,6 +173,11 @@ a {
   label {
     float: right;
     font-size: 16px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   input {
@@ -182,6 +187,16 @@ a {
     height: 22px;
     border: 1px solid $color-grey-secondary;
     opacity: 1;
+    -webkit-appearance: auto;
+
+    &[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+
+      &:disabled {
+        border: 1px solid $color-grey-blue-supporting;
+      }
+    }
 
     &:focus,
     &:hover {

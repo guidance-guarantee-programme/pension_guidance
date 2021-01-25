@@ -27,7 +27,6 @@ textarea {
 }
 
 // outlines
-input[type="submit"]:focus,
 input[type="checkbox"]:focus,
 input[type="radio"]:focus,
 textarea:focus {
@@ -76,5 +75,19 @@ select {
   &:focus {
     border: 2px solid $color-violet-primary;
     outline: 2px solid $color-yellow-secondary;
+  }
+}
+
+// hint
+.form-hint {
+  font-size: 16px;
+  line-height: 23px;
+  clear: both;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid $color-grey-mercury;
+
+  &:last-of-type {
+    border: 0;
   }
 }
