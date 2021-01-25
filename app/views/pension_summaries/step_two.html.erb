@@ -12,18 +12,18 @@
       <div class="multiple-choice">
         <%= f.check_box step, { class: "t-options-#{step.dasherize} form-control" }, 1 %>
         <%= f.label step, class: 'block-label selection-button-checkbox' do %>
-          <strong><%= t("pension_summaries.options.#{step}.title") %></strong>
+          <%= t("pension_summaries.options.#{step}.title") %>
         <% end %>
       </div>
     <% end %>
   </fieldset>
 
-  <p><%= t('.compulsory_steps.introduction') %></p>
+  <h5><%= t('.compulsory_steps.introduction') %></h5>
   <ul>
     <% PensionSummary::COMPULSORY_OPTIONS.each do |step| %>
       <li><%= t("pension_summaries.options.#{step}.title") %></li>
     <% end %>
   </ul>
 
-  <%= f.submit t('.next_button'), class: :button %>
+  <%= f.submit t('.next_button'), class: 'button button--primary' %>
 <% end %>
