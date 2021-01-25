@@ -98,7 +98,7 @@ a {
 
   &:hover {
     color: $color-magenta-dark-primary !important;
-    background-color: $color-light-grey-supporting;
+    background-color: $color-light-grey-supporting !important;
     border: 1px solid $color-magenta-dark-primary;
     box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
   }
@@ -119,7 +119,7 @@ a {
 
   &:active,
   &:active:focus {
-    background-color: $color-light-grey-supporting;
+    background-color: $color-light-grey-supporting !important;
     box-shadow: 0 1px 0 $color-white-supporting,
       inset 0 5px 2px rgba(0, 11, 59, 0.25);
   }
@@ -131,19 +131,19 @@ a {
 
     &:hover {
       color: $color-white-supporting !important;
-      background-color: $color-magenta-dark-primary;
+      background-color: $color-magenta-dark-primary !important;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:focus {
-      background-color: $color-yellow-secondary;
+      background-color: $color-yellow-secondary !important;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
       color: $color-dark-blue-secondary !important;
     }
 
     &:active,
     &:active:focus {
-      background-color: $color-magenta-dark-primary;
+      background-color: $color-magenta-dark-primary !important;
       border: 3px solid $color-yellow-secondary;
       color: $color-white-supporting !important;
       box-shadow: 0 1px 0 $color-white-supporting,
@@ -152,7 +152,7 @@ a {
   }
 
   &:disabled {
-    background-color: transparent;
+    background-color: transparent !important;
     border: 1px solid $color-grey;
     color: $color-grey-secondary !important;
     box-shadow: none;
