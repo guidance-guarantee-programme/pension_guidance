@@ -63,6 +63,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         <li>Coronafeirws (COVID-19) <a href="https://www.moneyadviceservice.org.uk/cy/tools/money-navigator-tool">cymorth ariannol</a></li>
         <li>Offeryn Cymharu Blwydd-dal <a href=" https://comparison.moneyadviceservice.org.uk/cy/tools/annuities">comparison.moneyadviceservice.org.uk/cy/tools/annuities</a></li>
         <li>Cyfeirlyfr cynghori ar ymddeoliad <a href=" https://directory.moneyadviceservice.org.uk/cy">directory.moneyadviceservice.org.uk/cy</a></li>
+        <li>Pension Drawdown Investment Pathways Tool <a href="https://www.moneyadviceservice.org.uk/en/tools/drawdown-investment-pathways">www.moneyadviceservice.org.uk/en/tools/drawdown-investment-pathways</a></li>
         <li>Dyled a benthyca</li>
         <li>Cyllidebu a rheoli arian</li>
         <li>Cynilo a buddsoddi</li>
