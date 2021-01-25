@@ -1,14 +1,11 @@
 <% content_for :sidebar do %>
   <aside>
-    <div class="sidebar-hr"></div>
     <div class="sticky-sidebar__nav">
-      <span class="sticky-sidebar__heading">
-        <strong><%= t('.heading') %></strong>
-      </span>
+      <h5><%= t('.heading') %></h5>
       <ul class="sticky-sidebar__list nav">
         <% @summary.selected_steps.each do |step| %>
           <li>
-            <%= link_to skip_to_step_path(step), class: 'sticky-sidebar__link' do %>
+            <%= link_to skip_to_step_path(step) do %>
               <%= t("pension_summaries.options.#{step}.title") %>
             <% end %>
           </li>
@@ -21,12 +18,9 @@
   </aside>
 
   <div>
-    <div class="sidebar-hr"></div>
     <% unless @summary.pilot? %>
       <div class="sticky-sidebar__nav">
-        <span class="sticky-sidebar__heading">
-          <strong><%= t('.feedback.heading') %></strong>
-        </span>
+        <h5><%= t('.feedback.heading') %></h5>
         <p><%= t('.feedback.body') %></p>
         <%= link_to t('.feedback.link_text'), 'http://research.pensionwise.gov.uk/s/online_exit_poll/', class: 'button', rel: 'external', target: '_blank' %>
       </div>
