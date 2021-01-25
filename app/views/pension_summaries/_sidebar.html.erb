@@ -2,7 +2,7 @@
   <aside>
     <div class="sticky-sidebar__nav">
       <h5><%= t('.heading') %></h5>
-      <ul class="sticky-sidebar__list nav">
+      <ul>
         <% @summary.selected_steps.each do |step| %>
           <li>
             <%= link_to skip_to_step_path(step) do %>
