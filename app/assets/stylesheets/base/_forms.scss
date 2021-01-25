@@ -5,8 +5,10 @@
   padding: 0;
 }
 
-input[type="text"] {
-  min-height: 40px;
+input[type="text"],
+input[name="slider"] {
+  max-height: 40px;
+  padding: 7px 12px;
 }
 
 input[type="text"],
