@@ -76,8 +76,8 @@ a {
 // buttons
 .button {
   box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25);
-  background: $color-white-supporting;
-  color: $color-magenta-primary;
+  background-color: $color-white-supporting !important;
+  color: $color-magenta-primary !important;
   border: 1px solid $color-magenta-primary;
   border-radius: 4px;
   padding: 8px 12px;
@@ -87,13 +87,18 @@ a {
   // line-height: 23px;
   font-weight: 600;
 
+  &::before,
+  &::after {
+    display: none;
+  }
+
   &:visited {
     text-decoration: none;
   }
 
   &:hover {
-    color: $color-magenta-dark-primary;
-    background: $color-light-grey-supporting;
+    color: $color-magenta-dark-primary !important;
+    background-color: $color-light-grey-supporting;
     border: 1px solid $color-magenta-dark-primary;
     box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
   }
@@ -103,44 +108,44 @@ a {
   &:active:focus {
     padding: 6px 10px;
     border: 3px solid $color-violet-primary;
-    color: $color-dark-blue-secondary;
+    color: $color-dark-blue-secondary !important;
     outline: none;
   }
 
   &:focus {
-    background: $color-yellow-secondary;
+    background-color: $color-yellow-secondary;
     box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
   }
 
   &:active,
   &:active:focus {
-    background: $color-light-grey-supporting;
+    background-color: $color-light-grey-supporting;
     box-shadow: 0 1px 0 $color-white-supporting,
       inset 0 5px 2px rgba(0, 11, 59, 0.25);
   }
 
   &.button--primary {
-    color: $color-white-supporting;
-    background: $color-magenta-primary;
+    color: $color-white-supporting !important;
+    background-color: $color-magenta-primary !important;
     box-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
 
     &:hover {
-      color: $color-white-supporting;
-      background: $color-magenta-dark-primary;
+      color: $color-white-supporting !important;
+      background-color: $color-magenta-dark-primary;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:focus {
-      background: $color-yellow-secondary;
+      background-color: $color-yellow-secondary;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-      color: $color-dark-blue-secondary;
+      color: $color-dark-blue-secondary !important;
     }
 
     &:active,
     &:active:focus {
-      background: $color-magenta-dark-primary;
+      background-color: $color-magenta-dark-primary;
       border: 3px solid $color-yellow-secondary;
-      color: $color-white-supporting;
+      color: $color-white-supporting !important;
       box-shadow: 0 1px 0 $color-white-supporting,
         inset 0 5px 2px rgba(0, 11, 59, 0.25);
     }
@@ -149,7 +154,7 @@ a {
   &:disabled {
     background-color: transparent;
     border: 1px solid $color-grey;
-    color: $color-grey-secondary;
+    color: $color-grey-secondary !important;
     box-shadow: none;
   }
 
