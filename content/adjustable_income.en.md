@@ -47,13 +47,15 @@ If you choose this option, you can leave your money to someone when you die but 
 
 ## How adjustable income works
 
-Your provider will offer you different investments with different risks. You pick the investments that are right for you and get a retirement income from them. You should think about how much you take out every year and [how long your money needs to last](/en/making-money-last).
+You will need to decide how much you take out every year and [how long your money needs to last](/en/making-money-last).
+
+Your provider will ask you how you want to invest your remaining pot when you move into income drawdown. You will either need to choose your own investments, i.e. ones that match your attitude to risk and objectives for your money, or some providers will offer you to choose from simple ready-made investment options which are linked to your retirement plans (these are called Investment Pathways). 
 
 A financial adviser can help you to create an investment plan for your money. They can advise you on how much you can take out to make the money last as long as possible. They’ll charge you a fee for this.
 
 Your provider is likely to charge you fees for managing your investments and whenever you get a payment.
 
-If your provider goes bust you’ll be covered by the [Financial Services Compensation Scheme](/en/protection).
+If your provider goes bust you’ll be covered by the [Financial Services Compensation Scheme](/en/protection).
 
 ## Continue to pay in
 
@@ -81,7 +83,7 @@ Beware of pension scams contacting you unexpectedly about an investment or busin
 - Check if your pot has any special features that could mean you get a better deal, e.g. a guaranteed annuity rate.
 - Get [financial advice](/en/financial-advice) if you’re interested in getting an adjustable income.
 - [Shop around](/en/shop-around) – ask providers what products they offer to suit your circumstances.
-- Get some estimates from other providers on how much your pot could grow and what the fees are – usually you just have to fill in a short form on their website.
+- Get some estimates from other providers on how much your pot could grow and what the fees are – usually you just have to fill in a short form on their website. If you’re looking for products that offer simple ready-made investment options, you can use our [investment pathways comparison tool](https://www.moneyadviceservice.org.uk/en/tools/drawdown-investment-pathways) to help you.
 - Make sure you know [how much tax](/en/tax) you’ll pay on any money you’re planning to take out.
 
 </div>
