@@ -25,13 +25,19 @@ $color-white-smoke-supporting: #eeebee;
 $color-violet-primary: #8200d1;
 $color-violet-secondary: #8e2b9e;
 $color-violet-gradient: #8800d1;
-$color-violet-supporting: linear-gradient(0deg, $color-violet-gradient, $color-violet-gradient), $color-white-supporting;
+$color-violet-supporting: linear-gradient(
+    0deg,
+    $color-violet-gradient,
+    $color-violet-gradient
+  ),
+  $color-white-supporting;
 
 //Risk colours used in some tools
 $error-red: #d00000;
 $risk-medium: #ffc200;
 $risk-low: #008021;
 
+$color-support-visited-link: #792b9e;
 $color-focus-style: $color-violet-supporting;
 $color-card-focus-state: $color-white-smoke-supporting;
 $color-card-hover-state: $color-grey-white-supporting;

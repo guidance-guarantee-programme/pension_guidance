@@ -20,15 +20,15 @@
   font-style: normal;
 }
 
+// typography
 html * {
   font-family: "roobert", Arial, sans-serif !important;
 }
 
-// typography
-h1,
-h2,
-h3 {
-  color: $color-blue-primary;
+body,
+main {
+  font-size: 16px;
+  line-height: 23px;
 }
 
 p {
@@ -39,24 +39,37 @@ p {
 
 // links
 a {
-  &:active {
+  &:link {
     color: $color-magenta-primary;
+
+    &:focus {
+      color: $color-dark-blue-secondary;
+    }
+  }
+
+  &:active {
+    color: $color-magenta-active-dark-primary;
     text-decoration: none;
   }
 
-  &:hover {
-    color: $color-magenta-dark-primary;
-  }
-
-  &:link:focus {
-    outline: none;
-    color: $color-dark-blue-secondary;
-    background-color: $color-yellow-secondary;
-    border-bottom: 4px solid $color-violet-primary;
+  &:visited {
+    color: $color-support-visited-link;
+    text-decoration: underline;
   }
 
   &:target {
     color: $color-violet-secondary;
+  }
+
+  &:hover {
+    color: $color-magenta-dark-primary;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $color-yellow-secondary;
+    border-bottom: 4px solid $color-violet-primary;
   }
 }
 
@@ -71,7 +84,7 @@ a {
   text-decoration: none;
   height: 40px;
   font-size: 16px;
-  line-height: 23px;
+  // line-height: 23px;
   font-weight: 600;
 
   &:visited {
@@ -159,6 +172,7 @@ a {
 
   label {
     float: right;
+    font-size: 16px;
   }
 
   input {
@@ -197,13 +211,13 @@ ol ol li {
     color: $color-violet-primary;
     width: 11px;
     left: -23px;
-    top: 6px;
   }
 }
 
 ul li::before {
   content: "•";
   font-size: 1.5rem;
+  top: 6px;
 }
 
 ol {
@@ -214,6 +228,7 @@ ol {
     content: counter(item) ".";
     counter-increment: item;
     font-weight: 700;
+    top: 0;
   }
 }
 

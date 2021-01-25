@@ -1,5 +1,5 @@
 body {
-  @include core-19;
+  // @include core-19;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -8,9 +8,8 @@ strong {
   font-weight: bold;
 }
 
-
 small {
-  @include core-16;
+  // @include core-16;
 }
 
 sub,
@@ -22,11 +21,11 @@ sup {
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 hr {
@@ -40,5 +39,5 @@ blockquote {
   background: $color-blockquote-bg;
   border-left: 10px solid $color-blockquote-border;
   margin: 1.5em 0;
-  padding: .5em 10px;
+  padding: 0.5em 10px;
 }
