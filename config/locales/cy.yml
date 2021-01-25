@@ -333,47 +333,6 @@ cy:
   contact:
     new:
       description: Darganfyddwch am y ffyrdd gwahanol i gysylltu â Pension Wise, yn cynnwys sut i anfon adborth i ni a sut i wneud cwyn.
-      contact_us:
-        title: Cysylltu â ni
-        content:
-          html: |
-            <div role="note" aria-label="Information" class="application-notice info-notice">
-              <p>Ni all Pension Wise ateb cwestiynau penodol am eich pensiwn.</p>
-            </div>
-            <p>Am help annibynnol, gallwch gysylltu â:</p>
-            <ul>
-              <li>
-                <a href="http://www.pensionsadvisoryservice.org.uk/">Y Gwasanaeth Cynghori ar Bensiynau</a>
-              </li>
-              <li>
-                <a href="https://www.moneyadviceservice.org.uk/en/">Y Gwasanaeth Cynghori Ariannol</a>
-              </li>
-            </ul>
-            <p>
-              Os hoffech siarad â rhywun am eich opsiynau pensiwn, gallwch
-              <a href="/en/appointments">drefnu apwyniad</a> gydag arbenigwr arweiniad Pension Wise.
-            </p>
-      send_us_feedback:
-        title: Anfonnwch adborth i ni am Pension Wise
-        content:
-          html: |
-            <p>
-              Gallwch e-bostio Pension Wise yn <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>.
-            </p>
-            <p>
-              Gallwch hefyd ysgrifennu atom drwy’r post:
-            </p>
-            <div class="address">
-              <div class="adr org fn">
-                <p>
-                  Pension Wise<br />
-                  PO Box 10404<br />
-                  Ashby de la Zouch<br />
-                  Leicestershire<br />
-                  LE65 9EH
-                </p>
-              </div>
-            </div>
       complaints:
         title: Cwynion
         intro:
@@ -398,57 +357,4 @@ cy:
           html: |
             <p>
               <strong>Mae eich cwyn wedi cael ei anfon.</strong>
-            </p>
-        guide:
-          html: |
-            <div role="note" aria-label="Information" class="application-notice info-notice">
-              <p>
-                Darllenwch ein canllaw os ydych eisiau
-                <a href="/en/pension-complaints">cwyno am bensiwn neu ddarparwr pensiwn </a>.
-              <p>
-            </div>
-        promises:
-          html: |
-            <p>
-              Byddwn yn rhoi gwybod i chi pan fyddwn wedi derbyn eich cwyn ac yn anelu i roi ymateb llawn i chi i fewn 20 diwrnod gwaith.
-            </p>
-            <p>
-              Os na allwn wneud hyn (e.e, os ydym angen mwy o amser i ymchwilio i’ch cwyn) byddwn yn gadael i chi wybod beth yw’r rheswm
-              dros yr oedi a pryd y gallwch ddisgwyl ymateb.
-            </p>
-      take_things_further:
-        title: Os ydych angen mynd a phethau ymhellach
-        content:
-          html: |
-            <p>
-              Os nad ydych yn fodlon gyda’n ymateb i’ch cwyn, gallwch ysgrifennu at
-              <a href="mailto: complaints@pensionwise.gov.uk">complaints@pensionwise.gov.uk</a> iddo gael ei uwchraddio.
-            </p>
-            <p>
-              Yn eich e-bost, dywedwch y rheswm pam rydych yn anhapus gyda’n ymateb cyntaf a chynnwys copiau o’ch
-              cwyn gwreiddiol a’n ymateb. Yna byddwn yn ymchwilio ac ymateb i chi o fewn 20 diwrnod gwaith.
-            </p>
-      get_more_help:
-        title: Cael mwy o help
-        content:
-          html: |
-            <p>
-              Mae’r <a href="https://www.gov.uk/government/organisations/independent-case-examiner">Archwilydd Achosion Annibynnol (ICE)</a>
-              yn wasanaeth di-duedd, rhad ac am ddim sy’n gallu ymchwilio i’ch cwyn i weld os ydym wedi delio ag ef yn y ffordd gywir.
-            </p>
-            <div role="note" aria-label="Information" class="application-notice info-notice">
-              <p>
-                Bydd ICE ond yn edrych ar eich cwyn ar ôl i chi fynd trwy holl broses gwyno Pension Wise yn gyntaf.
-                Ni all ystyried anghydfodau am bolisi neu faterion cyfreithiol.
-              </p>
-            </div>
-            <p>
-              Bydd angen i chi anfon copi o’ch cwyn iddynt yn ogystal â llythyrau neu e-byst rydym wedi’u hanfon mewn ymateb.
-              Fel arfer ni fydd ICE yn edrych ar gŵyn a dderbynir mwy na 6 mis ar ôl dyddiad ein hymateb terfynol.
-            </p>
-            <p>
-              Gallwch hefyd ofyn i AS i gyfeirio eich cwyn i’r
-              <a href="http://www.ombudsman.org.uk">Ombwdsmon Seneddol a’r Gwasanaeth Iechyd</a>. Gallwch
-              <a href="http://www.parliament.uk/mps-lords-and-offices/mps/">gael help i ddod o hyd i’ch AS</a>
-              os nad ydych yn gwybod pwy ydynt. Fel arfer dim ond ar gwynion y mae ICE eisoes wedi’u hadolygu y mae’r Ombwdsmon yn edrych arnynt.
             </p>

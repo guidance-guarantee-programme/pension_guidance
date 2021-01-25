@@ -318,52 +318,6 @@ en:
   contact:
     new:
       description: Find out the different ways to contact Pension Wise, including how to send us feedback and how to make a complaint.
-      contact_us:
-        title: Contact us
-        content:
-          html: |
-            <div role="note" aria-label="Information" class="application-notice info-notice">
-              <p>Pension Wise can’t answer specific questions about your pension.</p>
-            </div>
-
-            <p>For independent help, you can contact:</p>
-
-            <ul>
-              <li>
-                <a href="http://www.pensionsadvisoryservice.org.uk/">The Pensions Advisory Service</a>
-              </li>
-              <li>
-                <a href="https://www.moneyadviceservice.org.uk/en/">The Money Advice Service</a>
-              </li>
-            </ul>
-
-            <p>
-              If you’d like to speak to someone about your pension options, you can
-              <a href="/en/appointments">book an appointment</a> with a Pension Wise guidance specialist.
-            </p>
-      send_us_feedback:
-        title: Send us feedback about Pension Wise
-        content:
-          html: |
-            <p>
-              You can email Pension Wise at <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>.
-            </p>
-
-            <p>
-              You can also write to us by post:
-            </p>
-
-            <div class="address">
-              <div class="adr org fn">
-                <p>
-                  Pension Wise<br />
-                  PO Box 10404<br />
-                  Ashby de la Zouch<br />
-                  Leicestershire<br />
-                  LE65 9EH
-                </p>
-              </div>
-            </div>
       complaints:
         title: Complaints
         intro:
@@ -388,62 +342,4 @@ en:
           html: |
             <p>
               <strong>Your complaint has been submitted.</strong>
-            </p>
-        guide:
-          html: |
-            <div role="note" aria-label="Information" class="application-notice info-notice">
-              <p>
-                Read our guide if you want to
-                <a href="/en/pension-complaints">complain about a pension or pension provider</a>.
-              <p>
-            </div>
-        promises:
-          html: |
-            <p>
-              We’ll let you know when we’ve received your complaint and aim to give a full response within 20 working days.
-            </p>
-
-            <p>
-              If we can’t do this (eg, if we need more time to investigate your complaint) we’ll let you know the reason
-              for the delay and when you can expect a response.
-            </p>
-      take_things_further:
-        title: If you need to take things further
-        content:
-          html: |
-            <p>
-              If you’re not satisfied with our response to your complaint, you can write to
-              <a href="mailto: complaints@pensionwise.gov.uk">complaints@pensionwise.gov.uk</a> to get it escalated.
-            </p>
-
-            <p>
-              In your email, state the reason why you’re unhappy with our first response and include copies of your
-              original complaint and our response. We’ll then investigate and get back to you within 20 working days.
-            </p>
-      get_more_help:
-        title: Getting more help
-        content:
-          html: |
-            <p>
-              The <a href="https://www.gov.uk/government/organisations/independent-case-examiner">Independent Case Examiner (ICE)</a>
-              is a free and impartial service that can investigate your complaint to see whether we’ve dealt with it in the right way.
-            </p>
-
-            <div role="note" aria-label="Information" class="application-notice info-notice">
-              <p>
-                ICE will only look at your complaint after you’ve been through the full Pension Wise complaints process first.
-                It can’t consider disputes about policy or legal matters.
-              </p>
-            </div>
-
-            <p>
-              You’ll need to send them a copy of your complaint as well as letters or emails that we sent in response.
-              ICE usually won’t look at a complaint received more than 6 months after the date of our final response.
-            </p>
-
-            <p>
-              You can also ask an MP to refer your complaint to the independent
-              <a href="http://www.ombudsman.org.uk">Parliamentary and Health Service Ombudsman</a>. You can
-              <a href="http://www.parliament.uk/mps-lords-and-offices/mps/">get help with finding your MP</a>
-              if you don’t know who they are. The Ombudsman usually only looks at complaints that ICE has already reviewed.
             </p>
