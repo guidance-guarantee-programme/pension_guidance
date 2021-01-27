@@ -6,6 +6,7 @@ RSpec.feature 'Customer complaints' do
 
     fill_in 'Name', with: 'Jim Bob'
     fill_in 'Email', with: 'jim@bob.com'
+    choose 'A phone guidance appointment', allow_label_click: true
     fill_in 'complaint_phone_booking_message', with: 'Some phone booking feedback'
 
     click_on 'Send complaint'

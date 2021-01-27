@@ -7,7 +7,7 @@ class ContactController < ApplicationController
   end
 
   def create
-    if verify_recaptcha(model: @complaint, attribute: :robot) && @complaint.send_to_zendesk
+    if @complaint.send_to_zendesk
       redirect_to contact_path(sent: true, anchor: :complaints)
     else
       render :new
@@ -26,6 +26,7 @@ class ContactController < ApplicationController
       .permit(
         :name,
         :email_address,
+        :nature_of_complaint,
         :phone_booking_message,
         :face_to_face_message,
         :other_message

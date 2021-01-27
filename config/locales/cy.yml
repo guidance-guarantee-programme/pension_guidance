@@ -136,6 +136,12 @@ cy:
         wrong_length: gyda maint anghywir o lythrennau (dylai fod yn %{count} llythyren)
 
       models:
+        complaint:
+          attributes:
+            nature_of_complaint:
+              inclusion: heb fod yn y rhestr
+            email_address:
+              invalid_email: nodwch gyfeiriad e-bost dilys
         feedback_form:
           attributes:
             name:
@@ -214,6 +220,13 @@ cy:
               inclusion: select an option
 
     attributes:
+      complaint:
+        name: Enw
+        email_address: E-bost
+        nature_of_complaint: Pwnc neu natur y cwyn
+        telephone_message: Eich cwyn
+        face_to_face_message: Eich cwyn
+        other_message: Eich cwyn
       employer/booking:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
@@ -344,15 +357,21 @@ cy:
           error:
             heading: Methu ag anfon y ffurflen
             message: 'Edrychwch dros y canlynol:'
+          nature_of_complaint:
+            legend: 'Beth yw pwnc neu natur eich cwyn?'
+            options:
+              phone_booking_message: Apwyntiad arweiniad dros y ffôn
+              face_to_face_message: Apwyntiad arweiniad wyneb yn wyneb
+              other_message: Cwyn am unrhyw beth 
           notes:
-            phone_booking: Os yw eich cwyn am apwyntiad arweiniad dros y ffôn – dylech gynnwys eich rhif cyfeirnod trefnu (gallwch weld hwn yn eich e-bost o gadarnhad)
-            face_to_face: Os yw eich cwyn am apwyntiad arweiniad wyneb i wyneb – dylech gynnwys yr amser, dyddiad a lleoliad eich apwyntiad
-            other: Os yw eich cwyn am unrhyw beth arall, dylech roi cyn gymaint o fanylion ag y gallwch
+            phone_booking: Eich cwyn
+            phone_booking_hint: Dylech gynnwys eich rhif cyfeirnod archebu (cewch hwn o’ch e-bost cadarnhaol)
+            face_to_face: Eich cwyn
+            face_to_face_hint: Dylech gynnwys yr amser, dyddiad a lleoliad eich apwyntiad
+            other: Eich cwyn
+            other_hint: Rhowch gymaint o fanylion ag y gallwch
           help:
             other: e.e ceisiais ffonio CAB Bangor ond ni atebodd neb
-          privacy:
-            html: |
-              <p>Gellir dod o hyd i fanylion llawn am ein polisi preifatrwydd, yn cynnwys gwybodaeth am eich hawliau mewn perthynas â’r data y gallwch ei gadw <a href="/cy/privacy">yma</a>.</p>
         sent:
           html: |
             <p>
