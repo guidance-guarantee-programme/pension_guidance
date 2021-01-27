@@ -396,9 +396,6 @@ cy:
             other_hint: Rhowch gymaint o fanylion ag y gallwch
           help:
             other: e.e ceisiais ffonio CAB Bangor ond ni atebodd neb
-          privacy:
-            html: |
-              <p>Gellir dod o hyd i fanylion llawn am ein polisi preifatrwydd, yn cynnwys gwybodaeth am eich hawliau mewn perthynas â’r data y gallwch ei gadw <a href="/cy/privacy">yma</a>.</p>
         sent:
           html: |
             <p>
