@@ -5,8 +5,10 @@
   padding: 0;
 }
 
-input[type="text"] {
-  min-height: 40px;
+input[type="text"],
+input[name="slider"] {
+  max-height: 40px;
+  padding: 7px 12px;
 }
 
 input[type="text"],
@@ -25,7 +27,6 @@ textarea {
 }
 
 // outlines
-input[type="submit"]:focus,
 input[type="checkbox"]:focus,
 input[type="radio"]:focus,
 textarea:focus {
@@ -74,5 +75,20 @@ select {
   &:focus {
     border: 2px solid $color-violet-primary;
     outline: 2px solid $color-yellow-secondary;
+  }
+}
+
+// hint
+.form-hint {
+  font-size: 16px;
+  line-height: 23px;
+  clear: both;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid $color-grey-mercury;
+  color: inherit;
+
+  &:last-of-type {
+    border: 0;
   }
 }

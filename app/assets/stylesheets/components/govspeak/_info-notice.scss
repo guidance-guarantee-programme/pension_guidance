@@ -2,7 +2,7 @@
 
 .info-notice {
   clear: both;
-  border-left: 10px solid $color-magenta-primary;
+  border-left: 4px solid $color-teal-light-secondary;
   margin-bottom: 1em;
 
   @include ie(6) {

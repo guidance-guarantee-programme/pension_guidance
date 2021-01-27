@@ -1,11 +1,61 @@
+@import "../money-helper-variables";
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: bold;
+}
+
 h1 {
-  @extend .heading-xlarge;
+  // @extend .heading-xlarge;
+  color: $color-blue-primary;
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 1.5rem;
+
+  @media only screen and (min-width: $mq-s-max) {
+    font-size: 48px;
+    line-height: 54px;
+  }
 }
 
 h2 {
-  @extend .heading-medium;
+  // @extend .heading-medium;
+  color: $color-blue-primary;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 1rem;
+
+  @media only screen and (min-width: $mq-s-max) {
+    font-size: 38px;
+    line-height: 43px;
+  }
 }
 
 h3 {
-  @extend .heading-small;
+  // @extend .heading-small;
+  color: $color-dark-blue-secondary;
+  font-size: 25px;
+  line-height: 33px;
+
+  @media only screen and (min-width: $mq-s-max) {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+h5,
+.question h2 {
+  // @extend .heading-small;
+  color: $color-dark-blue-secondary;
+  font-size: 20px;
+  line-height: 25px;
+
+  @media only screen and (min-width: $mq-s-max) {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
