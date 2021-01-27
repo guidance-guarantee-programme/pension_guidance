@@ -358,7 +358,7 @@ cy:
         content:
           html: |
             <p>
-              Gallwch e-bostio Pension Wise yn <a href="mailto:appointments@pensionwise.gov.uk">appointments@pensionwise.gov.uk</a>.
+              Gallwch e-bostio Pension Wise yn <a href="mailto:contact@pensionwise.gov.uk">contact@pensionwise.gov.uk</a>.
             </p>
             <p>
               Gallwch hefyd ysgrifennu atom drwy’r post:
@@ -422,7 +422,7 @@ cy:
           html: |
             <p>
               Os nad ydych yn fodlon gyda’n ymateb i’ch cwyn, gallwch ysgrifennu at
-              <a href="mailto:appointments@pensionwise.gov.uk">appointments@pensionwise.gov.uk</a> iddo gael ei uwchraddio.
+              <a href="mailto: complaints@pensionwise.gov.uk">complaints@pensionwise.gov.uk</a> iddo gael ei uwchraddio.
             </p>
             <p>
               Yn eich e-bost, dywedwch y rheswm pam rydych yn anhapus gyda’n ymateb cyntaf a chynnwys copiau o’ch
