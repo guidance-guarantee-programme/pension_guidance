@@ -26,6 +26,7 @@ class ContactController < ApplicationController
       .permit(
         :name,
         :email_address,
+        :nature_of_complaint,
         :phone_booking_message,
         :face_to_face_message,
         :other_message

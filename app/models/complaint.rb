@@ -1,11 +1,25 @@
 class Complaint
   include ActiveModel::Model
 
+  NATURE_OF_COMPLAINT = %w(
+    phone_booking_message
+    face_to_face_message
+    other_message
+  ).freeze
+
+  attr_accessor :nature_of_complaint
   attr_accessor :name, :email_address
   attr_accessor :phone_booking_message, :face_to_face_message, :other_message
 
   validates :name, presence: true
   validates :email_address, email: true, allow_blank: true
+  validates :nature_of_complaint, inclusion: { in: NATURE_OF_COMPLAINT }
+
+  NATURE_OF_COMPLAINT.each do |nature_of_complaint|
+    validates nature_of_complaint,
+              presence: true,
+              if: ->(complaint) { complaint.nature_of_complaint == nature_of_complaint }
+  end
 
   def send_to_zendesk
     ZenDesk.create_ticket(zendesk_content) if valid?
@@ -26,34 +40,14 @@ class Complaint
       subject: 'Complaint',
       name: name,
       email: requester_email,
-      message: combined_message,
+      message: message,
       tags: %w(complaint)
     }
   end
 
-  def combined_message # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
-    @combined_message ||= begin
-      @combined_message = ''
+  def message
+    return '' if nature_of_complaint.blank?
 
-      if phone_booking_message.present?
-        @combined_message << "About a Phone Booking\n"
-        @combined_message << "---------------------\n"
-        @combined_message << "#{phone_booking_message}\n\n"
-      end
-
-      if face_to_face_message.present?
-        @combined_message << "About a Face to Face Booking\n"
-        @combined_message << "---------------------\n"
-        @combined_message << "#{face_to_face_message}\n\n"
-      end
-
-      if other_message.present?
-        @combined_message << "About something else\n"
-        @combined_message << "---------------------\n"
-        @combined_message << other_message
-      end
-
-      @combined_message
-    end
+    public_send(nature_of_complaint)
   end
 end

@@ -134,6 +134,13 @@ en:
   activemodel:
     errors:
       models:
+        complaint:
+          attributes:
+            nature_of_complaint:
+              inclusion: select an option
+            email_address:
+              invalid_email: enter a valid email address
+
         feedback_form:
           attributes:
             name:
@@ -250,6 +257,11 @@ en:
               blank: describe the accessibility adjustments you require
 
     attributes:
+      complaint:
+        nature_of_complaint: Subject or nature of complaint
+        telephone_message: Your complaint
+        face_to_face_message: Your complaint
+        other_message: Your complaint
       bsl/booking_request:
         supported: Will someone be joining you for support
         support_name: Their name
@@ -292,10 +304,6 @@ en:
           attributes:
             appointment_type:
               inclusion: select a range
-        complaint:
-          attributes:
-            email_address:
-              invalid_email: enter a valid email address
         pension_summary:
           attributes:
             consent_given:
@@ -417,10 +425,19 @@ en:
           error:
             heading: Unable to submit the form
             message: 'Check the following:'
+          nature_of_complaint:
+            legend: What is the subject or nature of your complaint?
+            options:
+              phone_booking_message: A phone guidance appointment
+              face_to_face_message: A face-to-face guidance appointment
+              other_message: A complaint about anything else
           notes:
-            phone_booking: If your complaint is about a phone guidance appointment – include your booking reference number (you’ll find this in your confirmation email)
-            face_to_face: If your complaint is about a face-to-face guidance appointment – include the time, date and location of your appointment
-            other: If your complaint is about anything else, please provide as much detail as you can
+            phone_booking: Your complaint
+            phone_booking_hint: Include your booking reference number (you’ll find this in your confirmation email)
+            face_to_face: Your complaint
+            face_to_face_hint: Include the time, date and location of your appointment
+            other: Your complaint
+            other_hint: Please provide as much detail as you can
           help:
             other: e.g I tried to call Hackney CAB but no one answered
           privacy:
