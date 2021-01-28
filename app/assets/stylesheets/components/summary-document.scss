@@ -33,30 +33,6 @@
     }
   }
 
-  .next-steps {
-    h3 {
-      // scss-lint:disable PlaceholderInExtend
-      @extend h2;
-    }
-
-    h4 {
-      // scss-lint:disable PlaceholderInExtend
-      @extend p;
-    }
-  }
-
-  h2 {
-    // scss-lint:disable PlaceholderInExtend
-    @extend h1;
-    margin-top: 2em;
-
-    &.option {
-      &:before {
-        top: 7px;
-      }
-    }
-  }
-
   hr {
     display: none;
   }
