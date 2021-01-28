@@ -15,7 +15,11 @@
     margin: 0 (-$sticky-sidebar-gutter);
     top: 0;
 
-    @include media($min-width: ($site-width + $gutter * 2)) {
+    @include media(
+      $min-width: (
+        $site-width + $gutter * 2,
+      )
+    ) {
       width: $site-width / 3;
       padding-right: 0;
     }
@@ -81,48 +85,6 @@
     margin-left: 0;
   }
 }
-
-.sticky-sidebar__link:link,
-.sticky-sidebar__link:visited {
-  font-size: 19px;
-  color: $grey-1;
-  border-left: 4px solid $grey-3;
-  padding-left: 20px;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 4px;
-
-  .active & {
-    color: $color-black;
-    font-weight: 700;
-    text-decoration: underline;
-
-    .sticky-sidebar--leave-pot-untouched & {
-      border-left-color: $color-option-leave-pot-untouched;
-    }
-
-    .sticky-sidebar--guaranteed-income & {
-      border-left-color: $color-option-guaranteed-income;
-    }
-
-    .sticky-sidebar--adjustable-income & {
-      border-left-color: $color-option-adjustable-income;
-    }
-
-    .sticky-sidebar--take-cash-in-chunks & {
-      border-left-color: $color-option-take-cash;
-    }
-
-    .sticky-sidebar--take-whole-pot & {
-      border-left-color: $color-option-take-whole-pot;
-    }
-
-    .sticky-sidebar--mix-options & {
-      border-left-color: $color-option-mix-options;
-    }
-  }
-}
-
 
 .sticky-sidebar__link--calculator:link,
 .sticky-sidebar__link--calculator:visited {

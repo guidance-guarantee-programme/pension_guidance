@@ -1,3 +1,10 @@
-.sidebar-hr {
-  border-top: 10px solid $govuk-blue;
+@import "../money-helper-variables";
+
+.sidebar-hr,
+.page-break {
+  border-top: 4px solid $color-teal-light-secondary;
+}
+
+.page-break {
+  margin: 2rem 0;
 }

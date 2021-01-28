@@ -1,109 +1,23 @@
+@import "../money-helper-variables";
+
 .next-steps {
   display: inline-block;
   position: relative;
-  padding: 0 1.5em .5em;
-  margin-bottom: 1.3em;
+  padding: 2rem;
+  margin-bottom: 1rem 0 2rem;
+  width: 100%;
 
-  @include media(desktop) {
-    margin-left: -2em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: .833em;
-  }
-
-  ul li {
-    list-style: none;
-    position: relative;
-    padding-bottom: .5em;
-    border-bottom: 1px solid $border-colour;
-    margin-bottom: .8em;
-
-    &:last-child {
-      border-bottom: 0;
-    }
-
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      border-radius: 10px;
-      left: -1em;
-      top: 7px;
-      background-color: $border-colour;
-    }
+  @include media($mq-l) {
+    padding: 3rem;
+    margin: 2rem 0 3rem;
   }
 }
 
-.next-steps--leave-pot-untouched {
-  background: transparentize($color-option-leave-pot-untouched, .9);
-
-  ul li {
-    border-bottom-color: transparentize($color-option-leave-pot-untouched, .4);
-
-    &:before {
-      background: $color-option-leave-pot-untouched;
-    }
-  }
-}
-
-.next-steps--guaranteed-income {
-  background: transparentize($color-option-guaranteed-income, .9);
-
-  ul li {
-    border-bottom-color: transparentize($color-option-guaranteed-income, .4);
-
-    &:before {
-      background: $color-option-guaranteed-income;
-    }
-  }
-}
-
-.next-steps--adjustable-income {
-  background: transparentize($color-option-adjustable-income, .8);
-
-  ul li {
-    border-bottom-color: transparentize($color-option-adjustable-income, .4);
-
-    &:before {
-      background: $color-option-adjustable-income;
-    }
-  }
-}
-
-.next-steps--take-cash-in-chunks {
-  background: transparentize($color-option-take-cash, .9);
-
-  ul li {
-    border-bottom-color: transparentize($color-option-take-cash, .4);
-
-    &:before {
-      background: $color-option-take-cash;
-    }
-  }
-}
-
-.next-steps--whole-pot {
-  background: transparentize($color-option-take-whole-pot, .9);
-
-  ul li {
-    border-bottom-color: transparentize($color-option-take-whole-pot, .4);
-
-    &:before {
-      background: $color-option-take-whole-pot;
-    }
-  }
-}
-
+.next-steps--leave-pot-untouched,
+.next-steps--guaranteed-income,
+.next-steps--adjustable-income,
+.next-steps--take-cash-in-chunks,
+.next-steps--whole-pot,
 .next-steps--mix-options {
-  background: transparentize($color-option-mix-options, .9);
-
-  ul li {
-    border-bottom-color: transparentize($color-option-mix-options, .4);
-
-    &:before {
-      background: $color-option-mix-options;
-    }
-  }
+  background: $color-light-grey-supporting;
 }
