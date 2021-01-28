@@ -19,6 +19,7 @@ h1 {
   @media only screen and (min-width: $mq-s-max) {
     font-size: 48px;
     line-height: 54px;
+    margin-bottom: 1.7rem;
   }
 }
 
@@ -32,6 +33,7 @@ h2 {
   @media only screen and (min-width: $mq-s-max) {
     font-size: 38px;
     line-height: 43px;
+    margin-bottom: 1.3rem;
   }
 }
 
@@ -40,10 +42,12 @@ h3 {
   color: $color-dark-blue-secondary;
   font-size: 25px;
   line-height: 33px;
+  margin-bottom: 0.9rem;
 
   @media only screen and (min-width: $mq-s-max) {
     font-size: 32px;
     line-height: 39px;
+    margin-bottom: 1.2rem;
   }
 }
 
