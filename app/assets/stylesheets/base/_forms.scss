@@ -6,7 +6,9 @@ input[type="number"],
 input[type="email"],
 input[type="search"],
 input[type="password"],
-textarea {
+textarea,
+.form-control,
+select {
   font-size: 16px;
   border: 1px solid $color-grey-secondary;
   border-radius: 4px;
@@ -33,20 +35,12 @@ input[type="password"] {
 }
 
 // select
+.form-control,
 select {
   background-color: $color-white-supporting;
-  border: 1px solid $color-grey-secondary;
-  border-radius: 4px;
   font-weight: normal;
-  font-style: italic;
   color: $color-grey-secondary;
   padding: 8px 15px;
-
-  &:focus {
-    color: $color-dark-blue-secondary;
-    outline: 2px solid $color-violet-primary;
-    background-color: $color-yellow-secondary;
-  }
 }
 
 // radio buttons
@@ -84,11 +78,6 @@ input[type="radio"]:hover {
   margin-right: 0;
 }
 
-// form container
-.form-control {
-  padding: 0;
-}
-
 // labels
 .form-label {
   font-size: 18px;
@@ -108,4 +97,8 @@ input[type="radio"]:hover {
   &:last-of-type {
     border: 0;
   }
+}
+
+.form-date .form-group input {
+  width: 105%;
 }
