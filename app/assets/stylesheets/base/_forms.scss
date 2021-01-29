@@ -1,48 +1,51 @@
 @import "../money-helper-variables";
 // maps styles
-// inputs
+
 .form-control {
   padding: 0;
 }
 
-input[type="text"],
-input[name="slider"] {
-  max-height: 40px;
-  padding: 7px 12px;
+.form-label {
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-dark-blue-secondary;
 }
 
+// inputs
 input[type="text"],
 input[type="number"],
-input[type="select"],
 input[type="email"],
 input[type="search"],
 input[type="password"],
 textarea {
+  font-size: 16px;
   border: 1px solid $color-grey-secondary;
   border-radius: 4px;
+
+  // outlines
+  &:focus {
+    border: 2px solid $color-violet-primary;
+    outline: 4px solid $color-yellow-secondary;
+    background-color: $color-white-supporting;
+  }
 
   &.form-control-error {
     border: 2px solid $error-red;
   }
 }
 
-// outlines
-input[type="checkbox"]:focus,
-input[type="radio"]:focus,
-textarea:focus {
-  outline: solid 0.1875rem $color-violet-primary;
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="search"],
+input[type="password"] {
+  max-height: 40px;
+  padding: 7px 12px;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="search"]:focus,
-input[type="password"]:focus {
-  border: 2px solid $color-violet-primary;
-  outline: 4px solid $color-yellow-secondary;
-  background-color: $color-white-supporting;
-}
-// hover
+// hover & focus
+input[type="checkbox"]:focus,
+input[type="radio"]:focus,
 input[type="checkbox"]:hover,
 input[type="radio"]:hover {
   outline: solid 0.1875rem $color-violet-primary;
@@ -83,8 +86,6 @@ select {
   font-size: 16px;
   line-height: 23px;
   clear: both;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
   border-bottom: 1px solid $color-grey-mercury;
   color: inherit;
 
