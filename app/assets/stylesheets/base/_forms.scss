@@ -32,14 +32,6 @@ input[type="password"] {
   padding: 7px 12px;
 }
 
-// hover & focus
-input[type="checkbox"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:hover,
-input[type="radio"]:hover {
-  outline: solid 0.1875rem $color-violet-primary;
-}
-
 // select
 select {
   background-color: $color-white-supporting;
@@ -58,6 +50,7 @@ select {
 }
 
 // radio buttons
+input[type="radio"],
 .input--radio-first,
 .input--radio {
   width: 28px;
@@ -70,6 +63,27 @@ select {
   }
 }
 
+// hover & focus
+input[type="checkbox"]:focus,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  outline: solid 0.1875rem $color-violet-primary;
+}
+
+// errors
+.error-message {
+  color: $error-red;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.form-group-error {
+  border-left: 4px solid $error-red;
+  padding-left: 14px;
+  margin-right: 0;
+}
+
 // form container
 .form-control {
   padding: 0;
@@ -80,6 +94,7 @@ select {
   font-size: 18px;
   line-height: 26px;
   color: $color-dark-blue-secondary;
+  padding-bottom: 0;
 }
 
 // hint
@@ -87,8 +102,8 @@ select {
   font-size: 16px;
   line-height: 23px;
   clear: both;
-  border-bottom: 1px solid $color-grey-mercury;
   color: inherit;
+  font-style: italic;
 
   &:last-of-type {
     border: 0;
