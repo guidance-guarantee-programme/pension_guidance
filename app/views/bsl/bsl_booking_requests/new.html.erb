@@ -22,7 +22,7 @@
 
     <%= form_for @booking_request, url: bsl_booking_requests_path, as: :booking_request do |f| %>
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:first_name) %>">
-        <%= f.label :first_name, class: 'form-label-bold' %>
+        <%= f.label :first_name, class: 'form-label' %>
         <% if @booking_request.errors.include?(:first_name) %>
           <span class="error-message"><%= @booking_request.errors[:first_name].to_sentence.capitalize %></span>
         <% end %>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:last_name) %>">
-        <%= f.label :last_name, class: 'form-label-bold' %>
+        <%= f.label :last_name, class: 'form-label' %>
         <% if @booking_request.errors.include?(:last_name) %>
           <span class="error-message"><%= @booking_request.errors[:last_name].to_sentence.capitalize %></span>
         <% end %>
@@ -38,7 +38,7 @@
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:email) %>">
-        <%= f.label :email, class: 'form-label-bold' do %>
+        <%= f.label :email, class: 'form-label' do %>
           Email
           <span class="form-hint">We’ll send an email confirming your appointment date</span>
         <% end %>
@@ -53,7 +53,7 @@
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:phone) %>">
-        <%= f.label :phone, class: 'form-label-bold' do %>
+        <%= f.label :phone, class: 'form-label' do %>
           Phone number
           <span class="form-hint">We’ll send an SMS appointment reminder if a mobile number is provided</span>
         <% end %>
@@ -66,7 +66,7 @@
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:memorable_word) %>">
-        <%= f.label :memorable_word, class: 'form-label-bold' do %>
+        <%= f.label :memorable_word, class: 'form-label' do %>
           Your memorable word
           <span class="form-hint">Our pension specialist will repeat this word when they call so you know it’s us</span>
         <% end %>
@@ -81,7 +81,7 @@
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:date_of_birth) %>">
         <fieldset>
           <legend>
-            <span class="form-label-bold">
+            <span class="form-label">
               Date of birth
             </span>
             <span class="form-hint" id="dob-hint">You must be aged 50 or over to book an appointment, e.g. 31 3 1950</span>
@@ -260,7 +260,7 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :additional_info, class: 'form-label-bold' do %>
+        <%= f.label :additional_info, class: 'form-label' do %>
           Additional information
           <span class="form-hint">
             e.g. accessibility adjustments, contact preferences
@@ -270,7 +270,7 @@
       </div>
 
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:where_you_heard) %>">
-        <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label-bold' %>
+        <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label' %>
         <% if @booking_request.errors.include?(:where_you_heard) %>
           <span class="error-message"><%= @booking_request.errors[:where_you_heard].to_sentence.capitalize %></span>
         <% end %>
@@ -304,7 +304,7 @@
       </div>
 
       <div class="form-group">
-        <%= f.submit 'Confirm booking request', class: 'button t-submit', data: { disable_with: 'Please wait...' } %>
+        <%= f.submit 'Confirm booking request', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
       </div>
 
       <div role="note" aria-label="Information" class="application-notice info-notice">
