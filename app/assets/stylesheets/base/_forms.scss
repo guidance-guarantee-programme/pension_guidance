@@ -1,16 +1,5 @@
 @import "../money-helper-variables";
 // maps styles
-
-.form-control {
-  padding: 0;
-}
-
-.form-label {
-  font-size: 18px;
-  line-height: 26px;
-  color: $color-dark-blue-secondary;
-}
-
 // inputs
 input[type="text"],
 input[type="number"],
@@ -79,6 +68,18 @@ select {
     border: 2px solid $color-violet-primary;
     outline: 2px solid $color-yellow-secondary;
   }
+}
+
+// form container
+.form-control {
+  padding: 0;
+}
+
+// labels
+.form-label {
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-dark-blue-secondary;
 }
 
 // hint
