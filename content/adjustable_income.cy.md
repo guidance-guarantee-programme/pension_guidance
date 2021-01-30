@@ -1,6 +1,6 @@
 ---
 label: Cael incwm addasadwy
-description: Gallwch ddewis cymryd incwm neu gyfandaliadau o'ch cronfa bensiwn, trwy ddefnyddio trefniant tynnu allan hyblyg. Trefnwch apwyntiad Pension Wise heddiw.
+description: Gallwch ddewis cymryd incwm neu gyfandaliadau o’ch cronfa bensiwn, trwy ddefnyddio trefniant tynnu allan hyblyg. Trefnwch apwyntiad Pension Wise heddiw.
 tags:
   - option
 ---
@@ -47,13 +47,15 @@ Os byddwch yn dewis yr opsiwn hwn, gallwch adael eich arian i rywun pan fyddwch 
 
 ## Sut mae incwm addasadwy yn gweithio
 
-Bydd eich darparwr yn cynnig gwahanol fuddsoddiadau gyda gwahanol risgiau i chi. Chi sy’n dewis y buddsoddiadau sy’n addas ar eich cyfer chi ac yn cael incwm wedi ymddeol oddi wrthynt. Dylech feddwl am faint rydych yn cymryd allan bob blwyddyn a [pha mor hir mae angen i’ch arian barhau](/cy/making-money-last).
+Bydd angen i chi benderfynu faint rydych yn ei gymryd bob blwyddyn a [pha mor hir mae angen i’ch arian bara](/cy/making-money-last).
 
-Gall ymgynghorydd ariannol eich helpu i greu cynllun buddsoddi ar gyfer eich arian. Gallant eich cynghori ar faint y gallwch ei gymryd allan i wneud yr arian bara mor hir â phosibl. Byddant yn codi ffi arnoch am hyn.
+Bydd eich darparwr yn gofyn i chi sut rydych am fuddsoddi’ch cronfa sy’n weddill pan fyddwch yn symud i mewn i dynnu incwm i lawr. Bydd angen i chi naill ai ddewis eich buddsoddiadau eich hun, hynny yw; rhai sy’n cyd-fynd â’ch agwedd at risg ac amcanion am eich arian, neu bydd rhai darparwyr yn cynnig i chi ddewis o opsiynau buddsoddi parod syml sy’n gysylltiedig â’ch cynlluniau ymddeol (gelwir y rhain yn Llwybrau Buddsoddi).
 
-Mae eich darparwr yn debygol o godi tâl arnoch am reoli eich buddsoddiadau a phryd bynnag y byddwch yn cael taliad.
+Gall cynghorydd ariannol eich helpu i greu cynllun buddsoddi ar gyfer eich arian. Gallant eich cynghori ar faint y gallwch ei gymryd i wneud i’r arian bara cyhyd â phosibl. Byddan nhw’n codi ffi arnoch chi am hyn.
 
-Os yw eich darparwr yn mynd i’r wal, bydd y [Cynllun Iawndal Gwasanaethau Ariannol](/cy/protection) yn eich gwarchod.
+Mae eich darparwr yn debygol o godi ffioedd arnoch am reoli eich buddsoddiadau a phryd bynnag y cewch daliad.
+
+Os bydd eich darparwr yn mynd i’r wal, fe’ch cwmpasir gan y [Cynllun Iawndal Gwasanaethau Ariannol](/cy/protection).
 
 ## Parhau i dalu mewn
 
@@ -80,7 +82,7 @@ Byddwch yn ofalus o sgiâmau pensiwn yn cysylltu â chi yn annisgwyl am fuddsodd
 - Gwiriwch a oes gan eich cronfa unrhyw nodweddion arbennig a allai olygu eich bod yn cael bargen well, er enghraifft cyfradd blwydd-dal gwarantedig.
 - Dylech gael [cyngor ariannol](/cy/financial-advice) os oes gennych ddiddordeb mewn cael incwm addasadwy.
 - [Chwilio o gwmpas](/cy/shop-around) – gofynnwch i ddarparwyr pa gynhyrchion maent yn eu cynnig i weddu â’ch amgylchiadau.
-- Dylech gael amcangyfrifon gan ddarparwyr eraill ar faint y gallai eich cronfa dyfu a beth yw’r ffioedd - fel arfer bydd ond rhaid i chi lenwi ffurflen fer ar eu gwefan.
+- Sicrhewch rai amcangyfrifon gan ddarparwyr eraill ar faint y gallai eich cronfa dyfu a beth yw’r ffioedd - fel arfer mae’n rhaid i chi lenwi ffurflen fer ar eu gwefan. Os ydych yn chwilio am gynhyrchion sy’n cynnig opsiynau buddsoddi parod syml, gallwch ddefnyddio ein [teclyn cymharu llwybrau buddsoddi](https://www.moneyadviceservice.org.uk/cy/tools/drawdown-investment-pathways) i’ch helpu.
 - Gwnewch yn siŵr eich bod yn gwybod [faint o dreth](/cy/tax) y byddwch yn ei dalu ar unrhyw arian rydych yn bwriadu ei gymryd allan.
 
 </div>
