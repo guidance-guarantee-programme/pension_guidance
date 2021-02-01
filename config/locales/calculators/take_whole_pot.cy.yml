@@ -24,11 +24,11 @@ cy:
           html: |
             Os byddwch yn cymryd eich cronfa %{pot_value} gyfan ar un tro, gallech gael:
 
-            <strong class="calculator__estimate__number t-pot-received">%{pot_received}</strong>
+            <h3 class="calculator__estimate__number t-pot-received">%{pot_received}</h3>
 
             Rydym yn amcangyfrif y byddwch yn talu:
 
-            <strong class="calculator__estimate__number t-pot-tax">%{pot_tax} mewn treth</strong>
+            <h3 class="calculator__estimate__number t-pot-tax">%{pot_tax} mewn treth</h3>
         notes:
           html: |
             <li>

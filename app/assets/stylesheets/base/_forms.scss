@@ -8,7 +8,8 @@ input[type="search"],
 input[type="password"],
 textarea,
 .form-control,
-select {
+select,
+input[name="slider"] {
   font-size: 16px;
   border: 1px solid $color-grey-secondary;
   border-radius: 4px;
@@ -29,7 +30,8 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="search"],
-input[type="password"] {
+input[type="password"],
+input[name="slider"] {
   max-height: 40px;
   padding: 7px 12px;
 }
@@ -91,7 +93,7 @@ input[type="radio"]:hover {
   font-size: 16px;
   line-height: 23px;
   clear: both;
-  color: inherit;
+  color: $color-grey-secondary;
   font-style: italic;
 
   &:last-of-type {

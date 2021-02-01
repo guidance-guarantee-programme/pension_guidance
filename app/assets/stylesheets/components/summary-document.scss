@@ -36,4 +36,8 @@
   hr {
     display: none;
   }
+
+  h3:not(.next-steps h3) {
+    margin-top: 3rem;
+  }
 }

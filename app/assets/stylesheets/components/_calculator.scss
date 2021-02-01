@@ -11,20 +11,8 @@
     margin-top: 1em;
   }
 
-  .calculator-heading {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
   &.calculator--mix-options {
     border-left-color: $color-option-mix-options;
-  }
-
-  @media only screen and (min-width: $mq-s-max) {
-    calculator-heading {
-      font-size: 38px;
-      line-height: 43px;
-    }
   }
 }
 
@@ -54,18 +42,4 @@
 .calculator__field--frequency-select {
   width: 25%;
   -webkit-appearance: menulist;
-}
-
-.calculator__estimate__number {
-  font-size: 25px;
-  line-height: 33px;
-  font-weight: 700;
-  color: $color-dark-blue-secondary;
-  display: block;
-  margin: 0.4em 0.5em 0.4em 0;
-
-  @media only screen and (min-width: $mq-s-max) {
-    font-size: 32px;
-    line-height: 39px;
-  }
 }

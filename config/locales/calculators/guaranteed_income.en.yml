@@ -2,8 +2,8 @@ en:
   activemodel:
     attributes:
       calculators/guaranteed_income_form:
-        pot: 'How much is in your pot?'
-        age: 'What age do you want to take your money?'
+        pot: "How much is in your pot?"
+        age: "What age do you want to take your money?"
     errors:
       models:
         calculators/guaranteed_income_form:
@@ -25,13 +25,13 @@ en:
           html: |
             Based on what you’ve told us, if you use your %{pot_value} pension pot to buy an annuity, you could get:
 
-            <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} tax free</strong>
+            <h3 class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} tax free</h3>
 
             and get:
 
-            <strong class="calculator__estimate__number t-calculator-income">
+            <h3 class="calculator__estimate__number t-calculator-income">
               %{income} guaranteed annual taxable income, for the rest of your life
-            </strong>
+            </h3>
         notes:
           html: |
             <li>This estimate is for a single-life non-escalating annuity.</li>

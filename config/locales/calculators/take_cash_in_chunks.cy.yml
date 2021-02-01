@@ -31,18 +31,18 @@ cy:
             Os byddwch yn cymryd <span class="t-calculator-chunk calculator__highlight">%{chunk}</span> o'ch
             <span class="t-calculator-pot">%{pot_value}</span> cronfa, gallech gael:
 
-            <strong class="calculator__estimate__number t-calculator-chunk-remaining">%{chunk_remaining}</strong>
+            <h3 class="calculator__estimate__number t-calculator-chunk-remaining">%{chunk_remaining}</h3>
 
             Rydym yn amcangyfrif y byddwch yn talu:
 
-            <strong class="calculator__estimate__number t-calculator-chunk-tax">%{chunk_tax} mewn treth</strong>
+            <h3 class="calculator__estimate__number t-calculator-chunk-tax">%{chunk_tax} mewn treth</h3>
 
             Yn gadael:
 
-            <strong class="calculator__estimate__number t-calculator-pot-remaining">
+            <h3 class="calculator__estimate__number t-calculator-pot-remaining">
               %{pot_remaining} yn eich cronfa
-            </strong>
-        slider_label: 'neu rhowch gynnig ar swm gwahanol o arian:'
+            </h3>
+        slider_label: "neu rhowch gynnig ar swm gwahanol o arian:"
         notes:
           html: |
             <li>
