@@ -24,11 +24,11 @@ en:
           html: |
             If you take your whole %{pot_value} pot in one go, you could get:
 
-            <strong class="calculator__estimate__number t-pot-received">%{pot_received}</strong>
+            <h3 class="calculator__estimate__number t-pot-received">%{pot_received}</h3>
 
             We estimate you’ll pay:
 
-            <strong class="calculator__estimate__number t-pot-tax">%{pot_tax} in tax</strong>
+            <h3 class="calculator__estimate__number t-pot-tax">%{pot_tax} in tax</h3>
         notes:
           html: |
             <li>

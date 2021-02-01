@@ -2,8 +2,8 @@ cy:
   activemodel:
     attributes:
       calculators/adjustable_income_form:
-        pot: 'Faint sydd yn eich cronfa?'
-        age: 'Pa oedran ydych chi eisiau cymryd eich arian?'
+        pot: "Faint sydd yn eich cronfa?"
+        age: "Pa oedran ydych chi eisiau cymryd eich arian?"
     errors:
       models:
         calculators/adjustable_income_form:
@@ -31,15 +31,15 @@ cy:
           html: |
             Yn seiliedig ar beth rydych wedi'i ddweud wrthym, os byddwch yn defnyddio eich cronfa bensiwn %{pot_value} i gymryd incwm addasiadwy, gallech gael:
 
-            <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} yn ddi-dreth</strong>
+            <h3 class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} yn ddi-dreth</h3>
 
             ac
 
-            <strong class="calculator__estimate__number">
+            <h3 class="calculator__estimate__number">
               incwm misol o <span class="calculator__highlight">%{drawdown_amount}</span>
               hyd nes rydych yn <span class="t-calculator-age-for-desired-income calculator__highlight">%{until_age}</span>
-            </strong>
-        slider_label: 'neu rhowch gynnig ar incwm misol gwahanol:'
+            </h3>
+        slider_label: "neu rhowch gynnig ar incwm misol gwahanol:"
         notes:
           html: |
             <li class="t-calculator-life-expectancy-income">
