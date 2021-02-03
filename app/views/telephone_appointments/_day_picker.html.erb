@@ -2,7 +2,7 @@
   <%= form_for @telephone_appointment, html: { class: 'js-day-picker-form' } do |f| %>
     <%= render 'hidden_fields', f: f, id_prefix: 'day_picker' %>
     <%= f.hidden_field(:step, value: 1, id: 'hidden_telephone_appointment_step_day_picker') %>
-    <h2 class="slot-picker-header">Choose a day</h2>
+    <h5 class="slot-picker-header">Choose a day</h5>
     <div>
       <% @months.each do |month, days| %>
         <%
@@ -19,6 +19,11 @@
               <div class="slot-picker-nav__item slot-picker-nav__item--prev">
                 <% if prev_month %>
                   <button class="js-slot-picker-prev-month hidden slot-picker-nav-button slot-picker-nav-button--prev">
+                    <span class="arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 15">
+                        <path fill="#C82A87" d="M6 14.5l2-2-3.9-3.9c-.6-.6-.6-1.5 0-2.1l3.9-4-2-2-4.2 4.2C.2 6.3.2 8.8 1.8 10.4L6 14.5z"/>
+                      </svg>
+                    </span>
                     <span class="visually-hidden"><%= prev_month.strftime('%B') %></span>
                     <span class="slot-picker-nav-button__long-text" aria-hidden="true"><%= prev_month.strftime('%B') %></span>
                     <span class="slot-picker-nav-button__short-text" aria-hidden="true"><%= prev_month.strftime('%b') %></span>
@@ -34,6 +39,11 @@
                     <span class="visually-hidden"><%= next_month.strftime('%B') %></span>
                     <span class="slot-picker-nav-button__long-text" aria-hidden="true"><%= next_month.strftime('%B') %></span>
                     <span class="slot-picker-nav-button__short-text" aria-hidden="true"><%= next_month.strftime('%b') %></span>
+                    <span class="arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 15">
+                        <path fill="#C82A87" d="M2 .5L9e-8 2.5 3.9 6.4c.6.6.6 1.5 0 2.1L5.2e-7 12.5 2 14.5l4.2-4.2c1.6-1.6 1.6-4.1 0-5.7L2 .5z"/>
+                      </svg>
+                    </span>
                   </button>
                 <% end %>
               </div>

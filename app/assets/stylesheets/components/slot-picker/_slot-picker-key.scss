@@ -1,3 +1,5 @@
+@import "../../money-helper-variables";
+
 .slot-picker-key {
   list-style: none;
   margin: 16px 0 32px;
@@ -5,11 +7,13 @@
 
 .slot-picker-key__item {
   display: inline-block;
+  position: inherit;
   list-style: none;
   margin: 0 8px 0 0;
 
   &:before {
-    border: 1px solid $calendar-border;
+    border: 1px solid $color-grey-blue-supporting;
+    position: inherit;
     content: "";
     display: inline-block;
     height: 31px;
@@ -31,6 +35,9 @@
 
 .slot-picker-key__item--unavailable {
   &:before {
-    @include striped($calendar-busy-background-thin-stripes, $calendar-busy-background-wide-stripes);
+    @include striped(
+      $calendar-busy-background-thin-stripes,
+      $calendar-busy-background-wide-stripes
+    );
   }
 }
