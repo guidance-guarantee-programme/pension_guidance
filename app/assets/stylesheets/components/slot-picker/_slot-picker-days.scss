@@ -8,8 +8,7 @@
 
 .slot-picker-days__day {
   background: $calendar-day-row-background;
-  box-shadow: -1px -1px $calendar-border,
-    inset -1px 0 $calendar-border;
+  box-shadow: -1px -1px $calendar-border, inset -1px 0 $calendar-border;
   flex-basis: (100% / 7);
   float: left;
   font-size: 14px;
@@ -20,6 +19,10 @@
   text-align: center;
   text-transform: uppercase;
   width: (100% / 7);
+
+  &::before {
+    display: none;
+  }
 
   @include media(tablet) {
     font-size: 16px;

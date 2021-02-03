@@ -53,7 +53,8 @@ h3 {
 }
 
 h5,
-.question h2 {
+.question h2,
+#when-did-you-start-this-pension {
   // @extend .heading-small;
   color: $color-dark-blue-secondary;
   font-size: 20px;
@@ -63,4 +64,10 @@ h5,
     font-size: 22px;
     line-height: 28px;
   }
+}
+
+#next-steps,
+#key-facts,
+#questions-to-ask-your-provider {
+  margin-top: 3rem;
 }
