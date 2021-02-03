@@ -65,9 +65,10 @@ linters:
     enabled: true
 
   IdSelector:
-    enabled: true
+    enabled: false
     exclude:
       - app/assets/stylesheets/components/_global-header-bar.scss
+      - app/assets/stylesheets/base/_headings.scss
 
   IdWithExtraneousSelector:
     enabled: true

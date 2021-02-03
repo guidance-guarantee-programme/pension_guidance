@@ -1,3 +1,5 @@
+@import "../../money-helper-variables";
+
 .slot-picker-days {
   display: table; // IE9 fallback
   display: flex; // scss-lint:disable DuplicateProperty
@@ -7,24 +9,25 @@
 }
 
 .slot-picker-days__day {
-  background: $calendar-day-row-background;
-  box-shadow: -1px -1px $calendar-border, inset -1px 0 $calendar-border;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: $color-dark-blue-secondary;
+  box-shadow: -1px -1px $color-grey-blue-supporting,
+    inset -1px 0 $color-grey-blue-supporting;
   flex-basis: (100% / 7);
   float: left;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.7;
   list-style: none;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   width: (100% / 7);
 
-  &::before {
-    display: none;
-  }
-
   @include media(tablet) {
     font-size: 16px;
+  }
+
+  &:before {
+    display: none;
   }
 }
