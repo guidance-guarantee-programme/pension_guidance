@@ -18,27 +18,19 @@
     text-align: right;
   }
 
-  @include media(tablet) { // scss-lint:disable DeclarationOrder
+  @include media(tablet) {
+    // scss-lint:disable DeclarationOrder
     &:nth-child(even) {
       text-align: left;
     }
   }
-}
 
-.slot-picker-times__selection {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-
-  &:checked {
-    + .slot-picker-times__time-text {
-      background: $calendar-selection;
-    }
+  &:before {
+    display: none;
   }
 }
 
 .slot-picker-times__time-text {
-  border: 1px solid $color-black;
   box-sizing: border-box;
   cursor: pointer;
   display: block;
@@ -47,13 +39,18 @@
   padding: 8px;
   text-align: center;
   width: 98%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
 
   @include media(tablet) {
     width: 75%;
   }
 
-  &:hover {
-    background: $calendar-selection;
+  input {
+    margin-right: 8px;
   }
 }
 
