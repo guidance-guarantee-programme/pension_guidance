@@ -5,11 +5,15 @@
 }
 
 .slot-picker-times__time {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
   box-sizing: border-box;
   flex-basis: 50%;
   float: left;
   list-style: none;
-  margin: 0;
+  margin: 0 0 16px;
   position: relative;
   text-align: left;
   width: 50%;
@@ -34,19 +38,8 @@
   box-sizing: border-box;
   cursor: pointer;
   font-size: 1em;
-  margin: 0 0 16px;
   padding: 8px;
   text-align: center;
-  width: 98%;
-  height: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: flex-end;
-
-  @include media(tablet) {
-    width: 75%;
-  }
 
   input {
     margin-right: 8px;
