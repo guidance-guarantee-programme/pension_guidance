@@ -65,6 +65,7 @@
 
 .slot-picker-nav-button__short-text {
   display: inline;
+  color: $color-magenta-primary;
 
   @include media(desktop) {
     display: none;
