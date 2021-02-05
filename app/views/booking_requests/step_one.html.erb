@@ -40,6 +40,10 @@
     </div>
   <% end %>
 
+  <% if @booking_request.days? || @booking_request.times? %>
+    <%= render 'day_picker' %>
+  <% end %>
+
   <%= form_for @booking_request, url: booking_request_step_two_location_path(id: location_id), as: :booking_request do |f| %>
     <% if @booking_request.times? %>
       <div class="l-column-half l-column-half--right" data-slot-picker-single-time>
@@ -48,13 +52,8 @@
     <% end %>
   <% end %>
 
-  <% if @booking_request.days? || @booking_request.times? %>
-    <%= render 'day_picker' %>
-  <% end %>
-
-    <div class="l-column-two-thirds">
-      <%= render 'feedbacks/feedback_form' %>
-    </div>
+  <div class="l-column-two-thirds">
+    <%= render 'feedbacks/feedback_form' %>
   </div>
 </div>
 
