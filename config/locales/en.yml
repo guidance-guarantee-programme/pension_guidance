@@ -429,38 +429,56 @@ en:
         content:
           html: |
             <p>
-              If you’re not satisfied with our response to your complaint, you can write to
-              <a href="mailto: complaints@pensionwise.gov.uk">complaints@pensionwise.gov.uk</a> to get it escalated.
+              If you’re not satisfied with our response to your complaint, you
+              can email us at <a href="mailto:complaints@maps.org.uk">complaints@maps.org.uk</a>
+              to get it escalated. You can also write to us by post:
             </p>
 
             <p>
-              In your email, state the reason why you’re unhappy with our first response and include copies of your
-              original complaint and our response. We’ll then investigate and get back to you within 20 working days.
+              Money and Pensions Service<br>
+              Holborn Centre<br>
+              120 Holborn<br>
+              London, EC1N 2TD
+            </p>
+
+            <p>
+              So that we can provide you with the best possible service,
+              the best time for you to escalate your complaint is within 28 days
+              of the initial response. We will, however, use our discretion to
+              consider complaints after this period.
+            </p>
+
+            <p>
+              Please state the reason why you’re unhappy with
+              our first response and include copies of your original complaint
+              and our response. We’ll then investigate and get back to you
+              within 20 working days.
             </p>
       get_more_help:
         title: Getting more help
         content:
           html: |
             <p>
-              The <a href="https://www.gov.uk/government/organisations/independent-case-examiner">Independent Case Examiner (ICE)</a>
-              is a free and impartial service that can investigate your complaint to see whether we’ve dealt with it in the right way.
+              Once you have exhausted our complaints process, and if you remain
+              dissatisfied with our final response to your complaint, you have
+              the right to refer it to the <a href="https://www.ombudsman.org.uk">Independent Parliamentary and Health Ombudsman (PHSO)</a>.
             </p>
 
-            <div role="note" aria-label="Information" class="application-notice info-notice">
+            <div role="note" aria-label="Make a complaint" class="application-notice info-notice">
               <p>
-                ICE will only look at your complaint after you’ve been through the full Pension Wise complaints process first.
-                It can’t consider disputes about policy or legal matters.
+                <a href="https://www.ombudsman.org.uk/making-complaint/before-you-come-to-us">Make a complaint</a> or telephone 0345 015 4033 (Monday to Thursday from 8:30am - 5:30pm, Friday from 8:30am - 12pm)
               </p>
             </div>
 
             <p>
-              You’ll need to send them a copy of your complaint as well as letters or emails that we sent in response.
-              ICE usually won’t look at a complaint received more than 6 months after the date of our final response.
+              Where appropriate, the PHSO will request all the paperwork
+              relating to the complaint as part of your case review. You should
+              contact them within 12 months of our final response.
             </p>
 
             <p>
-              You can also ask an MP to refer your complaint to the independent
-              <a href="http://www.ombudsman.org.uk">Parliamentary and Health Service Ombudsman</a>. You can
-              <a href="http://www.parliament.uk/mps-lords-and-offices/mps/">get help with finding your MP</a>
-              if you don’t know who they are. The Ombudsman usually only looks at complaints that ICE has already reviewed.
+              You can also ask an MP to refer your complaint to the 
+              <a href="https://www.ombudsman.org.uk">Independent Parliamentary and Health Service Ombudsman</a>. You can
+              <a href="https://www.parliament.uk/mps-lords-and-offices/mps/">get help with finding your MP</a>
+              if you don’t know who they are.
             </p>

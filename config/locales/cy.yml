@@ -421,34 +421,56 @@ cy:
         content:
           html: |
             <p>
-              Os nad ydych yn fodlon gyda’n ymateb i’ch cwyn, gallwch ysgrifennu at
-              <a href="mailto: complaints@pensionwise.gov.uk">complaints@pensionwise.gov.uk</a> iddo gael ei uwchraddio.
+              Os nad ydych yn fodlon â'n hymateb i'ch cwyn, gallwch
+              anfon e-bost atom at <a href="mailto:complaints@maps.org.uk">complaints@maps.org.uk</a>
+              i'w gael ei uwchgyfeirio. Gallwch hefyd ysgrifennu atom trwy'r post:
             </p>
+
             <p>
-              Yn eich e-bost, dywedwch y rheswm pam rydych yn anhapus gyda’n ymateb cyntaf a chynnwys copiau o’ch
-              cwyn gwreiddiol a’n ymateb. Yna byddwn yn ymchwilio ac ymateb i chi o fewn 20 diwrnod gwaith.
+              Money and Pensions Service<br>
+              Holborn Centre<br>
+              120 Holborn<br>
+              London, EC1N 2TD
+            </p>
+
+            <p>
+              Er mwyn i ni allu darparu'r gwasanaeth gorau posibl i chi,
+              yr amser gorau i chi uwchgyfeirio eich cwyn yw o fewn 28 diwrnod
+              o'r ymateb cychwynnol. Fodd bynnag, byddwn yn defnyddio ein disgresiwn i
+              ystyried cwynion ar ôl y cyfnod hwn.
+            </p>
+
+            <p>
+              Nodwch y rheswm pam eich bod yn anhapus a’n
+              hymateb cyntaf a chynnwys copïau o'ch cwyn wreiddiol
+              gyda'n hymateb. Yna byddwn yn ymchwilio ac yn cysylltu â chi yn ôl
+              o fewn 20 diwrnod gwaith. 
             </p>
       get_more_help:
         title: Cael mwy o help
         content:
           html: |
             <p>
-              Mae’r <a href="https://www.gov.uk/government/organisations/independent-case-examiner">Archwilydd Achosion Annibynnol (ICE)</a>
-              yn wasanaeth di-duedd, rhad ac am ddim sy’n gallu ymchwilio i’ch cwyn i weld os ydym wedi delio ag ef yn y ffordd gywir.
+              Unwaith yr ydych wedi mynd trwy ein proses cwynion, ac os ydych yn parhau’n 
+              anfodlon â'n hymateb terfynol i'ch cwyn, mae gennych chi
+               yr hawl i'w gyfeirio at y <a href="https://www.ombudsman.org.uk"> Ombwdsmon Seneddol ac Iechyd Annibynnol(PHSO)</a>.
             </p>
-            <div role="note" aria-label="Information" class="application-notice info-notice">
+
+            <div role="note" aria-label="Gwneud cwyn" class="application-notice info-notice">
               <p>
-                Bydd ICE ond yn edrych ar eich cwyn ar ôl i chi fynd trwy holl broses gwyno Pension Wise yn gyntaf.
-                Ni all ystyried anghydfodau am bolisi neu faterion cyfreithiol.
+                <a href="https://www.ombudsman.org.uk/making-complaint/before-you-come-to-us">Gwneud cwyn</a> neu ffoniwch 0345 015 4033 (Dydd Llun i ddydd Iau o 8:30am - 5:30pm, dydd Gwener o 8:30am - 12pm)
               </p>
             </div>
+
             <p>
-              Bydd angen i chi anfon copi o’ch cwyn iddynt yn ogystal â llythyrau neu e-byst rydym wedi’u hanfon mewn ymateb.
-              Fel arfer ni fydd ICE yn edrych ar gŵyn a dderbynir mwy na 6 mis ar ôl dyddiad ein hymateb terfynol.
+              Lle y bo'n briodol, bydd y PHSO yn gofyn am yr holl waith papur
+              yn ymwneud â'r gŵyn fel rhan o'ch adolygiad achos. Fe ddylech chi
+              cysylltu â nhw cyn pen 12 mis o'n hymateb terfynol.
             </p>
+
             <p>
-              Gallwch hefyd ofyn i AS i gyfeirio eich cwyn i’r
-              <a href="http://www.ombudsman.org.uk">Ombwdsmon Seneddol a’r Gwasanaeth Iechyd</a>. Gallwch
-              <a href="http://www.parliament.uk/mps-lords-and-offices/mps/">gael help i ddod o hyd i’ch AS</a>
-              os nad ydych yn gwybod pwy ydynt. Fel arfer dim ond ar gwynion y mae ICE eisoes wedi’u hadolygu y mae’r Ombwdsmon yn edrych arnynt.
+              Gallwch hefyd ofyn i AS gyfeirio'ch cwyn at y  
+              <a href="https://www.ombudsman.org.uk">Ombwdsmon Gwasanaeth Seneddol ac Iechyd Annibynnol</a>. Gallwch
+              <a href="https://www.parliament.uk/mps-lords-and-offices/mps/">cael help i ddod o hyd i'ch AS</a>
+              os nad ydych chi'n gwybod pwy ydynt.
             </p>
