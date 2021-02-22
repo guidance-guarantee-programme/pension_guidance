@@ -1,15 +1,13 @@
 @import "../money-helper-variables";
 
 .next-steps {
-  display: inline-block;
-  position: relative;
   padding: 2rem;
-  margin-bottom: 1rem 0 2rem;
-  width: 100%;
+  margin-bottom: 1.5rem 0;
+  border-radius: 0px 0px 0px 36px;
 
   @include media($mq-l) {
     padding: 3rem;
-    margin: 2rem 0 3rem;
+    margin: 3rem 0;
   }
 }
 
@@ -19,5 +17,6 @@
 .next-steps--take-cash-in-chunks,
 .next-steps--whole-pot,
 .next-steps--mix-options {
-  background: $color-light-grey-supporting;
+  // background: $color-light-grey-supporting;
+  border: 9px solid $color-light-grey-supporting;
 }
