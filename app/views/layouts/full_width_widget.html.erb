@@ -21,8 +21,10 @@
 
 <% content_for :content do %>
   <main role="main" id="content" tabindex="-1">
+    <%# Grid Parent %>
     <div class="l-grid-row">
-      <div class="l-column-full">
+      <%# Content %>
+      <div>
         <% if flash[:alert] %>
           <div class="error-summary alert-alert" aria-labelledby="error-summary-heading" role="alert" data-error-summary>
             <h2 class="heading-medium error-summary-heading" id="error-summary-heading"><%= t('pension_type_tool.error_title') %></h2>
@@ -31,13 +33,15 @@
             </ul>
           </div>
         <% end %>
-
         <%= yield %>
       </div>
-      <div class="l-column-third l-column-third--sidebar">
-        <%= yield :sidebar %>
-        <%= yield :sticky_sidebar %>
-      </div>
+      <%# Sidebar %>
+      <% if content_for?(:sidebar || :sticky_sidebar) %>
+        <div class="l-column-third l-column-third--sidebar">
+          <%= yield :sidebar %>
+          <%= yield :sticky_sidebar %>
+        </div> 
+      <% end %> 
     </div>
   </main>
 <% end %>
