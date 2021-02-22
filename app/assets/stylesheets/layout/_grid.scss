@@ -1,17 +1,21 @@
 .l-grid-row {
   @extend %grid-row;
+  display: flex;
 }
 
 .l-column-quarter {
   @include grid-column(1/4);
+  min-width: 25%;
 }
 
 .l-column-full {
   @include grid-column(1/1);
+  min-width: 100%;
 }
 
 .l-column-half {
   @include grid-column(1/2);
+  min-width: 50%;
 }
 
 .l-column-half--right {
@@ -22,10 +26,12 @@
 
 .l-column-third {
   @include grid-column(1/3);
+  min-width: 33.33333%;
 }
 
 .l-column-two-thirds {
   @include grid-column(2/3);
+  min-width: 66.66666%;
 }
 
 .l-grid-row--main {
