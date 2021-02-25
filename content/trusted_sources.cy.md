@@ -28,8 +28,8 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         Cymru a Lloegr<br>
         <a href="https://www.citizensadvice.org.uk">www.citizensadvice.org.uk</a><br>
         Ffôn:<br>
-        03444 111 444 (Lloegr)<br>
-        03444 77 20 20 (Cymru)<br><br>
+        0800 144 8848 (Lloegr)<br>
+        0800 702 2020 (Cymru)<br><br>
 
         Gogledd Iwerddon<br>
         <a href="https://www.citizensadvice.org.uk/about-us/northern-ireland/">www.citizensadvice.org.uk/about-us/northern-ireland/</a><br><br>

@@ -28,8 +28,8 @@ Pension Wise consider these organisations to be trusted sources of additional in
         England & Wales<br>
         <a href="https://www.citizensadvice.org.uk">www.citizensadvice.org.uk</a><br>
         Phone:<br>
-        03444 111 444 (England)<br>
-        03444 77 20 20 (Wales)<br><br>
+        0800 144 8848 (England)<br>
+        0800 702 2020 (Wales)<br><br>
 
         Northern Ireland<br>
         <a href="https://www.citizensadvice.org.uk/about-us/northern-ireland/">www.citizensadvice.org.uk/about-us/northern-ireland/</a><br><br>
@@ -79,7 +79,7 @@ Pension Wise consider these organisations to be trusted sources of additional in
     </tr>
     <tr>
       <td>
-        <strong>Pension Ombudsman</strong><br>
+        <strong>Pensions Ombudsman</strong><br>
         <a href="https://www.pensions-ombudsman.org.uk">www.pensions-ombudsman.org.uk</a><br>
         Phone: 0800 917 4487
       </td>
