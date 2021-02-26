@@ -44,7 +44,6 @@ RSpec.feature 'Call to action visible in specific guides' do
       /en/protection
       /en/pension-recycling
       /en/pension-complaints
-      /en/mix-options
     ).each do |path|
       visit path
 
