@@ -6,6 +6,31 @@ cy:
       provided_by: Darperir Pension Wise gan
       logo_text: Gwasanaeth Arian a Phensiynau
 
+  cookie_banner:
+    on_label: 'Ymlaen'
+    off_label: 'I ffwrdd'
+    accept: 'Derbyn pob cwci'
+    settings: 'Gosod dewisiadau'
+    notify_title: 'Dywedwch wrthym os ydych yn derbyn cwcis'
+    notify_description:
+      html: '<p>Rydym yn defnyddio <a href="/cy/cookies">cwcis i gasglu gwybodaeth</a> am sut rydych yn defnyddio Pension Wise.</p><p>Rydym yn defnyddio’r wybodaeth hon i wneud i’r wefan weithio cystal â phosibl a gwella ein gwasanaethau.</p>'
+    title: 'Cwcis ar Pension Wise'
+    accept_settings: 'Derbyn pob cwci'
+    close_label: 'Gosod dewisiadau'
+    intro:
+      html: '<p>Mae cwcis yn ffeiliau a arbedir ar eich ffôn, llechen neu gyfrifiadur pan ymwelwch â gwefan.</p><p>Rydym yn defnyddio cwcis i storio gwybodaeth am sut rydych yn defnyddio Pension Wise, fel y tudalennau rydych chi’n ymweld â nhw.</p><p>I gael mwy o wybodaeth, ymwelwch â’n <a href="/cy/cookies">Polisi Cwcis</a> a’n <a href="/cy/privacy">Polisi Preifatrwydd</a>.</p>'
+    necessary_title: 'Cwcis sydd eu hangen'
+    necessary_description: 'Mae rhai cwcis yn hanfodol er mwyn i’r wefan weithredu’n gywir, fel y rhai sy’n cofio’ch datbliygad trwy ein teclynnau, neu ddefnyddio ein gwasanaeth gwe-sgwrs.'
+    landmark: 'Cookie Preferences'
+    optional_cookies:
+      name: 'analytics'
+      label: 'Cwcis dadansoddi'
+      description: 'Mae’r cwcis hyn yn caniatáu i ni gasglu data dienw am sut mae ein gwefan yn cael ei defnyddio, gan ein helpu i wneud gwelliannau i’r gwasanaethau rydym yn eu darparu i chi.'
+    marketing_cookies:
+      name: 'marketing'
+      label: 'Cwcis marchnata'
+      description: 'Mae’r cwcis hyn yn caniatáu i ni ddeall pa ymgyrchoedd sy’n gweithio orau wrth gynyddu ymwybyddiaeth o’n gwasanaethau ymhlith y rhai sydd eu hangen.'
+
   pension_type_tool:
     error_title: 'Methu ag anfon y ffurflen'
     error: 'Dewiswch ateb'

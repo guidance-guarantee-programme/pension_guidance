@@ -6,6 +6,31 @@ en:
       provided_by: Pension Wise is provided by
       logo_text: Money and Pensions Service
 
+  cookie_banner:
+    on_label: 'On'
+    off_label: 'Off'
+    accept: 'Accept all cookies'
+    settings: 'Set preferences'
+    notify_title: 'Tell us whether you accept cookies'
+    notify_description:
+      html: '<p>We use <a href="/en/cookies">cookies to collect information</a> about how you use Pension Wise.</p> <p>We use this information to make the website work as well as possible and improve our services.</p>'
+    title: 'Cookies on Pension Wise'
+    accept_settings: 'Accept all cookies'
+    close_label: 'Save preferences'
+    intro:
+      html: '<p>Cookies are files saved on your phone, tablet or computer when you visit a website.</p><p>We use cookies to store information about how you use Pension Wise, such as the pages you visit.</p><p>For more information visit our <a href="/en/cookies">Cookie Policy</a> and <a href="/en/privacy">Privacy Policy</a>.'
+    necessary_title: 'Necessary Cookies'
+    necessary_description: 'Some cookies are essential for the site to function correctly, such as those remembering your progress through our tools.'
+    landmark: 'Cookie Preferences'
+    optional_cookies:
+      name: 'analytics'
+      label: 'Analytics Cookies'
+      description: 'These cookies allow us to collect anonymised data about how our website is being used, helping us to make improvements to the services we provide to you.'
+    marketing_cookies:
+      name: 'marketing'
+      label: 'Marketing Cookies'
+      description: 'These cookies allow us to understand which campaigns work best in increasing awareness of our services among those who need them.'
+
   pension_type_tool:
     error_title: 'Unable to submit the form'
     error: 'Select an answer'

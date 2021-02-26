@@ -1,3 +1,8 @@
+<%
+  # hacky way to disable govuk_template's cookie banner
+  @omit_cookie_message = true
+%>
+
 <% content_for :html_lang, default_locale? || !content_lang_matches_locale? ? I18n.default_locale : I18n.locale %>
 
 <% content_for :head do %>
@@ -67,13 +72,6 @@
   <%= yield %>
 <% end %>
 
-<% content_for :cookie_message do %>
-  <p>
-    Pension Wise uses cookies to make the site simpler.
-    <%= link_to 'Find out more about cookies', guide_path('cookies') %>
-  </p>
-<% end %>
-
 <% content_for :footer_support_links do %>
   <div class="footer-meta-inner l-footer-meta">
     <h2 class="visuallyhidden">Support links</h2>
@@ -106,6 +104,8 @@
   </div>
 
   <%= javascript_include_tag 'application' %>
+
+  <%= render 'components/cookie_banner' unless Rails.env.test? %>
 
   <% if Rails.env.test? %>
     <%#

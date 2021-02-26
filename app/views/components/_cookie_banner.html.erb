@@ -1,0 +1,106 @@
+<script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  window.addEventListener('load', function() {
+    var config = {
+      apiKey: '3c057064262937c6354d3ec3809ea099e4a83c23',
+      product: 'PRO_MULTISITE',
+      mode:'GDPR',
+      consentCookieExpiry:'90',
+      initialState: 'top',
+      rejectButton: false,
+      layout: 'slideout',
+      position: 'LEFT',
+      setInnerHTML: true,
+      notifyDismissButton: false,
+      closeOnGlobalChange: true,
+      closeStyle: 'button',
+      subDomains: true,
+
+      text: {
+        accept: '<%= t('cookie_banner.accept') %>',
+        settings: '<%= t('cookie_banner.settings') %>',
+        notifyTitle: '<%= t('cookie_banner.notify_title') %>',
+        notifyDescription: '<%= t('cookie_banner.notify_description.html') %>',
+        title: '<%= t('cookie_banner.title') %>',
+        acceptSettings: '<%= t('cookie_banner.accept_settings') %>',
+        closeLabel: '<%= t('cookie_banner.close_label') %>',
+        intro: '<%= t('cookie_banner.intro.html') %>',
+        necessaryTitle: '<%= t('cookie_banner.necessary_title') %>',
+        necessaryDescription: '<%= t('cookie_banner.necessary_description') %>',
+        on: '<%= t('cookie_banner.on_label') %>',
+        off: '<%= t('cookie_banner.off_label') %>'
+      },
+
+      branding: {
+        fontColor: '#2e3030',
+        fontSizeTitle: '1.2em',
+        fontSizeIntro: '1em',
+        fontSizeHeaders: '1.2em',
+        fontSize: '1em',
+        fontFamily : 'nta, Arial',
+        notifyFontColor: '#0b0c0c',
+        notifyBackgroundColor: '#d5e8f3',
+        backgroundColor: '#fff',
+        acceptBackground: '#00823b',
+        rejectBackground: '#00823b',
+        acceptText: '#fff',
+        rejectText: '#fff',
+        toggleText: '#0b0c0c',
+        toggleColor: '#00823b',
+        toggleBackground: '#dee0e2',
+        buttonIcon: null,
+        buttonIconWidth: 120,
+        buttonIconHeight: 120,
+        removeIcon: false,
+        removeAbout: true
+      },
+      landmark: '<%= ('cookie_banner.landmark') %>',
+
+      optionalCookies: [
+        {
+          name: '<%= t('cookie_banner.optional_cookies.name') %>',
+          label: '<%= t('cookie_banner.optional_cookies.label') %>',
+          description: '<%= t('cookie_banner.optional_cookies.description') %>',
+          recommendedState: true,
+          lawfulBasis: 'legitimate interest',
+          cookies: ['_ga', '_gid', '_gat', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'],
+
+          onAccept: function(){
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'civicConsentResponse'
+            });
+          },
+          onRevoke: function(){
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'civicConsentResponse'
+            });
+          }
+        },
+        {
+          name: '<%= t('cookie_banner.marketing_cookies.name') %>',
+          label: '<%= t('cookie_banner.marketing_cookies.label') %>',
+          description: '<%= t('cookie_banner.marketing_cookies.description') %>',
+          recommendedState: true,
+          lawfulBasis: 'legitimate interest',
+          cookies: ['fr'],
+          onAccept : function(){
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'civicConsentResponse'
+            });
+          },
+          onRevoke: function(){
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'civicConsentResponse'
+            });
+          }
+        }],
+      };
+
+      CookieControl.load(config);
+    }
+  )
+</script>
