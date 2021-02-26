@@ -12,34 +12,4 @@
     <%= yield %>
   </article>
 
-  <% content_for :sticky_sidebar do %>
-    <% if defined?(@guide) && @guide.call_to_action? %>
-      <aside class="l-sticky-sidebar js-sticky-sidebar">
-        <%= render partial: 'shared/specialist_call_out' %>
-      </aside>
-
-      <% content_for :after_script do %>
-        <%= javascript_include_tag 'disable-button' %>
-        <%= javascript_include_tag 'bootstrap/js/affix' %>
-        <%= javascript_include_tag 'bootstrap/js/scrollspy' %>
-
-        <script>
-          'use strict';
-          $('.js-sticky-sidebar').affix({
-            offset: {
-              top: $('.js-sticky-sidebar').offset().top,
-              bottom: function () {
-                return (this.bottom = $('.js-footer').outerHeight(true) + 150);
-              }
-            }
-          });
-
-          $('body').scrollspy({
-            target: '.js-sticky-sidebar',
-            offset: 50
-          });
-        </script>
-      <% end %>
-    <% end %>
-  <% end %>
 <% end %>
