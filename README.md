@@ -59,18 +59,6 @@ regenerate the PNG files.
 $ npm run svgexport
 ```
 
-## Wraith
-
-In order to check visual differences between development and live use wraith
-
-```sh
-$ npm run wraith
-```
-
-A browser window should open up showing the results when complete
-
-N.B. Wraith requires PhantomJS (2.1.1) and ImageMagick in order to run
-
 ## Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)

@@ -1,5 +1,7 @@
+require_relative 'page'
+
 module Pages
-  class BslBookingRequest < SitePrism::Page
+  class BslBookingRequest < Page
     set_url '/en/bsl-booking-requests/new'
 
     element :first_name, '.t-first-name'

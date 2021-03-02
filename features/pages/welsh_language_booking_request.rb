@@ -1,5 +1,7 @@
+require_relative 'page'
+
 module Pages
-  class WelshLanguageBookingRequest < SitePrism::Page
+  class WelshLanguageBookingRequest < Page
     set_url '/cy/booking-requests/new'
 
     element :face_to_face_booking, '.t-face-to-face-booking', visible: false

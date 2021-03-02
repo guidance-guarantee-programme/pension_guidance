@@ -44,7 +44,7 @@ RSpec.feature 'Take Cash In Chunks analytics', type: :feature, js: true do
 
   def enter_valid_data
     visit '/en/take-cash-in-chunks'
-
+    click_on 'Accept all cookies'
     fill_in 'pot', with: pot
     fill_in 'income', with: income
     fill_in 'chunk', with: chunk

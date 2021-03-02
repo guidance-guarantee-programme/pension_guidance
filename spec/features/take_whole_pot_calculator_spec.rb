@@ -3,6 +3,8 @@ RSpec.describe 'Take whole pot calculator', type: :feature do
     scenario 'Calculates tax payable and money receivable' do
       visit '/en/take-whole-pot'
 
+      click_on 'Accept all cookies' if Capybara.current_driver == Capybara.javascript_driver
+
       fill_in 'pot', with: 100_000
       fill_in 'income', with: 7_000
       click_on 'Calculate'

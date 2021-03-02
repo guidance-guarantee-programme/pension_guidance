@@ -1,5 +1,7 @@
+require_relative 'page'
+
 module Pages
-  class EmployerBooking < SitePrism::Page
+  class EmployerBooking < Page
     set_url '/en/employers/{employer_id}/locations/{location_id}/bookings/new'
 
     element :first_name, '.t-first-name'
