@@ -20,6 +20,7 @@ RSpec.feature 'British Sign Language bookings' do
     @page.load
 
     expect(@page).to be_displayed
+    @page.accept_cookies!
   end
 
   def and_provides_their_details # rubocop:disable AbcSize, MethodLength

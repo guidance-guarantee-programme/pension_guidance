@@ -17,7 +17,6 @@
     "js": "npm run jshint && npm run eslint && npm run jscs",
     "jshint": "jshint app/assets/javascripts/**.js spec/javascripts/**.js",
     "eslint": "eslint app/assets/javascripts/**/*.es6",
-    "jscs": "jscs app/assets/javascripts/**.js spec/javascripts/**.js",
-    "wraith": "wraith capture ./wraith/configs/capture.yaml"
+    "jscs": "jscs app/assets/javascripts/**.js spec/javascripts/**.js"
   }
 }

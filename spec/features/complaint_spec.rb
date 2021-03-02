@@ -4,6 +4,8 @@ RSpec.feature 'Customer complaints' do
   scenario 'a complaint can be completed via the contact page', js: true do
     visit '/contact'
 
+    click_on 'Accept all cookies'
+
     fill_in 'Name', with: 'Jim Bob'
     fill_in 'Email', with: 'jim@bob.com'
     fill_in 'complaint_phone_booking_message', with: 'Some phone booking feedback'

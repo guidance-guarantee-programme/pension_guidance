@@ -45,8 +45,14 @@ RSpec.feature 'Guaranteed income analytics', type: :feature, js: true do
   def enter_valid_data
     visit '/guaranteed-income'
 
+    accept_cookies!
+
     fill_in 'pot', with: pot
     fill_in 'age', with: age
+  end
+
+  def accept_cookies!
+    click_on 'Accept all cookies'
   end
 
   def enter_invalid_data

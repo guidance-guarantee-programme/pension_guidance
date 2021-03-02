@@ -78,7 +78,6 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
     gem 'timecop'
     gem 'vcr'
     gem 'webmock'
-    gem 'wraith'
   end
 
   group :staging, :production do
