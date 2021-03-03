@@ -1,0 +1,32 @@
+{ 
+  "name": "Pension Guidance",
+  "description": "Pension guidance from Pension Wise.",
+  "website": "https://www.pensionwise.gov.uk",
+  "repository": "https://github.com/guidance-guarantee-programme/pension_guidance",
+  "env": {
+    "LOCATIONS_TTL": "3600",
+    "LOCATIONS_URL": "https://locator.pensionwise.gov.uk/locations.json",
+    "NEW_RELIC_LOG": "STDOUT",
+    "SECRET_KEY_BASE": {
+      "description": "Cryptographically secure secret key (typically used to generate a secret for cookie sessions)",
+      "generator": "secret"
+    },
+    "GITHUB_AUTH_TOKEN": ""
+  },
+  "addons": [
+    "heroku-postgresql",
+    "heroku-redis",
+    "logentries"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    },
+    {
+      "url": "https://github.com/guidance-guarantee-programme/heroku-buildpack-princexml.git#version-bump"
+    }
+  ]
+}
