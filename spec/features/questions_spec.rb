@@ -27,6 +27,8 @@ RSpec.feature 'Questions', type: :feature do
   scenario 'Errors are correctly described', js: true do
     visit '/en/pension-type-tool/question-1'
 
+    click_on 'Accept all cookies'
+
     page.click_on('Next step')
 
     expect(page.find('.js-error-message')).to have_text
