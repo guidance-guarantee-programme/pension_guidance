@@ -29,6 +29,12 @@ module WelshLanguage
       true
     end
 
+    def alternate_url(new_locale, options = {})
+      options[:locale] = new_locale
+
+      root_url(options)
+    end
+
     private
 
     def booking_request_params # rubocop:disable MethodLength

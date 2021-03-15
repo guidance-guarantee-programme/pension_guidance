@@ -26,4 +26,10 @@ RSpec.describe 'Error pages', type: :request do
     expect(response).to be_not_found
     expect(response).to render_template(:not_found)
   end
+
+  specify 'English alternative for Welsh bookings' do
+    get '/en/booking-requests'
+
+    expect(response).to be_not_found
+  end
 end
