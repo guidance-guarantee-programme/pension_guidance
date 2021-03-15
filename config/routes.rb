@@ -47,7 +47,6 @@ Rails.application.routes.draw do
         get 'download'
         get 'print'
 
-        post 'start', action: 'create'
         post 'about-you', action: 'save_about_you'
         post 'step-one', action: 'save_primary_options'
         post 'step-two', action: 'save_secondary_options'
