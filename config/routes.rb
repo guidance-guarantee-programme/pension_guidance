@@ -1,5 +1,13 @@
 # rubocop:disable Metrics/BlockLength
 Rails.application.routes.draw do
+  resources :booking_requests,
+            only: %i(new create),
+            path: '/cy/booking-requests',
+            locale: :cy,
+            module: :welsh_language do
+    get :completed, on: :collection
+  end
+
   scope ':locale', locale: /en|cy/ do
     root 'home#show'
 
@@ -64,14 +72,6 @@ Rails.application.routes.draw do
             end
           end
         end
-      end
-
-      resources :booking_requests,
-                only: %i(new create),
-                path: 'booking-requests',
-                locale: :cy,
-                module: :welsh_language do
-        get :completed, on: :collection
       end
 
       resources :bsl_booking_requests,
