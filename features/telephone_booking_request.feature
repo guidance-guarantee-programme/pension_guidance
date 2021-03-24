@@ -3,6 +3,10 @@ Feature: Customer creates a Telephone Booking
   I want to book a telephone appointment
   So I can understand my pension options
 
+Scenario: Lloyds employee creates a signposted telephone appointment
+  Given the customer makes a Lloyds signposting referral
+  Then they are show the Lloyds signposting banner
+
 Scenario: TPAS agent creates a 'smarter signposting' telephone appointment
   Given the agent makes a smarter signposting referral
   Then they are redirected to the telephone booking

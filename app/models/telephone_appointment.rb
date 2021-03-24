@@ -21,7 +21,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
     :gdpr_consent,
     :accessibility_requirements,
     :notes,
-    :smarter_signposted
+    :smarter_signposted,
+    :lloyds_signposted
   )
 
   validates :start_at, presence: true
@@ -81,7 +82,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
       gdpr_consent: gdpr_consent,
       accessibility_requirements: accessibility_requirements,
       notes: notes,
-      smarter_signposted: smarter_signposted
+      smarter_signposted: smarter_signposted,
+      lloyds_signposted: lloyds_signposted
     }
   end
 
