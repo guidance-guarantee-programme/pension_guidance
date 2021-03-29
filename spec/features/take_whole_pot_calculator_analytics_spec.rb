@@ -22,8 +22,8 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
       'valid' => true,
       'income' => 7_000,
       'pot' => 100_000,
-      'tax_paid' => 20_300,
-      'pot_payout' => 79_700
+      'tax_paid' => 20_232,
+      'pot_payout' => 79_768
     )
   end
 

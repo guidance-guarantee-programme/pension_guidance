@@ -9,7 +9,7 @@ tags:
 
 When you take money from your pension pot, 25% is tax free. You pay Income Tax on the other 75%.
 
-Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £12,500.
+Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £12,570.
 
 The amount of tax you pay depends on your total income for the year and your tax rate.
 
