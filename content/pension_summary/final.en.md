@@ -14,3 +14,7 @@ If you’d like more information on your options, you can book a Pension Wise ap
 
 {:.not-printed}
 [Trusted sources of additional information](/en/trusted-sources)
+
+## Feedback and complaints
+
+If you have feedback or a complaint about Pension Wise, there are several ways to [contact us](/en/contact).
