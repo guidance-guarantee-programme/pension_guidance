@@ -13,7 +13,7 @@ You could also pay Income Tax on:
 
 ## The 25% tax-free amount
 
-Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £12,500.
+Your tax-free amount doesn’t use up any of your Personal Allowance – the amount of income you don’t have to pay tax on. The standard Personal Allowance is £12,570.
 
 There are 2 ways you can take your tax-free amount.
 

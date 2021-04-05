@@ -9,8 +9,8 @@ RSpec.describe 'Take whole pot calculator', type: :feature do
       fill_in 'income', with: 7_000
       click_on 'Calculate'
 
-      expect(page.find('.t-pot-received')).to have_content('£79,700')
-      expect(page.find('.t-pot-tax')).to have_content('£20,300')
+      expect(page.find('.t-pot-received')).to have_content('£79,768')
+      expect(page.find('.t-pot-tax')).to have_content('£20,232')
     end
   end
 end

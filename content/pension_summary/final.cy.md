@@ -13,4 +13,8 @@ Os hoffech gael mwy o wybodaeth am eich opsiynau, gallwch drefnu apwyntiad Pensi
 ## Help gyda blwydd-daliadau, dyled, a dod o hyd i ymgynghorydd ariannol:
 
 {:.not-printed}
-[Trusted sources of additional information](/cy/trusted-sources)
+[Ffynonhellau dibynadwy o wybodaeth ychwanegol](/cy/trusted-sources)
+
+## Adborth a chwynion
+
+Os oes gennych adborth neu gŵyn am Pension Wise, mae sawl ffordd o [gysylltu â ni](/cy/contact).

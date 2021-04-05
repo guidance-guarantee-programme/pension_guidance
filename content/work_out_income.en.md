@@ -49,7 +49,7 @@ You’re 65 and want to work part time until you’re 70. You decide to take 25%
 
 What you have | Amount
 - | -
-Full New State Pension per year | £9,109.36
+Full New State Pension per year | £9,339.20
 Your total pension pot | £100,000
 Income per year from working part time | £15,000
 
@@ -57,12 +57,12 @@ Income per year from working part time | £15,000
 
 Income | Amount per year
 - | -
-Full New State Pension | + £9,109.36
+Full New State Pension | + £9,339.20
 Income from work | + £15,000
 Money from your adjustable income | +£4,800
-Income before tax | = £28,909.36
-Tax you pay | - £3,281.87
-**Your total retirement income in your 60s** | **= £25,627.49**
+Income before tax | = £29,139.20
+Tax you pay | - £3,313.84
+**Your total retirement income in your 60s** | **= £25,825.36**
 
 You also have the £25,000 tax-free money to supplement your income.
 
@@ -72,11 +72,11 @@ You stop working and decide to take more from your adjustable income investment.
 
 Income | Amount per year
 - | -
-Full New State Pension | + £9,109.36
+Full New State Pension | + £9,339.20
 Money from your adjustable income | + £6,500
-Income before tax | = £15,609.36
-Tax you pay | - £621.87
-**Your total retirement income from 70 onwards** | **= £14,987.49**
+Income before tax | = £15,839.20
+Tax you pay | - £653.84
+**Your total retirement income from 70 onwards** | **= £15,185.36**
 
 You also have the £25,000 tax-free money you took at 65 to supplement your income.
 $E
