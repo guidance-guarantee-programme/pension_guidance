@@ -11,6 +11,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   helper_method :slot_selected?
 
   def new
+    check_lloyds_cookie!
   end
 
   def create
@@ -77,7 +78,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   end
 
   def retrieve_slots
-    slots   = TelephoneAppointmentsApi.new.slots
+    slots   = TelephoneAppointmentsApi.new.slots(lloyds_signposted?)
 
     @months = retrieve_months(slots)
     @times  = retrieve_times(slots)
@@ -122,7 +123,10 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :accessibility_requirements,
         :notes,
         :gdpr_consent
-      ).merge(smarter_signposted: smarter_signposted?)
+      ).merge(
+        smarter_signposted: smarter_signposted?,
+        lloyds_signposted: lloyds_signposted?
+      )
   end
 
   def set_breadcrumbs
@@ -134,8 +138,17 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
     telephone_appointment.start_at
   end
 
+  def check_lloyds_cookie!
+    cookies.permanent[:lloyds_signposted] = 'true' if params[:lloyds]
+  end
+
   def smarter_signposted?
     cookies.permanent[:smarter_signposted] == 'true'
   end
   helper_method :smarter_signposted?
+
+  def lloyds_signposted?
+    cookies.permanent[:lloyds_signposted] == 'true'
+  end
+  helper_method :lloyds_signposted?
 end

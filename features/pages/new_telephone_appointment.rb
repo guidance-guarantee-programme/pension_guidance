@@ -1,6 +1,6 @@
 module Pages
   class NewTelephoneAppointment < SitePrism::Page
-    set_url '/{locale}/telephone-appointments/new'
+    set_url '/{locale}/telephone-appointments/new{?query*}'
 
     element :first_name, '.t-first-name'
     element :last_name, '.t-last-name'
@@ -17,6 +17,7 @@ module Pages
     element :additional_info, '.t-additional-info'
     element :smarter_signposting_banner, '.t-smarter-signposted-banner'
     element :cancel_smarter_signposting, '.t-cancel-smarter-signposting'
+    element :lloyds_signposting_banner, '.t-lloyds-signposted-banner'
 
     element :dc_pot_confirmed_yes, '.t-dc-pot-confirmed-yes'
     element :dc_pot_confirmed_no, '.t-dc-pot-confirmed-no'

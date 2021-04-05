@@ -1,4 +1,6 @@
 class TelephoneAppointmentsApi
+  SLOTS_PATH = '/api/v1/bookable_slots'.freeze
+
   def create(telephone_appointment)
     response = connection.post('/api/v1/appointments', telephone_appointment.attributes)
 
@@ -7,8 +9,10 @@ class TelephoneAppointmentsApi
     false
   end
 
-  def slots
-    response = connection.get('/api/v1/bookable_slots')
+  def slots(filter_for_lloyds = nil)
+    path = filter_for_lloyds ? SLOTS_PATH + '?lloyds=true' : SLOTS_PATH
+
+    response = connection.get(path)
     response.body
   end
 

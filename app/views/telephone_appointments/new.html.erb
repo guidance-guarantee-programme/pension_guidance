@@ -2,6 +2,12 @@
   <div class="l-column-full">
     <h1>Book a phone appointment</h1>
 
+    <% if lloyds_signposted? %>
+      <div class="application-notice info-notice t-lloyds-signposted-banner">
+        <p>You are booking as an employee of <strong>LBGPTL</strong></p>
+      </div>
+    <% end %>
+
     <%= render partial: 'smarter_signposted_banner' if smarter_signposted? %>
 
     <% if @telephone_appointment.errors.any? || (params[:continue] && !slot_selected?) %>

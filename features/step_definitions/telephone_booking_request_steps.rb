@@ -18,6 +18,15 @@ def stub_appointments_api_to_fail
   allow(@appointment_api_fake).to receive(:create).once.and_return(false)
 end
 
+Given('the customer makes a Lloyds signposting referral') do
+  @page = Pages::NewTelephoneAppointment.new
+  @page.load(locale: :en, query: { lloyds: true })
+end
+
+Then('they are show the Lloyds signposting banner') do
+  expect(@page).to be_displayed
+end
+
 Given(/^the agent makes a smarter signposting referral$/) do
   @page = Pages::SmarterSignpostingReferral.new
   @page.load
