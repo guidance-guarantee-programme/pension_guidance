@@ -32,6 +32,7 @@ tags:
 * Prudential
 * NEST (National Employment Savings Trust)
 * NOW: Pensions
+* ReAssure
 * Royal Bank of Scotland
 * Royal London
 * RSA (Royal and Sun Alliance)
