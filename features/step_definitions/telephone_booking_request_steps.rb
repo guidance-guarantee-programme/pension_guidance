@@ -20,7 +20,7 @@ end
 
 Given('the customer makes a Lloyds signposting referral') do
   @page = Pages::NewTelephoneAppointment.new
-  @page.load(locale: :en, query: { lloyds: true })
+  @page.load(locale: :en, query: { lbgptl: true })
 end
 
 Then('they are show the Lloyds signposting banner') do

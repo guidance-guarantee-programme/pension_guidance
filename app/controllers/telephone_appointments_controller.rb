@@ -139,7 +139,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   end
 
   def check_lloyds_cookie!
-    cookies.permanent[:lloyds_signposted] = 'true' if params[:lloyds]
+    cookies.permanent[:lloyds_signposted] = 'true' if params[:lloyds] || params[:lbgptl]
   end
 
   def smarter_signposted?
