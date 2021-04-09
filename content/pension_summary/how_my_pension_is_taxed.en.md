@@ -51,7 +51,7 @@ If your total income (including money from pensions and PAYE) is £100,000 or mo
 
 You’re responsible for paying tax on other income you have, e.g. from property or investments, and you might have to fill in a Self-Assessment tax return.
 
-^You usually pay tax if your pension pots are worth more than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). This is currently £1,073,000.
+^You usually pay tax if your pension pots are worth more than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). This is currently £1,073,100.
 
 {: .hide-from-screen }
 [Further guidance on tax you pay on your pension](https://www.pensionwise.gov.uk/en/tax)<br>
