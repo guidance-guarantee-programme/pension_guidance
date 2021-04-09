@@ -26,7 +26,7 @@ Siaradwch â’ch darparwr am reolau eich pensiwn - bydd yn dibynnu ar eu diffin
 Efallai y byddwch yn gallu cymryd eich cronfa gyfan yn ddi-dreth os yw’r ddau o’r canlynol yn berthnasol i chi:
 
 - mae disgwyl i chi fyw am lai na blwyddyn
-- mae eich cronfeydd yn werth llai na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) o £1,073,000.
+- mae eich cronfeydd yn werth llai na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance) o £1,073,100.
 
 Darllenwch fwy am eich [pensiwn pan fyddwch yn marw](/cy/when-you-die).
 
