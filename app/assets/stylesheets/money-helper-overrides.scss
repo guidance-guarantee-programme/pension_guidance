@@ -21,8 +21,12 @@
 }
 
 // typography
-html * {
-  font-family: "roobert", Arial, sans-serif !important;
+html {
+  background-color: $color-white-supporting;
+
+  * {
+    font-family: "roobert", Arial, sans-serif !important;
+  }
 }
 
 body,
