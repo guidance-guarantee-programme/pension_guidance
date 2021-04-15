@@ -63,10 +63,12 @@
 
   <%= yield :after_script %>
 
-  <%= javascript_include_tag 'iframe-resizer' %>
-  <script>
-    window.PWPG.iframeResizer.start();
-  </script>
+  <% unless Rails.env.development? %>
+    <%= javascript_include_tag 'iframe-resizer' %>
+    <script>
+      window.PWPG.iframeResizer.start();
+    </script>
+  <% end %>
 <% end %>
 
 <%= render template: 'layouts/govuk_template' %>
