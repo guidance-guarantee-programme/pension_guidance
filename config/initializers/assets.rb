@@ -34,4 +34,5 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   accessible.media.player/core/css/player-core.css
                                                   accessible.media.player/custom/css/player-theme.css
                                                   video-player.js
-                                                  guider-image.jpg )
+                                                  guider-image.jpg
+                                                  iframe-resizer.js )
