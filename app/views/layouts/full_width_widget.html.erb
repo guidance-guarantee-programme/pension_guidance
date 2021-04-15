@@ -62,6 +62,11 @@
   <% end %>
 
   <%= yield :after_script %>
+
+  <%= javascript_include_tag 'iframe-resizer' %>
+  <script>
+    window.PWPG.iframeResizer.start();
+  </script>
 <% end %>
 
 <%= render template: 'layouts/govuk_template' %>
