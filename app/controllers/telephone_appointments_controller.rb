@@ -4,7 +4,6 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   before_action :set_breadcrumbs
   before_action :telephone_appointment, only: %i(new create)
   before_action only: %i(new create) do
-    @feedback = FeedbackForm.for_phone_booking
     retrieve_slots
   end
 
