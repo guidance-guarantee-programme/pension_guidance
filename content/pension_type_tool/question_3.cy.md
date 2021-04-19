@@ -46,5 +46,3 @@ tags:
 
 ^Efallai bod rhai o’r cwmniau hyn wedi cael enwau gwahanol yn y gorffenol neu wedi uno â chwmniau eraill, ee roedd Aviva yn arfer bod yn Norwich Union.^
 {:/yes-no-dont-know-question}
-
-{::feedback_link /}

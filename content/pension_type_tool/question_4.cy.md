@@ -16,5 +16,3 @@ tags:
 ## Pryd wnaethoch chi ddechrau’r pensiwn hwn?
 
 {:/pension-start-year-question}
-
-{::feedback_link /}

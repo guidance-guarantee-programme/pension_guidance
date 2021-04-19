@@ -4,8 +4,4 @@ module MoneyHelper
 
     "#{prefix}/#{locale}/#{path}"
   end
-
-  def blah
-    'hi'
-  end
 end

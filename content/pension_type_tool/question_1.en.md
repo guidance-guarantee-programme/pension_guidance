@@ -16,4 +16,3 @@ tags:
 {:/yes-no-dont-know-question}
 
 {::webchat /}
-{::feedback_link /}

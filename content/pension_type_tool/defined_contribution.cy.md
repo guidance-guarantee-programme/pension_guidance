@@ -15,8 +15,8 @@ Chi sy’n dewis sut i gymryd arian o’ch cronfa bensiwn.
 
 Gallwch drefnu apwyntiad Pension Wise am ddim i siarad am eich opsiynau ar gyfer cymryd eich arian.
 
-[Trefnu apwyntiad am ddim](/cy/appointments){: .button .button--primary}
+[Trefnu apwyntaid am ddim]({::money_helper_url path="pensions-and-retirement/taking-your-pension/pension-wise/book-a-free-pension-wise-appointment.html" locale="cy"/}){: .button .button--primary target="_parent"}
 
-^Gallwch hefyd [wirio pensiwn arall](/cy/pension-type-tool) neu [edrych drwy eich opsiynau pensiwn](/cy/explore-your-options).^
+^Gallwch hefyd [wirio pensiwn arall]({::money_helper_url path="pensions-and-retirement/taking-your-pension/pension-wise/find-out-your-pension-type.html" locale="cy"/}){: target="_parent"} neu [edrych drwy eich opsiynau pensiwn]({::money_helper_url path="pensions-and-retirement/taking-your-pension/pension-wise/explore-your-pension-options.html" locale="cy"/}){: target="_parent"}.^
 
 [Rhowch eich adborth i ni](http://research.pensionwise.gov.uk/s/PTTfeedback/)
