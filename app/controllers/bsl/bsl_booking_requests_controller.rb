@@ -2,6 +2,8 @@ module Bsl
   class BslBookingRequestsController < ApplicationController
     include Embeddable
 
+    helper MoneyHelper
+
     def new
       @booking_request = BookingRequest.new(booking_request_params)
     end
