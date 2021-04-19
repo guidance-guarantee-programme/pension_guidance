@@ -14,5 +14,3 @@ tags:
 {::yes-no-dont-know-question id="pension-type-tool/question-1" locale="cy"}
 ## Ydy eich pensiwn wedi cael ei sefydlu gan eich cyflogwr?
 {:/yes-no-dont-know-question}
-
-{::feedback_link /}

@@ -18,4 +18,3 @@ tags:
 {:/pension-start-year-question}
 
 {::webchat /}
-{::feedback_link /}
