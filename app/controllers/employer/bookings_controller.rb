@@ -6,7 +6,6 @@ module Employer
     before_action :booking
     before_action :retrieve_slots
     before_action :set_breadcrumbs
-    before_action :set_feedback
 
     def new
     end
@@ -136,10 +135,6 @@ module Employer
     def set_breadcrumbs
       breadcrumb Breadcrumb.employer_locations(employer_id, employer.name)
       breadcrumb Breadcrumb.employer_location(employer_id, location.id, location.name)
-    end
-
-    def set_feedback
-      @feedback = FeedbackForm.for_employer
     end
   end
 end
