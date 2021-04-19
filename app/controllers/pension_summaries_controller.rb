@@ -2,6 +2,8 @@
 class PensionSummariesController < ApplicationController
   include Embeddable
 
+  helper MoneyHelper
+
   before_action :set_pilot_cookie, if: :pilot_enabled?, only: %i(start)
   before_action :create_summary, only: %i(start)
   before_action :set_summary, except: %i(start)

@@ -10,7 +10,7 @@ You can take up to 25% of your pot tax free. The rest is invested to give you a 
 * An investment pathway is a ready-made investment option, which simplifies the decision of how to invest your remaining pension pot after you’ve taken your tax-free lump sum.
 * As with all investments, the value of your pot can go up or down.
 * This option is also known as ‘flexi-access drawdown’.
-* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot)).
+* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_parent"}).
 
 ^You can’t take the cash in chunks option later if you choose this option because you will have already taken your full tax-free lump sum.^
 
