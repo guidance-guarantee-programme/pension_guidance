@@ -16,14 +16,4 @@
       <span class="visually-hidden"> - </span>
       <%= link_to t('.download_button'), download_summary_path, target: '_blank', class: 'button' %>
   </aside>
-
-  <div>
-    <% unless @summary.pilot? %>
-      <div class="sticky-sidebar__nav">
-        <h5><%= t('.feedback.heading') %></h5>
-        <p><%= t('.feedback.body') %></p>
-        <%= link_to t('.feedback.link_text'), 'http://research.pensionwise.gov.uk/s/online_exit_poll/', class: 'button', rel: 'external', target: '_blank' %>
-      </div>
-    <% end %>
-  </div>
 <% end %>

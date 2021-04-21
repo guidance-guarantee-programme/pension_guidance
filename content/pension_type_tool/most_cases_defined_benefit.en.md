@@ -17,4 +17,3 @@ For guidance on defined benefit pensions go to the [The Pensions Advisory Servic
 ^If you have more than one pension, you may also have a defined contribution pension – [check another pension]({::money_helper_url path="pensions-and-retirement/taking-your-pension/pension-wise/find-out-your-pension-type.html" locale="en"/}){: target="_parent"}.^
 
 {::webchat /}
-[Give us your feedback](http://research.pensionwise.gov.uk/s/PTTfeedback/)
