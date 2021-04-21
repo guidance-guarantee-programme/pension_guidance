@@ -15,5 +15,3 @@ Am arweiniad ar bensiynau buddion wedi’u diffinio ewch i’r [Gwasanaeth Cyngh
 – ar gyfer Pensiwn y Wladwriaeth ewch i’r [Gwasanaeth Pensiwn](https://www.gov.uk/contact-pension-service){: target="_parent"}.
 
 ^Os oes gennych fwy nag un pensiwn, efallai bod gennych bensiwn cyfraniadau wedi’u diffinio hefyd – [gwirio pensiwn arall]({::money_helper_url path="pensions-and-retirement/taking-your-pension/pension-wise/find-out-your-pension-type.html" locale="cy"/}){: target="_parent"}.^
-
-[Rhowch eich adborth i ni](http://research.pensionwise.gov.uk/s/PTTfeedback/)
