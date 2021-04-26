@@ -1,8 +1,10 @@
 <% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
 <% content_for(:meta_description, @guide.description) %>
 
+<div class="l-column-full">
 <%= render 'option' if @guide.option? %>
 
 <%= @guide.welsh? ? content_tag(:div, @guide.content, lang: 'cy') : @guide.content %>
 
 <%= render 'journey_links' if @guide.related_to_journey? %>
+</div>
