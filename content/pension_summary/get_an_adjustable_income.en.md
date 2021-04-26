@@ -9,7 +9,7 @@ You can get an income from your pension pot that’s adjustable. This means you 
 * You’re likely to be involved in choosing and managing your investments.
 * As with all investments, the value of your pot can go up or down.
 * This option is also known as ‘flexi-access drawdown’.
-* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_parent"}).
+* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
 
 ^You can’t take the cash in chunks option later if you choose this option because you will have already taken your full tax-free lump sum.^
 
