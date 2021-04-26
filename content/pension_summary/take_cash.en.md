@@ -8,7 +8,7 @@ Instead of taking your whole pot in one go, you take smaller chunks over time un
 * You’re likely to be involved in choosing and managing your investments.
 * You can spread the chunks out over multiple tax years to reduce your income which could mean you pay less tax.
 * Providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
-* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_parent"}).
+* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
 * If you invest your pot into flexi-access drawdown, you won’t be able to take any more tax-free cash and can’t use this option.
 
 ## Next steps

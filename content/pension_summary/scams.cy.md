@@ -2,7 +2,7 @@
 
 Sgiâm pensiwn yw pan fydd rhywun yn ceisio eich twyllo chi allan o arian yn eich cronfa bensiwn. Yn aml bydd sgiâm yn dechrau gyda ‘galwad ar hap’ - gall hwn fod yn alwad ffôn, neges testun, e-bost, ymweliad personol neu ffyrdd eraill.
 
-^Os oes rhywun yn eich ffonio yn annisgwyl am eich pensiwn, mae’r alwad yn anghyfreithlon ac yn debygol o fod gan dwyllwyr. Dylech derfynu’r alwad yn syth a rhoi gwybod i [Swyddfa’r Comisiynnydd Gwybodaeth (ICO)](https://ico.org.uk/make-a-complaint/nuisance-calls-and-messages/){: target="_parent"}.^
+^Os oes rhywun yn eich ffonio yn annisgwyl am eich pensiwn, mae’r alwad yn anghyfreithlon ac yn debygol o fod gan dwyllwyr. Dylech derfynu’r alwad yn syth a rhoi gwybod i [Swyddfa’r Comisiynnydd Gwybodaeth (ICO)](https://ico.org.uk/make-a-complaint/nuisance-calls-and-messages/){: target="_blank"}.^
 
 ## Sut i adnabod sgiâm
 
@@ -20,7 +20,7 @@ Dylech bob amser ffonio eich darparwr os ydych yn derbyn e-bost yn dweud eu bod 
 
 ## Hysbysu am sgiâm pensiwn
 
-Action Fraud yw’r ganolfan ar gyfer hysbysu am dwyll a throseddau rhyngrwyd yn y DU. Os ydych yn meddwl eich bod wedi dioddef sgiâm pensiwn dylech eu ffonio neu ei hysbysu drwy ddefnyddio eu [teclyn hysbysu ar-lein](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime){: target="_parent"}.
+Action Fraud yw’r ganolfan ar gyfer hysbysu am dwyll a throseddau rhyngrwyd yn y DU. Os ydych yn meddwl eich bod wedi dioddef sgiâm pensiwn dylech eu ffonio neu ei hysbysu drwy ddefnyddio eu [teclyn hysbysu ar-lein](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime){: target="_blank"}.
 
 **Action Fraud**
 $C

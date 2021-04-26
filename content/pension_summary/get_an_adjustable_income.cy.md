@@ -9,7 +9,7 @@ Gallwch gael incwm o’ch cronfa bensiwn sy’n addasadwy. Mae hyn yn golygu eic
 * Mae’n debygol y byddwch yn cymryd rhan mewn dewis a rheoli eich buddsoddiadau.
 * Fel gyda phob buddsoddiad, gall gwerth eich cronfa fynd i fyny neu i lawr.
 * Mae’r opsiwn hwn hefyd yn cael ei adnabod fel ‘tynnu allan hyblyg’.
-* Efallai y gallwch barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a adnabyddir fel [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_parent"}).
+* Efallai y gallwch barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a adnabyddir fel [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
 
 ^Ni allwch gymryd yr opsiwn arian fesul tipyn os byddwch yn dewis yr opsiwn hwn oherwydd y byddwch eisoes wedi cymryd eich lwmp swm di-dreth llawn.^
 
