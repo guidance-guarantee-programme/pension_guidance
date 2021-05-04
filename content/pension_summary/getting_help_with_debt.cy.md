@@ -17,7 +17,7 @@ Darganfyddwch statws unrhyw drefniant dyled sydd gennych cyn dewis opsiwn pensiw
 
 Cymerwch eich amser wrth benderfynu beth i’w wneud gyda’ch cronfa a pheidiwch â rhuthro i benderfyniad.
 
-Am fwy o wybodaeth am ddyled gallwch siarad gyda’r [Gwasanaeth Cynghori Ariannol](https://www.moneyadviceservice.org.uk/cy). Mae eu gwefan yn cynnwys gwybodaeth am gymryd rheolaeth ar ddyled a gallant hefyd eich helpu i ddod o hyd i wasanaeth cyngor ar ddyledion am ddim a chyfrinachol yn eich ardal chi.
+Mae eu gwefan yn cynnwys gwybodaeth am gymryd rheolaeth ar ddyled a gallant hefyd eich helpu i ddod o hyd i wasanaeth cyngor ar ddyledion am ddim a chyfrinachol yn eich ardal chi.
 
 {: .hide-from-screen }
 [Further guidance on debt and pensions](https://www.pensionwise.gov.uk/en/debt)<br>
