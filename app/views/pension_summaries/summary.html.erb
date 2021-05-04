@@ -16,8 +16,6 @@
   <% if @summary.last_step? %>
     <% if @summary.pilot? %>
       <%= link_to t('.next_button'), explore_your_options_your_experience_path(id: @summary.id), class: 'button button-next' %>
-    <% else %>
-      <%= t('.privacy_notice.html') %>
     <% end %>
   <% else %>
     <%= link_to t('.next_button'), explore_your_options_summary_path(id: @summary.id, step: @summary.next_step), class: 'button button--primary button-next' %>
