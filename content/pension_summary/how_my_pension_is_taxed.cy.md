@@ -39,7 +39,7 @@ Mae’r arian rydych yn ei gymryd o’ch cronfa yn dod o’ch darparwr gyda’r 
 
 Bydd eich darparwr hefyd yn tynnu allan unrhyw dreth sy’n ddyledus ar eich Pensiwn y Wladwriaeth.
 
-Efallai y byddwch yn talu treth brys pan fyddwch yn cymryd arian o’ch cronfa. Gallwch [hawlio hwn yn ôl](https://www.gov.uk/claim-tax-refund/you-get-a-pension) gan Gyllid a Thollau EM.
+Efallai y byddwch yn talu treth brys pan fyddwch yn cymryd arian o’ch cronfa. Gallwch [hawlio hwn yn ôl](https://www.gov.uk/claim-tax-refund/you-get-a-pension){: target="_blank"} gan Gyllid a Thollau EM.
 
 ### Os byddwch yn parhau i weithio
 
@@ -51,7 +51,7 @@ Os yw cyfanswm eich incwm (gan gynnwys arian o bensiynau a PAYE) yn £100,000 ne
 
 Chi sy’n gyfrifol am dalu treth ar incwm arall sydd gennych, er enghraifft o eiddo neu fuddsoddiadau, ac efallai y bydd rhaid i chi lenwi ffurflen dreth Hunanasesiad.
 
-^Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance). Ar hyn o bryd mae hyn yn £1,073,100.
+^Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance){: target="_blank"}. Ar hyn o bryd mae hyn yn £1,073,100.
 
 {: .hide-from-screen }
 [Further guidance on tax you pay on your pension](https://www.pensionwise.gov.uk/en/tax)<br>
