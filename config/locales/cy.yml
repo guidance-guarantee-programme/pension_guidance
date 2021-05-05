@@ -372,6 +372,7 @@ cy:
             other_hint: Rhowch gymaint o fanylion ag y gallwch
           help:
             other: e.e ceisiais ffonio CAB Bangor ond ni atebodd neb
+          submit: 'Anfon cwyn'
         sent:
           html: |
             <p>
