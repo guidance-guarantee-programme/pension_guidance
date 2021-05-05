@@ -58,13 +58,11 @@
     <%= render 'components/language_toggle' %>
   <% end %>
 
-  <div class="maps-header">
-    <div class="maps-header-wrapper">
-      <div class="maps-header-meta">
-        <span class="maps-text"><%= t('.provided_by') %></span>
-        <a href="https://www.moneyandpensionsservice.org.uk" target="_blank">
-          <%= image_tag("maps_logo_#{I18n.locale}.png", class: 'maps-logo', alt: t('.logo_text')) %>
-        </a>
+  <div class="money-helper-header">
+    <div class="money-helper-header-wrapper">
+      <div class="money-helper-header-meta">
+        <span class="money-helper-text"><%= t('.money_helper.provided_by.html') %></span>
+        <%= image_tag("money_helper_logo_#{I18n.locale}.svg", class: 'money-helper-logo', alt: t('.money_helper.logo_text')) %>
       </div>
     </div>
   </div>

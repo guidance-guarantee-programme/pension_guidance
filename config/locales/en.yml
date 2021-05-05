@@ -5,6 +5,10 @@ en:
     base:
       provided_by: Pension Wise is provided by
       logo_text: Money and Pensions Service
+      money_helper:
+        provided_by:
+          html: '<h4>We’re moving to MoneyHelper</h4><p>The Pension Wise service will soon be part of MoneyHelper, the easy way to get free help for your money and pensions</p>'
+        logo_text: Money Helper
 
   cookie_banner:
     on_label: 'On'

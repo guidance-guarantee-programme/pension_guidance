@@ -5,6 +5,10 @@ cy:
     base:
       provided_by: Darperir Pension Wise gan
       logo_text: Gwasanaeth Arian a Phensiynau
+      money_helper:
+        provided_by:
+          html: '<h4>Rydym yn symud i HelpwrArian</h4><p>Bydd Pension Wise yn fuan yn rhan o HelpwrArian, y ffordd hawdd o gael cymorth ar gyfer eich arian a phensiynau</p>'
+        logo_text: HelpwrArian
 
   cookie_banner:
     on_label: 'Ymlaen'
