@@ -1,0 +1,45 @@
+.money-helper-header {
+  background: $money-helper-background;
+}
+
+.money-helper-header-wrapper {
+  @include media(tablet) {
+    margin: auto;
+    max-width: 1024px;
+  }
+}
+
+.money-helper-header-meta {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  align-items: left;
+  // scss-lint:disable PropertySpelling
+  justify-content: space-between;
+  margin: 0 15px;
+  padding: 12px 0;
+
+  @include media(tablet) {
+    margin: 0 30px;
+  }
+}
+
+.money-helper-text {
+  color: $white;
+
+  h4 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}
+
+.money-helper-logo {
+  display: block;
+  height: 45px;
+  margin-left: 15px;
+}
