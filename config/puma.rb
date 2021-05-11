@@ -3,7 +3,6 @@
 rackup DefaultRackup
 
 environment ENV['RACK_ENV'] || 'development'
-daemonize false
 
 pidfile 'tmp/pids/puma.pid'
 state_path 'tmp/pids/puma.state'
