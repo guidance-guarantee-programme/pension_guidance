@@ -15,21 +15,7 @@
     </div>
 
     <div class="quick-links">
-      <h2 class="quick-links__header"><%= t('.quick_links.scam_heading') %></h2>
-      <ul class="quick-links__list">
-        <li class="quick-links__item">
-          <%= link_to t('.quick_links.scam_link_title'), guide_path('scam-warning'), class: 'quick-links__link' %>
-        </li>
-      </ul>
-
-      <h2 class="quick-links__header"><%= t('.quick_links.heading') %></h2>
-      <ul class="quick-links__list">
-        <% t('.quick_links.items').each do |item| %>
-          <li class="quick-links__item">
-            <%= link_to item[:title], item[:url], class: 'quick-links__link', target: '_blank' %>
-          </li>
-        <% end %>
-      </ul>
+      <h2 class="quick-links__header"><%= t('.quick_links.money_helper') %></h2>
     </div>
   </div>
 </div>
