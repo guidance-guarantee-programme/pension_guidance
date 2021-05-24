@@ -325,7 +325,7 @@ cy:
       description: Mae Pension Wise yn wasanaeth diduedd am ddim gan y llywodraeth sy'n eich helpu i ddeall yr opsiynau ar gyfer eich cronfa bensiwn.
       intro:
         html: |
-          I <a href="%{appointment_url}">drefnu apwyntiad am ddim</a> ffoniwch <b>0800 138 3944</b>
+          <a href="%{appointment_url}">Drefnu apwyntiad am ddim</a>
       heading: Croeso i Pension Wise
       sub_heading: Cyngor am ddim a di-duedd gan y llywodraeth am eich opsiynau pensiwn cyfraniadau wedi’u diffinio
       quick_links:
@@ -348,8 +348,8 @@ cy:
         title: Sut?
         subtitle: Sut i drefnu apwyntiad?
         points:
-          - Ffôn
           - Ar-lein
+          - Ffôn
         book_appointment_button: Trefnu apwyntiad am ddim
       your_pension_type:
         title: Dod o hyd i’ch math o bensiwn
