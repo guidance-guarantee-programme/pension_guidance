@@ -11,9 +11,9 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: 2c14ceec71950aae85d5515d96804c004511210c
+  revision: 169466790beaf90e8022b136080eaac46faf0dd7
   specs:
-    output-templates (4.30.0)
+    output-templates (4.31.0)
       actionview
       sass
 
@@ -230,13 +230,13 @@ GEM
       nokogiri (~> 1)
       rake
     mini_mime (1.0.2)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     multi_json (1.13.1)
     multi_test (0.1.2)
     multipart-post (2.0.0)
     nio4r (2.5.7)
-    nokogiri (1.11.4)
+    nokogiri (1.11.6)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     parser (2.4.0.0)
