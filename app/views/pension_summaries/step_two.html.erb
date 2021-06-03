@@ -11,7 +11,7 @@
 
       <% PensionSummary::SECONDARY_OPTIONS.each do |step| %>
         <div class="multiple-choice">
-          <%= f.check_box step, { class: "t-options-#{step.dasherize} form-control" }, 1 %>
+          <%= f.check_box step, { class: "t-options-#{step.dasherize}" }, 1 %>
           <%= f.label step, class: 'block-label selection-button-checkbox' do %>
             <%= t("pension_summaries.options.#{step}.title") %>
           <% end %>
