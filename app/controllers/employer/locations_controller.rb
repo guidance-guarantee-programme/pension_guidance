@@ -1,6 +1,6 @@
 module Employer
   class LocationsController < ApplicationController
-    layout 'full_width_with_breadcrumbs'
+    include Embeddable
 
     before_action :set_breadcrumbs
 

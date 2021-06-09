@@ -1,7 +1,7 @@
 # rubocop:disable Metrics/ClassLength
 module Employer
   class BookingsController < ApplicationController
-    layout 'full_width'
+    include Embeddable
 
     before_action :booking
     before_action :retrieve_slots

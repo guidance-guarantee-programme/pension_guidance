@@ -1,7 +1,5 @@
 <% content_for(:page_title, t('service.title', page_title: "#{employer.name} Locations")) %>
 
-<h1><%= employer.name %> locations</h1>
-
 <% if @locations.length.zero? %>
   <div class="notice notice--extra-spacing">
     <i class="icon icon-information">
@@ -10,7 +8,7 @@
     <strong class="small">All our <%= employer.name %> locations are currently fully booked.</strong>
   </div>
 <% else %>
-  <div class="l-grid-row">
+  <div class="l-column-full">
     <div class="l-column-third">
       <span class="locations-a-z-total">
         <div><%= employer.name %> locations</div>
