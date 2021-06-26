@@ -20,5 +20,5 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 3. Pa fath o flwydd-dal ydych chi’n ei gynnig?
 
 {: .hide-from-screen }
-[Further guidance on getting a guaranteed income (annuity)](https://www.pensionwise.gov.uk/en/guaranteed-income)<br>
-[www.pensionwise.gov.uk/en/guaranteed-income](https://www.pensionwise.gov.uk/en/guaranteed-income)
+[Further guidance on getting a guaranteed income (annuity)](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained

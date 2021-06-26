@@ -28,5 +28,5 @@ Citizens Advice Scotland: You can talk about debt issues with a [trained adviser
 You also find [support in Northern Ireland](https://www.citizensadvice.org.uk/about-us/northern-ireland/){: target="_blank"}.
 
 {: .hide-from-screen }
-[Further guidance on debt and pensions](https://www.pensionwise.gov.uk/en/debt)<br>
-[www.pensionwise.gov.uk/en/debt](https://www.pensionwise.gov.uk/en/debt)
+[Further guidance on debt and pensions](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/using-your-pension-to-pay-off-debts)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/using-your-pension-to-pay-off-debts

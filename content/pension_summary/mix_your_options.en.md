@@ -18,5 +18,5 @@ If you’re interested in this option, you’ll need to contact your provider an
 3. Will you charge me a fee if I move my pot to a provider that offers the option I want?
 
 {: .hide-from-screen }
-[Further guidance on mixing your options](https://www.pensionwise.gov.uk/en/mix-options)<br>
-[www.pensionwise.gov.uk/en/mix-options](https://www.pensionwise.gov.uk/en/mix-options)
+[Further guidance on mixing your options](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot

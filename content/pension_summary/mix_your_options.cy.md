@@ -18,5 +18,5 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 3. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig y dewisiadau rwyf eisiau?
 
 {: .hide-from-screen }
-[Further guidance on mixing your options](https://www.pensionwise.gov.uk/en/mix-options)<br>
-[www.pensionwise.gov.uk/en/mix-options](https://www.pensionwise.gov.uk/en/mix-options)
+[Further guidance on mixing your options](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot

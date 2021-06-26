@@ -10,4 +10,4 @@ If you want to talk about your options for taking your money you can book a free
 
 An appointment is a conversation with a pension specialist. You can speak to us over the phone or face to face somewhere local to you.
 
-Go to [pensionwise.gov.uk/appointments](https://www.pensionwise.gov.uk/en/appointments) to book online or call 0800 138 3944 (+44 20 3733 3495 if you’re outside the UK).
+Go to [moneyhelper.org.uk/pensionwise](https://www.moneyhelper.org.uk/pensionwise) to book online or call 0800 138 3944 (+44 20 3733 3495 if you’re outside the UK).

@@ -20,5 +20,5 @@ Cymerwch eich amser wrth benderfynu beth i’w wneud gyda’ch cronfa a pheidiwc
 Mae eu gwefan yn cynnwys gwybodaeth am gymryd rheolaeth ar ddyled a gallant hefyd eich helpu i ddod o hyd i wasanaeth cyngor ar ddyledion am ddim a chyfrinachol yn eich ardal chi.
 
 {: .hide-from-screen }
-[Further guidance on debt and pensions](https://www.pensionwise.gov.uk/en/debt)<br>
-[www.pensionwise.gov.uk/en/debt](https://www.pensionwise.gov.uk/en/debt)
+[Further guidance on debt and pensions](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/using-your-pension-to-pay-off-debts)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/using-your-pension-to-pay-off-debts
