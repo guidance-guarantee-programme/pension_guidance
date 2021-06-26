@@ -26,5 +26,5 @@ If you’re interested in this option, you’ll need to contact your provider an
 5. Does my pot have any special features like a guaranteed annuity rate?
 
 {: .hide-from-screen }
-[Further guidance on getting an adjustable income](https://www.pensionwise.gov.uk/en/adjustable-income)<br>
-[www.pensionwise.gov.uk/en/adjustable-income](https://www.pensionwise.gov.uk/en/adjustable-income)
+[Further guidance on getting an adjustable income](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown

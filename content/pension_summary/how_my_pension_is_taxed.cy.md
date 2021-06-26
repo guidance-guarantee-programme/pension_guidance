@@ -54,5 +54,5 @@ Chi sy’n gyfrifol am dalu treth ar incwm arall sydd gennych, er enghraifft o e
 ^Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r [lwfans oes](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance){: target="_blank"}. Ar hyn o bryd mae hyn yn £1,073,000.
 
 {: .hide-from-screen }
-[Further guidance on tax you pay on your pension](https://www.pensionwise.gov.uk/en/tax)<br>
-[www.pensionwise.gov.uk/en/tax](https://www.pensionwise.gov.uk/en/tax)
+[Further guidance on tax you pay on your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions

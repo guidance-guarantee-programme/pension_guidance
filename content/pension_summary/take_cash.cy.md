@@ -22,5 +22,5 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 3. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
 
 {: .hide-from-screen }
-[Further guidance on taking cash in chunks](https://www.pensionwise.gov.uk/en/take-cash-in-chunks)<br>
-[www.pensionwise.gov.uk/en/take-cash-in-chunks](https://www.pensionwise.gov.uk/en/take-cash-in-chunks)
+[Further guidance on taking cash in chunks](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-pension-as-a-number-of-lump-sums)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-pension-as-a-number-of-lump-sums

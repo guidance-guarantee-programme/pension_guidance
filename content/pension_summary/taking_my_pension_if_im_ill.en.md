@@ -34,5 +34,5 @@ Check the terms of your pension with your provider. Some pensions will keep at l
 2. Do you have up-to-date details of who I want to leave money to (my ‘beneficiary’)?
 
 {: .hide-from-screen }
-[Further guidance on pensions and ill health](https://www.pensionwise.gov.uk/en/ill-health)<br>
-[www.pensionwise.gov.uk/en/ill-health](https://www.pensionwise.gov.uk/en/ill-health)
+[Further guidance on pensions and ill health](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/problems-with-a-decision-about-ill-health-retirement)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/problems-with-a-decision-about-ill-health-retirement

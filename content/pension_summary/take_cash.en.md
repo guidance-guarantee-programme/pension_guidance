@@ -22,5 +22,5 @@ If you’re interested in this option, you’ll need to contact your provider an
 3. Does my pot have any special features like a guaranteed annuity rate?
 
 {: .hide-from-screen }
-[Further guidance on taking cash in chunks](https://www.pensionwise.gov.uk/en/take-cash-in-chunks)<br>
-[www.pensionwise.gov.uk/en/take-cash-in-chunks](https://www.pensionwise.gov.uk/en/take-cash-in-chunks)
+[Further guidance on taking cash in chunks](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-pension-as-a-number-of-lump-sums)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-pension-as-a-number-of-lump-sums

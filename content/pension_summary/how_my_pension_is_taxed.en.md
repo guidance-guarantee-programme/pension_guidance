@@ -54,5 +54,5 @@ You’re responsible for paying tax on other income you have, e.g. from property
 ^You usually pay tax if your pension pots are worth more than the [lifetime allowance](https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance){: target="_blank"}. This is currently £1,073,000.
 
 {: .hide-from-screen }
-[Further guidance on tax you pay on your pension](https://www.pensionwise.gov.uk/en/tax)<br>
-[www.pensionwise.gov.uk/en/tax](https://www.pensionwise.gov.uk/en/tax)
+[Further guidance on tax you pay on your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions
