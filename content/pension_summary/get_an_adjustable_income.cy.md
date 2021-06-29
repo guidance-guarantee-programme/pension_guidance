@@ -26,5 +26,5 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 5. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
 
 {: .hide-from-screen }
-[Further guidance on getting an adjustable income](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown)<br>
-https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown
+[Further guidance on getting an adjustable income](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/what-is-flexible-retirement-income-pension-drawdown)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/what-is-flexible-retirement-income-pension-drawdown

@@ -21,7 +21,7 @@
     <%= link_to t('.next_button'), explore_your_options_summary_path(id: @summary.id, step: @summary.next_step), class: 'button button--primary button-next' %>
 
     <p>
-      <%= link_to t('.book_a_free_appointment_link'), money_helper_url('pensions-and-retirement/taking-your-pension/pension-wise/book-a-free-pension-wise-appointment/how-to-book-a-phone-appointment.html', locale: params[:locale]), class: 'summary', target: '_parent' %>
+      <%= link_to t('.book_a_free_appointment_link'), money_helper_url('pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/how-to-book-a-phone-appointment', locale: params[:locale]), class: 'summary', target: '_parent' %>
     </p>
   <% end %>
 </div>

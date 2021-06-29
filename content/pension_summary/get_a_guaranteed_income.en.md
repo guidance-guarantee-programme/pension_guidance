@@ -20,5 +20,5 @@ If you’re interested in this option, you’ll need to contact your provider an
 3. Which types of annuity do you offer?
 
 {: .hide-from-screen }
-[Further guidance on getting a guaranteed income (annuity)](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained)<br>
-https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/guaranteed-retirement-income-annuities-explained
+[Further guidance on getting a guaranteed income (annuity)](https://www.moneyhelper.org.uk/en/pensions-and-retirement/guaranteed-retirement-income-annuities-explained)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/guaranteed-retirement-income-annuities-explained
