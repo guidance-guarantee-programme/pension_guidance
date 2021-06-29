@@ -22,31 +22,3 @@
     </li>
   <% end %>
 </ul>
-
-<% content_for :sticky_sidebar do %>
-  <aside class="l-sticky-sidebar js-sticky-sidebar">
-    <%= render partial: 'shared/specialist_call_out' %>
-  </aside>
-<% end %>
-
-<% content_for :after_script do %>
-  <%= javascript_include_tag 'bootstrap/js/affix' %>
-  <%= javascript_include_tag 'bootstrap/js/scrollspy' %>
-
-  <script>
-    'use strict';
-    $('.js-sticky-sidebar').affix({
-      offset: {
-        top: $('.js-sticky-sidebar').offset().top,
-        bottom: function () {
-          return (this.bottom = $('.js-footer').outerHeight(true) + 150);
-        }
-      }
-    });
-
-    $('body').scrollspy({
-      target: '.js-sticky-sidebar',
-      offset: 50
-    });
-  </script>
-<% end %>

@@ -23,5 +23,5 @@ If you’re interested in this option, you’ll need to contact your provider an
 7. Do you have up-to-date details of who I want to leave my pot to (my ‘beneficiary’) when I die?
 
 {: .hide-from-screen }
-[Further guidance on leaving your pot untouched](https://www.pensionwise.gov.uk/en/leave-pot-untouched)<br>
-[www.pensionwise.gov.uk/en/leave-pot-untouched](https://www.pensionwise.gov.uk/en/leave-pot-untouched)
+[Further guidance on leaving your pot untouched](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot

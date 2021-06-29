@@ -1,98 +1,41 @@
 <% content_for(:page_title, t('service.title', page_title: 'Your appointment summary')) %>
 <% content_for(:meta_description, 'View, print or download a summary of your Pension Wise appointment') %>
 
-<h1>Your appointment summary</h1>
-<p>Your appointment summary is below. You can download or print the summary.</p>
+<div class="l-column-full">
+  <h1>Your appointment summary</h1>
+  <p>Your appointment summary is below. You can download or print the summary.</p>
 
-<div class="fixed-panel js-fixed-panel hide-from-print">
-  <div class="fixed-panel__button">
-    <%= form_for @appointment_summary, url: download_appointment_summaries_path, html: { id: 'download_form' }, namespace: 'download' do |f| %>
+  <div class="fixed-panel js-fixed-panel hide-from-print">
+    <div class="fixed-panel__button">
+      <%= form_for @appointment_summary, url: download_appointment_summaries_path, html: { id: 'download_form' }, namespace: 'download' do |f| %>
 
-      <% [*SUPPLEMENTARY_OPTIONS, :appointment_type].each do |field| %>
-        <%= f.hidden_field field %>
-      <% end %>
-
-      <%= f.submit 'Download', class: %w(button t-save-summary-as-pdf) %>
-    <% end %>
-  </div>
-
-  <div class="fixed-panel__button">
-    <%= form_for @appointment_summary, url: print_appointment_summaries_path, html: { target: '_blank', id: 'print_form' }, namespace: 'print' do |f| %>
-      <% [*SUPPLEMENTARY_OPTIONS, :appointment_type].each do |field| %>
-        <%= f.hidden_field field %>
-      <% end %>
-
-      <%= f.submit 'Print', class: %w(button t-print-summary) %>
-    <% end %>
-  </div>
-</div>
-
-<div class="summary-document t-summary-document t-summary-document--<%= appointment_type %>">
-  <%= @content.html_safe %>
-</div>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  dataLayer.push({
-    'appointment_type': '<%= appointment_type %>'
-  });
-</script>
-
-<% content_for :sticky_sidebar do %>
-  <aside class="l-sticky-sidebar">
-    <div class="sticky-sidebar js-sticky-sidebar sticky-sidebar--appointment-summary">
-      <div class="sidebar-hr"></div>
-      <div class="sticky-sidebar__nav">
-        <% headers.each do |id, text| %>
-          <span class="sticky-sidebar__heading">
-            <%= link_to text, "##{id}", class: 't-aside--heading' %>
-          </span>
+        <% [*SUPPLEMENTARY_OPTIONS, :appointment_type].each do |field| %>
+          <%= f.hidden_field field %>
         <% end %>
 
-        <ul class="sticky-sidebar__list nav">
-          <% headers(2).each do |id, text| %>
-            <li>
-              <%= link_to text, "##{id}",
-                          class: [
-                              't-aside--link',
-                              'sticky-sidebar__link'
-                          ]
-              %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
+        <%= f.submit 'Download', class: %w(button button--primary t-save-summary-as-pdf) %>
+      <% end %>
     </div>
-  </aside>
-<% end %>
 
-<% content_for :after_script do %>
-  <%= javascript_include_tag 'bootstrap/js/affix' %>
-  <%= javascript_include_tag 'bootstrap/js/scrollspy' %>
+    <div class="fixed-panel__button">
+      <%= form_for @appointment_summary, url: print_appointment_summaries_path, html: { target: '_blank', id: 'print_form' }, namespace: 'print' do |f| %>
+        <% [*SUPPLEMENTARY_OPTIONS, :appointment_type].each do |field| %>
+          <%= f.hidden_field field %>
+        <% end %>
+
+        <%= f.submit 'Print', class: %w(button t-print-summary) %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="summary-document t-summary-document t-summary-document--<%= appointment_type %>">
+    <%= @content.html_safe %>
+  </div>
 
   <script>
-    'use strict';
-    $('.js-sticky-sidebar').affix({
-      offset: {
-        top: $('.js-sticky-sidebar').offset().top,
-        bottom: function () {
-          return (this.bottom = $('.js-footer').outerHeight(true) + 150);
-        }
-      }
-    });
-
-    $('.js-fixed-panel').affix({
-      offset: {
-        top: $('.js-fixed-panel').offset().top - 15,
-        bottom: function () {
-          return (this.bottom = $('.js-footer').outerHeight(true) + 30);
-        }
-      }
-    });
-
-    $('body').scrollspy({
-      target: '.js-sticky-sidebar',
-      offset: 50
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+      'appointment_type': '<%= appointment_type %>'
     });
   </script>
-<% end %>
+</div>

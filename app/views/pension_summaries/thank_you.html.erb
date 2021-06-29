@@ -1,9 +1,11 @@
 <% content_for(:page_title, t('service.title', page_title: t('.title'))) %>
 
-<span class="build-your-own-progress">
-  <%= t('.pagination', current_page: @summary.current_step_number, total_pages: @summary.all_selected_steps.count) %>
-</span>
+<div class="l-column-two-thirds">
+  <span class="build-your-own-progress">
+    <%= t('.pagination', current_page: @summary.current_step_number, total_pages: @summary.all_selected_steps.count) %>
+  </span>
 
-<%= @guide.content %>
+  <%= @guide.content %>
 
-<%= render 'sidebar' %>
+  <%= render 'sidebar' %>
+</div>

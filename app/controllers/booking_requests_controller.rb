@@ -3,7 +3,6 @@ class BookingRequestsController < ApplicationController
 
   before_action :set_booking_request
   before_action :set_breadcrumbs
-  before_action :set_feedback
 
   def step_one
     raise(ActionController::RoutingError, 'Location Not Found') unless @booking_request.location
@@ -119,9 +118,5 @@ class BookingRequestsController < ApplicationController
     breadcrumb Breadcrumb.book_an_appointment
     breadcrumb Breadcrumb.how_to_book_face_to_face
     breadcrumb Breadcrumb.book_online(location_id, @booking_request.location_name)
-  end
-
-  def set_feedback
-    @feedback = FeedbackForm.for_face_to_face_booking
   end
 end

@@ -6,6 +6,8 @@ Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bo
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
                                                          'accessible.media.player', 'core', 'stylesheets')
 
+Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
 Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   apple-touch-icon-152x152.png
                                                   apple-touch-icon-60x60.png
@@ -23,11 +25,14 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   pensions-guidance.css
                                                   experiments/experiments.css
                                                   styleguide.css
+                                                  money-helper-overrides.css
                                                   bootstrap/js/affix.js
                                                   bootstrap/js/scrollspy.js
                                                   handlebars/handlebars.js
                                                   slot-picker.js
+                                                  disable-button.js
                                                   accessible.media.player/core/css/player-core.css
                                                   accessible.media.player/custom/css/player-theme.css
                                                   video-player.js
-                                                  guider-image.jpg )
+                                                  guider-image.jpg
+                                                  iframe-resizer.js )

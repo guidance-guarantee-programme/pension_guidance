@@ -34,5 +34,5 @@ Gwiriwch delerau eich pensiwn gyda’ch darparwr. Bydd rhai pensiynau yn cadw o 
 2. Oes gennych chi fanylion cyfredol y person rwyf am adael fy arian iddynt (fy ‘buddiolwr’)?
 
 {: .hide-from-screen }
-[Further guidance on pensions and ill health](https://www.pensionwise.gov.uk/en/ill-health)<br>
-[www.pensionwise.gov.uk/en/ill-health](https://www.pensionwise.gov.uk/en/ill-health)
+[Further guidance on pensions and ill health](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/problems-with-a-decision-about-ill-health-retirement)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-problems/problems-with-a-decision-about-ill-health-retirement

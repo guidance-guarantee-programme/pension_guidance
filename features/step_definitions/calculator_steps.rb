@@ -18,10 +18,6 @@ Given(/^I am on the guaranteed income guide$/) do
   @page.load(locale: :en)
 end
 
-Then('the booking call to action is displayed') do
-  expect(@page).to have_booking_call_to_action
-end
-
 When(/^I input the total value of my pension pot and how much I could contribute each year$/) do
   calculator = @page.calculator
 

@@ -1,5 +1,6 @@
 .fixed-panel {
-  position: absolute;
+  // position: absolute;
+  margin: 1rem 0 2rem;
 
   &.affix {
     @include box-sizing(border-box);
@@ -12,10 +13,14 @@
     z-index: 10;
     margin: 0;
 
-    @include media($min-width: ($site-width + $gutter * 2)) {
+    @include media(
+      $min-width: (
+        $site-width + $gutter * 2,
+      )
+    ) {
       margin: 0 -40px;
       padding-left: 40px;
-      width: ($site-width / 3) * 2;
+      // width: ($site-width / 3) * 2;
     }
   }
 

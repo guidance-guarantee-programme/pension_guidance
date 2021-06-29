@@ -1,26 +1,28 @@
-<div class="l-grid-row">
- <div class="l-column-full">
-   <h1>Book an appointment at <%= @location.name %></h1>
+<div class="l-column-full">
+  <h1>Book an appointment at <%= @location.name %></h1>
 
-    <% if @booking.errors.any? || (params[:continue] && !slot_selected?) %>
-      <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
-        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-          Unable to submit the form
-        </h2>
+  <% if @booking.errors.any? || (params[:continue] && !slot_selected?) %>
+    <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        Unable to submit the form
+      </h2>
 
-        <p>Check the following:</p>
+      <p>Check the following:</p>
 
-        <ul class="error-summary-list">
-          <% @booking.errors.each do |key, message| %>
-            <li><%= link_to "#{::Employer::Booking.human_attribute_name key} – #{message}", "#booking_#{key}" %></li>
-          <% end %>
-          <% unless slot_selected? %>
-            <li><%= link_to 'Select a time', "#booking_times" %></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-  </div>
+      <ul class="error-summary-list">
+        <% @booking.errors.each do |key, message| %>
+          <li><%= link_to "#{::Employer::Booking.human_attribute_name key} – #{message}", "#booking_#{key}" %></li>
+        <% end %>
+        <% unless slot_selected? %>
+          <li><%= link_to 'Select a time', "#booking_times" %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if @booking.step == 1 || @booking.step == 2 %>
+    <%= render 'day_picker' %>
+  <% end %>
 
   <%= form_for @booking, as: :booking, url: employer_location_bookings_path(employer_id: employer_id, location_id: location_id), html: { id: "form_booking_step_#{@booking.step}" } do |f| %>
     <%= f.hidden_field(:step, id: 'hidden_booking_step') %>
@@ -33,11 +35,7 @@
     <% end %>
   <% end %>
 
-  <% if @booking.step == 1 || @booking.step == 2 %>
-    <%= render 'day_picker' %>
-  <% end %>
-
   <div class="l-column-two-thirds">
-    <%= render 'feedbacks/feedback_form' %>
+    <%= render 'shared/alternative_journeys' %>
   </div>
 </div>

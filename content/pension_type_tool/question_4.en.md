@@ -7,6 +7,7 @@ answers:
   dont_know: /en/pension-type-tool/might-defined-contribution
 tags:
   - appointments
+  - embeddable
 ---
 
 # Find out your pension type
@@ -17,4 +18,3 @@ tags:
 {:/pension-start-year-question}
 
 {::webchat /}
-{::feedback_link /}

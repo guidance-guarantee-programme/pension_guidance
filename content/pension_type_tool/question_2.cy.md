@@ -6,6 +6,7 @@ answers:
   dont_know: /cy/pension-type-tool/question-3
 tags:
   - appointments
+  - embeddable
 ---
 
 # Dod o hyd i’ch math o bensiwn
@@ -21,5 +22,3 @@ tags:
 * y lluoedd arfog
 * unrhyw gyflogwr sector gyhoeddus arall, ee gwasanaethau cymdeithasol
 {:/yes-no-dont-know-question}
-
-{::feedback_link /}

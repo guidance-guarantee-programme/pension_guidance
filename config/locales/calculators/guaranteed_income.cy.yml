@@ -2,8 +2,8 @@ cy:
   activemodel:
     attributes:
       calculators/guaranteed_income_form:
-        pot: 'Faint sydd yn eich cronfa?'
-        age: 'Pa oedran ydych chi eisiau cymryd eich arian?'
+        pot: "Faint sydd yn eich cronfa?"
+        age: "Pa oedran ydych chi eisiau cymryd eich arian?"
     errors:
       models:
         calculators/guaranteed_income_form:
@@ -25,13 +25,13 @@ cy:
           html: |
             Yn seiliedig ar beth rydych wedi'i ddweud wrthym, os byddwch yn defnyddio eich cronfa bensiwn %{pot_value} i brynu blwydd-dal, gallech gael:
 
-            <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} yn ddi-dreth</strong>
+            <h3 class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} yn ddi-dreth</h3>
 
             a chael:
 
-            <strong class="calculator__estimate__number t-calculator-income">
+            <h3 class="calculator__estimate__number t-calculator-income">
               %{income} o incwm trethadwy blynyddol gwarantedig, am weddill eich oes
-            </strong>
+            </h3>
         notes:
           html: |
             <li>Mae hwn yn amcangyfrif ar gyfer blwydd-dal bywyd sengl.</li>

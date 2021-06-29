@@ -1,23 +1,20 @@
+@import "../../money-helper-variables";
+
 .slot-picker-nav {
-  box-shadow: -1px -1px $calendar-border,
-    inset -1px 0 $calendar-border;
+  box-shadow: -1px -1px $color-grey-blue-supporting,
+    inset -1px 0 $color-grey-blue-supporting;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slot-picker-nav__item {
   flex-basis: 33.333%;
+  font-weight: bold;
   font-size: 18px;
-  line-height: 32px;
-  margin: 8px 0;
+  line-height: 26px;
+  margin: 6px 0;
   text-align: center;
-
-  @include media(tablet) {
-    font-size: 24px;
-  }
-
-  .js-enabled & {
-    margin: 10px 0;
-  }
 }
 
 .slot-picker-nav__item--prev {
@@ -30,35 +27,45 @@
 
 .slot-picker-nav-button {
   background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 32px;
   border: 0;
   cursor: pointer;
-  font-size: .8em;
+  font-size: 0.8em;
   height: 32px;
   width: 100%;
+  display: flex;
+  align-items: center;
 
   &:hover {
     text-decoration: underline;
   }
+
+  .arrow svg {
+    margin-top: 3px;
+    height: 14px;
+  }
 }
 
 .slot-picker-nav-button--prev {
-  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2263%22%20height%3D%2263%22%20viewBox%3D%220%200%2063%2063%22%3E%3Ccircle%20fill%3D%22%23DEE0E2%22%20cx%3D%2231.5%22%20cy%3D%2231.5%22%20r%3D%2231%22%2F%3E%3Cpath%20fill%3D%22%2370787C%22%20d%3D%22M17.527%2031.038l18.535-18.536%205.41%205.41-13.28%2013.28%2013.28%2013.278-5.41%205.41-18.535-18.536.154-.153%22%2F%3E%3C%2Fsvg%3E);
-  background-position: 4% center;
-  padding-left: 42px;
   text-align: left;
+  justify-content: flex-start;
+
+  .arrow {
+    margin-right: 6px;
+  }
 }
 
 .slot-picker-nav-button--next {
-  background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2263%22%20height%3D%2263%22%20viewBox%3D%220%200%2063%2063%22%3E%3Ccircle%20fill%3D%22%23DEE0E2%22%20cx%3D%2231.5%22%20cy%3D%2231.5%22%20r%3D%2231%22%2F%3E%3Cpath%20fill%3D%22%2370787C%22%20d%3D%22M45.473%2031.038L26.938%2012.502l-5.41%205.41%2013.28%2013.28-13.28%2013.278%205.41%205.41%2018.535-18.536-.154-.153%22%2F%3E%3C%2Fsvg%3E);
-  background-position: 96% center;
-  padding-right: 42px;
   text-align: right;
+  justify-content: flex-end;
+
+  .arrow {
+    margin-left: 6px;
+  }
 }
 
 .slot-picker-nav-button__short-text {
   display: inline;
+  color: $color-magenta-primary;
 
   @include media(desktop) {
     display: none;
@@ -67,6 +74,10 @@
 
 .slot-picker-nav-button__long-text {
   display: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-magenta-primary;
 
   @include media(desktop) {
     display: inline;

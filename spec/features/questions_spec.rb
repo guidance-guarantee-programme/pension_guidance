@@ -17,10 +17,4 @@ RSpec.feature 'Questions', type: :feature do
       expect(page).to have_content(I18n.t('pension_type_tool.error'))
     end
   end
-
-  scenario 'can leave feedback' do
-    visit '/pension-type-tool/question-1'
-
-    expect(page).to have_content('Is there anything wrong with this page?')
-  end
 end

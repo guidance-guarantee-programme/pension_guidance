@@ -2,8 +2,8 @@ en:
   activemodel:
     attributes:
       calculators/adjustable_income_form:
-        pot: 'How much is in your pot?'
-        age: 'What age do you want to take your money?'
+        pot: "How much is in your pot?"
+        age: "What age do you want to take your money?"
     errors:
       models:
         calculators/adjustable_income_form:
@@ -31,15 +31,15 @@ en:
           html: |
             Based on what you’ve told us, if you use your %{pot_value} pension pot to take an adjustable income, you could get:
 
-            <strong class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} tax free</strong>
+            <h3 class="calculator__estimate__number t-calculator-tax-free-lump-sum">%{estimate} tax free</h3>
 
             and
 
-            <strong class="calculator__estimate__number">
+            <h3 class="calculator__estimate__number">
               a monthly income of <span class="calculator__highlight">%{drawdown_amount}</span>
               until you’re <span class="t-calculator-age-for-desired-income calculator__highlight">%{until_age}</span>
-            </strong>
-        slider_label: 'or try a different monthly income:'
+            </h3>
+        slider_label: "or try a different monthly income:"
         notes:
           html: |
             <li class="t-calculator-life-expectancy-income">

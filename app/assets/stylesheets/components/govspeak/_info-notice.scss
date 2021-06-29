@@ -1,6 +1,8 @@
+@import "../../money-helper-variables";
+
 .info-notice {
   clear: both;
-  border-left: 10px solid $border-colour;
+  border-left: 4px solid $color-teal-light-secondary;
   margin-bottom: 1em;
 
   @include ie(6) {
@@ -8,11 +10,10 @@
   }
 
   p {
-    margin: .75em 0;
+    margin: 0.75em 0;
     padding-right: 1em;
   }
 }
-
 
 .info-notice--leave-pot-untouched {
   border-color: $color-option-leave-pot-untouched;

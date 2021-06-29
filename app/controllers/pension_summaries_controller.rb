@@ -1,10 +1,12 @@
 # rubocop:disable Metrics/ClassLength
 class PensionSummariesController < ApplicationController
-  layout 'guides'
+  include Embeddable
+
+  helper MoneyHelper
 
   before_action :set_pilot_cookie, if: :pilot_enabled?, only: %i(start)
-  before_action :create_summary, only: %i(create)
-  before_action :set_summary, except: %i(start create)
+  before_action :create_summary, only: %i(start)
+  before_action :set_summary, except: %i(start)
   before_action :show_summary, if: :generated?, only: %i(step_one step_two)
   before_action :set_current_step, only: %i(summary)
   before_action :set_breadcrumbs
@@ -15,10 +17,6 @@ class PensionSummariesController < ApplicationController
   end
 
   def start
-    @guide = get_guide('start')
-  end
-
-  def create
     if pilot_summaries?
       redirect_to explore_your_options_about_you_url(id: @summary.id)
     else

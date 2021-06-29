@@ -7,7 +7,6 @@ RSpec.feature 'The pension summary', type: :feature do
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
-      and_i_begin_the_questionnaire
       and_i_select_all_pension_options
       and_i_select_all_extra_options
       then_i_view_a_summary_with_all_pages
@@ -20,7 +19,6 @@ RSpec.feature 'The pension summary', type: :feature do
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
-      and_i_begin_the_questionnaire
       and_i_answer_the_questions_about_me
       and_i_select_all_pension_options
       and_i_select_all_extra_options
@@ -37,7 +35,6 @@ RSpec.feature 'The pension summary', type: :feature do
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
-      and_i_begin_the_questionnaire
       and_i_select_all_pension_options
       and_i_select_all_extra_options
       then_i_view_a_summary_with_all_pages
@@ -49,7 +46,6 @@ RSpec.feature 'The pension summary', type: :feature do
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
-      and_i_begin_the_questionnaire
       and_i_select_all_pension_options
       and_i_select_all_extra_options
       then_i_view_a_summary_with_all_pages
@@ -65,7 +61,6 @@ RSpec.feature 'The pension summary', type: :feature do
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
-      and_i_begin_the_questionnaire
       and_i_answer_the_questions_about_me
       and_i_select_all_pension_options
       and_i_select_all_extra_options
@@ -82,7 +77,6 @@ RSpec.feature 'The pension summary', type: :feature do
 
       when_i_am_on_the_home_page(locale: 'cy')
       and_i_choose_to_explore_my_pension_options
-      and_i_begin_the_questionnaire
       and_i_select_all_pension_options
       and_i_select_all_extra_options
       then_i_view_a_summary_with_all_pages
@@ -96,7 +90,6 @@ RSpec.feature 'The pension summary', type: :feature do
 
       when_i_am_on_the_home_page
       and_i_choose_to_explore_my_pension_options
-      and_i_begin_the_questionnaire
       and_i_answer_the_questions_about_me
       and_i_select_all_pension_options
       and_i_select_all_extra_options
@@ -114,7 +107,6 @@ RSpec.feature 'The pension summary', type: :feature do
 
         when_i_am_on_the_home_page
         and_i_choose_to_explore_my_pension_options
-        and_i_begin_the_questionnaire
         and_i_select_all_pension_options
         and_i_select_all_extra_options
         and_i_view_a_summary_with_all_pages
@@ -162,17 +154,9 @@ end
 
 def and_i_choose_to_explore_my_pension_options
   if I18n.locale == :cy
-    click_link('Edrych ar eich opsiynau')
+    visit '/cy/explore-your-options'
   else
-    click_link('Explore your options')
-  end
-end
-
-def and_i_begin_the_questionnaire
-  if I18n.locale == :cy
-    click_button('Dechrau nawr')
-  else
-    click_button('Start now')
+    visit '/en/explore-your-options'
   end
 end
 

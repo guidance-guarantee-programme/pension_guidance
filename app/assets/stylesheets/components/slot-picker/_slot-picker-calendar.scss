@@ -1,3 +1,5 @@
+@import "../../money-helper-variables";
+
 .slot-picker-calendar {
   display: table; // IE9 fallback
   display: flex; // scss-lint:disable DuplicateProperty
@@ -8,20 +10,27 @@
 }
 
 .slot-picker-calendar__day {
-  box-shadow: -1px -1px $calendar-border,
-    inset -1px 0 $calendar-border;
+  box-shadow: -1px -1px $color-grey-blue-supporting,
+    inset -1px 0 $color-grey-blue-supporting;
   flex-basis: (100% / 7);
   float: left;
-  height: $calendar-row-height;
+  height: 59px;
   list-style: none;
   margin: 0;
   width: (100% / 7);
+
+  &::before {
+    display: none;
+  }
 }
 
 .slot-picker-calendar__day-text {
   left: 5px;
   position: absolute;
   top: 5px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .slot-picker-calendar__day--monday {
@@ -53,16 +62,14 @@
 }
 
 .slot-picker-calendar__action {
-  background: $color-white;
+  background: $color-white-supporting;
   border: 0;
-  box-shadow: 0 -1px $calendar-border,
-    inset -1px -1px 0 0 $calendar-border;
+  box-shadow: 0 -1px $color-grey-blue-supporting,
+    inset -1px -1px 0 0 $color-grey-blue-supporting;
   cursor: pointer;
   display: block;
-  font-size: 20px;
-  height: $calendar-row-height;
-  line-height: 20px;
-  min-height: $calendar-row-height;
+  height: 59px;
+  min-height: 59px;
   position: relative;
   text-align: left;
   user-select: none;
@@ -75,7 +82,7 @@
   }
 
   &:hover:not(:disabled) {
-    background: $calendar-hover;
+    background: $color-teal-light-secondary;
 
     .slot-picker-calendar__day-text {
       text-decoration: underline;
@@ -84,39 +91,35 @@
 }
 
 .slot-picker-calendar__action--selected {
-  background: $calendar-selection;
+  background: $color-magenta-dark-primary;
+  color: $color-white-supporting;
   cursor: default;
   font-weight: bold;
-
-  &:disabled {
-    color: $color-black;
-  }
 }
 
 .slot-picker-calendar__action--busy {
-  @include striped($calendar-busy-background-thin-stripes, $calendar-busy-background-wide-stripes);
+  @include striped(
+    $calendar-busy-background-thin-stripes,
+    $calendar-busy-background-wide-stripes
+  );
   color: $color-black;
   cursor: not-allowed;
 }
 
 .slot-picker-calendar__action--today {
   &:after {
-    background: $calendar-today;
-    bottom: 0;
-    color: $color-white;
-    content: "Today";
-    display: block;
-    font-size: 13px;
+    text-align: left;
     font-weight: normal;
-    height: $calendar-row-height / 2;
-    left: 0;
-    line-height: $calendar-row-height / 2;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 2px;
+    color: $color-dark-blue-secondary;
+    background: $color-teal-light-secondary;
     position: absolute;
-    text-align: center;
+    content: "Today";
+    bottom: 0;
+    left: 0;
     width: 100%;
-
-    @include media(desktop) {
-      font-size: 1em;
-    }
+    max-width: 100%;
   }
 }

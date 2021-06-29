@@ -1,8 +1,6 @@
-.slot-picker-header {
-  margin-top: 0;
-}
+@import "../../money-helper-variables";
 
 .slot-picker-header--need-help {
-  border-top: 1px solid $color-alto;
-  padding-top: 1em;
+  border-top: 1px solid $color-grey-blue-supporting;
+  padding: 1em 0;
 }

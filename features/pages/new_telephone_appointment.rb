@@ -29,6 +29,12 @@ module Pages
 
     element :continue, '.t-continue'
 
+    # widget elements
+    element :branding, '.l-masthead'
+    element :skiplink, '.skiplink'
+    element :cookie_banner, '#global-cookie-message'
+    element :csrf, 'meta[name=csrf-param]'
+
     def choose_date(date)
       page.choose(date)
     end

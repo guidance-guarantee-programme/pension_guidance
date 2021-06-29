@@ -1,5 +1,7 @@
 require 'govspeak'
 
+include MoneyHelper
+
 regexp = %r(^{::calculator\sid="(?<id>.*?)"\slocale="(?<locale>.*?)"\s/})
 Govspeak::Document.extension('calculator', regexp) do |id, locale|
   classes = "t-calculator calculator calculator--in-article calculator--#{id} js-calculator hide-from-print"
@@ -32,10 +34,10 @@ Govspeak::Document.extension('multi-choice-questions', regexp) do |partial_name,
   )
 end
 
-Govspeak::Document.extension('feedback', %r(^{::feedback_link /})) do
-  ApplicationController.render(partial: 'feedbacks/feedback_link')
-end
-
 Govspeak::Document.extension('webchat', %r(^{::webchat /})) do
   ApplicationController.render(partial: 'components/webchat')
+end
+
+Govspeak::Document.extension('money_helper_url', %r({::money_helper_url\spath="(?<path>.*?)"\slocale="(?<locale>.*?)"/})) do |path, locale| # rubocop:disable LineLength
+  money_helper_url(path, locale: locale)
 end

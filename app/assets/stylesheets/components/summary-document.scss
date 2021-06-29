@@ -33,56 +33,11 @@
     }
   }
 
-  .option--untouched {
-    @include bullet($color-option-leave-pot-untouched, 14px);
-  }
-
-  .option--annuity {
-    @include bullet($color-option-guaranteed-income, 14px);
-  }
-
-  .option--adjustable {
-    @include bullet($color-option-adjustable-income, 14px);
-  }
-
-  .option--chunks {
-    @include bullet($color-option-take-cash, 14px);
-  }
-
-  .option--whole {
-    @include bullet($color-option-take-whole-pot, 14px);
-  }
-
-  .option--mix {
-    @include bullet($color-option-mix-options, 14px);
-  }
-
-  .next-steps {
-    h3 {
-      // scss-lint:disable PlaceholderInExtend
-      @extend h2;
-    }
-
-    h4 {
-      // scss-lint:disable PlaceholderInExtend
-      @extend p;
-    }
-  }
-
-  h2 {
-    // scss-lint:disable PlaceholderInExtend
-    @extend h1;
-    margin-top: 2em;
-
-    &.option {
-
-      &:before {
-        top: 7px;
-      }
-    }
-  }
-
   hr {
     display: none;
+  }
+
+  h3:not(.next-steps h3) {
+    margin-top: 3rem;
   }
 }

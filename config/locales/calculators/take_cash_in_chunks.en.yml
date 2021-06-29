@@ -31,18 +31,18 @@ en:
             If you take <span class="t-calculator-chunk calculator__highlight">%{chunk}</span> from your
             <span class="t-calculator-pot">%{pot_value}</span> pot, you could get:
 
-            <strong class="calculator__estimate__number t-calculator-chunk-remaining">%{chunk_remaining}</strong>
+            <h3 class="calculator__estimate__number t-calculator-chunk-remaining">%{chunk_remaining}</h3>
 
             We estimate you’ll pay:
 
-            <strong class="calculator__estimate__number t-calculator-chunk-tax">%{chunk_tax} in tax</strong>
+            <h3 class="calculator__estimate__number t-calculator-chunk-tax">%{chunk_tax} in tax</h3>
 
             Leaving:
 
-            <strong class="calculator__estimate__number t-calculator-pot-remaining">
+            <h3 class="calculator__estimate__number t-calculator-pot-remaining">
               %{pot_remaining} in your pot
-            </strong>
-        slider_label: 'or try a different cash chunk:'
+            </h3>
+        slider_label: "or try a different cash chunk:"
         notes:
           html: |
             <li>

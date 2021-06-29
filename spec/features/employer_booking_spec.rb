@@ -42,7 +42,6 @@ RSpec.feature 'Tesco Bookings' do
   def when_the_customer_attempts_a_booking
     @page = Pages::EmployerBooking.new
     @page.load(employer_id: 1, location_id: 1)
-    @page.accept_cookies!
   end
 
   def and_they_choose_an_available_day

@@ -1,6 +1,8 @@
 <div class="calculator js-calculator">
   <div>
-    <h2 id="calculator">Find out what you’d get after tax</h2>
+    <h2 id="calculator" class="calculator-heading">
+      Find out what you’d get after tax
+    </h2>
   </div>
 
   <form action="/calculator" method="get">
@@ -8,19 +10,40 @@
       <label class="form-label" for="pot">
         Total amount in your pension pot(s)
       </label>
-      <span id="pot-a">£</span> <input aria-labelledby="pot-a" class="form-control calculator__field" type="text" id="pot" name="pot" />
+      <span id="pot-a">£</span>
+      <input
+        aria-labelledby="pot-a"
+        class="form-control calculator__field"
+        type="text"
+        id="pot"
+        name="pot"
+      />
     </div>
 
     <div class="form-group">
       <label class="form-label" for="income">
         Your income for the year
-        <span class="form-hint">Includes your salary, savings, benefits and State Pension payments</span>
+        <span class="form-hint"
+          >Includes your salary, savings, benefits and State Pension
+          payments</span
+        >
       </label>
-      <span id="income-a">£</span> <input aria-labelledby="income-a" class="form-control calculator__field" type="text" id="income" name="income" />
+      <span id="income-a">£</span>
+      <input
+        aria-labelledby="income-a"
+        class="form-control calculator__field"
+        type="text"
+        id="income"
+        name="income"
+      />
     </div>
 
     <div class="form-group">
-      <input type="submit" class="button calculator__submit js-calculate-submit" value="Calculate" />
+      <input
+        type="submit"
+        class="button calculator__submit js-calculate-submit"
+        value="Calculate"
+      />
     </div>
   </form>
 

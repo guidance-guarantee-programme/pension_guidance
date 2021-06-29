@@ -1,4 +1,143 @@
-input[type="search"] {
-  -webkit-appearance: none;
-  border-radius: 0;
+@import "../money-helper-variables";
+// maps styles
+// inputs
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+textarea,
+.form-control,
+select,
+input[name="slider"] {
+  font-size: 16px;
+  border: 1px solid $color-grey-secondary;
+  border-radius: 4px;
+
+  // outlines
+  &:focus {
+    border: 2px solid $color-violet-primary;
+    outline: 4px solid $color-yellow-secondary;
+    background-color: $color-white-supporting;
+  }
+
+  &.form-control-error {
+    border: 2px solid $error-red;
+  }
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[name="slider"] {
+  max-height: 40px;
+  padding: 7px 12px;
+}
+
+// select
+.form-control,
+select {
+  background-color: $color-white-supporting;
+  font-weight: normal;
+  color: $color-grey-secondary;
+  padding: 8px 15px;
+}
+
+// radio buttons
+input[type="radio"],
+.input--radio-first,
+.input--radio {
+  width: 28px;
+  height: 28px;
+  border: 1px solid $color-grey-secondary;
+
+  &:focus {
+    border: 2px solid $color-violet-primary;
+    outline: 2px solid $color-yellow-secondary;
+  }
+}
+
+// hover & focus
+input[type="checkbox"]:focus,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  outline: solid 0.1875rem $color-violet-primary;
+}
+
+// errors
+.error-message {
+  color: $error-red;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.form-group-error {
+  border-left: 4px solid $error-red;
+  padding-left: 14px;
+  margin-right: 0;
+}
+
+// labels
+.form-label {
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-dark-blue-secondary;
+  padding-bottom: 0;
+}
+
+// hint
+.form-hint {
+  font-size: 16px;
+  line-height: 23px;
+  clear: both;
+  color: $color-grey-secondary;
+  font-style: italic;
+
+  &:last-of-type {
+    border: 0;
+  }
+}
+
+.form-date .form-group input {
+  width: 105%;
+}
+
+// error message
+.error-summary {
+  border: 4px solid $error-red;
+  border-radius: 0 0 0 36px;
+
+  @media only screen and (min-width: $mq-m-max) {
+    padding: 29px 38px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  h2 {
+    font-size: 27px;
+    line-height: 34px;
+    color: $color-dark-blue-secondary;
+    margin-bottom: 0;
+  }
+
+  .error-summary-list {
+    margin: 0;
+
+    a {
+      color: $color-magenta-primary;
+    }
+
+    li {
+      margin-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
 }

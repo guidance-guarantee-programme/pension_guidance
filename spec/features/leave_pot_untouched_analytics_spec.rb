@@ -43,7 +43,6 @@ RSpec.feature 'Leave pot untouched analytics', type: :feature, js: true do
 
   def enter_valid_data
     visit '/leave-pot-untouched'
-    click_on 'Accept all cookies'
 
     fill_in 'pot', with: pot
     fill_in 'contribution', with: contribution

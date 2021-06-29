@@ -1,10 +1,21 @@
+@import "../../money-helper-variables";
+
 .slot-picker-confirmed-date {
-  background: $color-white;
-  border: 1px solid $calendar-confirmed-slot-border;
-  box-shadow: 0 0 0 10px $calendar-confirmed-slot-border-2;
-  margin: 16px 10px 32px;
+  background: $color-white-supporting;
+  border: 1px solid $color-grey-blue-supporting;
+  border-radius: 0 0 0 36px;
+  margin: 2rem 0;
+  padding: 25px;
 }
 
 .slot-picker-confirmed-date__text {
-  margin: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+
+  &.heavy {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+  }
 }

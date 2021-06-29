@@ -22,7 +22,7 @@
     </div>
   <% end %>
 
-  <h2 id="age">Your age</h2>
+  <h3 id="age">Your age</h3>
 
   <div class="form-group <%= 'form-group-error' if @appointment_summary.errors.include?(:appointment_type) %>" id="appointment_type" tabindex="-1">
     <fieldset class="inline">
@@ -47,7 +47,7 @@
     </fieldset>
   </div>
 
-  <h2>Extra information</h2>
+  <h3>Extra information</h3>
   <p>You can choose to include extra information in your summary. Select all options that are relevant to you.</p>
 
   <fieldset class="form-group">
@@ -90,7 +90,7 @@
   </fieldset>
 
   <div class="form-group">
-    <%= f.submit 'View summary', class: 'button t-appointment-summary-submit' %>
+    <%= f.submit 'View summary', class: 'button button--primary t-appointment-summary-submit' %>
   </div>
 <% end %>
 

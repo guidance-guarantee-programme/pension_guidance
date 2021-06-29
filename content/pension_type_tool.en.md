@@ -17,5 +17,3 @@ If you have a defined contribution (personal or workplace) pension you choose ho
 
 [Start now](/en/pension-type-tool/question-1){: .button .button-start}
 {::webchat /}
-
-{::feedback_link /}

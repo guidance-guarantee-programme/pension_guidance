@@ -1,15 +1,15 @@
 # Default application configuration that all configurations inherit from.
 
-scss_files: 'app/assets/stylesheets/**/*.css.scss'
+scss_files: "app/assets/stylesheets/**/*.css.scss"
 
 exclude:
-  - '.downloads/**/*'
-  - 'lib/prince/**/*'
-  - 'node_modules/**/*'
-  - 'vendor/assets/**/*'
-  - 'vendor/bundle/**/*'
-  - 'public/assets/**/*'
-  - 'tmp/**/*'
+  - ".downloads/**/*"
+  - "lib/prince/**/*"
+  - "node_modules/**/*"
+  - "vendor/assets/**/*"
+  - "vendor/bundle/**/*"
+  - "public/assets/**/*"
+  - "tmp/**/*"
 
 linters:
   BangFormat:
@@ -65,9 +65,10 @@ linters:
     enabled: true
 
   IdSelector:
-    enabled: true
+    enabled: false
     exclude:
       - app/assets/stylesheets/components/_global-header-bar.scss
+      - app/assets/stylesheets/base/_headings.scss
 
   IdWithExtraneousSelector:
     enabled: true
@@ -83,7 +84,7 @@ linters:
     width: 2
 
   LeadingZero:
-    enabled: true
+    enabled: false
     style: exclude_zero # or 'include_zero'
 
   MergeableSelector:
@@ -186,3 +187,8 @@ linters:
 
   Compass::*:
     enabled: false
+
+  ImportantRule:
+    enabled: true
+    exclude:
+      - app/assets/stylesheets/money-helper-overrides.scss

@@ -1,7 +1,7 @@
 <form action="<%= "/#{locale}/questions" %>" accept-charset="UTF-8" method="post">
   <input name="question_id" type="hidden" value="<%= id %>">
 
-  <div id="question" tabindex="-1">
+  <div id="question" class="question" tabindex="-1">
     <%= header %>
   </div>
 
@@ -23,6 +23,6 @@
   </div>
 
   <div class="form-group">
-    <button type="submit" class="medium button"><%= t('.next_step') %></button>
+    <button type="submit" class="button button--primary medium button"><%= t('.next_step') %></button>
   </div>
 </form>

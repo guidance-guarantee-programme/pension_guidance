@@ -1,14 +1,14 @@
 .help-notice {
-  background: image-url("icon-important.png") no-repeat scroll 0 .5em;
+  background: image-url("icon_important_maps.png") no-repeat scroll 0 0.5em;
 
   @include device-pixel-ratio() {
-    background-image: image-url("icon-important-2x.png");
-    background-size: 34px 34px;
+    background-image: image-url("icon_important_maps_2x.png");
+    background-size: 42px 42px;
   }
 
   p {
     font-weight: 600;
-    padding: 0 1em 0 2em;
+    padding-left: 2em;
   }
 }
 

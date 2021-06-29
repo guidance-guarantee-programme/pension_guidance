@@ -6,6 +6,7 @@ answers:
   dont_know: /cy/pension-type-tool/question-4
 tags:
   - appointments
+  - embeddable
 ---
 
 # Dod o hyd i’ch math o bensiwn
@@ -46,5 +47,3 @@ tags:
 
 ^Efallai bod rhai o’r cwmniau hyn wedi cael enwau gwahanol yn y gorffenol neu wedi uno â chwmniau eraill, ee roedd Aviva yn arfer bod yn Norwich Union.^
 {:/yes-no-dont-know-question}
-
-{::feedback_link /}

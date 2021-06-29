@@ -8,7 +8,7 @@ You can take your whole pension pot as cash. The money from your pot will be add
 * Adding a large cash sum to your income could put you in a higher tax band.
 * You can take up to 3 small pots of up to £10,000 without it counting towards your annual or lifetime tax allowance.
 * Taking your whole pot in one go could affect your entitlement to benefits.
-* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot)).
+* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
 
 You should think about this option. Once you’ve taken the money out you can’t change the decision and you lose the tax-free status it had while in your pot.  
 
@@ -22,5 +22,5 @@ If you’re interested in this option, contact your provider and ask the followi
 2. Will you charge me a fee if I move my pot to a provider that offers this option?
 
 {: .hide-from-screen }
-[Further guidance on taking your whole pot in one go](https://www.pensionwise.gov.uk/en/take-whole-pot)<br>
-[www.pensionwise.gov.uk/en/take-whole-pot](https://www.pensionwise.gov.uk/en/take-whole-pot)
+[Further guidance on taking your whole pot in one go](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go

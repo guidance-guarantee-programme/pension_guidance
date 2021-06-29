@@ -15,7 +15,11 @@
     margin: 0 (-$sticky-sidebar-gutter);
     top: 0;
 
-    @include media($min-width: ($site-width + $gutter * 2)) {
+    @include media(
+      $min-width: (
+        $site-width + $gutter * 2,
+      )
+    ) {
       width: $site-width / 3;
       padding-right: 0;
     }
@@ -122,7 +126,6 @@
     }
   }
 }
-
 
 .sticky-sidebar__link--calculator:link,
 .sticky-sidebar__link--calculator:visited {
