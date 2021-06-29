@@ -1,4 +1,49 @@
 <div class="l-column-full">
+  <% if lloyds_signposted? %>
+    <div class="application-notice info-notice t-lloyds-signposted-banner">
+      <p>You are booking as a member of a <strong>LBGPTL</strong> pension scheme</p>
+    </div>
+  <% end %>
+
+  <%= render partial: 'smarter_signposted_banner' if smarter_signposted? %>
+
+  <% if @telephone_appointment.errors.any? || (params[:continue] && !slot_selected?) %>
+    <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        Unable to submit the form
+      </h2>
+
+      <p>Check the following:</p>
+
+      <ul class="error-summary-list">
+        <% @telephone_appointment.errors.each do |key, message| %>
+          <li><%= link_to "#{TelephoneAppointment.human_attribute_name key} – #{message}", "#telephone_appointment_#{key}" %></li>
+        <% end %>
+        <% unless slot_selected? %>
+          <li><%= link_to 'Select a time', "#telephone_appointment_times" %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if @telephone_appointment.step == 1 || @telephone_appointment.step == 2 %>
+    <%= render 'day_picker' %>
+  <% end %>
+
+  <%= form_for @telephone_appointment, html: { id: "form_telephone_appointment_step_#{@telephone_appointment.step}" } do |f| %>
+    <%= f.hidden_field(:step, id: 'hidden_telephone_appointment_step') %>
+    <%= render "step_#{@telephone_appointment.step}", f: f %>
+
+    <% if @telephone_appointment.step == 1 %>
+      <div class="l-column-half l-column-half--right" data-slot-picker-single-time>
+        <%= render 'times_js' %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <div class="l-column-two-thirds">
+    <%= render 'shared/alternative_journeys' %>
+  </div>
 </div>
 
 <script>
