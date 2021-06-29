@@ -23,5 +23,5 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 7. Oes gennych chi fanylion cyfredol o bwy rwyf am adael fy nghronfa i (fy ‘muddiolwr’) pan fyddaf yn marw?
 
 {: .hide-from-screen }
-[Further guidance on leaving your pot untouched](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot)<br>
-https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot
+[Further guidance on leaving your pot untouched](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/retiring-later-or-delaying-taking-your-pension-pot)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/retiring-later-or-delaying-taking-your-pension-pot
