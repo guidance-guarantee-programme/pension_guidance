@@ -13,4 +13,4 @@ Os hoffech gael mwy o wybodaeth am eich opsiynau, gallwch drefnu apwyntiad Pensi
 ## Help gyda blwydd-daliadau, dyled, a dod o hyd i ymgynghorydd ariannol:
 
 {:.not-printed}
-[Trusted sources of additional information]({::money_helper_url path="pensions-and-retirement/pension-wise/trusted-sources-of-additional-information.html" locale="cy"/}){: target="_parent"}
+[Ffynonhellau dibynadwy o wybodaeth ychwanegol]({::money_helper_url path="pensions-and-retirement/pension-wise/trusted-sources-of-additional-information.html" locale="cy"/}){: target="_parent"}
