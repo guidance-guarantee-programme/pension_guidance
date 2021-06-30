@@ -40,7 +40,7 @@ cy:
       privacy_notice:
         html: |
           <h2 id="hysbysiad-preifatrwydd">Hysbysiad preifatrwydd</h2>
-          <p>Gellir dod o hyd i wybodaeth ar sut mae Pension Wise yn casglu, prosesu a storio eich data, a gwybodaeth am eich hawliau mewn perthynas i’r data rydym yn ei gadw yn <a rel="external" href="https://www.pensionwise.gov.uk/cy/privacy">www.pensionwise.gov.uk/cy/privacy</a>.</p>
+          <p>Gellir dod o hyd i wybodaeth ar sut mae Pension Wise yn casglu, prosesu a storio eich data, a gwybodaeth am eich hawliau mewn perthynas i’r data rydym yn ei gadw yn <a rel="external" href="https://www.moneyhelper.org.uk/cy/about-us/privacy-notice">moneyhelper.org.uk/cy/about-us/privacy-notice</a>.</p>
       next_button: Nesaf
 
     step_one:

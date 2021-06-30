@@ -44,7 +44,7 @@ en:
       privacy_notice:
         html: |
           <h2>Privacy notice</h2>
-          <p>Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at <a rel="external" href="https://www.pensionwise.gov.uk/en/privacy">www.pensionwise.gov.uk/en/privacy</a>.</p>
+          <p>Information on how Pension Wise collects, processes and stores your data, and information on your rights in relation to the data we hold can be found at <a rel="external" href="https://www.moneyhelper.org.uk/en/about-us/privacy-notice" target="_blank">moneyhelper.org.uk/en/about-us/privacy-notice</a>.</p>
       next_button: Next
 
     step_one:
