@@ -23,7 +23,7 @@
 
       <% PensionSummary::ABOUT_YOUR_GENDER.each do |option| %>
         <div class="multiple-choice">
-          <%= f.radio_button :gender, option, { class: "t-about-your-gender-#{option.dasherize} form-control" } %>
+          <%= f.radio_button :gender, option, { class: "t-about-your-gender-#{option.dasherize}" } %>
           <%= f.label :gender, value: option, class: 'block-label selection-button-radio' do %>
             <%= t(".gender.#{option}") %>
           <% end %>
@@ -36,7 +36,7 @@
 
       <% PensionSummary::ABOUT_YOUR_AGE.each do |option| %>
         <div class="multiple-choice">
-          <%= f.radio_button :age, option, { class: "t-about-your-age-#{option.dasherize} form-control" } %>
+          <%= f.radio_button :age, option, { class: "t-about-your-age-#{option.dasherize}" } %>
           <%= f.label :age, value: option, class: 'block-label selection-button-radio' do %>
             <%= t(".age.#{option}", default: option) %>
           <% end %>
@@ -49,7 +49,7 @@
 
       <% PensionSummary::COUNTRIES.each do |option| %>
         <div class="multiple-choice">
-          <%= f.radio_button :country, option, { class: "t-country-#{option.dasherize} form-control" } %>
+          <%= f.radio_button :country, option, { class: "t-country-#{option.dasherize}" } %>
           <%= f.label :country, value: option, class: 'block-label selection-button-radio' do %>
             <%= t(".country.#{option}") %>
           <% end %>
@@ -61,7 +61,7 @@
 
     <div data-checkbox-toggle class="form-group <%= 'form-group-error' if @summary.errors.include?(:consent_given) %>">
       <div class="multiple-choice" data-target="consent-given">
-        <%= f.check_box :consent_given, { class: "t-consent-given form-control" } %>
+        <%= f.check_box :consent_given, { class: "t-consent-given" } %>
         <%= f.label :consent_given, class: 'block-label selection-button-checkbox' do %>
           <%= t(".consent_given") %>
           <% if @summary.errors.include?(:consent_given) %>
@@ -95,6 +95,6 @@
 
     <%= t('.privacy_notice.html') %>
 
-    <%= f.submit t('.next_button'), class: :button %>
+    <%= f.submit t('.next_button'), class: 'button button--primary' %>
   <% end %>
 </div>
