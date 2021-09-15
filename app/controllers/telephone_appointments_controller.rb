@@ -77,7 +77,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   end
 
   def retrieve_slots
-    slots   = TelephoneAppointmentsApi.new.slots(lloyds_signposted?)
+    slots   = TelephoneAppointmentsApi.new.slots(lloyds_signposted?, telephone_appointment.schedule_type)
 
     @months = retrieve_months(slots)
     @times  = retrieve_times(slots)
@@ -121,10 +121,12 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :gdpr_consent,
         :accessibility_requirements,
         :notes,
-        :gdpr_consent
+        :gdpr_consent,
+        :schedule_type
       ).merge(
         smarter_signposted: smarter_signposted?,
-        lloyds_signposted: lloyds_signposted?
+        lloyds_signposted: lloyds_signposted?,
+        schedule_type: schedule_type
       )
   end
 
@@ -135,6 +137,10 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
 
   def slot_selected?
     telephone_appointment.start_at
+  end
+
+  def schedule_type
+    params.dig(:telephone_appointment, :schedule_type) || params.fetch(:schedule_type) { 'pension_wise' }
   end
 
   def check_lloyds_cookie!

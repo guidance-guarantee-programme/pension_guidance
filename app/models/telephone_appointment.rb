@@ -22,7 +22,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
     :accessibility_requirements,
     :notes,
     :smarter_signposted,
-    :lloyds_signposted
+    :lloyds_signposted,
+    :schedule_type
   )
 
   validates :start_at, presence: true
@@ -68,7 +69,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
     start_at.blank? || age(start_at) < 50
   end
 
-  def attributes # rubocop:disable Metrics/MethodLength
+  def attributes # rubocop:disable MethodLength, AbcSize
     {
       start_at: start_at,
       first_name: first_name,
@@ -83,7 +84,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
       accessibility_requirements: accessibility_requirements,
       notes: notes,
       smarter_signposted: smarter_signposted,
-      lloyds_signposted: lloyds_signposted
+      lloyds_signposted: lloyds_signposted,
+      schedule_type: schedule_type
     }
   end
 

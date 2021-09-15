@@ -37,6 +37,7 @@
       var data = {};
       data[`${this.$prefix}[step]`] = 2;
       data[`${this.$prefix}[selected_date]`] = date;
+      data[`${this.$prefix}[schedule_type]`] = this.$form.find('#day_picker_schedule_type').val();
       data['authenticity_token'] = this.$form.find('input[name=authenticity_token]').val();
 
       $.post(this.$form.attr('action'),

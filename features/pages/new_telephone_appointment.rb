@@ -36,11 +36,11 @@ module Pages
     element :csrf, 'meta[name=csrf-param]'
 
     def choose_date(date)
-      page.choose(date)
+      find("button[value='#{date}']").click
     end
 
     def choose_time(time)
-      page.choose(time)
+      find('label', text: time).click
     end
   end
 end
