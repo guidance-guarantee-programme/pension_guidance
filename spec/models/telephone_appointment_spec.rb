@@ -19,6 +19,10 @@ RSpec.describe TelephoneAppointment, type: :model do
     )
   end
 
+  it 'defaults `due_diligence?` to false' do
+    expect(subject).not_to be_due_diligence
+  end
+
   it 'defaults `step` to 1' do
     expect(subject.step).to eq(1)
   end
@@ -111,6 +115,18 @@ RSpec.describe TelephoneAppointment, type: :model do
   context 'validations' do
     it 'is valid with valid parameters' do
       expect(subject).to be_valid
+    end
+
+    context 'when it is a due diligence appointment' do
+      it 'requires the referring pension provider' do
+        subject.schedule_type = 'due_diligence'
+
+        subject.referrer = ''
+        expect(subject).to be_invalid
+
+        subject.referrer = 'Big Pensions PLC'
+        expect(subject).to be_valid
+      end
     end
 
     it 'validates presence of start_at' do

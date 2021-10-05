@@ -68,7 +68,9 @@
         <span class="form-label-bold">
           Date of birth
         </span>
-        <span class="form-hint" id="dob-hint">You must be aged 50 or over to book an appointment, e.g. 31 3 1950</span>
+        <% unless @telephone_appointment.due_diligence? %>
+        <span class="form-hint t-dob-hint" id="dob-hint">You must be aged 50 or over to book an appointment, e.g. 31 3 1950</span>
+        <% end %>
       </legend>
       <div class="form-date" id="telephone_appointment_date_of_birth" tabindex="-1">
         <div class="form-group form-group-day">
@@ -138,6 +140,9 @@
     </fieldset>
   </div>
 
+  <% if @telephone_appointment.due_diligence? %>
+    <%= f.hidden_field :dc_pot_confirmed, value: 'not-sure', class: 't-hidden-dc-pot-confirmed' %>
+  <% else %>
   <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>" id="telephone_appointment_dc_pot_confirmed" tabindex="-1">
     <fieldset class="inline" aria-required="true">
       <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
@@ -163,6 +168,7 @@
     </fieldset>
     <p><%= render partial: 'components/webchat' %></p>
   </div>
+  <% end %>
 
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accessibility_requirements) %>">
     <div class="multiple-choice">
@@ -190,6 +196,20 @@
     <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
   </div>
 
+  <% if @telephone_appointment.due_diligence? %>
+    <%= f.hidden_field :where_you_heard, value: '2', class: 't-hidden-where-you-heard' %>
+
+    <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:referrer) %>">
+      <%= f.label :referrer, class: 'form-label-bold' do %>
+        Which pension provider referred you for Pension Safeguarding Guidance?
+      <% end %>
+
+      <% if @telephone_appointment.errors.include?(:referrer) %>
+        <span class="error-message" id="referrer_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:referrer].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :referrer, aria: { required: true, describedby: 'referrer_error' }, class: "t-referrer form-control #{'form-control-error' if @telephone_appointment.errors.include?(:referrer)}" %>
+    </div>
+  <% else %>
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:where_you_heard) %>">
     <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label-bold' %>
     <% if @telephone_appointment.errors.include?(:where_you_heard) %>
@@ -201,7 +221,11 @@
           { aria: { required: true, describedby: 'where_you_heard_error' }, class: "t-where-you-heard form-control #{'form-control-error' if @telephone_appointment.errors.include?(:where_you_heard)}" }
     %>
   </div>
+  <% end %>
 
+  <% if @telephone_appointment.due_diligence? %>
+    <%= f.hidden_field :gdpr_consent, value: 'no', class: 't-hidden-gdpr-consent' %>
+  <% else %>
   <div class="form-group t-gdpr-consent" id="telephone_appointment_gdpr_consent" tabindex="-1">
     <fieldset class="inline">
       <legend>Customer research consent</legend>
@@ -223,14 +247,17 @@
       </div>
     </fieldset>
   </div>
+  <% end %>
 
   <div class="form-group">
     <%= f.submit 'Confirm appointment', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
   </div>
 
   <div role="note" aria-label="Information" class="application-notice info-notice">
-    <p>Pension Wise collects and stores personal data for the purpose of delivering Pensions Guidance.</p>
-    <p>Your data will be shared with our delivery partners (Citizens Advice and Teleperformance) only where it is necessary to provide you with Pension Wise guidance.</p>
+    <p>MoneyHelper collects and stores personal data for the purpose of delivering Pensions Guidance.</p>
+    <% unless @telephone_appointment.due_diligence? %>
+    <p class="t-data-sharing-banner">Your data will be shared with our delivery partners (Citizens Advice and Teleperformance) only where it is necessary to provide you with Pension Wise guidance.</p>
+    <% end %>
     <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be found in our <%= link_to 'privacy policy', money_helper_url('about-us/privacy-notice'), target: '_parent' %>.</p>
   </div>
 </div>
@@ -243,7 +270,9 @@
 
   <p><%= link_to('Change date/time', new_telephone_appointment_path) %></p>
 
-  <h5 class="slot-picker-header slot-picker-header--need-help">Need help? Attending appointment on behalf of a family member or friend?</h5>
+  <% unless @telephone_appointment.due_diligence? %>
+  <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Need help? Attending appointment on behalf of a family member or friend?</h5>
+  <% end %>
 
   <p>Phone <b>0800 138 3944</b> to speak to someone who can help book your free appointment.</p>
   <p>Call between 8am to 8pm, Monday to Friday</p>

@@ -23,7 +23,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
     :notes,
     :smarter_signposted,
     :lloyds_signposted,
-    :schedule_type
+    :schedule_type,
+    :referrer
   )
 
   validates :start_at, presence: true
@@ -38,6 +39,11 @@ class TelephoneAppointment # rubocop:disable ClassLength
   validates :notes, length: { maximum: 160 }, allow_blank: true
   validates :notes, presence: true, if: :accessibility_requirements?
   validates :accessibility_requirements, inclusion: { in: %w(0 1) }
+  validates :referrer, presence: true, if: :due_diligence?
+
+  def due_diligence?
+    schedule_type == 'due_diligence'
+  end
 
   def accessibility_requirements?
     accessibility_requirements == '1'
@@ -85,7 +91,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
       notes: notes,
       smarter_signposted: smarter_signposted,
       lloyds_signposted: lloyds_signposted,
-      schedule_type: schedule_type
+      schedule_type: schedule_type,
+      referrer: referrer
     }
   end
 

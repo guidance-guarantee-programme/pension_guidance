@@ -35,6 +35,16 @@ module Pages
     element :cookie_banner, '#global-cookie-message'
     element :csrf, 'meta[name=csrf-param]'
 
+    # due diligence removals or additions
+    element :alternative_journeys, '.t-alternative-journeys'
+    element :need_help_banner, '.t-need-help-banner'
+    element :date_of_birth_hint, '.t-dob-hint'
+    element :hidden_dc_pot_confirmed, '.t-hidden-dc-pot-confirmed', visible: false
+    element :hidden_gdpr_consent, '.t-hidden-gdpr-consent', visible: false
+    element :hidden_where_you_heard, '.t-hidden-where-you-heard', visible: false
+    element :data_sharing_banner, '.t-data-sharing-banner'
+    element :referrer, '.t-referrer'
+
     def choose_date(date)
       find("button[value='#{date}']").click
     end
