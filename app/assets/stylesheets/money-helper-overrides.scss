@@ -190,7 +190,7 @@ a {
   }
 
   input {
-    position: inherit;
+    position: relative;
     width: 22px;
     height: 22px;
     border: 1px solid $color-grey-secondary;
@@ -212,6 +212,10 @@ a {
     &:hover {
       outline: 2px solid $color-violet-primary;
     }
+  }
+
+  .t-accessibility-requirements {
+    top: -22px;
   }
 }
 
