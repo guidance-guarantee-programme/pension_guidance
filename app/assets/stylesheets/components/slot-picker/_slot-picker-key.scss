@@ -35,9 +35,6 @@
 
 .slot-picker-key__item--unavailable {
   &:before {
-    @include striped(
-      $calendar-busy-background-thin-stripes,
-      $calendar-busy-background-wide-stripes
-    );
+    background-color: $color-white-smoke-supporting;
   }
 }

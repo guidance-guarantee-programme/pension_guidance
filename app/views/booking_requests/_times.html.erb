@@ -9,10 +9,10 @@
   <ol class="slot-picker-times js-slot-picker-times" tabindex="-1" id="booking_request_times">
     <% times.each do |time| %>
       <li class="slot-picker-times__time">
-        <label class="slot-picker-times__time-text t-time" for="<%= time.to_i %>">
+        <input class="slot-picker-times__selection js-time-button" name="booking_request[start_at]" type="radio" value="<%= time %>" id="<%= time.to_i %>" />
+        <label class="slot-picker-times__time-label" for="<%= time.to_i %>" >
           <%= l(time, format: :govuk_time) %>
         </label>
-        <input class="slot-picker-times__selection" type="radio" value="<%= time %>" id="<%= time.to_i %>" name="booking_request[start_at]" />
       </li>
     <% end %>
   </ol>

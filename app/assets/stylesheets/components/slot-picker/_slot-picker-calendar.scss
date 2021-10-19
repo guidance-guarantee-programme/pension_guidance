@@ -14,10 +14,10 @@
     inset -1px 0 $color-grey-blue-supporting;
   flex-basis: (100% / 7);
   float: left;
-  height: 59px;
+  height: 56px;
   list-style: none;
   margin: 0;
-  width: (100% / 7);
+  width: 100%;
 
   &::before {
     display: none;
@@ -31,6 +31,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
+  color: $color-basic-blue;
 }
 
 .slot-picker-calendar__day--monday {
@@ -68,8 +69,8 @@
     inset -1px -1px 0 0 $color-grey-blue-supporting;
   cursor: pointer;
   display: block;
-  height: 59px;
-  min-height: 59px;
+  height: 56px;
+  min-height: 56px;
   position: relative;
   text-align: left;
   user-select: none;
@@ -98,11 +99,8 @@
 }
 
 .slot-picker-calendar__action--busy {
-  @include striped(
-    $calendar-busy-background-thin-stripes,
-    $calendar-busy-background-wide-stripes
-  );
-  color: $color-black;
+  background-color: $color-white-smoke-supporting;
+  color: $color-grey-secondary;
   cursor: not-allowed;
 }
 
