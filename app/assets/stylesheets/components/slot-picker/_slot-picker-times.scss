@@ -39,7 +39,6 @@
 
   @include media(tablet) {
     flex-basis: 45%;
-    
     // scss-lint:disable DeclarationOrder
     &:nth-child(even) {
       text-align: left;
@@ -49,12 +48,10 @@
 
   @media only screen and (min-width: 1024px) {
     flex-basis: 37.39%; 
-    
   }
 
   &:nth-child(even) {
     text-align: right;
-    
   }
 
   &:before {
@@ -102,7 +99,6 @@
   outline: none;
   padding: 6px;
   color: $color-white;
-  
 }
 
 .slot-picker-time-header {
