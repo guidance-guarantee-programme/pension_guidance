@@ -10,4 +10,4 @@ Os ydych eisiau sgwrs am eich opsiynau ar gyfer cymryd eich arian, gallwch drefn
 
 Mae apwyntiad yn sgwrs gydag arbenigwr pensiynau. Gallwch siarad â ni dros y ffôn neu wyneb yn wyneb rhywle sy’n lleol i chi.
 
-Ewch i [moneyhelper.org.uk/cy/pensionwise](https://www.moneyhelper.org.uk/cy/pensionwise) i drefnu ar-lein neu ffoniwch 0800 138 3944 (+44 20 3733 3495 os ydych y tu allan i’r DU).
+Ewch i [moneyhelper.org.uk/cy/pensionwise](https://www.moneyhelper.org.uk/cy/pensionwise) i drefnu ar-lein neu ffoniwch 0800 280 8880 (+44 20 3733 3495 os ydych y tu allan i’r DU).
