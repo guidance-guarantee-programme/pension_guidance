@@ -17,54 +17,162 @@ $ajax-loaders: 24px 48px;
   }
 }
 
-@each $loader-size in $ajax-loaders {
-  $loader-size-half: $loader-size / 2;
-  $circle-size: $loader-size / $number-of-circles;
-  $circle-size-half: $circle-size / 2;
-  $forty-five-degrees-in-pixels: (1 - $sin-of-forty-five-degrees) * $loader-size-half;
+.ajax-loader--24px {
+  width: 24px;
+  height: 24px;
+}
 
-  $circles:
-    (x: 0, y: $loader-size-half, spread: $circle-size-half $circle-size-half / 2 0 0 0 0 0 0),
-    (x: -($loader-size-half - $forty-five-degrees-in-pixels), y: $loader-size-half - $forty-five-degrees-in-pixels, spread: 0 $circle-size-half $circle-size-half / 2 0 0 0 0 0),
-    (x: -$loader-size-half, y: 0, spread: 0 0 $circle-size-half $circle-size-half / 2 0 0 0 0),
-    (x: -($loader-size-half - $forty-five-degrees-in-pixels), y: -($loader-size-half - $forty-five-degrees-in-pixels), spread: 0 0 0 $circle-size-half $circle-size-half / 2 0 0 0),
-    (x: 0, y: -$loader-size-half, spread: 0 0 0 0 $circle-size-half $circle-size-half / 2 0 0),
-    (x: $loader-size-half - $forty-five-degrees-in-pixels, y: -($loader-size-half - $forty-five-degrees-in-pixels), spread: 0 0 0 0 0 $circle-size-half $circle-size-half / 2 0),
-    (x: $loader-size-half, y: 0, spread: 0 0 0 0 0 0 $circle-size-half $circle-size-half / 2),
-    (x: $loader-size-half - $forty-five-degrees-in-pixels, y: $loader-size-half - $forty-five-degrees-in-pixels, spread: $circle-size-half / 2 0 0 0 0 0 0 $circle-size-half);
+.ajax-loader--24px:after {
+  width: 3px;
+  height: 3px;
+  top: 10.5px;
+  left: 10.5px;
+  animation: loader-pulse-24px 0.8s infinite;
+  box-shadow: 0 12px 0 1.5px $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0.75px $color-black;
+}
 
-  @function circle($num) {
-    $line: null;
-
-    @each $circle in $circles {
-      $line: append($line, map-get($circle, "x") map-get($circle, "y") 0 nth(map-get($circle, "spread"), $num) $loader-color, "comma");
-    }
-
-    @return $line;
+@keyframes loader-pulse-24px {
+  0% {
+    box-shadow: 0 12px 0 1.5px $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0.75px $color-black;
   }
 
-  .ajax-loader--#{$loader-size} {
-    width: $loader-size;
-    height: $loader-size;
-
-    &:after {
-      width: $circle-size;
-      height: $circle-size;
-      top: $loader-size-half - $circle-size-half;
-      left: $loader-size-half - $circle-size-half;
-      animation: loader-pulse-#{$loader-size} $circle-animation-length infinite;
-      box-shadow: circle(1);
-    }
+  12.5% {
+    box-shadow: 0 12px 0 1.5px $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0.75px $color-black;
   }
 
-  @keyframes loader-pulse-#{$loader-size} {
-    0% { box-shadow: circle(1); }
+  12.501% {
+    box-shadow: 0 12px 0 0.75px $color-black, -8.48532px 8.48532px 0 1.5px $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
 
-    @for $i from 1 through ($number-of-circles - 1) {
-      #{(($i - 1) * 100/$number-of-circles) + 100/$number-of-circles}% { box-shadow: circle($i); }
-      #{(($i - 1) * 100/$number-of-circles) + 100/$number-of-circles + .001}% { box-shadow: circle($i + 1); }
-    }
+  25% {
+    box-shadow: 0 12px 0 0.75px $color-black, -8.48532px 8.48532px 0 1.5px $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
 
-    99.999% { box-shadow: circle($number-of-circles); }
+  25.001% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0.75px $color-black, -12px 0 0 1.5px $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  37.5% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0.75px $color-black, -12px 0 0 1.5px $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  37.501% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0.75px $color-black, -8.48532px -8.48532px 0 1.5px $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  50% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0.75px $color-black, -8.48532px -8.48532px 0 1.5px $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  50.001% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0.75px $color-black, 0 -12px 0 1.5px $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  62.5% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0.75px $color-black, 0 -12px 0 1.5px $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  62.501% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0.75px $color-black, 8.48532px -8.48532px 0 1.5px $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  75% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0.75px $color-black, 8.48532px -8.48532px 0 1.5px $color-black, 12px 0 0 0 $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  75.001% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0.75px $color-black, 12px 0 0 1.5px $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  87.5% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0.75px $color-black, 12px 0 0 1.5px $color-black, 8.48532px 8.48532px 0 0 $color-black;
+  }
+
+  87.501% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0.75px $color-black, 8.48532px 8.48532px 0 1.5px $color-black;
+  }
+
+  99.999% {
+    box-shadow: 0 12px 0 0 $color-black, -8.48532px 8.48532px 0 0 $color-black, -12px 0 0 0 $color-black, -8.48532px -8.48532px 0 0 $color-black, 0 -12px 0 0 $color-black, 8.48532px -8.48532px 0 0 $color-black, 12px 0 0 0.75px $color-black, 8.48532px 8.48532px 0 1.5px $color-black;
+  }
+}
+
+.ajax-loader--48px {
+  width: 48px;
+  height: 48px;
+}
+
+.ajax-loader--48px:after {
+  width: 6px;
+  height: 6px;
+  top: 21px;
+  left: 21px;
+  animation: loader-pulse-48px 0.8s infinite;
+  box-shadow: 0 24px 0 3px $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 1.5px $color-black;
+}
+
+@keyframes loader-pulse-48px {
+  0% {
+    box-shadow: 0 24px 0 3px $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 1.5px $color-black;
+  }
+
+  12.5% {
+    box-shadow: 0 24px 0 3px $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 1.5px $color-black;
+  }
+
+  12.501% {
+    box-shadow: 0 24px 0 1.5px $color-black, -16.97064px 16.97064px 0 3px $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  25% {
+    box-shadow: 0 24px 0 1.5px $color-black, -16.97064px 16.97064px 0 3px $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  25.001% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 1.5px $color-black, -24px 0 0 3px $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  37.5% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 1.5px $color-black, -24px 0 0 3px $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  37.501% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 1.5px $color-black, -16.97064px -16.97064px 0 3px $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  50% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 1.5px $color-black, -16.97064px -16.97064px 0 3px $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  50.001% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 1.5px $color-black, 0 -24px 0 3px $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  62.5% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 1.5px $color-black, 0 -24px 0 3px $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  62.501% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 1.5px $color-black, 16.97064px -16.97064px 0 3px $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  75% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 1.5px $color-black, 16.97064px -16.97064px 0 3px $color-black, 24px 0 0 0 $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  75.001% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 1.5px $color-black, 24px 0 0 3px $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  87.5% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 1.5px $color-black, 24px 0 0 3px $color-black, 16.97064px 16.97064px 0 0 $color-black;
+  }
+
+  87.501% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 1.5px $color-black, 16.97064px 16.97064px 0 3px $color-black;
+  }
+
+  99.999% {
+    box-shadow: 0 24px 0 0 $color-black, -16.97064px 16.97064px 0 0 $color-black, -24px 0 0 0 $color-black, -16.97064px -16.97064px 0 0 $color-black, 0 -24px 0 0 $color-black, 16.97064px -16.97064px 0 0 $color-black, 24px 0 0 1.5px $color-black, 16.97064px 16.97064px 0 3px $color-black;
   }
 }
