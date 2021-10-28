@@ -7,10 +7,10 @@ RSpec.feature 'Govspeak questions are rendered correctly' do
     rendered_content = descorated_guide.content
 
     expect(rendered_content).to include('<h2 id="test-question">Test question</h2>')
-    expect(rendered_content).to include('<input type="radio" name="response" id="response_yes" value="yes" />')
-    expect(rendered_content).to include('<input type="radio" name="response" id="response_no" value="no" />')
+    expect(rendered_content).to include('<input type="radio" name="response" id="response_yes" value="yes">')
+    expect(rendered_content).to include('<input type="radio" name="response" id="response_no" value="no">')
     expect(rendered_content).to include(
-      '<input type="radio" name="response" id="response_dont_know" value="dont_know" />'
+      '<input type="radio" name="response" id="response_dont_know" value="dont_know">'
     )
   end
 end
