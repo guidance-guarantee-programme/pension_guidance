@@ -11,11 +11,11 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: 56f73bdf928a85e0a44a45a7116f6a882a3b51f1
+  revision: 1819c8ab1143b706a694537db1f8d4bd5fc37d0b
   specs:
-    output-templates (5.0.0)
+    output-templates (5.1.0)
       actionview
-      sass
+      sassc
 
 GEM
   specs:
