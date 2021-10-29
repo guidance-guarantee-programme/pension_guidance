@@ -1,7 +1,7 @@
 require_relative '../../features/pages/new_telephone_appointment'
 
 RSpec.feature 'Customer books a telephone appointment', type: :feature do
-  scenario 'Viewing the widget frame', js: true do
+  scenario 'Viewing the widget frame' do
     with_telephone_availability
     when_the_widget_is_embedded
     then_the_pension_wise_branding_is_omitted

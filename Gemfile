@@ -16,7 +16,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'faraday_middleware'
   gem 'foreman'
   gem 'gaffe'
-  gem 'govspeak', '~> 3.2'
+  gem 'govspeak', '~> 5.0.0'
   gem 'govuk_elements_rails',
       github: 'guidance-guarantee-programme/govuk_elements_rails',
       branch: 'missing-symlinks',
@@ -69,13 +69,13 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
     gem 'fakeredis'
     gem 'launchy'
     gem 'pdf-inspector', require: 'pdf/inspector'
-    gem 'phantomjs'
-    gem 'poltergeist'
     gem 'rails-controller-testing'
     gem 'scss-lint', '~> 0.30'
+    gem 'selenium-webdriver'
     gem 'site_prism'
     gem 'timecop'
     gem 'vcr'
+    gem 'webdrivers'
     gem 'webmock'
   end
 

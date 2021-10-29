@@ -2,10 +2,10 @@ sudo: false
 language: ruby
 addons:
   postgresql: "9.6"
+  chrome: stable
 cache:
   bundler: true
   directories:
-  - $HOME/.phantomjs
   - ".downloads"
   - node_modules
   - tmp/cache/assets/test

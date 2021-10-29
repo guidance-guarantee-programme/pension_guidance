@@ -1,11 +1,10 @@
 ENV['RAILS_ENV'] ||= 'test'
 
 require_relative '../config/environment'
+require_relative '../features/support/chrome'
+
 require 'rspec/rails'
-
 require 'vcr'
-
-require_relative '../features/support/poltergeist'
 
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 
@@ -56,10 +55,5 @@ VCR.configure do |config|
   config.cassette_library_dir = 'spec/cassettes'
   config.configure_rspec_metadata!
   config.hook_into :webmock
-
-  config.ignore_request do |request|
-    # Don't mock the call that Poltergeist polls while waiting for
-    # PhantomJS to load (http://localhost:<random port>/__identify__)
-    request.uri =~ %r{/__identify__$}
-  end
+  config.ignore_hosts '127.0.0.1', 'chromedriver.storage.googleapis.com'
 end
