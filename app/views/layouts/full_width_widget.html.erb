@@ -71,6 +71,10 @@
     <%= javascript_include_tag 'iframe-resizer' %>
     <script>
       window.PWPG.iframeResizer.start();
+
+      if (window.postMessage) {
+        window.postMessage({scrollToTop: true});
+      }
     </script>
   <% end %>
 <% end %>
