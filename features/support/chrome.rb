@@ -12,7 +12,7 @@ Capybara.register_driver :chrome_headless do |app|
     opts.args << '--no-sandbox'
   end
 
-  Capybara::Selenium::Driver.new(app, browser: :chrome, options: browser_options)
+  Capybara::Selenium::Driver.new(app, browser: :chrome, capabilities: browser_options)
 end
 
 Capybara.default_max_wait_time = 10 if ENV['TRAVIS']
