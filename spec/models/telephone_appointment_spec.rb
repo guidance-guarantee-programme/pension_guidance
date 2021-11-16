@@ -118,14 +118,26 @@ RSpec.describe TelephoneAppointment, type: :model do
     end
 
     context 'when it is a due diligence appointment' do
-      it 'requires the referring pension provider' do
+      before do
         subject.schedule_type = 'due_diligence'
+        subject.referrer = 'Big Pensions PLC'
+      end
 
+      it 'requires the referring pension provider' do
         subject.referrer = ''
         expect(subject).to be_invalid
 
         subject.referrer = 'Big Pensions PLC'
         expect(subject).to be_valid
+      end
+
+      it 'permits any valid age as eligible' do
+        subject.date_of_birth_year = '1980'
+        subject.date_of_birth_month = '02'
+        subject.date_of_birth_day = '02'
+
+        expect(subject).to be_valid
+        expect(subject).to be_eligible
       end
     end
 

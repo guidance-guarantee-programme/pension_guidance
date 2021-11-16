@@ -72,6 +72,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
   end
 
   def ineligible_age?
+    return false if due_diligence?
+
     start_at.blank? || age(start_at) < 50
   end
 
