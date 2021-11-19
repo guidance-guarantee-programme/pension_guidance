@@ -22,6 +22,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
 
     @booking_reference = params[:booking_reference]
     @booking_date      = Time.zone.parse(params[:booking_date])
+    @due_diligence     = schedule_type == 'due_diligence'
   end
 
   def ineligible
@@ -72,12 +73,13 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   def confirm_to_customer(telephone_appointment)
     redirect_to confirmation_telephone_appointments_path(
       booking_reference: telephone_appointment.id,
-      booking_date: telephone_appointment.start_at
+      booking_date: telephone_appointment.start_at,
+      schedule_type: telephone_appointment.schedule_type
     )
   end
 
   def retrieve_slots
-    slots   = TelephoneAppointmentsApi.new.slots(lloyds_signposted?)
+    slots   = TelephoneAppointmentsApi.new.slots(lloyds_signposted?, telephone_appointment.schedule_type)
 
     @months = retrieve_months(slots)
     @times  = retrieve_times(slots)
@@ -121,10 +123,13 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :gdpr_consent,
         :accessibility_requirements,
         :notes,
-        :gdpr_consent
+        :gdpr_consent,
+        :schedule_type,
+        :referrer
       ).merge(
         smarter_signposted: smarter_signposted?,
-        lloyds_signposted: lloyds_signposted?
+        lloyds_signposted: lloyds_signposted?,
+        schedule_type: schedule_type
       )
   end
 
@@ -135,6 +140,10 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
 
   def slot_selected?
     telephone_appointment.start_at
+  end
+
+  def schedule_type
+    params.dig(:telephone_appointment, :schedule_type) || params.fetch(:schedule_type) { 'pension_wise' }
   end
 
   def check_lloyds_cookie!

@@ -1,0 +1,244 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=due_diligence
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson; benlovell; 39775) ruby/2.7.3 (183; x86_64-darwin20)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c04c259021c50078180d5f2168080dfc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '0924304b-7099-40e5-83ab-6fa1884657da'
+      X-Runtime:
+      - '0.016053'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2021-09-20":["2021-09-20T10:00:00.000Z"],"2021-09-22":["2021-09-22T10:00:00.000Z"],"2021-09-24":["2021-09-24T10:00:00.000Z"],"2021-09-27":["2021-09-27T10:00:00.000Z"],"2021-09-29":["2021-09-29T10:00:00.000Z"],"2021-10-01":["2021-10-01T10:00:00.000Z"],"2021-10-04":["2021-10-04T10:00:00.000Z"],"2021-10-06":["2021-10-06T10:00:00.000Z"],"2021-10-08":["2021-10-08T10:00:00.000Z"],"2021-10-11":["2021-10-11T10:00:00.000Z"],"2021-10-13":["2021-10-13T10:00:00.000Z"],"2021-10-15":["2021-10-15T10:00:00.000Z"],"2021-10-18":["2021-10-18T10:00:00.000Z"],"2021-10-20":["2021-10-20T10:00:00.000Z"],"2021-10-22":["2021-10-22T10:00:00.000Z"]}'
+    http_version:
+  recorded_at: Tue, 14 Sep 2021 12:00:02 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=due_diligence
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson; benlovell; 39775) ruby/2.7.3 (183; x86_64-darwin20)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c04c259021c50078180d5f2168080dfc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '0907d484-87ad-40a1-aacb-bb0cca75b00f'
+      X-Runtime:
+      - '0.022401'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2021-09-20":["2021-09-20T10:00:00.000Z"],"2021-09-22":["2021-09-22T10:00:00.000Z"],"2021-09-24":["2021-09-24T10:00:00.000Z"],"2021-09-27":["2021-09-27T10:00:00.000Z"],"2021-09-29":["2021-09-29T10:00:00.000Z"],"2021-10-01":["2021-10-01T10:00:00.000Z"],"2021-10-04":["2021-10-04T10:00:00.000Z"],"2021-10-06":["2021-10-06T10:00:00.000Z"],"2021-10-08":["2021-10-08T10:00:00.000Z"],"2021-10-11":["2021-10-11T10:00:00.000Z"],"2021-10-13":["2021-10-13T10:00:00.000Z"],"2021-10-15":["2021-10-15T10:00:00.000Z"],"2021-10-18":["2021-10-18T10:00:00.000Z"],"2021-10-20":["2021-10-20T10:00:00.000Z"],"2021-10-22":["2021-10-22T10:00:00.000Z"]}'
+    http_version:
+  recorded_at: Tue, 14 Sep 2021 12:00:04 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=due_diligence
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson; benlovell; 39775) ruby/2.7.3 (183; x86_64-darwin20)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c04c259021c50078180d5f2168080dfc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 01a00054-65e6-4d9e-bb57-51e998c5932d
+      X-Runtime:
+      - '0.013933'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2021-09-20":["2021-09-20T10:00:00.000Z"],"2021-09-22":["2021-09-22T10:00:00.000Z"],"2021-09-24":["2021-09-24T10:00:00.000Z"],"2021-09-27":["2021-09-27T10:00:00.000Z"],"2021-09-29":["2021-09-29T10:00:00.000Z"],"2021-10-01":["2021-10-01T10:00:00.000Z"],"2021-10-04":["2021-10-04T10:00:00.000Z"],"2021-10-06":["2021-10-06T10:00:00.000Z"],"2021-10-08":["2021-10-08T10:00:00.000Z"],"2021-10-11":["2021-10-11T10:00:00.000Z"],"2021-10-13":["2021-10-13T10:00:00.000Z"],"2021-10-15":["2021-10-15T10:00:00.000Z"],"2021-10-18":["2021-10-18T10:00:00.000Z"],"2021-10-20":["2021-10-20T10:00:00.000Z"],"2021-10-22":["2021-10-22T10:00:00.000Z"]}'
+    http_version:
+  recorded_at: Tue, 14 Sep 2021 12:00:04 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=due_diligence
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson; benlovell; 39775) ruby/2.7.3 (183; x86_64-darwin20)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c04c259021c50078180d5f2168080dfc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ad267b3a-c6fe-4408-bfed-8fa95b945bab
+      X-Runtime:
+      - '0.061283'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2021-09-20":["2021-09-20T10:00:00.000Z"],"2021-09-22":["2021-09-22T10:00:00.000Z"],"2021-09-24":["2021-09-24T10:00:00.000Z"],"2021-09-27":["2021-09-27T10:00:00.000Z"],"2021-09-29":["2021-09-29T10:00:00.000Z"],"2021-10-01":["2021-10-01T10:00:00.000Z"],"2021-10-04":["2021-10-04T10:00:00.000Z"],"2021-10-06":["2021-10-06T10:00:00.000Z"],"2021-10-08":["2021-10-08T10:00:00.000Z"],"2021-10-11":["2021-10-11T10:00:00.000Z"],"2021-10-13":["2021-10-13T10:00:00.000Z"],"2021-10-15":["2021-10-15T10:00:00.000Z"],"2021-10-18":["2021-10-18T10:00:00.000Z"],"2021-10-20":["2021-10-20T10:00:00.000Z"],"2021-10-22":["2021-10-22T10:00:00.000Z"]}'
+    http_version:
+  recorded_at: Tue, 14 Sep 2021 12:00:04 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/appointments
+    body:
+      encoding: UTF-8
+      string: '{"start_at":"2021-09-20 10:00:00 UTC","first_name":"Rick","last_name":"Sanchez","email":"rick@example.com","phone":"07715
+        930 455","memorable_word":"snootboop","date_of_birth":"1950-01-01","dc_pot_confirmed":true,"where_you_heard":"1","gdpr_consent":"yes","accessibility_requirements":"0","notes":"","smarter_signposted":false,"lloyds_signposted":false,"schedule_type":"due_diligence"}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson; benlovell; 39775) ruby/2.7.3 (183; x86_64-darwin20)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Location:
+      - http://localhost:3000/appointments/8
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _telephone_appointment_planner_session=OxLd3p6e2d4vghqtG50OIBf8MKJJyQ9sJffqmjjz8u1vC4D21yqpsYK7y3ztYMMKcxy6615qbs4kLIiPm7eFNfO%2B2cijnm5gwVHZnhmKJy8xiutlTcqhVnWt%2F2glPziyr9HMRrwGZDOfyIc%2Btt9LR2cLOVyxOGVMd1NqHylF4SAyCTV6W5ZIi4fq2NYz4GV5UdpNjjtW7QhPTOemNEek5JdbWwmbxExKJZqtKCgiXRohLS2aXJTJGj0TWXyweTDcyVkr1Lu7G%2Fgkbl5aTNqrtBF6OiTPz9eh%2FR%2FB28umFUmRijYkC1JF3kEHJaAQaRzeyFNjuF%2FGlfWYJD68DBTutKvM2FwZEqv3%2BHdwW7O%2BWj48Z9SKg3I%3D--3WNd908XwAzQ5zhy--6SsDZ1gVW%2BeOFEUY%2F%2BW0Rg%3D%3D;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 5c84f8a8-0193-44ad-971e-42f7a693d38d
+      X-Runtime:
+      - '0.064223'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Tue, 14 Sep 2021 12:00:05 GMT
+recorded_with: VCR 3.0.3

@@ -9,14 +9,20 @@ class TelephoneAppointmentsApi
     false
   end
 
-  def slots(filter_for_lloyds = nil)
-    path = filter_for_lloyds ? SLOTS_PATH + '?lloyds=true' : SLOTS_PATH
+  def slots(filter_for_lloyds = nil, schedule_type = 'pension_wise')
+    path = slots_url_for(filter_for_lloyds, schedule_type)
 
     response = connection.get(path)
     response.body
   end
 
   private
+
+  def slots_url_for(filter_for_lloyds, schedule_type)
+    path = "#{SLOTS_PATH}?schedule_type=#{schedule_type}"
+    path += '&lloyds=true' if filter_for_lloyds
+    path
+  end
 
   def parse_response_location(response)
     location = response.headers['Location']

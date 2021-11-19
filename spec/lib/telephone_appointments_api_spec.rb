@@ -18,7 +18,15 @@ RSpec.describe TelephoneAppointmentsApi do
       it 'uses the filtered path for slots' do
         subject.slots(true)
 
-        expect(connection).to have_received(:get).with('/api/v1/bookable_slots?lloyds=true')
+        expect(connection).to have_received(:get).with('/api/v1/bookable_slots?schedule_type=pension_wise&lloyds=true')
+      end
+    end
+
+    context 'for other types of schedule' do
+      it 'uses the correct schedule type' do
+        subject.slots(false, 'due_diligence')
+
+        expect(connection).to have_received(:get).with('/api/v1/bookable_slots?schedule_type=due_diligence')
       end
     end
 
@@ -26,7 +34,7 @@ RSpec.describe TelephoneAppointmentsApi do
       it 'uses the unfiltered path for slots' do
         subject.slots
 
-        expect(connection).to have_received(:get).with('/api/v1/bookable_slots')
+        expect(connection).to have_received(:get).with('/api/v1/bookable_slots?schedule_type=pension_wise')
       end
     end
   end

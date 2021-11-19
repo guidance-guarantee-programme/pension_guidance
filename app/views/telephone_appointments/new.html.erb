@@ -41,9 +41,11 @@
     <% end %>
   <% end %>
 
-  <div class="l-column-two-thirds">
+  <% unless @telephone_appointment.due_diligence? %>
+  <div class="l-column-two-thirds t-alternative-journeys">
     <%= render 'shared/alternative_journeys' %>
   </div>
+  <% end %>
 </div>
 
 <script>

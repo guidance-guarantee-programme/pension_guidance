@@ -281,6 +281,7 @@ en:
         accept_terms_and_conditions: Terms and conditions
         where_you_heard: Where did you first hear of Pension Wise
         notes: Additional information
+        referrer: Which pension provider referred you for Pension Safeguarding Guidance
       booking_request_form:
         primary_slot: Slot 1
         secondary_slot: Slot 2
