@@ -72,9 +72,11 @@
     <script>
       window.PWPG.iframeResizer.start();
 
-      if (window.postMessage) {
-        window.postMessage({scrollToTop: true});
-      }
+      document.addEventListener("DOMContentLoaded", function(event) {
+        if (window.parent.postMessage) {
+          window.parent.postMessage({scrollToTop: true}, '*');
+        }
+      });
     </script>
   <% end %>
 <% end %>
