@@ -26,6 +26,9 @@ Rails.application.configure do
   config.consider_all_requests_local = false
   config.action_controller.perform_caching = false
 
+  # Without this the spec run will fail: https://github.com/sass/sassc-rails/issues/93
+  config.assets.css_compressor = nil
+
   # Raise exceptions instead of rendering exception templates.
   config.action_dispatch.show_exceptions = true
 
