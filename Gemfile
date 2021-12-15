@@ -6,7 +6,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'autoprefixer-rails'
   gem 'azure-storage-blob'
-  gem 'booking_locations'
+  gem 'booking_locations', github: "guidance-guarantee-programme/booking_locations", branch: "allow-larger-range-of-versions"
   gem 'bugsnag'
   gem 'canonical-rails'
   gem 'connection_pool'
@@ -16,7 +16,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'faraday_middleware'
   gem 'foreman'
   gem 'gaffe'
-  gem 'govspeak', '~> 5.0.0'
+  gem 'govspeak', '~> 6.7.5'
   gem 'govuk_elements_rails',
       github: 'guidance-guarantee-programme/govuk_elements_rails',
       branch: 'missing-symlinks',
@@ -33,7 +33,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'postgres-copy'
   gem 'princely'
   gem 'puma'
-  gem 'rails', '~> 5.2'
+  gem 'rails', '~> 6.0.0'
   gem 'recaptcha'
   gem 'redis'
   gem 'rgeo'
@@ -63,7 +63,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   group :test do
     gem 'axe-matchers', '2.1.0'
     gem 'cucumber', '3.0.2'
-    gem 'cucumber-rails', '1.6.0', require: false
+    gem 'cucumber-rails', '1.7.0', require: false
     gem 'database_cleaner'
     gem 'factory_bot_rails'
     gem 'fakeredis'
@@ -75,7 +75,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
     gem 'site_prism'
     gem 'timecop'
     gem 'vcr'
-    gem 'webdrivers'
+    gem 'webdrivers', '~> 5.0', require: false
     gem 'webmock'
   end
 
