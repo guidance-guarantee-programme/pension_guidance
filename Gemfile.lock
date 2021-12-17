@@ -11,9 +11,9 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: 7aaf0f795a4bcc7d6b1ef3721ffcfa1e1b1df789
+  revision: 679e35c85e7945b0190956391a9c33247a57248e
   specs:
-    output-templates (6.0.0)
+    output-templates (6.1.0)
       actionview
       sassc
 
@@ -225,7 +225,7 @@ GEM
       activesupport (>= 4)
       railties (>= 4)
       request_store (~> 1.0)
-    loofah (2.12.0)
+    loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -238,7 +238,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_mime (1.1.2)
     mini_portile2 (2.6.1)
-    minitest (5.14.4)
+    minitest (5.15.0)
     money (6.16.0)
       i18n (>= 0.6.4, <= 2)
     multi_json (1.13.1)
