@@ -14,6 +14,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   gem 'faraday'
   gem 'faraday-conductivity'
   gem 'faraday_middleware'
+  gem 'faraday-net_http'
   gem 'foreman'
   gem 'gaffe'
   gem 'govspeak', '~> 6.7.5'

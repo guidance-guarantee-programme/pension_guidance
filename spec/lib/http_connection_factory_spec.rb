@@ -34,6 +34,6 @@ RSpec.describe HTTPConnectionFactory, '.build' do
   end
 
   it 'uses Faraday::Adapter::NetHttp by default' do
-    expect(factory.builder.handlers).to include(Faraday::Adapter::NetHttp)
+    expect(factory.builder.adapter).to eq(Faraday::Adapter::NetHttp)
   end
 end
