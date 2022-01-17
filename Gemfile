@@ -64,7 +64,7 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
   group :test do
     gem 'axe-matchers', '2.1.0'
     gem 'cucumber', '3.0.2'
-    gem 'cucumber-rails', '1.7.0', require: false
+    gem 'cucumber-rails', require: false
     gem 'database_cleaner'
     gem 'factory_bot_rails'
     gem 'fakeredis'
