@@ -43,6 +43,12 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+  # We need these both because max(0px) will fail asset compilation otherwise.
+  # The first lines disables css compression, and the second line tells sass to
+  # do the compression.
+  config.assets.css_compressor = nil
+  config.sass.style = :compressed
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
