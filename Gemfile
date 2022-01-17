@@ -51,7 +51,8 @@ source 'https://rubygems.org' do # rubocop:disable Metrics/BlockLength
 
   group :development, :test do
     gem 'jasmine-jquery-rails'
-    gem 'jasmine-rails'
+    gem 'jasmine-core', '2.5.2'
+    gem 'jasmine-rails', '0.14.1'
     gem 'pry-byebug'
     gem 'rspec-rails'
     gem 'shoulda-matchers'
