@@ -102,7 +102,7 @@ class PensionSummariesController < ApplicationController
     render pdf: 'your pension summary from Pension Wise',
            template: 'pension_summaries/print',
            handlers: %w(erb),
-           formats: %w(html),
+           formats: %i(html),
            layout: false,
            disposition: 'inline'
   end
