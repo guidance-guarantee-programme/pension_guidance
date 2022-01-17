@@ -546,74 +546,74 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  autoprefixer-rails!
-  axe-matchers (= 2.1.0)!
-  azure-storage-blob!
+  autoprefixer-rails
+  axe-matchers (= 2.1.0)
+  azure-storage-blob
   booking_locations!
-  bugsnag!
-  canonical-rails!
-  connection_pool!
-  cucumber (= 3.0.2)!
-  cucumber-rails!
-  database_cleaner!
-  email_validation!
-  factory_bot_rails!
-  fakeredis!
-  faraday!
-  faraday-conductivity!
-  faraday-net_http!
-  faraday_middleware!
-  foreman!
-  gaffe!
-  govspeak (~> 6.7.5)!
+  bugsnag
+  canonical-rails
+  connection_pool
+  cucumber (= 3.0.2)
+  cucumber-rails
+  database_cleaner
+  email_validation
+  factory_bot_rails
+  fakeredis
+  faraday
+  faraday-conductivity
+  faraday-net_http
+  faraday_middleware
+  foreman
+  gaffe
+  govspeak (~> 6.7.5)
   govuk_elements_rails!
-  govuk_frontend_toolkit!
-  govuk_template!
-  humanize!
-  inline_svg!
-  jasmine-core (= 2.5.2)!
-  jasmine-jquery-rails!
-  jasmine-rails (= 0.14.1)!
-  launchy!
-  lograge!
-  nokogiri!
+  govuk_frontend_toolkit
+  govuk_template
+  humanize
+  inline_svg
+  jasmine-core (= 2.5.2)
+  jasmine-jquery-rails
+  jasmine-rails (= 0.14.1)
+  launchy
+  lograge
+  nokogiri
   output-templates!
-  pdf-inspector!
-  pg (>= 0.18)!
-  phoner!
-  postcodes_io!
-  postgres-copy!
-  princely!
-  pry-byebug!
-  puma!
-  rails (~> 6.0.0)!
-  rails-controller-testing!
-  rails_12factor!
-  recaptcha!
-  redis!
-  redis-rails!
-  rgeo!
-  rgeo-geojson!
-  rspec-rails!
-  rubocop (= 1.7.0)!
-  rubocop-rails!
-  rubytree!
-  sassc-rails!
-  scss-lint (~> 0.30)!
-  selenium-webdriver!
-  shoulda-matchers!
-  site_prism!
-  sprockets (~> 3)!
-  sprockets-es6!
-  sprockets-rails!
-  timecop!
-  uglifier (= 3.0.4)!
-  uk_postcode!
-  utf8-cleaner!
-  vcr!
-  webdrivers (~> 5.0)!
-  webmock!
-  zendesk_api!
+  pdf-inspector
+  pg (>= 0.18)
+  phoner
+  postcodes_io
+  postgres-copy
+  princely
+  pry-byebug
+  puma
+  rails (~> 6.0.0)
+  rails-controller-testing
+  rails_12factor
+  recaptcha
+  redis
+  redis-rails
+  rgeo
+  rgeo-geojson
+  rspec-rails
+  rubocop (= 1.7.0)
+  rubocop-rails
+  rubytree
+  sassc-rails
+  scss-lint (~> 0.30)
+  selenium-webdriver
+  shoulda-matchers
+  site_prism
+  sprockets (~> 3)
+  sprockets-es6
+  sprockets-rails
+  timecop
+  uglifier (= 3.0.4)
+  uk_postcode
+  utf8-cleaner
+  vcr
+  webdrivers (~> 5.0)
+  webmock
+  zendesk_api
 
 RUBY VERSION
    ruby 2.7.3p183
