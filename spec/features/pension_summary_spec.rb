@@ -10,6 +10,8 @@ RSpec.feature 'The pension summary', type: :feature do
       and_i_select_all_pension_options
       and_i_select_all_extra_options
       then_i_view_a_summary_with_all_pages
+      when_i_download_my_summary
+      then_i_see_a_summary_pdf
     end
 
     scenario 'Viewing the pilot pension summary' do
@@ -115,6 +117,14 @@ RSpec.feature 'The pension summary', type: :feature do
       end
     end
   end
+end
+
+def when_i_download_my_summary
+  click_link('Download')
+end
+
+def then_i_see_a_summary_pdf
+  expect(page.status_code).to eq(200)
 end
 
 def given_the_pilot_summaries_cookie_is_set_to_false
