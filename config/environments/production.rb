@@ -2,7 +2,7 @@ require 'redis-rails'
 
 EXCEPTIONS = %w(controller action format id).freeze
 
-Rails.application.configure do
+Rails.application.configure do # rubocop:disable Metrics/BlockLength
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Use lograge in the single-line heroku router style
@@ -42,6 +42,12 @@ Rails.application.configure do
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
+
+  # We need these both because max(0px) will fail asset compilation otherwise.
+  # The first lines disables css compression, and the second line tells sass to
+  # do the compression.
+  config.assets.css_compressor = nil
+  config.sass.style = :compressed
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false

@@ -18,23 +18,23 @@ class HTTPConnection < SimpleDelegator
   def get(*args)
     __getobj__.get(*args)
 
-  rescue Faraday::Error::ResourceNotFound
+  rescue Faraday::ResourceNotFound
     raise ResourceNotFound
 
-  rescue Faraday::Error::ConnectionFailed
+  rescue Faraday::ConnectionFailed
     raise ConnectionFailed
 
-  rescue Faraday::Error::ClientError
+  rescue Faraday::ClientError
     raise ClientError
   end
 
   def post(*args)
     __getobj__.post(*args)
 
-  rescue Faraday::Error::ConnectionFailed
+  rescue Faraday::ConnectionFailed
     raise ConnectionFailed
 
-  rescue Faraday::Error::ClientError => error
+  rescue Faraday::ClientError => error
     case error.response[:status]
     when 422
       raise UnprocessableEntity
