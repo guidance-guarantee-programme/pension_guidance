@@ -8,7 +8,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 gem 'autoprefixer-rails'
 gem 'azure-storage-blob'
 gem 'booking_locations', github: 'guidance-guarantee-programme/booking_locations',
-  branch: 'allow-larger-range-of-versions'
+                         branch: 'allow-larger-range-of-versions'
 gem 'bugsnag'
 gem 'canonical-rails'
 gem 'connection_pool'
@@ -21,9 +21,9 @@ gem 'foreman'
 gem 'gaffe'
 gem 'govspeak', '~> 6.7.5'
 gem 'govuk_elements_rails',
-  github: 'guidance-guarantee-programme/govuk_elements_rails',
-  branch: 'missing-symlinks',
-  submodules: true
+    github: 'guidance-guarantee-programme/govuk_elements_rails',
+    branch: 'missing-symlinks',
+    submodules: true
 gem 'govuk_frontend_toolkit'
 gem 'govuk_template'
 gem 'humanize'
