@@ -1,5 +1,8 @@
 {
   "name": "pension_guidance",
+  "engines": {
+    "node": "14.18.1"
+  },
   "dependencies": {
     "bower": "*"
   },
