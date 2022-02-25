@@ -9,8 +9,8 @@ class TelephoneAppointmentsApi
     false
   end
 
-  def slots(filter_for_lloyds = nil, schedule_type = 'pension_wise')
-    path = slots_url_for(filter_for_lloyds, schedule_type)
+  def slots(filter_for_lloyds = nil, schedule_type = 'pension_wise', day = nil)
+    path = slots_url_for(filter_for_lloyds, schedule_type, day)
 
     response = connection.get(path)
     response.body
@@ -18,9 +18,10 @@ class TelephoneAppointmentsApi
 
   private
 
-  def slots_url_for(filter_for_lloyds, schedule_type)
+  def slots_url_for(filter_for_lloyds, schedule_type, day)
     path = "#{SLOTS_PATH}?schedule_type=#{schedule_type}"
     path += '&lloyds=true' if filter_for_lloyds
+    path += "&day=#{day}" if day
     path
   end
 
