@@ -3,13 +3,11 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
 
   before_action :set_breadcrumbs
   before_action :telephone_appointment, only: %i(new create)
-  before_action only: %i(new create) do
-    retrieve_slots
-  end
 
   helper_method :slot_selected?
 
   def new
+    retrieve_slots
     check_lloyds_cookie!
   end
 
@@ -37,10 +35,12 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   end
 
   def create_step_1
+    retrieve_slots
     telephone_appointment.advance! { render :new }
   end
 
   def create_step_2
+    retrieve_slots
     if request.xhr?
       render partial: 'times', locals: { times: @times }
     elsif slot_selected?
@@ -58,6 +58,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
     elsif telephone_appointment.save
       confirm_to_customer(telephone_appointment)
     else
+      retrieve_slots
       @slot_assignment_failed = true
       telephone_appointment.reset! { render :new }
     end
@@ -79,7 +80,11 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   end
 
   def retrieve_slots
-    slots   = TelephoneAppointmentsApi.new.slots(lloyds_signposted?, telephone_appointment.schedule_type)
+    slots = TelephoneAppointmentsApi.new.slots(
+      lloyds_signposted?,
+      telephone_appointment.schedule_type,
+      telephone_appointment.selected_date
+    )
 
     @months = retrieve_months(slots)
     @times  = retrieve_times(slots)

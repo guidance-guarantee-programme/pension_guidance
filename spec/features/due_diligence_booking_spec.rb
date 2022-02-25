@@ -3,7 +3,7 @@ require_relative '../../features/pages/telephone_appointment_confirmation'
 
 RSpec.feature 'Due diligence bookings' do
   scenario 'Placing a successful due diligence booking', js: true, vcr: true do
-    Timecop.travel('2021-09-14 13:00') do
+    Timecop.travel('2022-02-25 13:00') do
       when_a_customer_attempts_to_book_a_due_diligence_appointment
       then_the_booking_is_placed
     end
@@ -15,8 +15,8 @@ RSpec.feature 'Due diligence bookings' do
 
     expect(@page).to have_no_alternative_journeys
 
-    @page.choose_date('2021-09-20')
-    @page.choose_time('10:00am')
+    @page.choose_date('2022-03-07')
+    @page.choose_time('10:40am')
     @page.continue.click
 
     expect(@page).to have_no_need_help_banner
@@ -43,7 +43,7 @@ RSpec.feature 'Due diligence bookings' do
   def then_the_booking_is_placed
     @page = Pages::TelephoneAppointmentConfirmation.new
 
-    expect(@page.booking_reference).to have_text('8')
+    expect(@page.booking_reference).to have_text('525896')
     expect(@page).to have_text('0800 015 4906')
   end
 end
