@@ -4,6 +4,7 @@
 //= stub govuk/selection-buttons
 //= require click-tracker.js
 //= require calculators.js
+//= require auto-scroller.js
 //= require feedback.js
 //= require disable-button.js
 
