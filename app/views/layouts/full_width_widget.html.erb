@@ -75,7 +75,10 @@
       document.addEventListener("DOMContentLoaded", function(event) {
         // this only works because the parent in AEM receives the message
         // and has code to act on it
-        if (window.parent && window.parent.postMessage) {
+        const disableScrollToTopMeta = document.querySelector("meta[name='disable_scroll_to_top']")
+        const isScrollToTopDisabled = !!(disableScrollToTopMeta && disableScrollToTopMeta.content === 'true')
+
+        if (window.parent && window.parent.postMessage && !isScrollToTopDisabled) {
           window.parent.postMessage({scrollToTop: true}, '*');
         }
       });

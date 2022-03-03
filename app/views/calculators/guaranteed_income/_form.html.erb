@@ -3,6 +3,8 @@
   errors = form&.errors || {}
 %>
 
+<%= disable_scroll_to_top %>
+
 <h2 id="calculator" class="calculator-heading"><%= t('.heading') %></h2>
 
 <%= render 'calculators/error_summary',
