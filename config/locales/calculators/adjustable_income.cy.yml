@@ -54,6 +54,9 @@ cy:
             <li>
               Os ydych yn yr Alban bydd eich cyfrifiad yn wahannol.
             </li>
+            <li>
+              Os oes gennych gronfa fawr iawn, gallai eich swm di-dreth fod yn wahanol. Mae hyn yn dibynnu a ydych wedi mynd dros y lwfans oes (LTA), p’un a ydych wedi cofrestru ar gyfer amddiffyniad LTA, a ydych yn atebol am daliadau treth LTA, ac a ydych eisoes wedi cymryd arian o’ch cronfa.
+            </li>
 
       form:
         heading: Amcangyfrif o faint allech chi ei gael
