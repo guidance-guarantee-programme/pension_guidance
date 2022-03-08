@@ -54,6 +54,9 @@ en:
             <li>
               No allowance has been made for inflation, you may wish to consider how this will affect the buying power of this income.
             </li>
+            <li>
+              If you have a very large pot, your tax-free amount could be different. This depends on whether you’ve gone over the lifetime allowance (LTA), whether you’ve registered for LTA protection, whether you are liable for LTA tax charges, and whether you’ve already taken money from your pot.
+            </li>
 
       form:
         heading: Estimate how much you could get
