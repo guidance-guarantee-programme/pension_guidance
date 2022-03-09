@@ -14,4 +14,8 @@ module ApplicationHelper
       concat link_to(guide.label, guide.url, class: 't-guide-link')
     end
   end
+
+  def disable_scroll_to_top
+    '<meta name="disable_scroll_to_top" content="true"/>'.html_safe
+  end
 end
