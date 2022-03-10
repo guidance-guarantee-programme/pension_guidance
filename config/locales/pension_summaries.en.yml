@@ -126,23 +126,23 @@ en:
 
     options:
       leave_your_pot_untouched:
-        title: Leave your pot untouched
+        title: Retire later or delay taking your pension pot
         hint: You don’t have to take your pension money at your ‘selected retirement age’ – the age you agreed with your provider to retire. You can leave your pension invested and take it when you’re ready.
       get_a_guaranteed_income:
-        title: Get a guaranteed income (annuity)
+        title: Get a guaranteed retirement income (annuities)
         hint: You can use your pension money to buy an insurance policy which gives you a guaranteed income for life or a fixed number of years. You can take up to 25% of your pot tax free before you buy an annuity.
       get_an_adjustable_income:
-        title: Get an adjustable income
+        title: Get a flexible retirement income (pension drawdown)
         hint: This option allows you to decide how much pension money to take and how long you want it to last. You can take some of your money as cash – up to 25% is tax free. The rest is invested to give you a taxable income.
       take_cash:
-        title: Take cash in chunks
-        hint: This option allows you to decide how much pension money to take and when to take it. Your pot stays invested and you take small chunks over time until it runs out – 25% of each amount you take out is tax free.
+        title: Take your pension as a number of lump sums
+        hint: This option allows you to decide how much pension money to take and when to take it. Your pot stays invested and you take small lump sums over time until it runs out – 25% of each amount you take out is tax free.
       take_whole:
-        title: Take your whole pot in one go
+        title: Take your whole pension in one go
         hint: You can take your whole pension pot as cash – 25% is tax free and the other 75% is taxed along with any other income you have, e.g. from work, savings or investments.
       mix_your_options:
         title: Mix your options
-        hint: You can mix your options, e.g. use some of your pension to get an adjustable income and some to buy an annuity. If you have more than one pot, you can choose different options for each one, eg leave one pot untouched and take cash in chunks from another.
+        hint: You can mix your options, e.g. use some of your pension to get a flexible income and some to buy an annuity. If you have more than one pot, you can choose different options for each one, e.g. delay taking one pot and take a number of lump sums from another.
       how_my_pension_affects_my_benefits:
         title: How my pension affects my benefits
       getting_help_with_debt:

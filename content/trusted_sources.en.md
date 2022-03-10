@@ -12,18 +12,6 @@ Pension Wise consider these organisations to be trusted sources of additional in
   <tbody>
     <tr>
       <td>
-        <strong>The Pensions Advisory Service</strong><br>
-        <a href="https://pensionsadvisoryservice.org.uk">pensionsadvisoryservice.org.uk</a><br>
-        Phone: 0800 011 3797
-      </td>
-      <td>
-        For general pension queries and complaints, including help avoiding pension scams and saving into a pension scheme
-
-        <p>Coronavirus (COVID-19) – <a href="https://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/coronavirus-how-will-this-affect-my-pension-or-investments">how will this affect my pension or investments</a></p>
-      </td>
-    </tr>
-    <tr>
-      <td>
         <strong>Citizens Advice</strong><br>
         England & Wales<br>
         <a href="https://www.citizensadvice.org.uk">www.citizensadvice.org.uk</a><br>
@@ -54,27 +42,11 @@ Pension Wise consider these organisations to be trusted sources of additional in
     </tr>
     <tr>
       <td>
-        <strong>Money Advice Service</strong><br>
-        <a href="https://www.moneyadviceservice.org.uk">www.moneyadviceservice.org.uk</a><br>
-        Phone: 0800 138 7777
+        <strong>Pensions and Lifetime Savings Association (PLSA)</strong><br>
+        <a href="https://www.retirementlivingstandards.org.uk">retirementlivingstandards.org.uk</a><br>
       </td>
       <td>
-        <ul>
-        <li>Coronavirus (COVID-19) <a href="https://www.moneyadviceservice.org.uk/en/tools/money-navigator-tool">financial help</a></li>
-        <li>Annuity Comparison Tool <a href="https://comparison.moneyadviceservice.org.uk">comparison.moneyadviceservice.org.uk</a></li>
-        <li>Retirement adviser directory <a href="https://directory.moneyadviceservice.org.uk">directory.moneyadviceservice.org.uk</a></li>
-        <li>Pension Drawdown Investment Pathways Tool <a href="https://www.moneyadviceservice.org.uk/en/tools/drawdown-investment-pathways">www.moneyadviceservice.org.uk/en/tools/drawdown-investment-pathways</a></li>
-        <li>Debt and borrowing</li>
-        <li>Budgeting and managing money</li>
-        <li>Saving and investing</li>
-        <li>Pensions and retirement</li>
-        <li>Work and redundancy</li>
-        <li>Benefits</li>
-        <li>Births, deaths and family</li>
-        <li>Insurance</li>
-        <li>Homes and mortgages</li>
-        <li>Care and disability</li>
-        </ul>
+        To help savers think in a practical way about the kind of lifestyle they might lead in retirement.
       </td>
     </tr>
     <tr>
@@ -162,10 +134,12 @@ Pension Wise consider these organisations to be trusted sources of additional in
           <li>Divorce</li>
           <li>Lasting Power of Attorney</li>
           <li>Employment & Self-employment</li>
+          <li>Childcare and parenting</li>
           <li>Disabled people</li>
           <li>Housing and local services</li>
           <li>Money and tax</li>
-          <li>Scottish tax</li>
+          <li>Passports</li>
+          <li>Travel and living abroad</li>
         </ul>
       </td>
     </tr>

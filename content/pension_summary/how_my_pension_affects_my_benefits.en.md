@@ -24,5 +24,5 @@ Your other assets (e.g. savings and investments) may also be added to income or 
 For more information about benefits entitlement you can speak to Citizens Advice. Contact the International Pension Centre if you live abroad and you receive benefits.
 
 {: .hide-from-screen }
-[Further guidance on benefits and pension income](https://www.pensionwise.gov.uk/en/benefits)<br>
-[www.pensionwise.gov.uk/en/benefits](https://www.pensionwise.gov.uk/en/benefits)
+[Further guidance on benefits](https://www.moneyhelper.org.uk/en/benefits/problems-with-benefits/how-do-savings-and-lump-sum-pay-outs-affect-benefits)<br>
+https://www.moneyhelper.org.uk/en/benefits/problems-with-benefits/how-do-savings-and-lump-sum-pay-outs-affect-benefits

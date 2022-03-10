@@ -1,15 +1,15 @@
-# Take cash in chunks
+# Take your pension as a number of lump sums
 
-Instead of taking your whole pot in one go, you take smaller chunks over time until your money runs out – 25% of each chunk you take out is tax free and the rest is taxable.
+Instead of taking your whole pot in one go, you take smaller lump sums over time until your money runs out – 25% of each lump sum you take out is tax free and the rest is taxable.
 
 ## Key facts
 
-* The chunks of cash you take get taxed along with any other income you have, e.g. from work, savings or investments.
+* The lump sums of cash you take get taxed along with any other income you have, e.g. from work, savings or investments.
 * You’re likely to be involved in choosing and managing your investments.
-* You can spread the chunks out over multiple tax years to reduce your income which could mean you pay less tax.
+* You can spread the lump sums out over multiple tax years to manage your income which could mean you pay less tax.
 * Providers may describe this option as ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
 * You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
-* If you invest your pot into flexi-access drawdown, you won’t be able to take any more tax-free cash and can’t use this option.
+* If you invest your pot into pension drawdown, you won’t be able to take any more tax-free cash and can’t use this option.
 
 ## Next steps
 
@@ -22,5 +22,5 @@ If you’re interested in this option, you’ll need to contact your provider an
 3. Does my pot have any special features like a guaranteed annuity rate?
 
 {: .hide-from-screen }
-[Further guidance on taking cash in chunks](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension-as-a-number-of-lump-sums)<br>
+[Further guidance on taking your pension as a number of lump sums](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension-as-a-number-of-lump-sums)<br>
 https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension-as-a-number-of-lump-sums

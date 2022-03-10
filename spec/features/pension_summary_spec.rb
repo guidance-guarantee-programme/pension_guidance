@@ -194,11 +194,11 @@ def and_i_select_all_pension_options # rubocop:disable Metrics/MethodLength
     next_button = 'Nesaf'
   else
     checkboxes = [
-      'Leave your pot untouched',
-      'Get a guaranteed income (annuity)',
-      'Get an adjustable income',
-      'Take cash in chunks',
-      'Take your whole pot in one go',
+      'Retire later or delay taking your pension pot',
+      'Get a guaranteed retirement income (annuities)',
+      'Get a flexible retirement income (pension drawdown)',
+      'Take your pension as a number of lump sums',
+      'Take your whole pension in one go',
       'Mix your options'
     ]
 
@@ -255,11 +255,11 @@ def then_i_view_a_summary_with_all_pages # rubocop:disable Metrics/MethodLength
     next_button = 'Nesaf'
   else
     titles = [
-      'Leave your pot untouched',
-      'Get a guaranteed income (annuity)',
-      'Get an adjustable income',
-      'Take cash in chunks',
-      'Take your whole pot in one go',
+      'Retire later or delay taking your pension pot',
+      'Get a guaranteed retirement income (annuities)',
+      'Get a flexible retirement income (pension drawdown)',
+      'Take your pension as a number of lump sums',
+      'Take your whole pension in one go',
       'Mix your options',
       'Tax you pay on your pension',
       'Scams',

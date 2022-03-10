@@ -1,4 +1,4 @@
-# Leave your pot untouched
+# Retire later or delay taking your pension pot
 
 You can leave your money invested in your pot until you need it. Your pot could grow further and give you a larger amount of money to last for a shorter amount of time. You (and your employer) can still pay into your pot but there may be restrictions.
 
@@ -23,5 +23,5 @@ If you’re interested in this option, you’ll need to contact your provider an
 7. Do you have up-to-date details of who I want to leave my pot to (my ‘beneficiary’) when I die?
 
 {: .hide-from-screen }
-[Further guidance on leaving your pot untouched](https://www.moneyhelper.org.uk/en/pensions-and-retirement/retiring-later-or-delaying-taking-your-pension-pot)<br>
-https://www.moneyhelper.org.uk/en/pensions-and-retirement/retiring-later-or-delaying-taking-your-pension-pot
+[Further guidance on retiring later or delaying taking your pension pot](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot)<br>
+https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot
