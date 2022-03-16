@@ -5,7 +5,7 @@
     "jquery": "~1.11.2",
     "jquery-ui": "~1.11.2",
     "bootstrap": "~3.3.6",
-    "accessible.media.player": "git://github.com/alphagov/Accessible-Media-Player.git#master",
+    "accessible.media.player": "https://github.com/alphagov/Accessible-Media-Player.git",
     "handlebars": "~4.0.5"
   },
   "resolutions": {
