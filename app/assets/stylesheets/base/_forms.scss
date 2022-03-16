@@ -16,9 +16,11 @@ input[name="slider"] {
 
   // outlines
   &:focus {
-    border: 2px solid $color-violet-primary;
-    outline: 4px solid $color-yellow-secondary;
     background-color: $color-white-supporting;
+    border: 4px solid $color-violet-primary;
+    border-radius: 4px;
+    box-shadow: 0 0 0 4px $color-yellow-secondary;
+    outline: none;
   }
 
   &.form-control-error {
