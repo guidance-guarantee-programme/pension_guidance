@@ -1,4 +1,4 @@
-# Cymryd eich cronfa gyfan ar un tro
+# Cymryd eich pensiwn cyfan ar un tro
 
 Gallwch gymryd eich cronfa gyfan ar un tro. Bydd yr arian o’ch cronfa yn cael ei ychwanegu at unrhyw incwm arall sydd gennych dros y flwyddyn dreth.
 
@@ -22,5 +22,5 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 2. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?
 
 {: .hide-from-screen }
-[Further guidance on taking your whole pot in one go](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go)<br>
+[Arweiniad pellach ar gymryd eich pensiwn cyfan ar un tro](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go)<br>
 https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go

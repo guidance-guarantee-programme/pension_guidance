@@ -6,10 +6,10 @@ Os oes gennych drefniant i dalu eich dyledion, efallai y bydd credydwyr yn gallu
 
 Mae hyn yn cynnwys arian neu incwm o:
 
-* incwm gwarantedig (blwydd-dal)
-* incwm addasadwy
-* arian fesul tipyn
-* cymryd eich cronfa gyfan ar un tro
+* incwm ymddeoliad gwarantedig (blwydd-daliadau)
+* incwm ymddeoliad hyblyg (tynnu pensiwn i lawr)
+* cymryd eich pensiwn fel nifer o gyfandaliadau 
+* cymryd eich cronfa bensiwn gyfan ar un tro
 
 Darganfyddwch statws unrhyw drefniant dyled sydd gennych cyn dewis opsiwn pensiwn.
 

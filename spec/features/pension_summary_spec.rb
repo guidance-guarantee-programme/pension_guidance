@@ -183,11 +183,11 @@ end
 def and_i_select_all_pension_options # rubocop:disable Metrics/MethodLength
   if I18n.locale == :cy
     checkboxes = [
-      'Gadael eich cronfa heb ei gyffwrdd',
-      'Cael incwm gwarantedig (blwydd-dal)',
-      'Cael incwm addasadwy',
-      'Cymryd arian allan fesul tipyn',
-      'Cymryd eich cronfa gyfan ar un tro',
+      'Ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn',
+      'Cael incwm ymddeol gwarantedig (blwydd-daliadau)',
+      'Cael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr)',
+      'Cymryd eich pensiwn fel nifer o gyfandaliadau',
+      'Cymryd eich pensiwn cyfan ar un tro',
       'Cymysgu eich opsiynau'
     ]
 
@@ -237,19 +237,19 @@ end
 def then_i_view_a_summary_with_all_pages # rubocop:disable Metrics/MethodLength
   if I18n.locale == :cy
     titles = [
-      'Gadael eich cronfa heb ei gyffwrdd',
-      'Cael incwm gwarantedig (blwydd-dal)',
-      'Cael incwm addasadwy',
-      'Cymryd arian allan fesul tipyn',
-      'Cymryd eich cronfa gyfan ar un tro',
+      'Ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn',
+      'Cael incwm ymddeol gwarantedig (blwydd-daliadau)',
+      'Cael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr)',
+      'Cymryd eich pensiwn fel nifer o gyfandaliadau',
+      'Cymryd eich pensiwn cyfan ar un tro',
       'Cymysgu eich opsiynau',
       'Treth rydych yn ei dalu ar eich pensiwn',
-      'Sgamiau pensiwn',
-      'Budd-daliadau ac incwm o bensiwn',
-      'Dyled a phensiynau',
-      'Pensiynau a salwch',
-      'Trosglwyddiadau penswn',
-      'Arweiniad pellach diduedd am ddim'
+      'Sgamiau',
+      'Sut mae fy mhensiwn yn effeithio ar fy mudd-daliadau',
+      'Cael help gyda dyled',
+      'Cymryd fy mhensiwn os wyf yn sâl',
+      'Trosglwyddo fy mhensiwn i ddarparwr arall',
+      'Arweiniad pellach diduedd ac am ddim'
     ]
 
     next_button = 'Nesaf'

@@ -1,17 +1,17 @@
-# Cael incwm addasadwy
+# Cael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr)
 
-Gallwch gael incwm o’ch cronfa bensiwn sy’n addasadwy. Mae hyn yn golygu eich bod yn cael incwm rheolaidd ond yn gallu newid y swm a gewch neu gymryd symiau o arian parod os ydych angen.
+Gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth. Mae'r gweddill yn cael ei fuddsoddi i roi incwm trethadwy i chi. Chi sy'n penderfynu faint rydych yn ei gymryd allan bob blwyddyn a pha mor hir rydych am i'ch arian barhau. Gall gwerth eich cronfa fynd i fyny neu i lawr yn dibynnu ar eich dewisiadau buddsoddi. Gall darparwyr pensiwn ddisgrifio'r opsiwn hwn fel tynnu pensiwn i lawr.
 
 ## Ffeithiau allweddol
 
 * Rydych yn cael incwm o’ch cronfa sy’n drethadwy. Chi sy’n penderfynu faint i’w gymryd a phryd, ac am faint rydych eisiau iddo barhau.
-* Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth - os byddwch yn gwneud hyn, mae’n rhaid i chi symud y 75% sy’n weddill i mewn i gynnyrch incwm addasadwy o neu ddefnyddio un o’r opsiynau eraill.
-* Mae’n debygol y byddwch yn cymryd rhan mewn dewis a rheoli eich buddsoddiadau.
+* Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth - os byddwch yn gwneud hyn, mae’n rhaid i chi symud y 75% sy’n weddill i mewn i gynnyrch incwm hyblyg neu ddefnyddio un o’r opsiynau eraill.
+* Bydd eich darparwr yn gofyn i chi sut hoffech fuddsoddi eich cronfa sy'n weddill pan fyddwch yn symud i mewn i dynnu pensiwn i lawr. Bydd angen i chi naill ai ddewis eich buddsoddiadau eich hun, h.y. rhai sy'n cyfateb i'ch agwedd at risg ac amcanion ar gyfer eich arian, neu bydd rhai darparwyr yn cynnig dewis o opsiynau buddsoddi parod syml sy'n gysylltiedig â'ch cynlluniau ymddeoliad (gelwir y rhain yn Llwybrau Buddsoddi). Gallech hefyd ddefnyddio ymgynghorydd ariannol i'ch helpu i ddewis.
 * Fel gyda phob buddsoddiad, gall gwerth eich cronfa fynd i fyny neu i lawr.
 * Mae’r opsiwn hwn hefyd yn cael ei adnabod fel ‘tynnu allan hyblyg’.
 * Efallai y gallwch barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a adnabyddir fel [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
 
-^Ni allwch gymryd yr opsiwn arian fesul tipyn os byddwch yn dewis yr opsiwn hwn oherwydd y byddwch eisoes wedi cymryd eich lwmp swm di-dreth llawn.^
+^Ni allwch gymryd y pensiwn fel opsiwn nifer o gyfandaliadau yn nes ymlaen os byddwch yn dewis yr opsiwn hwn oherwydd y byddwch eisoes wedi cymryd eich gyfandaliad di-dreth llawn.^
 
 ## Camau nesaf
 
@@ -19,12 +19,12 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 
 ### Cwestiynau i’w gofyn i’ch darparwr
 
-1. Ydych chi’n cynnig tynnu allan hyblyg?
+1. Ydych chi’n cynnig tynnu pensiwn i lawr?
 2. A fydd rhaid i mi dalu ffi, er enghraifft bob tro rwyf yn cymryd taliad?
 3. Faint allai fy nghronfa dyfu neu fynd i lawr? Mae rhai darparwyr yn cynnig cynhyrchion sy’n cynnwys gwarantau.
 4. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?
 5. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
 
 {: .hide-from-screen }
-[Further guidance on getting an adjustable income](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/what-is-flexible-retirement-income-pension-drawdown)<br>
-https://www.moneyhelper.org.uk/cy/pensions-and-retirement/what-is-flexible-retirement-income-pension-drawdown
+[Arweiniad pellach ar gael incwm ymddeoliad hyblyg (tynny pensiwn i lawr)](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/what-is-flexible-retirement-income-pension-drawdown

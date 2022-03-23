@@ -19,10 +19,10 @@ Mae yna 2 ffordd y gallwch gymryd eich swm di-dreth.
 
 ### Ei gymryd i gyd mewn un tro
 
-Gallwch gymryd 25% fel lwmp swm heb dalu treth. Os byddwch yn gwneud hyn, ni allwch adael y 75% sy’n weddill heb ei gyffwrdd. Rhaid i chi naill ai:
+Gallwch gymryd 25% fel cyfandaliad heb dalu treth. Os byddwch yn gwneud hyn, ni allwch adael y 75% sy’n weddill heb ei gyffwrdd. Rhaid i chi naill ai:
 
 - prynu incwm gwarantedig (blwydd-dal)
-- cael incwm addasadwy (tynnu allan hyblyg)
+- cael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr)
 - cymryd y gronfa gyfan fel arian parod
 
 ^**Enghraifft**<br/><br/>Mae eich cronfa yn £60,000 ac rydych yn cymryd allan £15,000 - dyma eich lwmp swm di-dreth. Rydych yn prynu blwydd-dal gyda’r £45,000 sy’n weddill sy’n talu £2,000 y flwyddyn i chi. Mae’r arian hwn yn drethadwy.^
