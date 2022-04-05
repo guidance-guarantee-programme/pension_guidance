@@ -22,7 +22,7 @@ There are 2 ways you can take your tax-free amount.
 You can take 25% as a lump sum without paying tax. If you do this, you can’t leave the remaining 75% untouched. You must either:
 
 - buy a guaranteed income (annuity)
-- get an adjustable income (flexi-access drawdown)
+- get a flexible retirement income (pension drawdown)
 - take the whole pot as cash
 
 ^**Example**<br/><br/>Your pot is £60,000 and you take £15,000 – this is your tax-free lump sum. You buy an annuity with the remaining £45,000 which pays you £2,000 a year. This money is taxable.^

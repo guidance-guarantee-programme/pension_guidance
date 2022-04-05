@@ -1,11 +1,11 @@
 # Cymysgu eich opsiynau
 
-Gallwch gymysgu eich opsiynau, er enghraifft defnyddio rhywfaint o’ch cronfa i gael incwm addasadwy a rhywfaint i brynu blwydd-dal.
+Gallwch gymysgu eich opsiynau, er enghraifft defnyddio rhywfaint o’ch cronfa i gael incwm ymddeoliad hyblyg a rhywfaint i brynu incwm ymddeol gwarantedig.
 
 ## Ffeithiau allweddol
 
 * Nid yw pob darparwr yn cynnig pob opsiwn.
-* Os oes gennych fwy nag un gronfa, gallwch ddefnyddio opsiynau gwahanol ar gyfer pob cronfa, er enghraifft gadael un heb ei gyffwrdd a chymryd arian fesul tipyn o un arall.
+* Os oes gennych fwy nag un gronfa, gallwch ddefnyddio opsiynau gwahanol ar gyfer pob cronfa, er enghraifft oedi cymryd un gronfa a chymryd nifer o gyfandaliadau o un arall.
 
 ## Camau nesaf
 
@@ -18,5 +18,5 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 3. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig y dewisiadau rwyf eisiau?
 
 {: .hide-from-screen }
-[Further guidance on mixing your options](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/your-options-for-using-your-defined-contribution-pension-pot)<br>
-https://www.moneyhelper.org.uk/cy/pensions-and-retirement/your-options-for-using-your-defined-contribution-pension-pot
+[Arweiniad pellach ar gymysgu eich opsiynau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/your-options-for-using-your-defined-contribution-pension-pot

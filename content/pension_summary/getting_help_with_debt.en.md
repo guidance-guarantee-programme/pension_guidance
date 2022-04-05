@@ -6,10 +6,10 @@ If you have an arrangement to pay your debts, creditors may be able to access so
 
 This includes money or income from:
 
-* a guaranteed income (annuity)
-* an adjustable income
-* cash in chunks
-* taking your whole pot in one go
+* a guaranteed retirement income (annuities)
+* a flexible retirement income (pension drawdown)
+* taking your pension as a number of lump sums
+* taking your whole pension in one go
 
 Find out the status of any debt arrangement you have before choosing a pension option.
 

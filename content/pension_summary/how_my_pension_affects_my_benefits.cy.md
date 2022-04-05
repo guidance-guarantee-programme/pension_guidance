@@ -22,5 +22,5 @@ Efallai y bydd eich asedau eraill (er enghraifft cynilion a buddsoddiadau) hefyd
 I gael rhagor o wybodaeth am hawl i fudd-daliadau gallwch siarad â Chyngor ar Bopeth. Cysylltwch â’r Ganolfan Bensiwn Ryngwladol os ydych yn byw dramor ac rydych yn cael budd-daliadau.
 
 {: .hide-from-screen }
-[Further guidance on benefits and pension income](https://www.pensionwise.gov.uk/en/benefits)<br>
-[www.pensionwise.gov.uk/en/benefits](https://www.pensionwise.gov.uk/en/benefits)
+[Arweiniad pellach ar fudd-daliadau](https://www.moneyhelper.org.uk/cy/benefits/problems-with-benefits/how-do-savings-and-lump-sum-pay-outs-affect-benefits)<br>
+https://www.moneyhelper.org.uk/cy/benefits/problems-with-benefits/how-do-savings-and-lump-sum-pay-outs-affect-benefits

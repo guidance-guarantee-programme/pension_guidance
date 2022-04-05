@@ -121,23 +121,23 @@ cy:
 
     options:
       leave_your_pot_untouched:
-        title: Gadael eich cronfa heb ei gyffwrdd
+        title: Ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn
         hint: Nid oes yn rhaid i chi gymryd eich arian pensiwn ar gyrraedd eich ‘oedran ymddeol a ddewiswyd’ - yr oedran rydych wedi’i gytuno i ymddeol gyda’ch darparwr. Gallwch adael eich pensiwn wedi’i fuddsoddi a’i gymryd pan rydych yn barod.
       get_a_guaranteed_income:
-        title: Cael incwm gwarantedig (blwydd-dal)
+        title: Cael incwm ymddeol gwarantedig (blwydd-daliadau)
         hint: Gallwch ddefnyddio eich arian pensiwn i brynu polisi yswiriant sy’n rhoi incwm gwarantedig i chi am oes neu ar gyfer nifer penodol o flynyddoedd. Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth cyn prynu blwydd-dal.
       get_an_adjustable_income:
-        title: Cael incwm addasadwy
+        title: Cael incwm ymddeoliad hyblyg (tynnu pensiwn i lawr)
         hint: Mae’r opsiwn hwn yn gadael i chi benderfynu faint o arian pensiwn i’w gymryd allan a pha mor hir rydych am iddo barhau. Gallwch gymryd rhywfaint o’ch arian fel arian parod - mae hyd at 25% yn ddi-dreth. Mae’r gweddill yn cael ei fuddsoddi i roi incwm trethadwy i chi.
       take_cash:
-        title: Cymryd arian allan fesul tipyn
-        hint: Mae’r opsiwn hwn yn gadael i chi benderfynu faint o arian pensiwn i’w gymryd a phryd i’w gymryd. Mae’ch cronfa yn parhau i fod wedi’i fuddsoddi ac rydych yn cymryd symiau bychan fesul tipyn dros gyfnod o amser nes mae’n rhedeg allan  - mae 25% o bob swm rydych yn ei gymryd allan yn ddi-dreth.
+        title: Cymryd eich pensiwn fel nifer o gyfandaliadau
+        hint: Mae’r opsiwn hwn yn gadael i chi benderfynu faint o arian pensiwn i’w gymryd a phryd i’w gymryd. Mae’ch cronfa yn parhau i fod wedi’i fuddsoddi ac rydych yn cymryd cyfandaliadau dros gyfnod o amser nes mae’n rhedeg allan - mae 25% o bob swm rydych yn ei gymryd allan yn ddi-dreth.
       take_whole:
-        title: Cymryd eich cronfa gyfan ar un tro
+        title: Cymryd eich pensiwn cyfan ar un tro
         hint: Gallwch gymryd eich cronfa bensiwn gyfan ar un tro fel arian parod - mae 25% yn ddi-dreth ac mae’r 75% arall yn cael ei drethu gydag unrhyw incwm arall sydd gennych, er enghraifft o waith, cynilion neu fuddsoddiadau.
       mix_your_options:
         title: Cymysgu eich opsiynau
-        hint: Gallwch gymysgu eich opsiynau, er enghraifft defnyddio rhywfaint o’ch cronfa i gael incwm addasadwy a rhywfaint i brynu blwydd-dal. Os oes gennych fwy nag un gronfa gallwch ddefnyddio opsiynau gwahanol ar gyfer pob un, er enghraifft gadael un gronfa heb ei gyffwrdd a chymryd arian allan fesul tipyn o un arall.
+        hint: Gallwch gymysgu eich opsiynau, er enghraifft defnyddio rhywfaint o’ch cronfa i gael incwm addasadwy a rhywfaint i brynu blwydd-dal. Os oes gennych fwy nag un gronfa gallwch ddefnyddio opsiynau gwahanol ar gyfer pob un, er enghraifft oedi cymryd un gronfa a chymryd nifer o gyfandaliadau o un arall.
       how_my_pension_affects_my_benefits:
         title: Sut mae fy mhensiwn yn effeithio ar fy mudd-daliadau
       getting_help_with_debt:

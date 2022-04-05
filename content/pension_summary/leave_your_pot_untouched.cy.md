@@ -1,4 +1,4 @@
-# Gadael eich cronfa heb ei gyffwrdd
+# Ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn
 
 Gallwch adael eich arian wedi’i fuddsoddi yn eich cronfa tan fyddwch chi ei angen. Gallai eich cronfa dyfu ymhellach a rhoi swm mwy o arian i chi i barhau am lai o amser. Gallwch chi (a’ch cyflogwr) ddal i dalu i mewn i’ch cronfa ond efallai bydd cyfyngiadau.
 
@@ -23,5 +23,5 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 7. Oes gennych chi fanylion cyfredol o bwy rwyf am adael fy nghronfa i (fy ‘muddiolwr’) pan fyddaf yn marw?
 
 {: .hide-from-screen }
-[Further guidance on leaving your pot untouched](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/retiring-later-or-delaying-taking-your-pension-pot)<br>
-https://www.moneyhelper.org.uk/cy/pensions-and-retirement/retiring-later-or-delaying-taking-your-pension-pot
+[Arweiniad pellach ar ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot
