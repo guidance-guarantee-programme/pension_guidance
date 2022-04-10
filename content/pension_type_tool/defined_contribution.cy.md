@@ -17,6 +17,6 @@ Gallwch drefnu apwyntiad Pension Wise am ddim i siarad am eich opsiynau ar gyfer
 
 [Trefnu apwyntaid am ddim]({::money_helper_url path="pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment" locale="cy"/}){: .button .button--primary target="_parent"}
 
-^Gallwch hefyd [wirio pensiwn arall]({::money_helper_url path="pensions-and-retirement/pension-wise/find-out-your-pension-type" locale="cy"/}){: target="_parent"} neu [edrych drwy eich opsiynau pensiwn]({::money_helper_url path="pensions-and-retirement/pension-wise/explore-your-pension-options" locale="cy"/}){: target="_parent"}.^
+Gallwch hefyd [wirio pensiwn arall]({::money_helper_url path="pensions-and-retirement/pension-wise/find-out-your-pension-type" locale="cy"/}){: target="_parent"} neu [edrych drwy eich opsiynau pensiwn]({::money_helper_url path="pensions-and-retirement/pension-wise/explore-your-pension-options" locale="cy"/}){: target="_parent"}.
 
 [Rhowch eich adborth i ni](http://research.pensionwise.gov.uk/s/PTTfeedback/)
