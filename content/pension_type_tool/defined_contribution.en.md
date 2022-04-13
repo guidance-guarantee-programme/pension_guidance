@@ -17,6 +17,6 @@ You can book a free Pension Wise appointment to talk about your options for taki
 
 [Book a free appointment]({::money_helper_url path="pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment" locale="en"/}){: .button .button--primary target="_parent"}
 
-^You can also [check another pension]({::money_helper_url path="pensions-and-retirement/pension-wise/find-out-your-pension-type" locale="en"/}){: target="_parent"} or [explore your pension options]({::money_helper_url path="pensions-and-retirement/pension-wise/explore-your-pension-options" locale="en"/}){: target="_parent"}.^
+You can also [check another pension]({::money_helper_url path="pensions-and-retirement/pension-wise/find-out-your-pension-type" locale="en"/}){: target="_parent"} or [explore your pension options]({::money_helper_url path="pensions-and-retirement/pension-wise/explore-your-pension-options" locale="en"/}){: target="_parent"}.
 
 {::webchat /}
