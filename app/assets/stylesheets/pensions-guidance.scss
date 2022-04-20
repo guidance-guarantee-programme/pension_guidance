@@ -30,3 +30,12 @@
 .hide-from-screen {
   display: none;
 }
+
+a[rel="external"][target="_blank"]:after {
+  content: "\0048";
+  display: inline-block;
+  transform: rotate(45deg);
+  font-family: "money-helper-icons",sans-serif;
+  padding-left: 4px;
+  vertical-align: baseline;
+}

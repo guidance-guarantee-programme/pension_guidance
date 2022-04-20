@@ -20,9 +20,9 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: 3c36f4a9fb79a6ff8c2b2dafb56d611ec77bf988
+  revision: 8263d15510551e40b3482011f77b0eb176af948c
   specs:
-    output-templates (6.4.0)
+    output-templates (6.5.0)
       actionview
       sassc
 
@@ -302,7 +302,7 @@ GEM
     net-http-persistent (4.0.1)
       connection_pool (~> 2.2)
     nio4r (2.5.8)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.21.0)
