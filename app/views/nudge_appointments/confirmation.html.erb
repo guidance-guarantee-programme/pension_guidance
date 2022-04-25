@@ -1,0 +1,40 @@
+<% content_for(:page_title, t('service.title', page_title: 'Confirmation')) %>
+
+<div class="l-grid-row">
+  <div class="l-column-two-thirds">
+    <div class="govuk-box-highlight">
+      <h1 class="bold-large govuk-box-highlight__header">We’ve booked your appointment</h1>
+      <p>
+        Your reference number is <br>
+        <strong class="heading-medium t-booking-reference"><%= @booking_reference %></strong>
+      </p>
+    </div>
+
+    <div class="t-start">
+      <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>
+      <p><strong>Time</strong><br><%= l(@booking_date, format: :govuk_time) %></p>
+    </div>
+
+    <div class="application-notice help-notice">
+      <p>
+        In the interest of road safety we will not deliver an appointment if
+        you are driving. This also includes the use of hands-free devices.
+        Please ensure you are not driving at the time of your appointment.
+      </p>
+    </div>
+
+    <h5>What happens next?</h5>
+
+    <p>We’ll contact you to confirm these details. You’ll also receive information to help you prepare for your appointment.</p>
+
+    <p>To cancel or change your appointment, or if any of the information above isn’t correct, call <strong>0800 100 166</strong>.</p>
+  </div>
+</div>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'NudgeBooking',
+    'step': 'completed'
+  });
+</script>

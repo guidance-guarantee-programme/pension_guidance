@@ -1,0 +1,254 @@
+<% content_for(:page_title, t('service.title', page_title: 'Customer details')) %>
+
+<div class="l-column-two-thirds">
+  <%= f.hidden_field :start_at, id: 'hidden_nudge_appointment_start_at_step_3' %>
+  <%= f.hidden_field :schedule_type, id: 'hidden_nudge_appointment_schedule_type_step_3' %>
+
+  <div role="note" aria-label="Information" class="application-notice info-notice">
+    <p>We're now booking your Pension Wise appointment. Pension Wise Guidance is delivered by MoneyHelper.</p>
+    <p>MoneyHelper collects and stores personal data for the purposes of delivering pension guidance. Your data will be shared with their delivery partners only where it is necessary to provide you with Pension Wise guidance.</p>
+    <p>Full details of MoneyHelper's privacy policy, including information on your rights in relation to the data they hold can be found on the MoneyHelper website. You can find this in your booking confirmation.</p>
+  </div>
+
+  <h2 class="slot-picker-header">Customer details</h2>
+
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:first_name) %>">
+    <%= f.label :first_name, class: 'form-label-bold' %>
+    <% if @nudge_appointment.errors.include?(:first_name) %>
+      <span class="error-message" id="first_name_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:first_name].to_sentence.capitalize %></span>
+    <% end %>
+    <%= f.text_field :first_name, aria: { required: true, describedby: 'first_name_error' }, class: "t-first-name form-control #{'form-control-error' if @nudge_appointment.errors.include?(:first_name)}" %>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:last_name) %>">
+    <%= f.label :last_name, class: 'form-label-bold' %>
+    <% if @nudge_appointment.errors.include?(:last_name) %>
+      <span class="error-message" id="last_name_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:last_name].to_sentence.capitalize %></span>
+    <% end %>
+    <%= f.text_field :last_name, aria: { required: true, describedby: 'last_name_error' }, class: "t-last-name form-control #{'form-control-error' if @nudge_appointment.errors.include?(:last_name)}" %>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:phone) %>">
+    <%= f.label :phone, class: 'form-label-bold' do %>
+      Phone number
+      <span class="form-hint">The number you’d like Pension Wise to call you on. For non-UK numbers include the country dialling code</span>
+    <% end %>
+
+    <% if @nudge_appointment.errors.include?(:phone) %>
+      <span class="error-message" id="phone_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:phone].to_sentence.capitalize %></span>
+    <% end %>
+
+    <%= f.text_field :phone, aria: { required: true, describedby: 'phone_error' }, class: "t-phone form-control #{'form-control-error' if @nudge_appointment.errors.include?(:phone)}" %>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:confirmation) %>" id="confirmation" tabindex="-1" data-radio-toggle>
+    <fieldset class="inline">
+      <legend class="form-label-bold">
+        Appointment confirmation preference
+        <span class="form-hint">How you’d like to receive your appointment confirmation</span>
+      </legend>
+
+      <% if @nudge_appointment.errors.include?(:confirmation) %>
+        <span class="error-message"><%= @nudge_appointment.errors[:confirmation].to_sentence.capitalize %></span>
+      <% end %>
+
+      <div class="multiple-choice" data-target="confirm-email">
+        <%= f.radio_button :confirmation, 'email', class: 't-confirmation-email' %>
+        <%= f.label :confirmation, value: 'email' do %>
+          Email
+        <% end %>
+      </div>
+
+      <div class="multiple-choice" data-target="confirm-mobile">
+        <%= f.radio_button :confirmation, 'sms', class: 't-confirmation-sms' %>
+        <%= f.label :confirmation, value: 'sms' do %>
+          SMS
+        <% end %>
+      </div>
+    </fieldset>
+  </div>
+
+  <div id="confirm-email" class="js-hidden application-notice info-notice">
+    <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:email) %>">
+      <%= f.label :email, class: 'form-label-bold' do %>
+        Email
+        <span class="form-hint">Pension Wise will send an email confirming your appointment date</span>
+      <% end %>
+
+      <% if @nudge_appointment.errors.include?(:email) %>
+        <span class="error-message" id="email_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:email].to_sentence.capitalize %></span>
+      <% end %>
+
+      <div class="email-outer">
+        <%= f.email_field :email, aria: { required: true, describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @nudge_appointment.errors.include?(:email)}" %>
+      </div>
+    </div>
+  </div>
+
+  <div id="confirm-mobile" class="js-hidden application-notice info-notice">
+    <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:mobile) %>">
+      <%= f.label :mobile, class: 'form-label-bold' do %>
+        SMS
+        <span class="form-hint">Pension Wise will send an SMS confirmation to this mobile number</span>
+      <% end %>
+
+      <% if @nudge_appointment.errors.include?(:mobile) %>
+        <span class="error-message" id="mobile_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:mobile].to_sentence.capitalize %></span>
+      <% end %>
+
+      <%= f.text_field :mobile, aria: { required: true, describedby: 'mobile_error' }, class: "t-mobile form-control #{'form-control-error' if @nudge_appointment.errors.include?(:mobile)}" %>
+    </div>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:memorable_word) %>">
+    <%= f.label :memorable_word, class: 'form-label-bold' do %>
+      Your memorable word
+      <span class="form-hint">The pension specialist will repeat this word when they call so you know it’s Pension Wise. The memorable word should be unique and not a password or a memorable word you have previously used eg mother's maiden name</span>
+    <% end %>
+
+    <% if @nudge_appointment.errors.include?(:memorable_word) %>
+      <span class="error-message" id="memorable_word_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:memorable_word].to_sentence.capitalize %></span>
+    <% end %>
+    <%= f.text_field :memorable_word, aria: { required: true, describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @nudge_appointment.errors.include?(:memorable_word)}" %>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:date_of_birth) %>">
+    <fieldset>
+      <legend>
+        <span class="form-label-bold">
+          Date of birth
+        </span>
+        <span class="form-hint t-dob-hint" id="dob-hint">There are some circumstances where someone under 50 is also eligible</span>
+      </legend>
+      <div class="form-date" id="nudge_appointment_date_of_birth" tabindex="-1">
+        <div class="form-group form-group-day">
+          <label aria-label="Date of birth, day e.g. 25" class="form-label" for="<%= f.object_name %>_date_of_birth_day">
+            <span class="visually-hidden">Date of birth, day e.g. 25</span>
+            <span aria-hidden="true">Day</span>
+          </label>
+          <%=
+            f.number_field(
+              'date_of_birth_day',
+              id: "#{f.object_name}_date_of_birth_day",
+              use_label: false,
+              value: f.object.date_of_birth.try(:day),
+              placeholder: 'DD',
+              class: "f-dob__input form-control js-dob-day t-date-of-birth-day #{'form-control-error' if @nudge_appointment.errors.include?(:date_of_birth)}",
+              pattern: '[0-9]*',
+              min: 1,
+              max: 31,
+              aria: { required: true, describedby: 'date_of_birth_error' }
+            )
+          %>
+        </div>
+        <div class="form-group form-group-month">
+          <label aria-label="Date of birth, month e.g. 12" class="form-label" for="<%= f.object_name %>_date_of_birth_month">
+            <span class="visually-hidden">Date of birth, month e.g. 12</span>
+            <span aria-hidden="true">Month</span>
+          </label>
+          <%=
+            f.number_field(
+              'date_of_birth_month',
+              id: "#{f.object_name}_date_of_birth_month",
+              use_label: false,
+              value: f.object.date_of_birth.try(:month),
+              placeholder: 'MM',
+              class: "form-dob__input form-control js-dob-month t-date-of-birth-month #{'form-control-error' if @nudge_appointment.errors.include?(:date_of_birth)}",
+              pattern: '[0-9]*',
+              min: 1,
+              max: 12,
+              aria: { required: true, describedby: 'date_of_birth_error' }
+            )
+          %>
+        </div>
+        <div class="form-group form-group-year">
+          <label aria-label="Date of birth, year e.g. 1950" class="form-label" for="<%= f.object_name %>_date_of_birth_year">
+            <span class="visually-hidden">Date of birth, year e.g. 1950</span>
+            <span aria-hidden="true">Year</span>
+          </label>
+          <%=
+            f.number_field(
+              'date_of_birth_year',
+              id: "#{f.object_name}_date_of_birth_year",
+              use_label: false,
+              value: f.object.date_of_birth.try(:year),
+              placeholder: 'YYYY',
+              class: "form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year #{'form-control-error' if @nudge_appointment.errors.include?(:date_of_birth)}",
+              pattern: '[0-9]*',
+              min: 100.years.ago.year,
+              max: Date.today.year,
+              aria: { required: true, describedby: 'date_of_birth_error' }
+            )
+          %>
+        </div>
+      </div>
+      <% if @nudge_appointment.errors.include?(:date_of_birth) %>
+        <span class="error-message" id="date_of_birth_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:date_of_birth].to_sentence.capitalize %></span>
+      <% end %>
+    </fieldset>
+  </div>
+
+  <div class="application-notice info-notice">
+    <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:eligibility_reason) %>">
+      <%= f.label :eligibility_reason, class: 'form-label' do %>
+        Under 50 eligibility
+        <% if @nudge_appointment.errors.include?(:eligibility_reason) %>
+          <span class="error-message" id="eligibility_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:eligibility_reason].to_sentence.capitalize %></span>
+        <% end %>
+        <span class="form-hint">When the customer is under 50, please select which circumstances apply</span>
+      <% end %>
+      <%= f.select :eligibility_reason,
+            options_for_select(NudgeAppointment::ELIGIBILITY_OPTIONS.invert.to_a, @nudge_appointment.eligibility_reason),
+            { include_blank: true},
+            { aria: { describedby: 'eligibility_error' }, class: "t-eligibility-reason form-control #{'form-control-error' if @nudge_appointment.errors.include?(:eligibility_reason)}" }
+      %>
+    </div>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:accessibility_requirements) %>">
+    <div class="multiple-choice">
+      <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %>
+      <%= f.label :accessibility_requirements do %>
+        <% if @nudge_appointment.errors.include?(:accessibility_requirements) %>
+          <span class="error-message"><%= @nudge_appointment.errors[:accessibility_requirements].to_sentence.capitalize %></span>
+        <% end %>
+        I require an adjustment to help me access my appointment
+        <span class="form-hint" id="accessibility-hint">Please provide further details in the additional information box. Pension Wise may contact you for details of your specific needs</span>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:notes) %>" data-character-limit>
+    <%= f.label :notes, class: 'form-label-bold' do %>
+      Additional information
+      <% if @nudge_appointment.errors.include?(:notes) %>
+        <span class="error-message"><%= @nudge_appointment.errors[:notes].to_sentence.capitalize %></span>
+      <% end %>
+      <span class="form-hint">Any accessibility adjustments required by the customer</span>
+    <% end %>
+    <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
+  </div>
+
+  <div role="note" aria-label="Information" class="application-notice info-notice">
+    <p>Now we've taken your details are you happy for us to book your Pension Wise appointment?</p>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit 'Confirm appointment', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
+  </div>
+
+</div>
+
+<div class="l-column-third">
+  <h5 class="slot-picker-header">Your requested appointment</h5>
+  <div class="slot-picker-confirmed-date">
+    <p class="slot-picker-confirmed-date__text heavy"><b><%= l(@nudge_appointment.start_at, format: :govuk_date) %></b></p>
+    <p class="slot-picker-confirmed-date__text"><%= l(@nudge_appointment.start_at, format: :govuk_time) %>, 45 to 60 minutes</p>
+  </div>
+
+  <p><%= link_to('Change date/time', new_nudge_appointment_path) %></p>
+
+  <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Customer needs help? Attending appointment on behalf of a family member or friend?</h5>
+  <p>Ask them to phone <strong>0800 100 166</strong> to speak to someone who can help book their free appointment.</p>
+  <p>Call between 8am to 8pm, Monday to Friday.</p>
+</div>

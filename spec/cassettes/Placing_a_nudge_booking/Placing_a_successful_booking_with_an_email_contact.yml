@@ -1,0 +1,193 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 95991) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"eab832715f49e96f23a066098e75d48a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5cd75406-7007-417c-a46c-10bafcdfe504
+      X-Runtime:
+      - '0.020824'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-04":["2022-05-04T08:50:00.000Z"],"2022-05-11":["2022-05-11T08:50:00.000Z"],"2022-05-18":["2022-05-18T08:50:00.000Z"],"2022-05-25":["2022-05-25T08:50:00.000Z"]}'
+  recorded_at: Tue, 26 Apr 2022 09:00:01 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2022-05-04%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 95991) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5ba69f0320183b57a18e7d215dce15d8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4c13e94e-e7ae-433d-b130-70297e198ad4
+      X-Runtime:
+      - '0.013411'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-04":["2022-05-04T08:50:00.000Z"]}'
+  recorded_at: Tue, 26 Apr 2022 09:00:02 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2022-05-04%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 95991) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5ba69f0320183b57a18e7d215dce15d8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 42b5059d-4dea-4f78-b72d-5ee3eb17740c
+      X-Runtime:
+      - '0.012863'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-04":["2022-05-04T08:50:00.000Z"]}'
+  recorded_at: Tue, 26 Apr 2022 09:00:03 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/nudge_appointments
+    body:
+      encoding: UTF-8
+      string: '{"start_at":"2022-05-04 08:50:00 UTC","first_name":"Rick","last_name":"Sanchez","email":"rick@example.com","phone":"07715
+        930 455","memorable_word":"snootboop","date_of_birth":"1970-01-01","accessibility_requirements":"0","notes":"","nudge_confirmation":"email","mobile":"","nudge_eligibility_reason":""}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 95991) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Location:
+      - http://localhost:3000/appointments/525898
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _telephone_appointment_planner_session=KR%2BUur%2Ffjta1aY3JFfeDOCLueIOD2vTR8n2JrQlvL36TYye04YZD%2BreI6TjVu7HYwrotaumVernhjg15%2F9hLmKjaLlRh7sdPZ13OF5ma4AxCohDZw4qqIrLwcBvZ9OKuHnKPaXOhRbuoNbH9Qch1rjt9t%2F5pAHhjkArysCZfTNWUT9I7A1ZW%2BWEgZeHo6lAOaRlV31UVSGp9V8jAIH4%3D--gLsRWSn4TEVUQhMX--%2F0KlC5g729c3gezLKa%2B2Sg%3D%3D;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 9a01f6a5-9fa8-48fc-9bd3-fa3742a8c3d9
+      X-Runtime:
+      - '0.088289'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 26 Apr 2022 09:00:03 GMT
+recorded_with: VCR 6.0.0

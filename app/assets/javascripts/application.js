@@ -36,7 +36,7 @@ $('[data-slot-picker]').each(function() {
   'use strict';
   var $component = $(this);
 
-  $('#hidden_telephone_appointment_step, #hidden_booking_step').val(2);
+  $('#hidden_telephone_appointment_step, #hidden_booking_step, #hidden_nudge_appointment_step').val(2);
 
   new PWPG.SlotPicker($component);
 });

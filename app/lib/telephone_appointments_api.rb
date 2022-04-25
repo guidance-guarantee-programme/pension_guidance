@@ -9,6 +9,14 @@ class TelephoneAppointmentsApi
     false
   end
 
+  def create_nudge(nudge_appointment)
+    response = connection.post('/api/v1/nudge_appointments', nudge_appointment.attributes)
+
+    nudge_appointment.id = parse_response_location(response)
+  rescue HTTPConnection::UnprocessableEntity
+    false
+  end
+
   def slots(filter_for_lloyds = nil, schedule_type = 'pension_wise', day = nil)
     path = slots_url_for(filter_for_lloyds, schedule_type, day)
 

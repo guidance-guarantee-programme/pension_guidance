@@ -103,6 +103,14 @@ Rails.application.routes.draw do
         end
       end
 
+      resources :nudge_appointments, only: %i(new create), path: 'nudge-appointments' do
+        collection do
+          get :ineligible
+          get :confirmation
+          get :times
+        end
+      end
+
       resource :feedback, only: [:create, :new] do
         get :thanks
       end

@@ -13,6 +13,8 @@
 
       if ($form.find('input[name="telephone_appointment[step]"]').length) {
         this.$prefix = 'telephone_appointment';
+      } else if ($form.find('input[name="nudge_appointment[step]"]').length) {
+        this.$prefix = 'nudge_appointment';
       } else if ($form.find('input[name^="booking_request"]').length) {
         this.$prefix = 'booking_request';
       } else {

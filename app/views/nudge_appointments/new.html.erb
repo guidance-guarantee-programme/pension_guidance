@@ -1,0 +1,44 @@
+<div class="l-column-full">
+  <% if @nudge_appointment.errors.any? || (params[:continue] && !slot_selected?) %>
+    <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        Unable to submit the form
+      </h2>
+
+      <p>Check the following:</p>
+
+      <ul class="error-summary-list">
+        <% @nudge_appointment.errors.each do |key, message| %>
+          <li><%= link_to "#{NudgeAppointment.human_attribute_name key} – #{message}", "#nudge_appointment_#{key}" %></li>
+        <% end %>
+        <% unless slot_selected? %>
+          <li><%= link_to 'Select a time', "#nudge_appointment_times" %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if @nudge_appointment.step == 1 || @nudge_appointment.step == 2 %>
+    <%= render 'day_picker' %>
+  <% end %>
+
+  <%= form_for @nudge_appointment, html: { id: "form_nudge_appointment_step_#{@nudge_appointment.step}" } do |f| %>
+    <%= f.hidden_field(:step, id: 'hidden_nudge_appointment_step') %>
+    <%= render "step_#{@nudge_appointment.step}", f: f %>
+
+    <% if @nudge_appointment.step == 1 %>
+      <div class="l-column-half l-column-half--right" data-slot-picker-single-time>
+        <%= render 'times_js' %>
+      </div>
+    <% end %>
+  <% end %>
+
+</div>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'NudgeBooking',
+    'step': 'new'
+  });
+</script>

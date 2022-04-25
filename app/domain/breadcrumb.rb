@@ -46,6 +46,11 @@ class Breadcrumb
       new(new_telephone_appointment_path(locale: locale), title)
     end
 
+    def book_a_nudge_appointment(locale = I18n.locale)
+      title = I18n.t('breadcrumbs.book_a_nudge_appointment')[:title]
+      new(new_nudge_appointment_path(locale: locale), title)
+    end
+
     def build_your_pensions_summary(locale = I18n.locale)
       title = I18n.t('breadcrumbs.build_your_pensions_summary')[:title]
       new(explore_your_options_root_path(locale: locale), title)
