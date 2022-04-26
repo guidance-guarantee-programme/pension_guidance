@@ -1,4 +1,4 @@
-class NudgeAppointmentsController < ApplicationController # rubocop:disable ClassLength
+class NudgeAppointmentsController < ApplicationController # rubocop:disable Metrics/ClassLength
   include Embeddable
 
   before_action :set_breadcrumbs
@@ -27,12 +27,12 @@ class NudgeAppointmentsController < ApplicationController # rubocop:disable Clas
     @nudge_appointment ||= NudgeAppointment.new(nudge_appointment_params)
   end
 
-  def create_step_1
+  def create_step_1 # rubocop:disable Naming/VariableNumber
     retrieve_slots
     nudge_appointment.advance! { render :new }
   end
 
-  def create_step_2
+  def create_step_2 # rubocop:disable Naming/VariableNumber
     retrieve_slots
     if request.xhr?
       render partial: 'times', locals: { times: @times }
@@ -43,7 +43,7 @@ class NudgeAppointmentsController < ApplicationController # rubocop:disable Clas
     end
   end
 
-  def create_step_3
+  def create_step_3 # rubocop:disable Naming/VariableNumber
     if nudge_appointment.invalid?
       render :new
     elsif nudge_appointment.save

@@ -9,7 +9,7 @@ RSpec.feature 'Placing a nudge booking' do
     end
   end
 
-  def when_a_customer_places_a_nudge_booking
+  def when_a_customer_places_a_nudge_booking # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
     @page = Pages::NewNudgeAppointment.new
     @page.load
 

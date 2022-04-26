@@ -1,26 +1,22 @@
 class NudgeAppointment # rubocop:disable ClassLength
   include ActiveModel::Model
 
-  PHONE_REGEX = /\A([\d+\-\s\+()]+)\z/.freeze
+  PHONE_REGEX = /\A([\d+\-\s+()]+)\z/.freeze
 
   ELIGIBILITY_OPTIONS = {
     'protected_pension_age' => 'Protected pension age',
-    'ill_health'            => 'Ill health',
+    'ill_health' => 'Ill health',
     'inherited_pension_pot' => 'Inherited pension pot'
   }.freeze
 
   attr_accessor(
     :id,
-    :step,
-    :selected_date,
-    :start_at,
     :first_name,
     :last_name,
     :email,
     :phone,
     :mobile,
     :memorable_word,
-    :date_of_birth,
     :date_of_birth_year,
     :date_of_birth_month,
     :date_of_birth_day,
@@ -29,6 +25,8 @@ class NudgeAppointment # rubocop:disable ClassLength
     :confirmation,
     :eligibility_reason
   )
+
+  attr_writer :date_of_birth, :selected_date, :start_at, :step
 
   validates :start_at, presence: true
   validates :first_name, presence: true, format: { without: /\d+/ }
@@ -126,17 +124,13 @@ class NudgeAppointment # rubocop:disable ClassLength
   end
 
   def validate_phone
-    unless phone.present? && PHONE_REGEX === phone # rubocop:disable GuardClause
-      errors.add(:phone, :invalid)
-    end
+    errors.add(:phone, :invalid) unless phone.present? && PHONE_REGEX === phone
   end
 
   def validate_mobile
     return unless confirm_sms?
 
-    unless mobile.present? && PHONE_REGEX === mobile # rubocop:disable GuardClause
-      errors.add(:mobile, :invalid)
-    end
+    errors.add(:mobile, :invalid) unless mobile.present? && PHONE_REGEX === mobile
   end
 
   def age(at)
