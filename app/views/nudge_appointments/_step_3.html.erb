@@ -31,7 +31,7 @@
   <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:phone) %>">
     <%= f.label :phone, class: 'form-label-bold' do %>
       Phone number
-      <span class="form-hint">The number you’d like Pension Wise to call you on. For non-UK numbers include the country dialling code</span>
+      <span class="form-hint">The number you’d like Pension Wise to call you on. For non-UK numbers include the country dialling code. If a mobile number is provided, Pension Wise will send SMS appointment reminders. You can cancel your appointment via SMS response.</span>
     <% end %>
 
     <% if @nudge_appointment.errors.include?(:phone) %>
@@ -248,7 +248,7 @@
 
   <p><%= link_to('Change date/time', new_nudge_appointment_path) %></p>
 
-  <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Customer needs help? Attending appointment on behalf of a family member or friend?</h5>
+  <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Customer needs help? Requires printed appointment confirmation letter?</h5>
   <p>Ask them to phone <strong>0800 100 166</strong> to speak to someone who can help book their free appointment.</p>
   <p>Call between 8am to 8pm, Monday to Friday.</p>
 </div>
