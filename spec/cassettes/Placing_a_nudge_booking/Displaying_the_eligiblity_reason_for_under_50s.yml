@@ -1,0 +1,141 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 20974) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1a0beb1c612aa8a0281a170f8c56334a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 76867ea8-64d2-4e16-9261-cd069bdd6fae
+      X-Runtime:
+      - '0.017402'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-25":["2022-05-25T08:50:00.000Z"]}'
+  recorded_at: Tue, 26 Apr 2022 09:00:01 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2022-05-25%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 20974) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1a0beb1c612aa8a0281a170f8c56334a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 84856364-8519-4ed9-b381-b17f05d66c30
+      X-Runtime:
+      - '0.005362'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-25":["2022-05-25T08:50:00.000Z"]}'
+  recorded_at: Tue, 26 Apr 2022 09:00:02 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2022-05-25%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 20974) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1a0beb1c612aa8a0281a170f8c56334a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 837f4989-f9d1-4d5d-905c-8a933a7758eb
+      X-Runtime:
+      - '0.006199'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-25":["2022-05-25T08:50:00.000Z"]}'
+  recorded_at: Tue, 26 Apr 2022 09:00:02 GMT
+recorded_with: VCR 6.0.0

@@ -112,7 +112,7 @@
     <%= f.text_field :memorable_word, aria: { required: true, describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @nudge_appointment.errors.include?(:memorable_word)}" %>
   </div>
 
-  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:date_of_birth) %>">
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:date_of_birth) %>" data-customer-age data-appointment-date="<%= @nudge_appointment.start_at.to_date %>" data-output-id="customer-age">
     <fieldset>
       <legend>
         <span class="form-label-bold">
@@ -188,14 +188,14 @@
     </fieldset>
   </div>
 
-  <div class="application-notice info-notice">
+  <div class="application-notice info-notice js-hidden" id="customer-age">
     <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:eligibility_reason) %>">
       <%= f.label :eligibility_reason, class: 'form-label' do %>
         Under 50 eligibility
         <% if @nudge_appointment.errors.include?(:eligibility_reason) %>
           <span class="error-message" id="eligibility_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:eligibility_reason].to_sentence.capitalize %></span>
         <% end %>
-        <span class="form-hint">When the customer is under 50, please select which circumstances apply</span>
+        <span class="form-hint">As the customer is under 50, please select which circumstances apply</span>
       <% end %>
       <%= f.select :eligibility_reason,
             options_for_select(NudgeAppointment::ELIGIBILITY_OPTIONS.invert.to_a, @nudge_appointment.eligibility_reason),
