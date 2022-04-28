@@ -1,4 +1,8 @@
 <div class="l-column-full">
+  <div role="note" aria-label="Information" class="application-notice info-notice">
+    <p>You are booking as a pension provider agent for Stronger Nudge.</p>
+  </div>
+
   <% if @nudge_appointment.errors.any? || (params[:continue] && !slot_selected?) %>
     <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
       <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
@@ -19,10 +23,6 @@
   <% end %>
 
   <% if @nudge_appointment.step == 1 || @nudge_appointment.step == 2 %>
-    <div role="note" aria-label="Information" class="application-notice info-notice">
-      <p>You are booking as a pension provider agent for Stronger Nudge.</p>
-    </div>
-
     <%= render 'day_picker' %>
   <% end %>
 
