@@ -38,7 +38,7 @@
       <span class="error-message" id="phone_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:phone].to_sentence.capitalize %></span>
     <% end %>
 
-    <%= f.text_field :phone, aria: { required: true, describedby: 'phone_error' }, class: "t-phone form-control #{'form-control-error' if @nudge_appointment.errors.include?(:phone)}" %>
+    <%= f.text_field :phone, aria: { required: true, describedby: 'phone_error' }, class: "t-phone form-control #{'form-control-error' if @nudge_appointment.errors.include?(:phone)}", title: 'Agent: For non-UK numbers include the country dialling code' %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:confirmation) %>" id="confirmation" tabindex="-1" data-radio-toggle>
@@ -137,7 +137,8 @@
               pattern: '[0-9]*',
               min: 1,
               max: 31,
-              aria: { required: true, describedby: 'date_of_birth_error' }
+              aria: { required: true, describedby: 'date_of_birth_error' },
+              title: 'Agent: There are some circumstances where someone under 50 is also eligible'
             )
           %>
         </div>
@@ -157,7 +158,8 @@
               pattern: '[0-9]*',
               min: 1,
               max: 12,
-              aria: { required: true, describedby: 'date_of_birth_error' }
+              aria: { required: true, describedby: 'date_of_birth_error' },
+              title: 'Agent: There are some circumstances where someone under 50 is also eligible'
             )
           %>
         </div>
@@ -177,7 +179,8 @@
               pattern: '[0-9]*',
               min: 100.years.ago.year,
               max: Date.today.year,
-              aria: { required: true, describedby: 'date_of_birth_error' }
+              aria: { required: true, describedby: 'date_of_birth_error' },
+              title: 'Agent: There are some circumstances where someone under 50 is also eligible'
             )
           %>
         </div>
@@ -213,7 +216,7 @@
           <span class="error-message"><%= @nudge_appointment.errors[:accessibility_requirements].to_sentence.capitalize %></span>
         <% end %>
         I require an adjustment to help me access my appointment
-        <span class="form-hint" id="accessibility-hint">Please provide further details in the additional information box. Pension Wise may contact you for details of your specific needs</span>
+        <span class="form-hint" id="accessibility-hint">Please provide further details in the additional information box. Pension Wise may contact the customer for details of their specific needs</span>
       <% end %>
     </div>
   </div>
