@@ -1,0 +1,193 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 80899) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c5410125fe92b030332d944ec46b2cc9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8fdde281-2a17-4064-b99f-f7264f40ea41
+      X-Runtime:
+      - '0.025382'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-09":["2022-05-09T09:00:00.000Z","2022-05-09T14:00:00.000Z"],"2022-05-11":["2022-05-11T10:00:00.000Z","2022-05-11T12:50:00.000Z"],"2022-05-13":["2022-05-13T09:00:00.000Z","2022-05-13T15:10:00.000Z"],"2022-05-16":["2022-05-16T09:00:00.000Z","2022-05-16T14:00:00.000Z"],"2022-05-18":["2022-05-18T10:00:00.000Z","2022-05-18T12:50:00.000Z"],"2022-05-20":["2022-05-20T09:00:00.000Z","2022-05-20T15:10:00.000Z"],"2022-05-23":["2022-05-23T09:00:00.000Z","2022-05-23T14:00:00.000Z"],"2022-05-25":["2022-05-25T10:00:00.000Z","2022-05-25T12:50:00.000Z"],"2022-05-27":["2022-05-27T09:00:00.000Z","2022-05-27T15:10:00.000Z"],"2022-05-30":["2022-05-30T09:00:00.000Z","2022-05-30T14:00:00.000Z"],"2022-06-01":["2022-06-01T10:00:00.000Z","2022-06-01T12:50:00.000Z"],"2022-06-03":["2022-06-03T09:00:00.000Z","2022-06-03T15:10:00.000Z"],"2022-06-06":["2022-06-06T09:00:00.000Z","2022-06-06T14:00:00.000Z"],"2022-06-08":["2022-06-08T10:00:00.000Z","2022-06-08T12:50:00.000Z"],"2022-06-10":["2022-06-10T09:00:00.000Z","2022-06-10T15:10:00.000Z"],"2022-06-13":["2022-06-13T09:00:00.000Z","2022-06-13T14:00:00.000Z"],"2022-06-15":["2022-06-15T10:00:00.000Z","2022-06-15T12:50:00.000Z"],"2022-06-17":["2022-06-17T09:00:00.000Z","2022-06-17T15:10:00.000Z"],"2022-06-20":["2022-06-20T09:00:00.000Z","2022-06-20T14:00:00.000Z"],"2022-06-22":["2022-06-22T10:00:00.000Z","2022-06-22T12:50:00.000Z"]}'
+  recorded_at: Thu, 05 May 2022 09:00:01 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2022-05-09%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 80899) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7eca27cc74d5b3257fc75ea4d8eb3b19"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9774acde-483a-4dd9-8557-e34ac2b41b46
+      X-Runtime:
+      - '0.014933'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-09":["2022-05-09T09:00:00.000Z","2022-05-09T14:00:00.000Z"]}'
+  recorded_at: Thu, 05 May 2022 09:00:02 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2022-05-09%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 80899) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7eca27cc74d5b3257fc75ea4d8eb3b19"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f70b57cf-3d52-4ffc-964c-c63fa80fbdd3
+      X-Runtime:
+      - '0.013799'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"2022-05-09":["2022-05-09T09:00:00.000Z","2022-05-09T14:00:00.000Z"]}'
+  recorded_at: Thu, 05 May 2022 09:00:02 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/appointments
+    body:
+      encoding: UTF-8
+      string: '{"start_at":"2022-05-09 09:00:00 UTC","first_name":"Rick","last_name":"Sanchez","email":"rick@example.com","phone":"07715
+        930 455","memorable_word":"snootboop","date_of_birth":"1970-01-01","dc_pot_confirmed":true,"where_you_heard":"2","gdpr_consent":"yes","accessibility_requirements":"0","notes":"","nudged":true,"smarter_signposted":false,"lloyds_signposted":false,"schedule_type":"pension_wise","referrer":null}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 80899) ruby/2.7.3 (183; arm64-darwin21)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Location:
+      - http://localhost:3000/appointments/525903
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _telephone_appointment_planner_session=dXJAb0M4Ymrk1ZdMMS%2BfTUJuob8MvvmB42Plw20hTlOxwekvpVaqr3QRyoWL39A1lTGOivw254u86%2FJatuhKSP%2FCZiuqUCTgwOeiAz4HdmeyE%2F%2FkNSBH5sE1mDqO3PPMcfqCs9F2wDf%2BJ3qbvzhj8Hyby7rzRUnBhaD0APbUrZOBwsQlex%2FpLz8FjmHnKVzPpvDg838OE%2B4pHOr4w18%3D--OOp5W15VGKYQnESO--urJ%2F1dB1dq7UMxz%2BTK9Jcw%3D%3D;
+        path=/; HttpOnly
+      X-Request-Id:
+      - fb1e984e-30d3-4a44-be3e-d260d173a7ce
+      X-Runtime:
+      - '0.027274'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Thu, 05 May 2022 09:00:03 GMT
+recorded_with: VCR 6.0.0

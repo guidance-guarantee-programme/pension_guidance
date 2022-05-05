@@ -15,7 +15,8 @@ RSpec.describe TelephoneAppointment, type: :model do
       gdpr_consent: 'yes',
       accessibility_requirements: '1',
       notes: 'meh',
-      smarter_signposted: 'true'
+      smarter_signposted: 'true',
+      nudged: 'false'
     )
   end
 

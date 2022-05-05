@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     root 'home#show'
 
     resource :smarter_signposting, only: %i(new destroy), path: 'smarter'
+    resource :nudge, only: %i(new)
 
     constraints format: 'html' do
       resources :categories, only: 'show', path: 'browse'
