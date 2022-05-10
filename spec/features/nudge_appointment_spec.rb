@@ -1,7 +1,19 @@
 require_relative '../../features/pages/new_nudge_appointment'
+require_relative '../../features/pages/new_telephone_appointment'
 require_relative '../../features/pages/nudge_appointment_confirmation'
+require_relative '../../features/pages/nudge_appointment_provider_embed'
+require_relative '../../features/pages/nudge_appointment_provider_landing_page'
 
 RSpec.feature 'Placing a nudge booking' do
+  scenario 'Placing a provider embedded nudge booking', js: true, vcr: true do
+    Timecop.travel '2022-05-10 09:00' do
+      given_a_customer_lands_on_the_provider_embed
+      and_clicks_the_book_button
+      and_chooses_a_date_and_time
+      then_the_where_they_heard_field_is_correctly_assigned
+    end
+  end
+
   scenario 'Placing a successful booking with an email contact', js: true, vcr: true do
     Timecop.travel '2022-04-26 09:00' do
       when_a_customer_places_a_nudge_booking
@@ -14,6 +26,30 @@ RSpec.feature 'Placing a nudge booking' do
       when_the_customer_specifies_an_age_under_fifty
       then_the_eligibility_reasons_are_displayed
     end
+  end
+
+  def given_a_customer_lands_on_the_provider_embed
+    @page = Pages::NudgeAppointmentProviderLandingPage.new
+    @page.load
+
+    @page = Pages::NudgeAppointmentProviderEmbed.new
+    expect(@page).to be_displayed
+  end
+
+  def and_clicks_the_book_button
+    @page.start.click
+  end
+
+  def and_chooses_a_date_and_time
+    @page = Pages::NewTelephoneAppointment.new
+
+    @page.choose_date('2022-05-13')
+    @page.choose_time('9:00am')
+    @page.continue.click
+  end
+
+  def then_the_where_they_heard_field_is_correctly_assigned
+    expect(@page).to have_hidden_where_you_heard
   end
 
   def when_the_customer_specifies_an_age_under_fifty

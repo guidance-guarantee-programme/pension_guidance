@@ -98,6 +98,7 @@ Rails.application.routes.draw do
 
       resources :telephone_appointments, only: %i(new create), path: 'telephone-appointments' do
         collection do
+          get :nudge
           get :ineligible
           get :confirmation
           get :times

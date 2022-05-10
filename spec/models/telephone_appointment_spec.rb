@@ -16,7 +16,8 @@ RSpec.describe TelephoneAppointment, type: :model do
       accessibility_requirements: '1',
       notes: 'meh',
       smarter_signposted: 'true',
-      nudged: 'false'
+      nudged: 'false',
+      nudge_embedded: 'false'
     )
   end
 
@@ -24,8 +25,22 @@ RSpec.describe TelephoneAppointment, type: :model do
     expect(subject).not_to be_due_diligence
   end
 
+  it 'defaults `nudge_embedded?` to false' do
+    expect(subject).to_not be_nudge_embedded
+  end
+
   it 'defaults `step` to 1' do
     expect(subject.step).to eq(1)
+  end
+
+  describe '#where_you_heard' do
+    context 'when `nudge_embedded?`' do
+      it 'defaults to the nudge embed where you heard value' do
+        subject.nudge_embedded = true
+
+        expect(subject.where_you_heard).to eq('25')
+      end
+    end
   end
 
   describe '#save' do

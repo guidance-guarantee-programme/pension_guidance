@@ -209,6 +209,8 @@
       <% end %>
       <%= f.text_field :referrer, aria: { required: true, describedby: 'referrer_error' }, class: "t-referrer form-control #{'form-control-error' if @telephone_appointment.errors.include?(:referrer)}" %>
     </div>
+  <% elsif @telephone_appointment.nudge_embedded? %>
+    <%= f.hidden_field :where_you_heard, value: TelephoneAppointment::NUDGE_EMBED_WHERE_YOU_HEARD_ID, class: 't-hidden-where-you-heard' %>
   <% else %>
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:where_you_heard) %>">
     <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label-bold' %>

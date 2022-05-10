@@ -1,6 +1,8 @@
 class TelephoneAppointment # rubocop:disable ClassLength
   include ActiveModel::Model
 
+  NUDGE_EMBED_WHERE_YOU_HEARD_ID = '25'.freeze
+
   attr_accessor(
     :id,
     :step,
@@ -22,6 +24,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
     :accessibility_requirements,
     :notes,
     :nudged,
+    :nudge_embedded,
     :smarter_signposted,
     :lloyds_signposted,
     :schedule_type,
@@ -36,7 +39,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
   validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
-  validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
+  validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }, unless: :nudge_embedded?
   validates :notes, length: { maximum: 160 }, allow_blank: true
   validates :notes, presence: true, if: :accessibility_requirements?
   validates :accessibility_requirements, inclusion: { in: %w(0 1) }
@@ -44,6 +47,10 @@ class TelephoneAppointment # rubocop:disable ClassLength
 
   def due_diligence?
     schedule_type == 'due_diligence'
+  end
+
+  def nudge_embedded?
+    nudge_embedded == true
   end
 
   def accessibility_requirements?
@@ -124,6 +131,12 @@ class TelephoneAppointment # rubocop:disable ClassLength
 
   def step
     Integer(@step || 1)
+  end
+
+  def where_you_heard
+    return NUDGE_EMBED_WHERE_YOU_HEARD_ID if nudge_embedded?
+
+    @where_you_heard
   end
 
   def save
