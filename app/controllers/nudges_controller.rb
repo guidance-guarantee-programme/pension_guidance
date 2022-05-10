@@ -23,7 +23,13 @@ class NudgesController < ApplicationController
   end
 
   def nudged!
-    cookies.permanent[NUDGE_COOKIE] = 'true'
-    cookies.permanent[EMBED_COOKIE] = 'true' if embedded?
+    cookies[NUDGE_COOKIE] = cookie_value
+    cookies[EMBED_COOKIE] = cookie_value if embedded?
+  end
+
+  def cookie_value
+    return 'true' unless Rails.env.production?
+
+    { value: 'true', same_site: 'None', httponly: true, secure: true }
   end
 end
