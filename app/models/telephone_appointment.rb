@@ -24,7 +24,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
     :accessibility_requirements,
     :notes,
     :nudged,
-    :nudge_embedded,
+    :embedded,
     :smarter_signposted,
     :lloyds_signposted,
     :schedule_type,
@@ -39,7 +39,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
   validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
-  validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }, unless: :nudge_embedded?
+  validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }, unless: :embedded?
   validates :notes, length: { maximum: 160 }, allow_blank: true
   validates :notes, presence: true, if: :accessibility_requirements?
   validates :accessibility_requirements, inclusion: { in: %w(0 1) }
@@ -49,8 +49,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
     schedule_type == 'due_diligence'
   end
 
-  def nudge_embedded?
-    nudge_embedded == true
+  def embedded?
+    embedded == 'true'
   end
 
   def accessibility_requirements?
@@ -134,7 +134,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
   end
 
   def where_you_heard
-    return NUDGE_EMBED_WHERE_YOU_HEARD_ID if nudge_embedded?
+    return NUDGE_EMBED_WHERE_YOU_HEARD_ID if embedded?
 
     @where_you_heard
   end

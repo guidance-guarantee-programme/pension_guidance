@@ -21,8 +21,6 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
     @booking_reference = params[:booking_reference]
     @booking_date      = Time.zone.parse(params[:booking_date])
     @due_diligence     = schedule_type == 'due_diligence'
-
-    remove_nudge_cookies!
   end
 
   def ineligible
@@ -135,19 +133,17 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :notes,
         :gdpr_consent,
         :schedule_type,
-        :referrer
+        :referrer,
+        :nudged,
+        :embedded
       ).merge(
-        nudged: nudged?,
-        nudge_embedded: nudge_embedded?,
         smarter_signposted: smarter_signposted?,
         lloyds_signposted: lloyds_signposted?,
         schedule_type: schedule_type
+      ).reverse_merge(
+        nudged: params[:nudged],
+        embedded: params[:embedded]
       )
-  end
-
-  def remove_nudge_cookies!
-    cookies.delete('nudged')
-    cookies.delete('embedded')
   end
 
   def set_breadcrumbs
@@ -165,14 +161,6 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
 
   def check_lloyds_cookie!
     cookies.permanent[:lloyds_signposted] = 'true' if params[:lloyds] || params[:lbgptl]
-  end
-
-  def nudged?
-    cookies.permanent['nudged'] == 'true'
-  end
-
-  def nudge_embedded?
-    cookies.permanent['embedded'] == 'true'
   end
 
   def smarter_signposted?
