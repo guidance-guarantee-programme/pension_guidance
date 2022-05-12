@@ -275,9 +275,9 @@
   <p><%= link_to('Change date/time', new_telephone_appointment_path) %></p>
 
   <% unless @telephone_appointment.due_diligence? %>
-  <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Need help? Attending appointment on behalf of a family member or friend?</h5>
+    <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Need help?<% unless @telephone_appointment.embedded? %>Attending appointment on behalf of a family member or friend?<% end %></h5>
   <% end %>
 
-  <p>Phone <b><% if @telephone_appointment.due_diligence? %>0800 015 4906<% else %>0800 138 3944<% end %></b> to speak to someone who can help book your free appointment.</p>
-  <p>Call between <% if @telephone_appointment.due_diligence? %>9am to 5pm<% else%>8am to 8pm<% end %>, Monday to Friday</p>
+  <p>Phone <b><%= contact_number(@telephone_appointment) %></b> to speak to someone who can help book your free appointment.</p>
+  <p>Call between <%= contact_hours(@telephone_appointment) %>, Monday to Friday</p>
 </div>
