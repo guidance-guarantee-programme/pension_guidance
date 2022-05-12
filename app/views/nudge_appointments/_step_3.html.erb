@@ -86,6 +86,10 @@
       <div class="email-outer">
         <%= f.email_field :email, aria: { required: true, describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @nudge_appointment.errors.include?(:email)}" %>
       </div>
+      <details>
+        <summary>Agent</summary>
+        Confirm email address using phonetics where possible
+      </details>
     </div>
   </div>
 
