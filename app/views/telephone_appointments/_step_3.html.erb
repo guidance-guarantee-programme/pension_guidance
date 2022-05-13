@@ -3,6 +3,8 @@
 <div class="l-column-two-thirds">
   <%= f.hidden_field :start_at, id: 'hidden_telephone_appointment_start_at_step_3' %>
   <%= f.hidden_field :schedule_type, id: 'hidden_telephone_appointment_schedule_type_step_3' %>
+  <%= f.hidden_field :nudged, id: 'hidden_telephone_appointment_nudged_step_3' %>
+  <%= f.hidden_field :embedded, id: 'hidden_telephone_appointment_embedded_step_3' %>
 
   <h2 class="slot-picker-header">Your details</h2>
 
@@ -209,6 +211,8 @@
       <% end %>
       <%= f.text_field :referrer, aria: { required: true, describedby: 'referrer_error' }, class: "t-referrer form-control #{'form-control-error' if @telephone_appointment.errors.include?(:referrer)}" %>
     </div>
+  <% elsif @telephone_appointment.embedded? %>
+    <%= f.hidden_field :where_you_heard, value: TelephoneAppointment::NUDGE_EMBED_WHERE_YOU_HEARD_ID, class: 't-hidden-where-you-heard' %>
   <% else %>
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:where_you_heard) %>">
     <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label-bold' %>
@@ -271,9 +275,9 @@
   <p><%= link_to('Change date/time', new_telephone_appointment_path) %></p>
 
   <% unless @telephone_appointment.due_diligence? %>
-  <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Need help? Attending appointment on behalf of a family member or friend?</h5>
+    <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Need help?<% unless @telephone_appointment.embedded? %>Attending appointment on behalf of a family member or friend?<% end %></h5>
   <% end %>
 
-  <p>Phone <b><% if @telephone_appointment.due_diligence? %>0800 015 4906<% else %>0800 138 3944<% end %></b> to speak to someone who can help book your free appointment.</p>
-  <p>Call between <% if @telephone_appointment.due_diligence? %>9am to 5pm<% else%>8am to 8pm<% end %>, Monday to Friday</p>
+  <p>Phone <b><%= contact_number(@telephone_appointment) %></b> to speak to someone who can help book your free appointment.</p>
+  <p>Call between <%= contact_hours(@telephone_appointment) %>, Monday to Friday</p>
 </div>

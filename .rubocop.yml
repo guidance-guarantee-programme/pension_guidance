@@ -3,6 +3,7 @@ inherit_from: .rubocop_todo.yml
 require: rubocop-rails
 
 AllCops:
+  NewCops: disable
   Exclude:
     - 'bin/*'
     - 'db/**/*'
@@ -16,13 +17,13 @@ Lint/SuppressedException:
   Exclude:
     - Rakefile
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 
 Rails:
   Enabled: true
 
-Style/FileName:
+Naming/FileName:
   Exclude:
     - bin/scss-lint
 
@@ -32,7 +33,7 @@ Style/RescueModifier:
 Style/TrivialAccessors:
   Enabled: false
 
-AmbiguousOperator:
+Lint/AmbiguousOperator:
   Enabled: false
 
 Style/FrozenStringLiteralComment:

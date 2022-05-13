@@ -7,6 +7,7 @@
 //= require auto-scroller.js
 //= require feedback.js
 //= require disable-button.js
+//= require moment
 
 //= require components/BaseComponent
 //= require components/Navigation
@@ -15,6 +16,7 @@
 //= require components/SlotPickerSingleTime
 //= require components/CharacterLimit
 //= require components/ErrorSummary
+//= require components/CustomerAge
 
 PWPG.clickTracker.init();
 PWPG.calculators.init();
@@ -36,7 +38,7 @@ $('[data-slot-picker]').each(function() {
   'use strict';
   var $component = $(this);
 
-  $('#hidden_telephone_appointment_step, #hidden_booking_step').val(2);
+  $('#hidden_telephone_appointment_step, #hidden_booking_step, #hidden_nudge_appointment_step').val(2);
 
   new PWPG.SlotPicker($component);
 });
@@ -70,4 +72,11 @@ $('[data-radio-toggle], [data-checkbox-toggle]').each(function() {
 
   var $component = $(this);
   new GOVUK.ShowHideContent().init($component); // jshint ignore:line
+});
+
+$('[data-customer-age]').each(function() {
+  'use strict';
+
+  var $component = $(this);
+  new PWPG.CustomerAge($component);
 });

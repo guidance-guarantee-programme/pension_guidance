@@ -1,6 +1,6 @@
 <% content_for(:page_title, t('service.title', page_title: 'Book a phone appointment')) %>
 
-<%= f.hidden_field :start_at, id: 'hidden_telephone_appointment_start_at_step_1' %>
+<%= f.hidden_field :start_at, id: 'hidden_nudge_appointment_start_at_step_1' %>
 <%= render 'hidden_fields', f: f, id_prefix: 'step_1' %>
 
 <% if @slot_assignment_failed %>

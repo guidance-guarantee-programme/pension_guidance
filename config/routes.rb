@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     root 'home#show'
 
     resource :smarter_signposting, only: %i(new destroy), path: 'smarter'
+    resource :nudge, only: %i(new)
 
     constraints format: 'html' do
       resources :categories, only: 'show', path: 'browse'
@@ -96,6 +97,15 @@ Rails.application.routes.draw do
       end
 
       resources :telephone_appointments, only: %i(new create), path: 'telephone-appointments' do
+        collection do
+          get :nudge
+          get :ineligible
+          get :confirmation
+          get :times
+        end
+      end
+
+      resources :nudge_appointments, only: %i(new create), path: 'nudge-appointments' do
         collection do
           get :ineligible
           get :confirmation

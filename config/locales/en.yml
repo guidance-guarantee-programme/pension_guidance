@@ -58,6 +58,8 @@ en:
   breadcrumbs:
     home:
       title: Home
+    book_a_nudge_appointment:
+      title: Book a phone appointment
     book_a_telephone_appointment:
       title: Book a phone appointment
     book_an_appointment:
@@ -259,8 +261,39 @@ en:
               inclusion: select an option
             notes:
               blank: describe the accessibility adjustments you require
+        nudge_appointment:
+          attributes:
+            first_name:
+              blank: enter a name
+              invalid: must not contain numerical digits
+            last_name:
+              blank: enter a name
+              invalid: must not contain numerical digits
+            email:
+              invalid_email: enter a valid email address
+            phone:
+              blank: enter a phone number
+              invalid: enter a valid phone number
+            mobile:
+              blank: enter a mobile number
+              invalid: enter a valid mobile number
+            memorable_word:
+              blank: enter a word
+            date_of_birth:
+              blank: enter a valid date of birth
+            eligibility_reason:
+              inclusion: choose which circumstances apply
+            notes:
+              blank: describe the accessibility adjustments you require
+            confirmation:
+              inclusion: choose a preference
 
     attributes:
+      nudge_appointment:
+        notes: Additional information
+        confirmation: Appointment confirmation preference
+        mobile: SMS
+        eligibility_reason: Under 50 eligibility
       complaint:
         email_address: Email
         nature_of_complaint: Subject or nature of complaint

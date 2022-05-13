@@ -28,6 +28,9 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
     @ineligible_pension = params[:ineligible_pension]
   end
 
+  def nudge
+  end
+
   private
 
   def telephone_appointment
@@ -130,11 +133,16 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :notes,
         :gdpr_consent,
         :schedule_type,
-        :referrer
+        :referrer,
+        :nudged,
+        :embedded
       ).merge(
         smarter_signposted: smarter_signposted?,
         lloyds_signposted: lloyds_signposted?,
         schedule_type: schedule_type
+      ).reverse_merge(
+        nudged: params[:nudged],
+        embedded: params[:embedded]
       )
   end
 
