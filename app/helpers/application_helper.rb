@@ -4,8 +4,6 @@ module ApplicationHelper
   def contact_number(appointment)
     if appointment.due_diligence?
       '0800 015 4906'
-    elsif appointment.embedded?
-      '0800 100 166'
     else
       '0800 138 3944'
     end
