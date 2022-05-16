@@ -22,4 +22,16 @@ Disallow: /cy/book-face-to-face
 Disallow: /cy/book-phone
 Disallow: /styleguide/*
 
+Disallow: /*/pension-type-tool/question-1
+Disallow: /*/explore-your-options/step-one
+Disallow: /*/summary-document/new
+Disallow: /*/leave-pot-untouched
+Disallow: /*/guaranteed-income
+Disallow: /*/adjustable-income
+Disallow: /*/take-cash-in-chunks
+Disallow: /*/take-whole-pot
+Disallow: /*/telephone-appointments/new
+Disallow: /*/bsl-booking-requests/new
+Disallow: /*/contact
+
 Sitemap: https://www.pensionwise.gov.uk/sitemap.xml
