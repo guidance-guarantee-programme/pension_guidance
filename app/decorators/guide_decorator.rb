@@ -29,9 +29,7 @@ class GuideDecorator < SimpleDelegator
     end
   end
 
-  def canonical
-    metadata.canonical
-  end
+  delegate :canonical, to: :metadata
 
   def noindex?
     metadata.noindex == true
