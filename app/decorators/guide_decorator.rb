@@ -29,6 +29,8 @@ class GuideDecorator < SimpleDelegator
     end
   end
 
+  delegate :canonical, to: :metadata
+
   def self.for(guide)
     case guide.content_type
     when :govspeak then GovspeakGuideDecorator.new(guide)

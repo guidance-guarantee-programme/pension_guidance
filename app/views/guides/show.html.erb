@@ -1,6 +1,10 @@
 <% content_for(:page_title, t('service.title', page_title: @guide.title)) %>
 <% content_for(:meta_description, @guide.description) %>
 
+<% if @guide.canonical.present? %>
+  <% content_for(:canonical, @guide.canonical) %>
+<% end %>
+
 <div class="l-column-full">
 <%= render 'option' if @guide.option? %>
 
