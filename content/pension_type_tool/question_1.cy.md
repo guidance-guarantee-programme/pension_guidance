@@ -7,6 +7,7 @@ answers:
 tags:
   - appointments
   - embeddable
+canonical:  https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/find-out-your-pension-type
 ---
 
 # Dod o hyd i’ch math o bensiwn
