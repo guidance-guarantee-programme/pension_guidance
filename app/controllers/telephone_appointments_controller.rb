@@ -172,4 +172,15 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
     cookies.permanent[:lloyds_signposted] == 'true'
   end
   helper_method :lloyds_signposted?
+
+  def canonical_url
+    if lloyds_signposted?
+      'https://www.moneyhelper.org.uk/lbgptl'
+    elsif @telephone_appointment.due_diligence?
+      'https://www.moneyhelper.org.uk/pension-safeguarding'
+    else
+      'https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/how-to-book-a-phone-appointment'
+    end
+  end
+  helper_method :canonical_url
 end
