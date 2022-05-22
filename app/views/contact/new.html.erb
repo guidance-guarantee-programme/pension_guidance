@@ -48,7 +48,7 @@
 
           <% Complaint::NATURE_OF_COMPLAINT.each do |option| %>
             <div class="multiple-choice" data-target="<%= option %>">
-              <%= f.radio_button :nature_of_complaint, option, { class: "t-nature-of-complaint-#{option.to_s.dasherize} form-control" } %>
+              <%= f.radio_button :nature_of_complaint, option, { class: "t-nature-of-complaint-#{option.to_s.dasherize}" } %>
               <%= f.label :nature_of_complaint, value: option, class: 'block-label selection-button-radio' do %>
                 <%= t(".complaints.form.nature_of_complaint.options.#{option}", default: option) %>
               <% end %>
