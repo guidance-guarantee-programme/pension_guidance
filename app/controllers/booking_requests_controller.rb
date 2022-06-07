@@ -1,8 +1,7 @@
 class BookingRequestsController < ApplicationController
-  layout 'full_width'
+  include Embeddable
 
   before_action :set_booking_request
-  before_action :set_breadcrumbs
 
   def step_one
     raise(ActionController::RoutingError, 'Location Not Found') unless @booking_request.location
@@ -112,11 +111,5 @@ class BookingRequestsController < ApplicationController
 
   def set_booking_request
     @booking_request ||= BookingRequestForm.new(location_id, booking_request_params)
-  end
-
-  def set_breadcrumbs
-    breadcrumb Breadcrumb.book_an_appointment
-    breadcrumb Breadcrumb.how_to_book_face_to_face
-    breadcrumb Breadcrumb.book_online(location_id, @booking_request.location_name)
   end
 end

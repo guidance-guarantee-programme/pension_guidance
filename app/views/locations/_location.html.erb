@@ -10,10 +10,10 @@
 <% if location.online_booking_enabled? %>
   <% if location.slots_available? %>
     <% if agent? %>
-      <p><%= link_to 'Book on behalf of customer', agent_booking_path(location.id), class: 'button t-agent-book-online', target: '_blank' %></p>
+      <p><%= link_to 'Book on behalf of customer', agent_booking_path(location.id), class: 'button button--primary t-agent-book-online', target: '_blank' %></p>
     <% else %>
       <p>
-        <%= link_to 'Book online', booking_request_step_one_location_path(location.id), class: 'button t-book-online' %>
+        <%= link_to 'Book online', booking_request_step_one_location_path(location.id), class: 'button button--primary  t-book-online' %>
       </p>
     <% end %>
     <p>
@@ -26,7 +26,7 @@
       </i>
       <strong class="small">No appointment availability</strong>
     </div>
-    <p>You can also <%= link_to 'book a phone appointment', guide_path('book-phone') %>.</p>
+    <p>You can also <%= link_to 'book a phone appointment', money_helper_url('pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/how-to-book-a-phone-appointment'), target: '_parent' %>.</p>
   <% end %>
 <% else %>
   <p>

@@ -1,52 +1,54 @@
 <% content_for(:page_title, t('service.title', page_title: 'Appointment locations near you')) %>
 
-<h1>Appointment locations near you</h1>
+<div class="l-column-full">
+  <h1>Appointment locations near you</h1>
 
-<p>There are <%= @locations.length %> locations near to <%= @postcode.squish.upcase %>.</p>
+  <p>There are <%= @locations.length %> locations near to <%= @postcode.squish.upcase %>.</p>
 
-<ol class="location-list">
-  <% @locations.each do |location| %>
-    <li class="location-list__item t-location">
-      <div class="l-grid-row">
-        <div class="l-column-two-thirds">
-          <h2 class="location-list__name t-name"><%= location.name %></h2>
+  <ol class="location-list">
+    <% @locations.each do |location| %>
+      <li class="location-list__item t-location">
+        <div class="l-grid-row">
+          <div class="l-column-two-thirds">
+            <h2 class="location-list__name t-name"><%= location.name %></h2>
 
-          <div class="t-address">
-            <%= simple_format(location.address) %>
+            <div class="t-address">
+              <%= simple_format(location.address) %>
+            </div>
+
+            <p class="location-list__distance t-distance">
+              <span class="location-list__distance-label">Distance:</span>
+              <%= location.distance %> miles
+            </p>
+
+            <%= render partial: 'location', locals: { location: location } %>
           </div>
 
-          <p class="location-list__distance t-distance">
-            <span class="location-list__distance-label">Distance:</span>
-            <%= location.distance %> miles
-          </p>
-
-          <%= render partial: 'location', locals: { location: location } %>
+          <div class="l-column-third">
+            <a href="https://maps.google.com/maps?q=<%= location.coordinates %>" target="_blank">
+              <img
+                height="300"
+                alt="map showing the location of <%= location.name %> (link opens external website in new window)"
+                style="border:0; position: relative;"
+                src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= location.coordinates %>&center=<%= location.coordinates %>&size=300x300&scale=2&zoom=15&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
+            </a>
+          </div>
         </div>
-
-        <div class="l-column-third">
-          <a href="https://maps.google.com/maps?q=<%= location.coordinates %>" target="_blank">
-            <img
-              height="300"
-              alt="map showing the location of <%= location.name %> (link opens external website in new window)"
-              style="border:0; position: relative;"
-              src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= location.coordinates %>&center=<%= location.coordinates %>&size=300x300&scale=2&zoom=15&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
-          </a>
+        <div class="l-grid-row">
+          <div class="l-column-third">
+            <p><%= link_to("More details about #{location.name}", location_path(location.id), class: 't-location-link') %></p>
+          </div>
         </div>
-      </div>
-      <div class="l-grid-row">
-        <div class="l-column-third">
-          <p><%= link_to("More details about #{location.name}", location_path(location.id), class: 't-location-link') %></p>
-        </div>
-      </div>
-    </li>
-  <% end %>
-</ol>
+      </li>
+    <% end %>
+  </ol>
 
 
-<p>Search for another location:</p>
+  <p>Search for another location:</p>
 
-<%= render 'components/locations_search' %>
+  <%= render 'components/locations_search' %>
 
-<div class="application-notice info-notice">
-  <p>You can also <%= link_to 'book a phone appointment', guide_path('book-phone') %>.</p>
+  <div class="application-notice info-notice">
+    <p>You can also <%= link_to 'book a phone appointment', money_helper_url('pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/how-to-book-a-phone-appointment'), target: '_parent' %>.</p>
+  </div>
 </div>

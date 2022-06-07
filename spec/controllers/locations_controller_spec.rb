@@ -1,4 +1,8 @@
 RSpec.describe LocationsController, type: :controller do
+  describe 'it is embeddable' do
+    it { expect(controller.class.ancestors).to include(Embeddable) }
+  end
+
   describe 'POST search' do
     before do
       allow(Locations).to receive(:nearest_to_postcode).and_return([double, double])

@@ -50,7 +50,6 @@ Then(/^I cannot book online$/) do
 end
 
 When(/^I opt to book online$/) do
-  @page.accept_cookies!
   @page.book_online.click
 end
 
