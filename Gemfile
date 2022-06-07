@@ -7,8 +7,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 gem 'autoprefixer-rails'
 gem 'azure-storage-blob'
-gem 'booking_locations', github: 'guidance-guarantee-programme/booking_locations',
-                         branch: 'allow-larger-range-of-versions'
+gem 'booking_locations', github: 'guidance-guarantee-programme/booking_locations', ref: 'e50f0b0'
 gem 'bugsnag'
 gem 'canonical-rails'
 gem 'connection_pool'

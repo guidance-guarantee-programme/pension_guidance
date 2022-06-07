@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/guidance-guarantee-programme/booking_locations.git
-  revision: baf6817320b3a01f6d30fab6e31a2cc59c30b02f
-  branch: allow-larger-range-of-versions
+  revision: e50f0b020654e606ccfcc746a970cace783c4f1e
+  ref: e50f0b0
   specs:
-    booking_locations (0.26.0)
+    booking_locations (0.27.0)
       activesupport (~> 6.0.0, >= 4)
       globalid
 
