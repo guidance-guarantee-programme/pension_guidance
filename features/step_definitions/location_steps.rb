@@ -86,12 +86,6 @@ Then(/^I should see the details of that appointment location$/) do
   %i(address phone).each do |element|
     expect(location.public_send(element)).to be_visible
   end
-
-  expect(location.breadcrumbs.map(&:text)).to eq([
-                                                   'Home',
-                                                   'Book a free appointment',
-                                                   'Find an appointment location near you'
-                                                 ])
 end
 
 # rubocop:disable Metrics/BlockLength

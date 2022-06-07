@@ -3,6 +3,10 @@
   padding-left: 0;
   padding-bottom: 1em;
   border-bottom: 1px solid $grey-2;
+
+  li::before {
+    content: "";
+  }
 }
 
 .location-list__item {
