@@ -17,7 +17,7 @@
     <% if @nudge_appointment.errors.include?(:first_name) %>
       <span class="error-message" id="first_name_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:first_name].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :first_name, aria: { required: true, describedby: 'first_name_error' }, class: "t-first-name form-control #{'form-control-error' if @nudge_appointment.errors.include?(:first_name)}" %>
+    <%= f.text_field :first_name, autocomplete: 'off', aria: { required: true, describedby: 'first_name_error' }, class: "t-first-name form-control #{'form-control-error' if @nudge_appointment.errors.include?(:first_name)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:last_name) %>">
@@ -25,7 +25,7 @@
     <% if @nudge_appointment.errors.include?(:last_name) %>
       <span class="error-message" id="last_name_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:last_name].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :last_name, aria: { required: true, describedby: 'last_name_error' }, class: "t-last-name form-control #{'form-control-error' if @nudge_appointment.errors.include?(:last_name)}" %>
+    <%= f.text_field :last_name, autocomplete: 'off', aria: { required: true, describedby: 'last_name_error' }, class: "t-last-name form-control #{'form-control-error' if @nudge_appointment.errors.include?(:last_name)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:phone) %>">
@@ -38,7 +38,7 @@
       <span class="error-message" id="phone_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:phone].to_sentence.capitalize %></span>
     <% end %>
 
-    <%= f.text_field :phone, aria: { required: true, describedby: 'phone_error' }, class: "t-phone form-control #{'form-control-error' if @nudge_appointment.errors.include?(:phone)}" '' %>
+    <%= f.text_field :phone, autocomplete: 'off', aria: { required: true, describedby: 'phone_error' }, class: "t-phone form-control #{'form-control-error' if @nudge_appointment.errors.include?(:phone)}" '' %>
     <details>
       <summary>Agent</summary>
       For non-UK numbers include the country dialling code.
@@ -84,7 +84,7 @@
       <% end %>
 
       <div class="email-outer">
-        <%= f.email_field :email, aria: { required: true, describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @nudge_appointment.errors.include?(:email)}" %>
+        <%= f.email_field :email, autocomplete: 'off', aria: { required: true, describedby: 'email_error' }, class: "t-email form-control #{'form-control-error' if @nudge_appointment.errors.include?(:email)}" %>
       </div>
       <details>
         <summary>Agent</summary>
@@ -104,7 +104,7 @@
         <span class="error-message" id="mobile_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:mobile].to_sentence.capitalize %></span>
       <% end %>
 
-      <%= f.text_field :mobile, aria: { required: true, describedby: 'mobile_error' }, class: "t-mobile form-control #{'form-control-error' if @nudge_appointment.errors.include?(:mobile)}" %>
+      <%= f.text_field :mobile, autocomplete: 'off', aria: { required: true, describedby: 'mobile_error' }, class: "t-mobile form-control #{'form-control-error' if @nudge_appointment.errors.include?(:mobile)}" %>
     </div>
   </div>
 
@@ -117,7 +117,7 @@
     <% if @nudge_appointment.errors.include?(:memorable_word) %>
       <span class="error-message" id="memorable_word_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:memorable_word].to_sentence.capitalize %></span>
     <% end %>
-    <%= f.text_field :memorable_word, aria: { required: true, describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @nudge_appointment.errors.include?(:memorable_word)}" %>
+    <%= f.text_field :memorable_word, autocomplete: 'off', aria: { required: true, describedby: 'memorable_word_error' }, class: "t-memorable-word form-control #{'form-control-error' if @nudge_appointment.errors.include?(:memorable_word)}" %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:date_of_birth) %>" data-customer-age data-appointment-date="<%= @nudge_appointment.start_at.to_date %>" data-output-id="customer-age">
@@ -239,7 +239,7 @@
       <% end %>
       <span class="form-hint">Any accessibility adjustments required by the customer</span>
     <% end %>
-    <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
+    <%= f.text_area :notes, autocomplete: 'off', class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
   </div>
 
   <div role="note" aria-label="Information" class="application-notice info-notice">
