@@ -16,9 +16,6 @@
         <%= link_to 'Book online', booking_request_step_one_location_path(location.id), class: 'button button--primary  t-book-online' %>
       </p>
     <% end %>
-    <p>
-      Or call <strong class="t-phone"><%= location.phone %></strong>.
-    </p>
   <% else %>
     <div class="notice notice--extra-spacing">
       <i class="icon icon-information">
