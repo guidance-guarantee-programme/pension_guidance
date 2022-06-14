@@ -23,7 +23,3 @@ Search for your nearest appointment locations.
     <p>or view the <a href="/locations">list of locations</a></p>
   </div>
 </form>
-
-<div class="application-notice info-notice">
-  <p>You can also <a href="/en/book-phone">book a phone appointment</a>.</p>
-</div>
