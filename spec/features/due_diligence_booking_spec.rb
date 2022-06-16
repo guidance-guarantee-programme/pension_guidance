@@ -26,6 +26,8 @@ RSpec.feature 'Due diligence bookings' do
     expect(@page.hidden_dc_pot_confirmed.value).to eq('not-sure')
     expect(@page.hidden_gdpr_consent.value).to eq('no')
     expect(@page.hidden_where_you_heard.value).to eq('2') # pension provider
+    # ensure links back to rebook are the correct schedule type
+    expect(@page.change_date_time[:href]).to end_with('?schedule_type=due_diligence')
 
     @page.first_name.set('Rick')
     @page.last_name.set('Sanchez')
