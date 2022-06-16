@@ -272,7 +272,7 @@
     <p class="slot-picker-confirmed-date__text"><%= l(@telephone_appointment.start_at, format: :govuk_time) %>, 45 to 60 minutes</p>
   </div>
 
-  <p><%= link_to('Change date/time', new_telephone_appointment_path) %></p>
+  <p><%= link_to('Change date/time', new_telephone_appointment_path(schedule_type: @telephone_appointment.schedule_type), class: 't-change-date-time') %></p>
 
   <% unless @telephone_appointment.due_diligence? %>
     <h5 class="slot-picker-header slot-picker-header--need-help t-need-help-banner">Need help?<% unless @telephone_appointment.embedded? %>Attending appointment on behalf of a family member or friend?<% end %></h5>
