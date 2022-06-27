@@ -1,42 +1,36 @@
 <% content_for(:page_title, t('service.title', page_title: "Book an appointment at #{@booking_request.location_name}")) %>
-<div class="l-grid-row">
-  <div class="l-column-full">
-    <h1 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
+<div class="l-column-full">
+  <h2 class="t-location-name">Book an appointment at <%= @booking_request.location_name %></h1>
 
-    <% if @locations.present? %>
-      <div class="t-limited-availability error-summary" style="border-color: orange; margin-top: 15px;">
-        <p>There is limited availability in this location. Other locations near <%= @booking_request.location_name %>:</p>
-        <ul>
-          <% @locations.each do |location| %>
-            <li>
-              <%= link_to location.name, booking_request_step_one_location_path(location.id), class: 'ga-alternate-location-link' %>
-              (<%= location.distance %> miles away)
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-  </div>
+  <% if @locations.present? %>
+    <div class="t-limited-availability error-summary" style="border-color: orange; margin-top: 15px;">
+      <p>There is limited availability in this location. Other locations near <%= @booking_request.location_name %>:</p>
+      <ul>
+        <% @locations.each do |location| %>
+          <li>
+            <%= link_to location.name, booking_request_step_one_location_path(location.id), class: 'ga-alternate-location-link' %>
+            (<%= location.distance %> miles away)
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <% if flash[:alert] %>
-  <div class="l-column-two-thirds">
     <div class="error-summary alert-alert" aria-labelledby="error-summary-heading" role="alert" data-error-summary>
       <h1 class="heading-medium error-summary-heading" id="error-summary-heading"><%= flash[:alert] %></h1>
 
       <p>The chosen slot was taken during your booking. Please try again with a different slot.</p>
     </div>
-  </div>
   <% end %>
 
   <% if @booking_request.errors.any? %>
-    <div class="l-column-two-thirds">
-      <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
-        <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
-          There was a problem with your chosen dates
-        </h1>
+    <div class="error-summary t-errors" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+      <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        There was a problem with your chosen dates
+      </h1>
 
-        <p>Please select at least 1 date for your appointment.</p>
-      </div>
+      <p>Please select at least 1 date for your appointment.</p>
     </div>
   <% end %>
 

@@ -15,6 +15,10 @@
 .locations-a-z-letter-list {
   margin: 0;
   padding: 0;
+
+  li::before {
+    content: "";
+  }
 }
 
 .locations-a-z-letter-list__location {

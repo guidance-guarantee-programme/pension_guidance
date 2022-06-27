@@ -1,57 +1,48 @@
 <% content_for(:page_title, t('service.title', page_title: @location.name)) %>
 <% content_for(:meta_description, "Find out the address, booking hours and how to book a Pension Wise appointment at #{@location.name} Citizens Advice") %>
 
-<a href="javascript:" onclick="history.back(); return false;" class="js-enabled link-back t-back-to-results">Back to results</a>
+<div class="l-column-full">
+  <a href="javascript:" onclick="history.back(); return false;" class="js-enabled link-back t-back-to-results">Back to results</a>
 
-<h1 class="t-name"><%= @location.name %></h1>
+  <h2 class="t-name"><%= @location.name %></h2>
 
-<div class="l-grid-row">
-  <div class="l-column-half">
-    <p>
-      Your appointment will be with a trained Pension Wise
-      guidance specialist.
-    </p>
+  <div class="l-grid-row">
+    <div class="l-column-half">
+      <p>
+        Your appointment will be with a trained Pension Wise
+        guidance specialist.
+      </p>
 
-    <% if @location.accessibility_information? %>
-      <h2>Accessibility</h2>
+      <% if @location.accessibility_information? %>
+        <h3>Accessibility</h3>
 
-      <p class="t-accessibility-information"><%= @location.accessibility_information %></p>
-    <% end %>
+        <p class="t-accessibility-information"><%= @location.accessibility_information %></p>
+      <% end %>
 
-    <h2>Address</h2>
-    <div class="t-address">
-      <%= simple_format(@location.address) %>
+      <h3>Address</h3>
+      <div class="t-address">
+        <%= simple_format(@location.address) %>
+      </div>
+
+      <%= render partial: 'location', locals: { location: @location } %>
+
+      <% if @location.slots_available? %>
+        <h3>Before you book</h3>
+
+        <p>You should be aged <b>50 or over</b> and have a <%= link_to 'defined contribution', money_helper_url('pensions-and-retirement/pensions-basics/defined-contribution-pension-schemes'), target: '_parent' %> pension (not a final salary or career average pension).</p>
+      <% end %>
     </div>
 
-    <%= render partial: 'location', locals: { location: @location } %>
+    <div class="l-column-half">
+      <h3 style="margin-top: 0;">Find us here:</h3>
 
-    <div class="application-notice help-notice">
-      <p>
-      The ongoing response to coronavirus may impact appointment availability at
-      some locations.
-      </p>
-      <p>
-      If you are unable to find a suitable appointment or can no longer attend,
-      you can <a href="/en/explore-your-options">explore your options</a>.
-      </p>
+      <a href="https://maps.google.com/maps?q=<%= @location.coordinates %>" target="_blank">
+        <img
+          height="450"
+          alt="map showing the location of <%= @location.name %> (link opens external website in new window)"
+          style="border:0; position: relative; width:100%;"
+          src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= @location.coordinates %>&center=<%= @location.coordinates %>&size=440x330&zoom=15&scale=2&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
+      </a>
     </div>
-
-    <% if @location.slots_available? %>
-      <h2>Before you book</h2>
-
-      <p>You should be aged <b>50 or over</b> and have a <%= link_to 'defined contribution', guide_path('pension-types') %> pension (not a final salary or career average pension).</p>
-    <% end %>
-  </div>
-
-  <div class="l-column-half">
-    <h2 style="margin-top: 0;">Find us here:</h2>
-
-    <a href="https://maps.google.com/maps?q=<%= @location.coordinates %>" target="_blank">
-      <img
-        height="450"
-        alt="map showing the location of <%= @location.name %> (link opens external website in new window)"
-        style="border:0; position: relative; width:100%;"
-        src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= @location.coordinates %>&center=<%= @location.coordinates %>&size=440x330&zoom=15&scale=2&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>" />
-    </a>
   </div>
 </div>

@@ -1,4 +1,3 @@
-@wip
 Feature: Customer creates a Booking Request
   As a customer
   I want to request an appointment
@@ -51,15 +50,6 @@ Scenario: Customer is ineligible for guidance
   And I provide ineligible details
   When I submit my completed Booking Request
   Then I am told I am ineligible for guidance
-
-@javascript @booking_locations @time_travel
-Scenario: Customer leaves inline feedback
-  Given a location is enabled for online booking
-  And the date is "2016-06-17"
-  When I browse for the location "Hackney"
-  And I opt to book online
-  When I complete the inline feedback
-  Then I see my feedback was sent
 
 @booking_locations @no_availability
 Scenario: Customer attempts to book a location with no availability

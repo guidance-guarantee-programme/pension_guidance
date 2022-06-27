@@ -7,7 +7,7 @@ Given(/^no locations are enabled for online booking$/) do
 end
 
 When(/^I choose the first available realtime slot$/) do
-  @step_one.wait_for_available_days
+  @step_one.wait_until_available_days_visible
   @step_one.choose_date('2018-11-07')
   @step_one.choose_time('9:00am')
   @step_one.continue.click
@@ -71,8 +71,7 @@ When(/^I choose one available appointment slot$/) do
   expect(@step_one).to be_displayed
 
   # wait for the slots to bind
-  @step_one.wait_for_available_days
-  expect(@step_one).to have_available_days
+  @step_one.wait_until_available_days_visible
 
   # select the first available day and slot
   @step_one.choose_date('2016-06-20')
@@ -154,25 +153,6 @@ end
 Then(/^I am told I am ineligible for guidance$/) do
   @ineligible = Pages::BookingIneligible.new
   expect(@ineligible).to be_displayed
-end
-
-When(/^I complete the inline feedback$/) do
-  @step_one = Pages::BookingStepOne.new
-  expect(@step_one).to be_displayed
-
-  @step_one.feedback.tap do |f|
-    f.toggle.click
-    f.wait_until_name_visible
-
-    f.name.set 'Ben'
-    f.email.set 'ben@example.com'
-    f.message.set 'This is awesome!'
-    f.submit.click
-  end
-end
-
-Then(/^I see my feedback was sent$/) do
-  expect(page).to have_content('Thank you for your help')
 end
 
 Then(/^I see a message to phone for availability$/) do

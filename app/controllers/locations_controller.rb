@@ -1,13 +1,12 @@
 class LocationsController < ApplicationController
+  include Embeddable
+
   NEAREST_LIMIT = 5
 
   before_action :set_breadcrumbs
   before_action :set_postcode
   before_action :send_cache_headers
   before_action :identify_agent
-  skip_before_action :verify_authenticity_token
-
-  layout 'full_width_with_breadcrumbs', only: %i(show search)
 
   def index
     locations = Locations::Repository.new.all
