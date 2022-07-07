@@ -27,8 +27,8 @@
     <% if content_for?(:canonical) %>
       <link rel="canonical" href="<%= yield(:canonical) %>" />
     <% end %>
-    <% if content_for?(:noindex) %>
-      <meta name="robots" content="noindex">
+    <% if content_for?(:noindex) || Rails.env.staging? %>
+      <meta name="robots" content="noindex,nofollow">
     <% end %>
 
     <%# the colour used for theme-color is the standard palette $black from
