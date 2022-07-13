@@ -27,7 +27,7 @@
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:email) %>">
     <%= f.label :email, class: 'form-label-bold' do %>
       Email
-      <span class="form-hint">We’ll send an email confirming your appointment date. We’re currently experiencing deliverability issues to BT internet email addresses, please use an alternative where possible</span>
+      <span class="form-hint">We’ll send an email confirming your appointment date</span>
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:email) %>
