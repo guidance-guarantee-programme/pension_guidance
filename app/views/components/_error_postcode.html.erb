@@ -8,32 +8,28 @@
   </script>
 <% end %>
 
-<div class="l-grid-row">
-  <div class="l-column-two-thirds">
-    <article role="article" class="text">
-      <h1>Find an appointment location near you</h1>
+<div class="l-column-full">
+  <h1>Find an appointment location near you</h1>
 
-      <div class="error-summary" role="group" aria-labelledby="error-summary-heading-1" tabindex="-1">
-        <h2 class="heading-medium error-summary-heading" id="error-summary-heading-1">
-          Unable to submit the form
-        </h2>
+  <div class="error-summary" role="group" aria-labelledby="error-summary-heading-1" tabindex="-1">
+    <h2 class="heading-medium error-summary-heading" id="error-summary-heading-1">
+      Unable to submit the form
+    </h2>
 
-        <p>Check the following:</p>
+    <p>Check the following:</p>
 
-        <ul class="error-summary-list">
-          <li><%= link_to "Postcode - enter a valid postcode", "#location" %></li>
-        </ul>
-      </div>
+    <ul class="error-summary-list">
+      <li><%= link_to "Postcode - enter a valid postcode", "#location" %></li>
+    </ul>
+  </div>
 
-      <p>Search for your nearest appointment locations.</p>
+  <p>Search for your nearest appointment locations.</p>
 
-      <%= render 'components/locations_search', has_error: true do %>
-        <% yield %>
-      <% end %>
+  <%= render 'components/locations_search', has_error: true do %>
+    <% yield %>
+  <% end %>
 
-      <div class="application-notice info-notice">
-        <p>You can also <%= link_to 'book a phone appointment', guide_path('book-phone') %>.</p>
-      </div>
-    </article>
+  <div class="application-notice info-notice">
+    <p>You can also <%= link_to 'book a phone appointment', guide_path('book-phone') %>.</p>
   </div>
 </div>
