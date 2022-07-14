@@ -6,14 +6,14 @@ Feature: Customer creates a Booking Request
 Scenario: Customer browses an online booking enabled location
   Given a location is enabled for online booking
   When I browse for the location "Hackney"
-  Then I can book online
+  Then I cannot book online
 
 Scenario: Customer browses a regular location
   Given no locations are enabled for online booking
   When I browse for the location "Hackney"
   Then I cannot book online
 
-@javascript @booking_locations @time_travel @realtime_availability
+@javascript @booking_locations @time_travel @realtime_availability @wip
 Scenario: Customer makes a realtime online appointment
   Given a location is enabled for online booking
   And the date is "2018-11-01"
@@ -27,7 +27,7 @@ Scenario: Customer makes a realtime online appointment
   When I submit my completed Booking Request
   Then my appointment is confirmed
 
-@javascript @booking_locations @time_travel
+@javascript @booking_locations @time_travel @wip
 Scenario: Customer chooses a single slot
   Given a location is enabled for online booking
   And the date is "2016-06-17"
@@ -39,7 +39,7 @@ Scenario: Customer chooses a single slot
   And I submit my incomplete Booking Request
   Then I am told to complete my personal details
 
-@javascript @booking_locations @time_travel
+@javascript @booking_locations @time_travel @wip
 Scenario: Customer is ineligible for guidance
   Given a location is enabled for online booking
   And the date is "2016-06-17"
@@ -51,7 +51,7 @@ Scenario: Customer is ineligible for guidance
   When I submit my completed Booking Request
   Then I am told I am ineligible for guidance
 
-@booking_locations @no_availability
+@booking_locations @no_availability @wip
 Scenario: Customer attempts to book a location with no availability
   Given a location is enabled for online booking
   When I browse for the location "Hackney"
