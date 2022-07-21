@@ -29,6 +29,10 @@ module Locations
       @slots ||= BookingRequests.slots(id)
     end
 
+    def hidden_booking_location?
+      booking_location_id.blank? && no_availability?
+    end
+
     def no_availability?
       slots.empty?
     end

@@ -20,4 +20,14 @@ RSpec.describe Locations::Location do
       expect(subject).to be_limited_availability
     end
   end
+
+  context 'when a booking location has no availability' do
+    it 'is `hidden_booking_location?`' do
+      allow(BookingRequests).to receive(:slots) { [] }
+
+      subject.booking_location_id = ''
+
+      expect(subject).to be_hidden_booking_location
+    end
+  end
 end

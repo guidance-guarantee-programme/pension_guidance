@@ -4,8 +4,12 @@ RSpec.describe LocationsController, type: :controller do
   end
 
   describe 'POST search' do
+    let(:results) do
+      [double(hidden_booking_location?: true), double(hidden_booking_location?: false)]
+    end
+
     before do
-      allow(Locations).to receive(:nearest_to_postcode).and_return([double, double])
+      allow(Locations).to receive(:nearest_to_postcode).and_return(results)
     end
 
     specify 'with an empty postcode' do
