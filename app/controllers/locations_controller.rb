@@ -11,6 +11,8 @@ class LocationsController < ApplicationController
   def index
     locations = Locations::Repository.new.all
 
+    locations.reject!(&:hidden_booking_location?)
+
     @locations_by_letter = locations.group_by { |location| location.name.first }
     @locations_total     = locations.count
   end
@@ -44,9 +46,12 @@ class LocationsController < ApplicationController
     @agent = PlacedByAgent.new(request.remote_ip).call
   end
 
-  def retrieve_locations
+  def retrieve_locations # rubocop:disable MethodLength
     @locations = begin
-      Locations.nearest_to_postcode(@postcode, limit: NEAREST_LIMIT).map do |location|
+      Locations
+        .nearest_to_postcode(@postcode, limit: NEAREST_LIMIT)
+        .reject(&:hidden_booking_location?)
+        .map do |location|
         LocationSearchResultDecorator.new(location)
       end
     rescue Geocoder::InvalidPostcode
