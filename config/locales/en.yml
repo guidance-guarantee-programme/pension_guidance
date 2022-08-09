@@ -181,6 +181,8 @@ en:
               inclusion: select an option
             additional_info:
               blank: describe the accessibility adjustments you require
+            gdpr_consent:
+              inclusion: select an option
         bsl/booking_request:
           attributes:
             first_name:
@@ -327,6 +329,7 @@ en:
         opt_in: Terms and conditions
         telephone_number: Phone number
         where_you_heard: Where did you first hear of Pension Wise
+        gdpr_consent: Customer research consent
       appointment_summary:
         appointment_type: Your age
   activerecord:
