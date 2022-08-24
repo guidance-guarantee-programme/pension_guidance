@@ -22,7 +22,7 @@ Dylech bob amser ffonio eich darparwr os ydych yn derbyn e-bost yn dweud eu bod 
 
 ## Hysbysu am sgiâm pensiwn
 
-Action Fraud yw’r ganolfan ar gyfer hysbysu am dwyll a throseddau rhyngrwyd yn y DU. Os ydych yn meddwl eich bod wedi dioddef sgiâm pensiwn dylech eu ffonio neu ei hysbysu drwy ddefnyddio eu [teclyn hysbysu ar-lein](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime){: target="_blank"}.
+Action Fraud yw’r ganolfan ar gyfer hysbysu am dwyll a throseddau rhyngrwyd yn y DU. Os ydych yn meddwl eich bod wedi dioddef sgiâm pensiwn dylech eu ffonio neu ei hysbysu drwy ddefnyddio eu [teclyn hysbysu ar-lein](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime){: target="_blank" rel="external"}.
 
 **Action Fraud**
 $C
