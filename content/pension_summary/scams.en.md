@@ -2,7 +2,9 @@
 
 A pension scam is where someone tries to con you out of money in your pension pot. A scam will often start with a ‘cold call’ – this can be a phone call, a text message, an email, a visit in person, or other ways.
 
-^If someone calls you out of the blue about your pension, the call is illegal and likely to be a fraudster. You should end the call immediately and alert the <a href="https://ico.org.uk/make-a-complaint/nuisance-calls-and-messages/" target="_blank">Information Commissioner’s Office (ICO)</a>.^
+<div role="note" aria-label="Information" class="application-notice info-notice">
+  <p>If someone calls you out of the blue about your pension, the call is illegal and likely to be a fraudster. You should end the call immediately and alert the <a href="https://ico.org.uk/make-a-complaint/nuisance-calls-and-messages/" target="_blank" rel="external">Information Commissioner’s Office (ICO)</a>.</p>
+</div>
 
 ## How to spot a scam
 

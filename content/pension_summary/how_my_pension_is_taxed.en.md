@@ -39,7 +39,7 @@ Money you take from your pot comes from your provider with the tax already taken
 
 Your provider will also take off any tax due on your State Pension.
 
-You may pay emergency tax when you take money from your pot. You can [claim this back](https://www.gov.uk/claim-tax-refund/you-get-a-pension){: target="_blank"} from HM Revenue and Customs.
+You may pay emergency tax when you take money from your pot. You can [claim this back](https://www.gov.uk/claim-tax-refund/you-get-a-pension){: target="_blank" rel="external"} from HM Revenue and Customs.
 
 ### If you continue to work
 
@@ -51,7 +51,9 @@ If your total income (including money from pensions and PAYE) is £100,000 or mo
 
 You’re responsible for paying tax on other income you have, e.g. from property or investments, and you might have to fill in a Self-Assessment tax return.
 
-^You usually pay tax if your pension pots are worth more than the <a href="https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance" target="_blank">lifetime allowance</a>. This is currently £1,073,100.
+<div role="note" aria-label="Information" class="application-notice info-notice">
+  <p>You usually pay tax if your pension pots are worth more than the <a href="https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance" target="_blank" rel="external">lifetime allowance</a>. This is currently £1,073,100.</p>
+</div>
 
 {: .hide-from-screen }
 [Further guidance on tax you pay on your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions)<br>
