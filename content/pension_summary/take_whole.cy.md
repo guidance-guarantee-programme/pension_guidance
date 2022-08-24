@@ -8,7 +8,7 @@ Gallwch gymryd eich cronfa gyfan ar un tro. Bydd yr arian o’ch cronfa yn cael 
 * Gallai ychwanegu swm mawr o arian i’ch incwm olygu eich bod yn cael eich symud i gyfradd dreth uwch.
 * Gallwch gymryd hyd at 3 cronfa fechan o hyd at £10,000 heb iddo gyfrif tuag at eich lwfans treth blynyddol neu oes.
 * Gallai cymryd eich cronfa gyfan mewn un tro effeithio ar eich hawl i fudd-daliadau.
-* Efallai y gallech barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a elwir yn [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
+* Efallai y gallech barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a elwir yn [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank" rel="external"}).
 
 Dylech feddwl yn ofalus am yr opsiwn hwn. Unwaith y byddwch wedi cymryd yr arian allan ni allwch newid y penderfyniad a byddwch yn colli’r statws di-dreth oedd ganddo tra yn eich cronfa.  
 

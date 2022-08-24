@@ -9,7 +9,7 @@ Gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth. Mae'r gweddill yn cael ei fu
 * Bydd eich darparwr yn gofyn i chi sut hoffech fuddsoddi eich cronfa sy'n weddill pan fyddwch yn symud i mewn i dynnu pensiwn i lawr. Bydd angen i chi naill ai ddewis eich buddsoddiadau eich hun, h.y. rhai sy'n cyfateb i'ch agwedd at risg ac amcanion ar gyfer eich arian, neu bydd rhai darparwyr yn cynnig dewis o opsiynau buddsoddi parod syml sy'n gysylltiedig â'ch cynlluniau ymddeoliad (gelwir y rhain yn Llwybrau Buddsoddi). Gallech hefyd ddefnyddio ymgynghorydd ariannol i'ch helpu i ddewis.
 * Fel gyda phob buddsoddiad, gall gwerth eich cronfa fynd i fyny neu i lawr.
 * Mae’r opsiwn hwn hefyd yn cael ei adnabod fel ‘tynnu allan hyblyg’.
-* Efallai y gallwch barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a adnabyddir fel [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
+* Efallai y gallwch barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a adnabyddir fel [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank" rel="external"}).
 
 ^Ni allwch gymryd y pensiwn fel opsiwn nifer o gyfandaliadau yn nes ymlaen os byddwch yn dewis yr opsiwn hwn oherwydd y byddwch eisoes wedi cymryd eich gyfandaliad di-dreth llawn.^
 

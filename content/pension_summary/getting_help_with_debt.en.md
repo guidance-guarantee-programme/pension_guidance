@@ -21,11 +21,11 @@ Take your time when deciding what to do with your pot and don’t rush into a de
 
 There are lots of free advice services available across the UK. The [debt advice locator tool]({::money_helper_url path="money-troubles/dealing-with-debt/debt-advice-locator.html" locale="en"/}){: target="_parent"} on the Money Helper website can help you find the best type of advice to suit your needs.
 
-Citizens Advice provides free, independent and [impartial debt advice](https://www.citizensadvice.org.uk/debt-and-money/){: target="_blank"}.
+Citizens Advice provides free, independent and [impartial debt advice](https://www.citizensadvice.org.uk/debt-and-money/){: target="_blank" rel="external"}.
 
-Citizens Advice Scotland: You can talk about debt issues with a [trained adviser](https://www.citizensadvice.org.uk/scotland/debt-and-money/){: target="_blank"}.
+Citizens Advice Scotland: You can talk about debt issues with a [trained adviser](https://www.citizensadvice.org.uk/scotland/debt-and-money/){: target="_blank" rel="external"}.
 
-You also find [support in Northern Ireland](https://www.citizensadvice.org.uk/about-us/northern-ireland/){: target="_blank"}.
+You also find [support in Northern Ireland](https://www.citizensadvice.org.uk/about-us/northern-ireland/){: target="_blank" rel="external"}.
 
 {: .hide-from-screen }
 [Further guidance on debt and pensions](https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-problems/using-your-pension-to-pay-off-debts)<br>

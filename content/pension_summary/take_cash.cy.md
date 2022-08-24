@@ -8,7 +8,7 @@ Yn lle cymryd eich cronfa gyfan mewn un tro, rydych yn cymryd cyfandaliadau llai
 * Mae’n debygol y byddwch yn rhan o ddewis a rheoli eich buddsoddiadau.
 * Gallwch ledaenu’r cyfandaliadau dros nifer o flynyddoedd treth i reoli eich incwm a allai olygu y byddech yn talu llai o dreth.
 * Efallai y bydd darparwyr yn disgrifio’r opsiwn hwn fel ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS).
-* Efallai y gallech barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a elwir yn [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
+* Efallai y gallech barhau i dalu i mewn ar ôl i chi dynnu arian allan ond gallech dalu treth ar gyfraniadau dros £4,000 y flwyddyn (a elwir yn [‘lwfans prynu arian’](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank" rel="external"}).
 * Os ydych yn buddsoddi eich cronfa i mewn i dynny pensiwn i lawr, ni fyddwch yn gallu cymryd dim mwy o arian yn ddi-dreth ac ni allwch ddefnyddio’r opsiwn hwn.
 
 ## Camau nesaf

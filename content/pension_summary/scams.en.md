@@ -22,7 +22,7 @@ Always phone your provider if you receive an email saying that they’ve changed
 
 ## Reporting a pension scam
 
-Action Fraud is the UK’s fraud and internet crime reporting centre. If you think you’ve been the victim of a pension scam call them or report it using their [online reporting tool](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime){: target="_blank"}.
+Action Fraud is the UK’s fraud and internet crime reporting centre. If you think you’ve been the victim of a pension scam call them or report it using their [online reporting tool](http://www.actionfraud.police.uk/report-a-fraud-including-online-crime){: target="_blank" rel="external"}.
 
 **Action Fraud**
 $C

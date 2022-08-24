@@ -11,7 +11,7 @@ You can take up to 25% of your pot tax free. The rest is invested to give you a 
 * Your provider will ask you how you want to invest your remaining pot when you move into pension drawdown. You will either need to choose your own investments, i.e. ones that match your attitude to risk and objectives for your money, or some providers will offer you to choose from simple ready-made investment options which are linked to your retirement plans (these are called Investment Pathways). You could also use a financial adviser to help you choose.
 * An investment pathway is a ready-made investment option, which simplifies the decision of how to invest your remaining pension pot after you’ve taken your tax-free lump sum.
 * As with all investments, the value of your pot can go up or down.
-* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank"}).
+* You may be able to keep paying in after you take money out but you could pay tax on contributions over £4,000 a year (known as the [‘money purchase annual allowance’ (MPAA)](https://www.gov.uk/tax-on-your-private-pension/annual-allowance#lower-allowance-if-you-take-money-from-a-pension-pot){: target="_blank" rel="external"}).
 
 ^You can’t take the pension as a number of lump sums option later if you choose this option because you will have already taken your full tax-free lump sum.^
 
