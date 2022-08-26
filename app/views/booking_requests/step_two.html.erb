@@ -215,9 +215,12 @@
       %>
     </div>
 
-    <div class="form-group t-gdpr-consent" id="telephone_appointment_gdpr_consent" tabindex="-1">
+    <div class="form-group t-gdpr-consent <%= 'form-group-error' if @booking_request.errors.include?(:gdpr_consent) %>" tabindex="-1">
       <fieldset class="inline">
         <legend>Customer research consent</legend>
+        <% if @booking_request.errors.include?(:gdpr_consent) %>
+          <span class="error-message" id="gdpr_error"><span class="visually-hidden">Error: </span><%= @booking_request.errors[:gdpr_consent].to_sentence.capitalize %></span>
+        <% end %>
         <span class="form-hint">
           Your feedback helps us improve the service. Is it OK if we share your
           contact details with our trusted research partner? Ipsos MORI may
@@ -226,12 +229,12 @@
         </span>
 
         <div class="multiple-choice">
-          <%= f.radio_button :gdpr_consent, 'yes', class: 't-gdpr-consent-yes' %>
+          <%= f.radio_button :gdpr_consent, 'yes', class: 't-gdpr-consent-yes', aria: { required: true, describedby: 'gdpr_consent_error' } %>
           <%= f.label :gdpr_consent, value: 'yes', aria: { label: 'Yes, I consent to my contact details being shared for customer research' } do %>Yes<% end %>
         </div>
 
         <div class="multiple-choice">
-          <%= f.radio_button :gdpr_consent, 'no', class: 't-gdpr-consent-no' %>
+          <%= f.radio_button :gdpr_consent, 'no', class: 't-gdpr-consent-no', aria: { required: true, describedby: 'gdpr_consent_error' } %>
           <%= f.label :gdpr_consent, value: 'no', aria: { label: 'No, I do not consent to my contact details being shared for customer research' } do %>No<% end %>
         </div>
       </fieldset>
