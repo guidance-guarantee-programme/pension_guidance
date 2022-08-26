@@ -117,6 +117,11 @@ RSpec.describe BookingRequestForm do
         expect(subject).not_to be_step_two_valid
       end
 
+      it 'requires `gdpr_consent`' do
+        subject.gdpr_consent = nil
+        expect(subject).not_to be_step_two_valid
+      end
+
       context 'when accessibility requirements are specified' do
         it 'requires additional info' do
           subject.accessibility_requirements = '1'

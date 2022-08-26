@@ -153,6 +153,11 @@ RSpec.describe TelephoneAppointment, type: :model do
       end
     end
 
+    it 'validates inclusion of GDPR consent' do
+      subject.gdpr_consent = nil
+      expect(subject).to be_invalid
+    end
+
     it 'validates presence of start_at' do
       subject.start_at = nil
       expect(subject).to_not be_valid

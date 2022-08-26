@@ -44,6 +44,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
   validates :notes, presence: true, if: :accessibility_requirements?
   validates :accessibility_requirements, inclusion: { in: %w(0 1) }
   validates :referrer, presence: true, if: :due_diligence?
+  validates :gdpr_consent, inclusion: { in: %w(yes no) }
 
   def due_diligence?
     schedule_type == 'due_diligence'
