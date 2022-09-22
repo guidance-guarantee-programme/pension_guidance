@@ -6,7 +6,6 @@ class LocationsController < ApplicationController
   before_action :set_breadcrumbs
   before_action :set_postcode
   before_action :send_cache_headers
-  before_action :identify_agent
 
   def index
     locations = Locations::Repository.new.all
@@ -36,15 +35,6 @@ class LocationsController < ApplicationController
   end
 
   private
-
-  def agent?
-    @agent
-  end
-  helper_method :agent?
-
-  def identify_agent
-    @agent = PlacedByAgent.new(request.remote_ip).call
-  end
 
   def retrieve_locations # rubocop:disable MethodLength
     @locations = begin
