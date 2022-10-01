@@ -20,9 +20,9 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: 2e64f53a0e16c838957b54701541e7134c8d2cfc
+  revision: cd1b962a9262660b2550586ddf6d0d0dfbfb5c05
   specs:
-    output-templates (6.5.1)
+    output-templates (6.6.0)
       actionview
       sassc
 
@@ -170,7 +170,7 @@ GEM
     email_validation (1.2.1)
       localized_each_validator (>= 1.0.1)
     equalizer (0.0.11)
-    erubi (1.10.0)
+    erubi (1.11.0)
     excon (0.90.0)
     execjs (2.8.1)
     factory_bot (6.2.0)
@@ -251,7 +251,7 @@ GEM
     hashie (5.0.0)
     htmlentities (4.3.4)
     humanize (2.5.1)
-    i18n (1.10.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     inflection (1.0.0)
@@ -282,7 +282,7 @@ GEM
     logstasher (2.1.5)
       activesupport (>= 5.2)
       request_store
-    loofah (2.18.0)
+    loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -295,14 +295,14 @@ GEM
     mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.15.0)
+    minitest (5.16.3)
     multi_json (1.15.0)
     multi_test (0.1.2)
     multipart-post (2.1.1)
     net-http-persistent (4.0.1)
       connection_pool (~> 2.2)
     nio4r (2.5.8)
-    nokogiri (1.13.6)
+    nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.21.0)
@@ -504,7 +504,7 @@ GEM
     tilt (2.0.10)
     timecop (0.9.4)
     ttfunk (1.7.0)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
@@ -534,7 +534,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.4)
+    zeitwerk (2.6.0)
     zendesk_api (1.34.0)
       faraday (>= 0.9.0, < 2.0.0)
       hashie (>= 3.5.2, < 6.0.0)
