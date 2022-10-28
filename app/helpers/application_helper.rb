@@ -15,7 +15,7 @@ module ApplicationHelper
     if appointment.due_diligence?
       '9am to 5pm'
     else
-      '8am to 8pm'
+      '8am to 6:30pm'
     end
   end
 

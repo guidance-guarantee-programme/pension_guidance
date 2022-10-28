@@ -1,5 +1,5 @@
 ---
-description: Call 0800 138 3944 between 8am to 8pm, Monday to Friday.
+description: Call 0800 138 3944 between 8am to 6:30pm, Monday to Friday.
 tags:
   - appointments
   - booking
@@ -12,7 +12,7 @@ or call **0800 138 3944**.
 
 If you’re outside the UK, call +44 20 3733 3495.
 
-- Call between 8am to 8pm, Monday to Friday
+- Call between 8am to 6:30pm, Monday to Friday
 - We’ll send you an email to confirm your booking
 
 [Find out about call charges](https://www.gov.uk/call-charges)
