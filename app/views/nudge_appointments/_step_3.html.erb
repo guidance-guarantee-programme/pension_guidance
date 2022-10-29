@@ -31,7 +31,7 @@
   <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:phone) %>">
     <%= f.label :phone, class: 'form-label-bold' do %>
       Phone number
-      <span class="form-hint">The number you’d like Pension Wise to call you on. If a mobile number is provided, Pension Wise will send SMS appointment reminders. You can cancel your appointment via SMS response</span>
+      <span class="form-hint">The number you’d like Pension Wise to call you on. If a mobile number is provided, Pension Wise will send a text message appointment reminder. You can cancel your appointment via text message response</span>
     <% end %>
 
     <% if @nudge_appointment.errors.include?(:phone) %>
@@ -66,7 +66,7 @@
       <div class="multiple-choice" data-target="confirm-mobile">
         <%= f.radio_button :confirmation, 'sms', class: 't-confirmation-sms' %>
         <%= f.label :confirmation, value: 'sms' do %>
-          SMS
+          Text message
         <% end %>
       </div>
     </fieldset>
@@ -96,8 +96,8 @@
   <div id="confirm-mobile" class="js-hidden application-notice info-notice">
     <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:mobile) %>">
       <%= f.label :mobile, class: 'form-label-bold' do %>
-        SMS
-        <span class="form-hint">Pension Wise will send an SMS confirmation to this mobile number</span>
+        Text message
+        <span class="form-hint">Pension Wise will send a text message confirmation to this mobile number</span>
       <% end %>
 
       <% if @nudge_appointment.errors.include?(:mobile) %>
