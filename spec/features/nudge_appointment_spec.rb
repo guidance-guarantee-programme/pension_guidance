@@ -90,6 +90,7 @@ RSpec.feature 'Placing a nudge booking' do
     @page.date_of_birth_year.set('1970')
     expect(@page).to have_no_eligibility_reason
     @page.memorable_word.set('snootboop')
+    @page.gdpr_consent_yes.set(true)
 
     @page.submit.click
   end

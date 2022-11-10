@@ -13,7 +13,8 @@ RSpec.describe NudgeAppointment, type: :model do
       accessibility_requirements: '1',
       notes: 'Some required notes.',
       confirmation: 'email',
-      eligibility_reason: ''
+      eligibility_reason: '',
+      gdpr_consent: 'yes'
     )
   end
 
@@ -50,6 +51,12 @@ RSpec.describe NudgeAppointment, type: :model do
   context 'validations' do
     it 'is valid with valid parameters' do
       expect(subject).to be_valid
+    end
+
+    it 'requires GDPR consent to be specified' do
+      subject.gdpr_consent = ''
+
+      expect(subject).to be_invalid
     end
 
     it 'permits any valid age as eligible, within reason' do

@@ -23,7 +23,8 @@ class NudgeAppointment # rubocop:disable ClassLength
     :accessibility_requirements,
     :notes,
     :confirmation,
-    :eligibility_reason
+    :eligibility_reason,
+    :gdpr_consent
   )
 
   attr_writer :date_of_birth, :selected_date, :start_at, :step
@@ -41,6 +42,7 @@ class NudgeAppointment # rubocop:disable ClassLength
   validates :accessibility_requirements, inclusion: { in: %w(0 1) }
   validates :notes, length: { maximum: 160 }, allow_blank: true
   validates :notes, presence: true, if: :accessibility_requirements?
+  validates :gdpr_consent, inclusion: { in: %w(yes no) }
 
   def accessibility_requirements?
     accessibility_requirements == '1'
@@ -69,7 +71,8 @@ class NudgeAppointment # rubocop:disable ClassLength
       notes: notes,
       nudge_confirmation: confirmation,
       mobile: mobile,
-      nudge_eligibility_reason: eligibility_reason
+      nudge_eligibility_reason: eligibility_reason,
+      gdpr_consent: gdpr_consent
     }
   end
 
