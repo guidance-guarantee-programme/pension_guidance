@@ -242,6 +242,32 @@
     <%= f.text_area :notes, autocomplete: 'off', class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
   </div>
 
+  <div class="form-group t-gdpr-consent <%= 'form-group-error' if @nudge_appointment.errors.include?(:gdpr_consent) %>" id="nudge_appointment_gdpr_consent" tabindex="-1">
+    <fieldset class="inline">
+      <legend class="form-label-bold">Customer research consent</legend>
+      <% if @nudge_appointment.errors.include?(:gdpr_consent) %>
+        <span class="error-message" id="gdpr_error"><span class="visually-hidden">Error: </span><%= @nudge_appointment.errors[:gdpr_consent].to_sentence.capitalize %></span>
+      <% end %>
+      <span class="form-hint">
+        Your feedback helps us improve the service. Is it OK if we share your
+        contact details with our trusted research partners? With your consent,
+        Pension Wise or our research partners, may contact you to ask if you
+        would like to provide feedback and you can decide then if you want to
+        take part.
+      </span>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :gdpr_consent, 'yes', class: 't-gdpr-consent-yes', aria: { required: true, describedby: 'gdpr_consent_error' } %>
+        <%= f.label :gdpr_consent, value: 'yes', aria: { label: 'Yes, I consent to my contact details being shared for customer research' } do %>Yes<% end %>
+      </div>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :gdpr_consent, 'no', class: 't-gdpr-consent-no', aria: { required: true, describedby: 'gdpr_consent_error' } %>
+        <%= f.label :gdpr_consent, value: 'no', aria: { label: 'No, I do not consent to my contact details being shared for customer research' } do %>No<% end %>
+      </div>
+    </fieldset>
+  </div>
+
   <div role="note" aria-label="Information" class="application-notice info-notice">
     <p>Now we've taken your details are you happy for us to book your Pension Wise appointment?</p>
   </div>

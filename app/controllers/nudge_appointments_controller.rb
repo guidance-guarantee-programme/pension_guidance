@@ -114,7 +114,8 @@ class NudgeAppointmentsController < ApplicationController # rubocop:disable Metr
         :accessibility_requirements,
         :notes,
         :confirmation,
-        :eligibility_reason
+        :eligibility_reason,
+        :gdpr_consent
       )
   end
 

@@ -16,6 +16,8 @@ module Pages
     element :memorable_word, '.t-memorable-word'
     element :accessibility_requirements, '.t-accessibility-requirements'
     element :additional_info, '.t-additional-info'
+    element :gdpr_consent_yes, '.t-gdpr-consent-yes'
+    element :gdpr_consent_no, '.t-gdpr-consent-no'
     element :submit, '.t-submit'
     element :continue, '.t-continue'
 

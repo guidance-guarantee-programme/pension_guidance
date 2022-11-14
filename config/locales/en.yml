@@ -291,6 +291,8 @@ en:
               blank: describe the accessibility adjustments you require
             confirmation:
               inclusion: choose a preference
+            gdpr_consent:
+              inclusion: choose a response
 
     attributes:
       nudge_appointment:
@@ -298,6 +300,7 @@ en:
         confirmation: Appointment confirmation preference
         mobile: SMS
         eligibility_reason: Under 50 eligibility
+        gdpr_consent: Customer research consent
       complaint:
         email_address: Email
         nature_of_complaint: Subject or nature of complaint
