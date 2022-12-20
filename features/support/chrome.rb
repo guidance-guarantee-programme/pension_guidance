@@ -3,7 +3,7 @@ require 'selenium/webdriver'
 require 'webdrivers/chromedriver'
 
 # Pinned for this https://github.com/titusfortner/webdrivers/issues/237
-Webdrivers::Chromedriver.required_version = '106.0.5249.21'
+Webdrivers::Chromedriver.required_version = '108.0.5359.71'
 
 Capybara.register_driver :chrome_headless do |app|
   browser_options = ::Selenium::WebDriver::Chrome::Options.new.tap do |opts|
