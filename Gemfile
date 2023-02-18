@@ -75,11 +75,11 @@ group :test do
   gem 'pdf-inspector', require: 'pdf/inspector'
   gem 'rails-controller-testing'
   gem 'scss-lint', '~> 0.30'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '3.142.7'
   gem 'site_prism'
   gem 'timecop'
   gem 'vcr'
-  gem 'webdrivers', '~> 5.0', require: false
+  gem 'webdrivers', '4.4.1'
   gem 'webmock'
 end
 

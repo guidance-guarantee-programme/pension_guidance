@@ -2,22 +2,15 @@ require 'capybara'
 require 'selenium/webdriver'
 require 'webdrivers/chromedriver'
 
-# Pinned for this https://github.com/titusfortner/webdrivers/issues/237
-Webdrivers::Chromedriver.required_version = '108.0.5359.71'
-
 Capybara.register_driver :chrome_headless do |app|
-  browser_options = ::Selenium::WebDriver::Chrome::Options.new.tap do |opts|
-    opts.args << '--window-size=2500,2500'
-    opts.args << '--force-device-scale-factor=0.95'
-    opts.args << '--headless'
-    opts.args << '--disable-gpu'
-    opts.args << '--disable-site-isolation-trials'
-    opts.args << '--no-sandbox'
-  end
+  options = Selenium::WebDriver::Chrome::Options.new(
+    args: %w(headless no-sandbox disable-gpu window-size=2500,2500)
+  )
 
-  Capybara::Selenium::Driver.new(app, browser: :chrome, capabilities: browser_options)
+  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
 end
 
+Capybara.default_normalize_ws = true
 Capybara.default_max_wait_time = 10 if ENV['TRAVIS']
 Capybara.server = :puma, { Silent: true }
 Capybara.javascript_driver = :chrome_headless
