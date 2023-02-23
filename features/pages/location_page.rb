@@ -4,6 +4,8 @@ module Pages
   class Location < Page
     set_url '/{locale}/locations/{id}'
 
+    element :canonical, 'link[rel="canonical"]', visible: false
+    element :robots, 'meta[name="robots"]', visible: false
     element :back_to_results, '.t-back-to-results'
     element :name, '.t-name'
     element :address, '.t-address'
