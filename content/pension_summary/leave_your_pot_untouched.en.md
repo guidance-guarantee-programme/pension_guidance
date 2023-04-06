@@ -2,6 +2,12 @@
 
 You can leave your money invested in your pot until you need it. Your pot could grow further and give you a larger amount of money to last for a shorter amount of time. You (and your employer) can still pay into your pot but there may be restrictions.
 
+You can’t usually access your pension pot until age 55, this is increasing to age 57 on 6 April 2028.
+
+This is important for those born after 6 April 1971, as it could mean that you are unable to access your pension until 2 years later than you expected.
+
+The rules are complicated so you should check with your pension provider.
+
 ## Key facts
 
 * While the money stays in your pot you don’t pay tax on it.
