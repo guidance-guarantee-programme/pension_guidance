@@ -2,6 +2,8 @@
 
 Instead of taking your whole pot in one go, you take smaller lump sums over time until your money runs out – 25% of each lump sum you take out is tax free and the rest is taxable.
 
+You can only use this option is you have not already taken the maximum tax-free lump sum allowable from other pensions. From 6 April 2023 the maximum amount most people can take as a tax-free lump sum is £268,275 unless certain protections apply.
+
 ## Key facts
 
 * The lump sums of cash you take get taxed along with any other income you have, e.g. from work, savings or investments.
