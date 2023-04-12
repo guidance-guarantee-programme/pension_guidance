@@ -1,12 +1,12 @@
 # Get a guaranteed retirement income (annuities)
 
-An annuity can give you a guaranteed income for the rest of your life. You can shop around for an annuity – you don’t have to buy one from your current pension provider.
+You can take up to 25% of your pot tax free – if you do this you must buy an annuity with the remaining 75% or use one of the other options.
 
 ## Key facts
 
 * This is a type of pension product which gives a guaranteed income.
 * You can buy an annuity for a fixed term, e.g. 10 years or for the rest of your life.
-* You can take up to 25% of your pot tax free – if you do this you must buy an annuity with the remaining 75% or use one of the other options.
+* You can take up to 25% of your pot tax free – if you do this you must buy an annuity with the remaining 75% or use one of the other options. From 6 April 2023 the maximum amount most people can take as a tax-free lump sum is £268,275 unless certain protections apply.
 * There are many different types of annuity and it’s important you get the right one for you.
 
 ## Next steps
