@@ -1,6 +1,7 @@
 # Get a guaranteed retirement income (annuities)
 
 You can take up to 25% of your pot tax free – if you do this you must buy an annuity with the remaining 75% or use one of the other options.
+
 ## Key facts
 
 * This is a type of pension product which gives a guaranteed income.

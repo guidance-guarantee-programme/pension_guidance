@@ -2,6 +2,12 @@
 
 Gallwch adael eich arian wedi’i fuddsoddi yn eich cronfa tan fyddwch chi ei angen. Gallai eich cronfa dyfu ymhellach a rhoi swm mwy o arian i chi i barhau am lai o amser. Gallwch chi (a’ch cyflogwr) ddal i dalu i mewn i’ch cronfa ond efallai bydd cyfyngiadau.
 
+Ni allwch fel arfer gael mynediad at eich cronfa bensiwn tan eich bod yn 55 oed, mae hyn yn cynyddu i 57 oed ar 6 Ebrill 2028.
+
+Mae hyn yn bwysig i'r rhai a aned ar ôl 6 Ebrill 1971, oherwydd gallai olygu na allwch gael mynediad at eich pensiwn tan 2 flynedd yn ddiweddarach nag yr oeddech yn disgwyl.
+
+Mae'r rheolau'n gymhleth felly dylech wirio gyda'ch darparwr pensiwn.
+
 ## Ffeithiau allweddol
 
 * Tra bydd yr arian yn aros yn eich cronfa nid ydych yn talu treth arno.
