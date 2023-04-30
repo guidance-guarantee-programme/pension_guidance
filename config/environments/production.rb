@@ -76,7 +76,9 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
   # Use a different cache store in production.
-  config.cache_store = :redis_store
+  config.cache_store = :redis_store,
+                       "#{ENV['REDIS_URL']}/0/cache",
+                       { ssl_params: { verify_mode: OpenSSL::SSL::VERIFY_NONE } }
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   config.action_controller.asset_host = ENV['ASSET_HOST']
