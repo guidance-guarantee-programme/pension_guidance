@@ -13,8 +13,8 @@ cy:
       title: Yn gyntaf - ychydig amdanoch chi
       errors:
         heading: Mae'n ddrwg gennyf, digwyddodd un neu fwy o wallau
-        description: Os ydych chi wedi rhoi caniatâd i Ipsos MORI gysylltu â chi yna llenwch eich enw a chyfeiriad e-bost dilys. Os nad ydych am gysylltu â nhw, yna tynnwch eich enw a / neu gyfeiriad e-bost oddi ar y ffurflen.
-      consent_given: Rwy'n rhoi fy nghaniatâd i rannu fy manylion cyswllt â Ipsos MORI at y diben hwn.
+        description: Os gwnaethoch roi caniatâd i gysylltu â ni gan ein partneriaid ymchwil dibynadwy yna llenwch eich enw a chyfeiriad e-bost dilys. Os nad ydych am gael cysylltiad,  dilëwch eich enw a/neu’ch cyfeiriad e-bost o'r ffurflen.
+        consent_given: Rhoddaf fy nghaniatâd i'm manylion cyswllt gael eu rhannu gyda'n partneriaid ymchwil dibynadwy at y diben hwn.
       age:
         legend: Pa un o'r grwpiau oedran hyn ydych chi?
         "Under 50": "Dan 50 oed"
@@ -36,7 +36,7 @@ cy:
       ipsos_statement:
         html: |
           <h2>Helpwch ni i wella ein gwasanaeth</h2>
-          <p>Rydym yn cynnal ymchwil cwsmeriaid drwy ein partner ymchwil annibynnol (Ipsos MORI). Rydym yn gofyn i gynrychiolaeth o gwsmeriaid am eu profiad o ddefnyddio Pension Wise i wella ein gwasanaethau. Bydd unrhyw fanylion a ddarparwch ond yn cael eu defnyddio i’r diben hwn.</p>
+          <p>A yw'n IAWN os ydym yn rhannu eich manylion cyswllt â'n partneriaid ymchwil dibynadwy? Gyda'ch caniatâd, bydd Pension Wise neu ein partneriaid ymchwil, yn cysylltu â chi i ofyn a hoffech roi adborth a gallwch benderfynu wedyn os ydych am gymryd rhan. Mae eich adborth yn ein helpu i wella'r gwasanaeth.</p>
       privacy_notice:
         html: |
           <h2 id="hysbysiad-preifatrwydd">Hysbysiad preifatrwydd</h2>
