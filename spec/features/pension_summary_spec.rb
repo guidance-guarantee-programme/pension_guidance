@@ -171,7 +171,7 @@ def and_i_choose_to_explore_my_pension_options
 end
 
 def and_i_answer_the_questions_about_me
-  check('I give my consent for my contact details to be shared with Ipsos MORI for this purpose')
+  check('I give my consent for my contact details to be shared with our trusted research partners for this purpose.')
   fill_in('Name', with: 'Jim Bob')
   fill_in('Email', with: 'jim@bob.com')
   choose('Male')

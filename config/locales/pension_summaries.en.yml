@@ -13,8 +13,8 @@ en:
       title: Firstly – a bit about you
       errors:
         heading: Sorry, one or more errors occurred
-        description: If you have given consent to be contacted by Ipsos MORI then please fill out your name and a valid email address. If you do not want to be contacted then please remove your name and/or email address from the form.
-      consent_given: I give my consent for my contact details to be shared with Ipsos MORI for this purpose.
+        description: If you have given consent to be contacted by our trusted research partners then please fill out your name and a valid email address. If you do not want to be contacted then please remove your name and/or email address from the form.
+      consent_given: I give my consent for my contact details to be shared with our trusted research partners for this purpose.
       age:
         legend: Which of these age groups are you in?
         "Under 50": "Under 50"
@@ -40,7 +40,7 @@ en:
       ipsos_statement:
         html: |
           <h2>Help us improve our service</h2>
-          <p>We carry out customer research via our independent research partner (Ipsos MORI). We ask a sample of customers about their experience of using Pension Wise to improve our services. Any details you provide will be used solely for this purpose.</p>
+          <p>Is it OK if we share your contact details with our trusted research partners? With your consent, Pension Wise or our research partners, may contact you to ask if you would like to provide feedback and you can decide then if you want to take part. Your feedback helps us improve the service.</p>
       privacy_notice:
         html: |
           <h2>Privacy notice</h2>
