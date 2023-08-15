@@ -9,6 +9,7 @@ module Pages
     element :date_of_birth_day, '.t-date-of-birth-day'
     element :date_of_birth_month, '.t-date-of-birth-month'
     element :date_of_birth_year, '.t-date-of-birth-year'
+    element :country_of_residence, '.t-country-of-residence'
     element :phone, '.t-phone'
     element :memorable_word, '.t-memorable-word'
     element :choose_other_time_message, '.t-choose-other-time-message'

@@ -120,6 +120,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :first_name,
         :last_name,
         :email,
+        :country_of_residence,
         :phone,
         :memorable_word,
         :date_of_birth,

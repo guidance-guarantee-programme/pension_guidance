@@ -2,6 +2,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
   include ActiveModel::Model
 
   NUDGE_EMBED_WHERE_YOU_HEARD_ID = '25'.freeze
+  DEFAULT_COUNTRY_OF_RESIDENCE   = 'GB'.freeze
 
   attr_accessor(
     :id,
@@ -31,6 +32,8 @@ class TelephoneAppointment # rubocop:disable ClassLength
     :referrer
   )
 
+  attr_writer :country_of_residence
+
   validates :start_at, presence: true
   validates :first_name, presence: true, format: { without: /\d+/ }
   validates :last_name, presence: true, format: { without: /\d+/ }
@@ -44,6 +47,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
   validates :notes, presence: true, if: :accessibility_requirements?
   validates :accessibility_requirements, inclusion: { in: %w(0 1) }
   validates :referrer, presence: true, if: :due_diligence?
+  validates :country_of_residence, presence: true, if: :due_diligence?
   validates :gdpr_consent, inclusion: { in: %w(yes no) }
 
   def due_diligence?
@@ -92,6 +96,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
       first_name: first_name,
       last_name: last_name,
       email: email,
+      country_code: country_of_residence,
       phone: phone,
       memorable_word: memorable_word,
       date_of_birth: date_of_birth,
@@ -106,6 +111,10 @@ class TelephoneAppointment # rubocop:disable ClassLength
       schedule_type: schedule_type,
       referrer: referrer
     }
+  end
+
+  def country_of_residence
+    @country_of_residence || DEFAULT_COUNTRY_OF_RESIDENCE
   end
 
   def date_of_birth

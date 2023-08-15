@@ -39,6 +39,24 @@
     </div>
   </div>
 
+  <% if @telephone_appointment.due_diligence? %>
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:country_of_residence) %>">
+    <%= f.label :country_of_residence, class: 'form-label-bold' do %>
+      Country of residence
+    <% end %>
+
+    <% if @telephone_appointment.errors.include?(:country_of_residence) %>
+      <span class="error-message" id="country_of_residence_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:country_of_residence].to_sentence.capitalize %></span>
+    <% end %>
+
+    <%= f.country_select :country_of_residence,
+      { priority_countries: ['GB'] },
+      { aria: { required: true, describedby: 'country_of_residence_error' },
+        class: "t-country-of-residence form-control #{'form-control-error' if @telephone_appointment.errors.include?(:country_of_residence)}" }
+    %>
+  </div>
+  <% end %>
+
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:phone) %>">
     <%= f.label :phone, class: 'form-label-bold' do %>
       Phone number
