@@ -15,7 +15,7 @@
     "jscs": "latest",
     "jshint": "^2.10.3",
     "phantomjs-prebuilt": "^2.1.16",
-    "svgexport": "^0.2.8"
+    "svgexport": "latest"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
