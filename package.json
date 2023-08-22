@@ -14,6 +14,7 @@
     "eslint": "^1.10.3",
     "jscs": "latest",
     "jshint": "^2.10.3",
+    "phantomjs-prebuilt": "^2.1.16",
     "svgexport": "^0.2.8"
   },
   "scripts": {
