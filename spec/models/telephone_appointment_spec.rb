@@ -21,6 +21,10 @@ RSpec.describe TelephoneAppointment, type: :model do
     )
   end
 
+  it 'defaults `country_of_residence` to GB' do
+    expect(subject.country_of_residence).to eq('GB')
+  end
+
   it 'defaults `due_diligence?` to false' do
     expect(subject).not_to be_due_diligence
   end
@@ -133,6 +137,7 @@ RSpec.describe TelephoneAppointment, type: :model do
       before do
         subject.schedule_type = 'due_diligence'
         subject.referrer = 'Big Pensions PLC'
+        subject.country_of_residence = 'GB'
       end
 
       it 'requires the referring pension provider' do

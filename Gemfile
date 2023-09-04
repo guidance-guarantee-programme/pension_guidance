@@ -11,6 +11,7 @@ gem 'booking_locations', github: 'guidance-guarantee-programme/booking_locations
 gem 'bugsnag'
 gem 'canonical-rails'
 gem 'connection_pool'
+gem 'country_select'
 gem 'email_validation'
 gem 'faraday'
 gem 'faraday-conductivity'
