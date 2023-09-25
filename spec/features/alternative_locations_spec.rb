@@ -29,7 +29,7 @@ RSpec.feature 'Alternative locations' do
   end
 end
 
-def given_a_location_with_limited_availability_and_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Metrics/LineLength
+def given_a_location_with_limited_availability_and_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Layout/LineLength
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id) # rubocop:disable Metrics/MethodLength
@@ -52,7 +52,7 @@ def given_a_location_with_limited_availability_and_available_alternatives(&block
   end
 end
 
-def given_a_location_with_limited_availability_but_no_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Metrics/LineLength
+def given_a_location_with_limited_availability_but_no_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Layout/LineLength
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id)

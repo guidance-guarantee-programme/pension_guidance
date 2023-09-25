@@ -8,9 +8,9 @@ AllCops:
     - 'bin/*'
     - 'db/**/*'
     - 'vendor/**/*'
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.7
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
 Lint/SuppressedException:

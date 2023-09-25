@@ -1,4 +1,4 @@
-# rubocop:disable Metrics/LineLength
+# rubocop:disable Layout/LineLength
 RSpec.feature 'The pension summary', type: :feature do
   context 'When pilot summaries are enabled' do
     scenario 'Viewing the complete pension summary' do
