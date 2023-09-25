@@ -28,7 +28,7 @@ class IncomeTaxCalculator
     end
   end
 
-  # rubocop:disable AbcSize, MethodLength
+  # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
   def self.marginal_tax_for_lump_sum_with_income(lump_sum:, income:)
     potentially_taxable_lump_sum = lump_sum * TAXABLE_LUMP_SUM_PORTION
     allowance = personal_allowance_for(income: potentially_taxable_lump_sum + income)
@@ -66,7 +66,7 @@ class IncomeTaxCalculator
       additional: subject_to_additional_rate * ADDITIONAL_RATE_TAX
     }
   end
-  # rubocop:enable AbcSize, MethodLength
+  # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
 
   def initialize(lump_sum:, income:)
     tax = self.class.marginal_tax_for_lump_sum_with_income(lump_sum: lump_sum, income: income)

@@ -1,4 +1,4 @@
-class TelephoneAppointment # rubocop:disable ClassLength
+class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   include ActiveModel::Model
 
   NUDGE_EMBED_WHERE_YOU_HEARD_ID = '25'.freeze
@@ -90,7 +90,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
     start_at.blank? || age(start_at) < 50
   end
 
-  def attributes # rubocop:disable MethodLength, AbcSize
+  def attributes # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
     {
       start_at: start_at,
       first_name: first_name,
@@ -158,7 +158,7 @@ class TelephoneAppointment # rubocop:disable ClassLength
   private
 
   def validate_phone
-    unless phone.present? && /\A([\d+\-\s\+()]+)\z/ === phone # rubocop:disable GuardClause, CaseEquality
+    unless phone.present? && /\A([\d+\-\s\+()]+)\z/ === phone # rubocop:disable Style/GuardClause, Style/CaseEquality
       errors.add(:phone, :invalid)
     end
   end

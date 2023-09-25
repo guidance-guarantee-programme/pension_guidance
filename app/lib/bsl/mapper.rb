@@ -4,7 +4,7 @@ module Bsl
       @booking_request = booking_request
     end
 
-    def call # rubocop:disable MethodLength, AbcSize
+    def call # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
       {
         first_name: booking_request.first_name,
         last_name: booking_request.last_name,

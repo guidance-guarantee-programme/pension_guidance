@@ -47,7 +47,7 @@ RSpec.feature 'Welsh language bookings' do
     @page.location.select('Ammanford Library')
   end
 
-  def and_provides_their_details # rubocop:disable AbcSize, MethodLength
+  def and_provides_their_details # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
     @page.first_name.set('Ben')
     @page.last_name.set('Smith')
     @page.email.set('ben@example.com')

@@ -9,7 +9,7 @@ RSpec.feature 'Due diligence bookings' do
     end
   end
 
-  def when_a_customer_attempts_to_book_a_due_diligence_appointment # rubocop:disable MethodLength, AbcSize
+  def when_a_customer_attempts_to_book_a_due_diligence_appointment # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
     @page = Pages::NewTelephoneAppointment.new
     @page.load(locale: 'en', query: { schedule_type: 'due_diligence' })
 

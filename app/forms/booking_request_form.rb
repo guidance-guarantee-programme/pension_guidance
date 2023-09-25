@@ -1,4 +1,4 @@
-class BookingRequestForm # rubocop:disable ClassLength
+class BookingRequestForm # rubocop:disable Metrics/ClassLength
   include ActiveModel::Model
 
   attr_accessor :location_id, :first_name, :last_name, :email, :telephone_number,
@@ -137,7 +137,7 @@ class BookingRequestForm # rubocop:disable ClassLength
 
   def validate_telephone_number
     unless telephone_number.present? &&
-           /\A([\d+\-\s\+()]+)\z/ === telephone_number # rubocop:disable CaseEquality
+           /\A([\d+\-\s\+()]+)\z/ === telephone_number # rubocop:disable Style/CaseEquality
       errors.add(:telephone_number, :invalid)
     end
   end

@@ -2,7 +2,7 @@
 class QuestionsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
-  def next # rubocop:disable AbcSize
+  def next # rubocop:disable Metrics/AbcSize
     question = GuideDecorator.cached_for(GuideRepository.new.find(params[:question_id]))
 
     if answer = question.metadata.answers[params[:response]]

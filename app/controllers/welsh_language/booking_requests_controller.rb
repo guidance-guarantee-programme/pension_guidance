@@ -39,7 +39,7 @@ module WelshLanguage
 
     private
 
-    def booking_request_params # rubocop:disable MethodLength
+    def booking_request_params # rubocop:disable Metrics/MethodLength
       munge_date_params!
 
       params
@@ -61,7 +61,7 @@ module WelshLanguage
     end
 
     def munge_date_params!
-      if booking_params = params[:booking_request] # rubocop:disable AssignmentInCondition, GuardClause
+      if booking_params = params[:booking_request] # rubocop:disable Lint/AssignmentInCondition, Style/GuardClause
         year  = booking_params.delete('date_of_birth(1i)')
         month = booking_params.delete('date_of_birth(2i)')
         day   = booking_params.delete('date_of_birth(3i)')

@@ -36,7 +36,7 @@ class LocationsController < ApplicationController
 
   private
 
-  def retrieve_locations # rubocop:disable MethodLength
+  def retrieve_locations # rubocop:disable Metrics/MethodLength
     @locations = begin
       Locations
         .nearest_to_postcode(@postcode, limit: NEAREST_LIMIT)
