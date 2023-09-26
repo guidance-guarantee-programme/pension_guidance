@@ -17,8 +17,8 @@
       <p>Check the following:</p>
 
       <ul class="error-summary-list">
-        <% @appointment_summary.errors.each do |attribute, attribute_message| %>
-          <li><%= link_to "#{AppointmentSummary.human_attribute_name attribute} – #{sanitize(attribute_message, :tags => [])}", "##{attribute}" %></li>
+        <% @appointment_summary.errors.each do |error| %>
+          <li><%= link_to "#{AppointmentSummary.human_attribute_name error.attribute} – #{sanitize(error.message, :tags => [])}", "##{error.attribute}" %></li>
         <% end %>
       </ul>
     </div>

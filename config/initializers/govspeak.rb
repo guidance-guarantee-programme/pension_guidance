@@ -20,7 +20,7 @@ end
 # partial_name = yes-no-dont-know-question
 # id = pension_type_question_1
 # header = '## Was your pension set up by your employer?'
-regexp = %r${::(?<partial_name>[^\s]+-question)\sid="(?<id>.*?)"\slocale="(?<locale>.*?)"}(?<header>.*){:/\k<partial_name>}$m # rubocop:disable Metrics/LineLength
+regexp = %r${::(?<partial_name>[^\s]+-question)\sid="(?<id>.*?)"\slocale="(?<locale>.*?)"}(?<header>.*){:/\k<partial_name>}$m # rubocop:disable Layout/LineLength
 Govspeak::Document.extension('multi-choice-questions', regexp) do |partial_name, id, locale, header|
   partial = "questions/#{partial_name.tr('-', '_')}"
 
@@ -38,6 +38,6 @@ Govspeak::Document.extension('webchat', %r(^{::webchat /})) do
   ApplicationController.render(partial: 'components/webchat')
 end
 
-Govspeak::Document.extension('money_helper_url', %r({::money_helper_url\spath="(?<path>.*?)"\slocale="(?<locale>.*?)"/})) do |path, locale| # rubocop:disable LineLength
+Govspeak::Document.extension('money_helper_url', %r({::money_helper_url\spath="(?<path>.*?)"\slocale="(?<locale>.*?)"/})) do |path, locale| # rubocop:disable Layout/LineLength
   money_helper_url(path, locale: locale)
 end

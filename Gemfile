@@ -7,7 +7,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 gem 'autoprefixer-rails'
 gem 'azure-storage-blob'
-gem 'booking_locations', github: 'guidance-guarantee-programme/booking_locations', ref: 'e50f0b0'
+gem 'booking_locations', github: 'guidance-guarantee-programme/booking_locations', ref: 'da91141'
 gem 'bugsnag'
 gem 'canonical-rails'
 gem 'connection_pool'
@@ -36,14 +36,14 @@ gem 'postcodes_io'
 gem 'postgres-copy'
 gem 'princely'
 gem 'puma'
-gem 'rails', '~> 6.0.0'
+gem 'rails', '~> 6.1'
 gem 'recaptcha'
 gem 'redis'
 gem 'rgeo'
 gem 'rgeo-geojson'
 gem 'rubytree'
 gem 'sassc-rails'
-gem 'sprockets', '~> 3'
+gem 'sprockets', git: 'https://github.com/rails/sprockets', ref: '3.x'
 gem 'sprockets-es6'
 gem 'sprockets-rails'
 gem 'uglifier', '3.0.4'
@@ -54,20 +54,19 @@ gem 'zendesk_api'
 group :development, :test do
   gem 'jasmine-core', '2.5.2'
   gem 'jasmine-jquery-rails'
-  gem 'jasmine-rails', '0.14.1'
+  gem 'jasmine-rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
 end
 
 group :development do
-  gem 'rubocop', '1.7.0', require: false
+  gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
 end
 
 group :test do
-  gem 'axe-matchers', '2.1.0'
-  gem 'cucumber', '3.0.2'
+  gem 'cucumber'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'factory_bot_rails'

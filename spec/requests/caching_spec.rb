@@ -12,9 +12,17 @@ RSpec.describe 'Caching', type: :request do
 
     cacheable_content.each do |page, path|
       context "requesting a #{page} page in the #{locale} locale" do
-        specify 'the response may be cached for 10 seconds by default' do
-          get(*path)
+        subject do
+          case path
+          when String
+            get path
+          else
+            get path.first, **path.second
+          end
+        end
 
+        specify 'the response may be cached for 10 seconds by default' do
+          subject
           expect(response.headers['Cache-Control']).to eq('max-age=10, public')
         end
 
@@ -24,8 +32,7 @@ RSpec.describe 'Caching', type: :request do
           end
 
           specify 'the response may be cached for `CACHE_MAX_AGE`' do
-            get(*path)
-
+            subject
             expect(response.headers['Cache-Control']).to eq('max-age=3600, public')
           end
         end

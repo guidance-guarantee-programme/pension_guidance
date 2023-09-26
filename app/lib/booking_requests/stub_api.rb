@@ -3,8 +3,7 @@ module BookingRequests
     def create(*payload)
       Rails.logger.info(payload)
 
-      {
-      }
+      {}
     end
 
     def slots(*)

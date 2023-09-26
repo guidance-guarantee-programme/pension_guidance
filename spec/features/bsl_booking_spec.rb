@@ -22,7 +22,7 @@ RSpec.feature 'British Sign Language bookings' do
     expect(@page).to be_displayed
   end
 
-  def and_provides_their_details # rubocop:disable AbcSize, MethodLength
+  def and_provides_their_details # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
     @page.first_name.set('Ben')
     @page.last_name.set('Smith')
     @page.email.set('ben@example.com')

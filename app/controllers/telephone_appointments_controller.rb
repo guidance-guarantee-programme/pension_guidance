@@ -1,4 +1,4 @@
-class TelephoneAppointmentsController < ApplicationController # rubocop:disable ClassLength
+class TelephoneAppointmentsController < ApplicationController # rubocop:disable Metrics/ClassLength
   include Embeddable
 
   before_action :set_breadcrumbs

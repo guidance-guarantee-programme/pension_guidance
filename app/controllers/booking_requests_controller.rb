@@ -30,7 +30,7 @@ class BookingRequestsController < ApplicationController
       render :step_two
     elsif @booking_request.ineligible?
       redirect_to booking_request_ineligible_location_path(id: location_id)
-    elsif result = BookingRequests.create(@booking_request) # rubocop:disable AssignmentInCondition
+    elsif result = BookingRequests.create(@booking_request) # rubocop:disable Lint/AssignmentInCondition
       redirect_to booking_request_completed_location_path(id: location_id), flash: result
     else
       redirect_to booking_request_step_one_location_path(id: location_id),

@@ -1,4 +1,4 @@
-class NudgeAppointment # rubocop:disable ClassLength
+class NudgeAppointment # rubocop:disable Metrics/ClassLength
   include ActiveModel::Model
 
   PHONE_REGEX = /\A([\d+\-\s+()]+)\z/.freeze
@@ -58,7 +58,7 @@ class NudgeAppointment # rubocop:disable ClassLength
     yield
   end
 
-  def attributes # rubocop:disable MethodLength
+  def attributes # rubocop:disable Metrics/MethodLength
     {
       start_at: start_at,
       first_name: first_name,

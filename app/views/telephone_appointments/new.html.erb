@@ -19,8 +19,8 @@
       <p>Check the following:</p>
 
       <ul class="error-summary-list">
-        <% @telephone_appointment.errors.each do |key, message| %>
-          <li><%= link_to "#{TelephoneAppointment.human_attribute_name key} – #{message}", "#telephone_appointment_#{key}" %></li>
+        <% @telephone_appointment.errors.each do |error| %>
+          <li><%= link_to "#{TelephoneAppointment.human_attribute_name error.attribute} – #{error.message}", "#telephone_appointment_#{error.attribute}" %></li>
         <% end %>
         <% unless slot_selected? %>
           <li><%= link_to 'Select a time', "#telephone_appointment_times" %></li>

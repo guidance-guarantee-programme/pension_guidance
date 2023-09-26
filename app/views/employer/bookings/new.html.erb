@@ -10,8 +10,8 @@
       <p>Check the following:</p>
 
       <ul class="error-summary-list">
-        <% @booking.errors.each do |key, message| %>
-          <li><%= link_to "#{::Employer::Booking.human_attribute_name key} – #{message}", "#booking_#{key}" %></li>
+        <% @booking.errors.each do |error| %>
+          <li><%= link_to "#{::Employer::Booking.human_attribute_name error.attribute} – #{error.message}", "#booking_#{error.attribute}" %></li>
         <% end %>
         <% unless slot_selected? %>
           <li><%= link_to 'Select a time', "#booking_times" %></li>

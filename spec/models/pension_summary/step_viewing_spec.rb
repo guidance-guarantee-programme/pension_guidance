@@ -1,4 +1,4 @@
-# rubocop:disable Metrics/LineLength
+# rubocop:disable Layout/LineLength
 RSpec.describe PensionSummary::StepViewing, type: :model do
   subject { FactoryBot.build(:pension_summary_step_viewing) }
 

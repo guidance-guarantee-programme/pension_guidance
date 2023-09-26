@@ -106,7 +106,7 @@ module Employer
     private
 
     def validate_phone
-      unless phone.present? && /\A([\d+\-\s\+()]+)\z/ === phone # rubocop:disable GuardClause, CaseEquality
+      unless phone.present? && /\A([\d+\-\s\+()]+)\z/ === phone # rubocop:disable Style/GuardClause, Style/CaseEquality
         errors.add(:phone, :invalid)
       end
     end
