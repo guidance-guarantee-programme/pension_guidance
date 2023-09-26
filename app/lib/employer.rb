@@ -1,8 +1,9 @@
 module Employer
   def self.employer(employer_id)
-    response = api.employer(employer_id)
+    response  = api.employer(employer_id)
+    locations = response['locations'].map { |data| Location.new(data) }
 
-    ::Employer::Employer.new(response)
+    ::Employer::Employer.new(name: response['name'], locations: locations)
   end
 
   def self.location(location_id)

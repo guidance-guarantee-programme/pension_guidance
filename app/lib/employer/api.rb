@@ -25,7 +25,7 @@ module Employer
     private
 
     def connection
-      HTTPConnectionFactory.build(api_uri, connection_options).tap do |c|
+      HTTPConnectionFactory.build(api_uri, **connection_options).tap do |c|
         c.headers[:accept] = 'application/json'
       end
     end

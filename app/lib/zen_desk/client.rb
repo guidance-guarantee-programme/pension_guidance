@@ -7,8 +7,8 @@ module ZenDesk
       @client = client
     end
 
-    def create_ticket(options)
-      create_ticket!(options)
+    def create_ticket(**options)
+      create_ticket!(**options)
     rescue ZendeskAPI::Error::RecordInvalid => e
       Bugsnag.notify(e)
     end

@@ -39,7 +39,7 @@ class TelephoneAppointmentsApi
   end
 
   def connection
-    HTTPConnectionFactory.build(api_uri, connection_options).tap do |c|
+    HTTPConnectionFactory.build(api_uri, **connection_options).tap do |c|
       c.headers[:accept] = 'application/json'
       c.authorization :Bearer, bearer_token if bearer_token
     end
