@@ -54,14 +54,14 @@ gem 'zendesk_api'
 group :development, :test do
   gem 'jasmine-core', '2.5.2'
   gem 'jasmine-jquery-rails'
-  gem 'jasmine-rails', '0.14.1'
+  gem 'jasmine-rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
 end
 
 group :development do
-  gem 'rubocop', '1.7.0', require: false
+  gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
 end
 
