@@ -66,8 +66,7 @@ group :development do
 end
 
 group :test do
-  gem 'axe-matchers', '2.1.0'
-  gem 'cucumber', '3.0.2'
+  gem 'cucumber'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'factory_bot_rails'
