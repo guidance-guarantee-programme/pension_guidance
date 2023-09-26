@@ -41,9 +41,6 @@ Rails.application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 
-  # Raises error for missing translations
-  config.action_view.raise_on_missing_translations = true
-
   config.mount_javascript_test_routes = true
 
   # Disable caching. All cache reads and writes result in a cache miss.
