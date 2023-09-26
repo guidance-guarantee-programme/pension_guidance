@@ -45,7 +45,7 @@ module Locations
     end
 
     def read_json(path)
-      open(path).read
+      URI.open(path).read
     end
   end
 end
