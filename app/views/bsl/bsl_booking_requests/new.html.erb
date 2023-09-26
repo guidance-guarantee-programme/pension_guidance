@@ -16,8 +16,8 @@
         <p>Check the following:</p>
 
         <ul class="error-summary-list">
-          <% @booking_request.errors.each do |key, message| %>
-            <li><%= link_to "#{Bsl::BookingRequest.human_attribute_name key} – #{message}", "#booking_request_#{key}" %></li>
+          <% @booking_request.errors.each do |error| %>
+            <li><%= link_to "#{Bsl::BookingRequest.human_attribute_name error.attribute} – #{error.message}", "#booking_request_#{error.attribute}" %></li>
           <% end %>
         </ul>
       </div>

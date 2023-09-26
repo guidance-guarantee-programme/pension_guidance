@@ -5,9 +5,9 @@
   </h2>
 
   <ul class="error-summary-list">
-    <% errors.each do |attribute, message| %>
+    <% errors.each do |error| %>
       <li>
-        <%= link_to "#{form.human_attribute_name attribute} – #{sanitize(message, :tags => [])}", "##{attribute}" %>
+        <%= link_to "#{form.human_attribute_name error.attribute} – #{sanitize(error.message, :tags => [])}", "##{error.attribute}" %>
       </li>
     <% end %>
   </ul>

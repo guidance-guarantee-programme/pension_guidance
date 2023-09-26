@@ -12,8 +12,8 @@
       <p>Check the following:</p>
 
       <ul class="error-summary-list">
-        <% @nudge_appointment.errors.each do |key, message| %>
-          <li><%= link_to "#{NudgeAppointment.human_attribute_name key} – #{message}", "#nudge_appointment_#{key}" %></li>
+        <% @nudge_appointment.errors.each do |error| %>
+          <li><%= link_to "#{NudgeAppointment.human_attribute_name error.attribute} – #{error.message}", "#nudge_appointment_#{error.attribute}" %></li>
         <% end %>
         <% unless slot_selected? %>
           <li><%= link_to 'Select a time', "#nudge_appointment_times" %></li>
