@@ -22,7 +22,7 @@ class Complaint
   end
 
   def send_to_zendesk
-    ZenDesk.create_ticket(zendesk_content) if valid?
+    ZenDesk.create_ticket(**zendesk_content) if valid?
 
     valid?
   end
