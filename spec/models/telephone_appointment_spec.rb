@@ -220,6 +220,11 @@ RSpec.describe TelephoneAppointment, type: :model do
       expect(subject).to_not be_valid
     end
 
+    it 'does not permit profanity in the memorable_word' do
+      subject.memorable_word = 'twat'
+      expect(subject).to_not be_valid
+    end
+
     context 'when accessibility requirements are needed' do
       it 'requires notes' do
         subject.notes = ''

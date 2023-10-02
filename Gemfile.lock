@@ -27,6 +27,12 @@ GIT
       sassc
 
 GIT
+  remote: https://github.com/guidance-guarantee-programme/profanity_filter.git
+  revision: ff632a79d9b51be21769bab9d25eeab6ac5dc66e
+  specs:
+    profanity_filter (0.1.1)
+
+GIT
   remote: https://github.com/rails/sprockets
   revision: f4d3dae71ef29c44b75a49cfbf8032cce07b423a
   ref: 3.x
@@ -798,6 +804,7 @@ DEPENDENCIES
   postcodes_io
   postgres-copy
   princely
+  profanity_filter!
   pry-byebug
   puma
   rails (~> 6.1)
