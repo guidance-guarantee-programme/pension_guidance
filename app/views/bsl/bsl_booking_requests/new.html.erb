@@ -71,7 +71,7 @@
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:memorable_word) %>">
         <%= f.label :memorable_word, class: 'form-label' do %>
           Your memorable word
-          <span class="form-hint">Our pension specialist will repeat this word when they call so you know it’s us</span>
+          <span class="form-hint">Our pension specialist will repeat this word when they call so you know it’s us. Avoid using the same word from a different account or service</span>
         <% end %>
 
         <% if @booking_request.errors.include?(:memorable_word) %>

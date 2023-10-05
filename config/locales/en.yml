@@ -253,6 +253,7 @@ en:
               invalid: enter a valid phone number
             memorable_word:
               blank: enter a word
+              invalid: remove the profanity or use another memorable word
             date_of_birth:
               blank: enter a valid date of birth
             dc_pot_confirmed:

@@ -63,7 +63,7 @@
       <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:memorable_word) %>">
         <%= f.label :memorable_word, class: 'form-label-bold' do %>
           Eich gair cofiadwy
-          <span class="form-hint">Bydd ein harbenigwr pensiwn yn ailddweud  y gair hwn pan fyddant yn ffonio felly rydych yn  gwybod mai nhw ydynt.</span>
+          <span class="form-hint">Bydd ein harbenigwr pensiynau yn ailadrodd y gair hwn pan fyddant yn ffonio fel eich bod yn gwybod mai ni ydyw. Ceisiwch osgoi defnyddio'r un gair o gyfrif neu wasanaeth gwahanol</span>
         <% end %>
 
         <% if @booking_request.errors.include?(:memorable_word) %>

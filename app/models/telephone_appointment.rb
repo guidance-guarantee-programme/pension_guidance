@@ -39,6 +39,7 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   validates :last_name, presence: true, format: { without: /\d+/ }
   validates :email, email: true
   validate  :validate_phone
+  validate  :validate_memorable_word
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
   validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
@@ -156,6 +157,12 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   end
 
   private
+
+  def validate_memorable_word
+    return if memorable_word.blank?
+
+    errors.add(:memorable_word, :invalid) if ProfanityFilter::Base.profane?(memorable_word)
+  end
 
   def validate_phone
     unless phone.present? && /\A([\d+\-\s\+()]+)\z/ === phone # rubocop:disable Style/GuardClause, Style/CaseEquality
