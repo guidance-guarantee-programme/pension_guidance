@@ -83,14 +83,24 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   end
 
   def retrieve_slots
-    slots = TelephoneAppointmentsApi.new.slots(
-      lloyds_signposted?,
-      telephone_appointment.schedule_type,
-      telephone_appointment.selected_date
-    )
+    slots = Rails.cache.fetch(slots_cache_key, expires_in: slots_cache_expiry) do
+      TelephoneAppointmentsApi.new.slots(
+        lloyds_signposted?,
+        telephone_appointment.schedule_type,
+        telephone_appointment.selected_date
+      )
+    end
 
     @months = retrieve_months(slots)
     @times  = retrieve_times(slots)
+  end
+
+  def slots_cache_key
+    "slots:#{lloyds_signposted?}:#{telephone_appointment.schedule_type}:#{telephone_appointment.selected_date}"
+  end
+
+  def slots_cache_expiry
+    telephone_appointment.selected_date ? 1.minute : 5.minutes
   end
 
   def retrieve_months(slots)
