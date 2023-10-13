@@ -1,4 +1,6 @@
 <% content_for(:page_title, t('service.title', page_title: 'Confirmation')) %>
+<% content_for(:page_name, 'Telephone Booking Confirmation') %>
+<% content_for(:tool_step, '2') %>
 
 <div class="l-grid-row">
   <div class="l-column-two-thirds">
@@ -30,11 +32,3 @@
     <p>To cancel or change your appointment, or if any of the information above isn’t correct, call <strong><% if @due_diligence %> 0800 015 4906<% else %> 0800 138 3944<% end %></strong>.</p>
   </div>
 </div>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  dataLayer.push({
-    'event': 'PhoneBooking',
-    'step': 'completed'
-  });
-</script>
