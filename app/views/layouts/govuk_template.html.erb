@@ -46,6 +46,21 @@
       <script type="text/javascript" src="//assets.adobedtm.com/c3a3920a84ef/2104df5e2099/launch-a40370bb1e84.min.js" async></script>
       <script type="text/javascript" src="//www.moneyhelper.org.uk/etc.clientlibs/maps/core/clientlibs/clientlib-digitaldata.min.536e82a039f309f9f59b3e9e3dab024f.js" defer></script>
     <% end %>
+
+    <script type="text/javascript">
+      window.adobeDataLayer = window.adobeDataLayer || [];
+      adobeDataLayer.push({
+        "event": "pageLoad",
+        "page": {
+          "pageName": "<%= j(content_for(:page_name)) %>",
+          "pageTitle": "<%= j(content_for(:page_title)) %>",
+          "lang": "<%= I18n.locale %>",
+          "site": "moneyhelper",
+          "pageType": "tool",
+          "toolStep": "<%= content_for(:tool_step) || 1 %>"
+        }
+      });
+    </script>
   </head>
 
   <body<%= content_for?(:body_classes) ? raw(" class=\"#{yield(:body_classes)}\"") : '' %>>
