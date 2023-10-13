@@ -1,13 +1,5 @@
 <% content_for(:page_title, t('service.title', page_title: 'Sorry, you’re unable to have an appointment')) %>
+<% content_for(:page_name, 'Telephone Booking Ineligible') %>
+<% content_for(:tool_step, '2') %>
 
 <%= render partial: 'ineligible', locals: { telephone: true } %>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  dataLayer.push({
-    'event': 'PhoneBooking',
-    'step': 'ineligible',
-    'ineligible_age': '<%= @ineligible_age %>',
-    'ineligible_pension': '<%= @ineligible_pension %>'
-  });
-</script>

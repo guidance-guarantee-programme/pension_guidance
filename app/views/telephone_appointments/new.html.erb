@@ -1,5 +1,6 @@
 <% content_for(:canonical, canonical_url) %>
 <% content_for(:noindex, true) %>
+<% content_for(:page_name, 'Telephone Booking') %>
 
 <div class="l-column-full">
   <% if lloyds_signposted? %>
@@ -50,11 +51,3 @@
   </div>
   <% end %>
 </div>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  dataLayer.push({
-    'event': 'PhoneBooking',
-    'step': 'new'
-  });
-</script>
