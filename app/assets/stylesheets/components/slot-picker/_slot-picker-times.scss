@@ -107,10 +107,6 @@
 
 .js-slot-picker-header {
   outline: none;
-
-  @include media(tablet) {
-    float: right;
-  }
 }
 
 .slot-picker-times__selection-visually-hidden {
