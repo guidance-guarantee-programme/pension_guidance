@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   include LogrageFilterer
 
   helper MoneyHelper
+  helper AnalyticsHelper
 
   protect_from_forgery with: :exception
 

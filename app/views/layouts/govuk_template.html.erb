@@ -52,11 +52,11 @@
       adobeDataLayer.push({
         "event": "pageLoad",
         "page": {
-          "pageName": "<%= j(content_for(:page_name)) %>",
+          "pageName": "<%= analytics_page_name(request.url) %>",
           "pageTitle": "<%= j(content_for(:page_title)) %>",
           "lang": "<%= I18n.locale %>",
           "site": "moneyhelper",
-          "pageType": "tool",
+          "pageType": "tool page",
           "toolStep": "<%= content_for(:tool_step) || 1 %>"
         }
       });
