@@ -20,9 +20,9 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: 6424ae2896c023e3edfbe5364dcb6f60a2e31c65
+  revision: 0799a4e91ff800268f1c3467a966581a3d4be41c
   specs:
-    output-templates (6.8.2)
+    output-templates (6.9.0)
       actionview
       sassc
 
@@ -228,7 +228,7 @@ GEM
     faraday-retry (1.0.3)
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
-    ffi (1.15.5)
+    ffi (1.16.3)
     foreman (0.87.2)
     gaffe (1.2.0)
       rails (>= 4.0.0)
@@ -309,7 +309,7 @@ GEM
     logstasher (2.1.5)
       activesupport (>= 5.2)
       request_store
-    loofah (2.21.3)
+    loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
