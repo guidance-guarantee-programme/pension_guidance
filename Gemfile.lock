@@ -20,9 +20,9 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: 0799a4e91ff800268f1c3467a966581a3d4be41c
+  revision: 5026641a7a35857db894cb21166f5e4554447d49
   specs:
-    output-templates (6.9.0)
+    output-templates (6.10.0)
       actionview
       sassc
 
@@ -324,7 +324,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.0808)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.4)
+    mini_portile2 (2.8.5)
     minitest (5.20.0)
     multi_test (1.1.0)
     multipart-post (2.3.0)
