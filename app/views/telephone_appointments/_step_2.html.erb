@@ -1,4 +1,7 @@
 <% content_for(:page_title, t('service.title', page_title: 'Choose a Time')) %>
+<% content_for(:page_name, 'telephone-appointments--new') %>
+<% content_for(:step_name, 'Choose a day') %>
+<% content_for(:tool_step, '1') %>
 
 <div class="l-column-half l-column-half--right" data-slot-picker-single-time>
   <%= render 'hidden_fields', f: f, id_prefix: 'step_2' %>

@@ -1,5 +1,7 @@
 <% content_for(:page_title, t('service.title', page_title: 'Sorry, you’re unable to have an appointment')) %>
-<% content_for(:page_name, 'Telephone Booking Ineligible') %>
-<% content_for(:tool_step, '2') %>
+<% content_for(:page_name, 'telephone-appointments--ineligible') %>
+<% content_for(:step_name, 'Results') %>
+<% content_for(:tool_step, '3') %>
+<% content_for(:tool_name, 'Book a free pension wise appointment') %>
 
 <%= render partial: 'ineligible', locals: { telephone: true } %>

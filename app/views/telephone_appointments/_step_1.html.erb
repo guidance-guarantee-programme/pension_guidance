@@ -1,4 +1,8 @@
 <% content_for(:page_title, t('service.title', page_title: 'Book a phone appointment')) %>
+<% content_for(:page_name, 'telephone-appointments--new') %>
+<% content_for(:step_name, 'Choose a day') %>
+<% content_for(:tool_step, '1') %>
+<% content_for(:tool_name, 'Book a free pension wise appointment') %>
 
 <%= f.hidden_field :start_at, id: 'hidden_telephone_appointment_start_at_step_1' %>
 <%= render 'hidden_fields', f: f, id_prefix: 'step_1' %>
