@@ -3,6 +3,10 @@ description: You have a defined contribution pension
 tags:
   - appointments
   - embeddable
+page_name: pension-type-tool--defined-contribution
+tool_step: '5'
+step_name: Results
+tool_name: Pension Type Tool
 ---
 
 # Find out your pension type

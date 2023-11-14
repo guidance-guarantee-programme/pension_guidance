@@ -3,6 +3,10 @@ description: Efallai bod gennych bensiwn cyfraniadau wedi’u diffinio
 tags:
   - appointments
   - embeddable
+page_name: pension-type-tool--might-defined-contribution
+tool_step: '5'
+step_name: Results
+tool_name: Pension Type Tool
 ---
 
 # Dod o hyd i’ch math o bensiwn

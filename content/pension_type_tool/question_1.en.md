@@ -8,6 +8,10 @@ tags:
   - appointments
   - embeddable
 canonical:  https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/find-out-your-pension-type
+page_name: pension-type-tool--question-1
+tool_step: '1'
+step_name: Pension set up
+tool_name: Pension Type Tool
 ---
 
 # Find out your pension type

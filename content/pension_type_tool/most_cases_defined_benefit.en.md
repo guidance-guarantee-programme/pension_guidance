@@ -3,6 +3,10 @@ description: In most cases you’ll have a defined benefit pension
 tags:
   - appointments
   - embeddable
+page_name: pension-type-tool--most-cases-defined-benefit
+tool_step: '5'
+step_name: Results
+tool_name: Pension Type Tool
 ---
 
 # Find out your pension type

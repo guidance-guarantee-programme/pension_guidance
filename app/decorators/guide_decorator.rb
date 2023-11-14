@@ -29,7 +29,7 @@ class GuideDecorator < SimpleDelegator
     end
   end
 
-  delegate :canonical, to: :metadata
+  delegate :canonical, :page_name, :tool_step, :step_name, :tool_name, to: :metadata
 
   def self.for(guide)
     case guide.content_type

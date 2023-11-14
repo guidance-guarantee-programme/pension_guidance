@@ -3,6 +3,10 @@ description: Yn y mwyafrif o achosion bydd gennych bensiwn cyfraniadau wedi’u 
 tags:
   - appointments
   - embeddable
+page_name: pension-type-tool--most-cases-defined-contribution
+tool_step: '5'
+step_name: Results
+tool_name: Pension Type Tool
 ---
 
 # Dod o hyd i’ch math o bensiwn
