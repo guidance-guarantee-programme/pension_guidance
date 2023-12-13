@@ -12,14 +12,6 @@ Layout/HeredocIndentation:
   Exclude:
     - 'spec/lib/front_matter_parser_spec.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyleForEmptyBraces.
-# SupportedStyles: space, no_space, compact
-# SupportedStylesForEmptyBraces: space, no_space
-Layout/SpaceInsideHashLiteralBraces:
-  EnforcedStyle: space
-
 # Offense count: 13
 Lint/DuplicateMethods:
   Exclude:
