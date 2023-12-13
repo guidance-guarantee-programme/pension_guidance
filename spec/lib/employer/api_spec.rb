@@ -30,12 +30,12 @@ RSpec.describe Employer::Api do
       expect(subject['name']).to eq('Tesco')
 
       expect(subject['locations'].first).to include(
-        'name'             => 'Tesco 1',
+        'name' => 'Tesco 1',
         'address_line_one' => '1 Some Street',
         'address_line_two' => 'Some Place',
-        'town'             => 'Some Town',
-        'county'           => 'Some County',
-        'available'        => true
+        'town' => 'Some Town',
+        'county' => 'Some County',
+        'available' => true
       )
     end
   end

@@ -43,7 +43,7 @@ def given_a_location_with_limited_availability_and_available_alternatives(&block
           }
         else
           {
-            two_days   => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
+            two_days => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
             three_days => ["#{three_days} 09:00:00 UTC", "#{three_days} 13:00:00 UTC"]
           }
         end
@@ -78,7 +78,7 @@ def given_a_location_without_limited_availability(&block) # rubocop:disable Metr
         three_days = 3.days.from_now.to_date.to_s(:db)
 
         {
-          two_days   => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
+          two_days => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
           three_days => ["#{three_days} 09:00:00 UTC", "#{three_days} 13:00:00 UTC"]
         }
       end
