@@ -12,6 +12,7 @@ module HomeHelper
 
   class BannerSchedule
     attr_reader :schedule, :current_date
+
     delegate :last, to: :schedule
 
     class << self
