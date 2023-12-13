@@ -4,6 +4,7 @@ module Calculators
       @form = GuaranteedIncomeForm.new(form_params)
 
       return unless request.xhr?
+
       status = @form.invalid? ? :bad_request : :ok
 
       render partial: 'calculators/guaranteed_income/calculator',
