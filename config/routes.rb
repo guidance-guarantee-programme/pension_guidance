@@ -82,7 +82,7 @@ Rails.application.routes.draw do
         get :completed, on: :collection
       end
 
-      resources :locations, only: [:index, :show] do
+      resources :locations, only: %i[index show] do
         collection do
           post 'search'
         end
@@ -113,7 +113,7 @@ Rails.application.routes.draw do
         end
       end
 
-      resource :feedback, only: [:create, :new] do
+      resource :feedback, only: %i[create new] do
         get :thanks
       end
 

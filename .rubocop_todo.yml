@@ -256,11 +256,3 @@ Style/RescueStandardError:
 Style/SafeNavigation:
   Exclude:
     - 'app/decorators/location_decorator.rb'
-
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle, MinSize.
-# SupportedStyles: percent, brackets
-Style/SymbolArray:
-  Exclude:
-    - 'config/routes.rb'
