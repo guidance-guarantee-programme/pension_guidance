@@ -45,3 +45,7 @@ Style/EmptyMethod:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+
+Style/RedundantFetchBlock:
+  Exclude:
+    - 'config/initializers/redis_pool.rb'
