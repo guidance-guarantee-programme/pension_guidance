@@ -175,14 +175,6 @@ Style/ExplicitBlockArgument:
 Style/FormatStringToken:
   EnforcedStyle: template
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: braces, no_braces
-Style/HashAsLastArrayItem:
-  Exclude:
-    - 'spec/requests/caching_spec.rb'
-
 # Offense count: 3
 # Configuration parameters: MinBranchesCount.
 Style/HashLikeCase:

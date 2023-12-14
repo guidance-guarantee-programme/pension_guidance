@@ -2,8 +2,8 @@ RSpec.describe 'Caching', type: :request do
   I18n.available_locales.each do |locale|
     cacheable_content = {
       'locations home' => "/#{locale}/locations",
-      'valid location search' => ["/#{locale}/locations", params: { postcode: 'SW1A%202HQ' }],
-      'invalid location search' => ["/#{locale}/locations", params: { postcode: 'london' }],
+      'valid location search' => ["/#{locale}/locations", { params: { postcode: 'SW1A%202HQ' } }],
+      'invalid location search' => ["/#{locale}/locations", { params: { postcode: 'london' } }],
       location: "/#{locale}/locations/london",
       guide: "/#{locale}/pension-types",
       category: "/#{locale}/browse/tax-and-getting-advice",
