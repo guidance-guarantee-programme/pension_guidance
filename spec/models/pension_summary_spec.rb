@@ -197,3 +197,4 @@ RSpec.describe PensionSummary, type: :model do
     end
   end
 end
+# rubocop:enable Layout/LineLength

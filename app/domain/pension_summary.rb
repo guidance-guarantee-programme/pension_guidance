@@ -184,3 +184,4 @@ class PensionSummary < ApplicationRecord
     email.to_s =~ EMAIL_REGEX
   end
 end
+# rubocop:enable Metrics/ClassLength

@@ -157,3 +157,4 @@ Rails.application.routes.draw do
   get '/', to: redirect('/en')
   get '/*path', to: redirect('/en/%{path}'), constraints: ->(req) { req.params[:path] !~ /^(en|cy)/ }
 end
+# rubocop:enable Metrics/BlockLength

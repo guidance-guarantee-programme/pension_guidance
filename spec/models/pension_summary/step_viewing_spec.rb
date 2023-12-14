@@ -21,3 +21,4 @@ RSpec.describe PensionSummary::StepViewing, type: :model do
     end
   end
 end
+# rubocop:enable Layout/LineLength

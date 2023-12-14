@@ -66,3 +66,4 @@ RSpec.feature 'Employer locations' do
     expect(@page).to have_book_online
   end
 end
+# rubocop:enable Metrics/MethodLength, Metrics/AbcSize

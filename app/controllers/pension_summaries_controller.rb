@@ -235,3 +235,4 @@ class PensionSummariesController < ApplicationController
   end
   helper_method :download_summary_path
 end
+# rubocop:enable Metrics/ClassLength

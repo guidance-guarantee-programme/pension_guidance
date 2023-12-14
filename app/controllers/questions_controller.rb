@@ -12,3 +12,4 @@ class QuestionsController < ApplicationController
     end
   end
 end
+# rubocop:enable Lint/AssignmentInCondition
