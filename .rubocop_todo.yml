@@ -66,20 +66,6 @@ Naming/RescuedExceptionsVariableName:
   Exclude:
     - 'app/lib/http_connection.rb'
 
-# Offense count: 19
-# Configuration parameters: EnforcedStyle, CheckMethodNames, CheckSymbols, AllowedIdentifiers, AllowedPatterns.
-# SupportedStyles: snake_case, normalcase, non_integer
-# AllowedIdentifiers: capture3, iso8601, rfc1123_date, rfc822, rfc2822, rfc3339, x86_64
-Naming/VariableNumber:
-  Exclude:
-    - 'app/controllers/employer/bookings_controller.rb'
-    - 'app/controllers/telephone_appointments_controller.rb'
-    - 'features/pages/appointment_summary_generator.rb'
-    - 'spec/controllers/concerns/breadcrumbs_controller_concern_spec.rb'
-    - 'spec/lib/leave_pot_untouched_calculator_spec.rb'
-    - 'spec/models/pension_summary/step_viewing_spec.rb'
-    - 'spec/requests/locations_cache_sweeper_api_spec.rb'
-
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
 Rails/ApplicationController:

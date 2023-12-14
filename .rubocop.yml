@@ -58,3 +58,13 @@ Lint/MissingSuper:
   Exclude:
     - 'app/decorators/cached_guide_decorator.rb'
     - 'app/decorators/location_decorator.rb'
+
+Naming/VariableNumber:
+  Exclude:
+    - 'app/controllers/employer/bookings_controller.rb'
+    - 'app/controllers/telephone_appointments_controller.rb'
+    - 'features/pages/appointment_summary_generator.rb'
+    - 'spec/controllers/concerns/breadcrumbs_controller_concern_spec.rb'
+    - 'spec/lib/leave_pot_untouched_calculator_spec.rb'
+    - 'spec/models/pension_summary/step_viewing_spec.rb'
+    - 'spec/requests/locations_cache_sweeper_api_spec.rb'
