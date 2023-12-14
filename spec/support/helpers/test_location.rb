@@ -1,5 +1,5 @@
 class TestLocation
-  def self.london
+  def self.london # rubocop:disable Metrics/MethodLength
     Locations::Location.new(
       id: 'london',
       name: 'London',
@@ -13,7 +13,7 @@ class TestLocation
     )
   end
 
-  def self.paris
+  def self.paris # rubocop:disable Metrics/MethodLength
     Locations::Location.new(
       id: 'paris',
       name: 'Paris',
@@ -27,7 +27,7 @@ class TestLocation
     )
   end
 
-  def self.new_york
+  def self.new_york # rubocop:disable Metrics/MethodLength
     Locations::Location.new(
       id: 'new-york',
       name: 'New York',

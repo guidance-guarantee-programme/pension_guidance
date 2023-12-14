@@ -116,7 +116,7 @@ def then_i_should_not_see_suggested_alternative_locations
   expect(page).not_to have_selector('.t-limited-availability')
 end
 
-def with_temporary_environment(steps_block)
+def with_temporary_environment(steps_block) # rubocop:disable Metrics/MethodLength
   previous_geo_json_path_or_url = Locations.geo_json_path_or_url
   previous_locations_api = BookingLocations.api
   previous_requests_api = BookingRequests.api

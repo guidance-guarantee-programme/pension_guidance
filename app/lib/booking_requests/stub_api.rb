@@ -6,7 +6,7 @@ module BookingRequests
       {}
     end
 
-    def slots(*)
+    def slots(*) # rubocop:disable Metrics/MethodLength
       {}.tap do |result|
         (Date.current..2.weeks.from_now.to_date).reject(&:on_weekend?).each do |date|
           result[date.iso8601] = [

@@ -54,7 +54,7 @@ module Employer
       !eligible?
     end
 
-    def attributes
+    def attributes # rubocop:disable Metrics/MethodLength
       {
         start_at: start_at,
         first_name: first_name,
