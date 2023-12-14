@@ -264,11 +264,3 @@ Style/SafeNavigation:
 Style/SymbolArray:
   Exclude:
     - 'config/routes.rb'
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle, MinSize, WordRegex.
-# SupportedStyles: percent, brackets
-Style/WordArray:
-  Exclude:
-    - 'lib/tasks/cucumber.rake'
