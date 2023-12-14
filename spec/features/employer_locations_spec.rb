@@ -1,4 +1,4 @@
-# rubocop:disable Metrics/MethodLength, Metrics/AbcSize
+# rubocop:disable Metrics/MethodLength
 require_relative '../../features/pages/employer_location'
 require_relative '../../features/pages/employer_locations'
 
@@ -66,4 +66,4 @@ RSpec.feature 'Employer locations' do
     expect(@page).to have_book_online
   end
 end
-# rubocop:enable Metrics/MethodLength, Metrics/AbcSize
+# rubocop:enable Metrics/MethodLength

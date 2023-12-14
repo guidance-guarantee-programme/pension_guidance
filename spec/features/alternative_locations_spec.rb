@@ -29,7 +29,7 @@ RSpec.feature 'Alternative locations' do
   end
 end
 
-def given_a_location_with_limited_availability_and_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Layout/LineLength
+def given_a_location_with_limited_availability_and_available_alternatives(&block) # rubocop:disable Metrics/MethodLength
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id) # rubocop:disable Metrics/MethodLength
@@ -52,7 +52,7 @@ def given_a_location_with_limited_availability_and_available_alternatives(&block
   end
 end
 
-def given_a_location_with_limited_availability_but_no_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Layout/LineLength
+def given_a_location_with_limited_availability_but_no_available_alternatives(&block) # rubocop:disable Metrics/MethodLength
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id)
@@ -116,7 +116,7 @@ def then_i_should_not_see_suggested_alternative_locations
   expect(page).not_to have_selector('.t-limited-availability')
 end
 
-def with_temporary_environment(steps_block) # rubocop:disable Metrics/MethodLength
+def with_temporary_environment(steps_block)
   previous_geo_json_path_or_url = Locations.geo_json_path_or_url
   previous_locations_api = BookingLocations.api
   previous_requests_api = BookingRequests.api

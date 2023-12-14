@@ -19,16 +19,6 @@ Lint/NonDeterministicRequireOrder:
   Exclude:
     - 'spec/spec_helper.rb'
 
-# Offense count: 6
-# This cop supports safe autocorrection (--autocorrect).
-Lint/RedundantCopDisableDirective:
-  Exclude:
-    - 'app/controllers/employer/bookings_controller.rb'
-    - 'app/controllers/questions_controller.rb'
-    - 'app/domain/taxonomy.rb'
-    - 'spec/features/alternative_locations_spec.rb'
-    - 'spec/features/employer_locations_spec.rb'
-
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 Lint/ScriptPermission:
