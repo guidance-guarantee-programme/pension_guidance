@@ -14,9 +14,7 @@ class ApplicationController < ActionController::Base
     http_basic_authenticate_with name: ENV['AUTH_USERNAME'], password: ENV['AUTH_PASSWORD']
   end
 
-  unless Rails.env.development?
-    rescue_from I18n::InvalidLocale, with: :not_found
-  end
+  rescue_from I18n::InvalidLocale, with: :not_found unless Rails.env.development?
 
   def footer?
     true

@@ -9,9 +9,7 @@ module Locations
         end_point = point(location.lat_lng)
         distance = start_point.distance(end_point) / METRES_PER_MILE
 
-        if radius.nil? || distance <= radius
-          memo << SearchResult.new(location, distance)
-        end
+        memo << SearchResult.new(location, distance) if radius.nil? || distance <= radius
       end
 
       search_results = search_results.sort_by(&:distance)

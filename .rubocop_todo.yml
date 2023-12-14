@@ -190,14 +190,6 @@ Style/HashLikeCase:
     - 'features/step_definitions/appointment_summary_steps.rb'
     - 'features/step_definitions/location_steps.rb'
 
-# Offense count: 3
-# This cop supports safe autocorrection (--autocorrect).
-Style/IfUnlessModifier:
-  Exclude:
-    - 'app/controllers/application_controller.rb'
-    - 'app/helpers/application_helper.rb'
-    - 'app/lib/locations/search.rb'
-
 # Offense count: 1
 Style/MixinUsage:
   Exclude:
