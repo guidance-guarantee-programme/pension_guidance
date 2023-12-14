@@ -203,14 +203,6 @@ Style/MixinUsage:
   Exclude:
     - 'config/initializers/govspeak.rb'
 
-# Offense count: 12
-# This cop supports safe autocorrection (--autocorrect).
-Style/MultilineWhenThen:
-  Exclude:
-    - 'app/helpers/navigation_helper.rb'
-    - 'app/repositories/guide_repository.rb'
-    - 'features/step_definitions/appointment_summary_steps.rb'
-
 # Offense count: 3
 # This cop supports unsafe autocorrection (--autocorrect-all).
 # Configuration parameters: EnforcedStyle.

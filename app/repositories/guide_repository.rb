@@ -74,9 +74,9 @@ class GuideRepository
 
   def file_content_type(path)
     case File.extname(path)
-    when '.md' then
+    when '.md'
       :govspeak
-    when '.html' then
+    when '.html'
       :html
     end
   end

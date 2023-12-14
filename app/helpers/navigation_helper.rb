@@ -40,9 +40,9 @@ module NavigationHelper
   def navigation_group(group, position:)
     classes = %w(nav__sub-nav-list)
     classes << case position
-               when 1 then
+               when 1
                  'nav__sub-nav-list--first'
-               when 2 then
+               when 2
                  'nav__sub-nav-list--second'
                end
 
