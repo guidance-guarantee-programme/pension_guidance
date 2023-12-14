@@ -7,15 +7,6 @@
 # versions of RuboCop, may require this file to be generated again.
 
 # Offense count: 13
-Lint/DuplicateMethods:
-  Exclude:
-    - 'app/forms/booking_request_form.rb'
-    - 'app/forms/calculators/take_whole_pot_form.rb'
-    - 'app/models/appointment_summary.rb'
-    - 'app/models/employer/booking.rb'
-    - 'app/models/telephone_appointment.rb'
-
-# Offense count: 13
 # Configuration parameters: MaximumRangeSize.
 Lint/MissingCopEnableDirective:
   Exclude:

@@ -3,7 +3,9 @@ class AppointmentSummary
 
   TRUTHIES = [true, 'true', '1', 1].freeze
 
-  attr_accessor *SUPPLEMENTARY_OPTIONS, :appointment_type
+  attr_accessor *SUPPLEMENTARY_OPTIONS
+
+  attr_writer :appointment_type
 
   SUPPLEMENTARY_OPTIONS.each do |attribute|
     define_method("#{attribute}=") do |value|

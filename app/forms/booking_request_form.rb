@@ -2,10 +2,10 @@ class BookingRequestForm # rubocop:disable Metrics/ClassLength
   include ActiveModel::Model
 
   attr_accessor :location_id, :first_name, :last_name, :email, :telephone_number,
-                :memorable_word, :accessibility_requirements, :date_of_birth,
-                :dc_pot, :additional_info, :remote_ip, :where_you_heard, :gdpr_consent
+                :memorable_word, :accessibility_requirements, :dc_pot,
+                :additional_info, :remote_ip, :where_you_heard, :gdpr_consent
 
-  attr_writer :selected_date, :start_at
+  attr_writer :selected_date, :start_at, :date_of_birth
 
   validate :validate_step_one
 

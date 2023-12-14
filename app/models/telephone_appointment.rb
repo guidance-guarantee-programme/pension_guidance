@@ -6,18 +6,13 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
 
   attr_accessor(
     :id,
-    :step,
-    :selected_date,
-    :start_at,
     :first_name,
     :last_name,
     :email,
     :phone,
     :memorable_word,
     :appointment_type,
-    :date_of_birth,
     :dc_pot_confirmed,
-    :where_you_heard,
     :date_of_birth_year,
     :date_of_birth_month,
     :date_of_birth_day,
@@ -32,7 +27,14 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
     :referrer
   )
 
-  attr_writer :country_of_residence
+  attr_writer(
+    :country_of_residence,
+    :date_of_birth,
+    :where_you_heard,
+    :start_at,
+    :selected_date,
+    :step
+  )
 
   validates :start_at, presence: true
   validates :first_name, presence: true, format: { without: /\d+/ }

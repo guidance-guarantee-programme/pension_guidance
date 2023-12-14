@@ -4,16 +4,12 @@ module Employer
 
     attr_accessor(
       :id,
-      :step,
-      :selected_date,
-      :start_at,
       :first_name,
       :last_name,
       :email,
       :phone,
       :memorable_word,
       :appointment_type,
-      :date_of_birth,
       :dc_pot_confirmed,
       :date_of_birth_year,
       :date_of_birth_month,
@@ -22,6 +18,13 @@ module Employer
       :employer_id,
       :room,
       :gdpr_consent
+    )
+
+    attr_writer(
+      :date_of_birth,
+      :selected_date,
+      :start_at,
+      :step
     )
 
     validates :start_at, presence: true
