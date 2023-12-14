@@ -221,13 +221,6 @@ Style/MutableConstant:
     - 'app/helpers/home_helper.rb'
     - 'app/lib/leave_pot_untouched_calculator.rb'
 
-# Offense count: 1
-# Configuration parameters: AllowedMethods.
-# AllowedMethods: respond_to_missing?
-Style/OptionalBooleanParameter:
-  Exclude:
-    - 'app/view_models/navigation.rb'
-
 # Offense count: 91
 # This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: PreferredDelimiters.

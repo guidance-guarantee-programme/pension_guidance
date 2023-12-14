@@ -49,3 +49,7 @@ Metrics/BlockLength:
 Style/RedundantFetchBlock:
   Exclude:
     - 'config/initializers/redis_pool.rb'
+
+Style/OptionalBooleanParameter:
+  Exclude:
+    - 'app/view_models/navigation.rb'
