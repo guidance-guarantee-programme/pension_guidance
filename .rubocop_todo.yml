@@ -138,13 +138,6 @@ Style/CommentedKeyword:
   Exclude:
     - 'lib/tasks/cucumber.rake'
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-Style/EmptyLiteral:
-  Exclude:
-    - 'spec/lib/booking_requests/booking_requests_spec.rb'
-    - 'spec/lib/entity_spec.rb'
-
 # Offense count: 5
 # This cop supports safe autocorrection (--autocorrect).
 Style/ExpandPathArguments:

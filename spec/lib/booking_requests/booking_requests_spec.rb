@@ -4,7 +4,7 @@ RSpec.describe BookingRequests do
   describe '.create' do
     context 'with a valid booking request' do
       let(:booking_request) { Hash[blah: 'welp'] }
-      let(:result) { Hash.new }
+      let(:result) { {} }
 
       around do |example|
         with_stubbed_booking_requests_api(api, example)
