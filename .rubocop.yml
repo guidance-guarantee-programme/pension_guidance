@@ -53,3 +53,8 @@ Style/RedundantFetchBlock:
 Style/OptionalBooleanParameter:
   Exclude:
     - 'app/view_models/navigation.rb'
+
+Lint/MissingSuper:
+  Exclude:
+    - 'app/decorators/cached_guide_decorator.rb'
+    - 'app/decorators/location_decorator.rb'
