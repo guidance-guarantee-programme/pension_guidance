@@ -20,7 +20,7 @@ module WelshLanguage
     validates :first_name, presence: true
     validates :last_name, presence: true
     validates :email, email: true
-    validates :phone, presence: true, format: /\A([\d+\-\s\+()]+)\z/
+    validates :phone, presence: true, format: /\A([\d+\-\s+()]+)\z/
     validates :memorable_word, presence: true
     validates :accessibility_needs, inclusion: { in: %w(0 1) }
     validates :defined_contribution_pot_confirmed, inclusion: { in: %w(yes not-sure) }

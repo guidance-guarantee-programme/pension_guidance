@@ -137,7 +137,7 @@ class BookingRequestForm # rubocop:disable Metrics/ClassLength
 
   def validate_telephone_number
     unless telephone_number.present? &&
-           /\A([\d+\-\s\+()]+)\z/ === telephone_number # rubocop:disable Style/CaseEquality
+           /\A([\d+\-\s+()]+)\z/ === telephone_number # rubocop:disable Style/CaseEquality
       errors.add(:telephone_number, :invalid)
     end
   end

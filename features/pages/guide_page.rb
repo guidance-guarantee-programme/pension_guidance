@@ -3,7 +3,7 @@ require_relative 'page'
 module Pages
   class Guide < Page
     set_url('/{locale}/{slug}')
-    set_url_matcher(%r{\/(\w|-)+$})
+    set_url_matcher(%r{/(\w|-)+$})
 
     element :primary_heading, 'h1'
     elements :option_links, '.t-option'

@@ -241,19 +241,6 @@ Style/RedundantFetchBlock:
   Exclude:
     - 'config/initializers/redis_pool.rb'
 
-# Offense count: 11
-# This cop supports safe autocorrection (--autocorrect).
-Style/RedundantRegexpEscape:
-  Exclude:
-    - 'app/forms/booking_request_form.rb'
-    - 'app/models/bsl/booking_request.rb'
-    - 'app/models/employer/booking.rb'
-    - 'app/models/telephone_appointment.rb'
-    - 'app/models/welsh_language/booking_request.rb'
-    - 'app/repositories/guide_repository.rb'
-    - 'features/pages/category_page.rb'
-    - 'features/pages/guide_page.rb'
-
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: EnforcedStyle.
