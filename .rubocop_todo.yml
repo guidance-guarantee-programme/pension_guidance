@@ -240,12 +240,3 @@ Style/PercentLiteralDelimiters:
 Style/RedundantFetchBlock:
   Exclude:
     - 'config/initializers/redis_pool.rb'
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: implicit, explicit
-Style/RescueStandardError:
-  Exclude:
-    - 'app/lib/geocoder.rb'
-    
