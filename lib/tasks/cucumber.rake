@@ -47,10 +47,10 @@ unless ARGV.any? { |a| a =~ /^gems/ }
     end
 
     task stats: 'cucumber:statsetup'
-  rescue LoadError
+  rescue LoadError # Don't load anything when running the gems:* tasks
     desc 'Cucumber rake task not available (cucumber not installed)'
     task :cucumber do
       abort 'Cucumber rake task is not available. Be sure to install cucumber as a gem or plugin'
     end
   end
-end # Don't load anything when running the gems:* tasks
+end

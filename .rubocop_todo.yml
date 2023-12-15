@@ -74,12 +74,6 @@ Style/ClassAndModuleChildren:
     - 'config/application.rb'
 
 # Offense count: 1
-# This cop supports unsafe autocorrection (--autocorrect-all).
-Style/CommentedKeyword:
-  Exclude:
-    - 'lib/tasks/cucumber.rake'
-
-# Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 Style/ExplicitBlockArgument:
   Exclude:
