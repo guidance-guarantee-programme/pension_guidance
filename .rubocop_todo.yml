@@ -51,15 +51,6 @@ Rails/HelperInstanceVariable:
     - 'app/helpers/guides_helper.rb'
     - 'app/helpers/home_helper.rb'
 
-# Offense count: 4
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: Include.
-# Include: **/Rakefile, **/*.rake
-Rails/RakeEnvironment:
-  Exclude:
-    - 'lib/tasks/analyse_javascript.rake'
-    - 'lib/tasks/cucumber.rake'
-
 # Offense count: 1
 Security/Open:
   Exclude:
