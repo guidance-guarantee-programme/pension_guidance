@@ -70,10 +70,12 @@ end
 
 # New versions of action_dispatch renamed `#success?` to `#successful?`, but
 # we can't upgrade jasmine-rails (which calls the former method).
-class ActionDispatch::TestResponse
-  if Rails.env.test?
-    def success?
-      successful?
+module ActionDispatch
+  class TestResponse
+    if Rails.env.test?
+      def success?
+        successful?
+      end
     end
   end
 end
