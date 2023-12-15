@@ -1,12 +1,12 @@
 Rails.application.config.assets.version = '1.0'
 
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
-                                                         'accessible.media.player', 'core', 'javascripts')
+Rails.application.config.assets.paths << Rails.root.join('vendor/assets/bower_components/
+                                                         accessible.media.player/core/javascripts')
 
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
-                                                         'accessible.media.player', 'core', 'stylesheets')
+Rails.application.config.assets.paths << Rails.root.join('vendor/assets/bower_components/
+                                                         accessible.media.player/core/stylesheets')
 
-Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+Rails.application.config.assets.paths << Rails.root.join('app/assets/fonts')
 
 Rails.application.config.assets.precompile += %w[ apple-touch-icon-120x120.png
                                                   apple-touch-icon-152x152.png

@@ -6,7 +6,7 @@ require_relative '../features/support/chrome'
 require 'rspec/rails'
 require 'vcr'
 
-Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
+Dir[Rails.root.join('spec/support/**/*.rb')].sort.each { |f| require f }
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|

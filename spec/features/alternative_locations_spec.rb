@@ -121,7 +121,7 @@ def with_temporary_environment(steps_block) # rubocop:disable Metrics/MethodLeng
   previous_locations_api = BookingLocations.api
   previous_requests_api = BookingRequests.api
 
-  Locations.geo_json_path_or_url = Rails.root.join('spec', 'fixtures', 'locations_with_alternates.json')
+  Locations.geo_json_path_or_url = Rails.root.join('spec/fixtures/locations_with_alternates.json')
   BookingLocations.api = BookingLocations::StubApi.new
 
   yield

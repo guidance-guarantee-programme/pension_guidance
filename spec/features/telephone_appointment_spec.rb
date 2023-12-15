@@ -34,7 +34,7 @@ RSpec.feature 'Customer books a telephone appointment', type: :feature do
   def with_telephone_availability
     @appointment_api_fake = double(:telephone_appointment_api)
     @appointment_api_data = JSON.parse(
-      IO.read(Rails.root.join('features', 'fixtures', 'bookable_slots.json'))
+      IO.read(Rails.root.join('features/fixtures/bookable_slots.json'))
     )
 
     allow(TelephoneAppointmentsApi).to receive(:new).and_return(@appointment_api_fake)

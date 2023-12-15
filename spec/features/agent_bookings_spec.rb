@@ -29,9 +29,7 @@ RSpec.feature 'Identifying as a TP agent' do
 
   def and_locations_exist_for_online_booking
     Locations.geo_json_path_or_url = Rails.root.join(
-      'features',
-      'fixtures',
-      'locations_with_online_booking.json'
+      'features/fixtures/locations_with_online_booking.json'
     )
   end
 
