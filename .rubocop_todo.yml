@@ -96,13 +96,3 @@ Style/HashLikeCase:
 Style/MixinUsage:
   Exclude:
     - 'config/initializers/govspeak.rb'
-
-# Offense count: 3
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: literals, strict
-Style/MutableConstant:
-  Exclude:
-    - 'app/domain/pension_summary.rb'
-    - 'app/helpers/home_helper.rb'
-    - 'app/lib/leave_pot_untouched_calculator.rb'
