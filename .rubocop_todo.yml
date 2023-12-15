@@ -106,13 +106,6 @@ Style/ExplicitBlockArgument:
   Exclude:
     - 'spec/lib/locations/reader_spec.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: MaxUnannotatedPlaceholdersAllowed, AllowedMethods, AllowedPatterns.
-# SupportedStyles: annotated, template, unannotated
-Style/FormatStringToken:
-  EnforcedStyle: template
-
 # Offense count: 3
 # Configuration parameters: MinBranchesCount.
 Style/HashLikeCase:
