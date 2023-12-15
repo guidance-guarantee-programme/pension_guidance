@@ -1,7 +1,7 @@
 require 'csv'
 
 module HomeHelper
-  BANNER_OVERRIDE = %w(apples paint peppers).freeze
+  BANNER_OVERRIDE = %w[apples paint peppers].freeze
   BANNER_DATE = /\A\d{4}-\d{2}-\d{2}\z/
 
   BANNER_SCHEDULE = <<~CSV.freeze

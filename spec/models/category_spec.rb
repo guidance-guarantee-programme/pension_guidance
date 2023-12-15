@@ -5,7 +5,7 @@ RSpec.describe Category, type: :model do
   let(:title) { 'Testing' }
   let(:description) { 'A test category.' }
 
-  %i(id title description).each do |attr|
+  %i[id title description].each do |attr|
     describe "##{attr}" do
       it "returns the initialised #{attr}" do
         expect(category.public_send(attr)).to eq(public_send(attr))

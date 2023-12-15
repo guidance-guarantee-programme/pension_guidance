@@ -5,10 +5,10 @@ class GuidesController < ApplicationController
   before_action :set_breadcrumbs
   after_action  :set_frame_options, if: -> { @guide.embeddable? }
 
-  UNTRANSLATED_GUIDE_SLUGS = %w(
+  UNTRANSLATED_GUIDE_SLUGS = %w[
     book-face-to-face
     book-phone
-  ).freeze
+  ].freeze
 
   def show
     expires_in Rails.application.config.cache_max_age, public: true

@@ -17,7 +17,7 @@ class AppointmentSummary
     super
   end
 
-  validates :appointment_type, inclusion: { in: %w(standard 50_54) }
+  validates :appointment_type, inclusion: { in: %w[standard 50_54] }
 
   def appointment_type
     @appointment_type

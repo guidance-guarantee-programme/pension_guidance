@@ -127,9 +127,3 @@ Style/MutableConstant:
     - 'app/domain/pension_summary.rb'
     - 'app/helpers/home_helper.rb'
     - 'app/lib/leave_pot_untouched_calculator.rb'
-
-# Offense count: 91
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: PreferredDelimiters.
-Style/PercentLiteralDelimiters:
-  Enabled: false

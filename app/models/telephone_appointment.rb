@@ -44,14 +44,14 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   validate  :validate_memorable_word
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
-  validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
+  validates :dc_pot_confirmed, inclusion: { in: %w[yes no not-sure] }
   validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }, unless: :embedded?
   validates :notes, length: { maximum: 160 }, allow_blank: true
   validates :notes, presence: true, if: :accessibility_requirements?
-  validates :accessibility_requirements, inclusion: { in: %w(0 1) }
+  validates :accessibility_requirements, inclusion: { in: %w[0 1] }
   validates :referrer, presence: true, if: :due_diligence?
   validates :country_of_residence, presence: true, if: :due_diligence?
-  validates :gdpr_consent, inclusion: { in: %w(yes no) }
+  validates :gdpr_consent, inclusion: { in: %w[yes no] }
 
   def due_diligence?
     schedule_type == 'due_diligence'

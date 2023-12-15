@@ -15,13 +15,13 @@ class BookingRequestForm # rubocop:disable Metrics/ClassLength
     step_two.validates :email, email: true
     step_two.validate :validate_telephone_number
     step_two.validates :memorable_word, presence: true
-    step_two.validates :accessibility_requirements, inclusion: { in: %w(0 1) }
-    step_two.validates :dc_pot, inclusion: { in: %w(yes no not-sure) }
+    step_two.validates :accessibility_requirements, inclusion: { in: %w[0 1] }
+    step_two.validates :dc_pot, inclusion: { in: %w[yes no not-sure] }
     step_two.validates :date_of_birth, presence: true
     step_two.validates :additional_info, length: { maximum: 160 }, allow_blank: true
     step_two.validates :additional_info, presence: true, if: :accessibility_requirements?
     step_two.validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
-    step_two.validates :gdpr_consent, inclusion: { in: %w(yes no) }
+    step_two.validates :gdpr_consent, inclusion: { in: %w[yes no] }
   end
 
   def initialize(location_id, opts)

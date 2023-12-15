@@ -46,7 +46,7 @@ RSpec.describe Employer::Api do
     it 'returns deserialized slots' do
       expect(subject).to be_present
       expect(subject['windowed_slots'].keys).to match_array(
-        %w(2019-05-10 2019-05-13 2019-05-17)
+        %w[2019-05-10 2019-05-13 2019-05-17]
       )
     end
   end

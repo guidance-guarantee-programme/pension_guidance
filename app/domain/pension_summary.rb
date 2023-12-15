@@ -17,7 +17,7 @@ class PensionSummary < ApplicationRecord
   # Also this array specifies the order they're presented,
   # after selection, which is different to the sequence in
   # which they're offered up as options.
-  STEPS = %w(
+  STEPS = %w[
     leave_your_pot_untouched
     get_a_guaranteed_income
     get_an_adjustable_income
@@ -31,42 +31,42 @@ class PensionSummary < ApplicationRecord
     taking_my_pension_if_im_ill
     transferring_my_pension_to_another_provider
     final
-  ).freeze
+  ].freeze
 
-  PILOT_STEPS = %w(
+  PILOT_STEPS = %w[
     your_experience
     thank_you
-  ).freeze
+  ].freeze
 
-  PRIMARY_OPTIONS = %w(
+  PRIMARY_OPTIONS = %w[
     leave_your_pot_untouched
     get_a_guaranteed_income
     get_an_adjustable_income
     take_cash
     take_whole
     mix_your_options
-  ).freeze
+  ].freeze
 
-  SECONDARY_OPTIONS = %w(
+  SECONDARY_OPTIONS = %w[
     how_my_pension_affects_my_benefits
     getting_help_with_debt
     taking_my_pension_if_im_ill
     transferring_my_pension_to_another_provider
-  ).freeze
+  ].freeze
 
-  COMPULSORY_OPTIONS = %w(
+  COMPULSORY_OPTIONS = %w[
     scams
     how_my_pension_is_taxed
-  ).freeze
+  ].freeze
 
   OPTIONS = [*PRIMARY_OPTIONS, *SECONDARY_OPTIONS, *COMPULSORY_OPTIONS].freeze
 
-  ABOUT_YOUR_GENDER = %w(
+  ABOUT_YOUR_GENDER = %w[
     male
     female
     unspecified
     other
-  ).freeze
+  ].freeze
 
   ABOUT_YOUR_AGE = [
     'Under 50',
@@ -77,14 +77,14 @@ class PensionSummary < ApplicationRecord
     '70 or over'
   ].freeze
 
-  COUNTRIES = %w(
+  COUNTRIES = %w[
     england
     scotland
     wales
     northern_ireland
     channel_islands_or_isle_of_man
     other
-  ).freeze
+  ].freeze
 
   has_many :step_viewings
 

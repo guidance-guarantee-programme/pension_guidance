@@ -28,7 +28,7 @@ unless ARGV.any? { |a| a =~ /^gems/ }
       end
 
       desc 'Run all features'
-      task all: %i(ok wip)
+      task all: %i[ok wip]
 
       task :statsetup do
         require 'rails/code_statistics'

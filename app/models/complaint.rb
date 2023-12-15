@@ -1,11 +1,11 @@
 class Complaint
   include ActiveModel::Model
 
-  NATURE_OF_COMPLAINT = %w(
+  NATURE_OF_COMPLAINT = %w[
     phone_booking_message
     face_to_face_message
     other_message
-  ).freeze
+  ].freeze
 
   attr_accessor :nature_of_complaint, :name, :email_address, :phone_booking_message,
                 :face_to_face_message, :other_message
@@ -34,7 +34,7 @@ class Complaint
       name: name,
       email: email_address,
       message: message,
-      tags: %w(complaint)
+      tags: %w[complaint]
     }
   end
 

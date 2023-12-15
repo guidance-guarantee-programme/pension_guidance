@@ -27,14 +27,14 @@ module Bsl
     validates :email, email: true
     validates :phone, presence: true, format: /\A([\d+\-\s+()]+)\z/
     validates :memorable_word, presence: true
-    validates :accessibility_needs, inclusion: { in: %w(0 1) }
-    validates :defined_contribution_pot_confirmed, inclusion: { in: %w(yes not-sure) }
+    validates :accessibility_needs, inclusion: { in: %w[0 1] }
+    validates :defined_contribution_pot_confirmed, inclusion: { in: %w[yes not-sure] }
     validates :date_of_birth, presence: true
     validates :additional_info, length: { maximum: 160 }, allow_blank: true
     validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
     validate :validate_age_eligibility, if: :date_of_birth
 
-    validates :supported, inclusion: { in: %w(yes no) }
+    validates :supported, inclusion: { in: %w[yes no] }
     validates :support_name, presence: true, if: :supported?
     validates :support_relationship, presence: true, if: :supported?
     validates :support_email, email: true, if: :supported?

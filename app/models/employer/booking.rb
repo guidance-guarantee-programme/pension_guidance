@@ -34,7 +34,7 @@ module Employer
     validate  :validate_phone
     validates :memorable_word, presence: true
     validates :date_of_birth, presence: true
-    validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
+    validates :dc_pot_confirmed, inclusion: { in: %w[yes no not-sure] }
 
     def advance!
       self.step += 1

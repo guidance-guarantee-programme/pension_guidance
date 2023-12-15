@@ -21,7 +21,7 @@ RSpec.describe Guide, type: :model do
     described_class.new(id, locale, content: content, content_type: content_type, metadata: metadata)
   end
 
-  %i(id locale content content_type).each do |attr|
+  %i[id locale content content_type].each do |attr|
     describe "##{attr}" do
       it "returns the initialised #{attr}" do
         expect(guide.public_send(attr)).to eq(public_send(attr))
@@ -29,7 +29,7 @@ RSpec.describe Guide, type: :model do
     end
   end
 
-  %i(label concise_label description tags).each do |attr|
+  %i[label concise_label description tags].each do |attr|
     describe "##{attr}" do
       it "returns the initialised #{attr}" do
         expect(guide.metadata.public_send(attr)).to eq(public_send(attr))
@@ -51,7 +51,7 @@ RSpec.describe Guide, type: :model do
 
   describe '#welsh?' do
     context 'when tagged with "welsh"' do
-      let(:tags) { %w(welsh) }
+      let(:tags) { %w[welsh] }
 
       it { is_expected.to be_welsh }
     end
@@ -59,7 +59,7 @@ RSpec.describe Guide, type: :model do
 
   describe '#related_to_appointments?' do
     context 'when tagged with "appointments"' do
-      let(:tags) { %w(appointments) }
+      let(:tags) { %w[appointments] }
 
       it { is_expected.to be_related_to_appointments }
     end
@@ -67,7 +67,7 @@ RSpec.describe Guide, type: :model do
 
   describe '#related_to_booking?' do
     context 'when tagged with "booking"' do
-      let(:tags) { %w(booking) }
+      let(:tags) { %w[booking] }
 
       it { is_expected.to be_related_to_booking }
     end
@@ -75,7 +75,7 @@ RSpec.describe Guide, type: :model do
 
   describe '#option?' do
     context 'when tagged with "option"' do
-      let(:tags) { %w(option) }
+      let(:tags) { %w[option] }
 
       it { is_expected.to be_option }
     end
@@ -83,7 +83,7 @@ RSpec.describe Guide, type: :model do
 
   describe '#call_to_action?' do
     context 'when tagged with "call-to-action"' do
-      let(:tags) { %w(call-to-action) }
+      let(:tags) { %w[call-to-action] }
 
       it { is_expected.to be_call_to_action }
     end

@@ -2,7 +2,7 @@ RSpec.describe Middleware::StripSessionCookie, '#call' do
   let(:app) { double }
   let(:response) { [200, { 'Set-Cookie' => 'obai' }, 'body'] }
 
-  subject { described_class.new(app, paths: %w(/en/tax)) }
+  subject { described_class.new(app, paths: %w[/en/tax]) }
 
   context 'with a matching path' do
     it 'strips cookies from the request and response' do

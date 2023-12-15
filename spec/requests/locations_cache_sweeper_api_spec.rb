@@ -32,7 +32,7 @@ RSpec.describe 'DELETE /cache', type: :request do
     # this will cause a cache miss / write
     BookingLocations.find(@location_cache_key)
 
-    @other_cache_keys = %w(boop snoot).each do |cache_key|
+    @other_cache_keys = %w[boop snoot].each do |cache_key|
       Rails.cache.write(cache_key, '...')
     end
   end

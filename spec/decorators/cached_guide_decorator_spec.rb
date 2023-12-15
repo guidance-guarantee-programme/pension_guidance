@@ -90,7 +90,7 @@ RSpec.describe CachedGuideDecorator do
     end
   end
 
-  %i(id slug description label url).each do |attribute|
+  %i[id slug description label url].each do |attribute|
     describe "##{attribute}" do
       it 'does not call the cache' do
         expect(cache).to_not receive(:fetch)
