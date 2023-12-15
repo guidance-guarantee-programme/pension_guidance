@@ -30,14 +30,14 @@ RSpec.feature 'Take whole pot calculator analytics', type: :feature, js: true do
   private
 
   def data_layer
-    script = <<-eos
+    script = <<-EOS
       cleanDataLayer = []
       for (var i = 0; i < window.dataLayer.length; i++) {
         if (window.dataLayer[i].event == 'CalculatorEstimate') {
           cleanDataLayer.push(window.dataLayer[i]);
         }
       }
-    eos
+    EOS
 
     page.execute_script(script)
     Array(page.evaluate_script('cleanDataLayer')).reduce({}, :merge)

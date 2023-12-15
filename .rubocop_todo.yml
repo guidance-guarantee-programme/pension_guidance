@@ -24,17 +24,6 @@ Lint/StructNewOverride:
     - 'app/forms/calculators/take_cash_in_chunks_form.rb'
 
 # Offense count: 4
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: lowercase, uppercase
-Naming/HeredocDelimiterCase:
-  Exclude:
-    - 'spec/features/guaranteed_income_analytics_spec.rb'
-    - 'spec/features/leave_pot_untouched_analytics_spec.rb'
-    - 'spec/features/take_cash_in_chunks_analytics_spec.rb'
-    - 'spec/features/take_whole_pot_calculator_analytics_spec.rb'
-
-# Offense count: 4
 # Configuration parameters: ForbiddenDelimiters.
 # ForbiddenDelimiters: (?i-mx:(^|\s)(EO[A-Z]{1}|END)(\s|$))
 Naming/HeredocDelimiterNaming:
