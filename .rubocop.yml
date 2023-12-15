@@ -77,3 +77,8 @@ Style/MutableConstant:
     - 'app/domain/pension_summary.rb'
     - 'app/helpers/home_helper.rb'
     - 'app/lib/leave_pot_untouched_calculator.rb'
+
+Style/HashLikeCase:
+  Exclude:
+    - 'features/step_definitions/appointment_summary_steps.rb'
+    - 'features/step_definitions/location_steps.rb'
