@@ -7,12 +7,6 @@
 # versions of RuboCop, may require this file to be generated again.
 
 # Offense count: 1
-# Configuration parameters: IgnoreImplicitReferences.
-Lint/ShadowedArgument:
-  Exclude:
-    - 'features/support/matchers/have_meta.rb'
-
-# Offense count: 1
 Lint/StructNewOverride:
   Exclude:
     - 'app/forms/calculators/take_cash_in_chunks_form.rb'
@@ -40,9 +34,3 @@ Rails/HelperInstanceVariable:
     - 'app/helpers/appointment_summaries_helper.rb'
     - 'app/helpers/guides_helper.rb'
     - 'app/helpers/home_helper.rb'
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/ExplicitBlockArgument:
-  Exclude:
-    - 'spec/lib/locations/reader_spec.rb'
