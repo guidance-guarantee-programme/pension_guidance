@@ -82,7 +82,6 @@ Security/Open:
   Exclude:
     - 'app/lib/locations/reader.rb'
 
-
 # Offense count: 1
 Style/MixinUsage:
   Exclude:
@@ -109,3 +108,7 @@ Rails/HelperInstanceVariable:
     - 'app/helpers/appointment_summaries_helper.rb'
     - 'app/helpers/guides_helper.rb'
     - 'app/helpers/home_helper.rb'
+
+Lint/StructNewOverride:
+  Exclude:
+    - 'app/forms/calculators/take_cash_in_chunks_form.rb'
