@@ -52,11 +52,6 @@ Rails/HelperInstanceVariable:
     - 'app/helpers/home_helper.rb'
 
 # Offense count: 1
-Security/Open:
-  Exclude:
-    - 'app/lib/locations/reader.rb'
-
-# Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 Style/ExplicitBlockArgument:
   Exclude:

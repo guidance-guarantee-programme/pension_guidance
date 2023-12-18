@@ -82,3 +82,9 @@ Style/HashLikeCase:
   Exclude:
     - 'features/step_definitions/appointment_summary_steps.rb'
     - 'features/step_definitions/location_steps.rb'
+
+
+# Offense count: 1
+Security/Open:
+  Exclude:
+    - 'app/lib/locations/reader.rb'
