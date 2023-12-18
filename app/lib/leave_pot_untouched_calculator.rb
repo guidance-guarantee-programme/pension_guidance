@@ -1,6 +1,6 @@
 class LeavePotUntouchedCalculator
   INTEREST_RATE = 0.03
-  YEARS = (1..5)
+  YEARS = (1..5).freeze
 
   def initialize(pot:, contribution:)
     self.pot = pot

@@ -72,11 +72,6 @@ Naming/VariableNumber:
 Style/FormatStringToken:
   EnforcedStyle: template
 
-Style/MutableConstant:
-  Exclude:
-    - 'app/domain/pension_summary.rb'
-    - 'app/helpers/home_helper.rb'
-    - 'app/lib/leave_pot_untouched_calculator.rb'
 
 Style/HashLikeCase:
   Exclude:

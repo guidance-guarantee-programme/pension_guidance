@@ -10,7 +10,7 @@ class PensionSummary < ApplicationRecord
     end
   end
 
-  EMAIL_REGEX = /\A[^@\s]+@[^@\s]+\.[^@\s]+\z/
+  EMAIL_REGEX = /\A[^@\s]+@[^@\s]+\.[^@\s]+\z/.freeze
 
   # 'Steps' are all the topics involved in the summary,
   # (including one that isn't offered as an option, 'final')
