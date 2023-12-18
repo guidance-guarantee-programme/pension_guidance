@@ -56,8 +56,3 @@ Rails/HelperInstanceVariable:
 Style/ExplicitBlockArgument:
   Exclude:
     - 'spec/lib/locations/reader_spec.rb'
-
-# Offense count: 1
-Style/MixinUsage:
-  Exclude:
-    - 'config/initializers/govspeak.rb'

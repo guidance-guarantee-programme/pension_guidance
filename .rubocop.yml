@@ -72,14 +72,18 @@ Naming/VariableNumber:
 Style/FormatStringToken:
   EnforcedStyle: template
 
-
 Style/HashLikeCase:
   Exclude:
     - 'features/step_definitions/appointment_summary_steps.rb'
     - 'features/step_definitions/location_steps.rb'
 
-
 # Offense count: 1
 Security/Open:
   Exclude:
     - 'app/lib/locations/reader.rb'
+
+
+# Offense count: 1
+Style/MixinUsage:
+  Exclude:
+    - 'config/initializers/govspeak.rb'
