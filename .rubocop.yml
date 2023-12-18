@@ -103,3 +103,9 @@ Naming/MemoizedInstanceVariableName:
 Style/ExplicitBlockArgument:
   Exclude:
     - 'spec/lib/locations/reader_spec.rb'
+
+Rails/HelperInstanceVariable:
+  Exclude:
+    - 'app/helpers/appointment_summaries_helper.rb'
+    - 'app/helpers/guides_helper.rb'
+    - 'app/helpers/home_helper.rb'
