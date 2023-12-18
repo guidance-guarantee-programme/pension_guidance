@@ -11,15 +11,6 @@ Lint/StructNewOverride:
   Exclude:
     - 'app/forms/calculators/take_cash_in_chunks_form.rb'
 
-# Offense count: 2
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: EnforcedStyleForLeadingUnderscores.
-# SupportedStylesForLeadingUnderscores: disallowed, required, optional
-Naming/MemoizedInstanceVariableName:
-  Exclude:
-    - 'app/controllers/booking_requests_controller.rb'
-    - 'app/controllers/employer/bookings_controller.rb'
-
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
 Rails/ApplicationController:

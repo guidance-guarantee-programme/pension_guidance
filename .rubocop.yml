@@ -95,7 +95,11 @@ Naming/HeredocDelimiterNaming:
     - 'spec/features/take_cash_in_chunks_analytics_spec.rb'
     - 'spec/features/take_whole_pot_calculator_analytics_spec.rb'
 
-
+Naming/MemoizedInstanceVariableName:
+  Exclude:
+    - 'app/controllers/booking_requests_controller.rb'
+    - 'app/controllers/employer/bookings_controller.rb'
+    
 Style/ExplicitBlockArgument:
   Exclude:
     - 'spec/lib/locations/reader_spec.rb'
