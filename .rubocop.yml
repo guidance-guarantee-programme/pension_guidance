@@ -87,3 +87,12 @@ Security/Open:
 Style/MixinUsage:
   Exclude:
     - 'config/initializers/govspeak.rb'
+
+Naming/HeredocDelimiterNaming:
+  Exclude:
+    - 'spec/features/guaranteed_income_analytics_spec.rb'
+    - 'spec/features/leave_pot_untouched_analytics_spec.rb'
+    - 'spec/features/take_cash_in_chunks_analytics_spec.rb'
+    - 'spec/features/take_whole_pot_calculator_analytics_spec.rb'
+
+    
