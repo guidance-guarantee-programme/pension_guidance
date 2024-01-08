@@ -29,7 +29,7 @@ RSpec.feature 'Alternative locations' do
   end
 end
 
-def given_a_location_with_limited_availability_and_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Layout/LineLength
+def given_a_location_with_limited_availability_and_available_alternatives(&block) # rubocop:disable Metrics/MethodLength
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id) # rubocop:disable Metrics/MethodLength
@@ -43,7 +43,7 @@ def given_a_location_with_limited_availability_and_available_alternatives(&block
           }
         else
           {
-            two_days   => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
+            two_days => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
             three_days => ["#{three_days} 09:00:00 UTC", "#{three_days} 13:00:00 UTC"]
           }
         end
@@ -52,7 +52,7 @@ def given_a_location_with_limited_availability_and_available_alternatives(&block
   end
 end
 
-def given_a_location_with_limited_availability_but_no_available_alternatives(&block) # rubocop:disable Metrics/MethodLength, Layout/LineLength
+def given_a_location_with_limited_availability_but_no_available_alternatives(&block) # rubocop:disable Metrics/MethodLength
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id)
@@ -78,7 +78,7 @@ def given_a_location_without_limited_availability(&block) # rubocop:disable Metr
         three_days = 3.days.from_now.to_date.to_s(:db)
 
         {
-          two_days   => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
+          two_days => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],
           three_days => ["#{three_days} 09:00:00 UTC", "#{three_days} 13:00:00 UTC"]
         }
       end
@@ -121,7 +121,7 @@ def with_temporary_environment(steps_block) # rubocop:disable Metrics/MethodLeng
   previous_locations_api = BookingLocations.api
   previous_requests_api = BookingRequests.api
 
-  Locations.geo_json_path_or_url = Rails.root.join('spec', 'fixtures', 'locations_with_alternates.json')
+  Locations.geo_json_path_or_url = Rails.root.join('spec/fixtures/locations_with_alternates.json')
   BookingLocations.api = BookingLocations::StubApi.new
 
   yield

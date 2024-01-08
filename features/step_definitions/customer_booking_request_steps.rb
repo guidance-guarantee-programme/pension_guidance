@@ -1,9 +1,9 @@
 Given(/^a location is enabled for online booking$/) do
-  @locations_path = %w(features fixtures locations_with_online_booking.json)
+  @locations_path = %w[features fixtures locations_with_online_booking.json]
 end
 
 Given(/^no locations are enabled for online booking$/) do
-  @locations_path = %w(features fixtures locations_without_online_booking.json)
+  @locations_path = %w[features fixtures locations_without_online_booking.json]
 end
 
 When(/^I choose the first available realtime slot$/) do

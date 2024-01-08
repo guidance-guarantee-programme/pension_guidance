@@ -1,7 +1,7 @@
 # Be sure to restart your server when you modify this file.
 
 # Configure sensitive parameters which will be filtered from the log file.
-Rails.application.config.filter_parameters += %i(
+Rails.application.config.filter_parameters += %i[
   password
   email
   phone
@@ -11,4 +11,4 @@ Rails.application.config.filter_parameters += %i(
   phone_booking_message
   face_to_face_message
   other_message
-)
+]

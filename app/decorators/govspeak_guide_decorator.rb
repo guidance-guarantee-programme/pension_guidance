@@ -4,3 +4,4 @@ class GovspeakGuideDecorator < GuideDecorator
     @content ||= Govspeak::Document.new(guide.content, sanitize: false).to_html.html_safe
   end
 end
+# rubocop:enable Rails/OutputSafety

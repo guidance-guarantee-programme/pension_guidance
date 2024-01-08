@@ -33,16 +33,16 @@ class NudgeAppointment # rubocop:disable Metrics/ClassLength
   validates :first_name, presence: true, format: { without: /\d+/ }
   validates :last_name, presence: true, format: { without: /\d+/ }
   validate  :validate_phone
-  validates :confirmation, inclusion: { in: %w(email sms) }
+  validates :confirmation, inclusion: { in: %w[email sms] }
   validates :email, email: true, if: :confirm_email?
   validate :validate_mobile
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
   validates :eligibility_reason, inclusion: { in: ELIGIBILITY_OPTIONS.keys }, unless: :eligible_age?
-  validates :accessibility_requirements, inclusion: { in: %w(0 1) }
+  validates :accessibility_requirements, inclusion: { in: %w[0 1] }
   validates :notes, length: { maximum: 160 }, allow_blank: true
   validates :notes, presence: true, if: :accessibility_requirements?
-  validates :gdpr_consent, inclusion: { in: %w(yes no) }
+  validates :gdpr_consent, inclusion: { in: %w[yes no] }
 
   def accessibility_requirements?
     accessibility_requirements == '1'

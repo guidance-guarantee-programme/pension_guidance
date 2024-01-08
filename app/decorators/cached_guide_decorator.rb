@@ -9,7 +9,7 @@ class CachedGuideDecorator < SimpleDelegator
     self.expires_in = expires_in
   end
 
-  %i(title content canonical noindex?).each do |method|
+  %i[title content canonical noindex?].each do |method|
     define_method(method) do
       cache_key = [object.id, object.locale, method].join('-')
       cache.fetch(cache_key, expires_in: expires_in) { super() }

@@ -294,3 +294,4 @@ end
 def then_i_view_a_thank_you_page
   expect(page).to have_content('Thank you')
 end
+# rubocop:enable Layout/LineLength

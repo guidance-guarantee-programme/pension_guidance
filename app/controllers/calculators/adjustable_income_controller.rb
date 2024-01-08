@@ -6,6 +6,7 @@ module Calculators
       @form = AdjustableIncomeForm.new(form_params)
 
       return unless request.xhr?
+
       status = @form.invalid? ? :bad_request : :ok
 
       render partial: 'calculators/adjustable_income/calculator',

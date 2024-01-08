@@ -1,15 +1,15 @@
 RSpec.describe FrontMatterParser do
   subject(:parser) do
-    FrontMatterParser.new <<-EXAMPLE
----
-title: The Jabberwocky
-description: A "nonsense" poem
----
-Twas brillig, and the slithy toves
-Did gyre and gimble in the wabe:
-All mimsy were the borogoves,
-And the mome raths outgrabe.
-EXAMPLE
+    FrontMatterParser.new <<~EXAMPLE
+      ---
+      title: The Jabberwocky
+      description: A "nonsense" poem
+      ---
+      Twas brillig, and the slithy toves
+      Did gyre and gimble in the wabe:
+      All mimsy were the borogoves,
+      And the mome raths outgrabe.
+    EXAMPLE
   end
 
   describe '#front_matter' do

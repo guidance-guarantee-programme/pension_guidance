@@ -22,7 +22,7 @@ class LocationDecorator < SimpleDelegator
   end
 
   def booking_location
-    _booking_location.nil? ? nil : _booking_location.name
+    _booking_location&.name
   end
 
   private

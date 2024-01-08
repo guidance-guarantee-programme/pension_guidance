@@ -1,4 +1,4 @@
-class LocationsCacheController < ActionController::Base
+class LocationsCacheController < ApplicationController
   include LogrageFilterer
 
   before_action :token_authenticate

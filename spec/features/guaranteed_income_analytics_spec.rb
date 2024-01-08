@@ -18,25 +18,25 @@ RSpec.feature 'Guaranteed income analytics', type: :feature, js: true do
     wait_for_ajax
 
     expect(data_layer).to include(
-      'event'      => 'CalculatorEstimate',
+      'event' => 'CalculatorEstimate',
       'pot_payout' => 4500,
-      'age'        => 60,
-      'pot'        => 100_000,
-      'valid'      => true
+      'age' => 60,
+      'pot' => 100_000,
+      'valid' => true
     )
   end
 
   private
 
   def data_layer
-    script = <<-eos
+    script = <<-EOS
       cleanDataLayer = []
       for (var i = 0; i < window.dataLayer.length; i++) {
         if (window.dataLayer[i].event == 'CalculatorEstimate') {
           cleanDataLayer.push(window.dataLayer[i]);
         }
       }
-    eos
+    EOS
 
     page.execute_script(script)
     Array(page.evaluate_script('cleanDataLayer')).reduce({}, :merge)

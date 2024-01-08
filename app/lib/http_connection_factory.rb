@@ -2,7 +2,7 @@ require 'faraday'
 require 'faraday/conductivity'
 
 module HTTPConnectionFactory
-  def self.build(url, timeout: 5, open_timeout: 5, retries: 2)
+  def self.build(url, timeout: 5, open_timeout: 5, retries: 2) # rubocop:disable Metrics/MethodLength
     connection = Faraday.new(url: url, request: { timeout: timeout, open_timeout: open_timeout }) do |faraday|
       faraday.adapter :net_http
       faraday.request :json

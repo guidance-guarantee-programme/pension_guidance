@@ -25,9 +25,7 @@ module ApplicationHelper
 
   def link_to_guide(guide)
     capture do
-      if guide.option?
-        concat content_tag(:span, nil, class: "circle circle--s circle--#{guide.id}")
-      end
+      concat content_tag(:span, nil, class: "circle circle--s circle--#{guide.id}") if guide.option?
 
       concat link_to(guide.label, guide.url, class: 't-guide-link')
     end

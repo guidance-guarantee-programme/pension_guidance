@@ -1,8 +1,8 @@
 require 'csv'
 
 module HomeHelper
-  BANNER_OVERRIDE = %w(apples paint peppers).freeze
-  BANNER_DATE = /\A\d{4}-\d{2}-\d{2}\z/
+  BANNER_OVERRIDE = %w[apples paint peppers].freeze
+  BANNER_DATE = /\A\d{4}-\d{2}-\d{2}\z/.freeze
 
   BANNER_SCHEDULE = <<~CSV.freeze
     2019-02-17,peppers
@@ -12,6 +12,7 @@ module HomeHelper
 
   class BannerSchedule
     attr_reader :schedule, :current_date
+
     delegate :last, to: :schedule
 
     class << self

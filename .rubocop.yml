@@ -45,3 +45,70 @@ Style/EmptyMethod:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+
+Style/RedundantFetchBlock:
+  Exclude:
+    - 'config/initializers/redis_pool.rb'
+
+Style/OptionalBooleanParameter:
+  Exclude:
+    - 'app/view_models/navigation.rb'
+
+Lint/MissingSuper:
+  Exclude:
+    - 'app/decorators/cached_guide_decorator.rb'
+    - 'app/decorators/location_decorator.rb'
+
+Naming/VariableNumber:
+  Exclude:
+    - 'app/controllers/employer/bookings_controller.rb'
+    - 'app/controllers/telephone_appointments_controller.rb'
+    - 'features/pages/appointment_summary_generator.rb'
+    - 'spec/controllers/concerns/breadcrumbs_controller_concern_spec.rb'
+    - 'spec/lib/leave_pot_untouched_calculator_spec.rb'
+    - 'spec/models/pension_summary/step_viewing_spec.rb'
+    - 'spec/requests/locations_cache_sweeper_api_spec.rb'
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+Style/HashLikeCase:
+  Exclude:
+    - 'features/step_definitions/appointment_summary_steps.rb'
+    - 'features/step_definitions/location_steps.rb'
+
+# Offense count: 1
+Security/Open:
+  Exclude:
+    - 'app/lib/locations/reader.rb'
+
+# Offense count: 1
+Style/MixinUsage:
+  Exclude:
+    - 'config/initializers/govspeak.rb'
+
+Naming/HeredocDelimiterNaming:
+  Exclude:
+    - 'spec/features/guaranteed_income_analytics_spec.rb'
+    - 'spec/features/leave_pot_untouched_analytics_spec.rb'
+    - 'spec/features/take_cash_in_chunks_analytics_spec.rb'
+    - 'spec/features/take_whole_pot_calculator_analytics_spec.rb'
+
+Naming/MemoizedInstanceVariableName:
+  Exclude:
+    - 'app/controllers/booking_requests_controller.rb'
+    - 'app/controllers/employer/bookings_controller.rb'
+    
+Style/ExplicitBlockArgument:
+  Exclude:
+    - 'spec/lib/locations/reader_spec.rb'
+
+Rails/HelperInstanceVariable:
+  Exclude:
+    - 'app/helpers/appointment_summaries_helper.rb'
+    - 'app/helpers/guides_helper.rb'
+    - 'app/helpers/home_helper.rb'
+
+Lint/StructNewOverride:
+  Exclude:
+    - 'app/forms/calculators/take_cash_in_chunks_form.rb'

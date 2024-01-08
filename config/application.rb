@@ -15,7 +15,7 @@ Bundler.require(*Rails.groups)
 require 'ipaddr'
 
 module PensionGuidance
-  TRUSTED_CLOUDFLARE_IPS = %w(
+  TRUSTED_CLOUDFLARE_IPS = %w[
     103.21.244.0/22
     103.22.200.0/22
     103.31.4.0/22
@@ -30,7 +30,7 @@ module PensionGuidance
     190.93.240.0/20
     197.234.240.0/22
     198.41.128.0/17
-  ).map { |ip| IPAddr.new(ip) }
+  ].map { |ip| IPAddr.new(ip) }
 
   class Application < Rails::Application
     config.action_controller.include_all_helpers = false
@@ -47,8 +47,8 @@ module PensionGuidance
       html_tag
     }
 
-    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.yml')]
-    config.i18n.available_locales = %i(en cy)
+    config.i18n.load_path += Dir[Rails.root.join('config/locales/**/*.yml')]
+    config.i18n.available_locales = %i[en cy]
 
     # Strip cookies to cache guides and localised home pages
     cacheable_paths = GuideRepository.cacheable_paths.push('/en', '/cy')
@@ -70,10 +70,12 @@ end
 
 # New versions of action_dispatch renamed `#success?` to `#successful?`, but
 # we can't upgrade jasmine-rails (which calls the former method).
-class ActionDispatch::TestResponse
-  if Rails.env.test?
-    def success?
-      successful?
+module ActionDispatch
+  class TestResponse
+    if Rails.env.test?
+      def success?
+        successful?
+      end
     end
   end
 end

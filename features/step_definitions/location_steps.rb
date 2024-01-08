@@ -85,7 +85,7 @@ Then(/^I should see the details of that appointment location$/) do
   expect(location.canonical[:href]).to have_text('https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment')
   expect(location.robots[:content]).to have_text('noindex,nofollow')
 
-  %i(address phone).each do |element|
+  %i[address phone].each do |element|
     expect(location.public_send(element)).to be_visible
   end
 end

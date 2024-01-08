@@ -14,7 +14,7 @@ RSpec.describe 'Styleguide', type: :request do
   end
 
   describe 'styleguide component pages' do
-    components = Dir[Rails.root.join('app', 'views', 'styleguide', '*.html.erb')].map do |f|
+    components = Dir[Rails.root.join('app/views/styleguide/*.html.erb')].map do |f|
       File.basename(f, '.html.erb')
     end
 

@@ -1,6 +1,6 @@
 RSpec.describe GuideRepository do
   subject(:guide_repository) do
-    GuideRepository.new(:en, File.expand_path('../../fixtures', __FILE__))
+    GuideRepository.new(:en, File.expand_path('../fixtures', __dir__))
   end
 
   describe '#find' do

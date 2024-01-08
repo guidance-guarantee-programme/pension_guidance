@@ -30,12 +30,12 @@ RSpec.describe Employer::Api do
       expect(subject['name']).to eq('Tesco')
 
       expect(subject['locations'].first).to include(
-        'name'             => 'Tesco 1',
+        'name' => 'Tesco 1',
         'address_line_one' => '1 Some Street',
         'address_line_two' => 'Some Place',
-        'town'             => 'Some Town',
-        'county'           => 'Some County',
-        'available'        => true
+        'town' => 'Some Town',
+        'county' => 'Some County',
+        'available' => true
       )
     end
   end
@@ -46,7 +46,7 @@ RSpec.describe Employer::Api do
     it 'returns deserialized slots' do
       expect(subject).to be_present
       expect(subject['windowed_slots'].keys).to match_array(
-        %w(2019-05-10 2019-05-13 2019-05-17)
+        %w[2019-05-10 2019-05-13 2019-05-17]
       )
     end
   end

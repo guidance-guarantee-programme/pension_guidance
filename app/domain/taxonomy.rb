@@ -35,7 +35,6 @@ class Taxonomy
     end
   end
 
-  # rubocop:disable Metrics/AbcSize
   def taking_your_pension_money
     category_node('taking-your-pension-money').tap do |node|
       node << guide_node('making-money-last')
@@ -47,7 +46,6 @@ class Taxonomy
       node << the_6_pension_options
     end
   end
-  # rubocop:enable Metrics/AbcSize
 
   def the_6_pension_options
     guide_node('pension-pot-options').tap do |node|

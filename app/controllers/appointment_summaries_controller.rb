@@ -56,3 +56,4 @@ class AppointmentSummariesController < ApplicationController
     appointment_summary_params[:appointment_type]
   end
 end
+# rubocop:enable Rails/OutputSafety

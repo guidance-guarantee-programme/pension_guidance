@@ -3,7 +3,7 @@ require_relative 'page'
 module Pages
   class Category < Page
     set_url('/{locale}/browse/{slug}')
-    set_url_matcher(%r{\/(\w|-)+$})
+    set_url_matcher(%r{/(\w|-)+$})
 
     elements :guide_links, '.t-guide-link'
   end

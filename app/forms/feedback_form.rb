@@ -6,7 +6,7 @@ class FeedbackForm
   validates :name, presence: true
   validates :email, email: true
   validates :message, presence: true
-  validates :feedback_type, inclusion: { in: %w(phone_booking employer online_booking pension_type_tool) }
+  validates :feedback_type, inclusion: { in: %w[phone_booking employer online_booking pension_type_tool] }
 
   def self.for_face_to_face_booking
     new(feedback_type: 'online_booking')
@@ -32,19 +32,19 @@ class FeedbackForm
     {
       'employer' => {
         subject: 'Employer Online Booking zen_desk',
-        tags: %w(employer)
+        tags: %w[employer]
       },
       'online_booking' => {
         subject: 'Face-to-Face Online Booking zen_desk',
-        tags: %w(online_booking f2f)
+        tags: %w[online_booking f2f]
       },
       'phone_booking' => {
         subject: 'Phone Online Booking zen_desk',
-        tags: %w(online_booking phone)
+        tags: %w[online_booking phone]
       },
       'pension_type_tool' => {
         subject: 'Pension type tool zen_desk',
-        tags: %w(pension_type_tool)
+        tags: %w[pension_type_tool]
       }
     }[feedback_type]
   end

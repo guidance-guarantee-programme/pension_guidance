@@ -2,7 +2,7 @@ class NudgeAppointmentsController < ApplicationController # rubocop:disable Metr
   include Embeddable
 
   before_action :set_breadcrumbs
-  before_action :nudge_appointment, only: %i(new create)
+  before_action :nudge_appointment, only: %i[new create]
 
   helper_method :slot_selected?
 

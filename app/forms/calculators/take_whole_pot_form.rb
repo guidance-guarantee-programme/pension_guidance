@@ -6,7 +6,7 @@ module Calculators
 
     Estimate = Struct.new(:pot, :pot_tax, :pot_received)
 
-    attr_accessor :pot, :income
+    attr_reader :pot, :income
 
     validates :pot, presence: true, numericality: { allow_blank: true, greater_than: 0 }
     validates :income, presence: true, numericality: { allow_blank: true, greater_than_or_equal_to: 0 }

@@ -3,7 +3,9 @@ class AppointmentSummary
 
   TRUTHIES = [true, 'true', '1', 1].freeze
 
-  attr_accessor *SUPPLEMENTARY_OPTIONS, :appointment_type
+  attr_accessor *SUPPLEMENTARY_OPTIONS
+
+  attr_writer :appointment_type
 
   SUPPLEMENTARY_OPTIONS.each do |attribute|
     define_method("#{attribute}=") do |value|
@@ -15,7 +17,7 @@ class AppointmentSummary
     super
   end
 
-  validates :appointment_type, inclusion: { in: %w(standard 50_54) }
+  validates :appointment_type, inclusion: { in: %w[standard 50_54] }
 
   def appointment_type
     @appointment_type

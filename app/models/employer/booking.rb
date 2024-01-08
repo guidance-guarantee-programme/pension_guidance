@@ -4,16 +4,12 @@ module Employer
 
     attr_accessor(
       :id,
-      :step,
-      :selected_date,
-      :start_at,
       :first_name,
       :last_name,
       :email,
       :phone,
       :memorable_word,
       :appointment_type,
-      :date_of_birth,
       :dc_pot_confirmed,
       :date_of_birth_year,
       :date_of_birth_month,
@@ -24,6 +20,13 @@ module Employer
       :gdpr_consent
     )
 
+    attr_writer(
+      :date_of_birth,
+      :selected_date,
+      :start_at,
+      :step
+    )
+
     validates :start_at, presence: true
     validates :first_name, presence: true
     validates :last_name, presence: true
@@ -31,7 +34,7 @@ module Employer
     validate  :validate_phone
     validates :memorable_word, presence: true
     validates :date_of_birth, presence: true
-    validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
+    validates :dc_pot_confirmed, inclusion: { in: %w[yes no not-sure] }
 
     def advance!
       self.step += 1
@@ -51,7 +54,7 @@ module Employer
       !eligible?
     end
 
-    def attributes
+    def attributes # rubocop:disable Metrics/MethodLength
       {
         start_at: start_at,
         first_name: first_name,
@@ -106,7 +109,7 @@ module Employer
     private
 
     def validate_phone
-      unless phone.present? && /\A([\d+\-\s\+()]+)\z/ === phone # rubocop:disable Style/GuardClause, Style/CaseEquality
+      unless phone.present? && /\A([\d+\-\s+()]+)\z/ === phone # rubocop:disable Style/GuardClause, Style/CaseEquality
         errors.add(:phone, :invalid)
       end
     end

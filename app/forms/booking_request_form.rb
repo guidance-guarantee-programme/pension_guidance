@@ -2,10 +2,10 @@ class BookingRequestForm # rubocop:disable Metrics/ClassLength
   include ActiveModel::Model
 
   attr_accessor :location_id, :first_name, :last_name, :email, :telephone_number,
-                :memorable_word, :accessibility_requirements, :date_of_birth,
-                :dc_pot, :additional_info, :remote_ip, :where_you_heard, :gdpr_consent
+                :memorable_word, :accessibility_requirements, :dc_pot,
+                :additional_info, :remote_ip, :where_you_heard, :gdpr_consent
 
-  attr_writer :selected_date, :start_at
+  attr_writer :selected_date, :start_at, :date_of_birth
 
   validate :validate_step_one
 
@@ -15,13 +15,13 @@ class BookingRequestForm # rubocop:disable Metrics/ClassLength
     step_two.validates :email, email: true
     step_two.validate :validate_telephone_number
     step_two.validates :memorable_word, presence: true
-    step_two.validates :accessibility_requirements, inclusion: { in: %w(0 1) }
-    step_two.validates :dc_pot, inclusion: { in: %w(yes no not-sure) }
+    step_two.validates :accessibility_requirements, inclusion: { in: %w[0 1] }
+    step_two.validates :dc_pot, inclusion: { in: %w[yes no not-sure] }
     step_two.validates :date_of_birth, presence: true
     step_two.validates :additional_info, length: { maximum: 160 }, allow_blank: true
     step_two.validates :additional_info, presence: true, if: :accessibility_requirements?
     step_two.validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
-    step_two.validates :gdpr_consent, inclusion: { in: %w(yes no) }
+    step_two.validates :gdpr_consent, inclusion: { in: %w[yes no] }
   end
 
   def initialize(location_id, opts)
@@ -137,7 +137,7 @@ class BookingRequestForm # rubocop:disable Metrics/ClassLength
 
   def validate_telephone_number
     unless telephone_number.present? &&
-           /\A([\d+\-\s\+()]+)\z/ === telephone_number # rubocop:disable Style/CaseEquality
+           /\A([\d+\-\s+()]+)\z/ === telephone_number # rubocop:disable Style/CaseEquality
       errors.add(:telephone_number, :invalid)
     end
   end

@@ -1,7 +1,7 @@
 RSpec.describe Entity, type: :model do
   subject { described_class.new(double, attributes) }
 
-  let(:attributes) { Hash.new }
+  let(:attributes) { {} }
 
   it { is_expected.to have_read_only_attributes(:id) }
 

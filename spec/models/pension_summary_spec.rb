@@ -75,7 +75,7 @@ RSpec.describe PensionSummary, type: :model do
 
   describe '#selected_steps' do
     it 'returns an array of selected steps' do
-      expect(subject.selected_steps).to eq(%w(how_my_pension_is_taxed scams final))
+      expect(subject.selected_steps).to eq(%w[how_my_pension_is_taxed scams final])
     end
   end
 
@@ -197,3 +197,4 @@ RSpec.describe PensionSummary, type: :model do
     end
   end
 end
+# rubocop:enable Layout/LineLength

@@ -6,18 +6,13 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
 
   attr_accessor(
     :id,
-    :step,
-    :selected_date,
-    :start_at,
     :first_name,
     :last_name,
     :email,
     :phone,
     :memorable_word,
     :appointment_type,
-    :date_of_birth,
     :dc_pot_confirmed,
-    :where_you_heard,
     :date_of_birth_year,
     :date_of_birth_month,
     :date_of_birth_day,
@@ -32,7 +27,14 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
     :referrer
   )
 
-  attr_writer :country_of_residence
+  attr_writer(
+    :country_of_residence,
+    :date_of_birth,
+    :where_you_heard,
+    :start_at,
+    :selected_date,
+    :step
+  )
 
   validates :start_at, presence: true
   validates :first_name, presence: true, format: { without: /\d+/ }
@@ -42,14 +44,14 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   validate  :validate_memorable_word
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
-  validates :dc_pot_confirmed, inclusion: { in: %w(yes no not-sure) }
+  validates :dc_pot_confirmed, inclusion: { in: %w[yes no not-sure] }
   validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }, unless: :embedded?
   validates :notes, length: { maximum: 160 }, allow_blank: true
   validates :notes, presence: true, if: :accessibility_requirements?
-  validates :accessibility_requirements, inclusion: { in: %w(0 1) }
+  validates :accessibility_requirements, inclusion: { in: %w[0 1] }
   validates :referrer, presence: true, if: :due_diligence?
   validates :country_of_residence, presence: true, if: :due_diligence?
-  validates :gdpr_consent, inclusion: { in: %w(yes no) }
+  validates :gdpr_consent, inclusion: { in: %w[yes no] }
 
   def due_diligence?
     schedule_type == 'due_diligence'
@@ -165,7 +167,7 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   end
 
   def validate_phone
-    unless phone.present? && /\A([\d+\-\s\+()]+)\z/ === phone # rubocop:disable Style/GuardClause, Style/CaseEquality
+    unless phone.present? && /\A([\d+\-\s+()]+)\z/ === phone # rubocop:disable Style/GuardClause, Style/CaseEquality
       errors.add(:phone, :invalid)
     end
   end

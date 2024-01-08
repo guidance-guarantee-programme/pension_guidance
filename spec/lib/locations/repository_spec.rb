@@ -1,5 +1,5 @@
 RSpec.describe Locations::Repository do
-  let(:path) { Rails.root.join('spec', 'fixtures', 'locations.json') }
+  let(:path) { Rails.root.join('spec/fixtures/locations.json') }
   let(:name) { 'Belfast Citizens Advice Bureau' }
   let(:address) { 'Merrion Business Centre, 58 Howard St, Belfast, BT1 6PJ' }
   let(:booking_location_id) { '928543c7-e8f0-45b2-a300-c2f996b007d9' }

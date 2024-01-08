@@ -1,14 +1,14 @@
 Rails.application.config.assets.version = '1.0'
 
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
-                                                         'accessible.media.player', 'core', 'javascripts')
+Rails.application.config.assets.paths << Rails.root.join('vendor/assets/bower_components/
+                                                         accessible.media.player/core/javascripts')
 
-Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components',
-                                                         'accessible.media.player', 'core', 'stylesheets')
+Rails.application.config.assets.paths << Rails.root.join('vendor/assets/bower_components/
+                                                         accessible.media.player/core/stylesheets')
 
-Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+Rails.application.config.assets.paths << Rails.root.join('app/assets/fonts')
 
-Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
+Rails.application.config.assets.precompile += %w[ apple-touch-icon-120x120.png
                                                   apple-touch-icon-152x152.png
                                                   apple-touch-icon-60x60.png
                                                   apple-touch-icon-76x76.png
@@ -36,4 +36,4 @@ Rails.application.config.assets.precompile += %w( apple-touch-icon-120x120.png
                                                   video-player.js
                                                   guider-image.jpg
                                                   iframe-resizer.js
-                                                  auto-scroller.js )
+                                                  auto-scroller.js ]

@@ -81,3 +81,4 @@ RSpec.feature 'Tesco Bookings' do
     expect(@page.start).to have_text('9:10am')
   end
 end
+# rubocop:enable Metrics/AbcSize, Metrics/MethodLength

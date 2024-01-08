@@ -1,7 +1,7 @@
 # rubocop:disable Metrics/BlockLength
 Rails.application.routes.draw do
   resources :booking_requests,
-            only: %i(new create),
+            only: %i[new create],
             path: '/cy/booking-requests',
             locale: :cy,
             module: :welsh_language do
@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|cy/ do
     root 'home#show'
 
-    resource :smarter_signposting, only: %i(new destroy), path: 'smarter'
-    resource :nudge, only: %i(new)
+    resource :smarter_signposting, only: %i[new destroy], path: 'smarter'
+    resource :nudge, only: %i[new]
 
     constraints format: 'html' do
       resources :categories, only: 'show', path: 'browse'
@@ -63,8 +63,8 @@ Rails.application.routes.draw do
       end
 
       scope 'employers/:employer_id', module: :employer, as: :employer, locale: :en do
-        resources :locations, only: %i(index show) do
-          resources :bookings, only: %i(new create) do
+        resources :locations, only: %i[index show] do
+          resources :bookings, only: %i[new create] do
             collection do
               get :ineligible
               get :confirmation
@@ -75,14 +75,14 @@ Rails.application.routes.draw do
       end
 
       resources :bsl_booking_requests,
-                only: %i(new create),
+                only: %i[new create],
                 path: 'bsl-booking-requests',
                 locale: :en,
                 module: :bsl do
         get :completed, on: :collection
       end
 
-      resources :locations, only: [:index, :show] do
+      resources :locations, only: %i[index show] do
         collection do
           post 'search'
         end
@@ -96,7 +96,7 @@ Rails.application.routes.draw do
         end
       end
 
-      resources :telephone_appointments, only: %i(new create), path: 'telephone-appointments' do
+      resources :telephone_appointments, only: %i[new create], path: 'telephone-appointments' do
         collection do
           get :nudge
           get :ineligible
@@ -105,7 +105,7 @@ Rails.application.routes.draw do
         end
       end
 
-      resources :nudge_appointments, only: %i(new create), path: 'nudge-appointments' do
+      resources :nudge_appointments, only: %i[new create], path: 'nudge-appointments' do
         collection do
           get :ineligible
           get :confirmation
@@ -113,11 +113,11 @@ Rails.application.routes.draw do
         end
       end
 
-      resource :feedback, only: [:create, :new] do
+      resource :feedback, only: %i[create new] do
         get :thanks
       end
 
-      resource :appointment_summaries, only: %i(new create show), path: 'summary-document' do
+      resource :appointment_summaries, only: %i[new create show], path: 'summary-document' do
         post :download, on: :member
         post :print, on: :member
       end
@@ -140,7 +140,7 @@ Rails.application.routes.draw do
 
       get '/', action: :index
 
-      %w(base govspeak components govuk_elements layout).each do |action|
+      %w[base govspeak components govuk_elements layout].each do |action|
         get action, action: action
       end
     end
@@ -157,3 +157,4 @@ Rails.application.routes.draw do
   get '/', to: redirect('/en')
   get '/*path', to: redirect('/en/%{path}'), constraints: ->(req) { req.params[:path] !~ /^(en|cy)/ }
 end
+# rubocop:enable Metrics/BlockLength

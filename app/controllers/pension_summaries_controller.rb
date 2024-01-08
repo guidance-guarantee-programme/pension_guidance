@@ -4,13 +4,13 @@ class PensionSummariesController < ApplicationController
 
   helper MoneyHelper
 
-  before_action :set_pilot_cookie, if: :pilot_enabled?, only: %i(start)
-  before_action :create_summary, only: %i(start)
-  before_action :set_summary, except: %i(start)
-  before_action :show_summary, if: :generated?, only: %i(step_one step_two)
-  before_action :set_current_step, only: %i(summary)
+  before_action :set_pilot_cookie, if: :pilot_enabled?, only: %i[start]
+  before_action :create_summary, only: %i[start]
+  before_action :set_summary, except: %i[start]
+  before_action :show_summary, if: :generated?, only: %i[step_one step_two]
+  before_action :set_current_step, only: %i[summary]
   before_action :set_breadcrumbs
-  before_action :skip_about_you, unless: :pilot_data_collection?, only: %i(about_you save_about_you)
+  before_action :skip_about_you, unless: :pilot_data_collection?, only: %i[about_you save_about_you]
 
   rescue_from ActiveRecord::RecordNotFound do
     redirect_to explore_your_options_root_url
@@ -101,8 +101,8 @@ class PensionSummariesController < ApplicationController
 
     render pdf: 'your pension summary from Pension Wise',
            template: 'pension_summaries/print',
-           handlers: %w(erb),
-           formats: %i(html),
+           handlers: %w[erb],
+           formats: %i[html],
            layout: false,
            disposition: 'inline'
   end
@@ -169,7 +169,7 @@ class PensionSummariesController < ApplicationController
 
   def set_breadcrumbs
     breadcrumb Breadcrumb.build_your_pensions_summary if params[:action] != 'start'
-    breadcrumb Breadcrumb.explore_your_options_step_one if %w(start step_one).exclude?(params[:action])
+    breadcrumb Breadcrumb.explore_your_options_step_one if %w[start step_one].exclude?(params[:action])
   end
 
   def pilot_enabled?
@@ -235,3 +235,4 @@ class PensionSummariesController < ApplicationController
   end
   helper_method :download_summary_path
 end
+# rubocop:enable Metrics/ClassLength

@@ -38,7 +38,7 @@ module Employer
       end
     end
 
-    def create_step_3 # rubocop:disable Metrics/AbcSize
+    def create_step_3
       if booking.invalid?
         render :new
       elsif booking.ineligible?
@@ -138,3 +138,4 @@ module Employer
     end
   end
 end
+# rubocop:enable Metrics/ClassLength

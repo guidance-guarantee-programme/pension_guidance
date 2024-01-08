@@ -45,7 +45,7 @@ class GuideRepository
 
   def all
     glob_dir('*').map do |path|
-      id = path.match(%r{^#{dir}/(?<id>[^\.]+)\.#{locale}\.(?<ext>.*)$})[:id]
+      id = path.match(%r{^#{dir}/(?<id>[^.]+)\.#{locale}\.(?<ext>.*)$})[:id]
       read_guide(id, path)
     end
   end
@@ -54,7 +54,7 @@ class GuideRepository
     glob_dir('*').map do |path|
       # If looking for all slugs take any locale into consideration and
       # not just the one this repository has been instantiated against
-      id = path.match(%r{^#{dir}/(?<id>[^\.]+)\.(?:(?<locale>[^\.]+)\.)?(?<ext>.*)$})[:id]
+      id = path.match(%r{^#{dir}/(?<id>[^.]+)\.(?:(?<locale>[^.]+)\.)?(?<ext>.*)$})[:id]
       id.tr('_', '-')
     end.uniq
   end
@@ -74,9 +74,9 @@ class GuideRepository
 
   def file_content_type(path)
     case File.extname(path)
-    when '.md' then
+    when '.md'
       :govspeak
-    when '.html' then
+    when '.html'
       :html
     end
   end

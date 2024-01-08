@@ -2,7 +2,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   include Embeddable
 
   before_action :set_breadcrumbs
-  before_action :telephone_appointment, only: %i(new create)
+  before_action :telephone_appointment, only: %i[new create]
 
   helper_method :slot_selected?
 
@@ -53,7 +53,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
     end
   end
 
-  def create_step_3
+  def create_step_3 # rubocop:disable Metrics/MethodLength
     if telephone_appointment.invalid?
       render :new
     elsif telephone_appointment.ineligible?
