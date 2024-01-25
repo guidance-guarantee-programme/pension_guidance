@@ -7,7 +7,6 @@ answers:
 tags:
   - appointments
   - embeddable
-noindex: true
 canonical:  https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/find-out-your-pension-type
 ---
 

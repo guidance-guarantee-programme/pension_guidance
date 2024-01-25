@@ -4,9 +4,6 @@
 <% if @guide.canonical.present? %>
   <% content_for(:canonical, @guide.canonical) %>
 <% end %>
-<% if @guide.noindex? %>
-  <% content_for(:noindex, @guide.noindex?) %>
-<% end %>
 
 <div class="l-column-full">
 <%= render 'option' if @guide.option? %>
