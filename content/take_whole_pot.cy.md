@@ -4,6 +4,10 @@ description: Defnyddiwch ein cyfrifiannell i amcangyfrif faint o dreth y byddwch
 tags:
   - embeddable
 canonical: https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-whole-pension-in-one-go
+page_name: take-whole-pot-calculator
+tool_step: ''
+step_name: ''
+tool_name: Take Whole Pot Calculator
 ---
 
 {::calculator id="take-whole-pot" locale="cy" /}

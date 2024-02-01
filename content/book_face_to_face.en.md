@@ -1,9 +1,14 @@
 ---
+label: Search for face-to-face appointment locations
 description: Find an appointment location near you.
 tags:
   - appointments
   - booking
   - embeddable
+page_name: book-face-to-face--location-search
+tool_step: ''
+step_name: ''
+tool_name: Face-to-face locations
 ---
 
 # Find an appointment location near you

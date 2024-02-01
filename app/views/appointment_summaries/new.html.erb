@@ -1,7 +1,9 @@
 <% content_for(:page_title, t('service.title', page_title: 'How to view your appointment summary')) %>
 <% content_for(:meta_description, 'Choose the information you want in the summary of your Pension Wise appointment') %>
 <% content_for(:canonical, "https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/view-your-appointment-summary") %>
-<% content_for(:page_name, 'Appointment Summary') %>
+<% content_for(:page_name, 'appointment-summaries-new') %>
+<% content_for(:tool_step, '1') %>
+<% content_for(:step_name, 'Appointment summary') %>
 
 <%= form_for @appointment_summary, url: appointment_summaries_path, html: { class: 't-appointment-summary-generator' } do |f| %>
   <div class="page-header">
