@@ -183,5 +183,11 @@ class PensionSummary < ApplicationRecord
   def email_valid?
     email.to_s =~ EMAIL_REGEX
   end
+
+  def self.for_redaction
+    where
+      .not(name: 'redacted')
+      .where('created_at < ?', 2.years.ago.beginning_of_day)
+  end
 end
 # rubocop:enable Metrics/ClassLength
