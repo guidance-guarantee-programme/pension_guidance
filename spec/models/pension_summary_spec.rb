@@ -2,6 +2,17 @@
 RSpec.describe PensionSummary, type: :model do
   subject { FactoryBot.build(:pension_summary) }
 
+  describe '.for_redaction' do
+    it 'returns unredacted records older than 2 years' do
+      included = FactoryBot.create(:pension_summary, :with_consent, created_at: 3.years.ago)
+      # excluded as redacted, newer than 2 years
+      FactoryBot.create(:pension_summary, :with_consent, name: 'redacted', created_at: 3.years.ago)
+      FactoryBot.create(:pension_summary, :with_consent)
+
+      expect(described_class.for_redaction).to match_array([included])
+    end
+  end
+
   describe 'schema' do
     it { is_expected.to have_db_column(:id).of_type(:uuid).with_options(primary: true) }
 
