@@ -4,4 +4,5 @@ cy:
       heading: Methu anfon y ffurflen
     form_input_submit:
       submit_tag: Cyfrifo
+      lta_disclaimer_html: <p>Os yw cyfanswm gwerth eich pensiynau, gan gynnwys y rhai yr ydych eisoes wedi cymryd arian ohonynt, yn agos at neu’n fwy na £1 miliwn, gallai eich swm di-dreth fod yn wahanol. Os ydych chi yn y sefyllfa hon, mae’n bwysig cael cyngor ariannol wedi’i reoleiddio cyn i chi gael mynediad i’ch pensiwn. <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser" target="_blank">Dewch o hyd i gynghorydd ymddeoliad </a></p>
     loading_message: Arhoswch
