@@ -4,4 +4,5 @@ en:
       heading: Unable to submit the form
     form_input_submit:
       submit_tag: Calculate
+      lta_disclaimer_html: <p>If the total value of your pensions, including those you’ve already taken money from, is close to or more than £1 million, your tax-free amount might be different. If you’re in this situation, it’s important to get regulated financial advice before you access your pension. <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/find-a-retirement-adviser" target="_blank">Find a retirement adviser</a></p>
     loading_message: Please wait
