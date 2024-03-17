@@ -8,8 +8,8 @@ Gallech hefyd dalu Treth Incwm ar:
 
 - eich Pensiwn y Wladwriaeth
 - enillion o gyflogaeth neu hunangyflogaeth
-- unrhyw incwm arall, er enghraifft arian o incwm rhent, cynilion, buddsoddiadau
-- unrhyw fudd-daliadau trethadwy y gallech fod yn eu cael, er enghraifft Lwfans Gofalwr
+- unrhyw incwm arall, e.e. arian o incwm rhent, cynilion, buddsoddiadau
+- unrhyw fudd-daliadau trethadwy y gallech fod yn eu cael, e.e. Lwfans Gofalwr
 
 ## Yr 25% di-dreth
 
@@ -39,7 +39,7 @@ Mae’r arian rydych yn ei gymryd o’ch cronfa yn dod o’ch darparwr gyda’r 
 
 Bydd eich darparwr hefyd yn tynnu allan unrhyw dreth sy’n ddyledus ar eich Pensiwn y Wladwriaeth.
 
-Efallai y byddwch yn talu treth brys pan fyddwch yn cymryd arian o’ch cronfa. Gallwch [hawlio hwn yn ôl](https://www.gov.uk/claim-tax-refund/you-get-a-pension){: target="_blank" rel="external"} gan Gyllid a Thollau EM.
+Efallai y byddwch yn talu treth brys pan fyddwch yn cymryd arian o’ch cronfa. Gallwch [hawlio hwn yn ôl](https://www.gov.uk/claim-tax-refund/you-get-a-pension){: target="_blank" rel="external"} gan Gyllid a Thollau EF.
 
 ### Os byddwch yn parhau i weithio
 
@@ -56,5 +56,5 @@ Chi sy’n gyfrifol am dalu treth ar incwm arall sydd gennych, er enghraifft o e
 </div>
 
 {: .hide-from-screen }
-[Further guidance on tax you pay on your pension](https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions)<br>
-https://www.moneyhelper.org.uk/en/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement#defined-contribution-pensions
+[Canllaw ar dreth ar ôl ymddeol)](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/tax-and-pensions/a-guide-to-tax-in-retirement
