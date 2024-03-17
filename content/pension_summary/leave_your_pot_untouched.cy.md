@@ -1,6 +1,6 @@
 # Ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn
 
-Gallwch adael eich arian wedi’i fuddsoddi yn eich cronfa tan fyddwch chi ei angen. Gallai eich cronfa dyfu ymhellach a rhoi swm mwy o arian i chi i barhau am lai o amser. Gallwch chi (a’ch cyflogwr) ddal i dalu i mewn i’ch cronfa ond efallai bydd cyfyngiadau.
+Gallwch adael eich arian wedi’i fuddsoddi yn eich cronfa tan fyddwch chi ei angen. Gallai eich cronfa dyfu ymhellach a rhoi swm mwy o arian i chi i bara am lai o amser. Gallwch chi (a’ch cyflogwr) dal i dalu i mewn i’ch cronfa ond efallai bydd cyfyngiadau.
 
 Ni allwch fel arfer gael mynediad at eich cronfa bensiwn tan eich bod yn 55 oed, mae hyn yn cynyddu i 57 oed ar 6 Ebrill 2028.
 
@@ -12,7 +12,7 @@ Mae'r rheolau'n gymhleth felly dylech wirio gyda'ch darparwr pensiwn.
 
 * Tra bydd yr arian yn aros yn eich cronfa nid ydych yn talu treth arno.
 * Mae i fyny i chi pryd fyddwch yn cymryd yr arian allan – y cynharaf fel arfer yw 55 oed, oni bai fod gennych salwch difrifol.
-* Os bydd rhywun yn cysylltu â chi yn annisgwyl am gael arian o’ch cronfa cyn rydych yn 55 oed, mae bron bob amser yn sgiâm pensiwn.
+* Os bydd rhywun yn cysylltu â chi yn annisgwyl am gael arian o’ch cronfa cyn rydych yn 55 oed, mae bron bob amser yn sgam pensiwn.
 * Gall arian sydd heb ei gyffwrdd cael ei drosglwyddo ymlaen pan fyddwch yn marw.
 
 ## Camau nesaf
