@@ -1,12 +1,12 @@
 # Cael incwm ymddeoliad gwarantedig (blwydd-daliadau)
 
-Gall blwydd-dal roi incwm gwarantedig i chi am weddill eich oes. Gallwch chwilio o gwmpas am flwydd-dal – nid oes rhaid i chi brynu un gan eich darparwr pensiwn cyfredol.
+Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth – os ydych yn gwneud hyn mae’n rhaid i chi brynu blwydd-dal gyda’r 75% sy’n weddill neu ddefnyddio un o’r opsiynau eraill.
 
 ## Ffeithiau allweddol
 
 * Mae hwn yn fath o gynnyrch pensiwn sy’n rhoi incwm gwarantedig i chi.
 * Gallwch brynu blwydd-dal am gyfnod penodol, er enghraifft 10 mlynedd neu am weddill eich oes.
-* Gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth – os ydych yn gwneud hyn mae'n rhaid i chi brynu blwydd-dal gyda'r 75% sy'n weddill neu ddefnyddio un o'r opsiynau eraill. O 6 Ebrill 2023 yr uchafswm y gall y rhan fwyaf o bobl ei gymryd fel cyfandaliad di-dreth yw £268,275 oni bai bod rhai amddiffyniadau'n berthnasol.
+* Gallwch gymryd hyd at 25% o’ch cronfa yn ddi-dreth – os ydych yn gwneud hyn mae’n rhaid i chi brynu blwydd-dal gyda’r 75% sy’n weddill neu ddefnyddio un o’r opsiynau eraill. O 6 Ebrill 2023 yr uchafswm y gall y rhan fwyaf o bobl ei gymryd fel cyfandaliad di-dreth yw £268,275 oni bai bod rhai amddiffyniadau’n berthnasol.
 * Mae yna lawer o wahanol fathau o flwydd-dal ac mae’n bwysig eich bod yn cael yr un iawn i chi.
 
 ## Camau nesaf
