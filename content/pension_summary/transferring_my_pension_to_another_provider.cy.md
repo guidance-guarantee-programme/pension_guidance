@@ -9,8 +9,8 @@ Gofynnwch i’ch darparwr presennol pa mor hir y bydd yn ei gymryd i drosglwyddo
 
 * oes rhaid i chi dalu ffioedd
 * byddwch yn colli unrhyw hawl roedd gennych i gymryd eich arian allan ar oedran penodol
-* byddwch yn colli unrhyw nodweddion arbennig, er enghraifft gyfradd blwydd-dal gwarantedig
-* byddwch yn colli unrhyw hawl oedd gennych i gymryd lwmp swm di-dreth o fwy na 25% o’ch cronfa bensiwn
+* byddwch yn colli unrhyw nodweddion arbennig, e.e. gyfradd blwydd-dal gwarantedig
+* byddwch yn colli unrhyw hawl oedd gennych i gymryd cyfandaliad di-dreth o fwy na 25% o’ch cronfa bensiwn
 
 Dylech hefyd ofyn i’r darparwr rydych yn symud iddo os bydd rhaid i chi wneud taliadau rheolaidd i mewn i’r pensiwn newydd.
 
@@ -29,8 +29,8 @@ Gallwch gael cyngor diduedd am drosglwyddiadau pensiwn gan ymgynghorydd ariannol
 Mae’n rhaid i chi gael cyngor ariannol os ydych am drosglwyddo o:
 
 * pensiwn buddion wedi’u diffinio gwerth mwy na £30,000
-* pensiwn cyfraniadau wedi’u diffinio gwerth mwy na £30,000 gyda gwarant am yr hyn y bydd yn cael ei dalu i chi pan fyddwch yn ymddeol (er enghraifft gyfradd blwydd-dal gwarantedig)
+* pensiwn cyfraniadau wedi’u diffinio gwerth mwy na £30,000 gyda gwarant am yr hyn y bydd yn cael ei dalu i chi pan fyddwch yn ymddeol (e.e. gyfradd blwydd-dal gwarantedig)
 
 {: .hide-from-screen }
-[Further guidance on pensions transfers](https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/transferring-your-defined-contribution-pension)<br>
-https://www.moneyhelper.org.uk/en/pensions-and-retirement/building-your-retirement-pot/transferring-your-defined-contribution-pension
+[Arweiniad pellach ar drosglwyddo pensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/transferring-your-defined-contribution-pension)<br>
+https://www.moneyhelper.org.uk/cy/pensions-and-retirement/building-your-retirement-pot/transferring-your-defined-contribution-pension
