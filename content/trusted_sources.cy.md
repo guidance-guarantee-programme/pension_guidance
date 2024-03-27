@@ -1,4 +1,4 @@
-# Ffynonhellau dibynadwy o wybodaeth ychwanegol
+# Arweiniad diduedd ac am ddim pellach
 
 Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o wybodaeth ychwanegol:
 
@@ -17,8 +17,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         Ffôn: 0800 011 3797
       </td>
       <td>
-        Ar gyfer ymholiadau pensiwn cyffredinol a chwynion, yn cynnwys help i osgoi sgamiau pensiwn a chynilo i gynllun pensiwn
-
+        <p>Ar gyfer ymholiadau pensiwn cyffredinol a chwynion, yn cynnwys help i osgoi sgamiau pensiwn a chynilo i gynllun pensiwn</p>
         <p>Coronafeirws (COVID-19) – <a href="https://www.pensionsadvisoryservice.org.uk/about-pensions/when-things-change/coronavirus-how-will-this-affect-my-pension-or-investments">A fydd yn effeithio fy mhensiwn?</a></p>
       </td>
     </tr>
@@ -54,27 +53,11 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
     </tr>
     <tr>
       <td>
-        <strong>Y Gwasanaeth Cynghori Ariannol</strong><br>
-        <a href="https://www.moneyadviceservice.org.uk/cy">www.moneyadviceservice.org.uk/cy</a><br>
-        Ffôn: 0800 138 0555
+        <strong>Pensions and Lifetime Savings Association (PLSA)</strong><br>
+        <a href="https://www.retirementlivingstandards.org.uk">www.retirementlivingstandards.org.uk</a><br>
       </td>
       <td>
-        <ul>
-        <li>Coronafeirws (COVID-19) <a href="https://www.moneyadviceservice.org.uk/cy/tools/money-navigator-tool">cymorth ariannol</a></li>
-        <li>Offeryn Cymharu Blwydd-dal <a href=" https://comparison.moneyadviceservice.org.uk/cy/tools/annuities">comparison.moneyadviceservice.org.uk/cy/tools/annuities</a></li>
-        <li>Cyfeirlyfr cynghori ar ymddeoliad <a href=" https://directory.moneyadviceservice.org.uk/cy">directory.moneyadviceservice.org.uk/cy</a></li>
-        <li>Pension Drawdown Investment Pathways Tool <a href="https://www.moneyadviceservice.org.uk/en/tools/drawdown-investment-pathways">www.moneyadviceservice.org.uk/en/tools/drawdown-investment-pathways</a></li>
-        <li>Dyled a benthyca</li>
-        <li>Cyllidebu a rheoli arian</li>
-        <li>Cynilo a buddsoddi</li>
-        <li>Pensiynau ac ymddeoliad</li>
-        <li>Gwaith a diswyddo</li>
-        <li>Budd-daliadau</li>
-        <li>Genedigaethau, marwolaethau a theulu</li>
-        <li>Yswiriant</li>
-        <li>Cartrefi a morgesis</li>
-        <li>Gofal ac anabledd</li>
-        </ul>
+        Helpu cynilwyr i feddwl mewn ffordd ymarferol am y math o ffordd o fyw y gallent ei harwain ar ôl ymddeol.
       </td>
     </tr>
     <tr>
@@ -109,7 +92,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
     </tr>
     <tr>
       <td>
-        <strong>Cyllid a Thollau EM</strong><br>
+        <strong>Cyllid a Thollau EF</strong><br>
         <a href="https://www.gov.uk/contact-hmrc">www.gov.uk/contact-hmrc</a><br>
         Ffôn: 0300 200 3300
       </td>
@@ -156,16 +139,18 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
       </td>
       <td>
         <ul>
-          <li>Gwaith, swyddi a phensiynau ee Pensiwn y Wladwriaeth, Olrhain pensiwn </li>
+          <li>Gwaith, swyddi a phensiynau e.e. Pensiwn y Wladwriaeth, Olrhain pensiwn </li>
           <li>Credydau Treth</li>
           <li>Genedigaethau, marwolaethau, priodasau </li>
           <li>Ysgariad</li>
           <li>Pwer Atwrnai Parhaus</li>
-          <li>Cyflogseth a Hunangyflogaeth</li>
+          <li>Cyflogaeth a Hunangyflogaeth</li>
+          <li>Gofal plant a magu plant</li>
           <li>Pobl anabl</li>
           <li>Tai a gwasanaethau lleol</li>
           <li>Arian a threth</li>
-          <li>Treth yr Alban</li>
+          <li>Pasbortau</li>
+          <li>Teithio a byw tramor</li>
         </ul>
       </td>
     </tr>
@@ -192,7 +177,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         E-bost: <a href="mailto:jo@samaritans.org">jo@samaritans.org</a>
       </td>
       <td>
-        Mae’r Samariaid yn cynnig man diogel i bobl seared unrhyw bryd maent eisiau, yn eu ffordd eu hunain – am beth bynnag sy’n eu peoni. Ni does yn rhaid iddynt fod yn teimlo fel lladd eu hunain
+        Mae’r Samariaid yn cynnig man diogel i bobl siarad unrhyw bryd maent eisiau, yn eu ffordd eu hunain – am beth bynnag sy’n eu peoni. Nid oes yn rhaid iddynt fod yn hunanladdol.
       </td>
     </tr>
     <tr>
@@ -205,7 +190,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         <ul>
           <li>Bywyd bob dydd</li>
           <li>Help gyda Gofal</li>
-          <li>Aros yn Annibynnol Independent</li>
+          <li>Aros yn Annibynnol</li>
           <li>Cyfreithiol ac Ariannol </li>
         </ul>
       </td>

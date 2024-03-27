@@ -1,6 +1,6 @@
 # Cymysgu eich opsiynau
 
-Gallwch gymysgu eich opsiynau, er enghraifft defnyddio rhywfaint o’ch cronfa i gael incwm ymddeoliad hyblyg a rhywfaint i brynu incwm ymddeol gwarantedig.
+Gallwch gymysgu eich opsiynau, e.e. defnyddio rhywfaint o’ch cronfa i gael incwm ymddeoliad hyblyg a rhywfaint i brynu incwm ymddeol gwarantedig.
 
 ## Ffeithiau allweddol
 
