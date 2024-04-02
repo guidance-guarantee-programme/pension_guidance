@@ -31,7 +31,7 @@ You can take 25% as a lump sum without paying tax. If you do this, you can’t l
 
 You can take smaller cash sums from your pension pot without paying tax. 25% of each chunk is tax free.
 
-^**Example**<br /><br />Your pot is £60,000 and you take £1,000 every month – £250 of this is tax free. The remaining £750 is taxable.^
+^**Example**<br /><br />Your pot is £60,000 and you take out £10,000. £2,500 of this is tax free and £7,500 is taxable.^
 
 ## How your tax is paid
 
@@ -52,7 +52,7 @@ If your total income (including money from pensions and PAYE) is £100,000 or mo
 You’re responsible for paying tax on other income you have, e.g. from property or investments, and you might have to fill in a Self-Assessment tax return.
 
 <div role="note" aria-label="Information" class="application-notice info-notice">
-  <p>You usually pay tax if your pension pots are worth more than the <a href="https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance" target="_blank" rel="external">lifetime allowance</a>. This is currently £1,073,100.</p>
+  <p>You usually pay tax if your pension pots are worth more than the <a href="https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance" target="_blank" rel="external">lifetime allowance</a>. This was £1,073,100 before 6 April 2023. You won't be subject to the lifetime allowance if you take your pension after this, but may be subject to the new lump sum allowance (LSA) or lump sum and death benefit allowance (LSDBA).</p>
 </div>
 
 {: .hide-from-screen }
