@@ -2,7 +2,7 @@
 
 Instead of taking your whole pot in one go, you take smaller lump sums over time until your money runs out – 25% of each lump sum you take out is tax free and the rest is taxable.
 
-You can only use this option is you have not already taken the maximum tax-free lump sum allowable from other pensions. From 6 April 2023 the maximum amount most people can take as a tax-free lump sum is £268,275 unless certain protections apply.
+You can only use this option is you have not already taken the maximum tax-free lump sum allowable from other pensions.
 
 ## Key facts
 
@@ -20,7 +20,7 @@ If you’re interested in this option, you’ll need to contact your provider an
 ### Questions to ask your provider
 
 1. Do you offer ‘Uncrystallised Funds Pension Lump Sum’ (UFPLS)?
-2. Will you charge me a fee if I move my pot to a provider that offers this option?
+2. How much will you charge me for each lump sum I take, and are there any restrictions?
 3. Does my pot have any special features like a guaranteed annuity rate?
 
 {: .hide-from-screen }
