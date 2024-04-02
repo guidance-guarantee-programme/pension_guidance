@@ -22,11 +22,10 @@ If you’re interested in this option, you’ll need to contact your provider an
 ### Questions to ask your provider
 1. Do I have to take the money by a certain date?
 2. What are the fees for continuing to leave my pot untouched?
-3. How much is the pot likely to grow or go down each year?
-4. How is the money invested and can I change this if I want?
-5. How much can I still pay in?
-6. Does my pot have any special features like a guaranteed annuity rate?
-7. Do you have up-to-date details of who I want to leave my pot to (my ‘beneficiary’) when I die?
+3. How is the money invested and can I change this if I want?
+4. How much can I still pay in?
+5. Does my pot have any special features like a guaranteed annuity rate?
+6. Do you have up-to-date details of who I want to leave my pot to (my ‘beneficiary’) when I die?
 
 {: .hide-from-screen }
 [Further guidance on retiring later or delaying taking your pension pot](https://www.moneyhelper.org.uk/en/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot)<br>
