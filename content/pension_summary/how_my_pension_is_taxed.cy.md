@@ -52,7 +52,7 @@ Os yw cyfanswm eich incwm (gan gynnwys arian o bensiynau a PAYE) yn £100,000 ne
 Chi sy’n gyfrifol am dalu treth ar incwm arall sydd gennych, er enghraifft o eiddo neu fuddsoddiadau, ac efallai y bydd rhaid i chi lenwi ffurflen dreth Hunanasesiad.
 
 <div role="note" aria-label="Information" class="application-notice info-notice">
-  <p>Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r <a href="https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance" target="_blank" rel="external">lwfans oes</a>. Ar hyn o bryd mae hyn yn £1,073,100.</p>
+  <p>Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r <a href="https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance" target="_blank" rel="external">lwfans oes</a>. Roedd hyn yn £1,073,100 cyn 6 Ebrill 2023. Ni fyddwch yn destyn i'r lwfans oes os cymerwch eich pensiwn ar ôl hyn, ond gall fod yn destun i'r lwfans cyfandaliad newydd (LSA) neu gyfandaliad a lwfans buddion marwolaeth (LSDBA).</p>
 </div>
 
 {: .hide-from-screen }
