@@ -2,7 +2,7 @@
 
 Yn lle cymryd eich cronfa gyfan mewn un tro, rydych yn cymryd cyfandaliadau llai dros gyfnod o amser tan mae eich arian yn rhedeg allan - mae 25% o bob cyfandaliad rydych yn ei dynnu allan yn ddi-dreth ac mae’r gweddill yn drethadwy.
 
-Gallwch ond defnyddio'r opsiwn hwn os nad ydych eisoes wedi cymryd y cyfandaliad di-dreth uchaf y gellir ei ganiatáu o bensiynau eraill. O 6 Ebrill 2023 yr uchafswm y gall y rhan fwyaf o bobl ei gymryd fel cyfandaliad di-dreth yw £268,275 oni bai bod rhai amddiffyniadau'n berthnasol.
+Gallwch ond defnyddio'r opsiwn hwn os nad ydych eisoes wedi cymryd y cyfandaliad di-dreth uchaf y gellir ei ganiatáu o bensiynau eraill.
 
 ## Ffeithiau allweddol
 
@@ -20,8 +20,7 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 ### Cwestiynau i’w gofyn i’ch darparwr
 
 1. Ydych chi’n cynnig ‘Cyfandaliad Pensiwn Cronfeydd Di-grisial’ (UFPLS)?
-2. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?
-3. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
+2. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
 
 {: .hide-from-screen }
 [Arweiniad pellach ar gymryd eich pensiwn fel nifer o gyfandaliadau](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/taking-your-pension-as-a-number-of-lump-sums)<br>
