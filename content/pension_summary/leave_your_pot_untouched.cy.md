@@ -22,11 +22,10 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 ### Cwestiynau i’w gofyn i’ch darparwr
 1. Oes rhaid i mi gymryd yr arian erbyn dyddiad penodol?
 2. Beth yw’r ffioedd am adael fy nghronfa heb ei gyffwrdd?
-3. Faint mae’r gronfa yn debygol o dyfu neu fynd i lawr bob blwyddyn?
-4. Sut mae’r arian yn cael ei fuddsoddi a galla i newid hyn os wyf eisiau?
-5. Faint allai ddal i dalu i mewn?
-6. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
-7. Oes gennych chi fanylion cyfredol o bwy rwyf am adael fy nghronfa i (fy ‘muddiolwr’) pan fyddaf yn marw?
+3. Sut mae’r arian yn cael ei fuddsoddi a galla i newid hyn os wyf eisiau?
+4. Faint allai ddal i dalu i mewn?
+5. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
+6. Oes gennych chi fanylion cyfredol o bwy rwyf am adael fy nghronfa i (fy ‘muddiolwr’) pan fyddaf yn marw?
 
 {: .hide-from-screen }
 [Arweiniad pellach ar ymddeol yn hwyrach neu oedi cymryd eich cronfa bensiwn](https://www.moneyhelper.org.uk/cy/pensions-and-retirement/taking-your-pension/retiring-later-or-delaying-taking-your-pension-pot)<br>
