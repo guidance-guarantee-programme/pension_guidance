@@ -5,7 +5,7 @@ Fel arfer gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth. Mae'r gweddill yn 
 ## Ffeithiau allweddol
 
 * Rydych yn cael incwm o’ch cronfa sy’n drethadwy. Chi sy’n penderfynu faint i’w gymryd a phryd, ac am faint rydych eisiau iddo barhau.
-* Gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth – os ydych yn gwneud hyn mae'n rhaid i chi brynu blwydd-dal gyda'r 75% sy'n weddill neu ddefnyddio un o'r opsiynau eraill. O 6 Ebrill 2023 yr uchafswm y gall y rhan fwyaf o bobl ei gymryd fel cyfandaliad di-dreth yw £268,275 oni bai bod rhai amddiffyniadau'n berthnasol.
+* Gallwch gymryd hyd at 25% o'ch cronfa yn ddi-dreth – os ydych yn gwneud hyn mae'n rhaid i chi brynu blwydd-dal gyda'r 75% sy'n weddill neu ddefnyddio un o'r opsiynau eraill.
 * Bydd eich darparwr yn gofyn i chi sut hoffech fuddsoddi eich cronfa sy'n weddill pan fyddwch yn symud i mewn i dynnu pensiwn i lawr. Bydd angen i chi naill ai ddewis eich buddsoddiadau eich hun, h.y. rhai sy'n cyfateb i'ch agwedd at risg ac amcanion ar gyfer eich arian, neu bydd rhai darparwyr yn cynnig dewis o opsiynau buddsoddi parod syml sy'n gysylltiedig â'ch cynlluniau ymddeoliad (gelwir y rhain yn Llwybrau Buddsoddi). Gallech hefyd ddefnyddio ymgynghorydd ariannol i'ch helpu i ddewis.
 * Mae llwybr buddsoddi yn opsiwn buddsoddi parod, sy’n symleiddio’r penderfyniad ar sut i fuddsoddi’ch cronfa bensiwn sy’n weddill ar ôl i chi gymryd eich cyfandaliad di-dreth.
 * Fel gyda phob buddsoddiad, gall gwerth eich cronfa fynd i fyny neu i lawr.
@@ -21,7 +21,7 @@ Os oes gennych ddiddordeb yn yr opsiwn hwn, bydd angen i chi gysylltu â’ch da
 
 1. Ydych chi’n cynnig tynnu pensiwn i lawr?
 2. A fydd rhaid i mi dalu ffi, er enghraifft bob tro rwyf yn cymryd taliad?
-3. Faint allai fy nghronfa dyfu neu fynd i lawr? Mae rhai darparwyr yn cynnig cynhyrchion sy’n cynnwys gwarantau.
+3. Ydych chi'n darparu unrhyw gynhyrchion sy'n cynnwys gwarantau?
 4. A fyddwch yn codi ffi arnaf os byddaf yn symud fy nghronfa i ddarparwr sy’n cynnig yr opsiwn hwn?
 5. Oes gan fy nghronfa unrhyw nodweddion arbennig fel cyfradd blwydd-dal gwarantedig?
 
