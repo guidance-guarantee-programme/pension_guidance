@@ -31,7 +31,7 @@ Gallwch gymryd 25% fel cyfandaliad heb dalu treth. Os byddwch yn gwneud hyn, ni 
 
 Gallwch gymryd allan symiau o arian llai o’ch cronfa bensiwn heb dalu treth. Mae 25% o bob darn yn ddi-dreth.
 
-^**Enghraifft**<br /><br />Mae eich cronfa yn £60,000 ac rydych yn cymryd allan £1,000 bob mis - mae £250 o hyn yn ddi-dreth. Mae’r £750 sy’n weddill yn drethadwy.^
+^**Enghraifft**<br /><br />Mae eich cronfa yn £60,000 ac rydych yn cymryd allan £10,000. Mae £2,500 o hyn yn ddi-dreth a £7,500 yn drethadwy.^
 
 ## Sut mae eich treth yn cael ei dalu
 
