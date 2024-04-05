@@ -16,7 +16,7 @@ Efallai y byddwch yn gallu cymryd eich cronfa bensiwn gyfan yn ddi-dreth os yw *
 
 * mae disgwyl i chi fyw am lai na blwyddyn oherwydd salwch difrifol
 * rydych o dan 75 oed (os ydych chi dros 75 oed byddwch yn talu treth o 45% ar y cyfandaliad)
-* nid oes gennych fwy na’r lwfans oes o £1,073,100 mewn arian pensiwn
+* nid oes gennych fwy na'r lwfansau treth mewn arian pensiwn
 
 Gwiriwch delerau eich pensiwn gyda’ch darparwr. Bydd rhai pensiynau yn cadw o leiaf 50% o’ch cronfa ar gyfer eich priod neu’ch partner.
 

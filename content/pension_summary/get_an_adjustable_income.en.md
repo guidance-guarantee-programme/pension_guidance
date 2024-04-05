@@ -7,7 +7,7 @@ You can normally take up to 25% of your pot tax free. The rest is invested to gi
 ## Key facts
 
 * You get an income from your pot which is taxable. You decide how much to take out and when, and how long you want it to last.
-* You can take up to 25% of your pot tax free – if you do this, you must move the remaining 75% into a flexible income product or use one of the other options. From 6 April 2023 the maximum amount most people can take as a tax-free lump sum is £268,275 unless certain protections apply.
+* You can take up to 25% of your pot tax free – if you do this, you must move the remaining 75% into a flexible income product or use one of the other options.
 * Your provider will ask you how you want to invest your remaining pot when you move into pension drawdown. You will either need to choose your own investments, i.e. ones that match your attitude to risk and objectives for your money, or some providers will offer you to choose from simple ready-made investment options which are linked to your retirement plans (these are called Investment Pathways). You could also use a financial adviser to help you choose.
 * An investment pathway is a ready-made investment option, which simplifies the decision of how to invest your remaining pension pot after you’ve taken your tax-free lump sum.
 * As with all investments, the value of your pot can go up or down.
@@ -23,7 +23,7 @@ If you’re interested in this option, you’ll need to contact your provider an
 
 1. Do you offer pension drawdown?
 2. Will I have to pay any fees, e.g. each time I take a payment?
-3. How much could my pot grow or go down? Some providers now offer products which include guarantees.
+3. Do you provide any products that include guarantees?
 4. Will you charge me a fee if I move my pot to a provider that offers this option?
 5. Does my pot have any special features like a guaranteed annuity rate?
 

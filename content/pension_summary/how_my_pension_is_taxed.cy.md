@@ -31,7 +31,7 @@ Gallwch gymryd 25% fel cyfandaliad heb dalu treth. Os byddwch yn gwneud hyn, ni 
 
 Gallwch gymryd allan symiau o arian llai o’ch cronfa bensiwn heb dalu treth. Mae 25% o bob darn yn ddi-dreth.
 
-^**Enghraifft**<br /><br />Mae eich cronfa yn £60,000 ac rydych yn cymryd allan £1,000 bob mis - mae £250 o hyn yn ddi-dreth. Mae’r £750 sy’n weddill yn drethadwy.^
+^**Enghraifft**<br /><br />Mae eich cronfa yn £60,000 ac rydych yn cymryd allan £10,000. Mae £2,500 o hyn yn ddi-dreth a £7,500 yn drethadwy.^
 
 ## Sut mae eich treth yn cael ei dalu
 
@@ -52,7 +52,7 @@ Os yw cyfanswm eich incwm (gan gynnwys arian o bensiynau a PAYE) yn £100,000 ne
 Chi sy’n gyfrifol am dalu treth ar incwm arall sydd gennych, er enghraifft o eiddo neu fuddsoddiadau, ac efallai y bydd rhaid i chi lenwi ffurflen dreth Hunanasesiad.
 
 <div role="note" aria-label="Information" class="application-notice info-notice">
-  <p>Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r <a href="https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance" target="_blank" rel="external">lwfans oes</a>. Ar hyn o bryd mae hyn yn £1,073,100.</p>
+  <p>Byddwch fel arfer yn talu treth os yw eich cronfeydd pensiwn yn werth mwy na’r <a href="https://www.gov.uk/tax-on-your-private-pension/lifetime-allowance" target="_blank" rel="external">lwfans oes</a>. Roedd hyn yn £1,073,100 cyn 6 Ebrill 2023. Ni fyddwch yn destyn i'r lwfans oes os cymerwch eich pensiwn ar ôl hyn, ond gall fod yn destun i'r lwfans cyfandaliad newydd (LSA) neu gyfandaliad a lwfans buddion marwolaeth (LSDBA).</p>
 </div>
 
 {: .hide-from-screen }
