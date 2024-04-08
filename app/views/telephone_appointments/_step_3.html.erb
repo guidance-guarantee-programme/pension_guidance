@@ -190,6 +190,11 @@
         <%= f.label :dc_pot_confirmed, value: 'not-sure', aria: { label: 'I am not sure if I have a defined contribution pot' } do %>Not sure<% end %>
       </div>
     </fieldset>
+    <% unless @telephone_appointment.due_diligence? %>
+      <p>
+        <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/find-out-your-pension-type" target="_blank">Find out your pension type</a>
+      </p>
+    <% end %>
     <p><%= render partial: 'components/webchat' %></p>
   </div>
   <% end %>
