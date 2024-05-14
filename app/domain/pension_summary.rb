@@ -30,6 +30,7 @@ class PensionSummary < ApplicationRecord
     getting_help_with_debt
     taking_my_pension_if_im_ill
     transferring_my_pension_to_another_provider
+    final_salary_career_average
     final
   ].freeze
 
@@ -52,6 +53,7 @@ class PensionSummary < ApplicationRecord
     getting_help_with_debt
     taking_my_pension_if_im_ill
     transferring_my_pension_to_another_provider
+    final_salary_career_average
   ].freeze
 
   COMPULSORY_OPTIONS = %w[
