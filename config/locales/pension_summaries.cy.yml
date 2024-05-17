@@ -150,5 +150,7 @@ cy:
         title: Sgamiau
       how_my_pension_is_taxed:
         title: Treth rydych yn ei dalu ar eich pensiwn
+      final_salary_career_average:
+        title: Pensiynau cyflog terfynol neu gyfartaledd gyrfa
       final:
         title: Arweiniad pellach diduedd ac am ddim

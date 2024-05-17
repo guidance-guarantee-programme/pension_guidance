@@ -27,6 +27,7 @@ RSpec.describe PensionSummary, type: :model do
     it { is_expected.to have_db_column(:getting_help_with_debt).of_type(:boolean).with_options(null: false, default: false) }
     it { is_expected.to have_db_column(:taking_my_pension_if_im_ill).of_type(:boolean).with_options(null: false, default: false) }
     it { is_expected.to have_db_column(:transferring_my_pension_to_another_provider).of_type(:boolean).with_options(null: false, default: false) }
+    it { is_expected.to have_db_column(:final_salary_career_average).of_type(:boolean).with_options(null: false, default: false) }
 
     it { is_expected.to have_db_column(:scams).of_type(:boolean).with_options(null: false, default: true) }
     it { is_expected.to have_db_column(:how_my_pension_is_taxed).of_type(:boolean).with_options(null: false, default: true) }
@@ -67,7 +68,8 @@ RSpec.describe PensionSummary, type: :model do
           'take_cash' => false,
           'take_whole' => false,
           'taking_my_pension_if_im_ill' => false,
-          'transferring_my_pension_to_another_provider' => false
+          'transferring_my_pension_to_another_provider' => false,
+          'final_salary_career_average' => false
         )
       )
     end
