@@ -11,7 +11,8 @@
     <%= content_tag :span, hint, class: 'form-hint' unless hint.blank? %>
   </label>
   <%= simple_format error_messages.map(&:upcase_first).join("\n"), { class: 'error-message' }, wrapper_tag: 'span' %>
-  <%= content_tag :span, '£', id: labelled_by_symbol %>
   <%= text_field_tag field, number_to_currency(value, unit: ''), 'aria-labelledby' => "#{labelled_by_label} #{labelled_by_symbol}",
-                     class: %w(form-control calculator__field) << "t-calculator-#{field} #{'form-control-error' unless error_messages.empty?}" %>
+    class: %w(form-control calculator__field) << "t-calculator-#{field} #{'form-control-error' unless error_messages.empty?}",
+    placeholder: '£'
+  %>
 </div>
