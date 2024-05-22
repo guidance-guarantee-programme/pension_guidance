@@ -1,5 +1,11 @@
 @import "../money-helper-variables";
 
+.l-grid-row:has(.l-column-full):has(.calculator) {
+  background-color: $color-calculator-background;
+  padding: 0 2rem 3rem 0;
+  border-radius: 0 0 0 36px;
+}
+
 .calculator {
   overflow: hidden;
 }
@@ -32,7 +38,7 @@
 }
 
 .calculator__field {
-  width: auto;
+  width: 100% !important; // scss-lint:disable ImportantRule
 }
 
 .calculator__field--small {
