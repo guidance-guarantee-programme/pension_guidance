@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_05_14_152738) do
+ActiveRecord::Schema.define(version: 2024_05_28_161606) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2024_05_14_152738) do
     t.integer "where_you_heard"
     t.datetime "submitted_at"
     t.boolean "final_salary_career_average", default: false, null: false
+    t.boolean "welsh_digital", default: false, null: false
   end
 
   create_table "pension_summary_step_viewings", force: :cascade do |t|
