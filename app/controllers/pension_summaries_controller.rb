@@ -6,7 +6,7 @@ class PensionSummariesController < ApplicationController
 
   before_action :set_pilot_cookie, if: :pilot_enabled?, only: %i[start]
   before_action :create_summary, only: %i[start]
-  before_action :set_summary, except: %i[start]
+  before_action :set_summary, except: %i[start save_welsh_summary]
   before_action :show_summary, if: :generated?, only: %i[step_one step_two]
   before_action :set_current_step, only: %i[summary]
   before_action :set_breadcrumbs
@@ -14,6 +14,12 @@ class PensionSummariesController < ApplicationController
 
   rescue_from ActiveRecord::RecordNotFound do
     redirect_to explore_your_options_root_url
+  end
+
+  def save_welsh_summary
+    @summary = PensionSummary.generate_welsh_digital!(welsh_secondary_params)
+
+    redirect_to explore_your_options_download_url(id: @summary.id)
   end
 
   def start
@@ -99,12 +105,12 @@ class PensionSummariesController < ApplicationController
     @outro  = get_guide('trusted-sources', prefixed: false)
     @guides = @summary.selected_steps.collect { |s| get_guide(s) }
 
-    render pdf: 'your pension summary from Pension Wise',
+    render pdf: 'Pension Wise Summary',
            template: 'pension_summaries/print',
            handlers: %w[erb],
            formats: %i[html],
            layout: false,
-           disposition: 'inline'
+           disposition: 'attachment'
   end
 
   private
@@ -131,6 +137,18 @@ class PensionSummariesController < ApplicationController
     params
       .fetch(:pension_summary, {})
       .permit(*PensionSummary::SECONDARY_OPTIONS)
+  end
+
+  def welsh_secondary_params
+    params
+      .fetch(:appointment_summary, {})
+      .permit(
+        :supplementary_benefits,
+        :supplementary_debt,
+        :supplementary_ill_health,
+        :supplementary_defined_benefit_pensions,
+        :supplementary_pension_transfers
+      )
   end
 
   def feedback_params

@@ -60,6 +60,7 @@ Rails.application.routes.draw do
         post 'step-one', action: 'save_primary_options'
         post 'step-two', action: 'save_secondary_options'
         post 'your-experience', action: 'save_feedback'
+        post 'welsh-summary', action: 'save_welsh_summary'
       end
 
       scope 'employers/:employer_id', module: :employer, as: :employer, locale: :en do

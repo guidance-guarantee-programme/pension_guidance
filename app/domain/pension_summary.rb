@@ -111,6 +111,26 @@ class PensionSummary < ApplicationRecord
     errors.add(:email, :invalid) unless email_valid?
   end
 
+  def self.generate_welsh_digital!(secondary_options) # rubocop:disable Metrics/MethodLength
+    create!(
+      submitted_at: Time.zone.now,
+      generated_at: Time.zone.now,
+      pilot: false,
+      welsh_digital: true,
+      leave_your_pot_untouched: true,
+      get_a_guaranteed_income: true,
+      get_an_adjustable_income: true,
+      take_cash: true,
+      take_whole: true,
+      mix_your_options: true,
+      how_my_pension_affects_my_benefits: secondary_options[:supplementary_benefits],
+      getting_help_with_debt: secondary_options[:supplementary_debt],
+      taking_my_pension_if_im_ill: secondary_options[:supplementary_ill_health],
+      transferring_my_pension_to_another_provider: secondary_options[:supplementary_pension_transfers],
+      final_salary_career_average: secondary_options[:supplementary_defined_benefit_pensions]
+    )
+  end
+
   def generate(attrs, now: Time.current)
     update(attrs.merge(generated_at: now))
   end
