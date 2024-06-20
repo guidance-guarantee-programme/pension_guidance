@@ -1,6 +1,12 @@
 require_relative '../../features/pages/new_telephone_appointment'
 
 RSpec.feature 'Customer books a telephone appointment', type: :feature do
+  scenario 'When creating a booking from a cancellation referral' do
+    with_telephone_availability
+    when_the_customer_creates_a_booking_from_a_cancellation
+    then_the_booking_is_marked_as_referred
+  end
+
   scenario 'Viewing the widget frame' do
     with_telephone_availability
     when_the_widget_is_embedded
@@ -8,6 +14,15 @@ RSpec.feature 'Customer books a telephone appointment', type: :feature do
     and_the_skip_link_is_omitted
     and_the_cookie_banner_is_omitted
     and_the_frame_options_are_permissive
+  end
+
+  def when_the_customer_creates_a_booking_from_a_cancellation
+    @page = Pages::NewTelephoneAppointment.new
+    @page.load(locale: :en, query: { rebooked_from: '123456' })
+  end
+
+  def then_the_booking_is_marked_as_referred
+    expect(@page.response_headers['Set-Cookie']).to eq('rebooked_from_id=123456; path=/')
   end
 
   def when_the_widget_is_embedded

@@ -1,6 +1,7 @@
 class TelephoneAppointmentsController < ApplicationController # rubocop:disable Metrics/ClassLength
   include Embeddable
 
+  before_action :assign_rebook_after_cancellation, only: :new
   before_action :set_breadcrumbs
   before_action :telephone_appointment, only: %i[new create]
 
@@ -95,6 +96,10 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
     @times  = retrieve_times(slots)
   end
 
+  def assign_rebook_after_cancellation
+    cookies[:rebooked_from_id] = params[:rebooked_from]
+  end
+
   def slots_cache_key
     "slots:#{lloyds_signposted?}:#{telephone_appointment.schedule_type}:#{telephone_appointment.selected_date}"
   end
@@ -146,11 +151,13 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :schedule_type,
         :referrer,
         :nudged,
-        :embedded
+        :embedded,
+        :rebooked_from_id
       ).merge(
         smarter_signposted: smarter_signposted?,
         lloyds_signposted: lloyds_signposted?,
-        schedule_type: schedule_type
+        schedule_type: schedule_type,
+        rebooked_from_id: rebooked_from_id
       ).reverse_merge(
         nudged: params[:nudged],
         embedded: params[:embedded]
@@ -172,6 +179,10 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
 
   def check_lloyds_cookie!
     cookies.permanent[:lloyds_signposted] = 'true' if params[:lloyds] || params[:lbgptl]
+  end
+
+  def rebooked_from_id
+    cookies[:rebooked_from_id]
   end
 
   def smarter_signposted?
