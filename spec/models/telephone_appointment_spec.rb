@@ -17,7 +17,8 @@ RSpec.describe TelephoneAppointment, type: :model do
       notes: 'meh',
       smarter_signposted: 'true',
       nudged: 'false',
-      embedded: 'false'
+      embedded: 'false',
+      rebooked_from_id: '1234567'
     )
   end
 

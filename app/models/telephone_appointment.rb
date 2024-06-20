@@ -24,7 +24,8 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
     :smarter_signposted,
     :lloyds_signposted,
     :schedule_type,
-    :referrer
+    :referrer,
+    :rebooked_from_id
   )
 
   attr_writer(
@@ -112,7 +113,8 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
       smarter_signposted: smarter_signposted,
       lloyds_signposted: lloyds_signposted,
       schedule_type: schedule_type,
-      referrer: referrer
+      referrer: referrer,
+      rebooked_from_id: rebooked_from_id
     }
   end
 

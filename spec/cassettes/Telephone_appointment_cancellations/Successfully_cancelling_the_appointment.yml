@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/appointments/181432/cancel
+    body:
+      encoding: UTF-8
+      string: '{"reference":"181432","date_of_birth":"1972-02-02"}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 43338) ruby/3.2.2 (53; arm64-darwin22)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _telephone_appointment_planner_session=1RW1I2SCLqht%2FNfeOlNDcF8uY8r9nHKK29IO%2FleWVMFYWHn7k44lrcaogB6uuewmj2QgXXRfTf86AOxccqhjuKCo%2BHjCYdSHJLyNGsAFi3b5Z2ge6T5EOcmVoEWD1kEmQ0VtTWZSQ4g02pJH4poyAjUtE8qY%2BwpcaK7tcVfSn95kybdfiq%2FaACwm7vumKmmziFaurqcMBR%2Bun1MtyTk%3D--8in5Wtd5KWQX1vxR--%2F%2BzJp6IAvAfVcIqSdzEEcQ%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - 19bd1a96-fc2e-41d5-87f9-aaa06f8164ef
+      X-Runtime:
+      - '0.048463'
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Wed, 19 Jun 2024 20:13:41 GMT
+recorded_with: VCR 6.2.0
