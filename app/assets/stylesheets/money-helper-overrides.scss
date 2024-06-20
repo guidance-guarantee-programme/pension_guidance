@@ -163,6 +163,33 @@ a {
     }
   }
 
+  &.button--secondary {
+    color: $color-magenta-primary !important;
+    background-color: $color-white-supporting !important;
+    box-shadow: 0 3px 0 rgba(0, 11, 59, 0.25);
+    border: 1px solid $color-magenta-primary;
+
+    &:hover {
+      box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
+      color: $color-magenta-dark-primary !important;
+      background-color: $color-light-grey-supporting !important;
+    }
+
+    &:focus {
+      box-shadow: 0 1px 0 rgba(0, 11, 59, 0.25);
+      background-color: $color-yellow-secondary !important;
+      color: $color-dark-blue-secondary !important;
+    }
+
+    &:active,
+    &:active:focus {
+      background-color: $color-light-grey-supporting !important;
+      border: 3px solid $color-violet-primary;
+      color: $color-dark-blue-secondary !important;
+      box-shadow: 0 1px 0 $color-white-supporting, inset 0 5px 2px rgba(0, 11, 59, 0.25);
+    }
+  }
+
   &:disabled {
     background-color: transparent !important;
     border: 1px solid $color-grey;
