@@ -35,7 +35,8 @@ class CancelsController < ApplicationController
         :reference,
         :date_of_birth_year,
         :date_of_birth_month,
-        :date_of_birth_day
+        :date_of_birth_day,
+        :reason
       )
   end
 end
