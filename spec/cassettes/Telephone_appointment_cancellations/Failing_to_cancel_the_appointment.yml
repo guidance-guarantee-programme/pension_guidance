@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:3000/api/v1/appointments/181432/cancel
+    uri: http://localhost:3000/api/v1/appointments/181437/cancel
     body:
       encoding: UTF-8
-      string: '{"reference":"181432","date_of_birth":"1972-02-02"}'
+      string: '{"reference":"181437","date_of_birth":"1950-01-01","secondary_status":"28"}'
     headers:
       User-Agent:
-      - PensionWise/1.0 (birdperson2; benlovell; 45629) ruby/3.2.2 (53; arm64-darwin22)
+      - PensionWise/1.0 (birdperson2; benlovell; 22569) ruby/3.2.2 (53; arm64-darwin22)
       Accept:
       - application/json
       Content-Type:
@@ -37,16 +37,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       Set-Cookie:
-      - _telephone_appointment_planner_session=JZqSTqhNsJoXsjbSg4yCNm%2FxY8IaqDS9CuFcs%2BBc7rUW4wyZbE0efyJExyJz5eaFiS9JC76w72EJKdwF4zxZU05l5ghVbmG%2FkeE9mvsRMyLnpI3etjwYqayI8TTSfYINpVWXoFyrZrONsx0a6Rj%2FfuxNWnHgq%2B4nUCwyX0zUdksdlKfdkzc4Wy9XI2rNNAdqfltQXkM%2BjYjk18BhwN4%3D--%2BjTTNUTQHU0oezaf--vbgLFt2FTZszP7S5MEq%2BFQ%3D%3D;
+      - _telephone_appointment_planner_session=rLFKyNjj8Zm9cReKbMHiHIpnmx2IIvz3SAhEdmZlz5QYcdkKrJ0DTCBJnHCfDVyYhvLj4vNUKwJC%2FuATtOD5BlOlugi5b6UgzB0%2F9JFL1X%2FdH3d6%2FCDCaEOss2mt4Fhrl%2FVeAg1fs2nFs4PaUg1agY7RkD8mjXlKWdrWR1XoHorQD9u4T0gtOoycQAnWJDQFGRVkLa7RKunChaKcFPo%3D--DXYH7abPFwBCKGih--jWseQd23e12xM9Sham%2Fz8w%3D%3D;
         path=/; HttpOnly; SameSite=Lax
       X-Request-Id:
-      - 936cbb2e-584a-4af6-9dae-31f972769927
+      - 2cb7f97e-ca91-4b53-a6d4-114bd72602fd
       X-Runtime:
-      - '0.019694'
+      - '0.053803'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 19 Jun 2024 20:23:34 GMT
+  recorded_at: Fri, 21 Jun 2024 13:16:51 GMT
 recorded_with: VCR 6.2.0
