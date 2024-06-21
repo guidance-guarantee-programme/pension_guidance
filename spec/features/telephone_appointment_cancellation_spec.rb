@@ -44,10 +44,11 @@ RSpec.feature 'Telephone appointment cancellations' do
   def when_they_complete_their_appointment_details
     expect(@page).to be_displayed
 
-    @page.booking_reference.set '181432'
-    @page.date_of_birth_day.set '2'
-    @page.date_of_birth_month.set '2'
-    @page.date_of_birth_year.set '1972'
+    @page.booking_reference.set '181437'
+    @page.date_of_birth_day.set '1'
+    @page.date_of_birth_month.set '1'
+    @page.date_of_birth_year.set '1950'
+    @page.reason.select 'Inconvenient time'
     @page.submit.click
   end
 
@@ -56,6 +57,6 @@ RSpec.feature 'Telephone appointment cancellations' do
     expect(@page).to be_displayed
 
     # tee up the rebook from this original appointment
-    expect(@page.rebook_link[:href]).to eq('/en/telephone-appointments/new?rebooked_from=181432')
+    expect(@page.rebook_link[:href]).to eq('/en/telephone-appointments/new?rebooked_from=181437')
   end
 end

@@ -102,6 +102,20 @@
       </fieldset>
     </div>
 
+    <div class="form-group <%= 'form-group-error' if @cancellation.errors.include?(:reason) %>">
+      <%= f.label :reason, class: 'form-label-bold' do %>
+        Why are you cancelling your Pension Wise appointment?
+        <% if @cancellation.errors.include?(:reason) %>
+          <span class="error-message" id="error"><span class="visually-hidden">Error: </span><%= @cancellation.errors[:reason].to_sentence.capitalize %></span>
+        <% end %>
+      <% end %>
+      <%= f.select :reason,
+            options_for_select(TelephoneCancellation::CANCELLATION_REASONS.invert.to_a, @cancellation.reason),
+            { include_blank: true},
+            { aria: { describedby: 'error' }, class: "t-reason form-control #{'form-control-error' if @cancellation.errors.include?(:reason)}" }
+      %>
+    </div>
+
     <div class="form-group">
       <%= f.submit 'Cancel appointment', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
     </div>

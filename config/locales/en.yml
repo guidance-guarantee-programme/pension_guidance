@@ -244,6 +244,8 @@ en:
               invalid: provide your booking reference with only digits
             date_of_birth:
               blank: enter a valid date of birth
+            reason:
+              inclusion: please choose a cancellation reason
         telephone_appointment:
           attributes:
             first_name:
@@ -325,6 +327,7 @@ en:
         accept_terms_and_conditions: Terms and conditions
       telephone_cancellation:
         reference: Your booking reference
+        reason: Why are you cancelling your Pension Wise appointment?
       telephone_appointment:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions
