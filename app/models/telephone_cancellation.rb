@@ -3,12 +3,14 @@ class TelephoneCancellation
 
   CANCELLATION_REASONS = {
     '32' => 'Inconvenient time',
-    '33' => 'Changed mind',
-    '34' => 'Not prepared enough',
-    '35' => 'Booked multiple appointments',
-    '36' => 'Appointment no longer required',
-    '37' => 'Booked wrong type of appointment',
-    '38' => 'Other'
+    '33' => 'Wait time until appointment',
+    '34' => 'Changed mind',
+    '35' => 'Not prepared enough',
+    '36' => 'Booked multiple appointments',
+    '37' => 'Appointment no longer required',
+    '38' => 'Received guidance from alternative source',
+    '39' => 'Booked wrong type of appointment',
+    '40' => 'Other'
   }.freeze
 
   attr_accessor :reference, :date_of_birth_year, :date_of_birth_month, :date_of_birth_day, :reason
