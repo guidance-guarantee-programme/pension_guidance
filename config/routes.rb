@@ -158,6 +158,8 @@ Rails.application.routes.draw do
     end
   end
 
+  post '/csp-reports', to: 'csp_reports#create'
+
   delete '/locations_cache', to: 'locations_cache#destroy'
 
   if Rails.application.config.mount_javascript_test_routes

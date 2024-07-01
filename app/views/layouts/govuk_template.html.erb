@@ -3,6 +3,7 @@
 <!--[if lt IE 9]><html class="lte-ie8" lang="<%= content_for?(:html_lang) ? yield(:html_lang) : "en" %>"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="<%= content_for?(:html_lang) ? yield(:html_lang) : "en" %>"><!--<![endif]-->
   <head>
+    <%= csp_meta_tag %>
     <meta charset="utf-8" />
     <title><%= content_for?(:page_title) ? yield(:page_title) : "GOV.UK - The best place to find government services and information" %></title>
 
@@ -49,7 +50,7 @@
       <% end %>
     <% end %>
 
-    <script type="text/javascript">
+    <%= javascript_tag(nonce: true) do %>
       window.adobeDataLayer ||= [];
       adobeDataLayer.push({
         "event": "pageLoadRuby",
@@ -67,13 +68,14 @@
           "stepName": "<%= content_for(:step_name) %>"
         }
       });
-    </script>
+    <% end %>
   </head>
 
   <body<%= content_for?(:body_classes) ? raw(" class=\"#{yield(:body_classes)}\"") : '' %>>
 
   <!-- Informizely code for site "moneyhelper.org.uk". Place this code right after the <body> tag on every page of your site. -->
-  <script id="_informizely_script_tag" type="text/javascript">
+
+  <%= javascript_tag(nonce: true, id: '_informizely_script_tag') do %>
     var IzWidget = IzWidget || {};
     (function (d) {
       var scriptElement = d.createElement('script');
@@ -82,7 +84,7 @@
       var node = d.getElementById('_informizely_script_tag');
       node.parentNode.insertBefore(scriptElement, node);
     })(document);
-  </script>
+  <% end %>
   <noscript><a href="https://www.informizely.com/">Informizely customer feedback surveys</a></noscript>
   <!-- End Informizely code. -->
 
@@ -91,7 +93,7 @@
     <noscript>
       <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NQD7M4S" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe>
     </noscript>
-    <script>
+    <%= javascript_tag(nonce: true) do %>
       (function(w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
@@ -101,11 +103,13 @@
         j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f.nextSibling);
       })(window, document, 'script', 'dataLayer', 'GTM-NQD7M4S');
-    </script>
+    <% end %>
   <% end %>
   <%# END Google Tag Manager embed code %>
 
-    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <%= javascript_tag(nonce: true) do %>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    <% end %>
 
     <%= yield :body_start %>
 
@@ -184,6 +188,8 @@
     <%= yield :body_end %>
 
     <%# if no GOVUK-namespaced module has loaded we can assume JS has failed and remove the class %>
-    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+    <%= javascript_tag(nonce: true) do %>
+      if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');
+    <% end %>
   </body>
 </html>
