@@ -4,6 +4,7 @@
 <% content_for(:page_name, 'appointment-summaries-new') %>
 <% content_for(:tool_step, '1') %>
 <% content_for(:step_name, 'Appointment summary') %>
+<% content_for(:tool_name, 'View Your Appointment Summary') %>
 
 <%= form_for @appointment_summary, url: appointment_summaries_path, html: { class: 't-appointment-summary-generator' } do |f| %>
   <div class="page-header">
