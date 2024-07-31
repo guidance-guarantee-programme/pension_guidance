@@ -50,4 +50,8 @@ class ApplicationController < ActionController::Base
     # is assumed to not be translated.
     default_locale?
   end
+
+  def verifier
+    Rails.application.message_verifier(:rebooked_from)
+  end
 end

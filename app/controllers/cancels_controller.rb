@@ -9,7 +9,7 @@ class CancelsController < ApplicationController
   def create
     if @cancellation.valid?
       if TelephoneAppointmentsApi.new.cancel(@cancellation.to_attributes)
-        redirect_to success_cancel_path(rebooked_from: @cancellation.reference)
+        redirect_to success_cancel_path(rebooked_from: verifier.generate(@cancellation.reference))
       else
         redirect_to failure_cancel_path
       end
