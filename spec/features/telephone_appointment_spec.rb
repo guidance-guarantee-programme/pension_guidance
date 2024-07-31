@@ -18,11 +18,14 @@ RSpec.feature 'Customer books a telephone appointment', type: :feature do
 
   def when_the_customer_creates_a_booking_from_a_cancellation
     @page = Pages::NewTelephoneAppointment.new
-    @page.load(locale: :en, query: { rebooked_from: '123456' })
+    @page.load(
+      locale: :en,
+      query: { rebooked_from: 'BAhJIgsxODE0MzcGOgZFVA==--24b5a0aac3366484c18b1780c4a1ac90886fb015' }
+    )
   end
 
   def then_the_booking_is_marked_as_referred
-    expect(@page.response_headers['Set-Cookie']).to eq('rebooked_from_id=123456; path=/')
+    expect(@page.response_headers['Set-Cookie']).to eq('rebooked_from_id=181437; path=/')
   end
 
   def when_the_widget_is_embedded

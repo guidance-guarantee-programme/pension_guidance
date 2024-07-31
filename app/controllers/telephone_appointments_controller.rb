@@ -97,7 +97,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   end
 
   def assign_rebook_after_cancellation
-    cookies[:rebooked_from_id] = params[:rebooked_from]
+    cookies[:rebooked_from_id] = verifier.verify(params[:rebooked_from]) if params[:rebooked_from]
   end
 
   def slots_cache_key
