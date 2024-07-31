@@ -1,6 +1,8 @@
 sudo: false
 distro: focal
 language: ruby
+addons:
+  chrome: stable
 services:
   - postgresql
 cache:
