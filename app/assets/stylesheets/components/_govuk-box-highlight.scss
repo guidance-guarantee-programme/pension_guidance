@@ -10,6 +10,10 @@
   p .heading-medium {
     margin: 15px 0 0;
   }
+
+  &.failure {
+    border: 4px solid $error-red;
+  }
 }
 
 .govuk-box-highlight__header {

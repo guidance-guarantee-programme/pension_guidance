@@ -1,6 +1,13 @@
 class TelephoneAppointmentsApi
   SLOTS_PATH = '/api/v1/bookable_slots'.freeze
 
+  def cancel(attributes)
+    response = connection.post("/api/v1/appointments/#{attributes[:reference]}/cancel", attributes)
+    response.success?
+  rescue HTTPConnection::UnprocessableEntity
+    false
+  end
+
   def create(telephone_appointment)
     response = connection.post('/api/v1/appointments', telephone_appointment.attributes)
 
