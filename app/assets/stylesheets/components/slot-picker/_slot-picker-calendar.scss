@@ -96,6 +96,11 @@
   color: $color-white-supporting;
   cursor: default;
   font-weight: bold;
+
+  .slot-picker-calendar__day-text {
+    color: $color-white-supporting;
+    font-weight: bold;
+  }
 }
 
 .slot-picker-calendar__action--busy {
