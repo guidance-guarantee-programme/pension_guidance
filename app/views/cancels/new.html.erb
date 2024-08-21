@@ -20,7 +20,10 @@
 
   <%= form_for @cancellation, url: cancel_path do |f| %>
     <div class="form-group <%= 'form-group-error' if @cancellation.errors.include?(:reference) %>">
-      <%= f.label :reference, class: 'form-label-bold' %>
+      <%= f.label :reference, class: 'form-label-bold' do %>
+        Your booking reference
+        <span class="form-hint">You’ll find this in your confirmation email</span>
+      <% end %>
       <% if @cancellation.errors.include?(:reference) %>
         <span class="error-message" id="reference_error"><span class="visually-hidden">Error: </span><%= @cancellation.errors[:reference].to_sentence.capitalize %></span>
       <% end %>
