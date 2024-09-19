@@ -235,7 +235,7 @@ GEM
       rails (>= 4.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (3.24.3)
+    google-protobuf (3.25.5)
     googleapis-common-protos-types (1.9.0)
       google-protobuf (~> 3.18)
     govspeak (6.7.8)
