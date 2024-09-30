@@ -18,7 +18,7 @@ As an employer you’ll get a free service for your employees that includes:
 
 With a DC pension your employees choose how to take their pension money. Pension Wise will help them understand the different ways they can do this.
 
-They’ll get a free guidance appointment with one of our pensions specialists. An appointment lasts around 45 to 60 minutes and we will:
+They’ll get a free guidance appointment with one of our pensions specialists. An appointment lasts around 60 minutes and we will:
 
 - explain the options for taking their pension money
 - explain how each option is taxed

@@ -8,7 +8,7 @@ tags:
 
 An appointment is a conversation with a pension specialist. You’ll talk about the options you have for taking your pension money.
 
-Your appointment will last around 45 to 60 minutes and we will:
+Your appointment will last around 60 minutes and we will:
 
 - explain your pension options
 - explain how each option is taxed

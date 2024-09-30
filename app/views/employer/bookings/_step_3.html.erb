@@ -199,7 +199,7 @@
   <h2 class="slot-picker-header">Your requested appointment</h2>
   <div class="slot-picker-confirmed-date">
     <p class="slot-picker-confirmed-date__text"><b><%= l(@booking.start_at, format: :govuk_date) %></b></p>
-    <p class="slot-picker-confirmed-date__text"><%= l(@booking.start_at.in_time_zone('London'), format: :govuk_time) %>, 45 to 60 minutes</p>
+    <p class="slot-picker-confirmed-date__text"><%= l(@booking.start_at.in_time_zone('London'), format: :govuk_time) %>, around 60 minutes</p>
   </div>
 
   <p><%= link_to('Change date/time', new_employer_location_booking_path(employer_id: employer_id, location_id: location_id)) %></p>
