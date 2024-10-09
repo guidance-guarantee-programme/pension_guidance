@@ -19,6 +19,7 @@ class WhereYouHeard
     '15' => 'Citizens Advice',
     '16' => 'Relative/Friend/Colleague',
     '18' => 'Jobcentre Plus',
+    '26' => 'Talk Money Week',
     '17' => 'Other'
   }.freeze
 end
