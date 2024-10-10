@@ -64,7 +64,7 @@
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:phone) %>">
     <%= f.label :phone, class: 'form-label-bold' do %>
       Phone number
-      <span class="form-hint">The number you’d like us to call you on. We’ll send an SMS appointment reminder if a mobile number is provided. For non-UK numbers include the country dialling code</span>
+      <span class="form-hint">The number you’d like us to call you on. We’ll send an SMS appointment confirmation and reminder if a mobile number is provided. For non-UK numbers include the country dialling code</span>
     <% end %>
 
     <% if @telephone_appointment.errors.include?(:phone) %>
