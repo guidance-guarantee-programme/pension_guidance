@@ -17,6 +17,7 @@
 //= require components/CharacterLimit
 //= require components/ErrorSummary
 //= require components/CustomerAge
+//= require components/SelectToggle
 
 PWPG.clickTracker.init();
 PWPG.calculators.init();
@@ -79,4 +80,11 @@ $('[data-customer-age]').each(function() {
 
   var $component = $(this);
   new PWPG.CustomerAge($component);
+});
+
+$('[data-select-toggle]').each(function() {
+  'use strict';
+
+  var $component = $(this);
+  new PWPG.SelectToggle($component);
 });

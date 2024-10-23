@@ -31,5 +31,15 @@ RSpec.describe TelephoneCancellation, type: :model do
 
       expect(subject).to be_invalid
     end
+
+    context 'when the reason is Other' do
+      it 'requires a valid other reason' do
+        subject.reason = '40' # Other
+        expect(subject).to be_invalid
+
+        subject.other_reason = 'Because my cat got sick!'
+        expect(subject).to be_valid
+      end
+    end
   end
 end
