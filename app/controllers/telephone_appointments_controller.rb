@@ -8,8 +8,6 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   helper_method :slot_selected?
 
   def new
-    retrieve_slots
-    check_lloyds_cookie!
   end
 
   def create
