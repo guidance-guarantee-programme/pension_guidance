@@ -124,14 +124,14 @@
       %>
     </div>
 
-    <div class="js-other-reason js-hidden form-group <%= 'form-group-error' if @cancellation.errors.include?(:other_reason) %>">
+    <div class="js-other-reason js-hidden form-group <%= 'form-group-error' if @cancellation.errors.include?(:other_reason) %>" data-character-limit>
       <%= f.label :reference, class: 'form-label-bold' do %>
         Specify a reason
       <% end %>
       <% if @cancellation.errors.include?(:other_reason) %>
         <span class="error-message" id="other_reason_error"><span class="visually-hidden">Error: </span><%= @cancellation.errors[:other_reason].to_sentence.capitalize %></span>
       <% end %>
-      <%= f.text_field :other_reason, aria: { required: true, describedby: 'other_reason_error' }, class: "t-other-reason form-control #{'form-control-error' if @cancellation.errors.include?(:other_reason)}" %>
+      <%= f.text_field :other_reason, maxlength: 160, aria: { required: true, describedby: 'other_reason_error' }, class: "t-other-reason js-character-limit-input form-control #{'form-control-error' if @cancellation.errors.include?(:other_reason)}", data: { maxlength: 160 } %>
     </div>
 
     <div class="form-group">
