@@ -10,6 +10,7 @@ class TelephoneCancellation
     '37' => 'Appointment no longer required',
     '38' => 'Received guidance from alternative source',
     '39' => 'Booked wrong type of appointment',
+    '42' => 'Already had Pension Wise Digital appointment',
     '40' => 'Other'
   }.freeze
 
