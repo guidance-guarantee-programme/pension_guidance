@@ -1,7 +1,7 @@
 class OutputDocument
   attr_reader :appointment_summary, :variant
 
-  delegate *SUPPLEMENTARY_OPTIONS, :appointment_type, :format_preference,
+  delegate *SUPPLEMENTARY_OPTIONS, :appointment_type, :format_preference, :urn,
            to: :appointment_summary
 
   def initialize(appointment_summary, variant = 'generic_naked')
