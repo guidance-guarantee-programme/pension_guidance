@@ -48,7 +48,8 @@ class AppointmentSummariesController < ApplicationController
       .require(:appointment_summary)
       .permit(
         *SUPPLEMENTARY_OPTIONS,
-        :appointment_type
+        :appointment_type,
+        :urn
       )
   end
 

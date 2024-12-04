@@ -5,7 +5,7 @@ class AppointmentSummary
 
   attr_accessor *SUPPLEMENTARY_OPTIONS
 
-  attr_writer :appointment_type
+  attr_writer :appointment_type, :urn
 
   SUPPLEMENTARY_OPTIONS.each do |attribute|
     define_method("#{attribute}=") do |value|
@@ -18,9 +18,14 @@ class AppointmentSummary
   end
 
   validates :appointment_type, inclusion: { in: %w[standard 50_54] }
+  validates :urn, format: { with: /P[A-Z]{2}\d-\d[A-Z]{3}/ }, allow_blank: true
 
   def appointment_type
     @appointment_type
+  end
+
+  def urn
+    @urn
   end
 
   def format_preference

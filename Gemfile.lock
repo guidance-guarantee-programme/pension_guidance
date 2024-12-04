@@ -20,10 +20,10 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: ed76f6228c0124021ddebbaebb3cfd1b54c38c9e
-  ref: ed76f62
+  revision: 25dd5f4a8f46f478e1d65bf7ec96c7546a7b76cb
+  branch: pwd-urn
   specs:
-    output-templates (6.13.0)
+    output-templates (6.14.0)
       actionview
       sassc
 
@@ -225,7 +225,7 @@ GEM
     faraday-retry (1.0.3)
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
-    ffi (1.16.3)
+    ffi (1.17.0)
     foreman (0.87.2)
     gaffe (1.2.0)
       rails (>= 4.0.0)
@@ -320,7 +320,7 @@ GEM
     mime-types-data (3.2023.0808)
     mini_mime (1.1.5)
     mini_portile2 (2.8.8)
-    minitest (5.25.1)
+    minitest (5.25.4)
     multi_test (1.1.0)
     multipart-post (2.3.0)
     net-http-persistent (4.0.1)
@@ -749,7 +749,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.7.0)
+    zeitwerk (2.7.1)
 
 PLATFORMS
   ruby
