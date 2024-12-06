@@ -20,6 +20,9 @@ class AppointmentSummariesController < ApplicationController
 
   def download
     @appointment_summary = AppointmentSummary.new(appointment_summary_params)
+
+    return head :unprocessable_entity unless @appointment_summary.valid?
+
     output_document = OutputDocument.new(@appointment_summary, 'generic')
 
     send_data output_document.pdf,
