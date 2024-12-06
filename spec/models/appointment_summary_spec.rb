@@ -18,6 +18,9 @@ RSpec.describe AppointmentSummary, type: :model do
       it 'requires a valid form' do
         subject.urn = 'This would really suck if it were to get through!'
         expect(subject).to be_invalid
+
+        subject.urn = 'PMY9-0GCUwhoopsie'
+        expect(subject).to be_invalid
       end
     end
   end

@@ -18,7 +18,7 @@ class AppointmentSummary
   end
 
   validates :appointment_type, inclusion: { in: %w[standard 50_54] }
-  validates :urn, format: { with: /P[A-Z]{2}\d-\d[A-Z]{3}/ }, allow_blank: true
+  validates :urn, format: { with: /\AP[A-Z]{2}\d-\d[A-Z]{3}\z/ }, allow_blank: true
 
   def appointment_type
     @appointment_type
