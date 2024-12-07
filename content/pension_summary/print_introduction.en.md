@@ -1,5 +1,3 @@
-# Getting started
-
 This is a summary of the defined contribution pension options you selected to read about. This is your personal or workplace pension and is based on how much has been paid into your pot.
 
 This is not a final salary or career average pension.
