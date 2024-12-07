@@ -19,7 +19,7 @@ class PensionSummariesController < ApplicationController
   def save_welsh_summary
     @summary = PensionSummary.generate_welsh_digital!(welsh_secondary_params)
 
-    redirect_to explore_your_options_download_url(id: @summary.id)
+    redirect_to explore_your_options_download_url(id: @summary.id, urn: welsh_secondary_params[:urn])
   end
 
   def start
@@ -103,6 +103,7 @@ class PensionSummariesController < ApplicationController
   def download
     @intro  = get_guide('print-introduction')
     @outro  = get_guide('trusted-sources', prefixed: false)
+    @urn    = params[:urn] if AppointmentSummary::URN_FORMAT_REGEX === params[:urn]
     @guides = @summary.selected_steps.collect { |s| get_guide(s) }
 
     render pdf: 'Pension Wise Summary',
@@ -147,7 +148,8 @@ class PensionSummariesController < ApplicationController
         :supplementary_debt,
         :supplementary_ill_health,
         :supplementary_defined_benefit_pensions,
-        :supplementary_pension_transfers
+        :supplementary_pension_transfers,
+        :urn
       )
   end
 

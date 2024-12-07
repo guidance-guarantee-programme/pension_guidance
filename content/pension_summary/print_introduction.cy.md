@@ -1,5 +1,3 @@
-# Dechrau
-
 Mae hwn yn grynodeb o’r opsiynau pensiwn cyfraniadau wedi’u diffinio rydych wedi dewis i ddarllen amdanynt. Hwn yw eich pensiwn personol neu weithle ac mae’n seiliedig ar faint sydd wedi cael ei dalu i’ch cronfa.
 
 Nid yw hwn yn bensiwn cyflog terfynol neu gyfartaledd gyrfa.

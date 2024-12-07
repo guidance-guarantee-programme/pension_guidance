@@ -1,5 +1,8 @@
 en:
   pension_summaries:
+    print:
+      heading: Getting started
+      urn_reference: 'Your Pension Wise reference:'
     start:
       title: Build your pensions summary
       start_now_button: Start now
