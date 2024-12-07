@@ -32,6 +32,10 @@
       padding: 0;
     }
 
+    strong {
+      font-weight: 900;
+    }
+
     h1 {
       font-family: "Roobert-Medium";
       font-size: 24pt;
@@ -146,6 +150,11 @@
   </style>
 </head>
 <body>
+
+  <h1><%= t('pension_summaries.print.heading') %></h1>
+  <% if @urn.present? %>
+    <p><%= t('pension_summaries.print.urn_reference') %> <strong><%= @urn %></strong></p>
+  <% end %>
 
   <%= @intro.content %>
 
