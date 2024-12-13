@@ -206,8 +206,8 @@
         <% if @telephone_appointment.errors.include?(:accessibility_requirements) %>
           <span class="error-message"><%= @telephone_appointment.errors[:accessibility_requirements].to_sentence.capitalize %></span>
         <% end %>
-        I require an adjustment to help me access my appointment
-        <span class="form-hint" id="accessibility-hint">Please provide further details in the additional information box. We may contact you for details of your specific needs</span>
+        I require an adjustment to help me access my phone appointment
+        <span class="form-hint" id="accessibility-hint">Please provide further details in the additional information box</span>
       <% end %>
     </div>
   </div>
@@ -219,7 +219,7 @@
         <span class="error-message"><%= @telephone_appointment.errors[:notes].to_sentence.capitalize %></span>
       <% end %>
       <span class="form-hint">
-        eg accessibility adjustments
+        Please add any additional information here that may be helpful for the appointment, including any accessibility needs you would like us to be aware of. We may contact you for details of your specific needs
       </span>
     <% end %>
     <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
