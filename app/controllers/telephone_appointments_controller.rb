@@ -84,13 +84,11 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
   end
 
   def retrieve_slots
-    slots = Rails.cache.fetch(slots_cache_key, expires_in: slots_cache_expiry) do
-      TelephoneAppointmentsApi.new.slots(
-        lloyds_signposted?,
-        telephone_appointment.schedule_type,
-        telephone_appointment.selected_date
-      )
-    end
+    slots = TelephoneAppointmentsApi.new.slots(
+      lloyds_signposted?,
+      telephone_appointment.schedule_type,
+      telephone_appointment.selected_date
+    )
 
     @months = retrieve_months(slots)
     @times  = retrieve_times(slots)
@@ -98,14 +96,6 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
 
   def assign_rebook_after_cancellation
     cookies[:rebooked_from_id] = verifier.verify(params[:rebooked_from]) if params[:rebooked_from]
-  end
-
-  def slots_cache_key
-    "slots:#{lloyds_signposted?}:#{telephone_appointment.schedule_type}:#{telephone_appointment.selected_date}"
-  end
-
-  def slots_cache_expiry
-    telephone_appointment.selected_date ? 1.minute : 5.minutes
   end
 
   def retrieve_months(slots)
