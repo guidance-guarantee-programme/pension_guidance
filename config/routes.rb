@@ -19,9 +19,6 @@ Rails.application.routes.draw do
 
       get '/book', to: redirect('/appointments', status: 302)
 
-      get '/contact', to: 'contact#new'
-      post '/contact', to: 'contact#create'
-
       get '/*id',
           controller: 'guides',
           action: 'show',

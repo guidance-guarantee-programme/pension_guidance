@@ -13,7 +13,6 @@ Feature: Guides
       | benefits               |
       | book                   |
       | care-costs             |
-      | contact                |
       | cookies                |
       | debt                   |
       | divorce                |

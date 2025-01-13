@@ -50,7 +50,6 @@ gem 'sprockets-rails'
 gem 'uglifier', '3.0.4'
 gem 'uk_postcode'
 gem 'utf8-cleaner'
-gem 'zendesk_api'
 
 group :development, :test do
   gem 'jasmine-core', '2.5.2'
