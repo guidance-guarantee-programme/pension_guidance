@@ -132,6 +132,7 @@ Given(/^they are eligible for an appointment$/) do
   @page.where_you_heard.select('Other')
   @page.accessibility_requirements.set(true)
   @page.additional_info.set('Bleh bleh')
+  @page.attended_digital_yes.set(true)
 
   @page.submit.click
 end

@@ -73,7 +73,8 @@ RSpec.describe TelephoneAppointmentsApi do
           dc_pot_confirmed: 'yes',
           gdpr_consent: 'yes',
           smarter_signposted: 'true',
-          lloyds_signposted: 'false'
+          lloyds_signposted: 'false',
+          attended_digital: 'true'
         )
       end
 

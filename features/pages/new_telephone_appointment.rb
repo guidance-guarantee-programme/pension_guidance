@@ -24,6 +24,10 @@ module Pages
     element :dc_pot_confirmed_yes, '.t-dc-pot-confirmed-yes'
     element :dc_pot_confirmed_no, '.t-dc-pot-confirmed-no'
 
+    element :attended_digital_yes, '.t-attended-digital-yes'
+    element :attended_digital_no, '.t-attended-digital-no'
+    element :attended_digital_not_sure, '.t-attended-digital-not-sure'
+
     element :gdpr_consent_yes, '.t-gdpr-consent-yes'
     element :gdpr_consent_no, '.t-gdpr-consent-no'
 
