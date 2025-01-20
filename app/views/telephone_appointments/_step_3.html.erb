@@ -225,6 +225,33 @@
     <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
   </div>
 
+  <% unless @telephone_appointment.due_diligence? %>
+  <div class="form-group t-attended-digital <%= 'form-group-error' if @telephone_appointment.errors.include?(:attended_digital) %>" id="telephone_appointment_attended_digital" tabindex="-1">
+    <fieldset class="inline" aria-required="true">
+      <legend class="form-label-bold">Have you completed an online Pension Wise appointment?</legend>
+      <span class="form-hint">This helps us understand how Pension Wise is used.</span>
+      <% if @telephone_appointment.errors.include?(:attended_digital) %>
+        <span class="error-message" id="attended_digital_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:attended_digital].to_sentence.capitalize %></span>
+      <% end %>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :attended_digital, 'yes', aria: { describedby: 'attended_digital_error' }, class: 't-attended-digital-yes' %>
+        <%= f.label :attended_digital, value: 'Yes', aria: { label: 'Yes, I have completed an online Pension Wise appointment' }  do %>Yes<% end %>
+      </div>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :attended_digital, 'no', aria: { describedby: 'attended_digital_error' }, class: 't-attended-digital-no' %>
+        <%= f.label :attended_digital, value: 'No', aria: { label: 'No, I have not completed an online Pension Wise appointment' }  do %>No<% end %>
+      </div>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :attended_digital, 'not-sure', aria: { describedby: 'attended_digital_error' }, class: 't-attended-digital-not-sure' %>
+        <%= f.label :attended_digital, value: 'Not-sure', aria: { label: 'I am not sure if I have completed an online Pension Wise appointment' }  do %>Not sure<% end %>
+      </div>
+    </fieldset>
+  </div>
+  <% end %>
+
   <% if @telephone_appointment.due_diligence? %>
     <%= f.hidden_field :where_you_heard, value: '2', class: 't-hidden-where-you-heard' %>
 
