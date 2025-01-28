@@ -169,7 +169,8 @@
   <% else %>
   <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>" id="telephone_appointment_dc_pot_confirmed" tabindex="-1">
     <fieldset class="inline" aria-required="true">
-      <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
+      <legend class="form-label-bold">Pension type</legend>
+      <div>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</div>
       <span class="form-hint">If you have both select ‘Yes’</span>
       <% if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>
         <span class="error-message" id="dc_pot_confirmed_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence.capitalize %></span>
@@ -307,7 +308,7 @@
   <% else %>
   <div class="form-group t-gdpr-consent <%= 'form-group-error' if @telephone_appointment.errors.include?(:gdpr_consent) %>" id="telephone_appointment_gdpr_consent" tabindex="-1">
     <fieldset class="inline">
-      <legend>Customer research consent</legend>
+      <legend class="form-label-bold">Customer research consent</legend>
       <% if @telephone_appointment.errors.include?(:gdpr_consent) %>
         <span class="error-message" id="gdpr_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:gdpr_consent].to_sentence.capitalize %></span>
       <% end %>
