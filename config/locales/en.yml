@@ -270,7 +270,7 @@ en:
               inclusion: please accept
             where_you_heard:
               inclusion: select an option
-            notes:
+            adjustments:
               blank: describe the accessibility adjustments you require
             gdpr_consent:
               inclusion: select an option
@@ -302,6 +302,8 @@ en:
               inclusion: choose a preference
             gdpr_consent:
               inclusion: choose a response
+            adjustments:
+              blank: describe the accessibility adjustments you require
 
     attributes:
       nudge_appointment:

@@ -24,7 +24,8 @@ class NudgeAppointment # rubocop:disable Metrics/ClassLength
     :notes,
     :confirmation,
     :eligibility_reason,
-    :gdpr_consent
+    :gdpr_consent,
+    :adjustments
   )
 
   attr_writer :date_of_birth, :selected_date, :start_at, :step
@@ -39,13 +40,14 @@ class NudgeAppointment # rubocop:disable Metrics/ClassLength
   validates :memorable_word, presence: true
   validates :date_of_birth, presence: true
   validates :eligibility_reason, inclusion: { in: ELIGIBILITY_OPTIONS.keys }, unless: :eligible_age?
-  validates :accessibility_requirements, inclusion: { in: %w[0 1] }
+  validates :accessibility_requirements, presence: true
+  validates :adjustments, length: { maximum: 160 }, allow_blank: true
+  validates :adjustments, presence: true, if: :accessibility_requirements?
   validates :notes, length: { maximum: 160 }, allow_blank: true
-  validates :notes, presence: true, if: :accessibility_requirements?
   validates :gdpr_consent, inclusion: { in: %w[yes no] }
 
   def accessibility_requirements?
-    accessibility_requirements == '1'
+    ActiveRecord::Type::Boolean.new.cast(accessibility_requirements) || false
   end
 
   def advance!
@@ -72,7 +74,8 @@ class NudgeAppointment # rubocop:disable Metrics/ClassLength
       nudge_confirmation: confirmation,
       mobile: mobile,
       nudge_eligibility_reason: eligibility_reason,
-      gdpr_consent: gdpr_consent
+      gdpr_consent: gdpr_consent,
+      adjustments: adjustments.to_s
     }
   end
 
