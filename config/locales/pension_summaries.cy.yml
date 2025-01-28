@@ -1,5 +1,8 @@
 cy:
   pension_summaries:
+    print:
+      heading: Dechrau
+      urn_reference: 'Eich cyfeirnod Pension Wise:'
     start:
       title: Creu eich crynodeb o bensiynau
       start_now_button: Dechrau nawr
