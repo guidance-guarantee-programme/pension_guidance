@@ -217,7 +217,7 @@
         <%= f.radio_button :accessibility_requirements, false, aria: { describedby: 'accessibility_requirements_error' }, class: 't-accessibility-requirements-no' %>
         <%= f.label :accessibility_requirements, value: false, aria: { label: 'No, I do not have accessibility requirements' } do %>No<% end %>
       </div>
-      <span class="form-hint">There are a few ways we can <a href="" target="_blank">make your Pension Wise appointment easier to access</a>.</span>
+      <span class="form-hint">There are a few ways we can <a href="" target="_blank">make your Pension Wise appointment easier to access</a></span>
     </fieldset>
   </div>
 
@@ -241,7 +241,7 @@
         <span class="error-message"><%= @telephone_appointment.errors[:notes].to_sentence.capitalize %></span>
       <% end %>
       <span class="form-hint">
-        Please add any additional information here that may be helpful for the appointment, including any accessibility needs you would like us to be aware of. We may contact you for details of your specific needs
+        Please add any additional information here that may be helpful for the appointment
       </span>
     <% end %>
     <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
