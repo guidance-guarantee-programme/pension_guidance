@@ -74,7 +74,9 @@ RSpec.describe TelephoneAppointmentsApi do
           gdpr_consent: 'yes',
           smarter_signposted: 'true',
           lloyds_signposted: 'false',
-          attended_digital: 'true'
+          accessibility_requirements: 'true',
+          adjustments: 'These are my adjustments.',
+          attended_digital: 'yes'
         )
       end
 

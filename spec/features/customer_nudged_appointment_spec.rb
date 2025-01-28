@@ -30,6 +30,7 @@ RSpec.feature 'Customer nudged appointments', js: true, vcr: true do
     @page.date_of_birth_month.set('01')
     @page.date_of_birth_year.set('1970')
     @page.memorable_word.set('snootboop')
+    @page.accessibility_requirements_no.set(true)
     @page.where_you_heard.select('A Pension Provider')
     @page.dc_pot_confirmed_yes.set('true')
     @page.gdpr_consent_yes.set('true')

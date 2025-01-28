@@ -26,7 +26,8 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
     :schedule_type,
     :referrer,
     :rebooked_from_id,
-    :attended_digital
+    :attended_digital,
+    :adjustments
   )
 
   attr_writer(
@@ -49,8 +50,9 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   validates :dc_pot_confirmed, inclusion: { in: %w[yes no not-sure] }
   validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }, unless: :embedded?
   validates :notes, length: { maximum: 160 }, allow_blank: true
-  validates :notes, presence: true, if: :accessibility_requirements?
-  validates :accessibility_requirements, inclusion: { in: %w[0 1] }
+  validates :accessibility_requirements, presence: true
+  validates :adjustments, length: { maximum: 160 }, allow_blank: true
+  validates :adjustments, presence: true, if: :accessibility_requirements?
   validates :referrer, presence: true, if: :due_diligence?
   validates :country_of_residence, presence: true, if: :due_diligence?
   validates :gdpr_consent, inclusion: { in: %w[yes no] }
@@ -64,7 +66,7 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   end
 
   def accessibility_requirements?
-    accessibility_requirements == '1'
+    ActiveRecord::Type::Boolean.new.cast(accessibility_requirements) || false
   end
 
   def advance!
@@ -109,6 +111,7 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
       where_you_heard: where_you_heard,
       gdpr_consent: gdpr_consent,
       accessibility_requirements: accessibility_requirements,
+      adjustments: adjustments,
       notes: notes,
       nudged: nudged,
       smarter_signposted: smarter_signposted,
