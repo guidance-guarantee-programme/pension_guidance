@@ -142,7 +142,9 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :referrer,
         :nudged,
         :embedded,
-        :rebooked_from_id
+        :rebooked_from_id,
+        :attended_digital,
+        :adjustments
       ).merge(
         smarter_signposted: smarter_signposted?,
         lloyds_signposted: lloyds_signposted?,

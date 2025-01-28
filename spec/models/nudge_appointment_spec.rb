@@ -10,11 +10,12 @@ RSpec.describe NudgeAppointment, type: :model do
       date_of_birth_year: '1920',
       date_of_birth_month: '01',
       date_of_birth_day: '01',
-      accessibility_requirements: '1',
+      accessibility_requirements: true,
       notes: 'Some required notes.',
       confirmation: 'email',
       eligibility_reason: '',
-      gdpr_consent: 'yes'
+      gdpr_consent: 'yes',
+      adjustments: 'These are the adjustments'
     )
   end
 
@@ -147,16 +148,17 @@ RSpec.describe NudgeAppointment, type: :model do
     end
 
     context 'when accessibility requirements are needed' do
-      it 'requires notes' do
-        subject.notes = ''
+      it 'requires adjustments' do
+        subject.adjustments = ''
         expect(subject).to_not be_valid
       end
     end
 
     context 'when accessibility requirements are not needed' do
-      it 'does not require notes' do
-        subject.accessibility_requirements = '0'
-        subject.notes = ''
+      it 'does not require adjustments' do
+        subject.accessibility_requirements = 'false'
+        subject.adjustments = ''
+
         expect(subject).to be_valid
       end
     end

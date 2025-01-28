@@ -14,7 +14,9 @@ module Pages
     element :memorable_word, '.t-memorable-word'
     element :choose_other_time_message, '.t-choose-other-time-message'
     element :where_you_heard, '.t-where-you-heard'
-    element :accessibility_requirements, '.t-accessibility-requirements'
+    element :accessibility_requirements_yes, '.t-accessibility-requirements-yes'
+    element :accessibility_requirements_no, '.t-accessibility-requirements-no'
+    element :adjustments, '.t-adjustments'
     element :additional_info, '.t-additional-info'
     element :smarter_signposting_banner, '.t-smarter-signposted-banner'
     element :cancel_smarter_signposting, '.t-cancel-smarter-signposting'
@@ -23,6 +25,10 @@ module Pages
 
     element :dc_pot_confirmed_yes, '.t-dc-pot-confirmed-yes'
     element :dc_pot_confirmed_no, '.t-dc-pot-confirmed-no'
+
+    element :attended_digital_yes, '.t-attended-digital-yes'
+    element :attended_digital_no, '.t-attended-digital-no'
+    element :attended_digital_not_sure, '.t-attended-digital-not-sure'
 
     element :gdpr_consent_yes, '.t-gdpr-consent-yes'
     element :gdpr_consent_no, '.t-gdpr-consent-no'

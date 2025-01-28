@@ -92,6 +92,11 @@ RSpec.feature 'Placing a nudge booking' do
     @page.memorable_word.set('snootboop')
     @page.gdpr_consent_yes.set(true)
 
+    expect(@page).to have_no_adjustments
+    @page.accessibility_requirements_yes.set(true)
+    @page.wait_until_adjustments_visible
+    @page.adjustments.set('These are my adjustments')
+
     @page.submit.click
   end
 
