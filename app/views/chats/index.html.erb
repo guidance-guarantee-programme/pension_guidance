@@ -1,10 +1,12 @@
-<script id="genesys-live-chat" data-testid="genesys-live-chat" data-nscript="beforeInteractive">
-  (function(g,e,n,es,ys){g["_genesysJs"]=e;
-          g[e]=g[e]||function(){(g[e].q=g[e].q||[]).push(arguments)};g[e].t=1*new Date;
-          g[e].c=es;ys=document.createElement("script");ys.async=1;ys.src=n;ys.charset="utf-8";
-          document.head.appendChild(ys)})(window,"Genesys","https://apps.euw2.pure.cloud/genesys-bootstrap/genesys.min.js",
-          {environment:"euw2",deploymentId:"d441c10a-d751-4b03-976d-788df9294b0a"});
-</script>
+<% content_for :head do %>
+  <script id="genesys-live-chat" data-testid="genesys-live-chat" data-nscript="beforeInteractive">
+    (function(g,e,n,es,ys){g["_genesysJs"]=e;
+            g[e]=g[e]||function(){(g[e].q=g[e].q||[]).push(arguments)};g[e].t=1*new Date;
+            g[e].c=es;ys=document.createElement("script");ys.async=1;ys.src=n;ys.charset="utf-8";
+            document.head.appendChild(ys)})(window,"Genesys","https://apps.euw2.pure.cloud/genesys-bootstrap/genesys.min.js",
+            {environment:"euw2",deploymentId:"d441c10a-d751-4b03-976d-788df9294b0a"});
+  </script>
+<% end %>
 
 <div class="l-column-two-thirds">
   <div role="note" aria-label="Information" class="application-notice info-notice">
@@ -19,5 +21,7 @@
     <p>Find out more about when and how to get professional advice in our guide <a href="https://www.moneyhelper.org.uk/en/getting-help-and-advice/financial-advisers/do-you-need-a-financial-adviser" target="_blank">Do you need a financial adviser</a></p>
 
     <p>If you need legal advice, you can find a solicitor on the <a href="https://www.lawsociety.org.uk" target="_blank">Law Society website</a></p>
+
+    <p><button class="button button--primary" onclick="Genesys('command', 'Messenger.open');">Start webchat</button>
   </div>
 </div>
