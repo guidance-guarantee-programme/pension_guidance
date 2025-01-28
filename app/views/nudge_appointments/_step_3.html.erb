@@ -257,7 +257,7 @@
       <% if @nudge_appointment.errors.include?(:notes) %>
         <span class="error-message"><%= @nudge_appointment.errors[:notes].to_sentence.capitalize %></span>
       <% end %>
-      <span class="form-hint">Any accessibility adjustments required by the customer</span>
+      <span class="form-hint">Any additional information here that may be helpful for the appointment</span>
     <% end %>
     <%= f.text_area :notes, autocomplete: 'off', class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
   </div>
