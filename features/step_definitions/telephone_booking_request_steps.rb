@@ -83,7 +83,8 @@ Given(/^they do not have a DC pot$/) do
   @page.dc_pot_confirmed_no.set(true)
   @page.where_you_heard.select('Other')
   @page.gdpr_consent_yes.set(true)
-  @page.accessibility_requirements.set(true)
+  @page.accessibility_requirements_yes.set(true)
+  @page.adjustments.set('Some required adjustments')
   @page.additional_info.set('Bleh bleh')
 
   @page.submit.click
@@ -108,7 +109,8 @@ Given(/^they are below the minimum age$/) do
   @page.dc_pot_confirmed_yes.set(true)
   @page.where_you_heard.select('Other')
   @page.gdpr_consent_yes.set(true)
-  @page.accessibility_requirements.set(true)
+  @page.accessibility_requirements_yes.set(true)
+  @page.adjustments.set('Blah blah')
   @page.additional_info.set('Bleh bleh')
 
   @page.submit.click
@@ -130,7 +132,8 @@ Given(/^they are eligible for an appointment$/) do
   @page.dc_pot_confirmed_yes.set(true)
   @page.gdpr_consent_yes.set(true)
   @page.where_you_heard.select('Other')
-  @page.accessibility_requirements.set(true)
+  @page.accessibility_requirements_yes.set(true)
+  @page.adjustments.set('Some required adjustments')
   @page.additional_info.set('Bleh bleh')
   @page.attended_digital_yes.set(true)
 
@@ -147,7 +150,8 @@ Then(/^their appointment is created$/) do
   expect(@created_telephone_appointment.date_of_birth).to eq DateTime.new(1920, 10, 23).in_time_zone
   expect(@created_telephone_appointment.gdpr_consent).to eq 'yes'
   expect(@created_telephone_appointment.where_you_heard).to eq '17'
-  expect(@created_telephone_appointment.accessibility_requirements).to eq '1'
+  expect(@created_telephone_appointment.accessibility_requirements).to eq 'true'
+  expect(@created_telephone_appointment.adjustments).to eq 'Some required adjustments'
 end
 
 Then(/^they see a confirmation of their appointment$/) do
@@ -173,7 +177,8 @@ When(/^the slot becomes unavailable while they are filling in their details$/) d
   @page.dc_pot_confirmed_yes.set(true)
   @page.where_you_heard.select('Other')
   @page.gdpr_consent_yes.set(true)
-  @page.accessibility_requirements.set(true)
+  @page.accessibility_requirements_yes.set(true)
+  @page.adjustments.set('Some required adjustments')
   @page.additional_info.set('Bleh')
 
   @page.submit.click
