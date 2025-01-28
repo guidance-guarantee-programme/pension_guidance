@@ -1,5 +1,7 @@
 # rubocop:disable Metrics/BlockLength
 Rails.application.routes.draw do
+  get '/chat', to: 'chats#index'
+
   resources :booking_requests,
             only: %i[new create],
             path: '/cy/booking-requests',
