@@ -37,6 +37,7 @@ RSpec.feature 'Due diligence bookings' do
     @page.date_of_birth_day.set('01')
     @page.date_of_birth_month.set('01')
     @page.date_of_birth_year.set('1980')
+    @page.accessibility_requirements_no.set(true)
     @page.memorable_word.set('snootboop')
     @page.referrer.set('Big Pensions Co.')
 
