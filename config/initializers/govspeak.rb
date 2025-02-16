@@ -1,4 +1,5 @@
 require 'govspeak'
+require_relative '../../app/helpers/money_helper'
 
 include MoneyHelper
 
