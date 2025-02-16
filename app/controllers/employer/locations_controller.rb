@@ -1,3 +1,5 @@
+require 'http_connection'
+
 module Employer
   class LocationsController < ApplicationController
     include Embeddable

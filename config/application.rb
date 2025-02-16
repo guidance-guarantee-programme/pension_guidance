@@ -33,6 +33,7 @@ module PensionGuidance
   ].map { |ip| IPAddr.new(ip) }
 
   class Application < Rails::Application
+    config.active_record.legacy_connection_handling = false
     config.action_controller.include_all_helpers = false
     config.action_dispatch.rescue_responses.merge! 'CategoryRepository::CategoryNotFound' => :not_found,
                                                    'GuideRepository::GuideNotFound' => :not_found
