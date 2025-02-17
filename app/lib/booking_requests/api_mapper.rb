@@ -24,9 +24,9 @@ module BookingRequests
     end
 
     def self.slot(start_at)
-      date = start_at.to_date.to_s(:db)
-      from = start_at.dup.to_s(:time).sub(':', '')
-      to   = start_at.dup.advance(hours: 1).to_s(:time).sub(':', '')
+      date = start_at.to_date.to_fs(:db)
+      from = start_at.dup.to_fs(:time).sub(':', '')
+      to   = start_at.dup.advance(hours: 1).to_fs(:time).sub(':', '')
 
       { priority: 1, date: date, from: from, to: to }
     end
