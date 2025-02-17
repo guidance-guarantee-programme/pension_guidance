@@ -327,7 +327,7 @@
   <h5 class="slot-picker-header">Your requested appointment</h5>
   <div class="slot-picker-confirmed-date">
     <p class="slot-picker-confirmed-date__text heavy"><b><%= l(@telephone_appointment.start_at, format: :govuk_date) %></b></p>
-    <p class="slot-picker-confirmed-date__text"><%= l(@telephone_appointment.start_at, format: :govuk_time) %>, around 60 minutes</p>
+    <p class="slot-picker-confirmed-date__text"><%= l(@telephone_appointment.start_at, format: :govuk_time) %> (<%= current_timezone(@telephone_appointment.start_at) %>), around 60 minutes</p>
   </div>
 
   <p><%= link_to('Change date/time', new_telephone_appointment_path(schedule_type: @telephone_appointment.schedule_type), class: 't-change-date-time') %></p>

@@ -1,6 +1,10 @@
 module ApplicationHelper
   include NavigationHelper
 
+  def current_timezone(start_at)
+    start_at.in_time_zone('London').utc_offset.zero? ? 'GMT' : 'BST'
+  end
+
   def contact_number(appointment)
     if appointment.due_diligence?
       '0800 015 4906'
