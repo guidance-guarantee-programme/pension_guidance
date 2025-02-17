@@ -16,7 +16,7 @@
 
     <div class="t-start">
       <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>
-      <p><strong>Time</strong><br><%= l(@booking_date, format: :govuk_time) %></p>
+      <p><strong>Time</strong><br><%= l(@booking_date, format: :govuk_time) %> (<%= current_timezone(@booking_date) %>)</p>
     </div>
 
     <div class="application-notice help-notice">

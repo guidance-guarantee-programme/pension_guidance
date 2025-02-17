@@ -48,5 +48,6 @@ RSpec.feature 'Due diligence bookings' do
 
     expect(@page.booking_reference).to have_text('5')
     expect(@page).to have_text('0800 015 4906')
+    expect(@page).to have_text('10:10am (BST)')
   end
 end
