@@ -217,7 +217,9 @@
         <%= f.radio_button :accessibility_requirements, false, aria: { describedby: 'accessibility_requirements_error' }, class: 't-accessibility-requirements-no' %>
         <%= f.label :accessibility_requirements, value: false, aria: { label: 'No, I do not have accessibility requirements' } do %>No<% end %>
       </div>
+      <% unless @telephone_appointment.due_diligence? %>
       <span class="form-hint">There are a few ways we can <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/access-adjustments" target="_blank">make your Pension Wise appointment easier to access</a></span>
+      <% end %>
     </fieldset>
   </div>
 
