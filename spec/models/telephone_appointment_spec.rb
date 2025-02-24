@@ -14,6 +14,7 @@ RSpec.describe TelephoneAppointment, type: :model do
       where_you_heard: '1',
       gdpr_consent: 'yes',
       accessibility_requirements: '1',
+      adjustments: 'I require walking assistance',
       notes: 'meh',
       smarter_signposted: 'true',
       nudged: 'false',
@@ -227,16 +228,16 @@ RSpec.describe TelephoneAppointment, type: :model do
     end
 
     context 'when accessibility requirements are needed' do
-      it 'requires notes' do
-        subject.notes = ''
+      it 'requires adjustments' do
+        subject.adjustments = ''
         expect(subject).to_not be_valid
       end
     end
 
     context 'when accessibility requirements are not needed' do
-      it 'does not require notes' do
-        subject.accessibility_requirements = '0'
-        subject.notes = ''
+      it 'does not require adjustments' do
+        subject.accessibility_requirements = 'false'
+        subject.adjustments = ''
         expect(subject).to be_valid
       end
     end

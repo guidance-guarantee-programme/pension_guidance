@@ -270,10 +270,12 @@ en:
               inclusion: please accept
             where_you_heard:
               inclusion: select an option
-            notes:
+            adjustments:
               blank: describe the accessibility adjustments you require
             gdpr_consent:
               inclusion: select an option
+            accessibility_requirements:
+              blank: select an option
         nudge_appointment:
           attributes:
             first_name:
@@ -302,6 +304,8 @@ en:
               inclusion: choose a preference
             gdpr_consent:
               inclusion: choose a response
+            adjustments:
+              blank: describe the accessibility adjustments you require
 
     attributes:
       nudge_appointment:
@@ -335,6 +339,7 @@ en:
         notes: Additional information
         referrer: Which pension provider referred you for Pension Safeguarding Guidance
         gdpr_consent: Customer research consent
+        accessibility_requirements: Making your phone appointment easier to access
       booking_request_form:
         primary_slot: Slot 1
         secondary_slot: Slot 2

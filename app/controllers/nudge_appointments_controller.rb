@@ -115,7 +115,8 @@ class NudgeAppointmentsController < ApplicationController # rubocop:disable Metr
         :notes,
         :confirmation,
         :eligibility_reason,
-        :gdpr_consent
+        :gdpr_consent,
+        :adjustments
       )
   end
 

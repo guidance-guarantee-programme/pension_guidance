@@ -217,18 +217,38 @@
     </div>
   </div>
 
-  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:accessibility_requirements) %>">
-    <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %>
-    <%= f.label :accessibility_requirements do %>
+  <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:accessibility_requirements) %>" data-radio-toggle>
+    <fieldset class="inline" aria-required="true">
+      <legend class="form-label-bold">Making your phone appointment easier to access</legend>
+      <span class="form-hint">Do you have any access requirements you’d like us to be aware of?</span>
       <% if @nudge_appointment.errors.include?(:accessibility_requirements) %>
         <span class="error-message"><%= @nudge_appointment.errors[:accessibility_requirements].to_sentence.capitalize %></span>
       <% end %>
-      Do you require an adjustment for your Pension Wise appointment?
+
+      <div class="multiple-choice" data-target="adjustments">
+        <%= f.radio_button :accessibility_requirements, true, aria: { describedby: 'accessibility_requirements_error' }, class: 't-accessibility-requirements-yes' %>
+        <%= f.label :accessibility_requirements, value: true, aria: { label: 'Yes, I have accessibility requirements' } do %>Yes<% end %>
+      </div>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :accessibility_requirements, false, aria: { describedby: 'accessibility_requirements_error' }, class: 't-accessibility-requirements-no' %>
+        <%= f.label :accessibility_requirements, value: false, aria: { label: 'No, I do not have accessibility requirements' } do %>No<% end %>
+      </div>
+      <span class="form-hint">There are a few ways we can <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/access-adjustments" target="_blank">make your Pension Wise appointment easier to access</a></span>
+    </fieldset>
+  </div>
+
+  <div class="application-notice info-notice js-hidden form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:adjustments) %>" id="adjustments" data-character-limit>
+    <%= f.label :adjustments do %>
+      Tell us if any adjustments would help you in the box below. We might contact you before your appointment for more information
+      <% if @nudge_appointment.errors.include?(:adjustments) %>
+        <span class="error-message"><%= @nudge_appointment.errors[:adjustments].to_sentence.capitalize %></span>
+      <% end %>
     <% end %>
-    <details>
-      <summary>Agent</summary>
-      Please provide further details in the additional information box. Pension Wise may contact the customer for details of their specific needs.
-    </details>
+    <%= f.text_area :adjustments,
+      class: "t-adjustments form-control form-control-3-4 js-character-limit-input #{'form-control-error' if @nudge_appointment.errors.include?(:adjustments)}",
+      rows: 5, maxlength: 160, data: { maxlength: 160 }
+    %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @nudge_appointment.errors.include?(:notes) %>" data-character-limit>
@@ -237,7 +257,7 @@
       <% if @nudge_appointment.errors.include?(:notes) %>
         <span class="error-message"><%= @nudge_appointment.errors[:notes].to_sentence.capitalize %></span>
       <% end %>
-      <span class="form-hint">Any accessibility adjustments required by the customer</span>
+      <span class="form-hint">Any additional information here that may be helpful for the appointment</span>
     <% end %>
     <%= f.text_area :notes, autocomplete: 'off', class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
   </div>

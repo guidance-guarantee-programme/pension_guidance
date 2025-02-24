@@ -169,7 +169,8 @@
   <% else %>
   <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>" id="telephone_appointment_dc_pot_confirmed" tabindex="-1">
     <fieldset class="inline" aria-required="true">
-      <legend>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
+      <legend class="form-label-bold">Pension type</legend>
+      <div>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</div>
       <span class="form-hint">If you have both select ‘Yes’</span>
       <% if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>
         <span class="error-message" id="dc_pot_confirmed_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence.capitalize %></span>
@@ -199,17 +200,40 @@
   </div>
   <% end %>
 
-  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accessibility_requirements) %>">
-    <div class="multiple-choice">
-      <%= f.check_box :accessibility_requirements, class: 't-accessibility-requirements' %>
-      <%= f.label :accessibility_requirements do %>
-        <% if @telephone_appointment.errors.include?(:accessibility_requirements) %>
-          <span class="error-message"><%= @telephone_appointment.errors[:accessibility_requirements].to_sentence.capitalize %></span>
-        <% end %>
-        I require an adjustment to help me access my phone appointment
-        <span class="form-hint" id="accessibility-hint">Please provide further details in the additional information box</span>
+  <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:accessibility_requirements) %>" data-radio-toggle>
+    <fieldset class="inline" aria-required="true">
+      <legend class="form-label-bold">Making your phone appointment easier to access</legend>
+      <span class="form-hint">Do you have any access requirements you’d like us to be aware of?</span>
+      <% if @telephone_appointment.errors.include?(:accessibility_requirements) %>
+        <span class="error-message"><%= @telephone_appointment.errors[:accessibility_requirements].to_sentence.capitalize %></span>
       <% end %>
-    </div>
+
+      <div class="multiple-choice" data-target="adjustments">
+        <%= f.radio_button :accessibility_requirements, true, aria: { describedby: 'accessibility_requirements_error' }, class: 't-accessibility-requirements-yes' %>
+        <%= f.label :accessibility_requirements, value: true, aria: { label: 'Yes, I have accessibility requirements' } do %>Yes<% end %>
+      </div>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :accessibility_requirements, false, aria: { describedby: 'accessibility_requirements_error' }, class: 't-accessibility-requirements-no' %>
+        <%= f.label :accessibility_requirements, value: false, aria: { label: 'No, I do not have accessibility requirements' } do %>No<% end %>
+      </div>
+      <% unless @telephone_appointment.due_diligence? %>
+      <span class="form-hint">There are a few ways we can <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/access-adjustments" target="_blank">make your Pension Wise appointment easier to access</a></span>
+      <% end %>
+    </fieldset>
+  </div>
+
+  <div class="application-notice info-notice js-hidden form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:adjustments) %>" id="adjustments" data-character-limit>
+    <%= f.label :adjustments do %>
+      Tell us if any adjustments would help you in the box below. We might contact you before your appointment for more information
+      <% if @telephone_appointment.errors.include?(:adjustments) %>
+        <span class="error-message"><%= @telephone_appointment.errors[:adjustments].to_sentence.capitalize %></span>
+      <% end %>
+    <% end %>
+    <%= f.text_area :adjustments,
+      class: "t-adjustments form-control form-control-3-4 js-character-limit-input #{'form-control-error' if @telephone_appointment.errors.include?(:adjustments)}",
+      rows: 5, maxlength: 160, data: { maxlength: 160 }
+    %>
   </div>
 
   <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:notes) %>" data-character-limit>
@@ -219,7 +243,7 @@
         <span class="error-message"><%= @telephone_appointment.errors[:notes].to_sentence.capitalize %></span>
       <% end %>
       <span class="form-hint">
-        Please add any additional information here that may be helpful for the appointment, including any accessibility needs you would like us to be aware of. We may contact you for details of your specific needs
+        Please add any additional information here that may be helpful for the appointment
       </span>
     <% end %>
     <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
@@ -286,7 +310,7 @@
   <% else %>
   <div class="form-group t-gdpr-consent <%= 'form-group-error' if @telephone_appointment.errors.include?(:gdpr_consent) %>" id="telephone_appointment_gdpr_consent" tabindex="-1">
     <fieldset class="inline">
-      <legend>Customer research consent</legend>
+      <legend class="form-label-bold">Customer research consent</legend>
       <% if @telephone_appointment.errors.include?(:gdpr_consent) %>
         <span class="error-message" id="gdpr_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:gdpr_consent].to_sentence.capitalize %></span>
       <% end %>
