@@ -23,4 +23,4 @@ You can book a free Pension Wise appointment to talk about your options for taki
 
 You can also [check another pension]({::money_helper_url path="pensions-and-retirement/pension-wise/find-out-your-pension-type" locale="en"/}){: target="_parent"} or [explore your pension options]({::money_helper_url path="pensions-and-retirement/pension-wise/explore-your-pension-options" locale="en"/}){: target="_parent"}.
 
-{::webchat /}
+{::webchat locale="en"/}

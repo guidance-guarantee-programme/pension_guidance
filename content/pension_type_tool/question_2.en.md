@@ -28,4 +28,4 @@ tool_name: Pension Type Tool
 - any other public sector employer, e.g. social services
   {:/yes-no-dont-know-question}
 
-{::webchat /}
+{::webchat locale="en"/}

@@ -19,4 +19,4 @@ See our guidance on [pension investment options]({::money_helper_url path="pensi
 
 If you have more than one pension, you may also have a defined contribution pension – [check another pension]({::money_helper_url path="pensions-and-retirement/pension-wise/find-out-your-pension-type" locale="en"/}){:target="_parent"}.
 
-{::webchat /}
+{::webchat locale="en"/}

@@ -34,8 +34,11 @@ Govspeak::Document.extension('multi-choice-questions', regexp) do |partial_name,
   )
 end
 
-Govspeak::Document.extension('webchat', %r(^{::webchat /})) do
-  ApplicationController.render(partial: 'components/webchat')
+Govspeak::Document.extension('webchat', %r(^{::webchat\slocale="(?<locale>.*?)"/})) do |locale|
+  ApplicationController.render(
+    partial: 'components/webchat',
+    locals: { locale: locale }
+  )
 end
 
 Govspeak::Document.extension('money_helper_url', %r({::money_helper_url\spath="(?<path>.*?)"\slocale="(?<locale>.*?)"/})) do |path, locale| # rubocop:disable Layout/LineLength

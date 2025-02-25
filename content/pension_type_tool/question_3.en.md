@@ -52,4 +52,4 @@ tool_name: Pension Type Tool
 ^Some of these companies may have had different names in the past or have merged with other companies, e.g. Aviva used to be Norwich Union.^
 {:/yes-no-dont-know-question}
 
-{::webchat /}
+{::webchat locale="en"/}

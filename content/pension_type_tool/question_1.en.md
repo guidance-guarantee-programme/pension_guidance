@@ -20,4 +20,4 @@ tool_name: Pension Type Tool
 ## Was your pension set up by your employer?
 {:/yes-no-dont-know-question}
 
-{::webchat /}
+{::webchat locale="en"/}
