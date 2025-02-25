@@ -21,4 +21,4 @@ tool_name: Pension Type Tool
 
 {:/pension-start-year-question}
 
-{::webchat /}
+{::webchat locale="en"/}

@@ -17,3 +17,4 @@ Os oes gennych bensiwn cyfraniadau wedi’u diffinio (personol neu gweithle) ryd
 ^Bydd angen i chi wirio bob pensiwn ar wahân os oes gennych fwy nag un.^
 
 [Dechrau nawr](/cy/pension-type-tool/question-1){: .button}
+{::webchat locale="cy"/}

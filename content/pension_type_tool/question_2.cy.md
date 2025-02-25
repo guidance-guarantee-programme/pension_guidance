@@ -26,3 +26,5 @@ tool_name: Pension Type Tool
 * y lluoedd arfog
 * unrhyw gyflogwr sector gyhoeddus arall, ee gwasanaethau cymdeithasol
 {:/yes-no-dont-know-question}
+
+{::webchat locale="cy"/}
