@@ -7,30 +7,22 @@
 <div class="l-grid-row">
   <div class="l-column-two-thirds">
     <div class="govuk-box-highlight">
-      <h1 class="bold-large govuk-box-highlight__header">We’ve booked your appointment</h1>
-      <p>
-        Your reference number is <br>
-        <strong class="heading-medium t-booking-reference"><%= @booking_reference %></strong>
-      </p>
+      <h1 class="bold-large govuk-box-highlight__header">Your Pension Wise appointment is confirmed</h1>
+
+      <div class="t-start">
+        <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>
+        <p><strong>Time</strong><br><%= l(@booking_date, format: :govuk_time) %> (<%= current_timezone(@booking_date) %>)</p>
+        <p><strong>Reference number</strong><br><span class="t-booking-reference"><%= @booking_reference %></span></p>
+      </div>
     </div>
 
-    <div class="t-start">
-      <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>
-      <p><strong>Time</strong><br><%= l(@booking_date, format: :govuk_time) %> (<%= current_timezone(@booking_date) %>)</p>
-    </div>
+    <p>We’ll send your booking confirmation, including <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/preparing-for-your-appointment">how to prepare for your appointment</a>.</p>
+    <p>Remember, we cannot speak to you if you’re driving – even if you use a hands-free device.</p>
 
-    <div class="application-notice help-notice">
-      <p>
-        In the interest of road safety we will not deliver an appointment if
-        you are driving. This also includes the use of hands-free devices.
-        Please ensure you are not driving at the time of your appointment.
-      </p>
-    </div>
+    <h5>How to cancel your appointment</h5>
+    <p>You can <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/cancel-pension-wise-appointment" target="_blank">cancel your Pension Wise appointment online</a> or by replying to the booking confirmation.</p>
 
-    <h5>What happens next?</h5>
-
-    <p>We’ll email you to confirm these details. You’ll also receive information to help you prepare for your appointment.</p>
-
-    <p>To cancel or change your appointment, or if any of the information above isn’t correct, call <strong><% if @due_diligence %> 0800 015 4906<% else %> 0800 138 3944<% end %></strong>.</p>
+    <h5>How to change your appointment</h5>
+    <p>To change your Pension Wise appointment or any information you’ve given us, call <strong>0800 138 3944</strong> (<strong>+44 20 3733 3495</strong> if you’re outside the UK).</p>
   </div>
 </div>
