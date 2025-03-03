@@ -7,7 +7,7 @@
 <div class="l-grid-row">
   <div class="l-column-two-thirds">
     <div class="govuk-box-highlight">
-      <h1 class="bold-large govuk-box-highlight__header">Your Pension Wise appointment is confirmed</h1>
+      <h2>Your Pension Wise appointment is confirmed</h2>
 
       <div class="t-start">
         <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>
@@ -19,10 +19,10 @@
     <p>We’ll send your booking confirmation, including <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/preparing-for-your-appointment">how to prepare for your appointment</a>.</p>
     <p>Remember, we cannot speak to you if you’re driving – even if you use a hands-free device.</p>
 
-    <h5>How to cancel your appointment</h5>
+    <h3>How to cancel your appointment</h3>
     <p>You can <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/cancel-pension-wise-appointment" target="_blank">cancel your Pension Wise appointment online</a> or by replying to the booking confirmation.</p>
 
-    <h5>How to change your appointment</h5>
+    <h3>How to change your appointment</h3>
     <p>To change your Pension Wise appointment or any information you’ve given us, call <% if @due_diligence %><strong>0800 015 4906</strong><% else %><strong>0800 138 3944</strong> (<strong>+44 20 3733 3495</strong> if you’re outside the UK)<% end %>.</p>
   </div>
 </div>
