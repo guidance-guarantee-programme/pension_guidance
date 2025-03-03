@@ -2,53 +2,57 @@
 <% content_for(:page_name, 'Nudge Booking Confirmation') %>
 <% content_for(:tool_step, '3') %>
 
+
 <div class="l-grid-row">
   <div class="l-column-two-thirds">
     <div class="govuk-box-highlight">
-      <h1 class="bold-large govuk-box-highlight__header">We’ve booked your appointment</h1>
-      <p>
-        Your reference number is <br>
-        <strong class="heading-medium t-booking-reference"><%= @booking_reference %></strong>
-      </p>
+      <h2>Your Pension Wise appointment is confirmed</h2>
+
+      <div class="t-start">
+        <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>
+        <p><strong>Time</strong><br><%= l(@booking_date, format: :govuk_time) %> (<%= current_timezone(@booking_date) %>)</p>
+        <p><strong>Reference number</strong><br><span class="t-booking-reference"><%= @booking_reference %></span></p>
+      </div>
     </div>
 
-    <div class="t-start">
-      <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>
-      <p><strong>Time</strong><br><%= l(@booking_date, format: :govuk_time) %></p>
-    </div>
+    <p>You should receive a booking confirmation, including how best to prepare for your appointment.</p>
+    <p>Remember, Pension Wise cannot speak to you if you’re driving – even if you use a hands-free device.</p>
 
-    <div class="application-notice help-notice">
-      <p>
-        In the interest of road safety Pension Wise will not deliver an appointment if
-        you are driving. This also includes the use of hands-free devices.
-        Please ensure you are not driving at the time of your appointment.
-      </p>
-    </div>
+    <h3>How to change your appointment</h3>
+    <p>To change your Pension Wise appointment or any information you’ve given us, call <strong>0800 100 166</strong>.</p>
 
-    <h5>What happens next?</h5>
+    <h3>How to cancel your appointment</h3>
+    <p>You can cancel your appointment online at <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/cancel-pension-wise-appointment" target="_blank">moneyhelper.org.uk/cancel-pension-wise-phone</a> or by replying to your booking confirmation.</p>
 
-    <p>Pension Wise will contact you to confirm these details. You’ll also receive information to help you prepare for your appointment.</p>
+    <h3>How to prepare for your appointment</h3>
+    <p>You’ll usually benefit more if you:</p>
 
-    <p>To cancel or change your appointment, or if any of the information above isn’t correct, call <strong>0800 100 166</strong>.</p>
-
-    <h5>Preparing for your appointment</h5>
-    <p>To make the most of your appointment it would be helpful if you find out:</p>
-    <p>
     <ul>
-      <li>the value of your pension pot(s) — check your pension paperwork or ask your provider</li>
-      <li>an estimate of your current State Pension value — call the Future Pension Centre on <strong>0800 731 0175</strong> or use the online service on GOV.UK for a State Pension statement</li>
-      <li>ask your provider if your pot contains any special features, eg a guaranteed annuity rate or a guaranteed pot value at a certain time</li>
+      <li>Ask each pension provider:
+        <ul>
+          <li>how much your pension is currently worth</li>
+          <li>if your pension has any special features, like a guaranteed pot value or annuity rate.</li>
+        </ul>
+      </li>
+      <li>Check your State Pension forecast:
+        <ul>
+          <li>at <strong>gov.uk/check-state-pension</strong> or</li>
+          <li>call <strong>0800 731 0175</strong> between 8am and 6pm, Monday to Friday.</li>
+        </ul>
+      </li>
+      <li>Have details of your other finances, like:
+        <ul>
+          <li>savings and investments</li>
+          <li>debts and repayments.</li>
+        </ul>
+      </li>
+      <li>Think about your plan for retirement, such as:
+        <ul>
+          <li>when you’d like to stop working</li>
+          <li>what type of pension income you’d like.</li>
+        </ul>
+      </li>
     </ul>
-    </p>
-    <p>Think about your financial circumstances in general and plans for retirement, eg:</p>
-    <p>
-    <ul>
-      <li>sources of income like salary, state benefits, savings and investments</li>
-      <li>debts and repayments you might have</li>
-      <li>when you want to stop working</li>
-      <li>if you want a fixed or flexible income in retirement</li>
-    </ul>
-    </p>
-    <p><a href="https://www.moneyhelper.org.uk/prepare-pw" rel="external" target="_blank">moneyhelper.org.uk/prepare-pw</a></p>
+    <p>For more information, see your booking confirmation or go to <a href="https://www.moneyhelper.org.uk/prepare-pw" target="_blank">moneyhelper.org.uk/prepare-pw</a>.</p>
   </div>
 </div>

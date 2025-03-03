@@ -4,4 +4,31 @@
 <% content_for(:tool_step, '3') %>
 <% content_for(:tool_name, 'Book a free pension wise appointment') %>
 
-<%= render partial: 'ineligible', locals: { telephone: true } %>
+<div class="l-grid-row">
+  <div class="l-column-full">
+    <h1>You cannot book a Pension Wise appointment online</h1>
+
+    <p>You can get a Pension Wise appointment if you have a <strong>UK-based defined contribution pension</strong> and are:</p>
+    <ul>
+      <li>50 or over</li>
+      <li>under 50 and:
+        <ul>
+          <li>taking your pension early due to ill-health</li>
+          <li>have inherited someone else’s pension or</li>
+          <li>can take your pension before age 55, due to a protected pension age.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Our tool helps you <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/find-out-your-pension-type">find out your pension type</a>.</p>
+    <p>If you’re under 50, call to book on <strong>0800 138 3944</strong> (<strong>+44 20 3733 3495</strong> if you’re outside the UK).</p>
+    <p>We’re open between 9am and 5pm, Monday to Friday. Closed on bank holidays.</p>
+
+    <h2>Help if you’re not eligible for Pension Wise</h2>
+    <p>If you only have a <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pensions-basics/defined-benefit-or-final-salary-pensions-schemes-explained">defined benefit pension</a> (often called a final salary or career average scheme) and/or the <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/state-pension/state-pension-an-overview">State Pension</a>, you’re not eligible for a Pension Wise appointment. But we can still help you.</p>
+    <p>You can:</p>
+    <ul>
+      <li>use our <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement">pension guides and tools</a></li>
+      <li>get <a target="_blank" href="https://www.moneyhelper.org.uk/en/contact-us/pensions-guidance">free pensions guidance by phone, webchat or email</a>.</li>
+    </ul>
+  </div>
+</div>
