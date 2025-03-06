@@ -14,6 +14,7 @@ module WelshLanguage
         date_of_birth: booking_request.date_of_birth,
         defined_contribution_pot_confirmed: booking_request.defined_contribution_pot_confirmed,
         accessibility_needs: booking_request.accessibility_needs,
+        adjustments: booking_request.adjustments,
         additional_info: booking_request.additional_info,
         where_you_heard: booking_request.where_you_heard,
         gdpr_consent: booking_request.gdpr_consent.to_s
