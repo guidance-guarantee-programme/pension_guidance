@@ -6,7 +6,7 @@ RSpec.describe WelshLanguage::BookingRequest do
       'email' => 'bob@example.com',
       'phone' => '0208 252 4777',
       'memorable_word' => 'bongo',
-      'accessibility_needs' => '0',
+      'accessibility_needs' => 'false',
       'defined_contribution_pot_confirmed' => 'yes',
       'date_of_birth' => '1950-01-01',
       'additional_info' => '',
@@ -18,6 +18,16 @@ RSpec.describe WelshLanguage::BookingRequest do
 
   it 'is valid with valid attributes' do
     expect(subject).to be_valid
+  end
+
+  context 'when accessibility needs were specified' do
+    it 'requires adjustments' do
+      subject.accessibility_needs = true
+      expect(subject).to be_invalid
+
+      subject.adjustments = 'I need some help with access.'
+      expect(subject).to be_valid
+    end
   end
 
   it 'checks for age eligibility' do

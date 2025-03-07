@@ -8,6 +8,7 @@
       this.$input = this.$component.find('.js-character-limit-input');
       // ie9 doesn't recognise the maxlength attribute
       this.characterLimit = this.$input.attr('data-maxlength');
+      this.countdownText = this.$input.attr('data-countdown-text') || '(total) characters remaining of (limit) characters';
 
       if (!this.characterLimit) {
         return;
@@ -30,10 +31,10 @@
     }
 
     getCountDownText() {
-      return `<span class="js-live-region">${this.getCharacterLeftCount()}
-        character${this.getCharacterLeftCount() === 1 ? '' : 's'} remaining</span>
-        of ${this.characterLimit} characters.
-      `;
+
+      return `<span class="js-live-region">
+        ${this.countdownText.replace('(total)', this.getCharacterLeftCount()).replace('(limit)', this.characterLimit)}
+      </span>`;
     }
 
     bindEvents() {

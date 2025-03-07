@@ -171,23 +171,44 @@
       </fieldset>
     </div>
 
-    <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:accessibility_needs) %>">
-      <div class="multiple-choice">
-        <%= f.check_box :accessibility_needs, class: 't-accessibility-needs' %>
-        <%= f.label :accessibility_needs do %>
-          <% if @booking_request.errors.include?(:accessibility_needs) %>
-            <span class="error-message"><%= @booking_request.errors[:accessibility_needs].to_sentence.capitalize %></span>
-          <% end %>
-          Mae gennyf  anghenion hygyrchedd, ee mynediad i gadair olwyn
-          <span class="form-hint" id="accessibility-hint">Byddwn yn cysylltu â chi am fanylion eich anghenion penodol</span>
+    <div class="form-group <%= 'form-group-error' if @booking_request.errors.include?(:accessibility_needs) %>" data-radio-toggle>
+      <fieldset class="inline" aria-required="true">
+        <legend class="form-label-bold"> Gwneud eich apwyntiad ffôn yn haws i’w gyrchu </legend>
+        <span class="form-hint">A oes gennych unrhyw ofynion cyrchu yr hoffech i ni fod yn ymwybodol ohonynt?</span>
+        <% if @booking_request.errors.include?(:accessibility_needs) %>
+          <span class="error-message"><%= @booking_request.errors[:accessibility_needs].to_sentence.capitalize %></span>
         <% end %>
-      </div>
+
+        <div class="multiple-choice" data-target="adjustments">
+          <%= f.radio_button :accessibility_needs, true, aria: { describedby: 'accessibility_needs_error' }, class: 't-accessibility-needs-yes' %>
+          <%= f.label :accessibility_needs, value: true, aria: { label: 'Ydy' } do %>Oes<% end %>
+        </div>
+
+        <div class="multiple-choice">
+          <%= f.radio_button :accessibility_needs, false, aria: { describedby: 'accessibility_needs_error' }, class: 't-accessibility-needs-no' %>
+          <%= f.label :accessibility_needs, value: false, aria: { label: 'Na' } do %>Nac Oes<% end %>
+        </div>
+        <span class="form-hint">Mae yna sawl ffordd y gallwn <a href="https://www.moneyhelper.org.uk/cy/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/access-adjustments" target="_blank">wneud eich apwyntiad Pension Wise yn haws i’w gyrchu</a></span>
+      </fieldset>
+    </div>
+
+    <div class="application-notice info-notice js-hidden form-group <%= 'form-group-error' if @booking_request.errors.include?(:adjustments) %>" id="adjustments" data-character-limit>
+      <%= f.label :adjustments, class: 'form-label-bold' do %>
+         Dywedwch wrthym a fyddai unrhyw addasiadau yn eich helpu yn y blwch isod. Efallai y byddwn yn cysylltu â chi cyn eich apwyntiad am fwy o wybodaeth
+        <% if @booking_request.errors.include?(:adjustments) %>
+          <span class="error-message"><%= @booking_request.errors[:adjustments].to_sentence.capitalize %></span>
+        <% end %>
+      <% end %>
+      <%= f.text_area :adjustments,
+        class: "t-adjustments form-control form-control-3-4 js-character-limit-input #{'form-control-error' if @booking_request.errors.include?(:adjustments)}",
+        rows: 5, maxlength: 160, data: { maxlength: 160, 'countdown-text' => '(total) nod yn weddill o (limit) nod' }
+      %>
     </div>
 
     <div class="form-group">
       <%= f.label :additional_info, class: 'form-label-bold' do %>
         Gwybodaeth ychwanegol
-        <span class="form-hint">e.e. ar adegau nad ydych ar gael</span>
+        <span class="form-hint">Rhowch unrhyw wybodaeth ychwanegol a allai fod yn ddefnyddiol ar gyfer yr apwyntiad yma</span>
       <% end %>
       <%= f.text_area :additional_info, class: 'form-control form-control-3-4 js-character-limit-input t-additional-info', rows: 5, maxlength: 160 %>
     </div>
@@ -204,13 +225,15 @@
       %>
     </div>
 
-    <div class="form-group t-gdpr-consent" id="telephone_appointment_gdpr_consent" tabindex="-1">
+    <div class="form-group t-gdpr-consent" id="booking_request_gdpr_consent" tabindex="-1">
       <fieldset class="inline">
-        <legend>Caniatâd ymchwil i gwsmeriaid</legend>
+        <legend>Cydsyniad ymchwil cwsmeriaid</legend>
         <span class="form-hint">
-          Mae eich adborth yn ein helpu i wella’r gwasanaeth. A yw’n iawn os ydym yn rhannu eich 
-          manylion cyswllt gyda’n partner ymchwil dibynadwy? Efallai y bydd Ipsos MORI yn cysylltu 
-          â chi i ofyn a hoffech roi adborth a gallwch benderfynu, os ydych chi am gymryd rhan.
+          Mae eich adborth yn ein helpu i wella'r gwasanaeth. A yw'n iawn i ni
+          rannu eich manylion cyswllt â'n partneriaid ymchwil dibynadwy?
+          Gyda'ch cydsyniad, efallai y bydd Pension Wise neu ein partneriaid
+          ymchwil yn cysylltu â chi i ofyn a hoffech chi roi adborth a gallwch
+          chi benderfynu wedyn a ydych chi am gymryd rhan.
         </span>
 
         <div class="multiple-choice">

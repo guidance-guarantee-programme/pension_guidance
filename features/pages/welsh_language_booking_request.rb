@@ -16,7 +16,9 @@ module Pages
     element :month_of_birth, '.t-date-of-birth-month'
     element :year_of_birth, '.t-date-of-birth-year'
     element :defined_contribution_pot_confirmed_yes, '.t-dc-pot-1', visible: false
-    element :accessibility_needs, '.t-accessibility-needs', visible: false
+    element :accessibility_needs_yes, '.t-accessibility-needs-yes'
+    element :accessibility_needs_no, '.t-accessibility-needs-no'
+    element :adjustments, '.t-adjustments'
     element :additional_info, '.t-additional-info'
     element :where_you_heard, '.t-where-you-heard'
     element :gdpr_consent_yes, '.t-gdpr-consent-yes', visible: false

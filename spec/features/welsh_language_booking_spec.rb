@@ -57,7 +57,9 @@ RSpec.feature 'Welsh language bookings' do
     @page.month_of_birth.set('01')
     @page.year_of_birth.set('1960')
     @page.defined_contribution_pot_confirmed_yes.set(true)
-    @page.accessibility_needs.set(true)
+    @page.accessibility_needs_yes.set(true)
+    @page.wait_until_adjustments_visible
+    @page.adjustments.set('These adjustments')
     @page.additional_info.set('Before 1PM.')
     @page.where_you_heard.select('Cyflogwr')
     @page.gdpr_consent_yes.set(true)
