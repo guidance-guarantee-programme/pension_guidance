@@ -33,8 +33,8 @@ def given_a_location_with_limited_availability_and_available_alternatives(&block
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id) # rubocop:disable Metrics/MethodLength
-        two_days   = 2.days.from_now.to_date.to_s(:db)
-        three_days = 3.days.from_now.to_date.to_s(:db)
+        two_days   = 2.days.from_now.to_date.to_fs(:db)
+        three_days = 3.days.from_now.to_date.to_fs(:db)
 
         case location_id
         when 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef', 'c165d25e-f27b-4ce9-b3d3-e7415ebaa93c' # Hackney, Haringey
@@ -56,7 +56,7 @@ def given_a_location_with_limited_availability_but_no_available_alternatives(&bl
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(location_id)
-        two_days = 2.days.from_now.to_date.to_s(:db)
+        two_days = 2.days.from_now.to_date.to_fs(:db)
 
         if location_id == 'ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef' # Hackney
           {
@@ -74,8 +74,8 @@ def given_a_location_without_limited_availability(&block) # rubocop:disable Metr
   with_temporary_environment(block) do
     BookingRequests.api = Class.new do
       def slots(*)
-        two_days   = 2.days.from_now.to_date.to_s(:db)
-        three_days = 3.days.from_now.to_date.to_s(:db)
+        two_days   = 2.days.from_now.to_date.to_fs(:db)
+        three_days = 3.days.from_now.to_date.to_fs(:db)
 
         {
           two_days => ["#{two_days} 09:00:00 UTC", "#{two_days} 13:00:00 UTC"],

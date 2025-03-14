@@ -20,7 +20,7 @@ RSpec.feature 'Customer books a telephone appointment', type: :feature do
     @page = Pages::NewTelephoneAppointment.new
     @page.load(
       locale: :en,
-      query: { rebooked_from: 'BAhJIgsxODE0MzcGOgZFVA==--24b5a0aac3366484c18b1780c4a1ac90886fb015' }
+      query: { rebooked_from: 'BAhJIgsxODE0MzcGOgZFVA==--d930183cb0cb3acb4ff49984f7d2aff9551cf4fa' }
     )
   end
 
