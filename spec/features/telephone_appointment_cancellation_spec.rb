@@ -58,7 +58,7 @@ RSpec.feature 'Telephone appointment cancellations' do
 
     # tee up the rebook from this original appointment
     expect(@page.rebook_link[:href]).to eq(
-      '/en/telephone-appointments/new?rebooked_from=BAhJIgsxODE0MzcGOgZFVA==--24b5a0aac3366484c18b1780c4a1ac90886fb015'
+      '/en/telephone-appointments/new?rebooked_from=BAhJIgsxODE0MzcGOgZFVA==--d930183cb0cb3acb4ff49984f7d2aff9551cf4fa'
     )
   end
 end
