@@ -9,6 +9,7 @@ class CancelsController < ApplicationController
   def create
     if @cancellation.valid?
       if TelephoneAppointmentsApi.new.cancel(@cancellation.to_attributes)
+        puts "****** #{Rails.application.secret_key_base}"
         redirect_to success_cancel_path(rebooked_from: verifier.generate(@cancellation.reference))
       else
         redirect_to failure_cancel_path
