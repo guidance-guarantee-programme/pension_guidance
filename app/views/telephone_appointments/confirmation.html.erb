@@ -7,7 +7,7 @@
 <div class="l-grid-row">
   <div class="l-column-two-thirds">
     <div class="govuk-box-highlight">
-      <h2>Your Pension Wise appointment is confirmed</h2>
+      <h2>Your <% if @due_diligence %>Pension Safeguarding Guidance<% else %>Pension Wise<% end %> appointment is confirmed</h2>
 
       <div class="t-start">
         <p><strong>Date</strong><br><%= l(@booking_date, format: :govuk_date) %></p>

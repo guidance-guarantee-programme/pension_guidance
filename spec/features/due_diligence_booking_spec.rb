@@ -47,6 +47,7 @@ RSpec.feature 'Due diligence bookings' do
   def then_the_booking_is_placed
     @page = Pages::TelephoneAppointmentConfirmation.new
 
+    expect(@page).to have_text('Your Pension Safeguarding Guidance appointment is confirmed')
     expect(@page.booking_reference).to have_text('5')
     expect(@page).to have_text('0800 015 4906')
     expect(@page).to have_text('10:10am (BST)')
