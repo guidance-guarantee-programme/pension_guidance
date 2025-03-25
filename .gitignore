@@ -5,3 +5,9 @@
 npm-debug.log
 wraith/shots
 .byebug_history
+
+/config/credentials/test.key
+
+/config/credentials/staging.key
+
+/config/credentials/production.key
