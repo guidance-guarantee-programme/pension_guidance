@@ -9,6 +9,14 @@ class OutputDocument
     @variant = variant
   end
 
+  def next_steps?
+    false
+  end
+
+  def covering_letter_type
+    ''
+  end
+
   def html
     HTMLRenderer.new(self).render
   end
