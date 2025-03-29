@@ -669,8 +669,7 @@ GEM
       psych (>= 4.0.0)
     recaptcha (5.8.1)
       json
-    redis (4.5.1)
-    redis-rails (0.0.0)
+    redis (4.8.1)
     regexp_parser (2.10.0)
     reline (0.6.0)
       io-console (~> 0.5)
@@ -862,7 +861,6 @@ DEPENDENCIES
   rails_12factor
   recaptcha
   redis
-  redis-rails
   resolv-replace
   rgeo
   rgeo-geojson

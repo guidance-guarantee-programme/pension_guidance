@@ -94,5 +94,4 @@ end
 group :staging, :production do
   gem 'lograge'
   gem 'rails_12factor'
-  gem 'redis-rails', require: false
 end
