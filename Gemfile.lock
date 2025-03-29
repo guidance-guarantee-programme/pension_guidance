@@ -207,7 +207,7 @@ GEM
       localized_each_validator (>= 1.0.1)
     erubi (1.13.1)
     excon (0.90.0)
-    execjs (2.8.1)
+    execjs (2.10.0)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
@@ -779,7 +779,7 @@ GEM
     ttfunk (1.7.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    uglifier (3.0.4)
+    uglifier (4.2.1)
       execjs (>= 0.3.0, < 3)
     uk_postcode (2.1.7)
     unaccent (0.4.0)
@@ -877,7 +877,7 @@ DEPENDENCIES
   sprockets-es6
   sprockets-rails
   timecop
-  uglifier (= 3.0.4)
+  uglifier
   uk_postcode
   utf8-cleaner
   vcr

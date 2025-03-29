@@ -38,7 +38,7 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
   end
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
+  config.assets.js_compressor = Uglifier.new(harmony: true)
   # config.assets.css_compressor = :sass
 
   # We need these both because max(0px) will fail asset compilation otherwise.

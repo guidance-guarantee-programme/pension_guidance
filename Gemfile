@@ -55,7 +55,7 @@ gem 'sassc-rails'
 gem 'sprockets', git: 'https://github.com/rails/sprockets', ref: '3.x'
 gem 'sprockets-es6'
 gem 'sprockets-rails'
-gem 'uglifier', '3.0.4'
+gem 'uglifier'
 gem 'uk_postcode'
 gem 'utf8-cleaner'
 
