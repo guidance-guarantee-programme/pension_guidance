@@ -6,7 +6,7 @@ class CachedGuideDecorator < SimpleDelegator
   def initialize(decorator, cache, expires_in = Rails.application.config.cache_max_age)
     __setobj__(decorator)
     self.cache = cache
-    self.expires_in = expires_in
+    self.expires_in = expires_in.to_i
   end
 
   %i[title content canonical].each do |method|
