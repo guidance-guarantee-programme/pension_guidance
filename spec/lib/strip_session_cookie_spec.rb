@@ -1,4 +1,4 @@
-RSpec.describe Middleware::StripSessionCookie, '#call' do
+RSpec.describe StripSessionCookie, '#call' do
   let(:app) { double }
   let(:response) { [200, { 'Set-Cookie' => 'obai' }, 'body'] }
 

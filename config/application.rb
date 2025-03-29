@@ -8,7 +8,7 @@ require 'sprockets/railtie'
 require 'sprockets/es6'
 
 require_relative '../app/repositories/guide_repository'
-require_relative '../app/middleware/strip_session_cookie'
+require_relative '../app/lib/strip_session_cookie'
 
 Bundler.require(*Rails.groups)
 
@@ -55,7 +55,7 @@ module PensionGuidance
 
     config.middleware.insert_before(
       ActionDispatch::Cookies,
-      Middleware::StripSessionCookie,
+      StripSessionCookie,
       paths: cacheable_paths
     )
 
