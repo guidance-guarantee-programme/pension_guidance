@@ -1,4 +1,4 @@
-RSpec.describe Middleware::StripSessionCookie, '#call' do
+RSpec.describe StripSessionCookie, '#call' do
   let(:app) { double }
   let(:response) { [200, { 'Set-Cookie' => 'obai' }, 'body'] }
 
@@ -8,7 +8,7 @@ RSpec.describe Middleware::StripSessionCookie, '#call' do
     it 'strips cookies from the request and response' do
       env = { 'HTTP_COOKIE' => 'ohai', 'PATH_INFO' => '/en/tax' }
 
-      expect(app).to receive(:call).with('PATH_INFO' => '/en/tax').and_return(response)
+      expect(app).to receive(:call).with({ 'PATH_INFO' => '/en/tax' }).and_return(response)
 
       subject.call(env).tap do |_, headers, _|
         expect(headers).to be_empty

@@ -8,7 +8,7 @@ RSpec.describe CachedGuideDecorator do
     double(id: id, locale: locale, title: title, content: content, slug: '', description: '', label: '', url: '')
   end
 
-  subject(:cached_decorator) { described_class.new(decorator, cache) }
+  subject(:cached_decorator) { described_class.new(decorator, cache, '10') }
 
   describe '#title' do
     it 'uses the correct cache key and expiration' do

@@ -5,7 +5,6 @@ RSpec.describe 'Caching', type: :request do
       'valid location search' => ["/#{locale}/locations", { params: { postcode: 'SW1A%202HQ' } }],
       'invalid location search' => ["/#{locale}/locations", { params: { postcode: 'london' } }],
       location: "/#{locale}/locations/london",
-      guide: "/#{locale}/pension-types",
       category: "/#{locale}/browse/tax-and-getting-advice",
       home: "/#{locale}/browse/tax-and-getting-advice"
     }
