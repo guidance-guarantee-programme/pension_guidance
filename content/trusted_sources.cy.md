@@ -135,7 +135,7 @@ Mae Pension Wise yn ystyried y sefydliadau hyn i fod yn ffynonhellau dibynadwy o
         <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-and-capital-gains-tax-enquiries-for-non-uk-residents">www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-and-capital-gains-tax-enquiries-for-non-uk-residents</a><br>
         Ffôn:<br>
         0800 731 0175 (Canolfan Pensiwn y Dyfodol)<br>
-        0800 731 0193 (Gwasanaeth Olrhain Pensiwn)
+        0800 731 0175 (Gwasanaeth Olrhain Pensiwn)
       </td>
       <td>
         <ul>
