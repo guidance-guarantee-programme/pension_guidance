@@ -124,7 +124,7 @@ Pension Wise consider these organisations to be trusted sources of additional in
         <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-and-capital-gains-tax-enquiries-for-non-uk-residents">www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-and-capital-gains-tax-enquiries-for-non-uk-residents</a><br>
         Phone:<br>
         0800 731 0175 (Future Pension Centre)<br>
-        0800 731 0193 (Pension Tracing Service)
+        0800 731 0175 (Pension Tracing Service)
       </td>
       <td>
         <ul>
