@@ -2,8 +2,6 @@
 
 You can normally take up to 25% of your pot tax free. The rest is invested to give you a taxable income. You decide how much you take out each year and how long you want your money to last. The value of your pot can go up or down depending on your investment choices. Pension providers may describe this option as pension drawdown.
 
-* You get an income from your pot which is taxable. You decide how much to take out and when, and how long you want it to last.
-
 ## Key facts
 
 * You get an income from your pot which is taxable. You decide how much to take out and when, and how long you want it to last.
