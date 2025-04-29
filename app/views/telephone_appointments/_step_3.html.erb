@@ -169,9 +169,8 @@
   <% else %>
   <div class="form-group t-dc-pot-confirmed <%= 'form-group-error' if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>" id="telephone_appointment_dc_pot_confirmed" tabindex="-1">
     <fieldset class="inline" aria-required="true">
-      <legend class="form-label-bold">Pension type</legend>
-      <div>I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</div>
-      <span class="form-hint">If you have both select ‘Yes’</span>
+      <legend class="form-label-bold">Do you have a defined contribution pension?</legend>
+      <span class="form-hint">Pension Wise explains the options for taking a defined contribution pension.</span>
       <% if @telephone_appointment.errors.include?(:dc_pot_confirmed) %>
         <span class="error-message" id="dc_pot_confirmed_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:dc_pot_confirmed].to_sentence.capitalize %></span>
       <% end %>
@@ -193,7 +192,7 @@
     </fieldset>
     <% unless @telephone_appointment.due_diligence? %>
       <p>
-        <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/find-out-your-pension-type" target="_blank">Find out your pension type</a>
+        You can use our tool to <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/find-out-your-pension-type" target="_blank">find out your pension type</a>
       </p>
     <% end %>
     <p><%= render partial: 'components/webchat' %></p>
