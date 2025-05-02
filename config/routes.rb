@@ -31,8 +31,6 @@ Rails.application.routes.draw do
       get 'take-cash-in-chunks/estimate', to: 'calculators/take_cash_in_chunks#show'
       get 'take-whole-pot/estimate', to: 'calculators/take_whole_pot#show'
 
-      post 'questions', to: 'questions#next'
-
       get 'landing', to: 'marketing#landing'
       get 'facebook-landing', to: 'marketing#facebook'
       get 'about', to: 'marketing#about'
