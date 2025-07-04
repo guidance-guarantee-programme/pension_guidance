@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 34368) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"40b5948d6e4a32384a3fc89e46b5e97b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fe60eec4-10ad-4936-a495-8f6c98ed5344
+      X-Runtime:
+      - '0.009454'
+      Content-Length:
+      - '481'
+    body:
+      encoding: UTF-8
+      string: '{"2025-07-08":[],"2025-07-09":[],"2025-07-10":[],"2025-07-11":[],"2025-07-14":[],"2025-07-15":[],"2025-07-16":[],"2025-07-17":[],"2025-07-18":[],"2025-07-21":[],"2025-07-22":[],"2025-07-23":[],"2025-07-24":[],"2025-07-25":[],"2025-07-28":[],"2025-07-29":[],"2025-07-30":[],"2025-07-31":[],"2025-08-01":[],"2025-08-04":[],"2025-08-05":[],"2025-08-06":[],"2025-08-07":[],"2025-08-08":[],"2025-08-11":[],"2025-08-12":[],"2025-08-13":[],"2025-08-14":[],"2025-08-15":[],"2025-08-18":[]}'
+  recorded_at: Mon, 30 Jun 2025 06:17:42 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/appointments/999?date_of_birth=1980-01-01&reference=999
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 34368) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _telephone_appointment_planner_session=azNVemFTeElYYmJsdnRNZER3cmNndmdUeWpGc1dHOVZoNmh4UGV2MVQzSEZFZyt1TDdoS3dwL2pIbUtMUDFlM2NyTGN3M2tUaitiY1VUMUp1eCsxZ3pCQjhMREJjUmZvcXo5a2I4WldYNFUvNGp5eGhuTzFUQ1JjKzdJdkNBMFo3UlVya2o2NEcwdUxaWHNWc0ZYcDhNV2hFckVMZmxBQ0RuWHhReG9VeWhBaWwyWHc2dXNBVzNXc1oyMjhzMlNXLS1OZWRqT1dKSEdJbm1SanlFUHdleGNRPT0%3D--c21ae67075c3c97436d38ecf641a2d0ae7b9ee70;
+        path=/; HttpOnly
+      X-Request-Id:
+      - c2c2be05-7b60-445d-887a-fb308db3865d
+      X-Runtime:
+      - '0.008671'
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 30 Jun 2025 06:17:42 GMT
+recorded_with: VCR 6.2.0
