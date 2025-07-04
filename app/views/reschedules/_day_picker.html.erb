@@ -1,0 +1,92 @@
+<div class="l-column-half" data-slot-picker>
+  <%= form_with model: @reschedule, url: reschedule_path, html: { class: 'js-day-picker-form' } do |f| %>
+    <%= render 'hidden_fields', f: f %>
+    <%= f.hidden_field(:step, value: 2) %>
+    <h5 class="slot-picker-header">Choose a day</h5>
+    <div>
+      <% @months.each do |month, days| %>
+        <%
+          month_index = @months.keys.index(month)
+          prev_month_index = month_index - 1
+          next_month_index = month_index + 1
+          prev_month = prev_month_index != -1 ? @months.keys[prev_month_index] : nil
+          next_month = next_month_index != @months.keys.length ? @months.keys[next_month_index] : nil
+        %>
+
+        <div class="slot-picker-month js-slot-picker-month">
+          <div class="slot-picker-container">
+            <div class="slot-picker-nav">
+              <div class="slot-picker-nav__item slot-picker-nav__item--prev">
+                <% if prev_month %>
+                  <button class="js-slot-picker-prev-month hidden slot-picker-nav-button slot-picker-nav-button--prev">
+                    <span class="arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 15">
+                        <path fill="#C82A87" d="M6 14.5l2-2-3.9-3.9c-.6-.6-.6-1.5 0-2.1l3.9-4-2-2-4.2 4.2C.2 6.3.2 8.8 1.8 10.4L6 14.5z"/>
+                      </svg>
+                    </span>
+                    <span class="visually-hidden"><%= prev_month.strftime('%B') %></span>
+                    <span class="slot-picker-nav-button__long-text" aria-hidden="true"><%= prev_month.strftime('%B') %></span>
+                    <span class="slot-picker-nav-button__short-text" aria-hidden="true"><%= prev_month.strftime('%b') %></span>
+                  </button>
+                <% end %>
+              </div>
+              <h3 class="slot-picker-nav__item">
+                <%= month.strftime('%B') %>
+              </h3>
+              <div class="slot-picker-nav__item slot-picker-nav__item--next">
+                <% if next_month %>
+                  <button class="js-slot-picker-next-month hidden slot-picker-nav-button slot-picker-nav-button--next">
+                    <span class="visually-hidden"><%= next_month.strftime('%B') %></span>
+                    <span class="slot-picker-nav-button__long-text" aria-hidden="true"><%= next_month.strftime('%B') %></span>
+                    <span class="slot-picker-nav-button__short-text" aria-hidden="true"><%= next_month.strftime('%b') %></span>
+                    <span class="arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 15">
+                        <path fill="#C82A87" d="M2 .5L9e-8 2.5 3.9 6.4c.6.6.6 1.5 0 2.1L5.2e-7 12.5 2 14.5l4.2-4.2c1.6-1.6 1.6-4.1 0-5.7L2 .5z"/>
+                      </svg>
+                    </span>
+                  </button>
+                <% end %>
+              </div>
+            </div>
+            <ul aria-hidden="true" class="slot-picker-days">
+              <li class="slot-picker-days__day">Mon</li>
+              <li class="slot-picker-days__day">Tue</li>
+              <li class="slot-picker-days__day">Wed</li>
+              <li class="slot-picker-days__day">Thu</li>
+              <li class="slot-picker-days__day">Fri</li>
+              <li class="slot-picker-days__day">Sat</li>
+              <li class="slot-picker-days__day">Sun</li>
+            </ul>
+            <ul class="slot-picker-calendar">
+              <li class="slot-picker-calendar__day slot-picker-calendar__day--<%= month.strftime('%A').downcase %>" aria-hidden="true"></li>
+              <% month.upto(month.change(day: -1)) do |day| %>
+                <%
+                  selected = day == @reschedule.selected_date
+                  disabled = !days.include?(day) || selected
+                  busy = !days.include?(day)
+                  today = day == Date.today
+
+                  classes = []
+                  classes << 'slot-picker-calendar__action--selected' if selected
+                  classes << 'slot-picker-calendar__action--busy' if busy
+                  classes << 'slot-picker-calendar__action--today' if today
+                  classes = classes.join(' ')
+                %>
+                <li class="slot-picker-calendar__day">
+                  <%= button_tag '', value: day, name: 'telephone_reschedule[selected_date]', class: "js-day-button slot-picker-calendar__action #{classes}", disabled: disabled do %>
+                    <span class="visually-hidden"><%= l(day, format: :govuk_date) %></span>
+                    <span class="slot-picker-calendar__day-text" aria-hidden="true"><%= day.day %></span>
+                  <% end %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <ul class="slot-picker-key" aria-hidden="true">
+      <li class="slot-picker-key__item slot-picker-key__item--available">Available</li>
+      <li class="slot-picker-key__item slot-picker-key__item--unavailable">Unavailable</li>
+    </ul>
+  <% end %>
+</div>

@@ -1,0 +1,8 @@
+<%= render 'hidden_fields', f: f %>
+
+<% if @slot_assignment_failed %>
+  <div class="error-summary t-assignment-failed l-column-half">
+    <h2 class="heading-medium error-summary-heading">There was a problem rescheduling your appointment</h2>
+    <p>There was a problem assigning you an appointment time, please choose again.</p>
+  </div>
+<% end %>

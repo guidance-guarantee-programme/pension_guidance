@@ -94,6 +94,14 @@ Rails.application.routes.draw do
 
       resources :telephone_appointments, only: %i[new create], path: 'telephone-appointments' do
         collection do
+          resource :reschedule, only: %i[new create] do
+            collection do
+              get :ineligible
+            end
+          end
+        end
+
+        collection do
           resource :cancel, only: %i[new create] do
             get :success
             get :failure

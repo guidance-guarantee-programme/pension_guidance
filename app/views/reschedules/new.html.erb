@@ -1,0 +1,126 @@
+<div class="l-column-full">
+  <% if @reschedule.errors.any? %>
+    <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        Unable to submit the form
+      </h2>
+
+      <p>Check the following:</p>
+
+      <ul class="error-summary-list">
+        <% @reschedule.errors.each do |error| %>
+          <li><%= link_to "#{TelephoneReschedule.human_attribute_name error.attribute} – #{error.message}", "#telephone_reschedule_#{error.attribute}" %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <h2 class="slot-picker-header">Reschedule your Pension Wise appointment</h2>
+  <p>Enter your booking reference and date of birth to reschedule your appointment.</p>
+
+  <%= form_for @reschedule, url: reschedule_path do |f| %>
+    <div class="form-group <%= 'form-group-error' if @reschedule.errors.include?(:reference) %>">
+      <%= f.label :reference, class: 'form-label-bold' do %>
+        Your booking reference
+        <span class="form-hint">You’ll find this in your confirmation email</span>
+      <% end %>
+      <% if @reschedule.errors.include?(:reference) %>
+        <span class="error-message" id="reference_error"><span class="visually-hidden">Error: </span><%= @reschedule.errors[:reference].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :reference, aria: { required: true, describedby: 'reference_error' }, class: "t-booking-reference form-control #{'form-control-error' if @reschedule.errors.include?(:reference)}" %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @reschedule.errors.include?(:date_of_birth) %>">
+      <fieldset>
+        <legend>
+          <span class="form-label-bold">
+            Date of birth
+          </span>
+        </legend>
+        <div class="form-date" id="reschedule_date_of_birth" tabindex="-1">
+          <div class="form-group form-group-day">
+            <label aria-label="Date of birth, day e.g. 25" class="form-label" for="reschedule_date_of_birth_day">
+              <span class="visually-hidden">Date of birth, day e.g. 25</span>
+              <span aria-hidden="true">Day</span>
+            </label>
+            <%=
+              f.number_field(
+                'date_of_birth_day',
+                id: "#{f.object_name}_date_of_birth_day",
+                use_label: false,
+                value: f.object.date_of_birth.try(:day),
+                placeholder: 'DD',
+                class: "f-dob__input form-control js-dob-day t-date-of-birth-day #{'form-control-error' if @reschedule.errors.include?(:date_of_birth)}",
+                pattern: '[0-9]*',
+                min: 1,
+                max: 31,
+                aria: { required: true, describedby: 'date_of_birth_error' }
+              )
+            %>
+          </div>
+          <div class="form-group form-group-month">
+            <label aria-label="Date of birth, month e.g. 12" class="form-label" for="<%= f.object_name %>_date_of_birth_month">
+              <span class="visually-hidden">Date of birth, month e.g. 12</span>
+              <span aria-hidden="true">Month</span>
+            </label>
+            <%=
+              f.number_field(
+                'date_of_birth_month',
+                id: "#{f.object_name}_date_of_birth_month",
+                use_label: false,
+                value: f.object.date_of_birth.try(:month),
+                placeholder: 'MM',
+                class: "form-dob__input form-control js-dob-month t-date-of-birth-month #{'form-control-error' if @reschedule.errors.include?(:date_of_birth)}",
+                pattern: '[0-9]*',
+                min: 1,
+                max: 12,
+                aria: { required: true, describedby: 'date_of_birth_error' }
+              )
+            %>
+          </div>
+          <div class="form-group form-group-year">
+            <label aria-label="Date of birth, year e.g. 1950" class="form-label" for="<%= f.object_name %>_date_of_birth_year">
+              <span class="visually-hidden">Date of birth, year e.g. 1950</span>
+              <span aria-hidden="true">Year</span>
+            </label>
+            <%=
+              f.number_field(
+                'date_of_birth_year',
+                id: "#{f.object_name}_date_of_birth_year",
+                use_label: false,
+                value: f.object.date_of_birth.try(:year),
+                placeholder: 'YYYY',
+                class: "form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year #{'form-control-error' if @reschedule.errors.include?(:date_of_birth)}",
+                pattern: '[0-9]*',
+                min: 100.years.ago.year,
+                max: Date.today.year,
+                aria: { required: true, describedby: 'date_of_birth_error' }
+              )
+            %>
+          </div>
+        </div>
+        <% if @reschedule.errors.include?(:date_of_birth) %>
+          <span class="error-message" id="date_of_birth_error"><span class="visually-hidden">Error: </span><%= @reschedule.errors[:date_of_birth].to_sentence.capitalize %></span>
+        <% end %>
+      </fieldset>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @reschedule.errors.include?(:reason) %>">
+      <%= f.label :reason, class: 'form-label-bold' do %>
+        Why are you rescheduling your Pension Wise appointment?
+        <% if @reschedule.errors.include?(:reason) %>
+          <span class="error-message" id="error"><span class="visually-hidden">Error: </span><%= @reschedule.errors[:reason].to_sentence.capitalize %></span>
+        <% end %>
+      <% end %>
+      <%= f.select :reason,
+            options_for_select(TelephoneReschedule::RESCHEDULING_REASONS.invert.to_a, @reschedule.reason),
+            { include_blank: true},
+            { aria: { describedby: 'error' }, class: "t-reason form-control #{'form-control-error' if @reschedule.errors.include?(:reason)}" }
+      %>
+    </div>
+
+    <div class="form-group">
+      <%= f.submit 'Confirm details', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
+    </div>
+  <% end %>
+</div>

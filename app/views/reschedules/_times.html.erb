@@ -1,0 +1,24 @@
+<h5 class="slot-picker-header js-slot-picker-header">
+  <% if times.present? %>
+    Choose a time on <%= l(@reschedule.selected_date, format: :govuk_date) %>
+  <% else %>
+    No times available on <%= l(@reschedule.selected_date, format: :govuk_date) %>
+  <% end %>
+</h5>
+<% if times.present? %>
+  <ol class="slot-picker-times js-slot-picker-times" tabindex="-1" id="reschedule_times">
+    <% times.each do |time| %>
+      <li class="slot-picker-times__time">
+        <input class="slot-picker-times__selection js-time-button" name="telephone_reschedule[start_at]" type="radio" value="<%= time %>" id="<%= time.to_i %>" />
+        <label class="slot-picker-times__time-label" for="<%= time.to_i %>" >
+          <%= l(time, format: :govuk_time) %>
+        </label>
+      </li>
+    <% end %>
+  </ol>
+
+  <input type="submit" value="Continue" class="button button--primary t-continue" name="continue" />
+<% else %>
+  <p class="t-choose-other-time-message">Sorry there are no times available on this day. Please choose another day.</p>
+<% end %>
+<input type="hidden" name="telephone_reschedule[selected_date]" value="<%= @reschedule.selected_date %>" />

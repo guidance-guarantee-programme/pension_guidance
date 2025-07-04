@@ -14,6 +14,10 @@
   &.failure {
     border: 4px solid $error-red;
   }
+
+  &.callout {
+    border: 4px solid $color-grey;
+  }
 }
 
 .govuk-box-highlight__header {
