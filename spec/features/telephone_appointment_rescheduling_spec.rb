@@ -1,6 +1,7 @@
 require_relative '../../features/pages/telephone_appointment_confirmation'
 require_relative '../../features/pages/telephone_appointment_rescheduling'
 require_relative '../../features/pages/telephone_appointment_rescheduling_ineligible'
+require_relative '../../features/pages/telephone_appointment_rescheduling_failure'
 
 # rubocop:disable Metrics/AbcSize
 RSpec.feature 'Telephone appointment rescheduling' do
@@ -22,6 +23,38 @@ RSpec.feature 'Telephone appointment rescheduling' do
     when_the_customer_visits_the_rescheduling_page
     and_completes_the_fields_with_unmatchable_entries
     then_they_are_shown_the_ineligible_result
+  end
+
+  scenario 'Rescheduling fails due to slot being taken', js: true do
+    stub_rescheduling_api_to_fail do
+      when_the_customer_visits_the_rescheduling_page
+      and_completes_the_necessary_fields
+      and_selects_a_new_date_and_time
+      and_agrees_to_reschedule_their_appointment
+      then_they_see_the_failure_result
+    end
+  end
+
+  def stub_rescheduling_api_to_fail
+    @appointment_api_fake = double(:telephone_appointment_api)
+
+    allow(TelephoneAppointmentsApi).to receive(:new).and_return(@appointment_api_fake)
+
+    allow(@appointment_api_fake).to receive(:find).and_return({ 'start' => '2025-07-07 15:50' }.as_json)
+
+    allow(@appointment_api_fake).to receive(:slots).and_return(
+      JSON.parse(File.read('features/fixtures/rescheduling_bookable_slots.json'))
+    )
+
+    allow(@appointment_api_fake).to receive(:reschedule).and_return(false)
+
+    yield
+  end
+
+  def then_they_see_the_failure_result
+    @page = Pages::TelephoneAppointmentReschedulingFailure.new
+    expect(@page).to be_displayed
+    expect(@page).to have_failure_notice
   end
 
   def and_completes_the_fields_with_unmatchable_entries

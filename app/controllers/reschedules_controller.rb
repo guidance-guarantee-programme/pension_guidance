@@ -40,8 +40,7 @@ class ReschedulesController < ApplicationController
         schedule_type: PERMITTED_SCHEDULE_TYPE
       )
     else
-      @reschedule.reset!
-      render :new
+      redirect_to failure_reschedule_path
     end
   end
 

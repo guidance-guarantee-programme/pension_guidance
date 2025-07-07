@@ -97,6 +97,7 @@ Rails.application.routes.draw do
           resource :reschedule, only: %i[new create] do
             collection do
               get :ineligible
+              get :failure
             end
           end
         end
