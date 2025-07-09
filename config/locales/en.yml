@@ -342,7 +342,7 @@ en:
         reason: Why are you cancelling your Pension Wise appointment?
       telephone_reschedule:
         reference: Your booking reference
-        reason: Why are you rescheduling your Pension Wise appointment?
+        reason: Why are you changing your Pension Wise appointment?
       telephone_appointment:
         dc_pot_confirmed: Defined contribution pension
         accept_terms_and_conditions: Terms and conditions

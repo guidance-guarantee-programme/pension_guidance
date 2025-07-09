@@ -22,10 +22,11 @@
     <div class="l-grid-row">
       <div class="l-column-full">
         <div class="govuk-box-highlight callout t-current-appointment">
-          <h2>Your current appointment</h2>
+          <h2>Your current Pension Wise appointment</h2>
           <p><strong>Booking reference: </strong><span class="t-booking-reference"><%= @reschedule.reference %></span></p>
           <p><strong>Date: </strong><span class="t-date"><%= l(@reschedule.current_appointment_date, format: :govuk_date) %></span></p>
           <p><strong>Time: </strong><span class="t-time"><%= l(@reschedule.current_appointment_date, format: :govuk_time) %> (<%= current_timezone(@reschedule.current_appointment_date) %>)</span></p>
+          <p>To change your appointment, select a new day and time.</p>
         </div>
       </div>
     </div>

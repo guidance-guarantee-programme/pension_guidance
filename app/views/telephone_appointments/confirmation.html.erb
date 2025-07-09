@@ -16,13 +16,20 @@
       </div>
     </div>
 
-    <p>We’ll send your booking confirmation, including <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/preparing-for-your-appointment">how to prepare for your appointment</a>.</p>
+    <p>We’ll also send you a booking confirmation, including <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/preparing-for-your-appointment">how to prepare for your appointment</a>.</p>
     <p>Remember, we cannot speak to you if you’re driving – even if you use a hands-free device.</p>
 
-    <h3>How to cancel your appointment</h3>
-    <p>You can <a href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/cancel-pension-wise-appointment" target="_blank">cancel your Pension Wise appointment online</a> or by replying to the booking confirmation.</p>
-
-    <h3>How to change your appointment</h3>
-    <p>To change your Pension Wise appointment or any information you’ve given us, call <% if @due_diligence %><strong>0800 015 4906</strong><% else %><strong>0800 138 3944</strong> (<strong>+44 20 3733 3495</strong> if you’re outside the UK)<% end %>.</p>
+    <% if @due_diligence %>
+      <h3>How to change your appointment</h3>
+      <p>To change your Pension Safeguarding Guidance appointment or any information you’ve given us, call <strong>0800 015 4906</strong>.</p>
+    <% else %>
+      <h3>How to change or cancel your appointment</h3>
+      <p>You can:</p>
+      <ul>
+        <li><a href="https://www.moneyhelper.org.uk/change-pw" target="_blank">change the date and time of your appointment online</a></li>
+        <li><a href="https://www.moneyhelper.org.uk/cancel-pension-wise-phone" target="_blank">cancel your appointment online</a></li>
+      </ul>
+      <p>You can also reply to the booking confirmation you’ll receive.</p>
+    <% end %>
   </div>
 </div>
