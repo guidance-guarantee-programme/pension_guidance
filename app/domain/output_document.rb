@@ -13,6 +13,10 @@ class OutputDocument
     false
   end
 
+  def welsh?
+    false
+  end
+
   def covering_letter_type
     ''
   end

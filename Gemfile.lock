@@ -20,10 +20,10 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: aa4999603c061ca4cf3d3460aa227602acc6f81e
-  ref: aa49996
+  revision: 2e1bed589ead268228d0704e075e003b629adcf2
+  ref: 2e1bed5
   specs:
-    output-templates (7.0.0)
+    output-templates (7.2.0)
       actionview
       sassc
 
