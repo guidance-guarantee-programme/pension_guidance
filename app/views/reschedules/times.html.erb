@@ -1,0 +1,35 @@
+<div class="l-column-full">
+  <% if @reschedule.errors.any? || (params[:continue] && !slot_selected?) %>
+    <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        Unable to submit the form
+      </h2>
+
+      <p>Check the following:</p>
+
+      <ul class="error-summary-list">
+        <% @reschedule.errors.each do |error| %>
+          <li><%= link_to "#{TelephoneReschedule.human_attribute_name error.attribute} – #{error.message}", "#reschedule_#{error.attribute}" %></li>
+        <% end %>
+        <% unless slot_selected? %>
+          <li><%= link_to 'Select a time', "#reschedule_times" %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if @reschedule.step == 1 || @reschedule.step == 2 %>
+    <%= render 'day_picker' %>
+  <% end %>
+
+  <%= form_for times_reschedule_path, html: { id: "form_reschedule_step_#{@reschedule.step}" } do |f| %>
+    <%= f.hidden_field(:step, id: 'hidden_reschedule_step') %>
+    <%= render "step_#{@reschedule.step}", f: f %>
+
+    <% if @reschedule.step == 1 %>
+      <div class="l-column-half l-column-half--right" data-slot-picker-single-time>
+        <%= render 'times_js' %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

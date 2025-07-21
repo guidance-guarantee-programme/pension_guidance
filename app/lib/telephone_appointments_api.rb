@@ -1,6 +1,20 @@
 class TelephoneAppointmentsApi
   SLOTS_PATH = '/api/v1/bookable_slots'.freeze
 
+  def reschedule(attributes)
+    response = connection.post("/api/v1/appointments/#{attributes[:reference]}/reschedule", attributes)
+    response.success?
+  rescue HTTPConnection::UnprocessableEntity
+    false
+  end
+
+  def find(attributes)
+    response = connection.get("/api/v1/appointments/#{attributes[:reference]}", attributes)
+    response.body
+  rescue HTTPConnection::ResourceNotFound
+    false
+  end
+
   def cancel(attributes)
     response = connection.post("/api/v1/appointments/#{attributes[:reference]}/cancel", attributes)
     response.success?

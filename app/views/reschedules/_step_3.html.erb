@@ -1,0 +1,12 @@
+<%= render 'hidden_fields', f: f %>
+<div class="l-column-full">
+  <div class="govuk-box-highlight callout t-new-appointment">
+    <h2>Confirm your new Pension Wise appointment</h2>
+    <p><strong>Booking reference: </strong><span class="t-booking-reference"><%= @reschedule.reference %></span></p>
+    <p><strong>Date: </strong><span class="t-date"><%= l(@reschedule.start_at, format: :govuk_date) %></span></p>
+    <p><strong>Time: </strong><span class="t-time"><%= l(@reschedule.start_at, format: :govuk_time) %> (<%= current_timezone(@reschedule.start_at) %>)</span></p>
+
+    <%= f.submit 'Confirm appointment', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
+    <%= link_to('Change date or time', 'javascript:history.go(-1);', class: 'button button--secondary t-change-date-time') %>
+  </div>
+</div>

@@ -1,0 +1,297 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 28887) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"fdd60e330840275da2785eb9da718f6a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f7c94591-746b-41a0-80f8-cddc3d568ab4
+      X-Runtime:
+      - '0.007524'
+      Content-Length:
+      - '497'
+    body:
+      encoding: UTF-8
+      string: '{"2025-07-07":[],"2025-07-08":[],"2025-07-09":[],"2025-07-10":[],"2025-07-11":[],"2025-07-14":[],"2025-07-15":[],"2025-07-16":[],"2025-07-17":[],"2025-07-18":[],"2025-07-21":[],"2025-07-22":[],"2025-07-23":[],"2025-07-24":[],"2025-07-25":[],"2025-07-28":[],"2025-07-29":[],"2025-07-30":[],"2025-07-31":[],"2025-08-01":[],"2025-08-04":[],"2025-08-05":[],"2025-08-06":[],"2025-08-07":[],"2025-08-08":[],"2025-08-11":[],"2025-08-12":[],"2025-08-13":[],"2025-08-14":[],"2025-08-15":[],"2025-08-18":[]}'
+  recorded_at: Sun, 29 Jun 2025 20:22:37 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/appointments/5?date_of_birth=1980-01-01&reference=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 28887) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"831e0b8fb305e0c4130cf509b3587041"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _telephone_appointment_planner_session=UGRHbWRBNnNMc3NVVGFUWmlZb0tkaEdaRXVnbWR6akxGNkpPOEpGOE91WVJ4czdzN1VPZkV4SExucG0vN3FGWEtaZWE4c3Z0YWowWC9WVlV1R01PNG9xUXhCc1lVYTM4anB4cGI0YzRFY1d0eCtGdFpCdlY4b0h2R0VTd25lSlppSTBKMTdzdktPTm03elNRS042SGMxMzRwc3VBUHg2SVF5RkpnUXdGTGdqb0tBTVF2WTVIRWxUdnRaQVFScWlJLS05Rk1XSklibnMxa2ZHNXNQaDRNSUlRPT0%3D--7dc9401739a3cdcd2599c5fae414ce6c458749ce;
+        path=/; HttpOnly
+      X-Request-Id:
+      - a2b84591-f231-40e4-87c2-3dfafebbc2f8
+      X-Runtime:
+      - '0.005895'
+      Content-Length:
+      - '245'
+    body:
+      encoding: UTF-8
+      string: '{"id":5,"start":"2025-07-07T15:50:00.000Z","end":"2025-07-07T17:00:00.000Z","title":"Ben
+        Lovell","memorable_word":"Cheese","phone":"07715930458","url":"/appointments/5/edit","status":"pending","cancelled":false,"resourceId":3,"pensionWise":true}'
+  recorded_at: Sun, 29 Jun 2025 20:22:37 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2025-07-07%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 28887) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"2e431cd7b0b113e777093ab61dbb56bb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f413df50-10c2-473e-8d08-2551062df94f
+      X-Runtime:
+      - '0.006632'
+      Content-Length:
+      - '104'
+    body:
+      encoding: UTF-8
+      string: '{"2025-07-07":["2025-07-07T09:10:00","2025-07-07T10:40:00","2025-07-07T12:10:00","2025-07-07T14:20:00"]}'
+  recorded_at: Sun, 29 Jun 2025 20:22:37 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2025-07-07%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 28887) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"2e431cd7b0b113e777093ab61dbb56bb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3e7bcb6b-fd5a-416b-807f-e27fbb16511c
+      X-Runtime:
+      - '0.004914'
+      Content-Length:
+      - '104'
+    body:
+      encoding: UTF-8
+      string: '{"2025-07-07":["2025-07-07T09:10:00","2025-07-07T10:40:00","2025-07-07T12:10:00","2025-07-07T14:20:00"]}'
+  recorded_at: Sun, 29 Jun 2025 20:22:38 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v1/bookable_slots?day=2025-07-07%2000:00:00%20UTC&schedule_type=pension_wise
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 28887) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"2e431cd7b0b113e777093ab61dbb56bb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aac46356-29be-454b-a51a-fd45655a1dc7
+      X-Runtime:
+      - '0.007205'
+      Content-Length:
+      - '104'
+    body:
+      encoding: UTF-8
+      string: '{"2025-07-07":["2025-07-07T09:10:00","2025-07-07T10:40:00","2025-07-07T12:10:00","2025-07-07T14:20:00"]}'
+  recorded_at: Sun, 29 Jun 2025 20:22:38 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/appointments/5/reschedule
+    body:
+      encoding: UTF-8
+      string: '{"reference":"5","date_of_birth":"1980-01-01","reason":"5","start_at":"2025-07-07
+        09:10:00 UTC"}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 28887) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _telephone_appointment_planner_session=SncwcHJ2bzRkZmhCOEtYSmpzNURpeFpBTGJLY0oxUVliaUtqUnlFNE9Denk5eFRuN2c4a0N1R3hva0czcC85WGkzNzZBYUFCNjc4Kzg4NE5sazlzbWNrOVNsVEZQNTVBbDlPTnZNMW85T0xLNmYzVFozaTdIRXkrWVVYUit1bm1Oait6eFIyRkk5YVp5T2g3Z3FjZ1F4bnQ5TlNkZERzK1pTQkQzKzkvNGVqT0JOdGZON2ZsM3JjQWhrQW5ZYkJ0LS0ydVhGTUlFb3VKUkRZSmdYN3NhMnpRPT0%3D--fa1b69fe5072e031598da40042d7802b3f63deb9;
+        path=/; HttpOnly
+      X-Request-Id:
+      - e59523c7-c545-4c38-b467-3b6e091d8942
+      X-Runtime:
+      - '0.033660'
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Sun, 29 Jun 2025 20:22:38 GMT
+recorded_with: VCR 6.2.0
