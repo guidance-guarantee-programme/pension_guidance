@@ -40,7 +40,7 @@ RSpec.feature 'Telephone appointment rescheduling' do
 
     allow(TelephoneAppointmentsApi).to receive(:new).and_return(@appointment_api_fake)
 
-    allow(@appointment_api_fake).to receive(:find).and_return({ 'start' => '2025-07-07 15:50' }.as_json)
+    allow(@appointment_api_fake).to receive(:find).and_return({ 'start' => '2025-09-11 09:30' }.as_json)
 
     allow(@appointment_api_fake).to receive(:slots).and_return(
       JSON.parse(File.read('features/fixtures/rescheduling_bookable_slots.json'))
@@ -82,17 +82,17 @@ RSpec.feature 'Telephone appointment rescheduling' do
 
   def and_selects_a_new_date_and_time
     expect(@page.current_appointment.booking_reference).to have_text('5')
-    expect(@page.current_appointment.date).to have_text('7 July 2025')
-    expect(@page.current_appointment.time).to have_text('3:50pm (BST)')
+    expect(@page.current_appointment.date).to have_text('11 September 2025')
+    expect(@page.current_appointment.time).to have_text('9:30am (BST)')
 
-    @page.choose_date('2025-07-07')
+    @page.choose_date('2025-09-12')
     @page.choose_time('9:10am')
     @page.continue.click
   end
 
   def and_agrees_to_reschedule_their_appointment
     expect(@page.new_appointment.booking_reference).to have_text('5')
-    expect(@page.new_appointment.date).to have_text('7 July 2025')
+    expect(@page.new_appointment.date).to have_text('12 September 2025')
     expect(@page.new_appointment.time).to have_text('9:10am (BST)')
 
     @page.new_appointment.submit.click
@@ -101,8 +101,9 @@ RSpec.feature 'Telephone appointment rescheduling' do
   def then_they_see_the_confirmation
     @page = Pages::TelephoneAppointmentConfirmation.new
     expect(@page.booking_reference).to have_text('5')
-    expect(@page.start).to have_text('7 July 2025')
-    expect(@page.start).to have_text('9:10am')
+    expect(@page.start).to have_text('12 September 2025')
+    expect(@page.start).to have_text('9:10am (BST)')
+    expect(@page).to have_no_extended_duration
   end
 
   def when_the_customer_visits_the_rescheduling_page

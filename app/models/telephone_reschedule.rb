@@ -25,6 +25,10 @@ class TelephoneReschedule
     TelephoneAppointmentsApi.new.reschedule(to_attributes)
   end
 
+  def extended_duration?
+    appointment['extendedDuration']
+  end
+
   def appointment
     @appointment ||= TelephoneAppointmentsApi.new.find(
       reference: reference,

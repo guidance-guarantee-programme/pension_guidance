@@ -35,6 +35,7 @@ class ReschedulesController < ApplicationController
   def create_step_3
     if @reschedule.reschedule
       redirect_to confirmation_telephone_appointments_path(
+        extended_duration: @reschedule.extended_duration?,
         booking_reference: @reschedule.reference,
         booking_date: @reschedule.start_at,
         schedule_type: PERMITTED_SCHEDULE_TYPE

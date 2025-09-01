@@ -17,6 +17,9 @@
     </div>
 
     <p>We’ll also send you a booking confirmation, including <a target="_blank" href="https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/preparing-for-your-appointment">how to prepare for your appointment</a>.</p>
+    <% if @extended_duration %>
+      <p class="t-extended-duration">As you’re rescheduling an appointment that lasts over one hour, we need to confirm we have pension specialists available. We’ll be in touch if we need to adjust the start time.</p>
+    <% end %>
     <p>Remember, we cannot speak to you if you’re driving – even if you use a hands-free device.</p>
 
     <% if @due_diligence %>
