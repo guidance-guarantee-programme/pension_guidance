@@ -84,7 +84,7 @@
             <span class="error-message"><%= @summary.errors[:name].first %></span>
           <% end %>
         <% end %>
-        <%= f.text_field :name, class: "t-name form-control #{'form-control-error' if @summary.errors.include?(:name)}" %>
+        <%= f.text_field :name, class: "obfuscate t-name form-control #{'form-control-error' if @summary.errors.include?(:name)}" %>
       </div>
 
       <div class="form-group <%= 'form-group-error' if @summary.errors.include?(:email) %>">
@@ -94,7 +94,7 @@
             <span class="error-message"><%= @summary.errors[:email].first %></span>
           <% end %>
         <% end %>
-        <%= f.text_field :email, class: "t-email form-control #{'form-control-error' if @summary.errors.include?(:email)}" %>
+        <%= f.text_field :email, class: "obfuscate t-email form-control #{'form-control-error' if @summary.errors.include?(:email)}" %>
       </div>
     </div>
 
