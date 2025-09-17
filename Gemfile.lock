@@ -678,7 +678,7 @@ GEM
     resolv (0.6.2)
     resolv-replace (0.1.1)
       resolv
-    rexml (3.4.1)
+    rexml (3.4.2)
     rgeo (2.3.1)
     rgeo-geojson (2.1.1)
       rgeo (>= 1.0.0)
