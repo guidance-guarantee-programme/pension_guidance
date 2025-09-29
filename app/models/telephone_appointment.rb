@@ -174,9 +174,13 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   end
 
   def validate_phone
-    unless phone.present? && /\A([\d+\-\s+()]+)\z/ === phone # rubocop:disable Style/GuardClause, Style/CaseEquality
+    unless phone.present? && /\A([\d+\-\s+()]+)\z/ === phone && phone_length_valid? # rubocop:disable Style/GuardClause, Style/CaseEquality
       errors.add(:phone, :invalid)
     end
+  end
+
+  def phone_length_valid?
+    phone.gsub(/[^\d]/, '').length > 6
   end
 
   def age(at)
