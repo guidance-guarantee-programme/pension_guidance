@@ -201,7 +201,7 @@ RSpec.describe TelephoneAppointment, type: :model do
         expect(subject).to be_valid
       end
 
-      ['ben@example.com', '      ', '02089292992e'].each do |number|
+      ['ben@example.com', '      ', '02089292992e', '0044', '+00+12+34'].each do |number|
         subject.phone = number
         expect(subject).to be_invalid
       end
