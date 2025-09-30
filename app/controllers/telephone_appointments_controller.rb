@@ -22,6 +22,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
     @booking_reference = params[:booking_reference]
     @booking_date      = Time.zone.parse(params[:booking_date])
     @due_diligence     = schedule_type == 'due_diligence'
+    @extended_duration = params[:extended_duration] == 'true'
   end
 
   def ineligible

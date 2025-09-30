@@ -17,6 +17,8 @@
         this.$prefix = 'nudge_appointment';
       } else if ($form.find('input[name^="booking_request"]').length) {
         this.$prefix = 'booking_request';
+      } else if ($form.find('input[name="telephone_reschedule[step]"]').length) {
+        this.$prefix = 'telephone_reschedule';
       } else {
         this.$prefix = 'booking';
       }

@@ -1,0 +1,47 @@
+<div class="l-column-full">
+  <% if @reschedule.errors.any? || (params[:continue] && !slot_selected?) %>
+    <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        Unable to submit the form
+      </h2>
+
+      <p>Check the following:</p>
+
+      <ul class="error-summary-list">
+        <% @reschedule.errors.each do |error| %>
+          <li><%= link_to "#{TelephoneReschedule.human_attribute_name error.attribute} – #{error.message}", "#reschedule_#{error.attribute}" %></li>
+        <% end %>
+        <% unless slot_selected? %>
+          <li><%= link_to 'Select a time', "#reschedule_times" %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if @reschedule.step == 1 || @reschedule.step == 2 %>
+    <div class="l-grid-row">
+      <div class="l-column-full">
+        <div class="govuk-box-highlight callout t-current-appointment">
+          <h2>Your current Pension Wise appointment</h2>
+          <p><strong>Booking reference: </strong><span class="t-booking-reference"><%= @reschedule.reference %></span></p>
+          <p><strong>Date: </strong><span class="t-date"><%= l(@reschedule.current_appointment_date, format: :govuk_date) %></span></p>
+          <p><strong>Time: </strong><span class="t-time"><%= l(@reschedule.current_appointment_date, format: :govuk_time) %> (<%= current_timezone(@reschedule.current_appointment_date) %>)</span></p>
+          <p>To change your appointment, select a new day and time.</p>
+        </div>
+      </div>
+    </div>
+
+    <%= render 'day_picker' %>
+  <% end %>
+
+  <%= form_with model: @reschedule, url: reschedule_path do |f| %>
+    <%= render "step_#{@reschedule.step}", f: f %>
+    <%= f.hidden_field :step, value: @reschedule.step == 1 ? 2 : @reschedule.step %>
+
+    <% if @reschedule.step == 1 %>
+      <div class="l-column-half l-column-half--right" data-slot-picker-single-time>
+        <%= render 'times_js' %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
