@@ -45,8 +45,8 @@
       <% if Rails.env.production? %>
         <script type="text/javascript" src="//assets.adobedtm.com/c3a3920a84ef/2104df5e2099/launch-a40370bb1e84.min.js" async></script>
         <script type="text/javascript" src="//www.moneyhelper.org.uk/etc.clientlibs/maps/core/clientlibs/clientlib-digitaldata.min.536e82a039f309f9f59b3e9e3dab024f.js" defer></script>
-      <% elsif Rails.env.staging? %>
-        <script type="text/javascript" src="//assets.adobedtm.com/c3a3920a84ef/2104df5e2099/launch-834de5c44d2c-staging.min.js" async></script>
+      <% elsif Rails.env.staging? || Rails.env.development? %>
+        <script type="text/javascript" src="https://assets.adobedtm.com/c3a3920a84ef/2104df5e2099/launch-834de5c44d2c-staging.min.js" async></script>
       <% end %>
     <% end %>
 
