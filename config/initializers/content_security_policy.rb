@@ -8,11 +8,26 @@ Rails.application.config.content_security_policy do |policy|
   policy.default_src :self, :https
   policy.font_src    :self, :https, :data
   policy.img_src     :self, :https, :data, 'maps-uk.sc.omtrdc.net'
-  policy.connect_src :self, :https, 'moneypensions.tt.omtrdc.net'
-  policy.object_src  :none
-  policy.style_src   :self, :https, :unsafe_inline
+  policy.connect_src :self,
+                     :https,
+                     'moneypensions.tt.omtrdc.net',
+                     'cdn.gbqofs.com',
+                     'c1001.report.gbss.io',
+                     'c2001.report.gbss.io',
+                     'report.c1101.gbqofs.io',
+                     'report.c2101.gbqofs.io'
 
-  policy.script_src      :self, :https
+  policy.object_src  :none
+  policy.style_src   :self, :https, :unsafe_inline, '*.console.glassboxsaas.com'
+
+  policy.script_src  :self,
+                     :https,
+                     'cdn.gbqofs.com',
+                     'c1001.report.gbss.io',
+                     'c2001.report.gbss.io',
+                     'report.c1101.gbqofs.io',
+                     'report.c2101.gbqofs.io'
+
   policy.script_src_elem :self, :https, :unsafe_inline
   # Specify URI for violation reports
   policy.report_uri '/csp-reports'
