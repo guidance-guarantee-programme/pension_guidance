@@ -71,10 +71,10 @@
   <% unless Rails.env.development? %>
     <%= javascript_include_tag 'iframe-resizer' %>
     <%= javascript_include_tag 'auto-scroller' %>
-    <script>
+    <%= javascript_tag(nonce: true) do %>
       window.PWPG.iframeResizer.start();
       window.PWPG.autoScroller.start();
-    </script>
+    <% end %>
   <% end %>
 <% end %>
 
