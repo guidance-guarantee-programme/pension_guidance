@@ -7,14 +7,18 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :set_locale
+  before_action :http_authenticate
 
   helper_method :footer?, :alternate_locales, :default_locale?, :content_lang_matches_locale?
 
-  if ENV['AUTH_USERNAME'] && ENV['AUTH_PASSWORD']
-    http_basic_authenticate_with name: ENV['AUTH_USERNAME'], password: ENV['AUTH_PASSWORD']
-  end
-
   rescue_from I18n::InvalidLocale, with: :not_found unless Rails.env.development?
+
+  def http_authenticate
+    binding.pry
+    return unless ENV['AUTH_USERNAME'] && ENV['AUTH_PASSWORD']
+
+    self.class.http_basic_authenticate_with name: ENV['AUTH_USERNAME'], password: ENV['AUTH_PASSWORD']
+  end
 
   def footer?
     true

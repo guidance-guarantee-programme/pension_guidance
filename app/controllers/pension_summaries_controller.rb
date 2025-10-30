@@ -12,6 +12,8 @@ class PensionSummariesController < ApplicationController
   before_action :set_breadcrumbs
   before_action :skip_about_you, unless: :pilot_data_collection?, only: %i[about_you save_about_you]
 
+  skip_before_action :http_authenticate
+
   rescue_from ActiveRecord::RecordNotFound do
     redirect_to explore_your_options_root_url
   end
