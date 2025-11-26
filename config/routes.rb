@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|cy/ do
     root 'home#show'
 
-    get '/explore-your-options', to: redirect('https://prd-pwtriage.moneyhelper.org.uk/%{locale}/pension-wise-triage/start', status: 302)
-    get '/explore-your-options/*meh', to: redirect('https://prd-pwtriage.moneyhelper.org.uk/%{locale}/pension-wise-triage/start', status: 302)
+    get '/explore-your-options', to: redirect('https://prd-pwtriage.moneyhelper.org.uk/%{locale}/pension-wise-triage/start')
+    get '/explore-your-options/*meh', to: redirect('https://prd-pwtriage.moneyhelper.org.uk/%{locale}/pension-wise-triage/start')
 
     resource :smarter_signposting, only: %i[new destroy], path: 'smarter'
     resource :nudge, only: %i[new]
