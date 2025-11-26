@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   scope ':locale', locale: /en|cy/ do
     root 'home#show'
 
+    get '/explore-your-options', to: redirect('https://prd-pwtriage.moneyhelper.org.uk/%{locale}/pension-wise-triage/start', status: 302)
+    get '/explore-your-options/*meh', to: redirect('https://prd-pwtriage.moneyhelper.org.uk/%{locale}/pension-wise-triage/start', status: 302)
+
     resource :smarter_signposting, only: %i[new destroy], path: 'smarter'
     resource :nudge, only: %i[new]
 
@@ -37,25 +40,6 @@ Rails.application.routes.draw do
 
       constraints platform: /linkedin|google|facebook/, campaign: /apples|dogs|paint|peppers/ do
         get ':platform-:campaign', to: 'marketing#campaign', as: :marketing_campaign
-      end
-
-      scope 'explore-your-options', controller: 'pension_summaries', as: :explore_your_options do
-        root action: 'start'
-
-        get 'about-you'
-        get 'step-one'
-        get 'step-two'
-        get 'summary'
-        get 'your-experience'
-        get 'thank-you'
-        get 'download'
-        get 'print'
-
-        post 'about-you', action: 'save_about_you'
-        post 'step-one', action: 'save_primary_options'
-        post 'step-two', action: 'save_secondary_options'
-        post 'your-experience', action: 'save_feedback'
-        post 'welsh-summary', action: 'save_welsh_summary'
       end
 
       scope 'employers/:employer_id', module: :employer, as: :employer, locale: :en do
