@@ -25,6 +25,7 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
     :lloyds_signposted,
     :schedule_type,
     :referrer,
+    :transferring_pension_to,
     :rebooked_from_id,
     :attended_digital,
     :adjustments
@@ -54,6 +55,7 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   validates :adjustments, length: { maximum: 160 }, allow_blank: true
   validates :adjustments, presence: true, if: :accessibility_requirements?
   validates :referrer, presence: true, if: :due_diligence?
+  validates :transferring_pension_to, presence: true, if: :due_diligence?
   validates :country_of_residence, presence: true, if: :due_diligence?
   validates :gdpr_consent, inclusion: { in: %w[yes no] }
 
@@ -118,6 +120,7 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
       lloyds_signposted: lloyds_signposted,
       schedule_type: schedule_type,
       referrer: referrer,
+      transferring_pension_to: transferring_pension_to,
       rebooked_from_id: rebooked_from_id,
       attended_digital: attended_digital
     }

@@ -288,6 +288,17 @@
       <% end %>
       <%= f.text_field :referrer, aria: { required: true, describedby: 'referrer_error' }, class: "t-referrer form-control #{'form-control-error' if @telephone_appointment.errors.include?(:referrer)}" %>
     </div>
+
+    <div class="form-group <%= 'form-group-error' if @telephone_appointment.errors.include?(:transferring_pension_to) %>">
+      <%= f.label :transferring_pension_to, class: 'form-label-bold' do %>
+        Which pension provider do you plan to transfer to?
+      <% end %>
+
+      <% if @telephone_appointment.errors.include?(:transferring_pension_to) %>
+        <span class="error-message" id="transferring_pension_to_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:transferring_pension_to].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :transferring_pension_to, aria: { required: true, describedby: 'transferring_pension_to_error' }, class: "t-transferring-pension-to form-control #{'form-control-error' if @telephone_appointment.errors.include?(:transferring_pension_to)}" %>
+    </div>
   <% elsif @telephone_appointment.embedded? %>
     <%= f.hidden_field :where_you_heard, value: TelephoneAppointment::NUDGE_EMBED_WHERE_YOU_HEARD_ID, class: 't-hidden-where-you-heard' %>
   <% else %>

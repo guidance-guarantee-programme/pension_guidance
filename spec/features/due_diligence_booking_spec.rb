@@ -40,6 +40,7 @@ RSpec.feature 'Due diligence bookings' do
     @page.accessibility_requirements_no.set(true)
     @page.memorable_word.set('snootboop')
     @page.referrer.set('Big Pensions Co.')
+    @page.transferring_pension_to.set('Other Pensions Co.')
 
     @page.submit.click
   end

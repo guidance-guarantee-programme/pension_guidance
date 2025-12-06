@@ -52,6 +52,7 @@ module Pages
     element :hidden_where_you_heard, '.t-hidden-where-you-heard', visible: false
     element :data_sharing_banner, '.t-data-sharing-banner'
     element :referrer, '.t-referrer'
+    element :transferring_pension_to, '.t-transferring-pension-to'
 
     def choose_date(date)
       find("button[value='#{date}']").click
