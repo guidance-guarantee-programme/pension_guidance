@@ -18,7 +18,7 @@ env:
   - secure: oZejYlwy5wgEKshf51GbyA62FURMPRolk4snUK5cXQLCSQ+pjleKZq5h7CYlSZfvQNDctw0u3NsFMK9c+FNm057p4/wSvhP1wxz8Zq2jDFRJjmZGIInW5l5Fw7AvDE+Ndn9ndTyi/Ye/xWOIaiI9q9dlqcp62sKTjvHU+w+vGgA=
   - secure: MdrB+5oJX74bc7wSPut3vANmXUlvQN+pJyagxE+tuWWadKb5F4oAAXU2/BtrMqD9f/lxs2d+lh3AxKIWgN/ZUyxNxWZPk8958pqaTbc8eAcYLag4E2fqqyafkJZYW5Dny1lkoIzdmxn4FPHdp8WTfXsnOSmDa56fSj5DwBe4cF0=
 before_install:
-- gem install bundler
+- gem install bundler -v 2.4.19
 - nvm install 16.20.2
 - nvm use 16.20.2
 before_script:
