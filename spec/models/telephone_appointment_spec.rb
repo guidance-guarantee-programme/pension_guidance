@@ -139,6 +139,7 @@ RSpec.describe TelephoneAppointment, type: :model do
       before do
         subject.schedule_type = 'due_diligence'
         subject.referrer = 'Big Pensions PLC'
+        subject.transferring_pension_to = 'Other Pensions PLC'
         subject.country_of_residence = 'GB'
       end
 
@@ -147,6 +148,14 @@ RSpec.describe TelephoneAppointment, type: :model do
         expect(subject).to be_invalid
 
         subject.referrer = 'Big Pensions PLC'
+        expect(subject).to be_valid
+      end
+
+      it 'requires the transferring pension provider' do
+        subject.transferring_pension_to = ''
+        expect(subject).to be_invalid
+
+        subject.transferring_pension_to = 'Other Pensions PLC'
         expect(subject).to be_valid
       end
 

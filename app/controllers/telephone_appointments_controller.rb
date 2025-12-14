@@ -141,6 +141,7 @@ class TelephoneAppointmentsController < ApplicationController # rubocop:disable 
         :gdpr_consent,
         :schedule_type,
         :referrer,
+        :transferring_pension_to,
         :nudged,
         :embedded,
         :rebooked_from_id,
