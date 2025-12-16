@@ -7,7 +7,7 @@ class AppointmentSummary
 
   attr_accessor *SUPPLEMENTARY_OPTIONS
 
-  attr_writer :appointment_type, :urn
+  attr_writer :appointment_type, :urn, :welsh
 
   SUPPLEMENTARY_OPTIONS.each do |attribute|
     define_method("#{attribute}=") do |value|
@@ -32,5 +32,9 @@ class AppointmentSummary
 
   def format_preference
     'standard'
+  end
+
+  def welsh?
+    @welsh
   end
 end

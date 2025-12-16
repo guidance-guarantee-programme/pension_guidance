@@ -1,7 +1,7 @@
 class OutputDocument
   attr_reader :appointment_summary, :variant
 
-  delegate *SUPPLEMENTARY_OPTIONS, :appointment_type, :format_preference, :urn,
+  delegate *SUPPLEMENTARY_OPTIONS, :appointment_type, :format_preference, :urn, :welsh?,
            to: :appointment_summary
 
   def initialize(appointment_summary, variant = 'generic_naked')
@@ -10,10 +10,6 @@ class OutputDocument
   end
 
   def next_steps?
-    false
-  end
-
-  def welsh?
     false
   end
 
@@ -27,5 +23,9 @@ class OutputDocument
 
   def pdf
     Princely::Pdf.new.pdf_from_string(html)
+  end
+
+  def pdf_file(file_path)
+    Princely::Pdf.new.pdf_from_string_to_file(html, file_path)
   end
 end
