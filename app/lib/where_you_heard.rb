@@ -24,6 +24,7 @@ class WhereYouHeard
     '16' => 'Relative/Friend/Colleague',
     '18' => 'Jobcentre Plus',
     '26' => 'Talk Money Week',
+    '27' => 'MoneyHelper Pensions Dashboard',
     '17' => 'Other'
   }.freeze
 end
