@@ -11,6 +11,7 @@ development:
 
 test:
   <<: *default
+  <% if ENV['DATABASE_URL'] %>url: <%= ENV['DATABASE_URL'] %><% end %>
   database: pension_guidance_test
 
 production:
