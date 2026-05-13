@@ -32,6 +32,8 @@ RSpec.feature 'Face-to-face walk-in bookings' do
     @page.month_of_birth.set('01')
     @page.year_of_birth.set('1960')
     @page.defined_contribution_pot_confirmed_yes.set(true)
+    @page.postcode.set('RG1 1AL')
+    @page.referrer.set('Pension Co')
     @page.accessibility_requirements_yes.set(true)
     @page.wait_until_adjustments_visible
     @page.adjustments.set('Adjustments')

@@ -68,7 +68,7 @@
 
   <%= yield :after_script %>
 
-  <% unless Rails.env.development? %>
+  <% unless Rails.env.development? || Rails.env.test? %>
     <%= javascript_include_tag 'iframe-resizer' %>
     <%= javascript_include_tag 'auto-scroller' %>
     <script>

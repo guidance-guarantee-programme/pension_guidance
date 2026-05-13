@@ -22,7 +22,9 @@ module FaceToFace
         support_name: booking.support_name,
         support_relationship: booking.support_relationship,
         support_email: booking.support_email,
-        support_phone: booking.support_phone
+        support_phone: booking.support_phone,
+        postcode: booking.postcode,
+        referrer: booking.referrer
       }
     end
 

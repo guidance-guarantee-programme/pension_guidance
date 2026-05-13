@@ -9,10 +9,10 @@ http_interactions:
         930 455","memorable_word":"spoon","date_of_birth":"1960-01-01","defined_contribution_pot_confirmed":"yes","accessibility_requirements":"true","adjustments":"Adjustments","additional_info":"Before
         1PM.","where_you_heard":"7","gdpr_consent":"yes","support":"yes","support_name":"Dave
         David","support_relationship":"Carer","support_email":"dave@example.com","support_phone":"07715
-        930 455"}'
+        930 455","postcode":"RG1 1AL","referrer":"Pension Co"}'
     headers:
       User-Agent:
-      - PensionWise/1.0 (birdperson2; benlovell; 52231) ruby/3.4.2 (28; arm64-darwin24)
+      - PensionWise/1.0 (birdperson2; benlovell; 94293) ruby/3.4.2 (28; arm64-darwin24)
       Accept:
       - application/json
       Content-Type:
@@ -41,13 +41,13 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 590667ab-3e17-466f-a36f-c75bba4f3d4c
+      - e9faa7a3-c78b-41d0-845a-26aa4904ba41
       X-Runtime:
-      - '0.176071'
+      - '0.117213'
       Content-Length:
       - '0'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 12 May 2026 16:28:30 GMT
+  recorded_at: Wed, 13 May 2026 15:25:49 GMT
 recorded_with: VCR 6.2.0

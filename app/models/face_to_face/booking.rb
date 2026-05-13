@@ -8,6 +8,8 @@ module FaceToFace
       :email,
       :phone,
       :memorable_word,
+      :postcode,
+      :referrer,
       :defined_contribution_pot_confirmed,
       :accessibility_requirements,
       :adjustments,
@@ -35,7 +37,9 @@ module FaceToFace
     validates :date_of_birth, presence: true
     validates :additional_info, length: { maximum: 160 }, allow_blank: true
     validates :where_you_heard, inclusion: { in: WhereYouHeard::OPTIONS.keys }
+    validates :referrer, presence: true
     validate :validate_age_eligibility, if: :date_of_birth
+    validate :validate_uk_postcode
 
     validates :supported, inclusion: { in: %w[yes no] }
     validates :support_name, presence: true, if: :supported?
@@ -65,6 +69,12 @@ module FaceToFace
 
     def validate_age_eligibility
       errors.add(:date_of_birth) if age < 50
+    end
+
+    def validate_uk_postcode
+      return if postcode.present? && UKPostcode.parse(postcode).full_valid?
+
+      errors.add(:postcode, 'must be a valid postcode')
     end
 
     def age

@@ -25,6 +25,14 @@
   <% end %>
 
   <%= form_for @booking, url: bookings_path, as: :booking do |f| %>
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:referrer) %>">
+      <%= f.label :referrer, class: 'form-label-bold' %>
+      <% if @booking.errors.include?(:referrer) %>
+        <span class="error-message"><%= @booking.errors[:referrer].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :referrer, class: "t-referrer form-control #{'form-control-error' if @booking.errors.include?(:referrer)}" %>
+    </div>
+
     <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:first_name) %>">
       <%= f.label :first_name, class: 'form-label-bold' %>
       <% if @booking.errors.include?(:first_name) %>
@@ -67,6 +75,15 @@
       <% end %>
 
       <%= f.text_field :phone, class: "t-phone form-control #{'form-control-error' if @booking.errors.include?(:phone)}" %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:postcode) %>">
+      <%= f.label :postcode, class: 'form-label-bold' %>
+      <span class="form-hint">We'll use this to search for availability at your nearest appointment locations</span>
+      <% if @booking.errors.include?(:postcode) %>
+        <span class="error-message"><%= @booking.errors[:postcode].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :postcode, class: "t-postcode form-control #{'form-control-error' if @booking.errors.include?(:postcode)}" %>
     </div>
 
     <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:memorable_word) %>">

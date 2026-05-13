@@ -18,6 +18,8 @@ module Pages
     element :additional_info, '.t-additional-info'
     element :where_you_heard, '.t-where-you-heard'
     element :gdpr_consent_yes, '.t-gdpr-consent-yes', visible: false
+    element :postcode, '.t-postcode'
+    element :referrer, '.t-referrer'
 
     element :supported_yes, '.t-supported-yes', visible: false
     element :supported_no, '.t-supported-no', visible: false

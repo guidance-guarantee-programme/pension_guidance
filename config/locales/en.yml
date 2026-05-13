@@ -221,6 +221,8 @@ en:
               invalid: enter a valid phone number
         face_to_face/booking:
           attributes:
+            referrer:
+              blank: enter a referrer
             first_name:
               blank: enter a name
             last_name:

@@ -55,7 +55,9 @@ module FaceToFace
           :support_name,
           :support_relationship,
           :support_email,
-          :support_phone
+          :support_phone,
+          :postcode,
+          :referrer
         )
     end
 

@@ -11,7 +11,9 @@ RSpec.describe FaceToFace::Booking do
       'date_of_birth' => '1950-01-01',
       'additional_info' => '',
       'where_you_heard' => '1',
-      'supported' => 'no'
+      'supported' => 'no',
+      'postcode' => 'RG1 1AL',
+      'referrer' => 'Pension Company'
     }
   end
 
@@ -19,6 +21,19 @@ RSpec.describe FaceToFace::Booking do
 
   it 'is valid with valid attributes' do
     expect(subject).to be_valid
+  end
+
+  it 'validates postcode format' do
+    subject.postcode = nil
+    expect(subject).to be_invalid
+
+    subject.postcode = 'welp'
+    expect(subject).to be_invalid
+  end
+
+  it 'requires a referrer' do
+    subject.referrer = nil
+    expect(subject).to be_invalid
   end
 
   it 'checks for age eligibility' do
