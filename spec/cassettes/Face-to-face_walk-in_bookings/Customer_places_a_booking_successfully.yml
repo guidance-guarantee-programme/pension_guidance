@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3010/api/v1/face_to_face_bookings
+    body:
+      encoding: UTF-8
+      string: '{"first_name":"Ben","last_name":"Smith","email":"ben@example.com","phone":"07715
+        930 455","memorable_word":"spoon","date_of_birth":"1960-01-01","defined_contribution_pot_confirmed":"yes","accessibility_requirements":"true","adjustments":"Adjustments","additional_info":"Before
+        1PM.","where_you_heard":"7","gdpr_consent":"yes","support":"yes","support_name":"Dave
+        David","support_relationship":"Carer","support_email":"dave@example.com","support_phone":"07715
+        930 455"}'
+    headers:
+      User-Agent:
+      - PensionWise/1.0 (birdperson2; benlovell; 52231) ruby/3.4.2 (28; arm64-darwin24)
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 590667ab-3e17-466f-a36f-c75bba4f3d4c
+      X-Runtime:
+      - '0.176071'
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 12 May 2026 16:28:30 GMT
+recorded_with: VCR 6.2.0

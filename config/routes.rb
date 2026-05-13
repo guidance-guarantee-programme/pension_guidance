@@ -62,6 +62,14 @@ Rails.application.routes.draw do
         get :completed, on: :collection
       end
 
+      resources :bookings,
+                only: %i[new create],
+                path: 'face-to-face-bookings',
+                locale: :en,
+                module: :face_to_face do
+        get :completed, on: :collection
+      end
+
       resources :locations, only: %i[index show] do
         collection do
           post 'search'

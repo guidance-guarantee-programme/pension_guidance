@@ -219,6 +219,46 @@ en:
             support_phone:
               blank: enter a phone number
               invalid: enter a valid phone number
+        face_to_face/booking:
+          attributes:
+            first_name:
+              blank: enter a name
+            last_name:
+              blank: enter a name
+            email:
+              invalid_email: enter a valid email address
+            phone:
+              blank: enter a phone number
+              invalid: enter a valid phone number
+            memorable_word:
+              blank: enter a word
+            date_of_birth:
+              blank: enter a valid date of birth
+            opt_in:
+              accepted: please accept
+            appointment_type:
+              inclusion: must be 50 or over to be eligible for guidance
+            defined_contribution_pot_confirmed:
+              inclusion: select an option
+            accessibility_requirements:
+              inclusion: select an option
+            where_you_heard:
+              inclusion: select an option
+            supported:
+              inclusion: select an option
+            additional_info:
+              blank: describe any additional information which may be helpful for us
+            support:
+              inclusion: select an option
+            support_name:
+              blank: enter a name
+            support_relationship:
+              blank: enter their relationship to you
+            support_email:
+              invalid_email: enter a valid email address
+            support_phone:
+              blank: enter a phone number
+              invalid: enter a valid phone number
         employer/booking:
           attributes:
             first_name:
@@ -328,6 +368,14 @@ en:
         telephone_message: Your complaint
         face_to_face_message: Your complaint
         other_message: Your complaint
+      face_to_face/booking:
+        accessibility_requirements: Making your appointment easier to access
+        defined_contribution_pot_confirmed: Defined contribution pot
+        supported: Will someone be joining you for support
+        support_name: Their name
+        support_relationship: Their relationship to you
+        support_email: Their email
+        support_phone: Their phone number
       bsl/booking_request:
         supported: Will someone be joining you for support
         support_name: Their name
