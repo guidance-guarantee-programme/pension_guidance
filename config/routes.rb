@@ -1,5 +1,7 @@
 # rubocop:disable Metrics/BlockLength
 Rails.application.routes.draw do
+  get '/.well-known/cf-2fa-verify.txt', to: 'home#cloudflare'
+
   resources :booking_requests,
             only: %i[new create],
             path: '/cy/booking-requests',
