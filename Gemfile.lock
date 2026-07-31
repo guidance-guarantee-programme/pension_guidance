@@ -216,7 +216,7 @@ GEM
       railties (>= 5.0.0)
     fakeredis (0.8.0)
       redis (~> 4.1)
-    faraday (1.10.5)
+    faraday (1.10.6)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
