@@ -2,6 +2,7 @@ class NudgeAppointment # rubocop:disable Metrics/ClassLength
   include ActiveModel::Model
 
   PHONE_REGEX = /\A([\d+\-\s+()]+)\z/.freeze
+  AVIVA_CALL_CENTRE = '8007837861'.freeze
 
   ELIGIBILITY_OPTIONS = {
     'protected_pension_age' => 'Protected pension age',
@@ -130,13 +131,17 @@ class NudgeAppointment # rubocop:disable Metrics/ClassLength
   end
 
   def validate_phone
-    errors.add(:phone, :invalid) unless phone.present? && PHONE_REGEX === phone
+    errors.add(:phone, :invalid) unless phone.present? && PHONE_REGEX === phone && !aviva_call_centre?(phone)
   end
 
   def validate_mobile
     return unless confirm_sms?
 
-    errors.add(:mobile, :invalid) unless mobile.present? && PHONE_REGEX === mobile
+    errors.add(:mobile, :invalid) unless mobile.present? && PHONE_REGEX === mobile && !aviva_call_centre?(mobile)
+  end
+
+  def aviva_call_centre?(number)
+    number.gsub(' ', '').include?(AVIVA_CALL_CENTRE)
   end
 
   def age(at)
