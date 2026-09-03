@@ -125,6 +125,17 @@ RSpec.describe NudgeAppointment, type: :model do
       end
     end
 
+    it 'does not permit Aviva call centre' do
+      subject.phone = '08007837861'
+      expect(subject).to be_invalid
+      subject.phone = '07715 930 455'
+      expect(subject).to be_valid
+
+      subject.confirmation = 'sms'
+      subject.mobile = '44800 7837861'
+      expect(subject).to be_invalid
+    end
+
     it 'validates format of phone number' do
       ['+447715930459', '(0208) 252 4729', '07715-930-459'].each do |number|
         subject.phone = number
