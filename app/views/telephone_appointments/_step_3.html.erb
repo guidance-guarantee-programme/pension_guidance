@@ -315,9 +315,6 @@
   </div>
   <% end %>
 
-  <% if @telephone_appointment.due_diligence? %>
-    <%= f.hidden_field :gdpr_consent, value: 'no', class: 't-hidden-gdpr-consent' %>
-  <% else %>
   <div class="form-group t-gdpr-consent <%= 'form-group-error' if @telephone_appointment.errors.include?(:gdpr_consent) %>" id="telephone_appointment_gdpr_consent" tabindex="-1">
     <fieldset class="inline">
       <legend class="form-label-bold">Customer research consent</legend>
@@ -327,7 +324,7 @@
       <span class="form-hint">
         Your feedback helps us improve the service. Is it OK if we share your
         contact details with our trusted research partners? With your consent,
-        Pension Wise or our research partners, may contact you to ask if you
+        <% if @telephone_appointment.due_diligence? %> MoneyHelper<% else %> Pension Wise<% end %> or our research partners, may contact you to ask if you
         would like to provide feedback and you can decide then if you want to
         take part.
       </span>
@@ -343,7 +340,6 @@
       </div>
     </fieldset>
   </div>
-  <% end %>
 
   <div class="form-group">
     <%= f.submit 'Confirm appointment', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
