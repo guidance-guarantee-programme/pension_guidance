@@ -28,7 +28,8 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
     :transferring_pension_to,
     :rebooked_from_id,
     :attended_digital,
-    :adjustments
+    :adjustments,
+    :waitlist_opt_in
   )
 
   attr_writer(
@@ -58,6 +59,7 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
   validates :transferring_pension_to, presence: true, if: :due_diligence?
   validates :country_of_residence, presence: true, if: :due_diligence?
   validates :gdpr_consent, inclusion: { in: %w[yes no] }
+  validates :waitlist_opt_in, inclusion: { in: %w[yes no] }
 
   def due_diligence?
     schedule_type == 'due_diligence'
@@ -122,7 +124,8 @@ class TelephoneAppointment # rubocop:disable Metrics/ClassLength
       referrer: referrer,
       transferring_pension_to: transferring_pension_to,
       rebooked_from_id: rebooked_from_id,
-      attended_digital: attended_digital
+      attended_digital: attended_digital,
+      waitlist_opt_in: waitlist_opt_in == 'yes'
     }
   end
 

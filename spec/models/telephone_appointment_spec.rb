@@ -19,7 +19,8 @@ RSpec.describe TelephoneAppointment, type: :model do
       smarter_signposted: 'true',
       nudged: 'false',
       embedded: 'false',
-      rebooked_from_id: '1234567'
+      rebooked_from_id: '1234567',
+      waitlist_opt_in: 'yes'
     )
   end
 
@@ -233,6 +234,11 @@ RSpec.describe TelephoneAppointment, type: :model do
 
     it 'does not permit profanity in the memorable_word' do
       subject.memorable_word = 'twat'
+      expect(subject).to_not be_valid
+    end
+
+    it 'validates waitlist_opt_in is provided' do
+      subject.waitlist_opt_in = nil
       expect(subject).to_not be_valid
     end
 
