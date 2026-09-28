@@ -33,6 +33,9 @@ module Pages
     element :gdpr_consent_yes, '.t-gdpr-consent-yes'
     element :gdpr_consent_no, '.t-gdpr-consent-no'
 
+    element :waitlist_opt_in_yes, '.t-waitlist-opt-in-yes'
+    element :waitlist_opt_in_no, '.t-waitlist-opt-in-no'
+
     element :submit, '.t-submit'
 
     element :continue, '.t-continue'
