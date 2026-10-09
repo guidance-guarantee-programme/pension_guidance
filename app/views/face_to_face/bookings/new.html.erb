@@ -1,0 +1,361 @@
+<% content_for(:page_title, t('service.title', page_title: 'Face-to-face Walk-in Bookings')) %>
+<% content_for(:canonical, 'https://www.moneyhelper.org.uk/en/pensions-and-retirement/pension-wise/book-a-free-pension-wise-appointment/request-a-face-to-face-appointment') %>
+<% content_for(:page_name, 'face-to-face-bookings--new') %>
+<% content_for(:tool_step, '1') %>
+<% content_for(:step_name, 'Face-to-face Booking') %>
+<% content_for(:tool_name, 'Face-to-face Bookings') %>
+
+<div class="l-column-full">
+  <h1>Request a free Face-to-face appointment</h1>
+  <p>Complete the form to request an appointment and we’ll contact you within 2 working days.</p>
+
+  <% if @booking.errors.any? %>
+    <div class="error-summary t-errors" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1" data-error-summary>
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+        Unable to submit the form
+      </h2>
+      <p>Check the following:</p>
+
+      <ul class="error-summary-list">
+        <% @booking.errors.each do |error| %>
+          <li><%= link_to "#{FaceToFace::Booking.human_attribute_name error.attribute} – #{error.message}", "#booking_#{error.attribute}" %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form_for @booking, url: bookings_path, as: :booking do |f| %>
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:referrer) %>">
+      <%= f.label :referrer, class: 'form-label-bold' %>
+      <% if @booking.errors.include?(:referrer) %>
+        <span class="error-message"><%= @booking.errors[:referrer].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :referrer, class: "t-referrer form-control #{'form-control-error' if @booking.errors.include?(:referrer)}" %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:first_name) %>">
+      <%= f.label :first_name, class: 'form-label-bold' %>
+      <% if @booking.errors.include?(:first_name) %>
+        <span class="error-message"><%= @booking.errors[:first_name].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :first_name, class: "t-first-name form-control #{'form-control-error' if @booking.errors.include?(:first_name)}" %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:last_name) %>">
+      <%= f.label :last_name, class: 'form-label-bold' %>
+      <% if @booking.errors.include?(:last_name) %>
+        <span class="error-message"><%= @booking.errors[:last_name].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :last_name, class: "t-last-name form-control #{'form-control-error' if @booking.errors.include?(:last_name)}" %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:email) %>">
+      <%= f.label :email, class: 'form-label-bold' do %>
+        Email
+        <span class="form-hint">We’ll send an email confirming your appointment date</span>
+      <% end %>
+
+      <% if @booking.errors.include?(:email) %>
+        <span class="error-message"><%= @booking.errors[:email].to_sentence.capitalize %></span>
+      <% end %>
+
+      <div class="email-outer">
+        <%= f.email_field :email, class: "t-email form-control #{'form-control-error' if @booking.errors.include?(:email)}" %>
+      </div>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:phone) %>">
+      <%= f.label :phone, class: 'form-label-bold' do %>
+        Phone number
+        <span class="form-hint">We’ll send an SMS appointment reminder if a mobile number is provided</span>
+      <% end %>
+
+      <% if @booking.errors.include?(:phone) %>
+        <span class="error-message"><%= @booking.errors[:phone].to_sentence.capitalize %></span>
+      <% end %>
+
+      <%= f.text_field :phone, class: "t-phone form-control #{'form-control-error' if @booking.errors.include?(:phone)}" %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:postcode) %>">
+      <%= f.label :postcode, class: 'form-label-bold' %>
+      <span class="form-hint">We'll use this to search for availability at your nearest appointment locations</span>
+      <% if @booking.errors.include?(:postcode) %>
+        <span class="error-message"><%= @booking.errors[:postcode].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.text_field :postcode, class: "t-postcode form-control #{'form-control-error' if @booking.errors.include?(:postcode)}" %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:memorable_word) %>">
+      <%= f.label :memorable_word, class: 'form-label-bold' do %>
+        Your memorable word
+        <span class="form-hint">Our pension specialist will repeat this word when they call so you know it’s us. Avoid using the same word from a different account or service</span>
+      <% end %>
+
+      <% if @booking.errors.include?(:memorable_word) %>
+        <span class="error-message"><%= @booking.errors[:memorable_word].to_sentence.capitalize %></span>
+      <% end %>
+
+      <%= f.text_field :memorable_word, class: "t-memorable-word form-control #{'form-control-error' if @booking.errors.include?(:memorable_word)}" %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:date_of_birth) %>">
+      <fieldset>
+        <legend>
+          <span class="form-label-bold">
+            Date of birth
+          </span>
+          <span class="form-hint" id="dob-hint">You must be aged 50 or over to book an appointment, e.g. 31 3 1950</span>
+        </legend>
+        <div class="form-date" id="booking_date_of_birth" tabindex="-1">
+          <div class="form-group form-group-day">
+            <label class="form-label" for="<%= f.object_name %>_date_of_birth_3i">Day</label>
+            <%=
+              f.number_field(
+                'date_of_birth(3i)',
+                id: "#{f.object_name}_date_of_birth_3i",
+                use_label: false,
+                value: f.object.date_of_birth.try(:day),
+                placeholder: 'DD',
+                class: "f-dob__input form-control js-dob-day t-date-of-birth-day #{'form-control-error' if @booking.errors.include?(:date_of_birth)}",
+                pattern: '[0-9]*',
+                min: 1,
+                max: 31,
+                'aria-describedby': 'dob-hint'
+              )
+            %>
+          </div>
+          <div class="form-group form-group-month">
+            <label class="form-label" for="<%= f.object_name %>_date_of_birth_2i">Month</label>
+            <%=
+              f.number_field(
+                'date_of_birth(2i)',
+                id: "#{f.object_name}_date_of_birth_2i",
+                use_label: false,
+                value: f.object.date_of_birth.try(:month),
+                placeholder: 'MM',
+                class: "form-dob__input form-control js-dob-month t-date-of-birth-month #{'form-control-error' if @booking.errors.include?(:date_of_birth)}",
+                pattern: '[0-9]*',
+                min: 1,
+                max: 12
+              )
+            %>
+          </div>
+          <div class="form-group form-group-year">
+            <label class="form-label" for="<%= f.object_name %>_date_of_birth_1i">Year</label>
+            <%=
+              f.number_field(
+                'date_of_birth(1i)',
+                id: "#{f.object_name}_date_of_birth_1i",
+                use_label: false,
+                value: f.object.date_of_birth.try(:year),
+                placeholder: 'YYYY',
+                class: "form-dob__input form-control form-dob__input--year js-dob-year t-date-of-birth-year #{'form-control-error' if @booking.errors.include?(:date_of_birth)}",
+                pattern: '[0-9]*',
+                min: 120.years.ago.year,
+                max: Date.today.year
+              )
+            %>
+          </div>
+        </div>
+        <% if @booking.errors.include?(:date_of_birth) %>
+          <span class="error-message"><%= @booking.errors[:date_of_birth].to_sentence.capitalize %></span>
+        <% end %>
+      </fieldset>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:defined_contribution_pot_confirmed) %>" id="booking_dc_pot" tabindex="-1">
+      <fieldset class="inline">
+        <legend class="form-label-bold">I have a defined contribution pension pot (<b>not</b> a final salary or career average pension)</legend>
+        <span class="form-hint">Also select ‘Yes’ if you have both</span>
+
+        <% if @booking.errors.include?(:defined_contribution_pot_confirmed) %>
+          <span class="error-message"><%= @booking.errors[:defined_contribution_pot_confirmed].to_sentence.capitalize %></span>
+        <% end %>
+
+        <div class="multiple-choice">
+          <%= f.radio_button :defined_contribution_pot_confirmed, 'yes', class: 't-dc-pot-1' %>
+          <%= f.label :defined_contribution_pot_confirmed, value: 'yes' do %>
+            Yes
+          <% end %>
+        </div>
+
+        <div class="multiple-choice">
+          <%= f.radio_button :defined_contribution_pot_confirmed, 'no', class: 't-dc-pot-2' %>
+          <%= f.label :defined_contribution_pot_confirmed, value: 'no' do %>
+            No
+          <% end %>
+        </div>
+
+        <div class="multiple-choice">
+          <%= f.radio_button :defined_contribution_pot_confirmed, 'not-sure', class: 't-dc-pot-3' %>
+          <%= f.label :defined_contribution_pot_confirmed, value: 'not-sure' do %>
+            Not sure
+          <% end %>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:accessibility_requirements) %>" data-radio-toggle>
+      <fieldset class="inline" aria-required="true">
+        <legend class="form-label-bold">Making your appointment easier to access</legend>
+        <span class="form-hint">Do you have any access requirements you’d like us to be aware of?</span>
+        <% if @booking.errors.include?(:accessibility_requirements) %>
+          <span class="error-message"><%= @booking.errors[:accessibility_requirements].to_sentence.capitalize %></span>
+        <% end %>
+
+        <div class="multiple-choice" data-target="adjustments">
+          <%= f.radio_button :accessibility_requirements, true, aria: { describedby: 'accessibility_requirements_error' }, class: 't-accessibility-requirements-yes' %>
+          <%= f.label :accessibility_requirements, value: true, aria: { label: 'Yes, I have accessibility requirements' } do %>Yes<% end %>
+        </div>
+
+        <div class="multiple-choice">
+          <%= f.radio_button :accessibility_requirements, false, aria: { describedby: 'accessibility_requirements_error' }, class: 't-accessibility-requirements-no' %>
+          <%= f.label :accessibility_requirements, value: false, aria: { label: 'No, I do not have accessibility requirements' } do %>No<% end %>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="application-notice info-notice js-hidden form-group <%= 'form-group-error' if @booking.errors.include?(:adjustments) %>" id="adjustments" data-character-limit>
+      <%= f.label :adjustments do %>
+        Tell us if any adjustments would help you in the box below. We might contact you before your appointment for more information
+        <% if @booking.errors.include?(:adjustments) %>
+          <span class="error-message"><%= @booking.errors[:adjustments].to_sentence.capitalize %></span>
+        <% end %>
+      <% end %>
+      <%= f.text_area :adjustments,
+        class: "t-adjustments form-control form-control-3-4 js-character-limit-input #{'form-control-error' if @booking.errors.include?(:adjustments)}",
+        rows: 5, maxlength: 160, data: { maxlength: 160 }
+      %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:supported) %>" id="supported" tabindex="-1" data-radio-toggle>
+      <fieldset class="inline">
+        <legend class="form-label-bold">Will someone be joining you for support?</legend>
+
+        <% if @booking.errors.include?(:supported) %>
+          <span class="error-message"><%= @booking.errors[:supported].to_sentence.capitalize %></span>
+        <% end %>
+
+        <div class="multiple-choice" data-target="support-fields">
+          <%= f.radio_button :supported, 'yes', class: 't-supported-yes', data: { target: 'support-fields' } %>
+          <%= f.label :supported, value: 'yes' do %>
+            Yes
+          <% end %>
+        </div>
+
+        <div class="multiple-choice">
+          <%= f.radio_button :supported, 'no', class: 't-supported-no' %>
+          <%= f.label :supported, value: 'no' do %>
+            No
+          <% end %>
+        </div>
+
+      </fieldset>
+    </div>
+
+    <div id="support-fields" class="js-hidden application-notice info-notice">
+      <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:support_name) %>">
+        <%= f.label :support_name, class: 'form-label-bold' %>
+        <% if @booking.errors.include?(:support_name) %>
+          <span class="error-message"><%= @booking.errors[:support_name].to_sentence.capitalize %></span>
+        <% end %>
+        <%= f.text_field :support_name, class: "t-support-name form-control #{'form-control-error' if @booking.errors.include?(:support_name)}" %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:support_relationship) %>">
+        <%= f.label :support_relationship, class: 'form-label-bold' %>
+        <% if @booking.errors.include?(:support_relationship) %>
+          <span class="error-message"><%= @booking.errors[:support_relationship].to_sentence.capitalize %></span>
+        <% end %>
+        <%= f.text_field :support_relationship, class: "t-support-relationship form-control #{'form-control-error' if @booking.errors.include?(:support_relationship)}" %>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:support_email) %>">
+        <%= f.label :support_email, class: 'form-label-bold' do %>
+          Their email
+          <span class="form-hint">We may need to email them if we’re unable to reach you</span>
+        <% end %>
+
+        <% if @booking.errors.include?(:support_email) %>
+          <span class="error-message"><%= @booking.errors[:support_email].to_sentence.capitalize %></span>
+        <% end %>
+
+        <div class="email-outer">
+          <%= f.email_field :support_email, class: "t-support-email form-control #{'form-control-error' if @booking.errors.include?(:support_email)}" %>
+        </div>
+      </div>
+
+      <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:support_phone) %>">
+        <%= f.label :support_phone, class: 'form-label-bold' do %>
+          Their phone number
+          <span class="form-hint">We may need to phone them if we’re unable to reach you</span>
+        <% end %>
+
+        <% if @booking.errors.include?(:support_phone) %>
+          <span class="error-message"><%= @booking.errors[:support_phone].to_sentence.capitalize %></span>
+        <% end %>
+
+        <%= f.text_field :support_phone, class: "t-support-phone form-control #{'form-control-error' if @booking.errors.include?(:support_phone)}" %>
+      </div>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:additional_info) %>" data-character-limit>
+      <%= f.label :notes, class: 'form-label-bold' do %>
+        Additional information
+        <% if @booking.errors.include?(:additional_info) %>
+          <span class="error-message"><%= @booking.errors[:additional_info].to_sentence.capitalize %></span>
+        <% end %>
+        <span class="form-hint">
+          Please add any additional information here that may be helpful for the appointment
+        </span>
+      <% end %>
+      <%= f.text_area :additional_info, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
+    </div>
+
+    <div class="form-group <%= 'form-group-error' if @booking.errors.include?(:where_you_heard) %>">
+      <%= f.label :where_you_heard, 'Where did you first hear of Pension Wise?', class: 'form-label-bold' %>
+      <% if @booking.errors.include?(:where_you_heard) %>
+        <span class="error-message"><%= @booking.errors[:where_you_heard].to_sentence.capitalize %></span>
+      <% end %>
+      <%= f.select :where_you_heard,
+            options_for_select(WhereYouHeard::OPTIONS.invert.to_a, @booking.where_you_heard),
+            { include_blank: true },
+            { class: "t-where-you-heard form-control #{'form-control-error' if @booking.errors.include?(:where_you_heard)}" }
+      %>
+    </div>
+
+    <div class="form-group t-gdpr-consent" id="booking_gdpr_consent" tabindex="-1">
+      <fieldset class="inline">
+        <legend class="form-label-bold">Customer research consent</legend>
+        <span class="form-hint">
+          Your feedback helps us improve the service. Is it OK if we share your
+          contact details with our trusted research partners? With your consent,
+          Pension Wise or our research partners, may contact you to ask if you
+          would like to provide feedback and you can decide then if you want to
+          take part.
+        </span>
+
+        <div class="multiple-choice">
+          <%= f.radio_button :gdpr_consent, 'yes', class: 't-gdpr-consent-yes' %>
+          <%= f.label :gdpr_consent, value: 'yes' do %>Yes<% end %>
+        </div>
+
+        <div class="multiple-choice">
+          <%= f.radio_button :gdpr_consent, 'no', class: 't-gdpr-consent-no' %>
+          <%= f.label :gdpr_consent, value: 'no' do %>No<% end %>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="form-group">
+      <%= f.submit 'Confirm booking', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
+    </div>
+
+    <div role="note" aria-label="Information" class="application-notice info-notice">
+      <p>Pension Wise collects and stores personal data for the purpose of delivering Pensions Guidance.</p>
+      <p>Full details of our privacy policy, including information on your rights in relation to the data we hold can be found in our <%= link_to 'privacy policy', money_helper_url('about-us/privacy-notice'), target: '_parent' %>.</p>
+    </div>
+
+  <% end %>
+</div>
