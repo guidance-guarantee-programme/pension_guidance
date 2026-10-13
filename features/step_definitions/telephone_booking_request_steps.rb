@@ -86,6 +86,7 @@ Given(/^they do not have a DC pot$/) do
   @page.accessibility_requirements_yes.set(true)
   @page.adjustments.set('Some required adjustments')
   @page.additional_info.set('Bleh bleh')
+  @page.waitlist_opt_in_yes.set(true)
 
   @page.submit.click
 end
@@ -112,6 +113,7 @@ Given(/^they are below the minimum age$/) do
   @page.accessibility_requirements_yes.set(true)
   @page.adjustments.set('Blah blah')
   @page.additional_info.set('Bleh bleh')
+  @page.waitlist_opt_in_no.set(true)
 
   @page.submit.click
 end
@@ -136,6 +138,7 @@ Given(/^they are eligible for an appointment$/) do
   @page.adjustments.set('Some required adjustments')
   @page.additional_info.set('Bleh bleh')
   @page.attended_digital_yes.set(true)
+  @page.waitlist_opt_in_yes.set(true)
 
   @page.submit.click
 end
@@ -152,6 +155,7 @@ Then(/^their appointment is created$/) do
   expect(@created_telephone_appointment.where_you_heard).to eq '17'
   expect(@created_telephone_appointment.accessibility_requirements).to eq 'true'
   expect(@created_telephone_appointment.adjustments).to eq 'Some required adjustments'
+  expect(@created_telephone_appointment.waitlist_opt_in).to eq 'yes'
 end
 
 Then(/^they see a confirmation of their appointment$/) do
@@ -180,6 +184,7 @@ When(/^the slot becomes unavailable while they are filling in their details$/) d
   @page.accessibility_requirements_yes.set(true)
   @page.adjustments.set('Some required adjustments')
   @page.additional_info.set('Bleh')
+  @page.waitlist_opt_in_yes.set(true)
 
   @page.submit.click
 end

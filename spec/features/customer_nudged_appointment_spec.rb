@@ -34,6 +34,7 @@ RSpec.feature 'Customer nudged appointments', js: true, vcr: true do
     @page.where_you_heard.select('A Pension Provider')
     @page.dc_pot_confirmed_yes.set('true')
     @page.gdpr_consent_yes.set('true')
+    @page.waitlist_opt_in_yes.set('true')
 
     @page.submit.click
   end
