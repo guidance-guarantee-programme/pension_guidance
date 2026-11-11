@@ -37,8 +37,8 @@ jobs:
         run: npm install
       - name: Install Prince
         run: |
-          curl https://www.princexml.com/download/prince_16.2-1_ubuntu24.04_amd64.deb -O
-          sudo apt install ./prince_16.2-1_ubuntu24.04_amd64.deb
+          curl https://www.princexml.com/download/prince_16.2-1_ubuntu22.04_amd64.deb -O
+          sudo apt install ./prince_16.2-1_ubuntu22.04_amd64.deb
       - name: Set up database schema
         run: 'bundle exec rake db:create db:migrate'
       - name: Run tests and lint
