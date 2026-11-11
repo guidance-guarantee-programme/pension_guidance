@@ -20,8 +20,8 @@ GIT
 
 GIT
   remote: https://github.com/guidance-guarantee-programme/output-templates.git
-  revision: cc54340d8496a1956fd36621768fa6cb3bf9e9e1
-  ref: cc54340
+  revision: b50c39faa14e3d199ee57b430d0b606192c28ad7
+  ref: b50c39f
   specs:
     output-templates (7.6.0)
       actionview
