@@ -24,7 +24,6 @@ RSpec.feature 'Due diligence bookings' do
     expect(@page).to have_no_data_sharing_banner
     # hide and default these fields
     expect(@page.hidden_dc_pot_confirmed.value).to eq('not-sure')
-    expect(@page.hidden_gdpr_consent.value).to eq('no')
     expect(@page.hidden_where_you_heard.value).to eq('2') # pension provider
     # ensure links back to rebook are the correct schedule type
     expect(@page.change_date_time[:href]).to end_with('?schedule_type=due_diligence')
@@ -38,6 +37,7 @@ RSpec.feature 'Due diligence bookings' do
     @page.date_of_birth_month.set('01')
     @page.date_of_birth_year.set('1980')
     @page.accessibility_requirements_no.set(true)
+    @page.gdpr_consent_yes.set(true)
     @page.memorable_word.set('snootboop')
     @page.referrer.set('Big Pensions Co.')
     @page.transferring_pension_to.set('Other Pensions Co.')
