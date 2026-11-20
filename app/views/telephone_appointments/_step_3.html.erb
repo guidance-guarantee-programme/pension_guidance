@@ -315,9 +315,6 @@
   </div>
   <% end %>
 
-  <% if @telephone_appointment.due_diligence? %>
-    <%= f.hidden_field :gdpr_consent, value: 'no', class: 't-hidden-gdpr-consent' %>
-  <% else %>
   <div class="form-group t-gdpr-consent <%= 'form-group-error' if @telephone_appointment.errors.include?(:gdpr_consent) %>" id="telephone_appointment_gdpr_consent" tabindex="-1">
     <fieldset class="inline">
       <legend class="form-label-bold">Customer research consent</legend>
@@ -343,7 +340,6 @@
       </div>
     </fieldset>
   </div>
-  <% end %>
 
   <div class="form-group">
     <%= f.submit 'Confirm appointment', class: 'button button--primary t-submit', data: { disable_with: 'Please wait...' } %>
