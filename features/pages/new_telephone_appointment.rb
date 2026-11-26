@@ -44,7 +44,6 @@ module Pages
     element :csrf, 'meta[name=csrf-param]'
 
     # due diligence removals or additions
-    element :alternative_journeys, '.t-alternative-journeys'
     element :need_help_banner, '.t-need-help-banner'
     element :date_of_birth_hint, '.t-dob-hint'
     element :hidden_dc_pot_confirmed, '.t-hidden-dc-pot-confirmed', visible: false

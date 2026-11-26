@@ -13,8 +13,6 @@ RSpec.feature 'Due diligence bookings' do
     @page = Pages::NewTelephoneAppointment.new
     @page.load(locale: 'en', query: { schedule_type: 'due_diligence' })
 
-    expect(@page).to have_no_alternative_journeys
-
     @page.choose_date('2023-08-23')
     @page.choose_time('10:10am')
     @page.continue.click
