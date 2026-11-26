@@ -248,6 +248,31 @@
     <%= f.text_area :notes, class: 't-additional-info form-control form-control-3-4 js-character-limit-input', rows: 5, maxlength: 160, data: { maxlength: 160 } %>
   </div>
 
+  <% if @telephone_appointment.due_diligence? %>
+    <%= f.hidden_field :waitlist_opt_in, value: 'no', class: 't-hidden-waitlist-opt-in' %>
+  <% else %>
+  <div class="form-group t-waitlist-opt-in <%= 'form-group-error' if @telephone_appointment.errors.include?(:waitlist_opt_in) %>" id="telephone_appointment_waitlist_opt_in" tabindex="-1">
+    <fieldset class="inline" aria-required="true">
+      <legend class="form-label-bold">Would you like an earlier appointment if one becomes available?</legend>
+      <span class="form-hint">If another customer cancels their appointment at short notice, we can call you instead. This can be at any time between 9:30am and 4:30pm, Monday to Friday. If the earlier appointment is not suitable or you miss our call, your original appointment will not be affected.</span>
+      <% if @telephone_appointment.errors.include?(:waitlist_opt_in) %>
+        <span class="error-message" id="waitlist_opt_in_error"><span class="visually-hidden">Error: </span><%= @telephone_appointment.errors[:waitlist_opt_in].to_sentence.capitalize %></span>
+      <% end %>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :waitlist_opt_in, 'yes', aria: { describedby: 'waitlist_opt_in_error' }, class: 't-waitlist-opt-in-yes' %>
+        <%= f.label :waitlist_opt_in, value: 'Yes', aria: { label: 'Yes, I want to opt-in to the cancellation waitlist' }  do %>Yes<% end %>
+      </div>
+
+      <div class="multiple-choice">
+        <%= f.radio_button :waitlist_opt_in, 'no', aria: { describedby: 'waitlist_opt_in_error' }, class: 't-waitlist-opt-in-no' %>
+        <%= f.label :waitlist_opt_in, value: 'No', aria: { label: 'No, I do not want to opt-in to the cancellation waitlist' }  do %>No<% end %>
+      </div>
+    </fieldset>
+  </div>
+  <% end %>
+
+
   <% unless @telephone_appointment.due_diligence? %>
   <div class="form-group t-attended-digital <%= 'form-group-error' if @telephone_appointment.errors.include?(:attended_digital) %>" id="telephone_appointment_attended_digital" tabindex="-1">
     <fieldset class="inline" aria-required="true">
